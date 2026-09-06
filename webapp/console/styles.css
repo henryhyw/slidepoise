@@ -30,7 +30,8 @@ nav { display: grid; gap: 4px; }
 .nav-item:hover { color: var(--ink); background: rgba(255,255,255,.58); }
 .nav-item:active { transform: scale(.98); }
 .nav-item.active { color: var(--ink); background: rgba(255,255,255,.9); box-shadow: 0 1px 3px rgba(0,0,0,.055); }
-.nav-icon { width: 18px; color: var(--accent); text-align: center; font-size: 15px; }
+.nav-icon { width: 18px; height: 18px; display: grid; place-items: center; flex: 0 0 18px; color: var(--accent); text-align: center; font-size: 15px; }
+.nav-icon svg { display: block; width: 17px; height: 17px; overflow: visible; fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
 .sidebar-footer { display: flex; align-items: center; gap: 10px; margin-top: auto; padding: 14px 9px 0; border-top: 1px solid var(--line); }
 .sidebar-footer strong { font-size: 11px; }
 .status-dot, .scope-dot { width: 8px; height: 8px; flex: 0 0 auto; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 4px rgba(35,132,90,.12); }

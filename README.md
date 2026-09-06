@@ -12,7 +12,7 @@ Image generation explores the page design. The Agent identifies the text, charts
 
 ## Sample presentations
 
-Browse the slides, compare the AI designs with actual PowerPoint renders, and inspect each page’s element groups and OpenCV measurements on the [project page](https://www.henryw.me/slidepoise/).
+Browse the slides, compare the AI designs with actual PowerPoint renders, and inspect each page’s element groups and OpenCV measurements on the [project page](https://www.henryw.me/slidepoise/docs/site/).
 
 | Consulting sample | Editorial sample |
 | --- | --- |
