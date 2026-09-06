@@ -42,7 +42,7 @@ jobs:
       - run: python slidepoise/scripts/preflight_config.py framework/defaults/slidepoise-config.json
       - run: python slidepoise/scripts/preflight_catalogs.py --profiles-root profiles
       - run: python slidepoise/scripts/audit_skill_boundaries.py
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: failure()
         with:
           name: test-results-${{ matrix.os }}-python-${{ matrix.python-version }}
@@ -71,7 +71,7 @@ jobs:
           python -m pytest tests/test_preview_rendering.py tests/test_connector_rendering.py
           tests/test_chart_label_wrapping.py tests/test_master_frame.py tests/test_native_shape_ids.py
           -q --basetemp=workspace/preview-tests
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: rendered-presentation-evidence
@@ -106,7 +106,7 @@ jobs:
         working-directory: ${{ runner.temp }}
       - run: slidepoise doctor
         working-directory: ${{ runner.temp }}
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: python-distributions
           path: dist/*
