@@ -1,0 +1,27 @@
+{
+  "platform": "macOS-26.5-arm64-arm-64bit",
+  "python": "3.12.7",
+  "render_route": "slidepoise_runtime.py render-preview",
+  "render_dpi": 144,
+  "libreoffice": "/Users/henry/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
+  "pdftoppm": "/opt/homebrew/bin/pdftoppm",
+  "font_measurement_sources": [
+    "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+    "/System/Library/Fonts/Supplemental/Arial.ttf",
+    "/System/Library/Fonts/Supplemental/Georgia.ttf"
+  ],
+  "font_discovery": "Packaged macOS Fontconfig discovery with system and user font directories. No desktop application automation.",
+  "reviewed_artifacts": [
+    {
+      "path": "../deliverables/slide.pptx",
+      "sha256": "23f14284a870f4cff4c22f456b99c7e0f19857a5914755c131f6d24d7b1caf45"
+    },
+    {
+      "path": "../deliverables/render.png",
+      "sha256": "1cdbf86044becb9ac0659bb5d3f429d8ec5576b465d719aa2e5d06a25cbe8497"
+    }
+  ],
+  "limitations": [
+    "The inspected preview uses headless LibreOffice. No claim is made that a separate PowerPoint desktop application was opened."
+  ]
+}

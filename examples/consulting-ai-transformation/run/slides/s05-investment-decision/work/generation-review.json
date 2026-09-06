@@ -1,0 +1,43 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "stage": "generation",
+  "decision": "accepted",
+  "candidate_index": 2,
+  "material_issues": [],
+  "reviewed_artifacts": [
+    {
+      "path": "generated-original.png",
+      "sha256": "212a9163409c86d8828e8d1d4c2e21ff1572110aa78e7164ede92b59a9e3d2a0"
+    },
+    {
+      "path": "accepted-slide.png",
+      "sha256": "6f63f75099b63a4b14aa1d3e9479e895d3401d03342374aa1f858f1e586f9ab6"
+    },
+    {
+      "path": "image-edit-request-01.json",
+      "sha256": "0b315f74b66f9b999fc7ae9be1fe27cd23f2bc8d2d80632d37f2f884b3265875"
+    },
+    {
+      "path": "generation-call.json",
+      "sha256": "814ff1f8a347d53e9e246078b9f3c361f2a8109bd79ef5e3c8a752840bb4f3c8"
+    },
+    {
+      "path": "generation-contract.json",
+      "sha256": "287155b01b0e91b8d9b1b6c5af3b4ac2f0a565e56c19938aa87deaa03e0d12d5"
+    },
+    {
+      "path": "canvas-normalization.json",
+      "sha256": "2496a3be648111d4a92129517d35ab7badc638707161c41dc338f6e90d58eef2"
+    },
+    {
+      "path": "slide-intent.json",
+      "sha256": "d8118939437d871ecb632b74ea4b49fe7278d00f98a43e3aece06f47eaef67d2"
+    }
+  ],
+  "observations": [
+    "The actual corrected image preserves the investment title, all cost and scenario amounts, the base-case formula and both conditional funding statements. GO, HOLD and STOP are textual criteria without pictograms.",
+    "The image contains only substantive content on a 2:1 canvas. Shared headers, footer disclosure and page numbering are absent and will be added as inherited native PowerPoint frame content.",
+    "The capacity calculation, investment costs and scenario table form three distinct upper columns. The release criteria and pale orange decision band form separate lower information levels.",
+    "The source appends a terminal period to the title and exaggerates some orange values, criterion headings and decision text sizes. The parent Agent explicitly restores the exact upstream title and shared native typography roles during reconstruction. These differences are retained in the source and recorded here."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "reviewer": "independent_host_agent_runtime_product",
+  "stage": "reconstruction",
+  "decision": "accepted",
+  "material_issues": [],
+  "reviewed_artifacts": [
+    {
+      "path": "accepted-slide.png",
+      "sha256": "a49ee87afd9d13eab0ea6e70a03fb68d197b7319273b5a3d998f7bb116827280"
+    },
+    {
+      "path": "iterations/before-shared-geometry-calibration/deliverables/render.png",
+      "sha256": "3bc5009b8f4cd597cfc338eadaa2be5016f29f3ba49e310b99d3db71c074b1b9"
+    }
+  ],
+  "observations": [
+    "The independent reviewer inspected the accepted target and actual LibreOffice render. All three chart values are intact on one line. Both tables preserve the content and values. The three right-side arguments and the qualification have no clipping.",
+    "Knowledge in the owner column lies close to the left boundary but stays inside its cell with no truncated glyphs. The reviewer found no visual blocker. Shared title, subtitle and decision hierarchy is consistent."
+  ],
+  "provenance": "Written from the independent reviewer's direct team message after actual image inspection. The notes-only re-render preserved the exact inspected PNG bytes.",
+  "scope": "Independent review of the substantive layout before the final shared-geometry calibration. The current generation, measurement and reconstruction reviews bind the final page."
+}

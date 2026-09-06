@@ -1,0 +1,159 @@
+{
+  "audience_question": "Compare three specific workflows with a native capacity chart and a native decision table that distinguishes feasible controlled pilot scope from later releases.",
+  "dominant_message": "Start where value and control readiness meet",
+  "information_structure": {
+    "type": "opportunity_prioritization",
+    "description": "Compare three specific workflows with a native capacity chart and a native decision table that distinguishes feasible controlled pilot scope from later releases."
+  },
+  "required_content": [
+    {
+      "role": "subtitle",
+      "text": "Capacity creates the opportunity. Control readiness sets the sequence."
+    },
+    {
+      "role": "native_chart",
+      "heading": "ANNUAL CAPACITY POTENTIAL",
+      "qualification": "Illustrative hours",
+      "categories": [
+        "Research synthesis",
+        "Proposal drafting",
+        "Knowledge retrieval"
+      ],
+      "values": [
+        1944,
+        1440,
+        1080
+      ]
+    },
+    {
+      "role": "native_table",
+      "columns": [
+        "Workflow",
+        "Baseline h",
+        "Adoption",
+        "Time saved"
+      ],
+      "rows": [
+        [
+          "Research",
+          "12",
+          "60%",
+          "30%"
+        ],
+        [
+          "Proposal",
+          "8",
+          "50%",
+          "40%"
+        ],
+        [
+          "Retrieval",
+          "5",
+          "60%",
+          "40%"
+        ]
+      ]
+    },
+    {
+      "role": "formula",
+      "text": "Annual hours = 900 engagements × baseline h × adoption × time saved"
+    },
+    {
+      "role": "native_table",
+      "heading": "PILOT SEQUENCING TEST",
+      "columns": [
+        "Workflow",
+        "Control readiness",
+        "Owner",
+        "Sequence"
+      ],
+      "rows": [
+        [
+          "Research synthesis",
+          "Approved corpus\nExplicit review",
+          "Practice lead",
+          "START"
+        ],
+        [
+          "Proposal drafting",
+          "Claims and commitments\nneed controls",
+          "BD lead",
+          "NEXT"
+        ],
+        [
+          "Knowledge retrieval",
+          "Permissions need\ncleanup",
+          "Knowledge lead",
+          "LATER"
+        ]
+      ]
+    },
+    {
+      "role": "argument",
+      "heading": "WHY RESEARCH WINS FIRST",
+      "items": [
+        "Frequent, comparable tasks",
+        "A bounded source corpus",
+        "A named expert reviewer"
+      ]
+    },
+    {
+      "role": "qualification_in_body",
+      "text": "Check task overlap before adding workflow benefits."
+    },
+    {
+      "role": "decision_band",
+      "label": "PILOT BOUNDARY",
+      "message": "Start with approved-source research synthesis."
+    }
+  ],
+  "semantic_relationships": [
+    {
+      "type": "comparison",
+      "members": [
+        "Research synthesis",
+        "Proposal drafting",
+        "Knowledge retrieval"
+      ],
+      "dimensions": [
+        "capacity",
+        "control readiness",
+        "owner",
+        "sequence"
+      ]
+    }
+  ],
+  "hierarchy": [
+    "Shared Georgia claim title",
+    "Shared Arial subtitle",
+    "Evidence or operating structure",
+    "Shared substantive decision band"
+  ],
+  "evidence": [
+    "Host-authored illustrative planning model. The preserved work/planning-assumptions.json carries the exact calculation assumptions."
+  ],
+  "assumptions": [
+    "Northstar Advisory is fictional. Capacity equivalent is not revenue or cash savings.",
+    "The pilot measures one comparable research task per engagement, so 20 tasks correspond to 20 engagements.",
+    "The 95% sampled-claim gate does not replace expert verification and approval of each client release."
+  ],
+  "open_questions": [],
+  "avoid": [
+    "Any generated header, footer, company label, page number, shared-frame rule or repeated source-note strip.",
+    "Independent changes to recurring title size, font family or decision-band treatment.",
+    "Decorative icons, invented imagery and miniature type."
+  ],
+  "visual_obligations": [
+    "Generate only the 1920 by 960 substantive canvas at exactly 2:1 aspect ratio. The runtime adds the separate inherited frame.",
+    "Use native-friendly text, tables, chart geometry and continuous directed relationships where the content requires them.",
+    "Follow the shared deck design. The five pages vary their evidence structures while recurring roles remain consistent."
+  ],
+  "user_required_assets": [],
+  "density_intent": "information_rich",
+  "explicit_user_visual_requirements": [
+    "Georgia claim title at 64 px regular on every page, with no per-page shrinking.",
+    "Arial subtitle 32 px regular, body 28 px regular, section labels 28 px bold and table text 24 px.",
+    "Every decision band uses pale orange #FFF5ED fill, orange #FD5108 label and left bar, black message, and no surrounding border.",
+    "Place all necessary page-specific qualifications in the substantive content. Shared frame wording is excluded from image generation."
+  ]
+}

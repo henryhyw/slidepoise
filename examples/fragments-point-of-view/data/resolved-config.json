@@ -1,0 +1,1064 @@
+{
+  "schema_version": "3.4.0",
+  "scope": {
+    "mode": "single_slide",
+    "default_slide_role": "content_slide"
+  },
+  "libraries": {
+    "icons": {
+      "catalog": "project-source/profiles/personal-website/libraries/icons/catalog.json",
+      "root": "project-source/profiles/personal-website/libraries/icons",
+      "profile_id": "personal-website"
+    },
+    "visual_references": {
+      "catalog": "project-source/profiles/personal-website/libraries/visual_references/catalog.json",
+      "root": "project-source/profiles/personal-website/libraries/visual_references",
+      "profile_id": "personal-website"
+    },
+    "components": {
+      "catalog": "project-source/profiles/personal-website/libraries/components/catalog.json",
+      "root": "project-source/profiles/personal-website/libraries/components",
+      "profile_id": "personal-website"
+    }
+  },
+  "library_policy": {
+    "retrieval_method": "read local catalogs, inspect plausible candidates, and choose by semantic and visual fit; never use a numeric relevance score as the final decision",
+    "priority": [
+      "user_required_assets",
+      "current_session_assets",
+      "selected_profile_components",
+      "selected_profile_visual_references",
+      "selected_profile_icons",
+      "remote_public_icon_fallback"
+    ],
+    "maximum_visual_references_per_generation": 3,
+    "brand_logos": "exact assets only; never replace a brand logo with a generic icon",
+    "user_asset_handling": "Treat current-chat uploads as first-class run resources. Inspect dimensions/aspect ratio, preserve exact identity where required, and carry the selected canonical path into reconstruction.",
+    "maximum_optional_assets_per_generation": 12
+  },
+  "external_icon_fetch": {
+    "enabled": false,
+    "provider": "Tabler Icons",
+    "allowed_repository": "tabler-icons/tabler-icons",
+    "raw_url_template": "https://raw.githubusercontent.com/tabler/tabler-icons/main/icons/outline/{name}.svg",
+    "license": "MIT",
+    "use_only_when": "the selected profile permits remote generic icon retrieval and no suitable profile-private asset exists",
+    "persist_into_skill_only_when_user_requests_skill_update": false,
+    "persist_location": "run_cache_only",
+    "record_provenance": true
+  },
+  "generation": {
+    "required_for_information_bearing_slide": true,
+    "canvas_recovery": {
+      "enabled": true,
+      "decision_owner": "host_agent_visual_reasoning",
+      "allowed_when": "candidate substantive composition is acceptable but the model added removable out-of-region chrome or returned a non-contract aspect ratio",
+      "requirements": [
+        "host Agent visually defines the crop; scripts never discover it",
+        "crop must not remove required substantive content",
+        "result must be normalized to the resolved generation_region_px without stretching",
+        "normalized result must pass a new generation visual review before semantic mapping"
+      ],
+      "script": "scripts/normalize_generation_canvas.py"
+    },
+    "maximum_candidates": 1,
+    "retry_policy": "Generate exactly one initial candidate. Never automatically regenerate. After explicit user feedback, edit the current candidate with the same host image-generation capability; preserve all unspecified content and composition.",
+    "human_approval": {
+      "enabled": true,
+      "required_gates": [
+        "plan",
+        "resources",
+        "image"
+      ],
+      "automatic_regeneration_allowed": false,
+      "image_rejection_policy": "edit_current_candidate_with_host_image_generation",
+      "require_user_requested_changes_before_edit": true,
+      "one_edit_call_per_user_rejection": true,
+      "fresh_regeneration_on_rejection": false
+    },
+    "default_model": "gpt-image-2",
+    "host_adapter": {
+      "mode": "host_native_or_delegated_image_generation",
+      "chatgpt": "use the host-native image generation/edit capability directly",
+      "codex": "use the available image-generation skill/tool; when the Codex host exposes image-capable agent delegation, delegate only the image call and keep SlidePoise orchestration in the parent agent",
+      "unsupported_host_policy": "stop at the image-generation stage rather than replacing creative generation with deterministic drawing"
+    },
+    "illustration_refinement": {
+      "enabled_by_default": true,
+      "trigger_visual_source_class": "novel_illustration",
+      "human_confirmation_required": true,
+      "default_decline_behavior": "keep_original_crop",
+      "one_refinement_call_per_confirmation": true,
+      "board_max_size_px": [
+        2048,
+        2048
+      ],
+      "board_outer_margin_px": 80,
+      "board_gutter_px": 72,
+      "no_visible_borders_or_labels_in_model_input": true,
+      "preserve_each_source_aspect_ratio": true,
+      "preferred_output_use": "crop deterministic board slots and insert the refined rasters into the original measured slide boxes with aspect-preserving contain-fit"
+    }
+  },
+  "measurement": {
+    "engine": "OpenCV",
+    "semantic_meaning_owner": "host_agent",
+    "geometry_role": "measure and corroborate visible geometry; never decide visual quality or semantic ownership",
+    "text_color_role": "estimate foreground/background color evidence; host Agent remains visual authority",
+    "segmentation": {
+      "mode": "auto",
+      "provider": "sam2",
+      "checkpoint": null,
+      "model_config": "configs/sam2.1/sam2.1_hiera_t.yaml",
+      "device": "auto",
+      "eligible_roles": [
+        "irregular_filled_boundary",
+        "photo_subject",
+        "overlapping_filled_object"
+      ],
+      "selection_policy": "Use a SAM mask only for a host-authored eligible entity and only when it supplies a coherent filled boundary inside the prompt box. Record both OpenCV and SAM evidence. Fall back cleanly to OpenCV in auto mode.",
+      "semantic_authority": "host_agent",
+      "visual_acceptance_authority": "host_agent"
+    },
+    "layout_geometry_policy": {
+      "text": "agent_logical_region",
+      "icon": "agent_slot_region",
+      "icon_slot": "agent_slot_region",
+      "image": "agent_region_with_opencv_crop_evidence",
+      "shape": "opencv_visible_bounds_unless_agent_overrides",
+      "novel_visual": "opencv_visible_bounds_unless_agent_overrides",
+      "connector": "agent_semantics_plus_deterministic_boundary_ports"
+    },
+    "local_geometry_normalization": {
+      "enabled": true,
+      "maximum_adjustment_px": 2.0,
+      "mode": "agent_authored_only",
+      "policy": "Apply only explicit host-reviewed geometry_adjustments. Preserve measured positions when no decision is supplied. The movement budget limits local corrections and does not determine visual acceptance."
+    }
+  },
+  "design": {
+    "full_slide_px": [
+      1672,
+      941
+    ],
+    "frame": {
+      "header": {
+        "enabled": false,
+        "height_px": 34,
+        "implementation": "slide_master_inherited_content",
+        "left_text": "",
+        "right_text": "",
+        "font_family": "Arial",
+        "font_size_px": 11,
+        "font_weight": "regular",
+        "text_color": "#505050",
+        "secondary_text_color": "#8F8F8F",
+        "rule_color": "#D8D7D3",
+        "rule_width_px": 1,
+        "accent_color": "#242321",
+        "accent_rule_width_px": 0,
+        "outer_padding_px": 56
+      },
+      "footer": {
+        "enabled": false,
+        "height_px": 34,
+        "implementation": "slide_master_inherited_content",
+        "left_text": "",
+        "center_text": "",
+        "font_family": "Arial",
+        "font_size_px": 10,
+        "font_weight": "regular",
+        "left_font_weight": "regular",
+        "text_color": "#686868",
+        "secondary_text_color": "#8F8F8F",
+        "rule_color": "#D8D7D3",
+        "rule_width_px": 1,
+        "outer_padding_px": 56,
+        "slide_number": {
+          "enabled": false,
+          "implementation": "native_slide_number_field_on_master",
+          "format": "{slide_number}"
+        }
+      },
+      "generation_region": {
+        "derive_from_frame_heights": true
+      }
+    },
+    "title": {
+      "anchor_px": [
+        72,
+        54
+      ],
+      "max_width_px": 1840,
+      "font_family": "Georgia",
+      "weight": "regular",
+      "nominal_size_px": 72,
+      "color": "#242321",
+      "alignment": "left",
+      "allowed_lines": [
+        1,
+        2
+      ],
+      "minimum_gap_to_body_px": 34
+    },
+    "style": {
+      "background": "#FBFAF8",
+      "display_font": "Georgia",
+      "body_font": "Arial",
+      "density": "balanced_consulting",
+      "accent_colors": [
+        "#242321",
+        "#505050",
+        "#8F8F8F"
+      ],
+      "neutral_colors": [
+        "#111111",
+        "#242321",
+        "#505050",
+        "#8F8F8F",
+        "#D8D7D3",
+        "#E8E7E4",
+        "#F4F3F0",
+        "#FBFAF8",
+        "#FFFFFF"
+      ],
+      "visual_language": "Monochrome editorial portfolio language with sharp rectangular modules, deliberate asymmetry, flat tonal fields, generous negative space, precise optical alignment, serif and humanist sans contrast, occasional archival texture, typewriter metadata, and restrained handwritten annotation.",
+      "whitespace": "Treat empty space as active structure. Preserve clear outer margins and allow one dominant visual or statement to breathe."
+    },
+    "semantic_style_tokens": {
+      "accent_badge": {
+        "fill": "#242321",
+        "text_color": "#FBFAF8",
+        "font_weight": "bold"
+      },
+      "muted_panel": {
+        "fill": "#F4F3F0",
+        "text_color": "#242321"
+      },
+      "primary_text": {
+        "color": "#242321"
+      },
+      "secondary_text": {
+        "color": "#686868"
+      },
+      "symbol_surface": {
+        "fill": "#FCE4D6",
+        "glyph_color": "#D93900",
+        "border": "none"
+      },
+      "dark_field": {
+        "fill": "#1C1C1E",
+        "text_color": "#F4F1EC"
+      },
+      "archive_paper": {
+        "fill": "#F1ECE2",
+        "text_color": "#242321"
+      },
+      "typewriter_label": {
+        "font_family": "Courier New",
+        "color": "#505050",
+        "font_weight": "regular"
+      },
+      "handwritten_note": {
+        "font_family": "Segoe Print",
+        "color": "#686868",
+        "font_weight": "regular"
+      }
+    },
+    "icon_slots": {
+      "default_inset_fraction": 0.14
+    },
+    "text_reconstruction": {
+      "font_size_quantization_pt": 0.5,
+      "absolute_minimum_font_size_pt": 6,
+      "text_style_policies": {
+        "default": {
+          "font_size_range_px": [
+            14,
+            24
+          ],
+          "line_spacing": 1.15,
+          "inset_px": 2,
+          "font_family": "Arial",
+          "color": "#242321"
+        },
+        "slide_title": {
+          "font_family": "Georgia",
+          "font_size_range_px": [
+            34,
+            34
+          ],
+          "line_spacing": 1.0,
+          "inset_px": 0,
+          "color": "#242321"
+        },
+        "subtitle": {
+          "font_size_range_px": [
+            17,
+            17
+          ],
+          "line_spacing": 1.0,
+          "inset_px": 0
+        },
+        "section_number": {
+          "font_size_range_px": [
+            35,
+            35
+          ],
+          "line_spacing": 1.0,
+          "inset_px": 0
+        },
+        "heading_large": {
+          "font_size_range_px": [
+            20,
+            28
+          ],
+          "line_spacing": 1.05,
+          "inset_px": 2,
+          "font_family": "Georgia",
+          "font_weight": "regular",
+          "color": "#242321"
+        },
+        "body": {
+          "font_size_range_px": [
+            16,
+            22
+          ],
+          "line_spacing": 1.35,
+          "inset_px": 2,
+          "font_family": "Georgia",
+          "font_weight": "regular",
+          "color": "#505050"
+        },
+        "heading": {
+          "font_size_range_px": [
+            14.5,
+            14.5
+          ],
+          "line_spacing": 1.0,
+          "inset_px": 0,
+          "font_family": "Arial",
+          "font_weight": "bold",
+          "color": "#242321"
+        },
+        "body_standard": {
+          "font_size_range_px": [
+            15,
+            22
+          ],
+          "line_spacing": 1.35,
+          "inset_px": 2,
+          "font_family": "Georgia",
+          "font_weight": "regular",
+          "color": "#505050"
+        },
+        "heading_compact": {
+          "font_size_range_px": [
+            15.5,
+            23
+          ],
+          "line_spacing": 1.06,
+          "inset_px": 2
+        },
+        "body_compact": {
+          "font_size_range_px": [
+            15,
+            15
+          ],
+          "line_spacing": 1.0,
+          "inset_px": 0,
+          "font_family": "Arial",
+          "font_weight": "regular",
+          "color": "#505050"
+        },
+        "label": {
+          "font_size_range_px": [
+            14,
+            14
+          ],
+          "line_spacing": 1.0,
+          "inset_px": 0,
+          "font_family": "Arial",
+          "font_weight": "bold",
+          "color": "#242321"
+        },
+        "emphasis_label": {
+          "font_size_range_px": [
+            20,
+            34
+          ],
+          "line_spacing": 1.0,
+          "inset_px": 2,
+          "font_family": "Courier New",
+          "font_weight": "regular",
+          "color": "#505050"
+        },
+        "quote": {
+          "font_family": "Georgia",
+          "font_weight": "regular",
+          "color": "#242321",
+          "line_spacing": 1.2
+        },
+        "large_data_number": {
+          "font_family": "Georgia",
+          "font_weight": "regular",
+          "color": "#242321",
+          "line_spacing": 1.0
+        }
+      },
+      "legacy_semantic_role_style_aliases": {
+        "stage_number": "section_number",
+        "stage_title": "heading_large",
+        "stage_body": "body",
+        "card_title": "heading",
+        "card_body": "body_standard",
+        "module_title": "heading_compact",
+        "module_body": "body_compact",
+        "output_label": "emphasis_label"
+      },
+      "enforce_text_style_minimum": true
+    },
+    "connectors": {
+      "allowed_families": [
+        "direct_flow",
+        "orthogonal_dependency",
+        "merge_split",
+        "grouping_bracket",
+        "grouping_brace",
+        "annotation_leader"
+      ],
+      "stroke": {
+        "color": "#505050",
+        "width_px": 2,
+        "dash": "solid",
+        "line_cap": "round",
+        "line_join": "round"
+      },
+      "arrowhead": {
+        "type": "triangle",
+        "powerpoint_size": "sm",
+        "minimum_visible_endpoint_px": 14,
+        "minimum_clear_segment_px": 18,
+        "length_px": 10,
+        "width_px": 8
+      },
+      "routing": {
+        "minimum_clearance_px": 12,
+        "maximum_ordinary_bends": 2,
+        "grouping_brace_depth_px": 34,
+        "grouping_bracket_depth_px": 22,
+        "grouping_brace_preset_depth_factor": 1.7
+      }
+    },
+    "density_profiles": {
+      "spacious": {
+        "generation_guidance": [
+          "Use generous whitespace and fewer, larger information groups.",
+          "Allow intentionally quiet regions when they strengthen focus and hierarchy.",
+          "Do not fill space merely to increase occupancy."
+        ],
+        "visual_review_guidance": [
+          "Confirm that empty regions feel intentional rather than unfinished.",
+          "Prefer calm hierarchy over compactness."
+        ]
+      },
+      "balanced_consulting": {
+        "generation_guidance": [
+          "Use the substantive canvas efficiently while retaining clear separation between information groups.",
+          "Balance whitespace across the composition rather than leaving one large accidental dead zone."
+        ],
+        "visual_review_guidance": [
+          "Reject conspicuous unused peripheral regions that do not support hierarchy.",
+          "Keep the page readable without making it sparse or crowded."
+        ]
+      },
+      "dense_consulting": {
+        "generation_guidance": [
+          "Use the substantive canvas actively with compact, well-structured information groups and strong alignment.",
+          "Avoid large isolated blank regions unless they clearly serve hierarchy, pacing, or emphasis.",
+          "Prefer expanding, aligning, or redistributing meaningful content before adding decoration.",
+          "Keep spacing disciplined and readable; dense does not mean cramped."
+        ],
+        "visual_review_guidance": [
+          "Inspect the whole canvas for avoidable dead zones or lopsided whitespace.",
+          "Reject a composition that feels under-filled for a consulting-density request even if individual components look good.",
+          "Preserve breathing room inside groups while using the overall slide area efficiently.",
+          "Judge empty regions by whether they support the argument, hierarchy, or pacing rather than by the semantic type of the nearby element."
+        ]
+      }
+    },
+    "shape_geometry": {
+      "rounding": {
+        "semantic_authority": "host_agent_shape_intent_and_observed_corner_radius",
+        "require_explicit_intent_for_rounded_rectangles": true,
+        "intent_values": [
+          "ordinary_container",
+          "deliberately_rounded",
+          "pill_or_capsule"
+        ],
+        "ordinary_container": {
+          "default_corner_radius_px": 6,
+          "maximum_corner_radius_px": 12,
+          "maximum_corner_radius_fraction_of_short_side": 0.08,
+          "rationale": "Prevent PowerPoint rounded-rectangle presets from exaggerating mild card rounding and consuming usable interior space."
+        },
+        "deliberately_rounded": {
+          "maximum_corner_radius_fraction_of_short_side": 0.48
+        },
+        "pill_or_capsule": {
+          "maximum_corner_radius_fraction_of_short_side": 0.5
+        },
+        "user_explicit_geometry_overrides_default_caps": true,
+        "visual_review_required_after_reconstruction": true
+      }
+    },
+    "asset_placement": {
+      "preserve_intrinsic_aspect_ratio": true,
+      "generation_slot_policy": "When an exact user/current-chat asset is selected, attach it to image generation when possible and ask the selected image-generation model to allocate a compatible, non-distorted slot. The generated depiction is composition guidance; the canonical file is restored downstream.",
+      "reconstruction_policy": "Restore the exact selected file with contain-fit by default. Never stretch to match a generated placeholder. If the slot is visually incompatible with the intrinsic aspect ratio, the host Agent must revise the logical slot or upstream composition and rerun.",
+      "brand_identity": "exact asset only",
+      "allow_user_requested_crop_when_explicit": true
+    },
+    "profile": "personal-website",
+    "data_visualization": {
+      "default_level": 1,
+      "default_series_colors": [
+        "#242321",
+        "#505050",
+        "#8F8F8F",
+        "#B8B7B3",
+        "#D8D7D3",
+        "#E8E7E4"
+      ],
+      "key_data_color": "#242321",
+      "chart_title_font": "Georgia",
+      "data_font": "Arial",
+      "allow_gradient_in_default_level": false,
+      "gridline_color": "#D8D7D3"
+    },
+    "profile_hard_rules": {
+      "icons": {
+        "default_treatment": "neutral_outline",
+        "proxy_treatments": [
+          {
+            "id": "neutral_outline",
+            "description": "Thin neutral outline icon with no enclosing badge.",
+            "glyph_color": "#242321",
+            "surface": "none"
+          },
+          {
+            "id": "inverse_outline",
+            "description": "Off-white outline icon used directly on a dark field.",
+            "glyph_color": "#F4F1EC",
+            "surface": "none"
+          }
+        ]
+      },
+      "color": [
+        "Do not introduce green as a presentation accent. Preserve exact canonical asset identity when a required source contains green."
+      ],
+      "geometry": [
+        "Core information modules use square corners or an optically negligible radius.",
+        "Rounded media frames may use a restrained radius only when inherited from a photographed or embedded interface.",
+        "Avoid repeated floating cards. Build a composed page from fields, rules, blocks, and negative space."
+      ],
+      "typography": {
+        "font_family_policy": "agent_observed",
+        "italics_allowed": true,
+        "tracking_allowed": true
+      },
+      "composition": [
+        "Each slide has one dominant statement or visual field.",
+        "Use asymmetry deliberately and balance it through scale, alignment, and empty space.",
+        "Use blocks to organize evidence. Do not imitate a product dashboard."
+      ],
+      "reconstruction": [
+        "The Agent decides which visual regions carry irreducible texture and may remain raster.",
+        "Mechanical validation confirms package and geometry facts only. The Agent must visually compare the accepted image, measured overlay, rendered PowerPoint, and difference view before release.",
+        "Connector routes require an Agent-authored visual route decision. A script-generated route is only a candidate."
+      ]
+    },
+    "resource_catalogs": {
+      "icons": {
+        "catalog": "project-source/profiles/personal-website/libraries/icons/catalog.json",
+        "root": "project-source/profiles/personal-website/libraries/icons",
+        "profile_id": "personal-website"
+      },
+      "visual_references": {
+        "catalog": "project-source/profiles/personal-website/libraries/visual_references/catalog.json",
+        "root": "project-source/profiles/personal-website/libraries/visual_references",
+        "profile_id": "personal-website"
+      },
+      "components": {
+        "catalog": "project-source/profiles/personal-website/libraries/components/catalog.json",
+        "root": "project-source/profiles/personal-website/libraries/components",
+        "profile_id": "personal-website"
+      }
+    }
+  },
+  "reconstruction": {
+    "native_first": true,
+    "routes": [
+      "native_text",
+      "native_shape",
+      "native_table",
+      "native_chart",
+      "canonical_svg",
+      "native_connector_graph",
+      "fitted_freeform",
+      "screenshot_crop"
+    ],
+    "image_region_fallback": "use screenshot crop when a region is genuinely raster/illustrative, no exact asset exists, and an editable decomposition would invent structure",
+    "render_back_review_required": true,
+    "layout_integrity": {
+      "agent_authors_non_overlap_constraints": true,
+      "default_high_risk_pairs": "Within the same semantic module, icons/icon slots and independent text regions should be declared non-overlapping unless overlap is intentionally part of the design.",
+      "mechanically_enforce_declared_pairs_after_asset_placement_and_text_fitting": true,
+      "visual_review_still_required": true
+    }
+  },
+  "validation": {
+    "require_fresh_measurement": true,
+    "forbid_fixture_measurement": true,
+    "require_agent_generation_review": true,
+    "require_agent_measurement_review": true,
+    "require_agent_reconstruction_review": true,
+    "mechanical_hard_fail_on": [
+      "text_overflow",
+      "explicit_parent_containment_violation",
+      "missing_required_asset",
+      "peer_typography_contract_violation",
+      "invalid_connector_endpoint_or_direction",
+      "frame_configuration_mismatch",
+      "invalid_pptx_package"
+    ],
+    "visual_acceptance_owner": "host_agent",
+    "scripts_must_not_decide": [
+      "visual hierarchy",
+      "visual balance",
+      "spacing quality",
+      "alignment quality",
+      "color fidelity",
+      "connector aesthetics",
+      "whether a bend is visually necessary",
+      "overall consulting quality",
+      "shape corner fidelity",
+      "content collision acceptability",
+      "density and whitespace utilization",
+      "user-asset slot appropriateness"
+    ]
+  },
+  "session_overrides": {
+    "allowed": [
+      "slide_role",
+      "density",
+      "palette",
+      "profile",
+      "generation_model",
+      "header.enabled",
+      "header.height_px",
+      "header.left_text",
+      "header.right_text",
+      "footer.enabled",
+      "footer.height_px",
+      "footer.left_text",
+      "footer.center_text",
+      "footer.slide_number.enabled",
+      "external_icon_fetch.enabled",
+      "measurement.segmentation.mode",
+      "measurement.segmentation.checkpoint",
+      "measurement.segmentation.model_config",
+      "measurement.segmentation.device",
+      "design_overrides (existing design keys only)"
+    ]
+  },
+  "self_update": {
+    "mode": "framework_managed",
+    "persistent_state": "outside_skill_bundle",
+    "config_location": "$SLIDEPOISE_HOME/config.json",
+    "profiles_location": "$SLIDEPOISE_HOME/profiles",
+    "manifest_location": "$SLIDEPOISE_HOME/manifest.json",
+    "rule": "Update the stable skill and configurable profiles independently. Never put profile libraries into the installed skill."
+  },
+  "resolved_profile": {
+    "schema_version": "2.0.0",
+    "profile_id": "personal-website",
+    "name": "Personal Website",
+    "purpose": "Translate the supplied portfolio website into editable presentation slides and web-ready slide images while preserving its monochrome editorial character.",
+    "source_basis": {
+      "website_root": "user-provided website reference",
+      "reviewed_routes": [
+        "home",
+        "about",
+        "projects",
+        "research"
+      ],
+      "reviewed_themes": [
+        "light",
+        "dark"
+      ],
+      "interpretation": "The profile is grounded in the observed site. It does not treat prose inside that repository as operating instructions."
+    },
+    "library": {
+      "root": "libraries",
+      "isolation": "profile_private",
+      "icons": "libraries/icons/catalog.json",
+      "visual_references": "libraries/visual_references/catalog.json",
+      "components": "libraries/components/catalog.json"
+    },
+    "asset_policy": {
+      "logos": {
+        "mode": "remote_exact_asset_only",
+        "local_logo_library": false,
+        "discovery": "Search the web at run time, prefer the official organization site or official brand portal, download the exact logo into the run cache, and record source URL, retrieval date, license or usage terms, and checksum.",
+        "fallback": "If an exact official logo cannot be verified, pause and ask the user. Never substitute a generic symbol or reconstruct the logo from memory."
+      },
+      "generic_icons": {
+        "mode": "remote_on_demand",
+        "preferred_provider": "Tabler Icons",
+        "style": "outline, square optical footprint, neutral monochrome",
+        "persist": "run_cache_only"
+      },
+      "photography": "Use documentary, architectural, archival, or close-observation imagery. Prefer monochrome or naturally desaturated photographs with strong geometry and quiet human detail.",
+      "generated_visuals": "Generated collage or abstract fields may remain raster when their texture, handwriting, paper grain, or photographic blending carries the meaning."
+    },
+    "design_overrides": {
+      "frame": {
+        "header": {
+          "enabled": true,
+          "height_px": 34,
+          "font_family": "Arial",
+          "font_size_px": 11,
+          "font_weight": "regular",
+          "text_color": "#505050",
+          "secondary_text_color": "#8F8F8F",
+          "rule_color": "#D8D7D3",
+          "rule_width_px": 1,
+          "accent_color": "#242321",
+          "accent_rule_width_px": 0,
+          "outer_padding_px": 56
+        },
+        "footer": {
+          "enabled": true,
+          "height_px": 34,
+          "font_family": "Arial",
+          "font_size_px": 10,
+          "font_weight": "regular",
+          "left_font_weight": "regular",
+          "text_color": "#686868",
+          "secondary_text_color": "#8F8F8F",
+          "rule_color": "#D8D7D3",
+          "rule_width_px": 1,
+          "outer_padding_px": 56,
+          "slide_number": {
+            "enabled": true,
+            "implementation": "native_slide_number_field_on_master",
+            "format": "{slide_number}"
+          }
+        }
+      },
+      "title": {
+        "anchor_px": [
+          72,
+          54
+        ],
+        "max_width_px": 1840,
+        "font_family": "Georgia",
+        "weight": "regular",
+        "nominal_size_px": 72,
+        "color": "#242321",
+        "alignment": "left",
+        "allowed_lines": [
+          1,
+          2
+        ],
+        "minimum_gap_to_body_px": 34
+      },
+      "style": {
+        "background": "#FBFAF8",
+        "display_font": "Georgia",
+        "body_font": "Arial",
+        "density": "balanced_consulting",
+        "accent_colors": [
+          "#242321",
+          "#505050",
+          "#8F8F8F"
+        ],
+        "neutral_colors": [
+          "#111111",
+          "#242321",
+          "#505050",
+          "#8F8F8F",
+          "#D8D7D3",
+          "#E8E7E4",
+          "#F4F3F0",
+          "#FBFAF8",
+          "#FFFFFF"
+        ],
+        "visual_language": "Monochrome editorial portfolio language with sharp rectangular modules, deliberate asymmetry, flat tonal fields, generous negative space, precise optical alignment, serif and humanist sans contrast, occasional archival texture, typewriter metadata, and restrained handwritten annotation.",
+        "whitespace": "Treat empty space as active structure. Preserve clear outer margins and allow one dominant visual or statement to breathe."
+      },
+      "semantic_style_tokens": {
+        "accent_badge": {
+          "fill": "#242321",
+          "text_color": "#FBFAF8",
+          "font_weight": "bold"
+        },
+        "muted_panel": {
+          "fill": "#F4F3F0",
+          "text_color": "#242321"
+        },
+        "primary_text": {
+          "color": "#242321"
+        },
+        "secondary_text": {
+          "color": "#686868"
+        },
+        "dark_field": {
+          "fill": "#1C1C1E",
+          "text_color": "#F4F1EC"
+        },
+        "archive_paper": {
+          "fill": "#F1ECE2",
+          "text_color": "#242321"
+        },
+        "typewriter_label": {
+          "font_family": "Courier New",
+          "color": "#505050",
+          "font_weight": "regular"
+        },
+        "handwritten_note": {
+          "font_family": "Segoe Print",
+          "color": "#686868",
+          "font_weight": "regular"
+        }
+      },
+      "text_reconstruction": {
+        "text_style_policies": {
+          "default": {
+            "font_family": "Arial",
+            "color": "#242321",
+            "line_spacing": 1.15
+          },
+          "slide_title": {
+            "font_family": "Georgia",
+            "color": "#242321",
+            "line_spacing": 1.0
+          },
+          "heading_large": {
+            "font_family": "Georgia",
+            "font_weight": "regular",
+            "color": "#242321",
+            "line_spacing": 1.05
+          },
+          "heading": {
+            "font_family": "Arial",
+            "font_weight": "bold",
+            "color": "#242321",
+            "line_spacing": 1.1
+          },
+          "body": {
+            "font_family": "Georgia",
+            "font_weight": "regular",
+            "color": "#505050",
+            "line_spacing": 1.35
+          },
+          "body_standard": {
+            "font_family": "Georgia",
+            "font_weight": "regular",
+            "color": "#505050",
+            "line_spacing": 1.35
+          },
+          "body_compact": {
+            "font_family": "Arial",
+            "font_weight": "regular",
+            "color": "#505050",
+            "line_spacing": 1.25
+          },
+          "label": {
+            "font_family": "Arial",
+            "font_weight": "bold",
+            "color": "#242321",
+            "line_spacing": 1.0
+          },
+          "emphasis_label": {
+            "font_family": "Courier New",
+            "font_weight": "regular",
+            "color": "#505050",
+            "line_spacing": 1.0
+          },
+          "quote": {
+            "font_family": "Georgia",
+            "font_weight": "regular",
+            "color": "#242321",
+            "line_spacing": 1.2
+          },
+          "large_data_number": {
+            "font_family": "Georgia",
+            "font_weight": "regular",
+            "color": "#242321",
+            "line_spacing": 1.0
+          }
+        }
+      },
+      "connectors": {
+        "stroke": {
+          "color": "#505050",
+          "width_px": 2,
+          "dash": "solid",
+          "line_cap": "round",
+          "line_join": "round"
+        },
+        "arrowhead": {
+          "type": "triangle",
+          "powerpoint_size": "sm",
+          "minimum_visible_endpoint_px": 14,
+          "minimum_clear_segment_px": 18,
+          "length_px": 10,
+          "width_px": 8
+        }
+      },
+      "data_visualization": {
+        "default_level": 1,
+        "default_series_colors": [
+          "#242321",
+          "#505050",
+          "#8F8F8F",
+          "#B8B7B3",
+          "#D8D7D3",
+          "#E8E7E4"
+        ],
+        "key_data_color": "#242321",
+        "chart_title_font": "Georgia",
+        "data_font": "Arial",
+        "allow_gradient_in_default_level": false,
+        "gridline_color": "#D8D7D3"
+      }
+    },
+    "modes": {
+      "modern_blocks": {
+        "default": true,
+        "description": "Sharp monochrome modules, flat fills, large type, architectural photography, and a disciplined editorial grid.",
+        "reconstruction": "Favor native text, rectangles, rules, charts, tables, and continuous connectors. Photographs remain raster."
+      },
+      "editorial_archive": {
+        "default": false,
+        "description": "Warm paper, archival fragments, typewriter labels, sparse handwriting, translucent paper layers, and restrained diagram marks.",
+        "reconstruction": "Rebuild title, labels, rules, major blocks, and semantic connectors natively. Preserve complex collage textures, handwriting, paper grain, and blended photography as one or more generated raster regions."
+      },
+      "dark_editorial": {
+        "default": false,
+        "description": "Charcoal background, flat dark fields, off-white type, grayscale imagery, and quiet system-like precision.",
+        "reconstruction": "Use native dark fields and typography. Keep photographic material raster and avoid glow or glossy effects."
+      }
+    },
+    "hard_rules": {
+      "icons": {
+        "default_treatment": "neutral_outline",
+        "proxy_treatments": [
+          {
+            "id": "neutral_outline",
+            "description": "Thin neutral outline icon with no enclosing badge.",
+            "glyph_color": "#242321",
+            "surface": "none"
+          },
+          {
+            "id": "inverse_outline",
+            "description": "Off-white outline icon used directly on a dark field.",
+            "glyph_color": "#F4F1EC",
+            "surface": "none"
+          }
+        ]
+      },
+      "color": [
+        "Do not introduce green as a presentation accent. Preserve exact canonical asset identity when a required source contains green."
+      ],
+      "geometry": [
+        "Core information modules use square corners or an optically negligible radius.",
+        "Rounded media frames may use a restrained radius only when inherited from a photographed or embedded interface.",
+        "Avoid repeated floating cards. Build a composed page from fields, rules, blocks, and negative space."
+      ],
+      "typography": {
+        "font_family_policy": "agent_observed",
+        "italics_allowed": true,
+        "tracking_allowed": true
+      },
+      "composition": [
+        "Each slide has one dominant statement or visual field.",
+        "Use asymmetry deliberately and balance it through scale, alignment, and empty space.",
+        "Use blocks to organize evidence. Do not imitate a product dashboard."
+      ],
+      "reconstruction": [
+        "The Agent decides which visual regions carry irreducible texture and may remain raster.",
+        "Mechanical validation confirms package and geometry facts only. The Agent must visually compare the accepted image, measured overlay, rendered PowerPoint, and difference view before release.",
+        "Connector routes require an Agent-authored visual route decision. A script-generated route is only a candidate."
+      ]
+    },
+    "reconstruction_guidance": {
+      "palette_authority": "The accepted image supplies observed colors. Profile swatches are starting points, not a closed whitelist. Preserve quiet chromatic variations when they support the composition.",
+      "color_alignment": "The host decides which objects intentionally share a color role. Sample interior pixels and inspect antialiasing, grain, shadows, transparency, and local contrast before selecting one shared color. Do not quantize photographs or paper texture globally.",
+      "font_authority": "Match visible type using available fonts and rendered comparisons. Font identity inferred from a raster is uncertain. Declare substitutions, preserve typewriter rhythm and handwriting where meaningful, and retain inseparable lettering as raster.",
+      "typography": "Use serif, sans, typewriter, and handwritten voices according to the approved composition. No mandatory serif title. Keep essential text legible.",
+      "raster_reuse": "Prefer existing sharp crops at their intended display size. Preserve intrinsic lettering, layered paper, and background texture. Regenerate only when a specific quality or separation problem justifies it."
+    },
+    "visual_reference_priorities": {
+      "modern_blocks": [
+        "personal-monochrome-system",
+        "personal-dark-editorial-grid"
+      ],
+      "editorial_archive": [
+        "personal-editorial-archive",
+        "human-model-cognition-user-reference"
+      ],
+      "dark_editorial": [
+        "personal-dark-editorial-grid",
+        "personal-monochrome-system"
+      ]
+    }
+  },
+  "derived": {
+    "generation_region_px": [
+      1672,
+      941
+    ],
+    "generation_offset_y_px": 0,
+    "generation_aspect_ratio": 1.776833,
+    "header_height_px": 0,
+    "footer_height_px": 0,
+    "profile_id": "personal-website",
+    "profile_path": "project-source/profiles/personal-website/profile.json",
+    "profiles_root": "project-source/profiles",
+    "profile_name": "Personal Website",
+    "profile_visual_reference_priorities": {
+      "modern_blocks": [
+        "personal-monochrome-system",
+        "personal-dark-editorial-grid"
+      ],
+      "editorial_archive": [
+        "personal-editorial-archive",
+        "human-model-cognition-user-reference"
+      ],
+      "dark_editorial": [
+        "personal-dark-editorial-grid",
+        "personal-monochrome-system"
+      ]
+    },
+    "density_profile": "balanced_consulting",
+    "density_guidance": {
+      "generation_guidance": [
+        "Use the substantive canvas efficiently while retaining clear separation between information groups.",
+        "Balance whitespace across the composition rather than leaving one large accidental dead zone."
+      ],
+      "visual_review_guidance": [
+        "Reject conspicuous unused peripheral regions that do not support hierarchy.",
+        "Keep the page readable without making it sparse or crowded."
+      ]
+    },
+    "resolution_precedence": [
+      "base_config",
+      "external_profile",
+      "session_overrides",
+      "explicit_slide_intent"
+    ]
+  }
+}

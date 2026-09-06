@@ -1,0 +1,296 @@
+{
+  "source_run": "examples/personal-thinking-system/run",
+  "revision_reason": "User requested consistent recurring Field Notes typography across all five pages. Existing generated targets and unique artwork are retained.",
+  "files": [
+    {
+      "path": "work/resolved-config.json",
+      "sha256": "9fbc32bac924c5d2426f1f2adfa0451146c0438ceaf76d415e42e99f5b5dd80a",
+      "retained_copy": "work/folio-calibration/originals/work/resolved-config.json"
+    },
+    {
+      "path": "work/deck-scenes.json",
+      "sha256": "b0b5ef2cbfab69f92b6fb9ee293872195f990215321e6da637984ca940d0c2de",
+      "retained_copy": "work/folio-calibration/originals/work/deck-scenes.json"
+    },
+    {
+      "path": "work/deck-review.json",
+      "sha256": "0787de8d9c252134ee3944c200081ad3fb0d44404202f9e4631e8f40cea98d9a",
+      "retained_copy": "work/folio-calibration/originals/work/deck-review.json"
+    },
+    {
+      "path": "slides/s01-opening/work/semantic-map.json",
+      "sha256": "662809eba0dc6b8fcd927908f67c7f0b42177af0080b855de7361205553d5f1d",
+      "retained_copy": "work/folio-calibration/originals/slides/s01-opening/work/semantic-map.json"
+    },
+    {
+      "path": "slides/s01-opening/work/reconstruction-handoff.json",
+      "sha256": "d53af5810d54078885570ed2135a2d0dd01def8cf9421142536e690f654f957f",
+      "retained_copy": "work/folio-calibration/originals/slides/s01-opening/work/reconstruction-handoff.json"
+    },
+    {
+      "path": "slides/s01-opening/work/generation-review.json",
+      "sha256": "fadd3c869b453fc115f69e81883788f20b18a90ea72f3b5e57fb80168b4d0993",
+      "retained_copy": "work/folio-calibration/originals/slides/s01-opening/work/generation-review.json"
+    },
+    {
+      "path": "slides/s01-opening/work/measurement-review.json",
+      "sha256": "61083fffcb8507a5cfaf27019f77797f51221048cd648eec5eb687346a8910da",
+      "retained_copy": "work/folio-calibration/originals/slides/s01-opening/work/measurement-review.json"
+    },
+    {
+      "path": "slides/s01-opening/work/reconstruction-review.json",
+      "sha256": "b668712ae94caedbba3eafa0550f60ba81596b452b86fe1b9c95a39ec83a4f76",
+      "retained_copy": "work/folio-calibration/originals/slides/s01-opening/work/reconstruction-review.json"
+    },
+    {
+      "path": "slides/s01-opening/work/release-evidence.json",
+      "sha256": "9440d09159fcce9ccbd639b0f1cf9b8a393f37b692ac2dd6ac9ace2d0a8f1ace",
+      "retained_copy": "work/folio-calibration/originals/slides/s01-opening/work/release-evidence.json"
+    },
+    {
+      "path": "slides/s01-opening/work/semantic-explanation.json",
+      "sha256": "7f337afc8f6a250f54c0cffba8b4015c19267e61aa54e241934e38628d5e9950",
+      "retained_copy": "work/folio-calibration/originals/slides/s01-opening/work/semantic-explanation.json"
+    },
+    {
+      "path": "slides/s01-opening/work/reconstruction/constructor-scene.json",
+      "sha256": "f642a62ba7943214a7699f96b8dac681c606d6b1151b1f2495c98207707c7b1f",
+      "retained_copy": "work/folio-calibration/originals/slides/s01-opening/work/reconstruction/constructor-scene.json"
+    },
+    {
+      "path": "slides/s01-opening/deliverables/slide.pptx",
+      "sha256": "036175094546f9f5fb885be1a85da507a87b58113bbe257735fcec7f9b2f66d4",
+      "retained_copy": "work/folio-calibration/originals/slides/s01-opening/deliverables/slide.pptx"
+    },
+    {
+      "path": "slides/s01-opening/deliverables/render.png",
+      "sha256": "5cfa52ace4bae0a275f64ff54db68788f046f059bb96bf3a8833852138af1d35",
+      "retained_copy": "work/folio-calibration/originals/slides/s01-opening/deliverables/render.png"
+    },
+    {
+      "path": "slides/s01-opening/deliverables/comparison.png",
+      "sha256": "8c23804d2f93023e801d992e5260080bf7df4702f3e98c4f0118f52479dfc20e",
+      "retained_copy": "work/folio-calibration/originals/slides/s01-opening/deliverables/comparison.png"
+    },
+    {
+      "path": "slides/s02-question/work/semantic-map.json",
+      "sha256": "dd006525d6e71239ea0812599891cb586ecf99f99e74cf2753333381b1dd70b1",
+      "retained_copy": "work/folio-calibration/originals/slides/s02-question/work/semantic-map.json"
+    },
+    {
+      "path": "slides/s02-question/work/reconstruction-handoff.json",
+      "sha256": "03c0e5443dc892116f89c62f3c4a0d29bc09b7b3a806df155fb39bb2634bcb8e",
+      "retained_copy": "work/folio-calibration/originals/slides/s02-question/work/reconstruction-handoff.json"
+    },
+    {
+      "path": "slides/s02-question/work/generation-review.json",
+      "sha256": "66389a2fcc9bdb9329e2e0f2d7d2798bdadf977bb190e42c214f1623d769edbf",
+      "retained_copy": "work/folio-calibration/originals/slides/s02-question/work/generation-review.json"
+    },
+    {
+      "path": "slides/s02-question/work/measurement-review.json",
+      "sha256": "79872c343fdc06dad1021b6e794078596daef2357e9a9f12213c683c7976b569",
+      "retained_copy": "work/folio-calibration/originals/slides/s02-question/work/measurement-review.json"
+    },
+    {
+      "path": "slides/s02-question/work/reconstruction-review.json",
+      "sha256": "20db3633e37477acf3fe26b4f584d1a798b93e72db8dd49e10875a92b886bca7",
+      "retained_copy": "work/folio-calibration/originals/slides/s02-question/work/reconstruction-review.json"
+    },
+    {
+      "path": "slides/s02-question/work/release-evidence.json",
+      "sha256": "9440d09159fcce9ccbd639b0f1cf9b8a393f37b692ac2dd6ac9ace2d0a8f1ace",
+      "retained_copy": "work/folio-calibration/originals/slides/s02-question/work/release-evidence.json"
+    },
+    {
+      "path": "slides/s02-question/work/semantic-explanation.json",
+      "sha256": "ec759db6a22ac7d017dd3270a910a1b1d53695a66bacb9102e31c08e57a7f466",
+      "retained_copy": "work/folio-calibration/originals/slides/s02-question/work/semantic-explanation.json"
+    },
+    {
+      "path": "slides/s02-question/work/reconstruction/constructor-scene.json",
+      "sha256": "e8c430fa36c73a6bf869c1f16c9d6a8a3d3599bedc70a21dcc0e98d1a1851093",
+      "retained_copy": "work/folio-calibration/originals/slides/s02-question/work/reconstruction/constructor-scene.json"
+    },
+    {
+      "path": "slides/s02-question/deliverables/slide.pptx",
+      "sha256": "79d1fab8960ceab78d80f8edd8e0a0d47eadaecba3cb8aa5556922d7e126d9b1",
+      "retained_copy": "work/folio-calibration/originals/slides/s02-question/deliverables/slide.pptx"
+    },
+    {
+      "path": "slides/s02-question/deliverables/render.png",
+      "sha256": "5477bfd40f06e05757fee48f13f745fff36f28aaf9e862841316b18fbd046b64",
+      "retained_copy": "work/folio-calibration/originals/slides/s02-question/deliverables/render.png"
+    },
+    {
+      "path": "slides/s02-question/deliverables/comparison.png",
+      "sha256": "550d04ba4e62d3949da84f9d50453767cda1bf60573d32bc66d2c0d5aa00e441",
+      "retained_copy": "work/folio-calibration/originals/slides/s02-question/deliverables/comparison.png"
+    },
+    {
+      "path": "slides/s03-practice/work/semantic-map.json",
+      "sha256": "cb1f77e93831d07c18312f72efc289e2adb89901e69a3a132f39798281479e61",
+      "retained_copy": "work/folio-calibration/originals/slides/s03-practice/work/semantic-map.json"
+    },
+    {
+      "path": "slides/s03-practice/work/reconstruction-handoff.json",
+      "sha256": "a069be5ed6447511c23feacd69488957976dfe4d3f36831b625f12d26be27ec4",
+      "retained_copy": "work/folio-calibration/originals/slides/s03-practice/work/reconstruction-handoff.json"
+    },
+    {
+      "path": "slides/s03-practice/work/generation-review.json",
+      "sha256": "3cb99f39882b4aa76e4c17fc67b1425cbe2d49597634e19600419feab73b40f0",
+      "retained_copy": "work/folio-calibration/originals/slides/s03-practice/work/generation-review.json"
+    },
+    {
+      "path": "slides/s03-practice/work/measurement-review.json",
+      "sha256": "fed11e0935d7e1f2859c2970d442a25b9de0ebf85ccc661c52fc4a974adbce2c",
+      "retained_copy": "work/folio-calibration/originals/slides/s03-practice/work/measurement-review.json"
+    },
+    {
+      "path": "slides/s03-practice/work/reconstruction-review.json",
+      "sha256": "92c14a946b264d273c4ad3d3dc51e0287345aa2b029732efd85bb402dcfde5c8",
+      "retained_copy": "work/folio-calibration/originals/slides/s03-practice/work/reconstruction-review.json"
+    },
+    {
+      "path": "slides/s03-practice/work/release-evidence.json",
+      "sha256": "9440d09159fcce9ccbd639b0f1cf9b8a393f37b692ac2dd6ac9ace2d0a8f1ace",
+      "retained_copy": "work/folio-calibration/originals/slides/s03-practice/work/release-evidence.json"
+    },
+    {
+      "path": "slides/s03-practice/work/semantic-explanation.json",
+      "sha256": "ea8982f9ff91b325de6c4cc49690f2761cbae5f7a8c94906ec80631ad2d668df",
+      "retained_copy": "work/folio-calibration/originals/slides/s03-practice/work/semantic-explanation.json"
+    },
+    {
+      "path": "slides/s03-practice/work/reconstruction/constructor-scene.json",
+      "sha256": "4e449e15361eb0d335d5cbe9992a8c40be4f812d315c3326620a725b12798412",
+      "retained_copy": "work/folio-calibration/originals/slides/s03-practice/work/reconstruction/constructor-scene.json"
+    },
+    {
+      "path": "slides/s03-practice/deliverables/slide.pptx",
+      "sha256": "e970d837f51398cd6ad3d99f88458b53a1d26c7522a4d5a74e4ff45f3e3136e9",
+      "retained_copy": "work/folio-calibration/originals/slides/s03-practice/deliverables/slide.pptx"
+    },
+    {
+      "path": "slides/s03-practice/deliverables/render.png",
+      "sha256": "d91fb191dd017776dba0cd53f57e25bf530868d7e69a30415fa9e179e067b73c",
+      "retained_copy": "work/folio-calibration/originals/slides/s03-practice/deliverables/render.png"
+    },
+    {
+      "path": "slides/s03-practice/deliverables/comparison.png",
+      "sha256": "e5cd79062b4da20a20034053c9cbc046d53865dc3aeb1fe2f6eb85f33855d738",
+      "retained_copy": "work/folio-calibration/originals/slides/s03-practice/deliverables/comparison.png"
+    },
+    {
+      "path": "slides/s04-trace/work/semantic-map.json",
+      "sha256": "70528328188a6e8b9f77ce98b6b2688cb448e7e49e4f246ee17d99836d659f44",
+      "retained_copy": "work/folio-calibration/originals/slides/s04-trace/work/semantic-map.json"
+    },
+    {
+      "path": "slides/s04-trace/work/reconstruction-handoff.json",
+      "sha256": "dd82ca2df2eb3bb8488490b424b1e74ff50fbcfdf39d40e50993f77302bc15ae",
+      "retained_copy": "work/folio-calibration/originals/slides/s04-trace/work/reconstruction-handoff.json"
+    },
+    {
+      "path": "slides/s04-trace/work/generation-review.json",
+      "sha256": "753b44a7d7cdd90852903aca2b7895bdc8230507bae1aefaaaf0b050d6cbb6d2",
+      "retained_copy": "work/folio-calibration/originals/slides/s04-trace/work/generation-review.json"
+    },
+    {
+      "path": "slides/s04-trace/work/measurement-review.json",
+      "sha256": "0bab9116809e95647e5baf75ad336ae5a9f5abc29667225d19be8a2586d7a221",
+      "retained_copy": "work/folio-calibration/originals/slides/s04-trace/work/measurement-review.json"
+    },
+    {
+      "path": "slides/s04-trace/work/reconstruction-review.json",
+      "sha256": "7d4f710c2848fd09c2de7a0e67be9f96f8230a815ff3d0b45f09c0d976e277bb",
+      "retained_copy": "work/folio-calibration/originals/slides/s04-trace/work/reconstruction-review.json"
+    },
+    {
+      "path": "slides/s04-trace/work/release-evidence.json",
+      "sha256": "9440d09159fcce9ccbd639b0f1cf9b8a393f37b692ac2dd6ac9ace2d0a8f1ace",
+      "retained_copy": "work/folio-calibration/originals/slides/s04-trace/work/release-evidence.json"
+    },
+    {
+      "path": "slides/s04-trace/work/semantic-explanation.json",
+      "sha256": "180462523f6b2caa5e55958c7d827b8281624f7c187d9a93595c74c194f06d27",
+      "retained_copy": "work/folio-calibration/originals/slides/s04-trace/work/semantic-explanation.json"
+    },
+    {
+      "path": "slides/s04-trace/work/reconstruction/constructor-scene.json",
+      "sha256": "2b5f96bf61d027f4eeab136aea3d0b48273e2be3d4209ea06f6a202df62df31c",
+      "retained_copy": "work/folio-calibration/originals/slides/s04-trace/work/reconstruction/constructor-scene.json"
+    },
+    {
+      "path": "slides/s04-trace/deliverables/slide.pptx",
+      "sha256": "22321adcb326d1407a2cee2f42e480a9f4be7676fe2bc91f70d785a448f7a463",
+      "retained_copy": "work/folio-calibration/originals/slides/s04-trace/deliverables/slide.pptx"
+    },
+    {
+      "path": "slides/s04-trace/deliverables/render.png",
+      "sha256": "074767717d7f84f90a34470ddf8ae947d1747566c596e38fb122b1d7aff6eb67",
+      "retained_copy": "work/folio-calibration/originals/slides/s04-trace/deliverables/render.png"
+    },
+    {
+      "path": "slides/s04-trace/deliverables/comparison.png",
+      "sha256": "58e941a2888d8fc74d7c396bd81c5a2a87b3e5723628c0ad8852433e8a338f29",
+      "retained_copy": "work/folio-calibration/originals/slides/s04-trace/deliverables/comparison.png"
+    },
+    {
+      "path": "slides/s05-close/work/semantic-map.json",
+      "sha256": "8f07a541eeeac8710c7cf6fa9dbdb2f1081cc4f5a7b140aae1d0531ac0abaa82",
+      "retained_copy": "work/folio-calibration/originals/slides/s05-close/work/semantic-map.json"
+    },
+    {
+      "path": "slides/s05-close/work/reconstruction-handoff.json",
+      "sha256": "dd82ca2df2eb3bb8488490b424b1e74ff50fbcfdf39d40e50993f77302bc15ae",
+      "retained_copy": "work/folio-calibration/originals/slides/s05-close/work/reconstruction-handoff.json"
+    },
+    {
+      "path": "slides/s05-close/work/generation-review.json",
+      "sha256": "b05290f832772bf3aaa440cd1abff576ea241abc5fc3bf4bd9b2c92522e8eb7c",
+      "retained_copy": "work/folio-calibration/originals/slides/s05-close/work/generation-review.json"
+    },
+    {
+      "path": "slides/s05-close/work/measurement-review.json",
+      "sha256": "e53a8377098727029e833dc29c78d9ae9056ff8a160eb698764702007d3efd32",
+      "retained_copy": "work/folio-calibration/originals/slides/s05-close/work/measurement-review.json"
+    },
+    {
+      "path": "slides/s05-close/work/reconstruction-review.json",
+      "sha256": "3e3178640bc3787a4c9238c5c5a3bf4d4d8078b4ea5eca9b776753b6240a5f7d",
+      "retained_copy": "work/folio-calibration/originals/slides/s05-close/work/reconstruction-review.json"
+    },
+    {
+      "path": "slides/s05-close/work/release-evidence.json",
+      "sha256": "9440d09159fcce9ccbd639b0f1cf9b8a393f37b692ac2dd6ac9ace2d0a8f1ace",
+      "retained_copy": "work/folio-calibration/originals/slides/s05-close/work/release-evidence.json"
+    },
+    {
+      "path": "slides/s05-close/work/semantic-explanation.json",
+      "sha256": "64cca04a8f78afa5c73d9e7209e05e89667e0bc7e935fa0a69037933aa6f696c",
+      "retained_copy": "work/folio-calibration/originals/slides/s05-close/work/semantic-explanation.json"
+    },
+    {
+      "path": "slides/s05-close/work/reconstruction/constructor-scene.json",
+      "sha256": "43be8beca9b40b5045a5b9bfc2aa2b4a5ceba47da3a92c38ebdb00135fc295c8",
+      "retained_copy": "work/folio-calibration/originals/slides/s05-close/work/reconstruction/constructor-scene.json"
+    },
+    {
+      "path": "slides/s05-close/deliverables/slide.pptx",
+      "sha256": "9bca7765e2b8640367039462febf36d8b1b0413e433497eaa59f48363cf5d733",
+      "retained_copy": "work/folio-calibration/originals/slides/s05-close/deliverables/slide.pptx"
+    },
+    {
+      "path": "slides/s05-close/deliverables/render.png",
+      "sha256": "cdecfd143fd11e83b7b6ee615a9c9ad0a9fddc4669c7669ece7d126781d1b272",
+      "retained_copy": "work/folio-calibration/originals/slides/s05-close/deliverables/render.png"
+    },
+    {
+      "path": "slides/s05-close/deliverables/comparison.png",
+      "sha256": "6118c9a30c8a2d15b939d3ca1c3a4a2aae1d4e2c22ab5bae7033516930b3bc01",
+      "retained_copy": "work/folio-calibration/originals/slides/s05-close/deliverables/comparison.png"
+    }
+  ]
+}

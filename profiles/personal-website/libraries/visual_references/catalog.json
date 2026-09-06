@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "items": {
+    "personal-editorial-archive": {
+      "id": "personal-editorial-archive",
+      "name": "Editorial archive",
+      "path": "editorial-archive.png",
+      "description": "Generated archival reference for translucent paper layers, typewriter metadata, sparse handwriting, and a three-stage information flow.",
+      "tags": ["personal-website", "editorial-archive", "typewriter", "handwriting", "collage"],
+      "reuse_policy": "style_and_composition_precedent_only",
+      "provenance": {"provider": "OpenAI host image generation", "created_for_profile": true}
+    },
+    "human-model-cognition-user-reference": {
+      "id": "human-model-cognition-user-reference",
+      "name": "Human and model cognition",
+      "path": "human-model-cognition-user-reference.png",
+      "description": "User-selected reference for archival collage, old paper, human and machine imagery, sparse square marks, and handwritten editorial texture.",
+      "tags": ["personal-website", "user-selected", "editorial-archive", "collage", "cognition"],
+      "reuse_policy": "style_reference_only",
+      "provenance": {"provider": "user supplied in conversation", "exact_identity_required": true}
+    }
+  }
+}

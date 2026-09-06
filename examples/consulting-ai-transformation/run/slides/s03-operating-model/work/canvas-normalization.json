@@ -1,0 +1,26 @@
+{
+  "source": {
+    "path": "generated-original.png",
+    "sha256": "2f5b611ad8cfbd51ab8a2b0d4d4d2c2c392318118d074d473f23040e22e8d3ff"
+  },
+  "output": {
+    "path": "accepted-slide.png",
+    "sha256": "c8ead882cc20d711d3079b79629448058d9fb0c80716cf7154ccf3ce4cae11b6"
+  },
+  "source_px": [
+    1774,
+    887
+  ],
+  "target_px": [
+    1920,
+    960
+  ],
+  "crop": null,
+  "placement_px": [
+    0,
+    0,
+    1920,
+    960
+  ],
+  "method": "packaged normalize_generation_canvas.py, full-image aspect-preserving resize"
+}

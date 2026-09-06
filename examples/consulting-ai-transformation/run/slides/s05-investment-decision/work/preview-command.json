@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/Users/henry/Codes/AI_slide_drafting/.venv/bin/python",
+    "/Users/henry/Codes/AI_slide_drafting/slidepoise/scripts/slidepoise_runtime.py",
+    "render-preview",
+    "--pptx",
+    "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s05-investment-decision/deliverables/slide.pptx",
+    "--output",
+    "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s05-investment-decision/deliverables/render.png",
+    "--dpi",
+    "160"
+  ],
+  "path_override": "/Users/henry/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/Users/henry/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Users/henry/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin:/usr/bin:/bin",
+  "office_wrapper": "/Users/henry/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
+  "pdftoppm_wrapper": "/Users/henry/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/pdftoppm"
+}

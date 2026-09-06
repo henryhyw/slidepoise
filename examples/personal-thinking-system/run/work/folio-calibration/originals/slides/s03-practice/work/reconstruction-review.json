@@ -1,0 +1,105 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "decision": "accepted",
+  "material_issues": [],
+  "review_scope": "Inspected the accepted target, measurement overlay, final full-page render, side-by-side comparison and raw difference. Mechanical facts do not issue this decision.",
+  "stage": "reconstruction",
+  "reviewed_artifacts": [
+    {
+      "path": "accepted-slide.png",
+      "sha256": "767e54f0f34faafae4aa1985b26c3824e3ece0521a6e706cf5260579fedbe3c6"
+    },
+    {
+      "path": "semantic-map.json",
+      "sha256": "cb1f77e93831d07c18312f72efc289e2adb89901e69a3a132f39798281479e61"
+    },
+    {
+      "path": "reconstruction-handoff.json",
+      "sha256": "a069be5ed6447511c23feacd69488957976dfe4d3f36831b625f12d26be27ec4"
+    },
+    {
+      "path": "reconstruction/measurement/slide_entities.json",
+      "sha256": "f0380c228ecbbef9f1400eca9d87e8ef0c0f0d1087ca256887a6c430922421cc"
+    },
+    {
+      "path": "reconstruction/measurement/debug_overlay.png",
+      "sha256": "c21f2b2da910c79582907711b27451dc89cd8bed6be403d9605d6b17b66ba0f8"
+    },
+    {
+      "path": "reconstruction/reconstruction-contract.json",
+      "sha256": "be675b7bf4a1971ae8b32bff58dc017ffa23cf9b594af2d21b677511353f6b10"
+    },
+    {
+      "path": "reconstruction/constructor-scene.json",
+      "sha256": "4e449e15361eb0d335d5cbe9992a8c40be4f812d315c3326620a725b12798412"
+    },
+    {
+      "path": "../deliverables/slide.pptx",
+      "sha256": "e970d837f51398cd6ad3d99f88458b53a1d26c7522a4d5a74e4ff45f3e3136e9"
+    },
+    {
+      "path": "../deliverables/render.png",
+      "sha256": "d91fb191dd017776dba0cd53f57e25bf530868d7e69a30415fa9e179e067b73c"
+    },
+    {
+      "path": "../deliverables/comparison.png",
+      "sha256": "e5cd79062b4da20a20034053c9cbc046d53865dc3aeb1fe2f6eb85f33855d738"
+    },
+    {
+      "path": "../deliverables/difference.png",
+      "sha256": "eeef3b58e193adad6b10f2d4d73fde6b88994b8907f0ec7434d224d7dca64422"
+    },
+    {
+      "path": "text-audit.json",
+      "sha256": "2fe4969f6c27cd80e844e525b85dbec66557f7bc5ce2be6af9b907a22901b838"
+    },
+    {
+      "path": "reconstruction/measurement/crops/connect-collage.png",
+      "sha256": "0d247387431ed497e017454897fba26c8a0e998c9e1b3e0e42b4f0d585298ee2"
+    },
+    {
+      "path": "reconstruction/measurement/crops/collect-collage.png",
+      "sha256": "40f9553191df4d344d75f1ff87dd697f1eae3fc6291681d57a4fc5795b99a9c0"
+    },
+    {
+      "path": "reconstruction/measurement/crops/challenge-collage.png",
+      "sha256": "75c860d4ab0af1f41c6cec0faa067a53f38d40e3feaa1c955ea8e5be31b0d5c8"
+    }
+  ],
+  "reasoning_summary": "Accepted for the editorial showcase after native-type, baseline and raster-boundary review.",
+  "observations": [
+    "The condensed native title now remains on one line. The production render exposed missing negative character spacing in the output package, and the structural DrawingML boundary now preserves that authored treatment.",
+    "All three native headings share one font-size group. All three explanatory captions share another, with observed Andale Mono treatment. The thin native separators preserve the column rhythm.",
+    "The three collage crops retain their original size, relative positions, handwriting and photographic texture. The caption baseline and crop edges remain separate at full-page scale."
+  ],
+  "remaining_limitations": [
+    "The generated raster does not prove an exact font identity. Bodoni 72, Arial, Andale Mono and any italic substitute are declared available-font interpretations, and exact glyph contours differ.",
+    "Photographic collage, paper grain and intrinsic depicted marks remain raster within the documented regional image objects.",
+    "The quiet page field outside those image regions is a sampled native ivory fill. Fine source grain outside the collage is not reconstructed."
+  ],
+  "raster_evidence": [
+    {
+      "path": "reconstruction/measurement/crops/connect-collage.png",
+      "sha256": "0d247387431ed497e017454897fba26c8a0e998c9e1b3e0e42b4f0d585298ee2",
+      "reviewed_by": "host_agent_visual_reasoning",
+      "action": "reuse_original",
+      "observation": "The selected source region remains legible at its final placement and retains intrinsic marks and paper edges."
+    },
+    {
+      "path": "reconstruction/measurement/crops/collect-collage.png",
+      "sha256": "40f9553191df4d344d75f1ff87dd697f1eae3fc6291681d57a4fc5795b99a9c0",
+      "reviewed_by": "host_agent_visual_reasoning",
+      "action": "reuse_original",
+      "observation": "The selected source region remains legible at its final placement and retains intrinsic marks and paper edges."
+    },
+    {
+      "path": "reconstruction/measurement/crops/challenge-collage.png",
+      "sha256": "75c860d4ab0af1f41c6cec0faa067a53f38d40e3feaa1c955ea8e5be31b0d5c8",
+      "reviewed_by": "host_agent_visual_reasoning",
+      "action": "reuse_original",
+      "observation": "The selected source region remains legible at its final placement and retains intrinsic marks and paper edges."
+    }
+  ],
+  "iteration_evidence": "iterations/initial-native-render/",
+  "visual_decision_basis": "Host inspection of visible hierarchy, line breaks, baseline positions, crop boundaries and artwork retention. No similarity score."
+}

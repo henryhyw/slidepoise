@@ -1,0 +1,253 @@
+{
+  "schema_version": "3.2.0",
+  "provenance": {
+    "created_by": "host_agent_visual_reasoning",
+    "source": "accepted_generated_image",
+    "composition_policy": "accepted_target_geometry_frozen"
+  },
+  "entities": [
+    {
+      "id": "paper-field",
+      "display_label": "Warm ivory page",
+      "kind": "shape",
+      "role": "paper-field",
+      "shape": "rectangle",
+      "bbox_hint": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 0,
+      "style_hint": {
+        "fill": "#FDFAF7",
+        "stroke": "none",
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "title-first",
+      "display_label": "A second",
+      "kind": "text",
+      "role": "title-first",
+      "text_style_role": "slide_title",
+      "text": "A second",
+      "bbox_hint": [
+        87,
+        73,
+        760,
+        226
+      ],
+      "typography_group": "opening-title",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 203
+      }
+    },
+    {
+      "id": "title-second",
+      "display_label": "thinking",
+      "kind": "text",
+      "role": "title-second",
+      "text_style_role": "slide_title",
+      "text": "thinking",
+      "bbox_hint": [
+        87,
+        257,
+        730,
+        226
+      ],
+      "typography_group": "opening-title",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 203
+      }
+    },
+    {
+      "id": "title-third",
+      "display_label": "system",
+      "kind": "text",
+      "role": "title-third",
+      "text_style_role": "slide_title",
+      "text": "system",
+      "bbox_hint": [
+        91,
+        420,
+        650,
+        226
+      ],
+      "typography_group": "opening-title",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 203
+      }
+    },
+    {
+      "id": "subtitle",
+      "display_label": "Working with AI without outsourcing a point of view.",
+      "kind": "text",
+      "role": "subtitle",
+      "text_style_role": "subtitle",
+      "text": "Working with AI without outsourcing a point of view.",
+      "bbox_hint": [
+        91,
+        684,
+        700,
+        42
+      ],
+      "typography_group": "opening-subtitle",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 27
+      }
+    },
+    {
+      "id": "field-note",
+      "display_label": "FIELD NOTES / 01",
+      "kind": "text",
+      "role": "field-note",
+      "text_style_role": "emphasis_label",
+      "text": "FIELD NOTES / 01",
+      "bbox_hint": [
+        90,
+        815,
+        240,
+        32
+      ],
+      "typography_group": "page-index",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Courier New",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 22
+      }
+    },
+    {
+      "id": "footer-rule",
+      "display_label": "Short editorial rule",
+      "kind": "shape",
+      "role": "footer-rule",
+      "shape": "rectangle",
+      "bbox_hint": [
+        356,
+        829,
+        101,
+        1
+      ],
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 0,
+      "style_hint": {
+        "fill": "#77716B",
+        "stroke": "none",
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "essay-label",
+      "display_label": "An essay in five parts",
+      "kind": "text",
+      "role": "essay-label",
+      "text_style_role": "label",
+      "text": "An essay in five parts",
+      "bbox_hint": [
+        517,
+        814,
+        295,
+        34
+      ],
+      "typography_group": "essay-label",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 24
+      }
+    },
+    {
+      "id": "hand-staircase-collage",
+      "display_label": "Hand, paper and architectural staircase",
+      "kind": "image",
+      "role": "editorial_collage",
+      "visual_source_class": "novel_illustration",
+      "bbox_hint": [
+        920,
+        87,
+        678,
+        769
+      ],
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 10,
+      "raster_fit": "fill",
+      "raster_decision": {
+        "action": "reuse_original",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "reason": "The hand, staircase photograph, translucent paper and fine archival mark form one overlapping collage. This regional crop preserves its shadows and grain without including the title or subtitle.",
+        "source_dimensions_px": [
+          678,
+          769
+        ],
+        "intended_output_size_px": [
+          678,
+          769
+        ],
+        "intrinsic_text_ownership": "Handwritten and depicted marks remain part of the collage. No external presentation copy is included.",
+        "occluding_native_text_ids": []
+      },
+      "style_hint": {
+        "style_authority": "accepted_generated_image"
+      }
+    }
+  ],
+  "groups": [],
+  "relationships": [],
+  "layout_constraints": {
+    "non_overlap_pairs": []
+  }
+}

@@ -1,0 +1,15 @@
+.DS_Store
+.venv/
+node_modules/
+build/
+dist/
+__pycache__/
+*.py[cod]
+*.egg-info/
+/archive/
+/output/
+/workspace/
+slidepoise/work/
+slidepoise/deliverables/
+skill.zip
+/examples/*/deliverables/source-bundle.zip

@@ -1,0 +1,58 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "stage": "reconstruction",
+  "decision": "accepted",
+  "material_issues": [],
+  "reviewed_artifacts": [
+    {
+      "path": "accepted-slide.png",
+      "sha256": "65320ec1e13c44d39f96dd36d5159195731aeb7b1a7444dff652f1bf3f4b24e7"
+    },
+    {
+      "path": "reconstruction/constructor-scene.json",
+      "sha256": "971a749282843338345ae58c3be00c77351e12c7a874cacf4f880d0ebdf9dda8"
+    },
+    {
+      "path": "../deliverables/slide.pptx",
+      "sha256": "250640f29ae76fdf4343921c12f57a09dd0cfeb7a41b2a5766ce629ef7b92b51"
+    },
+    {
+      "path": "../deliverables/render.png",
+      "sha256": "683868ff0e678c2d1e81e86159c87ccbf817af4ab97d5fd969b9bd021228df8c"
+    },
+    {
+      "path": "../deliverables/comparison.png",
+      "sha256": "8d7a971bf8a3bc7f03dcd7dceaccf323e8f4a2e024b098934a759d338b4aaf1c"
+    },
+    {
+      "path": "native-object-evidence.json",
+      "sha256": "90e3fa9e6318f47ec0d75294fb8258f748a4c0e464df93afdb5038081d80cf59"
+    },
+    {
+      "path": "native-text-audit.json",
+      "sha256": "4dc3b55ea7dd5819b2d428676cb59f5d2c960b3de8ee1fdc64212245ad74b955"
+    },
+    {
+      "path": "reconstruction/measurement/slide_entities.json",
+      "sha256": "eedee23a54be7d0d4ce691c7f5b315d24227b9abd831b52dfc5503c6477be73b"
+    },
+    {
+      "path": "reconstruction/reconstruction-contract.json",
+      "sha256": "dfa80a36ed74bb4d0f53110837f6160d2069fb06cc42623872bfbd4e736dbf30"
+    },
+    {
+      "path": "typography-evidence.json",
+      "sha256": "08ef510a51f94d926d1d592f4c81c3574cc8c9a544952dd84d725ef9b5dc92ff"
+    }
+  ],
+  "observations": [
+    "I inspected the actual headless LibreOffice full-slide render and the body-only target comparison. Georgia title position and baseline are close to the accepted source. The three evidence columns retain their separation and hierarchy, with no clipped or overlapping visible content.",
+    "The corrected unit conversion now preserves the exact authored typography. The native title is 32pt for 64 body pixels, subtitle 16pt for 32 pixels, body/sections/decision 14pt for 28 pixels and table 12pt for 24 pixels.",
+    "The native Arial table label Sampled cited claims verified wraps onto two lines within its unchanged row allocation. All four measures and thresholds remain legible. This records the real native-font difference from the narrower generated glyphs.",
+    "Both decision-band texts use the same 28-pixel peer size. The label is orange, the approval sentence is black, the fill is pale orange and the bar is the shared 8-pixel width. The source image uses a somewhat larger label and wider bar, which the deck owner deliberately resolved through shared native roles.",
+    "The $25k approval and the conditional remaining $60k are complete native text. The capacity formulas and gate thresholds are editable. The native table contains ten cells, and there are no image objects or duplicate object IDs.",
+    "Header and footer appear as inherited shared frame content, separate from the generated body. The footer carries the illustrative assumption disclosure and native page number. All 36 audited text bodies have explicit valid native text properties with zero findings.",
+    "I inspected the recalibrated actual LibreOffice render. Both opening pages now share the same title/subtitle origin, divider position and decision-band geometry. The decision label begins at x100 and message at x560, both in vertically centered 28-pixel text allocations. The calculation, table and final right-side argument remain clear above the band.",
+    "The native speaker notes preserve the planning disclosure, separate the 95% sampled-test gate from expert approval of each client release, and state the minimum 11 of 15 weekly-active users. These are audience-facing notes, separate from production instructions."
+  ]
+}

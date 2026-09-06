@@ -1,0 +1,32 @@
+{
+  "title": "A controlled path to shared AI capability",
+  "company": "",
+  "language": "en-US",
+  "theme": {
+    "display_font": "Georgia",
+    "body_font": "Arial"
+  },
+  "schema_version": "1.0",
+  "slides": [
+    {
+      "slide_id": "s01-recommendation",
+      "scene": "scenes/slide-001.json"
+    },
+    {
+      "slide_id": "s02-opportunities",
+      "scene": "scenes/slide-002.json"
+    },
+    {
+      "slide_id": "s03-operating-model",
+      "scene": "scenes/slide-003.json"
+    },
+    {
+      "slide_id": "s04-delivery-roadmap",
+      "scene": "scenes/slide-004.json"
+    },
+    {
+      "slide_id": "s05-investment-decision",
+      "scene": "scenes/slide-005.json"
+    }
+  ]
+}

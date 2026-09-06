@@ -1,0 +1,219 @@
+{
+  "schema_version": "1.0",
+  "method": "examples/rebuild.py re-resolved repository configuration in an isolated home, measured the frozen targets with OpenCV, compiled native scenes and rendered the complete deck. The portable bundle was then rendered again after the original temporary crop paths were gone. All actual previews used120 DPI.",
+  "source_pptx_sha256": "3d8499644935076fa1bf388c2ee86657ff95801aef670e1bcbb43e93af46891b",
+  "rebuilt_pptx_sha256": "1304a92e420feb84218c7859fd82352b7dd85b27b667f78e59170ce39634eab3",
+  "portable_pptx_sha256": "8e8a788ce65bdfe2090028038b7b94c23ca85b0035f56d3e7d40c54e4d6f6244",
+  "render_comparisons": [
+    {
+      "page": 1,
+      "reference_sha256": "cf24a4e03904ba72d71f8676965f5a00176c5b5007078bbc665d4957821951c3",
+      "rebuilt_sha256": "cf24a4e03904ba72d71f8676965f5a00176c5b5007078bbc665d4957821951c3",
+      "portable_sha256": "cf24a4e03904ba72d71f8676965f5a00176c5b5007078bbc665d4957821951c3",
+      "dimensions": [
+        1601,
+        900
+      ],
+      "pixels_identical": true
+    },
+    {
+      "page": 2,
+      "reference_sha256": "a1beead3cf1fb575451e1274a327ffd2b6db633a9b5a90029d5a892cd94cb884",
+      "rebuilt_sha256": "a1beead3cf1fb575451e1274a327ffd2b6db633a9b5a90029d5a892cd94cb884",
+      "portable_sha256": "a1beead3cf1fb575451e1274a327ffd2b6db633a9b5a90029d5a892cd94cb884",
+      "dimensions": [
+        1601,
+        900
+      ],
+      "pixels_identical": true
+    },
+    {
+      "page": 3,
+      "reference_sha256": "b3c20d8804e59f7768b432b4367b4bd0fa2b7bd02a47585072b2d01c366f4c86",
+      "rebuilt_sha256": "b3c20d8804e59f7768b432b4367b4bd0fa2b7bd02a47585072b2d01c366f4c86",
+      "portable_sha256": "b3c20d8804e59f7768b432b4367b4bd0fa2b7bd02a47585072b2d01c366f4c86",
+      "dimensions": [
+        1601,
+        900
+      ],
+      "pixels_identical": true
+    },
+    {
+      "page": 4,
+      "reference_sha256": "f7b6ec0db44704a145786216ae14904234396851b3f71b2456836e90b3d020cb",
+      "rebuilt_sha256": "f7b6ec0db44704a145786216ae14904234396851b3f71b2456836e90b3d020cb",
+      "portable_sha256": "f7b6ec0db44704a145786216ae14904234396851b3f71b2456836e90b3d020cb",
+      "dimensions": [
+        1601,
+        900
+      ],
+      "pixels_identical": true
+    },
+    {
+      "page": 5,
+      "reference_sha256": "63527ea90c84fbd2ba79003c5eaf4fb15551ce1091cfb6429e1d2695682dce7a",
+      "rebuilt_sha256": "63527ea90c84fbd2ba79003c5eaf4fb15551ce1091cfb6429e1d2695682dce7a",
+      "portable_sha256": "63527ea90c84fbd2ba79003c5eaf4fb15551ce1091cfb6429e1d2695682dce7a",
+      "dimensions": [
+        1601,
+        900
+      ],
+      "pixels_identical": true
+    }
+  ],
+  "native_xml_comparisons": [
+    {
+      "part": "ppt/slideLayouts/slideLayout1.xml",
+      "rebuild_identical": true,
+      "portable_identical": true
+    },
+    {
+      "part": "ppt/slides/slide1.xml",
+      "rebuild_identical": true,
+      "portable_identical": true
+    },
+    {
+      "part": "ppt/slides/slide2.xml",
+      "rebuild_identical": true,
+      "portable_identical": true
+    },
+    {
+      "part": "ppt/slides/slide3.xml",
+      "rebuild_identical": true,
+      "portable_identical": true
+    },
+    {
+      "part": "ppt/slides/slide4.xml",
+      "rebuild_identical": true,
+      "portable_identical": true
+    },
+    {
+      "part": "ppt/slides/slide5.xml",
+      "rebuild_identical": true,
+      "portable_identical": true
+    },
+    {
+      "part": "ppt/slideMasters/slideMaster1.xml",
+      "rebuild_identical": true,
+      "portable_identical": true
+    }
+  ],
+  "notes_xml_comparisons": [
+    {
+      "part": "ppt/notesSlides/notesSlide1.xml",
+      "raw_identical": false
+    },
+    {
+      "part": "ppt/notesSlides/notesSlide2.xml",
+      "raw_identical": false
+    },
+    {
+      "part": "ppt/notesSlides/notesSlide3.xml",
+      "raw_identical": false
+    },
+    {
+      "part": "ppt/notesSlides/notesSlide4.xml",
+      "raw_identical": false
+    },
+    {
+      "part": "ppt/notesSlides/notesSlide5.xml",
+      "raw_identical": false
+    }
+  ],
+  "notes_explanation": "No audience speaker_notes are authored in this essay. Historical source-reference paths change correctly with the rebuilt workspace.",
+  "original_temporary_raster_sources_missing": 8,
+  "shared_design_handoff_bindings": [
+    {
+      "slide_id": "s01-opening",
+      "resolves_after_move": true,
+      "sha256": "ba33b732616aafff1f22648cf4536809f5583401d6180733363121aa7544358e"
+    },
+    {
+      "slide_id": "s02-question",
+      "resolves_after_move": true,
+      "sha256": "ba33b732616aafff1f22648cf4536809f5583401d6180733363121aa7544358e"
+    },
+    {
+      "slide_id": "s03-practice",
+      "resolves_after_move": true,
+      "sha256": "ba33b732616aafff1f22648cf4536809f5583401d6180733363121aa7544358e"
+    },
+    {
+      "slide_id": "s04-trace",
+      "resolves_after_move": true,
+      "sha256": "ba33b732616aafff1f22648cf4536809f5583401d6180733363121aa7544358e"
+    },
+    {
+      "slide_id": "s05-close",
+      "resolves_after_move": true,
+      "sha256": "ba33b732616aafff1f22648cf4536809f5583401d6180733363121aa7544358e"
+    }
+  ],
+  "frozen_input_bindings": [
+    {
+      "path": "run/work/deck-design.json",
+      "sha256": "ba33b732616aafff1f22648cf4536809f5583401d6180733363121aa7544358e"
+    },
+    {
+      "path": "run/slides/s01-opening/work/accepted-slide.png",
+      "sha256": "924f0b9164b79959934313b7eda081b17213eef59acb6daf4edee7802d9f4379"
+    },
+    {
+      "path": "run/slides/s01-opening/work/semantic-map.json",
+      "sha256": "361e38f8ac0abfea7d83b3fa1f0223ccd44f910bca0662f77d3e80f0ebd9c3e1"
+    },
+    {
+      "path": "run/slides/s01-opening/work/reconstruction-handoff.json",
+      "sha256": "08e40ae13e861936cb5cd1d2a1138ba393bd53b50bdeec4ba14622d11fe076da"
+    },
+    {
+      "path": "run/slides/s02-question/work/accepted-slide.png",
+      "sha256": "34bc83d09851c9308f738f7f3f9eeb0c582ea76ada084b6cbc21a423dcb309cc"
+    },
+    {
+      "path": "run/slides/s02-question/work/semantic-map.json",
+      "sha256": "9dbd577ad0fe557b1fee760c7265ef05f2c4aada6e0443107882464b1b125a45"
+    },
+    {
+      "path": "run/slides/s02-question/work/reconstruction-handoff.json",
+      "sha256": "227960bcaa5ad869f4a7292654de7c4beadad1d158283ab539faef416a9391a7"
+    },
+    {
+      "path": "run/slides/s03-practice/work/accepted-slide.png",
+      "sha256": "767e54f0f34faafae4aa1985b26c3824e3ece0521a6e706cf5260579fedbe3c6"
+    },
+    {
+      "path": "run/slides/s03-practice/work/semantic-map.json",
+      "sha256": "1c8145e8772452fc60d275a594e318d6e85a1a1fe2dae65c90c3b2ea55a28f34"
+    },
+    {
+      "path": "run/slides/s03-practice/work/reconstruction-handoff.json",
+      "sha256": "691879ff81137b81717726ab71ef58017126e7a1230059d29a2fcf281e9d946a"
+    },
+    {
+      "path": "run/slides/s04-trace/work/accepted-slide.png",
+      "sha256": "5bc5488ba4a3724788d908dc177a1f83f681a889c0c26ade374439299050c02e"
+    },
+    {
+      "path": "run/slides/s04-trace/work/semantic-map.json",
+      "sha256": "3a15e3eceeb10d2fd15776e3bf849856f73366717fa9705072d76c94b9abdb23"
+    },
+    {
+      "path": "run/slides/s04-trace/work/reconstruction-handoff.json",
+      "sha256": "afd12e8e53505221f5691149374287a333d028410111a9ea7598a4ad22e85a46"
+    },
+    {
+      "path": "run/slides/s05-close/work/accepted-slide.png",
+      "sha256": "e7f6777d1eab069b3cbdedf2ff426e0cd39ef639896e7bf9af63415318ebc22c"
+    },
+    {
+      "path": "run/slides/s05-close/work/semantic-map.json",
+      "sha256": "166e508ff5bebf504623efe450438ed205e285dbb4b08166de5315a273569594"
+    },
+    {
+      "path": "run/slides/s05-close/work/reconstruction-handoff.json",
+      "sha256": "afd12e8e53505221f5691149374287a333d028410111a9ea7598a4ad22e85a46"
+    }
+  ],
+  "preview_environment_scope": "Recorded macOS LibreOffice and installed fonts. This establishes reproduction of frozen reconstruction inputs, not deterministic image generation."
+}

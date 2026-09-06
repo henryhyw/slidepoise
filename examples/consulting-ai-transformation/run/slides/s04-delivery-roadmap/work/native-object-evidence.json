@@ -1,0 +1,90 @@
+{
+  "pptx_sha256": "4f5ed5c8a1ed3a6cdc16e68b2c1cb6992d44650ddfe3f87dfad3e7766db066be",
+  "native_objects": 47,
+  "native_textboxes": 21,
+  "native_tables": 1,
+  "native_table_cells": 25,
+  "native_table_data": [
+    [
+      [
+        "WORKSTREAM / OWNER",
+        "WEEKS 1\u20132Approve & baseline",
+        "WEEKS 3\u20134Build & test",
+        "WEEKS 5\u20138Pilot & learn",
+        "WEEKS 9\u201312Prove & decide"
+      ],
+      [
+        "Data & accessSource steward",
+        "Approved corpusAccess register",
+        "Source refreshNamed stewards",
+        "Weekly access andfreshness checks",
+        "Audit closeoutRelease inventory"
+      ],
+      [
+        "Workflow & productProduct lead",
+        "Task mappingBaseline time logs",
+        "Grounded draftVisible citations",
+        "15-user pilotDefect fixes",
+        "Release candidateRunbook"
+      ],
+      [
+        "Quality & controlsExpert reviewer",
+        "Risk boundariesReview criteria",
+        "Test packRejection reasons",
+        "10 reviewed tasksError triage",
+        "20 completed tasksGate evidence"
+      ],
+      [
+        "Adoption & valuePractice lead",
+        "Sponsor & usersAgree tracking",
+        "Training & supportMeasurement plan",
+        "Weekly usageFeedback sessions",
+        "Benefit caseScale recommendation"
+      ]
+    ]
+  ],
+  "native_picture_objects": 0,
+  "duplicate_shape_ids": [],
+  "typography_groups": [
+    {
+      "name": "claim-title",
+      "font_size_px": 64.0,
+      "reduced_from_target": false
+    },
+    {
+      "name": "subtitle",
+      "font_size_px": 32.0,
+      "reduced_from_target": false
+    },
+    {
+      "name": "section-headings",
+      "font_size_px": 28.0,
+      "reduced_from_target": false
+    },
+    {
+      "name": "gate-labels",
+      "font_size_px": 32.0,
+      "reduced_from_target": false
+    },
+    {
+      "name": "gate-weeks",
+      "font_size_px": 28.0,
+      "reduced_from_target": false
+    },
+    {
+      "name": "gate-evidence",
+      "font_size_px": 24.0,
+      "reduced_from_target": false
+    },
+    {
+      "name": "dependency-statements",
+      "font_size_px": 28.0,
+      "reduced_from_target": false
+    },
+    {
+      "name": "decision-band",
+      "font_size_px": 28.0,
+      "reduced_from_target": false
+    }
+  ]
+}

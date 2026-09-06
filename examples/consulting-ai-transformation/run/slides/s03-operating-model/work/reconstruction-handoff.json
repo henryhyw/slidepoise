@@ -1,0 +1,21 @@
+{
+  "selected_assets": [],
+  "sources": [
+    "Host-authored illustrative Northstar Advisory planning model"
+  ],
+  "speaker_notes": [
+    "This is an illustrative planning scenario. Twenty paired tasks represent one research task from each of twenty pilot engagements, with ten tasks at the week-eight interim review. The sampled 95% claim-verification gate measures pilot quality. Every client claim still requires expert sign-off and every client release requires engagement-lead approval.",
+    "The two curved feedback paths are editable native freeforms. They preserve the observed direction and curve geometry, but moving the table or its columns in Office does not automatically reattach these paths."
+  ],
+  "notes": [
+    "Twenty measured tasks correspond to twenty pilot engagements, with one comparable research task per engagement. The week-eight interim measurement contains ten tasks.",
+    "The sampled 95% claim-verification gate is an experimental quality measure. Every client claim still requires expert sign-off, and every client release requires engagement-lead approval.",
+    "The 70% weekly-active user threshold means at least eleven of fifteen users. It is measured across the pilot team.",
+    "All substantive content is native editable text, shapes, one 25-cell table, three straight native lines and two open cubic freeforms. No raster objects are needed.",
+    "The cubic feedback paths retain the observed round corners. The return heads and tails are aligned with the named responsibility columns at the table bottom. They are editable freeform paths and do not automatically reattach after moving a table column in Office.",
+    "Forward connectors retain source and target ownership in the semantic contract and are regenerated from those owners. The emitted Office lines are positioned geometry and do not claim automatic shape attachment.",
+    "Source coordinates were observed on this 1920 by 960 accepted body. The shared frame adds sixty-four pixels above and fifty-six below. Shared Georgia64, Arial32/28/24 and decision28 remain unchanged.",
+    "Generated narrow glyphs are not reproduced through text compression. Normal native wrapping and local paragraph rhythm preserve Arial28 in the narrow supporting column. Feedback captions use the shared24-pixel label level.",
+    "The cross-page host review sets title x48 y19, subtitle x48 y103 and the shared decision band at x48 y793 with height134. The two 28-pixel decision texts share a vertically centered 52-pixel allocation at y832, with label x100 and message x560. Original ink-search windows remain bound to the accepted source."
+  ]
+}

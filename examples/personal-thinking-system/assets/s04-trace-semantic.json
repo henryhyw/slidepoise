@@ -1,0 +1,99 @@
+{
+  "purpose": "Host-authored explanation of selected semantic groups. The full semantic map remains the reconstruction input.",
+  "source_semantic_map": "semantic-map.json",
+  "source_sha256": "3a15e3eceeb10d2fd15776e3bf849856f73366717fa9705072d76c94b9abdb23",
+  "entities": [
+    {
+      "id": "explanation-1",
+      "kind": "text",
+      "display_label": "Editable three-line title",
+      "bbox_hint": [
+        91,
+        91,
+        505,
+        324
+      ],
+      "source_member_ids": [
+        "title-first",
+        "title-second",
+        "title-third"
+      ]
+    },
+    {
+      "id": "explanation-2",
+      "kind": "image",
+      "display_label": "Preserved notebook photograph",
+      "bbox_hint": [
+        91,
+        505,
+        279,
+        205
+      ],
+      "source_member_ids": [
+        "notebook"
+      ]
+    },
+    {
+      "id": "explanation-3",
+      "kind": "text",
+      "display_label": "Editable four-part reasoning ledger",
+      "bbox_hint": [
+        610,
+        172,
+        575,
+        624
+      ],
+      "source_member_ids": [
+        "record-number-0",
+        "record-separator-0",
+        "record-heading-0",
+        "record-question-0",
+        "record-rule-0",
+        "record-number-1",
+        "record-separator-1",
+        "record-heading-1",
+        "record-question-1",
+        "record-rule-1",
+        "record-number-2",
+        "record-separator-2",
+        "record-heading-2",
+        "record-question-2",
+        "record-rule-2",
+        "record-number-3",
+        "record-separator-3",
+        "record-heading-3",
+        "record-question-3"
+      ]
+    },
+    {
+      "id": "explanation-4",
+      "kind": "image",
+      "display_label": "Preserved archive collage",
+      "bbox_hint": [
+        1209,
+        122,
+        407,
+        691
+      ],
+      "source_member_ids": [
+        "archive-collage"
+      ]
+    },
+    {
+      "id": "explanation-publication-folio",
+      "kind": "text",
+      "display_label": "Series identity, before calibration",
+      "bbox_hint": [
+        90,
+        868,
+        380,
+        35
+      ],
+      "source_member_ids": [
+        "folio"
+      ],
+      "region_basis": "Original target allocation. The native publication role now uses the common deck allocation."
+    }
+  ],
+  "revision_note": "The recurring publication folio is calibrated after user review. Existing generated targets remain retained full-slide historical sources."
+}

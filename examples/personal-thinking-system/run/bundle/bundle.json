@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "manifest": "deck-scenes.json",
+  "slide_ids": [
+    "s01-opening",
+    "s02-question",
+    "s03-practice",
+    "s04-trace",
+    "s05-close"
+  ],
+  "evidence": [
+    "evidence/deck-design.json"
+  ],
+  "files": [
+    {
+      "path": "assets/0d247387431ed497e017454897fba26c8a0e998c9e1b3e0e42b4f0d585298ee2.png",
+      "sha256": "0d247387431ed497e017454897fba26c8a0e998c9e1b3e0e42b4f0d585298ee2",
+      "bytes": 219155
+    },
+    {
+      "path": "assets/40f9553191df4d344d75f1ff87dd697f1eae3fc6291681d57a4fc5795b99a9c0.png",
+      "sha256": "40f9553191df4d344d75f1ff87dd697f1eae3fc6291681d57a4fc5795b99a9c0",
+      "bytes": 214375
+    },
+    {
+      "path": "assets/4d93c8c58062821e2f8369a2fa847a4ab22b226704a9d43b1248120696723314.png",
+      "sha256": "4d93c8c58062821e2f8369a2fa847a4ab22b226704a9d43b1248120696723314",
+      "bytes": 360270
+    },
+    {
+      "path": "assets/75c860d4ab0af1f41c6cec0faa067a53f38d40e3feaa1c955ea8e5be31b0d5c8.png",
+      "sha256": "75c860d4ab0af1f41c6cec0faa067a53f38d40e3feaa1c955ea8e5be31b0d5c8",
+      "bytes": 215932
+    },
+    {
+      "path": "assets/7770a49b22786b9a053aec5c30a47c6925d168db1b81adc69f6c4f250ca2498b.png",
+      "sha256": "7770a49b22786b9a053aec5c30a47c6925d168db1b81adc69f6c4f250ca2498b",
+      "bytes": 369908
+    },
+    {
+      "path": "assets/aa3357b710730f9a6d07170e2f7b7947bc37a2ab736d06d85ccdb490e8783fdd.png",
+      "sha256": "aa3357b710730f9a6d07170e2f7b7947bc37a2ab736d06d85ccdb490e8783fdd",
+      "bytes": 599956
+    },
+    {
+      "path": "assets/aa55ea0ce2d7ea4fd741195aa6f37e37344dc3d98c37de384bd59d7f10be0d5d.png",
+      "sha256": "aa55ea0ce2d7ea4fd741195aa6f37e37344dc3d98c37de384bd59d7f10be0d5d",
+      "bytes": 230527
+    },
+    {
+      "path": "assets/cbd98096073a8747abd3f2c428a65e6f00f7748fd0ff49e6e798437414ca474f.png",
+      "sha256": "cbd98096073a8747abd3f2c428a65e6f00f7748fd0ff49e6e798437414ca474f",
+      "bytes": 90875
+    },
+    {
+      "path": "deck-scenes.json",
+      "sha256": "4281083ebaa42eb07733e43b197f897454cc1028d4fb75d224e603a1181c11af",
+      "bytes": 626
+    },
+    {
+      "path": "evidence/deck-design.json",
+      "sha256": "ba33b732616aafff1f22648cf4536809f5583401d6180733363121aa7544358e",
+      "bytes": 4321
+    },
+    {
+      "path": "scenes/slide-001.json",
+      "sha256": "b09df70c7f55af9e2de33617c460013f9d1404adf377fb7d4fe67e925b4548ff",
+      "bytes": 14192
+    },
+    {
+      "path": "scenes/slide-002.json",
+      "sha256": "7d32a9ff502925cc58dcf1b835f23af00e5aa482436f6571d97ebb169d1297b2",
+      "bytes": 16328
+    },
+    {
+      "path": "scenes/slide-003.json",
+      "sha256": "83245450db993ef624a5deb677852cf00eb1a530e65bd059cc83e3c051e47e82",
+      "bytes": 19579
+    },
+    {
+      "path": "scenes/slide-004.json",
+      "sha256": "7732d7dd22eb1d33987460cf86e31289b575866500c2ca6f0b3edb20a024f67f",
+      "bytes": 31699
+    },
+    {
+      "path": "scenes/slide-005.json",
+      "sha256": "c17aff1acd86d031be80e84ceebc7b6942cf6c848b852449f9322810071d2514",
+      "bytes": 13943
+    }
+  ]
+}

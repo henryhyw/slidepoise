@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "design_id": "editorial-field-notes-publication-identity-v2",
+  "purpose": "The Agent reviewed five existing pages and applied the user's requested consistent Field Notes identity. Original generated targets and artwork remain historical source material. No new generation call was made.",
+  "frame_source": "resolved-config.json#/design/frame",
+  "repeated_roles": {
+    "publication_folio": {
+      "purpose": "The Field Notes series label and current essay part number on every page.",
+      "recognition_evidence": "The same FIELD NOTES publication identity and changing 01 to 05 part suffix appear at the bottom of all five actual pages, under two different local entity aliases. Original native fonts were Andale Mono regular12/10/9.5pt and Arial bold9.5/12pt, with wide tracking on the final page.",
+      "chosen_style": {
+        "font_family": "Andale Mono",
+        "font_size_pt": 12,
+        "font_weight": "regular",
+        "italic": false,
+        "character_spacing_pt": 0,
+        "color": "#242321",
+        "alignment": "left"
+      },
+      "placement_convention": "One lower-left native allocation at [86,830,287,36] on the 1600x900 scene. Semantic bbox [90,868,300,38] on the retained 1672x941 target, with target21px, produces native12pt. Uppercase FIELD NOTES / NN, top-anchored, normal leading. No repeated rule. Existing local folios are retained for this authorized revision of full-slide historical targets. Future generation follows the inherited-frame policy.",
+      "page_aliases": [
+        {
+          "slide_id": "s01-opening",
+          "entity_ids": [
+            "field-note"
+          ],
+          "typography_group": "publication-folio"
+        },
+        {
+          "slide_id": "s02-question",
+          "entity_ids": [
+            "field-note"
+          ],
+          "typography_group": "publication-folio"
+        },
+        {
+          "slide_id": "s03-practice",
+          "entity_ids": [
+            "field-note"
+          ],
+          "typography_group": "publication-folio"
+        },
+        {
+          "slide_id": "s04-trace",
+          "entity_ids": [
+            "folio"
+          ],
+          "typography_group": "publication-folio"
+        },
+        {
+          "slide_id": "s05-close",
+          "entity_ids": [
+            "folio"
+          ],
+          "typography_group": "publication-folio"
+        }
+      ],
+      "exceptions": [
+        {
+          "exception_id": "cover-essay-companions",
+          "slide_id": "s01-opening",
+          "entity_ids": [
+            "essay-label",
+            "footer-rule"
+          ],
+          "reason": "The cover-only essay descriptor and short linking rule remain unique companion elements. They move by the same 54 source pixels as the folio to preserve their original baseline relationship. Their typography and horizontal placement remain unchanged.",
+          "review_focus": "The cover-only rule and essay caption preserve their baseline relationship beside the now shared folio. The folio itself follows the common treatment."
+        }
+      ]
+    }
+  },
+  "allowed_variations": [
+    "Main essay statements. Keep observed Bodoni 72 lettering, size, tracking and composition. Their hierarchy and line structure are intentionally page-specific.",
+    "Explanatory copy. Keep the existing Arial or Andale Mono roles. Reflective questions, chapter captions and archival ledger prompts serve distinct local reading functions.",
+    "Rules and record numbers. Column dividers, ledger rules and numbered record rows are content structures on their own pages. They are not a recurring footer rule.",
+    "Artwork and paper. Retain every accepted regional raster, background tone, crop and native body allocation."
+  ],
+  "reference_images": [],
+  "cross_slide_review_focus": [
+    "Compare all five actual folios for common face, weight, size, tracking, color and baseline. Inspect the full pages after reviewing the contact sheet.",
+    "Confirm that every artwork crop and substantive text allocation remains unchanged. Review the cover-only caption relationship.",
+    "Look for additional undeclared recurring functions. Body dividers and archive record numbers belong to their local content structures, while the title sizes preserve the approved individual compositions."
+  ]
+}

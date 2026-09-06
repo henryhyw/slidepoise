@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "revision": 3,
+  "pptx_sha256": "aec72faebe53cdaf2c0820391eadd344d34b3f5de4927e7c3a0444ff8f40ca9b",
+  "body_canvas_px": [
+    1920,
+    960
+  ],
+  "full_slide_px": [
+    1920,
+    1080
+  ],
+  "all_five_reconstructed_via_packaged_runtime": true,
+  "public_download": "PowerPoint only",
+  "source_archive_sha256": "d260bad66642c6a57eb431ccd511edb8972f577a448f574a1e31d974b458c247"
+}

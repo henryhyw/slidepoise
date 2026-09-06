@@ -1,0 +1,47 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "stage": "native_edit_demonstration",
+  "decision": "accepted",
+  "material_issues": [],
+  "reviewed_artifacts": [
+    {
+      "path": "official-copy.pptx",
+      "sha256": "aec72faebe53cdaf2c0820391eadd344d34b3f5de4927e7c3a0444ff8f40ca9b"
+    },
+    {
+      "path": "edited-copy.pptx",
+      "sha256": "94490073d95e79aa8aecc76fa92a7efb603314f15eb7e2597bcd4a4ac4536e46"
+    },
+    {
+      "path": "official-preview/slide-002.png",
+      "sha256": "7fbe619d60c5f2bcdbaab586c0856aae9c26ce18ec13e2e963fdebeaf4c6f386"
+    },
+    {
+      "path": "edited-preview/slide-002.png",
+      "sha256": "16d9b56cc0e432877ac8ff4bf4b76d81c56b6f7cd074dc3eb9c14a4789d3a8bd"
+    },
+    {
+      "path": "comparison.png",
+      "sha256": "8e1261d166ca97699d97f1eb62ec354c0eca130d23ef4b274c017bf209fd8f6a"
+    },
+    {
+      "path": "edit-proof.json",
+      "sha256": "48b91d9ecf38f8b4bfbcea55be67f517ceb620b7283db6d4a633bf096b3e4864"
+    },
+    {
+      "path": "bar-edit-evidence.json",
+      "sha256": "77839d48c2e73fc9c530674a7fc4278f8e9fb2e85b2ae1cab2859df0c04d6813"
+    },
+    {
+      "path": "source-bindings.json",
+      "sha256": "ef4153ce7bf556aa57b06cc9d66df7368f23f5497fac7fcb4c661e82c80e31c0"
+    }
+  ],
+  "observations": [
+    "I inspected both full-resolution page 2 previews and their side-by-side comparison. The edited title is complete in the existing Georgia textbox. The orange research bar visibly shortens, and its original native label now displays 1,620 h on one line.",
+    "The two gray bars and their values remain unchanged. Both native tables, the three reasons, overlap qualification and shared frame remain readable. The orange bar width changes from 293 to 244 rendered pixels, consistent with the edited value ratio.",
+    "The edited PPTX contains an embedded workbook whose research value is 1620 and a matching chart cache. Native value display remains enabled, with no value snapshots or additional numeric textboxes.",
+    "The other four rendered pages are pixel-identical. Source deck, scenes, semantic maps, handoffs and generated targets retain their recorded hashes.",
+    "This artifact demonstrates local native editing. The assumption table and other planning calculations are intentionally unchanged. The comparison clearly labels the right image as an editing demonstration, so it is not presented as a revised planning scenario."
+  ]
+}

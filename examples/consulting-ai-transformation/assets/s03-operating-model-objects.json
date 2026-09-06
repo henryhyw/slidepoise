@@ -1,0 +1,1176 @@
+{
+  "schema_version": 1,
+  "slide_id": "s03-operating-model",
+  "page_number": 3,
+  "size": {
+    "width": 12192000,
+    "height": 6858000,
+    "unit": "emu"
+  },
+  "source": {
+    "pptx": {
+      "path": "deliverables/presentation.pptx",
+      "sha256": "aec72faebe53cdaf2c0820391eadd344d34b3f5de4927e7c3a0444ff8f40ca9b"
+    },
+    "render": {
+      "path": "assets/s03-operating-model-render.png",
+      "sha256": "1dfd8f855dff83a2c369a0c0133a43175bcf8000076e42d4a62e98b3726ea593"
+    }
+  },
+  "objects": [
+    {
+      "id": "p3-object-1",
+      "native_id": "2",
+      "name": "introduction-rule",
+      "label": "Introduction rule",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.025,
+          0.212037037
+        ],
+        [
+          0.975,
+          0.212037037
+        ],
+        [
+          0.975,
+          0.213888889
+        ],
+        [
+          0.025,
+          0.213888889
+        ]
+      ],
+      "stack": 0
+    },
+    {
+      "id": "p3-object-2",
+      "native_id": "3",
+      "name": "stage-1",
+      "label": "Stage 1",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.046354167,
+          0.242592593
+        ],
+        [
+          0.179166667,
+          0.242592593
+        ],
+        [
+          0.179166667,
+          0.326851852
+        ],
+        [
+          0.046354167,
+          0.326851852
+        ]
+      ],
+      "stack": 1
+    },
+    {
+      "id": "p3-object-3",
+      "native_id": "4",
+      "name": "stage-2",
+      "label": "Stage 2",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.23125,
+          0.242592593
+        ],
+        [
+          0.363020833,
+          0.242592593
+        ],
+        [
+          0.363020833,
+          0.326851852
+        ],
+        [
+          0.23125,
+          0.326851852
+        ]
+      ],
+      "stack": 2
+    },
+    {
+      "id": "p3-object-4",
+      "native_id": "5",
+      "name": "stage-3",
+      "label": "Stage 3",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.413541667,
+          0.242592593
+        ],
+        [
+          0.546354167,
+          0.242592593
+        ],
+        [
+          0.546354167,
+          0.326851852
+        ],
+        [
+          0.413541667,
+          0.326851852
+        ]
+      ],
+      "stack": 3
+    },
+    {
+      "id": "p3-object-5",
+      "native_id": "6",
+      "name": "stage-4",
+      "label": "Stage 4",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.595833333,
+          0.242592593
+        ],
+        [
+          0.74375,
+          0.242592593
+        ],
+        [
+          0.74375,
+          0.326851852
+        ],
+        [
+          0.595833333,
+          0.326851852
+        ]
+      ],
+      "stack": 4
+    },
+    {
+      "id": "p3-object-6",
+      "native_id": "7",
+      "name": "shared-divider",
+      "label": "Shared divider",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.7890625,
+          0.509259259
+        ],
+        [
+          0.974479167,
+          0.509259259
+        ],
+        [
+          0.974479167,
+          0.510185185
+        ],
+        [
+          0.7890625,
+          0.510185185
+        ]
+      ],
+      "stack": 5
+    },
+    {
+      "id": "p3-object-7",
+      "native_id": "8",
+      "name": "decision-band",
+      "label": "Decision band",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.025,
+          0.793518519
+        ],
+        [
+          0.975,
+          0.793518519
+        ],
+        [
+          0.975,
+          0.917592593
+        ],
+        [
+          0.025,
+          0.917592593
+        ]
+      ],
+      "stack": 6
+    },
+    {
+      "id": "p3-object-8",
+      "native_id": "9",
+      "name": "decision-accent",
+      "label": "Decision accent",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.025,
+          0.793518519
+        ],
+        [
+          0.029166667,
+          0.793518519
+        ],
+        [
+          0.029166667,
+          0.917592593
+        ],
+        [
+          0.025,
+          0.917592593
+        ]
+      ],
+      "stack": 7
+    },
+    {
+      "id": "p3-object-9",
+      "native_id": "10",
+      "name": "responsibility-matrix",
+      "label": "Responsibility matrix",
+      "kind": "table",
+      "polygon": [
+        [
+          0.025520833,
+          0.350925926
+        ],
+        [
+          0.7671875,
+          0.350925926
+        ],
+        [
+          0.7671875,
+          0.659259259
+        ],
+        [
+          0.025520833,
+          0.659259259
+        ]
+      ],
+      "stack": 8,
+      "rows": [
+        [
+          "",
+          "Approved sources",
+          "Grounded draft",
+          "Expert review",
+          "Client-ready output"
+        ],
+        [
+          "INPUT",
+          "Corpus request",
+          "Source pack + task brief",
+          "Draft + evidence trail",
+          "Signed draft + resolved defects"
+        ],
+        [
+          "OUTPUT",
+          "Versioned source pack",
+          "Cited draft + uncertainty flags",
+          "Signed review or defect log",
+          "Authorized client deliverable"
+        ],
+        [
+          "OWNER",
+          "Source steward",
+          "Engagement team",
+          "Expert reviewer",
+          "Engagement lead"
+        ],
+        [
+          "RELEASE CONTROL",
+          "Verify permissions\nand dates",
+          "Check citations\nand evidence gaps",
+          "Validate claims\nand quality",
+          "Confirm release\napproval"
+        ]
+      ]
+    },
+    {
+      "id": "p3-object-10",
+      "native_id": "11",
+      "name": "SC_CONNECTOR__forward-1__0",
+      "label": "Forward 1 0",
+      "kind": "connector",
+      "polygon": [
+        [
+          0.179166667,
+          0.284722222
+        ],
+        [
+          0.23125,
+          0.284722222
+        ],
+        [
+          0.23125,
+          0.284722222
+        ],
+        [
+          0.179166667,
+          0.284722222
+        ]
+      ],
+      "stack": 9,
+      "line": [
+        [
+          0.179166667,
+          0.284722222
+        ],
+        [
+          0.23125,
+          0.284722222
+        ]
+      ],
+      "arrows": {
+        "headEnd": {
+          "type": "none"
+        },
+        "tailEnd": {
+          "type": "triangle",
+          "w": "lg",
+          "len": "lg"
+        }
+      }
+    },
+    {
+      "id": "p3-object-11",
+      "native_id": "12",
+      "name": "SC_CONNECTOR__forward-2__0",
+      "label": "Forward 2 0",
+      "kind": "connector",
+      "polygon": [
+        [
+          0.363020833,
+          0.284722222
+        ],
+        [
+          0.413541667,
+          0.284722222
+        ],
+        [
+          0.413541667,
+          0.284722222
+        ],
+        [
+          0.363020833,
+          0.284722222
+        ]
+      ],
+      "stack": 10,
+      "line": [
+        [
+          0.363020833,
+          0.284722222
+        ],
+        [
+          0.413541667,
+          0.284722222
+        ]
+      ],
+      "arrows": {
+        "headEnd": {
+          "type": "none"
+        },
+        "tailEnd": {
+          "type": "triangle",
+          "w": "lg",
+          "len": "lg"
+        }
+      }
+    },
+    {
+      "id": "p3-object-12",
+      "native_id": "13",
+      "name": "SC_CONNECTOR__forward-3__0",
+      "label": "Forward 3 0",
+      "kind": "connector",
+      "polygon": [
+        [
+          0.546354167,
+          0.284722222
+        ],
+        [
+          0.595833333,
+          0.284722222
+        ],
+        [
+          0.595833333,
+          0.284722222
+        ],
+        [
+          0.546354167,
+          0.284722222
+        ]
+      ],
+      "stack": 11,
+      "line": [
+        [
+          0.546354167,
+          0.284722222
+        ],
+        [
+          0.595833333,
+          0.284722222
+        ]
+      ],
+      "arrows": {
+        "headEnd": {
+          "type": "none"
+        },
+        "tailEnd": {
+          "type": "triangle",
+          "w": "lg",
+          "len": "lg"
+        }
+      }
+    },
+    {
+      "id": "p3-object-13",
+      "native_id": "14",
+      "name": "source-correction",
+      "label": "Source correction",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.192708333,
+          0.659259259
+        ],
+        [
+          0.3515625,
+          0.659259259
+        ],
+        [
+          0.3515625,
+          0.732407407
+        ],
+        [
+          0.192708333,
+          0.732407407
+        ]
+      ],
+      "stack": 12
+    },
+    {
+      "id": "p3-object-14",
+      "native_id": "15",
+      "name": "expert-rejection",
+      "label": "Expert rejection",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.3921875,
+          0.659259259
+        ],
+        [
+          0.559895833,
+          0.659259259
+        ],
+        [
+          0.559895833,
+          0.732407407
+        ],
+        [
+          0.3921875,
+          0.732407407
+        ]
+      ],
+      "stack": 13
+    },
+    {
+      "id": "p3-object-15",
+      "native_id": "16",
+      "name": "headline",
+      "label": "Keep expert ownership at every release",
+      "kind": "text",
+      "polygon": [
+        [
+          0.025,
+          0.076851852
+        ],
+        [
+          0.975,
+          0.076851852
+        ],
+        [
+          0.975,
+          0.150925926
+        ],
+        [
+          0.025,
+          0.150925926
+        ]
+      ],
+      "stack": 14,
+      "text": "Keep expert ownership at every release",
+      "typography": [
+        {
+          "family": "Georgia",
+          "size_pt": 32.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p3-object-16",
+      "native_id": "17",
+      "name": "subtitle",
+      "label": "A controlled path from permissioned evidence to approved client work.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.025,
+          0.15462963
+        ],
+        [
+          0.975,
+          0.15462963
+        ],
+        [
+          0.975,
+          0.201851852
+        ],
+        [
+          0.025,
+          0.201851852
+        ]
+      ],
+      "stack": 15,
+      "text": "A controlled path from permissioned evidence to approved client work.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 16.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p3-object-17",
+      "native_id": "18",
+      "name": "stage-1-label",
+      "label": "Approved sources",
+      "kind": "text",
+      "polygon": [
+        [
+          0.0515625,
+          0.250925926
+        ],
+        [
+          0.173958333,
+          0.250925926
+        ],
+        [
+          0.173958333,
+          0.322222222
+        ],
+        [
+          0.0515625,
+          0.322222222
+        ]
+      ],
+      "stack": 16,
+      "text": "Approved\nsources",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p3-object-18",
+      "native_id": "19",
+      "name": "stage-2-label",
+      "label": "Grounded draft",
+      "kind": "text",
+      "polygon": [
+        [
+          0.236458333,
+          0.250925926
+        ],
+        [
+          0.3578125,
+          0.250925926
+        ],
+        [
+          0.3578125,
+          0.322222222
+        ],
+        [
+          0.236458333,
+          0.322222222
+        ]
+      ],
+      "stack": 17,
+      "text": "Grounded\ndraft",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p3-object-19",
+      "native_id": "20",
+      "name": "stage-3-label",
+      "label": "Expert review",
+      "kind": "text",
+      "polygon": [
+        [
+          0.41875,
+          0.250925926
+        ],
+        [
+          0.541145833,
+          0.250925926
+        ],
+        [
+          0.541145833,
+          0.322222222
+        ],
+        [
+          0.41875,
+          0.322222222
+        ]
+      ],
+      "stack": 18,
+      "text": "Expert\nreview",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p3-object-20",
+      "native_id": "21",
+      "name": "stage-4-label",
+      "label": "Client-ready output",
+      "kind": "text",
+      "polygon": [
+        [
+          0.601041667,
+          0.250925926
+        ],
+        [
+          0.738541667,
+          0.250925926
+        ],
+        [
+          0.738541667,
+          0.322222222
+        ],
+        [
+          0.601041667,
+          0.322222222
+        ]
+      ],
+      "stack": 19,
+      "text": "Client-ready\noutput",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p3-object-21",
+      "native_id": "22",
+      "name": "source-correction-label",
+      "label": "Correct sources via exception register",
+      "kind": "text",
+      "polygon": [
+        [
+          0.169791667,
+          0.740740741
+        ],
+        [
+          0.4046875,
+          0.740740741
+        ],
+        [
+          0.4046875,
+          0.77962963
+        ],
+        [
+          0.169791667,
+          0.77962963
+        ]
+      ],
+      "stack": 20,
+      "text": "Correct sources via exception register",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 12.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p3-object-22",
+      "native_id": "23",
+      "name": "expert-rejection-label",
+      "label": "Reject with defect reasons",
+      "kind": "text",
+      "polygon": [
+        [
+          0.408333333,
+          0.740740741
+        ],
+        [
+          0.585416667,
+          0.740740741
+        ],
+        [
+          0.585416667,
+          0.77962963
+        ],
+        [
+          0.408333333,
+          0.77962963
+        ]
+      ],
+      "stack": 21,
+      "text": "Reject with defect reasons",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 12.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p3-object-23",
+      "native_id": "24",
+      "name": "shared-controls-heading",
+      "label": "SHARED CONTROLS",
+      "kind": "text",
+      "polygon": [
+        [
+          0.7890625,
+          0.294444444
+        ],
+        [
+          0.975,
+          0.294444444
+        ],
+        [
+          0.975,
+          0.337037037
+        ],
+        [
+          0.7890625,
+          0.337037037
+        ]
+      ],
+      "stack": 22,
+      "text": "SHARED CONTROLS",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p3-object-24",
+      "native_id": "25",
+      "name": "shared-register",
+      "label": "One register records defects, owners and disposition.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.802083333,
+          0.340740741
+        ],
+        [
+          0.974479167,
+          0.340740741
+        ],
+        [
+          0.974479167,
+          0.425925926
+        ],
+        [
+          0.802083333,
+          0.425925926
+        ]
+      ],
+      "stack": 23,
+      "text": "One register records\ndefects, owners and\ndisposition.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p3-object-25",
+      "native_id": "26",
+      "name": "platform-controls",
+      "label": "Platform team maintains access controls and audit logs.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.802083333,
+          0.422222222
+        ],
+        [
+          0.974479167,
+          0.422222222
+        ],
+        [
+          0.974479167,
+          0.505555556
+        ],
+        [
+          0.802083333,
+          0.505555556
+        ]
+      ],
+      "stack": 24,
+      "text": "Platform team maintains\naccess controls and\naudit logs.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p3-object-26",
+      "native_id": "27",
+      "name": "measurement-heading",
+      "label": "PILOT MEASUREMENT",
+      "kind": "text",
+      "polygon": [
+        [
+          0.7890625,
+          0.535185185
+        ],
+        [
+          0.975,
+          0.535185185
+        ],
+        [
+          0.975,
+          0.577777778
+        ],
+        [
+          0.7890625,
+          0.577777778
+        ]
+      ],
+      "stack": 25,
+      "text": "PILOT MEASUREMENT",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p3-object-27",
+      "native_id": "28",
+      "name": "baseline-measurement",
+      "label": "Compare 20 paired tasks with baseline time logs.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.802083333,
+          0.584259259
+        ],
+        [
+          0.974479167,
+          0.584259259
+        ],
+        [
+          0.974479167,
+          0.669444444
+        ],
+        [
+          0.802083333,
+          0.669444444
+        ]
+      ],
+      "stack": 26,
+      "text": "Compare 20 paired\ntasks with baseline time\nlogs.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p3-object-28",
+      "native_id": "29",
+      "name": "review-measurement",
+      "label": "Verify claim samples and record expert review effort.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.802083333,
+          0.671296296
+        ],
+        [
+          0.974479167,
+          0.671296296
+        ],
+        [
+          0.974479167,
+          0.756481481
+        ],
+        [
+          0.802083333,
+          0.756481481
+        ]
+      ],
+      "stack": 27,
+      "text": "Verify claim samples\nand record expert review\neffort.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p3-object-29",
+      "native_id": "30",
+      "name": "list-bullet-1",
+      "label": "List bullet 1",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.790104167,
+          0.351851852
+        ],
+        [
+          0.794270833,
+          0.351851852
+        ],
+        [
+          0.794270833,
+          0.359259259
+        ],
+        [
+          0.790104167,
+          0.359259259
+        ]
+      ],
+      "stack": 28
+    },
+    {
+      "id": "p3-object-30",
+      "native_id": "31",
+      "name": "list-bullet-2",
+      "label": "List bullet 2",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.790104167,
+          0.433333333
+        ],
+        [
+          0.794270833,
+          0.433333333
+        ],
+        [
+          0.794270833,
+          0.440740741
+        ],
+        [
+          0.790104167,
+          0.440740741
+        ]
+      ],
+      "stack": 29
+    },
+    {
+      "id": "p3-object-31",
+      "native_id": "32",
+      "name": "list-bullet-3",
+      "label": "List bullet 3",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.790104167,
+          0.59537037
+        ],
+        [
+          0.794270833,
+          0.59537037
+        ],
+        [
+          0.794270833,
+          0.602777778
+        ],
+        [
+          0.790104167,
+          0.602777778
+        ]
+      ],
+      "stack": 30
+    },
+    {
+      "id": "p3-object-32",
+      "native_id": "33",
+      "name": "list-bullet-4",
+      "label": "List bullet 4",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.790104167,
+          0.682407407
+        ],
+        [
+          0.794270833,
+          0.682407407
+        ],
+        [
+          0.794270833,
+          0.689814815
+        ],
+        [
+          0.790104167,
+          0.689814815
+        ]
+      ],
+      "stack": 31
+    },
+    {
+      "id": "p3-object-33",
+      "native_id": "34",
+      "name": "decision-label",
+      "label": "RELEASE RULE",
+      "kind": "text",
+      "polygon": [
+        [
+          0.052083333,
+          0.82962963
+        ],
+        [
+          0.270833333,
+          0.82962963
+        ],
+        [
+          0.270833333,
+          0.877777778
+        ],
+        [
+          0.052083333,
+          0.877777778
+        ]
+      ],
+      "stack": 32,
+      "text": "RELEASE RULE",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#FD5108",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p3-object-34",
+      "native_id": "35",
+      "name": "decision-message",
+      "label": "No client use without expert and engagement-lead sign-off.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.291666667,
+          0.82962963
+        ],
+        [
+          0.950520833,
+          0.82962963
+        ],
+        [
+          0.950520833,
+          0.877777778
+        ],
+        [
+          0.291666667,
+          0.877777778
+        ]
+      ],
+      "stack": 33,
+      "text": "No client use without expert and engagement-lead sign-off.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p3-object-35",
+      "native_id": "36",
+      "name": "Slide Number Placeholder 0",
+      "label": "3",
+      "kind": "text",
+      "polygon": [
+        [
+          0.891666667,
+          0.952777778
+        ],
+        [
+          0.975,
+          0.952777778
+        ],
+        [
+          0.975,
+          0.99537037
+        ],
+        [
+          0.891666667,
+          0.99537037
+        ]
+      ],
+      "stack": 34,
+      "text": "3",
+      "typography": [
+        {
+          "bold": false
+        },
+        {
+          "family": "Arial",
+          "size_pt": 9.0,
+          "color": "#666666"
+        }
+      ]
+    }
+  ]
+}

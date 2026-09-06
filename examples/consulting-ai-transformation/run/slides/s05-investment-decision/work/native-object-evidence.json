@@ -1,0 +1,174 @@
+{
+  "pptx_sha256": "a167babb91d03386a518f22348af445313c38515b49ff57b2298a52b3e89b854",
+  "native_tables": 2,
+  "native_table_cell_counts": [
+    10,
+    28
+  ],
+  "native_table_cells": 38,
+  "native_table_data": [
+    [
+      [
+        "Cost item",
+        "Amount"
+      ],
+      [
+        "Implementation",
+        "$85k"
+      ],
+      [
+        "Pilot included",
+        "$25k"
+      ],
+      [
+        "Annual operations",
+        "$30k"
+      ],
+      [
+        "First-year total",
+        "$115k"
+      ]
+    ],
+    [
+      [
+        "Scenario",
+        "Adoption",
+        "Time saved",
+        "Annual h",
+        "Annual capacity",
+        "First-year value",
+        "Net vs $115k"
+      ],
+      [
+        "Downside",
+        "40%",
+        "20%",
+        "864",
+        "$108k",
+        "$54k",
+        "\u2212$61k"
+      ],
+      [
+        "Base",
+        "60%",
+        "30%",
+        "1,944",
+        "$243k",
+        "$121.5k",
+        "+$6.5k"
+      ],
+      [
+        "Upside",
+        "75%",
+        "40%",
+        "3,240",
+        "$405k",
+        "$202.5k",
+        "+$87.5k"
+      ]
+    ]
+  ],
+  "financial_table_values_match_intent": true,
+  "native_picture_objects": 0,
+  "duplicate_shape_ids": [],
+  "table_font_sizes_pt": [
+    12.0
+  ],
+  "headline_font_sizes_pt": [
+    32.0
+  ],
+  "exact_upstream_title_preserved": true,
+  "exact_funding_text_preserved": true,
+  "frame_emitted_on_slide": false,
+  "typography_groups": [
+    {
+      "name": "claim-title",
+      "font_size_px": 64.0,
+      "reduced_from_target": false
+    },
+    {
+      "name": "subtitle",
+      "font_size_px": 32.0,
+      "reduced_from_target": false
+    },
+    {
+      "name": "section-headings",
+      "font_size_px": 28.0,
+      "reduced_from_target": false
+    },
+    {
+      "name": "formula-terms",
+      "font_size_px": 28.0,
+      "reduced_from_target": false
+    },
+    {
+      "name": "formula-results",
+      "font_size_px": 28.0,
+      "reduced_from_target": false
+    },
+    {
+      "name": "formula-annotations",
+      "font_size_px": 24.0,
+      "reduced_from_target": false
+    },
+    {
+      "name": "body-copy",
+      "font_size_px": 28.0,
+      "reduced_from_target": false
+    },
+    {
+      "name": "criteria-body",
+      "font_size_px": 28.0,
+      "reduced_from_target": false
+    },
+    {
+      "name": "decision-band",
+      "font_size_px": 28.0,
+      "reduced_from_target": false
+    }
+  ],
+  "shared_geometry": {
+    "introduction-rule": [
+      48,
+      229,
+      1824,
+      2
+    ],
+    "decision-band": [
+      48,
+      857,
+      1824,
+      134
+    ],
+    "decision-accent": [
+      48,
+      857,
+      8,
+      134
+    ],
+    "headline": [
+      48,
+      83,
+      1824,
+      80
+    ],
+    "subtitle": [
+      48,
+      167,
+      1824,
+      47
+    ],
+    "decision-label": [
+      100,
+      896,
+      420,
+      52
+    ],
+    "decision-message": [
+      560,
+      896,
+      1265,
+      52
+    ]
+  }
+}

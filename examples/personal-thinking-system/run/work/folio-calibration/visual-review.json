@@ -1,0 +1,50 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "stage": "assembled_deck",
+  "decision": "accepted",
+  "material_issues": [],
+  "review_scope": "Inspected all five actual full-resolution page renders, the old/new contact sheets, five measurement overlays and the enlarged folio comparison. Native object facts and actual pixel differences corroborate the reviewed scope.",
+  "observations": [
+    "All five Field Notes part markers now form one publication identity with the same typeface, physical size, regular weight, tracking, dark ink and lower-left baseline.",
+    "The five distinct compositions remain an editorial essay sequence. Large statements, body copy, record rows and photographic collages keep their intended differences.",
+    "The cover-only descriptor and short linking rule retain their relationship to the series marker. They are recorded as a specific exception, not a new recurring motif.",
+    "A renewed cross-page scan found no further accidental repeat-role drift within this bounded revision. Large title sizes and content-specific captions are retained as intentional composition differences."
+  ],
+  "native_object_counts": {
+    "shape": 9,
+    "image": 8,
+    "textbox": 46,
+    "freeform": 7
+  },
+  "reviewed_artifacts": [
+    {
+      "path": "../../deliverables/presentation.pptx",
+      "sha256": "3d8499644935076fa1bf388c2ee86657ff95801aef670e1bcbb43e93af46891b"
+    },
+    {
+      "path": "../../preview/presentation.pdf",
+      "sha256": "abe8035b9815420abb741d59524c2f8a445e14034fefc4eec0c061aa1c656e85"
+    },
+    {
+      "path": "../../preview/contact-sheet.png",
+      "sha256": "8df762acc54e0f290f2da71b1bc89c2ad4cb9d1cb78329df885a7c3ba618c7f4"
+    },
+    {
+      "path": "../deck-design.json",
+      "sha256": "ba33b732616aafff1f22648cf4536809f5583401d6180733363121aa7544358e"
+    },
+    {
+      "path": "folio-comparison.png",
+      "sha256": "8a6aac867aa1d116687e25547b33c0754e5a92b3fa223a446c09e07a3b339ff8"
+    },
+    {
+      "path": "verification.json",
+      "sha256": "5f3a54cc83627199ec2b53032b4f9263894a64754ee2847acc2ae574d6be8eed"
+    },
+    {
+      "path": "native-text-audit.json",
+      "sha256": "00b9b8a5db1ca8adcb12e622d39d906c28e340608d6b6a014852ba7b4348bca5"
+    }
+  ],
+  "publication_status": "Prepared in an isolated authoring run. Root publication to the live example is pending."
+}

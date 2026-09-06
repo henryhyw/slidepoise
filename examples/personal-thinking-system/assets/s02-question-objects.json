@@ -1,0 +1,340 @@
+{
+  "schema_version": 1,
+  "slide_id": "s02-question",
+  "page_number": 2,
+  "size": {
+    "width": 12192000,
+    "height": 6858000,
+    "unit": "emu"
+  },
+  "source": {
+    "pptx": {
+      "path": "deliverables/presentation.pptx",
+      "sha256": "3d8499644935076fa1bf388c2ee86657ff95801aef670e1bcbb43e93af46891b"
+    },
+    "render": {
+      "path": "assets/s02-question-render.png",
+      "sha256": "a1beead3cf1fb575451e1274a327ffd2b6db633a9b5a90029d5a892cd94cb884"
+    }
+  },
+  "objects": [
+    {
+      "id": "p2-object-1",
+      "native_id": "2",
+      "name": "paper-field",
+      "label": "Paper field",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "stack": 0
+    },
+    {
+      "id": "p2-object-2",
+      "native_id": "3",
+      "name": "conclusion-rule",
+      "label": "Conclusion rule",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.429375,
+          0.764444444
+        ],
+        [
+          0.478125,
+          0.764444444
+        ],
+        [
+          0.478125,
+          0.765555556
+        ],
+        [
+          0.429375,
+          0.765555556
+        ]
+      ],
+      "stack": 1
+    },
+    {
+      "id": "p2-object-3",
+      "native_id": "4",
+      "name": "question-collage",
+      "label": "Question collage",
+      "kind": "image",
+      "polygon": [
+        [
+          0.04,
+          0.208888889
+        ],
+        [
+          0.374375,
+          0.208888889
+        ],
+        [
+          0.374375,
+          0.825555556
+        ],
+        [
+          0.04,
+          0.825555556
+        ]
+      ],
+      "stack": 2
+    },
+    {
+      "id": "p2-object-4",
+      "native_id": "5",
+      "name": "title-first",
+      "label": "Keep the",
+      "kind": "text",
+      "polygon": [
+        [
+          0.426875,
+          0.047777778
+        ],
+        [
+          0.809375,
+          0.047777778
+        ],
+        [
+          0.809375,
+          0.27
+        ],
+        [
+          0.426875,
+          0.27
+        ]
+      ],
+      "stack": 3,
+      "text": "Keep the",
+      "typography": [
+        {
+          "family": "Bodoni 72",
+          "size_pt": 88.5,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p2-object-5",
+      "native_id": "6",
+      "name": "title-second",
+      "label": "question open.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.425,
+          0.201111111
+        ],
+        [
+          0.9875,
+          0.201111111
+        ],
+        [
+          0.9875,
+          0.422222222
+        ],
+        [
+          0.425,
+          0.422222222
+        ]
+      ],
+      "stack": 4,
+      "text": "question open.",
+      "typography": [
+        {
+          "family": "Bodoni 72",
+          "size_pt": 88.5,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p2-object-6",
+      "native_id": "7",
+      "name": "premise",
+      "label": "A fast answer can close a thought too early.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.42875,
+          0.446666667
+        ],
+        [
+          0.8325,
+          0.446666667
+        ],
+        [
+          0.8325,
+          0.498888889
+        ],
+        [
+          0.42875,
+          0.498888889
+        ]
+      ],
+      "stack": 5,
+      "text": "A fast answer can close a thought too early.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 17.5,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p2-object-7",
+      "native_id": "8",
+      "name": "prompt-first",
+      "label": "What am I assuming?",
+      "kind": "text",
+      "polygon": [
+        [
+          0.428125,
+          0.564444444
+        ],
+        [
+          0.739375,
+          0.564444444
+        ],
+        [
+          0.739375,
+          0.63
+        ],
+        [
+          0.428125,
+          0.63
+        ]
+      ],
+      "stack": 6,
+      "text": "What am I assuming?",
+      "typography": [
+        {
+          "family": "Times New Roman",
+          "size_pt": 22.0,
+          "color": "#242321",
+          "italic": true
+        }
+      ]
+    },
+    {
+      "id": "p2-object-8",
+      "native_id": "9",
+      "name": "prompt-second",
+      "label": "What would change my mind?",
+      "kind": "text",
+      "polygon": [
+        [
+          0.428125,
+          0.65
+        ],
+        [
+          0.810625,
+          0.65
+        ],
+        [
+          0.810625,
+          0.715555556
+        ],
+        [
+          0.428125,
+          0.715555556
+        ]
+      ],
+      "stack": 7,
+      "text": "What would change my mind?",
+      "typography": [
+        {
+          "family": "Times New Roman",
+          "size_pt": 22.0,
+          "color": "#242321",
+          "italic": true
+        }
+      ]
+    },
+    {
+      "id": "p2-object-9",
+      "native_id": "10",
+      "name": "conclusion",
+      "label": "The useful conversation begins with a better question.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.428125,
+          0.81
+        ],
+        [
+          0.823125,
+          0.81
+        ],
+        [
+          0.823125,
+          0.858888889
+        ],
+        [
+          0.428125,
+          0.858888889
+        ]
+      ],
+      "stack": 8,
+      "text": "The useful conversation begins with a better question.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p2-object-10",
+      "native_id": "11",
+      "name": "field-note",
+      "label": "FIELD NOTES / 02",
+      "kind": "text",
+      "polygon": [
+        [
+          0.05375,
+          0.922222222
+        ],
+        [
+          0.233125,
+          0.922222222
+        ],
+        [
+          0.233125,
+          0.962222222
+        ],
+        [
+          0.05375,
+          0.962222222
+        ]
+      ],
+      "stack": 9,
+      "text": "FIELD NOTES / 02",
+      "typography": [
+        {
+          "family": "Andale Mono",
+          "size_pt": 12.0,
+          "color": "#242321"
+        }
+      ]
+    }
+  ]
+}

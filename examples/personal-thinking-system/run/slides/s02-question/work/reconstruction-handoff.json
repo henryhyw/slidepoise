@@ -1,0 +1,34 @@
+{
+  "selected_assets": [],
+  "frame_content": {
+    "header": {
+      "left_text": "",
+      "right_text": ""
+    },
+    "footer": {
+      "left_text": "",
+      "center_text": ""
+    },
+    "slide_number": 2
+  },
+  "source_ownership": "Accepted generated collage regions have no canonical external asset. Presentation titles and explanatory copy reconstruct as native text.",
+  "deck_design_source": {
+    "path": "../../../work/deck-design.json",
+    "sha256": "ba33b732616aafff1f22648cf4536809f5583401d6180733363121aa7544358e"
+  },
+  "recurring_role_bindings": [
+    {
+      "role_id": "publication_folio",
+      "entity_ids": [
+        "field-note"
+      ],
+      "typography_group": "publication-folio",
+      "style_source": "repeated_roles.publication_folio.chosen_style",
+      "exception_id": null,
+      "application_note": "The Agent materialized the common native12pt role as Andale Mono regular target21px with zero tracking, common dark ink and a fixed logical allocation. Source-ink windows retain the original target locations. The binding itself does not apply the style."
+    }
+  ],
+  "revision_notes": [
+    "The user requested one coherent Field Notes identity across all five pages. The Agent reviewed all original renders and calibrated this recurring role. Artwork and substantive content stay unchanged."
+  ]
+}

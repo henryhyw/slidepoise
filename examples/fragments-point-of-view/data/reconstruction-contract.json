@@ -1,0 +1,692 @@
+{
+  "schema_version": "2.0.0",
+  "source_scene_evidence": "assets/accepted-slide.png",
+  "full_slide_dimensions_px": [
+    1672,
+    941
+  ],
+  "generation_region": {
+    "offset_y_px": 0,
+    "dimensions_px": [
+      1672,
+      941
+    ]
+  },
+  "coordinate_transform_to_full_slide": {
+    "scale_xy": [
+      1.0,
+      1.0
+    ],
+    "translation_px": [
+      0,
+      0
+    ]
+  },
+  "frame_configuration": {
+    "header": {
+      "enabled": false,
+      "height_px": 34,
+      "implementation": "slide_master_inherited_content",
+      "left_text": "",
+      "right_text": "",
+      "font_family": "Arial",
+      "font_size_px": 11,
+      "font_weight": "regular",
+      "text_color": "#505050",
+      "secondary_text_color": "#8F8F8F",
+      "rule_color": "#D8D7D3",
+      "rule_width_px": 1,
+      "accent_color": "#242321",
+      "accent_rule_width_px": 0,
+      "outer_padding_px": 56
+    },
+    "footer": {
+      "enabled": false,
+      "height_px": 34,
+      "implementation": "slide_master_inherited_content",
+      "left_text": "",
+      "center_text": "",
+      "font_family": "Arial",
+      "font_size_px": 10,
+      "font_weight": "regular",
+      "left_font_weight": "regular",
+      "text_color": "#686868",
+      "secondary_text_color": "#8F8F8F",
+      "rule_color": "#D8D7D3",
+      "rule_width_px": 1,
+      "outer_padding_px": 56,
+      "slide_number": {
+        "enabled": false,
+        "implementation": "native_slide_number_field_on_master",
+        "format": "{slide_number}"
+      }
+    },
+    "generation_region": {
+      "derive_from_frame_heights": true
+    },
+    "slide_number": 1
+  },
+  "reconstruction_units": [
+    {
+      "id": "background-plate",
+      "semantic_kind": "image",
+      "semantic_role": "texture_clean_plate",
+      "selected_route": "screenshot_crop",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "background-plate",
+      "bbox_px": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "component_id": null
+    },
+    {
+      "id": "collect-original-lower",
+      "semantic_kind": "image",
+      "semantic_role": "editorial_collage",
+      "selected_route": "screenshot_crop",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "collect-original-lower",
+      "bbox_px": [
+        80,
+        353,
+        426,
+        352
+      ],
+      "component_id": null
+    },
+    {
+      "id": "collect-original-upper",
+      "semantic_kind": "image",
+      "semantic_role": "editorial_collage",
+      "selected_route": "screenshot_crop",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "collect-original-upper",
+      "bbox_px": [
+        270,
+        309,
+        236,
+        44
+      ],
+      "component_id": null
+    },
+    {
+      "id": "organize-original-main",
+      "semantic_kind": "image",
+      "semantic_role": "editorial_collage",
+      "selected_route": "screenshot_crop",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "organize-original-main",
+      "bbox_px": [
+        603,
+        354,
+        398,
+        355
+      ],
+      "component_id": null
+    },
+    {
+      "id": "organize-original-tip",
+      "semantic_kind": "image",
+      "semantic_role": "editorial_collage",
+      "selected_route": "screenshot_crop",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "organize-original-tip",
+      "bbox_px": [
+        843,
+        331,
+        94,
+        23
+      ],
+      "component_id": null
+    },
+    {
+      "id": "articulate-original-main",
+      "semantic_kind": "image",
+      "semantic_role": "editorial_collage",
+      "selected_route": "screenshot_crop",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "articulate-original-main",
+      "bbox_px": [
+        1111,
+        351,
+        484,
+        360
+      ],
+      "component_id": null
+    },
+    {
+      "id": "articulate-original-tip",
+      "semantic_kind": "image",
+      "semantic_role": "editorial_collage",
+      "selected_route": "screenshot_crop",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "articulate-original-tip",
+      "bbox_px": [
+        1310,
+        335,
+        279,
+        16
+      ],
+      "component_id": null
+    },
+    {
+      "id": "handwritten-original",
+      "semantic_kind": "image",
+      "semantic_role": "editorial_collage",
+      "selected_route": "screenshot_crop",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "handwritten-original",
+      "bbox_px": [
+        1476,
+        736,
+        136,
+        114
+      ],
+      "component_id": null
+    },
+    {
+      "id": "arrow-cleanup-1",
+      "semantic_kind": "image",
+      "semantic_role": "texture_clean_plate",
+      "selected_route": "screenshot_crop",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "arrow-cleanup-1",
+      "bbox_px": [
+        441,
+        478,
+        180,
+        58
+      ],
+      "component_id": null
+    },
+    {
+      "id": "arrow-cleanup-2",
+      "semantic_kind": "image",
+      "semantic_role": "texture_clean_plate",
+      "selected_route": "screenshot_crop",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "arrow-cleanup-2",
+      "bbox_px": [
+        972,
+        481,
+        135,
+        24
+      ],
+      "component_id": null
+    },
+    {
+      "id": "title-line-1",
+      "semantic_kind": "text",
+      "semantic_role": "slide_title",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "title-line-1",
+      "bbox_px": [
+        90,
+        88,
+        720,
+        44
+      ],
+      "component_id": null
+    },
+    {
+      "id": "title-line-2",
+      "semantic_kind": "text",
+      "semantic_role": "slide_title",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "title-line-2",
+      "bbox_px": [
+        90,
+        135,
+        950,
+        44
+      ],
+      "component_id": null
+    },
+    {
+      "id": "meta-left-title",
+      "semantic_kind": "text",
+      "semantic_role": "body_compact",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "meta-left-title",
+      "bbox_px": [
+        1198,
+        95,
+        240,
+        23
+      ],
+      "component_id": null
+    },
+    {
+      "id": "meta-left-body",
+      "semantic_kind": "text",
+      "semantic_role": "body_compact",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "meta-left-body",
+      "bbox_px": [
+        1198,
+        128,
+        250,
+        60
+      ],
+      "component_id": null
+    },
+    {
+      "id": "meta-right-title",
+      "semantic_kind": "text",
+      "semantic_role": "body_compact",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "meta-right-title",
+      "bbox_px": [
+        1498,
+        95,
+        150,
+        23
+      ],
+      "component_id": null
+    },
+    {
+      "id": "meta-right-body",
+      "semantic_kind": "text",
+      "semantic_role": "body_compact",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "meta-right-body",
+      "bbox_px": [
+        1498,
+        128,
+        168,
+        60
+      ],
+      "component_id": null
+    },
+    {
+      "id": "stage-number-1",
+      "semantic_kind": "text",
+      "semantic_role": "section_number",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "stage-number-1",
+      "bbox_px": [
+        129,
+        263,
+        100,
+        43
+      ],
+      "component_id": null
+    },
+    {
+      "id": "stage-label-1",
+      "semantic_kind": "text",
+      "semantic_role": "heading",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "stage-label-1",
+      "bbox_px": [
+        130,
+        311,
+        270,
+        23
+      ],
+      "component_id": null
+    },
+    {
+      "id": "stage-subtitle-1",
+      "semantic_kind": "text",
+      "semantic_role": "subtitle",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "stage-subtitle-1",
+      "bbox_px": [
+        130,
+        331,
+        250,
+        26
+      ],
+      "component_id": null
+    },
+    {
+      "id": "caption-1",
+      "semantic_kind": "text",
+      "semantic_role": "body_compact",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "caption-1",
+      "bbox_px": [
+        133,
+        733,
+        390,
+        44
+      ],
+      "component_id": null
+    },
+    {
+      "id": "stage-number-2",
+      "semantic_kind": "text",
+      "semantic_role": "section_number",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "stage-number-2",
+      "bbox_px": [
+        654,
+        263,
+        100,
+        43
+      ],
+      "component_id": null
+    },
+    {
+      "id": "stage-label-2",
+      "semantic_kind": "text",
+      "semantic_role": "heading",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "stage-label-2",
+      "bbox_px": [
+        655,
+        311,
+        270,
+        23
+      ],
+      "component_id": null
+    },
+    {
+      "id": "stage-subtitle-2",
+      "semantic_kind": "text",
+      "semantic_role": "subtitle",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "stage-subtitle-2",
+      "bbox_px": [
+        655,
+        331,
+        250,
+        26
+      ],
+      "component_id": null
+    },
+    {
+      "id": "caption-2",
+      "semantic_kind": "text",
+      "semantic_role": "body_compact",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "caption-2",
+      "bbox_px": [
+        655,
+        733,
+        390,
+        44
+      ],
+      "component_id": null
+    },
+    {
+      "id": "stage-number-3",
+      "semantic_kind": "text",
+      "semantic_role": "section_number",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "stage-number-3",
+      "bbox_px": [
+        1160,
+        263,
+        100,
+        43
+      ],
+      "component_id": null
+    },
+    {
+      "id": "stage-label-3",
+      "semantic_kind": "text",
+      "semantic_role": "heading",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "stage-label-3",
+      "bbox_px": [
+        1161,
+        311,
+        270,
+        23
+      ],
+      "component_id": null
+    },
+    {
+      "id": "stage-subtitle-3",
+      "semantic_kind": "text",
+      "semantic_role": "subtitle",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "stage-subtitle-3",
+      "bbox_px": [
+        1161,
+        331,
+        250,
+        26
+      ],
+      "component_id": null
+    },
+    {
+      "id": "caption-3",
+      "semantic_kind": "text",
+      "semantic_role": "body_compact",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "caption-3",
+      "bbox_px": [
+        1161,
+        733,
+        390,
+        44
+      ],
+      "component_id": null
+    },
+    {
+      "id": "bottom-observe",
+      "semantic_kind": "text",
+      "semantic_role": "label",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "bottom-observe",
+      "bbox_px": [
+        571,
+        869,
+        180,
+        25
+      ],
+      "component_id": null
+    },
+    {
+      "id": "bottom-organize",
+      "semantic_kind": "text",
+      "semantic_role": "label",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "bottom-organize",
+      "bbox_px": [
+        774,
+        869,
+        180,
+        25
+      ],
+      "component_id": null
+    },
+    {
+      "id": "bottom-articulate",
+      "semantic_kind": "text",
+      "semantic_role": "label",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "bottom-articulate",
+      "bbox_px": [
+        979,
+        869,
+        180,
+        25
+      ],
+      "component_id": null
+    },
+    {
+      "id": "flow-collect-organize",
+      "semantic_kind": "shape",
+      "semantic_role": "directional_progression",
+      "selected_route": "fitted_freeform",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "flow-collect-organize",
+      "bbox_px": [
+        437,
+        480,
+        182,
+        58
+      ],
+      "component_id": null
+    },
+    {
+      "id": "flow-organize-articulate",
+      "semantic_kind": "shape",
+      "semantic_role": "directional_progression",
+      "selected_route": "fitted_freeform",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "flow-organize-articulate",
+      "bbox_px": [
+        976,
+        485,
+        129,
+        14
+      ],
+      "component_id": null
+    },
+    {
+      "id": "metadata-rule",
+      "semantic_kind": "shape",
+      "semantic_role": "editorial_rule",
+      "selected_route": "fitted_freeform",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "metadata-rule",
+      "bbox_px": [
+        1454,
+        98,
+        1,
+        83
+      ],
+      "component_id": null
+    },
+    {
+      "id": "bottom-rule-1",
+      "semantic_kind": "shape",
+      "semantic_role": "editorial_rule",
+      "selected_route": "fitted_freeform",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "bottom-rule-1",
+      "bbox_px": [
+        675,
+        879,
+        75,
+        1
+      ],
+      "component_id": null
+    },
+    {
+      "id": "bottom-rule-2",
+      "semantic_kind": "shape",
+      "semantic_role": "editorial_rule",
+      "selected_route": "fitted_freeform",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "bottom-rule-2",
+      "bbox_px": [
+        882,
+        879,
+        74,
+        1
+      ],
+      "component_id": null
+    }
+  ],
+  "canonical_asset_mappings": [],
+  "connector_reconstruction_plans": [],
+  "connector_configuration": {
+    "allowed_families": [
+      "direct_flow",
+      "orthogonal_dependency",
+      "merge_split",
+      "grouping_bracket",
+      "grouping_brace",
+      "annotation_leader"
+    ],
+    "stroke": {
+      "color": "#505050",
+      "width_px": 2,
+      "dash": "solid",
+      "line_cap": "round",
+      "line_join": "round"
+    },
+    "arrowhead": {
+      "type": "triangle",
+      "powerpoint_size": "sm",
+      "minimum_visible_endpoint_px": 14,
+      "minimum_clear_segment_px": 18,
+      "length_px": 10,
+      "width_px": 8
+    },
+    "routing": {
+      "minimum_clearance_px": 12,
+      "maximum_ordinary_bends": 2,
+      "grouping_brace_depth_px": 34,
+      "grouping_bracket_depth_px": 22,
+      "grouping_brace_preset_depth_factor": 1.7
+    }
+  },
+  "z_order_relations": [],
+  "fitted_text_contracts": [],
+  "layout_constraints": {
+    "non_overlap_pairs": []
+  },
+  "evidence_policy": {
+    "pixel_evidence_emits_objects": false,
+    "generated_icon_glyphs_emit_objects": false,
+    "meaningful_visible_entity_must_emit_or_have_emitted_owner": true,
+    "accepted_target_geometry_frozen": true
+  }
+}

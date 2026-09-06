@@ -1,0 +1,4491 @@
+{
+  "schema_version": "3.0.0",
+  "source": {
+    "image": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s02-question/work/accepted-slide.png",
+    "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s02-question/work/accepted-slide.png",
+    "width_px": 1672,
+    "height_px": 941
+  },
+  "runtime": {
+    "opencv": "5.0.0",
+    "segmentation": {
+      "provider": "sam2",
+      "mode": "never",
+      "eligible_entity_ids": [],
+      "executed": false,
+      "candidate_entity_ids": [],
+      "selected_entity_ids": [],
+      "skip_reason": "disabled",
+      "error": null
+    },
+    "local_geometry_normalization": {
+      "enabled": true,
+      "mode": "agent_authored_only",
+      "adjustment_count": 0,
+      "adjustments": [],
+      "policy": "Exact host-reviewed corrections only. No automatic alignment or programmatic magnitude verdict."
+    }
+  },
+  "entities": [
+    {
+      "id": "paper-field",
+      "display_label": "Warm ivory page",
+      "kind": "shape",
+      "role": "paper-field",
+      "shape": "rectangle",
+      "bbox_hint": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 0,
+      "style_hint": {
+        "fill": "#FBF9F7",
+        "stroke": "none",
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
+      },
+      "measurement": {
+        "layout_bbox": {
+          "px": [
+            0,
+            0,
+            1672,
+            941
+          ]
+        },
+        "search_bbox": {
+          "px": [
+            0,
+            0,
+            1672,
+            941
+          ]
+        },
+        "visible_bbox": {
+          "px": [
+            73,
+            91,
+            1500,
+            793
+          ]
+        },
+        "color_evidence": {
+          "background": "#FAF9F6",
+          "foreground": "#DDDAD6",
+          "foreground_fraction": 0.1838
+        },
+        "contours_px": [
+          [
+            [
+              187,
+              206
+            ],
+            [
+              179,
+              456
+            ],
+            [
+              96,
+              448
+            ],
+            [
+              134,
+              477
+            ],
+            [
+              93,
+              485
+            ],
+            [
+              76,
+              747
+            ],
+            [
+              287,
+              775
+            ],
+            [
+              291,
+              738
+            ],
+            [
+              612,
+              743
+            ],
+            [
+              616,
+              213
+            ]
+          ],
+          [
+            [
+              1385,
+              277
+            ],
+            [
+              1365,
+              274
+            ],
+            [
+              1350,
+              284
+            ],
+            [
+              1347,
+              273
+            ],
+            [
+              1328,
+              282
+            ],
+            [
+              1338,
+              289
+            ],
+            [
+              1338,
+              374
+            ],
+            [
+              1329,
+              381
+            ],
+            [
+              1359,
+              380
+            ],
+            [
+              1349,
+              372
+            ],
+            [
+              1350,
+              339
+            ],
+            [
+              1372,
+              343
+            ],
+            [
+              1393,
+              328
+            ],
+            [
+              1399,
+              301
+            ]
+          ],
+          [
+            [
+              1002,
+              137
+            ],
+            [
+              984,
+              134
+            ],
+            [
+              968,
+              145
+            ],
+            [
+              966,
+              133
+            ],
+            [
+              947,
+              142
+            ],
+            [
+              957,
+              153
+            ],
+            [
+              957,
+              230
+            ],
+            [
+              947,
+              241
+            ],
+            [
+              977,
+              241
+            ],
+            [
+              967,
+              235
+            ],
+            [
+              967,
+              200
+            ],
+            [
+              991,
+              203
+            ],
+            [
+              1012,
+              187
+            ],
+            [
+              1017,
+              161
+            ]
+          ],
+          [
+            [
+              739,
+              275
+            ],
+            [
+              717,
+              298
+            ],
+            [
+              719,
+              329
+            ],
+            [
+              736,
+              343
+            ],
+            [
+              752,
+              342
+            ],
+            [
+              764,
+              333
+            ],
+            [
+              765,
+              372
+            ],
+            [
+              754,
+              380
+            ],
+            [
+              785,
+              380
+            ],
+            [
+              775,
+              372
+            ],
+            [
+              775,
+              274
+            ],
+            [
+              767,
+              280
+            ]
+          ],
+          [
+            [
+              1283,
+              274
+            ],
+            [
+              1264,
+              286
+            ],
+            [
+              1257,
+              300
+            ],
+            [
+              1256,
+              313
+            ],
+            [
+              1260,
+              326
+            ],
+            [
+              1268,
+              336
+            ],
+            [
+              1278,
+              342
+            ],
+            [
+              1296,
+              343
+            ],
+            [
+              1315,
+              330
+            ],
+            [
+              1320,
+              321
+            ],
+            [
+              1322,
+              305
+            ],
+            [
+              1318,
+              291
+            ],
+            [
+              1307,
+              279
+            ],
+            [
+              1295,
+              274
+            ]
+          ],
+          [
+            [
+              1095,
+              274
+            ],
+            [
+              1083,
+              279
+            ],
+            [
+              1075,
+              287
+            ],
+            [
+              1069,
+              299
+            ],
+            [
+              1068,
+              314
+            ],
+            [
+              1073,
+              328
+            ],
+            [
+              1081,
+              337
+            ],
+            [
+              1094,
+              343
+            ],
+            [
+              1107,
+              343
+            ],
+            [
+              1120,
+              337
+            ],
+            [
+              1128,
+              328
+            ],
+            [
+              1133,
+              316
+            ],
+            [
+              1133,
+              302
+            ],
+            [
+              1128,
+              289
+            ],
+            [
+              1120,
+              280
+            ],
+            [
+              1107,
+              274
+            ]
+          ],
+          [
+            [
+              718,
+              95
+            ],
+            [
+              730,
+              103
+            ],
+            [
+              730,
+              194
+            ],
+            [
+              718,
+              201
+            ],
+            [
+              756,
+              201
+            ],
+            [
+              744,
+              194
+            ],
+            [
+              750,
+              150
+            ],
+            [
+              789,
+              194
+            ],
+            [
+              781,
+              202
+            ],
+            [
+              820,
+              202
+            ],
+            [
+              760,
+              141
+            ],
+            [
+              813,
+              95
+            ],
+            [
+              779,
+              95
+            ],
+            [
+              787,
+              107
+            ],
+            [
+              745,
+              149
+            ],
+            [
+              744,
+              103
+            ],
+            [
+              756,
+              96
+            ]
+          ],
+          [
+            [
+              1106,
+              97
+            ],
+            [
+              1115,
+              104
+            ],
+            [
+              1115,
+              195
+            ],
+            [
+              1106,
+              202
+            ],
+            [
+              1135,
+              201
+            ],
+            [
+              1126,
+              195
+            ],
+            [
+              1126,
+              153
+            ],
+            [
+              1140,
+              141
+            ],
+            [
+              1151,
+              142
+            ],
+            [
+              1159,
+              155
+            ],
+            [
+              1159,
+              193
+            ],
+            [
+              1149,
+              201
+            ],
+            [
+              1179,
+              201
+            ],
+            [
+              1169,
+              192
+            ],
+            [
+              1164,
+              139
+            ],
+            [
+              1144,
+              134
+            ],
+            [
+              1127,
+              146
+            ],
+            [
+              1126,
+              91
+            ]
+          ]
+        ],
+        "mask_source": "opencv"
+      },
+      "reconstruction_route": "native_shape"
+    },
+    {
+      "id": "question-collage",
+      "display_label": "Folded paper and archival eyes",
+      "kind": "image",
+      "role": "editorial_collage",
+      "visual_source_class": "novel_illustration",
+      "bbox_hint": [
+        67,
+        197,
+        559,
+        580
+      ],
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 10,
+      "raster_fit": "fill",
+      "raster_decision": {
+        "action": "reuse_original",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "reason": "The folded paper, film strip, tissue and tape share overlapping shadows. One regional crop preserves those relationships and has no presentation text.",
+        "source_dimensions_px": [
+          559,
+          580
+        ],
+        "intended_output_size_px": [
+          559,
+          580
+        ],
+        "intrinsic_text_ownership": "Handwritten and depicted marks remain part of the collage. No external presentation copy is included.",
+        "occluding_native_text_ids": []
+      },
+      "style_hint": {
+        "style_authority": "accepted_generated_image"
+      },
+      "measurement": {
+        "layout_bbox": {
+          "px": [
+            67,
+            197,
+            559,
+            580
+          ]
+        },
+        "search_bbox": {
+          "px": [
+            67,
+            197,
+            559,
+            580
+          ]
+        },
+        "visible_bbox": {
+          "px": [
+            73,
+            202,
+            550,
+            574
+          ]
+        },
+        "color_evidence": {
+          "background": "#FAF9F7",
+          "foreground": "#E2DFDB",
+          "foreground_fraction": 0.7369
+        },
+        "contours_px": [
+          [
+            [
+              187,
+              206
+            ],
+            [
+              179,
+              456
+            ],
+            [
+              96,
+              448
+            ],
+            [
+              134,
+              477
+            ],
+            [
+              93,
+              485
+            ],
+            [
+              74,
+              746
+            ],
+            [
+              287,
+              775
+            ],
+            [
+              291,
+              738
+            ],
+            [
+              612,
+              743
+            ],
+            [
+              616,
+              213
+            ]
+          ],
+          [
+            [
+              98,
+              476
+            ],
+            [
+              98,
+              478
+            ],
+            [
+              102,
+              478
+            ],
+            [
+              101,
+              476
+            ]
+          ],
+          [
+            [
+              96,
+              546
+            ],
+            [
+              92,
+              548
+            ],
+            [
+              96,
+              548
+            ]
+          ]
+        ],
+        "mask_source": "opencv",
+        "source_crop_bbox": {
+          "px": [
+            67,
+            197,
+            559,
+            580
+          ]
+        },
+        "image_object": {
+          "screenshot_crop_absolute": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s02-question/work/reconstruction/measurement/crops/question-collage.png",
+          "crop_mode": "fill",
+          "source_kind": "accepted_slide_crop"
+        }
+      },
+      "reconstruction_route": "screenshot_crop"
+    },
+    {
+      "id": "title-first",
+      "display_label": "Keep the",
+      "kind": "text",
+      "role": "title-first",
+      "text_style_role": "slide_title",
+      "text": "Keep the",
+      "bbox_hint": [
+        714,
+        45,
+        640,
+        209
+      ],
+      "typography_group": "question-title",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 155,
+        "char_spacing_px": 1
+      },
+      "search_bbox_hint": [
+        709,
+        82,
+        547,
+        161
+      ],
+      "measurement": {
+        "layout_bbox": {
+          "px": [
+            714,
+            45,
+            640,
+            209
+          ]
+        },
+        "search_bbox": {
+          "px": [
+            709,
+            82,
+            547,
+            161
+          ]
+        },
+        "visible_bbox": {
+          "px": [
+            718,
+            91,
+            523,
+            152
+          ]
+        },
+        "color_evidence": {
+          "background": "#FBF9F7",
+          "foreground": "#262525",
+          "foreground_fraction": 0.1622
+        },
+        "contours_px": [
+          [
+            [
+              1002,
+              137
+            ],
+            [
+              984,
+              134
+            ],
+            [
+              968,
+              145
+            ],
+            [
+              966,
+              133
+            ],
+            [
+              947,
+              142
+            ],
+            [
+              957,
+              153
+            ],
+            [
+              957,
+              230
+            ],
+            [
+              947,
+              241
+            ],
+            [
+              977,
+              241
+            ],
+            [
+              967,
+              235
+            ],
+            [
+              967,
+              200
+            ],
+            [
+              991,
+              203
+            ],
+            [
+              1012,
+              187
+            ],
+            [
+              1017,
+              161
+            ]
+          ],
+          [
+            [
+              718,
+              95
+            ],
+            [
+              730,
+              103
+            ],
+            [
+              730,
+              194
+            ],
+            [
+              718,
+              201
+            ],
+            [
+              756,
+              201
+            ],
+            [
+              744,
+              194
+            ],
+            [
+              750,
+              150
+            ],
+            [
+              789,
+              194
+            ],
+            [
+              780,
+              202
+            ],
+            [
+              820,
+              202
+            ],
+            [
+              760,
+              141
+            ],
+            [
+              813,
+              95
+            ],
+            [
+              779,
+              95
+            ],
+            [
+              787,
+              107
+            ],
+            [
+              745,
+              149
+            ],
+            [
+              744,
+              103
+            ],
+            [
+              756,
+              96
+            ]
+          ],
+          [
+            [
+              1106,
+              97
+            ],
+            [
+              1115,
+              104
+            ],
+            [
+              1115,
+              195
+            ],
+            [
+              1106,
+              202
+            ],
+            [
+              1135,
+              201
+            ],
+            [
+              1126,
+              195
+            ],
+            [
+              1126,
+              153
+            ],
+            [
+              1140,
+              141
+            ],
+            [
+              1151,
+              142
+            ],
+            [
+              1159,
+              155
+            ],
+            [
+              1159,
+              193
+            ],
+            [
+              1149,
+              201
+            ],
+            [
+              1179,
+              201
+            ],
+            [
+              1169,
+              192
+            ],
+            [
+              1165,
+              140
+            ],
+            [
+              1144,
+              134
+            ],
+            [
+              1127,
+              146
+            ],
+            [
+              1126,
+              91
+            ]
+          ],
+          [
+            [
+              1220,
+              134
+            ],
+            [
+              1199,
+              139
+            ],
+            [
+              1185,
+              163
+            ],
+            [
+              1191,
+              192
+            ],
+            [
+              1214,
+              204
+            ],
+            [
+              1230,
+              199
+            ],
+            [
+              1240,
+              186
+            ],
+            [
+              1228,
+              194
+            ],
+            [
+              1214,
+              195
+            ],
+            [
+              1198,
+              180
+            ],
+            [
+              1197,
+              160
+            ],
+            [
+              1239,
+              159
+            ],
+            [
+              1234,
+              142
+            ]
+          ],
+          [
+            [
+              911,
+              134
+            ],
+            [
+              890,
+              151
+            ],
+            [
+              886,
+              175
+            ],
+            [
+              898,
+              198
+            ],
+            [
+              922,
+              203
+            ],
+            [
+              932,
+              198
+            ],
+            [
+              941,
+              185
+            ],
+            [
+              925,
+              195
+            ],
+            [
+              910,
+              193
+            ],
+            [
+              899,
+              180
+            ],
+            [
+              897,
+              161
+            ],
+            [
+              941,
+              159
+            ],
+            [
+              932,
+              139
+            ]
+          ],
+          [
+            [
+              849,
+              134
+            ],
+            [
+              836,
+              140
+            ],
+            [
+              828,
+              150
+            ],
+            [
+              824,
+              178
+            ],
+            [
+              838,
+              200
+            ],
+            [
+              860,
+              203
+            ],
+            [
+              878,
+              185
+            ],
+            [
+              863,
+              195
+            ],
+            [
+              846,
+              192
+            ],
+            [
+              836,
+              179
+            ],
+            [
+              834,
+              161
+            ],
+            [
+              877,
+              160
+            ],
+            [
+              878,
+              154
+            ],
+            [
+              868,
+              138
+            ]
+          ],
+          [
+            [
+              1077,
+              118
+            ],
+            [
+              1058,
+              140
+            ],
+            [
+              1068,
+              142
+            ],
+            [
+              1069,
+              195
+            ],
+            [
+              1075,
+              202
+            ],
+            [
+              1089,
+              203
+            ],
+            [
+              1101,
+              192
+            ],
+            [
+              1091,
+              197
+            ],
+            [
+              1079,
+              192
+            ],
+            [
+              1078,
+              142
+            ],
+            [
+              1098,
+              141
+            ],
+            [
+              1099,
+              137
+            ],
+            [
+              1079,
+              136
+            ]
+          ],
+          [
+            [
+              1038,
+              242
+            ],
+            [
+              1052,
+              242
+            ],
+            [
+              1048,
+              238
+            ],
+            [
+              1042,
+              238
+            ]
+          ]
+        ],
+        "mask_source": "opencv",
+        "text_geometry": {
+          "line_boxes_px": [
+            [
+              718,
+              91,
+              523,
+              151
+            ],
+            [
+              1038,
+              238,
+              15,
+              5
+            ]
+          ],
+          "line_count_evidence": 2,
+          "median_ink_height_px": 78.0,
+          "estimated_font_size_pt": 44.78
+        },
+        "text_color_evidence": {
+          "background": "#FBF9F7",
+          "foreground": "#262525"
+        }
+      },
+      "reconstruction_route": "native_text"
+    },
+    {
+      "id": "title-second",
+      "display_label": "question open.",
+      "kind": "text",
+      "role": "title-second",
+      "text_style_role": "slide_title",
+      "text": "question open.",
+      "bbox_hint": [
+        711,
+        189,
+        940,
+        208
+      ],
+      "typography_group": "question-title",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 155,
+        "char_spacing_px": 1
+      },
+      "search_bbox_hint": [
+        706,
+        234,
+        880,
+        154
+      ],
+      "measurement": {
+        "layout_bbox": {
+          "px": [
+            711,
+            189,
+            940,
+            208
+          ]
+        },
+        "search_bbox": {
+          "px": [
+            706,
+            234,
+            880,
+            154
+          ]
+        },
+        "visible_bbox": {
+          "px": [
+            715,
+            234,
+            858,
+            148
+          ]
+        },
+        "color_evidence": {
+          "background": "#FBF9F7",
+          "foreground": "#262625",
+          "foreground_fraction": 0.155
+        },
+        "contours_px": [
+          [
+            [
+              1385,
+              277
+            ],
+            [
+              1365,
+              274
+            ],
+            [
+              1350,
+              284
+            ],
+            [
+              1347,
+              273
+            ],
+            [
+              1328,
+              282
+            ],
+            [
+              1338,
+              289
+            ],
+            [
+              1338,
+              374
+            ],
+            [
+              1329,
+              381
+            ],
+            [
+              1359,
+              380
+            ],
+            [
+              1349,
+              372
+            ],
+            [
+              1350,
+              339
+            ],
+            [
+              1372,
+              343
+            ],
+            [
+              1393,
+              328
+            ],
+            [
+              1399,
+              301
+            ]
+          ],
+          [
+            [
+              739,
+              275
+            ],
+            [
+              718,
+              295
+            ],
+            [
+              718,
+              327
+            ],
+            [
+              736,
+              343
+            ],
+            [
+              752,
+              342
+            ],
+            [
+              764,
+              333
+            ],
+            [
+              765,
+              372
+            ],
+            [
+              754,
+              380
+            ],
+            [
+              785,
+              380
+            ],
+            [
+              775,
+              372
+            ],
+            [
+              775,
+              274
+            ],
+            [
+              767,
+              280
+            ]
+          ],
+          [
+            [
+              1283,
+              274
+            ],
+            [
+              1264,
+              286
+            ],
+            [
+              1257,
+              300
+            ],
+            [
+              1256,
+              313
+            ],
+            [
+              1260,
+              326
+            ],
+            [
+              1268,
+              336
+            ],
+            [
+              1278,
+              342
+            ],
+            [
+              1296,
+              343
+            ],
+            [
+              1315,
+              330
+            ],
+            [
+              1321,
+              318
+            ],
+            [
+              1322,
+              305
+            ],
+            [
+              1318,
+              291
+            ],
+            [
+              1307,
+              279
+            ],
+            [
+              1295,
+              274
+            ]
+          ],
+          [
+            [
+              1095,
+              274
+            ],
+            [
+              1083,
+              279
+            ],
+            [
+              1075,
+              287
+            ],
+            [
+              1069,
+              299
+            ],
+            [
+              1068,
+              314
+            ],
+            [
+              1073,
+              328
+            ],
+            [
+              1081,
+              337
+            ],
+            [
+              1094,
+              343
+            ],
+            [
+              1107,
+              343
+            ],
+            [
+              1120,
+              337
+            ],
+            [
+              1128,
+              328
+            ],
+            [
+              1133,
+              316
+            ],
+            [
+              1133,
+              302
+            ],
+            [
+              1128,
+              289
+            ],
+            [
+              1120,
+              280
+            ],
+            [
+              1107,
+              274
+            ]
+          ],
+          [
+            [
+              891,
+              274
+            ],
+            [
+              872,
+              289
+            ],
+            [
+              867,
+              316
+            ],
+            [
+              879,
+              338
+            ],
+            [
+              903,
+              343
+            ],
+            [
+              913,
+              338
+            ],
+            [
+              922,
+              325
+            ],
+            [
+              906,
+              335
+            ],
+            [
+              889,
+              332
+            ],
+            [
+              879,
+              318
+            ],
+            [
+              878,
+              301
+            ],
+            [
+              921,
+              300
+            ],
+            [
+              922,
+              294
+            ],
+            [
+              912,
+              278
+            ]
+          ],
+          [
+            [
+              1432,
+              274
+            ],
+            [
+              1414,
+              287
+            ],
+            [
+              1408,
+              302
+            ],
+            [
+              1408,
+              318
+            ],
+            [
+              1420,
+              338
+            ],
+            [
+              1443,
+              343
+            ],
+            [
+              1452,
+              339
+            ],
+            [
+              1462,
+              325
+            ],
+            [
+              1447,
+              335
+            ],
+            [
+              1430,
+              332
+            ],
+            [
+              1420,
+              319
+            ],
+            [
+              1418,
+              301
+            ],
+            [
+              1461,
+              300
+            ],
+            [
+              1462,
+              293
+            ],
+            [
+              1449,
+              276
+            ]
+          ],
+          [
+            [
+              1141,
+              282
+            ],
+            [
+              1151,
+              290
+            ],
+            [
+              1151,
+              334
+            ],
+            [
+              1141,
+              341
+            ],
+            [
+              1171,
+              341
+            ],
+            [
+              1162,
+              336
+            ],
+            [
+              1162,
+              293
+            ],
+            [
+              1176,
+              281
+            ],
+            [
+              1187,
+              282
+            ],
+            [
+              1194,
+              291
+            ],
+            [
+              1195,
+              332
+            ],
+            [
+              1185,
+              341
+            ],
+            [
+              1215,
+              341
+            ],
+            [
+              1205,
+              334
+            ],
+            [
+              1205,
+              290
+            ],
+            [
+              1196,
+              276
+            ],
+            [
+              1180,
+              274
+            ],
+            [
+              1163,
+              286
+            ],
+            [
+              1160,
+              273
+            ]
+          ],
+          [
+            [
+              1470,
+              282
+            ],
+            [
+              1480,
+              291
+            ],
+            [
+              1480,
+              334
+            ],
+            [
+              1470,
+              341
+            ],
+            [
+              1500,
+              341
+            ],
+            [
+              1490,
+              334
+            ],
+            [
+              1490,
+              293
+            ],
+            [
+              1504,
+              281
+            ],
+            [
+              1517,
+              283
+            ],
+            [
+              1523,
+              293
+            ],
+            [
+              1523,
+              334
+            ],
+            [
+              1513,
+              341
+            ],
+            [
+              1543,
+              341
+            ],
+            [
+              1534,
+              336
+            ],
+            [
+              1534,
+              293
+            ],
+            [
+              1525,
+              276
+            ],
+            [
+              1508,
+              274
+            ],
+            [
+              1491,
+              287
+            ],
+            [
+              1490,
+              273
+            ]
+          ]
+        ],
+        "mask_source": "opencv",
+        "text_geometry": {
+          "line_boxes_px": [
+            [
+              947,
+              234,
+              31,
+              8
+            ],
+            [
+              1037,
+              238,
+              17,
+              17
+            ],
+            [
+              715,
+              258,
+              858,
+              124
+            ]
+          ],
+          "line_count_evidence": 3,
+          "median_ink_height_px": 17.0,
+          "estimated_font_size_pt": 9.76
+        },
+        "text_color_evidence": {
+          "background": "#FBF9F7",
+          "foreground": "#262625"
+        }
+      },
+      "reconstruction_route": "native_text"
+    },
+    {
+      "id": "premise",
+      "display_label": "A fast answer can close a thought too early.",
+      "kind": "text",
+      "role": "premise",
+      "text_style_role": "subtitle",
+      "text": "A fast answer can close a thought too early.",
+      "bbox_hint": [
+        717,
+        420,
+        675,
+        49
+      ],
+      "typography_group": "question-premise",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 31
+      },
+      "search_bbox_hint": [
+        709,
+        424,
+        609,
+        46
+      ],
+      "measurement": {
+        "layout_bbox": {
+          "px": [
+            717,
+            420,
+            675,
+            49
+          ]
+        },
+        "search_bbox": {
+          "px": [
+            709,
+            424,
+            609,
+            46
+          ]
+        },
+        "visible_bbox": {
+          "px": [
+            719,
+            434,
+            585,
+            29
+          ]
+        },
+        "color_evidence": {
+          "background": "#FAF9F7",
+          "foreground": "#636363",
+          "foreground_fraction": 0.1954
+        },
+        "contours_px": [
+          [
+            [
+              1138,
+              439
+            ],
+            [
+              1133,
+              442
+            ],
+            [
+              1132,
+              450
+            ],
+            [
+              1135,
+              455
+            ],
+            [
+              1142,
+              455
+            ],
+            [
+              1143,
+              457
+            ],
+            [
+              1141,
+              459
+            ],
+            [
+              1133,
+              457
+            ],
+            [
+              1133,
+              460
+            ],
+            [
+              1136,
+              462
+            ],
+            [
+              1142,
+              462
+            ],
+            [
+              1146,
+              458
+            ],
+            [
+              1146,
+              440
+            ]
+          ],
+          [
+            [
+              1105,
+              439
+            ],
+            [
+              1099,
+              443
+            ],
+            [
+              1098,
+              450
+            ],
+            [
+              1101,
+              455
+            ],
+            [
+              1108,
+              456
+            ],
+            [
+              1113,
+              452
+            ],
+            [
+              1114,
+              447
+            ],
+            [
+              1111,
+              441
+            ]
+          ],
+          [
+            [
+              1195,
+              440
+            ],
+            [
+              1191,
+              445
+            ],
+            [
+              1191,
+              451
+            ],
+            [
+              1194,
+              455
+            ],
+            [
+              1201,
+              456
+            ],
+            [
+              1206,
+              451
+            ],
+            [
+              1206,
+              444
+            ],
+            [
+              1202,
+              440
+            ]
+          ],
+          [
+            [
+              1215,
+              439
+            ],
+            [
+              1208,
+              444
+            ],
+            [
+              1208,
+              451
+            ],
+            [
+              1211,
+              455
+            ],
+            [
+              1218,
+              456
+            ],
+            [
+              1221,
+              454
+            ],
+            [
+              1223,
+              450
+            ],
+            [
+              1223,
+              445
+            ],
+            [
+              1221,
+              441
+            ]
+          ],
+          [
+            [
+              997,
+              439
+            ],
+            [
+              991,
+              443
+            ],
+            [
+              990,
+              450
+            ],
+            [
+              993,
+              455
+            ],
+            [
+              1000,
+              456
+            ],
+            [
+              1005,
+              451
+            ],
+            [
+              1005,
+              445
+            ],
+            [
+              1003,
+              441
+            ]
+          ],
+          [
+            [
+              1051,
+              440
+            ],
+            [
+              1049,
+              444
+            ],
+            [
+              1052,
+              446
+            ],
+            [
+              1048,
+              449
+            ],
+            [
+              1048,
+              454
+            ],
+            [
+              1050,
+              456
+            ],
+            [
+              1062,
+              456
+            ],
+            [
+              1061,
+              442
+            ],
+            [
+              1055,
+              439
+            ]
+          ],
+          [
+            [
+              928,
+              441
+            ],
+            [
+              927,
+              444
+            ],
+            [
+              930,
+              446
+            ],
+            [
+              927,
+              448
+            ],
+            [
+              926,
+              453
+            ],
+            [
+              929,
+              456
+            ],
+            [
+              941,
+              456
+            ],
+            [
+              940,
+              442
+            ],
+            [
+              938,
+              440
+            ]
+          ],
+          [
+            [
+              807,
+              441
+            ],
+            [
+              806,
+              445
+            ],
+            [
+              809,
+              446
+            ],
+            [
+              806,
+              448
+            ],
+            [
+              805,
+              453
+            ],
+            [
+              808,
+              456
+            ],
+            [
+              819,
+              456
+            ],
+            [
+              818,
+              441
+            ],
+            [
+              812,
+              439
+            ]
+          ]
+        ],
+        "mask_source": "opencv",
+        "text_geometry": {
+          "line_boxes_px": [
+            [
+              719,
+              434,
+              585,
+              29
+            ]
+          ],
+          "line_count_evidence": 1,
+          "median_ink_height_px": 29.0,
+          "estimated_font_size_pt": 16.65
+        },
+        "text_color_evidence": {
+          "background": "#FAF9F7",
+          "foreground": "#636363"
+        }
+      },
+      "reconstruction_route": "native_text"
+    },
+    {
+      "id": "prompt-first",
+      "display_label": "What am I assuming?",
+      "kind": "text",
+      "role": "prompt-first",
+      "text_style_role": "quote",
+      "text": "What am I assuming?",
+      "bbox_hint": [
+        716,
+        531,
+        520,
+        62
+      ],
+      "typography_group": "reflection-prompts",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Times New Roman",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 39,
+        "italic": true
+      },
+      "search_bbox_hint": [
+        711,
+        544,
+        356,
+        56
+      ],
+      "measurement": {
+        "layout_bbox": {
+          "px": [
+            716,
+            531,
+            520,
+            62
+          ]
+        },
+        "search_bbox": {
+          "px": [
+            711,
+            544,
+            356,
+            56
+          ]
+        },
+        "visible_bbox": {
+          "px": [
+            723,
+            554,
+            331,
+            38
+          ]
+        },
+        "color_evidence": {
+          "background": "#FAF9F7",
+          "foreground": "#A09F9F",
+          "foreground_fraction": 0.1472
+        },
+        "contours_px": [
+          [
+            [
+              726,
+              582
+            ],
+            [
+              737,
+              567
+            ],
+            [
+              740,
+              582
+            ],
+            [
+              759,
+              555
+            ],
+            [
+              750,
+              555
+            ],
+            [
+              753,
+              558
+            ],
+            [
+              743,
+              574
+            ],
+            [
+              742,
+              558
+            ],
+            [
+              746,
+              555
+            ],
+            [
+              735,
+              555
+            ],
+            [
+              738,
+              563
+            ],
+            [
+              730,
+              575
+            ],
+            [
+              729,
+              558
+            ],
+            [
+              732,
+              555
+            ],
+            [
+              723,
+              555
+            ]
+          ],
+          [
+            [
+              1037,
+              565
+            ],
+            [
+              1028,
+              564
+            ],
+            [
+              1023,
+              568
+            ],
+            [
+              1022,
+              574
+            ],
+            [
+              1024,
+              576
+            ],
+            [
+              1021,
+              579
+            ],
+            [
+              1022,
+              582
+            ],
+            [
+              1017,
+              586
+            ],
+            [
+              1018,
+              590
+            ],
+            [
+              1029,
+              591
+            ],
+            [
+              1033,
+              587
+            ],
+            [
+              1033,
+              585
+            ],
+            [
+              1030,
+              582
+            ],
+            [
+              1023,
+              579
+            ],
+            [
+              1025,
+              577
+            ],
+            [
+              1030,
+              576
+            ],
+            [
+              1033,
+              573
+            ],
+            [
+              1034,
+              568
+            ],
+            [
+              1037,
+              567
+            ]
+          ],
+          [
+            [
+              791,
+              564
+            ],
+            [
+              784,
+              564
+            ],
+            [
+              778,
+              569
+            ],
+            [
+              774,
+              577
+            ],
+            [
+              776,
+              582
+            ],
+            [
+              780,
+              582
+            ],
+            [
+              783,
+              579
+            ],
+            [
+              785,
+              582
+            ],
+            [
+              790,
+              580
+            ],
+            [
+              788,
+              580
+            ],
+            [
+              787,
+              578
+            ],
+            [
+              791,
+              568
+            ]
+          ],
+          [
+            [
+              912,
+              565
+            ],
+            [
+              906,
+              564
+            ],
+            [
+              898,
+              571
+            ],
+            [
+              896,
+              575
+            ],
+            [
+              897,
+              582
+            ],
+            [
+              901,
+              582
+            ],
+            [
+              904,
+              579
+            ],
+            [
+              906,
+              582
+            ],
+            [
+              908,
+              582
+            ],
+            [
+              912,
+              579
+            ],
+            [
+              909,
+              578
+            ]
+          ],
+          [
+            [
+              831,
+              565
+            ],
+            [
+              823,
+              565
+            ],
+            [
+              818,
+              569
+            ],
+            [
+              815,
+              574
+            ],
+            [
+              816,
+              582
+            ],
+            [
+              819,
+              582
+            ],
+            [
+              823,
+              579
+            ],
+            [
+              825,
+              582
+            ],
+            [
+              828,
+              581
+            ],
+            [
+              827,
+              577
+            ]
+          ],
+          [
+            [
+              860,
+              566
+            ],
+            [
+              857,
+              564
+            ],
+            [
+              851,
+              569
+            ],
+            [
+              848,
+              564
+            ],
+            [
+              842,
+              568
+            ],
+            [
+              841,
+              565
+            ],
+            [
+              838,
+              565
+            ],
+            [
+              834,
+              582
+            ],
+            [
+              837,
+              581
+            ],
+            [
+              845,
+              567
+            ],
+            [
+              847,
+              571
+            ],
+            [
+              844,
+              582
+            ],
+            [
+              846,
+              582
+            ],
+            [
+              848,
+              575
+            ],
+            [
+              855,
+              567
+            ],
+            [
+              857,
+              569
+            ],
+            [
+              853,
+              581
+            ],
+            [
+              857,
+              582
+            ],
+            [
+              859,
+              580
+            ],
+            [
+              857,
+              576
+            ]
+          ],
+          [
+            [
+              761,
+              554
+            ],
+            [
+              763,
+              557
+            ],
+            [
+              755,
+              582
+            ],
+            [
+              758,
+              582
+            ],
+            [
+              763,
+              569
+            ],
+            [
+              766,
+              567
+            ],
+            [
+              769,
+              569
+            ],
+            [
+              765,
+              582
+            ],
+            [
+              768,
+              582
+            ],
+            [
+              772,
+              578
+            ],
+            [
+              769,
+              578
+            ],
+            [
+              772,
+              566
+            ],
+            [
+              763,
+              566
+            ],
+            [
+              766,
+              554
+            ]
+          ],
+          [
+            [
+              944,
+              565
+            ],
+            [
+              941,
+              568
+            ],
+            [
+              944,
+              569
+            ],
+            [
+              941,
+              576
+            ],
+            [
+              941,
+              581
+            ],
+            [
+              945,
+              582
+            ],
+            [
+              949,
+              579
+            ],
+            [
+              951,
+              582
+            ],
+            [
+              954,
+              582
+            ],
+            [
+              957,
+              579
+            ],
+            [
+              957,
+              577
+            ],
+            [
+              955,
+              579
+            ],
+            [
+              954,
+              578
+            ],
+            [
+              957,
+              565
+            ],
+            [
+              954,
+              566
+            ],
+            [
+              951,
+              574
+            ],
+            [
+              946,
+              580
+            ],
+            [
+              944,
+              579
+            ],
+            [
+              948,
+              566
+            ]
+          ]
+        ],
+        "mask_source": "opencv",
+        "text_geometry": {
+          "line_boxes_px": [
+            [
+              723,
+              554,
+              331,
+              38
+            ]
+          ],
+          "line_count_evidence": 1,
+          "median_ink_height_px": 38.0,
+          "estimated_font_size_pt": 21.82
+        },
+        "text_color_evidence": {
+          "background": "#FAF9F7",
+          "foreground": "#A09F9F"
+        }
+      },
+      "reconstruction_route": "native_text"
+    },
+    {
+      "id": "prompt-second",
+      "display_label": "What would change my mind?",
+      "kind": "text",
+      "role": "prompt-second",
+      "text_style_role": "quote",
+      "text": "What would change my mind?",
+      "bbox_hint": [
+        716,
+        612,
+        640,
+        62
+      ],
+      "typography_group": "reflection-prompts",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Times New Roman",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 39,
+        "italic": true
+      },
+      "search_bbox_hint": [
+        711,
+        626,
+        484,
+        54
+      ],
+      "measurement": {
+        "layout_bbox": {
+          "px": [
+            716,
+            612,
+            640,
+            62
+          ]
+        },
+        "search_bbox": {
+          "px": [
+            711,
+            626,
+            484,
+            54
+          ]
+        },
+        "visible_bbox": {
+          "px": [
+            723,
+            635,
+            460,
+            39
+          ]
+        },
+        "color_evidence": {
+          "background": "#FAF9F7",
+          "foreground": "#A9A9A8",
+          "foreground_fraction": 0.1588
+        },
+        "contours_px": [
+          [
+            [
+              726,
+              664
+            ],
+            [
+              737,
+              648
+            ],
+            [
+              740,
+              663
+            ],
+            [
+              759,
+              636
+            ],
+            [
+              751,
+              636
+            ],
+            [
+              753,
+              639
+            ],
+            [
+              743,
+              655
+            ],
+            [
+              742,
+              639
+            ],
+            [
+              746,
+              636
+            ],
+            [
+              735,
+              636
+            ],
+            [
+              738,
+              645
+            ],
+            [
+              730,
+              656
+            ],
+            [
+              729,
+              639
+            ],
+            [
+              732,
+              636
+            ],
+            [
+              723,
+              636
+            ]
+          ],
+          [
+            [
+              1006,
+              647
+            ],
+            [
+              996,
+              646
+            ],
+            [
+              991,
+              650
+            ],
+            [
+              992,
+              658
+            ],
+            [
+              990,
+              660
+            ],
+            [
+              990,
+              664
+            ],
+            [
+              986,
+              667
+            ],
+            [
+              986,
+              670
+            ],
+            [
+              988,
+              672
+            ],
+            [
+              996,
+              673
+            ],
+            [
+              1001,
+              670
+            ],
+            [
+              1002,
+              666
+            ],
+            [
+              992,
+              660
+            ],
+            [
+              994,
+              658
+            ],
+            [
+              996,
+              659
+            ],
+            [
+              1000,
+              657
+            ],
+            [
+              1003,
+              652
+            ],
+            [
+              1003,
+              649
+            ],
+            [
+              1006,
+              649
+            ]
+          ],
+          [
+            [
+              1167,
+              635
+            ],
+            [
+              1162,
+              635
+            ],
+            [
+              1162,
+              637
+            ],
+            [
+              1164,
+              638
+            ],
+            [
+              1162,
+              644
+            ],
+            [
+              1160,
+              646
+            ],
+            [
+              1154,
+              647
+            ],
+            [
+              1149,
+              652
+            ],
+            [
+              1147,
+              656
+            ],
+            [
+              1148,
+              663
+            ],
+            [
+              1151,
+              664
+            ],
+            [
+              1156,
+              660
+            ],
+            [
+              1157,
+              663
+            ],
+            [
+              1161,
+              663
+            ],
+            [
+              1164,
+              660
+            ],
+            [
+              1163,
+              659
+            ],
+            [
+              1161,
+              661
+            ],
+            [
+              1160,
+              659
+            ]
+          ],
+          [
+            [
+              791,
+              646
+            ],
+            [
+              784,
+              646
+            ],
+            [
+              778,
+              650
+            ],
+            [
+              774,
+              658
+            ],
+            [
+              775,
+              663
+            ],
+            [
+              778,
+              664
+            ],
+            [
+              783,
+              660
+            ],
+            [
+              786,
+              664
+            ],
+            [
+              790,
+              661
+            ],
+            [
+              788,
+              661
+            ],
+            [
+              787,
+              659
+            ]
+          ],
+          [
+            [
+              966,
+              646
+            ],
+            [
+              959,
+              646
+            ],
+            [
+              952,
+              652
+            ],
+            [
+              949,
+              659
+            ],
+            [
+              952,
+              664
+            ],
+            [
+              958,
+              660
+            ],
+            [
+              959,
+              663
+            ],
+            [
+              963,
+              663
+            ],
+            [
+              966,
+              660
+            ],
+            [
+              963,
+              659
+            ]
+          ],
+          [
+            [
+              1087,
+              650
+            ],
+            [
+              1091,
+              650
+            ],
+            [
+              1087,
+              663
+            ],
+            [
+              1090,
+              663
+            ],
+            [
+              1094,
+              653
+            ],
+            [
+              1099,
+              648
+            ],
+            [
+              1100,
+              653
+            ],
+            [
+              1096,
+              663
+            ],
+            [
+              1099,
+              663
+            ],
+            [
+              1108,
+              648
+            ],
+            [
+              1110,
+              652
+            ],
+            [
+              1106,
+              662
+            ],
+            [
+              1110,
+              663
+            ],
+            [
+              1113,
+              660
+            ],
+            [
+              1109,
+              660
+            ],
+            [
+              1113,
+              651
+            ],
+            [
+              1112,
+              646
+            ],
+            [
+              1105,
+              649
+            ],
+            [
+              1103,
+              646
+            ],
+            [
+              1096,
+              649
+            ],
+            [
+              1091,
+              646
+            ]
+          ],
+          [
+            [
+              852,
+              646
+            ],
+            [
+              846,
+              647
+            ],
+            [
+              841,
+              654
+            ],
+            [
+              841,
+              660
+            ],
+            [
+              845,
+              664
+            ],
+            [
+              851,
+              662
+            ],
+            [
+              855,
+              656
+            ],
+            [
+              855,
+              649
+            ]
+          ],
+          [
+            [
+              1031,
+              650
+            ],
+            [
+              1035,
+              650
+            ],
+            [
+              1031,
+              663
+            ],
+            [
+              1034,
+              662
+            ],
+            [
+              1042,
+              648
+            ],
+            [
+              1045,
+              650
+            ],
+            [
+              1040,
+              663
+            ],
+            [
+              1043,
+              663
+            ],
+            [
+              1048,
+              651
+            ],
+            [
+              1052,
+              648
+            ],
+            [
+              1054,
+              652
+            ],
+            [
+              1050,
+              662
+            ],
+            [
+              1054,
+              663
+            ],
+            [
+              1058,
+              659
+            ],
+            [
+              1053,
+              660
+            ],
+            [
+              1057,
+              651
+            ],
+            [
+              1056,
+              646
+            ],
+            [
+              1051,
+              647
+            ],
+            [
+              1048,
+              651
+            ],
+            [
+              1046,
+              646
+            ],
+            [
+              1039,
+              650
+            ],
+            [
+              1038,
+              646
+            ],
+            [
+              1035,
+              646
+            ]
+          ]
+        ],
+        "mask_source": "opencv",
+        "text_geometry": {
+          "line_boxes_px": [
+            [
+              723,
+              635,
+              460,
+              39
+            ]
+          ],
+          "line_count_evidence": 1,
+          "median_ink_height_px": 39.0,
+          "estimated_font_size_pt": 22.39
+        },
+        "text_color_evidence": {
+          "background": "#FAF9F7",
+          "foreground": "#A9A9A8"
+        }
+      },
+      "reconstruction_route": "native_text"
+    },
+    {
+      "id": "conclusion-rule",
+      "display_label": "Short reflective rule",
+      "kind": "shape",
+      "role": "conclusion-rule",
+      "shape": "rectangle",
+      "bbox_hint": [
+        718,
+        719,
+        82,
+        1
+      ],
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 0,
+      "style_hint": {
+        "fill": "#8B8882",
+        "stroke": "none",
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
+      },
+      "measurement": {
+        "layout_bbox": {
+          "px": [
+            718,
+            719,
+            82,
+            1
+          ]
+        },
+        "search_bbox": {
+          "px": [
+            718,
+            719,
+            82,
+            1
+          ]
+        },
+        "visible_bbox": {
+          "px": [
+            718,
+            719,
+            2,
+            1
+          ]
+        },
+        "color_evidence": {
+          "background": "#A2A4A4",
+          "foreground": "#AEB0AF",
+          "foreground_fraction": 0.0244
+        },
+        "contours_px": [],
+        "mask_source": "opencv"
+      },
+      "reconstruction_route": "native_shape"
+    },
+    {
+      "id": "conclusion",
+      "display_label": "The useful conversation begins with a better question.",
+      "kind": "text",
+      "role": "conclusion",
+      "text_style_role": "subtitle",
+      "text": "The useful conversation begins with a better question.",
+      "bbox_hint": [
+        716,
+        762,
+        660,
+        46
+      ],
+      "typography_group": "question-conclusion",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 25,
+        "char_spacing_px": 0.1
+      },
+      "search_bbox_hint": [
+        709,
+        764,
+        609,
+        41
+      ],
+      "measurement": {
+        "layout_bbox": {
+          "px": [
+            716,
+            762,
+            660,
+            46
+          ]
+        },
+        "search_bbox": {
+          "px": [
+            709,
+            764,
+            609,
+            41
+          ]
+        },
+        "visible_bbox": {
+          "px": [
+            719,
+            774,
+            585,
+            24
+          ]
+        },
+        "color_evidence": {
+          "background": "#FBF9F7",
+          "foreground": "#8C8B8B",
+          "foreground_fraction": 0.1975
+        },
+        "contours_px": [
+          [
+            [
+              1136,
+              775
+            ],
+            [
+              1137,
+              792
+            ],
+            [
+              1144,
+              792
+            ],
+            [
+              1149,
+              786
+            ],
+            [
+              1153,
+              792
+            ],
+            [
+              1158,
+              792
+            ],
+            [
+              1161,
+              788
+            ],
+            [
+              1155,
+              790
+            ],
+            [
+              1152,
+              787
+            ],
+            [
+              1161,
+              786
+            ],
+            [
+              1162,
+              781
+            ],
+            [
+              1166,
+              792
+            ],
+            [
+              1169,
+              792
+            ],
+            [
+              1168,
+              781
+            ],
+            [
+              1172,
+              792
+            ],
+            [
+              1177,
+              789
+            ],
+            [
+              1185,
+              792
+            ],
+            [
+              1188,
+              788
+            ],
+            [
+              1182,
+              790
+            ],
+            [
+              1180,
+              787
+            ],
+            [
+              1189,
+              786
+            ],
+            [
+              1186,
+              779
+            ],
+            [
+              1177,
+              782
+            ],
+            [
+              1173,
+              775
+            ],
+            [
+              1170,
+              779
+            ],
+            [
+              1165,
+              775
+            ],
+            [
+              1161,
+              782
+            ],
+            [
+              1155,
+              778
+            ],
+            [
+              1149,
+              784
+            ]
+          ],
+          [
+            [
+              840,
+              783
+            ],
+            [
+              840,
+              787
+            ],
+            [
+              844,
+              792
+            ],
+            [
+              848,
+              792
+            ],
+            [
+              852,
+              787
+            ],
+            [
+              856,
+              792
+            ],
+            [
+              861,
+              792
+            ],
+            [
+              864,
+              789
+            ],
+            [
+              864,
+              782
+            ],
+            [
+              861,
+              779
+            ],
+            [
+              855,
+              779
+            ],
+            [
+              852,
+              786
+            ],
+            [
+              849,
+              787
+            ],
+            [
+              847,
+              790
+            ],
+            [
+              843,
+              788
+            ],
+            [
+              843,
+              783
+            ],
+            [
+              845,
+              781
+            ],
+            [
+              851,
+              783
+            ],
+            [
+              851,
+              781
+            ],
+            [
+              845,
+              778
+            ]
+          ],
+          [
+            [
+              781,
+              782
+            ],
+            [
+              784,
+              786
+            ],
+            [
+              789,
+              788
+            ],
+            [
+              787,
+              790
+            ],
+            [
+              781,
+              788
+            ],
+            [
+              785,
+              792
+            ],
+            [
+              791,
+              791
+            ],
+            [
+              793,
+              786
+            ],
+            [
+              797,
+              792
+            ],
+            [
+              802,
+              792
+            ],
+            [
+              805,
+              789
+            ],
+            [
+              799,
+              790
+            ],
+            [
+              796,
+              787
+            ],
+            [
+              805,
+              786
+            ],
+            [
+              804,
+              780
+            ],
+            [
+              800,
+              778
+            ],
+            [
+              797,
+              779
+            ],
+            [
+              792,
+              786
+            ],
+            [
+              784,
+              782
+            ],
+            [
+              791,
+              782
+            ],
+            [
+              791,
+              780
+            ],
+            [
+              787,
+              778
+            ]
+          ],
+          [
+            [
+              1018,
+              778
+            ],
+            [
+              1013,
+              783
+            ],
+            [
+              1014,
+              790
+            ],
+            [
+              1017,
+              792
+            ],
+            [
+              1014,
+              793
+            ],
+            [
+              1014,
+              795
+            ],
+            [
+              1016,
+              797
+            ],
+            [
+              1021,
+              797
+            ],
+            [
+              1024,
+              795
+            ],
+            [
+              1024,
+              779
+            ]
+          ],
+          [
+            [
+              987,
+              774
+            ],
+            [
+              986,
+              791
+            ],
+            [
+              994,
+              792
+            ],
+            [
+              998,
+              788
+            ],
+            [
+              998,
+              783
+            ],
+            [
+              995,
+              779
+            ],
+            [
+              990,
+              779
+            ],
+            [
+              989,
+              774
+            ]
+          ],
+          [
+            [
+              1209,
+              779
+            ],
+            [
+              1206,
+              782
+            ],
+            [
+              1206,
+              789
+            ],
+            [
+              1209,
+              792
+            ],
+            [
+              1213,
+              792
+            ],
+            [
+              1215,
+              797
+            ],
+            [
+              1217,
+              797
+            ],
+            [
+              1217,
+              779
+            ]
+          ],
+          [
+            [
+              957,
+              778
+            ],
+            [
+              952,
+              782
+            ],
+            [
+              952,
+              788
+            ],
+            [
+              954,
+              791
+            ],
+            [
+              960,
+              792
+            ],
+            [
+              964,
+              788
+            ],
+            [
+              964,
+              783
+            ],
+            [
+              961,
+              779
+            ]
+          ],
+          [
+            [
+              1274,
+              779
+            ],
+            [
+              1271,
+              783
+            ],
+            [
+              1271,
+              788
+            ],
+            [
+              1273,
+              791
+            ],
+            [
+              1279,
+              792
+            ],
+            [
+              1283,
+              788
+            ],
+            [
+              1283,
+              782
+            ],
+            [
+              1280,
+              779
+            ]
+          ]
+        ],
+        "mask_source": "opencv",
+        "text_geometry": {
+          "line_boxes_px": [
+            [
+              719,
+              774,
+              585,
+              24
+            ]
+          ],
+          "line_count_evidence": 1,
+          "median_ink_height_px": 24.0,
+          "estimated_font_size_pt": 13.78
+        },
+        "text_color_evidence": {
+          "background": "#FBF9F7",
+          "foreground": "#8C8B8B"
+        }
+      },
+      "reconstruction_route": "native_text"
+    },
+    {
+      "id": "field-note",
+      "display_label": "Field Notes series marker, part 02",
+      "kind": "text",
+      "role": "publication_folio",
+      "text_style_role": "emphasis_label",
+      "text": "FIELD NOTES / 02",
+      "bbox_hint": [
+        90,
+        868,
+        300,
+        38
+      ],
+      "typography_group": "publication-folio",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Andale Mono",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "host_reviewed_user_authorized_deck_role",
+        "target_font_size_px": 21,
+        "char_spacing_px": 0,
+        "italic": false,
+        "align": "left",
+        "valign": "top",
+        "line_spacing": 1
+      },
+      "search_bbox_hint": [
+        66,
+        860,
+        186,
+        33
+      ],
+      "measurement": {
+        "layout_bbox": {
+          "px": [
+            90,
+            868,
+            300,
+            38
+          ]
+        },
+        "search_bbox": {
+          "px": [
+            66,
+            860,
+            186,
+            33
+          ]
+        },
+        "visible_bbox": {
+          "px": [
+            74,
+            869,
+            170,
+            15
+          ]
+        },
+        "color_evidence": {
+          "background": "#FAF9F7",
+          "foreground": "#A09F9E",
+          "foreground_fraction": 0.1593
+        },
+        "contours_px": [
+          [
+            [
+              116,
+              870
+            ],
+            [
+              116,
+              882
+            ],
+            [
+              122,
+              882
+            ],
+            [
+              125,
+              879
+            ],
+            [
+              125,
+              873
+            ],
+            [
+              123,
+              870
+            ]
+          ],
+          [
+            [
+              152,
+              869
+            ],
+            [
+              148,
+              873
+            ],
+            [
+              148,
+              879
+            ],
+            [
+              151,
+              882
+            ],
+            [
+              155,
+              882
+            ],
+            [
+              157,
+              879
+            ],
+            [
+              157,
+              873
+            ],
+            [
+              155,
+              870
+            ]
+          ],
+          [
+            [
+              229,
+              869
+            ],
+            [
+              226,
+              870
+            ],
+            [
+              224,
+              873
+            ],
+            [
+              224,
+              879
+            ],
+            [
+              226,
+              882
+            ],
+            [
+              230,
+              882
+            ],
+            [
+              233,
+              877
+            ],
+            [
+              232,
+              871
+            ]
+          ],
+          [
+            [
+              138,
+              870
+            ],
+            [
+              138,
+              882
+            ],
+            [
+              140,
+              882
+            ],
+            [
+              141,
+              877
+            ],
+            [
+              143,
+              882
+            ],
+            [
+              146,
+              882
+            ],
+            [
+              146,
+              870
+            ],
+            [
+              144,
+              870
+            ],
+            [
+              143,
+              876
+            ],
+            [
+              141,
+              870
+            ]
+          ],
+          [
+            [
+              186,
+              869
+            ],
+            [
+              181,
+              872
+            ],
+            [
+              181,
+              874
+            ],
+            [
+              187,
+              878
+            ],
+            [
+              186,
+              880
+            ],
+            [
+              181,
+              878
+            ],
+            [
+              183,
+              882
+            ],
+            [
+              187,
+              882
+            ],
+            [
+              189,
+              880
+            ],
+            [
+              189,
+              876
+            ],
+            [
+              183,
+              873
+            ],
+            [
+              184,
+              871
+            ],
+            [
+              189,
+              873
+            ],
+            [
+              189,
+              871
+            ]
+          ],
+          [
+            [
+              237,
+              870
+            ],
+            [
+              235,
+              873
+            ],
+            [
+              240,
+              871
+            ],
+            [
+              241,
+              874
+            ],
+            [
+              235,
+              880
+            ],
+            [
+              235,
+              882
+            ],
+            [
+              243,
+              882
+            ],
+            [
+              243,
+              880
+            ],
+            [
+              239,
+              879
+            ],
+            [
+              243,
+              875
+            ],
+            [
+              243,
+              872
+            ],
+            [
+              241,
+              870
+            ]
+          ],
+          [
+            [
+              95,
+              870
+            ],
+            [
+              95,
+              882
+            ],
+            [
+              103,
+              882
+            ],
+            [
+              102,
+              880
+            ],
+            [
+              97,
+              879
+            ],
+            [
+              98,
+              876
+            ],
+            [
+              102,
+              876
+            ],
+            [
+              98,
+              875
+            ],
+            [
+              97,
+              872
+            ],
+            [
+              103,
+              870
+            ]
+          ],
+          [
+            [
+              84,
+              870
+            ],
+            [
+              87,
+              872
+            ],
+            [
+              87,
+              879
+            ],
+            [
+              84,
+              882
+            ],
+            [
+              92,
+              882
+            ],
+            [
+              89,
+              879
+            ],
+            [
+              89,
+              872
+            ],
+            [
+              92,
+              870
+            ]
+          ]
+        ],
+        "mask_source": "opencv",
+        "text_geometry": {
+          "line_boxes_px": [
+            [
+              74,
+              869,
+              170,
+              15
+            ]
+          ],
+          "line_count_evidence": 1,
+          "median_ink_height_px": 15.0,
+          "estimated_font_size_pt": 8.61
+        },
+        "text_color_evidence": {
+          "background": "#FAF9F7",
+          "foreground": "#A09F9E"
+        }
+      },
+      "reconstruction_route": "native_text"
+    }
+  ],
+  "groups": [],
+  "relationships": [],
+  "layout_constraints": {
+    "non_overlap_pairs": []
+  },
+  "upstream_handoff": {
+    "selected_assets": [],
+    "frame_content": {
+      "header": {
+        "left_text": "",
+        "right_text": ""
+      },
+      "footer": {
+        "left_text": "",
+        "center_text": ""
+      },
+      "slide_number": 2
+    },
+    "source_ownership": "Accepted generated collage regions have no canonical external asset. Presentation titles and explanatory copy reconstruct as native text.",
+    "deck_design_source": {
+      "path": "../../../work/deck-design.json",
+      "sha256": "ba33b732616aafff1f22648cf4536809f5583401d6180733363121aa7544358e"
+    },
+    "recurring_role_bindings": [
+      {
+        "role_id": "publication_folio",
+        "entity_ids": [
+          "field-note"
+        ],
+        "typography_group": "publication-folio",
+        "style_source": "repeated_roles.publication_folio.chosen_style",
+        "exception_id": null,
+        "application_note": "The Agent materialized the common native12pt role as Andale Mono regular target21px with zero tracking, common dark ink and a fixed logical allocation. Source-ink windows retain the original target locations. The binding itself does not apply the style."
+      }
+    ],
+    "revision_notes": [
+      "The user requested one coherent Field Notes identity across all five pages. The Agent reviewed all original renders and calibrated this recurring role. Artwork and substantive content stay unchanged."
+    ]
+  }
+}

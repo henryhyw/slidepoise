@@ -1,0 +1,35 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "stage": "measurement",
+  "decision": "accepted",
+  "material_issues": [],
+  "reviewed_artifacts": [
+    {
+      "path": "accepted-slide.png",
+      "sha256": "65320ec1e13c44d39f96dd36d5159195731aeb7b1a7444dff652f1bf3f4b24e7"
+    },
+    {
+      "path": "semantic-map.json",
+      "sha256": "dfdb8779e391a5874bbd58213b287f5e495686ca842fea0edfb1c7eb159b1fa9"
+    },
+    {
+      "path": "reconstruction-handoff.json",
+      "sha256": "a056ad7961e2ba9ed8f3ca59875739530e4e988865672f0a5f543fe6aea55603"
+    },
+    {
+      "path": "reconstruction/measurement/slide_entities.json",
+      "sha256": "f206ef7a5feba061726f600f5ce2a4cb83f4e5d311e3d3f9896b82cf0deb2ea2"
+    },
+    {
+      "path": "reconstruction/measurement/debug_overlay.png",
+      "sha256": "f3e641a40ffa290f45dd6802d99fe46d71431cdf959b89b35d669b684c80c14a"
+    }
+  ],
+  "observations": [
+    "The overlay covers the full Georgia headline ink while retaining a separate, slightly higher native logical allocation for the Office baseline. The subtitle and each section have independent source-ink windows.",
+    "Three metric stacks, three numbered arguments, the ten-cell gate table and the decision band each retain their semantic ownership. Thin horizontal rules separate evidence blocks. No decorative connector, icon or raster owner has been introduced.",
+    "The reason-detail logical allocations move upward by eight body pixels after actual LibreOffice inspection. Their search windows remain fixed to the complete original two-line source text, including the exact $60k condition.",
+    "Four semantic groups describe the economic hypothesis, bounded-pilot reasoning, observable scale conditions and funding request. The native table owns its cells and no duplicate floating cell text is emitted.",
+    "The title, subtitle, body/section and decision text retain the shared 64, 32 and 28-pixel targets. All ten fitted text groups reach the authored size without an allocation-driven reduction."
+  ]
+}

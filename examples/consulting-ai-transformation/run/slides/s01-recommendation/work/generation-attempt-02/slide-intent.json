@@ -1,0 +1,136 @@
+{
+  "audience_question": "Make a bounded funding decision with a quantified hypothesis, clear scale gates and named accountability.",
+  "dominant_message": "Prove the research pilot before scaling AI",
+  "information_structure": {
+    "type": "executive_recommendation",
+    "description": "Make a bounded funding decision with a quantified hypothesis, clear scale gates and named accountability."
+  },
+  "required_content": [
+    {
+      "role": "subtitle",
+      "text": "One practice. 15 consultants. 20 paired research tasks. A 12-week, $25k pilot."
+    },
+    {
+      "role": "metric_reasoning",
+      "items": [
+        {
+          "value": "10,800 h",
+          "label": "Annual research baseline",
+          "calculation": "900 engagements × 12 h"
+        },
+        {
+          "value": "1,944 h",
+          "label": "Potential annual capacity",
+          "calculation": "60% adoption × 30% time reduction"
+        },
+        {
+          "value": "$243k",
+          "label": "Annual capacity equivalent",
+          "calculation": "1,944 h × $125 per hour"
+        }
+      ]
+    },
+    {
+      "role": "argument",
+      "heading": "WHY THIS PILOT FIRST",
+      "items": [
+        {
+          "number": "01",
+          "heading": "Focus a repeatable task",
+          "detail": "Approved sources, frequent use and comparable inputs."
+        },
+        {
+          "number": "02",
+          "heading": "Preserve expert review",
+          "detail": "Verify every client claim before release."
+        },
+        {
+          "number": "03",
+          "heading": "Fund against evidence",
+          "detail": "Practice lead accountable. CFO sponsors the gate."
+        }
+      ]
+    },
+    {
+      "role": "native_table",
+      "heading": "WEEK-12 SCALE GATE",
+      "columns": [
+        "Measure",
+        "Minimum to scale"
+      ],
+      "rows": [
+        [
+          "Cycle-time reduction",
+          "25%"
+        ],
+        [
+          "Sampled cited claims verified",
+          "95%"
+        ],
+        [
+          "Critical data exceptions",
+          "0"
+        ],
+        [
+          "Weekly-active pilot users",
+          "70% · at least 11 of 15"
+        ]
+      ]
+    },
+    {
+      "role": "decision_band",
+      "label": "DECISION REQUESTED",
+      "message": "Approve $25k and name a practice sponsor."
+    }
+  ],
+  "semantic_relationships": [
+    {
+      "type": "calculation",
+      "source": "10,800 h baseline",
+      "factors": [
+        "60% adoption",
+        "30% time reduction"
+      ],
+      "target": "1,944 h potential annual capacity"
+    },
+    {
+      "type": "conditional_investment",
+      "source": "$25k pilot",
+      "condition": "Week-12 scale criteria",
+      "target": "Remaining $60k"
+    }
+  ],
+  "hierarchy": [
+    "Shared Georgia claim title",
+    "Shared Arial subtitle",
+    "Evidence or operating structure",
+    "Shared substantive decision band"
+  ],
+  "evidence": [
+    "Host-authored illustrative planning model. The preserved work/planning-assumptions.json carries the exact calculation assumptions."
+  ],
+  "assumptions": [
+    "Northstar Advisory is fictional. Capacity equivalent is not revenue or cash savings.",
+    "The pilot measures one comparable research task per engagement, so 20 tasks correspond to 20 engagements.",
+    "The 95% sampled-claim gate does not replace expert verification and approval of each client release."
+  ],
+  "open_questions": [],
+  "avoid": [
+    "Any generated header, footer, company label, page number, shared-frame rule or repeated source-note strip.",
+    "Independent changes to recurring title size, font family or decision-band treatment.",
+    "Decorative icons, invented imagery and miniature type."
+  ],
+  "visual_obligations": [
+    "Generate only the 1920 by 960 substantive canvas at exactly 2:1 aspect ratio. The runtime adds the separate inherited frame.",
+    "Use native-friendly text, tables, chart geometry and continuous directed relationships where the content requires them.",
+    "Follow the shared deck design. The five pages vary their evidence structures while recurring roles remain consistent."
+  ],
+  "user_required_assets": [],
+  "density_intent": "information_rich",
+  "explicit_user_visual_requirements": [
+    "Georgia claim title at 64 px regular on every page, with no per-page shrinking.",
+    "Arial subtitle 32 px regular, body 28 px regular, section labels 28 px bold and table text 24 px.",
+    "Every decision band uses pale orange #FFF5ED fill, orange #FD5108 label and left bar, black message, and no surrounding border.",
+    "Place all necessary page-specific qualifications in the substantive content. Shared frame wording is excluded from image generation."
+  ]
+}

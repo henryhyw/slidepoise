@@ -1,0 +1,1634 @@
+{
+  "schema_version": "3.2.0",
+  "provenance": {
+    "created_by": "host_agent_visual_reasoning",
+    "source": "accepted_generated_image",
+    "source_sha256": "a49ee87afd9d13eab0ea6e70a03fb68d197b7319273b5a3d998f7bb116827280",
+    "composition_policy": "accepted_target_geometry_frozen"
+  },
+  "entities": [
+    {
+      "id": "headline",
+      "display_label": "Start where value and control readiness meet",
+      "kind": "text",
+      "role": "headline",
+      "text": "Start where value and control readiness meet",
+      "text_style_role": "slide_title",
+      "typography_group": "claim-title",
+      "bbox_hint": [
+        32,
+        16,
+        1850,
+        86
+      ],
+      "search_bbox_hint": [
+        30,
+        29,
+        1325,
+        67
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Georgia",
+        "font_weight": "regular",
+        "target_font_size_px": 64,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "subtitle",
+      "display_label": "Capacity creates the opportunity. Control readiness sets the sequence.",
+      "kind": "text",
+      "role": "subtitle",
+      "text": "Capacity creates the opportunity. Control readiness sets the sequence.",
+      "text_style_role": "subtitle",
+      "typography_group": "subtitle",
+      "bbox_hint": [
+        32,
+        104,
+        1849,
+        48
+      ],
+      "search_bbox_hint": [
+        31,
+        115,
+        1014,
+        32
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 32,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "introduction-rule",
+      "display_label": "introduction rule",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        33,
+        165,
+        1849,
+        2
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#999DA4",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "capacity-heading",
+      "display_label": "ANNUAL CAPACITY POTENTIAL",
+      "kind": "text",
+      "role": "capacity-heading",
+      "text": "ANNUAL CAPACITY POTENTIAL",
+      "text_style_role": "heading_large",
+      "typography_group": "section-headings",
+      "bbox_hint": [
+        32,
+        192,
+        620,
+        42
+      ],
+      "search_bbox_hint": [
+        32,
+        198,
+        391,
+        29
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "sequencing-heading",
+      "display_label": "PILOT SEQUENCING TEST",
+      "kind": "text",
+      "role": "sequencing-heading",
+      "text": "PILOT SEQUENCING TEST",
+      "text_style_role": "heading_large",
+      "typography_group": "section-headings",
+      "bbox_hint": [
+        670,
+        192,
+        661,
+        42
+      ],
+      "search_bbox_hint": [
+        669,
+        198,
+        316,
+        29
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-heading",
+      "display_label": "WHY RESEARCH WINS FIRST",
+      "kind": "text",
+      "role": "reason-heading",
+      "text": "WHY RESEARCH WINS FIRST",
+      "text_style_role": "heading_large",
+      "typography_group": "section-headings",
+      "bbox_hint": [
+        1382,
+        192,
+        500,
+        42
+      ],
+      "search_bbox_hint": [
+        1380,
+        198,
+        355,
+        29
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "chart-unit",
+      "display_label": "Illustrative hours",
+      "kind": "text",
+      "role": "chart-unit",
+      "text": "Illustrative hours",
+      "text_style_role": "label",
+      "typography_group": "chart-unit",
+      "bbox_hint": [
+        32,
+        227,
+        620,
+        36
+      ],
+      "search_bbox_hint": [
+        32,
+        234,
+        158,
+        24
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 24,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "annual-capacity-chart",
+      "display_label": "Annual capacity potential by workflow",
+      "kind": "chart",
+      "role": "quantified_opportunity_comparison",
+      "bbox_hint": [
+        31,
+        261,
+        620,
+        234
+      ],
+      "search_bbox_hint": [
+        31,
+        269,
+        620,
+        219
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 4,
+      "meaningful_visible": true,
+      "chart_structure": {
+        "type": "bar",
+        "categories": [
+          "Research\nsynthesis",
+          "Proposal\ndrafting",
+          "Knowledge\nretrieval"
+        ],
+        "series": [
+          {
+            "name": "Illustrative annual capacity hours",
+            "values": [
+              1944,
+              1440,
+              1080
+            ]
+          }
+        ],
+        "colors": [
+          "#FD5108",
+          "#A1A8B3",
+          "#CBD1D6"
+        ],
+        "show_legend": false,
+        "show_values": true,
+        "show_value_gridlines": false,
+        "show_category_axis": true,
+        "show_value_axis": false,
+        "category_order": "reverse",
+        "value_axis_minimum": 0,
+        "value_axis_maximum": 1944,
+        "gap_width_pct": 50,
+        "plot_layout": {
+          "x": 0.20967741935483872,
+          "y": 0,
+          "w": 0.5693548387096774,
+          "h": 1
+        },
+        "data_label_position": "outEnd",
+        "data_label_format_code": "#,##0\" h\"",
+        "data_font_family": "Arial",
+        "data_font_size_px": 36,
+        "data_label_color": "#FD5108"
+      },
+      "style_hint": {
+        "stroke": "none"
+      }
+    },
+    {
+      "id": "research-category",
+      "display_label": "Research synthesis",
+      "kind": "text",
+      "role": "research-category",
+      "text": "Research\nsynthesis",
+      "text_style_role": "label",
+      "typography_group": "source-chart-categories",
+      "bbox_hint": [
+        31,
+        280,
+        129,
+        53
+      ],
+      "search_bbox_hint": [
+        31,
+        280,
+        129,
+        53
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "owned_content",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 24,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      },
+      "render_owner": "annual-capacity-chart"
+    },
+    {
+      "id": "proposal-category",
+      "display_label": "Proposal drafting",
+      "kind": "text",
+      "role": "proposal-category",
+      "text": "Proposal\ndrafting",
+      "text_style_role": "label",
+      "typography_group": "source-chart-categories",
+      "bbox_hint": [
+        31,
+        356,
+        129,
+        53
+      ],
+      "search_bbox_hint": [
+        31,
+        356,
+        129,
+        53
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "owned_content",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 24,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      },
+      "render_owner": "annual-capacity-chart"
+    },
+    {
+      "id": "retrieval-category",
+      "display_label": "Knowledge retrieval",
+      "kind": "text",
+      "role": "retrieval-category",
+      "text": "Knowledge\nretrieval",
+      "text_style_role": "label",
+      "typography_group": "source-chart-categories",
+      "bbox_hint": [
+        31,
+        429,
+        129,
+        55
+      ],
+      "search_bbox_hint": [
+        31,
+        429,
+        129,
+        55
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "owned_content",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 24,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      },
+      "render_owner": "annual-capacity-chart"
+    },
+    {
+      "id": "research-value",
+      "display_label": "1,944 h",
+      "kind": "text",
+      "role": "research-value",
+      "text": "1,944 h",
+      "text_style_role": "large_data_number",
+      "typography_group": "source-chart-values",
+      "bbox_hint": [
+        525,
+        283,
+        123,
+        42
+      ],
+      "search_bbox_hint": [
+        525,
+        283,
+        123,
+        42
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "owned_content",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 36,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#FD5108",
+        "style_authority": "agent_visual_observation"
+      },
+      "style_token": "data_highlight",
+      "render_owner": "annual-capacity-chart"
+    },
+    {
+      "id": "proposal-value",
+      "display_label": "1,440 h",
+      "kind": "text",
+      "role": "proposal-value",
+      "text": "1,440 h",
+      "text_style_role": "large_data_number",
+      "typography_group": "source-chart-values",
+      "bbox_hint": [
+        433,
+        360,
+        120,
+        41
+      ],
+      "search_bbox_hint": [
+        433,
+        360,
+        120,
+        41
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "owned_content",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 36,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#FD5108",
+        "style_authority": "agent_visual_observation"
+      },
+      "style_token": "data_highlight",
+      "render_owner": "annual-capacity-chart"
+    },
+    {
+      "id": "retrieval-value",
+      "display_label": "1,080 h",
+      "kind": "text",
+      "role": "retrieval-value",
+      "text": "1,080 h",
+      "text_style_role": "large_data_number",
+      "typography_group": "source-chart-values",
+      "bbox_hint": [
+        371,
+        437,
+        119,
+        43
+      ],
+      "search_bbox_hint": [
+        371,
+        437,
+        119,
+        43
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "owned_content",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 36,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#FD5108",
+        "style_authority": "agent_visual_observation"
+      },
+      "style_token": "data_highlight",
+      "render_owner": "annual-capacity-chart"
+    },
+    {
+      "id": "workflow-assumptions",
+      "display_label": "Explicit assumptions behind the capacity chart",
+      "kind": "table",
+      "role": "structured_comparison",
+      "bbox_hint": [
+        33,
+        502,
+        582,
+        198
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 5,
+      "meaningful_visible": true,
+      "table_structure": {
+        "rows": [
+          [
+            {
+              "text": "Workflow",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "left",
+                "margin": 5
+              }
+            },
+            {
+              "text": "Baseline h",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "center",
+                "margin": 0
+              }
+            },
+            {
+              "text": "Adoption",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "center",
+                "margin": 0
+              }
+            },
+            {
+              "text": "Time saved",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "center",
+                "margin": 0
+              }
+            }
+          ],
+          [
+            {
+              "text": "Research",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              }
+            },
+            {
+              "text": "12",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center"
+              }
+            },
+            {
+              "text": "60%",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center"
+              }
+            },
+            {
+              "text": "30%",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center"
+              }
+            }
+          ],
+          [
+            {
+              "text": "Proposal",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              }
+            },
+            {
+              "text": "8",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center"
+              }
+            },
+            {
+              "text": "50%",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center"
+              }
+            },
+            {
+              "text": "40%",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center"
+              }
+            }
+          ],
+          [
+            {
+              "text": "Retrieval",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              }
+            },
+            {
+              "text": "5",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center"
+              }
+            },
+            {
+              "text": "60%",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center"
+              }
+            },
+            {
+              "text": "40%",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center"
+              }
+            }
+          ]
+        ],
+        "column_widths_px": [
+          157,
+          145,
+          144,
+          136
+        ],
+        "row_heights_px": [
+          50,
+          49,
+          49,
+          50
+        ]
+      },
+      "style_hint": {
+        "font_family": "Arial",
+        "font_size_px": 24,
+        "cell_margin_px": 10,
+        "color": "#000000",
+        "fill": "#FFFFFF",
+        "stroke": "#AEB2B8",
+        "stroke_width_px": 1,
+        "vertical_alignment": "middle"
+      }
+    },
+    {
+      "id": "capacity-formula",
+      "display_label": "Annual hours = 900 engagements \u00d7 baseline h \u00d7 adoption \u00d7 time saved",
+      "kind": "text",
+      "role": "capacity-formula",
+      "text": "Annual hours = 900 engagements \u00d7\nbaseline h \u00d7 adoption \u00d7 time saved",
+      "text_style_role": "body",
+      "typography_group": "calculation",
+      "bbox_hint": [
+        32,
+        707,
+        621,
+        79
+      ],
+      "search_bbox_hint": [
+        31,
+        718,
+        490,
+        59
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.2,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "pilot-sequencing",
+      "display_label": "Control readiness and accountable workflow sequence",
+      "kind": "table",
+      "role": "structured_comparison",
+      "bbox_hint": [
+        670,
+        254,
+        661,
+        506
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 5,
+      "meaningful_visible": true,
+      "table_structure": {
+        "rows": [
+          [
+            {
+              "text": "Workflow",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "left"
+              }
+            },
+            {
+              "text": "Control readiness",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "left"
+              }
+            },
+            {
+              "text": "Owner",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "center",
+                "margin": 0
+              }
+            },
+            {
+              "text": "Sequence",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "center"
+              }
+            }
+          ],
+          [
+            {
+              "text": "Research\nsynthesis",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              }
+            },
+            {
+              "text": "Approved corpus\nExplicit review",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              }
+            },
+            {
+              "text": "Practice\nlead",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center",
+                "margin": 0
+              }
+            },
+            {
+              "text": "START",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "FD5108",
+                "bold": true,
+                "align": "center"
+              }
+            }
+          ],
+          [
+            {
+              "text": "Proposal\ndrafting",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              }
+            },
+            {
+              "text": "Claims and\ncommitments\nneed controls",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              }
+            },
+            {
+              "text": "BD\nlead",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center",
+                "margin": 0
+              }
+            },
+            {
+              "text": "NEXT",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "FD5108",
+                "bold": true,
+                "align": "center"
+              }
+            }
+          ],
+          [
+            {
+              "text": "Knowledge\nretrieval",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              }
+            },
+            {
+              "text": "Permissions need\ncleanup",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              }
+            },
+            {
+              "text": "Knowledge\nlead",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center",
+                "margin": 0
+              }
+            },
+            {
+              "text": "LATER",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "FD5108",
+                "bold": true,
+                "align": "center"
+              }
+            }
+          ]
+        ],
+        "column_widths_px": [
+          149,
+          253,
+          122,
+          137
+        ],
+        "row_heights_px": [
+          76,
+          137,
+          148,
+          145
+        ]
+      },
+      "style_hint": {
+        "font_family": "Arial",
+        "font_size_px": 24,
+        "cell_margin_px": 10,
+        "color": "#000000",
+        "fill": "#FFFFFF",
+        "stroke": "#AEB2B8",
+        "stroke_width_px": 1,
+        "vertical_alignment": "middle"
+      }
+    },
+    {
+      "id": "reason-number-01",
+      "display_label": "01",
+      "kind": "text",
+      "role": "reason-number-01",
+      "text": "01",
+      "text_style_role": "section_number",
+      "typography_group": "reason-numbers",
+      "bbox_hint": [
+        1381,
+        252,
+        72,
+        66
+      ],
+      "search_bbox_hint": [
+        1380,
+        267,
+        57,
+        52
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 48,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-title-01",
+      "display_label": "Frequent, comparable tasks",
+      "kind": "text",
+      "role": "reason-title-01",
+      "text": "Frequent, comparable tasks",
+      "text_style_role": "heading_large",
+      "typography_group": "reason-titles",
+      "bbox_hint": [
+        1471,
+        250,
+        428,
+        44
+      ],
+      "search_bbox_hint": [
+        1470,
+        258,
+        403,
+        35
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-detail-01",
+      "display_label": "Many engagements use the same research task.",
+      "kind": "text",
+      "role": "reason-detail-01",
+      "text": "Many engagements use the\nsame research task.",
+      "text_style_role": "body",
+      "typography_group": "reason-details",
+      "bbox_hint": [
+        1471,
+        289,
+        429,
+        87
+      ],
+      "search_bbox_hint": [
+        1470,
+        298,
+        413,
+        70
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.2,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-number-02",
+      "display_label": "02",
+      "kind": "text",
+      "role": "reason-number-02",
+      "text": "02",
+      "text_style_role": "section_number",
+      "typography_group": "reason-numbers",
+      "bbox_hint": [
+        1381,
+        412,
+        72,
+        66
+      ],
+      "search_bbox_hint": [
+        1380,
+        427,
+        57,
+        52
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 48,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-title-02",
+      "display_label": "A bounded source corpus",
+      "kind": "text",
+      "role": "reason-title-02",
+      "text": "A bounded source corpus",
+      "text_style_role": "heading_large",
+      "typography_group": "reason-titles",
+      "bbox_hint": [
+        1471,
+        410,
+        428,
+        44
+      ],
+      "search_bbox_hint": [
+        1470,
+        418,
+        403,
+        35
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-detail-02",
+      "display_label": "Approved sources limit scope and simplify review.",
+      "kind": "text",
+      "role": "reason-detail-02",
+      "text": "Approved sources limit scope\nand simplify review.",
+      "text_style_role": "body",
+      "typography_group": "reason-details",
+      "bbox_hint": [
+        1471,
+        449,
+        429,
+        87
+      ],
+      "search_bbox_hint": [
+        1470,
+        458,
+        413,
+        70
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.2,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-number-03",
+      "display_label": "03",
+      "kind": "text",
+      "role": "reason-number-03",
+      "text": "03",
+      "text_style_role": "section_number",
+      "typography_group": "reason-numbers",
+      "bbox_hint": [
+        1381,
+        563,
+        72,
+        66
+      ],
+      "search_bbox_hint": [
+        1380,
+        578,
+        57,
+        52
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 48,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-title-03",
+      "display_label": "A named expert reviewer",
+      "kind": "text",
+      "role": "reason-title-03",
+      "text": "A named expert reviewer",
+      "text_style_role": "heading_large",
+      "typography_group": "reason-titles",
+      "bbox_hint": [
+        1471,
+        561,
+        428,
+        44
+      ],
+      "search_bbox_hint": [
+        1470,
+        569,
+        403,
+        35
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-detail-03",
+      "display_label": "An accountable reviewer verifies outputs before client release.",
+      "kind": "text",
+      "role": "reason-detail-03",
+      "text": "An accountable reviewer verifies\noutputs before client release.",
+      "text_style_role": "body",
+      "typography_group": "reason-details",
+      "bbox_hint": [
+        1471,
+        600,
+        429,
+        87
+      ],
+      "search_bbox_hint": [
+        1470,
+        609,
+        413,
+        70
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.2,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-divider-1",
+      "display_label": "reason divider 1",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        1382,
+        377,
+        500,
+        1
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#B5B7BA",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-divider-2",
+      "display_label": "reason divider 2",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        1382,
+        528,
+        500,
+        1
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#B5B7BA",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "overlap-note-panel",
+      "display_label": "overlap note panel",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        1382,
+        682,
+        500,
+        92
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#F5F7F8",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "overlap-qualification",
+      "display_label": "Check task overlap before adding workflow benefits.",
+      "kind": "text",
+      "role": "overlap-qualification",
+      "text": "Check task overlap before adding\nworkflow benefits.",
+      "text_style_role": "body",
+      "typography_group": "overlap-qualification",
+      "bbox_hint": [
+        1400,
+        689,
+        466,
+        82
+      ],
+      "search_bbox_hint": [
+        1399,
+        700,
+        391,
+        59
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.2,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "decision-band",
+      "display_label": "decision band",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        33,
+        800,
+        1850,
+        127
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#FFF5ED",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "decision-accent",
+      "display_label": "decision accent",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        33,
+        800,
+        8,
+        127
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#FD5108",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "decision-label",
+      "display_label": "PILOT BOUNDARY",
+      "kind": "text",
+      "role": "decision-label",
+      "text": "PILOT BOUNDARY",
+      "text_style_role": "call_to_action",
+      "typography_group": "decision-band",
+      "bbox_hint": [
+        103,
+        841,
+        402,
+        49
+      ],
+      "search_bbox_hint": [
+        100,
+        846,
+        305,
+        41
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "middle",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#FD5108",
+        "style_authority": "agent_visual_observation"
+      },
+      "style_token": "call_to_action"
+    },
+    {
+      "id": "decision-message",
+      "display_label": "Start with approved-source research synthesis.",
+      "kind": "text",
+      "role": "decision-message",
+      "text": "Start with approved-source research synthesis.",
+      "text_style_role": "call_to_action",
+      "typography_group": "decision-band",
+      "bbox_hint": [
+        510,
+        841,
+        1320,
+        49
+      ],
+      "search_bbox_hint": [
+        509,
+        847,
+        774,
+        43
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "middle",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "id": "capacity-case",
+      "display_label": "Opportunity calculation",
+      "semantic_class": "quantitative comparison",
+      "bbox_hint": [
+        31,
+        192,
+        621,
+        594
+      ],
+      "children": [
+        "capacity-heading",
+        "chart-unit",
+        "annual-capacity-chart",
+        "workflow-assumptions",
+        "capacity-formula"
+      ],
+      "group_reason": "The chart, assumptions and equation expose the same illustrative model."
+    },
+    {
+      "id": "readiness-case",
+      "display_label": "Readiness determines sequence",
+      "semantic_class": "decision comparison",
+      "bbox_hint": [
+        670,
+        192,
+        661,
+        568
+      ],
+      "children": [
+        "sequencing-heading",
+        "pilot-sequencing"
+      ],
+      "group_reason": "Workflow, controls, owner and sequence remain in one native table."
+    },
+    {
+      "id": "research-case",
+      "display_label": "Research pilot rationale",
+      "semantic_class": "decision argument",
+      "bbox_hint": [
+        1381,
+        192,
+        519,
+        582
+      ],
+      "children": [
+        "reason-heading",
+        "reason-number-01",
+        "reason-title-01",
+        "reason-detail-01",
+        "reason-number-02",
+        "reason-title-02",
+        "reason-detail-02",
+        "reason-number-03",
+        "reason-title-03",
+        "reason-detail-03",
+        "reason-divider-1",
+        "reason-divider-2",
+        "overlap-note-panel",
+        "overlap-qualification"
+      ],
+      "group_reason": "Three reasons explain the recommendation, and the qualification prevents double-counting benefits."
+    }
+  ],
+  "layout_constraints": {
+    "non_overlap_pairs": [
+      [
+        "headline",
+        "subtitle"
+      ],
+      [
+        "pilot-sequencing",
+        "decision-band"
+      ],
+      [
+        "overlap-note-panel",
+        "decision-band"
+      ]
+    ]
+  }
+}

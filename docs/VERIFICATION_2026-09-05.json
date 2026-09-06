@@ -1,0 +1,6 @@
+{
+  "record_type": "historical_verification_pointer",
+  "date": "2026-09-05",
+  "scope": "Earlier development checks preceded the current release.",
+  "current_verification": "VERIFICATION.md"
+}

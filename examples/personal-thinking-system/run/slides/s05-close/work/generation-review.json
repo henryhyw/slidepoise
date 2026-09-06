@@ -1,0 +1,24 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "decision": "accepted",
+  "material_issues": [],
+  "review_environment": "Actual LibreOffice rendering on macOS, installed system fonts, 120 DPI. Five full-resolution pages and both contact sheets inspected.",
+  "user_checkpoint": "The user explicitly requested consistent Field Notes typography across all five existing pages while retaining their artwork and compositions.",
+  "stage": "generation",
+  "reasoning_summary": "The existing generated target remains accepted as historical artwork and substantive composition for this authorized native calibration. No new image-generation call is claimed.",
+  "observations": [
+    "This is a retained legacy full-slide image, including its original page label. Its hash and original generation evidence are preserved.",
+    "The folio's original inconsistent style and location are intentionally revised through the explicit shared deck role. The accepted image remains the source of all other composition and raster regions."
+  ],
+  "reviewed_artifacts": [
+    {
+      "path": "accepted-slide.png",
+      "sha256": "e7f6777d1eab069b3cbdedf2ff426e0cd39ef639896e7bf9af63415318ebc22c"
+    },
+    {
+      "path": "../../../work/folio-calibration/originals/slides/s05-close/work/generation-review.json",
+      "sha256": "b05290f832772bf3aaa440cd1abff576ea241abc5fc3bf4bd9b2c92522e8eb7c"
+    }
+  ],
+  "candidate_index": 1
+}

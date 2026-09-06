@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "items": {
+    "remix-icon": {
+      "id": "remix-icon",
+      "kind": "icons",
+      "name": "Remix Icon",
+      "description": "A coherent open-source line and fill icon family. The Agent compares both variants against the approved slide before reconstruction.",
+      "source": "remote",
+      "provider": "remix_icon",
+      "root": "",
+      "license": "Remix Icon License v1.0"
+    },
+    "wikimedia-identity": {
+      "id": "wikimedia-identity",
+      "kind": "icons",
+      "name": "Wikimedia identity assets",
+      "description": "Exact logo and public-media candidates with file-page, identity, license, attribution and trademark review.",
+      "source": "remote",
+      "provider": "wikimedia_commons",
+      "root": "",
+      "license": "Per selected Commons file"
+    },
+    "consulting-core": {
+      "id": "consulting-core",
+      "kind": "components",
+      "name": "Consulting core",
+      "description": "Editable information structures for evidence-rich recommendations, operating models and executive communication.",
+      "source": "local",
+      "root": "components/consulting-core"
+    },
+    "editorial-core": {
+      "id": "editorial-core",
+      "kind": "components",
+      "name": "Editorial core",
+      "description": "Restrained editorial structures that support image-led, archival and monochrome compositions.",
+      "source": "local",
+      "root": "components/editorial-core"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "scope": "Selected technical artifacts only. No conversation transcripts or debugging history.",
+  "json_copy_policy": "Path strings relocated for portability. project-source and host-local prefixes indicate unbundled provenance/configuration paths. Original work files were left unchanged.",
+  "source_hashes": {
+    "assets/style-reference.png": "28fa5e35e642af8113886b6dbf5dcfd7645494e5ce4cbb33147a72d212005eed",
+    "assets/accepted-slide.png": "95c1a5189bba8364f3b9520010a783a81fdcd0c066efb6b466acd10278de0c94",
+    "assets/clean-plate.png": "57dfa06d2488f9d18760a6bfdd1f03cc9c5974368c9a7f7c1c796bb9bf5cccbf",
+    "assets/opencv-overlay.png": "72a8100f77e5a0a6b333c0f8c126c96c98f08fbea7336747313a3302fb52e869",
+    "assets/final-render.png": "ab862fd402cba58b217ca3088597aba9dc1dd1630f72247cd25c80edde18dc87",
+    "deliverables/Fragments.pptx": "744ad66f3be15e43eb1b8f02d4546b00f929203f77b02e82d77c8aece4a9f7b3",
+    "assets/crops/collect-original-lower.png": "647ffbaf65cff36d7325ca6f3ecdcc65e13bfae7d60438583f7c82c0b55a9e7d",
+    "assets/crops/collect-original-upper.png": "bc6aea1be9613ca9c34531d1f68e4a63beb6a9378ab8b062b6abc255046490c4",
+    "assets/crops/organize-original-main.png": "2303df5c5ccd66dfcce275cabd71788a26f6658e2ccdf9eb5a9cf2dee3f36152",
+    "assets/crops/organize-original-tip.png": "3acfdbe5095892df53567675d77bf57c0e2558c229826f3f4949739e8d972931",
+    "assets/crops/articulate-original-main.png": "5227fd90f1611b1d7201bb89a8c4e44192c41871985d9135dfd394cf2389de0d",
+    "assets/crops/articulate-original-tip.png": "f919b786aeec2b66fc0b91ea3d69364dbbafe479683085059b5ce8e5e46e557f",
+    "assets/crops/handwritten-original.png": "4a2258da8143965afe39cb6844c94b2901a5528603aabcb2a5c996fc11703cff",
+    "assets/crops/arrow-cleanup-1.png": "aaa9ef6545503439df620732cd71f759dc6d36fbbcdad30690c1e4f033a3927b",
+    "assets/crops/arrow-cleanup-2.png": "c23b1365537711c99a4c12a38c7e44b5a53514706fe97d5e13546360183e50d2",
+    "data/semantic-map.json": "e42f244b059ab58fcc4fab75dff84e2b50fd60e576a628a7516da2c94d55d343",
+    "data/measured-scene.json": "51829ca8de926df80b9135986391eb019e45450bc9b6367084d285f4bd09a9f4",
+    "data/reconstruction-contract.json": "6af247affa270703a679591f02f8ac58828f6ca5e0e218a23d69bae024012984",
+    "data/constructor-scene.json": "e820d2de69b901cbce4b989800eb8d409cc7a129fe8076ece256d15580ef17c1",
+    "data/resolved-config.json": "d43ed501015b11f7851303603f912a2a0abe5d0daf91f481b078f7d95423555e"
+  },
+  "reference_dimensions_px": [
+    1672,
+    941
+  ],
+  "clean_plate_dimensions_px": [
+    1662,
+    946
+  ],
+  "clean_plate_note": "The returned edit changed canvas dimensions slightly. The original run used fill placement and restored seven original crops. This is approximate layered reconstruction, not pixel-identical recovery.",
+  "review_scope": "Showcase PPTX rendered again during curation. Original approval/review records stay in the work folder and are not republished.",
+  "history": "The reference was generated during profile exploration. Reconstruction continued from that selected reference. No fresh resource-contact-sheet stage was executed for reconstruction.",
+  "rights": "The style reference was user supplied. Its redistribution rights have not been established. Review before public publication."
+}

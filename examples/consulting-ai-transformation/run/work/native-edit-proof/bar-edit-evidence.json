@@ -1,0 +1,23 @@
+{
+  "chart_bbox_px": [
+    31,
+    325,
+    620,
+    234
+  ],
+  "dimensions_px": [
+    1920,
+    1080
+  ],
+  "official_bar": {
+    "width_px": 293,
+    "height_px": 43
+  },
+  "edited_bar": {
+    "width_px": 244,
+    "height_px": 43
+  },
+  "expected_value_ratio": 0.8333333333333334,
+  "official_render_sha256": "7fbe619d60c5f2bcdbaab586c0856aae9c26ce18ec13e2e963fdebeaf4c6f386",
+  "edited_render_sha256": "16d9b56cc0e432877ac8ff4bf4b76d81c56b6f7cd074dc3eb9c14a4789d3a8bd"
+}

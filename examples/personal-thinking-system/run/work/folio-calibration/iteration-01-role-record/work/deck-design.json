@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "author": "host_agent_visual_reasoning",
+  "purpose": "User-authorized calibration of an existing presentation's recurring publication identity.",
+  "source_canvas_px": [
+    1672,
+    941
+  ],
+  "native_canvas_px": [
+    1600,
+    900
+  ],
+  "roles": [
+    {
+      "id": "publication_folio",
+      "meaning": "The Field Notes series label and current essay part number on every page.",
+      "page_aliases": [
+        {
+          "slide_id": "s01-opening",
+          "entity_id": "field-note",
+          "previous_typography_group": "page-index"
+        },
+        {
+          "slide_id": "s02-question",
+          "entity_id": "field-note",
+          "previous_typography_group": "page-index"
+        },
+        {
+          "slide_id": "s03-practice",
+          "entity_id": "field-note",
+          "previous_typography_group": "page-index"
+        },
+        {
+          "slide_id": "s04-trace",
+          "entity_id": "folio",
+          "previous_typography_group": "emphasis_label"
+        },
+        {
+          "slide_id": "s05-close",
+          "entity_id": "folio",
+          "previous_typography_group": "emphasis_label"
+        }
+      ],
+      "chosen_style": {
+        "font_family": "Andale Mono",
+        "font_weight": "regular",
+        "native_font_size_pt": 12,
+        "target_font_size_px": 21,
+        "color": "#242321",
+        "char_spacing_px": 0,
+        "italic": false,
+        "casing": "FIELD NOTES / NN",
+        "align": "left",
+        "valign": "top",
+        "line_spacing": 1,
+        "bbox_hint": [
+          90,
+          868,
+          300,
+          38
+        ],
+        "rule": "No repeated folio rule"
+      },
+      "reasoning": "The monospaced archive label already used on the first three pages provides a coherent identity within the paper-collage art direction. A 12 pt native setting is legible at presentation size. One lower-left allocation, regular weight, normal tracking and dark ink make the five part numbers read as a series.",
+      "exceptions": [
+        {
+          "slide_id": "s01-opening",
+          "entity_ids": [
+            "essay-label",
+            "footer-rule"
+          ],
+          "reason": "The cover-only essay descriptor and short linking rule remain unique companion elements. They move by the same 54 source pixels as the folio to preserve their original baseline relationship. Their typography and horizontal placement remain unchanged."
+        }
+      ]
+    }
+  ],
+  "other_recurring_functions_reviewed": [
+    {
+      "function": "Main essay statements",
+      "decision": "Keep observed Bodoni 72 lettering, size, tracking and composition. Their hierarchy and line structure are intentionally page-specific."
+    },
+    {
+      "function": "Explanatory copy",
+      "decision": "Keep the existing Arial or Andale Mono roles. Reflective questions, chapter captions and archival ledger prompts serve distinct local reading functions."
+    },
+    {
+      "function": "Rules and record numbers",
+      "decision": "Column dividers, ledger rules and numbered record rows are content structures on their own pages. They are not a recurring footer rule."
+    },
+    {
+      "function": "Artwork and paper",
+      "decision": "Retain every accepted regional raster, background tone, crop and native body allocation."
+    }
+  ],
+  "generation_policy": "Reuse the existing accepted targets. This authorized native calibration does not claim the legacy generated folio placement or style is the new target. No image-generation call was made."
+}

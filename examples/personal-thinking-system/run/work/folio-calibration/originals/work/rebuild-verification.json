@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "slide_order": [
+    "s01-opening",
+    "s02-question",
+    "s03-practice",
+    "s04-trace",
+    "s05-close"
+  ],
+  "pages": [
+    {
+      "slide_id": "s01-opening",
+      "page_number": 1,
+      "native_textboxes": 6,
+      "all_authored_text_present_in_pptx": true,
+      "all_authored_text_present_in_pdf": true,
+      "relocated_preview_pixels_identical": true,
+      "preview_sha256": "93c8d610a7da1490a6b611e807d367148041937511e898262ef0bf5813d6c6ff"
+    },
+    {
+      "slide_id": "s02-question",
+      "page_number": 2,
+      "native_textboxes": 7,
+      "all_authored_text_present_in_pptx": true,
+      "all_authored_text_present_in_pdf": true,
+      "relocated_preview_pixels_identical": true,
+      "preview_sha256": "219a8c20688c63474dc5493a87382341744fb02177ac23381ee987b24437eb16"
+    },
+    {
+      "slide_id": "s03-practice",
+      "page_number": 3,
+      "native_textboxes": 9,
+      "all_authored_text_present_in_pptx": true,
+      "all_authored_text_present_in_pdf": true,
+      "relocated_preview_pixels_identical": true,
+      "preview_sha256": "dd27b4eb9ee6057c3d9a3ebff0fad025cec114b85798acbc99489ec25d1badd9"
+    },
+    {
+      "slide_id": "s04-trace",
+      "page_number": 4,
+      "native_textboxes": 17,
+      "all_authored_text_present_in_pptx": true,
+      "all_authored_text_present_in_pdf": true,
+      "relocated_preview_pixels_identical": true,
+      "preview_sha256": "074767717d7f84f90a34470ddf8ae947d1747566c596e38fb122b1d7aff6eb67"
+    },
+    {
+      "slide_id": "s05-close",
+      "page_number": 5,
+      "native_textboxes": 7,
+      "all_authored_text_present_in_pptx": true,
+      "all_authored_text_present_in_pdf": true,
+      "relocated_preview_pixels_identical": true,
+      "preview_sha256": "cdecfd143fd11e83b7b6ee615a9c9ad0a9fddc4669c7669ece7d126781d1b272"
+    }
+  ],
+  "temporary_source_images_no_longer_exist": [
+    "/Users/henry/Codes/AI_slide_drafting/output/product-qa/.slidepoise-rebuild-_cgnm1le/slides/s01-opening/work/reconstruction/measurement/crops/hand-staircase-collage.png",
+    "/Users/henry/Codes/AI_slide_drafting/output/product-qa/.slidepoise-rebuild-_cgnm1le/slides/s02-question/work/reconstruction/measurement/crops/question-collage.png",
+    "/Users/henry/Codes/AI_slide_drafting/output/product-qa/.slidepoise-rebuild-_cgnm1le/slides/s03-practice/work/reconstruction/measurement/crops/collect-collage.png",
+    "/Users/henry/Codes/AI_slide_drafting/output/product-qa/.slidepoise-rebuild-_cgnm1le/slides/s03-practice/work/reconstruction/measurement/crops/connect-collage.png",
+    "/Users/henry/Codes/AI_slide_drafting/output/product-qa/.slidepoise-rebuild-_cgnm1le/slides/s03-practice/work/reconstruction/measurement/crops/challenge-collage.png",
+    "/Users/henry/Codes/AI_slide_drafting/output/product-qa/.slidepoise-rebuild-_cgnm1le/slides/s04-trace/work/reconstruction/measurement/crops/notebook.png",
+    "/Users/henry/Codes/AI_slide_drafting/output/product-qa/.slidepoise-rebuild-_cgnm1le/slides/s04-trace/work/reconstruction/measurement/crops/archive-collage.png",
+    "/Users/henry/Codes/AI_slide_drafting/output/product-qa/.slidepoise-rebuild-_cgnm1le/slides/s05-close/work/reconstruction/measurement/crops/signature-collage.png"
+  ],
+  "bundle_manifest_sha256": "f15d384f8c619dd40643821c4789278a2d95326bd7d9a2c566df12c3a3c79990",
+  "pptx_sha256": "2792da9d3feda643d4ebdbd597c8d275a2113f47734777792fa448f6377e68ce",
+  "pdf_sha256": "abe418df000d5ad9cc1af84549b6fba122b443d4c901975a2a60a7b3b0f127e8",
+  "scope": "Page order, native and rendered content, resolved local raster assets, and relocation invariance. Visual design is separately reviewed by the host."
+}

@@ -1,0 +1,18 @@
+{
+  "selected_assets": [],
+  "sources": [
+    "Host-authored illustrative planning model"
+  ],
+  "speaker_notes": [
+    "Each pilot engagement supplies one research task. Twenty paired tasks correspond to twenty engagements.",
+    "The practice lead and CFO release scale funding only after the evidence gates are reviewed. Critical data exceptions stop expansion."
+  ],
+  "notes": [
+    "Each pilot engagement supplies one research task. Twenty tasks correspond to twenty engagements.",
+    "The matrix, milestone panels, small dependency arrows and decision band are native presentation geometry. No canonical asset is implied.",
+    "Georgia title 64px, Arial subtitle 32px, section/body 28px, table and gate evidence 24px. Gate dates use the body heading level and gate IDs use a separate 32px marker level.",
+    "Native font proportions preserve the named font families. Source condensed glyph shapes are not imitated through horizontal compression.",
+    "Header and footer are inherited from the resolved shared frame. All mapped source geometry belongs to the 1920 by 960 body canvas.",
+    "The shared decision text and 8px accent follow the deck's explicit visual roles, replacing the image model's oversized accent and label treatment."
+  ]
+}

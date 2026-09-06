@@ -1,0 +1,817 @@
+{
+  "entities": [
+    {
+      "id": "paper-field",
+      "kind": "shape",
+      "display_label": "Quiet paper field",
+      "shape": "rectangle",
+      "bbox_hint": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 0,
+      "reconstruction_route": "native_shape",
+      "style_hint": {
+        "fill": "#FAF9F7",
+        "stroke": "none"
+      }
+    },
+    {
+      "id": "title-first",
+      "kind": "text",
+      "display_label": "Leave",
+      "text": "Leave",
+      "bbox_hint": [
+        91,
+        91,
+        485,
+        115
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "slide_title",
+      "text_style_role": "slide_title",
+      "typography_group": "slide_title",
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "target_font_size_px": 103,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": 0
+      },
+      "search_bbox_hint": [
+        90,
+        111,
+        235,
+        89
+      ]
+    },
+    {
+      "id": "title-second",
+      "kind": "text",
+      "display_label": "a trace of",
+      "text": "a trace of",
+      "bbox_hint": [
+        91,
+        191,
+        485,
+        115
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "slide_title",
+      "text_style_role": "slide_title",
+      "typography_group": "slide_title",
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "target_font_size_px": 103,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": -1
+      },
+      "search_bbox_hint": [
+        90,
+        211,
+        355,
+        89
+      ]
+    },
+    {
+      "id": "title-third",
+      "kind": "text",
+      "display_label": "the thinking.",
+      "text": "the thinking.",
+      "bbox_hint": [
+        91,
+        292,
+        505,
+        123
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "slide_title",
+      "text_style_role": "slide_title",
+      "typography_group": "slide_title",
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "target_font_size_px": 103,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": -3.4
+      },
+      "search_bbox_hint": [
+        90,
+        309,
+        463,
+        111
+      ]
+    },
+    {
+      "id": "notebook",
+      "kind": "image",
+      "display_label": "A record of thought",
+      "visual_source_class": "novel_illustration",
+      "bbox_hint": [
+        91,
+        505,
+        279,
+        205
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "reconstruction_route": "screenshot_crop",
+      "raster_decision": {
+        "action": "preserve_composite",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "reason": "The notebook photograph carries authentic paper, lighting and intrinsic handwriting. Reuse its original crop.",
+        "source_dimensions_px": [
+          279,
+          205
+        ],
+        "intrinsic_text_ownership": "Marks and photographed notebook lettering belong to this raster. No presentation copy is inside the crop."
+      }
+    },
+    {
+      "id": "caption",
+      "kind": "text",
+      "display_label": "A small record makes a conversation reusable.",
+      "text": "A small record makes\na conversation reusable.",
+      "bbox_hint": [
+        91,
+        736,
+        460,
+        75
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "body_compact",
+      "text_style_role": "body_compact",
+      "typography_group": "body_compact",
+      "style_hint": {
+        "font_family": "Arial",
+        "target_font_size_px": 23,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1.2,
+        "char_spacing_px": 0
+      }
+    },
+    {
+      "id": "record-number-0",
+      "kind": "text",
+      "display_label": "01",
+      "text": "01",
+      "bbox_hint": [
+        610,
+        172,
+        89,
+        98
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "section_number",
+      "text_style_role": "section_number",
+      "typography_group": "section_number",
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "target_font_size_px": 72,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": 0
+      }
+    },
+    {
+      "id": "record-separator-0",
+      "kind": "shape",
+      "display_label": "Editorial rule",
+      "shape": "authored_path",
+      "bbox_hint": [
+        709,
+        180,
+        1,
+        80
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 2,
+      "reconstruction_route": "fitted_freeform",
+      "path_commands_px": [
+        {
+          "op": "M",
+          "point": [
+            709,
+            180
+          ]
+        },
+        {
+          "op": "L",
+          "point": [
+            709,
+            260
+          ]
+        }
+      ],
+      "style_hint": {
+        "fill": "none",
+        "stroke": "#8A8A88",
+        "stroke_width_px": 1
+      }
+    },
+    {
+      "id": "record-heading-0",
+      "kind": "text",
+      "display_label": "Source",
+      "text": "Source",
+      "bbox_hint": [
+        748,
+        172,
+        430,
+        59
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "heading_large",
+      "text_style_role": "heading_large",
+      "typography_group": "heading_large",
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "target_font_size_px": 37,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": 0
+      }
+    },
+    {
+      "id": "record-question-0",
+      "kind": "text",
+      "display_label": "What did I encounter?",
+      "text": "What did I encounter?",
+      "bbox_hint": [
+        748,
+        227,
+        437,
+        47
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "label",
+      "text_style_role": "label",
+      "typography_group": "label",
+      "style_hint": {
+        "font_family": "Arial",
+        "target_font_size_px": 23,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": 0
+      }
+    },
+    {
+      "id": "record-rule-0",
+      "kind": "shape",
+      "display_label": "Editorial rule",
+      "shape": "authored_path",
+      "bbox_hint": [
+        610,
+        309,
+        546,
+        1
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 2,
+      "reconstruction_route": "fitted_freeform",
+      "path_commands_px": [
+        {
+          "op": "M",
+          "point": [
+            610,
+            309
+          ]
+        },
+        {
+          "op": "L",
+          "point": [
+            1156,
+            309
+          ]
+        }
+      ],
+      "style_hint": {
+        "fill": "none",
+        "stroke": "#8A8A88",
+        "stroke_width_px": 1
+      }
+    },
+    {
+      "id": "record-number-1",
+      "kind": "text",
+      "display_label": "02",
+      "text": "02",
+      "bbox_hint": [
+        610,
+        346,
+        89,
+        98
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "section_number",
+      "text_style_role": "section_number",
+      "typography_group": "section_number",
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "target_font_size_px": 72,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": 0
+      }
+    },
+    {
+      "id": "record-separator-1",
+      "kind": "shape",
+      "display_label": "Editorial rule",
+      "shape": "authored_path",
+      "bbox_hint": [
+        709,
+        354,
+        1,
+        80
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 2,
+      "reconstruction_route": "fitted_freeform",
+      "path_commands_px": [
+        {
+          "op": "M",
+          "point": [
+            709,
+            354
+          ]
+        },
+        {
+          "op": "L",
+          "point": [
+            709,
+            434
+          ]
+        }
+      ],
+      "style_hint": {
+        "fill": "none",
+        "stroke": "#8A8A88",
+        "stroke_width_px": 1
+      }
+    },
+    {
+      "id": "record-heading-1",
+      "kind": "text",
+      "display_label": "Question",
+      "text": "Question",
+      "bbox_hint": [
+        748,
+        346,
+        430,
+        59
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "heading_large",
+      "text_style_role": "heading_large",
+      "typography_group": "heading_large",
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "target_font_size_px": 37,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": 0
+      }
+    },
+    {
+      "id": "record-question-1",
+      "kind": "text",
+      "display_label": "What does it unsettle?",
+      "text": "What does it unsettle?",
+      "bbox_hint": [
+        748,
+        401,
+        437,
+        47
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "label",
+      "text_style_role": "label",
+      "typography_group": "label",
+      "style_hint": {
+        "font_family": "Arial",
+        "target_font_size_px": 23,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": 0
+      }
+    },
+    {
+      "id": "record-rule-1",
+      "kind": "shape",
+      "display_label": "Editorial rule",
+      "shape": "authored_path",
+      "bbox_hint": [
+        610,
+        483,
+        546,
+        1
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 2,
+      "reconstruction_route": "fitted_freeform",
+      "path_commands_px": [
+        {
+          "op": "M",
+          "point": [
+            610,
+            483
+          ]
+        },
+        {
+          "op": "L",
+          "point": [
+            1156,
+            483
+          ]
+        }
+      ],
+      "style_hint": {
+        "fill": "none",
+        "stroke": "#8A8A88",
+        "stroke_width_px": 1
+      }
+    },
+    {
+      "id": "record-number-2",
+      "kind": "text",
+      "display_label": "03",
+      "text": "03",
+      "bbox_hint": [
+        610,
+        520,
+        89,
+        98
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "section_number",
+      "text_style_role": "section_number",
+      "typography_group": "section_number",
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "target_font_size_px": 72,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": 0
+      }
+    },
+    {
+      "id": "record-separator-2",
+      "kind": "shape",
+      "display_label": "Editorial rule",
+      "shape": "authored_path",
+      "bbox_hint": [
+        709,
+        528,
+        1,
+        80
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 2,
+      "reconstruction_route": "fitted_freeform",
+      "path_commands_px": [
+        {
+          "op": "M",
+          "point": [
+            709,
+            528
+          ]
+        },
+        {
+          "op": "L",
+          "point": [
+            709,
+            608
+          ]
+        }
+      ],
+      "style_hint": {
+        "fill": "none",
+        "stroke": "#8A8A88",
+        "stroke_width_px": 1
+      }
+    },
+    {
+      "id": "record-heading-2",
+      "kind": "text",
+      "display_label": "Counterargument",
+      "text": "Counterargument",
+      "bbox_hint": [
+        748,
+        520,
+        430,
+        59
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "heading_large",
+      "text_style_role": "heading_large",
+      "typography_group": "heading_large",
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "target_font_size_px": 37,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": 0
+      }
+    },
+    {
+      "id": "record-question-2",
+      "kind": "text",
+      "display_label": "What is the strongest objection?",
+      "text": "What is the strongest objection?",
+      "bbox_hint": [
+        748,
+        575,
+        437,
+        47
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "label",
+      "text_style_role": "label",
+      "typography_group": "label",
+      "style_hint": {
+        "font_family": "Arial",
+        "target_font_size_px": 23,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": 0
+      }
+    },
+    {
+      "id": "record-rule-2",
+      "kind": "shape",
+      "display_label": "Editorial rule",
+      "shape": "authored_path",
+      "bbox_hint": [
+        610,
+        657,
+        546,
+        1
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 2,
+      "reconstruction_route": "fitted_freeform",
+      "path_commands_px": [
+        {
+          "op": "M",
+          "point": [
+            610,
+            657
+          ]
+        },
+        {
+          "op": "L",
+          "point": [
+            1156,
+            657
+          ]
+        }
+      ],
+      "style_hint": {
+        "fill": "none",
+        "stroke": "#8A8A88",
+        "stroke_width_px": 1
+      }
+    },
+    {
+      "id": "record-number-3",
+      "kind": "text",
+      "display_label": "04",
+      "text": "04",
+      "bbox_hint": [
+        610,
+        694,
+        89,
+        98
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "section_number",
+      "text_style_role": "section_number",
+      "typography_group": "section_number",
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "target_font_size_px": 72,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": 0
+      }
+    },
+    {
+      "id": "record-separator-3",
+      "kind": "shape",
+      "display_label": "Editorial rule",
+      "shape": "authored_path",
+      "bbox_hint": [
+        709,
+        702,
+        1,
+        80
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 2,
+      "reconstruction_route": "fitted_freeform",
+      "path_commands_px": [
+        {
+          "op": "M",
+          "point": [
+            709,
+            702
+          ]
+        },
+        {
+          "op": "L",
+          "point": [
+            709,
+            782
+          ]
+        }
+      ],
+      "style_hint": {
+        "fill": "none",
+        "stroke": "#8A8A88",
+        "stroke_width_px": 1
+      }
+    },
+    {
+      "id": "record-heading-3",
+      "kind": "text",
+      "display_label": "Decision",
+      "text": "Decision",
+      "bbox_hint": [
+        748,
+        694,
+        430,
+        59
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "heading_large",
+      "text_style_role": "heading_large",
+      "typography_group": "heading_large",
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "target_font_size_px": 37,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": 0
+      }
+    },
+    {
+      "id": "record-question-3",
+      "kind": "text",
+      "display_label": "What will I carry forward?",
+      "text": "What will I carry forward?",
+      "bbox_hint": [
+        748,
+        749,
+        437,
+        47
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "label",
+      "text_style_role": "label",
+      "typography_group": "label",
+      "style_hint": {
+        "font_family": "Arial",
+        "target_font_size_px": 23,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": 0
+      }
+    },
+    {
+      "id": "archive-collage",
+      "kind": "image",
+      "display_label": "An archive of connections",
+      "visual_source_class": "novel_illustration",
+      "bbox_hint": [
+        1209,
+        122,
+        407,
+        691
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "reconstruction_route": "screenshot_crop",
+      "raster_decision": {
+        "action": "preserve_composite",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "reason": "Layered paper, sea fragments and torn edges form one visual region. Keep the composite with its grain and transparent-looking layers.",
+        "source_dimensions_px": [
+          407,
+          691
+        ],
+        "intrinsic_text_ownership": "Marks and photographed notebook lettering belong to this raster. No presentation copy is inside the crop."
+      }
+    },
+    {
+      "id": "folio",
+      "kind": "text",
+      "display_label": "Field Notes series marker, part 04",
+      "text": "FIELD NOTES / 04",
+      "bbox_hint": [
+        90,
+        868,
+        300,
+        38
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "publication_folio",
+      "text_style_role": "emphasis_label",
+      "typography_group": "publication-folio",
+      "style_hint": {
+        "font_family": "Andale Mono",
+        "target_font_size_px": 21,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "host_reviewed_user_authorized_deck_role",
+        "line_spacing": 1,
+        "char_spacing_px": 0,
+        "italic": false,
+        "align": "left",
+        "valign": "top"
+      },
+      "search_bbox_hint": [
+        90,
+        868,
+        380,
+        35
+      ]
+    }
+  ],
+  "groups": [],
+  "relationships": [],
+  "provenance": {
+    "composition_policy": "accepted_artwork_and_body_preserved_with_user_authorized_publication_folio_calibration",
+    "revision": "Recurring publication_folio role and its cover-only companions follow work/deck-design.json. Source ink remains measured at the original target locations."
+  }
+}

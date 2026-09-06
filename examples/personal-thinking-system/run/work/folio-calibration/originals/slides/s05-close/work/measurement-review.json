@@ -1,0 +1,38 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "stage": "measurement",
+  "reviewed_artifacts": [
+    {
+      "path": "accepted-slide.png",
+      "sha256": "e7f6777d1eab069b3cbdedf2ff426e0cd39ef639896e7bf9af63415318ebc22c"
+    },
+    {
+      "path": "semantic-map.json",
+      "sha256": "8f07a541eeeac8710c7cf6fa9dbdb2f1081cc4f5a7b140aae1d0531ac0abaa82"
+    },
+    {
+      "path": "reconstruction/measurement/debug_overlay.png",
+      "sha256": "4c6065e873d0196cdb238ca569b8dbfe52c691d424ff331621582a47178d47c8"
+    },
+    {
+      "path": "reconstruction/measurement/slide_entities.json",
+      "sha256": "4dd3f1e8ac1beaa49723a0af791b688d5fe1aa0656ec5a3cb4c2eb99d39b6db9"
+    },
+    {
+      "path": "reconstruction/reconstruction-contract.json",
+      "sha256": "546940ceedfb7d5c928793af212c6ab593c24c3982aeedd5aa98fa17c63b0c1c"
+    }
+  ],
+  "decision": "accepted",
+  "material_issues": [],
+  "reasoning_summary": "The inspected overlay locates the authored text, native objects and regional raster sources. Geometry evidence supports construction without deciding meaning.",
+  "observations": [
+    "The hand, thread and paper retain the accepted regional artwork. The three supporting lines and the spaced folio remain separate native text objects."
+  ],
+  "remaining_fidelity_limits": [
+    "Bodoni 72 and Arial are available-font interpretations of generated lettering. Exact glyph outlines differ.",
+    "Fine grain outside the regional artwork is represented by a sampled native background. Photographs and intrinsic depicted marks remain raster."
+  ],
+  "review_environment": "LibreOffice on macOS with run-local discovery of installed system fonts",
+  "user_checkpoint": null
+}

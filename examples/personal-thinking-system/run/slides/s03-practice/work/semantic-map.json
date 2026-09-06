@@ -1,0 +1,491 @@
+{
+  "schema_version": "3.2.0",
+  "provenance": {
+    "created_by": "host_agent_visual_reasoning",
+    "source": "accepted_generated_image",
+    "composition_policy": "accepted_artwork_and_body_preserved_with_user_authorized_publication_folio_calibration",
+    "text_allocation_note": "Source-ink search windows and native textbox allocations are independently authored. Larger native serif allocations preserve the actual Office baseline and descenders.",
+    "revision": "Recurring publication_folio role and its cover-only companions follow work/deck-design.json. Source ink remains measured at the original target locations."
+  },
+  "entities": [
+    {
+      "id": "paper-field",
+      "display_label": "Warm ivory page",
+      "kind": "shape",
+      "role": "paper-field",
+      "shape": "rectangle",
+      "bbox_hint": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 0,
+      "style_hint": {
+        "fill": "#FBFAF8",
+        "stroke": "none",
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "practice-title",
+      "display_label": "Collect. Connect. Challenge.",
+      "kind": "text",
+      "role": "practice-title",
+      "text_style_role": "slide_title",
+      "text": "Collect. Connect. Challenge.",
+      "bbox_hint": [
+        64,
+        43,
+        1310,
+        175
+      ],
+      "typography_group": "practice-title",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 122,
+        "char_spacing_px": -5.5
+      },
+      "search_bbox_hint": [
+        58,
+        69,
+        1194,
+        133
+      ]
+    },
+    {
+      "id": "practice-subtitle",
+      "display_label": "Three moves for a thought worth keeping.",
+      "kind": "text",
+      "role": "practice-subtitle",
+      "text_style_role": "emphasis_label",
+      "text": "Three moves for a thought worth keeping.",
+      "bbox_hint": [
+        71,
+        197,
+        700,
+        46
+      ],
+      "typography_group": "practice-subtitle",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Andale Mono",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 25.5
+      },
+      "search_bbox_hint": [
+        65,
+        199,
+        624,
+        42
+      ]
+    },
+    {
+      "id": "collect-heading",
+      "display_label": "Collect",
+      "kind": "text",
+      "role": "collect-heading",
+      "text_style_role": "slide_title",
+      "text": "Collect",
+      "bbox_hint": [
+        73,
+        286,
+        330,
+        92
+      ],
+      "typography_group": "practice-headings",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 71,
+        "char_spacing_px": -4.2
+      },
+      "search_bbox_hint": [
+        67,
+        297,
+        188,
+        67
+      ]
+    },
+    {
+      "id": "connect-heading",
+      "display_label": "Connect",
+      "kind": "text",
+      "role": "connect-heading",
+      "text_style_role": "slide_title",
+      "text": "Connect",
+      "bbox_hint": [
+        627,
+        286,
+        370,
+        92
+      ],
+      "typography_group": "practice-headings",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 71,
+        "char_spacing_px": -4.2
+      },
+      "search_bbox_hint": [
+        618,
+        296,
+        230,
+        73
+      ]
+    },
+    {
+      "id": "challenge-heading",
+      "display_label": "Challenge",
+      "kind": "text",
+      "role": "challenge-heading",
+      "text_style_role": "slide_title",
+      "text": "Challenge",
+      "bbox_hint": [
+        1141,
+        286,
+        435,
+        92
+      ],
+      "typography_group": "practice-headings",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 71,
+        "char_spacing_px": -2.7
+      },
+      "search_bbox_hint": [
+        1130,
+        297,
+        272,
+        85
+      ]
+    },
+    {
+      "id": "collect-caption",
+      "display_label": "Keep the source close.",
+      "kind": "text",
+      "role": "collect-caption",
+      "text_style_role": "emphasis_label",
+      "text": "Keep the source close.",
+      "bbox_hint": [
+        77,
+        376,
+        430,
+        38
+      ],
+      "typography_group": "practice-captions",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Andale Mono",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 18.5
+      },
+      "search_bbox_hint": [
+        69,
+        375,
+        265,
+        39
+      ]
+    },
+    {
+      "id": "connect-caption",
+      "display_label": "Put distant ideas in contact.",
+      "kind": "text",
+      "role": "connect-caption",
+      "text_style_role": "emphasis_label",
+      "text": "Put distant ideas in contact.",
+      "bbox_hint": [
+        630,
+        376,
+        430,
+        38
+      ],
+      "typography_group": "practice-captions",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Andale Mono",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 18.5
+      },
+      "search_bbox_hint": [
+        620,
+        375,
+        345,
+        39
+      ]
+    },
+    {
+      "id": "challenge-caption",
+      "display_label": "Ask what the pattern leaves out.",
+      "kind": "text",
+      "role": "challenge-caption",
+      "text_style_role": "emphasis_label",
+      "text": "Ask what the pattern leaves out.",
+      "bbox_hint": [
+        1142,
+        376,
+        460,
+        38
+      ],
+      "typography_group": "practice-captions",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Andale Mono",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 18.5
+      },
+      "search_bbox_hint": [
+        1133,
+        375,
+        379,
+        39
+      ]
+    },
+    {
+      "id": "column-rule-one",
+      "display_label": "First fine column rule",
+      "kind": "shape",
+      "role": "column-rule-one",
+      "shape": "rectangle",
+      "bbox_hint": [
+        578,
+        317,
+        1,
+        482
+      ],
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 0,
+      "style_hint": {
+        "fill": "#C4C3BE",
+        "stroke": "none",
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "column-rule-two",
+      "display_label": "Second fine column rule",
+      "kind": "shape",
+      "role": "column-rule-two",
+      "shape": "rectangle",
+      "bbox_hint": [
+        1091,
+        317,
+        1,
+        482
+      ],
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 0,
+      "style_hint": {
+        "fill": "#C4C3BE",
+        "stroke": "none",
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "collect-collage",
+      "display_label": "Hand holding a handwritten source",
+      "kind": "image",
+      "role": "editorial_collage",
+      "visual_source_class": "novel_illustration",
+      "bbox_hint": [
+        69,
+        420,
+        412,
+        383
+      ],
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 10,
+      "raster_fit": "fill",
+      "raster_decision": {
+        "action": "reuse_original",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "reason": "The photographed hand, handwritten fragment and layered source paper remain one image region. The manuscript lettering is intrinsic to the photographed source.",
+        "source_dimensions_px": [
+          412,
+          383
+        ],
+        "intended_output_size_px": [
+          412,
+          383
+        ],
+        "intrinsic_text_ownership": "Handwritten and depicted marks remain part of the collage. No external presentation copy is included.",
+        "occluding_native_text_ids": []
+      },
+      "style_hint": {
+        "style_authority": "accepted_generated_image"
+      }
+    },
+    {
+      "id": "connect-collage",
+      "display_label": "Layered map and connecting thread",
+      "kind": "image",
+      "role": "editorial_collage",
+      "visual_source_class": "novel_illustration",
+      "bbox_hint": [
+        639,
+        423,
+        380,
+        394
+      ],
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 10,
+      "raster_fit": "fill",
+      "raster_decision": {
+        "action": "reuse_original",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "reason": "The map, thread, ink dots and translucent paper form one archival image. The lines are depicted inside the collage rather than a semantic presentation connector.",
+        "source_dimensions_px": [
+          380,
+          394
+        ],
+        "intended_output_size_px": [
+          380,
+          394
+        ],
+        "intrinsic_text_ownership": "Handwritten and depicted marks remain part of the collage. No external presentation copy is included.",
+        "occluding_native_text_ids": []
+      },
+      "style_hint": {
+        "style_authority": "accepted_generated_image"
+      }
+    },
+    {
+      "id": "challenge-collage",
+      "display_label": "Torn photographic contact sheet",
+      "kind": "image",
+      "role": "editorial_collage",
+      "visual_source_class": "novel_illustration",
+      "bbox_hint": [
+        1137,
+        421,
+        436,
+        392
+      ],
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 10,
+      "raster_fit": "fill",
+      "raster_decision": {
+        "action": "reuse_original",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "reason": "The contact sheet and torn paper retain their photographic frames, texture and soft shadows as one regional crop.",
+        "source_dimensions_px": [
+          436,
+          392
+        ],
+        "intended_output_size_px": [
+          436,
+          392
+        ],
+        "intrinsic_text_ownership": "Handwritten and depicted marks remain part of the collage. No external presentation copy is included.",
+        "occluding_native_text_ids": []
+      },
+      "style_hint": {
+        "style_authority": "accepted_generated_image"
+      }
+    },
+    {
+      "id": "field-note",
+      "display_label": "Field Notes series marker, part 03",
+      "kind": "text",
+      "role": "publication_folio",
+      "text_style_role": "emphasis_label",
+      "text": "FIELD NOTES / 03",
+      "bbox_hint": [
+        90,
+        868,
+        300,
+        38
+      ],
+      "typography_group": "publication-folio",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Andale Mono",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "host_reviewed_user_authorized_deck_role",
+        "target_font_size_px": 21,
+        "char_spacing_px": 0,
+        "italic": false,
+        "align": "left",
+        "valign": "top",
+        "line_spacing": 1
+      },
+      "search_bbox_hint": [
+        65,
+        877,
+        177,
+        31
+      ]
+    }
+  ],
+  "groups": [],
+  "relationships": [],
+  "layout_constraints": {
+    "non_overlap_pairs": []
+  }
+}

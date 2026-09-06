@@ -1,0 +1,1065 @@
+{
+  "style_direction": {
+    "intent": "Dense, readable executive content with Georgia claim titles, Arial supporting roles and one coherent decision-band treatment.",
+    "freedom": "Vary the meaningful information layout. Preserve the shared visual roles and body-only canvas."
+  },
+  "selected_visual_references": [],
+  "selected_assets": [],
+  "selected_components": [],
+  "style_context": {
+    "profile": {
+      "profile_id": "consulting",
+      "name": "Consulting",
+      "purpose": "Create disciplined, evidence-rich executive slides with clear arguments, precise hierarchy and restrained moments of emphasis."
+    },
+    "style_agency": {
+      "palette": "specified",
+      "typography": "specified",
+      "density": "specified",
+      "icon_treatment": "agent_decides_within_profile"
+    },
+    "design": {
+      "full_slide_px": [
+        1920,
+        1080
+      ],
+      "frame": {
+        "header": {
+          "enabled": true,
+          "height_px": 64,
+          "implementation": "slide_master_inherited_content",
+          "left_text": "NORTHSTAR ADVISORY",
+          "right_text": "AI TRANSFORMATION",
+          "font_family": "Arial",
+          "font_size_px": 20,
+          "font_weight": "regular",
+          "text_color": "#666666",
+          "secondary_text_color": "#666666",
+          "rule_color": "#DFE3E6",
+          "rule_width_px": 1,
+          "accent_color": "#FD5108",
+          "accent_rule_width_px": 0,
+          "outer_padding_px": 48
+        },
+        "footer": {
+          "enabled": true,
+          "height_px": 56,
+          "implementation": "slide_master_inherited_content",
+          "left_text": "ILLUSTRATIVE PLANNING ASSUMPTIONS",
+          "center_text": "Capacity value is not a cash saving.",
+          "font_family": "Arial",
+          "font_size_px": 18,
+          "font_weight": "regular",
+          "left_font_weight": "regular",
+          "text_color": "#666666",
+          "secondary_text_color": "#666666",
+          "rule_color": "#DFE3E6",
+          "rule_width_px": 1,
+          "outer_padding_px": 48,
+          "slide_number": {
+            "enabled": true,
+            "implementation": "native_slide_number_field_on_master",
+            "format": "{slide_number}"
+          }
+        },
+        "generation_region": {
+          "derive_from_frame_heights": true
+        }
+      },
+      "title": {
+        "anchor_px": [
+          48,
+          32
+        ],
+        "max_width_px": 1824,
+        "font_family": "Georgia",
+        "weight": "regular",
+        "nominal_size_px": 64,
+        "color": "#000000",
+        "alignment": "left",
+        "allowed_lines": [
+          1,
+          2
+        ],
+        "minimum_gap_to_body_px": 36
+      },
+      "style": {
+        "icon_treatment": "agent_decides",
+        "background": "#FFFFFF",
+        "display_font": "Georgia",
+        "body_font": "Arial",
+        "density": "information_rich",
+        "accent_colors": [
+          "#FD5108",
+          "#FE7C39",
+          "#FFAA72",
+          "#FFCDA8",
+          "#FFE8D4",
+          "#FFF5ED"
+        ],
+        "neutral_colors": [
+          "#000000",
+          "#EBEBEB",
+          "#A1A8B3",
+          "#B5BCC4",
+          "#CBD1D6",
+          "#DFE3E6",
+          "#EEEFF1",
+          "#F5F7F8",
+          "#FFFFFF"
+        ],
+        "visual_language": "Consulting editorial presentation language: purposeful orange, black and white foundation, precise serif/sans hierarchy, clear movement, deliberate asymmetry when useful, disciplined negative space, strong scale contrast, thin neutral rules, and only a small number of coherent visual treatments on one slide.",
+        "whitespace": "intentional and confidence-building; preserve the selected density while using spacing and scale to reduce visual noise"
+      },
+      "semantic_style_tokens": {
+        "accent_badge": {
+          "fill": "#FD5108",
+          "text_color": "#FFFFFF",
+          "font_weight": "bold"
+        },
+        "muted_panel": {
+          "fill": "#F5F7F8",
+          "text_color": "#000000"
+        },
+        "primary_text": {
+          "color": "#000000"
+        },
+        "secondary_text": {
+          "color": "#000000"
+        },
+        "data_highlight": {
+          "text_color": "#FD5108",
+          "font_family": "Arial",
+          "font_weight": "bold"
+        },
+        "call_to_action": {
+          "text_color": "#FD5108",
+          "font_family": "Arial",
+          "font_weight": "bold"
+        },
+        "icon_surface_orange_lightest": {
+          "fill": "#FFF5ED",
+          "glyph_color": "#000000",
+          "border": "none"
+        },
+        "icon_surface_grey_lightest": {
+          "fill": "#F5F7F8",
+          "glyph_color": "#000000",
+          "border": "none"
+        },
+        "theme_light_background": {
+          "fill": "#EBEBEB",
+          "text_color": "#000000"
+        }
+      },
+      "icon_slots": {
+        "generation_inset_suggestion": 0.14,
+        "reconstruction_authority": "entity.style_hint.icon_inset_fraction"
+      },
+      "text_reconstruction": {
+        "font_size_quantization_pt": 0.5,
+        "technical_font_size_step_pt": 0.5,
+        "text_style_policies": {
+          "default": {
+            "font_size_range_px": [
+              14,
+              24
+            ],
+            "line_spacing": 1.5,
+            "inset_px": 2,
+            "font_family": "Arial",
+            "color": "#000000"
+          },
+          "slide_title": {
+            "font_family": "Georgia",
+            "font_size_range_px": [
+              64,
+              64
+            ],
+            "line_spacing": 1.0,
+            "inset_px": 0,
+            "color": "#000000"
+          },
+          "subtitle": {
+            "font_size_range_px": [
+              32,
+              32
+            ],
+            "line_spacing": 1.2,
+            "inset_px": 2,
+            "font_family": "Arial",
+            "font_weight": "regular",
+            "color": "#000000"
+          },
+          "section_number": {
+            "font_size_range_px": [
+              22,
+              34
+            ],
+            "line_spacing": 1.0,
+            "inset_px": 0,
+            "font_family": "Arial",
+            "font_weight": "bold",
+            "color": "#000000"
+          },
+          "heading_large": {
+            "font_size_range_px": [
+              28,
+              28
+            ],
+            "line_spacing": 1.2,
+            "inset_px": 2,
+            "font_family": "Arial",
+            "font_weight": "bold",
+            "color": "#000000"
+          },
+          "body": {
+            "font_size_range_px": [
+              28,
+              28
+            ],
+            "line_spacing": 1.5,
+            "inset_px": 2,
+            "font_family": "Arial",
+            "color": "#000000"
+          },
+          "heading": {
+            "font_size_range_px": [
+              16,
+              24
+            ],
+            "line_spacing": 1.2,
+            "inset_px": 2,
+            "font_family": "Arial",
+            "font_weight": "bold",
+            "color": "#000000"
+          },
+          "body_standard": {
+            "font_size_range_px": [
+              28,
+              28
+            ],
+            "line_spacing": 1.5,
+            "inset_px": 2,
+            "font_family": "Arial",
+            "color": "#000000"
+          },
+          "heading_compact": {
+            "font_size_range_px": [
+              15.5,
+              23
+            ],
+            "line_spacing": 1.2,
+            "inset_px": 2,
+            "font_family": "Arial",
+            "font_weight": "bold",
+            "color": "#000000"
+          },
+          "body_compact": {
+            "font_size_range_px": [
+              14,
+              20
+            ],
+            "line_spacing": 1.5,
+            "inset_px": 2,
+            "font_family": "Arial",
+            "color": "#000000"
+          },
+          "label": {
+            "font_size_range_px": [
+              24,
+              24
+            ],
+            "line_spacing": 1.0,
+            "inset_px": 2,
+            "font_family": "Arial",
+            "font_weight": "bold",
+            "color": "#000000"
+          },
+          "emphasis_label": {
+            "font_size_range_px": [
+              20,
+              34
+            ],
+            "line_spacing": 1.0,
+            "inset_px": 2,
+            "font_family": "Arial",
+            "color": "#000000"
+          },
+          "introduction": {
+            "font_family": "Arial",
+            "font_weight": "bold",
+            "color": "#000000",
+            "line_spacing": 1.2
+          },
+          "quote": {
+            "font_family": "Georgia",
+            "font_weight": "regular",
+            "color": "#000000",
+            "line_spacing": 1.2
+          },
+          "quote_label": {
+            "font_family": "Arial",
+            "font_weight": "bold",
+            "color": "#000000",
+            "line_spacing": 1.2
+          },
+          "large_data_number": {
+            "font_family": "Arial",
+            "font_weight": "bold",
+            "color": "#FD5108",
+            "line_spacing": 1.0
+          },
+          "call_to_action": {
+            "font_family": "Arial",
+            "font_weight": "bold",
+            "color": "#000000",
+            "line_spacing": 1.0
+          }
+        },
+        "legacy_semantic_role_style_aliases": {
+          "stage_number": "section_number",
+          "stage_title": "heading_large",
+          "stage_body": "body",
+          "card_title": "heading",
+          "card_body": "body_standard",
+          "module_title": "heading_compact",
+          "module_body": "body_compact",
+          "output_label": "emphasis_label"
+        },
+        "enforce_text_style_minimum": true
+      },
+      "connectors": {
+        "allowed_families": [
+          "direct_flow",
+          "orthogonal_dependency",
+          "merge_split",
+          "grouping_bracket",
+          "grouping_brace",
+          "annotation_leader"
+        ],
+        "stroke": {
+          "color": "#FD5108",
+          "width_px": 3,
+          "dash": "solid",
+          "line_cap": "round",
+          "line_join": "round"
+        },
+        "arrowhead": {
+          "type": "triangle",
+          "powerpoint_size": "lg",
+          "minimum_visible_endpoint_px": 18,
+          "minimum_clear_segment_px": 16,
+          "length_px": 14,
+          "width_px": 12
+        },
+        "routing": {
+          "minimum_clearance_px": 12,
+          "maximum_ordinary_bends": 2,
+          "grouping_brace_depth_px": 34,
+          "grouping_bracket_depth_px": 22,
+          "grouping_brace_preset_depth_factor": 1.7
+        }
+      },
+      "density_profiles": {
+        "spacious": {
+          "generation_guidance": [
+            "Use generous whitespace and fewer, larger information groups.",
+            "Allow intentionally quiet regions when they strengthen focus and hierarchy.",
+            "Do not fill space merely to increase occupancy."
+          ],
+          "visual_review_guidance": [
+            "Confirm that empty regions feel intentional rather than unfinished.",
+            "Prefer calm hierarchy over compactness."
+          ]
+        },
+        "balanced": {
+          "generation_guidance": [
+            "Use the substantive canvas efficiently while retaining clear separation between information groups.",
+            "Balance whitespace across the composition rather than leaving one large accidental dead zone."
+          ],
+          "visual_review_guidance": [
+            "Reject conspicuous unused peripheral regions that do not support hierarchy.",
+            "Keep the page readable without making it sparse or crowded."
+          ]
+        },
+        "information_rich": {
+          "generation_guidance": [
+            "Use the substantive canvas actively with compact, well-structured information groups and strong alignment.",
+            "Avoid large isolated blank regions unless they clearly serve hierarchy, pacing, or emphasis.",
+            "Prefer expanding, aligning, or redistributing meaningful content before adding decoration.",
+            "Keep spacing disciplined and readable; dense does not mean cramped."
+          ],
+          "visual_review_guidance": [
+            "Inspect the whole canvas for avoidable dead zones or lopsided whitespace.",
+            "Reject a composition that feels under-filled for the selected density even if individual components look good.",
+            "Preserve breathing room inside groups while using the overall slide area efficiently.",
+            "Judge empty regions by whether they support the argument, hierarchy, or pacing rather than by the semantic type of the nearby element."
+          ]
+        }
+      },
+      "shape_geometry": {
+        "rounding": {
+          "semantic_authority": "host_agent_shape_intent_and_observed_corner_radius",
+          "require_explicit_intent_for_rounded_rectangles": true,
+          "intent_values": [
+            "ordinary_container",
+            "deliberately_rounded",
+            "pill_or_capsule"
+          ],
+          "ordinary_container": {
+            "default_corner_radius_px": 6,
+            "suggested_corner_radius_px": 6,
+            "rationale": "Generation guidance only. Reconstruction uses the host Agent's observed radius from the accepted image."
+          },
+          "deliberately_rounded": {
+            "maximum_corner_radius_fraction_of_short_side": 0.48
+          },
+          "pill_or_capsule": {
+            "maximum_corner_radius_fraction_of_short_side": 0.5
+          },
+          "visual_review_required_after_reconstruction": true
+        }
+      },
+      "asset_placement": {
+        "preserve_intrinsic_aspect_ratio": true,
+        "generation_slot_policy": "When an exact user/current-chat asset is selected, attach it to image generation when possible and ask the selected image-generation model to allocate a compatible, non-distorted slot. The generated depiction is composition guidance; the canonical file is restored downstream.",
+        "reconstruction_policy": "Restore the exact selected file with contain-fit by default. Never stretch to match a generated placeholder. If the slot is visually incompatible with the intrinsic aspect ratio, the host Agent must revise the logical slot or upstream composition and rerun.",
+        "brand_identity": "exact asset only",
+        "allow_user_requested_crop_when_explicit": true
+      },
+      "profile": "consulting",
+      "data_visualization": {
+        "default_level": 1,
+        "default_series_colors": [
+          "#FD5108",
+          "#FE7C39",
+          "#FFAA72",
+          "#FFCDA8",
+          "#FFE8D4",
+          "#A1A8B3",
+          "#B5BCC4",
+          "#CBD1D6",
+          "#DFE3E6",
+          "#EEEFF1"
+        ],
+        "key_data_color": "#FD5108",
+        "chart_title_font": "Georgia",
+        "data_font": "Arial",
+        "allow_gradient_in_default_level": false,
+        "gridline_color": "#DFE3E6"
+      },
+      "profile_hard_rules": {
+        "color_system": {
+          "core": {
+            "orange": "#FD5108",
+            "white": "#FFFFFF",
+            "black": "#000000"
+          },
+          "orange_tints": [
+            "#FE7C39",
+            "#FFAA72",
+            "#FFCDA8",
+            "#FFE8D4",
+            "#FFF5ED"
+          ],
+          "grey_tints": [
+            "#A1A8B3",
+            "#B5BCC4",
+            "#CBD1D6",
+            "#DFE3E6",
+            "#EEEFF1",
+            "#F5F7F8"
+          ],
+          "limited_use": {
+            "tangerine": "#FF9F00",
+            "red": "#FA143C",
+            "rose": "#F05596"
+          },
+          "functional_status": {
+            "positive": "#059669",
+            "attention": "#E9B01F",
+            "negative": "#DC2626"
+          },
+          "rules": [
+            "Lead with core orange when colour is needed, but use it purposefully as an accent rather than a routine full-slide fill.",
+            "Use white and black as the foundation. Add approved orange or grey tints when more colour is needed.",
+            "Do not use red or rose as ordinary presentation colours; they are limited-use illustration colours.",
+            "Functional status colours are functional cues only and are not brand accents.",
+            "Ordinary text is black or white. Orange text is reserved for selected numbers, data visualisation, or call-to-action treatment."
+          ],
+          "presentation_backgrounds": {
+            "white": "#FFFFFF",
+            "light_grey": "#EBEBEB"
+          }
+        },
+        "typography": {
+          "powerpoint_serif": "Georgia",
+          "powerpoint_sans": "Arial",
+          "headline_and_quote_font": "Georgia",
+          "subheadline_body_intro_label_and_data_font": "Arial",
+          "allowed_weights": [
+            "regular",
+            "bold"
+          ],
+          "italics_allowed": false,
+          "tracking_allowed": false,
+          "ordinary_text_colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "allowed_colored_text_style_tokens": [
+            "data_highlight",
+            "call_to_action"
+          ],
+          "rules": [
+            "Use Georgia for slide headlines and quotes.",
+            "Use Arial for sub-headlines, body copy, introductions, labels, and large data numbers.",
+            "Do not use italics.",
+            "Do not apply tracking.",
+            "Use black text on white, warm accents, restrained gradients, and profile tints. White text on the lead orange requires sufficiently large display text; use 18 pt or larger.",
+            "Use the PowerPoint hierarchy leading as a guide: headlines 100%, sub-headlines and introductions 120%, body 150%, large data numbers 100%, quotes and quote labels 120%, and labels/calls to action 100%."
+          ],
+          "powerpoint_leading": {
+            "headline": 1.0,
+            "subheadline": 1.2,
+            "introduction": 1.2,
+            "body": 1.5,
+            "large_data_number": 1.0,
+            "quote": 1.2,
+            "quote_label": 1.2,
+            "label_or_call_to_action": 1.0
+          }
+        },
+        "primary_gradient": {
+          "purpose": "Create selected moments of impact and momentum, not routine decoration.",
+          "direction": "bottom_left_to_top_right",
+          "orange_position": "top_right",
+          "canonical_asset_preferred": true,
+          "exact_color_stops_available_in_profile": false,
+          "reconstruction_without_canonical_asset": "Preserve the accepted generated gradient as a raster visual region or canonical supplied asset. Do not invent proprietary editable gradient stops that are not specified by the source standard.",
+          "rules": [
+            "Do not rotate, flip, or arbitrarily crop a directional warm gradient treatment.",
+            "Do not create unrelated new gradients.",
+            "Use a warm gradient sparingly for deliberate impact, and keep standard data visualisation solid and restrained."
+          ]
+        },
+        "data_visualization": {
+          "default_powerpoint_level": 1,
+          "level_1_palette": [
+            "#FD5108",
+            "#FE7C39",
+            "#FFAA72",
+            "#FFCDA8",
+            "#FFE8D4",
+            "#A1A8B3",
+            "#B5BCC4",
+            "#CBD1D6",
+            "#DFE3E6",
+            "#EEEFF1"
+          ],
+          "chart_title_font": "Georgia",
+          "data_and_category_font": "Arial",
+          "large_number_font": "Arial",
+          "key_data_color": "#FD5108",
+          "rules": [
+            "For standard PowerPoint data visualisation, use solid warm accents and grey tints with one clear lead colour.",
+            "When one data point matters most, highlight it with core orange against grey tints.",
+            "When several data points have equal weight, use a monochromatic orange-tint sequence before grey tints.",
+            "Use core orange for the highest-value end of an orange heatmap.",
+            "Use Georgia for chart titles and Arial for data, category labels, and large number callouts.",
+            "Do not use gradients in standard data visualisation.",
+            "Tables may use core orange for a header row or column and approved grey tints for alternating rows."
+          ]
+        },
+        "icons": {
+          "unified_icon_pictogram_use": true,
+          "asset_policy": "Use Remix Icon as the coherent generic icon source when its run switch is enabled. Wikimedia Commons is reserved for exact logo or public-media candidates. Inspect every selected external asset and keep it in the run cache with provenance. Any fetched asset remains subject to the resolved profile treatment rules.",
+          "public_showcase_override": {
+            "preferred_provider": "Remix Icon",
+            "exact_logo_candidate_provider": "Wikimedia Commons",
+            "provider_version": "4.9.0",
+            "activation": "Enable each required source independently under session remote_sources.",
+            "pair_policy": "Retrieve a Remix line/fill pair before generation. Host Agent selects one variant per icon_treatment_group after inspecting the approved generated slide.",
+            "identity_boundary": "Generic icons are supporting communication symbols only. Never use one as a logo, trademark, or brand identity. Wikimedia Commons results are candidates whose exact identity, license, attribution, and trademark constraints still require Agent review.",
+            "license": "Remix Icon License v1.0"
+          },
+          "slot_policy": "Every icon has an explicit reserved slot for generation and measurement. A faint generation-only boundary may mark a bare icon slot for localization, but that boundary is scaffolding, not a decorative container, and must not be reconstructed. Only a positively judged intentional background surface may be reconstructed. When an icon sits directly on a larger colored panel/card and the visible white box merely isolates/localizes the glyph, prefer no reconstructed slot surface so the icon background remains transparent and inherits the surrounding panel colour.",
+          "coherence_policy": "Assign one treatment to each local peer icon or pictogram group. The host Agent chooses the peer grouping and one treatment id for that group. Reconstruction applies that treatment coherently while preserving each selected Remix glyph's geometry.",
+          "allowed_surface_colors": [
+            "#FFFFFF",
+            "#FFF5ED",
+            "#F5F7F8"
+          ],
+          "proxy_treatments": [
+            {
+              "id": "black_proxy",
+              "glyph": "#000000",
+              "allowed_surface_colors": [
+                "#FFFFFF",
+                "#FFF5ED",
+                "#F5F7F8"
+              ]
+            },
+            {
+              "id": "tangerine_to_orange_gradient_proxy",
+              "glyph_gradient": {
+                "direction": "bottom_left_to_top_right",
+                "stops": [
+                  {
+                    "offset": 0.0,
+                    "color": "#FF9F00"
+                  },
+                  {
+                    "offset": 0.05089,
+                    "color": "#FE9900"
+                  },
+                  {
+                    "offset": 0.466323,
+                    "color": "#FD7204"
+                  },
+                  {
+                    "offset": 0.797112,
+                    "color": "#FD5907"
+                  },
+                  {
+                    "offset": 1.0,
+                    "color": "#FD5108"
+                  }
+                ],
+                "from": "#FF9F00",
+                "to": "#FD5108"
+              },
+              "allowed_surface_colors": [
+                "#FFFFFF",
+                "#FFF5ED",
+                "#F5F7F8"
+              ]
+            }
+          ],
+          "surface_geometry_policy": {
+            "allowed_visible_shapes": [
+              "rectangle"
+            ],
+            "decorative_outline_allowed": false,
+            "description": "A flat light background field may sit behind an icon only when the accepted design clearly intends a real icon surface. It is a background surface, not a decorative badge or holding shape. Do not add circles, pills, outlines, extra marks, or scaffold borders around the icon. When the surrounding panel already provides the background, omit the icon surface and keep the icon background transparent."
+          },
+          "avoid": [
+            "stretching or distorting an icon",
+            "recolouring an exact Consulting SVG away from its canonical black or tangerine-to-orange artwork",
+            "arbitrary decorative circles, pills, badges, or holding shapes around an icon",
+            "adding extra marks or lines to the icon artwork",
+            "using icon background fills other than white, #FFF5ED, or #F5F7F8 in the Consulting profile",
+            "mixing several unrelated icon styles on one slide",
+            "reconstructing a localization/scaffold border as a real icon box or outline",
+            "using a white knockout tile when the intended background should be the surrounding colored panel"
+          ],
+          "packaged_recolor_policy": {
+            "recolorable": true,
+            "mode": "fill_all",
+            "source_color_authoritative": false
+          }
+        },
+        "asset_vocabulary": {
+          "mode": "closed",
+          "generation_representation": "full_context_sheet",
+          "attach_selected_asset_files_to_image_generation": false,
+          "policy": "For Consulting generation, reusable semantic assets are selected upstream and shown together in one approved context sheet. The sheet contains selected visual references, component previews, retrieved candidate assets, and current-chat/user uploads. Canonical identity files remain authoritative downstream. The image model may also create profile-governed novel illustrations when they materially improve communication; these are a distinct class, not substitutes for logos or known assets, and are handled explicitly during reconstruction.",
+          "allowed_native_presentation_visuals": [
+            "rectangles",
+            "rounded rectangles when otherwise profile-valid",
+            "circles",
+            "lines",
+            "rules",
+            "connectors",
+            "arrows",
+            "tables",
+            "charts",
+            "ordinary chart geometry",
+            "background fields",
+            "typographic emphasis"
+          ],
+          "allowed_non_asset_raster_roles": [
+            "primary_gradient"
+          ],
+          "review_rule": "Every meaningful semantic visual must either map to an approved upstream asset/reference class, be native presentation geometry, be an explicitly allowed raster role, or be classified as a profile-permitted novel illustration. Reject decorative or off-profile novel visuals.",
+          "novel_illustrations": {
+            "mode": "restrained",
+            "guidance": "Prefer native presentation geometry and approved assets. Allow a small number of semantically necessary illustrative visuals when they materially clarify a concept or create a justified narrative moment. Creative/conceptual slides may use more expressive illustration; compliance, regulatory, operating, or data-dense slides should use little or none. Do not add decorative novelty merely to fill space.",
+            "forbid_identity_substitution": true,
+            "must_be_semantically_classified_downstream": true
+          }
+        }
+      },
+      "resource_catalogs": {
+        "visual_references": {
+          "catalog": "/Users/henry/.slidepoise/profiles/consulting/libraries/visual_references/catalog.json",
+          "root": "/Users/henry/.slidepoise/profiles/consulting/libraries/visual_references",
+          "profile_id": "consulting"
+        },
+        "components": {
+          "catalogs": [
+            "/Users/henry/.slidepoise/library-sets/components/consulting-core/catalog.json"
+          ],
+          "catalog": "/Users/henry/.slidepoise/library-sets/components/consulting-core/catalog.json",
+          "set_ids": [
+            "consulting-core"
+          ]
+        },
+        "icons": {
+          "set_ids": [
+            "remix-icon",
+            "wikimedia-identity"
+          ],
+          "providers": [
+            "remix_icon",
+            "wikimedia_commons"
+          ]
+        }
+      }
+    },
+    "frame": {
+      "header": {
+        "enabled": true,
+        "height_px": 64,
+        "implementation": "slide_master_inherited_content",
+        "left_text": "NORTHSTAR ADVISORY",
+        "right_text": "AI TRANSFORMATION",
+        "font_family": "Arial",
+        "font_size_px": 20,
+        "font_weight": "regular",
+        "text_color": "#666666",
+        "secondary_text_color": "#666666",
+        "rule_color": "#DFE3E6",
+        "rule_width_px": 1,
+        "accent_color": "#FD5108",
+        "accent_rule_width_px": 0,
+        "outer_padding_px": 48
+      },
+      "footer": {
+        "enabled": true,
+        "height_px": 56,
+        "implementation": "slide_master_inherited_content",
+        "left_text": "ILLUSTRATIVE PLANNING ASSUMPTIONS",
+        "center_text": "Capacity value is not a cash saving.",
+        "font_family": "Arial",
+        "font_size_px": 18,
+        "font_weight": "regular",
+        "left_font_weight": "regular",
+        "text_color": "#666666",
+        "secondary_text_color": "#666666",
+        "rule_color": "#DFE3E6",
+        "rule_width_px": 1,
+        "outer_padding_px": 48,
+        "slide_number": {
+          "enabled": true,
+          "implementation": "native_slide_number_field_on_master",
+          "format": "{slide_number}"
+        }
+      },
+      "generation_region": {
+        "derive_from_frame_heights": true
+      }
+    },
+    "canvas": [
+      1920,
+      960
+    ],
+    "guidance": {
+      "hard_rules": {
+        "color_system": {
+          "core": {
+            "orange": "#FD5108",
+            "white": "#FFFFFF",
+            "black": "#000000"
+          },
+          "orange_tints": [
+            "#FE7C39",
+            "#FFAA72",
+            "#FFCDA8",
+            "#FFE8D4",
+            "#FFF5ED"
+          ],
+          "grey_tints": [
+            "#A1A8B3",
+            "#B5BCC4",
+            "#CBD1D6",
+            "#DFE3E6",
+            "#EEEFF1",
+            "#F5F7F8"
+          ],
+          "limited_use": {
+            "tangerine": "#FF9F00",
+            "red": "#FA143C",
+            "rose": "#F05596"
+          },
+          "functional_status": {
+            "positive": "#059669",
+            "attention": "#E9B01F",
+            "negative": "#DC2626"
+          },
+          "rules": [
+            "Lead with core orange when colour is needed, but use it purposefully as an accent rather than a routine full-slide fill.",
+            "Use white and black as the foundation. Add approved orange or grey tints when more colour is needed.",
+            "Do not use red or rose as ordinary presentation colours; they are limited-use illustration colours.",
+            "Functional status colours are functional cues only and are not brand accents.",
+            "Ordinary text is black or white. Orange text is reserved for selected numbers, data visualisation, or call-to-action treatment."
+          ],
+          "presentation_backgrounds": {
+            "white": "#FFFFFF",
+            "light_grey": "#EBEBEB"
+          }
+        },
+        "typography": {
+          "powerpoint_serif": "Georgia",
+          "powerpoint_sans": "Arial",
+          "headline_and_quote_font": "Georgia",
+          "subheadline_body_intro_label_and_data_font": "Arial",
+          "allowed_weights": [
+            "regular",
+            "bold"
+          ],
+          "italics_allowed": false,
+          "tracking_allowed": false,
+          "ordinary_text_colors": [
+            "#000000",
+            "#FFFFFF"
+          ],
+          "allowed_colored_text_style_tokens": [
+            "data_highlight",
+            "call_to_action"
+          ],
+          "rules": [
+            "Use Georgia for slide headlines and quotes.",
+            "Use Arial for sub-headlines, body copy, introductions, labels, and large data numbers.",
+            "Do not use italics.",
+            "Do not apply tracking.",
+            "Use black text on white, warm accents, restrained gradients, and profile tints. White text on the lead orange requires sufficiently large display text; use 18 pt or larger.",
+            "Use the PowerPoint hierarchy leading as a guide: headlines 100%, sub-headlines and introductions 120%, body 150%, large data numbers 100%, quotes and quote labels 120%, and labels/calls to action 100%."
+          ],
+          "powerpoint_leading": {
+            "headline": 1.0,
+            "subheadline": 1.2,
+            "introduction": 1.2,
+            "body": 1.5,
+            "large_data_number": 1.0,
+            "quote": 1.2,
+            "quote_label": 1.2,
+            "label_or_call_to_action": 1.0
+          }
+        },
+        "primary_gradient": {
+          "purpose": "Create selected moments of impact and momentum, not routine decoration.",
+          "direction": "bottom_left_to_top_right",
+          "orange_position": "top_right",
+          "canonical_asset_preferred": true,
+          "exact_color_stops_available_in_profile": false,
+          "reconstruction_without_canonical_asset": "Preserve the accepted generated gradient as a raster visual region or canonical supplied asset. Do not invent proprietary editable gradient stops that are not specified by the source standard.",
+          "rules": [
+            "Do not rotate, flip, or arbitrarily crop a directional warm gradient treatment.",
+            "Do not create unrelated new gradients.",
+            "Use a warm gradient sparingly for deliberate impact, and keep standard data visualisation solid and restrained."
+          ]
+        },
+        "data_visualization": {
+          "default_powerpoint_level": 1,
+          "level_1_palette": [
+            "#FD5108",
+            "#FE7C39",
+            "#FFAA72",
+            "#FFCDA8",
+            "#FFE8D4",
+            "#A1A8B3",
+            "#B5BCC4",
+            "#CBD1D6",
+            "#DFE3E6",
+            "#EEEFF1"
+          ],
+          "chart_title_font": "Georgia",
+          "data_and_category_font": "Arial",
+          "large_number_font": "Arial",
+          "key_data_color": "#FD5108",
+          "rules": [
+            "For standard PowerPoint data visualisation, use solid warm accents and grey tints with one clear lead colour.",
+            "When one data point matters most, highlight it with core orange against grey tints.",
+            "When several data points have equal weight, use a monochromatic orange-tint sequence before grey tints.",
+            "Use core orange for the highest-value end of an orange heatmap.",
+            "Use Georgia for chart titles and Arial for data, category labels, and large number callouts.",
+            "Do not use gradients in standard data visualisation.",
+            "Tables may use core orange for a header row or column and approved grey tints for alternating rows."
+          ]
+        },
+        "icons": {
+          "unified_icon_pictogram_use": true,
+          "asset_policy": "Use Remix Icon as the coherent generic icon source when its run switch is enabled. Wikimedia Commons is reserved for exact logo or public-media candidates. Inspect every selected external asset and keep it in the run cache with provenance. Any fetched asset remains subject to the resolved profile treatment rules.",
+          "public_showcase_override": {
+            "preferred_provider": "Remix Icon",
+            "exact_logo_candidate_provider": "Wikimedia Commons",
+            "provider_version": "4.9.0",
+            "activation": "Enable each required source independently under session remote_sources.",
+            "pair_policy": "Retrieve a Remix line/fill pair before generation. Host Agent selects one variant per icon_treatment_group after inspecting the approved generated slide.",
+            "identity_boundary": "Generic icons are supporting communication symbols only. Never use one as a logo, trademark, or brand identity. Wikimedia Commons results are candidates whose exact identity, license, attribution, and trademark constraints still require Agent review.",
+            "license": "Remix Icon License v1.0"
+          },
+          "slot_policy": "Every icon has an explicit reserved slot for generation and measurement. A faint generation-only boundary may mark a bare icon slot for localization, but that boundary is scaffolding, not a decorative container, and must not be reconstructed. Only a positively judged intentional background surface may be reconstructed. When an icon sits directly on a larger colored panel/card and the visible white box merely isolates/localizes the glyph, prefer no reconstructed slot surface so the icon background remains transparent and inherits the surrounding panel colour.",
+          "coherence_policy": "Assign one treatment to each local peer icon or pictogram group. The host Agent chooses the peer grouping and one treatment id for that group. Reconstruction applies that treatment coherently while preserving each selected Remix glyph's geometry.",
+          "allowed_surface_colors": [
+            "#FFFFFF",
+            "#FFF5ED",
+            "#F5F7F8"
+          ],
+          "proxy_treatments": [
+            {
+              "id": "black_proxy",
+              "glyph": "#000000",
+              "allowed_surface_colors": [
+                "#FFFFFF",
+                "#FFF5ED",
+                "#F5F7F8"
+              ]
+            },
+            {
+              "id": "tangerine_to_orange_gradient_proxy",
+              "glyph_gradient": {
+                "direction": "bottom_left_to_top_right",
+                "stops": [
+                  {
+                    "offset": 0.0,
+                    "color": "#FF9F00"
+                  },
+                  {
+                    "offset": 0.05089,
+                    "color": "#FE9900"
+                  },
+                  {
+                    "offset": 0.466323,
+                    "color": "#FD7204"
+                  },
+                  {
+                    "offset": 0.797112,
+                    "color": "#FD5907"
+                  },
+                  {
+                    "offset": 1.0,
+                    "color": "#FD5108"
+                  }
+                ],
+                "from": "#FF9F00",
+                "to": "#FD5108"
+              },
+              "allowed_surface_colors": [
+                "#FFFFFF",
+                "#FFF5ED",
+                "#F5F7F8"
+              ]
+            }
+          ],
+          "surface_geometry_policy": {
+            "allowed_visible_shapes": [
+              "rectangle"
+            ],
+            "decorative_outline_allowed": false,
+            "description": "A flat light background field may sit behind an icon only when the accepted design clearly intends a real icon surface. It is a background surface, not a decorative badge or holding shape. Do not add circles, pills, outlines, extra marks, or scaffold borders around the icon. When the surrounding panel already provides the background, omit the icon surface and keep the icon background transparent."
+          },
+          "avoid": [
+            "stretching or distorting an icon",
+            "recolouring an exact Consulting SVG away from its canonical black or tangerine-to-orange artwork",
+            "arbitrary decorative circles, pills, badges, or holding shapes around an icon",
+            "adding extra marks or lines to the icon artwork",
+            "using icon background fills other than white, #FFF5ED, or #F5F7F8 in the Consulting profile",
+            "mixing several unrelated icon styles on one slide",
+            "reconstructing a localization/scaffold border as a real icon box or outline",
+            "using a white knockout tile when the intended background should be the surrounding colored panel"
+          ],
+          "packaged_recolor_policy": {
+            "recolorable": true,
+            "mode": "fill_all",
+            "source_color_authoritative": false
+          }
+        },
+        "asset_vocabulary": {
+          "mode": "closed",
+          "generation_representation": "full_context_sheet",
+          "attach_selected_asset_files_to_image_generation": false,
+          "policy": "For Consulting generation, reusable semantic assets are selected upstream and shown together in one approved context sheet. The sheet contains selected visual references, component previews, retrieved candidate assets, and current-chat/user uploads. Canonical identity files remain authoritative downstream. The image model may also create profile-governed novel illustrations when they materially improve communication; these are a distinct class, not substitutes for logos or known assets, and are handled explicitly during reconstruction.",
+          "allowed_native_presentation_visuals": [
+            "rectangles",
+            "rounded rectangles when otherwise profile-valid",
+            "circles",
+            "lines",
+            "rules",
+            "connectors",
+            "arrows",
+            "tables",
+            "charts",
+            "ordinary chart geometry",
+            "background fields",
+            "typographic emphasis"
+          ],
+          "allowed_non_asset_raster_roles": [
+            "primary_gradient"
+          ],
+          "review_rule": "Every meaningful semantic visual must either map to an approved upstream asset/reference class, be native presentation geometry, be an explicitly allowed raster role, or be classified as a profile-permitted novel illustration. Reject decorative or off-profile novel visuals.",
+          "novel_illustrations": {
+            "mode": "restrained",
+            "guidance": "Prefer native presentation geometry and approved assets. Allow a small number of semantically necessary illustrative visuals when they materially clarify a concept or create a justified narrative moment. Creative/conceptual slides may use more expressive illustration; compliance, regulatory, operating, or data-dense slides should use little or none. Do not add decorative novelty merely to fill space.",
+            "forbid_identity_substitution": true,
+            "must_be_semantically_classified_downstream": true
+          }
+        }
+      },
+      "visual_principles": [
+        "Create movement by guiding the eye deliberately; use asymmetry when it improves flow rather than defaulting to a centered or rigidly uniform composition.",
+        "Let content breathe. Use intentional spacing and clear hierarchy to reduce visual noise while preserving the user's selected density.",
+        "Create moments of impact sparingly through scale contrast, a purposeful orange accent, a selected gradient moment, or a strong data callout.",
+        "Let semantic relationships drive visual relationships and make dependencies immediately legible.",
+        "Use emphasis in proportion to argumentative importance rather than giving every group equal visual weight.",
+        "Keep colour application disciplined: one strong orange-led system with approved tints and neutrals is more Consulting-like than a multicolour palette.",
+        "When photography is used, prefer professional, tech-forward, authentic human situations, focused compositions, candid collaboration, warm natural tones, and imagery that feels real rather than filtered or synthetic."
+      ],
+      "writing_principles": [
+        "Prefer a specific conclusion-led title when the evidence supports a conclusion; otherwise use a precise structural title.",
+        "Keep supporting copy economical, clear, and decision-relevant.",
+        "Use direct language and avoid generic framing, filler, and repeated labels."
+      ],
+      "reasoning_principles": [
+        "Start from the audience question and the one belief, understanding, or decision the slide should create.",
+        "Treat the slide as an argument unit, not a container for topics.",
+        "Distinguish claim, evidence, context, qualification, and recommendation when those roles exist.",
+        "Preserve sequence, comparison, hierarchy, causality, dependency, contribution, and parallelism when supported by the content.",
+        "Do not invent completeness, causality, or evidence that the source material does not support.",
+        "Use MECE only as a diagnostic when the content is intended to be a complete decomposition."
+      ],
+      "anti_patterns": [
+        "generic SaaS dashboard aesthetic",
+        "off-brand red/orange palette approximations",
+        "ordinary body text in accent colours",
+        "multiple unrelated accent colours next to each other",
+        "arbitrary decorative icon circles, pills, or badges",
+        "mixing black, white, solid orange, and gradient icons without a coherent slide-level treatment",
+        "using a warm gradient as generic decoration",
+        "using gradients in standard PowerPoint charts",
+        "overly uniform equal-card layouts when the argument has unequal importance",
+        "content dump without a governing message",
+        "invented semantic visuals that were not retrieved/selected upstream"
+      ],
+      "review_questions": [
+        "Can the audience identify the main takeaway quickly?",
+        "Does the slide unmistakably use the resolved Consulting orange, black, white, tint, and typography system rather than approximate lookalikes?",
+        "Are Georgia and Arial assigned to the correct headline versus supporting roles, with no accidental italics or coloured ordinary body text?",
+        "Do icons use coherent Consulting-inspired foreground/background treatments at each peer level, avoiding accidental black-versus-gradient mixing inside one visual group?",
+        "Does the layout create purposeful movement, breathing room, and moments of impact without contradicting the selected density?",
+        "If a chart or table is present, does it use one warm lead colour with restrained grey support unless a more expressive treatment was explicitly chosen?",
+        "If a gradient is used, does it create a real moment of impact and remain consistent with the resolved palette?",
+        "Can every meaningful icon, pictogram, logo, photograph, illustration, or other semantic visual in the candidate be mapped to a selected upstream asset description?"
+      ]
+    }
+  },
+  "generation_context_sheet": {
+    "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/generation-context-sheet.png",
+    "labels": {},
+    "asset_count": 0,
+    "rendered_preview_count": 0,
+    "purpose": "combined_style_assets_approval_and_generation"
+  }
+}

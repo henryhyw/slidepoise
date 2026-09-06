@@ -1,0 +1,87 @@
+{
+  "purpose": "Immutable source snapshot for the second image candidate before upstream correction.",
+  "created_at": "2026-09-05T13:48:40.369612+00:00",
+  "binding_note": "Original request bytes are preserved. The snapshot mapping resolves their original input paths to archived bytes after live inputs change.",
+  "files": [
+    {
+      "original_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/work/resolved-config.json",
+      "snapshot": "resolved-config.json",
+      "sha256": "170466ed16668366959b3d4f224ffa632bc86c3aa3d5ee1e598df0ee57798a0b"
+    },
+    {
+      "original_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/slide-intent.json",
+      "snapshot": "slide-intent.json",
+      "sha256": "72395615f3921a5338aa60c4287d767e4c76045e1ba507286b3b9e853cffda7f"
+    },
+    {
+      "original_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/resource-selection.json",
+      "snapshot": "resource-selection.json",
+      "sha256": "8fcc83125fb61ed5eaee8d5068e34a6c1cc98173ece3d39d80466494bedcc20e"
+    },
+    {
+      "original_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/work/deck-design.json",
+      "snapshot": "deck-design.json",
+      "sha256": "a38f6925db5d509cc86d02a4bd0cbfef07e171cba330b96267f3b01512edd179"
+    },
+    {
+      "original_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/generation-contract.json",
+      "snapshot": "generation-contract.json",
+      "sha256": "c323f0d1154ab157a2bd3a0d26b1bbaaa209d4523e66aa27505e3046e76925d5"
+    },
+    {
+      "original_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/generation-brief.md",
+      "snapshot": "generation-brief.md",
+      "sha256": "2e4fada2ce3b59a8874dd4139fbc52a40b54b600338455fa76bb585d2297a01c"
+    },
+    {
+      "original_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/session.json",
+      "snapshot": "session.json",
+      "sha256": "bf1c953824a74fd4b2fbb9e81f4dd400885c44a1ac137a8eb8647d41263f5065"
+    },
+    {
+      "original_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/work/prepare_page_inputs.py",
+      "snapshot": "prepare_page_inputs.py",
+      "sha256": "628f7c078a9c2160c2caf4ae50ba5ccbcaf8b2fa336768f5d7e8a6a8d1f3ba7a"
+    },
+    {
+      "original_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/work/configuration-provenance.json",
+      "snapshot": "configuration-provenance.json",
+      "sha256": "1ebf1a39241edcc6f8850422a4c53f0e4a11e75c9864b7048a64c69bc25823a5"
+    },
+    {
+      "original_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/resource-selection.draft.json",
+      "snapshot": "resource-selection.draft.json",
+      "sha256": "e3ec2d5ef76b27ddb9c1d9792d0883168c707b734e40bb0052d2be925836b7a2"
+    },
+    {
+      "original_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/generation-context-manifest.json",
+      "snapshot": "generation-context-manifest.json",
+      "sha256": "85ab0b8471c36167a5b8c76e86a4a685abd321f2b36c5e058e9d42e83972969d"
+    },
+    {
+      "original_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/generation-context-sheet.png",
+      "snapshot": "generation-context-sheet.png",
+      "sha256": "f472719777e324b2c850c595507dfc82e4651a84c39c63ee0420a518d0af334d"
+    },
+    {
+      "original_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/generation-request.json",
+      "snapshot": "generation-request.json",
+      "sha256": "5d1d37162d9d5e22a33e6eb2c5a54cf6ffa807e23dc6e4bfd3434be7301a289e"
+    },
+    {
+      "original_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/edit-request-01.txt",
+      "snapshot": "edit-request-01.txt",
+      "sha256": "bafa51c4a1d0a1569b0b2726a4872cf86b0ee0d9f6d484b1b12d481179f7c9c8"
+    },
+    {
+      "original_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/image-edit-request-01.json",
+      "snapshot": "image-edit-request-01.json",
+      "sha256": "1374366a67ca92faa835cc117540d3e4d276f129b10319aedb31772bea3ac19e"
+    }
+  ],
+  "candidate": {
+    "original_path": "/Users/henry/.codex/generated_images/01a07056-d021-7b82-915c-99c0fc04ea61/exec-91b137d5-2d0e-406a-9336-91b84b8e9ae4.png",
+    "snapshot": "candidate.png",
+    "sha256": "6a5dcc8218c7df7623c5e51b02b4e55601b8d8d65480c4bb1c7c47bb89485f3e"
+  }
+}

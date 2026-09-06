@@ -1,0 +1,155 @@
+{
+  "audience_question": "Show a controlled source-to-client flow and the responsibilities, evidence records and rejection feedback needed to operate it.",
+  "dominant_message": "Keep expert ownership at every release",
+  "information_structure": {
+    "type": "operating_model",
+    "description": "Show a controlled source-to-client flow and the responsibilities, evidence records and rejection feedback needed to operate it."
+  },
+  "required_content": [
+    {
+      "role": "subtitle",
+      "text": "A controlled path from permissioned evidence to approved client work."
+    },
+    {
+      "role": "directed_workflow",
+      "stages": [
+        "Approved sources",
+        "Grounded draft",
+        "Expert review",
+        "Client-ready output"
+      ]
+    },
+    {
+      "role": "native_table",
+      "columns": [
+        "",
+        "Approved sources",
+        "Grounded draft",
+        "Expert review",
+        "Client-ready output"
+      ],
+      "rows": [
+        [
+          "INPUT",
+          "Corpus request",
+          "Source pack + task brief",
+          "Draft + evidence trail",
+          "Signed draft + resolved defects"
+        ],
+        [
+          "OUTPUT",
+          "Versioned source pack",
+          "Cited draft + uncertainty flags",
+          "Signed review or defect log",
+          "Authorized client deliverable"
+        ],
+        [
+          "OWNER",
+          "Source steward",
+          "Engagement team",
+          "Expert reviewer",
+          "Engagement lead"
+        ],
+        [
+          "RELEASE CONTROL",
+          "Verify permissions\nand dates",
+          "Check citations\nand evidence gaps",
+          "Validate claims\nand quality",
+          "Confirm release\napproval"
+        ]
+      ]
+    },
+    {
+      "role": "return_relationships",
+      "items": [
+        {
+          "from": "Expert review",
+          "to": "Grounded draft",
+          "label": "Reject with defect reasons"
+        },
+        {
+          "from": "Grounded draft",
+          "to": "Approved sources",
+          "label": "Correct sources via exception register"
+        }
+      ]
+    },
+    {
+      "role": "shared_controls",
+      "heading": "SHARED CONTROLS",
+      "items": [
+        "One register records defects, owners and disposition.",
+        "Platform team maintains access controls and audit logs."
+      ]
+    },
+    {
+      "role": "measurement",
+      "heading": "PILOT MEASUREMENT",
+      "items": [
+        "Compare 20 paired tasks with baseline time logs.",
+        "Verify claim samples and record expert review effort."
+      ]
+    },
+    {
+      "role": "decision_band",
+      "label": "RELEASE RULE",
+      "message": "No client use without expert and engagement-lead sign-off."
+    }
+  ],
+  "semantic_relationships": [
+    {
+      "type": "directed_sequence",
+      "members": [
+        "Approved sources",
+        "Grounded draft",
+        "Expert review",
+        "Client-ready output"
+      ]
+    },
+    {
+      "type": "feedback",
+      "source": "Expert review",
+      "target": "Grounded draft",
+      "label": "Reject with defect reasons"
+    },
+    {
+      "type": "feedback",
+      "source": "Grounded draft",
+      "target": "Approved sources",
+      "label": "Correct sources via exception register"
+    }
+  ],
+  "hierarchy": [
+    "Shared Georgia claim title",
+    "Shared Arial subtitle",
+    "Evidence or operating structure",
+    "Shared substantive decision band"
+  ],
+  "evidence": [
+    "Host-authored illustrative planning model. The preserved work/planning-assumptions.json carries the exact calculation assumptions."
+  ],
+  "assumptions": [
+    "Northstar Advisory is fictional. Capacity equivalent is not revenue or cash savings.",
+    "The pilot measures one comparable research task per engagement, so 20 tasks correspond to 20 engagements.",
+    "The 95% sampled-claim gate does not replace expert verification and approval of each client release."
+  ],
+  "open_questions": [],
+  "avoid": [
+    "Any generated header, footer, company label, page number, shared-frame rule or repeated source-note strip.",
+    "Independent changes to recurring title size, font family or decision-band treatment.",
+    "Decorative icons, invented imagery and miniature type."
+  ],
+  "visual_obligations": [
+    "Generate only the 1920 by 960 substantive canvas at exactly 2:1 aspect ratio. The runtime adds the separate inherited frame.",
+    "Use native-friendly text, tables, chart geometry and continuous directed relationships where the content requires them.",
+    "Follow the shared deck design. The five pages vary their evidence structures while recurring roles remain consistent."
+  ],
+  "user_required_assets": [],
+  "density_intent": "information_rich",
+  "explicit_user_visual_requirements": [
+    "Georgia claim title at 64 px regular on every page, with no per-page shrinking.",
+    "Arial subtitle 32 px regular, body 28 px regular, section labels 28 px bold and table text 24 px.",
+    "Every decision band uses pale orange #FFF5ED fill, orange #FD5108 label and left bar, black message, and no surrounding border.",
+    "Place all necessary page-specific qualifications in the substantive content. Shared frame wording is excluded from image generation."
+  ]
+}

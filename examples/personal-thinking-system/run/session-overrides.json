@@ -1,0 +1,17 @@
+{
+  "profile": "personal-website",
+  "header": {
+    "enabled": false
+  },
+  "footer": {
+    "enabled": false
+  },
+  "density": "balanced",
+  "design_overrides": {
+    "full_slide_px": [
+      1600,
+      900
+    ]
+  }
+}
+

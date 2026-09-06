@@ -1,0 +1,270 @@
+{
+  "entities": [
+    {
+      "id": "paper-field",
+      "kind": "shape",
+      "display_label": "Quiet paper field",
+      "shape": "rectangle",
+      "bbox_hint": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 0,
+      "reconstruction_route": "native_shape",
+      "style_hint": {
+        "fill": "#F9F7F5",
+        "stroke": "none"
+      }
+    },
+    {
+      "id": "title-first",
+      "kind": "text",
+      "display_label": "The point of",
+      "text": "The point of",
+      "bbox_hint": [
+        139,
+        78,
+        900,
+        201
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "slide_title",
+      "text_style_role": "slide_title",
+      "typography_group": "slide_title",
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "target_font_size_px": 176,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": 0
+      },
+      "search_bbox_hint": [
+        138,
+        117,
+        825,
+        168
+      ]
+    },
+    {
+      "id": "title-second",
+      "kind": "text",
+      "display_label": "view is still",
+      "text": "view is still",
+      "bbox_hint": [
+        139,
+        249,
+        900,
+        201
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "slide_title",
+      "text_style_role": "slide_title",
+      "typography_group": "slide_title",
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "target_font_size_px": 176,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": 0
+      },
+      "search_bbox_hint": [
+        138,
+        290,
+        720,
+        134
+      ]
+    },
+    {
+      "id": "title-third",
+      "kind": "text",
+      "display_label": "yours.",
+      "text": "yours.",
+      "bbox_hint": [
+        139,
+        397,
+        900,
+        212
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "slide_title",
+      "text_style_role": "slide_title",
+      "typography_group": "slide_title",
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "target_font_size_px": 176,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": 0
+      },
+      "search_bbox_hint": [
+        139,
+        480,
+        408,
+        124
+      ]
+    },
+    {
+      "id": "closing-1",
+      "kind": "text",
+      "display_label": "Let the system widen the field.",
+      "text": "Let the system widen the field.",
+      "bbox_hint": [
+        146,
+        644,
+        880,
+        47
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "body_compact",
+      "text_style_role": "body_compact",
+      "typography_group": "body_compact",
+      "style_hint": {
+        "font_family": "Arial",
+        "target_font_size_px": 24,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": 0
+      }
+    },
+    {
+      "id": "closing-2",
+      "kind": "text",
+      "display_label": "Choose what deserves to remain.",
+      "text": "Choose what deserves to remain.",
+      "bbox_hint": [
+        146,
+        681,
+        880,
+        47
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "body_compact",
+      "text_style_role": "body_compact",
+      "typography_group": "body_compact",
+      "style_hint": {
+        "font_family": "Arial",
+        "target_font_size_px": 24,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": 0
+      }
+    },
+    {
+      "id": "closing-3",
+      "kind": "text",
+      "display_label": "A second thinking system. A first-person responsibility.",
+      "text": "A second thinking system. A first-person responsibility.",
+      "bbox_hint": [
+        146,
+        718,
+        895,
+        47
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "body_compact",
+      "text_style_role": "body_compact",
+      "typography_group": "body_compact",
+      "style_hint": {
+        "font_family": "Arial",
+        "target_font_size_px": 24,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "line_spacing": 1,
+        "char_spacing_px": 0
+      }
+    },
+    {
+      "id": "signature-collage",
+      "kind": "image",
+      "display_label": "A thread held by hand",
+      "visual_source_class": "novel_illustration",
+      "bbox_hint": [
+        1088,
+        320,
+        421,
+        481
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "reconstruction_route": "screenshot_crop",
+      "raster_decision": {
+        "action": "preserve_composite",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "reason": "The hand, thread, paper texture and photographic layering are one archival signature. Presentation text is separate and native.",
+        "source_dimensions_px": [
+          421,
+          481
+        ],
+        "intrinsic_text_ownership": "Marks and photographed notebook lettering belong to this raster. No presentation copy is inside the crop."
+      }
+    },
+    {
+      "id": "folio",
+      "kind": "text",
+      "display_label": "Field Notes series marker, part 05",
+      "text": "FIELD NOTES / 05",
+      "bbox_hint": [
+        90,
+        868,
+        300,
+        38
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "reconstruction_route": "native_text",
+      "role": "publication_folio",
+      "text_style_role": "emphasis_label",
+      "typography_group": "publication-folio",
+      "style_hint": {
+        "font_family": "Andale Mono",
+        "target_font_size_px": 21,
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "host_reviewed_user_authorized_deck_role",
+        "line_spacing": 1,
+        "char_spacing_px": 0,
+        "italic": false,
+        "align": "left",
+        "valign": "top"
+      },
+      "search_bbox_hint": [
+        146,
+        833,
+        580,
+        39
+      ]
+    }
+  ],
+  "groups": [],
+  "relationships": [],
+  "provenance": {
+    "composition_policy": "accepted_artwork_and_body_preserved_with_user_authorized_publication_folio_calibration",
+    "revision": "Recurring publication_folio role and its cover-only companions follow work/deck-design.json. Source ink remains measured at the original target locations."
+  }
+}

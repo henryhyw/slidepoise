@@ -1,0 +1,43 @@
+{
+  "audience_question": "Keep the question open.",
+  "dominant_message": "Keep the question open.",
+  "information_structure": {
+    "type": "tension",
+    "description": "Visual composition follows the communication job and active profile."
+  },
+  "required_content": [
+    "A fast answer can close a thought too early.",
+    "What am I assuming?",
+    "What would change my mind?",
+    "The useful conversation begins with a better question.",
+    "FIELD NOTES / 02"
+  ],
+  "semantic_relationships": [],
+  "hierarchy": [
+    "Keep the question open.",
+    "A fast answer can close a thought too early.",
+    "What am I assuming?",
+    "What would change my mind?",
+    "The useful conversation begins with a better question.",
+    "FIELD NOTES / 02"
+  ],
+  "evidence": [
+    "An authored editorial essay for the SlidePoise showcase. First-person framing is illustrative and does not assert the user's personal history."
+  ],
+  "assumptions": [
+    "An authored editorial essay for the SlidePoise showcase. First-person framing is illustrative and does not assert the user's personal history."
+  ],
+  "open_questions": [],
+  "avoid": [
+    "Generic dashboard cards",
+    "Extra factual claims",
+    "Decorative logos"
+  ],
+  "visual_obligations": [
+    "Keep required presentation copy visually clear and separable from artwork."
+  ],
+  "user_required_assets": [],
+  "density_intent": "balanced",
+  "explicit_user_visual_requirements": []
+}
+

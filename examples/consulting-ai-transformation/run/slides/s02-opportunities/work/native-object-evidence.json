@@ -1,0 +1,95 @@
+{
+  "pptx_sha256": "8b1b72c633dfe4c965d63b6fe7b6ad9dc716dfbdb52f04f4d9abebd66b5fd141",
+  "native_tables": 2,
+  "native_table_cells": 32,
+  "native_charts": 1,
+  "native_picture_objects": 0,
+  "duplicate_shape_ids": [],
+  "table_font_sizes_pt": [
+    12.0
+  ],
+  "workbook": {
+    "part": "ppt/embeddings/Microsoft_Excel_Worksheet1.xlsx",
+    "sha256": "0472a0b3801dd1453af196f634394125e42cd158d7987aaa60d060e7fd49a09d",
+    "numeric_cells": {
+      "B2": "1944",
+      "B3": "1440",
+      "B4": "1080"
+    }
+  },
+  "chart_cache_values": [
+    1944,
+    1440,
+    1080
+  ],
+  "native_label_treatments": [
+    {
+      "position": "outEnd",
+      "number_format": "#,##0\" h\"",
+      "wrap": "none",
+      "shows_value": "1"
+    },
+    {
+      "position": "outEnd",
+      "number_format": "#,##0\" h\"",
+      "wrap": "none",
+      "shows_value": "1"
+    }
+  ],
+  "chart_formula": "Sheet1!$B$2:$B$4",
+  "numeric_floating_textboxes": [],
+  "chart_categories": [
+    "Research\nsynthesis",
+    "Proposal\ndrafting",
+    "Knowledge\nretrieval"
+  ],
+  "category_formula": "Sheet1!$A$2:$A$4",
+  "native_speaker_notes": [
+    "This is an illustrative planning model for fictional Northstar Advisory. Annual capacity assumes 900 engagements. Research uses 900 x 12 baseline hours x 60% adoption x 30% time saved = 1,944 hours. The same formula produces 1,440 proposal hours and 1,080 retrieval hours from the displayed assumptions.",
+    "The three workflow estimates may overlap and cannot be added without checking task boundaries. Capacity released is not a cash saving. Control readiness determines the proposed sequence, and expert review remains required before any client release."
+  ],
+  "shared_geometry": {
+    "introduction-rule": [
+      48,
+      229,
+      1824,
+      2
+    ],
+    "decision-band": [
+      48,
+      857,
+      1824,
+      134
+    ],
+    "decision-accent": [
+      48,
+      857,
+      8,
+      134
+    ],
+    "headline": [
+      48,
+      83,
+      1824,
+      80
+    ],
+    "subtitle": [
+      48,
+      167,
+      1824,
+      48
+    ],
+    "decision-label": [
+      100,
+      896,
+      420,
+      52
+    ],
+    "decision-message": [
+      560,
+      896,
+      1265,
+      52
+    ]
+  }
+}

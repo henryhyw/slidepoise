@@ -1,0 +1,551 @@
+{
+  "schema_version": "1.0.0",
+  "slide_id": "s02-question",
+  "dimensions_px": [
+    1600,
+    900
+  ],
+  "background": "#FBFAF8",
+  "design_config_id": null,
+  "objects": [
+    {
+      "id": "paper-field",
+      "kind": "shape",
+      "shape": "rectangle",
+      "bbox_px": [
+        0,
+        0,
+        1600,
+        900
+      ],
+      "style": {
+        "fill": "#FBF9F7",
+        "stroke": "none",
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
+      },
+      "z": 0.0
+    },
+    {
+      "id": "conclusion-rule",
+      "kind": "shape",
+      "shape": "rectangle",
+      "bbox_px": [
+        687,
+        688,
+        78,
+        1
+      ],
+      "style": {
+        "fill": "#8B8882",
+        "stroke": "none",
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
+      },
+      "z": 0.0
+    },
+    {
+      "id": "question-collage",
+      "kind": "image",
+      "bbox_px": [
+        64,
+        188,
+        535,
+        555
+      ],
+      "source_path": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s02-question/work/reconstruction/measurement/crops/question-collage.png",
+      "selected_asset_id": null,
+      "fit": "fill",
+      "preserve_aspect_ratio": true,
+      "semantic_role": "editorial_collage",
+      "z": 10.0
+    },
+    {
+      "id": "title-first",
+      "kind": "textbox",
+      "bbox_px": [
+        683,
+        43,
+        612,
+        200
+      ],
+      "text": "Keep the",
+      "style": {
+        "font_family": "Bodoni 72",
+        "font_size_px": 147.5000036875001,
+        "font_size_pt": 88.5,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": 0.9564293304994687,
+        "color": "#242321",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "line_spacing_multiple": 1.0,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "Keep the"
+      ],
+      "bullet_style": null,
+      "semantic_role": "title-first",
+      "parent_id": null,
+      "z": 30.0
+    },
+    {
+      "id": "title-second",
+      "kind": "textbox",
+      "bbox_px": [
+        680,
+        181,
+        900,
+        199
+      ],
+      "text": "question open.",
+      "style": {
+        "font_family": "Bodoni 72",
+        "font_size_px": 147.5000036875001,
+        "font_size_pt": 88.5,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": 0.9564293304994687,
+        "color": "#242321",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "line_spacing_multiple": 1.0,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "question open."
+      ],
+      "bullet_style": null,
+      "semantic_role": "title-second",
+      "parent_id": null,
+      "z": 30.0
+    },
+    {
+      "id": "premise",
+      "kind": "textbox",
+      "bbox_px": [
+        686,
+        402,
+        646,
+        47
+      ],
+      "text": "A fast answer can close a thought too early.",
+      "style": {
+        "font_family": "Arial",
+        "font_size_px": 29.166667395833354,
+        "font_size_pt": 17.5,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": 0.0,
+        "color": "#242321",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          1.9128586609989373,
+          1.9128586609989373,
+          1.9128586609989373,
+          1.9128586609989373
+        ],
+        "line_spacing_multiple": 1.08,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "A fast answer can close a thought too early."
+      ],
+      "bullet_style": null,
+      "semantic_role": "premise",
+      "parent_id": null,
+      "z": 30.0
+    },
+    {
+      "id": "prompt-first",
+      "kind": "textbox",
+      "bbox_px": [
+        685,
+        508,
+        498,
+        59
+      ],
+      "text": "What am I assuming?",
+      "style": {
+        "font_family": "Times New Roman",
+        "font_size_px": 36.666667583333364,
+        "font_size_pt": 22.0,
+        "font_weight": "regular",
+        "italic": true,
+        "char_spacing_px": 0.0,
+        "color": "#242321",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          1.9128586609989373,
+          1.9128586609989373,
+          1.9128586609989373,
+          1.9128586609989373
+        ],
+        "line_spacing_multiple": 1.2,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "What am I assuming?"
+      ],
+      "bullet_style": null,
+      "semantic_role": "prompt-first",
+      "parent_id": null,
+      "z": 30.0
+    },
+    {
+      "id": "prompt-second",
+      "kind": "textbox",
+      "bbox_px": [
+        685,
+        585,
+        612,
+        59
+      ],
+      "text": "What would change my mind?",
+      "style": {
+        "font_family": "Times New Roman",
+        "font_size_px": 36.666667583333364,
+        "font_size_pt": 22.0,
+        "font_weight": "regular",
+        "italic": true,
+        "char_spacing_px": 0.0,
+        "color": "#242321",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          1.9128586609989373,
+          1.9128586609989373,
+          1.9128586609989373,
+          1.9128586609989373
+        ],
+        "line_spacing_multiple": 1.2,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "What would change my mind?"
+      ],
+      "bullet_style": null,
+      "semantic_role": "prompt-second",
+      "parent_id": null,
+      "z": 30.0
+    },
+    {
+      "id": "conclusion",
+      "kind": "textbox",
+      "bbox_px": [
+        685,
+        729,
+        632,
+        44
+      ],
+      "text": "The useful conversation begins with a better question.",
+      "style": {
+        "font_family": "Arial",
+        "font_size_px": 23.333333916666685,
+        "font_size_pt": 14.0,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": 0.09564293304994687,
+        "color": "#242321",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          1.9128586609989373,
+          1.9128586609989373,
+          1.9128586609989373,
+          1.9128586609989373
+        ],
+        "line_spacing_multiple": 1.08,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "The useful conversation begins with a better question."
+      ],
+      "bullet_style": null,
+      "semantic_role": "conclusion",
+      "parent_id": null,
+      "z": 30.0
+    },
+    {
+      "id": "field-note",
+      "kind": "textbox",
+      "bbox_px": [
+        67,
+        823,
+        220,
+        29
+      ],
+      "text": "FIELD NOTES / 02",
+      "style": {
+        "font_family": "Andale Mono",
+        "font_size_px": 16.666667083333348,
+        "font_size_pt": 10.0,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": 0.0,
+        "color": "#242321",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          1.9128586609989373,
+          1.9128586609989373,
+          1.9128586609989373,
+          1.9128586609989373
+        ],
+        "line_spacing_multiple": 1.0,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "FIELD NOTES / 02"
+      ],
+      "bullet_style": null,
+      "semantic_role": "field-note",
+      "parent_id": null,
+      "z": 30.0
+    }
+  ],
+  "frame": {
+    "header": {
+      "enabled": false,
+      "height_px": 34,
+      "implementation": "slide_master_inherited_content",
+      "left_text": "",
+      "right_text": "",
+      "font_family": "Arial",
+      "font_size_px": 11,
+      "font_weight": "regular",
+      "text_color": "#505050",
+      "secondary_text_color": "#8F8F8F",
+      "rule_color": "#D8D7D3",
+      "rule_width_px": 1,
+      "accent_color": "#242321",
+      "accent_rule_width_px": 0,
+      "outer_padding_px": 56
+    },
+    "footer": {
+      "enabled": false,
+      "height_px": 34,
+      "implementation": "slide_master_inherited_content",
+      "left_text": "",
+      "center_text": "",
+      "font_family": "Arial",
+      "font_size_px": 10,
+      "font_weight": "regular",
+      "left_font_weight": "regular",
+      "text_color": "#686868",
+      "secondary_text_color": "#8F8F8F",
+      "rule_color": "#D8D7D3",
+      "rule_width_px": 1,
+      "outer_padding_px": 56,
+      "slide_number": {
+        "enabled": true,
+        "implementation": "native_slide_number_field_on_master",
+        "format": "{slide_number}"
+      }
+    },
+    "generation_region": {
+      "derive_from_frame_heights": true
+    },
+    "slide_number": 2
+  },
+  "sources": [
+    "Generated target visual: /Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s02-question/work/accepted-slide.png"
+  ],
+  "compiler_report": {
+    "measured_entity_count": 10,
+    "emitted_object_count": 10,
+    "evidence_objects_emitted": 0,
+    "measurement": {
+      "engine": "OpenCV",
+      "opencv": "5.0.0"
+    },
+    "connector_graph_count": 0,
+    "canonical_asset_count": 1,
+    "text_fitting": {
+      "source": "constructor_text_fit_evidence",
+      "fitted_textbox_count": 7,
+      "quantization_step_pt": 0.5,
+      "all_textboxes_fit_within_allocations": true,
+      "peer_typography_preserved": true,
+      "text_groups": [
+        {
+          "typography_group": "question-title",
+          "semantic_role": "title-first",
+          "text_style_role": "slide_title",
+          "member_ids": [
+            "title-first",
+            "title-second"
+          ],
+          "shared_font_size_pt": 88.5,
+          "shared_font_size_px": 154.219,
+          "agent_target_font_size_px": 155.0,
+          "explicit_peer_group": true,
+          "technical_floor_pt": 0.5,
+          "agent_target_ceiling_pt": 88.5,
+          "reduced_from_agent_target": false,
+          "members_not_fitting_target": [],
+          "font_measurement_sources": {
+            "title-first": "/System/Library/Fonts/Supplemental/Bodoni 72.ttc",
+            "title-second": "/System/Library/Fonts/Supplemental/Bodoni 72.ttc"
+          },
+          "profile_adjustments": {},
+          "overflow_evidence": "no_overflow_detected_by_text_measurement"
+        },
+        {
+          "typography_group": "question-premise",
+          "semantic_role": "premise",
+          "text_style_role": "subtitle",
+          "member_ids": [
+            "premise"
+          ],
+          "shared_font_size_pt": 17.5,
+          "shared_font_size_px": 30.495,
+          "agent_target_font_size_px": 31.0,
+          "explicit_peer_group": false,
+          "technical_floor_pt": 0.5,
+          "agent_target_ceiling_pt": 17.5,
+          "reduced_from_agent_target": false,
+          "members_not_fitting_target": [],
+          "font_measurement_sources": {
+            "premise": "/System/Library/Fonts/Supplemental/Arial.ttf"
+          },
+          "profile_adjustments": {},
+          "overflow_evidence": "no_overflow_detected_by_text_measurement"
+        },
+        {
+          "typography_group": "reflection-prompts",
+          "semantic_role": "prompt-first",
+          "text_style_role": "quote",
+          "member_ids": [
+            "prompt-first",
+            "prompt-second"
+          ],
+          "shared_font_size_pt": 22.0,
+          "shared_font_size_px": 38.337,
+          "agent_target_font_size_px": 39.0,
+          "explicit_peer_group": true,
+          "technical_floor_pt": 0.5,
+          "agent_target_ceiling_pt": 22.0,
+          "reduced_from_agent_target": false,
+          "members_not_fitting_target": [],
+          "font_measurement_sources": {
+            "prompt-first": "/System/Library/Fonts/Supplemental/Times New Roman Italic.ttf",
+            "prompt-second": "/System/Library/Fonts/Supplemental/Times New Roman Italic.ttf"
+          },
+          "profile_adjustments": {},
+          "overflow_evidence": "no_overflow_detected_by_text_measurement"
+        },
+        {
+          "typography_group": "question-conclusion",
+          "semantic_role": "conclusion",
+          "text_style_role": "subtitle",
+          "member_ids": [
+            "conclusion"
+          ],
+          "shared_font_size_pt": 14.0,
+          "shared_font_size_px": 24.396,
+          "agent_target_font_size_px": 25.0,
+          "explicit_peer_group": false,
+          "technical_floor_pt": 0.5,
+          "agent_target_ceiling_pt": 14.0,
+          "reduced_from_agent_target": false,
+          "members_not_fitting_target": [],
+          "font_measurement_sources": {
+            "conclusion": "/System/Library/Fonts/Supplemental/Arial.ttf"
+          },
+          "profile_adjustments": {},
+          "overflow_evidence": "no_overflow_detected_by_text_measurement"
+        },
+        {
+          "typography_group": "page-index",
+          "semantic_role": "field-note",
+          "text_style_role": "emphasis_label",
+          "member_ids": [
+            "field-note"
+          ],
+          "shared_font_size_pt": 10.0,
+          "shared_font_size_px": 17.426,
+          "agent_target_font_size_px": 18.0,
+          "explicit_peer_group": false,
+          "technical_floor_pt": 0.5,
+          "agent_target_ceiling_pt": 10.0,
+          "reduced_from_agent_target": false,
+          "members_not_fitting_target": [],
+          "font_measurement_sources": {
+            "field-note": "/System/Library/Fonts/Supplemental/Andale Mono.ttf"
+          },
+          "profile_adjustments": {},
+          "overflow_evidence": "no_overflow_detected_by_text_measurement"
+        }
+      ]
+    },
+    "local_geometry_normalization": {
+      "enabled": true,
+      "mode": "agent_authored_only",
+      "adjustment_count": 0,
+      "adjustments": [],
+      "policy": "Exact host-reviewed corrections only. No automatic alignment or programmatic magnitude verdict."
+    },
+    "text_bbox_override_count": 0,
+    "contract_conformance": {
+      "evidence_type": "objective_constructor_contract_consumption",
+      "coordinate_transform": {
+        "scale_xy": [
+          0.9569377990430622,
+          0.9564293304994687
+        ],
+        "offset_y_px": 0
+      },
+      "required_counts": {
+        "text_entities": 7,
+        "canonical_assets": 0,
+        "icon_slot_surfaces": 0,
+        "connector_graphs": 0
+      },
+      "emitted_counts": {
+        "text_entities": 7,
+        "canonical_assets": 0,
+        "icon_slot_surfaces": 0,
+        "connector_graphs": 0
+      },
+      "blocking_facts": {},
+      "agent_interpretation_required": true,
+      "note": "No quality or reconstruction verdict is produced. Visual reasoning remains external."
+    },
+    "input_bindings": {
+      "measured_scene_sha256": "c085642993b00aed3e85302e2c3777853ff22089b81bc9961e5e86f4b6b7a186",
+      "reconstruction_contract_sha256": "0ccf9779c4366b8d9783045fc82562e17656377fe97ac25ee36ff3489f182ceb",
+      "resolved_design_sha256": "803440a27dca21dc9148b5b4ac29fed93193ccedd3b017e11a7984c0c78c5a86"
+    }
+  }
+}

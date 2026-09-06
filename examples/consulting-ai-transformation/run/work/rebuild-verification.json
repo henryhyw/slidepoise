@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "method": "examples/rebuild.py with accepted targets, host semantic maps and reconstruction handoffs. Re-resolved repository configuration in an isolated home, then OpenCV measurement, contract compilation and native deck construction. Both actual LibreOffice renders use 160 DPI.",
+  "source_pptx_sha256": "aec72faebe53cdaf2c0820391eadd344d34b3f5de4927e7c3a0444ff8f40ca9b",
+  "rebuilt_pptx_sha256": "26255787836e2b6cb2bf427b285f2c8cbff83d9542d2244afd4c4dff4b9fed8a",
+  "render_comparisons": [
+    {
+      "page": 1,
+      "reference_sha256": "683868ff0e678c2d1e81e86159c87ccbf817af4ab97d5fd969b9bd021228df8c",
+      "rebuilt_sha256": "683868ff0e678c2d1e81e86159c87ccbf817af4ab97d5fd969b9bd021228df8c",
+      "dimensions": [
+        2134,
+        1200
+      ],
+      "pixels_identical": true
+    },
+    {
+      "page": 2,
+      "reference_sha256": "58527f660f12c23421c096e18cec4e79acfce371957a99010108725a74456c38",
+      "rebuilt_sha256": "58527f660f12c23421c096e18cec4e79acfce371957a99010108725a74456c38",
+      "dimensions": [
+        2134,
+        1200
+      ],
+      "pixels_identical": true
+    },
+    {
+      "page": 3,
+      "reference_sha256": "1dfd8f855dff83a2c369a0c0133a43175bcf8000076e42d4a62e98b3726ea593",
+      "rebuilt_sha256": "1dfd8f855dff83a2c369a0c0133a43175bcf8000076e42d4a62e98b3726ea593",
+      "dimensions": [
+        2134,
+        1200
+      ],
+      "pixels_identical": true
+    },
+    {
+      "page": 4,
+      "reference_sha256": "1f506699df25b1cd143beb3a466f7eae745f6e03fa858c8816c60ef1cbc0afba",
+      "rebuilt_sha256": "1f506699df25b1cd143beb3a466f7eae745f6e03fa858c8816c60ef1cbc0afba",
+      "dimensions": [
+        2134,
+        1200
+      ],
+      "pixels_identical": true
+    },
+    {
+      "page": 5,
+      "reference_sha256": "e098559224df798cce8d18f33ecbb3663e6ec894b30db06bb0bf7ace141da803",
+      "rebuilt_sha256": "e098559224df798cce8d18f33ecbb3663e6ec894b30db06bb0bf7ace141da803",
+      "dimensions": [
+        2134,
+        1200
+      ],
+      "pixels_identical": true
+    }
+  ],
+  "native_xml_comparisons": [
+    {
+      "part": "ppt/slideLayouts/slideLayout1.xml",
+      "identical": true
+    },
+    {
+      "part": "ppt/slideLayouts/slideLayout2.xml",
+      "identical": true
+    },
+    {
+      "part": "ppt/slides/slide1.xml",
+      "identical": true
+    },
+    {
+      "part": "ppt/notesSlides/notesSlide1.xml",
+      "identical": false,
+      "speaker_content_identical": true
+    },
+    {
+      "part": "ppt/slides/slide2.xml",
+      "identical": true
+    },
+    {
+      "part": "ppt/notesSlides/notesSlide2.xml",
+      "identical": false,
+      "speaker_content_identical": true
+    },
+    {
+      "part": "ppt/slides/slide3.xml",
+      "identical": true
+    },
+    {
+      "part": "ppt/notesSlides/notesSlide3.xml",
+      "identical": false,
+      "speaker_content_identical": true
+    },
+    {
+      "part": "ppt/slides/slide4.xml",
+      "identical": true
+    },
+    {
+      "part": "ppt/notesSlides/notesSlide4.xml",
+      "identical": false,
+      "speaker_content_identical": true
+    },
+    {
+      "part": "ppt/slides/slide5.xml",
+      "identical": true
+    },
+    {
+      "part": "ppt/notesSlides/notesSlide5.xml",
+      "identical": false,
+      "speaker_content_identical": true
+    },
+    {
+      "part": "ppt/slideMasters/slideMaster1.xml",
+      "identical": true
+    },
+    {
+      "part": "ppt/charts/chart1.xml",
+      "identical": true
+    }
+  ],
+  "frozen_input_bindings": [
+    {
+      "path": "run/slides/s01-recommendation/work/accepted-slide.png",
+      "sha256": "65320ec1e13c44d39f96dd36d5159195731aeb7b1a7444dff652f1bf3f4b24e7"
+    },
+    {
+      "path": "run/slides/s01-recommendation/work/semantic-map.json",
+      "sha256": "cd2c571d15500021a8b5bbae19a6c83120f1200a5b2b3f57e38dab959cfe097c"
+    },
+    {
+      "path": "run/slides/s01-recommendation/work/reconstruction-handoff.json",
+      "sha256": "19511ea5511a5fadbb06dd5381214053aadb241dc5bbbeee22da3287bf058783"
+    },
+    {
+      "path": "run/slides/s02-opportunities/work/accepted-slide.png",
+      "sha256": "a49ee87afd9d13eab0ea6e70a03fb68d197b7319273b5a3d998f7bb116827280"
+    },
+    {
+      "path": "run/slides/s02-opportunities/work/semantic-map.json",
+      "sha256": "0ad877fe86736ab223eec6e439531893912317831526ddbf27c9f2c092c6f1a0"
+    },
+    {
+      "path": "run/slides/s02-opportunities/work/reconstruction-handoff.json",
+      "sha256": "e2f9905ac861f0e5bed5ed6511ad3ba704978a00c1967d2a603c53a2b0133418"
+    },
+    {
+      "path": "run/slides/s03-operating-model/work/accepted-slide.png",
+      "sha256": "c8ead882cc20d711d3079b79629448058d9fb0c80716cf7154ccf3ce4cae11b6"
+    },
+    {
+      "path": "run/slides/s03-operating-model/work/semantic-map.json",
+      "sha256": "12f423ba213dbe9e2a36ad2525f2d64664c11c5324827c1d9cf36c1a42f12724"
+    },
+    {
+      "path": "run/slides/s03-operating-model/work/reconstruction-handoff.json",
+      "sha256": "9dee38638ec23ca19eca6f182e9edc71dcaa91d4846c5b33dfc356c57b9dc49f"
+    },
+    {
+      "path": "run/slides/s04-delivery-roadmap/work/accepted-slide.png",
+      "sha256": "ca744f8927ada435cb066b41ea8b3a3c8c951f27c99a5c3bbf28f37e8d9c9a5a"
+    },
+    {
+      "path": "run/slides/s04-delivery-roadmap/work/semantic-map.json",
+      "sha256": "fec586c49f23fe8a29e124db22b08ee4db9eac9bf984a940f5509726ee2837ef"
+    },
+    {
+      "path": "run/slides/s04-delivery-roadmap/work/reconstruction-handoff.json",
+      "sha256": "ad3b58fa510ed4c9cb44c20b5858a8e5e95d9d0c043a28351cc7b442e9907693"
+    },
+    {
+      "path": "run/slides/s05-investment-decision/work/accepted-slide.png",
+      "sha256": "6f63f75099b63a4b14aa1d3e9479e895d3401d03342374aa1f858f1e586f9ab6"
+    },
+    {
+      "path": "run/slides/s05-investment-decision/work/semantic-map.json",
+      "sha256": "944199dc1a9804b76d9a9826df256bac77d4150f7280e0fc987d22017c606ac5"
+    },
+    {
+      "path": "run/slides/s05-investment-decision/work/reconstruction-handoff.json",
+      "sha256": "f4fc7b2d7f2e757da8e1b643afca1a49e275a65ada82a50c555549ebcb304713"
+    }
+  ],
+  "preview_environment_scope": "Recorded macOS LibreOffice and fonts. This establishes reproducibility of frozen reconstruction inputs, not deterministic image generation.",
+  "notes_path_difference": "All five note parts retain the same speaker text. Generated-target source references identify the new rebuild workspace, so the raw note XML paths differ."
+}

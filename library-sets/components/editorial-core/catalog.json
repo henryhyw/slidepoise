@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "items": {
+    "personal-sharp-editorial-sequence": {
+      "id": "personal-sharp-editorial-sequence",
+      "name": "Sharp editorial sequence",
+      "kind": "layout_grammar",
+      "description": "A sequence of two to five sharp rectangular evidence fields with one dominant statement, thin rules, and generous surrounding space.",
+      "tags": ["personal-website", "blocks", "sequence", "editorial"],
+      "grammar": {
+        "communication_use": "Explain a progression without creating a dashboard.",
+        "layout_behavior": "Vary block width and tonal weight. Keep one field dominant and connect only relationships that need explicit direction.",
+        "corner_policy": "square"
+      },
+      "reconstruction_route": "agent_authored_native_geometry"
+    },
+    "personal-archive-collage-field": {
+      "id": "personal-archive-collage-field",
+      "name": "Archive collage field",
+      "kind": "hybrid_grammar",
+      "description": "A generated archival collage region paired with native titles, metadata, rules, and semantic annotations.",
+      "tags": ["personal-website", "archive", "collage", "hybrid"],
+      "grammar": {
+        "communication_use": "Express synthesis, memory, cognition, or layered evidence where texture is part of the meaning.",
+        "layout_behavior": "Keep the raster collage as one coherent visual field. Reconstruct surrounding title, labels, and connectors natively.",
+        "corner_policy": "square"
+      },
+      "reconstruction_route": "hybrid_native_frame_plus_generated_raster_field"
+    },
+    "personal-dark-evidence-matrix": {
+      "id": "personal-dark-evidence-matrix",
+      "name": "Dark evidence matrix",
+      "kind": "layout_grammar",
+      "description": "A charcoal evidence matrix with off-white type, flat tonal cells, and a quiet conclusion field.",
+      "tags": ["personal-website", "dark", "matrix", "evidence"],
+      "grammar": {
+        "communication_use": "Organize several related observations under one question.",
+        "layout_behavior": "Use tonal contrast and shared edges. Avoid floating cards and decorative glow.",
+        "corner_policy": "square"
+      },
+      "reconstruction_route": "agent_authored_native_geometry"
+    }
+  }
+}

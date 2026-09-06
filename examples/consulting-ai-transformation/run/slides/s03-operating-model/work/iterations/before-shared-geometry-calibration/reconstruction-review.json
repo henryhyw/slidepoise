@@ -1,0 +1,54 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "stage": "reconstruction",
+  "decision": "accepted",
+  "material_issues": [],
+  "reviewed_artifacts": [
+    {
+      "path": "accepted-slide.png",
+      "sha256": "c8ead882cc20d711d3079b79629448058d9fb0c80716cf7154ccf3ce4cae11b6"
+    },
+    {
+      "path": "reconstruction/constructor-scene.json",
+      "sha256": "c8cdd7e880c38365bac01aa024709a59fce25610659c7ff7a6731bdffe83273f"
+    },
+    {
+      "path": "../deliverables/slide.pptx",
+      "sha256": "c2e1deb06980a9e2b3fbab88876d277388879c5230cd8cb8cf342c1ce0ce7a64"
+    },
+    {
+      "path": "../deliverables/render.png",
+      "sha256": "1cdbf86044becb9ac0659bb5d3f429d8ec5576b465d719aa2e5d06a25cbe8497"
+    },
+    {
+      "path": "../deliverables/comparison.png",
+      "sha256": "0e3079c4f3e45ca162cbd570595251d1c0ce133c28c77f0983d03fc62d43a498"
+    },
+    {
+      "path": "native-object-evidence.json",
+      "sha256": "8bc2b30368b69dc10fc78688bd14ab69e384c479cb497ffa3a5f8e142197b15b"
+    },
+    {
+      "path": "native-text-audit.json",
+      "sha256": "6ea863e91d587d09aeb32478175541a1a4ca7d2adb8d1051beccd5cb3c1a0cba"
+    },
+    {
+      "path": "reconstruction/measurement/slide_entities.json",
+      "sha256": "d63944b8d971e41a514dedd941776f9d477730c17dcc079575696dc2c13a0c30"
+    },
+    {
+      "path": "reconstruction/reconstruction-contract.json",
+      "sha256": "b93f10dbc2b7006fbab6a36ef5b32f06d6930804db23d498a416c767ec2c636c"
+    }
+  ],
+  "observations": [
+    "I inspected the actual headless LibreOffice full-slide render and the body-only target comparison. The headline, four-stage sequence, responsibility table, operating controls, measurement notes and release rule are complete and legible.",
+    "The three straight forward arrows enter the next stage from the left. Both orange return paths keep their round corners and remain visually continuous in LibreOffice. The left return points up into Approved sources and the right return points up into Grounded draft. Their tails meet the correct source responsibility columns, and the two corridors do not cross.",
+    "The return paths are native editable cubic freeforms with arrowheads, not automatically attached Office connectors. Moving table columns in Office does not reattach them. Recompiling the authored map retains the named semantic relationships. This limitation and the pilot scenario assumption are explicitly authored speaker notes. I checked the native notes XML after the final render. Internal handoff notes are excluded.",
+    "Native Arial is wider than the generated glyphs. The table and supporting column use ordinary wrapping at the shared 24 and 28-pixel sizes. Their row allocations and paragraph rhythm are clear, with no clipping or overlap. Both return captions use the same native 24-pixel label size.",
+    "The native title is Georgia 32pt for 64 body pixels, the subtitle is Arial 16pt, workflow and supporting text is Arial 14pt and the table is Arial 12pt. The orange and black decision texts are equal 14pt peers, with the shared 8-pixel orange bar.",
+    "The shared header and footer are inherited from the native frame and absent from the substantive source. The standalone page number is native and will be sequenced during assembly. The native document contains one 25-cell table, three native straight connectors, two cubic freeforms, no pictures and no duplicate drawing IDs.",
+    "All 42 audited text bodies have zero structural findings. Objective semantic and reconstruction collectors report no blocking facts. Visual acceptance is based on inspection of the persisted target, overlay, actual Office render and comparison.",
+    "After adding explicit speaker notes, I inspected the final Office render again. The visible slide XML and rendered pixels are unchanged from the reviewed first render."
+  ]
+}

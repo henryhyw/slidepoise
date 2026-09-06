@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "source_semantic_map": "semantic-map.json",
+  "source_semantic_map_sha256": "cd2c571d15500021a8b5bbae19a6c83120f1200a5b2b3f57e38dab959cfe097c",
+  "notice": "Selected host-authored explanations for readers. The full map and measurement preserve every entity and four semantic argument groups.",
+  "entities": [
+    {
+      "id": "headline",
+      "kind": "text",
+      "bbox_hint": [
+        43,
+        35,
+        1195,
+        70
+      ],
+      "display_label": "One executive conclusion",
+      "members": [
+        "headline"
+      ]
+    },
+    {
+      "id": "baseline",
+      "kind": "text",
+      "bbox_hint": [
+        46,
+        294,
+        275,
+        63
+      ],
+      "display_label": "Explicit planning baseline",
+      "members": [
+        "baseline"
+      ]
+    },
+    {
+      "id": "controlled-investment",
+      "kind": "text",
+      "bbox_hint": [
+        700,
+        650,
+        528,
+        129
+      ],
+      "display_label": "Conditional investment",
+      "members": [
+        "argument-number-03",
+        "argument-title-03",
+        "argument-detail-03"
+      ]
+    },
+    {
+      "id": "scale-gate-table",
+      "kind": "table",
+      "bbox_hint": [
+        1224,
+        288,
+        649,
+        473
+      ],
+      "display_label": "Native gate table",
+      "members": [
+        "scale-gate-table"
+      ]
+    },
+    {
+      "id": "decision-request",
+      "kind": "text",
+      "bbox_hint": [
+        561,
+        852,
+        655,
+        38
+      ],
+      "display_label": "Bounded approval request",
+      "members": [
+        "decision-request"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fafafa">
+  <meta name="description" content="Work with AI to develop your content, explore layouts beyond fixed templates and create an editable PowerPoint using your visual references and assets.">
+  <title>SlidePoise · AI presentation design</title>
+  <link rel="icon" href="mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="object-inspector.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#examples">Skip to the presentations</a>
+  <header class="site-header">
+    <div class="page-width header-inner">
+      <a class="wordmark" href="#top" aria-label="SlidePoise home"><img src="mark.svg" width="26" height="26" alt="">SlidePoise</a>
+      <nav aria-label="Main navigation">
+        <a href="#examples">Samples</a>
+        <a href="#philosophy">How it works</a>
+        <a href="#console">Console</a>
+        <a href="#setup">Setup</a>
+        <a class="github-link" href="https://github.com/henryhyw/slidepoise" target="_blank" rel="noopener" aria-label="SlidePoise on GitHub" title="GitHub"><svg class="github-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 .75a11.25 11.25 0 0 0-3.56 21.92c.56.1.77-.24.77-.54v-2.09c-3.14.68-3.8-1.33-3.8-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.23.71-1.51-2.51-.29-5.15-1.26-5.15-5.57 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.16a10.75 10.75 0 0 1 5.65 0c2.15-1.46 3.1-1.16 3.1-1.16.61 1.55.23 2.7.11 2.98.72.79 1.16 1.8 1.16 3.03 0 4.32-2.64 5.28-5.16 5.56.41.35.77 1.03.77 2.09v3.1c0 .3.2.65.78.54A11.25 11.25 0 0 0 12 .75Z"/></svg></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero page-width" aria-labelledby="hero-title">
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Open-source presentation skill for Codex</p>
+      <h1 id="hero-title">AI-generated design.<br>Built into PowerPoint.</h1>
+      <p class="hero-description">SlidePoise is an open-source Codex skill that turns AI-generated slide designs into editable PowerPoint. You plan the content with the Agent and provide visual references or assets. Image generation explores layouts beyond fixed templates. The Agent identifies the elements, OpenCV measures their geometry, and local tools build the presentation.</p>
+      <div class="hero-actions"><a class="button" href="#setup">Get SlidePoise</a><a class="quiet-link source-link" href="https://github.com/henryhyw/slidepoise" target="_blank" rel="noopener"><svg class="github-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 .75a11.25 11.25 0 0 0-3.56 21.92c.56.1.77-.24.77-.54v-2.09c-3.14.68-3.8-1.33-3.8-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.23.71-1.51-2.51-.29-5.15-1.26-5.15-5.57 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.16a10.75 10.75 0 0 1 5.65 0c2.15-1.46 3.1-1.16 3.1-1.16.61 1.55.23 2.7.11 2.98.72.79 1.16 1.8 1.16 3.03 0 4.32-2.64 5.28-5.16 5.56.41.35.77 1.03.77 2.09v3.1c0 .3.2.65.78.54A11.25 11.25 0 0 0 12 .75Z"/></svg>View source</a></div>
+    </section>
+
+    <section id="examples" class="samples page-width" aria-labelledby="examples-title">
+      <div class="section-heading"><h2 id="examples-title">Sample presentations</h2></div>
+      <p class="section-intro">Browse an essay about working with AI and a consulting proposal for an AI pilot. For each slide, you can compare the generated design with the PowerPoint, inspect element groups and measurements, or read the full plan.</p>
+      <div id="load-state" class="load-state" role="status">Loading the presentations…</div>
+      <div class="samples-container">
+        <div id="project-grid" class="sample-chooser" role="group" aria-label="Choose a sample presentation"></div>
+        <div id="studio" class="studio" aria-labelledby="viewer-title" tabindex="-1" hidden>
+          <div class="sr-only"><h3 id="viewer-title"></h3><span id="viewer-sample-meta"></span></div>
+          <button id="presentation-goal" class="presentation-goal" type="button" aria-label="View presentation plan" aria-haspopup="dialog"><span class="goal-label">Plan</span><span id="presentation-goal-text"></span></button>
+          <div id="studio-frame" class="studio-frame" data-mode="rebuilt">
+        <div class="viewer-toolbar">
+          <div class="mode-controls" role="group" aria-label="Slide view"><button type="button" data-mode="rebuilt" aria-pressed="true">Editable PowerPoint</button><button type="button" data-mode="compare" aria-pressed="false">Compare</button><button type="button" data-mode="target" aria-pressed="false">AI-generated design</button><button type="button" data-mode="semantic" aria-pressed="false">Element groups</button><button type="button" data-mode="measurements" aria-pressed="false">OpenCV measurements</button></div>
+          <p id="viewer-mode-help" class="toolbar-hint">Read-only · Select an object</p>
+          <div class="viewer-tools"><button id="object-toggle" class="tool-button" type="button" aria-expanded="false" aria-controls="object-panel"><svg aria-hidden="true" viewBox="0 0 20 20"><rect x="3" y="3" width="14" height="14" rx="1.5"/><path d="M3 8h14M8 8v9"/></svg><span>Editable objects</span><span id="object-count" class="object-count" hidden></span></button><button id="expand-viewer" class="tool-button icon-button" type="button" aria-label="Expand presentation viewer" aria-haspopup="dialog" aria-controls="viewer-dialog" aria-expanded="false" title="Expand viewer"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M7 3H3v4m10-4h4v4M3 13v4h4m10-4v4h-4"/></svg></button></div>
+        </div>
+        <div id="studio-workspace" class="studio-workspace">
+          <div id="slide-strip" class="slide-strip" aria-label="Choose a slide"></div>
+          <div class="canvas-column">
+            <div class="canvas-wrap">
+              <div id="slide-surface" class="slide-surface">
+                <img id="slide-preview" alt="" decoding="async">
+                <div id="comparison" class="comparison" hidden>
+                  <img id="comparison-target" alt="" decoding="async">
+                  <img id="comparison-render" class="comparison-render" alt="" decoding="async">
+                  <div id="comparison-divider" class="comparison-divider" aria-hidden="true"><span><svg viewBox="0 0 20 20"><path d="m7 6-4 4 4 4m6-8 4 4-4 4"/></svg></span></div>
+                  <label class="sr-only" for="reveal">Amount of the editable PowerPoint to reveal</label>
+                  <input id="reveal" class="reveal" type="range" min="0" max="100" value="50" aria-describedby="comparison-help">
+                </div>
+                <button id="design-image-open" class="design-image-open" type="button" aria-label="Enlarge AI-generated design" aria-haspopup="dialog" hidden></button>
+                <div id="reconstruction-layer" class="reconstruction-layer" hidden></div>
+                <div id="slide-image-error" class="image-error" role="status" hidden>This slide image could not be loaded. Try another slide or reload the page.</div>
+              </div>
+            </div>
+            <div id="comparison-help" class="comparison-help" hidden><span>Editable PowerPoint</span><span>Drag the divider or use arrow keys</span><span>AI-generated design</span></div>
+            <div id="reconstruction-panel" class="reconstruction-panel" hidden></div>
+            <p id="generated-content-note" class="generated-content-note" hidden>Generated content. Shared frame added in PowerPoint.</p>
+
+          </div>
+          <aside id="object-panel" class="object-panel" aria-label="Slide objects" hidden></aside>
+        </div>
+        <div class="slide-caption"><div><span id="viewer-counter" class="slide-counter"></span><h3 id="slide-title"></h3></div><div class="slide-arrows"><button id="previous-slide" class="icon-button" type="button" aria-label="Previous slide"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="m12 5-5 5 5 5"/></svg></button><button id="next-slide" class="icon-button" type="button" aria-label="Next slide"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="m8 5 5 5-5 5"/></svg></button></div></div>
+      </div>
+          <div class="deck-context"><div class="deck-description"><p id="deck-summary"></p><p id="deck-note" class="fine-print" hidden></p></div><div id="deck-downloads" class="download-links" aria-label="Download sample PowerPoint"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="philosophy" class="philosophy page-width" aria-labelledby="philosophy-title">
+      <div class="section-heading architecture-heading"><h2 id="philosophy-title">How SlidePoise works</h2></div>
+      <p class="section-intro">The Agent plans what each slide needs to communicate, then uses image generation to explore the design. It identifies the text, charts and other elements in the chosen image. Measurement tools locate those elements so they can be built in PowerPoint. The example below follows a chart through that process.</p>
+      <div id="walkthrough-loading" class="load-state" role="status">Loading the design example…</div>
+      <div id="walkthrough" class="walkthrough" hidden>
+        <article class="walkthrough-step">
+          <div class="walkthrough-heading"><span class="principle-number">01</span><div><h3>Plan the content. Explore the design.</h3></div></div>
+          <div class="design-demonstration">
+            <button id="walkthrough-brief" class="content-card argument-panel" type="button" aria-label="Open the slide brief" aria-haspopup="dialog"><span class="actor-label">Agent · Slide plan</span><strong id="walkthrough-message" class="argument-message"></strong><span id="walkthrough-decision" class="argument-decision"></span><span id="walkthrough-support" class="argument-support"></span><span class="evidence-note">Illustrative planning assumptions from the sample brief.</span></button>
+            <span class="flow-connector" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h17m-5-5 5 5-5 5"/></svg></span>
+            <button id="walkthrough-target-open" class="content-card composition-panel" type="button" aria-label="Enlarge the AI-generated design" aria-haspopup="dialog"><span class="actor-label">Image generation · Composition</span><span class="composition-image"><img id="walkthrough-target" alt="" loading="lazy" decoding="async"><span id="walkthrough-chart-region" class="walkthrough-chart-region" aria-hidden="true"></span></span><span class="evidence-note">Shared headers and footers are added in PowerPoint after reconstruction.</span></button>
+          </div>
+        </article>
+        <article class="walkthrough-step reconstruction-step">
+          <div class="walkthrough-heading"><span class="principle-number">02</span><div><h3>Interpret the objects. Measure the pixels.</h3></div></div>
+          <div class="reconstruction-demonstration">
+            <button id="walkthrough-semantic-open" class="content-card reconstruction-evidence" type="button" aria-label="Enlarge the chart interpretation" aria-haspopup="dialog"><span class="actor-label">Agent · Chart interpretation</span><span id="walkthrough-semantic-crop" class="evidence-crop"><img id="walkthrough-semantic-image" alt="" loading="lazy" decoding="async"></span><span id="walkthrough-semantic-caption" class="evidence-caption"></span></button>
+            <button id="walkthrough-measurement-open" class="content-card reconstruction-evidence" type="button" aria-label="Enlarge the chart measurements" aria-haspopup="dialog"><span class="actor-label">OpenCV · Pixel measurement</span><span id="walkthrough-measurement-crop" class="evidence-crop"><img id="walkthrough-measurement-image" alt="" loading="lazy" decoding="async"></span><span id="walkthrough-measurement-caption" class="evidence-caption"></span></button>
+            <button id="walkthrough-native-open" class="content-card reconstruction-evidence native-outcome" type="button" aria-label="Inspect this chart in the editable PowerPoint"><span class="actor-label">PowerPoint · Editable chart</span><span id="walkthrough-native-crop" class="evidence-crop"><img id="walkthrough-native-image" alt="" loading="lazy" decoding="async"></span><span class="evidence-caption">Change a value. The bar and label update.</span></button>
+          </div>
+        </article>
+      </div>
+      <p class="architecture-review">The Agent checks the rendered slides together and adjusts recurring titles, labels, colours and spacing for consistency.</p>
+
+    <div id="process" class="process" aria-labelledby="process-title">
+      <div class="section-heading"><h2 id="process-title">From brief to PowerPoint</h2><span id="process-deck-name" class="sample-source-label"></span></div>
+      <p class="section-intro">Start by discussing the audience, content and design with Codex. The Agent develops the slides, builds the PowerPoint and reviews it. Each stage below opens the working files from the selected sample.</p>
+      <div id="process-grid" class="workflow-grid"></div>
+    </div>
+    </section>
+
+    <section id="console" class="console-section page-width" aria-labelledby="console-title">
+      <div class="section-heading"><h2 id="console-title">Make your style reusable</h2></div>
+      <div class="console-layout">
+        <div class="console-copy"><p>The local Console saves fonts, colours and visual references on your computer. Ask Codex to open it, then set the guidance it should use for future presentations. No account is needed.</p>
+          <dl><div><dt>Style</dt><dd>Choose what stays fixed and where the Agent can explore.</dd></div><div><dt>Resources</dt><dd>Keep reusable icons and editable components in shared Library Sets.</dd></div><div><dt>System</dt><dd>Check the local tools used to measure and render slides.</dd></div></dl>
+          <details class="setup-details"><summary>Open the local Console</summary><p>After installation, ask Codex to open the SlidePoise Console, or run this command in a terminal.</p><code class="console-command">npx github:henryhyw/slidepoise console</code><p>The Console opens in your browser and saves settings on your computer. Saved changes apply to future presentations. Ask Codex to update a presentation already in progress.</p></details>
+        </div>
+        <div id="console-demo" class="console-demo">
+          <iframe id="console-frame" src="console-demo/index.html#design" title="Interactive Console demo" sandbox="allow-scripts allow-forms" loading="lazy" tabindex="-1" inert></iframe>
+          <div class="demo-interaction-layer">
+            <button id="console-enter" class="demo-interaction-enter" type="button" aria-label="Open the Console interactive demo"><span class="demo-interaction-cue"><span class="demo-interaction-symbol" aria-hidden="true"><span></span></span><span class="demo-interaction-copy"><strong>Explore the Console</strong><span>Tap to interact</span></span><span class="demo-interaction-chevron" aria-hidden="true">›</span></span></button>
+            <div id="console-controls" class="demo-interaction-controls" hidden><button id="console-done" class="demo-interaction-done" type="button"><span class="demo-interaction-done-mark" aria-hidden="true"><i></i><i></i></span><span>Done</span></button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="setup" class="setup page-width" aria-labelledby="setup-title">
+      <div class="section-heading"><h2 id="setup-title">Install SlidePoise</h2></div>
+      <p class="section-intro">SlidePoise adds presentation tools and instructions to Codex. Install it once, then ask Codex to help plan a deck and give it the content, references and assets you want to use.</p>
+      <div class="setup-grid">
+        <div class="setup-requirements"><h3>Before you start</h3><dl><div><dt>Codex</dt><dd>With image generation</dd></div><div><dt>Python</dt><dd>3.10 or later</dd></div><div><dt>Node.js</dt><dd>18 or later, with npm 9+</dd></div></dl></div>
+        <div class="setup-instructions"><h3>Install the skill and its tools</h3><div class="install-command"><code id="install-command">npx github:henryhyw/slidepoise setup</code><button id="copy-install" type="button">Copy</button></div><p id="copy-status" class="copy-status" role="status" aria-live="polite"></p><details class="setup-details"><summary>What gets installed</summary><p>Setup installs measurement and PowerPoint tools, registers the Codex skill, and prepares local slide previews. Your system may request administrator access for the preview tools.</p><ul><li>An isolated Python environment in <code>~/.slidepoise/python</code> with Pillow, python-pptx, NumPy and OpenCV.</li><li>PptxGenJS and JSZip in <code>~/.slidepoise/node</code>.</li><li>Profiles and Library Sets in <code>~/.slidepoise</code>, with the skill registered in <code>~/.codex/skills/slidepoise</code>.</li></ul><p>LibreOffice renders the PowerPoint and Poppler converts it into images for the Agent to review. Setup installs missing copies through Homebrew on macOS, winget on Windows, or apt on Debian/Ubuntu. Codex supplies image generation.</p></details><a class="quiet-link" href="https://github.com/henryhyw/slidepoise/blob/main/docs/USAGE.md" target="_blank" rel="noopener">Installation guide</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer page-width"><a class="wordmark" href="#top"><img src="mark.svg" width="23" height="23" alt="">SlidePoise</a><p>AI presentation design, beyond fixed templates.</p><a href="https://github.com/henryhyw/slidepoise/blob/main/LICENSE" target="_blank" rel="noopener">MIT license</a></footer>
+
+  <dialog id="viewer-dialog" class="viewer-dialog" aria-label="Expanded presentation viewer"></dialog>
+  <dialog id="artifact-dialog" class="artifact-dialog" aria-labelledby="artifact-title" aria-describedby="artifact-description"><div class="dialog-header"><div><p id="artifact-type" class="eyebrow"></p><h2 id="artifact-title"></h2></div><div class="dialog-actions"><button id="artifact-close" class="icon-button" type="button" aria-label="Close artifact viewer"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="m5 5 10 10M5 15 15 5"/></svg></button></div></div><div id="artifact-body" class="artifact-body"></div><p id="artifact-description" class="dialog-description"></p></dialog>
+
+  <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
+  <noscript><div class="noscript">The interactive viewer needs JavaScript. The <a href="../../examples/consulting-ai-transformation/deliverables/presentation.pptx" download>Consulting PowerPoint</a> and <a href="../../examples/personal-thinking-system/deliverables/presentation.pptx" download>Editorial PowerPoint</a> are also available to download.</div></noscript>
+</body>
+</html>

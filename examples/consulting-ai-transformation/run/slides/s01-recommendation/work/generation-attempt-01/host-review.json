@@ -1,0 +1,18 @@
+{
+  "reviewer": "host_agent",
+  "disposition": "revise",
+  "image_path": "/Users/henry/.codex/generated_images/01a07056-d021-7b82-915c-99c0fc04ea61/exec-9d18c5de-3a26-49fb-ac89-c9bd7fd2485b.png",
+  "image_sha256": "d8f57e9211e0df67de9dfcc7639841b460754fd0d56d751a3121280a2135bc8f",
+  "observations": [
+    "Correct substantive-only 2:1 canvas without header/footer/page number.",
+    "Candidate invented three orange line icons despite explicit avoid instructions and no selected asset. Remove them.",
+    "Display KPI numbers use a serif face. Shared design requires Arial bold.",
+    "Decision-band label and message appear larger than the declared 28 px body role. Reduce to that shared size, remove internal vertical divider, reduce band height."
+  ],
+  "retained": [
+    "Exact quantitative argument and table data",
+    "Three-column substantive composition",
+    "Georgia claim title and Arial subtitle",
+    "No shared-frame content"
+  ]
+}

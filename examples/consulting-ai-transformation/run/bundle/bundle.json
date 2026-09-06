@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "manifest": "deck-scenes.json",
+  "slide_ids": [
+    "s01-recommendation",
+    "s02-opportunities",
+    "s03-operating-model",
+    "s04-delivery-roadmap",
+    "s05-investment-decision"
+  ],
+  "evidence": [],
+  "files": [
+    {
+      "path": "deck-scenes.json",
+      "sha256": "5046f14f68561b7c4b0c1150cfc30d90e5f1cf5e9af5152b6d296dbd75fad26b",
+      "bytes": 685
+    },
+    {
+      "path": "scenes/slide-001.json",
+      "sha256": "b149914f9f2077c6eadb6fc8c5e1ad40a68145fb931090f1312d21f1cb654b8c",
+      "bytes": 43952
+    },
+    {
+      "path": "scenes/slide-002.json",
+      "sha256": "a41a7d37790cdb170be2aa17441aabbb01d3eedb543ab5cd2ea16ecc9fa59752",
+      "bytes": 46740
+    },
+    {
+      "path": "scenes/slide-003.json",
+      "sha256": "a59ee1d291a10746015f3b3075a43839c53b60ceda9b43cfac0eb3660a5a76cb",
+      "bytes": 54956
+    },
+    {
+      "path": "scenes/slide-004.json",
+      "sha256": "0d60d704857c6ce60e0ca15cda99feb82f6cb3bd674fe49f8f233676ba3dd86c",
+      "bytes": 102397
+    },
+    {
+      "path": "scenes/slide-005.json",
+      "sha256": "d5b6eb49c44f9c429fa32ccd833a178c115d2132c0cdeef04196c50aaaab86ba",
+      "bytes": 56413
+    }
+  ]
+}

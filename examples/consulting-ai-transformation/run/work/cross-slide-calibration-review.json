@@ -1,0 +1,411 @@
+{
+  "reviewer": "independent_host_agent_visual_reasoning",
+  "reviewed_at_utc": "2026-09-05T14:32:45.567044+00:00",
+  "scope": "Recurring visual-role calibration across five actual standalone PowerPoint renders after page-level correction. Final assembled page order and numbering remain the deck owner review.",
+  "decision": "accepted",
+  "material_issues": [],
+  "reviewed_slides": [
+    {
+      "slide_id": "s01-recommendation",
+      "render": {
+        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/deliverables/render.png",
+        "sha256": "683868ff0e678c2d1e81e86159c87ccbf817af4ab97d5fd969b9bd021228df8c"
+      },
+      "constructor_scene": {
+        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/reconstruction/constructor-scene.json",
+        "sha256": "971a749282843338345ae58c3be00c77351e12c7a874cacf4f880d0ebdf9dda8"
+      },
+      "render_source": {
+        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/deliverables/render.source.json",
+        "sha256": "45cb7b42742bfcf80bbb92eb9f74ab3bd3352868dad399353b7bc0c692ea1be1"
+      },
+      "text_groups": [
+        {
+          "name": "claim-title",
+          "target_px": 64.0,
+          "actual_px": 64.0,
+          "reduced": false
+        },
+        {
+          "name": "subtitle",
+          "target_px": 32.0,
+          "actual_px": 32.0,
+          "reduced": false
+        },
+        {
+          "name": "section-headings",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "display-data",
+          "target_px": 68.0,
+          "actual_px": 68.0,
+          "reduced": false
+        },
+        {
+          "name": "metric-labels",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "metric-calculations",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "argument-numbers",
+          "target_px": 48.0,
+          "actual_px": 48.0,
+          "reduced": false
+        },
+        {
+          "name": "argument-titles",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "argument-details",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "decision-band",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        }
+      ],
+      "native_table_sizes_px": [
+        24
+      ]
+    },
+    {
+      "slide_id": "s02-opportunities",
+      "render": {
+        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s02-opportunities/deliverables/render.png",
+        "sha256": "be0d3f812ed969cf63b3f2dd26bbfa514fe431fe13ecb8226335c61ce75f282b"
+      },
+      "constructor_scene": {
+        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s02-opportunities/work/reconstruction/constructor-scene.json",
+        "sha256": "b768298af250d899dbc8f576a9c9b1a6431d8619b7708b84e8d8f835292325d2"
+      },
+      "render_source": {
+        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s02-opportunities/deliverables/render.source.json",
+        "sha256": "2a287f7e63c905c6afccfdbcfb8282b3866891695262f2fa54e82553e2bdbe2e"
+      },
+      "text_groups": [
+        {
+          "name": "claim-title",
+          "target_px": 64.0,
+          "actual_px": 64.0,
+          "reduced": false
+        },
+        {
+          "name": "subtitle",
+          "target_px": 32.0,
+          "actual_px": 32.0,
+          "reduced": false
+        },
+        {
+          "name": "section-headings",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "chart-unit",
+          "target_px": 24.0,
+          "actual_px": 24.0,
+          "reduced": false
+        },
+        {
+          "name": "calculation",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "reason-numbers",
+          "target_px": 48.0,
+          "actual_px": 48.0,
+          "reduced": false
+        },
+        {
+          "name": "reason-titles",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "reason-details",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "overlap-qualification",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "decision-band",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        }
+      ],
+      "native_table_sizes_px": [
+        24,
+        24
+      ]
+    },
+    {
+      "slide_id": "s03-operating-model",
+      "render": {
+        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s03-operating-model/deliverables/render.png",
+        "sha256": "93e127b416ed5f135d59d6661a48a2410244508785ffb9983d312d85930dfa3f"
+      },
+      "constructor_scene": {
+        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s03-operating-model/work/reconstruction/constructor-scene.json",
+        "sha256": "fde81522ad4636200995efa2645f2c902b061ebb5558e301461613d5b4f24e2b"
+      },
+      "render_source": {
+        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s03-operating-model/deliverables/render.source.json",
+        "sha256": "725965f3c274facf937105b5c6f03320fa0443a983801a2a5254b4ab3e7a5ac2"
+      },
+      "text_groups": [
+        {
+          "name": "claim-title",
+          "target_px": 64.0,
+          "actual_px": 64.0,
+          "reduced": false
+        },
+        {
+          "name": "subtitle",
+          "target_px": 32.0,
+          "actual_px": 32.0,
+          "reduced": false
+        },
+        {
+          "name": "workflow-labels",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "feedback-labels",
+          "target_px": 24.0,
+          "actual_px": 24.0,
+          "reduced": false
+        },
+        {
+          "name": "section-headings",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "supporting-body",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "decision-band",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        }
+      ],
+      "native_table_sizes_px": [
+        24
+      ]
+    },
+    {
+      "slide_id": "s04-delivery-roadmap",
+      "render": {
+        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s04-delivery-roadmap/deliverables/render.png",
+        "sha256": "51e423566d6fda16f1043285d48c3025ec03b78f073aedfa2c600db7abc6922c"
+      },
+      "constructor_scene": {
+        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s04-delivery-roadmap/work/reconstruction/constructor-scene.json",
+        "sha256": "cf63aba3315b5407213494ea87163a6b8319a0292045d2958f892619e12003a8"
+      },
+      "render_source": {
+        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s04-delivery-roadmap/deliverables/render.source.json",
+        "sha256": "ff9f57737a6adb94f8f7918be7ff3fc5b1a290ff38a9cf5481ad763223d13168"
+      },
+      "text_groups": [
+        {
+          "name": "claim-title",
+          "target_px": 64.0,
+          "actual_px": 64.0,
+          "reduced": false
+        },
+        {
+          "name": "subtitle",
+          "target_px": 32.0,
+          "actual_px": 32.0,
+          "reduced": false
+        },
+        {
+          "name": "section-headings",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "gate-labels",
+          "target_px": 32.0,
+          "actual_px": 32.0,
+          "reduced": false
+        },
+        {
+          "name": "gate-weeks",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "gate-evidence",
+          "target_px": 24.0,
+          "actual_px": 24.0,
+          "reduced": false
+        },
+        {
+          "name": "dependency-statements",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "decision-band",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        }
+      ],
+      "native_table_sizes_px": [
+        24
+      ]
+    },
+    {
+      "slide_id": "s05-investment-decision",
+      "render": {
+        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s05-investment-decision/deliverables/render.png",
+        "sha256": "434a6ab8924923d8a09a10aa916119a78c9aaef3b081fa293c4aa121e8b91f9a"
+      },
+      "constructor_scene": {
+        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s05-investment-decision/work/reconstruction/constructor-scene.json",
+        "sha256": "1e7ab9a0d985d7bed073f59dd62ef1c1bbd20377bcbd962a24590f0f6de2a259"
+      },
+      "render_source": {
+        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s05-investment-decision/deliverables/render.source.json",
+        "sha256": "8b97da3cd744ddb5af4c4c543a952e9f08e7d23b4ce8cec8b68dc5969035fd82"
+      },
+      "text_groups": [
+        {
+          "name": "claim-title",
+          "target_px": 64.0,
+          "actual_px": 64.0,
+          "reduced": false
+        },
+        {
+          "name": "subtitle",
+          "target_px": 32.0,
+          "actual_px": 32.0,
+          "reduced": false
+        },
+        {
+          "name": "section-headings",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "formula-terms",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "formula-results",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "formula-annotations",
+          "target_px": 24.0,
+          "actual_px": 24.0,
+          "reduced": false
+        },
+        {
+          "name": "body-copy",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "criteria-body",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        },
+        {
+          "name": "decision-band",
+          "target_px": 28.0,
+          "actual_px": 28.0,
+          "reduced": false
+        }
+      ],
+      "native_table_sizes_px": [
+        24,
+        24
+      ]
+    }
+  ],
+  "shared_design": {
+    "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/work/deck-design.json",
+    "sha256": "a38f6925db5d509cc86d02a4bd0cbfef07e171cba330b96267f3b01512edd179"
+  },
+  "prior_review": {
+    "path": "/Users/henry/Codes/AI_slide_drafting/output/product-qa-v3/cross-slide-before-calibration-review.json",
+    "sha256": "133b9a255486c57045cc2b9a94a7385d059e479dfbc3ce99f554784e09ac3de1"
+  },
+  "visual_observations": [
+    "I inspected all five current actual LibreOffice renders after calibration and checked their render-source bindings. The Georgia titles now share a stable top origin and apparent size. The Arial subtitle line and neutral divider remain steady as the page content changes.",
+    "The wide pale-orange decision bands now hold a fixed orange label column and black message column. The message no longer jumps horizontally between pages. All five statements stay on one line with sufficient separation from the label, and their 28px peers have matching apparent weight and height.",
+    "All table bodies and headers preserve the24px role. The opening uses a spacious two-column scale table, opportunities uses two denser tables, the operating model uses a responsibility matrix, the roadmap uses a workstream matrix and investment uses two financial tables. Cell wording remains readable within each density.",
+    "The roadmap gate evidence now has the same24px annotation level as the other data notes. Corpus/access/signed and Practice lead+CFO/decide fit in three readable lines. The enlarged allocation does not collide with the gate rule or dependency section.",
+    "No visible text clipping or object collisions remain in the inspected outputs. The investment implementation qualification clears its lower divider. The opportunity calculation remains entirely above its decision band. The operating-model feedback loops and roadmap dependency arrows remain continuous and visible.",
+    "Orange conveys emphasized data, actions and connectors throughout. Black table headers, neutral row fills and the shared pale-orange decision treatment remain consistent. The inherited company header and illustrative-data footer retain the same visible placement and treatment on every page."
+  ],
+  "resolved_findings": [
+    {
+      "prior_issue": "s04 gate-evidence reduced from24 to22px",
+      "correction": "All four allocations expanded and line spacing adjusted by the deck owner. Actual24px text is now visible without crowding."
+    },
+    {
+      "prior_issue": "Decision statement x positions varied from407 to644px",
+      "correction": "The common label x100 and message x560 positions now align across all five actual renders. Band geometry and vertical centering are shared."
+    },
+    {
+      "prior_issue": "Opening introduction lower and operating-model title higher than peers",
+      "correction": "Title origin is [48,83] on the full canvas, subtitle begins at [48,167], and the divider is at y229. Titles use80px allocations with unchanged64px type."
+    }
+  ],
+  "intentional_variations": [
+    "The opening has larger display KPIs and numbered arguments. The opportunity comparison has native chart values. Those data roles differ from the stable title/body/table system.",
+    "The responsibility flow, roadmap and financial model have different interior grids and densities. They retain the recurring introduction and decision frame.",
+    "Normal-width native fonts produce different glyph shapes and line breaks from image-generated lettering. Generated orange values and callout labels were calibrated to shared roles, with those differences retained in page review records.",
+    "The standalone operating-model preview uses144DPI and the other standalone pages160DPI. Their pixel dimensions differ proportionally. The final assembled preview should use one common DPI. Standalone page-number fields all show1 by design."
+  ]
+}

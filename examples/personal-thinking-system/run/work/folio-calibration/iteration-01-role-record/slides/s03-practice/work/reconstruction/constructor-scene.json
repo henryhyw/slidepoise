@@ -1,0 +1,698 @@
+{
+  "schema_version": "1.0.0",
+  "slide_id": "s03-practice",
+  "dimensions_px": [
+    1600,
+    900
+  ],
+  "background": "#FBFAF8",
+  "design_config_id": null,
+  "objects": [
+    {
+      "id": "paper-field",
+      "kind": "shape",
+      "shape": "rectangle",
+      "bbox_px": [
+        0,
+        0,
+        1600,
+        900
+      ],
+      "style": {
+        "fill": "#FBFAF8",
+        "stroke": "none",
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
+      },
+      "z": 0.0
+    },
+    {
+      "id": "column-rule-one",
+      "kind": "shape",
+      "shape": "rectangle",
+      "bbox_px": [
+        553,
+        303,
+        1,
+        461
+      ],
+      "style": {
+        "fill": "#C4C3BE",
+        "stroke": "none",
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
+      },
+      "z": 0.0
+    },
+    {
+      "id": "column-rule-two",
+      "kind": "shape",
+      "shape": "rectangle",
+      "bbox_px": [
+        1044,
+        303,
+        1,
+        461
+      ],
+      "style": {
+        "fill": "#C4C3BE",
+        "stroke": "none",
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
+      },
+      "z": 0.0
+    },
+    {
+      "id": "collect-collage",
+      "kind": "image",
+      "bbox_px": [
+        66,
+        402,
+        394,
+        366
+      ],
+      "source_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s03-practice/work/reconstruction/measurement/crops/collect-collage.png",
+      "selected_asset_id": null,
+      "fit": "fill",
+      "preserve_aspect_ratio": true,
+      "semantic_role": "editorial_collage",
+      "z": 10.0
+    },
+    {
+      "id": "connect-collage",
+      "kind": "image",
+      "bbox_px": [
+        611,
+        405,
+        364,
+        377
+      ],
+      "source_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s03-practice/work/reconstruction/measurement/crops/connect-collage.png",
+      "selected_asset_id": null,
+      "fit": "fill",
+      "preserve_aspect_ratio": true,
+      "semantic_role": "editorial_collage",
+      "z": 10.0
+    },
+    {
+      "id": "challenge-collage",
+      "kind": "image",
+      "bbox_px": [
+        1088,
+        403,
+        417,
+        375
+      ],
+      "source_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s03-practice/work/reconstruction/measurement/crops/challenge-collage.png",
+      "selected_asset_id": null,
+      "fit": "fill",
+      "preserve_aspect_ratio": true,
+      "semantic_role": "editorial_collage",
+      "z": 10.0
+    },
+    {
+      "id": "practice-title",
+      "kind": "textbox",
+      "bbox_px": [
+        61,
+        41,
+        1254,
+        167
+      ],
+      "text": "Collect. Connect. Challenge.",
+      "style": {
+        "font_family": "Bodoni 72",
+        "font_size_px": 116.66666666666667,
+        "font_size_pt": 70.0,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": -5.260361317747078,
+        "color": "#242321",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "line_spacing_multiple": 1.0,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "Collect. Connect. Challenge."
+      ],
+      "bullet_style": null,
+      "semantic_role": "practice-title",
+      "parent_id": null,
+      "z": 30.0
+    },
+    {
+      "id": "practice-subtitle",
+      "kind": "textbox",
+      "bbox_px": [
+        68,
+        188,
+        670,
+        44
+      ],
+      "text": "Three moves for a thought worth keeping.",
+      "style": {
+        "font_family": "Andale Mono",
+        "font_size_px": 24.166666666666668,
+        "font_size_pt": 14.5,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": 0.0,
+        "color": "#242321",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          1.9128586609989373,
+          1.9128586609989373,
+          1.9128586609989373,
+          1.9128586609989373
+        ],
+        "line_spacing_multiple": 1.0,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "Three moves for a thought worth keeping."
+      ],
+      "bullet_style": null,
+      "semantic_role": "practice-subtitle",
+      "parent_id": null,
+      "z": 30.0
+    },
+    {
+      "id": "collect-heading",
+      "kind": "textbox",
+      "bbox_px": [
+        70,
+        274,
+        316,
+        88
+      ],
+      "text": "Collect",
+      "style": {
+        "font_family": "Bodoni 72",
+        "font_size_px": 67.5,
+        "font_size_pt": 40.5,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": -4.017003188097768,
+        "color": "#242321",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "line_spacing_multiple": 1.0,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "Collect"
+      ],
+      "bullet_style": null,
+      "semantic_role": "collect-heading",
+      "parent_id": null,
+      "z": 30.0
+    },
+    {
+      "id": "connect-heading",
+      "kind": "textbox",
+      "bbox_px": [
+        600,
+        274,
+        354,
+        88
+      ],
+      "text": "Connect",
+      "style": {
+        "font_family": "Bodoni 72",
+        "font_size_px": 67.5,
+        "font_size_pt": 40.5,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": -4.017003188097768,
+        "color": "#242321",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "line_spacing_multiple": 1.0,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "Connect"
+      ],
+      "bullet_style": null,
+      "semantic_role": "connect-heading",
+      "parent_id": null,
+      "z": 30.0
+    },
+    {
+      "id": "challenge-heading",
+      "kind": "textbox",
+      "bbox_px": [
+        1092,
+        274,
+        416,
+        88
+      ],
+      "text": "Challenge",
+      "style": {
+        "font_family": "Bodoni 72",
+        "font_size_px": 67.5,
+        "font_size_pt": 40.5,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": -2.5823591923485654,
+        "color": "#242321",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "line_spacing_multiple": 1.0,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "Challenge"
+      ],
+      "bullet_style": null,
+      "semantic_role": "challenge-heading",
+      "parent_id": null,
+      "z": 30.0
+    },
+    {
+      "id": "collect-caption",
+      "kind": "textbox",
+      "bbox_px": [
+        74,
+        360,
+        411,
+        36
+      ],
+      "text": "Keep the source close.",
+      "style": {
+        "font_family": "Andale Mono",
+        "font_size_px": 17.5,
+        "font_size_pt": 10.5,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": 0.0,
+        "color": "#242321",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          1.9128586609989373,
+          1.9128586609989373,
+          1.9128586609989373,
+          1.9128586609989373
+        ],
+        "line_spacing_multiple": 1.0,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "Keep the source close."
+      ],
+      "bullet_style": null,
+      "semantic_role": "collect-caption",
+      "parent_id": null,
+      "z": 30.0
+    },
+    {
+      "id": "connect-caption",
+      "kind": "textbox",
+      "bbox_px": [
+        603,
+        360,
+        411,
+        36
+      ],
+      "text": "Put distant ideas in contact.",
+      "style": {
+        "font_family": "Andale Mono",
+        "font_size_px": 17.5,
+        "font_size_pt": 10.5,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": 0.0,
+        "color": "#242321",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          1.9128586609989373,
+          1.9128586609989373,
+          1.9128586609989373,
+          1.9128586609989373
+        ],
+        "line_spacing_multiple": 1.0,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "Put distant ideas in contact."
+      ],
+      "bullet_style": null,
+      "semantic_role": "connect-caption",
+      "parent_id": null,
+      "z": 30.0
+    },
+    {
+      "id": "challenge-caption",
+      "kind": "textbox",
+      "bbox_px": [
+        1093,
+        360,
+        440,
+        36
+      ],
+      "text": "Ask what the pattern leaves out.",
+      "style": {
+        "font_family": "Andale Mono",
+        "font_size_px": 17.5,
+        "font_size_pt": 10.5,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": 0.0,
+        "color": "#242321",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          1.9128586609989373,
+          1.9128586609989373,
+          1.9128586609989373,
+          1.9128586609989373
+        ],
+        "line_spacing_multiple": 1.0,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "Ask what the pattern leaves out."
+      ],
+      "bullet_style": null,
+      "semantic_role": "challenge-caption",
+      "parent_id": null,
+      "z": 30.0
+    },
+    {
+      "id": "field-note",
+      "kind": "textbox",
+      "bbox_px": [
+        86,
+        830,
+        287,
+        36
+      ],
+      "text": "FIELD NOTES / 03",
+      "style": {
+        "font_family": "Andale Mono",
+        "font_size_px": 20.0,
+        "font_size_pt": 12.0,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": 0.0,
+        "color": "#242321",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          1.9128586609989373,
+          1.9128586609989373,
+          1.9128586609989373,
+          1.9128586609989373
+        ],
+        "line_spacing_multiple": 1.0,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "FIELD NOTES / 03"
+      ],
+      "bullet_style": null,
+      "semantic_role": "publication_folio",
+      "parent_id": null,
+      "z": 30.0
+    }
+  ],
+  "frame": {
+    "header": {
+      "enabled": false,
+      "height_px": 34,
+      "implementation": "slide_master_inherited_content",
+      "left_text": "",
+      "right_text": "",
+      "font_family": "Arial",
+      "font_size_px": 11,
+      "font_weight": "regular",
+      "text_color": "#505050",
+      "secondary_text_color": "#8F8F8F",
+      "rule_color": "#D8D7D3",
+      "rule_width_px": 1,
+      "accent_color": "#242321",
+      "accent_rule_width_px": 0,
+      "outer_padding_px": 56
+    },
+    "footer": {
+      "enabled": false,
+      "height_px": 34,
+      "implementation": "slide_master_inherited_content",
+      "left_text": "",
+      "center_text": "",
+      "font_family": "Arial",
+      "font_size_px": 10,
+      "font_weight": "regular",
+      "left_font_weight": "regular",
+      "text_color": "#686868",
+      "secondary_text_color": "#8F8F8F",
+      "rule_color": "#D8D7D3",
+      "rule_width_px": 1,
+      "outer_padding_px": 56,
+      "slide_number": {
+        "enabled": true,
+        "implementation": "native_slide_number_field_on_master",
+        "format": "{slide_number}"
+      }
+    },
+    "generation_region": {
+      "derive_from_frame_heights": true
+    },
+    "slide_number": 3
+  },
+  "sources": [
+    "Generated target visual: /Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s03-practice/work/accepted-slide.png"
+  ],
+  "compiler_report": {
+    "measured_entity_count": 15,
+    "emitted_object_count": 15,
+    "evidence_objects_emitted": 0,
+    "measurement": {
+      "engine": "OpenCV",
+      "opencv": "5.0.0"
+    },
+    "connector_graph_count": 0,
+    "canonical_asset_count": 3,
+    "text_fitting": {
+      "source": "constructor_text_fit_evidence",
+      "fitted_textbox_count": 9,
+      "quantization_step_pt": 0.5,
+      "all_textboxes_fit_within_allocations": true,
+      "peer_typography_preserved": true,
+      "text_groups": [
+        {
+          "typography_group": "practice-title",
+          "semantic_role": "practice-title",
+          "text_style_role": "slide_title",
+          "member_ids": [
+            "practice-title"
+          ],
+          "shared_font_size_pt": 70.0,
+          "shared_font_size_px": 121.981,
+          "agent_target_font_size_px": 122.0,
+          "explicit_peer_group": false,
+          "technical_floor_pt": 0.5,
+          "agent_target_ceiling_pt": 70.0,
+          "agent_target_unquantized_pt": 70.0106269925611,
+          "quantization_reduction_pt": 0.010626993,
+          "reduced_from_agent_target": true,
+          "reduced_for_fit": false,
+          "members_not_fitting_target": [],
+          "font_measurement_sources": {
+            "practice-title": "/System/Library/Fonts/Supplemental/Bodoni 72.ttc"
+          },
+          "profile_adjustments": {},
+          "overflow_evidence": "no_overflow_detected_by_text_measurement"
+        },
+        {
+          "typography_group": "practice-subtitle",
+          "semantic_role": "practice-subtitle",
+          "text_style_role": "emphasis_label",
+          "member_ids": [
+            "practice-subtitle"
+          ],
+          "shared_font_size_pt": 14.5,
+          "shared_font_size_px": 25.268,
+          "agent_target_font_size_px": 25.5,
+          "explicit_peer_group": false,
+          "technical_floor_pt": 0.5,
+          "agent_target_ceiling_pt": 14.5,
+          "agent_target_unquantized_pt": 14.63336875664187,
+          "quantization_reduction_pt": 0.133368757,
+          "reduced_from_agent_target": true,
+          "reduced_for_fit": false,
+          "members_not_fitting_target": [],
+          "font_measurement_sources": {
+            "practice-subtitle": "/System/Library/Fonts/Supplemental/Andale Mono.ttf"
+          },
+          "profile_adjustments": {},
+          "overflow_evidence": "no_overflow_detected_by_text_measurement"
+        },
+        {
+          "typography_group": "practice-headings",
+          "semantic_role": "collect-heading",
+          "text_style_role": "slide_title",
+          "member_ids": [
+            "collect-heading",
+            "connect-heading",
+            "challenge-heading"
+          ],
+          "shared_font_size_pt": 40.5,
+          "shared_font_size_px": 70.575,
+          "agent_target_font_size_px": 71.0,
+          "explicit_peer_group": true,
+          "technical_floor_pt": 0.5,
+          "agent_target_ceiling_pt": 40.5,
+          "agent_target_unquantized_pt": 40.743889479277364,
+          "quantization_reduction_pt": 0.243889479,
+          "reduced_from_agent_target": true,
+          "reduced_for_fit": false,
+          "members_not_fitting_target": [],
+          "font_measurement_sources": {
+            "collect-heading": "/System/Library/Fonts/Supplemental/Bodoni 72.ttc",
+            "connect-heading": "/System/Library/Fonts/Supplemental/Bodoni 72.ttc",
+            "challenge-heading": "/System/Library/Fonts/Supplemental/Bodoni 72.ttc"
+          },
+          "profile_adjustments": {},
+          "overflow_evidence": "no_overflow_detected_by_text_measurement"
+        },
+        {
+          "typography_group": "practice-captions",
+          "semantic_role": "collect-caption",
+          "text_style_role": "emphasis_label",
+          "member_ids": [
+            "collect-caption",
+            "connect-caption",
+            "challenge-caption"
+          ],
+          "shared_font_size_pt": 10.5,
+          "shared_font_size_px": 18.297,
+          "agent_target_font_size_px": 18.5,
+          "explicit_peer_group": true,
+          "technical_floor_pt": 0.5,
+          "agent_target_ceiling_pt": 10.5,
+          "agent_target_unquantized_pt": 10.616365568544103,
+          "quantization_reduction_pt": 0.116365569,
+          "reduced_from_agent_target": true,
+          "reduced_for_fit": false,
+          "members_not_fitting_target": [],
+          "font_measurement_sources": {
+            "collect-caption": "/System/Library/Fonts/Supplemental/Andale Mono.ttf",
+            "connect-caption": "/System/Library/Fonts/Supplemental/Andale Mono.ttf",
+            "challenge-caption": "/System/Library/Fonts/Supplemental/Andale Mono.ttf"
+          },
+          "profile_adjustments": {},
+          "overflow_evidence": "no_overflow_detected_by_text_measurement"
+        },
+        {
+          "typography_group": "publication-folio",
+          "semantic_role": "publication_folio",
+          "text_style_role": "emphasis_label",
+          "member_ids": [
+            "field-note"
+          ],
+          "shared_font_size_pt": 12.0,
+          "shared_font_size_px": 20.911,
+          "agent_target_font_size_px": 21.0,
+          "explicit_peer_group": false,
+          "technical_floor_pt": 0.5,
+          "agent_target_ceiling_pt": 12.0,
+          "agent_target_unquantized_pt": 12.051009564293306,
+          "quantization_reduction_pt": 0.051009564,
+          "reduced_from_agent_target": true,
+          "reduced_for_fit": false,
+          "members_not_fitting_target": [],
+          "font_measurement_sources": {
+            "field-note": "/System/Library/Fonts/Supplemental/Andale Mono.ttf"
+          },
+          "profile_adjustments": {},
+          "overflow_evidence": "no_overflow_detected_by_text_measurement"
+        }
+      ]
+    },
+    "local_geometry_normalization": {
+      "enabled": true,
+      "mode": "agent_authored_only",
+      "adjustment_count": 0,
+      "adjustments": [],
+      "policy": "Exact host-reviewed corrections only. No automatic alignment or programmatic magnitude verdict."
+    },
+    "text_bbox_override_count": 0,
+    "contract_conformance": {
+      "evidence_type": "objective_constructor_contract_consumption",
+      "coordinate_transform": {
+        "scale_xy": [
+          0.9569377990430622,
+          0.9564293304994687
+        ],
+        "offset_y_px": 0
+      },
+      "required_counts": {
+        "text_entities": 9,
+        "canonical_assets": 0,
+        "icon_slot_surfaces": 0,
+        "connector_graphs": 0
+      },
+      "emitted_counts": {
+        "text_entities": 9,
+        "canonical_assets": 0,
+        "icon_slot_surfaces": 0,
+        "connector_graphs": 0
+      },
+      "blocking_facts": {},
+      "agent_interpretation_required": true,
+      "note": "No quality or reconstruction verdict is produced. Visual reasoning remains external."
+    },
+    "input_bindings": {
+      "measured_scene_sha256": "8ddf5f569835aba281a342eaf0d70aa8f75553b637a10ef1a6dc3ebaaaf2167e",
+      "reconstruction_contract_sha256": "e7d9b51863a52324d9f3ed16aaa1d70947cf6002def853e20c41f7c259db8d65",
+      "resolved_design_sha256": "803440a27dca21dc9148b5b4ac29fed93193ccedd3b017e11a7984c0c78c5a86"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "audience_question": "The point of view is still yours.",
+  "dominant_message": "The point of view is still yours.",
+  "information_structure": {
+    "type": "closing",
+    "description": "Visual composition follows the communication job and active profile."
+  },
+  "required_content": [
+    "Let the system widen the field.",
+    "Choose what deserves to remain.",
+    "A second thinking system. A first-person responsibility.",
+    "FIELD NOTES / 05"
+  ],
+  "semantic_relationships": [],
+  "hierarchy": [
+    "The point of view is still yours.",
+    "Let the system widen the field.",
+    "Choose what deserves to remain.",
+    "A second thinking system. A first-person responsibility.",
+    "FIELD NOTES / 05"
+  ],
+  "evidence": [
+    "An authored editorial essay for the SlidePoise showcase. First-person framing is illustrative and does not assert the user's personal history."
+  ],
+  "assumptions": [
+    "An authored editorial essay for the SlidePoise showcase. First-person framing is illustrative and does not assert the user's personal history."
+  ],
+  "open_questions": [],
+  "avoid": [
+    "Generic dashboard cards",
+    "Extra factual claims",
+    "Decorative logos"
+  ],
+  "visual_obligations": [
+    "Keep required presentation copy visually clear and separable from artwork."
+  ],
+  "user_required_assets": [],
+  "density_intent": "balanced",
+  "explicit_user_visual_requirements": []
+}
+

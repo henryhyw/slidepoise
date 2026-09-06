@@ -1,0 +1,12 @@
+{
+  "evidence_type": "objective_semantic_map_structure",
+  "image_size_px": [
+    1920,
+    960
+  ],
+  "entity_count": 33,
+  "group_count": 4,
+  "blocking_facts": [],
+  "agent_interpretation_required": true,
+  "note": "No semantic or visual verdict is produced. A host-Agent reviewer must inspect the image, map, profile, and these facts together."
+}

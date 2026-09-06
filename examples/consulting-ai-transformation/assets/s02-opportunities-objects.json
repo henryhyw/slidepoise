@@ -1,0 +1,1022 @@
+{
+  "schema_version": 1,
+  "slide_id": "s02-opportunities",
+  "page_number": 2,
+  "size": {
+    "width": 12192000,
+    "height": 6858000,
+    "unit": "emu"
+  },
+  "source": {
+    "pptx": {
+      "path": "deliverables/presentation.pptx",
+      "sha256": "aec72faebe53cdaf2c0820391eadd344d34b3f5de4927e7c3a0444ff8f40ca9b"
+    },
+    "render": {
+      "path": "assets/s02-opportunities-render.png",
+      "sha256": "58527f660f12c23421c096e18cec4e79acfce371957a99010108725a74456c38"
+    }
+  },
+  "objects": [
+    {
+      "id": "p2-object-1",
+      "native_id": "2",
+      "name": "introduction-rule",
+      "label": "Introduction rule",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.025,
+          0.212037037
+        ],
+        [
+          0.975,
+          0.212037037
+        ],
+        [
+          0.975,
+          0.213888889
+        ],
+        [
+          0.025,
+          0.213888889
+        ]
+      ],
+      "stack": 0
+    },
+    {
+      "id": "p2-object-2",
+      "native_id": "3",
+      "name": "reason-divider-1",
+      "label": "Reason divider 1",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.719791667,
+          0.408333333
+        ],
+        [
+          0.980208333,
+          0.408333333
+        ],
+        [
+          0.980208333,
+          0.409259259
+        ],
+        [
+          0.719791667,
+          0.409259259
+        ]
+      ],
+      "stack": 1
+    },
+    {
+      "id": "p2-object-3",
+      "native_id": "4",
+      "name": "reason-divider-2",
+      "label": "Reason divider 2",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.719791667,
+          0.548148148
+        ],
+        [
+          0.980208333,
+          0.548148148
+        ],
+        [
+          0.980208333,
+          0.549074074
+        ],
+        [
+          0.719791667,
+          0.549074074
+        ]
+      ],
+      "stack": 2
+    },
+    {
+      "id": "p2-object-4",
+      "native_id": "5",
+      "name": "overlap-note-panel",
+      "label": "Overlap note panel",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.719791667,
+          0.690740741
+        ],
+        [
+          0.980208333,
+          0.690740741
+        ],
+        [
+          0.980208333,
+          0.775925926
+        ],
+        [
+          0.719791667,
+          0.775925926
+        ]
+      ],
+      "stack": 3
+    },
+    {
+      "id": "p2-object-5",
+      "native_id": "6",
+      "name": "decision-band",
+      "label": "Decision band",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.025,
+          0.793518519
+        ],
+        [
+          0.975,
+          0.793518519
+        ],
+        [
+          0.975,
+          0.917592593
+        ],
+        [
+          0.025,
+          0.917592593
+        ]
+      ],
+      "stack": 4
+    },
+    {
+      "id": "p2-object-6",
+      "native_id": "7",
+      "name": "decision-accent",
+      "label": "Decision accent",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.025,
+          0.793518519
+        ],
+        [
+          0.029166667,
+          0.793518519
+        ],
+        [
+          0.029166667,
+          0.917592593
+        ],
+        [
+          0.025,
+          0.917592593
+        ]
+      ],
+      "stack": 5
+    },
+    {
+      "id": "p2-object-7",
+      "native_id": "8",
+      "name": "annual-capacity-chart",
+      "label": "Annual capacity chart",
+      "kind": "chart",
+      "polygon": [
+        [
+          0.016145833,
+          0.300925926
+        ],
+        [
+          0.3390625,
+          0.300925926
+        ],
+        [
+          0.3390625,
+          0.517592593
+        ],
+        [
+          0.016145833,
+          0.517592593
+        ]
+      ],
+      "stack": 6,
+      "chart": {
+        "types": [
+          "barChart"
+        ],
+        "series": [
+          {
+            "name": "Illustrative annual capacity hours",
+            "categories": [
+              "Research\nsynthesis",
+              "Proposal\ndrafting",
+              "Knowledge\nretrieval"
+            ],
+            "values": [
+              1944.0,
+              1440.0,
+              1080.0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "p2-object-8",
+      "native_id": "9",
+      "name": "workflow-assumptions",
+      "label": "Workflow assumptions",
+      "kind": "table",
+      "polygon": [
+        [
+          0.0171875,
+          0.524074074
+        ],
+        [
+          0.3203125,
+          0.524074074
+        ],
+        [
+          0.3203125,
+          0.707407407
+        ],
+        [
+          0.0171875,
+          0.707407407
+        ]
+      ],
+      "stack": 7,
+      "rows": [
+        [
+          "Workflow",
+          "Baseline h",
+          "Adoption",
+          "Time saved"
+        ],
+        [
+          "Research",
+          "12",
+          "60%",
+          "30%"
+        ],
+        [
+          "Proposal",
+          "8",
+          "50%",
+          "40%"
+        ],
+        [
+          "Retrieval",
+          "5",
+          "60%",
+          "40%"
+        ]
+      ]
+    },
+    {
+      "id": "p2-object-9",
+      "native_id": "10",
+      "name": "pilot-sequencing",
+      "label": "Pilot sequencing",
+      "kind": "table",
+      "polygon": [
+        [
+          0.348958333,
+          0.294444444
+        ],
+        [
+          0.693229167,
+          0.294444444
+        ],
+        [
+          0.693229167,
+          0.762962963
+        ],
+        [
+          0.348958333,
+          0.762962963
+        ]
+      ],
+      "stack": 8,
+      "rows": [
+        [
+          "Workflow",
+          "Control readiness",
+          "Owner",
+          "Sequence"
+        ],
+        [
+          "Research\nsynthesis",
+          "Approved corpus\nExplicit review",
+          "Practice\nlead",
+          "START"
+        ],
+        [
+          "Proposal\ndrafting",
+          "Claims and\ncommitments\nneed controls",
+          "BD\nlead",
+          "NEXT"
+        ],
+        [
+          "Knowledge\nretrieval",
+          "Permissions need\ncleanup",
+          "Knowledge\nlead",
+          "LATER"
+        ]
+      ]
+    },
+    {
+      "id": "p2-object-10",
+      "native_id": "11",
+      "name": "headline",
+      "label": "Start where value and control readiness meet",
+      "kind": "text",
+      "polygon": [
+        [
+          0.025,
+          0.076851852
+        ],
+        [
+          0.975,
+          0.076851852
+        ],
+        [
+          0.975,
+          0.150925926
+        ],
+        [
+          0.025,
+          0.150925926
+        ]
+      ],
+      "stack": 9,
+      "text": "Start where value and control readiness meet",
+      "typography": [
+        {
+          "family": "Georgia",
+          "size_pt": 32.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p2-object-11",
+      "native_id": "12",
+      "name": "subtitle",
+      "label": "Capacity creates the opportunity. Control readiness sets the sequence.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.025,
+          0.15462963
+        ],
+        [
+          0.975,
+          0.15462963
+        ],
+        [
+          0.975,
+          0.199074074
+        ],
+        [
+          0.025,
+          0.199074074
+        ]
+      ],
+      "stack": 10,
+      "text": "Capacity creates the opportunity. Control readiness sets the sequence.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 16.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p2-object-12",
+      "native_id": "13",
+      "name": "capacity-heading",
+      "label": "ANNUAL CAPACITY POTENTIAL",
+      "kind": "text",
+      "polygon": [
+        [
+          0.016666667,
+          0.237037037
+        ],
+        [
+          0.339583333,
+          0.237037037
+        ],
+        [
+          0.339583333,
+          0.275925926
+        ],
+        [
+          0.016666667,
+          0.275925926
+        ]
+      ],
+      "stack": 11,
+      "text": "ANNUAL CAPACITY POTENTIAL",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p2-object-13",
+      "native_id": "14",
+      "name": "sequencing-heading",
+      "label": "PILOT SEQUENCING TEST",
+      "kind": "text",
+      "polygon": [
+        [
+          0.348958333,
+          0.237037037
+        ],
+        [
+          0.693229167,
+          0.237037037
+        ],
+        [
+          0.693229167,
+          0.275925926
+        ],
+        [
+          0.348958333,
+          0.275925926
+        ]
+      ],
+      "stack": 12,
+      "text": "PILOT SEQUENCING TEST",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p2-object-14",
+      "native_id": "15",
+      "name": "reason-heading",
+      "label": "WHY RESEARCH WINS FIRST",
+      "kind": "text",
+      "polygon": [
+        [
+          0.719791667,
+          0.237037037
+        ],
+        [
+          0.980208333,
+          0.237037037
+        ],
+        [
+          0.980208333,
+          0.275925926
+        ],
+        [
+          0.719791667,
+          0.275925926
+        ]
+      ],
+      "stack": 13,
+      "text": "WHY RESEARCH WINS FIRST",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p2-object-15",
+      "native_id": "16",
+      "name": "chart-unit",
+      "label": "Illustrative hours",
+      "kind": "text",
+      "polygon": [
+        [
+          0.016666667,
+          0.269444444
+        ],
+        [
+          0.339583333,
+          0.269444444
+        ],
+        [
+          0.339583333,
+          0.302777778
+        ],
+        [
+          0.016666667,
+          0.302777778
+        ]
+      ],
+      "stack": 14,
+      "text": "Illustrative hours",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 12.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p2-object-16",
+      "native_id": "17",
+      "name": "capacity-formula",
+      "label": "Annual hours = 900 engagements × baseline h × adoption…",
+      "kind": "text",
+      "polygon": [
+        [
+          0.016666667,
+          0.713888889
+        ],
+        [
+          0.340104167,
+          0.713888889
+        ],
+        [
+          0.340104167,
+          0.787037037
+        ],
+        [
+          0.016666667,
+          0.787037037
+        ]
+      ],
+      "stack": 15,
+      "text": "Annual hours = 900 engagements ×\nbaseline h × adoption × time saved",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p2-object-17",
+      "native_id": "18",
+      "name": "reason-number-01",
+      "label": "01",
+      "kind": "text",
+      "polygon": [
+        [
+          0.719270833,
+          0.297222222
+        ],
+        [
+          0.756770833,
+          0.297222222
+        ],
+        [
+          0.756770833,
+          0.358333333
+        ],
+        [
+          0.719270833,
+          0.358333333
+        ]
+      ],
+      "stack": 16,
+      "text": "01",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 24.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p2-object-18",
+      "native_id": "19",
+      "name": "reason-title-01",
+      "label": "Frequent, comparable tasks",
+      "kind": "text",
+      "polygon": [
+        [
+          0.766145833,
+          0.290740741
+        ],
+        [
+          0.9890625,
+          0.290740741
+        ],
+        [
+          0.9890625,
+          0.331481481
+        ],
+        [
+          0.766145833,
+          0.331481481
+        ]
+      ],
+      "stack": 17,
+      "text": "Frequent, comparable tasks",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p2-object-19",
+      "native_id": "20",
+      "name": "reason-detail-01",
+      "label": "Many engagements use the same research task.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.766145833,
+          0.323148148
+        ],
+        [
+          0.989583333,
+          0.323148148
+        ],
+        [
+          0.989583333,
+          0.403703704
+        ],
+        [
+          0.766145833,
+          0.403703704
+        ]
+      ],
+      "stack": 18,
+      "text": "Many engagements use the\nsame research task.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p2-object-20",
+      "native_id": "21",
+      "name": "reason-number-02",
+      "label": "02",
+      "kind": "text",
+      "polygon": [
+        [
+          0.719270833,
+          0.427777778
+        ],
+        [
+          0.756770833,
+          0.427777778
+        ],
+        [
+          0.756770833,
+          0.488888889
+        ],
+        [
+          0.719270833,
+          0.488888889
+        ]
+      ],
+      "stack": 19,
+      "text": "02",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 24.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p2-object-21",
+      "native_id": "22",
+      "name": "reason-title-02",
+      "label": "A bounded source corpus",
+      "kind": "text",
+      "polygon": [
+        [
+          0.766145833,
+          0.42962963
+        ],
+        [
+          0.9890625,
+          0.42962963
+        ],
+        [
+          0.9890625,
+          0.47037037
+        ],
+        [
+          0.766145833,
+          0.47037037
+        ]
+      ],
+      "stack": 20,
+      "text": "A bounded source corpus",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p2-object-22",
+      "native_id": "23",
+      "name": "reason-detail-02",
+      "label": "Approved sources limit scope and simplify review.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.766145833,
+          0.462037037
+        ],
+        [
+          0.989583333,
+          0.462037037
+        ],
+        [
+          0.989583333,
+          0.542592593
+        ],
+        [
+          0.766145833,
+          0.542592593
+        ]
+      ],
+      "stack": 21,
+      "text": "Approved sources limit scope\nand simplify review.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p2-object-23",
+      "native_id": "24",
+      "name": "reason-number-03",
+      "label": "03",
+      "kind": "text",
+      "polygon": [
+        [
+          0.719270833,
+          0.567592593
+        ],
+        [
+          0.756770833,
+          0.567592593
+        ],
+        [
+          0.756770833,
+          0.628703704
+        ],
+        [
+          0.719270833,
+          0.628703704
+        ]
+      ],
+      "stack": 22,
+      "text": "03",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 24.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p2-object-24",
+      "native_id": "25",
+      "name": "reason-title-03",
+      "label": "A named expert reviewer",
+      "kind": "text",
+      "polygon": [
+        [
+          0.766145833,
+          0.569444444
+        ],
+        [
+          0.9890625,
+          0.569444444
+        ],
+        [
+          0.9890625,
+          0.610185185
+        ],
+        [
+          0.766145833,
+          0.610185185
+        ]
+      ],
+      "stack": 23,
+      "text": "A named expert reviewer",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p2-object-25",
+      "native_id": "26",
+      "name": "reason-detail-03",
+      "label": "An accountable reviewer verifies outputs before client release.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.766145833,
+          0.601851852
+        ],
+        [
+          0.989583333,
+          0.601851852
+        ],
+        [
+          0.989583333,
+          0.682407407
+        ],
+        [
+          0.766145833,
+          0.682407407
+        ]
+      ],
+      "stack": 24,
+      "text": "An accountable reviewer verifies\noutputs before client release.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p2-object-26",
+      "native_id": "27",
+      "name": "overlap-qualification",
+      "label": "Check task overlap before adding workflow benefits.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.729166667,
+          0.697222222
+        ],
+        [
+          0.971875,
+          0.697222222
+        ],
+        [
+          0.971875,
+          0.773148148
+        ],
+        [
+          0.729166667,
+          0.773148148
+        ]
+      ],
+      "stack": 25,
+      "text": "Check task overlap before adding\nworkflow benefits.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p2-object-27",
+      "native_id": "28",
+      "name": "decision-label",
+      "label": "PILOT BOUNDARY",
+      "kind": "text",
+      "polygon": [
+        [
+          0.052083333,
+          0.82962963
+        ],
+        [
+          0.270833333,
+          0.82962963
+        ],
+        [
+          0.270833333,
+          0.877777778
+        ],
+        [
+          0.052083333,
+          0.877777778
+        ]
+      ],
+      "stack": 26,
+      "text": "PILOT BOUNDARY",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#FD5108",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p2-object-28",
+      "native_id": "29",
+      "name": "decision-message",
+      "label": "Start with approved-source research synthesis.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.291666667,
+          0.82962963
+        ],
+        [
+          0.950520833,
+          0.82962963
+        ],
+        [
+          0.950520833,
+          0.877777778
+        ],
+        [
+          0.291666667,
+          0.877777778
+        ]
+      ],
+      "stack": 27,
+      "text": "Start with approved-source research synthesis.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p2-object-29",
+      "native_id": "30",
+      "name": "Slide Number Placeholder 0",
+      "label": "2",
+      "kind": "text",
+      "polygon": [
+        [
+          0.891666667,
+          0.952777778
+        ],
+        [
+          0.975,
+          0.952777778
+        ],
+        [
+          0.975,
+          0.99537037
+        ],
+        [
+          0.891666667,
+          0.99537037
+        ]
+      ],
+      "stack": 28,
+      "text": "2",
+      "typography": [
+        {
+          "bold": false
+        },
+        {
+          "family": "Arial",
+          "size_pt": 9.0,
+          "color": "#666666"
+        }
+      ]
+    }
+  ]
+}

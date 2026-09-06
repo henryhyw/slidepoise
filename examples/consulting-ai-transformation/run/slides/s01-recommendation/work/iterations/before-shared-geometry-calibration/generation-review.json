@@ -1,0 +1,35 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "stage": "generation",
+  "decision": "accepted",
+  "material_issues": [],
+  "reviewed_artifacts": [
+    {
+      "path": "generated-original.png",
+      "sha256": "ac1988e96491e2c32fedc4cb6b7f3bbd56baa7d08c5467a149b024158d0b68d1"
+    },
+    {
+      "path": "accepted-slide.png",
+      "sha256": "65320ec1e13c44d39f96dd36d5159195731aeb7b1a7444dff652f1bf3f4b24e7"
+    },
+    {
+      "path": "image-edit-request-02.json",
+      "sha256": "184780ae8c61cede82831ba4d14a6a4f7477b2ec83414f69b0dc4b1c7f6175df"
+    },
+    {
+      "path": "generation-contract.json",
+      "sha256": "ac9f03548a6a3510085176afc29cab1c374d4d78ef3aeaed22c784ee25d61033"
+    },
+    {
+      "path": "canvas-normalization.json",
+      "sha256": "b711a9694ba6916708176196b50fa47b73c5bd1267ce06a44b6bb95b7d140ac6"
+    }
+  ],
+  "candidate_index": 3,
+  "observations": [
+    "The third actual candidate shows the exact conditional funding sentence under Fund against evidence. All three research-capacity quantities, their calculations, four gate thresholds and the $25k decision remain visible.",
+    "The candidate uses a substantive-only 2:1 canvas. There is no generated header, footer, page number, logo or decorative arrow. Normalization preserves the entire image at 1920 by 960.",
+    "The three information columns have distinct jobs. Large orange metrics show the economic hypothesis, numbered reasons explain the bounded pilot, and the table supplies observable scale criteria. The pale orange band separates the approval request from supporting evidence.",
+    "The shared Georgia title and Arial role sizes will remain explicit during native reconstruction. Generated glyph proportions and the source decision-band bar differ slightly from exact native typography and the shared 8-pixel bar specification. These will be reviewed in the actual native render without compressing or silently shrinking text."
+  ]
+}

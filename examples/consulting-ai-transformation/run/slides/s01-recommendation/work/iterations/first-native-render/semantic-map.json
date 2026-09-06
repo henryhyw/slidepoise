@@ -1,0 +1,1204 @@
+{
+  "schema_version": "3.2.0",
+  "provenance": {
+    "created_by": "host_agent_visual_reasoning",
+    "source": "accepted_generated_image",
+    "source_sha256": "65320ec1e13c44d39f96dd36d5159195731aeb7b1a7444dff652f1bf3f4b24e7",
+    "composition_policy": "accepted_target_geometry_frozen"
+  },
+  "entities": [
+    {
+      "id": "headline",
+      "display_label": "Prove the research pilot before scaling AI",
+      "kind": "text",
+      "role": "headline",
+      "text": "Prove the research pilot before scaling AI",
+      "text_style_role": "slide_title",
+      "typography_group": "claim-title",
+      "bbox_hint": [
+        45,
+        23,
+        1828,
+        85
+      ],
+      "search_bbox_hint": [
+        43,
+        35,
+        1195,
+        70
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Georgia",
+        "font_weight": "regular",
+        "target_font_size_px": 64,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "pilot-scope",
+      "display_label": "One practice. 15 consultants. 20 paired research tasks. A 12-week, $25k pilot.",
+      "kind": "text",
+      "role": "pilot-scope",
+      "text": "One practice. 15 consultants. 20 paired research tasks. A 12-week, $25k pilot.",
+      "text_style_role": "subtitle",
+      "typography_group": "subtitle",
+      "bbox_hint": [
+        46,
+        118,
+        1827,
+        48
+      ],
+      "search_bbox_hint": [
+        45,
+        129,
+        1051,
+        32
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 32,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "introduction-rule",
+      "display_label": "introduction rule",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        47,
+        186,
+        1827,
+        2
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#AAAAAA",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "capacity-heading",
+      "display_label": "RESEARCH CAPACITY IMPACT IF WE SCALE",
+      "kind": "text",
+      "role": "capacity-heading",
+      "text": "RESEARCH CAPACITY IMPACT IF WE SCALE",
+      "text_style_role": "heading_large",
+      "typography_group": "section-headings",
+      "bbox_hint": [
+        47,
+        229,
+        645,
+        43
+      ],
+      "search_bbox_hint": [
+        47,
+        234,
+        535,
+        25
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "argument-heading",
+      "display_label": "WHY THIS PILOT FIRST",
+      "kind": "text",
+      "role": "argument-heading",
+      "text": "WHY THIS PILOT FIRST",
+      "text_style_role": "heading_large",
+      "typography_group": "section-headings",
+      "bbox_hint": [
+        700,
+        229,
+        498,
+        43
+      ],
+      "search_bbox_hint": [
+        699,
+        234,
+        283,
+        26
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "gate-heading",
+      "display_label": "WEEK-12 SCALE GATE",
+      "kind": "text",
+      "role": "gate-heading",
+      "text": "WEEK-12 SCALE GATE",
+      "text_style_role": "heading_large",
+      "typography_group": "section-headings",
+      "bbox_hint": [
+        1223,
+        229,
+        649,
+        43
+      ],
+      "search_bbox_hint": [
+        1222,
+        234,
+        277,
+        26
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "baseline",
+      "display_label": "10,800 h",
+      "kind": "text",
+      "role": "baseline",
+      "text": "10,800 h",
+      "text_style_role": "large_data_number",
+      "typography_group": "display-data",
+      "bbox_hint": [
+        46,
+        281,
+        588,
+        86
+      ],
+      "search_bbox_hint": [
+        46,
+        294,
+        275,
+        63
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 68,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#FD5108",
+        "style_authority": "agent_visual_observation"
+      },
+      "style_token": "data_highlight"
+    },
+    {
+      "id": "capacity",
+      "display_label": "1,944 h",
+      "kind": "text",
+      "role": "capacity",
+      "text": "1,944 h",
+      "text_style_role": "large_data_number",
+      "typography_group": "display-data",
+      "bbox_hint": [
+        46,
+        461,
+        588,
+        86
+      ],
+      "search_bbox_hint": [
+        45,
+        475,
+        225,
+        60
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 68,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#FD5108",
+        "style_authority": "agent_visual_observation"
+      },
+      "style_token": "data_highlight"
+    },
+    {
+      "id": "capacity-value",
+      "display_label": "$243k",
+      "kind": "text",
+      "role": "capacity-value",
+      "text": "$243k",
+      "text_style_role": "large_data_number",
+      "typography_group": "display-data",
+      "bbox_hint": [
+        46,
+        634,
+        588,
+        86
+      ],
+      "search_bbox_hint": [
+        44,
+        644,
+        208,
+        66
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 68,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#FD5108",
+        "style_authority": "agent_visual_observation"
+      },
+      "style_token": "data_highlight"
+    },
+    {
+      "id": "baseline-label",
+      "display_label": "Annual research baseline",
+      "kind": "text",
+      "role": "baseline-label",
+      "text": "Annual research baseline",
+      "text_style_role": "heading_large",
+      "typography_group": "metric-labels",
+      "bbox_hint": [
+        47,
+        354,
+        604,
+        42
+      ],
+      "search_bbox_hint": [
+        46,
+        364,
+        330,
+        27
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "capacity-label",
+      "display_label": "Potential annual capacity",
+      "kind": "text",
+      "role": "capacity-label",
+      "text": "Potential annual capacity",
+      "text_style_role": "heading_large",
+      "typography_group": "metric-labels",
+      "bbox_hint": [
+        47,
+        532,
+        604,
+        42
+      ],
+      "search_bbox_hint": [
+        47,
+        541,
+        333,
+        27
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "capacity-value-label",
+      "display_label": "Annual capacity equivalent",
+      "kind": "text",
+      "role": "capacity-value-label",
+      "text": "Annual capacity equivalent",
+      "text_style_role": "heading_large",
+      "typography_group": "metric-labels",
+      "bbox_hint": [
+        47,
+        703,
+        604,
+        42
+      ],
+      "search_bbox_hint": [
+        45,
+        714,
+        344,
+        27
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "baseline-formula",
+      "display_label": "900 engagements \u00d7 12 h",
+      "kind": "text",
+      "role": "baseline-formula",
+      "text": "900 engagements \u00d7 12 h",
+      "text_style_role": "body",
+      "typography_group": "metric-calculations",
+      "bbox_hint": [
+        47,
+        392,
+        604,
+        42
+      ],
+      "search_bbox_hint": [
+        46,
+        399,
+        278,
+        29
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "capacity-formula",
+      "display_label": "60% adoption \u00d7 30% time reduction",
+      "kind": "text",
+      "role": "capacity-formula",
+      "text": "60% adoption \u00d7 30% time reduction",
+      "text_style_role": "body",
+      "typography_group": "metric-calculations",
+      "bbox_hint": [
+        47,
+        570,
+        604,
+        42
+      ],
+      "search_bbox_hint": [
+        46,
+        578,
+        401,
+        29
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "capacity-value-formula",
+      "display_label": "1,944 h \u00d7 $125 per hour",
+      "kind": "text",
+      "role": "capacity-value-formula",
+      "text": "1,944 h \u00d7 $125 per hour",
+      "text_style_role": "body",
+      "typography_group": "metric-calculations",
+      "bbox_hint": [
+        47,
+        739,
+        604,
+        42
+      ],
+      "search_bbox_hint": [
+        47,
+        746,
+        271,
+        31
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "metric-divider-1",
+      "display_label": "metric divider 1",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        47,
+        448,
+        531,
+        1
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#B6B6B6",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "metric-divider-2",
+      "display_label": "metric divider 2",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        47,
+        627,
+        531,
+        1
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#B6B6B6",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "argument-number-01",
+      "display_label": "01",
+      "kind": "text",
+      "role": "argument-number-01",
+      "text": "01",
+      "text_style_role": "section_number",
+      "typography_group": "argument-numbers",
+      "bbox_hint": [
+        700,
+        288,
+        70,
+        64
+      ],
+      "search_bbox_hint": [
+        698,
+        299,
+        57,
+        53
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 48,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "argument-title-01",
+      "display_label": "Focus a repeatable task",
+      "kind": "text",
+      "role": "argument-title-01",
+      "text": "Focus a repeatable task",
+      "text_style_role": "heading_large",
+      "typography_group": "argument-titles",
+      "bbox_hint": [
+        783,
+        291,
+        438,
+        44
+      ],
+      "search_bbox_hint": [
+        782,
+        300,
+        353,
+        34
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "argument-detail-01",
+      "display_label": "Approved sources, frequent use and comparable inputs.",
+      "kind": "text",
+      "role": "argument-detail-01",
+      "text": "Approved sources, frequent use\nand comparable inputs.",
+      "text_style_role": "body",
+      "typography_group": "argument-details",
+      "bbox_hint": [
+        783,
+        334,
+        445,
+        87
+      ],
+      "search_bbox_hint": [
+        782,
+        342,
+        442,
+        68
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "line_spacing": 1.3,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "argument-number-02",
+      "display_label": "02",
+      "kind": "text",
+      "role": "argument-number-02",
+      "text": "02",
+      "text_style_role": "section_number",
+      "typography_group": "argument-numbers",
+      "bbox_hint": [
+        700,
+        469,
+        70,
+        64
+      ],
+      "search_bbox_hint": [
+        698,
+        480,
+        57,
+        53
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 48,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "argument-title-02",
+      "display_label": "Preserve expert review",
+      "kind": "text",
+      "role": "argument-title-02",
+      "text": "Preserve expert review",
+      "text_style_role": "heading_large",
+      "typography_group": "argument-titles",
+      "bbox_hint": [
+        783,
+        472,
+        438,
+        44
+      ],
+      "search_bbox_hint": [
+        782,
+        481,
+        353,
+        34
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "argument-detail-02",
+      "display_label": "Verify every client claim before release.",
+      "kind": "text",
+      "role": "argument-detail-02",
+      "text": "Verify every client claim\nbefore release.",
+      "text_style_role": "body",
+      "typography_group": "argument-details",
+      "bbox_hint": [
+        783,
+        515,
+        445,
+        87
+      ],
+      "search_bbox_hint": [
+        782,
+        523,
+        442,
+        68
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "line_spacing": 1.3,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "argument-number-03",
+      "display_label": "03",
+      "kind": "text",
+      "role": "argument-number-03",
+      "text": "03",
+      "text_style_role": "section_number",
+      "typography_group": "argument-numbers",
+      "bbox_hint": [
+        700,
+        647,
+        70,
+        64
+      ],
+      "search_bbox_hint": [
+        698,
+        658,
+        57,
+        53
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 48,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "argument-title-03",
+      "display_label": "Fund against evidence",
+      "kind": "text",
+      "role": "argument-title-03",
+      "text": "Fund against evidence",
+      "text_style_role": "heading_large",
+      "typography_group": "argument-titles",
+      "bbox_hint": [
+        783,
+        650,
+        438,
+        44
+      ],
+      "search_bbox_hint": [
+        782,
+        659,
+        353,
+        34
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "argument-detail-03",
+      "display_label": "Practice lead and CFO release $60k only after the week-12 gate.",
+      "kind": "text",
+      "role": "argument-detail-03",
+      "text": "Practice lead and CFO release\n$60k only after the week-12 gate.",
+      "text_style_role": "body",
+      "typography_group": "argument-details",
+      "bbox_hint": [
+        783,
+        692,
+        445,
+        87
+      ],
+      "search_bbox_hint": [
+        782,
+        700,
+        442,
+        68
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "line_spacing": 1.3,
+        "vertical_alignment": "top",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "argument-divider-1",
+      "display_label": "argument divider 1",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        701,
+        448,
+        439,
+        1
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#B6B6B6",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "argument-divider-2",
+      "display_label": "argument divider 2",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        701,
+        627,
+        439,
+        1
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#B6B6B6",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "scale-gate-table",
+      "display_label": "Four conditions for scaling the research pilot",
+      "kind": "table",
+      "role": "pilot_scale_gate",
+      "bbox_hint": [
+        1224,
+        288,
+        649,
+        473
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 5,
+      "meaningful_visible": true,
+      "table_structure": {
+        "rows": [
+          [
+            {
+              "text": "Measure",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "left"
+              }
+            },
+            {
+              "text": "Minimum to scale",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "left"
+              }
+            }
+          ],
+          [
+            {
+              "text": "Cycle-time reduction",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              }
+            },
+            {
+              "text": "25%",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              }
+            }
+          ],
+          [
+            {
+              "text": "Sampled cited claims verified",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              }
+            },
+            {
+              "text": "95%",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              }
+            }
+          ],
+          [
+            {
+              "text": "Critical data exceptions",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              }
+            },
+            {
+              "text": "0",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              }
+            }
+          ],
+          [
+            {
+              "text": "Weekly-active pilot users",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              }
+            },
+            {
+              "text": "70% \u00b7 at least 11 of 15",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              }
+            }
+          ]
+        ],
+        "column_widths_px": [
+          358,
+          291
+        ],
+        "row_heights_px": [
+          84,
+          96,
+          97,
+          97,
+          99
+        ]
+      },
+      "style_hint": {
+        "font_family": "Arial",
+        "font_size_px": 24,
+        "cell_margin_px": 20,
+        "color": "#000000",
+        "fill": "#FFFFFF",
+        "stroke": "#B5B5B5",
+        "stroke_width_px": 1,
+        "vertical_alignment": "middle"
+      }
+    },
+    {
+      "id": "decision-band",
+      "display_label": "decision band",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        47,
+        805,
+        1826,
+        122
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#FFF5ED",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "decision-accent",
+      "display_label": "decision accent",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        47,
+        805,
+        8,
+        122
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#FD5108",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "decision-label",
+      "display_label": "DECISION REQUESTED",
+      "kind": "text",
+      "role": "decision-label",
+      "text": "DECISION REQUESTED",
+      "text_style_role": "call_to_action",
+      "typography_group": "decision-band",
+      "bbox_hint": [
+        97,
+        843,
+        425,
+        48
+      ],
+      "search_bbox_hint": [
+        96,
+        852,
+        393,
+        38
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "middle",
+        "observed_foreground_color": "#FD5108",
+        "style_authority": "agent_visual_observation"
+      },
+      "style_token": "call_to_action"
+    },
+    {
+      "id": "decision-request",
+      "display_label": "Approve $25k and name a practice sponsor.",
+      "kind": "text",
+      "role": "decision-request",
+      "text": "Approve $25k and name a practice sponsor.",
+      "text_style_role": "call_to_action",
+      "typography_group": "decision-band",
+      "bbox_hint": [
+        562,
+        843,
+        1264,
+        48
+      ],
+      "search_bbox_hint": [
+        561,
+        852,
+        655,
+        38
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "line_spacing": 1.0,
+        "vertical_alignment": "middle",
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    }
+  ]
+}

@@ -1,0 +1,881 @@
+{
+  "schema_version": "2.0.0",
+  "source_scene_evidence": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s04-delivery-roadmap/work/accepted-slide.png",
+  "full_slide_dimensions_px": [
+    1920,
+    1080
+  ],
+  "generation_region": {
+    "offset_y_px": 64,
+    "dimensions_px": [
+      1920,
+      960
+    ]
+  },
+  "coordinate_transform_to_full_slide": {
+    "scale_xy": [
+      1.0,
+      1.0
+    ],
+    "translation_px": [
+      0,
+      64
+    ]
+  },
+  "frame_configuration": {
+    "header": {
+      "enabled": true,
+      "height_px": 64,
+      "implementation": "slide_master_inherited_content",
+      "left_text": "NORTHSTAR ADVISORY",
+      "right_text": "AI TRANSFORMATION",
+      "font_family": "Arial",
+      "font_size_px": 20,
+      "font_weight": "regular",
+      "text_color": "#666666",
+      "secondary_text_color": "#666666",
+      "rule_color": "#DFE3E6",
+      "rule_width_px": 1,
+      "accent_color": "#FD5108",
+      "accent_rule_width_px": 0,
+      "outer_padding_px": 48
+    },
+    "footer": {
+      "enabled": true,
+      "height_px": 56,
+      "implementation": "slide_master_inherited_content",
+      "left_text": "ILLUSTRATIVE PLANNING ASSUMPTIONS",
+      "center_text": "Capacity value is not a cash saving.",
+      "font_family": "Arial",
+      "font_size_px": 18,
+      "font_weight": "regular",
+      "left_font_weight": "regular",
+      "text_color": "#666666",
+      "secondary_text_color": "#666666",
+      "rule_color": "#DFE3E6",
+      "rule_width_px": 1,
+      "outer_padding_px": 48,
+      "slide_number": {
+        "enabled": true,
+        "implementation": "native_slide_number_field_on_master",
+        "format": "{slide_number}"
+      }
+    },
+    "generation_region": {
+      "derive_from_frame_heights": true
+    },
+    "slide_number": 1
+  },
+  "speaker_notes": [
+    "Each pilot engagement supplies one research task. Twenty paired tasks correspond to twenty engagements.",
+    "The practice lead and CFO release scale funding only after the evidence gates are reviewed. Critical data exceptions stop expansion."
+  ],
+  "reconstruction_units": [
+    {
+      "id": "headline",
+      "semantic_kind": "text",
+      "semantic_role": "headline",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "headline",
+      "bbox_px": [
+        48,
+        19,
+        1825,
+        80
+      ],
+      "component_id": null
+    },
+    {
+      "id": "subtitle",
+      "semantic_kind": "text",
+      "semantic_role": "subtitle",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "subtitle",
+      "bbox_px": [
+        48,
+        103,
+        1824,
+        50
+      ],
+      "component_id": null
+    },
+    {
+      "id": "introduction-rule",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "introduction-rule",
+      "bbox_px": [
+        48,
+        165,
+        1824,
+        2
+      ],
+      "component_id": null
+    },
+    {
+      "id": "delivery-matrix",
+      "semantic_kind": "table",
+      "semantic_role": "time_and_accountability_matrix",
+      "selected_route": "native_table",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "delivery-matrix",
+      "bbox_px": [
+        50,
+        187,
+        1223,
+        565
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gates-heading",
+      "semantic_kind": "text",
+      "semantic_role": "gates-heading",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gates-heading",
+      "bbox_px": [
+        1335,
+        178,
+        530,
+        43
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-timeline",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-timeline",
+      "bbox_px": [
+        1377,
+        245,
+        435,
+        2
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-1-field",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "fitted_freeform",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-1-field",
+      "bbox_px": [
+        1313,
+        254,
+        137,
+        238
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-1-marker",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-1-marker",
+      "bbox_px": [
+        1363,
+        231,
+        30,
+        30
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-1-label",
+      "semantic_kind": "text",
+      "semantic_role": "gate-1-label",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-1-label",
+      "bbox_px": [
+        1323,
+        279,
+        117,
+        42
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-1-week",
+      "semantic_kind": "text",
+      "semantic_role": "gate-1-week",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-1-week",
+      "bbox_px": [
+        1318,
+        318,
+        127,
+        38
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-1-rule",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-1-rule",
+      "bbox_px": [
+        1337,
+        363,
+        88,
+        1
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-1-evidence",
+      "semantic_kind": "text",
+      "semantic_role": "gate-1-evidence",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-1-evidence",
+      "bbox_px": [
+        1315,
+        375,
+        133,
+        114
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-2-field",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "fitted_freeform",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-2-field",
+      "bbox_px": [
+        1454,
+        254,
+        137,
+        238
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-2-marker",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-2-marker",
+      "bbox_px": [
+        1507,
+        231,
+        30,
+        30
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-2-label",
+      "semantic_kind": "text",
+      "semantic_role": "gate-2-label",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-2-label",
+      "bbox_px": [
+        1464,
+        279,
+        117,
+        42
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-2-week",
+      "semantic_kind": "text",
+      "semantic_role": "gate-2-week",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-2-week",
+      "bbox_px": [
+        1459,
+        318,
+        127,
+        38
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-2-rule",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-2-rule",
+      "bbox_px": [
+        1478,
+        363,
+        88,
+        1
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-2-evidence",
+      "semantic_kind": "text",
+      "semantic_role": "gate-2-evidence",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-2-evidence",
+      "bbox_px": [
+        1456,
+        375,
+        133,
+        114
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-3-field",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "fitted_freeform",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-3-field",
+      "bbox_px": [
+        1596,
+        254,
+        137,
+        238
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-3-marker",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-3-marker",
+      "bbox_px": [
+        1650,
+        231,
+        30,
+        30
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-3-label",
+      "semantic_kind": "text",
+      "semantic_role": "gate-3-label",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-3-label",
+      "bbox_px": [
+        1606,
+        279,
+        117,
+        42
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-3-week",
+      "semantic_kind": "text",
+      "semantic_role": "gate-3-week",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-3-week",
+      "bbox_px": [
+        1601,
+        318,
+        127,
+        38
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-3-rule",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-3-rule",
+      "bbox_px": [
+        1620,
+        363,
+        88,
+        1
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-3-evidence",
+      "semantic_kind": "text",
+      "semantic_role": "gate-3-evidence",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-3-evidence",
+      "bbox_px": [
+        1598,
+        375,
+        133,
+        114
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-4-field",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "fitted_freeform",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-4-field",
+      "bbox_px": [
+        1740,
+        254,
+        137,
+        238
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-4-marker",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-4-marker",
+      "bbox_px": [
+        1797,
+        231,
+        30,
+        30
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-4-label",
+      "semantic_kind": "text",
+      "semantic_role": "gate-4-label",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-4-label",
+      "bbox_px": [
+        1750,
+        279,
+        117,
+        42
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-4-week",
+      "semantic_kind": "text",
+      "semantic_role": "gate-4-week",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-4-week",
+      "bbox_px": [
+        1745,
+        318,
+        127,
+        38
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-4-rule",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-4-rule",
+      "bbox_px": [
+        1764,
+        363,
+        88,
+        1
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gate-4-evidence",
+      "semantic_kind": "text",
+      "semantic_role": "gate-4-evidence",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gate-4-evidence",
+      "bbox_px": [
+        1742,
+        375,
+        133,
+        114
+      ],
+      "component_id": null
+    },
+    {
+      "id": "gates-bottom-rule",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "gates-bottom-rule",
+      "bbox_px": [
+        1300,
+        510,
+        586,
+        1
+      ],
+      "component_id": null
+    },
+    {
+      "id": "dependencies-heading",
+      "semantic_kind": "text",
+      "semantic_role": "dependencies-heading",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "dependencies-heading",
+      "bbox_px": [
+        1330,
+        526,
+        535,
+        43
+      ],
+      "component_id": null
+    },
+    {
+      "id": "dependency-1-circle",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "dependency-1-circle",
+      "bbox_px": [
+        1328,
+        580,
+        42,
+        42
+      ],
+      "component_id": null
+    },
+    {
+      "id": "dependency-1-arrow",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "fitted_freeform",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "dependency-1-arrow",
+      "bbox_px": [
+        1338,
+        591,
+        22,
+        22
+      ],
+      "component_id": null
+    },
+    {
+      "id": "dependency-1-text",
+      "semantic_kind": "text",
+      "semantic_role": "dependency-1-text",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "dependency-1-text",
+      "bbox_px": [
+        1389,
+        581,
+        480,
+        44
+      ],
+      "component_id": null
+    },
+    {
+      "id": "dependency-1-rule",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "dependency-1-rule",
+      "bbox_px": [
+        1312,
+        632,
+        555,
+        1
+      ],
+      "component_id": null
+    },
+    {
+      "id": "dependency-2-circle",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "dependency-2-circle",
+      "bbox_px": [
+        1328,
+        647,
+        42,
+        42
+      ],
+      "component_id": null
+    },
+    {
+      "id": "dependency-2-arrow",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "fitted_freeform",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "dependency-2-arrow",
+      "bbox_px": [
+        1338,
+        658,
+        22,
+        22
+      ],
+      "component_id": null
+    },
+    {
+      "id": "dependency-2-text",
+      "semantic_kind": "text",
+      "semantic_role": "dependency-2-text",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "dependency-2-text",
+      "bbox_px": [
+        1389,
+        648,
+        480,
+        44
+      ],
+      "component_id": null
+    },
+    {
+      "id": "dependency-2-rule",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "dependency-2-rule",
+      "bbox_px": [
+        1312,
+        699,
+        555,
+        1
+      ],
+      "component_id": null
+    },
+    {
+      "id": "dependency-3-circle",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "dependency-3-circle",
+      "bbox_px": [
+        1328,
+        714,
+        42,
+        42
+      ],
+      "component_id": null
+    },
+    {
+      "id": "dependency-3-arrow",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "fitted_freeform",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "dependency-3-arrow",
+      "bbox_px": [
+        1338,
+        725,
+        22,
+        22
+      ],
+      "component_id": null
+    },
+    {
+      "id": "dependency-3-text",
+      "semantic_kind": "text",
+      "semantic_role": "dependency-3-text",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "dependency-3-text",
+      "bbox_px": [
+        1389,
+        715,
+        480,
+        44
+      ],
+      "component_id": null
+    },
+    {
+      "id": "decision-band",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "decision-band",
+      "bbox_px": [
+        48,
+        793,
+        1824,
+        134
+      ],
+      "component_id": null
+    },
+    {
+      "id": "decision-accent",
+      "semantic_kind": "shape",
+      "semantic_role": null,
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "decision-accent",
+      "bbox_px": [
+        48,
+        793,
+        8,
+        134
+      ],
+      "component_id": null
+    },
+    {
+      "id": "decision-label",
+      "semantic_kind": "text",
+      "semantic_role": "decision-label",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "decision-label",
+      "bbox_px": [
+        100,
+        832,
+        420,
+        52
+      ],
+      "component_id": null
+    },
+    {
+      "id": "decision-message",
+      "semantic_kind": "text",
+      "semantic_role": "decision-message",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "decision-message",
+      "bbox_px": [
+        560,
+        832,
+        1265,
+        52
+      ],
+      "component_id": null
+    }
+  ],
+  "canonical_asset_mappings": [],
+  "connector_reconstruction_plans": [],
+  "connector_configuration": {
+    "allowed_families": [
+      "direct_flow",
+      "orthogonal_dependency",
+      "merge_split",
+      "grouping_bracket",
+      "grouping_brace",
+      "annotation_leader"
+    ],
+    "stroke": {
+      "color": "#FD5108",
+      "width_px": 3,
+      "dash": "solid",
+      "line_cap": "round",
+      "line_join": "round"
+    },
+    "arrowhead": {
+      "type": "triangle",
+      "powerpoint_size": "lg",
+      "minimum_visible_endpoint_px": 18,
+      "minimum_clear_segment_px": 16,
+      "length_px": 14,
+      "width_px": 12
+    },
+    "routing": {
+      "minimum_clearance_px": 12,
+      "maximum_ordinary_bends": 2,
+      "grouping_brace_depth_px": 34,
+      "grouping_bracket_depth_px": 22,
+      "grouping_brace_preset_depth_factor": 1.7
+    }
+  },
+  "z_order_relations": [],
+  "fitted_text_contracts": [],
+  "layout_constraints": {
+    "non_overlap_pairs": [
+      [
+        "headline",
+        "subtitle"
+      ],
+      [
+        "delivery-matrix",
+        "decision-band"
+      ]
+    ]
+  },
+  "evidence_policy": {
+    "pixel_evidence_emits_objects": false,
+    "generated_icon_glyphs_emit_objects": false,
+    "meaningful_visible_entity_must_emit_or_have_emitted_owner": true,
+    "accepted_target_geometry_frozen": true
+  }
+}

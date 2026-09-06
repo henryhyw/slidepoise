@@ -1,0 +1,44 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "stage": "generation",
+  "decision": "accepted",
+  "material_issues": [],
+  "candidate_index": 2,
+  "reviewed_artifacts": [
+    {
+      "path": "generated-original.png",
+      "sha256": "2f5b611ad8cfbd51ab8a2b0d4d4d2c2c392318118d074d473f23040e22e8d3ff"
+    },
+    {
+      "path": "accepted-slide.png",
+      "sha256": "c8ead882cc20d711d3079b79629448058d9fb0c80716cf7154ccf3ce4cae11b6"
+    },
+    {
+      "path": "image-edit-request-01.json",
+      "sha256": "506c9a8db20bf90e7af47a867d341d99ce6d519b6f4eda2deba89122b0cb38af"
+    },
+    {
+      "path": "generation-contract.json",
+      "sha256": "80d3bba6b9aeb115b5ac6b63f28eb01e8be76a96b652c7dcf26200e649ed6199"
+    },
+    {
+      "path": "canvas-normalization.json",
+      "sha256": "9e8cd5e6007f8b82b539f416768b2e6edc2ed4922327697556ad814de0130817"
+    },
+    {
+      "path": "generation-call.json",
+      "sha256": "1579dc1f005c37e991595537feca86562557702025a44d4ef96c3044f0e5430e"
+    },
+    {
+      "path": "generation-attempt-01/generation-call-and-review.json",
+      "sha256": "e771a614602095c584f2bc707dee5606eb6b508d15d8a3511f946bdfc789d2fa"
+    }
+  ],
+  "observations": [
+    "The corrected candidate has four ordered stages, three forward arrows, the complete twenty-five-cell responsibility matrix and both requested feedback labels. Shared controls, paired-task measurement and the release rule remain visible.",
+    "The two orange return paths occupy separate non-crossing corridors. The left returns Grounded draft to Approved sources. The right returns Expert review to Grounded draft. Small raster endpoint gaps will be closed at the observed table-column boundary while preserving the accepted curve corridors and semantic direction.",
+    "The complete substantive-only image has a 2:1 aspect ratio and no generated header, footer or page number. The full source was proportionally resized to1920 by960 without cropping.",
+    "Georgia64, Arial32/28/24 and decision-band28 are retained as native peer roles. Generated narrow glyphs are not compressed in native text. The supporting column may require additional normal line breaks. The shared8-pixel decision accent replaces the slightly wider generated accent.",
+    "All visual elements are native-friendly. Cubic freeforms preserve the return curves without claiming automatic attachment to table columns after Office edits."
+  ]
+}

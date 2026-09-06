@@ -1,0 +1,4 @@
+convert /Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s05-investment-decision/deliverables/slide.pptx as a Impress document -> /private/var/folders/bt/084y_dbn6bv6q132f5ctpxqm0000gn/T/slidepoise-render-otd5zxpf/slide.pdf using filter : impress_pdf_Export
+{
+  "render": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s05-investment-decision/deliverables/render.png"
+}

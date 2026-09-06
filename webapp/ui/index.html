@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SlidePoise</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/panel.css">
+</head>
+<body>
+  <div class="companion-shell">
+    <main class="panel-main"><section id="session-content"></section></main>
+  </div>
+  <dialog id="editor-dialog" aria-labelledby="editor-title" aria-describedby="editor-help">
+    <form id="editor-form">
+      <div class="dialog-heading">
+        <div><p class="eyebrow" id="editor-scope"></p><h2 id="editor-title"></h2></div>
+        <button type="button" class="icon-button" data-close aria-label="Close">×</button>
+      </div>
+      <div id="editor-fields"></div>
+      <p class="setting-help" id="editor-help"></p>
+      <p id="editor-error" class="error-message" role="alert" hidden></p>
+      <div class="dialog-actions">
+        <button type="button" class="quiet-button" data-close>Cancel</button>
+        <button class="primary-button" id="editor-save" type="submit">Apply</button>
+      </div>
+    </form>
+  </dialog>
+  <dialog id="preview-dialog" aria-labelledby="preview-title">
+    <div class="preview-shell">
+      <div class="dialog-heading">
+        <h2 id="preview-title">Preview</h2>
+        <div class="inline-actions">
+          <button class="text-button" id="zoom-preview">Zoom in</button>
+          <button class="icon-button" data-close aria-label="Close">×</button>
+        </div>
+      </div>
+      <div id="preview-body"></div>
+    </div>
+  </dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script src="/dialog-dismiss.js"></script>
+  <script src="/app.js"></script>
+  <script src="/authoring.js"></script>
+  <script src="/session-panel.js"></script>
+</body>
+</html>

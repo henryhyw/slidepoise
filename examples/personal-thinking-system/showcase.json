@@ -1,0 +1,133 @@
+{
+  "id": "personal-thinking-system",
+  "title": "A second thinking system",
+  "subtitle": "A point of view, kept visible.",
+  "style": "Editorial",
+  "label": "Editorial",
+  "summary": "An authored sample essay about working with AI while keeping a point of view.",
+  "slides": [
+    {
+      "id": "s01-opening",
+      "title": "A second thinking system",
+      "claim": "Working with AI without outsourcing a point of view. · FIELD NOTES / 01 · An essay in five parts",
+      "target": "assets/s01-opening-target.png",
+      "render": "assets/s01-opening-render.png",
+      "thumbnail": "assets/s01-opening-render.png",
+      "scene": "run/slides/s01-opening/work/reconstruction/constructor-scene.json",
+      "evidence": "assets/s01-opening-semantic.png",
+      "objects": "assets/s01-opening-objects.json",
+      "semantic": "run/slides/s01-opening/work/semantic-map.json",
+      "measurement": "run/slides/s01-opening/work/reconstruction/measurement/slide_entities.json",
+      "measurement_overlay": "run/slides/s01-opening/work/reconstruction/measurement/debug_overlay.png"
+    },
+    {
+      "id": "s02-question",
+      "title": "Keep the question open.",
+      "claim": "A fast answer can close a thought too early. · What am I assuming? · What would change my mind? · The useful conversation begins with a better question. · FIELD NOTES / 02",
+      "target": "assets/s02-question-target.png",
+      "render": "assets/s02-question-render.png",
+      "thumbnail": "assets/s02-question-render.png",
+      "scene": "run/slides/s02-question/work/reconstruction/constructor-scene.json",
+      "evidence": "assets/s02-question-semantic.png",
+      "objects": "assets/s02-question-objects.json",
+      "semantic": "run/slides/s02-question/work/semantic-map.json",
+      "measurement": "run/slides/s02-question/work/reconstruction/measurement/slide_entities.json",
+      "measurement_overlay": "run/slides/s02-question/work/reconstruction/measurement/debug_overlay.png"
+    },
+    {
+      "id": "s03-practice",
+      "title": "Collect. Connect. Challenge.",
+      "claim": "Collect · Keep the source close. · Connect · Put distant ideas in contact. · Challenge · Ask what the pattern leaves out. · Three moves for a thought worth keeping. · FIELD NOTES / 03",
+      "target": "assets/s03-practice-target.png",
+      "render": "assets/s03-practice-render.png",
+      "thumbnail": "assets/s03-practice-render.png",
+      "scene": "run/slides/s03-practice/work/reconstruction/constructor-scene.json",
+      "evidence": "assets/s03-practice-semantic.png",
+      "objects": "assets/s03-practice-objects.json",
+      "semantic": "run/slides/s03-practice/work/semantic-map.json",
+      "measurement": "run/slides/s03-practice/work/reconstruction/measurement/slide_entities.json",
+      "measurement_overlay": "run/slides/s03-practice/work/reconstruction/measurement/debug_overlay.png"
+    },
+    {
+      "id": "s04-trace",
+      "title": "Leave a trace of the thinking.",
+      "claim": "Source · What did I encounter? · Question · What does it unsettle? · Counterargument · What is the strongest objection? · Decision · What will I carry forward? · A small record makes a conversation reusable. · FIELD NOTES / 04",
+      "target": "assets/s04-trace-target.png",
+      "render": "assets/s04-trace-render.png",
+      "thumbnail": "assets/s04-trace-render.png",
+      "scene": "run/slides/s04-trace/work/reconstruction/constructor-scene.json",
+      "evidence": "assets/s04-trace-semantic.png",
+      "objects": "assets/s04-trace-objects.json",
+      "semantic": "run/slides/s04-trace/work/semantic-map.json",
+      "measurement": "run/slides/s04-trace/work/reconstruction/measurement/slide_entities.json",
+      "measurement_overlay": "run/slides/s04-trace/work/reconstruction/measurement/debug_overlay.png"
+    },
+    {
+      "id": "s05-close",
+      "title": "The point of view is still yours.",
+      "claim": "Let the system widen the field. · Choose what deserves to remain. · A second thinking system. A first-person responsibility. · FIELD NOTES / 05",
+      "target": "assets/s05-close-target.png",
+      "render": "assets/s05-close-render.png",
+      "thumbnail": "assets/s05-close-render.png",
+      "scene": "run/slides/s05-close/work/reconstruction/constructor-scene.json",
+      "evidence": "assets/s05-close-semantic.png",
+      "objects": "assets/s05-close-objects.json",
+      "semantic": "run/slides/s05-close/work/semantic-map.json",
+      "measurement": "run/slides/s05-close/work/reconstruction/measurement/slide_entities.json",
+      "measurement_overlay": "run/slides/s05-close/work/reconstruction/measurement/debug_overlay.png"
+    }
+  ],
+  "downloads": {
+    "pptx": "deliverables/presentation.pptx"
+  },
+  "process": [
+    {
+      "title": "Start with a story",
+      "description": "The outline gives each slide a purpose and leaves room for its own composition.",
+      "artifact": "run/work/deck-outline.json"
+    },
+    {
+      "title": "Give the idea a visual form",
+      "description": "The generated design becomes the visual reference for the editable slide.",
+      "artifact": "assets/s04-trace-target.png"
+    },
+    {
+      "title": "Name what should stay editable",
+      "description": "The Agent identifies the text and artwork that give the slide its meaning.",
+      "artifact": "assets/s04-trace-semantic.png"
+    },
+    {
+      "title": "Measure the visible evidence",
+      "description": "OpenCV measures visible ink and geometry in the regions the Agent has identified.",
+      "artifact": "run/slides/s04-trace/work/reconstruction/measurement/debug_overlay.png"
+    },
+    {
+      "title": "Construct the native objects",
+      "description": "The scene connects typography, geometry and source artwork to native PowerPoint objects.",
+      "artifact": "run/slides/s04-trace/work/reconstruction/constructor-scene.json"
+    },
+    {
+      "title": "Review the actual PowerPoint",
+      "description": "The generated target and rendered PowerPoint are shown together for visual review.",
+      "artifact": "run/slides/s04-trace/deliverables/comparison.png"
+    },
+    {
+      "title": "Keep the series coherent",
+      "description": "The Agent compares the actual pages and applies one Field Notes identity. The review records the shared role, its page aliases and the preserved artwork.",
+      "artifact": "run/work/deck-review.json"
+    }
+  ],
+  "revision": 2,
+  "canvas": {
+    "full_slide_px": [
+      1600,
+      900
+    ],
+    "content_region_px": [
+      0,
+      0,
+      1600,
+      900
+    ]
+  }
+}

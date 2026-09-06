@@ -1,0 +1,53 @@
+{
+  "audience_question": "Leave a trace of the thinking.",
+  "dominant_message": "Leave a trace of the thinking.",
+  "information_structure": {
+    "type": "method",
+    "description": "Visual composition follows the communication job and active profile."
+  },
+  "required_content": [
+    "Source",
+    "What did I encounter?",
+    "Question",
+    "What does it unsettle?",
+    "Counterargument",
+    "What is the strongest objection?",
+    "Decision",
+    "What will I carry forward?",
+    "A small record makes a conversation reusable.",
+    "FIELD NOTES / 04"
+  ],
+  "semantic_relationships": [],
+  "hierarchy": [
+    "Leave a trace of the thinking.",
+    "Source",
+    "What did I encounter?",
+    "Question",
+    "What does it unsettle?",
+    "Counterargument",
+    "What is the strongest objection?",
+    "Decision",
+    "What will I carry forward?",
+    "A small record makes a conversation reusable.",
+    "FIELD NOTES / 04"
+  ],
+  "evidence": [
+    "An authored editorial essay for the SlidePoise showcase. First-person framing is illustrative and does not assert the user's personal history."
+  ],
+  "assumptions": [
+    "An authored editorial essay for the SlidePoise showcase. First-person framing is illustrative and does not assert the user's personal history."
+  ],
+  "open_questions": [],
+  "avoid": [
+    "Generic dashboard cards",
+    "Extra factual claims",
+    "Decorative logos"
+  ],
+  "visual_obligations": [
+    "Keep required presentation copy visually clear and separable from artwork."
+  ],
+  "user_required_assets": [],
+  "density_intent": "balanced",
+  "explicit_user_visual_requirements": []
+}
+

@@ -1,0 +1,14 @@
+{
+  "source_sha256": "aec72faebe53cdaf2c0820391eadd344d34b3f5de4927e7c3a0444ff8f40ca9b",
+  "render_sha256": "1dfd8f855dff83a2c369a0c0133a43175bcf8000076e42d4a62e98b3726ea593",
+  "slide_number": 3,
+  "dpi": 160,
+  "font_environment": {
+    "fontconfig_source": "macos_system_font_directories",
+    "font_directories": [
+      "/System/Library/Fonts",
+      "/Library/Fonts",
+      "/Users/henry/Library/Fonts"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "selected_assets": [],
+  "sources": [
+    "Host-authored illustrative Northstar Advisory planning model"
+  ],
+  "speaker_notes": [
+    "All quantities are illustrative planning assumptions. Capacity value is not a cash saving.",
+    "The 95% gate applies to a sampled test set. Each client release separately requires expert verification and engagement-lead approval.",
+    "At least 11 of 15 pilot users must be weekly active. One comparable research task is measured per pilot engagement."
+  ],
+  "notes": [
+    "Reconstruction uses a 1920 by 960 substantive canvas, translated down 64 pixels into a 1920 by 1080 presentation with an inherited frame.",
+    "Georgia title stays 64 pixels, Arial section and body roles 28 pixels, table 24 pixels and both decision-band texts 28 pixels. Source condensed glyph proportions are not imitated by compressing type.",
+    "The shared design specifies an 8-pixel decision bar. Its native width follows that shared value, while the accepted source bar is slightly wider.",
+    "No icon, directed connector or raster illustration appears on this opening page. The numeric reasons are ordering labels, and the thin rules separate evidence groups."
+  ]
+}

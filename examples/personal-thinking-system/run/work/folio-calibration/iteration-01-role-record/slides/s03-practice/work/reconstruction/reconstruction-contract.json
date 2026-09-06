@@ -1,0 +1,356 @@
+{
+  "schema_version": "2.0.0",
+  "source_scene_evidence": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s03-practice/work/accepted-slide.png",
+  "full_slide_dimensions_px": [
+    1600,
+    900
+  ],
+  "generation_region": {
+    "offset_y_px": 0,
+    "dimensions_px": [
+      1600,
+      900
+    ]
+  },
+  "coordinate_transform_to_full_slide": {
+    "scale_xy": [
+      0.9569377990430622,
+      0.9564293304994687
+    ],
+    "translation_px": [
+      0,
+      0
+    ]
+  },
+  "frame_configuration": {
+    "header": {
+      "enabled": false,
+      "height_px": 34,
+      "implementation": "slide_master_inherited_content",
+      "left_text": "",
+      "right_text": "",
+      "font_family": "Arial",
+      "font_size_px": 11,
+      "font_weight": "regular",
+      "text_color": "#505050",
+      "secondary_text_color": "#8F8F8F",
+      "rule_color": "#D8D7D3",
+      "rule_width_px": 1,
+      "accent_color": "#242321",
+      "accent_rule_width_px": 0,
+      "outer_padding_px": 56
+    },
+    "footer": {
+      "enabled": false,
+      "height_px": 34,
+      "implementation": "slide_master_inherited_content",
+      "left_text": "",
+      "center_text": "",
+      "font_family": "Arial",
+      "font_size_px": 10,
+      "font_weight": "regular",
+      "left_font_weight": "regular",
+      "text_color": "#686868",
+      "secondary_text_color": "#8F8F8F",
+      "rule_color": "#D8D7D3",
+      "rule_width_px": 1,
+      "outer_padding_px": 56,
+      "slide_number": {
+        "enabled": true,
+        "implementation": "native_slide_number_field_on_master",
+        "format": "{slide_number}"
+      }
+    },
+    "generation_region": {
+      "derive_from_frame_heights": true
+    },
+    "slide_number": 3
+  },
+  "reconstruction_units": [
+    {
+      "id": "paper-field",
+      "semantic_kind": "shape",
+      "semantic_role": "paper-field",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "paper-field",
+      "bbox_px": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "component_id": null
+    },
+    {
+      "id": "practice-title",
+      "semantic_kind": "text",
+      "semantic_role": "practice-title",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "practice-title",
+      "bbox_px": [
+        64,
+        43,
+        1310,
+        175
+      ],
+      "component_id": null
+    },
+    {
+      "id": "practice-subtitle",
+      "semantic_kind": "text",
+      "semantic_role": "practice-subtitle",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "practice-subtitle",
+      "bbox_px": [
+        71,
+        197,
+        700,
+        46
+      ],
+      "component_id": null
+    },
+    {
+      "id": "collect-heading",
+      "semantic_kind": "text",
+      "semantic_role": "collect-heading",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "collect-heading",
+      "bbox_px": [
+        73,
+        286,
+        330,
+        92
+      ],
+      "component_id": null
+    },
+    {
+      "id": "connect-heading",
+      "semantic_kind": "text",
+      "semantic_role": "connect-heading",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "connect-heading",
+      "bbox_px": [
+        627,
+        286,
+        370,
+        92
+      ],
+      "component_id": null
+    },
+    {
+      "id": "challenge-heading",
+      "semantic_kind": "text",
+      "semantic_role": "challenge-heading",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "challenge-heading",
+      "bbox_px": [
+        1141,
+        286,
+        435,
+        92
+      ],
+      "component_id": null
+    },
+    {
+      "id": "collect-caption",
+      "semantic_kind": "text",
+      "semantic_role": "collect-caption",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "collect-caption",
+      "bbox_px": [
+        77,
+        376,
+        430,
+        38
+      ],
+      "component_id": null
+    },
+    {
+      "id": "connect-caption",
+      "semantic_kind": "text",
+      "semantic_role": "connect-caption",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "connect-caption",
+      "bbox_px": [
+        630,
+        376,
+        430,
+        38
+      ],
+      "component_id": null
+    },
+    {
+      "id": "challenge-caption",
+      "semantic_kind": "text",
+      "semantic_role": "challenge-caption",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "challenge-caption",
+      "bbox_px": [
+        1142,
+        376,
+        460,
+        38
+      ],
+      "component_id": null
+    },
+    {
+      "id": "column-rule-one",
+      "semantic_kind": "shape",
+      "semantic_role": "column-rule-one",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "column-rule-one",
+      "bbox_px": [
+        578,
+        317,
+        1,
+        482
+      ],
+      "component_id": null
+    },
+    {
+      "id": "column-rule-two",
+      "semantic_kind": "shape",
+      "semantic_role": "column-rule-two",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "column-rule-two",
+      "bbox_px": [
+        1091,
+        317,
+        1,
+        482
+      ],
+      "component_id": null
+    },
+    {
+      "id": "collect-collage",
+      "semantic_kind": "image",
+      "semantic_role": "editorial_collage",
+      "selected_route": "screenshot_crop",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "collect-collage",
+      "bbox_px": [
+        69,
+        420,
+        412,
+        383
+      ],
+      "component_id": null
+    },
+    {
+      "id": "connect-collage",
+      "semantic_kind": "image",
+      "semantic_role": "editorial_collage",
+      "selected_route": "screenshot_crop",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "connect-collage",
+      "bbox_px": [
+        639,
+        423,
+        380,
+        394
+      ],
+      "component_id": null
+    },
+    {
+      "id": "challenge-collage",
+      "semantic_kind": "image",
+      "semantic_role": "editorial_collage",
+      "selected_route": "screenshot_crop",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "challenge-collage",
+      "bbox_px": [
+        1137,
+        421,
+        436,
+        392
+      ],
+      "component_id": null
+    },
+    {
+      "id": "field-note",
+      "semantic_kind": "text",
+      "semantic_role": "publication_folio",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "field-note",
+      "bbox_px": [
+        90,
+        868,
+        300,
+        38
+      ],
+      "component_id": null
+    }
+  ],
+  "canonical_asset_mappings": [],
+  "connector_reconstruction_plans": [],
+  "connector_configuration": {
+    "allowed_families": [
+      "direct_flow",
+      "orthogonal_dependency",
+      "merge_split",
+      "grouping_bracket",
+      "grouping_brace",
+      "annotation_leader"
+    ],
+    "stroke": {
+      "color": "#505050",
+      "width_px": 2,
+      "dash": "solid",
+      "line_cap": "round",
+      "line_join": "round"
+    },
+    "arrowhead": {
+      "type": "triangle",
+      "powerpoint_size": "sm",
+      "minimum_visible_endpoint_px": 14,
+      "minimum_clear_segment_px": 18,
+      "length_px": 10,
+      "width_px": 8
+    },
+    "routing": {
+      "minimum_clearance_px": 12,
+      "maximum_ordinary_bends": 2,
+      "grouping_brace_depth_px": 34,
+      "grouping_bracket_depth_px": 22,
+      "grouping_brace_preset_depth_factor": 1.7
+    }
+  },
+  "z_order_relations": [],
+  "fitted_text_contracts": [],
+  "layout_constraints": {
+    "non_overlap_pairs": []
+  },
+  "evidence_policy": {
+    "pixel_evidence_emits_objects": false,
+    "generated_icon_glyphs_emit_objects": false,
+    "meaningful_visible_entity_must_emit_or_have_emitted_owner": true,
+    "accepted_target_geometry_frozen": true
+  }
+}

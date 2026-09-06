@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "reviewer": "host_agent",
+  "reviewed_at": "2026-09-05T11:45:49Z",
+  "scope": "Static project showcase and portable artifact delivery",
+  "preview_url": "http://127.0.0.1:8767/docs/site/",
+  "published_externally": false,
+  "visual_review": [
+    {
+      "artifact": "actual-desktop.png",
+      "sha256": "fe8e3784ba63aabe76c826246baaf5361085786fd5f09cf68132cdafcd0f2f9c",
+      "captured_at": "2026-09-05T11:30:52Z",
+      "viewport": { "width": 1440, "height": 1000 },
+      "method": "Installed Chrome headless renderer with an isolated temporary user data directory against the actual repository page",
+      "observations": [
+        "The editorial headline, navigation and Consulting presentation share a clear visual hierarchy.",
+        "The opening PowerPoint render is visible at a useful reading size.",
+        "No overlap or horizontal clipping was observed in this captured viewport."
+      ]
+    },
+    {
+      "artifact": "actual-mobile.png",
+      "sha256": "1aa1275588aa03c2c905ec2a3c4d731529b2c9aeaeeb98de0588cac7bbea0b7a",
+      "captured_at": "2026-09-05T11:32:51Z",
+      "viewport": { "width": 390, "height": 844 },
+      "method": "Installed Chrome headless renderer displaying the unchanged actual page in the explicit 390 by 844 iframe in mobile-viewport.html",
+      "observations": [
+        "The headline and supporting copy form a readable vertical composition.",
+        "The case switcher, slide viewer and navigation fit within the narrow layout.",
+        "The capture is a constrained browser viewport, not a claim of testing on a physical mobile device."
+      ]
+    }
+  ],
+  "actual_page_interactions": {
+    "method": "Native Google Chrome accessibility actions and state inspection through Computer Use",
+    "observations": [
+      "Reloaded the page from the real manifests and switched between Consulting and Personal / Editorial.",
+      "Both presentations exposed five slide controls and PowerPoint, PDF, portable source and source manifest links.",
+      "Selected the final Personal slide and reloaded its deck and slide URL. The page restored slide 05 / 05, its title and matching target, render, semantic and scene links.",
+      "The final slide disabled both Next slide and Compare next slide while keeping previous navigation available.",
+      "Incrementing the native comparison range changed its accessible value from 50 percent reconstruction and 50 percent target to 51 percent reconstruction and 49 percent target.",
+      "The evidence inspector rendered the real authored outline and opened the production decision JSON preview with the correct Personal artifact path.",
+      "The final Consulting native edit proof was added after this interaction pass. Its declared artifact was included in the final HTTP and checksum verification."
+    ],
+    "limits": [
+      "The browser provider was unavailable during the final interaction pass, so native accessibility inspection was used.",
+      "Native screen capture returned blank compositor regions. Successful isolated headless captures are retained separately above.",
+      "A headless Personal capture starting at a fragment was incomplete and was excluded from the showcase review assets.",
+      "The final pass did not provide a browser console or a complete automated accessibility audit."
+    ]
+  },
+  "earlier_interaction_review": {
+    "data_scope": "An explicitly labelled temporary fixture using retained Fragments images to exercise five-slide pagination before the actual showcase decks were available",
+    "shipped": false,
+    "observations": [
+      "Desktop and 390 pixel layouts were inspected through the browser provider.",
+      "The narrow document width equalled its 390 pixel viewport width.",
+      "Keyboard Home and End reached both comparison endpoints with matching accessible values and image clipping.",
+      "Case switching, first and last navigation boundaries, outline and image evidence previews, and artifact links were exercised.",
+      "No page console errors were observed during that fixture interaction pass."
+    ]
+  },
+  "final_source_files": [
+    { "path": "docs/site/app.mjs", "sha256": "a35b1ef53afb90ebc65f9caa02d7eb7fb8fe84f441d21a91d269e9001a468168" },
+    { "path": "docs/site/styles.css", "sha256": "019c525526e7593aac949158fb6be72b6d54d5e7bffeb0a5ee91041a8a86b8c7" },
+    { "path": "docs/site/index.html", "sha256": "331a49ed4b11201df505032368a08b54301039792384cbccc63a79374c6b5a31" },
+    { "path": "examples/consulting-ai-transformation/showcase.json", "sha256": "2164c9cdd42a8ee78554120e0e79e57cf1d74f919244e2a9bc40a6eb9769a57d" },
+    { "path": "examples/personal-thinking-system/showcase.json", "sha256": "48cc57a89e49c6cc67f4f7024b6589e9e406af82962ec0333388acf1cf14aa61" }
+  ],
+  "portable_bundle": {
+    "path": "output/slidepoise-showcase-site",
+    "preview_url": "http://127.0.0.1:8767/output/slidepoise-showcase-site/docs/site/",
+    "inventory": "asset-inventory.json",
+    "inventory_sha256": "7042e04c54cc328cb56d2bb2ab5bafa449667559965a206585b03c3cb5c00206",
+    "inventory_bytes": 88092,
+    "payload_files": 401,
+    "payload_bytes": 102612317,
+    "total_files_including_inventory": 402,
+    "verified_sha256_files": 401,
+    "http_artifacts_verified": 62,
+    "http_verification": "Every declared manifest artifact and all five static page files returned HTTP 200 with the expected file length from the portable bundle under a URL prefix.",
+    "presentations": [
+      { "id": "consulting-ai-transformation", "slides": 5, "process_artifacts": 8, "downloads": ["pptx", "pdf", "bundle"] },
+      { "id": "personal-thinking-system", "slides": 5, "process_artifacts": 7, "downloads": ["pptx", "pdf", "bundle"] }
+    ],
+    "notes": [
+      "The inventory covers all payload files. It does not hash itself.",
+      "The bundle retains both complete example directories, including native edit proof and production evidence.",
+      "The build contains the public page and example artifacts. This browser review receipt remains in the repository documentation.",
+      "The static bundle does not include the repository runtime or promise in-place presentation rebuilding. Each example also offers its portable source ZIP."
+    ]
+  },
+  "validation": [
+    { "command": "PYTHONDONTWRITEBYTECODE=1 python3 docs/site/test_build.py", "result": "5 tests passed" },
+    { "command": "node --check docs/site/app.mjs", "result": "Passed" },
+    { "command": "python3 docs/site/build.py --check", "result": "Both manifests validated" },
+    { "command": "python3 docs/site/build.py --output output/slidepoise-showcase-site", "result": "Created the new portable bundle after the final asset freeze" }
+  ],
+  "assessment": "The retained screenshots and observed controls support this project page presentation. Artifact and checksum checks establish integrity and portability. They do not establish universal browser compatibility or the absence of every possible defect."
+}

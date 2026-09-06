@@ -1,0 +1,860 @@
+{
+  "schema_version": 1,
+  "slide_id": "s04-trace",
+  "page_number": 4,
+  "size": {
+    "width": 12192000,
+    "height": 6858000,
+    "unit": "emu"
+  },
+  "source": {
+    "pptx": {
+      "path": "deliverables/presentation.pptx",
+      "sha256": "3d8499644935076fa1bf388c2ee86657ff95801aef670e1bcbb43e93af46891b"
+    },
+    "render": {
+      "path": "assets/s04-trace-render.png",
+      "sha256": "f7b6ec0db44704a145786216ae14904234396851b3f71b2456836e90b3d020cb"
+    }
+  },
+  "objects": [
+    {
+      "id": "p4-object-1",
+      "native_id": "2",
+      "name": "paper-field",
+      "label": "Paper field",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "stack": 0
+    },
+    {
+      "id": "p4-object-2",
+      "native_id": "3",
+      "name": "notebook",
+      "label": "Notebook",
+      "kind": "image",
+      "polygon": [
+        [
+          0.054375,
+          0.536666667
+        ],
+        [
+          0.22125,
+          0.536666667
+        ],
+        [
+          0.22125,
+          0.754444444
+        ],
+        [
+          0.054375,
+          0.754444444
+        ]
+      ],
+      "stack": 1
+    },
+    {
+      "id": "p4-object-3",
+      "native_id": "4",
+      "name": "archive-collage",
+      "label": "Archive collage",
+      "kind": "image",
+      "polygon": [
+        [
+          0.723125,
+          0.13
+        ],
+        [
+          0.96625,
+          0.13
+        ],
+        [
+          0.96625,
+          0.864444444
+        ],
+        [
+          0.723125,
+          0.864444444
+        ]
+      ],
+      "stack": 2
+    },
+    {
+      "id": "p4-object-4",
+      "native_id": "5",
+      "name": "record-separator-0",
+      "label": "Record separator 0",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.42375,
+          0.191111111
+        ],
+        [
+          0.424375,
+          0.191111111
+        ],
+        [
+          0.424375,
+          0.276666667
+        ],
+        [
+          0.42375,
+          0.276666667
+        ]
+      ],
+      "stack": 3
+    },
+    {
+      "id": "p4-object-5",
+      "native_id": "6",
+      "name": "record-rule-0",
+      "label": "Record rule 0",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.365,
+          0.328888889
+        ],
+        [
+          0.69125,
+          0.328888889
+        ],
+        [
+          0.69125,
+          0.33
+        ],
+        [
+          0.365,
+          0.33
+        ]
+      ],
+      "stack": 4
+    },
+    {
+      "id": "p4-object-6",
+      "native_id": "7",
+      "name": "record-separator-1",
+      "label": "Record separator 1",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.42375,
+          0.376666667
+        ],
+        [
+          0.424375,
+          0.376666667
+        ],
+        [
+          0.424375,
+          0.462222222
+        ],
+        [
+          0.42375,
+          0.462222222
+        ]
+      ],
+      "stack": 5
+    },
+    {
+      "id": "p4-object-7",
+      "native_id": "8",
+      "name": "record-rule-1",
+      "label": "Record rule 1",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.365,
+          0.513333333
+        ],
+        [
+          0.69125,
+          0.513333333
+        ],
+        [
+          0.69125,
+          0.514444444
+        ],
+        [
+          0.365,
+          0.514444444
+        ]
+      ],
+      "stack": 6
+    },
+    {
+      "id": "p4-object-8",
+      "native_id": "9",
+      "name": "record-separator-2",
+      "label": "Record separator 2",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.42375,
+          0.561111111
+        ],
+        [
+          0.424375,
+          0.561111111
+        ],
+        [
+          0.424375,
+          0.646666667
+        ],
+        [
+          0.42375,
+          0.646666667
+        ]
+      ],
+      "stack": 7
+    },
+    {
+      "id": "p4-object-9",
+      "native_id": "10",
+      "name": "record-rule-2",
+      "label": "Record rule 2",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.365,
+          0.697777778
+        ],
+        [
+          0.69125,
+          0.697777778
+        ],
+        [
+          0.69125,
+          0.698888889
+        ],
+        [
+          0.365,
+          0.698888889
+        ]
+      ],
+      "stack": 8
+    },
+    {
+      "id": "p4-object-10",
+      "native_id": "11",
+      "name": "record-separator-3",
+      "label": "Record separator 3",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.42375,
+          0.745555556
+        ],
+        [
+          0.424375,
+          0.745555556
+        ],
+        [
+          0.424375,
+          0.831111111
+        ],
+        [
+          0.42375,
+          0.831111111
+        ]
+      ],
+      "stack": 9
+    },
+    {
+      "id": "p4-object-11",
+      "native_id": "12",
+      "name": "title-first",
+      "label": "Leave",
+      "kind": "text",
+      "polygon": [
+        [
+          0.054375,
+          0.096666667
+        ],
+        [
+          0.344375,
+          0.096666667
+        ],
+        [
+          0.344375,
+          0.218888889
+        ],
+        [
+          0.054375,
+          0.218888889
+        ]
+      ],
+      "stack": 10,
+      "text": "Leave",
+      "typography": [
+        {
+          "family": "Bodoni 72",
+          "size_pt": 59.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p4-object-12",
+      "native_id": "13",
+      "name": "title-second",
+      "label": "a trace of",
+      "kind": "text",
+      "polygon": [
+        [
+          0.054375,
+          0.203333333
+        ],
+        [
+          0.344375,
+          0.203333333
+        ],
+        [
+          0.344375,
+          0.325555556
+        ],
+        [
+          0.054375,
+          0.325555556
+        ]
+      ],
+      "stack": 11,
+      "text": "a trace of",
+      "typography": [
+        {
+          "family": "Bodoni 72",
+          "size_pt": 59.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p4-object-13",
+      "native_id": "14",
+      "name": "title-third",
+      "label": "the thinking.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.054375,
+          0.31
+        ],
+        [
+          0.35625,
+          0.31
+        ],
+        [
+          0.35625,
+          0.441111111
+        ],
+        [
+          0.054375,
+          0.441111111
+        ]
+      ],
+      "stack": 12,
+      "text": "the thinking.",
+      "typography": [
+        {
+          "family": "Bodoni 72",
+          "size_pt": 59.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p4-object-14",
+      "native_id": "15",
+      "name": "caption",
+      "label": "A small record makes a conversation reusable.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.054375,
+          0.782222222
+        ],
+        [
+          0.329375,
+          0.782222222
+        ],
+        [
+          0.329375,
+          0.862222222
+        ],
+        [
+          0.054375,
+          0.862222222
+        ]
+      ],
+      "stack": 13,
+      "text": "A small record makes\na conversation reusable.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 13.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p4-object-15",
+      "native_id": "16",
+      "name": "record-number-0",
+      "label": "01",
+      "kind": "text",
+      "polygon": [
+        [
+          0.365,
+          0.183333333
+        ],
+        [
+          0.418125,
+          0.183333333
+        ],
+        [
+          0.418125,
+          0.287777778
+        ],
+        [
+          0.365,
+          0.287777778
+        ]
+      ],
+      "stack": 14,
+      "text": "01",
+      "typography": [
+        {
+          "family": "Bodoni 72",
+          "size_pt": 41.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p4-object-16",
+      "native_id": "17",
+      "name": "record-heading-0",
+      "label": "Source",
+      "kind": "text",
+      "polygon": [
+        [
+          0.4475,
+          0.183333333
+        ],
+        [
+          0.704375,
+          0.183333333
+        ],
+        [
+          0.704375,
+          0.245555556
+        ],
+        [
+          0.4475,
+          0.245555556
+        ]
+      ],
+      "stack": 15,
+      "text": "Source",
+      "typography": [
+        {
+          "family": "Bodoni 72",
+          "size_pt": 21.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p4-object-17",
+      "native_id": "18",
+      "name": "record-question-0",
+      "label": "What did I encounter?",
+      "kind": "text",
+      "polygon": [
+        [
+          0.4475,
+          0.241111111
+        ],
+        [
+          0.70875,
+          0.241111111
+        ],
+        [
+          0.70875,
+          0.291111111
+        ],
+        [
+          0.4475,
+          0.291111111
+        ]
+      ],
+      "stack": 16,
+      "text": "What did I encounter?",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 13.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p4-object-18",
+      "native_id": "19",
+      "name": "record-number-1",
+      "label": "02",
+      "kind": "text",
+      "polygon": [
+        [
+          0.365,
+          0.367777778
+        ],
+        [
+          0.418125,
+          0.367777778
+        ],
+        [
+          0.418125,
+          0.472222222
+        ],
+        [
+          0.365,
+          0.472222222
+        ]
+      ],
+      "stack": 17,
+      "text": "02",
+      "typography": [
+        {
+          "family": "Bodoni 72",
+          "size_pt": 41.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p4-object-19",
+      "native_id": "20",
+      "name": "record-heading-1",
+      "label": "Question",
+      "kind": "text",
+      "polygon": [
+        [
+          0.4475,
+          0.367777778
+        ],
+        [
+          0.704375,
+          0.367777778
+        ],
+        [
+          0.704375,
+          0.43
+        ],
+        [
+          0.4475,
+          0.43
+        ]
+      ],
+      "stack": 18,
+      "text": "Question",
+      "typography": [
+        {
+          "family": "Bodoni 72",
+          "size_pt": 21.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p4-object-20",
+      "native_id": "21",
+      "name": "record-question-1",
+      "label": "What does it unsettle?",
+      "kind": "text",
+      "polygon": [
+        [
+          0.4475,
+          0.426666667
+        ],
+        [
+          0.70875,
+          0.426666667
+        ],
+        [
+          0.70875,
+          0.476666667
+        ],
+        [
+          0.4475,
+          0.476666667
+        ]
+      ],
+      "stack": 19,
+      "text": "What does it unsettle?",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 13.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p4-object-21",
+      "native_id": "22",
+      "name": "record-number-2",
+      "label": "03",
+      "kind": "text",
+      "polygon": [
+        [
+          0.365,
+          0.552222222
+        ],
+        [
+          0.418125,
+          0.552222222
+        ],
+        [
+          0.418125,
+          0.656666667
+        ],
+        [
+          0.365,
+          0.656666667
+        ]
+      ],
+      "stack": 20,
+      "text": "03",
+      "typography": [
+        {
+          "family": "Bodoni 72",
+          "size_pt": 41.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p4-object-22",
+      "native_id": "23",
+      "name": "record-heading-2",
+      "label": "Counterargument",
+      "kind": "text",
+      "polygon": [
+        [
+          0.4475,
+          0.552222222
+        ],
+        [
+          0.704375,
+          0.552222222
+        ],
+        [
+          0.704375,
+          0.614444444
+        ],
+        [
+          0.4475,
+          0.614444444
+        ]
+      ],
+      "stack": 21,
+      "text": "Counterargument",
+      "typography": [
+        {
+          "family": "Bodoni 72",
+          "size_pt": 21.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p4-object-23",
+      "native_id": "24",
+      "name": "record-question-2",
+      "label": "What is the strongest objection?",
+      "kind": "text",
+      "polygon": [
+        [
+          0.4475,
+          0.611111111
+        ],
+        [
+          0.70875,
+          0.611111111
+        ],
+        [
+          0.70875,
+          0.661111111
+        ],
+        [
+          0.4475,
+          0.661111111
+        ]
+      ],
+      "stack": 22,
+      "text": "What is the strongest objection?",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 13.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p4-object-24",
+      "native_id": "25",
+      "name": "record-number-3",
+      "label": "04",
+      "kind": "text",
+      "polygon": [
+        [
+          0.365,
+          0.737777778
+        ],
+        [
+          0.418125,
+          0.737777778
+        ],
+        [
+          0.418125,
+          0.842222222
+        ],
+        [
+          0.365,
+          0.842222222
+        ]
+      ],
+      "stack": 23,
+      "text": "04",
+      "typography": [
+        {
+          "family": "Bodoni 72",
+          "size_pt": 41.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p4-object-25",
+      "native_id": "26",
+      "name": "record-heading-3",
+      "label": "Decision",
+      "kind": "text",
+      "polygon": [
+        [
+          0.4475,
+          0.737777778
+        ],
+        [
+          0.704375,
+          0.737777778
+        ],
+        [
+          0.704375,
+          0.8
+        ],
+        [
+          0.4475,
+          0.8
+        ]
+      ],
+      "stack": 24,
+      "text": "Decision",
+      "typography": [
+        {
+          "family": "Bodoni 72",
+          "size_pt": 21.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p4-object-26",
+      "native_id": "27",
+      "name": "record-question-3",
+      "label": "What will I carry forward?",
+      "kind": "text",
+      "polygon": [
+        [
+          0.4475,
+          0.795555556
+        ],
+        [
+          0.70875,
+          0.795555556
+        ],
+        [
+          0.70875,
+          0.845555556
+        ],
+        [
+          0.4475,
+          0.845555556
+        ]
+      ],
+      "stack": 25,
+      "text": "What will I carry forward?",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 13.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p4-object-27",
+      "native_id": "28",
+      "name": "folio",
+      "label": "FIELD NOTES / 04",
+      "kind": "text",
+      "polygon": [
+        [
+          0.05375,
+          0.922222222
+        ],
+        [
+          0.233125,
+          0.922222222
+        ],
+        [
+          0.233125,
+          0.962222222
+        ],
+        [
+          0.05375,
+          0.962222222
+        ]
+      ],
+      "stack": 26,
+      "text": "FIELD NOTES / 04",
+      "typography": [
+        {
+          "family": "Andale Mono",
+          "size_pt": 12.0,
+          "color": "#242321"
+        }
+      ]
+    }
+  ]
+}

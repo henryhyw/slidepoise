@@ -1,0 +1,9 @@
+{
+  "image": {
+    "status": "approved",
+    "candidate_path": "tests/fixtures/generic-slide.png",
+    "edit_revision": 0,
+    "user_feedback_summary": "Generic contract fixture approved for structural testing.",
+    "edit_history": []
+  }
+}

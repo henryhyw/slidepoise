@@ -1,0 +1,36 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "stage": "measurement",
+  "decision": "accepted",
+  "material_issues": [],
+  "reviewed_artifacts": [
+    {
+      "path": "accepted-slide.png",
+      "sha256": "65320ec1e13c44d39f96dd36d5159195731aeb7b1a7444dff652f1bf3f4b24e7"
+    },
+    {
+      "path": "semantic-map.json",
+      "sha256": "cd2c571d15500021a8b5bbae19a6c83120f1200a5b2b3f57e38dab959cfe097c"
+    },
+    {
+      "path": "reconstruction-handoff.json",
+      "sha256": "19511ea5511a5fadbb06dd5381214053aadb241dc5bbbeee22da3287bf058783"
+    },
+    {
+      "path": "reconstruction/measurement/slide_entities.json",
+      "sha256": "eedee23a54be7d0d4ce691c7f5b315d24227b9abd831b52dfc5503c6477be73b"
+    },
+    {
+      "path": "reconstruction/measurement/debug_overlay.png",
+      "sha256": "fa35559e128d0c70312d6aa443b3d53f9c20f836a9477bb85abf9e359a34540f"
+    }
+  ],
+  "observations": [
+    "The overlay covers the full Georgia headline ink while retaining a separate, slightly higher native logical allocation for the Office baseline. The subtitle and each section have independent source-ink windows.",
+    "Three metric stacks, three numbered arguments, the ten-cell gate table and the decision band each retain their semantic ownership. Thin horizontal rules separate evidence blocks. No decorative connector, icon or raster owner has been introduced.",
+    "The reason-detail logical allocations move upward by eight body pixels after actual LibreOffice inspection. Their search windows remain fixed to the complete original two-line source text, including the exact $60k condition.",
+    "Four semantic groups describe the economic hypothesis, bounded-pilot reasoning, observable scale conditions and funding request. The native table owns its cells and no duplicate floating cell text is emitted.",
+    "The title, subtitle, body/section and decision text retain the shared 64, 32 and 28-pixel targets. All ten fitted text groups reach the authored size without an allocation-driven reduction.",
+    "Deck-level calibration aligns the title allocation at body x48 y19, the subtitle at y103, and the introduction rule at y165. The decision band uses body [48,793,1824,134], an 8-pixel bar and shared label/message allocations. Search windows remain anchored to the generated source ink, including the original separator and accent locations."
+  ]
+}

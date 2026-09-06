@@ -1,0 +1,30 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "decision": "accepted",
+  "material_issues": [],
+  "review_scope": "Inspected the accepted target, measurement overlay, final full-page render, side-by-side comparison and raw difference. Mechanical facts do not issue this decision.",
+  "stage": "measurement",
+  "reviewed_artifacts": [
+    {
+      "path": "accepted-slide.png",
+      "sha256": "924f0b9164b79959934313b7eda081b17213eef59acb6daf4edee7802d9f4379"
+    },
+    {
+      "path": "semantic-map.json",
+      "sha256": "662809eba0dc6b8fcd927908f67c7f0b42177af0080b855de7361205553d5f1d"
+    },
+    {
+      "path": "reconstruction/measurement/slide_entities.json",
+      "sha256": "d24a5466e19b93d7a49d09c33004755da355346070fa52b755874a28c11ab9d0"
+    },
+    {
+      "path": "reconstruction/measurement/debug_overlay.png",
+      "sha256": "ef9498444fe9be41b64f6213a1bd5f1665c38391f1565175720269cfd97ef924"
+    }
+  ],
+  "reasoning_summary": "The mapped regions preserve presentation semantics, complete pixel evidence and the independent native layout allocations.",
+  "observations": [
+    "The grey source windows include the complete title ink and descenders. Orange native allocations extend above the ink to support the Office baseline, and overlap only as allocations.",
+    "The single artwork crop encloses the entire hand, staircase, translucent sheets and archival line. Its bounds exclude every presentation title and footer word."
+  ]
+}

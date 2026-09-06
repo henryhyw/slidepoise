@@ -1,0 +1,57 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "stage": "reconstruction",
+  "decision": "accepted",
+  "material_issues": [],
+  "reviewed_artifacts": [
+    {
+      "path": "accepted-slide.png",
+      "sha256": "ca744f8927ada435cb066b41ea8b3a3c8c951f27c99a5c3bbf28f37e8d9c9a5a"
+    },
+    {
+      "path": "reconstruction/measurement/slide_entities.json",
+      "sha256": "507b2817db765dc06f0ae79aa63d928952100a53ad67906894e84d9fc39c56f3"
+    },
+    {
+      "path": "reconstruction/reconstruction-contract.json",
+      "sha256": "0aba39f42b11fa9c5d49e9e5936e5081579de61bc6d656b4b726c3acdd366d57"
+    },
+    {
+      "path": "reconstruction/constructor-scene.json",
+      "sha256": "cf63aba3315b5407213494ea87163a6b8319a0292045d2958f892619e12003a8"
+    },
+    {
+      "path": "../deliverables/slide.pptx",
+      "sha256": "4f5ed5c8a1ed3a6cdc16e68b2c1cb6992d44650ddfe3f87dfad3e7766db066be"
+    },
+    {
+      "path": "../deliverables/render.png",
+      "sha256": "51e423566d6fda16f1043285d48c3025ec03b78f073aedfa2c600db7abc6922c"
+    },
+    {
+      "path": "../deliverables/render.source.json",
+      "sha256": "ff9f57737a6adb94f8f7918be7ff3fc5b1a290ff38a9cf5481ad763223d13168"
+    },
+    {
+      "path": "../deliverables/comparison.png",
+      "sha256": "cd3428e2837f59178e7cf14abfc7214ce7698194a03b9073a06d9b2e8925b673"
+    },
+    {
+      "path": "native-object-evidence.json",
+      "sha256": "f90a2f9f7d6791020cd08ed61a684dff161f124119cd5b54c56ea652c40496ba"
+    },
+    {
+      "path": "native-text-audit.json",
+      "sha256": "8a9d5524755078e2445ab8f47518c90ea4b14ffd6eb6cd001a6eca3f526571ed"
+    }
+  ],
+  "observations": [
+    "I inspected the actual LibreOffice full-slide render and generated-body comparison. All table cells and four milestone panels remain complete. The matrix ends above the decision band, and the three dependency arrows are visible inside their circles.",
+    "The native matrix contains 25 editable cells. Row labels are bold and accountable owners are regular. Normal Arial causes some source lines to wrap naturally, without horizontal compression or smaller table type.",
+    "The fill-only native gate panels have no accidental black outline. Their real cubic/polygon geometry remains editable. The dependency arrows are above their white circle fills and point toward the prerequisite statements.",
+    "Gate evidence now uses the same 24px annotation role as peer tables and formula labels. The prior 22px fitted reduction was corrected by expanding the authored logical allocation. The earlier actual render is retained under iterations/before-cross-slide-calibration.",
+    "The 64px Georgia title, 32px subtitle, 28px section/body/decision roles, 32px gate ID markers and 24px evidence role are retained. No fitted group is reduced. Header and footer are inherited native frame content, with a standalone page number of 1 before deck assembly.",
+    "Shared decision label and message columns are aligned with the other four pages. This is a recorded Agent calibration of the repeated visual role. The selected source image remains unchanged.",
+    "The editable PowerPoint contains 47 native substantive objects and no raster pictures or duplicate native shape IDs. The packaged text audit emits no findings. These are factual checks supporting the visual review."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "output": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s05-investment-decision/work/accepted-slide.png",
+  "target_px": [
+    1920,
+    960
+  ],
+  "source_after_crop_px": [
+    1774,
+    887
+  ],
+  "placed_px": [
+    0,
+    0,
+    1920,
+    960
+  ],
+  "input_binding": {
+    "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s05-investment-decision/work/generated-original.png",
+    "sha256": "212a9163409c86d8828e8d1d4c2e21ff1572110aa78e7164ede92b59a9e3d2a0"
+  },
+  "config_binding": {
+    "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/work/resolved-config.json",
+    "sha256": "304c05203a4e0bb40f218ebc02e89088c74d80e23c423f9aa7f5e067a6fb4d52"
+  },
+  "output_binding": {
+    "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s05-investment-decision/work/accepted-slide.png",
+    "sha256": "6f63f75099b63a4b14aa1d3e9479e895d3401d03342374aa1f858f1e586f9ab6"
+  },
+  "host_crop_decision": "The actual candidate has an exact 2:1 content canvas. Keep the complete image without cropping, padding or aspect distortion. The packaged normalizer uniformly resized it to the resolved 1920 by 960 body."
+}

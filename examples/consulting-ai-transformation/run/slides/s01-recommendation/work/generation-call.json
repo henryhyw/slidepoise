@@ -1,0 +1,29 @@
+{
+  "evidence_type": "host_reported_image_tool_output",
+  "request_artifact": {
+    "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/image-edit-request-02.json",
+    "sha256": "184780ae8c61cede82831ba4d14a6a4f7477b2ec83414f69b0dc4b1c7f6175df"
+  },
+  "compiled_prompt_sha256": "96372bd2745e79713de9d156f3218455366d6f377803f0e9ac285d574af9664a",
+  "prompt_character_count": 30569,
+  "reference_images": [
+    {
+      "id": "current-candidate",
+      "purpose": "Current image to edit in place",
+      "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/generation-attempt-02/candidate.png",
+      "sha256": "6a5dcc8218c7df7623c5e51b02b4e55601b8d8d65480c4bb1c7c47bb89485f3e"
+    },
+    {
+      "id": "generation-context",
+      "purpose": "Combined style and selected assets",
+      "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/generation-context-sheet.png",
+      "sha256": "f472719777e324b2c850c595507dfc82e4651a84c39c63ee0420a518d0af334d"
+    }
+  ],
+  "returned_image": {
+    "path": "/Users/henry/.codex/generated_images/01a07056-d021-7b82-915c-99c0fc04ea61/exec-aa77efdd-92fc-4fbb-80d3-b1d7f37d8d7b.png",
+    "sha256": "ac1988e96491e2c32fedc4cb6b7f3bbd56baa7d08c5467a149b024158d0b68d1"
+  },
+  "preserved_original": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/generated-original.png",
+  "provenance": "Parent host supplied this actual third image-tool output after submitting the second focused edit. The page worker retains the bound request and returned bytes. No unavailable provider call ID is inferred."
+}

@@ -1,0 +1,611 @@
+{
+  "schema_version": "1.1.0",
+  "selection_owner": "host_agent",
+  "native_source": "consulting-native-components.pptx",
+  "items": {
+    "consulting-chart-doughnut-context": {
+      "id": "consulting-chart-doughnut-context",
+      "name": "Consulting doughnut with center context",
+      "kind": "chart",
+      "description": "Part-to-whole doughnut grammar with a large contextual value/year in the center and a compact right legend.",
+      "tags": [
+        "consulting",
+        "chart",
+        "doughnut",
+        "part-to-whole",
+        "center-callout",
+        "legend"
+      ],
+      "grammar": {
+        "communication_use": "Show a part-to-whole split while keeping one contextual number, year, or short descriptor at the visual center.",
+        "emphasis": "Central context plus orange-led segments; supporting categories recede through tints/grey.",
+        "layout_behavior": "Doughnut can resize and move freely; legend may move if composition requires it."
+      },
+      "constructor_defaults": {
+        "chart_structure": {
+          "type": "doughnut",
+          "show_legend": true,
+          "legend_position": "right",
+          "hole_size": 75,
+          "vary_colors_by_category": true,
+          "colors": [
+            "#FD5108",
+            "#FE7C39",
+            "#FFAA72",
+            "#A1A8B3"
+          ]
+        }
+      },
+      "path": "consulting-native-components.pptx",
+      "preview_path": "consulting-component-01.png",
+      "profile_ids": [
+        "consulting"
+      ],
+      "native_source_slide_number": 1,
+      "adaptation_rules": [
+        "Treat the component as a design grammar and editable native precedent, not as a fixed layout to paste.",
+        "Replace all sample text/data with the slide's authored content.",
+        "Adapt category count, series count, row/column count, labels, proportions, dimensions, and placement to the semantic need.",
+        "Preserve only the visual/structural logic that remains useful after adaptation.",
+        "If the component grammar is not a good fit, do not force it; design a new component instead."
+      ],
+      "reconstruction_route": "native_chart_or_table_adapted_from_component_grammar"
+    },
+    "consulting-chart-column-titled": {
+      "id": "consulting-chart-column-titled",
+      "name": "Consulting titled column chart",
+      "kind": "chart",
+      "description": "Single-series column chart with Georgia chart title, visible value labels, gridlines, and orange progression across categories.",
+      "tags": [
+        "consulting",
+        "chart",
+        "column",
+        "bar",
+        "title",
+        "data-labels"
+      ],
+      "grammar": {
+        "communication_use": "Compare a small set of categories when the chart itself needs an explicit title.",
+        "emphasis": "Columns carry the story; category progression may use orange tints rather than unrelated colours.",
+        "layout_behavior": "Category count, bar width, title wording, and footprint adapt to the content."
+      },
+      "constructor_defaults": {
+        "chart_structure": {
+          "type": "column",
+          "show_legend": false,
+          "show_values": true,
+          "data_label_position": "outEnd",
+          "gap_width_pct": 9,
+          "show_value_gridlines": true,
+          "vary_colors_by_category": true,
+          "colors": [
+            "#FD5108",
+            "#FE7C39",
+            "#FFAA72"
+          ]
+        }
+      },
+      "path": "consulting-native-components.pptx",
+      "preview_path": "consulting-component-02.png",
+      "profile_ids": [
+        "consulting"
+      ],
+      "native_source_slide_number": 2,
+      "adaptation_rules": [
+        "Treat the component as a design grammar and editable native precedent, not as a fixed layout to paste.",
+        "Replace all sample text/data with the slide's authored content.",
+        "Adapt category count, series count, row/column count, labels, proportions, dimensions, and placement to the semantic need.",
+        "Preserve only the visual/structural logic that remains useful after adaptation.",
+        "If the component grammar is not a good fit, do not force it; design a new component instead."
+      ],
+      "reconstruction_route": "native_chart_or_table_adapted_from_component_grammar"
+    },
+    "consulting-chart-column-compact": {
+      "id": "consulting-chart-column-compact",
+      "name": "Consulting compact column chart",
+      "kind": "chart",
+      "description": "Compact single-series column chart with direct value labels and no title or legend.",
+      "tags": [
+        "consulting",
+        "chart",
+        "column",
+        "compact",
+        "data-labels"
+      ],
+      "grammar": {
+        "communication_use": "Make a compact category comparison inside a larger slide composition.",
+        "emphasis": "Direct labels reduce legend/title overhead.",
+        "layout_behavior": "Designed to be embedded as a supporting component; category count and aspect ratio can adapt."
+      },
+      "constructor_defaults": {
+        "chart_structure": {
+          "type": "column",
+          "show_legend": false,
+          "show_values": true,
+          "data_label_position": "outEnd",
+          "gap_width_pct": 56,
+          "show_value_gridlines": true,
+          "colors": [
+            "#FD5108"
+          ]
+        }
+      },
+      "path": "consulting-native-components.pptx",
+      "preview_path": "consulting-component-03.png",
+      "profile_ids": [
+        "consulting"
+      ],
+      "native_source_slide_number": 3,
+      "adaptation_rules": [
+        "Treat the component as a design grammar and editable native precedent, not as a fixed layout to paste.",
+        "Replace all sample text/data with the slide's authored content.",
+        "Adapt category count, series count, row/column count, labels, proportions, dimensions, and placement to the semantic need.",
+        "Preserve only the visual/structural logic that remains useful after adaptation.",
+        "If the component grammar is not a good fit, do not force it; design a new component instead."
+      ],
+      "reconstruction_route": "native_chart_or_table_adapted_from_component_grammar"
+    },
+    "consulting-chart-area-two-series": {
+      "id": "consulting-chart-area-two-series",
+      "name": "Consulting two-series area chart",
+      "kind": "chart",
+      "description": "Two-series area chart using orange-led layers, light gridlines, and a compact right legend.",
+      "tags": [
+        "consulting",
+        "chart",
+        "area",
+        "trend",
+        "two-series",
+        "legend"
+      ],
+      "grammar": {
+        "communication_use": "Show change over an ordered dimension when two related series should be compared as filled trends.",
+        "emphasis": "Use orange/tint layering rather than many unrelated colours.",
+        "layout_behavior": "Series count and time/category density may adapt; preserve readable overlap and hierarchy."
+      },
+      "constructor_defaults": {
+        "chart_structure": {
+          "type": "area",
+          "show_legend": true,
+          "legend_position": "right",
+          "show_value_gridlines": true,
+          "colors": [
+            "#FFAA72",
+            "#FD5108"
+          ]
+        }
+      },
+      "path": "consulting-native-components.pptx",
+      "preview_path": "consulting-component-04.png",
+      "profile_ids": [
+        "consulting"
+      ],
+      "native_source_slide_number": 4,
+      "adaptation_rules": [
+        "Treat the component as a design grammar and editable native precedent, not as a fixed layout to paste.",
+        "Replace all sample text/data with the slide's authored content.",
+        "Adapt category count, series count, row/column count, labels, proportions, dimensions, and placement to the semantic need.",
+        "Preserve only the visual/structural logic that remains useful after adaptation.",
+        "If the component grammar is not a good fit, do not force it; design a new component instead."
+      ],
+      "reconstruction_route": "native_chart_or_table_adapted_from_component_grammar"
+    },
+    "consulting-chart-bar-stacked": {
+      "id": "consulting-chart-bar-stacked",
+      "name": "Consulting stacked horizontal bar chart",
+      "kind": "chart",
+      "description": "Horizontal stacked-bar grammar with three related series and a bottom legend.",
+      "tags": [
+        "consulting",
+        "chart",
+        "bar",
+        "stacked",
+        "composition",
+        "legend"
+      ],
+      "grammar": {
+        "communication_use": "Compare composition across categories where each bar is built from multiple parts.",
+        "emphasis": "Orange family communicates related parts; neutral treatment may support a lower-priority series.",
+        "layout_behavior": "Number of categories/series and bar lengths adapt to data; do not preserve sample counts mechanically."
+      },
+      "constructor_defaults": {
+        "chart_structure": {
+          "type": "bar",
+          "bar_grouping": "stacked",
+          "show_legend": true,
+          "legend_position": "bottom",
+          "gap_width_pct": 106,
+          "show_value_gridlines": true,
+          "colors": [
+            "#FD5108",
+            "#FE7C39",
+            "#FFAA72"
+          ]
+        }
+      },
+      "path": "consulting-native-components.pptx",
+      "preview_path": "consulting-component-05.png",
+      "profile_ids": [
+        "consulting"
+      ],
+      "native_source_slide_number": 5,
+      "adaptation_rules": [
+        "Treat the component as a design grammar and editable native precedent, not as a fixed layout to paste.",
+        "Replace all sample text/data with the slide's authored content.",
+        "Adapt category count, series count, row/column count, labels, proportions, dimensions, and placement to the semantic need.",
+        "Preserve only the visual/structural logic that remains useful after adaptation.",
+        "If the component grammar is not a good fit, do not force it; design a new component instead."
+      ],
+      "reconstruction_route": "native_chart_or_table_adapted_from_component_grammar"
+    },
+    "consulting-chart-bar-clustered": {
+      "id": "consulting-chart-bar-clustered",
+      "name": "Consulting clustered horizontal bar chart",
+      "kind": "chart",
+      "description": "Clustered horizontal bars with direct value labels, orange/grey series, and a bottom legend.",
+      "tags": [
+        "consulting",
+        "chart",
+        "bar",
+        "clustered",
+        "data-labels",
+        "legend"
+      ],
+      "grammar": {
+        "communication_use": "Compare several series across a small number of categories when category labels need horizontal room.",
+        "emphasis": "Direct value labels and clean grouping carry comparison; avoid unnecessary gridlines.",
+        "layout_behavior": "Adapt series/category count and chart width to content."
+      },
+      "constructor_defaults": {
+        "chart_structure": {
+          "type": "bar",
+          "bar_grouping": "clustered",
+          "show_legend": true,
+          "legend_position": "bottom",
+          "show_values": true,
+          "data_label_position": "outEnd",
+          "gap_width_pct": 182,
+          "show_value_gridlines": false,
+          "colors": [
+            "#FD5108",
+            "#FE7C39",
+            "#B5BCC4"
+          ]
+        }
+      },
+      "path": "consulting-native-components.pptx",
+      "preview_path": "consulting-component-06.png",
+      "profile_ids": [
+        "consulting"
+      ],
+      "native_source_slide_number": 6,
+      "adaptation_rules": [
+        "Treat the component as a design grammar and editable native precedent, not as a fixed layout to paste.",
+        "Replace all sample text/data with the slide's authored content.",
+        "Adapt category count, series count, row/column count, labels, proportions, dimensions, and placement to the semantic need.",
+        "Preserve only the visual/structural logic that remains useful after adaptation.",
+        "If the component grammar is not a good fit, do not force it; design a new component instead."
+      ],
+      "reconstruction_route": "native_chart_or_table_adapted_from_component_grammar"
+    },
+    "consulting-chart-column-clustered": {
+      "id": "consulting-chart-column-clustered",
+      "name": "Consulting clustered column chart",
+      "kind": "chart",
+      "description": "Two-series clustered columns with direct value labels and a bottom legend.",
+      "tags": [
+        "consulting",
+        "chart",
+        "column",
+        "clustered",
+        "two-series",
+        "data-labels",
+        "legend"
+      ],
+      "grammar": {
+        "communication_use": "Compare peer series across the same categories.",
+        "emphasis": "Core orange and an orange tint create hierarchy without introducing unrelated colours.",
+        "layout_behavior": "Adapt category/series count and width; preserve grouped comparison rather than exact sample geometry."
+      },
+      "constructor_defaults": {
+        "chart_structure": {
+          "type": "column",
+          "bar_grouping": "clustered",
+          "show_legend": true,
+          "legend_position": "bottom",
+          "show_values": true,
+          "data_label_position": "outEnd",
+          "gap_width_pct": 96,
+          "show_value_gridlines": true,
+          "colors": [
+            "#FD5108",
+            "#FFAA72"
+          ]
+        }
+      },
+      "path": "consulting-native-components.pptx",
+      "preview_path": "consulting-component-07.png",
+      "profile_ids": [
+        "consulting"
+      ],
+      "native_source_slide_number": 7,
+      "adaptation_rules": [
+        "Treat the component as a design grammar and editable native precedent, not as a fixed layout to paste.",
+        "Replace all sample text/data with the slide's authored content.",
+        "Adapt category count, series count, row/column count, labels, proportions, dimensions, and placement to the semantic need.",
+        "Preserve only the visual/structural logic that remains useful after adaptation.",
+        "If the component grammar is not a good fit, do not force it; design a new component instead."
+      ],
+      "reconstruction_route": "native_chart_or_table_adapted_from_component_grammar"
+    },
+    "consulting-chart-pie-share": {
+      "id": "consulting-chart-pie-share",
+      "name": "Consulting pie share chart",
+      "kind": "chart",
+      "description": "Part-to-whole pie chart with outside percentages and a compact top legend.",
+      "tags": [
+        "consulting",
+        "chart",
+        "pie",
+        "share",
+        "percentage",
+        "legend"
+      ],
+      "grammar": {
+        "communication_use": "Show a small number of shares when the parts themselves are the message.",
+        "emphasis": "Core orange leads; tints/grey distinguish supporting shares.",
+        "layout_behavior": "Slice count adapts to data; avoid forcing a pie when precise comparison would be clearer."
+      },
+      "constructor_defaults": {
+        "chart_structure": {
+          "type": "pie",
+          "show_legend": true,
+          "legend_position": "top",
+          "show_percent": true,
+          "data_label_position": "outEnd",
+          "vary_colors_by_category": true,
+          "colors": [
+            "#FD5108",
+            "#FE7C39",
+            "#FFAA72",
+            "#A1A8B3"
+          ]
+        }
+      },
+      "path": "consulting-native-components.pptx",
+      "preview_path": "consulting-component-08.png",
+      "profile_ids": [
+        "consulting"
+      ],
+      "native_source_slide_number": 8,
+      "adaptation_rules": [
+        "Treat the component as a design grammar and editable native precedent, not as a fixed layout to paste.",
+        "Replace all sample text/data with the slide's authored content.",
+        "Adapt category count, series count, row/column count, labels, proportions, dimensions, and placement to the semantic need.",
+        "Preserve only the visual/structural logic that remains useful after adaptation.",
+        "If the component grammar is not a good fit, do not force it; design a new component instead."
+      ],
+      "reconstruction_route": "native_chart_or_table_adapted_from_component_grammar"
+    },
+    "consulting-chart-doughnut-kpi": {
+      "id": "consulting-chart-doughnut-kpi",
+      "name": "Consulting KPI doughnut",
+      "kind": "chart",
+      "description": "Two-part doughnut used as a KPI/progress callout with a large centered percentage and no legend.",
+      "tags": [
+        "consulting",
+        "chart",
+        "doughnut",
+        "kpi",
+        "progress",
+        "percentage",
+        "center-callout"
+      ],
+      "grammar": {
+        "communication_use": "Express one proportion/progress value as a focal KPI.",
+        "emphasis": "Core orange represents the focal proportion; the remainder is a very light neutral.",
+        "layout_behavior": "Use one focal percentage/value; scale freely within the slide and keep the center callout dominant."
+      },
+      "constructor_defaults": {
+        "chart_structure": {
+          "type": "doughnut",
+          "show_legend": false,
+          "hole_size": 75,
+          "vary_colors_by_category": true,
+          "center_callout": true,
+          "colors": [
+            "#F2F2F2",
+            "#FD5108"
+          ]
+        }
+      },
+      "path": "consulting-native-components.pptx",
+      "preview_path": "consulting-component-09.png",
+      "profile_ids": [
+        "consulting"
+      ],
+      "native_source_slide_number": 9,
+      "adaptation_rules": [
+        "Treat the component as a design grammar and editable native precedent, not as a fixed layout to paste.",
+        "Replace all sample text/data with the slide's authored content.",
+        "Adapt category count, series count, row/column count, labels, proportions, dimensions, and placement to the semantic need.",
+        "Preserve only the visual/structural logic that remains useful after adaptation.",
+        "If the component grammar is not a good fit, do not force it; design a new component instead."
+      ],
+      "reconstruction_route": "native_chart_or_table_adapted_from_component_grammar"
+    },
+    "consulting-table-first-column-orange": {
+      "id": "consulting-table-first-column-orange",
+      "name": "Consulting table with orange first column",
+      "kind": "table",
+      "description": "Table grammar using a core-orange first column as the row-key band and thin orange horizontal rules.",
+      "tags": [
+        "consulting",
+        "table",
+        "first-column",
+        "orange",
+        "row-headers"
+      ],
+      "grammar": {
+        "communication_use": "Use when row labels deserve stronger visual anchoring than column labels.",
+        "emphasis": "First column creates the navigation spine; the remaining cells stay light and open.",
+        "layout_behavior": "Rows/columns and column widths adapt to content; orange first-column emphasis remains the grammar."
+      },
+      "constructor_defaults": {
+        "table_style": {
+          "first_column_fill": "#FD5108",
+          "header_bold": true,
+          "first_column_bold_header": true,
+          "horizontal_rule_color": "#FD5108",
+          "horizontal_rule_width_pt": 0.6,
+          "vertical_rules": false,
+          "body_fill": "#FFFFFF",
+          "text_color": "#000000"
+        }
+      },
+      "path": "consulting-native-components.pptx",
+      "preview_path": "consulting-component-10.png",
+      "profile_ids": [
+        "consulting"
+      ],
+      "native_source_slide_number": 10,
+      "adaptation_rules": [
+        "Treat the component as a design grammar and editable native precedent, not as a fixed layout to paste.",
+        "Replace all sample text/data with the slide's authored content.",
+        "Adapt category count, series count, row/column count, labels, proportions, dimensions, and placement to the semantic need.",
+        "Preserve only the visual/structural logic that remains useful after adaptation.",
+        "If the component grammar is not a good fit, do not force it; design a new component instead."
+      ],
+      "reconstruction_route": "native_chart_or_table_adapted_from_component_grammar"
+    },
+    "consulting-table-first-column-grey": {
+      "id": "consulting-table-first-column-grey",
+      "name": "Consulting table with grey first column",
+      "kind": "table",
+      "description": "Table grammar using a light-grey first column as a quiet row-key band with thin neutral horizontal rules.",
+      "tags": [
+        "consulting",
+        "table",
+        "first-column",
+        "grey",
+        "row-headers"
+      ],
+      "grammar": {
+        "communication_use": "Use when row labels need anchoring but orange would over-emphasize the table.",
+        "emphasis": "Light grey structures the first column while keeping the page restrained.",
+        "layout_behavior": "Rows/columns and column widths adapt to content."
+      },
+      "constructor_defaults": {
+        "table_style": {
+          "first_column_fill": "#DFE3E6",
+          "header_bold": true,
+          "first_column_bold_header": true,
+          "horizontal_rule_color": "#DFE3E6",
+          "horizontal_rule_width_pt": 0.6,
+          "vertical_rules": false,
+          "body_fill": "#FFFFFF",
+          "text_color": "#000000"
+        }
+      },
+      "path": "consulting-native-components.pptx",
+      "preview_path": "consulting-component-11.png",
+      "profile_ids": [
+        "consulting"
+      ],
+      "native_source_slide_number": 11,
+      "adaptation_rules": [
+        "Treat the component as a design grammar and editable native precedent, not as a fixed layout to paste.",
+        "Replace all sample text/data with the slide's authored content.",
+        "Adapt category count, series count, row/column count, labels, proportions, dimensions, and placement to the semantic need.",
+        "Preserve only the visual/structural logic that remains useful after adaptation.",
+        "If the component grammar is not a good fit, do not force it; design a new component instead."
+      ],
+      "reconstruction_route": "native_chart_or_table_adapted_from_component_grammar"
+    },
+    "consulting-table-header-orange": {
+      "id": "consulting-table-header-orange",
+      "name": "Consulting table with orange header row",
+      "kind": "table",
+      "description": "Table grammar with a full core-orange header row and restrained white body separated by fine orange rules.",
+      "tags": [
+        "consulting",
+        "table",
+        "header-row",
+        "orange"
+      ],
+      "grammar": {
+        "communication_use": "Use when column headings are the primary organizing dimension.",
+        "emphasis": "Orange header band establishes the hierarchy; body stays white and light.",
+        "layout_behavior": "Rows/columns and widths adapt; preserve header-row emphasis rather than sample dimensions."
+      },
+      "constructor_defaults": {
+        "table_style": {
+          "header_row_fill": "#FD5108",
+          "header_bold": true,
+          "horizontal_rule_color": "#FFAA72",
+          "horizontal_rule_width_pt": 0.5,
+          "vertical_rules": false,
+          "body_fill": "#FFFFFF",
+          "text_color": "#000000"
+        }
+      },
+      "path": "consulting-native-components.pptx",
+      "preview_path": "consulting-component-12.png",
+      "profile_ids": [
+        "consulting"
+      ],
+      "native_source_slide_number": 12,
+      "adaptation_rules": [
+        "Treat the component as a design grammar and editable native precedent, not as a fixed layout to paste.",
+        "Replace all sample text/data with the slide's authored content.",
+        "Adapt category count, series count, row/column count, labels, proportions, dimensions, and placement to the semantic need.",
+        "Preserve only the visual/structural logic that remains useful after adaptation.",
+        "If the component grammar is not a good fit, do not force it; design a new component instead."
+      ],
+      "reconstruction_route": "native_chart_or_table_adapted_from_component_grammar"
+    },
+    "consulting-table-zebra-grey": {
+      "id": "consulting-table-zebra-grey",
+      "name": "Consulting alternating-grey table",
+      "kind": "table",
+      "description": "Low-emphasis table grammar with a clean header and alternating light-grey body rows.",
+      "tags": [
+        "consulting",
+        "table",
+        "zebra",
+        "alternating-rows",
+        "grey"
+      ],
+      "grammar": {
+        "communication_use": "Use for dense tabular information when row tracking matters more than coloured emphasis.",
+        "emphasis": "Alternating neutral bands aid scanning while leaving colour available for other slide priorities.",
+        "layout_behavior": "Rows/columns and widths adapt; banding follows body rows rather than fixed sample row count."
+      },
+      "constructor_defaults": {
+        "table_style": {
+          "header_bold": true,
+          "alternate_row_fill": "#DFE3E6",
+          "body_fill": "#FFFFFF",
+          "horizontal_rules": false,
+          "vertical_rules": false,
+          "text_color": "#000000"
+        }
+      },
+      "path": "consulting-native-components.pptx",
+      "preview_path": "consulting-component-13.png",
+      "profile_ids": [
+        "consulting"
+      ],
+      "native_source_slide_number": 13,
+      "adaptation_rules": [
+        "Treat the component as a design grammar and editable native precedent, not as a fixed layout to paste.",
+        "Replace all sample text/data with the slide's authored content.",
+        "Adapt category count, series count, row/column count, labels, proportions, dimensions, and placement to the semantic need.",
+        "Preserve only the visual/structural logic that remains useful after adaptation.",
+        "If the component grammar is not a good fit, do not force it; design a new component instead."
+      ],
+      "reconstruction_route": "native_chart_or_table_adapted_from_component_grammar"
+    }
+  },
+  "note": "Reusable native component precedents. Components are optional design grammar, never fixed slide templates. The host Agent selects them only when their structural logic helps the current content and must adapt them rather than copy sample content or geometry."
+}

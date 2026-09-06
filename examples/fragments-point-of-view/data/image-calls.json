@@ -1,0 +1,26 @@
+[
+  {
+    "operation": "style-guided generation",
+    "timestamp_utc": "2026-08-27T18:38:50.980Z",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed by host tool call",
+    "prompt": "prompts/01-reference-generation.txt",
+    "prompt_fidelity": "exact submitted string recovered from original tool call",
+    "reference_images": [
+      "assets/style-reference.png"
+    ],
+    "output": "assets/accepted-slide.png"
+  },
+  {
+    "operation": "targeted image edit",
+    "timestamp_utc": "2026-08-27T19:39:35.658Z",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed by host tool call",
+    "prompt": "prompts/02-clean-plate-edit.txt",
+    "prompt_fidelity": "exact submitted string recovered from original tool call",
+    "reference_images": [
+      "assets/accepted-slide.png"
+    ],
+    "output": "assets/clean-plate.png"
+  }
+]

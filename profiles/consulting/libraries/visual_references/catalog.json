@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "selection_owner": "host_agent",
+  "items": {
+    "consulting-ai-prioritization-reference.png": {
+      "id": "consulting-ai-prioritization-reference",
+      "path": "consulting-ai-prioritization-reference.png",
+      "description": "User-supplied generated consulting reference for a conclusion-led title, controlled 2x2 prioritization, orange emphasis, restrained neutral panels, governance sidebar, and implementation-wave footer.",
+      "tags": ["consulting", "ai", "prioritization", "matrix", "governance", "orange", "user supplied"],
+      "reuse_policy": "style_and_composition_precedent_only",
+      "provenance": {
+        "provider": "user supplied in conversation",
+        "generated_reference": true,
+        "public_identity_assets_present": false,
+        "sha256": "b6c3c9dd81fad5d623a9b448fd21b70d86eb6314caeb568ec23e7964f25601d7"
+      }
+    },
+    "consulting-ai-operating-model-reference.png": {
+      "id": "consulting-ai-operating-model-reference",
+      "path": "consulting-ai-operating-model-reference.png",
+      "description": "User-supplied generated consulting reference for a three-stage operating-model story, large communication icons, directional flow, quantified impact strip, and governance guardrails.",
+      "tags": ["consulting", "ai", "operating model", "process", "governance", "orange", "user supplied"],
+      "reuse_policy": "style_and_composition_precedent_only",
+      "provenance": {
+        "provider": "user supplied in conversation",
+        "generated_reference": true,
+        "public_identity_assets_present": false,
+        "sha256": "6888201f4f50d9937b6f3a902c83099675a7d3f6ac61997274ce3497f721dc72"
+      }
+    }
+  }
+}

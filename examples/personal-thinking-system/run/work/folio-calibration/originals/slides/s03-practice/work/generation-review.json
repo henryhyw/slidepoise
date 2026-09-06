@@ -1,0 +1,20 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "decision": "accepted",
+  "material_issues": [],
+  "review_scope": "Inspected the accepted target, measurement overlay, final full-page render, side-by-side comparison and raw difference. Mechanical facts do not issue this decision.",
+  "stage": "generation",
+  "reviewed_artifacts": [
+    {
+      "path": "accepted-slide.png",
+      "sha256": "767e54f0f34faafae4aa1985b26c3824e3ece0521a6e706cf5260579fedbe3c6"
+    }
+  ],
+  "reasoning_summary": "Selected generated composition preserves the authored message and the editorial archive direction.",
+  "observations": [
+    "Three archival objects express collecting a source, connecting distant places and questioning a photographic frame. The three columns differ in artwork while sharing one typographic hierarchy.",
+    "The handwritten fragment, map marks and contact-sheet details belong to the depicted collage. The headings and explanatory captions are presentation text."
+  ],
+  "candidate_index": 1,
+  "edit_revision": 0
+}

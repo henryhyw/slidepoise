@@ -1,0 +1,116 @@
+# SlidePoise
+
+**AI-generated slide designs, built into editable PowerPoint.**
+
+SlidePoise is an open-source Codex skill for planning and designing presentations beyond fixed templates. Bring your content, images and visual references. Work with the Agent to decide what each slide needs to communicate.
+
+Image generation explores the page design. The Agent identifies the text, charts, tables and artwork in the chosen image. OpenCV measures their geometry, and local tools construct the editable PowerPoint. The Agent then reviews the rendered slides together for visual fidelity and consistency.
+
+![SlidePoise architecture showing content planning, image generation, Agent interpretation, pixel measurement and PowerPoint construction](docs/site/architecture.svg)
+
+[Get started](#get-started) · [Usage guide](docs/USAGE.md) · [Architecture](docs/ARCHITECTURE.md) · [Contribute](CONTRIBUTING.md)
+
+## Sample presentations
+
+Browse the slides, compare the AI designs with actual PowerPoint renders, and inspect each page’s element groups and OpenCV measurements on the [project page](https://www.henryw.me/slidepoise/).
+
+| A controlled path to shared AI capability | A second thinking system |
+| --- | --- |
+| ![Actual PowerPoint slide comparing AI pilot opportunities](examples/consulting-ai-transformation/assets/s02-opportunities-render.png) | ![Actual PowerPoint slide introducing a second thinking system](examples/personal-thinking-system/assets/s01-opening-render.png) |
+| **Consulting** · Priorities, responsibilities and an investment decision for an AI pilot. | **Editorial** · An essay about working with AI and developing a point of view. |
+| [Download PowerPoint](examples/consulting-ai-transformation/deliverables/presentation.pptx) | [Download PowerPoint](examples/personal-thinking-system/deliverables/presentation.pptx) |
+
+The strategy sample uses a fictional firm and illustrative figures.
+
+To open the project page locally, serve the checkout with `python -m http.server 8000` and visit `http://localhost:8000/docs/site/`.
+
+## Get started
+
+Have **Python 3.10+, Node.js 18+, npm 9+, and Codex with image generation** available, then run
+
+```bash
+npx github:henryhyw/slidepoise setup
+```
+
+Setup installs the local tools and registers the skill. It also installs missing preview tools through Homebrew on macOS, winget on Windows, or apt on Debian/Ubuntu. Your system may request administrator access. Use fonts available on your machine.
+
+<details>
+<summary>Installation contents and optional dependencies</summary>
+
+`npx` installs the Python measurement tools and Node.js PowerPoint renderer under `~/.slidepoise`. It registers the skill in `~/.codex/skills/slidepoise` when Codex is detected, and copies the bundled Profiles and Library Sets.
+
+Python dependencies include Pillow, python-pptx, NumPy and OpenCV. The Node runtime uses PptxGenJS and JSZip. LibreOffice renders PowerPoint pages. Poppler converts those pages into images for review. Setup prepares these through the system package manager and checks that both executables are available. If installation cannot finish, it reports the missing tool and exits with an error so you can resolve the issue and rerun setup. Codex, image generation and fonts are supplied by your environment.
+
+OpenCV measures object boundaries, colour and geometry for reconstruction.
+
+</details>
+
+Then ask Codex for a presentation.
+
+```text
+$slidepoise
+
+Create a five-slide presentation for our leadership team about an AI pilot.
+Use the Consulting Profile. Develop a clear recommendation, make the
+assumptions explicit, and show me one sample before finishing the deck.
+Deliver an editable PowerPoint.
+```
+
+Ask the Agent to work autonomously if you prefer. The [usage guide](docs/USAGE.md) covers installation checks and Profile management.
+
+## How it works
+
+| Stage | Work |
+| --- | --- |
+| Plan | Decide what each slide needs to communicate and gather its supporting content. |
+| Design | Generate compositions using your references and a shared visual direction. |
+| Reconstruct | Identify objects, measure their geometry and build the PowerPoint. |
+| Review | Compare actual renders with the designs and check consistency across pages. |
+
+**The Agent plans the content and makes design decisions.** Image generation explores the composition using the authored content, references and shared style. The image covers the content area. Headers and footers are added as inherited PowerPoint elements, with a page-number field on each page. The content's aspect ratio is calculated after reserving this space.
+
+**The Agent identifies objects. OpenCV measures them.** A set of bars, labels and values can belong to one chart. OpenCV measures their visible geometry. The renderer builds a native chart linked to a workbook, so its data stays editable.
+
+**Review covers the whole presentation.** The Agent discovers repeated roles, including small labels and folios, applies their common styles to the corresponding objects, and reviews the actual renders again. The [architecture](docs/ARCHITECTURE.md) describes these responsibilities in detail.
+
+Below, an edited copy has a new title and a chart value changed from 1,944 to 1,620. The bar and its label update in PowerPoint.
+
+![Actual PowerPoint renders before and after editing native text and chart data](examples/consulting-ai-transformation/run/work/native-edit-proof/comparison.png)
+
+## Visual references and Profiles
+
+Profiles save typography, palette, density and references for future presentations. Included starting points are Consulting, Editorial Archive and Monochrome Modern. Add your own references and adapt the layout to each message.
+
+Library Sets supply reusable icons and components. Use the local Console to manage your saved styles and resources. Ask Codex to open it, or run the following command after installation.
+
+```bash
+npx github:henryhyw/slidepoise console
+```
+
+[Try the interactive Console demo](https://www.henryw.me/slidepoise/docs/site/#console). It uses sample data and keeps changes in the browser tab.
+
+Saved changes apply to future presentations. A session panel adjusts a presentation already in progress without changing its saved Profile.
+
+## Editability and compatibility
+
+Text, tables, charts, shapes, connectors and freeforms can remain native. Photographs, textures and expressive illustrations stay as regional images. Separate text and table values do not become spreadsheet formulas automatically.
+
+The integration and samples have been tested with Codex. Local previews use LibreOffice and Poppler. Other Agent hosts need their own integration checks. Fonts are not bundled, and different fonts or Office readers can change text wrapping and appearance.
+
+## Develop and contribute
+
+```bash
+python -m venv .venv
+.venv/bin/pip install -e '.[dev,runtime]'
+npm ci
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m pytest
+npm test
+```
+
+On Windows, use the executables in `.venv\Scripts`.
+
+The self-contained skill and renderer live in [`slidepoise/`](slidepoise/). [`framework/`](framework/) contains installation and local services. [`profiles/`](profiles/) and [`library-sets/`](library-sets/) hold reusable resources. [`webapp/`](webapp/) contains the optional controls.
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before making changes. Report defects through [GitHub issues](https://github.com/henryhyw/slidepoise/issues) and security concerns through [SECURITY.md](SECURITY.md).
+
+[MIT license](LICENSE)

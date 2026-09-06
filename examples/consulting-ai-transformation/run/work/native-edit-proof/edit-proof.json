@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "method": "Edited the existing native textbox and chart in a copy of the assembled runtime output using python-pptx. No slide was rebuilt.",
+  "official_source": "../../deliverables/presentation.pptx",
+  "official_source_sha256": "aec72faebe53cdaf2c0820391eadd344d34b3f5de4927e7c3a0444ff8f40ca9b",
+  "source": "official-copy.pptx",
+  "source_sha256": "aec72faebe53cdaf2c0820391eadd344d34b3f5de4927e7c3a0444ff8f40ca9b",
+  "edited_pptx": "edited-copy.pptx",
+  "edited_pptx_sha256": "94490073d95e79aa8aecc76fa92a7efb603314f15eb7e2597bcd4a4ac4536e46",
+  "page_number": 2,
+  "title_edit": {
+    "object_name": "headline",
+    "before": "Start where value and control readiness meet",
+    "after": "Revise the analysis without rebuilding the slide"
+  },
+  "chart_edit": {
+    "object_name": "annual-capacity-chart",
+    "before": [
+      1944.0,
+      1440.0,
+      1080.0
+    ],
+    "after": [
+      1620.0,
+      1440.0,
+      1080.0
+    ],
+    "embedded_workbook_first_value": 1620.0,
+    "native_labels_bound_to_values": true,
+    "native_wrap_policy": "none",
+    "actual_pdf_label": "1,620 h"
+  },
+  "source_preserved": true,
+  "editable_numeric_textboxes_created": 0,
+  "unmodified_pages": [
+    {
+      "page_number": 1,
+      "pixels_identical": true
+    },
+    {
+      "page_number": 3,
+      "pixels_identical": true
+    },
+    {
+      "page_number": 4,
+      "pixels_identical": true
+    },
+    {
+      "page_number": 5,
+      "pixels_identical": true
+    }
+  ],
+  "edited_preview": "edited-preview/slide-002.png",
+  "edited_preview_sha256": "16d9b56cc0e432877ac8ff4bf4b76d81c56b6f7cd074dc3eb9c14a4789d3a8bd",
+  "comparison": "comparison.png",
+  "comparison_sha256": "8e1261d166ca97699d97f1eb62ec354c0eca130d23ef4b274c017bf209fd8f6a",
+  "disclosure": "This separate copy demonstrates native editing only. Changing 1,944 to 1,620 does not revise the official planning scenario or its calculations. The official deck, scenes, semantic maps, notes and generated targets remain unchanged. The assumption table is an independent business view and is intentionally unchanged in this editing demonstration."
+}

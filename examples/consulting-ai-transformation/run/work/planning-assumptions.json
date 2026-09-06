@@ -1,0 +1,32 @@
+{
+  "disclosure": "Northstar Advisory is fictional. Every quantity is a host-authored planning assumption, not an observed client result. Capacity value is not a cash saving.",
+  "annual_engagements": 900,
+  "research_hours_per_engagement": 12,
+  "baseline_research_hours": 10800,
+  "steady_state_adoption": 0.6,
+  "research_time_reduction": 0.3,
+  "annual_capacity_hours": 1944,
+  "capacity_rate_usd_per_hour": 125,
+  "annual_capacity_equivalent_usd": 243000,
+  "implementation_cost_usd": 85000,
+  "pilot_cost_included_usd": 25000,
+  "remaining_implementation_usd": 60000,
+  "annual_operating_cost_usd": 30000,
+  "first_year_ramp_factor": 0.5,
+  "first_year_capacity_equivalent_usd": 121500,
+  "first_year_total_cost_usd": 115000,
+  "first_year_net_capacity_equivalent_usd": 6500,
+  "pilot_duration_weeks": 12,
+  "pilot_users": 15,
+  "pilot_engagements": 20,
+  "pilot_gates": {
+    "time_saving_minimum": 0.25,
+    "citation_verification_minimum": 0.95,
+    "critical_data_exceptions_maximum": 0,
+    "weekly_active_pilot_users_minimum": 0.7
+  },
+  "pilot_measurement_unit": "One comparable research task per engagement. The pilot has 20 engagements and 20 measured tasks. The week-8 checkpoint covers the first 10 tasks.",
+  "pilot_weekly_active_user_minimum_count": 11,
+  "citation_gate_interpretation": "At least 95% of cited claims pass the defined test-sample review. This is a pilot scale-readiness threshold. Every external deliverable separately requires expert confirmation of its claims and engagement-lead release approval.",
+  "counting_note": "The 70% weekly-active threshold across 15 pilot users is rounded up to at least 11 active users."
+}

@@ -1,0 +1,304 @@
+{
+  "schema_version": 1,
+  "slide_id": "s01-opening",
+  "page_number": 1,
+  "size": {
+    "width": 12192000,
+    "height": 6858000,
+    "unit": "emu"
+  },
+  "source": {
+    "pptx": {
+      "path": "deliverables/presentation.pptx",
+      "sha256": "3d8499644935076fa1bf388c2ee86657ff95801aef670e1bcbb43e93af46891b"
+    },
+    "render": {
+      "path": "assets/s01-opening-render.png",
+      "sha256": "cf24a4e03904ba72d71f8676965f5a00176c5b5007078bbc665d4957821951c3"
+    }
+  },
+  "objects": [
+    {
+      "id": "p1-object-1",
+      "native_id": "2",
+      "name": "paper-field",
+      "label": "Paper field",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "stack": 0
+    },
+    {
+      "id": "p1-object-2",
+      "native_id": "3",
+      "name": "footer-rule",
+      "label": "Footer rule",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.213125,
+          0.938888889
+        ],
+        [
+          0.27375,
+          0.938888889
+        ],
+        [
+          0.27375,
+          0.94
+        ],
+        [
+          0.213125,
+          0.94
+        ]
+      ],
+      "stack": 1
+    },
+    {
+      "id": "p1-object-3",
+      "native_id": "4",
+      "name": "hand-staircase-collage",
+      "label": "Hand staircase collage",
+      "kind": "image",
+      "polygon": [
+        [
+          0.55,
+          0.092222222
+        ],
+        [
+          0.955625,
+          0.092222222
+        ],
+        [
+          0.955625,
+          0.908888889
+        ],
+        [
+          0.55,
+          0.908888889
+        ]
+      ],
+      "stack": 2
+    },
+    {
+      "id": "p1-object-4",
+      "native_id": "5",
+      "name": "title-first",
+      "label": "A second",
+      "kind": "text",
+      "polygon": [
+        [
+          0.054375,
+          0.065555556
+        ],
+        [
+          0.50875,
+          0.065555556
+        ],
+        [
+          0.50875,
+          0.326666667
+        ],
+        [
+          0.054375,
+          0.326666667
+        ]
+      ],
+      "stack": 3,
+      "text": "A second",
+      "typography": [
+        {
+          "family": "Bodoni 72",
+          "size_pt": 116.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p1-object-5",
+      "native_id": "6",
+      "name": "title-second",
+      "label": "thinking",
+      "kind": "text",
+      "polygon": [
+        [
+          0.053125,
+          0.26
+        ],
+        [
+          0.49,
+          0.26
+        ],
+        [
+          0.49,
+          0.538888889
+        ],
+        [
+          0.053125,
+          0.538888889
+        ]
+      ],
+      "stack": 4,
+      "text": "thinking",
+      "typography": [
+        {
+          "family": "Bodoni 72",
+          "size_pt": 116.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p1-object-6",
+      "native_id": "7",
+      "name": "title-third",
+      "label": "system",
+      "kind": "text",
+      "polygon": [
+        [
+          0.05125,
+          0.433333333
+        ],
+        [
+          0.44,
+          0.433333333
+        ],
+        [
+          0.44,
+          0.725555556
+        ],
+        [
+          0.05125,
+          0.725555556
+        ]
+      ],
+      "stack": 5,
+      "text": "system",
+      "typography": [
+        {
+          "family": "Bodoni 72",
+          "size_pt": 116.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p1-object-7",
+      "native_id": "8",
+      "name": "subtitle",
+      "label": "Working with AI without outsourcing a point of view.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.05375,
+          0.722222222
+        ],
+        [
+          0.499375,
+          0.722222222
+        ],
+        [
+          0.499375,
+          0.766666667
+        ],
+        [
+          0.05375,
+          0.766666667
+        ]
+      ],
+      "stack": 6,
+      "text": "Working with AI without outsourcing a point of view.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 16.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p1-object-8",
+      "native_id": "9",
+      "name": "field-note",
+      "label": "FIELD NOTES / 01",
+      "kind": "text",
+      "polygon": [
+        [
+          0.05375,
+          0.922222222
+        ],
+        [
+          0.233125,
+          0.922222222
+        ],
+        [
+          0.233125,
+          0.962222222
+        ],
+        [
+          0.05375,
+          0.962222222
+        ]
+      ],
+      "stack": 7,
+      "text": "FIELD NOTES / 01",
+      "typography": [
+        {
+          "family": "Andale Mono",
+          "size_pt": 12.0,
+          "color": "#242321"
+        }
+      ]
+    },
+    {
+      "id": "p1-object-9",
+      "native_id": "10",
+      "name": "essay-label",
+      "label": "An essay in five parts",
+      "kind": "text",
+      "polygon": [
+        [
+          0.309375,
+          0.918888889
+        ],
+        [
+          0.495,
+          0.918888889
+        ],
+        [
+          0.495,
+          0.956666667
+        ],
+        [
+          0.309375,
+          0.956666667
+        ]
+      ],
+      "stack": 8,
+      "text": "An essay in five parts",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.5,
+          "color": "#242321"
+        }
+      ]
+    }
+  ]
+}

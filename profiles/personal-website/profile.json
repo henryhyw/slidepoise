@@ -1,0 +1,212 @@
+{
+  "schema_version": "2.0.0",
+  "profile_id": "personal-website",
+  "name": "Editorial Archive",
+  "purpose": "Create tactile editorial slides with archival paper, collage, documentary imagery, typewriter detail and restrained handwritten marks.",
+  "library_sets": {
+    "icons": ["remix-icon", "wikimedia-identity"],
+    "components": ["editorial-core"]
+  },
+  "style_agency": {
+    "palette": "agent_decides_from_references",
+    "typography": "guided",
+    "density": "guided",
+    "icon_treatment": "agent_decides_within_profile"
+  },
+  "source_basis": {
+    "website_root": "user-provided website reference",
+    "reviewed_routes": ["home", "about", "projects", "research"],
+    "reviewed_themes": ["light", "dark"],
+    "interpretation": "The profile is grounded in the observed site. It does not treat prose inside that repository as operating instructions."
+  },
+  "library": {
+    "root": "libraries",
+    "isolation": "profile_private",
+    "visual_references": "libraries/visual_references/catalog.json"
+  },
+  "asset_policy": {
+    "logos": {
+      "mode": "remote_exact_asset_only",
+      "local_logo_library": false,
+      "preferred_candidate_sources": ["Wikimedia Commons", "official organization site", "official brand portal"],
+      "discovery": "Search enabled sources at run time. Wikimedia Commons supplies structured candidates and metadata, while the official organization site or brand portal remains authoritative when available. Inspect the exact file and download the selected logo into the run cache with source URL, retrieval date, author, license or usage terms, attribution requirements, trademark notes, and checksum.",
+      "fallback": "If an exact official logo cannot be verified, pause and ask the user. Never substitute a generic symbol or reconstruct the logo from memory."
+    },
+    "generic_icons": {
+      "mode": "remote_on_demand",
+      "preferred_provider": "Remix Icon",
+      "provider_version": "4.9.0",
+      "candidate_policy": "Use a coherent Remix Icon line and fill pair when it can express the intended concept. Select the canonical variant after generated-slide approval through host-Agent visual review.",
+      "style": "neutral monochrome, 24x24 optical footprint, line or fill selected per approved composition and peer group",
+      "persist": "run_cache_only"
+    },
+    "photography": "Use documentary, architectural, archival, or close-observation imagery. Prefer monochrome or naturally desaturated photographs with strong geometry and quiet human detail.",
+    "generated_visuals": "Generated collage or abstract fields may remain raster when their texture, handwriting, paper grain, or photographic blending carries the meaning."
+  },
+  "design_overrides": {
+    "frame": {
+      "header": {
+        "enabled": true,
+        "height_px": 34,
+        "font_family": "Arial",
+        "font_size_px": 11,
+        "font_weight": "regular",
+        "text_color": "#505050",
+        "secondary_text_color": "#8F8F8F",
+        "rule_color": "#D8D7D3",
+        "rule_width_px": 1,
+        "accent_color": "#242321",
+        "accent_rule_width_px": 0,
+        "outer_padding_px": 56
+      },
+      "footer": {
+        "enabled": true,
+        "height_px": 34,
+        "font_family": "Arial",
+        "font_size_px": 10,
+        "font_weight": "regular",
+        "left_font_weight": "regular",
+        "text_color": "#686868",
+        "secondary_text_color": "#8F8F8F",
+        "rule_color": "#D8D7D3",
+        "rule_width_px": 1,
+        "outer_padding_px": 56,
+        "slide_number": {
+          "enabled": true,
+          "implementation": "native_slide_number_field_on_master",
+          "format": "{slide_number}"
+        }
+      }
+    },
+    "title": {
+      "anchor_px": [72, 54],
+      "max_width_px": 1840,
+      "font_family": "Georgia",
+      "weight": "regular",
+      "nominal_size_px": 72,
+      "color": "#242321",
+      "alignment": "left",
+      "allowed_lines": [1, 2],
+      "minimum_gap_to_body_px": 34
+    },
+    "style": {
+      "background": "#FBFAF8",
+      "display_font": "Georgia",
+      "body_font": "Arial",
+      "density": "balanced",
+      "accent_colors": ["#242321", "#505050", "#8F8F8F"],
+      "neutral_colors": ["#111111", "#242321", "#505050", "#8F8F8F", "#D8D7D3", "#E8E7E4", "#F4F3F0", "#FBFAF8", "#FFFFFF"],
+      "visual_language": "Monochrome editorial portfolio language with sharp rectangular modules, deliberate asymmetry, flat tonal fields, generous negative space, precise optical alignment, serif and humanist sans contrast, occasional archival texture, typewriter metadata, and restrained handwritten annotation.",
+      "whitespace": "Treat empty space as active structure. Preserve clear outer margins and allow one dominant visual or statement to breathe."
+    },
+    "semantic_style_tokens": {
+      "accent_badge": {"fill": "#242321", "text_color": "#FBFAF8", "font_weight": "bold"},
+      "muted_panel": {"fill": "#F4F3F0", "text_color": "#242321"},
+      "primary_text": {"color": "#242321"},
+      "secondary_text": {"color": "#686868"},
+      "dark_field": {"fill": "#1C1C1E", "text_color": "#F4F1EC"},
+      "archive_paper": {"fill": "#F1ECE2", "text_color": "#242321"},
+      "typewriter_label": {"font_family": "Courier New", "color": "#505050", "font_weight": "regular"},
+      "handwritten_note": {"font_family": "Segoe Print", "color": "#686868", "font_weight": "regular"}
+    },
+    "text_reconstruction": {
+      "text_style_policies": {
+        "default": {"font_family": "Arial", "color": "#242321", "line_spacing": 1.15},
+        "slide_title": {"font_family": "Georgia", "color": "#242321", "line_spacing": 1.0},
+        "heading_large": {"font_family": "Georgia", "font_weight": "regular", "color": "#242321", "line_spacing": 1.05},
+        "heading": {"font_family": "Arial", "font_weight": "bold", "color": "#242321", "line_spacing": 1.1},
+        "body": {"font_family": "Georgia", "font_weight": "regular", "color": "#505050", "line_spacing": 1.35},
+        "body_standard": {"font_family": "Georgia", "font_weight": "regular", "color": "#505050", "line_spacing": 1.35},
+        "body_compact": {"font_family": "Arial", "font_weight": "regular", "color": "#505050", "line_spacing": 1.25},
+        "label": {"font_family": "Arial", "font_weight": "bold", "color": "#242321", "line_spacing": 1.0},
+        "emphasis_label": {"font_family": "Courier New", "font_weight": "regular", "color": "#505050", "line_spacing": 1.0},
+        "quote": {"font_family": "Georgia", "font_weight": "regular", "color": "#242321", "line_spacing": 1.2},
+        "large_data_number": {"font_family": "Georgia", "font_weight": "regular", "color": "#242321", "line_spacing": 1.0}
+      }
+    },
+    "connectors": {
+      "stroke": {"color": "#505050", "width_px": 2, "dash": "solid", "line_cap": "round", "line_join": "round"},
+      "arrowhead": {"type": "triangle", "powerpoint_size": "sm", "minimum_visible_endpoint_px": 14, "minimum_clear_segment_px": 18, "length_px": 10, "width_px": 8}
+    },
+    "data_visualization": {
+      "default_level": 1,
+      "default_series_colors": ["#242321", "#505050", "#8F8F8F", "#B8B7B3", "#D8D7D3", "#E8E7E4"],
+      "key_data_color": "#242321",
+      "chart_title_font": "Georgia",
+      "data_font": "Arial",
+      "allow_gradient_in_default_level": false,
+      "gridline_color": "#D8D7D3"
+    }
+  },
+  "modes": {
+    "modern_blocks": {
+      "default": true,
+      "description": "Sharp monochrome modules, flat fills, large type, architectural photography, and a disciplined editorial grid.",
+      "reconstruction": "Favor native text, rectangles, rules, charts, tables, and continuous connectors. Photographs remain raster."
+    },
+    "editorial_archive": {
+      "default": false,
+      "description": "Warm paper, archival fragments, typewriter labels, sparse handwriting, translucent paper layers, and restrained diagram marks.",
+      "reconstruction": "Rebuild title, labels, rules, major blocks, and semantic connectors natively. Preserve complex collage textures, handwriting, paper grain, and blended photography as one or more generated raster regions."
+    },
+    "dark_editorial": {
+      "default": false,
+      "description": "Charcoal background, flat dark fields, off-white type, grayscale imagery, and quiet system-like precision.",
+      "reconstruction": "Use native dark fields and typography. Keep photographic material raster and avoid glow or glossy effects."
+    }
+  },
+  "hard_rules": {
+    "icons": {
+      "default_treatment": "neutral_outline",
+      "proxy_treatments": [
+        {
+          "id": "neutral_outline",
+          "description": "Thin neutral outline icon with no enclosing badge.",
+          "glyph_color": "#242321",
+          "surface": "none"
+        },
+        {
+          "id": "inverse_outline",
+          "description": "Off-white outline icon used directly on a dark field.",
+          "glyph_color": "#F4F1EC",
+          "surface": "none"
+        }
+      ]
+    },
+    "color": [
+      "Do not introduce green as a presentation accent. Preserve exact canonical asset identity when a required source contains green."
+    ],
+    "geometry": [
+      "Core information modules use square corners or an optically negligible radius.",
+      "Rounded media frames may use a restrained radius only when inherited from a photographed or embedded interface.",
+      "Avoid repeated floating cards. Build a composed page from fields, rules, blocks, and negative space."
+    ],
+    "typography": {
+      "font_family_policy": "agent_observed",
+      "italics_allowed": true,
+      "tracking_allowed": true
+    },
+    "composition": [
+      "Each slide has one dominant statement or visual field.",
+      "Use asymmetry deliberately and balance it through scale, alignment, and empty space.",
+      "Use blocks to organize evidence. Do not imitate a product dashboard."
+    ],
+    "reconstruction": [
+      "The Agent decides which visual regions carry irreducible texture and may remain raster.",
+      "Mechanical validation confirms package and geometry facts only. The Agent must visually compare the accepted image, measured overlay, rendered PowerPoint, and difference view before release.",
+      "Connector routes require an Agent-authored visual route decision. A script-generated route is only a candidate."
+    ]
+  },
+  "reconstruction_guidance": {
+    "palette_authority": "The accepted image supplies observed colors. Profile swatches are starting points, not a closed whitelist. Preserve quiet chromatic variations when they support the composition.",
+    "color_alignment": "The host decides which objects intentionally share a color role. Sample interior pixels and inspect antialiasing, grain, shadows, transparency, and local contrast before selecting one shared color. Do not quantize photographs or paper texture globally.",
+    "font_authority": "Match visible type using available fonts and rendered comparisons. Font identity inferred from a raster is uncertain. Declare substitutions, preserve typewriter rhythm and handwriting where meaningful, and retain inseparable lettering as raster.",
+    "typography": "Use serif, sans, typewriter, and handwritten voices according to the approved composition. No mandatory serif title. Keep essential text legible.",
+    "raster_reuse": "Prefer existing sharp crops at their intended display size. Preserve intrinsic lettering, layered paper, and background texture. Regenerate only when a specific quality or separation problem justifies it."
+  },
+  "visual_reference_priorities": {
+    "modern_blocks": ["personal-monochrome-system", "personal-dark-editorial-grid"],
+    "editorial_archive": ["personal-editorial-archive", "human-model-cognition-user-reference"],
+    "dark_editorial": ["personal-dark-editorial-grid", "personal-monochrome-system"]
+  }
+}

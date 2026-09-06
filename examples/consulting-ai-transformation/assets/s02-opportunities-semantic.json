@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "source_semantic_map": "semantic-map.json",
+  "source_semantic_map_sha256": "0ad877fe86736ab223eec6e439531893912317831526ddbf27c9f2c092c6f1a0",
+  "notice": "Selected host-authored explanations. Full measurement retains every source entity and three semantic argument groups.",
+  "entities": [
+    {
+      "id": "annual-capacity-chart",
+      "kind": "chart",
+      "bbox_hint": [
+        31,
+        274,
+        620,
+        221
+      ],
+      "display_label": "One workbook-linked chart",
+      "members": [
+        "annual-capacity-chart",
+        "research-category",
+        "proposal-category",
+        "retrieval-category",
+        "research-value",
+        "proposal-value",
+        "retrieval-value"
+      ]
+    },
+    {
+      "id": "workflow-assumptions",
+      "kind": "table",
+      "bbox_hint": [
+        33,
+        502,
+        582,
+        198
+      ],
+      "display_label": "Transparent model inputs",
+      "members": [
+        "workflow-assumptions"
+      ]
+    },
+    {
+      "id": "pilot-sequencing",
+      "kind": "table",
+      "bbox_hint": [
+        670,
+        254,
+        661,
+        506
+      ],
+      "display_label": "Native decision comparison",
+      "members": [
+        "pilot-sequencing"
+      ]
+    },
+    {
+      "id": "overlap-qualification",
+      "kind": "text",
+      "bbox_hint": [
+        1399,
+        700,
+        391,
+        59
+      ],
+      "display_label": "Avoid double-counting",
+      "members": [
+        "overlap-qualification"
+      ]
+    },
+    {
+      "id": "decision-message",
+      "kind": "text",
+      "bbox_hint": [
+        509,
+        847,
+        774,
+        43
+      ],
+      "display_label": "Bounded pilot recommendation",
+      "members": [
+        "decision-message"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,677 @@
+{
+  "schema_version": "2.0.0",
+  "source_scene_evidence": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s02-opportunities/work/accepted-slide.png",
+  "full_slide_dimensions_px": [
+    1920,
+    1080
+  ],
+  "generation_region": {
+    "offset_y_px": 64,
+    "dimensions_px": [
+      1920,
+      960
+    ]
+  },
+  "coordinate_transform_to_full_slide": {
+    "scale_xy": [
+      1.0,
+      1.0
+    ],
+    "translation_px": [
+      0,
+      64
+    ]
+  },
+  "frame_configuration": {
+    "header": {
+      "enabled": true,
+      "height_px": 64,
+      "implementation": "slide_master_inherited_content",
+      "left_text": "NORTHSTAR ADVISORY",
+      "right_text": "AI TRANSFORMATION",
+      "font_family": "Arial",
+      "font_size_px": 20,
+      "font_weight": "regular",
+      "text_color": "#666666",
+      "secondary_text_color": "#666666",
+      "rule_color": "#DFE3E6",
+      "rule_width_px": 1,
+      "accent_color": "#FD5108",
+      "accent_rule_width_px": 0,
+      "outer_padding_px": 48
+    },
+    "footer": {
+      "enabled": true,
+      "height_px": 56,
+      "implementation": "slide_master_inherited_content",
+      "left_text": "ILLUSTRATIVE PLANNING ASSUMPTIONS",
+      "center_text": "Capacity value is not a cash saving.",
+      "font_family": "Arial",
+      "font_size_px": 18,
+      "font_weight": "regular",
+      "left_font_weight": "regular",
+      "text_color": "#666666",
+      "secondary_text_color": "#666666",
+      "rule_color": "#DFE3E6",
+      "rule_width_px": 1,
+      "outer_padding_px": 48,
+      "slide_number": {
+        "enabled": true,
+        "implementation": "native_slide_number_field_on_master",
+        "format": "{slide_number}"
+      }
+    },
+    "generation_region": {
+      "derive_from_frame_heights": true
+    },
+    "slide_number": 1
+  },
+  "speaker_notes": [
+    "This is an illustrative planning model for fictional Northstar Advisory. Annual capacity assumes 900 engagements. Research uses 900 x 12 baseline hours x 60% adoption x 30% time saved = 1,944 hours. The same formula produces 1,440 proposal hours and 1,080 retrieval hours from the displayed assumptions.",
+    "The three workflow estimates may overlap and cannot be added without checking task boundaries. Capacity released is not a cash saving. Control readiness determines the proposed sequence, and expert review remains required before any client release."
+  ],
+  "reconstruction_units": [
+    {
+      "id": "headline",
+      "semantic_kind": "text",
+      "semantic_role": "headline",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "headline",
+      "bbox_px": [
+        48,
+        19,
+        1824,
+        80
+      ],
+      "component_id": null
+    },
+    {
+      "id": "subtitle",
+      "semantic_kind": "text",
+      "semantic_role": "subtitle",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "subtitle",
+      "bbox_px": [
+        48,
+        103,
+        1824,
+        48
+      ],
+      "component_id": null
+    },
+    {
+      "id": "introduction-rule",
+      "semantic_kind": "shape",
+      "semantic_role": "native_presentation_geometry",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "introduction-rule",
+      "bbox_px": [
+        48,
+        165,
+        1824,
+        2
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-heading",
+      "semantic_kind": "text",
+      "semantic_role": "capacity-heading",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-heading",
+      "bbox_px": [
+        32,
+        192,
+        620,
+        42
+      ],
+      "component_id": null
+    },
+    {
+      "id": "sequencing-heading",
+      "semantic_kind": "text",
+      "semantic_role": "sequencing-heading",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "sequencing-heading",
+      "bbox_px": [
+        670,
+        192,
+        661,
+        42
+      ],
+      "component_id": null
+    },
+    {
+      "id": "reason-heading",
+      "semantic_kind": "text",
+      "semantic_role": "reason-heading",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "reason-heading",
+      "bbox_px": [
+        1382,
+        192,
+        500,
+        42
+      ],
+      "component_id": null
+    },
+    {
+      "id": "chart-unit",
+      "semantic_kind": "text",
+      "semantic_role": "chart-unit",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "chart-unit",
+      "bbox_px": [
+        32,
+        227,
+        620,
+        36
+      ],
+      "component_id": null
+    },
+    {
+      "id": "annual-capacity-chart",
+      "semantic_kind": "chart",
+      "semantic_role": "quantified_opportunity_comparison",
+      "selected_route": "native_chart",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "annual-capacity-chart",
+      "bbox_px": [
+        31,
+        261,
+        620,
+        234
+      ],
+      "component_id": null
+    },
+    {
+      "id": "research-category",
+      "semantic_kind": "text",
+      "semantic_role": "research-category",
+      "selected_route": "native_text",
+      "node_class": "measurement_evidence",
+      "emits_ppt_object": false,
+      "render_owner": "annual-capacity-chart",
+      "bbox_px": [
+        31,
+        280,
+        129,
+        53
+      ],
+      "component_id": null
+    },
+    {
+      "id": "proposal-category",
+      "semantic_kind": "text",
+      "semantic_role": "proposal-category",
+      "selected_route": "native_text",
+      "node_class": "measurement_evidence",
+      "emits_ppt_object": false,
+      "render_owner": "annual-capacity-chart",
+      "bbox_px": [
+        31,
+        356,
+        129,
+        53
+      ],
+      "component_id": null
+    },
+    {
+      "id": "retrieval-category",
+      "semantic_kind": "text",
+      "semantic_role": "retrieval-category",
+      "selected_route": "native_text",
+      "node_class": "measurement_evidence",
+      "emits_ppt_object": false,
+      "render_owner": "annual-capacity-chart",
+      "bbox_px": [
+        31,
+        429,
+        129,
+        55
+      ],
+      "component_id": null
+    },
+    {
+      "id": "research-value",
+      "semantic_kind": "text",
+      "semantic_role": "research-value",
+      "selected_route": "native_text",
+      "node_class": "measurement_evidence",
+      "emits_ppt_object": false,
+      "render_owner": "annual-capacity-chart",
+      "bbox_px": [
+        525,
+        283,
+        123,
+        42
+      ],
+      "component_id": null
+    },
+    {
+      "id": "proposal-value",
+      "semantic_kind": "text",
+      "semantic_role": "proposal-value",
+      "selected_route": "native_text",
+      "node_class": "measurement_evidence",
+      "emits_ppt_object": false,
+      "render_owner": "annual-capacity-chart",
+      "bbox_px": [
+        433,
+        360,
+        120,
+        41
+      ],
+      "component_id": null
+    },
+    {
+      "id": "retrieval-value",
+      "semantic_kind": "text",
+      "semantic_role": "retrieval-value",
+      "selected_route": "native_text",
+      "node_class": "measurement_evidence",
+      "emits_ppt_object": false,
+      "render_owner": "annual-capacity-chart",
+      "bbox_px": [
+        371,
+        437,
+        119,
+        43
+      ],
+      "component_id": null
+    },
+    {
+      "id": "workflow-assumptions",
+      "semantic_kind": "table",
+      "semantic_role": "structured_comparison",
+      "selected_route": "native_table",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "workflow-assumptions",
+      "bbox_px": [
+        33,
+        502,
+        582,
+        198
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-formula",
+      "semantic_kind": "text",
+      "semantic_role": "capacity-formula",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-formula",
+      "bbox_px": [
+        32,
+        707,
+        621,
+        79
+      ],
+      "component_id": null
+    },
+    {
+      "id": "pilot-sequencing",
+      "semantic_kind": "table",
+      "semantic_role": "structured_comparison",
+      "selected_route": "native_table",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "pilot-sequencing",
+      "bbox_px": [
+        670,
+        254,
+        661,
+        506
+      ],
+      "component_id": null
+    },
+    {
+      "id": "reason-number-01",
+      "semantic_kind": "text",
+      "semantic_role": "reason-number-01",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "reason-number-01",
+      "bbox_px": [
+        1381,
+        257,
+        72,
+        66
+      ],
+      "component_id": null
+    },
+    {
+      "id": "reason-title-01",
+      "semantic_kind": "text",
+      "semantic_role": "reason-title-01",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "reason-title-01",
+      "bbox_px": [
+        1471,
+        250,
+        428,
+        44
+      ],
+      "component_id": null
+    },
+    {
+      "id": "reason-detail-01",
+      "semantic_kind": "text",
+      "semantic_role": "reason-detail-01",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "reason-detail-01",
+      "bbox_px": [
+        1471,
+        285,
+        429,
+        87
+      ],
+      "component_id": null
+    },
+    {
+      "id": "reason-number-02",
+      "semantic_kind": "text",
+      "semantic_role": "reason-number-02",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "reason-number-02",
+      "bbox_px": [
+        1381,
+        398,
+        72,
+        66
+      ],
+      "component_id": null
+    },
+    {
+      "id": "reason-title-02",
+      "semantic_kind": "text",
+      "semantic_role": "reason-title-02",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "reason-title-02",
+      "bbox_px": [
+        1471,
+        400,
+        428,
+        44
+      ],
+      "component_id": null
+    },
+    {
+      "id": "reason-detail-02",
+      "semantic_kind": "text",
+      "semantic_role": "reason-detail-02",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "reason-detail-02",
+      "bbox_px": [
+        1471,
+        435,
+        429,
+        87
+      ],
+      "component_id": null
+    },
+    {
+      "id": "reason-number-03",
+      "semantic_kind": "text",
+      "semantic_role": "reason-number-03",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "reason-number-03",
+      "bbox_px": [
+        1381,
+        549,
+        72,
+        66
+      ],
+      "component_id": null
+    },
+    {
+      "id": "reason-title-03",
+      "semantic_kind": "text",
+      "semantic_role": "reason-title-03",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "reason-title-03",
+      "bbox_px": [
+        1471,
+        551,
+        428,
+        44
+      ],
+      "component_id": null
+    },
+    {
+      "id": "reason-detail-03",
+      "semantic_kind": "text",
+      "semantic_role": "reason-detail-03",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "reason-detail-03",
+      "bbox_px": [
+        1471,
+        586,
+        429,
+        87
+      ],
+      "component_id": null
+    },
+    {
+      "id": "reason-divider-1",
+      "semantic_kind": "shape",
+      "semantic_role": "native_presentation_geometry",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "reason-divider-1",
+      "bbox_px": [
+        1382,
+        377,
+        500,
+        1
+      ],
+      "component_id": null
+    },
+    {
+      "id": "reason-divider-2",
+      "semantic_kind": "shape",
+      "semantic_role": "native_presentation_geometry",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "reason-divider-2",
+      "bbox_px": [
+        1382,
+        528,
+        500,
+        1
+      ],
+      "component_id": null
+    },
+    {
+      "id": "overlap-note-panel",
+      "semantic_kind": "shape",
+      "semantic_role": "native_presentation_geometry",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "overlap-note-panel",
+      "bbox_px": [
+        1382,
+        682,
+        500,
+        92
+      ],
+      "component_id": null
+    },
+    {
+      "id": "overlap-qualification",
+      "semantic_kind": "text",
+      "semantic_role": "overlap-qualification",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "overlap-qualification",
+      "bbox_px": [
+        1400,
+        689,
+        466,
+        82
+      ],
+      "component_id": null
+    },
+    {
+      "id": "decision-band",
+      "semantic_kind": "shape",
+      "semantic_role": "native_presentation_geometry",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "decision-band",
+      "bbox_px": [
+        48,
+        793,
+        1824,
+        134
+      ],
+      "component_id": null
+    },
+    {
+      "id": "decision-accent",
+      "semantic_kind": "shape",
+      "semantic_role": "native_presentation_geometry",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "decision-accent",
+      "bbox_px": [
+        48,
+        793,
+        8,
+        134
+      ],
+      "component_id": null
+    },
+    {
+      "id": "decision-label",
+      "semantic_kind": "text",
+      "semantic_role": "decision-label",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "decision-label",
+      "bbox_px": [
+        100,
+        832,
+        420,
+        52
+      ],
+      "component_id": null
+    },
+    {
+      "id": "decision-message",
+      "semantic_kind": "text",
+      "semantic_role": "decision-message",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "decision-message",
+      "bbox_px": [
+        560,
+        832,
+        1265,
+        52
+      ],
+      "component_id": null
+    }
+  ],
+  "canonical_asset_mappings": [],
+  "connector_reconstruction_plans": [],
+  "connector_configuration": {
+    "allowed_families": [
+      "direct_flow",
+      "orthogonal_dependency",
+      "merge_split",
+      "grouping_bracket",
+      "grouping_brace",
+      "annotation_leader"
+    ],
+    "stroke": {
+      "color": "#FD5108",
+      "width_px": 3,
+      "dash": "solid",
+      "line_cap": "round",
+      "line_join": "round"
+    },
+    "arrowhead": {
+      "type": "triangle",
+      "powerpoint_size": "lg",
+      "minimum_visible_endpoint_px": 18,
+      "minimum_clear_segment_px": 16,
+      "length_px": 14,
+      "width_px": 12
+    },
+    "routing": {
+      "minimum_clearance_px": 12,
+      "maximum_ordinary_bends": 2,
+      "grouping_brace_depth_px": 34,
+      "grouping_bracket_depth_px": 22,
+      "grouping_brace_preset_depth_factor": 1.7
+    }
+  },
+  "z_order_relations": [],
+  "fitted_text_contracts": [],
+  "layout_constraints": {
+    "non_overlap_pairs": [
+      [
+        "headline",
+        "subtitle"
+      ],
+      [
+        "pilot-sequencing",
+        "decision-band"
+      ],
+      [
+        "overlap-note-panel",
+        "decision-band"
+      ]
+    ]
+  },
+  "evidence_policy": {
+    "pixel_evidence_emits_objects": false,
+    "generated_icon_glyphs_emit_objects": false,
+    "meaningful_visible_entity_must_emit_or_have_emitted_owner": true,
+    "accepted_target_geometry_frozen": true
+  }
+}

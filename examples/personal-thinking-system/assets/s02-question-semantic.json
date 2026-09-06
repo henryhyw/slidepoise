@@ -1,0 +1,69 @@
+{
+  "purpose": "Host-authored explanation of selected semantic groups. The full semantic map remains the reconstruction input.",
+  "source_semantic_map": "semantic-map.json",
+  "source_sha256": "9dbd577ad0fe557b1fee760c7265ef05f2c4aada6e0443107882464b1b125a45",
+  "entities": [
+    {
+      "id": "explanation-1",
+      "kind": "text",
+      "display_label": "Editable two-line headline",
+      "bbox_hint": [
+        711,
+        45,
+        940,
+        352
+      ],
+      "source_member_ids": [
+        "title-first",
+        "title-second"
+      ]
+    },
+    {
+      "id": "explanation-2",
+      "kind": "image",
+      "display_label": "Preserved eye and paper collage",
+      "bbox_hint": [
+        67,
+        197,
+        559,
+        580
+      ],
+      "source_member_ids": [
+        "question-collage"
+      ]
+    },
+    {
+      "id": "explanation-3",
+      "kind": "text",
+      "display_label": "Editable questions and argument",
+      "bbox_hint": [
+        716,
+        420,
+        676,
+        388
+      ],
+      "source_member_ids": [
+        "premise",
+        "prompt-first",
+        "prompt-second",
+        "conclusion"
+      ]
+    },
+    {
+      "id": "explanation-publication-folio",
+      "kind": "text",
+      "display_label": "Series identity, before calibration",
+      "bbox_hint": [
+        70,
+        861,
+        230,
+        30
+      ],
+      "source_member_ids": [
+        "field-note"
+      ],
+      "region_basis": "Original target allocation. The native publication role now uses the common deck allocation."
+    }
+  ],
+  "revision_note": "The recurring publication folio is calibrated after user review. Existing generated targets remain retained full-slide historical sources."
+}

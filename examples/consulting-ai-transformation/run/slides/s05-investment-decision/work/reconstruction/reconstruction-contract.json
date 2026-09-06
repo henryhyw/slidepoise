@@ -1,0 +1,765 @@
+{
+  "schema_version": "2.0.0",
+  "source_scene_evidence": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s05-investment-decision/work/accepted-slide.png",
+  "full_slide_dimensions_px": [
+    1920,
+    1080
+  ],
+  "generation_region": {
+    "offset_y_px": 64,
+    "dimensions_px": [
+      1920,
+      960
+    ]
+  },
+  "coordinate_transform_to_full_slide": {
+    "scale_xy": [
+      1.0,
+      1.0
+    ],
+    "translation_px": [
+      0,
+      64
+    ]
+  },
+  "frame_configuration": {
+    "header": {
+      "enabled": true,
+      "height_px": 64,
+      "implementation": "slide_master_inherited_content",
+      "left_text": "NORTHSTAR ADVISORY",
+      "right_text": "AI TRANSFORMATION",
+      "font_family": "Arial",
+      "font_size_px": 20,
+      "font_weight": "regular",
+      "text_color": "#666666",
+      "secondary_text_color": "#666666",
+      "rule_color": "#DFE3E6",
+      "rule_width_px": 1,
+      "accent_color": "#FD5108",
+      "accent_rule_width_px": 0,
+      "outer_padding_px": 48
+    },
+    "footer": {
+      "enabled": true,
+      "height_px": 56,
+      "implementation": "slide_master_inherited_content",
+      "left_text": "ILLUSTRATIVE PLANNING ASSUMPTIONS",
+      "center_text": "Capacity value is not a cash saving.",
+      "font_family": "Arial",
+      "font_size_px": 18,
+      "font_weight": "regular",
+      "left_font_weight": "regular",
+      "text_color": "#666666",
+      "secondary_text_color": "#666666",
+      "rule_color": "#DFE3E6",
+      "rule_width_px": 1,
+      "outer_padding_px": 48,
+      "slide_number": {
+        "enabled": true,
+        "implementation": "native_slide_number_field_on_master",
+        "format": "{slide_number}"
+      }
+    },
+    "generation_region": {
+      "derive_from_frame_heights": true
+    },
+    "slide_number": 1
+  },
+  "reconstruction_units": [
+    {
+      "id": "headline",
+      "semantic_kind": "text",
+      "semantic_role": "headline",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "headline",
+      "bbox_px": [
+        48,
+        19,
+        1824,
+        80
+      ],
+      "component_id": null
+    },
+    {
+      "id": "subtitle",
+      "semantic_kind": "text",
+      "semantic_role": "subtitle",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "subtitle",
+      "bbox_px": [
+        48,
+        103,
+        1824,
+        47
+      ],
+      "component_id": null
+    },
+    {
+      "id": "introduction-rule",
+      "semantic_kind": "shape",
+      "semantic_role": "native_presentation_geometry",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "introduction-rule",
+      "bbox_px": [
+        48,
+        165,
+        1824,
+        2
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-heading",
+      "semantic_kind": "text",
+      "semantic_role": "capacity-heading",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-heading",
+      "bbox_px": [
+        41,
+        201,
+        584,
+        44
+      ],
+      "component_id": null
+    },
+    {
+      "id": "investment-heading",
+      "semantic_kind": "text",
+      "semantic_role": "investment-heading",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "investment-heading",
+      "bbox_px": [
+        633,
+        201,
+        377,
+        44
+      ],
+      "component_id": null
+    },
+    {
+      "id": "sensitivity-heading",
+      "semantic_kind": "text",
+      "semantic_role": "sensitivity-heading",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "sensitivity-heading",
+      "bbox_px": [
+        1061,
+        201,
+        819,
+        44
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-term-0",
+      "semantic_kind": "text",
+      "semantic_role": "capacity-term-0",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-term-0",
+      "bbox_px": [
+        88,
+        270,
+        73,
+        45
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-term-1",
+      "semantic_kind": "text",
+      "semantic_role": "capacity-term-1",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-term-1",
+      "bbox_px": [
+        174,
+        270,
+        30,
+        45
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-term-2",
+      "semantic_kind": "text",
+      "semantic_role": "capacity-term-2",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-term-2",
+      "bbox_px": [
+        218,
+        270,
+        78,
+        45
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-term-3",
+      "semantic_kind": "text",
+      "semantic_role": "capacity-term-3",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-term-3",
+      "bbox_px": [
+        282,
+        270,
+        30,
+        45
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-term-4",
+      "semantic_kind": "text",
+      "semantic_role": "capacity-term-4",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-term-4",
+      "bbox_px": [
+        321,
+        270,
+        75,
+        45
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-term-5",
+      "semantic_kind": "text",
+      "semantic_role": "capacity-term-5",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-term-5",
+      "bbox_px": [
+        391,
+        270,
+        30,
+        45
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-term-6",
+      "semantic_kind": "text",
+      "semantic_role": "capacity-term-6",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-term-6",
+      "bbox_px": [
+        425,
+        270,
+        70,
+        45
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-term-7",
+      "semantic_kind": "text",
+      "semantic_role": "capacity-term-7",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-term-7",
+      "bbox_px": [
+        492,
+        270,
+        29,
+        45
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-result",
+      "semantic_kind": "text",
+      "semantic_role": "capacity-result",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-result",
+      "bbox_px": [
+        518,
+        270,
+        110,
+        49
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-term-label-0",
+      "semantic_kind": "text",
+      "semantic_role": "capacity-term-label-0",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-term-label-0",
+      "bbox_px": [
+        37,
+        324,
+        158,
+        45
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-term-label-1",
+      "semantic_kind": "text",
+      "semantic_role": "capacity-term-label-1",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-term-label-1",
+      "bbox_px": [
+        193,
+        324,
+        111,
+        68
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-term-label-2",
+      "semantic_kind": "text",
+      "semantic_role": "capacity-term-label-2",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-term-label-2",
+      "bbox_px": [
+        303,
+        324,
+        106,
+        45
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-term-label-3",
+      "semantic_kind": "text",
+      "semantic_role": "capacity-term-label-3",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-term-label-3",
+      "bbox_px": [
+        417,
+        324,
+        78,
+        68
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-divider",
+      "semantic_kind": "shape",
+      "semantic_role": "native_presentation_geometry",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-divider",
+      "bbox_px": [
+        39,
+        397,
+        466,
+        1
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-valuation",
+      "semantic_kind": "text",
+      "semantic_role": "capacity-valuation",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-valuation",
+      "bbox_px": [
+        39,
+        451,
+        254,
+        50
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-value",
+      "semantic_kind": "text",
+      "semantic_role": "capacity-value",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-value",
+      "bbox_px": [
+        296,
+        451,
+        245,
+        50
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-equivalent",
+      "semantic_kind": "text",
+      "semantic_role": "capacity-equivalent",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-equivalent",
+      "bbox_px": [
+        41,
+        502,
+        578,
+        43
+      ],
+      "component_id": null
+    },
+    {
+      "id": "investment-table",
+      "semantic_kind": "table",
+      "semantic_role": "investment-table",
+      "selected_route": "native_table",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "investment-table",
+      "bbox_px": [
+        632,
+        240,
+        377,
+        273
+      ],
+      "component_id": null
+    },
+    {
+      "id": "remaining-investment",
+      "semantic_kind": "text",
+      "semantic_role": "remaining-investment",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "remaining-investment",
+      "bbox_px": [
+        632,
+        522,
+        402,
+        70
+      ],
+      "component_id": null
+    },
+    {
+      "id": "scenario-table",
+      "semantic_kind": "table",
+      "semantic_role": "scenario-table",
+      "selected_route": "native_table",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "scenario-table",
+      "bbox_px": [
+        1061,
+        240,
+        819,
+        300
+      ],
+      "component_id": null
+    },
+    {
+      "id": "criteria-rule",
+      "semantic_kind": "shape",
+      "semantic_role": "native_presentation_geometry",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "criteria-rule",
+      "bbox_px": [
+        38,
+        607,
+        1842,
+        2
+      ],
+      "component_id": null
+    },
+    {
+      "id": "criteria-divider-1",
+      "semantic_kind": "shape",
+      "semantic_role": "native_presentation_geometry",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "criteria-divider-1",
+      "bbox_px": [
+        629,
+        608,
+        1,
+        166
+      ],
+      "component_id": null
+    },
+    {
+      "id": "criteria-divider-2",
+      "semantic_kind": "shape",
+      "semantic_role": "native_presentation_geometry",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "criteria-divider-2",
+      "bbox_px": [
+        1245,
+        608,
+        1,
+        166
+      ],
+      "component_id": null
+    },
+    {
+      "id": "criterion-heading-0",
+      "semantic_kind": "text",
+      "semantic_role": "criterion-heading-0",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "criterion-heading-0",
+      "bbox_px": [
+        131,
+        624,
+        437,
+        48
+      ],
+      "component_id": null
+    },
+    {
+      "id": "criterion-body-0",
+      "semantic_kind": "text",
+      "semantic_role": "criterion-body-0",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "criterion-body-0",
+      "bbox_px": [
+        131,
+        676,
+        491,
+        91
+      ],
+      "component_id": null
+    },
+    {
+      "id": "criterion-heading-1",
+      "semantic_kind": "text",
+      "semantic_role": "criterion-heading-1",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "criterion-heading-1",
+      "bbox_px": [
+        752,
+        624,
+        437,
+        48
+      ],
+      "component_id": null
+    },
+    {
+      "id": "criterion-body-1",
+      "semantic_kind": "text",
+      "semantic_role": "criterion-body-1",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "criterion-body-1",
+      "bbox_px": [
+        752,
+        676,
+        491,
+        91
+      ],
+      "component_id": null
+    },
+    {
+      "id": "criterion-heading-2",
+      "semantic_kind": "text",
+      "semantic_role": "criterion-heading-2",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "criterion-heading-2",
+      "bbox_px": [
+        1380,
+        624,
+        437,
+        48
+      ],
+      "component_id": null
+    },
+    {
+      "id": "criterion-body-2",
+      "semantic_kind": "text",
+      "semantic_role": "criterion-body-2",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "criterion-body-2",
+      "bbox_px": [
+        1380,
+        676,
+        491,
+        91
+      ],
+      "component_id": null
+    },
+    {
+      "id": "decision-band",
+      "semantic_kind": "shape",
+      "semantic_role": "native_presentation_geometry",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "decision-band",
+      "bbox_px": [
+        48,
+        793,
+        1824,
+        134
+      ],
+      "component_id": null
+    },
+    {
+      "id": "decision-accent",
+      "semantic_kind": "shape",
+      "semantic_role": "native_presentation_geometry",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "decision-accent",
+      "bbox_px": [
+        48,
+        793,
+        8,
+        134
+      ],
+      "component_id": null
+    },
+    {
+      "id": "decision-label",
+      "semantic_kind": "text",
+      "semantic_role": "decision-label",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "decision-label",
+      "bbox_px": [
+        100,
+        832,
+        420,
+        52
+      ],
+      "component_id": null
+    },
+    {
+      "id": "decision-message",
+      "semantic_kind": "text",
+      "semantic_role": "decision-message",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "decision-message",
+      "bbox_px": [
+        560,
+        832,
+        1265,
+        52
+      ],
+      "component_id": null
+    }
+  ],
+  "canonical_asset_mappings": [],
+  "connector_reconstruction_plans": [],
+  "connector_configuration": {
+    "allowed_families": [
+      "direct_flow",
+      "orthogonal_dependency",
+      "merge_split",
+      "grouping_bracket",
+      "grouping_brace",
+      "annotation_leader"
+    ],
+    "stroke": {
+      "color": "#FD5108",
+      "width_px": 3,
+      "dash": "solid",
+      "line_cap": "round",
+      "line_join": "round"
+    },
+    "arrowhead": {
+      "type": "triangle",
+      "powerpoint_size": "lg",
+      "minimum_visible_endpoint_px": 18,
+      "minimum_clear_segment_px": 16,
+      "length_px": 14,
+      "width_px": 12
+    },
+    "routing": {
+      "minimum_clearance_px": 12,
+      "maximum_ordinary_bends": 2,
+      "grouping_brace_depth_px": 34,
+      "grouping_bracket_depth_px": 22,
+      "grouping_brace_preset_depth_factor": 1.7
+    }
+  },
+  "z_order_relations": [],
+  "fitted_text_contracts": [],
+  "layout_constraints": {
+    "non_overlap_pairs": [
+      [
+        "headline",
+        "subtitle"
+      ],
+      [
+        "investment-table",
+        "scenario-table"
+      ],
+      [
+        "remaining-investment",
+        "criteria-rule"
+      ],
+      [
+        "criterion-body-0",
+        "decision-band"
+      ],
+      [
+        "criterion-body-1",
+        "decision-band"
+      ],
+      [
+        "criterion-body-2",
+        "decision-band"
+      ]
+    ]
+  },
+  "evidence_policy": {
+    "pixel_evidence_emits_objects": false,
+    "generated_icon_glyphs_emit_objects": false,
+    "meaningful_visible_entity_must_emit_or_have_emitted_owner": true,
+    "accepted_target_geometry_frozen": true
+  }
+}

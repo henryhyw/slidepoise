@@ -1,0 +1,26 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "stage": "generation",
+  "candidate_index": 1,
+  "decision": "accepted",
+  "material_issues": [],
+  "reviewed_artifacts": [
+    {
+      "path": "accepted-slide.png",
+      "sha256": "ca744f8927ada435cb066b41ea8b3a3c8c951f27c99a5c3bbf28f37e8d9c9a5a"
+    },
+    {
+      "path": "generated-original.png",
+      "sha256": "d480f1e2289d5e5d211b8311bdccd2825d59f2ef8b7a1d31f4cd6bc0ab463930"
+    },
+    {
+      "path": "generation-request.json",
+      "sha256": "3e78d064e7c5b36b529b49270ba287c1390aa1e831f22c542993c440126af6ed"
+    }
+  ],
+  "observations": [
+    "The actual generated design contains only the substantive 2:1 canvas. It has no company header, page number, shared footer or footer rule.",
+    "The left delivery matrix retains four workstreams and four time windows. The four evidence gates and three prerequisites are legible on the right. No decorative icon replaces the directional dependency marks.",
+    "The generated decision treatment and condensed lettering require the already authored deck-wide native font and alignment calibration. Its content and composition remain the reconstruction source."
+  ]
+}

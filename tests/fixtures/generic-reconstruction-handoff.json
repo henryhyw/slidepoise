@@ -1,0 +1,23 @@
+{
+  "selected_assets": [
+    {
+      "asset_id": "remix-hierarchy-line",
+      "canonical_file": "tests/fixtures/generic-icon.svg",
+      "role": "generic supporting icon",
+      "provider": "test fixture",
+      "provider_version": "1",
+      "license": "test fixture",
+      "style_variant": "line",
+      "style_pair_id": "generic-symbol",
+      "pair_asset_ids": ["remix-hierarchy-line"],
+      "preserve_canonical_color": false,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all"
+    }
+  ],
+  "frame_content": {
+    "header": {"left_text": "", "right_text": ""},
+    "footer": {"left_text": "", "center_text": ""},
+    "slide_number": 1
+  }
+}

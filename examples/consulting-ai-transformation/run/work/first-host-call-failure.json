@@ -1,0 +1,11 @@
+{
+  "scope": "Actual host image tool call using the compiled request without rewriting",
+  "request": "../slides/s01-recommendation/work/generation-request.json",
+  "prompt_sha256": "6ce02af1ad4387fa37bfa601c4595d9011492aea0edca11fb070ac62b43c6257",
+  "prompt_characters": 38666,
+  "tool": "image_gen.imagegen",
+  "result": "HTTP 400 Bad Request",
+  "error": "Invalid prompt string too long. Maximum length 32000, received 38666.",
+  "image_created": false,
+  "required_correction": "Compile a concise model-facing brief from the same authoritative inputs. Preserve the communication content, visual constraints and selected resources without truncating the prompt. Host workflow instructions belong in the skill."
+}

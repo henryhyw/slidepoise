@@ -1,0 +1,57 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "stage": "reconstruction",
+  "decision": "accepted",
+  "material_issues": [],
+  "reviewed_artifacts": [
+    {
+      "path": "accepted-slide.png",
+      "sha256": "6f63f75099b63a4b14aa1d3e9479e895d3401d03342374aa1f858f1e586f9ab6"
+    },
+    {
+      "path": "reconstruction/measurement/slide_entities.json",
+      "sha256": "f3ec830665da32fafe556395fc9529927954880b6e891f6515de7909aa1db0b2"
+    },
+    {
+      "path": "reconstruction/reconstruction-contract.json",
+      "sha256": "162e5dcaa9f41e25e0c3d7873d87e5f3951fb616319ca37eb02812ef7eb99e43"
+    },
+    {
+      "path": "reconstruction/constructor-scene.json",
+      "sha256": "1e7ab9a0d985d7bed073f59dd62ef1c1bbd20377bcbd962a24590f0f6de2a259"
+    },
+    {
+      "path": "../deliverables/slide.pptx",
+      "sha256": "a167babb91d03386a518f22348af445313c38515b49ff57b2298a52b3e89b854"
+    },
+    {
+      "path": "../deliverables/render.png",
+      "sha256": "434a6ab8924923d8a09a10aa916119a78c9aaef3b081fa293c4aa121e8b91f9a"
+    },
+    {
+      "path": "../deliverables/render.source.json",
+      "sha256": "8b97da3cd744ddb5af4c4c543a952e9f08e7d23b4ce8cec8b68dc5969035fd82"
+    },
+    {
+      "path": "../deliverables/comparison.png",
+      "sha256": "934f53f167af5200507ed9933baacf8ac6cf9b72ea3ec450a156f778cdeb37f3"
+    },
+    {
+      "path": "native-object-evidence.json",
+      "sha256": "96fbab95ffc344f201aea32b3cdbe5029241dde12a8e28de3ac36af7ebfd2b08"
+    },
+    {
+      "path": "native-text-audit.json",
+      "sha256": "0878ae98b456f24a6a3426a537bc34c67bd82268b5a719cb9d6d5a26f4eeabb5"
+    }
+  ],
+  "observations": [
+    "I inspected the actual bundled LibreOffice full-slide preview and its cropped-body comparison against the generated target. The three upper information columns, lower action criteria and decision band remain separated and readable. No visible text clipping or overlap remains.",
+    "The native investment table has ten cells and the scenario table has twenty-eight. Exact values and labels match the retained financial intent after whitespace normalization. Adoption remains one word, and the two-line First-year value header stays within its cell. The $60k implementation qualification has two complete lines and visible clearance above the criterion rule.",
+    "The normal-width formula labels use the parent-approved 24px annotation role. Their corresponding factors are spaced to keep semantic alignment. The native $243k value, GO/HOLD/STOP headings and approval label are smaller than the generated glyphs because the deck Agent requires consistent 28px peer roles.",
+    "The exact title omits the model-added terminal period. Title, subtitle, body/section/decision and table text remain 64, 32, 28 and 24 body pixels, equivalent to 32, 16, 14 and 12 PowerPoint points on this canvas. All nine fitted text groups preserve their targets.",
+    "Header and footer are inherited native frame content. The footer states the illustrative planning assumption and the capacity-value qualification. The current standalone preview carries page 1, which the assembled deck will update to its deck position.",
+    "The thirty-nine substantive native objects contain two tables and no pictures. No shape ID is duplicated. The packaged audit inspected sixty-nine text bodies and found no native text-property defects. These objective facts support the visual inspection without replacing it.",
+    "After the deck owner inspected all five pages, I applied the shared introduction and decision geometry and inspected the fresh native render. The title now uses body [48,19,1824,80], subtitle begins at [48,103] and the introduction rule at y165. The decision band uses [48,793,1824,134] with an 8px bar. Both28px texts share body y832/height52, label x100/width420 and message x560/width1265. The long funding condition remains on one line with clear separation from the label. Original source-ink windows and all financial content remain intact."
+  ]
+}

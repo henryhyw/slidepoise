@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "design_id": "northstar-consulting-shared-design-03",
+  "purpose": "A dense five-page executive argument with consistent recurring typography, table treatment and decision bands. The Agent chooses and visually calibrates these values across the deck.",
+  "frame_source": "resolved-config.json#/design/frame",
+  "repeated_roles": {
+    "claim_title": {
+      "font_family": "Georgia",
+      "font_size_px": 64,
+      "font_weight": "regular",
+      "color": "#000000",
+      "guidance": "One line at the same apparent size on all five content pages. Use the authored concise title. Begin near x48/y32 in the substantive canvas. Do not independently shrink a long title."
+    },
+    "subtitle": {
+      "font_family": "Arial",
+      "font_size_px": 32,
+      "font_weight": "regular",
+      "color": "#000000",
+      "guidance": "A single supporting line under the title. Keep a comparable gap and one thin neutral divider under the introduction on every page."
+    },
+    "section_heading": {
+      "font_family": "Arial",
+      "font_size_px": 28,
+      "font_weight": "bold",
+      "color": "#000000",
+      "guidance": "Compact uppercase section labels, visually distinct from the larger Georgia claim title."
+    },
+    "supporting_body": {
+      "font_family": "Arial",
+      "font_size_px": 28,
+      "font_weight": "regular",
+      "color": "#000000"
+    },
+    "table": {
+      "font_family": "Arial",
+      "font_size_px": 24,
+      "header": "Black field, white bold text.",
+      "body": "Black regular text, with accountable row labels bold. Thin #DFE3E6 rules and white or #F5F7F8 rows.",
+      "emphasis": "Use #FFF5ED for an intentionally selected row. Reserve #FD5108 text for its key data or explicit action.",
+      "guidance": "Keep table header and body sizes consistent across the opportunity, responsibility, roadmap and investment tables. Do not stretch text."
+    },
+    "data_highlight": {
+      "font_family": "Arial",
+      "font_weight": "bold",
+      "color": "#FD5108",
+      "guidance": "Large opening KPIs may use a larger display role. Ordinary body text remains black."
+    },
+    "decision_band": {
+      "fill": "#FFF5ED",
+      "left_bar_color": "#FD5108",
+      "left_bar_width_px": 8,
+      "border": "none",
+      "label_font_family": "Arial",
+      "label_font_size_px": 28,
+      "label_font_weight": "bold",
+      "label_color": "#FD5108",
+      "message_font_family": "Arial",
+      "message_font_size_px": 28,
+      "message_font_weight": "bold",
+      "message_color": "#000000",
+      "guidance": "Use the same wide, shallow substantive conclusion band near the bottom of every page. Give the uppercase label a consistent left column and the message its own aligned column. No surrounding border, shadows, extra footnote strip or decorative rule. This band carries this page's decision and is not the shared footer."
+    },
+    "connectors": {
+      "color": "#FD5108",
+      "width_px": 3,
+      "guidance": "Clear directional arrowheads with continuous routes. Lines explain relationships."
+    }
+  },
+  "allowed_variations": [
+    "Use KPI reasoning, chart-and-table comparison, a responsibility workflow, a roadmap matrix and an investment model as five different page compositions.",
+    "Vary the diagram and data geometry according to the argument while preserving recurring roles.",
+    "The opening has large numeric KPIs. This does not change the shared title, subtitle or decision-band typography."
+  ],
+  "reference_images": [],
+  "cross_slide_review_focus": [
+    "Generated images contain only the 1920 by 960 substantive canvas, with no header, footer, page number or company chrome.",
+    "Georgia claim titles retain the same apparent size, weight and single-line rhythm.",
+    "Arial subtitles, body copy, table text and section labels retain their respective peer sizes.",
+    "Every decision band uses the same pale orange fill, orange label, black message and left orange bar.",
+    "The final PowerPoint uses one shared inherited frame with the same neutral header and footer rules.",
+    "The Agent compares all five actual rendered pages together and corrects observed drift before release."
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "deck_id": "consulting-ai-transformation",
+  "title": "A controlled path to shared AI capability",
+  "audience": "Northstar Advisory executive committee, fictional showcase",
+  "purpose": "A substantive five-page management consulting sample with one shared visual system, an inherited presentation frame and editable body content.",
+  "throughline": "Fund a controlled research-synthesis pilot, prove its operating model and release further investment only against quality, adoption and value evidence.",
+  "shared_obligations": {
+    "evidence": [
+      "Northstar Advisory is fictional. All quantities are host-authored planning assumptions.",
+      "Include any qualification necessary to understand a specific claim in its body content, table or conclusion. Shared firm identification and recurring footer material belong to the inherited frame.",
+      "Distinguish the sampled 95% pilot quality threshold from expert verification and approval of every client release."
+    ],
+    "assets": [],
+    "brand": [
+      "Use the Consulting Profile with Georgia claim titles and Arial supporting text.",
+      "Apply the same title font size and recurring decision-band treatment on all five pages.",
+      "Read work/deck-design.json and work/resolved-config.json before preparing each page."
+    ],
+    "exclusions": [
+      "Header, footer, page numbers, company labels and shared frame rules in generated content.",
+      "Per-page title shrinking or a change of typeface to force a title into its box.",
+      "A repeated source-note strip masquerading as a generated footer.",
+      "Generic decoration replacing decision content.",
+      "Real client claims or implied cash savings."
+    ]
+  },
+  "slides": [
+    {
+      "slide_id": "s01-recommendation",
+      "role": "executive_recommendation",
+      "dominant_message": "Prove the research pilot before scaling AI",
+      "communication_job": "Make a bounded funding decision with a quantified hypothesis, clear scale gates and named accountability.",
+      "content_obligations": [
+        "Annual research baseline 10,800 hours from 900 engagements × 12 research hours.",
+        "Potential annual capacity 1,944 hours from 60% adoption × 30% time reduction applied to the baseline.",
+        "Annual capacity equivalent $243k from 1,944 hours × $125 per hour. This is capacity value, not cash savings.",
+        "One practice, 15 consultants and 20 research-synthesis engagements in a 12-week pilot capped at $25k.",
+        "Scale-readiness table with cycle-time reduction at least 25%, at least 95% of sampled cited claims verified, zero critical data exceptions, and at least 70% weekly-active pilot users, meaning at least 11 of 15.",
+        "Concentrate on repeatable research work, embed review in the workflow and release funding against evidence.",
+        "Practice lead accountable. CFO sponsors investment. Every client release requires separate expert verification and engagement-lead approval.",
+        "Decision requested. Approve $25k and name a practice sponsor."
+      ],
+      "disposition": "active",
+      "evidence_obligations": [
+        "All figures are illustrative host-authored planning assumptions from work/planning-assumptions.json.",
+        "Integrate page-specific qualifications in body content rather than a generated header or footer."
+      ],
+      "asset_obligations": [],
+      "depends_on": [],
+      "visual_obligations": [
+        "Use only the substantive body region defined by the resolved configuration.",
+        "Use the shared title role from work/deck-design.json without a page-specific font-size exception.",
+        "Use the shared pale-orange decision band with an orange label, black message, left orange bar and no outline."
+      ]
+    },
+    {
+      "slide_id": "s02-opportunities",
+      "role": "opportunity_prioritization",
+      "dominant_message": "Start where value and control readiness meet",
+      "communication_job": "Compare three specific workflows with a native capacity chart and a native decision table that distinguishes feasible controlled pilot scope from later releases.",
+      "content_obligations": [
+        "Native horizontal chart of illustrative annual capacity hours for research synthesis 1,944, proposal drafting 1,440 and knowledge retrieval 1,080.",
+        "All three estimates use 900 annual engagements × baseline task hours × adoption × time reduction.",
+        "Native assumptions table. Research 12 hours, 60% adoption, 30% time reduction. Proposal 8 hours, 50% adoption, 40% time reduction. Retrieval 5 hours, 60% adoption, 40% time reduction.",
+        "Native sequencing table. Research synthesis has an approved pilot corpus and explicit review, owned by the practice lead, sequence START. Proposal drafting needs claim and commercial-commitment controls, owned by the BD lead, sequence NEXT. Knowledge retrieval needs permissions cleanup, owned by the knowledge lead, sequence LATER.",
+        "Research wins first through frequent comparable tasks, a bounded source corpus and a named expert reviewer.",
+        "These are separate capacity hypotheses. Confirm task overlap before adding workflow benefits.",
+        "Pilot boundary. Limit the first release to approved-source research synthesis."
+      ],
+      "disposition": "active",
+      "evidence_obligations": [
+        "All figures are illustrative host-authored planning assumptions from work/planning-assumptions.json.",
+        "Integrate page-specific qualifications in body content rather than a generated header or footer."
+      ],
+      "asset_obligations": [],
+      "depends_on": [
+        "s01-recommendation"
+      ],
+      "visual_obligations": [
+        "Use only the substantive body region defined by the resolved configuration.",
+        "Use the shared title role from work/deck-design.json without a page-specific font-size exception.",
+        "Use the shared pale-orange decision band with an orange label, black message, left orange bar and no outline."
+      ]
+    },
+    {
+      "slide_id": "s03-operating-model",
+      "role": "operating_model",
+      "dominant_message": "Keep expert ownership at every release",
+      "communication_job": "Show a controlled source-to-client flow and the responsibilities, evidence records and rejection feedback needed to operate it.",
+      "content_obligations": [
+        "Directed chain Approved sources → Grounded draft → Expert review → Client-ready output.",
+        "Responsibility matrix with four stages and rows INPUT, OUTPUT, OWNER and RELEASE CONTROL.",
+        "Approved sources. Input corpus request. Output versioned source pack. Owner source steward. Control verify permissions and dates.",
+        "Grounded draft. Input source pack and task brief. Output cited draft and uncertainty flags. Owner engagement team. Control check citations and evidence gaps.",
+        "Expert review. Input draft and evidence trail. Output signed review or defect log. Owner expert reviewer. Control validate claims and quality.",
+        "Client-ready output. Input signed draft and resolved defects. Output authorized client deliverable. Owner engagement lead. Control confirm release approval.",
+        "Expert review returns rejected work to grounded draft with defect reasons. Grounded draft returns source corrections to approved sources via an exception register.",
+        "Shared controls. One exception register records each defect, owner and disposition. Platform team maintains access controls, audit logs and version history.",
+        "Pilot measurement. Compare 20 research tasks, one per engagement, against baseline time logs. Verify cited-claim samples and record expert review effort.",
+        "Release rule. No client use without expert and engagement-lead sign-off."
+      ],
+      "disposition": "active",
+      "evidence_obligations": [
+        "All figures are illustrative host-authored planning assumptions from work/planning-assumptions.json.",
+        "Integrate page-specific qualifications in body content rather than a generated header or footer."
+      ],
+      "asset_obligations": [],
+      "depends_on": [
+        "s02-opportunities"
+      ],
+      "visual_obligations": [
+        "Use only the substantive body region defined by the resolved configuration.",
+        "Use the shared title role from work/deck-design.json without a page-specific font-size exception.",
+        "Use the shared pale-orange decision band with an orange label, black message, left orange bar and no outline."
+      ]
+    },
+    {
+      "slide_id": "s04-delivery-roadmap",
+      "role": "delivery_roadmap",
+      "dominant_message": "Run the pilot through four evidence gates",
+      "communication_job": "Make workstream dependencies, decision dates, owners and deliverables operational through a time matrix.",
+      "content_obligations": [
+        "Native workstream matrix with time columns weeks 1–2 Approve and baseline, weeks 3–4 Build and test, weeks 5–8 Pilot and learn, weeks 9–12 Prove and decide.",
+        "Data and access, owner source steward. Approved corpus and access register. Source refresh and named stewards. Weekly access and freshness checks. Audit closeout and release inventory.",
+        "Workflow and product, owner product lead. Task mapping and baseline time logs. Grounded draft and visible citations. 15-user pilot and defect fixes. Release candidate and runbook.",
+        "Quality and controls, owner expert reviewer. Risk boundaries and review criteria. Test pack and rejection reasons. 10 reviewed tasks and error triage. 20 completed tasks and gate evidence.",
+        "Adoption and value, owner practice lead. Sponsor, users and agreed tracking. Training, support and measurement plan. Weekly usage and feedback sessions. Benefit case and scale recommendation.",
+        "Evidence gates G1 week 2 corpus and access signed, G2 week 4 test pack approved, G3 week 8 ten tasks reviewed, G4 week 12 scale decision. Accountability moves from source steward to product lead to expert reviewer to practice lead and CFO.",
+        "Dependencies. Permissions precede retrieval tests. Approved test pack precedes the user pilot. Quality evidence precedes the benefit case.",
+        "Stop rule. No expansion while critical data exceptions remain open."
+      ],
+      "disposition": "active",
+      "evidence_obligations": [
+        "All figures are illustrative host-authored planning assumptions from work/planning-assumptions.json.",
+        "Integrate page-specific qualifications in body content rather than a generated header or footer."
+      ],
+      "asset_obligations": [],
+      "depends_on": [
+        "s03-operating-model"
+      ],
+      "visual_obligations": [
+        "Use only the substantive body region defined by the resolved configuration.",
+        "Use the shared title role from work/deck-design.json without a page-specific font-size exception.",
+        "Use the shared pale-orange decision band with an orange label, black message, left orange bar and no outline."
+      ]
+    },
+    {
+      "slide_id": "s05-investment-decision",
+      "role": "investment_and_go_no_go",
+      "dominant_message": "Release the next investment against evidence",
+      "communication_job": "Expose the economic calculation, first-year ramp, scenario sensitivity and exact release conditions for the remaining investment.",
+      "content_obligations": [
+        "Base-case annual capacity equation 900 engagements × 12 research hours × 60% adoption × 30% time reduction = 1,944 hours. At $125 per hour this is $243k annual capacity equivalent.",
+        "Native investment ledger. Implementation $85k includes the $25k pilot and conditional remaining $60k. Annual operations add $30k. Full first-year cost is $115k.",
+        "Native sensitivity table with a 50% first-year ramp. Downside 40% adoption and 20% time reduction give 864 hours, $108k annual capacity, $54k first-year capacity and −$61k against full cost.",
+        "Base 60% adoption and 30% time reduction give 1,944 hours, $243k annual capacity, $121.5k first-year capacity and +$6.5k against full cost.",
+        "Upside 75% adoption and 40% time reduction give 3,240 hours, $405k annual capacity, $202.5k first-year capacity and +$87.5k against full cost.",
+        "The model values released capacity. It does not claim revenue or cash savings. First-year value is 50% of annual potential.",
+        "GO when all four pilot gate thresholds hold and a practice lead owns rollout. HOLD for incomplete evidence or weak usage, within an agreed extension cap. STOP for a critical data-control failure and close the exception.",
+        "Approve $25k now. Release the remaining $60k only after the week-12 gate."
+      ],
+      "disposition": "active",
+      "evidence_obligations": [
+        "All figures are illustrative host-authored planning assumptions from work/planning-assumptions.json.",
+        "Integrate page-specific qualifications in body content rather than a generated header or footer."
+      ],
+      "asset_obligations": [],
+      "depends_on": [
+        "s04-delivery-roadmap"
+      ],
+      "visual_obligations": [
+        "Use only the substantive body region defined by the resolved configuration.",
+        "Use the shared title role from work/deck-design.json without a page-specific font-size exception.",
+        "Use the shared pale-orange decision band with an orange label, black message, left orange bar and no outline."
+      ]
+    }
+  ],
+  "revision": 3,
+  "revision_provenance": {
+    "previous_outline": "output/showcase-revisions/consulting-v2-authoring/work/deck-outline.json",
+    "previous_outline_sha256": "ce7b201f67eea8a00752101c7cc930a4c26ee00df9e4402c2e8336fe4a41aa0b",
+    "previous_revision_preserved": true,
+    "reason": "Regenerate body content at the configured substantive aspect ratio, keep the inherited frame out of image generation, and use shared Georgia and Arial visual roles."
+  }
+}

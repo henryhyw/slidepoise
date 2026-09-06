@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "source_sha256": "aec72faebe53cdaf2c0820391eadd344d34b3f5de4927e7c3a0444ff8f40ca9b",
+  "dpi": 160,
+  "font_environment": {
+    "fontconfig_source": "macos_system_font_directories",
+    "font_directories": [
+      "/System/Library/Fonts",
+      "/Library/Fonts",
+      "/Users/henry/Library/Fonts"
+    ]
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "render": "slide-001.png",
+      "sha256": "683868ff0e678c2d1e81e86159c87ccbf817af4ab97d5fd969b9bd021228df8c"
+    },
+    {
+      "slide_number": 2,
+      "render": "slide-002.png",
+      "sha256": "58527f660f12c23421c096e18cec4e79acfce371957a99010108725a74456c38"
+    },
+    {
+      "slide_number": 3,
+      "render": "slide-003.png",
+      "sha256": "1dfd8f855dff83a2c369a0c0133a43175bcf8000076e42d4a62e98b3726ea593"
+    },
+    {
+      "slide_number": 4,
+      "render": "slide-004.png",
+      "sha256": "1f506699df25b1cd143beb3a466f7eae745f6e03fa858c8816c60ef1cbc0afba"
+    },
+    {
+      "slide_number": 5,
+      "render": "slide-005.png",
+      "sha256": "e098559224df798cce8d18f33ecbb3663e6ec894b30db06bb0bf7ace141da803"
+    }
+  ],
+  "contact_sheet": {
+    "path": "contact-sheet.png",
+    "sha256": "343f9cb2c43e34b858b07890432f601f7750461d61af9f74d8edbbe0b5272411"
+  },
+  "pdf": {
+    "path": "presentation.pdf",
+    "sha256": "2959fe9a8ba0191bb871d25e1859e656ac0f12832c63c0bd5404cbaad9d7a4b8"
+  }
+}

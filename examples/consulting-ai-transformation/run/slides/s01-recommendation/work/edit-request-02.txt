@@ -1,0 +1,3 @@
+Replace only the detail text under item 03, "Fund against evidence", with this exact sentence:
+Practice lead and CFO release $60k only after the week-12 gate.
+Preserve every other word, all fonts and font sizes, layout, colors, rules and substantive-only canvas of the supplied second candidate.

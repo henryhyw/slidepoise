@@ -1,0 +1,34 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "change_requested_by": "deck_owner",
+  "reason": "Independent cross-slide visual review found recurring intro and decision columns drifting. Shared geometry will align those roles while preserving page-specific body content and source-ink windows.",
+  "shared_body_geometry": {
+    "title_origin": [
+      48,
+      19
+    ],
+    "subtitle_origin": [
+      48,
+      103
+    ],
+    "intro_rule_y": 165,
+    "decision_band": [
+      48,
+      793,
+      1824,
+      134
+    ],
+    "decision_label": [
+      100,
+      832,
+      420,
+      52
+    ],
+    "decision_message": [
+      560,
+      832,
+      1265,
+      52
+    ]
+  }
+}

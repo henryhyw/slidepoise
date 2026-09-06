@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "deck_id": "personal-thinking-system",
+  "title": "A second thinking system",
+  "audience": "Knowledge workers at a public design and thinking talk",
+  "purpose": "A complete editable public showcase produced using SlidePoise.",
+  "throughline": "AI becomes useful when it keeps questions, connections and judgement visible.",
+  "shared_obligations": {
+    "evidence": [
+      "An authored editorial essay for the SlidePoise showcase. First-person framing is illustrative and does not assert the user's personal history."
+    ],
+    "assets": [],
+    "brand": [
+      "personal-website"
+    ],
+    "exclusions": [
+      "No real client claims",
+      "No identity logos",
+      "No invented product operation footage"
+    ]
+  },
+  "slides": [
+    {
+      "slide_id": "s01-opening",
+      "disposition": "active",
+      "role": "opening",
+      "communication_job": "A second thinking system",
+      "dominant_message": "A second thinking system",
+      "content_obligations": [
+        "Working with AI without outsourcing a point of view.",
+        "FIELD NOTES / 01",
+        "An essay in five parts"
+      ],
+      "evidence_obligations": [
+        "An authored editorial essay for the SlidePoise showcase. First-person framing is illustrative and does not assert the user's personal history."
+      ],
+      "asset_obligations": [],
+      "depends_on": []
+    },
+    {
+      "slide_id": "s02-question",
+      "disposition": "active",
+      "role": "tension",
+      "communication_job": "Keep the question open.",
+      "dominant_message": "Keep the question open.",
+      "content_obligations": [
+        "A fast answer can close a thought too early.",
+        "What am I assuming?",
+        "What would change my mind?",
+        "The useful conversation begins with a better question.",
+        "FIELD NOTES / 02"
+      ],
+      "evidence_obligations": [
+        "An authored editorial essay for the SlidePoise showcase. First-person framing is illustrative and does not assert the user's personal history."
+      ],
+      "asset_obligations": [],
+      "depends_on": [
+        "s01-opening"
+      ]
+    },
+    {
+      "slide_id": "s03-practice",
+      "disposition": "active",
+      "role": "practice",
+      "communication_job": "Collect. Connect. Challenge.",
+      "dominant_message": "Collect. Connect. Challenge.",
+      "content_obligations": [
+        "Collect",
+        "Keep the source close.",
+        "Connect",
+        "Put distant ideas in contact.",
+        "Challenge",
+        "Ask what the pattern leaves out.",
+        "Three moves for a thought worth keeping.",
+        "FIELD NOTES / 03"
+      ],
+      "evidence_obligations": [
+        "An authored editorial essay for the SlidePoise showcase. First-person framing is illustrative and does not assert the user's personal history."
+      ],
+      "asset_obligations": [],
+      "depends_on": [
+        "s02-question"
+      ]
+    },
+    {
+      "slide_id": "s04-trace",
+      "disposition": "active",
+      "role": "method",
+      "communication_job": "Leave a trace of the thinking.",
+      "dominant_message": "Leave a trace of the thinking.",
+      "content_obligations": [
+        "Source",
+        "What did I encounter?",
+        "Question",
+        "What does it unsettle?",
+        "Counterargument",
+        "What is the strongest objection?",
+        "Decision",
+        "What will I carry forward?",
+        "A small record makes a conversation reusable.",
+        "FIELD NOTES / 04"
+      ],
+      "evidence_obligations": [
+        "An authored editorial essay for the SlidePoise showcase. First-person framing is illustrative and does not assert the user's personal history."
+      ],
+      "asset_obligations": [],
+      "depends_on": [
+        "s03-practice"
+      ]
+    },
+    {
+      "slide_id": "s05-close",
+      "disposition": "active",
+      "role": "closing",
+      "communication_job": "The point of view is still yours.",
+      "dominant_message": "The point of view is still yours.",
+      "content_obligations": [
+        "Let the system widen the field.",
+        "Choose what deserves to remain.",
+        "A second thinking system. A first-person responsibility.",
+        "FIELD NOTES / 05"
+      ],
+      "evidence_obligations": [
+        "An authored editorial essay for the SlidePoise showcase. First-person framing is illustrative and does not assert the user's personal history."
+      ],
+      "asset_obligations": [],
+      "depends_on": [
+        "s04-trace"
+      ]
+    }
+  ]
+}
+

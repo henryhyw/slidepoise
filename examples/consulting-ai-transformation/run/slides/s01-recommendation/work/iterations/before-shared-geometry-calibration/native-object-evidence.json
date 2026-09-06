@@ -1,0 +1,15 @@
+{
+  "pptx_sha256": "9b3c6c511bec85becd338c018b0603c6a896840a7491ba9bca59a796a147c6bb",
+  "native_tables": 1,
+  "native_table_cells": 10,
+  "native_picture_objects": 0,
+  "duplicate_shape_ids": [],
+  "table_font_sizes_pt": [
+    12.0
+  ],
+  "headline_font_sizes_pt": [
+    32.0
+  ],
+  "exact_funding_text_preserved": true,
+  "frame_emitted_on_slide": false
+}

@@ -1,0 +1,12 @@
+**/__pycache__/**
+**/__pycache__
+**/*.pyc
+framework/__pycache__/
+webapp/__pycache__/
+slidepoise/**/__pycache__/
+**/*.pyc
+archive/
+workspace/
+tests/
+.venv/
+.git/

@@ -1,0 +1,149 @@
+{
+  "id": "consulting-ai-transformation",
+  "title": "A controlled path to shared AI capability",
+  "subtitle": "A controlled pilot, an accountable decision.",
+  "style": "Consulting",
+  "label": "Consulting",
+  "revision": 3,
+  "summary": "A sample strategy presentation connecting an AI pilot to priorities, accountability and an investment decision.",
+  "note": "Northstar Advisory is fictional. The figures are illustrative planning assumptions.",
+  "slides": [
+    {
+      "id": "s01-recommendation",
+      "title": "Prove the research pilot before scaling AI",
+      "claim": "A $25k, 12-week research pilot makes the scale decision testable through explicit quality, adoption and value gates.",
+      "target": "assets/s01-recommendation-target.png",
+      "render": "assets/s01-recommendation-render.png",
+      "thumbnail": "assets/s01-recommendation-render.png",
+      "scene": "run/slides/s01-recommendation/work/reconstruction/constructor-scene.json",
+      "evidence": "assets/s01-recommendation-semantic.png",
+      "objects": "assets/s01-recommendation-objects.json",
+      "semantic": "run/slides/s01-recommendation/work/semantic-map.json",
+      "measurement": "run/slides/s01-recommendation/work/reconstruction/measurement/slide_entities.json",
+      "measurement_overlay": "run/slides/s01-recommendation/work/reconstruction/measurement/debug_overlay.png"
+    },
+    {
+      "id": "s02-opportunities",
+      "title": "Start where value and control readiness meet",
+      "claim": "Capacity hypotheses are transparent. Source readiness and review accountability determine the first release.",
+      "target": "assets/s02-opportunities-target.png",
+      "render": "assets/s02-opportunities-render.png",
+      "thumbnail": "assets/s02-opportunities-render.png",
+      "scene": "run/slides/s02-opportunities/work/reconstruction/constructor-scene.json",
+      "evidence": "assets/s02-opportunities-semantic.png",
+      "objects": "assets/s02-opportunities-objects.json",
+      "semantic": "run/slides/s02-opportunities/work/semantic-map.json",
+      "measurement": "run/slides/s02-opportunities/work/reconstruction/measurement/slide_entities.json",
+      "measurement_overlay": "run/slides/s02-opportunities/work/reconstruction/measurement/debug_overlay.png"
+    },
+    {
+      "id": "s03-operating-model",
+      "title": "Keep expert ownership at every release",
+      "claim": "Approved sources flow into grounded drafts, expert review and authorized delivery, with explicit correction paths.",
+      "target": "assets/s03-operating-model-target.png",
+      "render": "assets/s03-operating-model-render.png",
+      "thumbnail": "assets/s03-operating-model-render.png",
+      "scene": "run/slides/s03-operating-model/work/reconstruction/constructor-scene.json",
+      "evidence": "assets/s03-operating-model-semantic.png",
+      "objects": "assets/s03-operating-model-objects.json",
+      "semantic": "run/slides/s03-operating-model/work/semantic-map.json",
+      "measurement": "run/slides/s03-operating-model/work/reconstruction/measurement/slide_entities.json",
+      "measurement_overlay": "run/slides/s03-operating-model/work/reconstruction/measurement/debug_overlay.png"
+    },
+    {
+      "id": "s04-delivery-roadmap",
+      "title": "Run the pilot through four evidence gates",
+      "claim": "Four workstreams progress across four time windows, with named owners, evidence gates and dependencies.",
+      "target": "assets/s04-delivery-roadmap-target.png",
+      "render": "assets/s04-delivery-roadmap-render.png",
+      "thumbnail": "assets/s04-delivery-roadmap-render.png",
+      "scene": "run/slides/s04-delivery-roadmap/work/reconstruction/constructor-scene.json",
+      "evidence": "assets/s04-delivery-roadmap-semantic.png",
+      "objects": "assets/s04-delivery-roadmap-objects.json",
+      "semantic": "run/slides/s04-delivery-roadmap/work/semantic-map.json",
+      "measurement": "run/slides/s04-delivery-roadmap/work/reconstruction/measurement/slide_entities.json",
+      "measurement_overlay": "run/slides/s04-delivery-roadmap/work/reconstruction/measurement/debug_overlay.png"
+    },
+    {
+      "id": "s05-investment-decision",
+      "title": "Release the next investment against evidence",
+      "claim": "The full first-year cost, ramp and three scenarios determine whether the remaining investment should be released.",
+      "target": "assets/s05-investment-decision-target.png",
+      "render": "assets/s05-investment-decision-render.png",
+      "thumbnail": "assets/s05-investment-decision-render.png",
+      "scene": "run/slides/s05-investment-decision/work/reconstruction/constructor-scene.json",
+      "evidence": "assets/s05-investment-decision-semantic.png",
+      "objects": "assets/s05-investment-decision-objects.json",
+      "semantic": "run/slides/s05-investment-decision/work/semantic-map.json",
+      "measurement": "run/slides/s05-investment-decision/work/reconstruction/measurement/slide_entities.json",
+      "measurement_overlay": "run/slides/s05-investment-decision/work/reconstruction/measurement/debug_overlay.png"
+    }
+  ],
+  "downloads": {
+    "pptx": "deliverables/presentation.pptx"
+  },
+  "process": [
+    {
+      "title": "Start with a decision",
+      "description": "The authored outline gives every page a conclusion and specifies the evidence, calculation and responsibility it must carry.",
+      "artifact": "run/work/deck-outline.json"
+    },
+    {
+      "title": "Expose the assumptions",
+      "description": "The baseline, adoption, time reduction, cost and ramp are explicit. Sample quality gates remain separate from approval of each client release.",
+      "artifact": "run/work/planning-assumptions.json"
+    },
+    {
+      "title": "Explore the content area",
+      "description": "One compiled brief carries the argument and shared design into a 2:1 body image. The PowerPoint adds the common frame.",
+      "artifact": "assets/s02-opportunities-target.png"
+    },
+    {
+      "title": "Identify meaningful editable objects",
+      "description": "The host identifies one native chart, two tables and the supporting decision text before constructing the page.",
+      "artifact": "assets/s02-opportunities-semantic.png"
+    },
+    {
+      "title": "Measure the chosen regions",
+      "description": "OpenCV records visible ink and geometry within authored regions. The Agent interprets those measurements and inspects the overlay.",
+      "artifact": "run/slides/s02-opportunities/work/reconstruction/measurement/debug_overlay.png"
+    },
+    {
+      "title": "Construct the native page",
+      "description": "A compiled scene preserves the chart data, table cells, text and geometry through the packaged PowerPoint renderer.",
+      "artifact": "run/slides/s02-opportunities/work/reconstruction/constructor-scene.json"
+    },
+    {
+      "title": "Check the actual PowerPoint",
+      "description": "The generated target and the real rendered output are retained together. The native chart labels remain linked to the workbook.",
+      "artifact": "run/slides/s02-opportunities/deliverables/comparison.png"
+    },
+    {
+      "title": "Calibrate across the deck",
+      "description": "The Agent compares all five rendered pages and aligns recurring titles, type sizes and decision bands. The review keeps the observed differences and their corrections.",
+      "artifact": "run/work/cross-slide-calibration-review.json"
+    },
+    {
+      "title": "Review the full argument",
+      "description": "The review records observations across the slides, editable structures and remaining visual differences.",
+      "artifact": "run/work/deck-review.json"
+    },
+    {
+      "title": "Edit the existing PowerPoint",
+      "description": "An existing title and chart workbook are edited in a copy. The research value changes from 1,944 to 1,620 and its native label updates in the actual render. This demonstration leaves the official scenario unchanged.",
+      "artifact": "run/work/native-edit-proof/comparison.png"
+    }
+  ],
+  "canvas": {
+    "full_slide_px": [
+      1920,
+      1080
+    ],
+    "content_region_px": [
+      0,
+      64,
+      1920,
+      960
+    ]
+  }
+}

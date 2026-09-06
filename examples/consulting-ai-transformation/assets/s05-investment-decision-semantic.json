@@ -1,0 +1,113 @@
+{
+  "source_semantic_map": {
+    "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s05-investment-decision/work/semantic-map.json",
+    "sha256": "944199dc1a9804b76d9a9826df256bac77d4150f7280e0fc987d22017c606ac5"
+  },
+  "notice": "A readable selection of real host-authored groups. Full measurement and native-object details are retained separately.",
+  "entities": [],
+  "groups": [
+    {
+      "id": "capacity-model",
+      "display_label": "Capacity and valuation assumptions",
+      "semantic_class": "calculation",
+      "group_reason": "The baseline volume, time, adoption and reduction produce capacity hours and their monetary equivalent.",
+      "bbox_hint": [
+        35,
+        201,
+        593,
+        352
+      ],
+      "children": [
+        "capacity-heading",
+        "capacity-term-0",
+        "capacity-term-1",
+        "capacity-term-2",
+        "capacity-term-3",
+        "capacity-term-4",
+        "capacity-term-5",
+        "capacity-term-6",
+        "capacity-term-7",
+        "capacity-result",
+        "capacity-term-label-0",
+        "capacity-term-label-1",
+        "capacity-term-label-2",
+        "capacity-term-label-3",
+        "capacity-divider",
+        "capacity-valuation",
+        "capacity-value",
+        "capacity-equivalent"
+      ]
+    },
+    {
+      "id": "cost-model",
+      "display_label": "Full first-year investment",
+      "semantic_class": "investment model",
+      "group_reason": "One native table preserves the included pilot, operating costs and total. The separate qualification states the remaining implementation cost.",
+      "bbox_hint": [
+        632,
+        201,
+        402,
+        386
+      ],
+      "children": [
+        "investment-heading",
+        "investment-table",
+        "remaining-investment"
+      ]
+    },
+    {
+      "id": "scenario-model",
+      "display_label": "Downside, base and upside",
+      "semantic_class": "scenario comparison",
+      "group_reason": "The native table keeps adoption, time saving, hours, ramp and net value together as three comparable scenarios.",
+      "bbox_hint": [
+        1061,
+        201,
+        819,
+        339
+      ],
+      "children": [
+        "sensitivity-heading",
+        "scenario-table"
+      ]
+    },
+    {
+      "id": "release-criteria",
+      "display_label": "Go, hold and stop conditions",
+      "semantic_class": "release criteria",
+      "group_reason": "Three textual conditions assign the next action without decorative pictograms.",
+      "bbox_hint": [
+        129,
+        624,
+        1744,
+        145
+      ],
+      "children": [
+        "criterion-heading-0",
+        "criterion-body-0",
+        "criterion-heading-1",
+        "criterion-body-1",
+        "criterion-heading-2",
+        "criterion-body-2"
+      ]
+    },
+    {
+      "id": "funding-request",
+      "display_label": "Conditional funding decision",
+      "semantic_class": "decision request",
+      "group_reason": "The pilot approval and remaining investment condition are separate native text peers in one recurring decision band.",
+      "bbox_hint": [
+        48,
+        793,
+        1824,
+        134
+      ],
+      "children": [
+        "decision-band",
+        "decision-accent",
+        "decision-label",
+        "decision-message"
+      ]
+    }
+  ]
+}

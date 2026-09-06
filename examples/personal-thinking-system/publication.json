@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "revision": 2,
+  "publication": "local example replacement, not external deployment",
+  "source_pptx": {
+    "path": "deliverables/presentation.pptx",
+    "sha256": "3d8499644935076fa1bf388c2ee86657ff95801aef670e1bcbb43e93af46891b"
+  },
+  "source_archive": {
+    "path": "deliverables/source-bundle.zip",
+    "sha256": "9207e444958b1aed583b75ad2587a6ae2f0cd9887a8b34b6bfe3e2aa293f119b"
+  },
+  "deck_design": {
+    "path": "run/work/deck-design.json",
+    "sha256": "ba33b732616aafff1f22648cf4536809f5583401d6180733363121aa7544358e"
+  },
+  "rebuild_evidence": {
+    "path": "run/work/rebuild-verification.json",
+    "sha256": "1e2a190ca4efb89d6717bcf849ae78dd344e0df88a7e72ae6fa2151790e4f918"
+  },
+  "calibration_evidence": {
+    "path": "run/work/folio-calibration/verification.json",
+    "sha256": "5f3a54cc83627199ec2b53032b4f9263894a64754ee2847acc2ae574d6be8eed"
+  },
+  "public_download": "PowerPoint only",
+  "preserved_previous_case": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v1-at-replacement",
+  "source_bindings": [
+    {
+      "path": "assets/s01-opening-target.png",
+      "sha256": "924f0b9164b79959934313b7eda081b17213eef59acb6daf4edee7802d9f4379"
+    },
+    {
+      "path": "assets/s01-opening-render.png",
+      "sha256": "cf24a4e03904ba72d71f8676965f5a00176c5b5007078bbc665d4957821951c3"
+    },
+    {
+      "path": "assets/s01-opening-semantic.json",
+      "sha256": "021da3ea760049972f9931e4ba6e4a1c839b5b113520e3b799a4244d9a5d97fa"
+    },
+    {
+      "path": "assets/s01-opening-objects.json",
+      "sha256": "520fe265a38f6e84b5448391cce5279167bd2dcc6bde602f1f56ced9b7d8f5d4"
+    },
+    {
+      "path": "assets/s02-question-target.png",
+      "sha256": "34bc83d09851c9308f738f7f3f9eeb0c582ea76ada084b6cbc21a423dcb309cc"
+    },
+    {
+      "path": "assets/s02-question-render.png",
+      "sha256": "a1beead3cf1fb575451e1274a327ffd2b6db633a9b5a90029d5a892cd94cb884"
+    },
+    {
+      "path": "assets/s02-question-semantic.json",
+      "sha256": "d539d89fddfa07496fae01bc2bf4d221338f59a7a5ddf7c4628aee625d0f00a7"
+    },
+    {
+      "path": "assets/s02-question-objects.json",
+      "sha256": "31dfa9df09042b1875085c490bbdc4c73b56024a7333177d787af872332e739d"
+    },
+    {
+      "path": "assets/s03-practice-target.png",
+      "sha256": "767e54f0f34faafae4aa1985b26c3824e3ece0521a6e706cf5260579fedbe3c6"
+    },
+    {
+      "path": "assets/s03-practice-render.png",
+      "sha256": "b3c20d8804e59f7768b432b4367b4bd0fa2b7bd02a47585072b2d01c366f4c86"
+    },
+    {
+      "path": "assets/s03-practice-semantic.json",
+      "sha256": "f0668864a660910340917b5aaae21f58fdf08c63095d76230c23642c52a65793"
+    },
+    {
+      "path": "assets/s03-practice-objects.json",
+      "sha256": "5f48192a11e2b7fede8d46fb1dbde2d4ca5fe7f0861ecc5d6859aa7d927cb0f4"
+    },
+    {
+      "path": "assets/s04-trace-target.png",
+      "sha256": "5bc5488ba4a3724788d908dc177a1f83f681a889c0c26ade374439299050c02e"
+    },
+    {
+      "path": "assets/s04-trace-render.png",
+      "sha256": "f7b6ec0db44704a145786216ae14904234396851b3f71b2456836e90b3d020cb"
+    },
+    {
+      "path": "assets/s04-trace-semantic.json",
+      "sha256": "3cbc221d44a3e232d18095fcbc4a2059033aa927a2a865f39014469925fbdd40"
+    },
+    {
+      "path": "assets/s04-trace-objects.json",
+      "sha256": "8998472724dbd75e4dc4fb50775a97eca8d1d05e79051df4e75cdb7ce099018b"
+    },
+    {
+      "path": "assets/s05-close-target.png",
+      "sha256": "e7f6777d1eab069b3cbdedf2ff426e0cd39ef639896e7bf9af63415318ebc22c"
+    },
+    {
+      "path": "assets/s05-close-render.png",
+      "sha256": "63527ea90c84fbd2ba79003c5eaf4fb15551ce1091cfb6429e1d2695682dce7a"
+    },
+    {
+      "path": "assets/s05-close-semantic.json",
+      "sha256": "028a48e52e6110230d216f537db6dd21204b8b3ac1db45dd7362fdc4c710aa99"
+    },
+    {
+      "path": "assets/s05-close-objects.json",
+      "sha256": "37397fd0cb690ac608d9f7837637cadac94fcd574359eb81f97c2497747e54cc"
+    }
+  ]
+}

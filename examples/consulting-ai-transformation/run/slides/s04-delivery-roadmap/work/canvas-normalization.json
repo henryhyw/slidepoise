@@ -1,0 +1,18 @@
+{
+  "output": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s04-delivery-roadmap/work/accepted-slide.png",
+  "target_px": [
+    1920,
+    960
+  ],
+  "source_after_crop_px": [
+    1774,
+    887
+  ],
+  "placed_px": [
+    0,
+    0,
+    1920,
+    960
+  ],
+  "note": "Crop choice came from host-Agent visual reasoning; this script only normalized geometry."
+}

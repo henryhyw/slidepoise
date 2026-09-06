@@ -1,0 +1,49 @@
+{
+  "audience_question": "Collect. Connect. Challenge.",
+  "dominant_message": "Collect. Connect. Challenge.",
+  "information_structure": {
+    "type": "practice",
+    "description": "Visual composition follows the communication job and active profile."
+  },
+  "required_content": [
+    "Collect",
+    "Keep the source close.",
+    "Connect",
+    "Put distant ideas in contact.",
+    "Challenge",
+    "Ask what the pattern leaves out.",
+    "Three moves for a thought worth keeping.",
+    "FIELD NOTES / 03"
+  ],
+  "semantic_relationships": [],
+  "hierarchy": [
+    "Collect. Connect. Challenge.",
+    "Collect",
+    "Keep the source close.",
+    "Connect",
+    "Put distant ideas in contact.",
+    "Challenge",
+    "Ask what the pattern leaves out.",
+    "Three moves for a thought worth keeping.",
+    "FIELD NOTES / 03"
+  ],
+  "evidence": [
+    "An authored editorial essay for the SlidePoise showcase. First-person framing is illustrative and does not assert the user's personal history."
+  ],
+  "assumptions": [
+    "An authored editorial essay for the SlidePoise showcase. First-person framing is illustrative and does not assert the user's personal history."
+  ],
+  "open_questions": [],
+  "avoid": [
+    "Generic dashboard cards",
+    "Extra factual claims",
+    "Decorative logos"
+  ],
+  "visual_obligations": [
+    "Keep required presentation copy visually clear and separable from artwork."
+  ],
+  "user_required_assets": [],
+  "density_intent": "balanced",
+  "explicit_user_visual_requirements": []
+}
+

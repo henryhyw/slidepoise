@@ -1,0 +1,10 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "observations": [
+    "The actual LibreOffice render retains all content and native table rows. The inherited frame is separated cleanly from the body.",
+    "The native Arial detail paragraphs sit roughly 8 body pixels below the source ink. Logical text allocations will move upward while source search windows stay fixed.",
+    "The compiler incorrectly floors exact font-size boundaries one pixel lower across all groups. This shared-runtime issue is under repair and will be recompiled, with Agent targets kept unchanged.",
+    "Native Arial makes Sampled cited claims verified wrap over two lines in the preserved table cell. The row height accommodates the full text. Source condensed glyph shapes are not copied by narrowing typography.",
+    "The shared 28-pixel decision text and 8-pixel bar differ from the generated larger treatment. All pages will retain the same authored shared role after parent review."
+  ]
+}

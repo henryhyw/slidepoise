@@ -1,0 +1,64 @@
+{
+  "pptx_sha256": "250640f29ae76fdf4343921c12f57a09dd0cfeb7a41b2a5766ce629ef7b92b51",
+  "native_tables": 1,
+  "native_table_cells": 10,
+  "native_picture_objects": 0,
+  "duplicate_shape_ids": [],
+  "table_font_sizes_pt": [
+    12.0
+  ],
+  "headline_font_sizes_pt": [
+    32.0
+  ],
+  "exact_funding_text_preserved": true,
+  "frame_emitted_on_slide": false,
+  "native_speaker_notes": [
+    "All quantities are illustrative planning assumptions. Capacity value is not a cash saving.",
+    "The 95% gate applies to a sampled test set. Each client release separately requires expert verification and engagement-lead approval.",
+    "At least 11 of 15 pilot users must be weekly active. One comparable research task is measured per pilot engagement."
+  ],
+  "shared_geometry": {
+    "introduction-rule": [
+      48,
+      229,
+      1824,
+      2
+    ],
+    "decision-band": [
+      48,
+      857,
+      1824,
+      134
+    ],
+    "decision-accent": [
+      48,
+      857,
+      8,
+      134
+    ],
+    "headline": [
+      48,
+      83,
+      1824,
+      80
+    ],
+    "pilot-scope": [
+      48,
+      167,
+      1824,
+      48
+    ],
+    "decision-label": [
+      100,
+      896,
+      420,
+      52
+    ],
+    "decision-request": [
+      560,
+      896,
+      1265,
+      52
+    ]
+  }
+}

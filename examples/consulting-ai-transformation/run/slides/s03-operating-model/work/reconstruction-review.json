@@ -1,0 +1,54 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "stage": "reconstruction",
+  "decision": "accepted",
+  "material_issues": [],
+  "reviewed_artifacts": [
+    {
+      "path": "accepted-slide.png",
+      "sha256": "c8ead882cc20d711d3079b79629448058d9fb0c80716cf7154ccf3ce4cae11b6"
+    },
+    {
+      "path": "reconstruction/constructor-scene.json",
+      "sha256": "fde81522ad4636200995efa2645f2c902b061ebb5558e301461613d5b4f24e2b"
+    },
+    {
+      "path": "../deliverables/slide.pptx",
+      "sha256": "83e27577cda140f0b849a6a254805b2d4480e030629eddd7c10894f39ceb7fd2"
+    },
+    {
+      "path": "../deliverables/render.png",
+      "sha256": "93e127b416ed5f135d59d6661a48a2410244508785ffb9983d312d85930dfa3f"
+    },
+    {
+      "path": "../deliverables/comparison.png",
+      "sha256": "51d491be726f0d376268077c75a6061a31df8b12d73c3b1ebab3489ca459ea97"
+    },
+    {
+      "path": "native-object-evidence.json",
+      "sha256": "3c6db8b4f828960b81f497e3ed54dc41fbbc330251614c4ad5d87f8ac51d31da"
+    },
+    {
+      "path": "native-text-audit.json",
+      "sha256": "5b2c9be37fe005a9c6f0e0b8db68fdfa55d3357bce4b6d14f71e50adf3cf07fc"
+    },
+    {
+      "path": "reconstruction/measurement/slide_entities.json",
+      "sha256": "eaa834f80cd468d31b2ddfeff2615dccb211c6580cd33d9f428ca6fb30b6eac2"
+    },
+    {
+      "path": "reconstruction/reconstruction-contract.json",
+      "sha256": "ded278366b88c433cef38894b5bdc9c0564d58db85265c81cc382412e0cfdfe7"
+    }
+  ],
+  "observations": [
+    "I inspected the actual headless LibreOffice full-slide render and the body-only target comparison. The headline, four-stage sequence, responsibility table, operating controls, measurement notes and release rule are complete and legible.",
+    "The three straight forward arrows enter the next stage from the left. Both orange return paths keep their round corners and remain visually continuous in LibreOffice. The left return points up into Approved sources and the right return points up into Grounded draft. Their tails meet the correct source responsibility columns, and the two corridors do not cross.",
+    "The return paths are native editable cubic freeforms with arrowheads, not automatically attached Office connectors. Moving table columns in Office does not reattach them. Recompiling the authored map retains the named semantic relationships. This limitation and the pilot scenario assumption are explicitly authored speaker notes. I checked the native notes XML after the final render. Internal handoff notes are excluded.",
+    "Native Arial is wider than the generated glyphs. The table and supporting column use ordinary wrapping at the shared 24 and 28-pixel sizes. Their row allocations and paragraph rhythm are clear, with no clipping or overlap. Both return captions use the same native 24-pixel label size.",
+    "The native title is Georgia 32pt for 64 body pixels, the subtitle is Arial 16pt, workflow and supporting text is Arial 14pt and the table is Arial 12pt. The orange and black decision texts are equal 14pt peers, with the shared 8-pixel orange bar.",
+    "The shared header and footer are inherited from the native frame and absent from the substantive source. The standalone page number is native and will be sequenced during assembly. The native document contains one 25-cell table, three native straight connectors, two cubic freeforms, no pictures and no duplicate drawing IDs.",
+    "All 42 audited text bodies have zero structural findings. Objective semantic and reconstruction collectors report no blocking facts. Visual acceptance is based on inspection of the persisted target, overlay, actual Office render and comparison.",
+    "I inspected the final actual Office render after shared geometry calibration. The Georgia title and Arial subtitle align with the deck-wide native positions. Both decision texts are vertically centered on the same baseline in the 134-pixel band, with the shared label and message starting positions. The workflow, table, controls and all arrowheads remain complete and clear. No fitted group changed its exact authored size."
+  ]
+}

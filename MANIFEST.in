@@ -1,0 +1,9 @@
+graft slidepoise
+graft profiles
+graft library-sets
+include LICENSE
+include SECURITY.md
+include CONTRIBUTING.md
+global-exclude __pycache__ *.py[cod] .DS_Store
+prune archive
+prune workspace

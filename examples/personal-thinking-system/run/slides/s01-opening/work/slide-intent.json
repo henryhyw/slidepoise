@@ -1,0 +1,39 @@
+{
+  "audience_question": "A second thinking system",
+  "dominant_message": "A second thinking system",
+  "information_structure": {
+    "type": "opening",
+    "description": "Visual composition follows the communication job and active profile."
+  },
+  "required_content": [
+    "Working with AI without outsourcing a point of view.",
+    "FIELD NOTES / 01",
+    "An essay in five parts"
+  ],
+  "semantic_relationships": [],
+  "hierarchy": [
+    "A second thinking system",
+    "Working with AI without outsourcing a point of view.",
+    "FIELD NOTES / 01",
+    "An essay in five parts"
+  ],
+  "evidence": [
+    "An authored editorial essay for the SlidePoise showcase. First-person framing is illustrative and does not assert the user's personal history."
+  ],
+  "assumptions": [
+    "An authored editorial essay for the SlidePoise showcase. First-person framing is illustrative and does not assert the user's personal history."
+  ],
+  "open_questions": [],
+  "avoid": [
+    "Generic dashboard cards",
+    "Extra factual claims",
+    "Decorative logos"
+  ],
+  "visual_obligations": [
+    "Keep required presentation copy visually clear and separable from artwork."
+  ],
+  "user_required_assets": [],
+  "density_intent": "balanced",
+  "explicit_user_visual_requirements": []
+}
+

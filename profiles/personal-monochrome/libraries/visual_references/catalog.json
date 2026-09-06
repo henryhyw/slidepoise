@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "items": {
+    "personal-monochrome-system": {
+      "id": "personal-monochrome-system",
+      "name": "Monochrome system",
+      "path": "monochrome-system.png",
+      "description": "Generated light-mode reference for sharp blocks, editorial hierarchy, architectural photography, and continuous process connectors.",
+      "tags": ["personal-website", "modern-blocks", "monochrome", "light", "editorial"],
+      "reuse_policy": "style_and_composition_precedent_only",
+      "provenance": {"provider": "OpenAI host image generation", "created_for_profile": true}
+    },
+    "personal-dark-editorial-grid": {
+      "id": "personal-dark-editorial-grid",
+      "name": "Dark editorial grid",
+      "path": "dark-editorial-grid.png",
+      "description": "Generated dark-mode reference for charcoal fields, off-white type, grayscale photography, and precise block hierarchy.",
+      "tags": ["personal-website", "dark-editorial", "monochrome", "grid"],
+      "reuse_policy": "style_and_composition_precedent_only",
+      "provenance": {"provider": "OpenAI host image generation", "created_for_profile": true}
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "reviewer": "host_agent_visual_reasoning",
+  "decision": "accepted",
+  "material_issues": [],
+  "stage": "reconstruction",
+  "reviewed_artifacts": [
+    {
+      "path": "accepted-slide.png",
+      "sha256": "a49ee87afd9d13eab0ea6e70a03fb68d197b7319273b5a3d998f7bb116827280"
+    },
+    {
+      "path": "reconstruction/measurement/slide_entities.json",
+      "sha256": "62e3e81f1130b572a886bc33d9ca81a862e0208097efa3f2707a27f410336fc3"
+    },
+    {
+      "path": "reconstruction/reconstruction-contract.json",
+      "sha256": "3061283089245e681addcc8874b223f0ce43fb04966d4c64631395911bb07a1f"
+    },
+    {
+      "path": "reconstruction/constructor-scene.json",
+      "sha256": "9db87cf40ddc34c2148ba4ef53f7c5aee7c798699a30d241a7e77cde950dc058"
+    },
+    {
+      "path": "../deliverables/slide.pptx",
+      "sha256": "7124a09df99f80c739d3cde6c8fa77567589bb8be04b68abe8da7892899ddd5e"
+    },
+    {
+      "path": "../deliverables/render.png",
+      "sha256": "3bc5009b8f4cd597cfc338eadaa2be5016f29f3ba49e310b99d3db71c074b1b9"
+    },
+    {
+      "path": "../deliverables/comparison.png",
+      "sha256": "a734da0bcaf334625f90abfdc300e25583f4c7e4568053c5bfae24376148d796"
+    },
+    {
+      "path": "native-object-evidence.json",
+      "sha256": "0ba71d6f47547b054e5d109ca95be40acb3d63fdebc33c3f8672ebbc44176966"
+    },
+    {
+      "path": "native-text-audit.json",
+      "sha256": "f73b0993bc613ae09f3223c701888d684ee0b8dbc9bdafff6ff82818c0764c36"
+    },
+    {
+      "path": "typography-evidence.json",
+      "sha256": "205894c0bdb5f9f90b855ef0b7bb7d1fbd5cd14d9e94f09cef0ad941ef7179dc"
+    }
+  ],
+  "observations": [
+    "I inspected the full actual headless LibreOffice render and the cropped body comparison. All three chart values appear on one line, the two native tables remain readable, and the right-side reasons and overlap qualification have no visible clipping.",
+    "The real native chart contains workbook cells B2:B4 with 1944, 1440 and 1080. The native series cache matches those cells. Its category names and numeric labels remain chart components. No numeric floating textboxes or raster chart image are present.",
+    "The first native attempt split digits into two lines under the Office reader's default label allocation. A diagnostic copy proved that explicit no-wrap retained the complete label. The final packaged route uses the general data_label_wrap=false property and preserves outEnd positioning and the hours format.",
+    "Both native tables use the shared 24-pixel Arial size, equal to 12pt. Column padding permits the full Knowledge owner label. Native Arial is wider than the generated glyphs, so the formula and two reason details use different line breaks while preserving all words.",
+    "The chart's native category labels are right-aligned regular Arial with small native axis tick marks. The target used narrower bold category glyphs and a plain baseline. This small reader-visible difference preserves the chart as one editable semantic object. Native flat fills match the accepted color edit.",
+    "The title uses Georgia64, subtitle Arial32, section/body Arial28, and decision label/message Arial28. The band uses an 8-pixel orange bar, pale-orange fill and black message. Header/footer are inherited frame content. The single-page preview shows page 1, which ordered deck assembly will number correctly.",
+    "The PPTX contains one native chart, two native tables with 32 cells, no pictures and no duplicate shape IDs. Native text audit examined 52 text bodies with zero findings. This file preserves editable content and has no raster reconstruction regions.",
+    "Two audience-facing speaker notes are embedded in the native notes part. They explain the capacity arithmetic, overlapping workflow estimates and the distinction between released capacity and cash savings. Adding the notes left the actual rendered PNG byte-identical."
+  ]
+}

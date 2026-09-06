@@ -1,0 +1,44 @@
+{
+  "selected_assets": [],
+  "frame_content": {
+    "header": {
+      "left_text": "",
+      "right_text": ""
+    },
+    "footer": {
+      "left_text": "",
+      "center_text": ""
+    },
+    "slide_number": 2
+  },
+  "source_ownership": "Accepted generated collage regions have no canonical external asset. Presentation titles and explanatory copy reconstruct as native text.",
+  "deck_role_bindings": [
+    {
+      "deck_role": "publication_folio",
+      "entity_id": "field-note",
+      "chosen_style": {
+        "font_family": "Andale Mono",
+        "font_weight": "regular",
+        "native_font_size_pt": 12,
+        "target_font_size_px": 21,
+        "color": "#242321",
+        "char_spacing_px": 0,
+        "italic": false,
+        "casing": "FIELD NOTES / NN",
+        "align": "left",
+        "valign": "top",
+        "line_spacing": 1,
+        "bbox_hint": [
+          90,
+          868,
+          300,
+          38
+        ],
+        "rule": "No repeated folio rule"
+      }
+    }
+  ],
+  "revision_notes": [
+    "The user requested one coherent Field Notes identity across all five pages. The Agent reviewed all original renders and calibrated this recurring role. Artwork and substantive content stay unchanged."
+  ]
+}

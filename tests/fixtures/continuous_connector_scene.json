@@ -1,0 +1,20 @@
+{
+  "title": "Continuous connector regression",
+  "language": "en-US",
+  "theme": {"display_font": "Georgia", "body_font": "Arial"},
+  "slide": {
+    "dimensions_px": [1600, 900],
+    "background": "#FBFAF8",
+    "objects": [
+      {
+        "id": "connector-continuous",
+        "kind": "connector_graph",
+        "connector_family": "orthogonal_dependency",
+        "source_routes_px": [],
+        "target_routes_px": [[[180, 240], [520, 240], [520, 610], [1280, 610]]],
+        "style": {"color": "#242321", "width_px": 3, "dash": "solid"},
+        "z": 10
+      }
+    ]
+  }
+}
