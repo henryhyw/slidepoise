@@ -1,6 +1,6 @@
 # Usage
 
-SlidePoise is a Codex skill and local runtime for creating presentations through free-form image generation and editable PowerPoint reconstruction. The Agent develops the content and visual direction, interprets the selected design as meaningful objects, and reviews the actual PowerPoint render. Local tools handle pixel measurement, text fitting, native construction and deck assembly.
+SlidePoise is a Codex skill and local runtime for taking a presentation from initial brief to reviewed PowerPoint deck. The Agent develops the argument and visual direction, explores each slide through free-form image generation, interprets the selected designs and reviews the actual PowerPoint renders. Local tools handle pixel measurement, text fitting, native construction and deck assembly.
 
 The [README](../README.md) introduces the project and shows sample presentations. This guide covers installation, your first request and reusable visual settings. The current integration has been exercised with Codex. Other Agent hosts need their own integration checks.
 

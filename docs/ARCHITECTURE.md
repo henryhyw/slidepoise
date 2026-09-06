@@ -1,6 +1,6 @@
 # SlidePoise architecture
 
-SlidePoise uses image generation to explore a slide, then reconstructs the selected design in PowerPoint. Its architecture separates planning, visual exploration, semantic interpretation, pixel measurement, native construction and deck review. The conversation is the working interface. A self-contained skill carries the Agent instructions and reconstruction runtime. Reusable Profiles and Library Sets live outside the skill so users can update them independently.
+SlidePoise carries a presentation from its argument and source material to a reviewed PowerPoint deck. The Agent plans the narrative, uses image generation to explore each slide and reconstructs selected designs as native PowerPoint objects. The architecture separates planning, visual exploration, semantic interpretation, pixel measurement, construction and deck review. The conversation is the working interface. A self-contained skill carries the Agent instructions and reconstruction runtime. Reusable Profiles and Library Sets live outside the skill so users can update them independently.
 
 ## Ownership
 
@@ -17,7 +17,7 @@ SlidePoise uses image generation to explore a slide, then reconstructs the selec
 
 The Agent can revise an outline, reconsider an object or rerun one page at any point. Runtime checks reject malformed or stale inputs. They never infer beauty, decide semantic ownership or issue visual acceptance from a score.
 
-## Two boundaries
+## Division of work
 
 ### Message and composition
 
@@ -59,7 +59,7 @@ Each discovered role carries its purpose, concrete chosen style, page/entity ali
 
 The Agent compares actual appearance with emitted native facts, including family, face, point size, tracking, color and alignment. If a style changed during fitting or font resolution, the Agent decides how to revise its allocation, content, shared treatment or explicit exception. Re-rendering closes that feedback loop. Native facts diagnose what was emitted. They never infer peerhood, select a visual treatment or issue a consistency verdict. A different layout can preserve a recurring visual system without copying one page composition.
 
-## One reconstruction path
+## Reconstruction flow
 
 ```mermaid
 flowchart LR
