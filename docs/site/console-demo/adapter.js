@@ -53,7 +53,7 @@
       } else if (url.pathname === '/api/library-set/create') {
         const item = {id: 'demo-set-' + revision, name: body.name, kind: body.kind || 'icons', description: body.description || '', source: 'local', items: [], count: 0};
         data.libraries.sets.push(item);data.sets[item.id] = item;
-      } else throw new Error('This action needs the installed Console. The website demo keeps changes in this tab only.');
+      } else throw new Error('This action is available in the installed Console.');
       revision++;
       return url.pathname === '/api/profile/style' ? design(id) : {profile: clone(data.profiles[id]), overview: clone(data.overview)};
     }

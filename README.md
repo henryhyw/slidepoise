@@ -87,7 +87,7 @@ Library Sets supply reusable icons and components. Use the local Console to mana
 npx github:henryhyw/slidepoise console
 ```
 
-[Try the interactive Console demo](https://www.henryw.me/slidepoise/docs/site/#console). It uses sample data and keeps changes in the browser tab.
+[Try the interactive Console demo](https://www.henryw.me/slidepoise/docs/site/#console). It uses sample data and does not inspect your computer.
 
 Saved changes apply to future presentations. A session panel adjusts a presentation already in progress without changing its saved Profile.
 

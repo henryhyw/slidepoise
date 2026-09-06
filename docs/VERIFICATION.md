@@ -16,7 +16,7 @@ The September 6, 2026 release candidate was checked on macOS with Python 3.12 an
 
 The project page was inspected on desktop and at a 390-pixel mobile viewport. Editorial is selected by default. Visitors can switch between PowerPoint, comparison, generated design, element groups and OpenCV measurements. The interpretation viewer uses every retained semantic entity, and selected groups highlight their actual members. Pixel details come from the retained OpenCV records.
 
-The embedded Console uses the actual Console interface with sample data. Font changes take effect in the demo, other browser tabs remain independent, and reloading resets the data. The iframe blocks network API calls and cannot reach an installed Console. The interaction gate and Done control were checked on desktop and mobile.
+The embedded Console uses the actual Console interface with sample data. Font changes take effect during the demo, and reloading resets the data. The iframe blocks network API calls and cannot reach an installed Console. The interaction gate and Done control were checked on desktop and mobile.
 
 ## Scope
 
