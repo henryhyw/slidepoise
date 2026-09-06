@@ -165,14 +165,15 @@ def preview_font_environment(env: dict[str, str], directory: Path) -> dict:
                 "fontconfig_sha256": hashlib.sha256(config.read_bytes()).hexdigest() if config.is_file() else None}
     if sys.platform != "darwin":
         return {"fontconfig_source": "renderer_default"}
-    directories = [item for item in (Path("/System/Library/Fonts"), Path("/Library/Fonts"), Path.home() / "Library/Fonts") if item.is_dir()]
+    candidates = ("/System/Library/Fonts", "/Library/Fonts", f"{Path.home().as_posix()}/Library/Fonts")
+    directories = [item for item in candidates if Path(item).is_dir()]
     if not directories:
         return {"fontconfig_source": "renderer_default"}
     config = directory / "preview-fonts.conf"
-    entries = "".join(f"<dir>{escape(str(item))}</dir>" for item in directories)
+    entries = "".join(f"<dir>{escape(item)}</dir>" for item in directories)
     config.write_text(f'<?xml version="1.0"?><fontconfig>{entries}<cachedir>{escape(str(directory / "font-cache"))}</cachedir></fontconfig>', encoding="utf-8")
     env["FONTCONFIG_FILE"] = str(config)
-    return {"fontconfig_source": "macos_system_font_directories", "font_directories": [str(item) for item in directories]}
+    return {"fontconfig_source": "macos_system_font_directories", "font_directories": directories}
 
 
 def preview_settings(args: argparse.Namespace) -> tuple[dict[str, str], str, str]:

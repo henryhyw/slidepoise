@@ -209,7 +209,6 @@ function selectDeck(index, requestedSlideId = null, requestedMode = 'rebuilt') {
   byId('deck-note').hidden = !deck.note;
   byId('generated-content-note').hidden = !deck.canvas;
   byId('slide-surface').style.aspectRatio = (deck.canvas?.full_slide_px || [16, 9]).join(' / ');
-  byId('process-deck-name').textContent = deck.title;
   const downloads = byId('deck-downloads');
   downloads.replaceChildren();
   if (deck.downloads.pptx) downloads.append(download('Download PowerPoint', deck.downloads.pptx));
@@ -347,7 +346,7 @@ function renderProcess() {
   WORKFLOW.forEach((stage, index) => {
     const steps = state.deck.workflow[stage.id];
     const article = element('article', 'workflow-stage');
-    const heading = element('h3');
+    const heading = element('h4');
     heading.append(element('span', 'workflow-number', String(index + 1).padStart(2, '0')), element('span', '', stage.title));
     article.append(heading, element('p', '', stage.description));
     const details = element('details', 'workflow-evidence');

@@ -6,7 +6,7 @@ SlidePoise is an open-source Codex skill for planning and designing presentation
 
 Image generation explores the page design. The Agent identifies the text, charts, tables and artwork in the chosen image. OpenCV measures their geometry, and local tools construct the editable PowerPoint. The Agent then reviews the rendered slides together for visual fidelity and consistency.
 
-![SlidePoise architecture showing content planning, image generation, Agent interpretation, pixel measurement and PowerPoint construction](docs/site/architecture.svg)
+![SlidePoise architecture showing intent, image generation, Agent interpretation, OpenCV measurement, editable PowerPoint and deck review](docs/site/architecture.png)
 
 [Get started](#get-started) · [Usage guide](docs/USAGE.md) · [Architecture](docs/ARCHITECTURE.md) · [Contribute](CONTRIBUTING.md)
 
@@ -14,9 +14,9 @@ Image generation explores the page design. The Agent identifies the text, charts
 
 Browse the slides, compare the AI designs with actual PowerPoint renders, and inspect each page’s element groups and OpenCV measurements on the [project page](https://www.henryw.me/slidepoise/).
 
-| A controlled path to shared AI capability | A second thinking system |
+| Consulting sample | Editorial sample |
 | --- | --- |
-| ![Actual PowerPoint slide comparing AI pilot opportunities](examples/consulting-ai-transformation/assets/s02-opportunities-render.png) | ![Actual PowerPoint slide introducing a second thinking system](examples/personal-thinking-system/assets/s01-opening-render.png) |
+| ![Consulting sample PowerPoint](examples/consulting-ai-transformation/assets/s02-opportunities-render.png) | ![Editorial sample PowerPoint](examples/personal-thinking-system/assets/s01-opening-render.png) |
 | **Consulting** · Priorities, responsibilities and an investment decision for an AI pilot. | **Editorial** · An essay about working with AI and developing a point of view. |
 | [Download PowerPoint](examples/consulting-ai-transformation/deliverables/presentation.pptx) | [Download PowerPoint](examples/personal-thinking-system/deliverables/presentation.pptx) |
 

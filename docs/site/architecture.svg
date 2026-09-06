@@ -1,54 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="820" viewBox="0 0 1600 820">
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#292929"/></marker><style>text{fill:#252525;font-family:Arial,Helvetica,sans-serif}.label{font-size:14px;letter-spacing:1.6px}.title{font-family:Georgia,serif;font-size:33px}.copy{font-size:18px}.small{font-size:14px;fill:#777}.rule{stroke:#ddd;fill:none}.flow{stroke:#343434;stroke-width:1.3;fill:none;marker-end:url(#arrow)}.white{fill:white}</style></defs>
-<rect width="1600" height="820" fill="#fdfcf9"/>
-<text x="64" y="80" font-family="Georgia,serif" font-size="45">SlidePoise</text>
-<text x="64" y="118" class="copy">Visual freedom, with a path back to editable objects.</text>
-<text x="1536" y="78" text-anchor="end" class="label">CODEX SKILL · OPEN SOURCE</text>
-<path d="M64 150H1536" class="rule"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="640" viewBox="0 0 1600 640">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#292929"/></marker><style>text{fill:#252525;font-family:Arial,Helvetica,sans-serif}.label{font-size:14px;letter-spacing:1.6px}.title{font-family:Georgia,serif;font-size:33px}.copy{font-size:18px}.small{font-size:14px;fill:#777}.rule{stroke:#ddd;fill:none}.line{stroke:#343434;stroke-width:1.3;fill:none}.flow{stroke:#343434;stroke-width:1.3;fill:none;marker-end:url(#arrow)}.junction{fill:#343434}.white{fill:white}</style></defs>
+<rect width="1600" height="640" fill="#fdfcf9"/>
+<g transform="translate(0 -145)">
 <text x="64" y="207" class="label">CONTENT + REFERENCES</text>
 <text x="64" y="250" class="title">Plan with the Agent</text>
 <text x="64" y="288" class="copy">Audience, evidence, and</text><text x="64" y="314" class="copy">what each page needs to say.</text>
 <rect x="64" y="350" width="265" height="185" rx="3" fill="white" stroke="#d5d5d5"/>
 <text x="84" y="380" class="label">PRESENTATION PLAN</text>
-<text x="84" y="418" class="small">01</text><text x="113" y="418" font-size="16">Frame the decision</text><path d="M113 432H305" class="rule"/>
-<text x="84" y="461" class="small">02</text><text x="113" y="461" font-size="16">Show the evidence</text><path d="M113 475H289" class="rule"/>
-<text x="84" y="504" class="small">03</text><text x="113" y="504" font-size="16">Recommend the next step</text>
+<text x="84" y="418" class="small">01</text><text x="113" y="418" font-size="16">Audience and objective</text><path d="M113 432H305" class="rule"/>
+<text x="84" y="461" class="small">02</text><text x="113" y="461" font-size="16">Content and evidence</text><path d="M113 475H289" class="rule"/>
+<text x="84" y="504" class="small">03</text><text x="113" y="504" font-size="16">Narrative and sequence</text>
 <path d="M346 438H398" class="flow"/>
 <text x="423" y="207" class="label">IMAGE GENERATION</text>
 <text x="423" y="250" class="title">Explore the design</text>
 <text x="423" y="288" class="copy">Layouts follow the content.</text><text x="423" y="314" class="copy">Your references and assets guide them.</text>
 <rect x="423" y="350" width="322" height="185" rx="3" fill="#242625"/>
-<text x="445" y="386" font-family="Georgia,serif" font-size="23" class="white">A case for change.</text>
+<text x="445" y="386" font-family="Georgia,serif" font-size="23" class="white">Generated composition</text>
 <path d="M445 402H722" stroke="#606361"/>
 <rect x="445" y="431" width="60" height="76" fill="#eee"/><rect x="514" y="452" width="60" height="55" fill="#999"/><rect x="583" y="474" width="60" height="33" fill="#676a68"/>
 <path d="M667 432H723M667 442H714M667 452H723M667 476H717M667 486H723M667 496H704" stroke="#a1a3a1" stroke-width="3"/>
-<path d="M764 438H812V301H845" class="flow"/>
+<path d="M764 438H812M812 301V510" class="line"/>
+<circle cx="812" cy="438" r="2.6" class="junction"/>
+<path d="M812 301H845M812 510H845" class="flow"/>
 <rect x="865" y="236" width="303" height="158" rx="3" fill="white" stroke="#ccc"/>
 <text x="887" y="270" class="label">AGENT INTERPRETATION</text>
 <text x="887" y="307" font-family="Georgia,serif" font-size="26">What belongs together?</text>
 <text x="887" y="342" font-size="17">Text, tables, charts, artwork</text><text x="887" y="368" font-size="17">and their relationships.</text>
-<path d="M1016 397V426" class="flow"/>
 <rect x="865" y="431" width="303" height="158" rx="3" fill="white" stroke="#ccc"/>
 <text x="887" y="465" class="label">OPENCV MEASUREMENT</text>
 <text x="887" y="502" font-family="Georgia,serif" font-size="26">Where does it sit?</text>
 <text x="887" y="537" font-size="17">Visible bounds, colour,</text><text x="887" y="563" font-size="17">edges and text geometry.</text>
-<path d="M1188 301H1213V438H1240M1188 510H1213V438" class="flow"/>
+<path d="M1188 301H1213V510M1188 510H1213" class="line"/>
+<circle cx="1213" cy="438" r="2.6" class="junction"/>
+<path d="M1213 438H1240" class="flow"/>
 <text x="1262" y="207" class="label">POWERPOINT CONSTRUCTION</text>
 <text x="1262" y="250" class="title">Build the objects</text>
 <text x="1262" y="288" class="copy">Editable text, charts, tables</text><text x="1262" y="314" class="copy">and shapes. Artwork as images.</text>
 <rect x="1262" y="350" width="274" height="185" rx="3" fill="white" stroke="#ccc"/>
 <rect x="1281" y="370" width="235" height="32" fill="none" stroke="#7d7f7d" stroke-dasharray="3 3"/>
-<text x="1287" y="393" font-family="Georgia,serif" font-size="22">A case for change.</text>
+<text x="1287" y="393" font-family="Georgia,serif" font-size="22">Native slide objects</text>
 <rect x="1281" y="420" width="165" height="94" fill="none" stroke="#787a78"/>
 <path d="M1281 425v-5h5M1441 420h5v5M1281 509v5h5M1441 514h5v-5" stroke="#e66b48" stroke-width="2" fill="none"/>
 <rect x="1295" y="437" width="36" height="63" fill="#333"/><rect x="1345" y="455" width="36" height="45" fill="#888"/><rect x="1394" y="474" width="36" height="26" fill="#bbb"/>
 <path d="M1463 439H1516M1463 450H1509M1463 461H1516M1463 483H1516M1463 494H1504" stroke="#bbb" stroke-width="3"/>
-<path d="M1400 551V631H588V555" class="flow"/>
-<rect x="751" y="612" width="487" height="38" fill="#fdfcf9"/>
-<text x="994" y="638" text-anchor="middle" font-size="17">Render, compare, and calibrate across the deck</text>
-<path d="M64 690H1536" class="rule"/>
-<text x="64" y="743" font-family="Georgia,serif" font-size="26">The Agent makes the design decisions.</text>
-<text x="64" y="776" class="copy">Tools measure and construct what the Agent has interpreted.</text>
-<text x="1536" y="743" text-anchor="end" class="small">Content and style remain separate from implementation.</text>
-<text x="1536" y="776" text-anchor="end" class="small">Reusable Profiles · Visual references · Icons and components</text>
+<path d="M1400 551V662H196" class="line"/>
+<circle cx="584" cy="662" r="2.6" class="junction"/>
+<path d="M196 662V555M584 662V555" class="flow"/>
+<rect x="780" y="643" width="470" height="38" fill="#fdfcf9"/>
+<text x="1015" y="668" text-anchor="middle" font-size="17">Render, compare, and calibrate against intent and design</text>
+</g>
 </svg>

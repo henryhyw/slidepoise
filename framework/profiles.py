@@ -165,7 +165,7 @@ def copy_profiles(source: Path, target: Path, previous_manifest: dict[str, str] 
         target_file.parent.mkdir(parents=True, exist_ok=True)
         source_hash = hash_file(source_file)
         current_hash = hash_file(target_file) if target_file.is_file() else None
-        manifest_key = f"{manifest_prefix}{relative}"
+        manifest_key = f"{manifest_prefix}{relative.as_posix()}"
         previous_hash = previous_manifest.get(manifest_key)
         if current_hash is None:
             shutil.copy2(source_file, target_file)
@@ -262,7 +262,7 @@ def initialize_home(source_profiles: Path, *, force: bool = False) -> dict[str, 
         if not any(folder.iterdir()):
             folder.rmdir()
     for source, destination in ((DEFAULT_CONFIG, home / "config.json"), (SESSION_TEMPLATE, home / "session-overrides-template.json")):
-        relative = str(destination.relative_to(home))
+        relative = destination.relative_to(home).as_posix()
         source_hash = hash_file(source)
         current_hash = hash_file(destination) if destination.is_file() else None
         previous_hash = previous_manifest.get(relative)

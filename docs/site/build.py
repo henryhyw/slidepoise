@@ -18,7 +18,7 @@ SITE = Path(__file__).resolve().parent
 ROOT = SITE.parents[1]
 STATIC_FILES = (
     "index.html", "styles.css", "app.mjs", "mark.svg", "showcases.json",
-    "object-inspector.mjs", "object-inspector.css", "planning-viewer.mjs", "reconstruction-viewer.mjs", "architecture.svg",
+    "object-inspector.mjs", "object-inspector.css", "planning-viewer.mjs", "reconstruction-viewer.mjs", "architecture.svg", "architecture.png",
 )
 SLIDE_ARTIFACTS = ("target", "render", "thumbnail", "scene", "evidence", "objects", "semantic", "measurement", "measurement_overlay")
 WORKFLOW_STAGES = ("plan", "design", "reconstruct", "review")

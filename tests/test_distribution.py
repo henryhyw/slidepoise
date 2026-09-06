@@ -22,7 +22,14 @@ def test_sdist_builds_self_contained_wheel_and_runs_outside_repository(tmp_path)
     extracted = tmp_path / "sdist"
     extracted.mkdir()
     with tarfile.open(next((build / "dist").glob("*.tar.gz"))) as archive:
-        archive.extractall(extracted, filter="data")
+        if sys.version_info >= (3, 12):
+            archive.extractall(extracted, filter="data")
+        else:
+            root = extracted.resolve()
+            for member in archive.getmembers():
+                destination = (extracted / member.name).resolve()
+                assert destination == root or root in destination.parents
+            archive.extractall(extracted)
     root = next(extracted.iterdir())
     command(["-m", "build", "--wheel"], root)
     installed = tmp_path / "installed"

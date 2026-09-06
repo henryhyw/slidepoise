@@ -49,7 +49,7 @@ async function navigate(view, focusHeading = false) {
   $("#view-description").textContent = description;
   $("#view-description").hidden = !description;
   if (focusHeading) $("#view-title").focus({ preventScroll: true });
-  window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   if (view === "design") await loadDesign();
   if (view === "resources") await loadResources();
   if (view === "system") await loadSystem();

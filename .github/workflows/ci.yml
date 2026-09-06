@@ -67,6 +67,7 @@ jobs:
       - run: sudo apt-get install -y libreoffice-impress poppler-utils fonts-noto-cjk
       - run: python -m pip install -e ".[dev,runtime]"
       - run: npm ci
+      - run: mkdir -p workspace/preview-tests
       - run: >-
           python -m pytest tests/test_preview_rendering.py tests/test_connector_rendering.py
           tests/test_chart_label_wrapping.py tests/test_master_frame.py tests/test_native_shape_ids.py
