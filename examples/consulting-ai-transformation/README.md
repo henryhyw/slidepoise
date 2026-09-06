@@ -18,6 +18,4 @@ The chart values and numeric labels are linked to its workbook. Separate formula
 
 `run/bundle/deck-scenes.json` is the portable scene manifest. `examples/rebuild.py` repeats measurement and native construction from the frozen accepted targets and authored maps. This reconstruction was re-run in an isolated home, and all five actual previews were pixel-identical at the same 160 DPI in the recorded macOS LibreOffice environment. Image generation remains a creative step.
 
-The source archive retains both the portable scenes and complete authoring evidence. The project page presents a single PowerPoint download action. PDF and source files remain available in the repository for maintainers.
-
-The previous Consulting revision is preserved in the development workspace at `output/showcase-revisions/consulting-v2-at-replacement`.
+The source archive contains the portable scenes and complete authoring evidence. The project page offers one PowerPoint download. PDF and source files remain in the repository for maintainers and reproducibility.

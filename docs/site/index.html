@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#fafafa">
-  <meta name="description" content="Work with AI to develop your content, explore layouts beyond fixed templates and create an editable PowerPoint using your visual references and assets.">
+  <meta name="description" content="An open-source Codex skill for free-form AI slide design and editable PowerPoint reconstruction using Agent interpretation and OpenCV measurement.">
   <title>SlidePoise · AI presentation design</title>
   <link rel="icon" href="mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
@@ -30,7 +30,7 @@
     <section class="hero page-width" aria-labelledby="hero-title">
       <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Open-source presentation skill for Codex</p>
       <h1 id="hero-title">AI-generated design.<br>Built into PowerPoint.</h1>
-      <p class="hero-description">SlidePoise is an open-source Codex skill that turns AI-generated slide designs into editable PowerPoint. You plan the content with the Agent and provide visual references or assets. Image generation explores layouts beyond fixed templates. The Agent identifies the elements, OpenCV measures their geometry, and local tools build the presentation.</p>
+      <p class="hero-description">SlidePoise is an open-source Codex skill that uses image generation to explore free-form slide designs, then reconstructs the selected design as an editable PowerPoint. You plan the content with the Agent and provide visual references or assets. The Agent identifies the elements, OpenCV measures their geometry, and local tools build the presentation.</p>
       <div class="hero-actions"><a class="button" href="#setup">Get SlidePoise</a><a class="quiet-link source-link" href="https://github.com/henryhyw/slidepoise" target="_blank" rel="noopener"><svg class="github-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 .75a11.25 11.25 0 0 0-3.56 21.92c.56.1.77-.24.77-.54v-2.09c-3.14.68-3.8-1.33-3.8-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.23.71-1.51-2.51-.29-5.15-1.26-5.15-5.57 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.16a10.75 10.75 0 0 1 5.65 0c2.15-1.46 3.1-1.16 3.1-1.16.61 1.55.23 2.7.11 2.98.72.79 1.16 1.8 1.16 3.03 0 4.32-2.64 5.28-5.16 5.56.41.35.77 1.03.77 2.09v3.1c0 .3.2.65.78.54A11.25 11.25 0 0 0 12 .75Z"/></svg>View source</a></div>
     </section>
 
@@ -139,7 +139,7 @@
     </section>
   </main>
 
-  <footer class="site-footer page-width"><a class="wordmark" href="#top"><img src="mark.svg" width="23" height="23" alt="">SlidePoise</a><p>AI presentation design, beyond fixed templates.</p><a href="https://github.com/henryhyw/slidepoise/blob/main/LICENSE" target="_blank" rel="noopener">MIT license</a></footer>
+  <footer class="site-footer page-width"><a class="wordmark" href="#top"><img src="mark.svg" width="23" height="23" alt="">SlidePoise</a><p>Free-form slide design. Editable PowerPoint output.</p><a href="https://github.com/henryhyw/slidepoise/blob/main/LICENSE" target="_blank" rel="noopener">MIT license</a></footer>
 
   <dialog id="viewer-dialog" class="viewer-dialog" aria-label="Expanded presentation viewer"></dialog>
   <dialog id="artifact-dialog" class="artifact-dialog" aria-labelledby="artifact-title" aria-describedby="artifact-description"><div class="dialog-header"><div><p id="artifact-type" class="eyebrow"></p><h2 id="artifact-title"></h2></div><div class="dialog-actions"><button id="artifact-close" class="icon-button" type="button" aria-label="Close artifact viewer"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="m5 5 10 10M5 15 15 5"/></svg></button></div></div><div id="artifact-body" class="artifact-body"></div><p id="artifact-description" class="dialog-description"></p></dialog>

@@ -3,7 +3,7 @@
   "version": "0.5.0",
   "private": false,
   "type": "module",
-  "description": "Node dependencies for the SlidePoise presentation framework",
+  "description": "Free-form AI slide design reconstructed as editable PowerPoint",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -16,7 +16,9 @@
   "keywords": [
     "powerpoint",
     "presentations",
-    "agent",
+    "codex",
+    "image-generation",
+    "opencv",
     "pptxgenjs"
   ],
   "bin": {

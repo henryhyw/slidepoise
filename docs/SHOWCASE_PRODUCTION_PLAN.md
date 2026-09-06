@@ -1,10 +1,10 @@
 # SlidePoise showcase production plan
 
-The two retained presentations are now documented in [the production record](SHOWCASE_PRODUCTION.md). This file preserves reusable test prompts and a proposed filming outline. Its fresh-chat and screen-recording steps describe future replay material.
+This plan contains the test prompts used to exercise a complete five-slide run and a filming outline for a product demonstration. The finished examples and their verification are documented in the [production record](SHOWCASE_PRODUCTION.md).
 
 ## Purpose
 
-Validate the automatic five-slide workflow in a fresh Codex chat, preserve evidence for debugging, and collect authentic material for the public launch video.
+Run the complete five-slide workflow in a fresh Codex conversation. Keep the files needed to diagnose failures and record the product using the real applications.
 
 Run the Consulting deck first. Fix any product defect before running the Personal Website deck.
 

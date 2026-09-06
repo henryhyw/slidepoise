@@ -1,6 +1,6 @@
 # Contributing
 
-SlidePoise turns a visually selected slide into an editable PowerPoint through a traceable reconstruction process. A useful contribution improves that user journey, protects a real failure boundary, or makes the project easier to understand and maintain.
+SlidePoise combines free-form AI slide design with editable PowerPoint reconstruction. Contributions should fix a user-visible problem, strengthen a real failure boundary, or make the project easier to understand and maintain.
 
 Read [AGENTS.md](AGENTS.md), [the skill](slidepoise/SKILL.md), and [maintenance guidance](slidepoise/references/maintenance.md) before changing the framework. The packaged skill is the product source of truth. The host Agent owns visual, semantic, narrative, and interaction judgement. Runtime code measures, validates, transforms, constructs, and records evidence.
 
