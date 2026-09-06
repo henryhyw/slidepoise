@@ -35,7 +35,7 @@ jobs:
       - run: python slidepoise/scripts/audit_skill_boundaries.py
       - run: python -m build
       - run: npm pack
-      - uses: softprops/action-gh-release@v2
+      - uses: softprops/action-gh-release@v3
         with:
           generate_release_notes: true
           files: |
