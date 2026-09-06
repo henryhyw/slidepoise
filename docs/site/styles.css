@@ -788,7 +788,7 @@ body[data-input="keyboard"] .content-card, body[data-input="keyboard"] .content-
 
 @media (prefers-reduced-motion: reduce) { .demo-interaction-cue, .demo-interaction-chevron, .demo-interaction-done { transition: none; } }
 
-.console-demo { position: relative; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: #fafafa; height: 600px; }
+.console-demo { position: relative; isolation: isolate; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: #fafafa; height: 600px; }
 .console-demo iframe { width: 100%; height: 100%; border: 0; display: block; }
 .console-demo[data-active="false"] iframe, .console-demo iframe[inert] { pointer-events: none; }
 .console-layout { grid-template-columns: minmax(0,.65fr) minmax(0,1.5fr); }

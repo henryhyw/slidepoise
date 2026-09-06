@@ -27,3 +27,9 @@ test('Console uses its own system icon on every surface', () => {
     assert.doesNotMatch(systemButton, /⚙/);
   }
 });
+
+test('the embedded Console stays below the sticky project header', () => {
+  const styles = readFileSync(new URL('../docs/site/styles.css', import.meta.url), 'utf8');
+  assert.match(styles, /\.site-header \{[^}]*position: sticky;[^}]*z-index: 30;/);
+  assert.match(styles, /\.console-demo \{[^}]*position: relative;[^}]*isolation: isolate;/);
+});

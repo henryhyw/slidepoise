@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "slidepoise"
 version = "0.5.0"
-description = "Free-form AI slide design reconstructed as editable PowerPoint"
+description = "Complete presentation workflow for Codex with free-form design and native PowerPoint output"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"

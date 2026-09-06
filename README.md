@@ -1,10 +1,10 @@
 # SlidePoise
 
-**Free-form AI slide design, reconstructed as editable PowerPoint.**
+**A complete presentation workflow for Codex.**
 
-SlidePoise is an open-source Codex skill that uses image generation to explore free-form slide designs, then reconstructs the selected design as an editable PowerPoint. You and the Agent define the audience, argument, content and visual direction. The Agent interprets the chosen design, OpenCV measures its geometry, and local tools build the native PowerPoint objects.
+SlidePoise is an open-source system that helps Codex plan, design, build and review a complete PowerPoint presentation. You and the Agent define the audience, argument, evidence, content and visual direction. The Agent plans the deck, explores each slide through free-form image generation, interprets the selected compositions and reviews the presentation as a whole. OpenCV measures the page, while local tools build native text, charts, tables and shapes in PowerPoint.
 
-The Agent decides what each element means, how the elements relate and whether the finished slide works. Computer vision handles pixel measurements. After reconstruction, the Agent compares the actual renders with the generated designs and checks recurring typography, colour, spacing, headers and footers across the full deck.
+The architecture separates semantic and visual judgement from pixel measurement. This gives the Agent room to design beyond fixed templates and gives reconstruction a traceable technical path. After construction, the Agent compares the actual renders with the generated designs and checks recurring typography, colour, spacing, headers and footers across the full deck.
 
 ![SlidePoise architecture showing intent, image generation, Agent interpretation, OpenCV measurement, editable PowerPoint and deck review](docs/site/architecture.png)
 
