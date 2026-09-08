@@ -210,6 +210,14 @@ section[tabindex="-1"]:focus { outline: none; }
 .illustration-surface img { width: auto; height: 100%; max-width: 100%; object-fit: contain; min-height: 0; }
 .illustration-comparison figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 3px 16px; padding-top: 12px; font-size: 11px; color: var(--muted); }
 .illustration-comparison figcaption strong { font-weight: 550; color: var(--ink); }
+.illustration-heading { display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+.illustration-heading .mode-controls { flex: 0 0 auto; }
+.illustration-compare { width: min(100%, 608px); margin-inline: auto; }
+.artwork-comparison { position: relative; height: clamp(200px, 29vw, 340px); overflow: hidden; border-radius: 8px; background: #202630; isolation: isolate; }
+.artwork-comparison-layer { position: absolute; inset: 0; background: #202630; }
+.artwork-comparison-layer img { position: absolute; inset: 24px; width: calc(100% - 48px); height: calc(100% - 48px); object-fit: contain; }
+.artwork-comparison:focus-within { outline: 2px solid var(--accent); outline-offset: 4px; }
+.illustration-compare figcaption { display: flex; justify-content: space-between; gap: 16px; padding-top: 12px; font-size: 11px; color: var(--muted); }
 .asset-system-figure { display: grid; grid-template-columns: minmax(150px, 1fr) 64px minmax(150px, 1fr) 64px minmax(150px, 1fr); align-items: stretch; margin: 0; min-width: 0; }
 .asset-stage { min-width: 0; min-height: 194px; display: flex; flex-direction: column; padding: 18px; border: 1px solid #dfe2e6; border-radius: 8px; background: #f8f8f7; }
 .asset-stage-label { font-size: 10px; font-weight: 600; color: #555b64; letter-spacing: .01em; }
@@ -442,6 +450,7 @@ body[data-input="keyboard"] *, body[data-input="keyboard"] *::before, body[data-
   .asset-system-figure { grid-template-columns: 1fr; gap: 11px; }
   .illustration-comparison { grid-template-columns: 1fr; gap: 24px; }
   .illustration-surface { height: 280px; }
+  .artwork-comparison { height: 280px; }
   .asset-stage { min-height: 158px; }
   .asset-connection { flex-direction: row; gap: 12px; padding-block: 2px; }
   .asset-connection i { width: 1px; height: 22px; }

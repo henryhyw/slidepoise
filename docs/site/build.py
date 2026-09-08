@@ -308,6 +308,16 @@ def build(output: Path, manifests: list[Path]) -> dict:
         site_target.mkdir(parents=True)
         for name in STATIC_FILES:
             shutil.copy2(SITE / name, site_target / name)
+        # New page markup must request the matching stylesheet and entry script,
+        # even when a returning visitor has cached an earlier deployment.
+        entrypoint = site_target / "index.html"
+        html = entrypoint.read_text(encoding="utf-8")
+        for name in STATIC_FILES:
+            if Path(name).suffix in {".css", ".mjs"}:
+                version = sha256(site_target / name)[:16]
+                for attribute in ("href", "src"):
+                    html = html.replace(f'{attribute}="{name}"', f'{attribute}="{name}?v={version}"')
+        entrypoint.write_text(html, encoding="utf-8")
         if (SITE / "assets").is_dir():
             shutil.copytree(SITE / "assets", site_target / "assets")
         if (SITE / "console-demo").is_dir():

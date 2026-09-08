@@ -84,6 +84,24 @@ class PortableShowcaseTests(unittest.TestCase):
             self.assertEqual(item["bytes"], artifact.stat().st_size)
         self.assertIn("docs/site/", (output / "index.html").read_text())
 
+    def test_entrypoint_requests_the_styles_and_script_from_its_build(self):
+        markup = '<link href="styles.css"><script src="app.mjs"></script>'
+        (self.site / "index.html").write_text(markup)
+        first = Path(self.temporary.name) / "first"
+        BUILDER.build(first, BUILDER.validate())
+        old_html = (first / "docs/site/index.html").read_text()
+        old_style = BUILDER.sha256(self.site / "styles.css")[:16]
+        self.assertIn(f'"styles.css?v={old_style}"', old_html)
+        script_version = BUILDER.sha256(self.site / "app.mjs")[:16]
+        self.assertIn(f'"app.mjs?v={script_version}"', old_html)
+        (self.site / "styles.css").write_text("body { color: black; }")
+        second = Path(self.temporary.name) / "second"
+        BUILDER.build(second, BUILDER.validate())
+        new_html = (second / "docs/site/index.html").read_text()
+        self.assertNotIn(f'"styles.css?v={old_style}"', new_html)
+        self.assertIn(f'"app.mjs?v={script_version}"', new_html)
+        self.assertEqual((self.site / "index.html").read_text(), markup)
+
     def test_presentation_goal_cannot_link_to_another_slides_outline(self):
         BUILDER.validate()
         path = self.example / "outline.json"

@@ -763,13 +763,25 @@ byId('previous-slide').addEventListener('click', () => selectSlide(state.slideIn
 byId('next-slide').addEventListener('click', () => selectSlide(state.slideIndex + 1));
 byId('slide-preview').addEventListener('error', () => { byId('slide-image-error').hidden = false; });
 byId('slide-preview').addEventListener('load', () => { byId('slide-image-error').hidden = true; });
-byId('reveal').addEventListener('input', (event) => {
-  const value = Number(event.currentTarget.value);
-  byId('comparison-render').style.clipPath = 'inset(0 ' + (100 - value) + '% 0 0)';
-  byId('comparison-divider').style.left = value + '%';
-  event.currentTarget.setAttribute('aria-valuetext', value + ' percent editable PowerPoint, ' + (100 - value) + ' percent AI-generated design');
-});
-byId('reveal').setAttribute('aria-valuetext', '50 percent editable PowerPoint, 50 percent AI-generated design');
+function bindComparison(input, foreground, divider, leftLabel, rightLabel) {
+  const update = () => {
+    const value = Number(input.value);
+    foreground.style.clipPath = 'inset(0 ' + (100 - value) + '% 0 0)';
+    divider.style.left = value + '%';
+    input.setAttribute('aria-valuetext', value + ' percent ' + leftLabel + ', ' + (100 - value) + ' percent ' + rightLabel);
+  };
+  input.addEventListener('input', update);
+  update();
+}
+bindComparison(byId('reveal'), byId('comparison-render'), byId('comparison-divider'), 'editable PowerPoint', 'AI-generated design');
+bindComparison(byId('artwork-reveal'), byId('artwork-original'), byId('artwork-divider'), 'original detail', 'transparent artwork');
+const artworkViews = [...document.querySelectorAll('[data-artwork-view]')];
+artworkViews.forEach(button => button.addEventListener('click', () => {
+  const comparing = button.dataset.artworkView === 'compare';
+  byId('illustration-pair').hidden = comparing;
+  byId('illustration-compare').hidden = !comparing;
+  artworkViews.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+}));
 
 const initialFragment = location.hash;
 const initialNavigationGuard = new AbortController();
