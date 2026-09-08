@@ -673,6 +673,9 @@ def build_reconstruction_scene(
                 source_path = Path(source)
                 if not source_path.is_file():
                     raise FileNotFoundError(f"Raster source for {entity_id} does not exist: {source_path}")
+                source_hash = None if mapping else image.get("raster_source_facts", {}).get("sha256")
+                if source_hash and hashlib.sha256(source_path.read_bytes()).hexdigest() != source_hash:
+                    raise ValueError(f"Raster source for {entity_id} changed after measurement")
                 fit_mode = "contain" if mapping else str(image.get("crop_mode", "fill"))
                 target_box = _contain(box, _image_ratio(source_path), 0) if (mapping or fit_mode == "contain") else box
                 objects.append({
@@ -680,6 +683,7 @@ def build_reconstruction_scene(
                     "kind": "image",
                     "bbox_px": target_box,
                     "source_path": str(source_path.resolve()),
+                    **({"source_sha256": source_hash} if source_hash else {}),
                     "selected_asset_id": mapping.get("selected_asset_id") if mapping else None,
                     "fit": fit_mode,
                     "preserve_aspect_ratio": True,

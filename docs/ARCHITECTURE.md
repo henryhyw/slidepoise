@@ -33,6 +33,16 @@ Selected artwork enters the generation request as visual context. Its canonical 
 
 After a design is accepted, the Agent identifies each asset role and reviews available variants at the final size. The semantic map binds the chosen role to a canonical asset ID. Reconstruction places the original SVG, image or editable component in the measured slot. This allows visual identity to survive the image-generation stage while the surrounding layout remains freeform.
 
+## Generated artwork within a slide
+
+After selecting a slide design, the Agent reviews each illustration at its intended size. A small region in a full-slide image may benefit from an independent generation at higher resolution. The Agent can request a transparent version using that region as its reference, while retaining the surrounding slide composition. Exact user assets and canonical Library Set resources keep their original files.
+
+This uses the existing raster `refine` action. Source preparation records the original crop, canvas and hashes. Each returned image is registered individually. A transparent request requires actual alpha pixels, including partial transparency at soft edges. Registration preserves the entire canvas and its margins. OpenCV supplies visible bounds as evidence, while reconstruction places the full registered canvas at its authored coordinates. Tight alpha bounds never silently replace that placement.
+
+The Agent compares RGB previews composited on light and dark backgrounds, then inspects the actual PowerPoint render. Higher pixel dimensions alone do not establish better detail or faithful artwork. If an edit is unsuitable, `reuse_original` restores the accepted source crop. File checks reject opaque substitutes, altered source bindings and unintended changes to aspect ratio. They do not decide whether the new artwork is visually acceptable.
+
+Transparency is optional. It does not add a mandatory generation stage or a new presentation mode. Transparent artwork remains a raster image with editable position, size and layering. Presentation text, charts, tables and connectors follow their existing native reconstruction paths.
+
 ## Shared frame and content canvas
 
 The PowerPoint canvas and image-generation canvas have different responsibilities. The resolved configuration owns the full slide and inherited header and footer. Generation owns the substantive region between them.

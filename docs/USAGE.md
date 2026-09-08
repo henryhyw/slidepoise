@@ -58,6 +58,12 @@ The Agent interprets the selected image as meaningful objects, inspects OpenCV's
 
 Routine corrections belong to the Agent. It checks the output against your brief as well as the generated design, inspects rendered-text discrepancies, and revisits the relevant inputs when something is missing or does not fit. When the host supports subagents, a separate reviewer inspects decks and complex slides before delivery. This reduces dependence on the author spotting its own mistakes. The [review evaluation](quality/autonomous-review.md) records what has been tested and the remaining limits.
 
+## Detailed illustrations and transparent backgrounds
+
+The Agent can regenerate a small illustration separately when it needs more detail or a transparent background. It uses the chosen slide as the reference, checks the returned image and reviews its placement in the PowerPoint. Your original logos, photographs and library assets keep their source files.
+
+You can ask for this while creating or revising a deck. For example, “Give the small illustrations more detail and make their backgrounds transparent. Keep the slide composition.” The Agent can also initiate it when useful. If the host cannot produce a suitable transparent image, the original artwork remains available. Transparent images are movable layers in PowerPoint. Their internal artwork remains raster.
+
 ## Install from a checkout
 
 Use the same managed installation from the repository root.

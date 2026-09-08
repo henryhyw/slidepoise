@@ -355,9 +355,9 @@
       "z": 10,
       "raster_fit": "fill",
       "raster_decision": {
-        "action": "reuse_original",
+        "action": "refine",
         "reviewed_by": "host_agent_visual_reasoning",
-        "reason": "The photographed hand, handwritten fragment and layered source paper remain one image region. The manuscript lettering is intrinsic to the photographed source.",
+        "reason": "Regenerate this small illustrative collage independently to obtain more usable detail and a transparent backdrop, preserving its depicted subject and overall arrangement.",
         "source_dimensions_px": [
           412,
           383
@@ -367,11 +367,48 @@
           383
         ],
         "intrinsic_text_ownership": "Handwritten and depicted marks remain part of the collage. No external presentation copy is included.",
-        "occluding_native_text_ids": []
+        "occluding_native_text_ids": [],
+        "background": "transparent"
       },
       "style_hint": {
         "style_authority": "accepted_generated_image"
-      }
+      },
+      "raster_source_override": "illustrations/collect-collage-ec10f2ecf471.png",
+      "raster_source": {
+        "sha256": "ec10f2ecf4713cdc1d768cd6733bcd1d93e58a5cdb4e6b70b4d5228130c35c63",
+        "canvas_dimensions_px": [
+          1301,
+          1209
+        ],
+        "alpha": {
+          "transparent_pixels": 281516,
+          "partial_pixels": 1291349,
+          "opaque_pixels": 44,
+          "visible_bbox_px": [
+            0,
+            1,
+            1288,
+            1208
+          ]
+        },
+        "background": "transparent",
+        "source_bbox_px": [
+          69,
+          420,
+          412,
+          383
+        ],
+        "source_image_sha256": "767e54f0f34faafae4aa1985b26c3824e3ece0521a6e706cf5260579fedbe3c6",
+        "source_crop_sha256": "3480ee858526a940c1ebc75723604243a292b04cd34e554d0cc91bdcec8fc6ab",
+        "returned_image_sha256": "0b03369a81cdccdf974d5d1af953ebaa4727928276f8915dcf6cfeeb28e390dc",
+        "output_crop_px": [
+          0,
+          0,
+          1301,
+          1209
+        ]
+      },
+      "illustration_refinement_status": "refined"
     },
     {
       "id": "connect-collage",
@@ -391,9 +428,9 @@
       "z": 10,
       "raster_fit": "fill",
       "raster_decision": {
-        "action": "reuse_original",
+        "action": "refine",
         "reviewed_by": "host_agent_visual_reasoning",
-        "reason": "The map, thread, ink dots and translucent paper form one archival image. The lines are depicted inside the collage rather than a semantic presentation connector.",
+        "reason": "Regenerate this small illustrative collage independently to obtain more usable detail and a transparent backdrop, preserving its depicted subject and overall arrangement.",
         "source_dimensions_px": [
           380,
           394
@@ -403,11 +440,48 @@
           394
         ],
         "intrinsic_text_ownership": "Handwritten and depicted marks remain part of the collage. No external presentation copy is included.",
-        "occluding_native_text_ids": []
+        "occluding_native_text_ids": [],
+        "background": "transparent"
       },
       "style_hint": {
         "style_authority": "accepted_generated_image"
-      }
+      },
+      "raster_source_override": "illustrations/connect-collage-9f29ea9ec467.png",
+      "raster_source": {
+        "sha256": "9f29ea9ec467c5c6c0c2e92ef00ba07c0aaf43bae90e155a7cfa439f15fc1556",
+        "canvas_dimensions_px": [
+          1231,
+          1277
+        ],
+        "alpha": {
+          "transparent_pixels": 321696,
+          "partial_pixels": 1249224,
+          "opaque_pixels": 1067,
+          "visible_bbox_px": [
+            0,
+            0,
+            1231,
+            1277
+          ]
+        },
+        "background": "transparent",
+        "source_bbox_px": [
+          639,
+          423,
+          380,
+          394
+        ],
+        "source_image_sha256": "767e54f0f34faafae4aa1985b26c3824e3ece0521a6e706cf5260579fedbe3c6",
+        "source_crop_sha256": "3a22118358591f2ebf609f9a6389d44e3f156761b13e2df2047856643784ff99",
+        "returned_image_sha256": "3b259fff1fe015bf34a5061aac4635462e198681aa10b0be8dde9e45ad931aa1",
+        "output_crop_px": [
+          0,
+          0,
+          1231,
+          1277
+        ]
+      },
+      "illustration_refinement_status": "refined"
     },
     {
       "id": "challenge-collage",
@@ -427,9 +501,9 @@
       "z": 10,
       "raster_fit": "fill",
       "raster_decision": {
-        "action": "reuse_original",
+        "action": "refine",
         "reviewed_by": "host_agent_visual_reasoning",
-        "reason": "The contact sheet and torn paper retain their photographic frames, texture and soft shadows as one regional crop.",
+        "reason": "Regenerate this small illustrative collage independently to obtain more usable detail and a transparent backdrop, preserving its depicted subject and overall arrangement.",
         "source_dimensions_px": [
           436,
           392
@@ -439,11 +513,48 @@
           392
         ],
         "intrinsic_text_ownership": "Handwritten and depicted marks remain part of the collage. No external presentation copy is included.",
-        "occluding_native_text_ids": []
+        "occluding_native_text_ids": [],
+        "background": "transparent"
       },
       "style_hint": {
         "style_authority": "accepted_generated_image"
-      }
+      },
+      "raster_source_override": "illustrations/challenge-collage-9b3ed6225b68.png",
+      "raster_source": {
+        "sha256": "9b3ed6225b68128ad6eb91e672fa487bea1984dd21c412dac98d7980bf55cad4",
+        "canvas_dimensions_px": [
+          1323,
+          1189
+        ],
+        "alpha": {
+          "transparent_pixels": 400361,
+          "partial_pixels": 1172123,
+          "opaque_pixels": 563,
+          "visible_bbox_px": [
+            0,
+            0,
+            1323,
+            1189
+          ]
+        },
+        "background": "transparent",
+        "source_bbox_px": [
+          1137,
+          421,
+          436,
+          392
+        ],
+        "source_image_sha256": "767e54f0f34faafae4aa1985b26c3824e3ece0521a6e706cf5260579fedbe3c6",
+        "source_crop_sha256": "897681535836e2471dcf96e1b33b7a0326b0828978dccb61708c09ef5981b2d1",
+        "returned_image_sha256": "bbae4b0120f7647cde63440a02779d823123b059e8658edcdaeb0c1b4a2dc810",
+        "output_crop_px": [
+          0,
+          0,
+          1323,
+          1189
+        ]
+      },
+      "illustration_refinement_status": "refined"
     },
     {
       "id": "field-note",

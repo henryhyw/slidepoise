@@ -14,12 +14,12 @@ OCR detection does not decide these categories. Do not create a text entity for 
 
 Measure the source crop in pixels and its intended display size. For a web export, compare available crop pixels with the pixels it will occupy in that export. For print, calculate effective PPI from pixels and placed inches. These numbers describe resampling demand, not acceptance.
 
-Inspect the crop at intended output scale, then inspect a detail that exposes the relevant edges, grain, or small lettering. A small crop shown small may be adequate. A large crop may still contain blur. Upscaling increases dimensions without recovering original detail. Preserve deliberate grain and soft focus.
+Inspect the crop at intended output scale, then inspect a detail that exposes the relevant edges, grain, or small lettering. A small crop shown small may be adequate. A large crop may still contain blur. Simple resizing increases dimensions without recovering detail. Regenerating a component independently can produce more usable detail than its small region in a full-slide image, but the new detail is generated and needs review. Preserve deliberate grain and soft focus.
 
 Record an entity's `raster_decision` with `action`, `reviewed_by`, and `reason`. Include source dimensions, intended output size, inspected artifact paths, intrinsic text ownership, and any `occluding_native_text_ids` in the decision evidence when relevant.
 
 - `reuse_original` keeps an adequate crop without another image call.
-- `refine` selects an isolated crop with a specific visible quality problem for an approved edit. Only these objects enter the refinement board.
+- `refine` selects an isolated crop for more usable detail, a focused repair or background isolation. Only these objects enter illustration preparation.
 - `clean_plate` removes foreground content destined for native reconstruction from an underlying image while retaining its coordinate system and background continuity.
 - `preserve_composite` keeps an inseparable region together and records which content remains raster.
 
@@ -39,7 +39,7 @@ Never conceal residual text with a sampled flat rectangle unless inspection conf
 
 ## Transparency and segmentation
 
-Treat transparent output as an optional host capability. Verify the current tool interface and actual alpha channel when using it. A prompt requesting transparency is not evidence that an alpha channel was produced. An opaque same-canvas clean plate does not require transparent generation.
+Treat transparent output as an optional host capability. Use the source preparation, alpha validation and canvas registration in `illustration-refinement.md`. A prompt requesting transparency is not evidence that an alpha channel was produced. Inspect valid transparent assets on contrasting backgrounds and in the rendered slide before adopting them. An opaque same-canvas clean plate does not require transparent generation.
 
 OpenCV can measure a visible boundary. It cannot recover occluded content or decide which lettering belongs to an image. Wispy paper shadows, translucent sheets, and grain often benefit from a shared plate because extracting them separately introduces halos or seams.
 

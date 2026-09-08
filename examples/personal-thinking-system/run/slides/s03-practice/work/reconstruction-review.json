@@ -1,9 +1,9 @@
 {
   "reviewer": "host_agent_visual_reasoning",
   "reviewed_on": "2026-09-08",
-  "stage": "reconstruction",
   "decision": "accepted",
   "material_issues": [],
+  "stage": "reconstruction",
   "reviewed_artifacts": [
     {
       "path": "accepted-slide.png",
@@ -11,7 +11,7 @@
     },
     {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "096c544f9ba20eb2bb06ca8b0bc2a847b662cfaab3b70ecaa8f6fc8c43bb02b3"
+      "sha256": "28a5cc49d1d9178cb3278657414d4b4ba466fa9980bc1c00b9199fa2dd43fc1a"
     },
     {
       "path": "reconstruction/reconstruction-contract.json",
@@ -19,32 +19,73 @@
     },
     {
       "path": "reconstruction/constructor-scene.json",
-      "sha256": "4244dfc9ee56a66eac66c2ce4aa482bac5111e5b33f6ff2f0c2b62f5e23aa756"
+      "sha256": "d6b627cec2c4bf45dc03004002e0ce587d090ce9cc529fa140161b3f5a7e65af"
     },
     {
       "path": "../deliverables/slide.pptx",
-      "sha256": "112b8948ae1c0611c598858cd727e6f9c79044e051b5cb64cda41cd675358f4e"
+      "sha256": "348954975b3da85d0b893a51a641acbe882266135a7a1f66a6d90e7fd1e7fbdb"
     },
     {
       "path": "../deliverables/render.png",
-      "sha256": "e09078d28ef5dec40a5d0bdd34cf0807ca37dc3c954d9c45239d077c3330fc5d"
+      "sha256": "faba0041c644473cb9e9438a7896d7e80fb561ca06ba886c4d3305ddf4f5ed1b"
     },
     {
       "path": "../deliverables/comparison.png",
-      "sha256": "989f8dc28ee892a8c8f608be1b5c7909018d3a75d1b54495c342496d6929682f"
+      "sha256": "598f68ce099f2c88a3faff5e7999cc592b4b0666f4707943761ba9b1c5524bbc"
     },
     {
       "path": "native-object-evidence.json",
-      "sha256": "469e6683b01e6dce910aa912f4c1fef6e6124b964d9e6423c554e89bc03a8d59"
+      "sha256": "15f407b4d48c1acb7b5ed279f87794d971aef2cd4f8bcb54e7a2da57b0b135e5"
     },
     {
       "path": "native-text-audit.json",
       "sha256": "30b060681b570c05fed1452c2a572483f1039163ac13f565f49d89b89d01d7e1"
+    },
+    {
+      "path": "illustrations/connect-collage-9f29ea9ec467.on-light.png",
+      "sha256": "394241e482e5135343da4a345cff915e36c2b7cddb5b3db7c5fb42540af1352c"
+    },
+    {
+      "path": "illustrations/collect-collage-ec10f2ecf471.on-dark.png",
+      "sha256": "b2a9d8f876ec684f9fbdf6170a5fb44ec554ed0e2cf4ea3361d807ac84b54c0b"
+    },
+    {
+      "path": "illustrations/collect-collage-ec10f2ecf471.png",
+      "sha256": "ec10f2ecf4713cdc1d768cd6733bcd1d93e58a5cdb4e6b70b4d5228130c35c63"
+    },
+    {
+      "path": "illustrations/connect-collage-9f29ea9ec467.png",
+      "sha256": "9f29ea9ec467c5c6c0c2e92ef00ba07c0aaf43bae90e155a7cfa439f15fc1556"
+    },
+    {
+      "path": "illustrations/challenge-collage-9b3ed6225b68.on-light.png",
+      "sha256": "06045cb52914c9c9d83d1b1a699a285e9e37614e83ffa4b8b85f49a6b1b57da7"
+    },
+    {
+      "path": "illustrations/challenge-collage-9b3ed6225b68.on-dark.png",
+      "sha256": "622a87b5099d6dc4ed2a7e89f5dfab6008f800fb54f74311bad513437313101c"
+    },
+    {
+      "path": "illustrations/challenge-collage-9b3ed6225b68.png",
+      "sha256": "9b3ed6225b68128ad6eb91e672fa487bea1984dd21c412dac98d7980bf55cad4"
+    },
+    {
+      "path": "illustrations/collect-collage-ec10f2ecf471.on-light.png",
+      "sha256": "9f14007894c25b48f2c3beefd02f4aa8510f6c1ad90f815bf08764d8f16f7808"
+    },
+    {
+      "path": "illustrations/connect-collage-9f29ea9ec467.on-dark.png",
+      "sha256": "f45cc9f6b6fd3b0314b624cb54d0fb27bce549caaff4463f35d8cc11bf24a52a"
     }
   ],
   "observations": [
-    "All three artwork regions and their respective headings and captions remain intact. The three-column organization and vertical rules are preserved.",
-    "Monospaced subtitle and caption tracking differs slightly from the source. The text remains complete, with the shared folio on the same baseline as the other pages."
+    "I compared the actual PowerPoint render with the original page. The hand and paper fragment, connected map and photographic contact sheet retain their subjects and column placement. The larger regenerated assets have finer visible detail and preserve the pale foreground paper.",
+    "I inspected RGB light and dark composites. Transparency blends the edges into the slide background without the opaque crop rectangles. The artwork retains intrinsic marks as raster detail.",
+    "All twelve native objects match the earlier constructor scene. The headings, captions, subtitle, Field Notes label, background and vertical rules remain unchanged. The other four assembled page images are byte-identical to the previous release.",
+    "The independent reviewer inspected the actual RGB render and original design and found no material or important visual defect. Its fallback integration finding was corrected in the generic example rebuild path."
   ],
-  "review_environment": "Actual LibreOffice render on macOS with installed fonts. Source and native content regions compared at a common scale."
+  "review_environment": "Actual LibreOffice render on macOS with the installed fonts. Transparency reviewed through RGB alpha composites and the PowerPoint render.",
+  "editability_limits": [
+    "Each collage is an individual transparent raster layer. Its internal photographs and marks are not native editable shapes."
+  ]
 }

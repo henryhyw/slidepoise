@@ -10,7 +10,7 @@
   "source": {
     "pptx": {
       "path": "deliverables/presentation.pptx",
-      "sha256": "e157273ac51ecfb282dfd1e3c2fd3a7b47b9775940a800017135eb5dbda1e232"
+      "sha256": "e80088145ff10d4662e1fbcced9d384ddc5bc54764381f06d0d55d7efb40ad41"
     },
     "render": {
       "path": "assets/s02-question-render.png",

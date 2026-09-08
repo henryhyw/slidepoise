@@ -1,6 +1,6 @@
 {
   "evidence_type": "native_package_inventory",
-  "pptx_sha256": "e157273ac51ecfb282dfd1e3c2fd3a7b47b9775940a800017135eb5dbda1e232",
+  "pptx_sha256": "e80088145ff10d4662e1fbcced9d384ddc5bc54764381f06d0d55d7efb40ad41",
   "slides": [
     {
       "part": "ppt/slides/slide1.xml",

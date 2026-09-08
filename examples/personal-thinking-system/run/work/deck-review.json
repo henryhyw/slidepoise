@@ -1,21 +1,21 @@
 {
   "reviewer": "host_agent_visual_reasoning",
   "reviewed_on": "2026-09-08",
-  "stage": "assembled_release_deck",
   "decision": "accepted",
   "material_issues": [],
+  "stage": "assembled_release_deck",
   "reviewed_artifacts": [
     {
       "path": "../deliverables/presentation.pptx",
-      "sha256": "e157273ac51ecfb282dfd1e3c2fd3a7b47b9775940a800017135eb5dbda1e232"
+      "sha256": "e80088145ff10d4662e1fbcced9d384ddc5bc54764381f06d0d55d7efb40ad41"
     },
     {
       "path": "../preview/contact-sheet.png",
-      "sha256": "39d00324cecfab376831d80482b9e47a3bbf4fd02479f05bb21aea0ee1688d7b"
+      "sha256": "ef96cba7a831ef7bfc32f7baa5ffa8a66375a718097591d895e54a78a6447dc3"
     },
     {
       "path": "../preview/rendered-text-evidence.json",
-      "sha256": "8091f969a3928599ddaaf2058ccd90c268a63a5a55bfb620ac85b6f491320dd7"
+      "sha256": "1e41e3f25c29d9f9ab55e74f88614e7a15aa78ede625f27d2f4bab055c32d29f"
     },
     {
       "path": "../preview/slide-001.png",
@@ -27,7 +27,7 @@
     },
     {
       "path": "../preview/slide-003.png",
-      "sha256": "b3c20d8804e59f7768b432b4367b4bd0fa2b7bd02a47585072b2d01c366f4c86"
+      "sha256": "882c771163272ec716031e38f19d800e04932515bc4a26a74082de134acddda7"
     },
     {
       "path": "../preview/slide-004.png",
@@ -39,16 +39,15 @@
     },
     {
       "path": "cross-slide-calibration-review.json",
-      "sha256": "9a0ddd98cbaceb6f6acfd8564ef1e216d66c115f11adf608a465b1304a70645c"
+      "sha256": "231dc6dbb2aec6e77be408a6e6532067cbfb0ed6ae3693d285c49a3f7370c28a"
     }
   ],
   "observations": [
-    "I compared all five editorial pages together. The artwork remains intact and the folios share one native font, size and baseline.",
-    "The closing headline now has the intended weight. Small native glyph and tracking differences remain, with no material content loss found in this review."
+    "I compared the five-page contact sheet after the page 3 illustration revision. The shared Field Notes treatment, column typography and page-level hierarchy remain coherent.",
+    "The revised page 3 has three transparent collage layers. The other four rendered page images are byte-identical to the prior reviewed release. No deck typography or composition changed in this revision."
   ],
   "editability_limits": [
-    "Workbook-linked chart values update native chart labels. Separate scenario cells and formula text do not recalculate automatically.",
-    "Regeneration resolves named connector owners. Manual Office edits do not automatically reattach the drawn paths.",
-    "The recorded macOS LibreOffice and installed fonts define this review environment. Other fonts and readers can change wrapping."
+    "Illustrative collage interiors remain raster. Each revised collage can be moved, resized and layered separately.",
+    "This review uses macOS LibreOffice with installed fonts. Other fonts and Office readers can change text appearance."
   ]
 }

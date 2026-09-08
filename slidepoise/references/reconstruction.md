@@ -40,9 +40,9 @@ Keep search bounds, visible-pixel evidence, final layout bounds, and source crop
 An entity may declare `search_bbox_hint` independently of `bbox_hint`. OpenCV gathers pixel evidence only from the search window. With `geometry_policy: agent_logical`, `bbox_hint` remains the native object allocation. This distinction is useful for large serif text whose Office baseline places visible ink below its textbox top, or for adjacent lines with overlapping logical allocations. The host selects complete source-ink windows and checks that neighboring text has not contaminated the measurements. Raster crops still use the final layout box. Both boxes require finite coordinates, positive dimensions, and an intersection with the accepted-image canvas.
 
 ## Novel illustrations
-A `kind: image`, `visual_source_class: novel_illustration` entity is a generated raster with no canonical upstream asset. Its geometry comes from the approved slide and OpenCV measurement. Its pixel source may be either the original accepted-slide crop or a user-approved refined raster.
+A `kind: image`, `visual_source_class: novel_illustration` entity is a generated raster with no canonical upstream asset. Its geometry comes from the approved slide and OpenCV measurement. Its pixel source may be the original accepted-slide crop or a refined raster selected through Agent review.
 
-If `raster_source_override` is present, treat that file as the authoritative pixel source for reconstruction while preserving the entity's measured slide bbox. Use aspect-preserving contain-fit and center it in the frozen box. Do not stretch the refined raster or move neighboring content to accommodate it.
+For an active `raster_source_override`, preserve the full registered canvas in the original logical box. `raster_source` binds the source file, alpha requirement, canvas and accepted image. Its aspect ratio is validated before placement. Do not crop to alpha bounds or recenter the visible silhouette. Relative source paths resolve from the semantic map. A `reuse_original` decision selects the original crop instead.
 
 Novel illustration refinement does not reopen slide composition. It only upgrades the raster source inside an already approved slot. If a refined source is not good enough, fall back to the original crop unless the user explicitly requests another change.
 

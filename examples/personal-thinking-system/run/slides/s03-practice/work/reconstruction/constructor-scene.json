@@ -77,7 +77,8 @@
         394,
         366
       ],
-      "source_path": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s03-practice/work/reconstruction/measurement/crops/collect-collage.png",
+      "source_path": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s03-practice/work/illustrations/collect-collage-ec10f2ecf471.png",
+      "source_sha256": "ec10f2ecf4713cdc1d768cd6733bcd1d93e58a5cdb4e6b70b4d5228130c35c63",
       "selected_asset_id": null,
       "fit": "fill",
       "preserve_aspect_ratio": true,
@@ -93,7 +94,8 @@
         364,
         377
       ],
-      "source_path": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s03-practice/work/reconstruction/measurement/crops/connect-collage.png",
+      "source_path": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s03-practice/work/illustrations/connect-collage-9f29ea9ec467.png",
+      "source_sha256": "9f29ea9ec467c5c6c0c2e92ef00ba07c0aaf43bae90e155a7cfa439f15fc1556",
       "selected_asset_id": null,
       "fit": "fill",
       "preserve_aspect_ratio": true,
@@ -109,7 +111,8 @@
         417,
         375
       ],
-      "source_path": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s03-practice/work/reconstruction/measurement/crops/challenge-collage.png",
+      "source_path": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s03-practice/work/illustrations/challenge-collage-9b3ed6225b68.png",
+      "source_sha256": "9b3ed6225b68128ad6eb91e672fa487bea1984dd21c412dac98d7980bf55cad4",
       "selected_asset_id": null,
       "fit": "fill",
       "preserve_aspect_ratio": true,
@@ -705,7 +708,7 @@
       "note": "No quality or reconstruction verdict is produced. Visual reasoning remains external."
     },
     "input_bindings": {
-      "measured_scene_sha256": "573a7110da1dc3b63262905c2708f68b2cdb7644bd620017efe15102e32ee225",
+      "measured_scene_sha256": "c92dab10d239eb0494870a4daba68be61e95f237440ab5f875d2b3eb876a2936",
       "reconstruction_contract_sha256": "88cbf491a474f74f285cda266c3ca41439b433cbb1c892de694d3e8ffda158c2",
       "resolved_design_sha256": "803440a27dca21dc9148b5b4ac29fed93193ccedd3b017e11a7984c0c78c5a86"
     }

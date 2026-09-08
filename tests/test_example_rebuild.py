@@ -65,6 +65,24 @@ def test_example_rebuild_isolated_from_installed_library_sets(tmp_path):
     assert hashlib.sha256(copied_design.read_bytes()).hexdigest() == design_binding["sha256"]
     assert json.loads(rebuilt_handoff.read_text())["recurring_role_bindings"][0]["entity_ids"] == ["headline"]
 
+    # An abandoned edit may remain in the authoring history. Reusing the
+    # original must work even when the rejected asset no longer exists.
+    semantic_path = work / "semantic-map.json"
+    semantic = json.loads(semantic_path.read_text())
+    semantic["entities"].append({
+        "id": "artwork", "kind": "image", "bbox_hint": [100, 350, 300, 300], "z": 1,
+        "geometry_policy": "agent_logical", "visual_source_class": "novel_illustration",
+        "raster_source_override": str(tmp_path / "discarded-art.png"),
+        "raster_decision": {"action": "reuse_original", "reviewed_by": "host_agent_visual_reasoning",
+                            "reason": "The original preserves the intended artwork."},
+    })
+    semantic_path.write_text(json.dumps(semantic))
+    fallback = subprocess.run([sys.executable, str(ROOT / "examples/rebuild.py"), str(example),
+                               "--output-dir", str(tmp_path / "fallback"), "--no-preview"],
+                              cwd=tmp_path, text=True, capture_output=True)
+    assert fallback.returncode == 0, fallback.stdout + fallback.stderr
+    assert (tmp_path / "fallback/bundle/deck-scenes.json").is_file()
+
     # A changed shared choice cannot silently reuse an earlier handoff binding.
     shared_design.write_text(shared_design.read_text() + "\n")
     stale_output = tmp_path / "stale-rebuild"

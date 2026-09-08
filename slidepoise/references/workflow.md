@@ -54,9 +54,9 @@ Run `scripts/collect_semantic_evidence.py` to collect objective structural facts
 
 ## 5. Resolve raster sources
 
-Inspect novel illustrations and textured regions at intended output size. Reuse adequate crops. Use a focused image edit when it materially improves a selected raster source. Ask the user only when the extra call, identity change, or visual tradeoff needs their decision.
+Inspect novel illustrations and textured regions at intended output size. Follow `illustration-refinement.md` to regenerate selected small illustrations at higher resolution or obtain transparent image layers when useful. Review actual alpha-composited previews and retain adequate originals when a new generation adds no benefit. Ask the user only when the extra call, identity change, or visual tradeoff needs their decision.
 
-A refined raster changes its pixel source only. The target bbox remains tied to the selected substantive-region composition.
+A refined raster changes its pixel source only. Register the returned canvas against the original logical box, retain transparent margins and preserve the selected substantive-region composition. Native text, charts, connectors and exact user assets retain their reconstruction routes.
 
 ## 6. Measure
 

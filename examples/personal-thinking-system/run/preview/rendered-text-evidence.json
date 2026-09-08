@@ -1,8 +1,8 @@
 {
   "evidence_type": "rendered_table_text",
   "available": true,
-  "pptx_sha256": "e157273ac51ecfb282dfd1e3c2fd3a7b47b9775940a800017135eb5dbda1e232",
-  "pdf_sha256": "fab20921296989bae22be33c50f4091a25a5da7a40ab3b0a630e6d39e196bf5c",
+  "pptx_sha256": "e80088145ff10d4662e1fbcced9d384ddc5bc54764381f06d0d55d7efb40ad41",
+  "pdf_sha256": "e7c44b5fbb0cfe3ed795e5ab8bd67841b00ae03a530fdfd29026a5ea36896091",
   "cells": [],
   "discrepancies": [],
   "agent_interpretation_required": true,

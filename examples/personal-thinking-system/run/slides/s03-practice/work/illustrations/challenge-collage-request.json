@@ -1,0 +1,9 @@
+{
+  "prompt": "Create a TRANSPARENT PNG ASSET using this reference artwork. Preserve this collage of a torn black-and-white photographic contact sheet of architecture and landscape, over layered pale paper. Regenerate it as a larger, detailed illustration that will remain clear when used independently in PowerPoint. Retain its quiet black-and-white editorial character, paper grain, soft photographic tone, subjects, internal arrangement and intrinsic marks. This is the existing artwork, with more usable image detail. Do not add presentation text or new decorative elements. Keep its 436 by 392 source canvas aspect ratio, subject position and margins. Preserve depicted pale paper as foreground artwork. Remove only the empty slide backdrop outside the artwork. The output must have a real RGBA alpha channel, with alpha zero in the empty surrounding area. No background surface, no checkerboard pattern.",
+  "host": "Codex built-in image generation",
+  "purpose": "Regenerate a selected small illustration with more usable detail and a transparent backdrop.",
+  "input": "source-crops/challenge-collage.png",
+  "input_sha256": "897681535836e2471dcf96e1b33b7a0326b0828978dccb61708c09ef5981b2d1",
+  "returned_image": "returned/challenge-collage.png",
+  "returned_image_sha256": "bbae4b0120f7647cde63440a02779d823123b059e8658edcdaeb0c1b4a2dc810"
+}

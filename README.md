@@ -2,7 +2,7 @@
 
 **Presentation design beyond fixed templates, reconstructed as editable PowerPoint.**
 
-SlidePoise is an open-source Codex skill for designing complete presentations. You develop the argument with the Agent and bring the references and visual assets that matter. Image generation can then explore each composition without squeezing the content into a fixed template.
+SlidePoise combines AI content planning with the design freedom of image generation to create editable PowerPoint presentations. Work with the Agent in Codex to develop your content and choose the references and visual assets that guide the design.
 
 The Agent interprets the chosen design, OpenCV measures its geometry, and local tools reconstruct the deck with editable text, charts, tables, shapes and canonical visual assets. The Agent reviews the rendered slides together for fidelity and consistency.
 
@@ -84,6 +84,8 @@ Below, an edited copy has a new title and a chart value changed from 1,944 to 1,
 Library Sets hold the icons, logos, visual references and reusable PowerPoint components that belong to your work. The Agent inspects those resources while planning a slide and selects the ones that improve recognition, structure or meaning. Empty asset selection is a design decision that must be reviewed, especially when a presentation has an enabled visual library.
 
 Image generation receives the selected artwork as design context. After a design is accepted, the Agent binds each visible asset role to its canonical file and reviews the available variants at the final size. Reconstruction then replaces generated stand-ins with the original SVG, image or editable component. This keeps the visual system coherent without forcing every page into the same layout.
+
+Small generated illustrations can be regenerated individually at higher resolution with transparent backgrounds. The Agent checks the new detail and edges, then places the artwork in its original position. Text, charts and tables remain native. The [Editorial sample’s third slide](examples/personal-thinking-system/assets/s03-practice-render.png) uses three such illustrations.
 
 ## Visual references and Profiles
 

@@ -1,9 +1,9 @@
 {
   "reviewer": "host_agent_visual_reasoning",
   "reviewed_on": "2026-09-08",
-  "stage": "measurement",
   "decision": "accepted",
   "material_issues": [],
+  "stage": "measurement",
   "reviewed_artifacts": [
     {
       "path": "accepted-slide.png",
@@ -11,7 +11,7 @@
     },
     {
       "path": "semantic-map.json",
-      "sha256": "67ef48e9166be031733ef6f466d0286cf9957e3b4fa3e7e0fe3bc4137e0a85d1"
+      "sha256": "cabc303435a353edd159f7051ad92e25253f14d90c82301a788b0a56deaa5da1"
     },
     {
       "path": "reconstruction-handoff.json",
@@ -19,7 +19,7 @@
     },
     {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "096c544f9ba20eb2bb06ca8b0bc2a847b662cfaab3b70ecaa8f6fc8c43bb02b3"
+      "sha256": "28a5cc49d1d9178cb3278657414d4b4ba466fa9980bc1c00b9199fa2dd43fc1a"
     },
     {
       "path": "reconstruction/measurement/debug_overlay.png",
@@ -27,8 +27,7 @@
     }
   ],
   "observations": [
-    "I inspected the source and the OpenCV overlay. Visible-ink search regions are evidence for the host-authored objects. Coloured layout bounds can differ where native type wrapping or a recorded correction requires another allocation.",
-    "All three artwork regions and their respective headings and captions remain intact. The three-column organization and vertical rules are preserved.",
-    "The full semantic map is retained. Table and chart interiors belong to their native parent object. The measurement overlay does not independently judge semantic completeness."
+    "I inspected the accepted slide and OpenCV overlay. The three illustration canvases retain their original extents and each remains below its own heading and caption. The two vertical rules remain between the columns.",
+    "The source contracts preserve each full canvas. Visible alpha bounds remain measurement evidence and do not resize or recenter the artwork."
   ]
 }

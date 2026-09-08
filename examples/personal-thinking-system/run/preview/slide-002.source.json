@@ -1,6 +1,10 @@
 {
-  "source_sha256": "e157273ac51ecfb282dfd1e3c2fd3a7b47b9775940a800017135eb5dbda1e232",
+  "source_sha256": "e80088145ff10d4662e1fbcced9d384ddc5bc54764381f06d0d55d7efb40ad41",
   "render_sha256": "a1beead3cf1fb575451e1274a327ffd2b6db633a9b5a90029d5a892cd94cb884",
+  "rendered_text": {
+    "path": "rendered-text-evidence.json",
+    "sha256": "1e41e3f25c29d9f9ab55e74f88614e7a15aa78ede625f27d2f4bab055c32d29f"
+  },
   "slide_number": 2,
   "dpi": 120,
   "font_environment": {

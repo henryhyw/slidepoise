@@ -4,6 +4,7 @@ import path from "node:path";
 import { createRequire } from "node:module";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import { createHash } from "node:crypto";
 
 const require = createRequire(import.meta.url);
 const pptxgen = require("pptxgenjs");
@@ -167,6 +168,9 @@ function applyFillAllTreatment(svg, object) {
 }
 
 function addImage(slide, object, dimensions, slideSize) {
+  if (object.source_sha256 && createHash("sha256").update(fs.readFileSync(object.source_path)).digest("hex") !== object.source_sha256) {
+    throw new Error(`Raster source for ${object.id} changed after scene compilation`);
+  }
   let imageSource = { path: object.source_path };
   const isSvg = String(object.source_path).toLowerCase().endsWith(".svg");
   if ((object.recolor_gradient || object.recolor) && isSvg && object.recolor_mode === "fill_all") {

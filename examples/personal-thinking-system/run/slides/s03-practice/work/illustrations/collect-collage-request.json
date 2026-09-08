@@ -1,0 +1,9 @@
+{
+  "prompt": "Create a TRANSPARENT PNG ASSET using this reference artwork. Preserve this collage of a photographed hand holding a small handwritten source fragment over layered pale archival paper. Regenerate it as a larger, detailed illustration that will remain clear when used independently in PowerPoint. Retain its quiet black-and-white editorial character, paper grain, soft photographic tone, subjects, internal arrangement and intrinsic marks. This is the existing artwork, with more usable image detail. Do not add presentation text or new decorative elements. Keep its 412 by 383 source canvas aspect ratio, subject position and margins. Preserve depicted pale paper as foreground artwork. Remove only the empty slide backdrop outside the artwork. The output must have a real RGBA alpha channel, with alpha zero in the empty surrounding area. No background surface, no checkerboard pattern.",
+  "host": "Codex built-in image generation",
+  "purpose": "Regenerate a selected small illustration with more usable detail and a transparent backdrop.",
+  "input": "source-crops/collect-collage.png",
+  "input_sha256": "3480ee858526a940c1ebc75723604243a292b04cd34e554d0cc91bdcec8fc6ab",
+  "returned_image": "returned/collect-collage.png",
+  "returned_image_sha256": "0b03369a81cdccdf974d5d1af953ebaa4727928276f8915dcf6cfeeb28e390dc"
+}

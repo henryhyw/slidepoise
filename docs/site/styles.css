@@ -203,6 +203,13 @@ section[tabindex="-1"]:focus { outline: none; }
 .architecture-review { color: #626c7b; font-size: 12px; line-height: 1.8; max-width: 940px; margin-top: 25px; }
 .asset-system { margin-top: 32px; padding-top: 28px; border-top: 1px solid var(--line); }
 .asset-system-copy > p { max-width: 850px; margin-top: 12px; color: #5f6671; font-size: 13px; line-height: 1.75; text-wrap: pretty; }
+.illustration-comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.illustration-comparison figure { min-width: 0; }
+.illustration-surface { display: grid; place-items: center; height: clamp(200px, 29vw, 340px); padding: 24px; background: #faf8f4; border: 1px solid var(--line); border-radius: 8px; }
+.illustration-transparent { background: #202630; border-color: #202630; }
+.illustration-surface img { width: auto; height: 100%; max-width: 100%; object-fit: contain; min-height: 0; }
+.illustration-comparison figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 3px 16px; padding-top: 12px; font-size: 11px; color: var(--muted); }
+.illustration-comparison figcaption strong { font-weight: 550; color: var(--ink); }
 .asset-system-figure { display: grid; grid-template-columns: minmax(150px, 1fr) 64px minmax(150px, 1fr) 64px minmax(150px, 1fr); align-items: stretch; margin: 0; min-width: 0; }
 .asset-stage { min-width: 0; min-height: 194px; display: flex; flex-direction: column; padding: 18px; border: 1px solid #dfe2e6; border-radius: 8px; background: #f8f8f7; }
 .asset-stage-label { font-size: 10px; font-weight: 600; color: #555b64; letter-spacing: .01em; }
@@ -433,6 +440,8 @@ body[data-input="keyboard"] *, body[data-input="keyboard"] *::before, body[data-
 }
 @media (max-width: 740px) {
   .asset-system-figure { grid-template-columns: 1fr; gap: 11px; }
+  .illustration-comparison { grid-template-columns: 1fr; gap: 24px; }
+  .illustration-surface { height: 280px; }
   .asset-stage { min-height: 158px; }
   .asset-connection { flex-direction: row; gap: 12px; padding-block: 2px; }
   .asset-connection i { width: 1px; height: 22px; }

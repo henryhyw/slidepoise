@@ -172,6 +172,18 @@
           {
             "label": "Historical image-generation input",
             "path": "run/slides/s03-practice/work/imagegen-prompt.txt"
+          },
+          {
+            "label": "Collect illustration request",
+            "path": "run/slides/s03-practice/work/illustrations/collect-collage-request.json"
+          },
+          {
+            "label": "Connect illustration request",
+            "path": "run/slides/s03-practice/work/illustrations/connect-collage-request.json"
+          },
+          {
+            "label": "Challenge illustration request",
+            "path": "run/slides/s03-practice/work/illustrations/challenge-collage-request.json"
           }
         ]
       },

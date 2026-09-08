@@ -66,7 +66,7 @@ def test_stale_correction_fails_without_partial_mutation():
 
 
 def raster(key="art", action="reuse_original"):
-    return {"id": key, "kind": "image", "visual_source_class": "novel_illustration", "bbox_hint": [0, 0, 40, 40], "raster_decision": {"action": action, "reviewed_by": HOST, "reason": "Crop inspected at intended export scale."}}
+    return {"id": key, "kind": "image", "visual_source_class": "novel_illustration", "bbox_hint": [0, 0, 40, 40], "geometry_policy": "agent_logical", "raster_decision": {"action": action, "reviewed_by": HOST, "reason": "Crop inspected at intended export scale."}}
 
 
 def test_reuse_needs_no_extra_image_call_approval():

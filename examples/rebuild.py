@@ -78,6 +78,24 @@ def rebuild(example: Path, output: Path, *, preview: bool = True) -> None:
                 shutil.copy2(source / name, destination / name)
                 inputs.append({"path": (Path("run/slides") / identifier / "work" / name).as_posix(),
                                "sha256": hashlib.sha256((destination / name).read_bytes()).hexdigest()})
+            semantic = json.loads((source / "semantic-map.json").read_text(encoding="utf-8"))
+            for entity in semantic.get("entities", []):
+                if (entity.get("raster_decision") or {}).get("action") == "reuse_original":
+                    continue
+                asset_reference = entity.get("raster_source_override")
+                if not asset_reference:
+                    continue
+                relative_asset = Path(asset_reference)
+                if relative_asset.is_absolute():
+                    raise ValueError(f"Example artwork must use a relative path for {identifier}/{entity['id']}")
+                asset = (source / relative_asset).resolve()
+                asset.relative_to(authoring)
+                copied_asset = (destination / relative_asset).resolve()
+                copied_asset.relative_to(stage)
+                copied_asset.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(asset, copied_asset)
+                inputs.append({"path": asset.relative_to(example).as_posix(),
+                               "sha256": hashlib.sha256(asset.read_bytes()).hexdigest()})
             reconstruction = destination / "reconstruction"
             run("slidepoise_runtime.py", "reconstruct-slide", "--image", destination / "accepted-slide.png",
                 "--semantic-map", destination / "semantic-map.json", "--upstream-handoff", destination / "reconstruction-handoff.json",

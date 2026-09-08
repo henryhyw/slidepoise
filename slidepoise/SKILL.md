@@ -96,7 +96,7 @@ For a generated target, those coordinates belong to the substantive region. The 
 
 Use OpenCV to collect geometry, color, contour, text-ink, and crop evidence. Apply geometry corrections only after visual inspection. Build the reconstruction contract, compile the constructor scene, render the PowerPoint, and compare the render with the target. Reconstruction translates the target into editable objects. It does not redesign the slide.
 
-Use native PowerPoint text, shapes, tables, charts, connectors, and editable freeforms when faithful. Use raster images for genuine photos, textured regions, and illustrations whose decomposition would invent unsupported structure. Preserve exact user assets and canonical logos.
+Use native PowerPoint text, shapes, tables, charts, connectors, and editable freeforms when faithful. Use raster images for genuine photos, textured regions, and illustrations whose decomposition would invent unsupported structure. Preserve exact user assets and canonical logos. When transparent artwork helps, verify actual alpha and preserve its registered canvas through reconstruction. Inspect edges on contrasting backgrounds and in the slide. Retain the original crop or composite if the transparent edit cannot preserve its appearance.
 
 ## Objective blockers
 
