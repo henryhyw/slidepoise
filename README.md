@@ -75,6 +75,10 @@ Ask the Agent to work autonomously if you prefer. The [usage guide](docs/USAGE.m
 
 ## How it works
 
+The same slide plans, visual references and original assets guide generation and reconstruction. Each slide passes through design, interpretation, measurement and construction, with review bringing corrections back into the process and checking the deck as a whole.
+
+[![SlidePoise architecture showing shared context, per-slide design and reconstruction, and deck review](docs/images/slidepoise-architecture.png)](docs/images/slidepoise-architecture.svg)
+
 | Stage | Work |
 | --- | --- |
 | Plan | Decide what each slide needs to communicate and gather its supporting content. |
