@@ -239,7 +239,7 @@ function setMode(mode, speak = false) {
   state.mode = mode;
   reconstructionViewer.clear();
   byId('studio-frame').dataset.mode = mode;
-  document.querySelectorAll('.mode-controls button').forEach((button) => {
+  document.querySelectorAll('button[data-mode]').forEach((button) => {
     button.setAttribute('aria-pressed', String(button.dataset.mode === mode));
   });
   byId('comparison').hidden = mode !== 'compare';
@@ -740,7 +740,7 @@ byId('copy-install').addEventListener('click', async () => {
 });
 document.addEventListener('pointerdown', () => { document.body.dataset.input = 'pointer'; }, { passive: true });
 document.addEventListener('keydown', () => { document.body.dataset.input = 'keyboard'; });
-document.querySelectorAll('.mode-controls button').forEach((button) => button.addEventListener('click', () => setMode(button.dataset.mode, true)));
+document.querySelectorAll('button[data-mode]').forEach((button) => button.addEventListener('click', () => setMode(button.dataset.mode, true)));
 byId('object-toggle').addEventListener('click', () => setInspectorOpen(!state.inspectorOpen));
 byId('presentation-goal').addEventListener('click', () => {
   const deck = state.deck;
@@ -774,7 +774,7 @@ function bindComparison(input, foreground, divider, leftLabel, rightLabel) {
   update();
 }
 bindComparison(byId('reveal'), byId('comparison-render'), byId('comparison-divider'), 'editable PowerPoint', 'AI-generated design');
-bindComparison(byId('artwork-reveal'), byId('artwork-original'), byId('artwork-divider'), 'original detail', 'transparent artwork');
+bindComparison(byId('artwork-reveal'), byId('artwork-original'), byId('artwork-divider'), 'initial generation', 'transparent artwork');
 const artworkViews = [...document.querySelectorAll('[data-artwork-view]')];
 artworkViews.forEach(button => button.addEventListener('click', () => {
   const comparing = button.dataset.artworkView === 'compare';

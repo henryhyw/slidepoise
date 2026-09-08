@@ -92,22 +92,22 @@
       </article>
       <article class="asset-system illustration-system" aria-labelledby="illustration-system-title">
         <div class="walkthrough-heading asset-system-copy">
-          <div class="illustration-heading"><h3 id="illustration-system-title">Give small illustrations more detail</h3><div class="mode-controls" role="group" aria-label="Artwork view"><button type="button" data-artwork-view="side-by-side" aria-pressed="true">Side by side</button><button type="button" data-artwork-view="compare" aria-pressed="false">Compare</button></div></div>
+          <div class="illustration-heading"><h3 id="illustration-system-title">Give small illustrations more detail</h3><div class="mode-controls" role="group" aria-label="Artwork view"><button type="button" data-artwork-view="compare" aria-pressed="true">Compare</button><button type="button" data-artwork-view="side-by-side" aria-pressed="false">Side by side</button></div></div>
           <p>The Agent can regenerate an illustration separately at higher resolution with a transparent background, then place it back into the slide. It checks the new artwork against the design. The layout and native text stay in place.</p>
         </div>
-        <div id="illustration-pair" class="illustration-comparison">
-          <figure><div class="illustration-surface"><img src="assets/illustration-source.png" alt="A hand holding a handwritten paper fragment, cropped from the generated slide" width="412" height="383" loading="lazy"></div><figcaption><strong>Detail from the slide</strong><span>412 × 383 pixels</span></figcaption></figure>
+        <div id="illustration-pair" class="illustration-comparison" hidden>
+          <figure><div class="illustration-surface"><img src="assets/illustration-source.png" alt="A hand holding a handwritten paper fragment, cropped from the generated slide" width="412" height="383" loading="lazy"></div><figcaption><strong>Initial generation</strong><span>412 × 383 pixels</span></figcaption></figure>
           <figure><div class="illustration-surface illustration-transparent"><img src="assets/illustration-transparent.png" alt="The regenerated paper collage on a dark background, showing its transparent edges" width="1301" height="1209" loading="lazy"></div><figcaption><strong>Regenerated as a separate layer</strong><span>1301 × 1209 pixels · Transparent PNG</span></figcaption></figure>
         </div>
-        <figure id="illustration-compare" class="illustration-compare" hidden>
+        <figure id="illustration-compare" class="illustration-compare">
           <div class="artwork-comparison">
             <div class="artwork-comparison-layer"><img src="assets/illustration-transparent.png" alt="Regenerated transparent artwork" width="1301" height="1209" loading="lazy"></div>
-            <div id="artwork-original" class="artwork-comparison-layer comparison-render"><img src="assets/illustration-source.png" alt="Original detail from the generated slide" width="412" height="383" loading="lazy"></div>
+            <div id="artwork-original" class="artwork-comparison-layer comparison-render"><img src="assets/illustration-source.png" alt="Detail of the initial generation" width="412" height="383" loading="lazy"></div>
             <div id="artwork-divider" class="comparison-divider" aria-hidden="true"><span><svg viewBox="0 0 20 20"><path d="m7 6-4 4 4 4m6-8 4 4-4 4"/></svg></span></div>
-            <label class="sr-only" for="artwork-reveal">Compare the original detail and transparent artwork</label>
+            <label class="sr-only" for="artwork-reveal">Compare the initial generation and transparent artwork</label>
             <input id="artwork-reveal" class="reveal" type="range" min="0" max="100" value="50">
           </div>
-          <figcaption><span>From the slide</span><span>Transparent artwork</span></figcaption>
+          <figcaption><span>Initial generation</span><span>Transparent artwork</span></figcaption>
         </figure>
       </article>
       <p class="architecture-review">The Agent checks the rendered slides together and adjusts recurring titles, labels, colours and spacing for consistency.</p>
