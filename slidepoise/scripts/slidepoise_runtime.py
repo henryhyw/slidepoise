@@ -220,6 +220,7 @@ def command_render_preview(args: argparse.Namespace) -> None:
         rendered = prefix.with_suffix(".png")
         if not rendered.is_file():
             raise SystemExit("PPTX render did not produce a PNG")
+        text_evidence = rendered_text_evidence(args.pptx, pdf, page=page)
         if file_hash(args.pptx) != source_digest:
             raise SystemExit("PowerPoint changed during rendering. Retry with the latest file.")
         with tempfile.NamedTemporaryFile(dir=args.output.parent, suffix=".png", delete=False) as staged:
@@ -229,10 +230,35 @@ def command_render_preview(args: argparse.Namespace) -> None:
             staged_path.replace(args.output)
         finally:
             staged_path.unlink(missing_ok=True)
+        evidence_path = args.output.with_suffix(".text-evidence.json")
+        write(evidence_path, text_evidence)
         write(args.output.with_suffix(".source.json"), {"source_sha256": source_digest,
               "render_sha256": file_hash(args.output), "slide_number": page, "dpi": args.dpi,
+              "rendered_text": {"path": evidence_path.name, "sha256": file_hash(evidence_path)},
               "font_environment": font_evidence})
-    print(json.dumps({"render": str(args.output.resolve())}, indent=2))
+    print(json.dumps({"render": str(args.output.resolve()),
+                      "rendered_text": text_evidence_summary(text_evidence, evidence_path)}, indent=2))
+
+
+def rendered_text_evidence(pptx: Path, pdf: Path, *, page: int | None = None) -> dict:
+    from slidepoise.rendered_text import collect_rendered_table_text
+    evidence = collect_rendered_table_text(pptx, pdf)
+    if page is not None:
+        evidence["slide_number"] = page
+        for field in ("cells", "discrepancies"):
+            if field in evidence:
+                evidence[field] = [item for item in evidence[field] if item["slide_number"] == page]
+    return evidence
+
+
+def text_evidence_summary(evidence: dict, path: Path) -> dict:
+    """Surface diagnostics to the calling Agent without a quality verdict."""
+    return {"path": str(path.resolve()), "available": evidence.get("available", False),
+            "reason": evidence.get("reason"),
+            "cells_checked": len(evidence.get("cells", [])) if evidence.get("available") else None,
+            "discrepancies": len(evidence.get("discrepancies", [])) if evidence.get("available") else None,
+            "scope": "Native table words only. Inspect the images for other text, geometry, relationships and visual quality.",
+            "agent_interpretation_required": True}
 
 
 def make_preview_contact_sheet(pages: list[Path], output: Path) -> None:
@@ -285,12 +311,17 @@ def command_render_deck_preview(args: argparse.Namespace) -> None:
             raise ArtifactError(f"Preview renderer produced {len(rendered)} pages for a {count}-slide deck")
         staged = temp_path / "preview"
         staged.mkdir()
+        text_evidence = rendered_text_evidence(args.pptx, pdf)
+        evidence_path = staged / "rendered-text-evidence.json"
+        write(evidence_path, text_evidence)
+        evidence_binding = {"path": evidence_path.name, "sha256": file_hash(evidence_path)}
         pages = []
         records = []
         for index, image in enumerate(rendered, start=1):
             destination = staged / f"slide-{index:03d}.png"
             image.rename(destination)
             binding = {"source_sha256": source_digest, "render_sha256": file_hash(destination),
+                       "rendered_text": evidence_binding,
                        "slide_number": index, "dpi": args.dpi, "font_environment": font_evidence}
             write(destination.with_suffix(".source.json"), binding)
             records.append({"slide_number": index, "render": destination.name,
@@ -298,9 +329,8 @@ def command_render_deck_preview(args: argparse.Namespace) -> None:
             pages.append(destination)
         make_preview_contact_sheet(pages, staged / "contact-sheet.png")
         shutil.copyfile(pdf, staged / "presentation.pdf")
-        from slidepoise.rendered_text import collect_rendered_table_text
-        write(staged / "rendered-text-evidence.json", collect_rendered_table_text(args.pptx, pdf))
         record = {"schema_version": "1.0", "source_sha256": source_digest, "dpi": args.dpi,
+                  "rendered_text": evidence_binding,
                   "font_environment": font_evidence, "slides": records,
                   "contact_sheet": {"path": "contact-sheet.png", "sha256": file_hash(staged / "contact-sheet.png")},
                   "pdf": {"path": "presentation.pdf", "sha256": file_hash(staged / "presentation.pdf")}}
@@ -310,6 +340,7 @@ def command_render_deck_preview(args: argparse.Namespace) -> None:
         staged.rename(output_dir)
     print(json.dumps({"preview_dir": str(output_dir), "slides": count,
                       "contact_sheet": str(output_dir / "contact-sheet.png"),
+                      "rendered_text": text_evidence_summary(text_evidence, output_dir / evidence_path.name),
                       "manifest": str(output_dir / "preview-manifest.json")}, indent=2))
 
 def command_audit_text(args: argparse.Namespace) -> None:

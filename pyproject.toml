@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "slidepoise"
-version = "0.6.0"
+version = "0.6.1"
 description = "Profile-driven presentation framework with an Agent skill, isolated libraries, reconstruction runtime, and optional console"
 readme = "README.md"
 requires-python = ">=3.10"

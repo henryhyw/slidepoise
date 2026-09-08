@@ -32,7 +32,7 @@ Give the reviewer the accepted slide, semantic map, reconstruction handoff, and 
 
 ### Reconstruction review
 
-Give the reviewer the accepted slide, rendered PPTX, visual comparison, constructor scene, and reconstruction contract. Ask it to identify material visual differences, editability losses, unexplained rasterization, connector defects, text fitting problems, and unsupported patch coordinates.
+Give the reviewer the original intent, accepted slide, actual PowerPoint render, visual comparison, constructor scene, reconstruction contract and rendered-text evidence. Ask it to identify missing meaning, defects already in the generated design, material visual differences, editability losses, unexplained rasterization, connector defects, text fitting problems, and unsupported patch coordinates. Ask for a fresh reading before sharing the author's acceptance statements or proposed fixes. The reviewer must open the images and cite visible evidence. Reading the review JSON is insufficient.
 
 ### Cross-page visual calibration
 
@@ -60,7 +60,7 @@ The root Agent records one disposition for every material or important finding:
 
 For plan, resources, and semantic mapping, use one independent review followed by one root-Agent correction pass. Do not create an open-ended critic loop. After the correction, the root Agent checks that the cited issues were addressed and continues. If a material disagreement requires a new user decision, stop and ask the user.
 
-Reconstruction is stricter because the released PowerPoint must have no unresolved material visual issue. A reviewer may inspect visual fidelity while another inspects editability, text, connectors, and raster boundaries. Corrections remain focused on concrete findings. After two unsuccessful correction rounds, return to the appropriate upstream artifact or ask the user. Do not continue an automatic review loop.
+Reconstruction is stricter because the released PowerPoint must have no unresolved material visual issue. A reviewer may inspect visual fidelity while another inspects editability, text, connectors, and raster boundaries. Corrections remain focused on concrete findings. After two unsuccessful correction rounds, revisit the relevant upstream artifact. Ask the user only if the remedy changes an agreed requirement or needs an unavailable capability. Repeated failure is a reason to reconsider the approach, not to keep making local adjustments or hand routine debugging to the user.
 
 ## Availability fallback
 

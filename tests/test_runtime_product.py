@@ -149,7 +149,7 @@ def preview_source(root: Path, pages: int) -> Path:
 
 
 @pytest.mark.parametrize("rendered_pages", [1, 2])
-def test_deck_preview_publishes_only_complete_page_sets(tmp_path, monkeypatch, rendered_pages):
+def test_deck_preview_publishes_only_complete_page_sets(tmp_path, monkeypatch, rendered_pages, capsys):
     source = preview_source(tmp_path, 2)
     output = tmp_path / "preview"
     args = runtime.parser().parse_args(["render-deck-preview", "--pptx", str(source), "--output-dir", str(output)])
@@ -174,13 +174,59 @@ def test_deck_preview_publishes_only_complete_page_sets(tmp_path, monkeypatch, r
     else:
         runtime.command_render_deck_preview(args)
         record = runtime.read(output / "preview-manifest.json")
+        text_binding = record["rendered_text"]
+        assert text_binding["sha256"] == runtime.file_hash(output / text_binding["path"])
+        response = json.loads(capsys.readouterr().out)
+        assert response["rendered_text"]["available"] is True
+        assert response["rendered_text"]["discrepancies"] == 0
         assert len(record["slides"]) == 2
         for page in record["slides"]:
             assert page["sha256"] == runtime.file_hash(output / page["render"])
+            assert runtime.read((output / page["render"]).with_suffix(".source.json"))["rendered_text"] == text_binding
         assert (output / "presentation.pdf").read_bytes() == b"pdf"
         with Image.open(output / "contact-sheet.png") as contact_sheet:
             assert contact_sheet.width > contact_sheet.height
     assert len([command for command in calls if "--convert-to" in command]) == 1
+
+
+def test_single_preview_surfaces_only_selected_pages_text_evidence(tmp_path, monkeypatch, capsys):
+    source = preview_source(tmp_path, 2)
+    output = tmp_path / "page.png"
+    args = runtime.parser().parse_args(["render-preview", "--pptx", str(source), "--slide-number", "2", "--output", str(output)])
+    monkeypatch.setattr(runtime, "preview_settings", lambda args: ({}, "office", "pdftoppm"))
+
+    def convert(pptx, directory, env, office):
+        pdf = directory / "deck.pdf"
+        pdf.write_bytes(b"test pdf")
+        return pdf, {}
+
+    def rasterize(command, *, env=None):
+        assert command[command.index("-f") + 1] == "2"
+        Image.new("RGB", (160, 90), "white").save(command[-1] + ".png")
+
+    monkeypatch.setattr(runtime, "convert_preview_pdf", convert)
+    monkeypatch.setattr(runtime, "run_checked", rasterize)
+    facts = {"available": True, "cells": [{"slide_number": 1}, {"slide_number": 2}],
+             "discrepancies": [{"slide_number": 1, "missing_complete_tokens": ["unrelated"]},
+                               {"slide_number": 2, "missing_complete_tokens": ["adoption"]}]}
+    monkeypatch.setattr("slidepoise.rendered_text.collect_rendered_table_text", lambda pptx, pdf: facts.copy())
+    runtime.command_render_preview(args)
+    response = json.loads(capsys.readouterr().out)
+    assert response["rendered_text"]["discrepancies"] == 1
+    evidence = runtime.read(Path(response["rendered_text"]["path"]))
+    assert evidence["discrepancies"][0]["missing_complete_tokens"] == ["adoption"]
+    assert evidence["cells"] == [{"slide_number": 2}]
+    binding = runtime.read(output.with_suffix(".source.json"))
+    assert binding["source_sha256"] == runtime.file_hash(source)
+    assert binding["render_sha256"] == runtime.file_hash(output)
+    assert binding["rendered_text"]["sha256"] == runtime.file_hash(Path(response["rendered_text"]["path"]))
+
+
+def test_unavailable_text_extraction_is_not_reported_as_zero_discrepancies(tmp_path):
+    summary = runtime.text_evidence_summary({"available": False, "reason": "pdftotext unavailable"}, tmp_path / "evidence.json")
+    assert summary["discrepancies"] is None
+    assert summary["cells_checked"] is None
+    assert summary["reason"] == "pdftotext unavailable"
 
 
 def test_native_xml_transform_preserves_namespace_geometry_and_signed_tracking(tmp_path):

@@ -31,6 +31,8 @@ def test_font_config_is_scoped_to_renderer(tmp_path, monkeypatch):
             Path(argv[-1] + ".png").write_bytes(b"test render")
 
     monkeypatch.setattr(runtime, "run_checked", command)
+    monkeypatch.setattr("slidepoise.rendered_text.collect_rendered_table_text",
+                        lambda pptx, pdf: {"available": False, "reason": "Mock renderer has no text extraction"})
     monkeypatch.setenv("FONTCONFIG_FILE", "previous.conf")
     runtime.command_render_preview(args)
     assert calls[0][1]["FONTCONFIG_FILE"] == str(config.resolve())

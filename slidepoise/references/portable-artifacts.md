@@ -19,6 +19,9 @@ The directory contains
 - one `.source.json` record per page with the source PPTX hash, render hash, page number, DPI, and font environment
 - `contact-sheet.png` for sequence review
 - `preview-manifest.json` with ordered page bindings and hashes for the PDF and contact sheet
+- `rendered-text-evidence.json` with native table words extracted from that PDF and discrepancies for the Agent to inspect
+
+The command prints the evidence path, availability, inspected cell count and discrepancy count. Single-page `render-preview` produces the same evidence for its selected page as `<render-stem>.text-evidence.json`. Both preview paths bind this evidence in the render sidecar. Missing extraction and zero discrepancies are different outcomes. Neither establishes the visual quality of the slide.
 
 `--dpi` defaults to 120. `--font-config` accepts the same optional run-local Fontconfig file as `render-preview`. Use individual full-resolution pages when the contact sheet hides a detail. The command stops when the page count differs from the PowerPoint or the source changes during rendering. A failed conversion leaves no partially published preview directory.
 

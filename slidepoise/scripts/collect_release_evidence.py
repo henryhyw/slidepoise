@@ -53,6 +53,33 @@ def accepted_review(path: Path, stage: str, required_artifacts: tuple[Path, ...]
     return True, None
 
 
+def render_binding_checks(pptx: Path, render: Path, slide_number: int) -> list[dict]:
+    """Verify render provenance independently of the host's review record."""
+    sidecar = render.with_suffix(".source.json")
+    if not sidecar.is_file():
+        return [{"reason": "render_source_binding_missing", "path": str(sidecar)}]
+    try:
+        binding = load(sidecar)
+        if not isinstance(binding, dict):
+            raise ValueError("Render source binding must be an object")
+        errors = []
+        for key, expected in (("source_sha256", hashlib.sha256(pptx.read_bytes()).hexdigest()),
+                              ("render_sha256", hashlib.sha256(render.read_bytes()).hexdigest()),
+                              ("slide_number", slide_number)):
+            if binding.get(key) != expected:
+                errors.append({"reason": "render_source_binding_mismatch", "field": key})
+        text = binding.get("rendered_text")
+        if text is not None:
+            if not isinstance(text, dict) or not isinstance(text.get("path"), str) or not text["path"]:
+                raise ValueError("Rendered-text binding must name its evidence file")
+            path = sidecar.parent / text["path"]
+            if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != text.get("sha256"):
+                errors.append({"reason": "rendered_text_evidence_missing_or_changed"})
+        return errors
+    except (OSError, ValueError, TypeError, KeyError) as error:
+        return [{"reason": "render_source_binding_invalid", "detail": str(error)}]
+
+
 
 
 def pptx_frame_checks(pptx_path: Path, config: dict) -> list[dict]:
@@ -158,6 +185,7 @@ def main() -> None:
         parser.add_argument(f"--{name.replace('_','-')}", dest=name, type=Path, required=True)
     parser.add_argument("--approvals", type=Path, help="Optional legacy decision history. It does not gate release evidence.")
     parser.add_argument("--render", type=Path, required=False, help="Persist the inspected PPTX render so review freshness can be checked at release.")
+    parser.add_argument("--slide-number", type=int, default=1, help="One-based page in the supplied PowerPoint that produced the inspected render.")
     args = parser.parse_args()
     errors: list[dict] = []
     config = load(args.config)
@@ -200,6 +228,8 @@ def main() -> None:
         errors.append({"reason": "release_artifact_missing"})
     if args.render is not None and not args.render.is_file():
         errors.append({"reason": "declared_render_artifact_missing"})
+    if args.render is not None and args.render.is_file() and args.pptx.is_file():
+        errors.extend(render_binding_checks(args.pptx, args.render, args.slide_number))
     if not measured.get("runtime", {}).get("opencv"):
         errors.append({"reason": "OpenCV_measurement_missing"})
     local_norm = measured.get("runtime", {}).get("local_geometry_normalization", {}) or {}

@@ -37,7 +37,7 @@ At the start of every run
 6. Read `references/resource-library.md` before resource selection.
 7. Before semantic mapping or reconstruction, read `references/visual-reasoning.md`, `references/connectors.md`, and `references/reconstruction.md`.
 8. Read `references/raster-composition.md` for raster artwork, intrinsic lettering, texture, or overlapping text. Read `references/illustration-refinement.md` before an optional raster edit.
-9. Read `references/multi-agent-review.md` only when parallel page work or independent review would materially help and the host exposes subagents.
+9. Read `references/multi-agent-review.md` when the host exposes subagents. Use an independent final review for a multi-slide deck or a slide with dense tables, charts or directed relationships. Keep the review read-only and bounded. Without subagents, use a separate inspection pass.
 10. Read `references/user-language.md` before authoring user-facing prose.
 
 ## Product shape
@@ -109,6 +109,10 @@ Deterministic tools must report evidence without blocking on aesthetic preferenc
 Create host-Agent review records for generated designs, measurement overlays, reconstructed slides, and the assembled deck when those artifacts exist. Bind the exact files that were inspected. Records capture observations and decisions. Reopen changed images and write fresh findings before accepting them. Never refresh file hashes under reused acceptance statements. Review helpers may prepare evidence but cannot write an acceptance decision.
 
 For a multi-slide deck, use contact sheets or grouped comparisons when they make consistency easier to judge. Inspect full-resolution pages whenever a contact sheet hides a material detail.
+
+Use two distinct readings of the actual output. First read it against the brief to find missing claims, values, qualifications and relationships, including defects already present in the generated design. Then compare the content crop with the design to find reconstruction losses. Read the runtime's rendered-text evidence and inspect every reported discrepancy. Unavailable evidence is an inspection limitation, never a clean result. A contact sheet alone cannot establish text fitting or connector direction.
+
+The user should not have to initiate routine corrections. Repair issues within the agreed intent, render again and inspect the changed output before delivery. For each material or important finding, record the affected artifact, correction and observed result, or the evidence that justifies rejecting the finding. If reconstruction cannot preserve a design, revisit its allocation or regenerate with the same content obligations. Ask only when the remedy needs a new user decision or an unavailable capability. Do not describe an unresolved deck as finished.
 
 ## Runtime
 

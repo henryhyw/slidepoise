@@ -44,6 +44,8 @@ Compare available candidates together and revisit the deck's role inventory. Ide
 
 Inspect the selected target and author `work/semantic-map.json` plus `work/reconstruction-handoff.json`.
 
+Before populating the map, read the intent and inspect the target to write the handoff's `content_obligations`. Include the claims, data, qualifications and directed relationships the slide must preserve. Then bind each obligation to its emitting entities. Do not derive this inventory from the map itself, since that would preserve its omissions. Check that the generated target satisfies the intent as well. A deficient target needs an upstream correction.
+
 Map meaningful PowerPoint-level entities, logical text regions, text hierarchy, icon slots, canonical assets, connector semantics, and raster-source classes. Every emitting entity has an explicit geometry policy and z layer. Keep semantic role separate from visual style role.
 
 Read the current `deck-design.json` and resolve its recurring roles to the page's actual entities. Apply the chosen styles to `style_hint` or explicit compatible config tokens, and retain `recurring_role_bindings` with the source design in the handoff. Role bindings describe the decision and its recipients. They do not apply styles automatically. A local fitting group describes that page's fitting scope and cannot establish consistency with another page. Report newly discovered peers and any proposed exception to the deck owner.
@@ -84,11 +86,17 @@ The packaged command above performs these deterministic build steps. Do not repl
 
 Render the page or assembled deck and compare the reconstructed slide with its selected target. Inspect fidelity, hierarchy, asset treatment, text fitting, connector routing, collisions, density, whitespace, and editability.
 
+Open the `rendered_text.path` returned by the preview command. It reports native table words from the actual PDF. Inspect each discrepancy in the page image, including whole words split across lines. Check text outside tables visually as well. Zero reported discrepancies covers only the cells the collector examined. When extraction is unavailable, inspect those cells directly and record the limitation.
+
 Use the configured content crop for target comparison and the whole slide for frame review. Header and footer text, rules and page-number fields must come from the shared inherited frame. They must not be duplicated as image content or page-local substitutes.
 
 Keep cross-page typographic peers at the deck's chosen size and treatment. Inspect native style facts and the actual images for every discovered role, including small recurring labels or marks. Revisit the inventory for undeclared peers after rendering. If a member no longer fits, the Agent should reconsider its allocation, wording, line breaks or shared role scale while preserving the message. Do not silently shrink that member and call the role consistent. An exception is possible when the Agent records its actual members, chosen treatment and purpose, then visually reviews it across the deck.
 
 Fix objective runtime defects directly. For a visual issue, decide whether the correction belongs in the semantic map, measurement interpretation, generated target, or deck outline. Do not add arbitrary final coordinates to generic runtime code.
+
+Record concrete findings before editing. After a correction, rerun the affected reconstruction and preview, inspect the cited region at full resolution, and check the whole page for regressions. Recheck its recurring roles across the deck when a shared treatment changes. Carry findings through to their observed resolution. A successful command or an updated file hash does not close a visual finding.
+
+Before delivery, run `scripts/collect_release_evidence.py --help` and collect the page's release facts with the exact inspected PowerPoint and render. Keep the render's `.source.json` sidecar. For a page rendered from the assembled deck, pass its one-based `--slide-number`. Resolve stale or mismatched provenance by rendering the current file again. Do not recreate a sidecar to make an older image appear current.
 
 ## 9. Return to deck orchestration
 
