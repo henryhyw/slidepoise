@@ -6,7 +6,9 @@ SlidePoise combines AI content planning with the design freedom of image generat
 
 The Agent interprets the chosen design, OpenCV measures its geometry, and local tools reconstruct the deck with editable text, charts, tables, shapes and canonical visual assets. The Agent reviews the rendered slides together for fidelity and consistency.
 
-![SlidePoise architecture showing intent, image generation, Agent interpretation, OpenCV measurement, editable PowerPoint and deck review](docs/site/architecture.png)
+[![SlidePoise consulting example with editable text, tables and a native chart](docs/images/slidepoise-consulting.webp)](https://www.henryw.me/slidepoise/docs/site/)
+
+[![SlidePoise editorial example with five slides, editable typography and separate original artwork](docs/images/slidepoise-editorial.webp)](https://www.henryw.me/slidepoise/docs/site/)
 
 [Get started](#get-started) · [Usage guide](docs/USAGE.md) · [Architecture](docs/ARCHITECTURE.md) · [Contribute](CONTRIBUTING.md)
 
@@ -14,11 +16,24 @@ The Agent interprets the chosen design, OpenCV measures its geometry, and local 
 
 Browse the slides, compare the AI designs with actual PowerPoint renders, and inspect each page’s element groups and OpenCV measurements on the [project page](https://www.henryw.me/slidepoise/).
 
-| Consulting sample | Editorial sample |
-| --- | --- |
-| ![Consulting sample PowerPoint](examples/consulting-ai-transformation/assets/s02-opportunities-render.png) | ![Editorial sample PowerPoint](examples/personal-thinking-system/assets/s01-opening-render.png) |
-| **Consulting** · Priorities, responsibilities and an investment decision for an AI pilot. | **Editorial** · An essay about working with AI and developing a point of view. |
-| [Download PowerPoint](examples/consulting-ai-transformation/deliverables/presentation.pptx) | [Download PowerPoint](examples/personal-thinking-system/deliverables/presentation.pptx) |
+<table>
+  <tr>
+    <th width="50%">Consulting sample · Slide 5</th>
+    <th width="50%">Editorial sample · Slide 4</th>
+  </tr>
+  <tr>
+    <td width="50%"><a href="https://www.henryw.me/slidepoise/docs/site/?deck=consulting-ai-transformation&amp;slide=s05-investment-decision"><img src="examples/consulting-ai-transformation/assets/s05-investment-decision-render.png" alt="Consulting slide 5, Release the next investment against evidence" width="800"></a></td>
+    <td width="50%"><a href="https://www.henryw.me/slidepoise/docs/site/?deck=personal-thinking-system&amp;slide=s04-trace"><img src="examples/personal-thinking-system/assets/s04-trace-render.png" alt="Editorial slide 4, Leave a trace of the thinking" width="800"></a></td>
+  </tr>
+  <tr>
+    <td>An investment model, sensitivity table and decision criteria for an AI pilot.</td>
+    <td>A visual record of sources, questions, counterarguments and decisions.</td>
+  </tr>
+  <tr>
+    <td><a href="examples/consulting-ai-transformation/deliverables/presentation.pptx">Download Consulting PowerPoint</a></td>
+    <td><a href="examples/personal-thinking-system/deliverables/presentation.pptx">Download Editorial PowerPoint</a></td>
+  </tr>
+</table>
 
 The strategy sample uses a fictional firm and illustrative figures.
 
