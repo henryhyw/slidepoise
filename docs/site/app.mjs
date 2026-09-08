@@ -159,7 +159,6 @@ function renderProjects() {
     caption.append(element('span', 'sample-option-title', deck.title));
     const metadata = element('span', 'sample-option-meta', deckLabel(deck) + ' · ' + deck.slides.length + ' slides');
     const selected = element('span', 'sample-selected', 'Selected');
-    selected.hidden = true;
     caption.append(metadata, selected);
     card.append(cover, caption);
     card.addEventListener('click', () => { if (state.deck !== deck) selectDeck(index); });
@@ -198,7 +197,6 @@ function selectDeck(index, requestedSlideId = null, requestedMode = 'rebuilt') {
   byId('studio').hidden = false;
   [...byId('project-grid').children].forEach((card, i) => {
     card.setAttribute('aria-pressed', String(i === index));
-    card.querySelector('.sample-selected').hidden = i !== index;
   });
   byId('viewer-title').textContent = deck.title;
   byId('viewer-sample-meta').textContent = deckLabel(deck) + ' · ' + deck.slides.length + ' slides';
@@ -835,7 +833,7 @@ async function start() {
     renderProjects();
     const requested = new URLSearchParams(location.search);
     const deck = state.decks.findIndex((item) => item.id === requested.get('deck'));
-    selectDeck(deck >= 0 ? deck : Math.max(0, state.decks.findIndex(item => item.id === 'personal-thinking-system')), requested.get('slide'), requested.get('view'));
+    selectDeck(deck >= 0 ? deck : Math.max(0, state.decks.findIndex(item => item.id === 'consulting-ai-transformation')), requested.get('slide'), requested.get('view'));
     const walkthroughReady = loadWalkthrough(index.walkthrough);
     byId('load-state').hidden = true;
     if (results.some((result) => result.status === 'rejected')) {

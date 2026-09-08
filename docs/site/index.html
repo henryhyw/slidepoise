@@ -28,15 +28,15 @@
 
   <main>
     <section class="hero page-width" aria-labelledby="hero-title">
-      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Open-source presentation skill for Codex</p>
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Open-source presentation framework for Codex</p>
       <h1 id="hero-title">Let the design follow<br>the argument.</h1>
-      <p class="hero-description">SlidePoise is an open-source Codex skill for designing complete presentations. You develop the argument with the Agent and bring the references and visual assets that matter. Image generation explores each composition, the Agent interprets the chosen design, OpenCV measures it, and local tools reconstruct the deck as editable PowerPoint.</p>
+      <p class="hero-description">SlidePoise combines AI content planning with the design freedom of image generation to create editable PowerPoint presentations. Your ideas, references and visual assets guide the result, without fixed templates.</p>
       <div class="hero-actions"><a class="button" href="#setup">Get SlidePoise</a><a class="quiet-link source-link" href="https://github.com/henryhyw/slidepoise" target="_blank" rel="noopener"><svg class="github-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 .75a11.25 11.25 0 0 0-3.56 21.92c.56.1.77-.24.77-.54v-2.09c-3.14.68-3.8-1.33-3.8-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.23.71-1.51-2.51-.29-5.15-1.26-5.15-5.57 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.16a10.75 10.75 0 0 1 5.65 0c2.15-1.46 3.1-1.16 3.1-1.16.61 1.55.23 2.7.11 2.98.72.79 1.16 1.8 1.16 3.03 0 4.32-2.64 5.28-5.16 5.56.41.35.77 1.03.77 2.09v3.1c0 .3.2.65.78.54A11.25 11.25 0 0 0 12 .75Z"/></svg>View source</a></div>
     </section>
 
     <section id="philosophy" class="philosophy page-width" aria-labelledby="philosophy-title">
       <div class="section-heading architecture-heading"><h2 id="philosophy-title">How SlidePoise works</h2></div>
-      <p class="section-intro">The Agent first works out the argument and the job of each slide. Image generation can then explore the composition without squeezing the content into a fixed template. The Agent maps the chosen design, OpenCV measures its geometry, and local tools reconstruct the result with native PowerPoint objects.</p>
+      <p class="section-intro">The Agent develops the content and decides what each slide needs to communicate. Image generation explores layouts using your references, assets and a shared visual direction. To build the PowerPoint, the Agent identifies text, charts and relationships while OpenCV measures their geometry. It then reviews the rendered deck against the original brief and designs, correcting omissions and inconsistencies.</p>
       <div id="walkthrough-loading" class="load-state" role="status">Loading the design example…</div>
       <div id="walkthrough" class="walkthrough" hidden>
         <article class="walkthrough-step">
@@ -62,7 +62,7 @@
         <div class="asset-system-copy">
           <p class="eyebrow">Visual assets</p>
           <h3 id="asset-system-title">Bring the visual language you already use</h3>
-          <p>Add the icons, logos, references and PowerPoint components your presentations already rely on. The Agent chooses what helps each slide and gives image generation the real artwork as design context. During reconstruction, SlidePoise replaces generated stand-ins with the original files. The final deck keeps the intended visual identity and editable objects.</p>
+          <p>Use your own icons, logos, visual references and PowerPoint components. The Agent uses your references and selected assets to guide image generation, then places the original icons, logos and components in the PowerPoint.</p>
         </div>
         <figure class="asset-system-figure" aria-label="A Library Set supplies visual context to image generation and canonical assets to the reconstructed PowerPoint">
           <div class="asset-stage asset-library-stage">
