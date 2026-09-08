@@ -40,7 +40,7 @@ For each selected current-chat/exact identity asset:
 5. treat the generated depiction as composition guidance, not the canonical asset;
 6. restore the exact file downstream using aspect-preserving contain-fit by default.
 
-If a generated slot is materially incompatible with the canonical asset ratio, revise upstream composition rather than stretching the asset.
+If a generated slot is materially incompatible with the canonical asset ratio, revise the upstream composition. Never stretch the asset to fill it.
 
 ## Novel illustrations versus known assets
 A profile may allow model-generated illustrations even when known reusable assets use a controlled vocabulary. This is not permission to invent substitute logos/icons/user images.
@@ -63,6 +63,6 @@ When the user requests a temporary source change, update that run's `library_set
 An official organization site or brand portal remains a valid exact-logo source when the active profile allows it. The Agent chooses an exact official HTTPS asset and records usage terms with `scripts/fetch_remote_asset.py`. If identity or permission cannot be verified, pause and ask the user. Persistent library updates require an explicit profile-maintenance request.
 
 ## Components
-Components are design grammar, not fixed layouts. Select only when structurally useful, carry `component_id` + reason, pass the focused preview through the context sheet, and adapt sample content/counts/dimensions rather than copying them verbatim. Assign `component_id` downstream only when the accepted target actually uses that grammar.
+Components provide design grammar without fixing the layout. Select one only when it is structurally useful, carry `component_id` + reason, pass the focused preview through the context sheet, and adapt its sample content, counts and dimensions to the slide. Assign `component_id` downstream only when the accepted target actually uses that grammar.
 
 Imported PPTX components retain their native source and selected page. Resource preparation renders a current preview of that page when needed. If the local renderer is unavailable, use the host's native renderer and supply the matching preview before generation. Image-only precedents remain image-only. Never describe them as editable PowerPoint components.
