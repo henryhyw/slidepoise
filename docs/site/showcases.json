@@ -90,15 +90,11 @@
         "inputs": [
           {
             "label": "Initial image-generation input",
-            "path": "run/slides/s01-recommendation/work/generation-request.json"
+            "path": "run/slides/s01-recommendation/work/generation-request-assets-used.json"
           },
           {
-            "label": "Revision input 1",
-            "path": "run/slides/s01-recommendation/work/image-edit-request-01.json"
-          },
-          {
-            "label": "Revision input 2",
-            "path": "run/slides/s01-recommendation/work/image-edit-request-02.json"
+            "label": "Focused asset treatment edit",
+            "path": "run/slides/s01-recommendation/work/image-edit-request-assets-used.json"
           }
         ]
       },
@@ -107,11 +103,11 @@
         "inputs": [
           {
             "label": "Initial image-generation input",
-            "path": "run/slides/s02-opportunities/work/generation-request.json"
+            "path": "run/slides/s02-opportunities/work/generation-request-assets-used.json"
           },
           {
-            "label": "Revision input 1",
-            "path": "run/slides/s02-opportunities/work/image-edit-request-01.json"
+            "label": "Focused asset treatment edit",
+            "path": "run/slides/s02-opportunities/work/image-edit-request-assets-used.json"
           }
         ]
       },
@@ -120,11 +116,11 @@
         "inputs": [
           {
             "label": "Initial image-generation input",
-            "path": "run/slides/s03-operating-model/work/generation-request.json"
+            "path": "run/slides/s03-operating-model/work/generation-request-assets-used.json"
           },
           {
-            "label": "Revision input 1",
-            "path": "run/slides/s03-operating-model/work/image-edit-request-01.json"
+            "label": "Focused asset treatment edit",
+            "path": "run/slides/s03-operating-model/work/image-edit-request-assets-used.json"
           }
         ]
       },
@@ -133,7 +129,11 @@
         "inputs": [
           {
             "label": "Initial image-generation input",
-            "path": "run/slides/s04-delivery-roadmap/work/generation-request.json"
+            "path": "run/slides/s04-delivery-roadmap/work/generation-request-assets-used.json"
+          },
+          {
+            "label": "Focused asset treatment edit",
+            "path": "run/slides/s04-delivery-roadmap/work/image-edit-request-assets-used.json"
           }
         ]
       },
@@ -142,11 +142,7 @@
         "inputs": [
           {
             "label": "Initial image-generation input",
-            "path": "run/slides/s05-investment-decision/work/generation-request.json"
-          },
-          {
-            "label": "Revision input 1",
-            "path": "run/slides/s05-investment-decision/work/image-edit-request-01.json"
+            "path": "run/slides/s05-investment-decision/work/generation-request-assets-used.json"
           }
         ]
       }

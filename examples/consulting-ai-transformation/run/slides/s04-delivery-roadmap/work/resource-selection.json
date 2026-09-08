@@ -11,8 +11,151 @@
       "full_resolution_attachment": true
     }
   ],
-  "selected_assets": [],
+  "selected_assets": [
+    {
+      "asset_id": "remix-route-line",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/route/remix-route-line.svg",
+      "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Map/route-line.svg",
+      "source_repository_path": "icons/Map/route-line.svg",
+      "provider": "Remix Icon",
+      "provider_version": "4.9.0",
+      "license": "Remix Icon License v1.0",
+      "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+      "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+      "style_variant": "line",
+      "style_pair_id": "remix-route",
+      "pair_asset_ids": [
+        "remix-route-line",
+        "remix-route-fill"
+      ],
+      "intrinsic_aspect_ratio": 1.0,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "preserve_canonical_color": false,
+      "sha256": "a33f8d98cae26d49299d0759c228a825a23454d248a252c0fb7edbf755bcaa8a",
+      "persistence": "run_cache_only",
+      "selection_status": "candidate_pending_post_generation_visual_review",
+      "role": "supporting communication icon candidate",
+      "selection_mode": "host_agent_selected_pair_before_generation",
+      "user_required": false,
+      "generation_description": "A coherent Remix Icon line symbol for route. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+    },
+    {
+      "asset_id": "remix-route-fill",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/route/remix-route-fill.svg",
+      "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Map/route-fill.svg",
+      "source_repository_path": "icons/Map/route-fill.svg",
+      "provider": "Remix Icon",
+      "provider_version": "4.9.0",
+      "license": "Remix Icon License v1.0",
+      "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+      "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+      "style_variant": "fill",
+      "style_pair_id": "remix-route",
+      "pair_asset_ids": [
+        "remix-route-line",
+        "remix-route-fill"
+      ],
+      "intrinsic_aspect_ratio": 1.0,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "preserve_canonical_color": false,
+      "sha256": "b63f521aa2cc63ba304820f48189803116c4fdf91a1140cdfa8856c20e6957bd",
+      "persistence": "run_cache_only",
+      "selection_status": "candidate_pending_post_generation_visual_review",
+      "role": "supporting communication icon candidate",
+      "selection_mode": "host_agent_selected_pair_before_generation",
+      "user_required": false,
+      "generation_description": "A coherent Remix Icon fill symbol for route. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+    },
+    {
+      "asset_id": "remix-flag-line",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/flag/remix-flag-line.svg",
+      "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Business/flag-line.svg",
+      "source_repository_path": "icons/Business/flag-line.svg",
+      "provider": "Remix Icon",
+      "provider_version": "4.9.0",
+      "license": "Remix Icon License v1.0",
+      "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+      "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+      "style_variant": "line",
+      "style_pair_id": "remix-flag",
+      "pair_asset_ids": [
+        "remix-flag-line",
+        "remix-flag-fill"
+      ],
+      "intrinsic_aspect_ratio": 1.0,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "preserve_canonical_color": false,
+      "sha256": "f2a7780e8041a40fafea07e39146d81f9f32f43508088c7cb21cb14f06895f16",
+      "persistence": "run_cache_only",
+      "selection_status": "candidate_pending_post_generation_visual_review",
+      "role": "supporting communication icon candidate",
+      "selection_mode": "host_agent_selected_pair_before_generation",
+      "user_required": false,
+      "generation_description": "A coherent Remix Icon line symbol for flag. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+    },
+    {
+      "asset_id": "remix-flag-fill",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/flag/remix-flag-fill.svg",
+      "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Business/flag-fill.svg",
+      "source_repository_path": "icons/Business/flag-fill.svg",
+      "provider": "Remix Icon",
+      "provider_version": "4.9.0",
+      "license": "Remix Icon License v1.0",
+      "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+      "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+      "style_variant": "fill",
+      "style_pair_id": "remix-flag",
+      "pair_asset_ids": [
+        "remix-flag-line",
+        "remix-flag-fill"
+      ],
+      "intrinsic_aspect_ratio": 1.0,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "preserve_canonical_color": false,
+      "sha256": "91a78841c03417185a5e45099445b1817c26708ec2a76f90801d2c3146628deb",
+      "persistence": "run_cache_only",
+      "selection_status": "candidate_pending_post_generation_visual_review",
+      "role": "supporting communication icon candidate",
+      "selection_mode": "host_agent_selected_pair_before_generation",
+      "user_required": false,
+      "generation_description": "A coherent Remix Icon fill symbol for flag. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+    }
+  ],
   "selected_components": [],
+  "selection_reasoning": {
+    "icons": {
+      "communication_roles": [
+        "Separate the delivery path from the four evidence gates"
+      ],
+      "candidates_inspected": [
+        "Remix Icon route line/fill pair",
+        "Remix Icon flag line/fill pair"
+      ],
+      "decision": "Use a route symbol for the workstream path and a repeated flag symbol for gate markers."
+    },
+    "components": {
+      "communication_roles": [
+        "Provide editable information structures for the slide evidence"
+      ],
+      "candidates_inspected": [
+        "Consulting core component catalog"
+      ],
+      "decision": "Use native tables, charts, connectors, and geometry because the current evidence structures are specific to this argument."
+    },
+    "visual_references": {
+      "communication_roles": [
+        "Preserve the shared title, typography, decision band, and deck rhythm"
+      ],
+      "candidates_inspected": [
+        "Accepted opening slide when available"
+      ],
+      "decision": "Use the shared deck design as the primary authority. Later pages may use the accepted opening only for style calibration."
+    }
+  },
   "style_context": {
     "profile": {
       "profile_id": "consulting",
@@ -700,8 +843,8 @@
       },
       "resource_catalogs": {
         "visual_references": {
-          "catalog": "/Users/henry/.slidepoise/profiles/consulting/libraries/visual_references/catalog.json",
-          "root": "/Users/henry/.slidepoise/profiles/consulting/libraries/visual_references",
+          "catalog": "/Users/henry/Codes/AI_slide_drafting/profiles/consulting/libraries/visual_references/catalog.json",
+          "root": "/Users/henry/Codes/AI_slide_drafting/profiles/consulting/libraries/visual_references",
           "profile_id": "consulting"
         },
         "components": {
@@ -715,12 +858,10 @@
         },
         "icons": {
           "set_ids": [
-            "remix-icon",
-            "wikimedia-identity"
+            "remix-icon"
           ],
           "providers": [
-            "remix_icon",
-            "wikimedia_commons"
+            "remix_icon"
           ]
         }
       }
@@ -1063,12 +1204,16 @@
     }
   },
   "generation_context_sheet": {
-    "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s04-delivery-roadmap/work/generation-context-sheet.png",
+    "path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/slides/s04-delivery-roadmap/work/generation-context-sheet.png",
     "labels": {
-      "northstar-accepted-typography": "R01"
+      "northstar-accepted-typography": "R01",
+      "remix-route-line": "A01",
+      "remix-route-fill": "A02",
+      "remix-flag-line": "A03",
+      "remix-flag-fill": "A04"
     },
-    "asset_count": 1,
-    "rendered_preview_count": 1,
+    "asset_count": 5,
+    "rendered_preview_count": 5,
     "purpose": "combined_style_assets_approval_and_generation"
   }
 }

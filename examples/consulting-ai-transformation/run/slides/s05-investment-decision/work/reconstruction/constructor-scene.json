@@ -13,13 +13,31 @@
       "kind": "shape",
       "shape": "rectangle",
       "bbox_px": [
-        48,
-        229,
-        1824,
+        46,
+        222,
+        1828,
         2
       ],
       "style": {
-        "fill": "#AAAAAA",
+        "fill": "#91969D",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      },
+      "z": 1.0
+    },
+    {
+      "id": "capacity-panel",
+      "kind": "shape",
+      "shape": "rectangle",
+      "bbox_px": [
+        46,
+        303,
+        545,
+        320
+      ],
+      "style": {
+        "fill": "#FFF5ED",
         "stroke": "none",
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
@@ -31,13 +49,13 @@
       "kind": "shape",
       "shape": "rectangle",
       "bbox_px": [
-        39,
-        461,
-        466,
+        65,
+        510,
+        490,
         1
       ],
       "style": {
-        "fill": "#B5B5B5",
+        "fill": "#C1C4C7",
         "stroke": "none",
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
@@ -45,17 +63,17 @@
       "z": 1.0
     },
     {
-      "id": "criteria-rule",
+      "id": "criterion-panel-go",
       "kind": "shape",
       "shape": "rectangle",
       "bbox_px": [
-        38,
-        671,
-        1842,
-        2
+        46,
+        694,
+        596,
+        150
       ],
       "style": {
-        "fill": "#DFE3E6",
+        "fill": "#F5F7F8",
         "stroke": "none",
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
@@ -63,17 +81,17 @@
       "z": 1.0
     },
     {
-      "id": "criteria-divider-1",
+      "id": "criterion-panel-hold",
       "kind": "shape",
       "shape": "rectangle",
       "bbox_px": [
-        629,
-        672,
-        1,
-        166
+        655,
+        694,
+        596,
+        150
       ],
       "style": {
-        "fill": "#DFE3E6",
+        "fill": "#F5F7F8",
         "stroke": "none",
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
@@ -81,17 +99,17 @@
       "z": 1.0
     },
     {
-      "id": "criteria-divider-2",
+      "id": "criterion-panel-stop",
       "kind": "shape",
       "shape": "rectangle",
       "bbox_px": [
-        1245,
-        672,
-        1,
-        166
+        1264,
+        694,
+        596,
+        150
       ],
       "style": {
-        "fill": "#DFE3E6",
+        "fill": "#F5F7F8",
         "stroke": "none",
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
@@ -103,10 +121,10 @@
       "kind": "shape",
       "shape": "rectangle",
       "bbox_px": [
-        48,
-        857,
-        1824,
-        134
+        46,
+        899,
+        1828,
+        93
       ],
       "style": {
         "fill": "#FFF5ED",
@@ -121,10 +139,10 @@
       "kind": "shape",
       "shape": "rectangle",
       "bbox_px": [
-        48,
-        857,
+        46,
+        899,
         8,
-        134
+        93
       ],
       "style": {
         "fill": "#FD5108",
@@ -138,10 +156,10 @@
       "id": "investment-table",
       "kind": "table",
       "bbox_px": [
-        632,
-        304,
-        377,
-        273
+        620,
+        303,
+        485,
+        272
       ],
       "structure": {
         "rows": [
@@ -154,7 +172,13 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left"
+                "align": "left",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -165,7 +189,13 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             }
           ],
@@ -177,8 +207,14 @@
                   "color": "FFFFFF"
                 },
                 "color": "000000",
-                "bold": false,
-                "align": "left"
+                "bold": true,
+                "align": "left",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -189,7 +225,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             }
           ],
@@ -201,8 +243,14 @@
                   "color": "F5F7F8"
                 },
                 "color": "000000",
-                "bold": false,
-                "align": "left"
+                "bold": true,
+                "align": "left",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -213,7 +261,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             }
           ],
@@ -225,8 +279,14 @@
                   "color": "FFFFFF"
                 },
                 "color": "000000",
-                "bold": false,
-                "align": "left"
+                "bold": true,
+                "align": "left",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -237,7 +297,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             }
           ],
@@ -250,7 +316,13 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left"
+                "align": "left",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -260,31 +332,37 @@
                   "color": "FFF5ED"
                 },
                 "color": "000000",
-                "bold": true,
-                "align": "center"
+                "bold": false,
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             }
           ]
         ],
         "column_widths_px": [
-          231,
-          146
+          285,
+          200
         ],
         "row_heights_px": [
-          54,
           52,
-          53,
-          56,
-          58
+          55,
+          55,
+          55,
+          55
         ]
       },
       "style": {
         "font_family": "Arial",
-        "font_size_px": 24,
-        "cell_margin_px": 14,
+        "font_size_px": 22,
+        "cell_margin_px": 8,
         "color": "#000000",
         "fill": "#FFFFFF",
-        "stroke": "#DFE3E6",
+        "stroke": "#C6C9CD",
         "stroke_width_px": 1,
         "vertical_alignment": "middle"
       },
@@ -293,13 +371,13 @@
       "z": 5.0
     },
     {
-      "id": "scenario-table",
+      "id": "sensitivity-table",
       "kind": "table",
       "bbox_px": [
-        1061,
-        304,
-        819,
-        300
+        1135,
+        303,
+        738,
+        320
       ],
       "structure": {
         "rows": [
@@ -312,7 +390,13 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left"
+                "align": "left",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -323,18 +407,30 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
-              "text": "Time\nsaved",
+              "text": "Time saved",
               "options": {
                 "fill": {
                   "color": "000000"
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -345,40 +441,64 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
-              "text": "Annual\ncapacity",
+              "text": "Annual capacity",
               "options": {
                 "fill": {
                   "color": "000000"
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
-              "text": "First-year\nvalue",
+              "text": "First-year value",
               "options": {
                 "fill": {
                   "color": "000000"
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
-              "text": "Net vs\n$115k",
+              "text": "Net vs $115k",
               "options": {
                 "fill": {
                   "color": "000000"
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             }
           ],
@@ -391,7 +511,13 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left"
+                "align": "left",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -402,7 +528,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -413,7 +545,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -424,7 +562,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -435,7 +579,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -446,7 +596,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -457,7 +613,13 @@
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             }
           ],
@@ -466,77 +628,119 @@
               "text": "Base",
               "options": {
                 "fill": {
-                  "color": "F5F7F8"
+                  "color": "FFF5ED"
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left"
+                "align": "left",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
               "text": "60%",
               "options": {
                 "fill": {
-                  "color": "F5F7F8"
+                  "color": "FFF5ED"
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
               "text": "30%",
               "options": {
                 "fill": {
-                  "color": "F5F7F8"
+                  "color": "FFF5ED"
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
               "text": "1,944",
               "options": {
                 "fill": {
-                  "color": "F5F7F8"
+                  "color": "FFF5ED"
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
               "text": "$243k",
               "options": {
                 "fill": {
-                  "color": "F5F7F8"
+                  "color": "FFF5ED"
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
               "text": "$121.5k",
               "options": {
                 "fill": {
-                  "color": "F5F7F8"
+                  "color": "FFF5ED"
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
               "text": "+$6.5k",
               "options": {
                 "fill": {
-                  "color": "F5F7F8"
+                  "color": "FFF5ED"
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             }
           ],
@@ -549,7 +753,13 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left"
+                "align": "left",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -560,7 +770,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -571,7 +787,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -582,7 +804,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -593,7 +821,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -604,7 +838,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -615,34 +855,40 @@
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             }
           ]
         ],
         "column_widths_px": [
-          126,
-          126,
-          88,
-          116,
-          120,
-          129,
-          114
+          115,
+          105,
+          95,
+          105,
+          108,
+          112,
+          98
         ],
         "row_heights_px": [
-          79,
-          72,
-          74,
-          75
+          88,
+          77,
+          77,
+          78
         ]
       },
       "style": {
         "font_family": "Arial",
-        "font_size_px": 24,
-        "cell_margin_px": 6,
+        "font_size_px": 18,
+        "cell_margin_px": 8,
         "color": "#000000",
         "fill": "#FFFFFF",
-        "stroke": "#DFE3E6",
+        "stroke": "#C6C9CD",
         "stroke_width_px": 1,
         "vertical_alignment": "middle"
       },
@@ -654,10 +900,10 @@
       "id": "headline",
       "kind": "textbox",
       "bbox_px": [
-        48,
-        83,
-        1824,
-        80
+        46,
+        84,
+        1828,
+        76
       ],
       "text": "Release the next investment against evidence",
       "style": {
@@ -685,7 +931,7 @@
         "Release the next investment against evidence"
       ],
       "bullet_style": null,
-      "semantic_role": "headline",
+      "semantic_role": "slide_title",
       "parent_id": null,
       "z": 20.0
     },
@@ -693,10 +939,10 @@
       "id": "subtitle",
       "kind": "textbox",
       "bbox_px": [
-        48,
-        167,
-        1824,
-        47
+        47,
+        165,
+        1825,
+        48
       ],
       "text": "Use the full first-year cost, a realistic ramp and explicit go/no-go tests.",
       "style": {
@@ -732,16 +978,16 @@
       "id": "capacity-heading",
       "kind": "textbox",
       "bbox_px": [
-        41,
-        265,
-        584,
-        44
+        46,
+        259,
+        545,
+        38
       ],
       "text": "BASE-CASE CAPACITY MODEL",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
+        "font_size_px": 27.0,
+        "font_size_pt": 13.5,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -763,419 +1009,29 @@
         "BASE-CASE CAPACITY MODEL"
       ],
       "bullet_style": null,
-      "semantic_role": "capacity-heading",
+      "semantic_role": "heading_large",
       "parent_id": null,
       "z": 20.0
     },
     {
-      "id": "investment-heading",
+      "id": "capacity-equation",
       "kind": "textbox",
       "bbox_px": [
-        633,
-        265,
-        377,
-        44
+        64,
+        322,
+        505,
+        115
       ],
-      "text": "INVESTMENT",
+      "text": "900 × 12 h × 60% × 30%\n= 1,944 h",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
-        "font_weight": "bold",
-        "italic": false,
-        "char_spacing_px": 0.0,
-        "color": "#000000",
-        "alignment": "left",
-        "vertical_alignment": "top",
-        "margins_px": [
-          2.0,
-          2.0,
-          2.0,
-          2.0
-        ],
-        "line_spacing_multiple": 1.0,
-        "paragraph_spacing_px": 0,
-        "autofit": "none",
-        "outer_geometry_is_fixed": true
-      },
-      "paragraphs": [
-        "INVESTMENT"
-      ],
-      "bullet_style": null,
-      "semantic_role": "investment-heading",
-      "parent_id": null,
-      "z": 20.0
-    },
-    {
-      "id": "sensitivity-heading",
-      "kind": "textbox",
-      "bbox_px": [
-        1061,
-        265,
-        819,
-        44
-      ],
-      "text": "FIRST-YEAR SENSITIVITY · 50% RAMP",
-      "style": {
-        "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
-        "font_weight": "bold",
-        "italic": false,
-        "char_spacing_px": 0.0,
-        "color": "#000000",
-        "alignment": "left",
-        "vertical_alignment": "top",
-        "margins_px": [
-          2.0,
-          2.0,
-          2.0,
-          2.0
-        ],
-        "line_spacing_multiple": 1.0,
-        "paragraph_spacing_px": 0,
-        "autofit": "none",
-        "outer_geometry_is_fixed": true
-      },
-      "paragraphs": [
-        "FIRST-YEAR SENSITIVITY · 50% RAMP"
-      ],
-      "bullet_style": null,
-      "semantic_role": "sensitivity-heading",
-      "parent_id": null,
-      "z": 20.0
-    },
-    {
-      "id": "capacity-term-0",
-      "kind": "textbox",
-      "bbox_px": [
-        88,
-        334,
-        73,
-        45
-      ],
-      "text": "900",
-      "style": {
-        "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
-        "font_weight": "regular",
-        "italic": false,
-        "char_spacing_px": 0.0,
-        "color": "#000000",
-        "alignment": "left",
-        "vertical_alignment": "top",
-        "margins_px": [
-          2.0,
-          2.0,
-          2.0,
-          2.0
-        ],
-        "line_spacing_multiple": 1.0,
-        "paragraph_spacing_px": 0,
-        "autofit": "none",
-        "outer_geometry_is_fixed": true
-      },
-      "paragraphs": [
-        "900"
-      ],
-      "bullet_style": null,
-      "semantic_role": "capacity-term-0",
-      "parent_id": null,
-      "z": 20.0
-    },
-    {
-      "id": "capacity-term-1",
-      "kind": "textbox",
-      "bbox_px": [
-        174,
-        334,
-        30,
-        45
-      ],
-      "text": "×",
-      "style": {
-        "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
-        "font_weight": "regular",
-        "italic": false,
-        "char_spacing_px": 0.0,
-        "color": "#000000",
-        "alignment": "left",
-        "vertical_alignment": "top",
-        "margins_px": [
-          2.0,
-          2.0,
-          2.0,
-          2.0
-        ],
-        "line_spacing_multiple": 1.0,
-        "paragraph_spacing_px": 0,
-        "autofit": "none",
-        "outer_geometry_is_fixed": true
-      },
-      "paragraphs": [
-        "×"
-      ],
-      "bullet_style": null,
-      "semantic_role": "capacity-term-1",
-      "parent_id": null,
-      "z": 20.0
-    },
-    {
-      "id": "capacity-term-2",
-      "kind": "textbox",
-      "bbox_px": [
-        218,
-        334,
-        78,
-        45
-      ],
-      "text": "12 h",
-      "style": {
-        "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
-        "font_weight": "regular",
-        "italic": false,
-        "char_spacing_px": 0.0,
-        "color": "#000000",
-        "alignment": "left",
-        "vertical_alignment": "top",
-        "margins_px": [
-          2.0,
-          2.0,
-          2.0,
-          2.0
-        ],
-        "line_spacing_multiple": 1.0,
-        "paragraph_spacing_px": 0,
-        "autofit": "none",
-        "outer_geometry_is_fixed": true
-      },
-      "paragraphs": [
-        "12 h"
-      ],
-      "bullet_style": null,
-      "semantic_role": "capacity-term-2",
-      "parent_id": null,
-      "z": 20.0
-    },
-    {
-      "id": "capacity-term-3",
-      "kind": "textbox",
-      "bbox_px": [
-        282,
-        334,
-        30,
-        45
-      ],
-      "text": "×",
-      "style": {
-        "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
-        "font_weight": "regular",
-        "italic": false,
-        "char_spacing_px": 0.0,
-        "color": "#000000",
-        "alignment": "left",
-        "vertical_alignment": "top",
-        "margins_px": [
-          2.0,
-          2.0,
-          2.0,
-          2.0
-        ],
-        "line_spacing_multiple": 1.0,
-        "paragraph_spacing_px": 0,
-        "autofit": "none",
-        "outer_geometry_is_fixed": true
-      },
-      "paragraphs": [
-        "×"
-      ],
-      "bullet_style": null,
-      "semantic_role": "capacity-term-3",
-      "parent_id": null,
-      "z": 20.0
-    },
-    {
-      "id": "capacity-term-4",
-      "kind": "textbox",
-      "bbox_px": [
-        321,
-        334,
-        75,
-        45
-      ],
-      "text": "60%",
-      "style": {
-        "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
-        "font_weight": "regular",
-        "italic": false,
-        "char_spacing_px": 0.0,
-        "color": "#000000",
-        "alignment": "left",
-        "vertical_alignment": "top",
-        "margins_px": [
-          2.0,
-          2.0,
-          2.0,
-          2.0
-        ],
-        "line_spacing_multiple": 1.0,
-        "paragraph_spacing_px": 0,
-        "autofit": "none",
-        "outer_geometry_is_fixed": true
-      },
-      "paragraphs": [
-        "60%"
-      ],
-      "bullet_style": null,
-      "semantic_role": "capacity-term-4",
-      "parent_id": null,
-      "z": 20.0
-    },
-    {
-      "id": "capacity-term-5",
-      "kind": "textbox",
-      "bbox_px": [
-        391,
-        334,
-        30,
-        45
-      ],
-      "text": "×",
-      "style": {
-        "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
-        "font_weight": "regular",
-        "italic": false,
-        "char_spacing_px": 0.0,
-        "color": "#000000",
-        "alignment": "left",
-        "vertical_alignment": "top",
-        "margins_px": [
-          2.0,
-          2.0,
-          2.0,
-          2.0
-        ],
-        "line_spacing_multiple": 1.0,
-        "paragraph_spacing_px": 0,
-        "autofit": "none",
-        "outer_geometry_is_fixed": true
-      },
-      "paragraphs": [
-        "×"
-      ],
-      "bullet_style": null,
-      "semantic_role": "capacity-term-5",
-      "parent_id": null,
-      "z": 20.0
-    },
-    {
-      "id": "capacity-term-6",
-      "kind": "textbox",
-      "bbox_px": [
-        425,
-        334,
-        70,
-        45
-      ],
-      "text": "30%",
-      "style": {
-        "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
-        "font_weight": "regular",
-        "italic": false,
-        "char_spacing_px": 0.0,
-        "color": "#000000",
-        "alignment": "left",
-        "vertical_alignment": "top",
-        "margins_px": [
-          2.0,
-          2.0,
-          2.0,
-          2.0
-        ],
-        "line_spacing_multiple": 1.0,
-        "paragraph_spacing_px": 0,
-        "autofit": "none",
-        "outer_geometry_is_fixed": true
-      },
-      "paragraphs": [
-        "30%"
-      ],
-      "bullet_style": null,
-      "semantic_role": "capacity-term-6",
-      "parent_id": null,
-      "z": 20.0
-    },
-    {
-      "id": "capacity-term-7",
-      "kind": "textbox",
-      "bbox_px": [
-        492,
-        334,
-        29,
-        45
-      ],
-      "text": "=",
-      "style": {
-        "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
-        "font_weight": "regular",
-        "italic": false,
-        "char_spacing_px": 0.0,
-        "color": "#000000",
-        "alignment": "left",
-        "vertical_alignment": "top",
-        "margins_px": [
-          2.0,
-          2.0,
-          2.0,
-          2.0
-        ],
-        "line_spacing_multiple": 1.0,
-        "paragraph_spacing_px": 0,
-        "autofit": "none",
-        "outer_geometry_is_fixed": true
-      },
-      "paragraphs": [
-        "="
-      ],
-      "bullet_style": null,
-      "semantic_role": "capacity-term-7",
-      "parent_id": null,
-      "z": 20.0
-    },
-    {
-      "id": "capacity-result",
-      "kind": "textbox",
-      "bbox_px": [
-        518,
-        334,
-        110,
-        49
-      ],
-      "text": "1,944 h",
-      "style": {
-        "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
+        "font_size_px": 43.0,
+        "font_size_pt": 21.5,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
         "color": "#FD5108",
-        "alignment": "left",
+        "alignment": "center",
         "vertical_alignment": "top",
         "margins_px": [
           2.0,
@@ -1189,27 +1045,28 @@
         "outer_geometry_is_fixed": true
       },
       "paragraphs": [
-        "1,944 h"
+        "900 × 12 h × 60% × 30%",
+        "= 1,944 h"
       ],
       "bullet_style": null,
-      "semantic_role": "capacity-result",
+      "semantic_role": "large_data_number",
       "parent_id": null,
       "z": 20.0
     },
     {
-      "id": "capacity-term-label-0",
+      "id": "capacity-labels",
       "kind": "textbox",
       "bbox_px": [
-        37,
-        388,
-        158,
+        65,
+        438,
+        500,
         45
       ],
-      "text": "Engagements",
+      "text": "Engagements Research time Adoption Time saved",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 24.0,
-        "font_size_pt": 12.0,
+        "font_size_px": 19.0,
+        "font_size_pt": 9.5,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1222,152 +1079,33 @@
           2.0,
           2.0
         ],
-        "line_spacing_multiple": 1.1,
+        "line_spacing_multiple": 1.0,
         "paragraph_spacing_px": 0,
         "autofit": "none",
         "outer_geometry_is_fixed": true
       },
       "paragraphs": [
-        "Engagements"
+        "Engagements Research time Adoption Time saved"
       ],
       "bullet_style": null,
-      "semantic_role": "capacity-term-label-0",
+      "semantic_role": "body",
       "parent_id": null,
       "z": 20.0
     },
     {
-      "id": "capacity-term-label-1",
+      "id": "capacity-value",
       "kind": "textbox",
       "bbox_px": [
-        193,
-        388,
-        111,
-        68
-      ],
-      "text": "Research\ntime",
-      "style": {
-        "font_family": "Arial",
-        "font_size_px": 24.0,
-        "font_size_pt": 12.0,
-        "font_weight": "regular",
-        "italic": false,
-        "char_spacing_px": 0.0,
-        "color": "#000000",
-        "alignment": "center",
-        "vertical_alignment": "top",
-        "margins_px": [
-          2.0,
-          2.0,
-          2.0,
-          2.0
-        ],
-        "line_spacing_multiple": 1.1,
-        "paragraph_spacing_px": 0,
-        "autofit": "none",
-        "outer_geometry_is_fixed": true
-      },
-      "paragraphs": [
-        "Research",
-        "time"
-      ],
-      "bullet_style": null,
-      "semantic_role": "capacity-term-label-1",
-      "parent_id": null,
-      "z": 20.0
-    },
-    {
-      "id": "capacity-term-label-2",
-      "kind": "textbox",
-      "bbox_px": [
-        303,
-        388,
-        106,
-        45
-      ],
-      "text": "Adoption",
-      "style": {
-        "font_family": "Arial",
-        "font_size_px": 24.0,
-        "font_size_pt": 12.0,
-        "font_weight": "regular",
-        "italic": false,
-        "char_spacing_px": 0.0,
-        "color": "#000000",
-        "alignment": "center",
-        "vertical_alignment": "top",
-        "margins_px": [
-          2.0,
-          2.0,
-          2.0,
-          2.0
-        ],
-        "line_spacing_multiple": 1.1,
-        "paragraph_spacing_px": 0,
-        "autofit": "none",
-        "outer_geometry_is_fixed": true
-      },
-      "paragraphs": [
-        "Adoption"
-      ],
-      "bullet_style": null,
-      "semantic_role": "capacity-term-label-2",
-      "parent_id": null,
-      "z": 20.0
-    },
-    {
-      "id": "capacity-term-label-3",
-      "kind": "textbox",
-      "bbox_px": [
-        417,
-        388,
-        78,
-        68
-      ],
-      "text": "Time\nsaved",
-      "style": {
-        "font_family": "Arial",
-        "font_size_px": 24.0,
-        "font_size_pt": 12.0,
-        "font_weight": "regular",
-        "italic": false,
-        "char_spacing_px": 0.0,
-        "color": "#000000",
-        "alignment": "center",
-        "vertical_alignment": "top",
-        "margins_px": [
-          2.0,
-          2.0,
-          2.0,
-          2.0
-        ],
-        "line_spacing_multiple": 1.1,
-        "paragraph_spacing_px": 0,
-        "autofit": "none",
-        "outer_geometry_is_fixed": true
-      },
-      "paragraphs": [
-        "Time",
-        "saved"
-      ],
-      "bullet_style": null,
-      "semantic_role": "capacity-term-label-3",
-      "parent_id": null,
-      "z": 20.0
-    },
-    {
-      "id": "capacity-valuation",
-      "kind": "textbox",
-      "bbox_px": [
-        39,
-        515,
-        254,
-        50
+        65,
+        534,
+        270,
+        44
       ],
       "text": "1,944 h × $125/h =",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
+        "font_size_px": 27.0,
+        "font_size_pt": 13.5,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1389,24 +1127,24 @@
         "1,944 h × $125/h ="
       ],
       "bullet_style": null,
-      "semantic_role": "capacity-valuation",
+      "semantic_role": "body",
       "parent_id": null,
       "z": 20.0
     },
     {
-      "id": "capacity-value",
+      "id": "capacity-value-number",
       "kind": "textbox",
       "bbox_px": [
-        296,
-        515,
-        245,
-        50
+        330,
+        520,
+        220,
+        60
       ],
       "text": "$243k",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
+        "font_size_px": 47.0,
+        "font_size_pt": 23.5,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1428,24 +1166,24 @@
         "$243k"
       ],
       "bullet_style": null,
-      "semantic_role": "capacity-value",
+      "semantic_role": "large_data_number",
       "parent_id": null,
       "z": 20.0
     },
     {
-      "id": "capacity-equivalent",
+      "id": "capacity-caption",
       "kind": "textbox",
       "bbox_px": [
-        41,
-        566,
-        578,
-        43
+        65,
+        584,
+        470,
+        34
       ],
       "text": "annual capacity equivalent",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
+        "font_size_px": 22.0,
+        "font_size_pt": 11.0,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1467,24 +1205,63 @@
         "annual capacity equivalent"
       ],
       "bullet_style": null,
-      "semantic_role": "capacity-equivalent",
+      "semantic_role": "body",
       "parent_id": null,
       "z": 20.0
     },
     {
-      "id": "remaining-investment",
+      "id": "investment-heading",
       "kind": "textbox",
       "bbox_px": [
-        632,
-        586,
-        402,
-        70
+        620,
+        259,
+        485,
+        38
       ],
-      "text": "Remaining implementation\nafter the pilot $60k.",
+      "text": "INVESTMENT",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
+        "font_size_px": 27.0,
+        "font_size_pt": 13.5,
+        "font_weight": "bold",
+        "italic": false,
+        "char_spacing_px": 0.0,
+        "color": "#000000",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "line_spacing_multiple": 1.0,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "INVESTMENT"
+      ],
+      "bullet_style": null,
+      "semantic_role": "heading_large",
+      "parent_id": null,
+      "z": 20.0
+    },
+    {
+      "id": "investment-note",
+      "kind": "textbox",
+      "bbox_px": [
+        620,
+        584,
+        485,
+        36
+      ],
+      "text": "Remaining implementation after the pilot $60k.",
+      "style": {
+        "font_family": "Arial",
+        "font_size_px": 21.0,
+        "font_size_pt": 10.5,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1497,38 +1274,115 @@
           2.0,
           2.0
         ],
-        "line_spacing_multiple": 1.1,
+        "line_spacing_multiple": 1.0,
         "paragraph_spacing_px": 0,
         "autofit": "none",
         "outer_geometry_is_fixed": true
       },
       "paragraphs": [
-        "Remaining implementation",
-        "after the pilot $60k."
+        "Remaining implementation after the pilot $60k."
       ],
       "bullet_style": null,
-      "semantic_role": "remaining-investment",
+      "semantic_role": "body",
       "parent_id": null,
       "z": 20.0
     },
     {
-      "id": "criterion-heading-0",
+      "id": "sensitivity-heading",
       "kind": "textbox",
       "bbox_px": [
-        131,
-        688,
-        437,
-        48
+        1135,
+        259,
+        738,
+        38
       ],
-      "text": "GO",
+      "text": "FIRST-YEAR SENSITIVITY · 50% RAMP",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
+        "font_size_px": 27.0,
+        "font_size_pt": 13.5,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
         "color": "#000000",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "line_spacing_multiple": 1.0,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "FIRST-YEAR SENSITIVITY · 50% RAMP"
+      ],
+      "bullet_style": null,
+      "semantic_role": "heading_large",
+      "parent_id": null,
+      "z": 20.0
+    },
+    {
+      "id": "criteria-heading",
+      "kind": "textbox",
+      "bbox_px": [
+        46,
+        654,
+        900,
+        36
+      ],
+      "text": "DECISION CRITERIA",
+      "style": {
+        "font_family": "Arial",
+        "font_size_px": 27.0,
+        "font_size_pt": 13.5,
+        "font_weight": "bold",
+        "italic": false,
+        "char_spacing_px": 0.0,
+        "color": "#000000",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "line_spacing_multiple": 1.0,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "DECISION CRITERIA"
+      ],
+      "bullet_style": null,
+      "semantic_role": "heading_large",
+      "parent_id": null,
+      "z": 20.0
+    },
+    {
+      "id": "criterion-label-go",
+      "kind": "textbox",
+      "bbox_px": [
+        216,
+        716,
+        180,
+        40
+      ],
+      "text": "GO",
+      "style": {
+        "font_family": "Arial",
+        "font_size_px": 27.0,
+        "font_size_pt": 13.5,
+        "font_weight": "bold",
+        "italic": false,
+        "char_spacing_px": 0.0,
+        "color": "#FD5108",
         "alignment": "left",
         "vertical_alignment": "top",
         "margins_px": [
@@ -1546,24 +1400,24 @@
         "GO"
       ],
       "bullet_style": null,
-      "semantic_role": "criterion-heading-0",
+      "semantic_role": "heading_large",
       "parent_id": null,
       "z": 20.0
     },
     {
-      "id": "criterion-body-0",
+      "id": "criterion-body-go",
       "kind": "textbox",
       "bbox_px": [
-        131,
-        740,
-        491,
-        91
+        216,
+        762,
+        390,
+        65
       ],
       "text": "All four gates hold.\nPractice lead owns rollout.",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
+        "font_size_px": 22.0,
+        "font_size_pt": 11.0,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1576,7 +1430,7 @@
           2.0,
           2.0
         ],
-        "line_spacing_multiple": 1.35,
+        "line_spacing_multiple": 1.15,
         "paragraph_spacing_px": 0,
         "autofit": "none",
         "outer_geometry_is_fixed": true
@@ -1586,28 +1440,28 @@
         "Practice lead owns rollout."
       ],
       "bullet_style": null,
-      "semantic_role": "criterion-body-0",
+      "semantic_role": "body",
       "parent_id": null,
       "z": 20.0
     },
     {
-      "id": "criterion-heading-1",
+      "id": "criterion-label-hold",
       "kind": "textbox",
       "bbox_px": [
-        752,
-        688,
-        437,
-        48
+        825,
+        716,
+        180,
+        40
       ],
       "text": "HOLD",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
+        "font_size_px": 27.0,
+        "font_size_pt": 13.5,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
-        "color": "#000000",
+        "color": "#FD5108",
         "alignment": "left",
         "vertical_alignment": "top",
         "margins_px": [
@@ -1625,24 +1479,24 @@
         "HOLD"
       ],
       "bullet_style": null,
-      "semantic_role": "criterion-heading-1",
+      "semantic_role": "heading_large",
       "parent_id": null,
       "z": 20.0
     },
     {
-      "id": "criterion-body-1",
+      "id": "criterion-body-hold",
       "kind": "textbox",
       "bbox_px": [
-        752,
-        740,
-        491,
-        91
+        825,
+        762,
+        390,
+        65
       ],
       "text": "Evidence or usage is weak.\nExtend within an agreed cap.",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
+        "font_size_px": 22.0,
+        "font_size_pt": 11.0,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1655,7 +1509,7 @@
           2.0,
           2.0
         ],
-        "line_spacing_multiple": 1.35,
+        "line_spacing_multiple": 1.15,
         "paragraph_spacing_px": 0,
         "autofit": "none",
         "outer_geometry_is_fixed": true
@@ -1665,28 +1519,28 @@
         "Extend within an agreed cap."
       ],
       "bullet_style": null,
-      "semantic_role": "criterion-body-1",
+      "semantic_role": "body",
       "parent_id": null,
       "z": 20.0
     },
     {
-      "id": "criterion-heading-2",
+      "id": "criterion-label-stop",
       "kind": "textbox",
       "bbox_px": [
-        1380,
-        688,
-        437,
-        48
+        1434,
+        716,
+        180,
+        40
       ],
       "text": "STOP",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
+        "font_size_px": 27.0,
+        "font_size_pt": 13.5,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
-        "color": "#000000",
+        "color": "#FD5108",
         "alignment": "left",
         "vertical_alignment": "top",
         "margins_px": [
@@ -1704,24 +1558,24 @@
         "STOP"
       ],
       "bullet_style": null,
-      "semantic_role": "criterion-heading-2",
+      "semantic_role": "heading_large",
       "parent_id": null,
       "z": 20.0
     },
     {
-      "id": "criterion-body-2",
+      "id": "criterion-body-stop",
       "kind": "textbox",
       "bbox_px": [
-        1380,
-        740,
-        491,
-        91
+        1434,
+        762,
+        390,
+        65
       ],
       "text": "A critical data control fails.\nSuspend use and close the issue.",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 28.0,
-        "font_size_pt": 14.0,
+        "font_size_px": 22.0,
+        "font_size_pt": 11.0,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1734,7 +1588,7 @@
           2.0,
           2.0
         ],
-        "line_spacing_multiple": 1.35,
+        "line_spacing_multiple": 1.15,
         "paragraph_spacing_px": 0,
         "autofit": "none",
         "outer_geometry_is_fixed": true
@@ -1744,7 +1598,7 @@
         "Suspend use and close the issue."
       ],
       "bullet_style": null,
-      "semantic_role": "criterion-body-2",
+      "semantic_role": "body",
       "parent_id": null,
       "z": 20.0
     },
@@ -1752,10 +1606,10 @@
       "id": "decision-label",
       "kind": "textbox",
       "bbox_px": [
-        100,
-        896,
-        420,
-        52
+        80,
+        917,
+        430,
+        50
       ],
       "text": "APPROVE $25k NOW",
       "style": {
@@ -1783,7 +1637,7 @@
         "APPROVE $25k NOW"
       ],
       "bullet_style": null,
-      "semantic_role": "decision-label",
+      "semantic_role": "call_to_action",
       "parent_id": null,
       "z": 20.0
     },
@@ -1791,10 +1645,10 @@
       "id": "decision-message",
       "kind": "textbox",
       "bbox_px": [
-        560,
-        896,
-        1265,
-        52
+        520,
+        917,
+        1318,
+        50
       ],
       "text": "Release the remaining $60k only after the week-12 gate.",
       "style": {
@@ -1822,9 +1676,72 @@
         "Release the remaining $60k only after the week-12 gate."
       ],
       "bullet_style": null,
-      "semantic_role": "decision-message",
+      "semantic_role": "call_to_action",
       "parent_id": null,
       "z": 20.0
+    },
+    {
+      "id": "criterion-icon-go",
+      "kind": "image",
+      "bbox_px": [
+        80,
+        723,
+        86,
+        86
+      ],
+      "source_path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/play-circle/remix-play-circle-line.svg",
+      "recolor": "#000000",
+      "recolor_gradient": null,
+      "recolor_mode": "fill_all",
+      "icon_treatment_group": "decision-criteria-icons",
+      "icon_treatment": "black_proxy",
+      "selected_asset_id": "remix-play-circle-line",
+      "fit": "contain",
+      "preserve_aspect_ratio": true,
+      "semantic_role": "supporting_visual",
+      "z": 30.0
+    },
+    {
+      "id": "criterion-icon-hold",
+      "kind": "image",
+      "bbox_px": [
+        689,
+        723,
+        86,
+        86
+      ],
+      "source_path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/pause-circle/remix-pause-circle-line.svg",
+      "recolor": "#000000",
+      "recolor_gradient": null,
+      "recolor_mode": "fill_all",
+      "icon_treatment_group": "decision-criteria-icons",
+      "icon_treatment": "black_proxy",
+      "selected_asset_id": "remix-pause-circle-line",
+      "fit": "contain",
+      "preserve_aspect_ratio": true,
+      "semantic_role": "supporting_visual",
+      "z": 30.0
+    },
+    {
+      "id": "criterion-icon-stop",
+      "kind": "image",
+      "bbox_px": [
+        1298,
+        723,
+        86,
+        86
+      ],
+      "source_path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/stop-circle/remix-stop-circle-line.svg",
+      "recolor": "#000000",
+      "recolor_gradient": null,
+      "recolor_mode": "fill_all",
+      "icon_treatment_group": "decision-criteria-icons",
+      "icon_treatment": "black_proxy",
+      "selected_asset_id": "remix-stop-circle-line",
+      "fit": "contain",
+      "preserve_aspect_ratio": true,
+      "semantic_role": "supporting_visual",
+      "z": 30.0
     }
   ],
   "frame": {
@@ -1872,28 +1789,31 @@
     "slide_number": 1
   },
   "sources": [
-    "Generated target visual: /Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s05-investment-decision/work/accepted-slide.png"
+    "Generated target visual: /private/tmp/.slidepoise-rebuild-jkaybi9w/slides/s05-investment-decision/work/accepted-slide.png",
+    "Canonical asset remix-play-circle-line: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/play-circle/remix-play-circle-line.svg",
+    "Canonical asset remix-pause-circle-line: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/pause-circle/remix-pause-circle-line.svg",
+    "Canonical asset remix-stop-circle-line: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/stop-circle/remix-stop-circle-line.svg"
   ],
   "compiler_report": {
-    "measured_entity_count": 39,
-    "emitted_object_count": 39,
+    "measured_entity_count": 33,
+    "emitted_object_count": 33,
     "evidence_objects_emitted": 0,
     "measurement": {
       "engine": "OpenCV",
       "opencv": "5.0.0"
     },
     "connector_graph_count": 0,
-    "canonical_asset_count": 0,
+    "canonical_asset_count": 3,
     "text_fitting": {
       "source": "constructor_text_fit_evidence",
-      "fitted_textbox_count": 30,
+      "fitted_textbox_count": 20,
       "quantization_step_pt": 0.5,
       "all_textboxes_fit_within_allocations": true,
       "peer_typography_preserved": true,
       "text_groups": [
         {
           "typography_group": "claim-title",
-          "semantic_role": "headline",
+          "semantic_role": "slide_title",
           "text_style_role": "slide_title",
           "member_ids": [
             "headline"
@@ -1940,24 +1860,22 @@
           "overflow_evidence": "no_overflow_detected_by_text_measurement"
         },
         {
-          "typography_group": "section-headings",
-          "semantic_role": "capacity-heading",
+          "typography_group": "section",
+          "semantic_role": "heading_large",
           "text_style_role": "heading_large",
           "member_ids": [
             "capacity-heading",
             "investment-heading",
             "sensitivity-heading",
-            "criterion-heading-0",
-            "criterion-heading-1",
-            "criterion-heading-2"
+            "criteria-heading"
           ],
-          "shared_font_size_pt": 14.0,
-          "shared_font_size_px": 28.0,
-          "agent_target_font_size_px": 28.0,
+          "shared_font_size_pt": 13.5,
+          "shared_font_size_px": 27.0,
+          "agent_target_font_size_px": 27.0,
           "explicit_peer_group": true,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 14.0,
-          "agent_target_unquantized_pt": 14.0,
+          "agent_target_ceiling_pt": 13.5,
+          "agent_target_unquantized_pt": 13.5,
           "quantization_reduction_pt": 0,
           "reduced_from_agent_target": false,
           "reduced_for_fit": false,
@@ -1966,166 +1884,214 @@
             "capacity-heading": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
             "investment-heading": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
             "sensitivity-heading": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
-            "criterion-heading-0": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
-            "criterion-heading-1": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
-            "criterion-heading-2": "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
+            "criteria-heading": "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
           },
           "profile_adjustments": {},
           "overflow_evidence": "no_overflow_detected_by_text_measurement"
         },
         {
-          "typography_group": "formula-terms",
-          "semantic_role": "capacity-term-0",
-          "text_style_role": "body",
+          "typography_group": "equation",
+          "semantic_role": "large_data_number",
+          "text_style_role": "large_data_number",
           "member_ids": [
-            "capacity-term-0",
-            "capacity-term-1",
-            "capacity-term-2",
-            "capacity-term-3",
-            "capacity-term-4",
-            "capacity-term-5",
-            "capacity-term-6",
-            "capacity-term-7",
-            "capacity-valuation"
+            "capacity-equation"
           ],
-          "shared_font_size_pt": 14.0,
-          "shared_font_size_px": 28.0,
-          "agent_target_font_size_px": 28.0,
-          "explicit_peer_group": true,
+          "shared_font_size_pt": 21.5,
+          "shared_font_size_px": 43.0,
+          "agent_target_font_size_px": 43.0,
+          "explicit_peer_group": false,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 14.0,
-          "agent_target_unquantized_pt": 14.0,
+          "agent_target_ceiling_pt": 21.5,
+          "agent_target_unquantized_pt": 21.5,
           "quantization_reduction_pt": 0,
           "reduced_from_agent_target": false,
           "reduced_for_fit": false,
           "members_not_fitting_target": [],
           "font_measurement_sources": {
-            "capacity-term-0": "/System/Library/Fonts/Supplemental/Arial.ttf",
-            "capacity-term-1": "/System/Library/Fonts/Supplemental/Arial.ttf",
-            "capacity-term-2": "/System/Library/Fonts/Supplemental/Arial.ttf",
-            "capacity-term-3": "/System/Library/Fonts/Supplemental/Arial.ttf",
-            "capacity-term-4": "/System/Library/Fonts/Supplemental/Arial.ttf",
-            "capacity-term-5": "/System/Library/Fonts/Supplemental/Arial.ttf",
-            "capacity-term-6": "/System/Library/Fonts/Supplemental/Arial.ttf",
-            "capacity-term-7": "/System/Library/Fonts/Supplemental/Arial.ttf",
-            "capacity-valuation": "/System/Library/Fonts/Supplemental/Arial.ttf"
+            "capacity-equation": "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
           },
           "profile_adjustments": {},
           "overflow_evidence": "no_overflow_detected_by_text_measurement"
         },
         {
-          "typography_group": "formula-results",
-          "semantic_role": "capacity-result",
+          "typography_group": "labels",
+          "semantic_role": "body",
           "text_style_role": "body",
           "member_ids": [
-            "capacity-result",
+            "capacity-labels"
+          ],
+          "shared_font_size_pt": 9.5,
+          "shared_font_size_px": 19.0,
+          "agent_target_font_size_px": 19.0,
+          "explicit_peer_group": false,
+          "technical_floor_pt": 0.5,
+          "agent_target_ceiling_pt": 9.5,
+          "agent_target_unquantized_pt": 9.5,
+          "quantization_reduction_pt": 0,
+          "reduced_from_agent_target": false,
+          "reduced_for_fit": false,
+          "members_not_fitting_target": [],
+          "font_measurement_sources": {
+            "capacity-labels": "/System/Library/Fonts/Supplemental/Arial.ttf"
+          },
+          "profile_adjustments": {},
+          "overflow_evidence": "no_overflow_detected_by_text_measurement"
+        },
+        {
+          "typography_group": "calculation",
+          "semantic_role": "body",
+          "text_style_role": "body",
+          "member_ids": [
             "capacity-value"
           ],
-          "shared_font_size_pt": 14.0,
-          "shared_font_size_px": 28.0,
-          "agent_target_font_size_px": 28.0,
-          "explicit_peer_group": true,
+          "shared_font_size_pt": 13.5,
+          "shared_font_size_px": 27.0,
+          "agent_target_font_size_px": 27.0,
+          "explicit_peer_group": false,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 14.0,
-          "agent_target_unquantized_pt": 14.0,
+          "agent_target_ceiling_pt": 13.5,
+          "agent_target_unquantized_pt": 13.5,
           "quantization_reduction_pt": 0,
           "reduced_from_agent_target": false,
           "reduced_for_fit": false,
           "members_not_fitting_target": [],
           "font_measurement_sources": {
-            "capacity-result": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
-            "capacity-value": "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
+            "capacity-value": "/System/Library/Fonts/Supplemental/Arial.ttf"
           },
           "profile_adjustments": {},
           "overflow_evidence": "no_overflow_detected_by_text_measurement"
         },
         {
-          "typography_group": "formula-annotations",
-          "semantic_role": "capacity-term-label-0",
-          "text_style_role": "label",
+          "typography_group": "display-data",
+          "semantic_role": "large_data_number",
+          "text_style_role": "large_data_number",
           "member_ids": [
-            "capacity-term-label-0",
-            "capacity-term-label-1",
-            "capacity-term-label-2",
-            "capacity-term-label-3"
+            "capacity-value-number"
           ],
-          "shared_font_size_pt": 12.0,
-          "shared_font_size_px": 24.0,
-          "agent_target_font_size_px": 24.0,
-          "explicit_peer_group": true,
+          "shared_font_size_pt": 23.5,
+          "shared_font_size_px": 47.0,
+          "agent_target_font_size_px": 47.0,
+          "explicit_peer_group": false,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 12.0,
-          "agent_target_unquantized_pt": 12.0,
+          "agent_target_ceiling_pt": 23.5,
+          "agent_target_unquantized_pt": 23.5,
           "quantization_reduction_pt": 0,
           "reduced_from_agent_target": false,
           "reduced_for_fit": false,
           "members_not_fitting_target": [],
           "font_measurement_sources": {
-            "capacity-term-label-0": "/System/Library/Fonts/Supplemental/Arial.ttf",
-            "capacity-term-label-1": "/System/Library/Fonts/Supplemental/Arial.ttf",
-            "capacity-term-label-2": "/System/Library/Fonts/Supplemental/Arial.ttf",
-            "capacity-term-label-3": "/System/Library/Fonts/Supplemental/Arial.ttf"
+            "capacity-value-number": "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
           },
           "profile_adjustments": {},
           "overflow_evidence": "no_overflow_detected_by_text_measurement"
         },
         {
-          "typography_group": "body-copy",
-          "semantic_role": "capacity-equivalent",
+          "typography_group": "caption",
+          "semantic_role": "body",
           "text_style_role": "body",
           "member_ids": [
-            "capacity-equivalent",
-            "remaining-investment"
+            "capacity-caption"
           ],
-          "shared_font_size_pt": 14.0,
-          "shared_font_size_px": 28.0,
-          "agent_target_font_size_px": 28.0,
-          "explicit_peer_group": true,
+          "shared_font_size_pt": 11.0,
+          "shared_font_size_px": 22.0,
+          "agent_target_font_size_px": 22.0,
+          "explicit_peer_group": false,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 14.0,
-          "agent_target_unquantized_pt": 14.0,
+          "agent_target_ceiling_pt": 11.0,
+          "agent_target_unquantized_pt": 11.0,
           "quantization_reduction_pt": 0,
           "reduced_from_agent_target": false,
           "reduced_for_fit": false,
           "members_not_fitting_target": [],
           "font_measurement_sources": {
-            "capacity-equivalent": "/System/Library/Fonts/Supplemental/Arial.ttf",
-            "remaining-investment": "/System/Library/Fonts/Supplemental/Arial.ttf"
+            "capacity-caption": "/System/Library/Fonts/Supplemental/Arial.ttf"
+          },
+          "profile_adjustments": {},
+          "overflow_evidence": "no_overflow_detected_by_text_measurement"
+        },
+        {
+          "typography_group": "note",
+          "semantic_role": "body",
+          "text_style_role": "body",
+          "member_ids": [
+            "investment-note"
+          ],
+          "shared_font_size_pt": 10.5,
+          "shared_font_size_px": 21.0,
+          "agent_target_font_size_px": 21.0,
+          "explicit_peer_group": false,
+          "technical_floor_pt": 0.5,
+          "agent_target_ceiling_pt": 10.5,
+          "agent_target_unquantized_pt": 10.5,
+          "quantization_reduction_pt": 0,
+          "reduced_from_agent_target": false,
+          "reduced_for_fit": false,
+          "members_not_fitting_target": [],
+          "font_measurement_sources": {
+            "investment-note": "/System/Library/Fonts/Supplemental/Arial.ttf"
+          },
+          "profile_adjustments": {},
+          "overflow_evidence": "no_overflow_detected_by_text_measurement"
+        },
+        {
+          "typography_group": "criteria-labels",
+          "semantic_role": "heading_large",
+          "text_style_role": "heading_large",
+          "member_ids": [
+            "criterion-label-go",
+            "criterion-label-hold",
+            "criterion-label-stop"
+          ],
+          "shared_font_size_pt": 13.5,
+          "shared_font_size_px": 27.0,
+          "agent_target_font_size_px": 27.0,
+          "explicit_peer_group": true,
+          "technical_floor_pt": 0.5,
+          "agent_target_ceiling_pt": 13.5,
+          "agent_target_unquantized_pt": 13.5,
+          "quantization_reduction_pt": 0,
+          "reduced_from_agent_target": false,
+          "reduced_for_fit": false,
+          "members_not_fitting_target": [],
+          "font_measurement_sources": {
+            "criterion-label-go": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+            "criterion-label-hold": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+            "criterion-label-stop": "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
           },
           "profile_adjustments": {},
           "overflow_evidence": "no_overflow_detected_by_text_measurement"
         },
         {
           "typography_group": "criteria-body",
-          "semantic_role": "criterion-body-0",
+          "semantic_role": "body",
           "text_style_role": "body",
           "member_ids": [
-            "criterion-body-0",
-            "criterion-body-1",
-            "criterion-body-2"
+            "criterion-body-go",
+            "criterion-body-hold",
+            "criterion-body-stop"
           ],
-          "shared_font_size_pt": 14.0,
-          "shared_font_size_px": 28.0,
-          "agent_target_font_size_px": 28.0,
+          "shared_font_size_pt": 11.0,
+          "shared_font_size_px": 22.0,
+          "agent_target_font_size_px": 22.0,
           "explicit_peer_group": true,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 14.0,
-          "agent_target_unquantized_pt": 14.0,
+          "agent_target_ceiling_pt": 11.0,
+          "agent_target_unquantized_pt": 11.0,
           "quantization_reduction_pt": 0,
           "reduced_from_agent_target": false,
           "reduced_for_fit": false,
           "members_not_fitting_target": [],
           "font_measurement_sources": {
-            "criterion-body-0": "/System/Library/Fonts/Supplemental/Arial.ttf",
-            "criterion-body-1": "/System/Library/Fonts/Supplemental/Arial.ttf",
-            "criterion-body-2": "/System/Library/Fonts/Supplemental/Arial.ttf"
+            "criterion-body-go": "/System/Library/Fonts/Supplemental/Arial.ttf",
+            "criterion-body-hold": "/System/Library/Fonts/Supplemental/Arial.ttf",
+            "criterion-body-stop": "/System/Library/Fonts/Supplemental/Arial.ttf"
           },
           "profile_adjustments": {},
           "overflow_evidence": "no_overflow_detected_by_text_measurement"
         },
         {
-          "typography_group": "decision-band",
-          "semantic_role": "decision-label",
+          "typography_group": "decision",
+          "semantic_role": "call_to_action",
           "text_style_role": "call_to_action",
           "member_ids": [
             "decision-label",
@@ -2169,14 +2135,14 @@
         "offset_y_px": 64
       },
       "required_counts": {
-        "text_entities": 30,
-        "canonical_assets": 0,
+        "text_entities": 20,
+        "canonical_assets": 3,
         "icon_slot_surfaces": 0,
         "connector_graphs": 0
       },
       "emitted_counts": {
-        "text_entities": 30,
-        "canonical_assets": 0,
+        "text_entities": 20,
+        "canonical_assets": 3,
         "icon_slot_surfaces": 0,
         "connector_graphs": 0
       },
@@ -2185,9 +2151,9 @@
       "note": "No quality or reconstruction verdict is produced. Visual reasoning remains external."
     },
     "input_bindings": {
-      "measured_scene_sha256": "71946977f21fde73507bcc5f66dbc729522d85dba8541b67beb5f7ab4b4a13ed",
-      "reconstruction_contract_sha256": "6a5a902f034d67331137f64a6c0411c6e2395ed4a66a21f823d449b4b474e7c2",
-      "resolved_design_sha256": "fac4997b811d28f405f80edd555ee0916740324cbf1180b8f752a38c67775760"
+      "measured_scene_sha256": "019e00695efe125cf6c9ea61f352012d0ef2cc6c8e1915087742e24736148cdf",
+      "reconstruction_contract_sha256": "70585c5d02aff45513a49c4dad475f2f77e0de47dd10cd49f5432f5e964a92d1",
+      "resolved_design_sha256": "ee255d93bab18eea1c3d44524732402c57d708a2a01e8270dec54f3fa8c2c88f"
     }
   }
 }

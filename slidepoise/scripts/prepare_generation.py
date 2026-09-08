@@ -337,6 +337,7 @@ def build_contract(config: dict[str, Any], intent: dict[str, Any], resources: di
         "resources": {
             "style_context": resources.get("style_context"),
             "style_direction": resources.get("style_direction", {}),
+            "selection_reasoning": resources.get("selection_reasoning", {}),
             "selected_visual_references": resources.get("selected_visual_references", []),
             "selected_assets": resources.get("selected_assets", []),
             "generation_asset_descriptions": asset_descriptions,
@@ -356,6 +357,27 @@ def build_contract(config: dict[str, Any], intent: dict[str, Any], resources: di
     return contract
 
 
+def generation_resource_projection(resources: dict[str, Any]) -> dict[str, Any]:
+    """Return the information the image model needs without file and provenance duplication."""
+    references = [
+        {key: item.get(key) for key in ("id", "reason") if item.get(key) is not None}
+        for item in resources.get("selected_visual_references", [])
+    ]
+    components = []
+    for item in resources.get("selected_components", []):
+        components.append({
+            key: value for key, value in item.items()
+            if key not in {"canonical_file", "preview_file", "source", "native_source_slide_number"}
+        })
+    return {
+        "style_direction": resources.get("style_direction", {}),
+        "selection_reasoning": resources.get("selection_reasoning", {}),
+        "selected_visual_references": references,
+        "generation_asset_descriptions": resources.get("generation_asset_descriptions", []),
+        "selected_components": components,
+    }
+
+
 def build_brief(contract: dict[str, Any]) -> str:
     """Project visual instructions once, without host workflow or evidence bookkeeping.
 
@@ -366,13 +388,19 @@ def build_brief(contract: dict[str, Any]) -> str:
         "canvas", "communication_intent", "user_language", "composition_freedom",
     )}
     # These requirements already occur verbatim in the complete communication intent.
-    payload["non_negotiable_design"] = {key: value for key, value in contract["non_negotiable_design"].items()
-                                         if key != "explicit_user_visual_requirements"}
+    duplicated_design_fields = {"explicit_user_visual_requirements", "semantic_style_tokens", "data_visualization"}
+    payload["non_negotiable_design"] = {
+        key: value for key, value in contract["non_negotiable_design"].items()
+        if key not in duplicated_design_fields
+    }
     # Agent reasoning, reference selection and review belong in the host's contract.
-    host_profile_fields = {"reasoning_principles", "review_questions", "visual_reference_priorities", "resolution_precedence"}
+    host_profile_fields = {
+        "reasoning_principles", "review_questions", "visual_reference_priorities", "resolution_precedence",
+        "writing_principles", "anti_patterns", "purpose",
+    }
     payload["profile"] = {key: value for key, value in contract["profile"].items() if key not in host_profile_fields}
     # The style-context fingerprint duplicates the resolved design and profile below.
-    payload["resources"] = {key: value for key, value in contract["resources"].items() if key != "style_context"}
+    payload["resources"] = generation_resource_projection(contract["resources"])
     if contract.get("deck_design"):
         payload["deck_design"] = contract["deck_design"]["content"]
     instructions = [
@@ -545,7 +573,10 @@ def main() -> None:
         if not context_path.is_file():
             raise SystemExit("Generation context sheet is missing. Run prepare_resource_context.py first.")
     brief = build_brief(contract)
-    validate_prompt_capacity(brief, args.max_prompt_chars)
+    configured_maximum = ((config.get("generation") or {}).get("host_adapter") or {}).get("max_prompt_chars")
+    limits = [value for value in (args.max_prompt_chars, configured_maximum) if value is not None]
+    maximum_prompt_chars = min(limits) if limits else None
+    validate_prompt_capacity(brief, maximum_prompt_chars)
     request_path = args.request or args.contract.with_name("generation-request.json")
     inputs = {name: getattr(args, name) for name in ("config", "intent", "resources")}
     if args.deck_design:
@@ -560,7 +591,7 @@ def main() -> None:
     write_json(args.contract, contract)
     args.brief.write_text(brief, encoding="utf-8")
     write_json(request_path, build_request(contract, inputs={**inputs, "contract": args.contract, "brief": args.brief},
-                                           max_prompt_chars=args.max_prompt_chars))
+                                           max_prompt_chars=maximum_prompt_chars))
     print(json.dumps({
         "contract": str(args.contract.resolve()),
         "brief": str(args.brief.resolve()),

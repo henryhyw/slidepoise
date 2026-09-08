@@ -4,8 +4,8 @@
   "subtitle": "A controlled pilot, an accountable decision.",
   "style": "Consulting",
   "label": "Consulting",
-  "revision": 3,
-  "summary": "A sample strategy presentation connecting an AI pilot to priorities, accountability and an investment decision.",
+  "revision": 4,
+  "summary": "A sample strategy presentation that connects an AI pilot to priorities, controls, delivery and investment.",
   "note": "Northstar Advisory is fictional. The figures are illustrative planning assumptions.",
   "slides": [
     {
@@ -95,7 +95,7 @@
     },
     {
       "title": "Explore the content area",
-      "description": "One compiled brief carries the argument and shared design into a 2:1 body image. The PowerPoint adds the common frame.",
+      "description": "The compiled brief carries the argument, shared design and selected visual assets into a 2:1 content image. PowerPoint adds the common frame later.",
       "artifact": "assets/s02-opportunities-target.png"
     },
     {
@@ -110,7 +110,7 @@
     },
     {
       "title": "Construct the native page",
-      "description": "A compiled scene preserves the chart data, table cells, text and geometry through the packaged PowerPoint renderer.",
+      "description": "A compiled scene preserves the chart data, table cells, text and geometry, then restores the selected icons from their canonical SVG files.",
       "artifact": "run/slides/s02-opportunities/work/reconstruction/constructor-scene.json"
     },
     {

@@ -10,36 +10,36 @@
   "source": {
     "pptx": {
       "path": "deliverables/presentation.pptx",
-      "sha256": "aec72faebe53cdaf2c0820391eadd344d34b3f5de4927e7c3a0444ff8f40ca9b"
+      "sha256": "144791ea004117d3e65ce944e93f02a1c721cc38eb3b1c8214ec25095ee2790d"
     },
     "render": {
       "path": "assets/s02-opportunities-render.png",
-      "sha256": "58527f660f12c23421c096e18cec4e79acfce371957a99010108725a74456c38"
+      "sha256": "fae91eef16ff0387afe6346f16b2827cbb3b75dc061482351145de7c844be5c4"
     }
   },
   "objects": [
     {
       "id": "p2-object-1",
       "native_id": "2",
-      "name": "introduction-rule",
-      "label": "Introduction rule",
+      "name": "formula-strip",
+      "label": "Formula strip",
       "kind": "shape",
       "polygon": [
         [
-          0.025,
-          0.212037037
+          0.395833333,
+          0.459259259
         ],
         [
-          0.975,
-          0.212037037
+          0.973958333,
+          0.459259259
         ],
         [
-          0.975,
-          0.213888889
+          0.973958333,
+          0.514814815
         ],
         [
-          0.025,
-          0.213888889
+          0.395833333,
+          0.514814815
         ]
       ],
       "stack": 0
@@ -47,25 +47,25 @@
     {
       "id": "p2-object-2",
       "native_id": "3",
-      "name": "reason-divider-1",
-      "label": "Reason divider 1",
+      "name": "decision-band",
+      "label": "Decision band",
       "kind": "shape",
       "polygon": [
         [
-          0.719791667,
-          0.408333333
+          0.023958333,
+          0.832407407
         ],
         [
-          0.980208333,
-          0.408333333
+          0.976041667,
+          0.832407407
         ],
         [
-          0.980208333,
-          0.409259259
+          0.976041667,
+          0.918518519
         ],
         [
-          0.719791667,
-          0.409259259
+          0.023958333,
+          0.918518519
         ]
       ],
       "stack": 1
@@ -73,25 +73,25 @@
     {
       "id": "p2-object-3",
       "native_id": "4",
-      "name": "reason-divider-2",
-      "label": "Reason divider 2",
+      "name": "decision-accent",
+      "label": "Decision accent",
       "kind": "shape",
       "polygon": [
         [
-          0.719791667,
-          0.548148148
+          0.023958333,
+          0.832407407
         ],
         [
-          0.980208333,
-          0.548148148
+          0.028125,
+          0.832407407
         ],
         [
-          0.980208333,
-          0.549074074
+          0.028125,
+          0.918518519
         ],
         [
-          0.719791667,
-          0.549074074
+          0.023958333,
+          0.918518519
         ]
       ],
       "stack": 2
@@ -99,106 +99,28 @@
     {
       "id": "p2-object-4",
       "native_id": "5",
-      "name": "overlap-note-panel",
-      "label": "Overlap note panel",
-      "kind": "shape",
-      "polygon": [
-        [
-          0.719791667,
-          0.690740741
-        ],
-        [
-          0.980208333,
-          0.690740741
-        ],
-        [
-          0.980208333,
-          0.775925926
-        ],
-        [
-          0.719791667,
-          0.775925926
-        ]
-      ],
-      "stack": 3
-    },
-    {
-      "id": "p2-object-5",
-      "native_id": "6",
-      "name": "decision-band",
-      "label": "Decision band",
-      "kind": "shape",
-      "polygon": [
-        [
-          0.025,
-          0.793518519
-        ],
-        [
-          0.975,
-          0.793518519
-        ],
-        [
-          0.975,
-          0.917592593
-        ],
-        [
-          0.025,
-          0.917592593
-        ]
-      ],
-      "stack": 4
-    },
-    {
-      "id": "p2-object-6",
-      "native_id": "7",
-      "name": "decision-accent",
-      "label": "Decision accent",
-      "kind": "shape",
-      "polygon": [
-        [
-          0.025,
-          0.793518519
-        ],
-        [
-          0.029166667,
-          0.793518519
-        ],
-        [
-          0.029166667,
-          0.917592593
-        ],
-        [
-          0.025,
-          0.917592593
-        ]
-      ],
-      "stack": 5
-    },
-    {
-      "id": "p2-object-7",
-      "native_id": "8",
       "name": "annual-capacity-chart",
       "label": "Annual capacity chart",
       "kind": "chart",
       "polygon": [
         [
-          0.016145833,
-          0.300925926
+          0.020833333,
+          0.267592593
         ],
         [
-          0.3390625,
-          0.300925926
+          0.364583333,
+          0.267592593
         ],
         [
-          0.3390625,
-          0.517592593
+          0.364583333,
+          0.536111111
         ],
         [
-          0.016145833,
-          0.517592593
+          0.020833333,
+          0.536111111
         ]
       ],
-      "stack": 6,
+      "stack": 3,
       "chart": {
         "types": [
           "barChart"
@@ -221,30 +143,30 @@
       }
     },
     {
-      "id": "p2-object-8",
-      "native_id": "9",
-      "name": "workflow-assumptions",
-      "label": "Workflow assumptions",
+      "id": "p2-object-5",
+      "native_id": "6",
+      "name": "value-model",
+      "label": "Value model",
       "kind": "table",
       "polygon": [
         [
-          0.0171875,
-          0.524074074
+          0.395833333,
+          0.246296296
         ],
         [
-          0.3203125,
-          0.524074074
+          0.973958333,
+          0.246296296
         ],
         [
-          0.3203125,
-          0.707407407
+          0.973958333,
+          0.459259259
         ],
         [
-          0.0171875,
-          0.707407407
+          0.395833333,
+          0.459259259
         ]
       ],
-      "stack": 7,
+      "stack": 4,
       "rows": [
         [
           "Workflow",
@@ -273,30 +195,30 @@
       ]
     },
     {
-      "id": "p2-object-9",
-      "native_id": "10",
+      "id": "p2-object-6",
+      "native_id": "7",
       "name": "pilot-sequencing",
       "label": "Pilot sequencing",
       "kind": "table",
       "polygon": [
         [
-          0.348958333,
-          0.294444444
+          0.395833333,
+          0.581481481
         ],
         [
-          0.693229167,
-          0.294444444
+          0.973958333,
+          0.581481481
         ],
         [
-          0.693229167,
-          0.762962963
+          0.973958333,
+          0.803703704
         ],
         [
-          0.348958333,
-          0.762962963
+          0.395833333,
+          0.803703704
         ]
       ],
-      "stack": 8,
+      "stack": 5,
       "rows": [
         [
           "Workflow",
@@ -305,50 +227,50 @@
           "Sequence"
         ],
         [
-          "Research\nsynthesis",
+          "Research synthesis",
           "Approved corpus\nExplicit review",
-          "Practice\nlead",
+          "Practice lead",
           "START"
         ],
         [
-          "Proposal\ndrafting",
-          "Claims and\ncommitments\nneed controls",
-          "BD\nlead",
+          "Proposal drafting",
+          "Claims and commitments\nneed controls",
+          "BD lead",
           "NEXT"
         ],
         [
-          "Knowledge\nretrieval",
+          "Knowledge retrieval",
           "Permissions need\ncleanup",
-          "Knowledge\nlead",
+          "Knowledge lead",
           "LATER"
         ]
       ]
     },
     {
-      "id": "p2-object-10",
-      "native_id": "11",
+      "id": "p2-object-7",
+      "native_id": "8",
       "name": "headline",
       "label": "Start where value and control readiness meet",
       "kind": "text",
       "polygon": [
         [
-          0.025,
-          0.076851852
+          0.023958333,
+          0.077777778
         ],
         [
-          0.975,
-          0.076851852
+          0.976041667,
+          0.077777778
         ],
         [
-          0.975,
-          0.150925926
+          0.976041667,
+          0.148148148
         ],
         [
-          0.025,
-          0.150925926
+          0.023958333,
+          0.148148148
         ]
       ],
-      "stack": 9,
+      "stack": 6,
       "text": "Start where value and control readiness meet",
       "typography": [
         {
@@ -359,30 +281,30 @@
       ]
     },
     {
-      "id": "p2-object-11",
-      "native_id": "12",
+      "id": "p2-object-8",
+      "native_id": "9",
       "name": "subtitle",
       "label": "Capacity creates the opportunity. Control readiness sets the sequence.",
       "kind": "text",
       "polygon": [
         [
-          0.025,
-          0.15462963
+          0.024479167,
+          0.152777778
         ],
         [
           0.975,
-          0.15462963
+          0.152777778
         ],
         [
           0.975,
-          0.199074074
+          0.197222222
         ],
         [
-          0.025,
-          0.199074074
+          0.024479167,
+          0.197222222
         ]
       ],
-      "stack": 10,
+      "stack": 7,
       "text": "Capacity creates the opportunity. Control readiness sets the sequence.",
       "typography": [
         {
@@ -393,35 +315,139 @@
       ]
     },
     {
-      "id": "p2-object-12",
-      "native_id": "13",
+      "id": "p2-object-9",
+      "native_id": "10",
       "name": "capacity-heading",
       "label": "ANNUAL CAPACITY POTENTIAL",
       "kind": "text",
       "polygon": [
         [
-          0.016666667,
-          0.237037037
+          0.019270833,
+          0.205555556
         ],
         [
-          0.339583333,
-          0.237037037
+          0.3734375,
+          0.205555556
         ],
         [
-          0.339583333,
-          0.275925926
+          0.3734375,
+          0.240740741
         ],
         [
-          0.016666667,
-          0.275925926
+          0.019270833,
+          0.240740741
         ]
       ],
-      "stack": 11,
+      "stack": 8,
       "text": "ANNUAL CAPACITY POTENTIAL",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 14.0,
+          "size_pt": 13.5,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p2-object-10",
+      "native_id": "11",
+      "name": "chart-unit",
+      "label": "Illustrative hours",
+      "kind": "text",
+      "polygon": [
+        [
+          0.019270833,
+          0.238888889
+        ],
+        [
+          0.175520833,
+          0.238888889
+        ],
+        [
+          0.175520833,
+          0.264814815
+        ],
+        [
+          0.019270833,
+          0.264814815
+        ]
+      ],
+      "stack": 9,
+      "text": "Illustrative hours",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 11.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p2-object-11",
+      "native_id": "12",
+      "name": "value-model-heading",
+      "label": "WORKFLOW VALUE MODEL",
+      "kind": "text",
+      "polygon": [
+        [
+          0.395833333,
+          0.205555556
+        ],
+        [
+          0.973958333,
+          0.205555556
+        ],
+        [
+          0.973958333,
+          0.240740741
+        ],
+        [
+          0.395833333,
+          0.240740741
+        ]
+      ],
+      "stack": 10,
+      "text": "WORKFLOW VALUE MODEL",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 13.5,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p2-object-12",
+      "native_id": "13",
+      "name": "capacity-formula",
+      "label": "Annual hours = 900 engagements × baseline h × adoption…",
+      "kind": "text",
+      "polygon": [
+        [
+          0.411458333,
+          0.466666667
+        ],
+        [
+          0.958333333,
+          0.466666667
+        ],
+        [
+          0.958333333,
+          0.507407407
+        ],
+        [
+          0.411458333,
+          0.507407407
+        ]
+      ],
+      "stack": 11,
+      "text": "Annual hours = 900 engagements × baseline h × adoption × time saved",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 12.0,
           "color": "#000000",
           "bold": true
         }
@@ -430,33 +456,33 @@
     {
       "id": "p2-object-13",
       "native_id": "14",
-      "name": "sequencing-heading",
-      "label": "PILOT SEQUENCING TEST",
+      "name": "reason-heading",
+      "label": "WHY RESEARCH WINS FIRST",
       "kind": "text",
       "polygon": [
         [
-          0.348958333,
-          0.237037037
+          0.019270833,
+          0.551851852
         ],
         [
-          0.693229167,
-          0.237037037
+          0.3734375,
+          0.551851852
         ],
         [
-          0.693229167,
-          0.275925926
+          0.3734375,
+          0.587037037
         ],
         [
-          0.348958333,
-          0.275925926
+          0.019270833,
+          0.587037037
         ]
       ],
       "stack": 12,
-      "text": "PILOT SEQUENCING TEST",
+      "text": "WHY RESEARCH WINS FIRST",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 14.0,
+          "size_pt": 13.5,
           "color": "#000000",
           "bold": true
         }
@@ -465,64 +491,63 @@
     {
       "id": "p2-object-14",
       "native_id": "15",
-      "name": "reason-heading",
-      "label": "WHY RESEARCH WINS FIRST",
+      "name": "reason-file",
+      "label": "Frequent, comparable tasks",
       "kind": "text",
       "polygon": [
         [
-          0.719791667,
-          0.237037037
+          0.073958333,
+          0.599074074
         ],
         [
-          0.980208333,
-          0.237037037
+          0.355208333,
+          0.599074074
         ],
         [
-          0.980208333,
-          0.275925926
+          0.355208333,
+          0.636111111
         ],
         [
-          0.719791667,
-          0.275925926
+          0.073958333,
+          0.636111111
         ]
       ],
       "stack": 13,
-      "text": "WHY RESEARCH WINS FIRST",
+      "text": "Frequent, comparable tasks",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 14.0,
-          "color": "#000000",
-          "bold": true
+          "size_pt": 12.0,
+          "color": "#000000"
         }
       ]
     },
     {
       "id": "p2-object-15",
       "native_id": "16",
-      "name": "chart-unit",
-      "label": "Illustrative hours",
+      "name": "reason-corpus",
+      "label": "A bounded source corpus",
       "kind": "text",
       "polygon": [
         [
-          0.016666667,
-          0.269444444
+          0.073958333,
+          0.663888889
         ],
         [
-          0.339583333,
-          0.269444444
+          0.355208333,
+          0.663888889
         ],
         [
-          0.339583333,
-          0.302777778
+          0.355208333,
+          0.700925926
         ],
         [
-          0.016666667,
-          0.302777778
+          0.073958333,
+          0.700925926
         ]
       ],
       "stack": 14,
-      "text": "Illustrative hours",
+      "text": "A bounded source corpus",
       "typography": [
         {
           "family": "Arial",
@@ -534,33 +559,33 @@
     {
       "id": "p2-object-16",
       "native_id": "17",
-      "name": "capacity-formula",
-      "label": "Annual hours = 900 engagements × baseline h × adoption…",
+      "name": "reason-reviewer",
+      "label": "A named expert reviewer",
       "kind": "text",
       "polygon": [
         [
-          0.016666667,
-          0.713888889
+          0.073958333,
+          0.728703704
         ],
         [
-          0.340104167,
-          0.713888889
+          0.355208333,
+          0.728703704
         ],
         [
-          0.340104167,
-          0.787037037
+          0.355208333,
+          0.765740741
         ],
         [
-          0.016666667,
-          0.787037037
+          0.073958333,
+          0.765740741
         ]
       ],
       "stack": 15,
-      "text": "Annual hours = 900 engagements ×\nbaseline h × adoption × time saved",
+      "text": "A named expert reviewer",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 14.0,
+          "size_pt": 12.0,
           "color": "#000000"
         }
       ]
@@ -568,33 +593,33 @@
     {
       "id": "p2-object-17",
       "native_id": "18",
-      "name": "reason-number-01",
-      "label": "01",
+      "name": "sequencing-heading",
+      "label": "PILOT SEQUENCING TEST",
       "kind": "text",
       "polygon": [
         [
-          0.719270833,
-          0.297222222
+          0.395833333,
+          0.540740741
         ],
         [
-          0.756770833,
-          0.297222222
+          0.973958333,
+          0.540740741
         ],
         [
-          0.756770833,
-          0.358333333
+          0.973958333,
+          0.575925926
         ],
         [
-          0.719270833,
-          0.358333333
+          0.395833333,
+          0.575925926
         ]
       ],
       "stack": 16,
-      "text": "01",
+      "text": "PILOT SEQUENCING TEST",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 24.0,
+          "size_pt": 13.5,
           "color": "#000000",
           "bold": true
         }
@@ -603,339 +628,62 @@
     {
       "id": "p2-object-18",
       "native_id": "19",
-      "name": "reason-title-01",
-      "label": "Frequent, comparable tasks",
+      "name": "overlap-note",
+      "label": "Check task overlap before adding workflow benefits.",
       "kind": "text",
       "polygon": [
         [
-          0.766145833,
-          0.290740741
+          0.395833333,
+          0.806481481
         ],
         [
-          0.9890625,
-          0.290740741
+          0.838541667,
+          0.806481481
         ],
         [
-          0.9890625,
-          0.331481481
+          0.838541667,
+          0.834259259
         ],
         [
-          0.766145833,
-          0.331481481
+          0.395833333,
+          0.834259259
         ]
       ],
       "stack": 17,
-      "text": "Frequent, comparable tasks",
+      "text": "Check task overlap before adding workflow benefits.",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 14.0,
-          "color": "#000000",
-          "bold": true
+          "size_pt": 10.0,
+          "color": "#000000"
         }
       ]
     },
     {
       "id": "p2-object-19",
       "native_id": "20",
-      "name": "reason-detail-01",
-      "label": "Many engagements use the same research task.",
-      "kind": "text",
-      "polygon": [
-        [
-          0.766145833,
-          0.323148148
-        ],
-        [
-          0.989583333,
-          0.323148148
-        ],
-        [
-          0.989583333,
-          0.403703704
-        ],
-        [
-          0.766145833,
-          0.403703704
-        ]
-      ],
-      "stack": 18,
-      "text": "Many engagements use the\nsame research task.",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 14.0,
-          "color": "#000000"
-        }
-      ]
-    },
-    {
-      "id": "p2-object-20",
-      "native_id": "21",
-      "name": "reason-number-02",
-      "label": "02",
-      "kind": "text",
-      "polygon": [
-        [
-          0.719270833,
-          0.427777778
-        ],
-        [
-          0.756770833,
-          0.427777778
-        ],
-        [
-          0.756770833,
-          0.488888889
-        ],
-        [
-          0.719270833,
-          0.488888889
-        ]
-      ],
-      "stack": 19,
-      "text": "02",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 24.0,
-          "color": "#000000",
-          "bold": true
-        }
-      ]
-    },
-    {
-      "id": "p2-object-21",
-      "native_id": "22",
-      "name": "reason-title-02",
-      "label": "A bounded source corpus",
-      "kind": "text",
-      "polygon": [
-        [
-          0.766145833,
-          0.42962963
-        ],
-        [
-          0.9890625,
-          0.42962963
-        ],
-        [
-          0.9890625,
-          0.47037037
-        ],
-        [
-          0.766145833,
-          0.47037037
-        ]
-      ],
-      "stack": 20,
-      "text": "A bounded source corpus",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 14.0,
-          "color": "#000000",
-          "bold": true
-        }
-      ]
-    },
-    {
-      "id": "p2-object-22",
-      "native_id": "23",
-      "name": "reason-detail-02",
-      "label": "Approved sources limit scope and simplify review.",
-      "kind": "text",
-      "polygon": [
-        [
-          0.766145833,
-          0.462037037
-        ],
-        [
-          0.989583333,
-          0.462037037
-        ],
-        [
-          0.989583333,
-          0.542592593
-        ],
-        [
-          0.766145833,
-          0.542592593
-        ]
-      ],
-      "stack": 21,
-      "text": "Approved sources limit scope\nand simplify review.",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 14.0,
-          "color": "#000000"
-        }
-      ]
-    },
-    {
-      "id": "p2-object-23",
-      "native_id": "24",
-      "name": "reason-number-03",
-      "label": "03",
-      "kind": "text",
-      "polygon": [
-        [
-          0.719270833,
-          0.567592593
-        ],
-        [
-          0.756770833,
-          0.567592593
-        ],
-        [
-          0.756770833,
-          0.628703704
-        ],
-        [
-          0.719270833,
-          0.628703704
-        ]
-      ],
-      "stack": 22,
-      "text": "03",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 24.0,
-          "color": "#000000",
-          "bold": true
-        }
-      ]
-    },
-    {
-      "id": "p2-object-24",
-      "native_id": "25",
-      "name": "reason-title-03",
-      "label": "A named expert reviewer",
-      "kind": "text",
-      "polygon": [
-        [
-          0.766145833,
-          0.569444444
-        ],
-        [
-          0.9890625,
-          0.569444444
-        ],
-        [
-          0.9890625,
-          0.610185185
-        ],
-        [
-          0.766145833,
-          0.610185185
-        ]
-      ],
-      "stack": 23,
-      "text": "A named expert reviewer",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 14.0,
-          "color": "#000000",
-          "bold": true
-        }
-      ]
-    },
-    {
-      "id": "p2-object-25",
-      "native_id": "26",
-      "name": "reason-detail-03",
-      "label": "An accountable reviewer verifies outputs before client release.",
-      "kind": "text",
-      "polygon": [
-        [
-          0.766145833,
-          0.601851852
-        ],
-        [
-          0.989583333,
-          0.601851852
-        ],
-        [
-          0.989583333,
-          0.682407407
-        ],
-        [
-          0.766145833,
-          0.682407407
-        ]
-      ],
-      "stack": 24,
-      "text": "An accountable reviewer verifies\noutputs before client release.",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 14.0,
-          "color": "#000000"
-        }
-      ]
-    },
-    {
-      "id": "p2-object-26",
-      "native_id": "27",
-      "name": "overlap-qualification",
-      "label": "Check task overlap before adding workflow benefits.",
-      "kind": "text",
-      "polygon": [
-        [
-          0.729166667,
-          0.697222222
-        ],
-        [
-          0.971875,
-          0.697222222
-        ],
-        [
-          0.971875,
-          0.773148148
-        ],
-        [
-          0.729166667,
-          0.773148148
-        ]
-      ],
-      "stack": 25,
-      "text": "Check task overlap before adding\nworkflow benefits.",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 14.0,
-          "color": "#000000"
-        }
-      ]
-    },
-    {
-      "id": "p2-object-27",
-      "native_id": "28",
       "name": "decision-label",
       "label": "PILOT BOUNDARY",
       "kind": "text",
       "polygon": [
         [
-          0.052083333,
-          0.82962963
+          0.041666667,
+          0.849074074
         ],
         [
-          0.270833333,
-          0.82962963
+          0.265625,
+          0.849074074
         ],
         [
-          0.270833333,
-          0.877777778
+          0.265625,
+          0.89537037
         ],
         [
-          0.052083333,
-          0.877777778
+          0.041666667,
+          0.89537037
         ]
       ],
-      "stack": 26,
+      "stack": 18,
       "text": "PILOT BOUNDARY",
       "typography": [
         {
@@ -947,30 +695,30 @@
       ]
     },
     {
-      "id": "p2-object-28",
-      "native_id": "29",
+      "id": "p2-object-20",
+      "native_id": "21",
       "name": "decision-message",
       "label": "Start with approved-source research synthesis.",
       "kind": "text",
       "polygon": [
         [
-          0.291666667,
-          0.82962963
+          0.270833333,
+          0.849074074
         ],
         [
-          0.950520833,
-          0.82962963
+          0.957291667,
+          0.849074074
         ],
         [
-          0.950520833,
-          0.877777778
+          0.957291667,
+          0.89537037
         ],
         [
-          0.291666667,
-          0.877777778
+          0.270833333,
+          0.89537037
         ]
       ],
-      "stack": 27,
+      "stack": 19,
       "text": "Start with approved-source research synthesis.",
       "typography": [
         {
@@ -982,8 +730,86 @@
       ]
     },
     {
-      "id": "p2-object-29",
-      "native_id": "30",
+      "id": "p2-object-21",
+      "native_id": "22",
+      "name": "reason-icon-file",
+      "label": "Reason icon file",
+      "kind": "image",
+      "polygon": [
+        [
+          0.03125,
+          0.599074074
+        ],
+        [
+          0.052604167,
+          0.599074074
+        ],
+        [
+          0.052604167,
+          0.637037037
+        ],
+        [
+          0.03125,
+          0.637037037
+        ]
+      ],
+      "stack": 20
+    },
+    {
+      "id": "p2-object-22",
+      "native_id": "23",
+      "name": "reason-icon-corpus",
+      "label": "Reason icon corpus",
+      "kind": "image",
+      "polygon": [
+        [
+          0.03125,
+          0.663888889
+        ],
+        [
+          0.052604167,
+          0.663888889
+        ],
+        [
+          0.052604167,
+          0.701851852
+        ],
+        [
+          0.03125,
+          0.701851852
+        ]
+      ],
+      "stack": 21
+    },
+    {
+      "id": "p2-object-23",
+      "native_id": "24",
+      "name": "reason-icon-reviewer",
+      "label": "Reason icon reviewer",
+      "kind": "image",
+      "polygon": [
+        [
+          0.03125,
+          0.728703704
+        ],
+        [
+          0.052604167,
+          0.728703704
+        ],
+        [
+          0.052604167,
+          0.766666667
+        ],
+        [
+          0.03125,
+          0.766666667
+        ]
+      ],
+      "stack": 22
+    },
+    {
+      "id": "p2-object-24",
+      "native_id": "25",
       "name": "Slide Number Placeholder 0",
       "label": "2",
       "kind": "text",
@@ -1005,7 +831,7 @@
           0.99537037
         ]
       ],
-      "stack": 28,
+      "stack": 23,
       "text": "2",
       "typography": [
         {

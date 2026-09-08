@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "source_scene_evidence": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s05-investment-decision/work/accepted-slide.png",
+  "source_scene_evidence": "/private/tmp/.slidepoise-rebuild-jkaybi9w/slides/s05-investment-decision/work/accepted-slide.png",
   "full_slide_dimensions_px": [
     1920,
     1080
@@ -70,16 +70,16 @@
     {
       "id": "headline",
       "semantic_kind": "text",
-      "semantic_role": "headline",
+      "semantic_role": "slide_title",
       "selected_route": "native_text",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
       "render_owner": "headline",
       "bbox_px": [
-        48,
-        19,
-        1824,
-        80
+        46,
+        20,
+        1828,
+        76
       ],
       "component_id": null
     },
@@ -92,10 +92,10 @@
       "emits_ppt_object": true,
       "render_owner": "subtitle",
       "bbox_px": [
-        48,
-        103,
-        1824,
-        47
+        47,
+        101,
+        1825,
+        48
       ],
       "component_id": null
     },
@@ -108,9 +108,9 @@
       "emits_ppt_object": true,
       "render_owner": "introduction-rule",
       "bbox_px": [
-        48,
-        165,
-        1824,
+        46,
+        158,
+        1828,
         2
       ],
       "component_id": null
@@ -118,256 +118,64 @@
     {
       "id": "capacity-heading",
       "semantic_kind": "text",
-      "semantic_role": "capacity-heading",
+      "semantic_role": "heading_large",
       "selected_route": "native_text",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
       "render_owner": "capacity-heading",
       "bbox_px": [
-        41,
-        201,
-        584,
-        44
+        46,
+        195,
+        545,
+        38
       ],
       "component_id": null
     },
     {
-      "id": "investment-heading",
-      "semantic_kind": "text",
-      "semantic_role": "investment-heading",
-      "selected_route": "native_text",
+      "id": "capacity-panel",
+      "semantic_kind": "shape",
+      "semantic_role": "native_presentation_geometry",
+      "selected_route": "native_shape",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
-      "render_owner": "investment-heading",
+      "render_owner": "capacity-panel",
       "bbox_px": [
-        633,
-        201,
-        377,
-        44
+        46,
+        239,
+        545,
+        320
       ],
       "component_id": null
     },
     {
-      "id": "sensitivity-heading",
+      "id": "capacity-equation",
       "semantic_kind": "text",
-      "semantic_role": "sensitivity-heading",
+      "semantic_role": "large_data_number",
       "selected_route": "native_text",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
-      "render_owner": "sensitivity-heading",
+      "render_owner": "capacity-equation",
       "bbox_px": [
-        1061,
-        201,
-        819,
-        44
+        64,
+        258,
+        505,
+        115
       ],
       "component_id": null
     },
     {
-      "id": "capacity-term-0",
+      "id": "capacity-labels",
       "semantic_kind": "text",
-      "semantic_role": "capacity-term-0",
+      "semantic_role": "body",
       "selected_route": "native_text",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
-      "render_owner": "capacity-term-0",
+      "render_owner": "capacity-labels",
       "bbox_px": [
-        88,
-        270,
-        73,
+        65,
+        374,
+        500,
         45
-      ],
-      "component_id": null
-    },
-    {
-      "id": "capacity-term-1",
-      "semantic_kind": "text",
-      "semantic_role": "capacity-term-1",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "capacity-term-1",
-      "bbox_px": [
-        174,
-        270,
-        30,
-        45
-      ],
-      "component_id": null
-    },
-    {
-      "id": "capacity-term-2",
-      "semantic_kind": "text",
-      "semantic_role": "capacity-term-2",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "capacity-term-2",
-      "bbox_px": [
-        218,
-        270,
-        78,
-        45
-      ],
-      "component_id": null
-    },
-    {
-      "id": "capacity-term-3",
-      "semantic_kind": "text",
-      "semantic_role": "capacity-term-3",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "capacity-term-3",
-      "bbox_px": [
-        282,
-        270,
-        30,
-        45
-      ],
-      "component_id": null
-    },
-    {
-      "id": "capacity-term-4",
-      "semantic_kind": "text",
-      "semantic_role": "capacity-term-4",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "capacity-term-4",
-      "bbox_px": [
-        321,
-        270,
-        75,
-        45
-      ],
-      "component_id": null
-    },
-    {
-      "id": "capacity-term-5",
-      "semantic_kind": "text",
-      "semantic_role": "capacity-term-5",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "capacity-term-5",
-      "bbox_px": [
-        391,
-        270,
-        30,
-        45
-      ],
-      "component_id": null
-    },
-    {
-      "id": "capacity-term-6",
-      "semantic_kind": "text",
-      "semantic_role": "capacity-term-6",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "capacity-term-6",
-      "bbox_px": [
-        425,
-        270,
-        70,
-        45
-      ],
-      "component_id": null
-    },
-    {
-      "id": "capacity-term-7",
-      "semantic_kind": "text",
-      "semantic_role": "capacity-term-7",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "capacity-term-7",
-      "bbox_px": [
-        492,
-        270,
-        29,
-        45
-      ],
-      "component_id": null
-    },
-    {
-      "id": "capacity-result",
-      "semantic_kind": "text",
-      "semantic_role": "capacity-result",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "capacity-result",
-      "bbox_px": [
-        518,
-        270,
-        110,
-        49
-      ],
-      "component_id": null
-    },
-    {
-      "id": "capacity-term-label-0",
-      "semantic_kind": "text",
-      "semantic_role": "capacity-term-label-0",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "capacity-term-label-0",
-      "bbox_px": [
-        37,
-        324,
-        158,
-        45
-      ],
-      "component_id": null
-    },
-    {
-      "id": "capacity-term-label-1",
-      "semantic_kind": "text",
-      "semantic_role": "capacity-term-label-1",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "capacity-term-label-1",
-      "bbox_px": [
-        193,
-        324,
-        111,
-        68
-      ],
-      "component_id": null
-    },
-    {
-      "id": "capacity-term-label-2",
-      "semantic_kind": "text",
-      "semantic_role": "capacity-term-label-2",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "capacity-term-label-2",
-      "bbox_px": [
-        303,
-        324,
-        106,
-        45
-      ],
-      "component_id": null
-    },
-    {
-      "id": "capacity-term-label-3",
-      "semantic_kind": "text",
-      "semantic_role": "capacity-term-label-3",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "capacity-term-label-3",
-      "bbox_px": [
-        417,
-        324,
-        78,
-        68
       ],
       "component_id": null
     },
@@ -380,250 +188,346 @@
       "emits_ppt_object": true,
       "render_owner": "capacity-divider",
       "bbox_px": [
-        39,
-        397,
-        466,
+        65,
+        446,
+        490,
         1
-      ],
-      "component_id": null
-    },
-    {
-      "id": "capacity-valuation",
-      "semantic_kind": "text",
-      "semantic_role": "capacity-valuation",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "capacity-valuation",
-      "bbox_px": [
-        39,
-        451,
-        254,
-        50
       ],
       "component_id": null
     },
     {
       "id": "capacity-value",
       "semantic_kind": "text",
-      "semantic_role": "capacity-value",
+      "semantic_role": "body",
       "selected_route": "native_text",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
       "render_owner": "capacity-value",
       "bbox_px": [
-        296,
-        451,
-        245,
-        50
+        65,
+        470,
+        270,
+        44
       ],
       "component_id": null
     },
     {
-      "id": "capacity-equivalent",
+      "id": "capacity-value-number",
       "semantic_kind": "text",
-      "semantic_role": "capacity-equivalent",
+      "semantic_role": "large_data_number",
       "selected_route": "native_text",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
-      "render_owner": "capacity-equivalent",
+      "render_owner": "capacity-value-number",
       "bbox_px": [
-        41,
-        502,
-        578,
-        43
+        330,
+        456,
+        220,
+        60
+      ],
+      "component_id": null
+    },
+    {
+      "id": "capacity-caption",
+      "semantic_kind": "text",
+      "semantic_role": "body",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "capacity-caption",
+      "bbox_px": [
+        65,
+        520,
+        470,
+        34
+      ],
+      "component_id": null
+    },
+    {
+      "id": "investment-heading",
+      "semantic_kind": "text",
+      "semantic_role": "heading_large",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "investment-heading",
+      "bbox_px": [
+        620,
+        195,
+        485,
+        38
       ],
       "component_id": null
     },
     {
       "id": "investment-table",
       "semantic_kind": "table",
-      "semantic_role": "investment-table",
+      "semantic_role": "structured_evidence",
       "selected_route": "native_table",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
       "render_owner": "investment-table",
       "bbox_px": [
-        632,
-        240,
-        377,
-        273
+        620,
+        239,
+        485,
+        272
       ],
       "component_id": null
     },
     {
-      "id": "remaining-investment",
+      "id": "investment-note",
       "semantic_kind": "text",
-      "semantic_role": "remaining-investment",
+      "semantic_role": "body",
       "selected_route": "native_text",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
-      "render_owner": "remaining-investment",
+      "render_owner": "investment-note",
       "bbox_px": [
-        632,
-        522,
-        402,
-        70
+        620,
+        520,
+        485,
+        36
       ],
       "component_id": null
     },
     {
-      "id": "scenario-table",
+      "id": "sensitivity-heading",
+      "semantic_kind": "text",
+      "semantic_role": "heading_large",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "sensitivity-heading",
+      "bbox_px": [
+        1135,
+        195,
+        738,
+        38
+      ],
+      "component_id": null
+    },
+    {
+      "id": "sensitivity-table",
       "semantic_kind": "table",
-      "semantic_role": "scenario-table",
+      "semantic_role": "structured_evidence",
       "selected_route": "native_table",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
-      "render_owner": "scenario-table",
+      "render_owner": "sensitivity-table",
       "bbox_px": [
-        1061,
-        240,
-        819,
-        300
+        1135,
+        239,
+        738,
+        320
       ],
       "component_id": null
     },
     {
-      "id": "criteria-rule",
+      "id": "criteria-heading",
+      "semantic_kind": "text",
+      "semantic_role": "heading_large",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "criteria-heading",
+      "bbox_px": [
+        46,
+        590,
+        900,
+        36
+      ],
+      "component_id": null
+    },
+    {
+      "id": "criterion-panel-go",
       "semantic_kind": "shape",
       "semantic_role": "native_presentation_geometry",
       "selected_route": "native_shape",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
-      "render_owner": "criteria-rule",
+      "render_owner": "criterion-panel-go",
       "bbox_px": [
-        38,
-        607,
-        1842,
-        2
+        46,
+        630,
+        596,
+        150
       ],
       "component_id": null
     },
     {
-      "id": "criteria-divider-1",
+      "id": "criterion-icon-go",
+      "semantic_kind": "icon",
+      "semantic_role": "supporting_visual",
+      "selected_route": "canonical_svg",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "criterion-icon-go",
+      "bbox_px": [
+        76,
+        655,
+        94,
+        94
+      ],
+      "component_id": null
+    },
+    {
+      "id": "criterion-label-go",
+      "semantic_kind": "text",
+      "semantic_role": "heading_large",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "criterion-label-go",
+      "bbox_px": [
+        216,
+        652,
+        180,
+        40
+      ],
+      "component_id": null
+    },
+    {
+      "id": "criterion-body-go",
+      "semantic_kind": "text",
+      "semantic_role": "body",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "criterion-body-go",
+      "bbox_px": [
+        216,
+        698,
+        390,
+        65
+      ],
+      "component_id": null
+    },
+    {
+      "id": "criterion-panel-hold",
       "semantic_kind": "shape",
       "semantic_role": "native_presentation_geometry",
       "selected_route": "native_shape",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
-      "render_owner": "criteria-divider-1",
+      "render_owner": "criterion-panel-hold",
       "bbox_px": [
-        629,
-        608,
-        1,
-        166
+        655,
+        630,
+        596,
+        150
       ],
       "component_id": null
     },
     {
-      "id": "criteria-divider-2",
+      "id": "criterion-icon-hold",
+      "semantic_kind": "icon",
+      "semantic_role": "supporting_visual",
+      "selected_route": "canonical_svg",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "criterion-icon-hold",
+      "bbox_px": [
+        685,
+        655,
+        94,
+        94
+      ],
+      "component_id": null
+    },
+    {
+      "id": "criterion-label-hold",
+      "semantic_kind": "text",
+      "semantic_role": "heading_large",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "criterion-label-hold",
+      "bbox_px": [
+        825,
+        652,
+        180,
+        40
+      ],
+      "component_id": null
+    },
+    {
+      "id": "criterion-body-hold",
+      "semantic_kind": "text",
+      "semantic_role": "body",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "criterion-body-hold",
+      "bbox_px": [
+        825,
+        698,
+        390,
+        65
+      ],
+      "component_id": null
+    },
+    {
+      "id": "criterion-panel-stop",
       "semantic_kind": "shape",
       "semantic_role": "native_presentation_geometry",
       "selected_route": "native_shape",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
-      "render_owner": "criteria-divider-2",
+      "render_owner": "criterion-panel-stop",
       "bbox_px": [
-        1245,
-        608,
-        1,
-        166
+        1264,
+        630,
+        596,
+        150
       ],
       "component_id": null
     },
     {
-      "id": "criterion-heading-0",
-      "semantic_kind": "text",
-      "semantic_role": "criterion-heading-0",
-      "selected_route": "native_text",
+      "id": "criterion-icon-stop",
+      "semantic_kind": "icon",
+      "semantic_role": "supporting_visual",
+      "selected_route": "canonical_svg",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
-      "render_owner": "criterion-heading-0",
+      "render_owner": "criterion-icon-stop",
       "bbox_px": [
-        131,
-        624,
-        437,
-        48
+        1294,
+        655,
+        94,
+        94
       ],
       "component_id": null
     },
     {
-      "id": "criterion-body-0",
+      "id": "criterion-label-stop",
       "semantic_kind": "text",
-      "semantic_role": "criterion-body-0",
+      "semantic_role": "heading_large",
       "selected_route": "native_text",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
-      "render_owner": "criterion-body-0",
+      "render_owner": "criterion-label-stop",
       "bbox_px": [
-        131,
-        676,
-        491,
-        91
+        1434,
+        652,
+        180,
+        40
       ],
       "component_id": null
     },
     {
-      "id": "criterion-heading-1",
+      "id": "criterion-body-stop",
       "semantic_kind": "text",
-      "semantic_role": "criterion-heading-1",
+      "semantic_role": "body",
       "selected_route": "native_text",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
-      "render_owner": "criterion-heading-1",
+      "render_owner": "criterion-body-stop",
       "bbox_px": [
-        752,
-        624,
-        437,
-        48
-      ],
-      "component_id": null
-    },
-    {
-      "id": "criterion-body-1",
-      "semantic_kind": "text",
-      "semantic_role": "criterion-body-1",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "criterion-body-1",
-      "bbox_px": [
-        752,
-        676,
-        491,
-        91
-      ],
-      "component_id": null
-    },
-    {
-      "id": "criterion-heading-2",
-      "semantic_kind": "text",
-      "semantic_role": "criterion-heading-2",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "criterion-heading-2",
-      "bbox_px": [
-        1380,
-        624,
-        437,
-        48
-      ],
-      "component_id": null
-    },
-    {
-      "id": "criterion-body-2",
-      "semantic_kind": "text",
-      "semantic_role": "criterion-body-2",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "criterion-body-2",
-      "bbox_px": [
-        1380,
-        676,
-        491,
-        91
+        1434,
+        698,
+        390,
+        65
       ],
       "component_id": null
     },
@@ -636,10 +540,10 @@
       "emits_ppt_object": true,
       "render_owner": "decision-band",
       "bbox_px": [
-        48,
-        793,
-        1824,
-        134
+        46,
+        835,
+        1828,
+        93
       ],
       "component_id": null
     },
@@ -652,47 +556,183 @@
       "emits_ppt_object": true,
       "render_owner": "decision-accent",
       "bbox_px": [
-        48,
-        793,
+        46,
+        835,
         8,
-        134
+        93
       ],
       "component_id": null
     },
     {
       "id": "decision-label",
       "semantic_kind": "text",
-      "semantic_role": "decision-label",
+      "semantic_role": "call_to_action",
       "selected_route": "native_text",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
       "render_owner": "decision-label",
       "bbox_px": [
-        100,
-        832,
-        420,
-        52
+        80,
+        853,
+        430,
+        50
       ],
       "component_id": null
     },
     {
       "id": "decision-message",
       "semantic_kind": "text",
-      "semantic_role": "decision-message",
+      "semantic_role": "call_to_action",
       "selected_route": "native_text",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
       "render_owner": "decision-message",
       "bbox_px": [
-        560,
-        832,
-        1265,
-        52
+        520,
+        853,
+        1318,
+        50
       ],
       "component_id": null
     }
   ],
-  "canonical_asset_mappings": [],
+  "canonical_asset_mappings": [
+    {
+      "entity_id": "criterion-icon-go",
+      "selected_asset_id": "remix-play-circle-line",
+      "selected_asset_path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/play-circle/remix-play-circle-line.svg",
+      "asset_kind": "icon_slot",
+      "selection_mode": "host_agent_selected_pair_before_generation",
+      "target_bbox_source_px": [
+        76,
+        655,
+        94,
+        94
+      ],
+      "preserve_aspect_ratio": true,
+      "fit": "contain",
+      "alignment": "center",
+      "alternative_candidates": [],
+      "asset_source": "host_agent_selected_pair_before_generation",
+      "intrinsic_aspect_ratio": 1.0,
+      "user_required": false,
+      "preserve_canonical_color": false,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "source_provider": "Remix Icon",
+      "source_provider_version": "4.9.0",
+      "source_license": "Remix Icon License v1.0",
+      "style_pair_id": "remix-play-circle",
+      "style_variant": "line",
+      "pair_asset_ids": [
+        "remix-play-circle-line",
+        "remix-play-circle-fill"
+      ],
+      "variant_visual_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-play-circle-line",
+          "remix-play-circle-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "entity_id": "criterion-icon-hold",
+      "selected_asset_id": "remix-pause-circle-line",
+      "selected_asset_path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/pause-circle/remix-pause-circle-line.svg",
+      "asset_kind": "icon_slot",
+      "selection_mode": "host_agent_selected_pair_before_generation",
+      "target_bbox_source_px": [
+        685,
+        655,
+        94,
+        94
+      ],
+      "preserve_aspect_ratio": true,
+      "fit": "contain",
+      "alignment": "center",
+      "alternative_candidates": [],
+      "asset_source": "host_agent_selected_pair_before_generation",
+      "intrinsic_aspect_ratio": 1.0,
+      "user_required": false,
+      "preserve_canonical_color": false,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "source_provider": "Remix Icon",
+      "source_provider_version": "4.9.0",
+      "source_license": "Remix Icon License v1.0",
+      "style_pair_id": "remix-pause-circle",
+      "style_variant": "line",
+      "pair_asset_ids": [
+        "remix-pause-circle-line",
+        "remix-pause-circle-fill"
+      ],
+      "variant_visual_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-pause-circle-line",
+          "remix-pause-circle-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "entity_id": "criterion-icon-stop",
+      "selected_asset_id": "remix-stop-circle-line",
+      "selected_asset_path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/stop-circle/remix-stop-circle-line.svg",
+      "asset_kind": "icon_slot",
+      "selection_mode": "host_agent_selected_pair_before_generation",
+      "target_bbox_source_px": [
+        1294,
+        655,
+        94,
+        94
+      ],
+      "preserve_aspect_ratio": true,
+      "fit": "contain",
+      "alignment": "center",
+      "alternative_candidates": [],
+      "asset_source": "host_agent_selected_pair_before_generation",
+      "intrinsic_aspect_ratio": 1.0,
+      "user_required": false,
+      "preserve_canonical_color": false,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "source_provider": "Remix Icon",
+      "source_provider_version": "4.9.0",
+      "source_license": "Remix Icon License v1.0",
+      "style_pair_id": "remix-stop-circle",
+      "style_variant": "line",
+      "pair_asset_ids": [
+        "remix-stop-circle-line",
+        "remix-stop-circle-fill"
+      ],
+      "variant_visual_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-stop-circle-line",
+          "remix-stop-circle-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    }
+  ],
   "connector_reconstruction_plans": [],
   "connector_configuration": {
     "allowed_families": [
@@ -735,24 +775,8 @@
         "subtitle"
       ],
       [
-        "investment-table",
-        "scenario-table"
-      ],
-      [
-        "remaining-investment",
-        "criteria-rule"
-      ],
-      [
-        "criterion-body-0",
-        "decision-band"
-      ],
-      [
-        "criterion-body-1",
-        "decision-band"
-      ],
-      [
-        "criterion-body-2",
-        "decision-band"
+        "decision-band",
+        "headline"
       ]
     ]
   },

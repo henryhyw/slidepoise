@@ -12,6 +12,8 @@ Do not force a numbered process unless the information is sequential. Do not pre
 
 Use the deck's resolved configuration and shared resource selection. Add page-specific visual references, icons, components, images, or user assets only where they help this slide.
 
+Before writing the resource selection, make a visual-role pass over the slide intent. Look for concepts that would be read faster or remembered more clearly with a known icon, exact identity asset, reusable component, photograph, or other visual resource. Inspect the libraries that are actually enabled. Do not infer that an empty `asset_obligations` array means no assets can help. Record the decision for each relevant resource class in `selection_reasoning`, including a concrete reason when the selection remains empty. A multi-slide run with an enabled icon library and no selected icons on any page deserves a second deck-level review before generation. Icons remain optional. The Agent decides whether they improve the communication.
+
 For a deck, read the same `work/deck-design.json` used by the other pages. Its recurring visual roles are host-authored decisions. Preserve them during page work and return a proposed change to the deck owner when an exception is needed.
 
 Resolve header and footer settings before preparing the generation context. The substantive canvas has the full slide width and the full height minus enabled header and footer heights. The header and footer are constructed later as inherited frame content. Do not put their wording, page numbers or rules in the page's visual obligations. A footer-like qualification that is essential to this page's argument remains substantive content and must have an explicit content role distinct from the shared frame.

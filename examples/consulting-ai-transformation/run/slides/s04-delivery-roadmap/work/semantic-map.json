@@ -3,7 +3,7 @@
   "provenance": {
     "created_by": "host_agent_visual_reasoning",
     "source": "accepted_generated_image",
-    "source_sha256": "ca744f8927ada435cb066b41ea8b3a3c8c951f27c99a5c3bbf28f37e8d9c9a5a",
+    "source_sha256": "8c90ba253f0001c3be639e0cd13e6e0a6148f8152a6dc73d0c877db4bf4ed804",
     "composition_policy": "accepted_target_geometry_frozen"
   },
   "entities": [
@@ -11,34 +11,34 @@
       "id": "headline",
       "display_label": "Run the pilot through four evidence gates",
       "kind": "text",
+      "role": "slide_title",
       "text": "Run the pilot through four evidence gates",
-      "role": "headline",
       "text_style_role": "slide_title",
       "typography_group": "claim-title",
       "bbox_hint": [
-        48,
-        19,
-        1825,
-        80
+        46,
+        20,
+        1828,
+        76
       ],
       "search_bbox_hint": [
-        47,
-        27,
-        1205,
-        71
+        46,
+        20,
+        1828,
+        76
       ],
       "geometry_policy": "agent_logical",
-      "z": 30,
+      "z": 20,
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Georgia",
         "font_weight": "regular",
         "target_font_size_px": 64,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
-        "color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
@@ -46,71 +46,50 @@
       "id": "subtitle",
       "display_label": "Owners run the workstreams. Evidence gates release the next phase.",
       "kind": "text",
-      "text": "Owners run the workstreams. Evidence gates release the next phase.",
       "role": "subtitle",
+      "text": "Owners run the workstreams. Evidence gates release the next phase.",
       "text_style_role": "subtitle",
       "typography_group": "subtitle",
       "bbox_hint": [
-        48,
-        103,
-        1824,
-        50
+        47,
+        101,
+        1825,
+        48
       ],
       "search_bbox_hint": [
-        48,
-        109,
-        958,
-        40
+        47,
+        101,
+        1825,
+        48
       ],
       "geometry_policy": "agent_logical",
-      "z": 30,
+      "z": 20,
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
         "target_font_size_px": 32,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
-        "color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "introduction-rule",
-      "display_label": "introduction rule",
-      "kind": "shape",
-      "shape": "rectangle",
+      "id": "roadmap-matrix",
+      "display_label": "Twelve-week workstream roadmap",
+      "kind": "table",
+      "role": "structured_evidence",
       "bbox_hint": [
-        48,
-        165,
-        1824,
-        2
+        43,
+        166,
+        1830,
+        432
       ],
       "geometry_policy": "agent_logical",
       "z": 5,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "#AAAAAA",
-        "stroke": "none",
-        "stroke_width_px": 0,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "delivery-matrix",
-      "display_label": "Workstreams, accountable owners and four delivery phases",
-      "kind": "table",
-      "role": "time_and_accountability_matrix",
-      "bbox_hint": [
-        50,
-        187,
-        1223,
-        565
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 15,
       "meaningful_visible": true,
       "table_structure": {
         "rows": [
@@ -118,587 +97,460 @@
             {
               "text": "WORKSTREAM / OWNER",
               "options": {
-                "bold": true,
-                "color": "FFFFFF",
                 "fill": {
                   "color": "000000"
                 },
-                "align": "center",
-                "valign": "middle",
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "left",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             },
             {
-              "text": "WEEKS 1–2\nApprove & baseline",
+              "text": "WEEKS 1\u20132\nApprove & baseline",
               "options": {
-                "bold": true,
-                "color": "FFFFFF",
                 "fill": {
                   "color": "000000"
                 },
+                "color": "FFFFFF",
+                "bold": true,
                 "align": "center",
-                "valign": "middle",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             },
             {
-              "text": "WEEKS 3–4\nBuild & test",
+              "text": "WEEKS 3\u20134\nBuild & test",
               "options": {
-                "bold": true,
-                "color": "FFFFFF",
                 "fill": {
                   "color": "000000"
                 },
+                "color": "FFFFFF",
+                "bold": true,
                 "align": "center",
-                "valign": "middle",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             },
             {
-              "text": "WEEKS 5–8\nPilot & learn",
+              "text": "WEEKS 5\u20138\nPilot & learn",
               "options": {
-                "bold": true,
-                "color": "FFFFFF",
                 "fill": {
                   "color": "000000"
                 },
+                "color": "FFFFFF",
+                "bold": true,
                 "align": "center",
-                "valign": "middle",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             },
             {
-              "text": "WEEKS 9–12\nProve & decide",
+              "text": "WEEKS 9\u201312\nProve & decide",
               "options": {
-                "bold": true,
-                "color": "FFFFFF",
                 "fill": {
                   "color": "000000"
                 },
+                "color": "FFFFFF",
+                "bold": true,
                 "align": "center",
-                "valign": "middle",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             }
           ],
           [
             {
-              "text": [
-                {
-                  "text": "Data & access",
-                  "options": {
-                    "bold": true
-                  }
-                },
-                {
-                  "text": "\nSource steward",
-                  "options": {
-                    "bold": false
-                  }
-                }
-              ],
+              "text": "Data & access\nSource steward",
               "options": {
-                "bold": false,
-                "color": "000000",
                 "fill": {
                   "color": "FFFFFF"
                 },
+                "color": "000000",
+                "bold": true,
                 "align": "left",
-                "valign": "middle",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             },
             {
               "text": "Approved corpus\nAccess register",
               "options": {
-                "bold": false,
-                "color": "000000",
                 "fill": {
                   "color": "FFFFFF"
                 },
-                "align": "left",
-                "valign": "middle",
+                "color": "000000",
+                "bold": false,
+                "align": "center",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             },
             {
               "text": "Source refresh\nNamed stewards",
               "options": {
-                "bold": false,
-                "color": "000000",
                 "fill": {
                   "color": "FFFFFF"
                 },
-                "align": "left",
-                "valign": "middle",
+                "color": "000000",
+                "bold": false,
+                "align": "center",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             },
             {
               "text": "Weekly access and\nfreshness checks",
               "options": {
-                "bold": false,
-                "color": "000000",
                 "fill": {
                   "color": "FFFFFF"
                 },
-                "align": "left",
-                "valign": "middle",
+                "color": "000000",
+                "bold": false,
+                "align": "center",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             },
             {
               "text": "Audit closeout\nRelease inventory",
               "options": {
-                "bold": false,
-                "color": "000000",
                 "fill": {
                   "color": "FFFFFF"
                 },
-                "align": "left",
-                "valign": "middle",
+                "color": "000000",
+                "bold": false,
+                "align": "center",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             }
           ],
           [
             {
-              "text": [
-                {
-                  "text": "Workflow & product",
-                  "options": {
-                    "bold": true
-                  }
-                },
-                {
-                  "text": "\nProduct lead",
-                  "options": {
-                    "bold": false
-                  }
-                }
-              ],
+              "text": "Workflow & product\nProduct lead",
               "options": {
-                "bold": false,
-                "color": "000000",
                 "fill": {
                   "color": "F5F7F8"
                 },
+                "color": "000000",
+                "bold": true,
                 "align": "left",
-                "valign": "middle",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             },
             {
               "text": "Task mapping\nBaseline time logs",
               "options": {
-                "bold": false,
-                "color": "000000",
                 "fill": {
                   "color": "F5F7F8"
                 },
-                "align": "left",
-                "valign": "middle",
+                "color": "000000",
+                "bold": false,
+                "align": "center",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             },
             {
               "text": "Grounded draft\nVisible citations",
               "options": {
-                "bold": false,
-                "color": "000000",
                 "fill": {
                   "color": "F5F7F8"
                 },
-                "align": "left",
-                "valign": "middle",
+                "color": "000000",
+                "bold": false,
+                "align": "center",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             },
             {
               "text": "15-user pilot\nDefect fixes",
               "options": {
-                "bold": false,
-                "color": "000000",
                 "fill": {
                   "color": "F5F7F8"
                 },
-                "align": "left",
-                "valign": "middle",
+                "color": "000000",
+                "bold": false,
+                "align": "center",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             },
             {
               "text": "Release candidate\nRunbook",
               "options": {
-                "bold": false,
-                "color": "000000",
                 "fill": {
                   "color": "F5F7F8"
                 },
-                "align": "left",
-                "valign": "middle",
+                "color": "000000",
+                "bold": false,
+                "align": "center",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             }
           ],
           [
             {
-              "text": [
-                {
-                  "text": "Quality & controls",
-                  "options": {
-                    "bold": true
-                  }
-                },
-                {
-                  "text": "\nExpert reviewer",
-                  "options": {
-                    "bold": false
-                  }
-                }
-              ],
+              "text": "Quality & controls\nExpert reviewer",
               "options": {
-                "bold": false,
-                "color": "000000",
                 "fill": {
                   "color": "FFFFFF"
                 },
+                "color": "000000",
+                "bold": true,
                 "align": "left",
-                "valign": "middle",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             },
             {
               "text": "Risk boundaries\nReview criteria",
               "options": {
-                "bold": false,
-                "color": "000000",
                 "fill": {
                   "color": "FFFFFF"
                 },
-                "align": "left",
-                "valign": "middle",
+                "color": "000000",
+                "bold": false,
+                "align": "center",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             },
             {
               "text": "Test pack\nRejection reasons",
               "options": {
-                "bold": false,
-                "color": "000000",
                 "fill": {
                   "color": "FFFFFF"
                 },
-                "align": "left",
-                "valign": "middle",
+                "color": "000000",
+                "bold": false,
+                "align": "center",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             },
             {
               "text": "10 reviewed tasks\nError triage",
               "options": {
-                "bold": false,
-                "color": "000000",
                 "fill": {
                   "color": "FFFFFF"
                 },
-                "align": "left",
-                "valign": "middle",
+                "color": "000000",
+                "bold": false,
+                "align": "center",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             },
             {
               "text": "20 completed tasks\nGate evidence",
               "options": {
-                "bold": false,
-                "color": "000000",
                 "fill": {
                   "color": "FFFFFF"
                 },
-                "align": "left",
-                "valign": "middle",
+                "color": "000000",
+                "bold": false,
+                "align": "center",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             }
           ],
           [
             {
-              "text": [
-                {
-                  "text": "Adoption & value",
-                  "options": {
-                    "bold": true
-                  }
-                },
-                {
-                  "text": "\nPractice lead",
-                  "options": {
-                    "bold": false
-                  }
-                }
-              ],
+              "text": "Adoption & value\nPractice lead",
               "options": {
-                "bold": false,
-                "color": "000000",
                 "fill": {
                   "color": "F5F7F8"
                 },
+                "color": "000000",
+                "bold": true,
                 "align": "left",
-                "valign": "middle",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             },
             {
               "text": "Sponsor & users\nAgree tracking",
               "options": {
-                "bold": false,
-                "color": "000000",
                 "fill": {
                   "color": "F5F7F8"
                 },
-                "align": "left",
-                "valign": "middle",
+                "color": "000000",
+                "bold": false,
+                "align": "center",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             },
             {
               "text": "Training & support\nMeasurement plan",
               "options": {
-                "bold": false,
-                "color": "000000",
                 "fill": {
                   "color": "F5F7F8"
                 },
-                "align": "left",
-                "valign": "middle",
+                "color": "000000",
+                "bold": false,
+                "align": "center",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             },
             {
               "text": "Weekly usage\nFeedback sessions",
               "options": {
-                "bold": false,
-                "color": "000000",
                 "fill": {
                   "color": "F5F7F8"
                 },
-                "align": "left",
-                "valign": "middle",
+                "color": "000000",
+                "bold": false,
+                "align": "center",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             },
             {
               "text": "Benefit case\nScale recommendation",
               "options": {
-                "bold": false,
-                "color": "000000",
                 "fill": {
                   "color": "F5F7F8"
                 },
-                "align": "left",
-                "valign": "middle",
+                "color": "000000",
+                "bold": false,
+                "align": "center",
                 "margin": [
                   3,
-                  5,
+                  8,
                   3,
-                  5
-                ],
-                "paraSpaceAfter": 0,
-                "lineSpacingMultiple": 1.0
+                  8
+                ]
               }
             }
           ]
         ],
         "column_widths_px": [
-          274,
-          249,
-          233,
-          226,
-          241
+          355,
+          368,
+          368,
+          368,
+          371
         ],
         "row_heights_px": [
-          95,
-          120,
-          116,
-          115,
-          119
+          80,
+          88,
+          88,
+          88,
+          88
         ]
       },
       "style_hint": {
         "font_family": "Arial",
-        "font_size_px": 24,
-        "cell_margin_px": 16,
+        "font_size_px": 20,
+        "cell_margin_px": 8,
         "color": "#000000",
         "fill": "#FFFFFF",
-        "stroke": "#B5B5B5",
+        "stroke": "#C6C9CD",
         "stroke_width_px": 1,
         "vertical_alignment": "middle"
       }
@@ -707,914 +559,711 @@
       "id": "gates-heading",
       "display_label": "EVIDENCE GATES",
       "kind": "text",
+      "role": "heading_large",
       "text": "EVIDENCE GATES",
-      "role": "gates-heading",
       "text_style_role": "heading_large",
-      "typography_group": "section-headings",
+      "typography_group": "section",
       "bbox_hint": [
-        1335,
-        178,
-        530,
-        43
+        43,
+        617,
+        900,
+        36
       ],
       "search_bbox_hint": [
-        1334,
-        185,
-        206,
-        27
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 30,
-      "meaningful_visible": true,
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "bold",
-        "target_font_size_px": 28,
-        "alignment": "left",
-        "line_spacing": 1.0,
-        "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "gate-timeline",
-      "display_label": "gate timeline",
-      "kind": "shape",
-      "shape": "rectangle",
-      "bbox_hint": [
-        1377,
-        245,
-        435,
-        2
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 10,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "#FD5108",
-        "stroke": "none",
-        "stroke_width_px": 0,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "gate-1-field",
-      "display_label": "gate 1 field",
-      "kind": "shape",
-      "shape": "authored_path",
-      "bbox_hint": [
-        1313,
-        254,
-        137,
-        238
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 5,
-      "meaningful_visible": true,
-      "reconstruction_route": "fitted_freeform",
-      "path_commands_px": [
-        {
-          "op": "M",
-          "point": [
-            1313,
-            254
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1425,
-            254
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1450,
-            264
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1450,
-            492
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1313,
-            492
-          ]
-        },
-        {
-          "op": "Z"
-        }
-      ],
-      "style_hint": {
-        "fill": "#FFF5ED",
-        "stroke": "none",
-        "stroke_width_px": 0,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "gate-1-marker",
-      "display_label": "gate 1 marker",
-      "kind": "shape",
-      "shape": "ellipse",
-      "bbox_hint": [
-        1363,
-        231,
-        30,
-        30
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 15,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "#FFFFFF",
-        "stroke": "#FD5108",
-        "stroke_width_px": 7,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "gate-1-label",
-      "display_label": "G1",
-      "kind": "text",
-      "text": "G1",
-      "role": "gate-1-label",
-      "text_style_role": "call_to_action",
-      "typography_group": "gate-labels",
-      "bbox_hint": [
-        1323,
-        279,
-        117,
-        42
-      ],
-      "search_bbox_hint": [
-        1347,
-        285,
-        70,
+        43,
+        617,
+        900,
         36
       ],
       "geometry_policy": "agent_logical",
-      "z": 30,
+      "z": 20,
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 32,
-        "alignment": "center",
-        "line_spacing": 1.0,
+        "target_font_size_px": 25,
+        "alignment": "left",
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "gate-icon-g1",
+      "display_label": "G1 \u00b7 Week 2",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-flag-line",
+      "bbox_hint": [
+        226,
+        668,
+        48,
+        48
+      ],
+      "slot_bbox_hint": [
+        226,
+        668,
+        48,
+        48
+      ],
+      "geometry_policy": "agent_logical",
+      "slot_surface": {
+        "visible": false
+      },
+      "style_hint": {
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
+      "z": 30,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "roadmap-gate-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-flag-line",
+          "remix-flag-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "id": "gate-label-g1",
+      "display_label": "G1 \u00b7 Week 2",
+      "kind": "text",
+      "role": "body",
+      "text": "G1 \u00b7 Week 2",
+      "text_style_role": "body",
+      "typography_group": "gate-labels",
+      "bbox_hint": [
+        120,
+        729,
+        260,
+        32
+      ],
+      "search_bbox_hint": [
+        120,
+        729,
+        260,
+        32
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 23,
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#FD5108",
-        "color": "#FD5108",
         "style_authority": "agent_visual_observation"
       },
       "style_token": "call_to_action"
     },
     {
-      "id": "gate-1-week",
-      "display_label": "Week 2",
-      "kind": "text",
-      "text": "Week 2",
-      "role": "gate-1-week",
-      "text_style_role": "heading_large",
-      "typography_group": "gate-weeks",
-      "bbox_hint": [
-        1318,
-        318,
-        127,
-        38
-      ],
-      "search_bbox_hint": [
-        1333,
-        322,
-        108,
-        31
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 30,
-      "meaningful_visible": true,
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "bold",
-        "target_font_size_px": 28,
-        "alignment": "center",
-        "line_spacing": 1.0,
-        "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "gate-1-rule",
-      "display_label": "gate 1 rule",
-      "kind": "shape",
-      "shape": "rectangle",
-      "bbox_hint": [
-        1337,
-        363,
-        88,
-        1
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 10,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "#FD5108",
-        "stroke": "none",
-        "stroke_width_px": 0,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "gate-1-evidence",
+      "id": "gate-detail-g1",
       "display_label": "Corpus + access signed",
       "kind": "text",
-      "text": "Corpus +\naccess\nsigned",
-      "role": "gate-1-evidence",
-      "text_style_role": "label",
-      "typography_group": "gate-evidence",
+      "role": "body",
+      "text": "Corpus + access signed",
+      "text_style_role": "body",
+      "typography_group": "gate-details",
       "bbox_hint": [
-        1315,
-        375,
-        133,
-        114
+        100,
+        763,
+        300,
+        35
       ],
       "search_bbox_hint": [
-        1316,
-        387,
-        133,
-        98
+        100,
+        763,
+        300,
+        35
       ],
       "geometry_policy": "agent_logical",
-      "z": 30,
+      "z": 20,
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 24,
+        "target_font_size_px": 19,
         "alignment": "center",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
-        "color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "gate-2-field",
-      "display_label": "gate 2 field",
-      "kind": "shape",
-      "shape": "authored_path",
+      "id": "gate-icon-g2",
+      "display_label": "G2 \u00b7 Week 4",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-flag-line",
       "bbox_hint": [
-        1454,
-        254,
-        137,
-        238
+        551,
+        668,
+        48,
+        48
+      ],
+      "slot_bbox_hint": [
+        551,
+        668,
+        48,
+        48
       ],
       "geometry_policy": "agent_logical",
-      "z": 5,
-      "meaningful_visible": true,
-      "reconstruction_route": "fitted_freeform",
-      "path_commands_px": [
-        {
-          "op": "M",
-          "point": [
-            1454,
-            254
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1566,
-            254
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1591,
-            264
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1591,
-            492
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1454,
-            492
-          ]
-        },
-        {
-          "op": "Z"
-        }
-      ],
+      "slot_surface": {
+        "visible": false
+      },
       "style_hint": {
-        "fill": "#FFF5ED",
-        "stroke": "none",
-        "stroke_width_px": 0,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "gate-2-marker",
-      "display_label": "gate 2 marker",
-      "kind": "shape",
-      "shape": "ellipse",
-      "bbox_hint": [
-        1507,
-        231,
-        30,
-        30
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 15,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "#FFFFFF",
-        "stroke": "#FD5108",
-        "stroke_width_px": 7,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "gate-2-label",
-      "display_label": "G2",
-      "kind": "text",
-      "text": "G2",
-      "role": "gate-2-label",
-      "text_style_role": "call_to_action",
-      "typography_group": "gate-labels",
-      "bbox_hint": [
-        1464,
-        279,
-        117,
-        42
-      ],
-      "search_bbox_hint": [
-        1488,
-        285,
-        70,
-        36
-      ],
-      "geometry_policy": "agent_logical",
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
       "z": 30,
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "roadmap-gate-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-flag-line",
+          "remix-flag-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "id": "gate-label-g2",
+      "display_label": "G2 \u00b7 Week 4",
+      "kind": "text",
+      "role": "body",
+      "text": "G2 \u00b7 Week 4",
+      "text_style_role": "body",
+      "typography_group": "gate-labels",
+      "bbox_hint": [
+        445,
+        729,
+        260,
+        32
+      ],
+      "search_bbox_hint": [
+        445,
+        729,
+        260,
+        32
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 32,
+        "target_font_size_px": 23,
         "alignment": "center",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#FD5108",
-        "color": "#FD5108",
         "style_authority": "agent_visual_observation"
       },
       "style_token": "call_to_action"
     },
     {
-      "id": "gate-2-week",
-      "display_label": "Week 4",
-      "kind": "text",
-      "text": "Week 4",
-      "role": "gate-2-week",
-      "text_style_role": "heading_large",
-      "typography_group": "gate-weeks",
-      "bbox_hint": [
-        1459,
-        318,
-        127,
-        38
-      ],
-      "search_bbox_hint": [
-        1474,
-        322,
-        108,
-        31
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 30,
-      "meaningful_visible": true,
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "bold",
-        "target_font_size_px": 28,
-        "alignment": "center",
-        "line_spacing": 1.0,
-        "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "gate-2-rule",
-      "display_label": "gate 2 rule",
-      "kind": "shape",
-      "shape": "rectangle",
-      "bbox_hint": [
-        1478,
-        363,
-        88,
-        1
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 10,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "#FD5108",
-        "stroke": "none",
-        "stroke_width_px": 0,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "gate-2-evidence",
+      "id": "gate-detail-g2",
       "display_label": "Test pack approved",
       "kind": "text",
-      "text": "Test pack\napproved",
-      "role": "gate-2-evidence",
-      "text_style_role": "label",
-      "typography_group": "gate-evidence",
+      "role": "body",
+      "text": "Test pack approved",
+      "text_style_role": "body",
+      "typography_group": "gate-details",
       "bbox_hint": [
-        1456,
-        375,
-        133,
-        114
+        425,
+        763,
+        300,
+        35
       ],
       "search_bbox_hint": [
-        1457,
-        387,
-        133,
-        98
+        425,
+        763,
+        300,
+        35
       ],
       "geometry_policy": "agent_logical",
-      "z": 30,
+      "z": 20,
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 24,
+        "target_font_size_px": 19,
         "alignment": "center",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
-        "color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "gate-3-field",
-      "display_label": "gate 3 field",
-      "kind": "shape",
-      "shape": "authored_path",
+      "id": "gate-icon-g3",
+      "display_label": "G3 \u00b7 Week 8",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-flag-line",
       "bbox_hint": [
-        1596,
-        254,
-        137,
-        238
+        876,
+        668,
+        48,
+        48
+      ],
+      "slot_bbox_hint": [
+        876,
+        668,
+        48,
+        48
       ],
       "geometry_policy": "agent_logical",
-      "z": 5,
-      "meaningful_visible": true,
-      "reconstruction_route": "fitted_freeform",
-      "path_commands_px": [
-        {
-          "op": "M",
-          "point": [
-            1596,
-            254
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1708,
-            254
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1733,
-            264
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1733,
-            492
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1596,
-            492
-          ]
-        },
-        {
-          "op": "Z"
-        }
-      ],
+      "slot_surface": {
+        "visible": false
+      },
       "style_hint": {
-        "fill": "#FFF5ED",
-        "stroke": "none",
-        "stroke_width_px": 0,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "gate-3-marker",
-      "display_label": "gate 3 marker",
-      "kind": "shape",
-      "shape": "ellipse",
-      "bbox_hint": [
-        1650,
-        231,
-        30,
-        30
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 15,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "#FFFFFF",
-        "stroke": "#FD5108",
-        "stroke_width_px": 7,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "gate-3-label",
-      "display_label": "G3",
-      "kind": "text",
-      "text": "G3",
-      "role": "gate-3-label",
-      "text_style_role": "call_to_action",
-      "typography_group": "gate-labels",
-      "bbox_hint": [
-        1606,
-        279,
-        117,
-        42
-      ],
-      "search_bbox_hint": [
-        1630,
-        285,
-        70,
-        36
-      ],
-      "geometry_policy": "agent_logical",
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
       "z": 30,
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "roadmap-gate-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-flag-line",
+          "remix-flag-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "id": "gate-label-g3",
+      "display_label": "G3 \u00b7 Week 8",
+      "kind": "text",
+      "role": "body",
+      "text": "G3 \u00b7 Week 8",
+      "text_style_role": "body",
+      "typography_group": "gate-labels",
+      "bbox_hint": [
+        770,
+        729,
+        260,
+        32
+      ],
+      "search_bbox_hint": [
+        770,
+        729,
+        260,
+        32
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 32,
+        "target_font_size_px": 23,
         "alignment": "center",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#FD5108",
-        "color": "#FD5108",
         "style_authority": "agent_visual_observation"
       },
       "style_token": "call_to_action"
     },
     {
-      "id": "gate-3-week",
-      "display_label": "Week 8",
-      "kind": "text",
-      "text": "Week 8",
-      "role": "gate-3-week",
-      "text_style_role": "heading_large",
-      "typography_group": "gate-weeks",
-      "bbox_hint": [
-        1601,
-        318,
-        127,
-        38
-      ],
-      "search_bbox_hint": [
-        1616,
-        322,
-        108,
-        31
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 30,
-      "meaningful_visible": true,
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "bold",
-        "target_font_size_px": 28,
-        "alignment": "center",
-        "line_spacing": 1.0,
-        "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "gate-3-rule",
-      "display_label": "gate 3 rule",
-      "kind": "shape",
-      "shape": "rectangle",
-      "bbox_hint": [
-        1620,
-        363,
-        88,
-        1
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 10,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "#FD5108",
-        "stroke": "none",
-        "stroke_width_px": 0,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "gate-3-evidence",
+      "id": "gate-detail-g3",
       "display_label": "10 tasks reviewed",
       "kind": "text",
-      "text": "10 tasks\nreviewed",
-      "role": "gate-3-evidence",
-      "text_style_role": "label",
-      "typography_group": "gate-evidence",
+      "role": "body",
+      "text": "10 tasks reviewed",
+      "text_style_role": "body",
+      "typography_group": "gate-details",
       "bbox_hint": [
-        1598,
-        375,
-        133,
-        114
+        750,
+        763,
+        300,
+        35
       ],
       "search_bbox_hint": [
-        1599,
-        387,
-        133,
-        98
+        750,
+        763,
+        300,
+        35
       ],
       "geometry_policy": "agent_logical",
-      "z": 30,
+      "z": 20,
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 24,
+        "target_font_size_px": 19,
         "alignment": "center",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
-        "color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "gate-4-field",
-      "display_label": "gate 4 field",
-      "kind": "shape",
-      "shape": "authored_path",
+      "id": "gate-icon-g4",
+      "display_label": "G4 \u00b7 Week 12",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-flag-line",
       "bbox_hint": [
-        1740,
-        254,
-        137,
-        238
+        1201,
+        668,
+        48,
+        48
+      ],
+      "slot_bbox_hint": [
+        1201,
+        668,
+        48,
+        48
       ],
       "geometry_policy": "agent_logical",
-      "z": 5,
-      "meaningful_visible": true,
-      "reconstruction_route": "fitted_freeform",
-      "path_commands_px": [
-        {
-          "op": "M",
-          "point": [
-            1740,
-            254
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1852,
-            254
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1877,
-            264
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1877,
-            492
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1740,
-            492
-          ]
-        },
-        {
-          "op": "Z"
-        }
-      ],
+      "slot_surface": {
+        "visible": false
+      },
       "style_hint": {
-        "fill": "#FFF5ED",
-        "stroke": "none",
-        "stroke_width_px": 0,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "gate-4-marker",
-      "display_label": "gate 4 marker",
-      "kind": "shape",
-      "shape": "ellipse",
-      "bbox_hint": [
-        1797,
-        231,
-        30,
-        30
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 15,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "#FFFFFF",
-        "stroke": "#FD5108",
-        "stroke_width_px": 7,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "gate-4-label",
-      "display_label": "G4",
-      "kind": "text",
-      "text": "G4",
-      "role": "gate-4-label",
-      "text_style_role": "call_to_action",
-      "typography_group": "gate-labels",
-      "bbox_hint": [
-        1750,
-        279,
-        117,
-        42
-      ],
-      "search_bbox_hint": [
-        1774,
-        285,
-        70,
-        36
-      ],
-      "geometry_policy": "agent_logical",
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
       "z": 30,
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "roadmap-gate-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-flag-line",
+          "remix-flag-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "id": "gate-label-g4",
+      "display_label": "G4 \u00b7 Week 12",
+      "kind": "text",
+      "role": "body",
+      "text": "G4 \u00b7 Week 12",
+      "text_style_role": "body",
+      "typography_group": "gate-labels",
+      "bbox_hint": [
+        1095,
+        729,
+        260,
+        32
+      ],
+      "search_bbox_hint": [
+        1095,
+        729,
+        260,
+        32
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 32,
+        "target_font_size_px": 23,
         "alignment": "center",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#FD5108",
-        "color": "#FD5108",
         "style_authority": "agent_visual_observation"
       },
       "style_token": "call_to_action"
     },
     {
-      "id": "gate-4-week",
-      "display_label": "Week 12",
+      "id": "gate-detail-g4",
+      "display_label": "Practice lead + CFO decide",
       "kind": "text",
-      "text": "Week 12",
-      "role": "gate-4-week",
-      "text_style_role": "heading_large",
-      "typography_group": "gate-weeks",
+      "role": "body",
+      "text": "Practice lead + CFO decide",
+      "text_style_role": "body",
+      "typography_group": "gate-details",
       "bbox_hint": [
-        1745,
-        318,
-        127,
-        38
+        1075,
+        763,
+        300,
+        35
       ],
       "search_bbox_hint": [
-        1760,
-        322,
-        108,
-        31
+        1075,
+        763,
+        300,
+        35
       ],
       "geometry_policy": "agent_logical",
-      "z": 30,
+      "z": 20,
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
-        "font_weight": "bold",
-        "target_font_size_px": 28,
+        "font_weight": "regular",
+        "target_font_size_px": 19,
         "alignment": "center",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
-        "color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "gate-4-rule",
-      "display_label": "gate 4 rule",
-      "kind": "shape",
-      "shape": "rectangle",
+      "id": "gate-flow-1",
+      "display_label": "gate flow 1",
+      "kind": "connector",
+      "role": "directed_workflow_relationship",
       "bbox_hint": [
-        1764,
-        363,
-        88,
-        1
+        296,
+        680,
+        233,
+        24
       ],
       "geometry_policy": "agent_logical",
       "z": 10,
       "meaningful_visible": true,
-      "style_hint": {
-        "fill": "#FD5108",
-        "stroke": "none",
-        "stroke_width_px": 0,
-        "style_authority": "agent_visual_observation"
+      "connector_intent": {
+        "connector_family": "direct_flow",
+        "directed": true,
+        "source_entities": [
+          "gate-icon-g1"
+        ],
+        "target_entities": [
+          "gate-icon-g2"
+        ],
+        "source_attachment_sides": [
+          "right"
+        ],
+        "target_attachment_sides": [
+          "left"
+        ],
+        "source_attachment_fractions": [
+          0.5
+        ],
+        "target_attachment_fractions": [
+          0.5
+        ],
+        "semantic_topology_verified": true,
+        "route_mode": "minimal_orthogonal",
+        "junction_style": "none",
+        "visual_route_reviewed": true,
+        "visual_route_decision": "The straight route follows the open corridor between adjacent stages.",
+        "visual_route_review_artifact": "accepted-slide.png"
+      },
+      "visual_constraints": {
+        "start_anchors_px": [
+          [
+            296,
+            692
+          ]
+        ],
+        "end_anchors_px": [
+          [
+            529,
+            692
+          ]
+        ],
+        "arrowhead_treatment": "triangle_at_target",
+        "stroke_style": {
+          "color": "#FD5108",
+          "width_px": 3,
+          "dash": "solid"
+        }
       }
     },
     {
-      "id": "gate-4-evidence",
-      "display_label": "Practice lead + CFO decide",
-      "kind": "text",
-      "text": "Practice\nlead + CFO\ndecide",
-      "role": "gate-4-evidence",
-      "text_style_role": "label",
-      "typography_group": "gate-evidence",
+      "id": "gate-flow-2",
+      "display_label": "gate flow 2",
+      "kind": "connector",
+      "role": "directed_workflow_relationship",
       "bbox_hint": [
-        1742,
-        375,
-        133,
-        114
-      ],
-      "search_bbox_hint": [
-        1743,
-        387,
-        133,
-        98
+        621,
+        680,
+        233,
+        24
       ],
       "geometry_policy": "agent_logical",
-      "z": 30,
+      "z": 10,
       "meaningful_visible": true,
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "regular",
-        "target_font_size_px": 24,
-        "alignment": "center",
-        "line_spacing": 1.0,
-        "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "color": "#000000",
-        "style_authority": "agent_visual_observation"
+      "connector_intent": {
+        "connector_family": "direct_flow",
+        "directed": true,
+        "source_entities": [
+          "gate-icon-g2"
+        ],
+        "target_entities": [
+          "gate-icon-g3"
+        ],
+        "source_attachment_sides": [
+          "right"
+        ],
+        "target_attachment_sides": [
+          "left"
+        ],
+        "source_attachment_fractions": [
+          0.5
+        ],
+        "target_attachment_fractions": [
+          0.5
+        ],
+        "semantic_topology_verified": true,
+        "route_mode": "minimal_orthogonal",
+        "junction_style": "none",
+        "visual_route_reviewed": true,
+        "visual_route_decision": "The straight route follows the open corridor between adjacent stages.",
+        "visual_route_review_artifact": "accepted-slide.png"
+      },
+      "visual_constraints": {
+        "start_anchors_px": [
+          [
+            621,
+            692
+          ]
+        ],
+        "end_anchors_px": [
+          [
+            854,
+            692
+          ]
+        ],
+        "arrowhead_treatment": "triangle_at_target",
+        "stroke_style": {
+          "color": "#FD5108",
+          "width_px": 3,
+          "dash": "solid"
+        }
       }
     },
     {
-      "id": "gates-bottom-rule",
-      "display_label": "gates bottom rule",
+      "id": "gate-flow-3",
+      "display_label": "gate flow 3",
+      "kind": "connector",
+      "role": "directed_workflow_relationship",
+      "bbox_hint": [
+        946,
+        680,
+        233,
+        24
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "meaningful_visible": true,
+      "connector_intent": {
+        "connector_family": "direct_flow",
+        "directed": true,
+        "source_entities": [
+          "gate-icon-g3"
+        ],
+        "target_entities": [
+          "gate-icon-g4"
+        ],
+        "source_attachment_sides": [
+          "right"
+        ],
+        "target_attachment_sides": [
+          "left"
+        ],
+        "source_attachment_fractions": [
+          0.5
+        ],
+        "target_attachment_fractions": [
+          0.5
+        ],
+        "semantic_topology_verified": true,
+        "route_mode": "minimal_orthogonal",
+        "junction_style": "none",
+        "visual_route_reviewed": true,
+        "visual_route_decision": "The straight route follows the open corridor between adjacent stages.",
+        "visual_route_review_artifact": "accepted-slide.png"
+      },
+      "visual_constraints": {
+        "start_anchors_px": [
+          [
+            946,
+            692
+          ]
+        ],
+        "end_anchors_px": [
+          [
+            1179,
+            692
+          ]
+        ],
+        "arrowhead_treatment": "triangle_at_target",
+        "stroke_style": {
+          "color": "#FD5108",
+          "width_px": 3,
+          "dash": "solid"
+        }
+      }
+    },
+    {
+      "id": "dependency-divider",
+      "display_label": "dependency divider",
       "kind": "shape",
       "shape": "rectangle",
+      "role": "native_presentation_geometry",
       "bbox_hint": [
-        1300,
-        510,
-        586,
-        1
+        1325,
+        616,
+        1,
+        188
       ],
       "geometry_policy": "agent_logical",
-      "z": 5,
+      "z": 1,
       "meaningful_visible": true,
       "style_hint": {
-        "fill": "#B5B5B5",
+        "fill": "#B7BCC2",
         "stroke": "none",
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
@@ -1624,421 +1273,227 @@
       "id": "dependencies-heading",
       "display_label": "DEPENDENCIES",
       "kind": "text",
+      "role": "heading_large",
       "text": "DEPENDENCIES",
-      "role": "dependencies-heading",
       "text_style_role": "heading_large",
-      "typography_group": "section-headings",
+      "typography_group": "section",
       "bbox_hint": [
-        1330,
-        526,
-        535,
-        43
+        1360,
+        617,
+        510,
+        36
       ],
       "search_bbox_hint": [
-        1330,
-        533,
-        188,
-        30
+        1360,
+        617,
+        510,
+        36
       ],
       "geometry_policy": "agent_logical",
-      "z": 30,
+      "z": 20,
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 28,
+        "target_font_size_px": 25,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
-        "color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "dependency-1-circle",
-      "display_label": "dependency 1 circle",
+      "id": "dependency-line",
+      "display_label": "dependency line",
       "kind": "shape",
-      "shape": "ellipse",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
       "bbox_hint": [
-        1328,
-        580,
-        42,
-        42
+        1400,
+        675,
+        4,
+        100
       ],
       "geometry_policy": "agent_logical",
-      "z": 12,
+      "z": 1,
       "meaningful_visible": true,
       "style_hint": {
-        "fill": "#FFFFFF",
-        "stroke": "#FD5108",
-        "stroke_width_px": 1.5,
+        "fill": "#FD5108",
+        "stroke": "none",
+        "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "dependency-1-arrow",
-      "display_label": "dependency 1 arrow",
+      "id": "dependency-node-1",
+      "display_label": "dependency node 1",
       "kind": "shape",
-      "shape": "authored_path",
+      "shape": "ellipse",
+      "role": "native_presentation_geometry",
       "bbox_hint": [
-        1338,
-        591,
+        1391,
+        666,
         22,
         22
       ],
       "geometry_policy": "agent_logical",
-      "z": 20,
+      "z": 4,
       "meaningful_visible": true,
-      "reconstruction_route": "fitted_freeform",
-      "path_commands_px": [
-        {
-          "op": "M",
-          "point": [
-            1338,
-            601
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1360,
-            601
-          ]
-        },
-        {
-          "op": "M",
-          "point": [
-            1350,
-            591
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1360,
-            601
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1350,
-            611
-          ]
-        }
-      ],
       "style_hint": {
-        "fill": "none",
-        "stroke": "#FD5108",
-        "stroke_width_px": 2,
+        "fill": "#FD5108",
+        "stroke": "none",
+        "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "dependency-1-text",
+      "id": "dependency-text-1",
       "display_label": "Permissions before retrieval tests",
       "kind": "text",
+      "role": "body",
       "text": "Permissions before retrieval tests",
-      "role": "dependency-1-text",
       "text_style_role": "body",
-      "typography_group": "dependency-statements",
+      "typography_group": "dependencies",
       "bbox_hint": [
-        1389,
-        581,
-        480,
-        44
+        1450,
+        662,
+        410,
+        35
       ],
       "search_bbox_hint": [
-        1387,
-        590,
-        470,
-        30
+        1450,
+        662,
+        410,
+        35
       ],
       "geometry_policy": "agent_logical",
-      "z": 30,
+      "z": 20,
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 28,
+        "target_font_size_px": 20,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
-        "color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "dependency-1-rule",
-      "display_label": "dependency 1 rule",
+      "id": "dependency-node-2",
+      "display_label": "dependency node 2",
       "kind": "shape",
-      "shape": "rectangle",
+      "shape": "ellipse",
+      "role": "native_presentation_geometry",
       "bbox_hint": [
-        1312,
-        632,
-        555,
-        1
+        1391,
+        716,
+        22,
+        22
       ],
       "geometry_policy": "agent_logical",
-      "z": 5,
+      "z": 4,
       "meaningful_visible": true,
       "style_hint": {
-        "fill": "#B5B5B5",
+        "fill": "#FD5108",
         "stroke": "none",
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "dependency-2-circle",
-      "display_label": "dependency 2 circle",
-      "kind": "shape",
-      "shape": "ellipse",
-      "bbox_hint": [
-        1328,
-        647,
-        42,
-        42
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 12,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "#FFFFFF",
-        "stroke": "#FD5108",
-        "stroke_width_px": 1.5,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "dependency-2-arrow",
-      "display_label": "dependency 2 arrow",
-      "kind": "shape",
-      "shape": "authored_path",
-      "bbox_hint": [
-        1338,
-        658,
-        22,
-        22
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "meaningful_visible": true,
-      "reconstruction_route": "fitted_freeform",
-      "path_commands_px": [
-        {
-          "op": "M",
-          "point": [
-            1338,
-            668
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1360,
-            668
-          ]
-        },
-        {
-          "op": "M",
-          "point": [
-            1350,
-            658
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1360,
-            668
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1350,
-            678
-          ]
-        }
-      ],
-      "style_hint": {
-        "fill": "none",
-        "stroke": "#FD5108",
-        "stroke_width_px": 2,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "dependency-2-text",
+      "id": "dependency-text-2",
       "display_label": "Approved test pack before pilot",
       "kind": "text",
+      "role": "body",
       "text": "Approved test pack before pilot",
-      "role": "dependency-2-text",
       "text_style_role": "body",
-      "typography_group": "dependency-statements",
+      "typography_group": "dependencies",
       "bbox_hint": [
-        1389,
-        648,
-        480,
-        44
+        1450,
+        712,
+        410,
+        35
       ],
       "search_bbox_hint": [
-        1387,
-        657,
-        470,
-        30
+        1450,
+        712,
+        410,
+        35
       ],
       "geometry_policy": "agent_logical",
-      "z": 30,
+      "z": 20,
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 28,
+        "target_font_size_px": 20,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
-        "color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "dependency-2-rule",
-      "display_label": "dependency 2 rule",
+      "id": "dependency-node-3",
+      "display_label": "dependency node 3",
       "kind": "shape",
-      "shape": "rectangle",
+      "shape": "ellipse",
+      "role": "native_presentation_geometry",
       "bbox_hint": [
-        1312,
-        699,
-        555,
-        1
+        1391,
+        766,
+        22,
+        22
       ],
       "geometry_policy": "agent_logical",
-      "z": 5,
+      "z": 4,
       "meaningful_visible": true,
       "style_hint": {
-        "fill": "#B5B5B5",
+        "fill": "#FD5108",
         "stroke": "none",
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "dependency-3-circle",
-      "display_label": "dependency 3 circle",
-      "kind": "shape",
-      "shape": "ellipse",
+      "id": "dependency-text-3",
+      "display_label": "Quality evidence before benefit case",
+      "kind": "text",
+      "role": "body",
+      "text": "Quality evidence before benefit case",
+      "text_style_role": "body",
+      "typography_group": "dependencies",
       "bbox_hint": [
-        1328,
-        714,
-        42,
-        42
+        1450,
+        762,
+        410,
+        35
       ],
-      "geometry_policy": "agent_logical",
-      "z": 12,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "#FFFFFF",
-        "stroke": "#FD5108",
-        "stroke_width_px": 1.5,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "dependency-3-arrow",
-      "display_label": "dependency 3 arrow",
-      "kind": "shape",
-      "shape": "authored_path",
-      "bbox_hint": [
-        1338,
-        725,
-        22,
-        22
+      "search_bbox_hint": [
+        1450,
+        762,
+        410,
+        35
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
       "meaningful_visible": true,
-      "reconstruction_route": "fitted_freeform",
-      "path_commands_px": [
-        {
-          "op": "M",
-          "point": [
-            1338,
-            735
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1360,
-            735
-          ]
-        },
-        {
-          "op": "M",
-          "point": [
-            1350,
-            725
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1360,
-            735
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1350,
-            745
-          ]
-        }
-      ],
-      "style_hint": {
-        "fill": "none",
-        "stroke": "#FD5108",
-        "stroke_width_px": 2,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "dependency-3-text",
-      "display_label": "Quality evidence before benefit case",
-      "kind": "text",
-      "text": "Quality evidence before benefit case",
-      "role": "dependency-3-text",
-      "text_style_role": "body",
-      "typography_group": "dependency-statements",
-      "bbox_hint": [
-        1389,
-        715,
-        480,
-        44
-      ],
-      "search_bbox_hint": [
-        1387,
-        724,
-        470,
-        30
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 30,
-      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 28,
+        "target_font_size_px": 20,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
-        "color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
@@ -2047,14 +1502,15 @@
       "display_label": "decision band",
       "kind": "shape",
       "shape": "rectangle",
+      "role": "native_presentation_geometry",
       "bbox_hint": [
-        48,
-        793,
-        1824,
-        134
+        46,
+        835,
+        1828,
+        93
       ],
       "geometry_policy": "agent_logical",
-      "z": 5,
+      "z": 1,
       "meaningful_visible": true,
       "style_hint": {
         "fill": "#FFF5ED",
@@ -2068,14 +1524,15 @@
       "display_label": "decision accent",
       "kind": "shape",
       "shape": "rectangle",
+      "role": "native_presentation_geometry",
       "bbox_hint": [
-        48,
-        793,
+        46,
+        835,
         8,
-        134
+        93
       ],
       "geometry_policy": "agent_logical",
-      "z": 10,
+      "z": 1,
       "meaningful_visible": true,
       "style_hint": {
         "fill": "#FD5108",
@@ -2088,34 +1545,34 @@
       "id": "decision-label",
       "display_label": "STOP RULE",
       "kind": "text",
+      "role": "call_to_action",
       "text": "STOP RULE",
-      "role": "decision-label",
       "text_style_role": "call_to_action",
-      "typography_group": "decision-band",
+      "typography_group": "decision",
       "bbox_hint": [
-        100,
-        832,
-        420,
-        52
+        80,
+        853,
+        430,
+        50
       ],
       "search_bbox_hint": [
-        98,
-        837,
-        217,
-        49
+        80,
+        853,
+        430,
+        50
       ],
       "geometry_policy": "agent_logical",
-      "z": 30,
+      "z": 20,
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
         "target_font_size_px": 28,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "middle",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#FD5108",
-        "color": "#FD5108",
         "style_authority": "agent_visual_observation"
       },
       "style_token": "call_to_action"
@@ -2124,140 +1581,86 @@
       "id": "decision-message",
       "display_label": "No expansion while critical data exceptions remain open.",
       "kind": "text",
+      "role": "call_to_action",
       "text": "No expansion while critical data exceptions remain open.",
-      "role": "decision-message",
       "text_style_role": "call_to_action",
-      "typography_group": "decision-band",
+      "typography_group": "decision",
       "bbox_hint": [
-        560,
-        832,
-        1265,
-        52
+        520,
+        853,
+        1318,
+        50
       ],
       "search_bbox_hint": [
-        406,
-        843,
-        834,
-        42
+        520,
+        853,
+        1318,
+        50
       ],
       "geometry_policy": "agent_logical",
-      "z": 30,
+      "z": 20,
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
         "target_font_size_px": 28,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "middle",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
-        "color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     }
   ],
   "groups": [
     {
-      "id": "workstream-plan",
-      "display_label": "Four accountable workstreams across the pilot",
-      "semantic_class": "time_matrix",
-      "children": [
-        "delivery-matrix"
-      ],
-      "group_reason": "The matrix retains each time window and accountable owner as a native table.",
+      "id": "delivery-plan",
+      "display_label": "Pilot workstreams",
+      "semantic_class": "delivery roadmap",
       "bbox_hint": [
-        50,
-        187,
-        1223,
-        565
-      ]
+        43,
+        166,
+        1830,
+        432
+      ],
+      "children": [
+        "roadmap-matrix"
+      ],
+      "group_reason": "The native matrix links each owner to concrete work in every phase."
     },
     {
       "id": "evidence-gates",
-      "display_label": "Evidence releases the next phase",
-      "semantic_class": "ordered_milestones",
+      "display_label": "Evidence gates",
+      "semantic_class": "release sequence",
+      "bbox_hint": [
+        43,
+        617,
+        1260,
+        181
+      ],
       "children": [
         "gates-heading",
-        "gate-timeline",
-        "gate-1-field",
-        "gate-1-marker",
-        "gate-1-label",
-        "gate-1-week",
-        "gate-1-rule",
-        "gate-1-evidence",
-        "gate-2-field",
-        "gate-2-marker",
-        "gate-2-label",
-        "gate-2-week",
-        "gate-2-rule",
-        "gate-2-evidence",
-        "gate-3-field",
-        "gate-3-marker",
-        "gate-3-label",
-        "gate-3-week",
-        "gate-3-rule",
-        "gate-3-evidence",
-        "gate-4-field",
-        "gate-4-marker",
-        "gate-4-label",
-        "gate-4-week",
-        "gate-4-rule",
-        "gate-4-evidence",
-        "gates-bottom-rule"
+        "gate-icon-g1",
+        "gate-label-g1",
+        "gate-detail-g1",
+        "gate-icon-g2",
+        "gate-label-g2",
+        "gate-detail-g2",
+        "gate-icon-g3",
+        "gate-label-g3",
+        "gate-detail-g3",
+        "gate-icon-g4",
+        "gate-label-g4",
+        "gate-detail-g4",
+        "gate-flow-1",
+        "gate-flow-2",
+        "gate-flow-3"
       ],
-      "group_reason": "Four dated milestones share an evidence hierarchy, with an explicit final funding owner.",
-      "bbox_hint": [
-        1300,
-        178,
-        586,
-        333
-      ]
-    },
-    {
-      "id": "dependencies",
-      "display_label": "Prerequisites for delivery",
-      "semantic_class": "release_dependencies",
-      "children": [
-        "dependencies-heading",
-        "dependency-1-circle",
-        "dependency-1-arrow",
-        "dependency-1-text",
-        "dependency-1-rule",
-        "dependency-2-circle",
-        "dependency-2-arrow",
-        "dependency-2-text",
-        "dependency-2-rule",
-        "dependency-3-circle",
-        "dependency-3-arrow",
-        "dependency-3-text"
-      ],
-      "group_reason": "Each directional marker points to an authored prerequisite statement.",
-      "bbox_hint": [
-        1312,
-        526,
-        557,
-        233
-      ]
-    },
-    {
-      "id": "stop-condition",
-      "display_label": "Critical control failures stop expansion",
-      "semantic_class": "decision_condition",
-      "children": [
-        "decision-band",
-        "decision-accent",
-        "decision-label",
-        "decision-message"
-      ],
-      "group_reason": "One shared decision treatment highlights the restriction.",
-      "bbox_hint": [
-        48,
-        793,
-        1824,
-        134
-      ]
+      "group_reason": "Four canonical flags mark evidence-backed release decisions along one sequence."
     }
   ],
+  "relationships": [],
   "layout_constraints": {
     "non_overlap_pairs": [
       [
@@ -2265,8 +1668,8 @@
         "subtitle"
       ],
       [
-        "delivery-matrix",
-        "decision-band"
+        "decision-band",
+        "headline"
       ]
     ]
   }

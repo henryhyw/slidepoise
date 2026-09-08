@@ -11,7 +11,11 @@
       "Include any qualification necessary to understand a specific claim in its body content, table or conclusion. Shared firm identification and recurring footer material belong to the inherited frame.",
       "Distinguish the sampled 95% pilot quality threshold from expert verification and approval of every client release."
     ],
-    "assets": [],
+    "assets": [
+      "Inspect the enabled Remix Icon library against each slide communication job before generation.",
+      "Use one coherent icon family where symbols improve recognition. Keep every icon semantically paired with a label or stage.",
+      "Restore selected canonical SVGs as editable PowerPoint objects with one treatment per peer group."
+    ],
     "brand": [
       "Use the Consulting Profile with Georgia claim titles and Arial supporting text.",
       "Apply the same title font size and recurring decision-band treatment on all five pages.",
@@ -46,7 +50,9 @@
         "All figures are illustrative host-authored planning assumptions from work/planning-assumptions.json.",
         "Integrate page-specific qualifications in body content rather than a generated header or footer."
       ],
-      "asset_obligations": [],
+      "asset_obligations": [
+        "Use three supporting symbols beside the numbered pilot choices. Keep the financial evidence numeric."
+      ],
       "depends_on": [],
       "visual_obligations": [
         "Use only the substantive body region defined by the resolved configuration.",
@@ -73,7 +79,9 @@
         "All figures are illustrative host-authored planning assumptions from work/planning-assumptions.json.",
         "Integrate page-specific qualifications in body content rather than a generated header or footer."
       ],
-      "asset_obligations": [],
+      "asset_obligations": [
+        "Use one symbol for each workflow in the comparison. The chart and tables remain the evidence."
+      ],
       "depends_on": [
         "s01-recommendation"
       ],
@@ -105,7 +113,9 @@
         "All figures are illustrative host-authored planning assumptions from work/planning-assumptions.json.",
         "Integrate page-specific qualifications in body content rather than a generated header or footer."
       ],
-      "asset_obligations": [],
+      "asset_obligations": [
+        "Use one coherent icon family across the source, draft, review, and release stages."
+      ],
       "depends_on": [
         "s02-opportunities"
       ],
@@ -135,7 +145,9 @@
         "All figures are illustrative host-authored planning assumptions from work/planning-assumptions.json.",
         "Integrate page-specific qualifications in body content rather than a generated header or footer."
       ],
-      "asset_obligations": [],
+      "asset_obligations": [
+        "Use a route symbol for the workstream path and a repeated flag symbol for gate markers."
+      ],
       "depends_on": [
         "s03-operating-model"
       ],
@@ -165,7 +177,9 @@
         "All figures are illustrative host-authored planning assumptions from work/planning-assumptions.json.",
         "Integrate page-specific qualifications in body content rather than a generated header or footer."
       ],
-      "asset_obligations": [],
+      "asset_obligations": [
+        "Use one finance symbol with a peer group of three decision-state symbols. Keep each state label explicit."
+      ],
       "depends_on": [
         "s04-delivery-roadmap"
       ],

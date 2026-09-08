@@ -70,8 +70,7 @@
     },
     {
       "part": "ppt/notesSlides/notesSlide1.xml",
-      "identical": false,
-      "speaker_content_identical": true
+      "identical": false
     },
     {
       "part": "ppt/slides/slide2.xml",
@@ -79,8 +78,7 @@
     },
     {
       "part": "ppt/notesSlides/notesSlide2.xml",
-      "identical": false,
-      "speaker_content_identical": true
+      "identical": false
     },
     {
       "part": "ppt/slides/slide3.xml",
@@ -88,8 +86,7 @@
     },
     {
       "part": "ppt/notesSlides/notesSlide3.xml",
-      "identical": false,
-      "speaker_content_identical": true
+      "identical": false
     },
     {
       "part": "ppt/slides/slide4.xml",
@@ -97,8 +94,7 @@
     },
     {
       "part": "ppt/notesSlides/notesSlide4.xml",
-      "identical": false,
-      "speaker_content_identical": true
+      "identical": false
     },
     {
       "part": "ppt/slides/slide5.xml",
@@ -106,8 +102,7 @@
     },
     {
       "part": "ppt/notesSlides/notesSlide5.xml",
-      "identical": false,
-      "speaker_content_identical": true
+      "identical": false
     },
     {
       "part": "ppt/slideMasters/slideMaster1.xml",
@@ -180,6 +175,5 @@
       "sha256": "f4fc7b2d7f2e757da8e1b643afca1a49e275a65ada82a50c555549ebcb304713"
     }
   ],
-  "preview_environment_scope": "Recorded macOS LibreOffice and fonts. This establishes reproducibility of frozen reconstruction inputs, not deterministic image generation.",
-  "notes_path_difference": "All five note parts retain the same speaker text. Generated-target source references identify the new rebuild workspace, so the raw note XML paths differ."
+  "preview_environment_scope": "Recorded macOS LibreOffice and fonts. This establishes reproducibility of frozen reconstruction inputs, not deterministic image generation."
 }

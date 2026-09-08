@@ -304,6 +304,30 @@ def test_config_evidence_does_not_issue_stage_verdict() -> None:
     assert "passed" not in payload
 
 
+def test_config_evidence_reports_a_selected_remote_icon_set_disabled_by_the_session(tmp_path: Path) -> None:
+    session = tmp_path / "session.json"
+    resolved = tmp_path / "resolved.json"
+    session.write_text(json.dumps({
+        "profile": "consulting",
+        "remote_sources": {"remix_icon": {"enabled": False}},
+    }), encoding="utf-8")
+    result = run_script(
+        "resolve_config.py",
+        "--base", str(FRAMEWORK / "defaults" / "slidepoise-config.json"),
+        "--profiles-root", str(PROFILES),
+        "--session", str(session),
+        "--output", str(resolved),
+    )
+    assert result.returncode == 0, result.stderr or result.stdout
+    evidence = run_script("preflight_config.py", str(resolved))
+    payload = json.loads(evidence.stdout)
+    assert evidence.returncode == 0
+    assert payload["blocking_facts"] == []
+    assert payload["configuration_facts"] == [
+        "selected remote icon Library Set is disabled for this run: remix-icon (remix_icon)"
+    ]
+
+
 def test_sam_auto_falls_back_without_checkpoint() -> None:
     sys.path.insert(0, str(SKILL / "runtime" / "scripts"))
     import numpy as np

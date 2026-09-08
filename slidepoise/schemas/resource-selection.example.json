@@ -3,6 +3,23 @@
     "intent": "Optional visual emphasis or mood specific to this slide",
     "freedom": "Describe what is fixed and what the Agent may decide"
   },
+  "selection_reasoning": {
+    "icons": {
+      "communication_roles": ["Make the source, review and release stages faster to distinguish"],
+      "candidates_inspected": ["Remix Icon file-search line/fill pair", "Remix Icon shield-check line/fill pair"],
+      "decision": "Use one coherent icon family for the operating stages. The marks clarify stage ownership without replacing the labels."
+    },
+    "components": {
+      "communication_roles": ["Structure a compact decision comparison"],
+      "candidates_inspected": ["Consulting decision table"],
+      "decision": "Use the table as adaptable grammar because the content contains comparable criteria and owners."
+    },
+    "visual_references": {
+      "communication_roles": ["Establish hierarchy and pacing"],
+      "candidates_inspected": ["Primary profile reference"],
+      "decision": "Use the reference for visual language only."
+    }
+  },
   "selected_visual_references": [
     {
       "id": "reference-primary",

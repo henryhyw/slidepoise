@@ -1,0 +1,58 @@
+{
+  "pair_id": "remix-money-dollar-circle",
+  "semantic_icon_name": "money-dollar-circle",
+  "provider": "Remix Icon",
+  "provider_version": "4.9.0",
+  "category": "Finance",
+  "candidates": [
+    {
+      "asset_id": "remix-money-dollar-circle-line",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/money-dollar-circle/remix-money-dollar-circle-line.svg",
+      "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Finance/money-dollar-circle-line.svg",
+      "source_repository_path": "icons/Finance/money-dollar-circle-line.svg",
+      "provider": "Remix Icon",
+      "provider_version": "4.9.0",
+      "license": "Remix Icon License v1.0",
+      "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+      "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+      "style_variant": "line",
+      "style_pair_id": "remix-money-dollar-circle",
+      "pair_asset_ids": [
+        "remix-money-dollar-circle-line",
+        "remix-money-dollar-circle-fill"
+      ],
+      "intrinsic_aspect_ratio": 1.0,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "preserve_canonical_color": false,
+      "sha256": "c8877cfe1f79365ad20000cb6eeb013f0412764523f5ab000fbab6133a77e6a6",
+      "persistence": "run_cache_only",
+      "selection_status": "candidate_pending_post_generation_visual_review"
+    },
+    {
+      "asset_id": "remix-money-dollar-circle-fill",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/money-dollar-circle/remix-money-dollar-circle-fill.svg",
+      "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Finance/money-dollar-circle-fill.svg",
+      "source_repository_path": "icons/Finance/money-dollar-circle-fill.svg",
+      "provider": "Remix Icon",
+      "provider_version": "4.9.0",
+      "license": "Remix Icon License v1.0",
+      "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+      "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+      "style_variant": "fill",
+      "style_pair_id": "remix-money-dollar-circle",
+      "pair_asset_ids": [
+        "remix-money-dollar-circle-line",
+        "remix-money-dollar-circle-fill"
+      ],
+      "intrinsic_aspect_ratio": 1.0,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "preserve_canonical_color": false,
+      "sha256": "9d28a3c607602d78bca67be2e6cfc88aa6e809ab44e197c4bb7361f1983e597c",
+      "persistence": "run_cache_only",
+      "selection_status": "candidate_pending_post_generation_visual_review"
+    }
+  ],
+  "selection_owner": "host_agent_post_generation_visual_review"
+}

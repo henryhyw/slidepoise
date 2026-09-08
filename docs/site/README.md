@@ -1,6 +1,6 @@
 # The SlidePoise project showcase
 
-A static, self-contained project page for SlidePoise. It presents the architecture, sample decks, interactive Console demo and installation instructions using plain HTML, CSS and JavaScript. It uses system fonts and has no analytics, remote font requests or build dependency.
+A static, self-contained product page for creating editable presentations with Codex. It uses system fonts, plain HTML, CSS, and JavaScript. It has no application framework, analytics, remote font requests, or build dependency.
 
 From the repository root, run
 
@@ -16,15 +16,15 @@ The viewer provides Editable PowerPoint, Compare, and AI-generated design modes 
 
 Expand opens a page dialog containing the same live viewer. Slide selection, object inspection and the comparison position carry over. Close or Escape returns it to its original position, restores the page's scroll position, and returns focus to the Expand button. This works within the browser page and does not invoke operating-system fullscreen.
 
-The generated design can be enlarged directly from its canvas. Content cards open the brief, images and chart evidence in a page dialog. Pointer feedback changes the card surface and subtly scales its image. A short scale and fade uses the source card's position when the dialog opens and closes. Keyboard and reduced-motion actions are immediate. General source JSON appears as readable fields and expandable sections. The presentation plan and slide brief have dedicated content renderers. Exact initial, revision and historical prompts appear only in technical disclosures, with the original source unchanged. Escape closes the dialog and returns focus. The only public download action is the sample PowerPoint beside its description below the viewer. PDF and source archives remain in the underlying example directories.
+The generated design can be enlarged directly from its canvas. Whole content cards open the brief, images and chart evidence in a page dialog. Pointer feedback changes the card surface and subtly scales its image. A short scale and fade uses the source card’s position when the dialog opens and closes. Ordinary content cards use their whole surface for interaction, without repeated floating expand icons. Keyboard and reduced-motion actions are immediate. General source JSON is presented as readable fields and expandable sections. The presentation plan and slide brief have dedicated content renderers. Exact initial, revision and historical prompts appear only in technical disclosures, with the original source unchanged. Escape closes the dialog and returns focus. The only public download action is the sample PowerPoint, beside its description below the viewer. PDF and source archives remain in the underlying example directories.
 
-The How it works section follows one actual opportunity slide. A compact preview of its authored intent sits beside the generated content image. The opened slide plan includes every required content item, with its tables, formulas, arguments, decisions, assumptions and relationships. Repeated planning notes and design rules remain expandable. The same chart region then appears as a chart interpretation, an OpenCV measurement overlay and the native PowerPoint render. The interpretation preview is an excerpt from the authored reconstruction highlights. Full native object coverage is available in the sample inspector. The chart's categories and values agree across the intent, semantic map and extracted native object. Selecting the PowerPoint chart card opens that slide and selects the corresponding chart after its object document has loaded.
+The How it works section follows one actual opportunity slide. First, a compact preview of its authored intent sits beside the generated content image. The opened slide plan includes every required content item, with actual tables, formulas, arguments, decisions, assumptions and relationships. Repeated planning notes and design rules remain expandable. Next, the same chart region appears as a chart interpretation, an OpenCV measurement overlay and the actual native PowerPoint render. The interpretation preview is a cropped excerpt from the authored reconstruction highlights. It does not claim to be the complete source semantic map. Full native object coverage is available in the sample inspector. The chart's categories and values agree across the intent, semantic map and extracted native object. Selecting the PowerPoint chart card opens that slide and selects the corresponding chart after its object document has loaded. A later sample or slide selection cancels that navigation's selection effect.
 
 Plan, Design, Reconstruct and Review are the shared presentation stages. Each stage has an actual image preview or a document icon and a named disclosure control. Expanding it reveals the selected sample's artifact titles, thumbnails and file types. Longer explanations stay in the individual artifact dialog. Artifact counts do not change the number of stages. The stages explain the work and allow revisions to return to earlier decisions. They do not represent an enforced runtime state machine.
 
 Setup states the verified Codex environment and local prerequisites, with one copyable installer command. OpenCV supplies the measurement route. LibreOffice and Poppler are separately installed for the local preview route.
 
-The URL records the current presentation, slide and viewing mode. Copy a link such as `?deck=personal-thinking-system&slide=s04-trace&view=compare#studio` to share a specific comparison. Unknown identifiers fall back to the first available presentation or slide.
+The current presentation, slide, and viewing mode are reflected in the URL. Copy a link such as `?deck=personal-thinking-system&slide=s04-trace&view=compare#studio` to share a specific comparison. Unknown identifiers fall back to the first available presentation or slide.
 
 ## Build a portable copy
 
@@ -34,7 +34,7 @@ python docs/site/build.py --output /tmp/slidepoise-showcase
 python -m http.server 8000 --directory /tmp/slidepoise-showcase
 ```
 
-The builder validates every referenced artifact, copies the page and complete example directories, and creates a checksum inventory. Open `/docs/site/` in the resulting bundle. The root page also links to the showcase.
+The builder validates every referenced artifact, copies the page and complete example directories, and creates a checksum inventory. Open `/docs/site/` in the resulting bundle. The root page also links to the showcase. No deployment is performed.
 
 For a personal website, copy the bundle at a path where `docs/site/` and `examples/` retain their relative positions. Its pages and assets also work behind a URL prefix. The browser requires all eight declared site files, including the planning and object-inspection modules. The [asset guide](../SHOWCASE_ASSETS.md) documents the source contract and capture material.
 

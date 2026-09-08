@@ -13,6 +13,10 @@ Read `resolved_profile.visual_reference_priorities` after config resolution. Ins
 
 The host Agent selects resources by semantic role, visual fit, profile compatibility, identity requirements, and downstream reconstruction value. Do not turn selection into a numeric relevance winner. Respect configured budgets; user-required assets are exempt from the optional-asset cap.
 
+Treat resource selection as part of communication design. Inspect the slide's claims, comparisons, actors, stages, decisions and recurring concepts before deciding that text and geometry are sufficient. A useful icon can make a role or action faster to recognize. A reusable component can carry a familiar information structure. An exact asset can preserve identity. Avoid decoration that adds no meaning.
+
+Record `selection_reasoning` in the resource-selection file. Name the resource classes considered, the communication roles they could serve, the candidates inspected, and why the selected resources earned space in the composition. When a class remains empty, give the actual reason. For a deck, compare these decisions across pages. If a selected Library Set is disabled by a session override, treat that as a deliberate limitation and revisit it when the slide would benefit from that source.
+
 Exact user-required assets override packaged alternatives. Brand identity requires an exact asset; never substitute a generic icon for a missing logo.
 
 ## Generation context sheet

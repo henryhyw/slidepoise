@@ -109,6 +109,7 @@
     "default_model": "gpt-image-2",
     "host_adapter": {
       "mode": "host_native_or_delegated_image_generation",
+      "max_prompt_chars": 32000,
       "chatgpt": "use the host-native image generation/edit capability directly",
       "codex": "use the available image-generation skill/tool; when the Codex host exposes image-capable agent delegation, delegate only the image call and keep SlidePoise orchestration in the parent agent",
       "unsupported_host_policy": "stop at the image-generation stage rather than replacing creative generation with deterministic drawing"

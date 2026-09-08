@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#fafafa">
-  <meta name="description" content="An open-source presentation system that helps Codex plan, design, build, and review a complete PowerPoint presentation.">
-  <title>SlidePoise · Open-source presentation system for Codex</title>
+  <meta name="description" content="Work with AI to develop your content, explore layouts beyond fixed templates and create an editable PowerPoint using your visual references and assets.">
+  <title>SlidePoise · AI presentation design</title>
   <link rel="icon" href="mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="object-inspector.css">
@@ -28,15 +28,15 @@
 
   <main>
     <section class="hero page-width" aria-labelledby="hero-title">
-      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Open-source presentation system for Codex</p>
-      <h1 id="hero-title">Let the argument<br>shape the design.</h1>
-      <p class="hero-description">SlidePoise gives Codex control of the argument, composition, and visual language, then carries those decisions into native PowerPoint. Its architecture separates creative judgement from precise measurement and construction, allowing each presentation to develop its own form without losing structure.</p>
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Open-source presentation skill for Codex</p>
+      <h1 id="hero-title">Let the design follow<br>the argument.</h1>
+      <p class="hero-description">SlidePoise is an open-source Codex skill for designing complete presentations. You develop the argument with the Agent and bring the references and visual assets that matter. Image generation explores each composition, the Agent interprets the chosen design, OpenCV measures it, and local tools reconstruct the deck as editable PowerPoint.</p>
       <div class="hero-actions"><a class="button" href="#setup">Get SlidePoise</a><a class="quiet-link source-link" href="https://github.com/henryhyw/slidepoise" target="_blank" rel="noopener"><svg class="github-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 .75a11.25 11.25 0 0 0-3.56 21.92c.56.1.77-.24.77-.54v-2.09c-3.14.68-3.8-1.33-3.8-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.23.71-1.51-2.51-.29-5.15-1.26-5.15-5.57 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.16a10.75 10.75 0 0 1 5.65 0c2.15-1.46 3.1-1.16 3.1-1.16.61 1.55.23 2.7.11 2.98.72.79 1.16 1.8 1.16 3.03 0 4.32-2.64 5.28-5.16 5.56.41.35.77 1.03.77 2.09v3.1c0 .3.2.65.78.54A11.25 11.25 0 0 0 12 .75Z"/></svg>View source</a></div>
     </section>
 
     <section id="philosophy" class="philosophy page-width" aria-labelledby="philosophy-title">
       <div class="section-heading architecture-heading"><h2 id="philosophy-title">How SlidePoise works</h2></div>
-      <p class="section-intro">SlidePoise assigns judgement and measurement to different parts of the system. The Agent develops the argument, plans the deck, and decides how each slide should work. Image generation explores the composition. OpenCV measures visible pixels inside Agent-defined regions. Local tools build native PowerPoint objects. The Agent then checks the rendered deck against the plan and selected designs. The example below follows one chart through reconstruction.</p>
+      <p class="section-intro">The Agent first works out the argument and the job of each slide. Image generation can then explore the composition without squeezing the content into a fixed template. The Agent maps the chosen design, OpenCV measures its geometry, and local tools reconstruct the result with native PowerPoint objects.</p>
       <div id="walkthrough-loading" class="load-state" role="status">Loading the design example…</div>
       <div id="walkthrough" class="walkthrough" hidden>
         <article class="walkthrough-step">
@@ -58,6 +58,42 @@
       </div>
       <p class="architecture-review">The Agent checks the rendered slides together and adjusts recurring titles, labels, colours and spacing for consistency.</p>
 
+      <article class="asset-system" aria-labelledby="asset-system-title">
+        <div class="asset-system-copy">
+          <p class="eyebrow">Visual assets</p>
+          <h3 id="asset-system-title">Bring the visual language you already use</h3>
+          <p>Add the icons, logos, references and PowerPoint components your presentations already rely on. The Agent chooses what helps each slide and gives image generation the real artwork as design context. During reconstruction, SlidePoise replaces generated stand-ins with the original files. The final deck keeps the intended visual identity and editable objects.</p>
+        </div>
+        <figure class="asset-system-figure" aria-label="A Library Set supplies visual context to image generation and canonical assets to the reconstructed PowerPoint">
+          <div class="asset-stage asset-library-stage">
+            <span class="asset-stage-label">Library Set</span>
+            <div class="asset-glyphs" aria-hidden="true">
+              <span><img src="assets/file-search-line.svg" alt=""></span>
+              <span><img src="assets/shield-check-line.svg" alt=""></span>
+              <span><img src="assets/user-star-line.svg" alt=""></span>
+            </div>
+            <small>Icons, logos and reusable components</small>
+          </div>
+          <span class="asset-connection" aria-hidden="true"><i></i><b>Selected for this slide</b></span>
+          <div class="asset-stage asset-design-stage">
+            <span class="asset-stage-label">Generated design</span>
+            <div class="asset-slide-miniature" aria-hidden="true">
+              <i class="asset-mini-title"></i>
+              <span><img src="assets/file-search-line.svg" alt=""><i></i></span>
+              <span><img src="assets/shield-check-line.svg" alt=""><i></i></span>
+              <span><img src="assets/user-star-line.svg" alt=""><i></i></span>
+            </div>
+            <small>The artwork shapes the composition</small>
+          </div>
+          <span class="asset-connection" aria-hidden="true"><i></i><b>Original file restored</b></span>
+          <div class="asset-stage asset-powerpoint-stage">
+            <span class="asset-stage-label">PowerPoint</span>
+            <div class="asset-native-object" aria-hidden="true"><span class="asset-handle h1"></span><span class="asset-handle h2"></span><span class="asset-handle h3"></span><span class="asset-handle h4"></span><img src="assets/shield-check-line.svg" alt=""></div>
+            <small>Canonical SVG, placed as a native object</small>
+          </div>
+        </figure>
+      </article>
+
     <div id="process" class="process" aria-labelledby="process-title">
       <div class="section-heading"><h3 id="process-title">From brief to PowerPoint</h3></div>
       <p class="section-intro">Discuss the audience, content and design with Codex. The Agent plans the slides, develops the designs, builds the PowerPoint and reviews the result. Open a stage to inspect an example.</p>
@@ -67,7 +103,7 @@
 
     <section id="examples" class="samples page-width" aria-labelledby="examples-title">
       <div class="section-heading"><h2 id="examples-title">Sample presentations</h2></div>
-      <p class="section-intro">Browse an essay about working with AI and a consulting proposal for an AI pilot. For each slide, you can compare the generated design with the PowerPoint, inspect element groups and measurements, or read the full plan.</p>
+      <p class="section-intro">Open either presentation to see the plan, the generated composition, the editable PowerPoint, and the evidence used to reconstruct it. The consulting proposal also shows how selected icons become part of the design and return as canonical SVGs in the final deck.</p>
       <div id="load-state" class="load-state" role="status">Loading the presentations…</div>
       <div class="samples-container">
         <div id="project-grid" class="sample-chooser" role="group" aria-label="Choose a sample presentation"></div>
@@ -139,7 +175,7 @@
     </section>
   </main>
 
-  <footer class="site-footer page-width"><a class="wordmark" href="#top"><img src="mark.svg" width="23" height="23" alt="">SlidePoise</a><p>Planning, free-form design, native PowerPoint, and review across the deck.</p><a href="https://github.com/henryhyw/slidepoise/blob/main/LICENSE" target="_blank" rel="noopener">MIT license</a></footer>
+  <footer class="site-footer page-width"><a class="wordmark" href="#top"><img src="mark.svg" width="23" height="23" alt="">SlidePoise</a><p>AI presentation design, beyond fixed templates.</p><a href="https://github.com/henryhyw/slidepoise/blob/main/LICENSE" target="_blank" rel="noopener">MIT license</a></footer>
 
   <dialog id="viewer-dialog" class="viewer-dialog" aria-label="Expanded presentation viewer"></dialog>
   <dialog id="artifact-dialog" class="artifact-dialog" aria-labelledby="artifact-title" aria-describedby="artifact-description"><div class="dialog-header"><div><p id="artifact-type" class="eyebrow"></p><h2 id="artifact-title"></h2></div><div class="dialog-actions"><button id="artifact-close" class="icon-button" type="button" aria-label="Close artifact viewer"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="m5 5 10 10M5 15 15 5"/></svg></button></div></div><div id="artifact-body" class="artifact-body"></div><p id="artifact-description" class="dialog-description"></p></dialog>

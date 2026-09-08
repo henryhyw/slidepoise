@@ -1,3 +1,3 @@
-# Archived interface review
+# Earlier interface review
 
-These captures document an earlier Consulting interface. They remain as a visual history and do not describe the current project page.
+These captures show the Consulting v3 assets in the interface before the product narrative and sample-browser redesign requested later in this session. They are retained as iteration evidence and are not a final website acceptance record.

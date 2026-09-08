@@ -1,6 +1,6 @@
 # Usage
 
-SlidePoise is a Codex skill and local runtime for taking a presentation from initial brief to reviewed PowerPoint deck. The Agent develops the argument and visual direction, explores each slide through free-form image generation, interprets the selected designs and reviews the actual PowerPoint renders. Local tools handle pixel measurement, text fitting, native construction and deck assembly.
+SlidePoise is a Codex skill and local runtime for creating editable presentations. The Agent develops the content and visual direction, interprets the generated design as meaningful objects, and reviews the actual PowerPoint render. Local tools supply measurement, text fitting, native construction and deck assembly.
 
 The [README](../README.md) introduces the project and shows sample presentations. This guide covers installation, your first request and reusable visual settings. The current integration has been exercised with Codex. Other Agent hosts need their own integration checks.
 
@@ -31,7 +31,7 @@ Setup also prepares local previews. LibreOffice opens and renders the PowerPoint
 
 Setup checks both executables after installation and reports an incomplete installation as an error. Resolve the reported issue and rerun the same command. If your Agent host already provides PowerPoint rendering, advanced users can pass `--skip-preview`. Codex, image generation and fonts remain part of your environment.
 
-Start a presentation in Codex with `$slidepoise`.
+Then start a presentation in Codex.
 
 ```text
 $slidepoise
@@ -44,15 +44,17 @@ Deliver an editable PowerPoint.
 
 Include the source material, intended audience and decision when you have them. You can request a specific style, ask for feedback at selected points or let the Agent proceed autonomously. Follow-up requests can revise one page, reorder the argument or change the visual direction.
 
-## What happens after your request
+OpenCV measures the geometry and colour of objects identified by the Agent.
 
-The Agent develops the argument and shared visual direction before producing pages. It identifies elements that serve the same purpose across the deck, including small recurring labels and page identifiers, and chooses their treatment together. Each layout can respond to its message. Repeated elements found later in generated designs or actual renders join the same deck review.
+## From the request to the deck
 
-Each image call uses one request compiled from the current content, canvas, references and shared design. The Agent sends that prompt and its recorded attachments to the image tool. A change in direction updates those inputs before the next request. You can guide these decisions in conversation without managing intermediate files.
+The Agent develops the argument and a shared visual direction before producing the pages. It identifies elements that serve the same purpose across the deck, including small recurring labels and page identifiers, and chooses their treatment together. Layouts can vary with the message. New repeated elements found in generated designs or actual renders become part of that same review.
+
+Each image call uses one request compiled from the current content, canvas, references and shared design. The Agent sends that prompt and its recorded attachments to the image tool. Changes to the direction update those inputs before another request is compiled. You can guide these decisions in conversation without managing the intermediate files.
 
 Generated images contain the slide's content area. Shared headers, footers and page numbers are added later in PowerPoint through its inherited frame. The enabled frame heights are subtracted from the full slide before generation. The content image is reconstructed in that reserved area without stretching.
 
-The Agent interprets the selected image as meaningful objects, inspects OpenCV measurements and reviews the rendered PowerPoint. It compares the content crop with the generated design and the full pages with one another. Repeated typography, callouts, accents and frame details receive a separate calibration across the deck. A successful build only confirms that the file was constructed. The Agent still has to judge its visual quality and consistency.
+The Agent interprets the selected image as meaningful objects, inspects OpenCV's measured evidence, and reviews the rendered PowerPoint. It compares the content crop with the generated target and the full pages with one another. Repeated typography, callouts, accents and frame details receive a separate visual calibration across the deck. A successful build or separate page reviews do not establish that consistency.
 
 ## Install from a checkout
 
@@ -133,15 +135,15 @@ Profiles can specify a palette, typography, density, or icon treatment, express 
 
 The skill, config, and at least one profile are the working core. `settings.json` remembers the current profile. Python and Node dependencies are needed for measurement and PowerPoint construction, but their location depends on the installation route. A pip or uv installation uses its own Python environment and does not also need `~/.slidepoise/python/`. The workspace and cache hold generated local data.
 
-`archive/` appears only when setup needs a recovery copy while replacing a changed skill, migrating a configuration or retiring bundled Profile files. Repeating setup with identical skill content creates no additional backup. Generation ignores these files, and distribution packages exclude them. Remove a backup when you no longer need it for recovery. The repository's historical `archive/` is separate and never enters a new installation.
+`archive/` is not an installed component or a dependency. A clean installation does not create it. Updates create a backup only when replacing a changed skill, migrating a config, or retiring bundled profile files. Repeating setup with an identical skill does not create another copy. Backups never participate in generation and are excluded from the distribution. Remove a particular backup only when you no longer need it for recovery. The repository's historical `archive/` is separate and is never copied into a new installation.
 
 ### Upgrading from the former name
 
-Default setup moves an existing `~/.slidecraft/` to `~/.slidepoise/` when the new directory is absent. A compatibility symlink keeps historical absolute paths and virtualenv launchers working against the same data directory. Historical prompts, run artifacts, reviews and hashes keep their original contents. Setup archives an existing `~/.codex/skills/slidecraft/` when it installs the new skill, leaving only `~/.codex/skills/slidepoise/` discoverable. If both data directories already exist, setup stops before merging or overwriting them. Custom homes require an explicit `SLIDEPOISE_HOME` value.
+Default setup moves an existing `~/.slidecraft/` to `~/.slidepoise/` if the new directory does not exist. It leaves a compatibility symlink for historical absolute paths and virtualenv launchers. This is one data directory, not two installations. Historical prompts, run artifacts, reviews, and hashes are not rewritten. An existing `~/.codex/skills/slidecraft/` is archived when the new skill is installed, leaving only `~/.codex/skills/slidepoise/` discoverable. If both data directories already exist, setup stops instead of merging or overwriting them. Custom homes require an explicit `SLIDEPOISE_HOME` value.
 
 ## Visual authority
 
-Mechanical tools report machine-checkable facts and measurements. The host Agent combines those facts with direct semantic and visual inspection. Font size, density, whitespace, balance, similarity and professional quality remain Agent judgements.
+Mechanical tools report machine-checkable facts and measurements only. They do not issue a visual or release verdict. The host Agent combines those facts with direct semantic and visual inspection. Font size, density, whitespace, balance, similarity, and professional quality remain Agent judgements.
 
 User checkpoints are adaptive. The Agent may show an outline, style sheet, representative sample, or selected slide candidates when feedback would prevent material rework. A user who asks for a fully automatic deck does not need to approve every page. The Agent can add, remove, reorder, split, merge, and revise slides by updating the live deck outline and rebuilding only affected pages.
 
@@ -171,7 +173,7 @@ slidepoise run ack-events /absolute/path/to/run --ids <event-id> --expected <rev
 
 Every run contains `work/deck-outline.json`, even for a one-slide request. Slide IDs stay stable while the ordered outline changes. Each slide keeps its own generation, semantic mapping, measurement, and reconstruction artifacts. `render-deck` assembles constructor scenes in the current outline order.
 
-Use `run sync` to read durable panel changes and current settings, `run ack-events` after adopting those changes, and `run archive` to preserve the current presentation before revising it. Existing legacy `work/activity.json` and `work/stage-selections.json` files remain untouched in historical snapshots.
+Earlier checkout versions exposed `run activity` and `run publish` for a stage-based display that the current product no longer uses. Those commands have been removed. Progress belongs in the Agent conversation. Use `run sync` to read durable panel changes and current settings, `run ack-events` after adopting those changes, and `run archive` to preserve the current presentation before revising it. Existing `work/activity.json` and `work/stage-selections.json` files remain untouched and are included in historical snapshots.
 
 ## Validation
 

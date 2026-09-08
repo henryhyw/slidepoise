@@ -3,7 +3,7 @@
   "provenance": {
     "created_by": "host_agent_visual_reasoning",
     "source": "accepted_generated_image",
-    "source_sha256": "6f63f75099b63a4b14aa1d3e9479e895d3401d03342374aa1f858f1e586f9ab6",
+    "source_sha256": "d209b68bdb55a094f90190b32ca032a43a9689b55db9f73614250f737a3cbfb2",
     "composition_policy": "accepted_target_geometry_frozen"
   },
   "entities": [
@@ -11,21 +11,21 @@
       "id": "headline",
       "display_label": "Release the next investment against evidence",
       "kind": "text",
-      "role": "headline",
+      "role": "slide_title",
       "text": "Release the next investment against evidence",
       "text_style_role": "slide_title",
       "typography_group": "claim-title",
       "bbox_hint": [
-        48,
-        19,
-        1824,
-        80
+        46,
+        20,
+        1828,
+        76
       ],
       "search_bbox_hint": [
-        38,
-        27,
-        1329,
-        65
+        46,
+        20,
+        1828,
+        76
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -36,8 +36,8 @@
         "font_weight": "regular",
         "target_font_size_px": 64,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
@@ -51,16 +51,16 @@
       "text_style_role": "subtitle",
       "typography_group": "subtitle",
       "bbox_hint": [
-        48,
-        103,
-        1824,
-        47
+        47,
+        101,
+        1825,
+        48
       ],
       "search_bbox_hint": [
-        40,
-        109,
-        956,
-        37
+        47,
+        101,
+        1825,
+        48
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -71,8 +71,8 @@
         "font_weight": "regular",
         "target_font_size_px": 32,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
@@ -84,22 +84,16 @@
       "shape": "rectangle",
       "role": "native_presentation_geometry",
       "bbox_hint": [
-        48,
-        165,
-        1824,
-        2
-      ],
-      "search_bbox_hint": [
-        39,
-        162,
-        1841,
+        46,
+        158,
+        1828,
         2
       ],
       "geometry_policy": "agent_logical",
       "z": 1,
       "meaningful_visible": true,
       "style_hint": {
-        "fill": "#AAAAAA",
+        "fill": "#91969D",
         "stroke": "none",
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
@@ -109,21 +103,21 @@
       "id": "capacity-heading",
       "display_label": "BASE-CASE CAPACITY MODEL",
       "kind": "text",
-      "role": "capacity-heading",
+      "role": "heading_large",
       "text": "BASE-CASE CAPACITY MODEL",
       "text_style_role": "heading_large",
-      "typography_group": "section-headings",
+      "typography_group": "section",
       "bbox_hint": [
-        41,
-        201,
-        584,
-        44
+        46,
+        195,
+        545,
+        38
       ],
       "search_bbox_hint": [
-        41,
-        205,
-        355,
-        30
+        46,
+        195,
+        545,
+        38
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -132,33 +126,55 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 28,
+        "target_font_size_px": 27,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "investment-heading",
-      "display_label": "INVESTMENT",
-      "kind": "text",
-      "role": "investment-heading",
-      "text": "INVESTMENT",
-      "text_style_role": "heading_large",
-      "typography_group": "section-headings",
+      "id": "capacity-panel",
+      "display_label": "capacity panel",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
       "bbox_hint": [
-        633,
-        201,
-        377,
-        44
+        46,
+        239,
+        545,
+        320
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#FFF5ED",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "capacity-equation",
+      "display_label": "900 \u00d7 12 h \u00d7 60% \u00d7 30% = 1,944 h",
+      "kind": "text",
+      "role": "large_data_number",
+      "text": "900 \u00d7 12 h \u00d7 60% \u00d7 30%\n= 1,944 h",
+      "text_style_role": "large_data_number",
+      "typography_group": "equation",
+      "bbox_hint": [
+        64,
+        258,
+        505,
+        115
       ],
       "search_bbox_hint": [
-        633,
-        205,
-        170,
-        29
+        64,
+        258,
+        505,
+        115
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -167,455 +183,35 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 28,
-        "alignment": "left",
-        "line_spacing": 1.0,
+        "target_font_size_px": 43,
+        "alignment": "center",
         "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "sensitivity-heading",
-      "display_label": "FIRST-YEAR SENSITIVITY \u00b7 50% RAMP",
-      "kind": "text",
-      "role": "sensitivity-heading",
-      "text": "FIRST-YEAR SENSITIVITY \u00b7 50% RAMP",
-      "text_style_role": "heading_large",
-      "typography_group": "section-headings",
-      "bbox_hint": [
-        1061,
-        201,
-        819,
-        44
-      ],
-      "search_bbox_hint": [
-        1060,
-        205,
-        463,
-        29
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "meaningful_visible": true,
-      "reconstruction_significance": "independent_object",
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "bold",
-        "target_font_size_px": 28,
-        "alignment": "left",
         "line_spacing": 1.0,
-        "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "capacity-term-0",
-      "display_label": "900",
-      "kind": "text",
-      "role": "capacity-term-0",
-      "text": "900",
-      "text_style_role": "body",
-      "typography_group": "formula-terms",
-      "bbox_hint": [
-        88,
-        270,
-        73,
-        45
-      ],
-      "search_bbox_hint": [
-        45,
-        271,
-        57,
-        32
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "meaningful_visible": true,
-      "reconstruction_significance": "independent_object",
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "regular",
-        "target_font_size_px": 28,
-        "alignment": "left",
-        "line_spacing": 1.0,
-        "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "capacity-term-1",
-      "display_label": "\u00d7",
-      "kind": "text",
-      "role": "capacity-term-1",
-      "text": "\u00d7",
-      "text_style_role": "body",
-      "typography_group": "formula-terms",
-      "bbox_hint": [
-        174,
-        270,
-        30,
-        45
-      ],
-      "search_bbox_hint": [
-        122,
-        277,
-        19,
-        20
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "meaningful_visible": true,
-      "reconstruction_significance": "independent_object",
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "regular",
-        "target_font_size_px": 28,
-        "alignment": "left",
-        "line_spacing": 1.0,
-        "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "capacity-term-2",
-      "display_label": "12 h",
-      "kind": "text",
-      "role": "capacity-term-2",
-      "text": "12 h",
-      "text_style_role": "body",
-      "typography_group": "formula-terms",
-      "bbox_hint": [
-        218,
-        270,
-        78,
-        45
-      ],
-      "search_bbox_hint": [
-        154,
-        271,
-        62,
-        32
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "meaningful_visible": true,
-      "reconstruction_significance": "independent_object",
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "regular",
-        "target_font_size_px": 28,
-        "alignment": "left",
-        "line_spacing": 1.0,
-        "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "capacity-term-3",
-      "display_label": "\u00d7",
-      "kind": "text",
-      "role": "capacity-term-3",
-      "text": "\u00d7",
-      "text_style_role": "body",
-      "typography_group": "formula-terms",
-      "bbox_hint": [
-        282,
-        270,
-        30,
-        45
-      ],
-      "search_bbox_hint": [
-        230,
-        277,
-        19,
-        20
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "meaningful_visible": true,
-      "reconstruction_significance": "independent_object",
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "regular",
-        "target_font_size_px": 28,
-        "alignment": "left",
-        "line_spacing": 1.0,
-        "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "capacity-term-4",
-      "display_label": "60%",
-      "kind": "text",
-      "role": "capacity-term-4",
-      "text": "60%",
-      "text_style_role": "body",
-      "typography_group": "formula-terms",
-      "bbox_hint": [
-        321,
-        270,
-        75,
-        45
-      ],
-      "search_bbox_hint": [
-        261,
-        271,
-        62,
-        32
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "meaningful_visible": true,
-      "reconstruction_significance": "independent_object",
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "regular",
-        "target_font_size_px": 28,
-        "alignment": "left",
-        "line_spacing": 1.0,
-        "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "capacity-term-5",
-      "display_label": "\u00d7",
-      "kind": "text",
-      "role": "capacity-term-5",
-      "text": "\u00d7",
-      "text_style_role": "body",
-      "typography_group": "formula-terms",
-      "bbox_hint": [
-        391,
-        270,
-        30,
-        45
-      ],
-      "search_bbox_hint": [
-        332,
-        277,
-        19,
-        20
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "meaningful_visible": true,
-      "reconstruction_significance": "independent_object",
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "regular",
-        "target_font_size_px": 28,
-        "alignment": "left",
-        "line_spacing": 1.0,
-        "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "capacity-term-6",
-      "display_label": "30%",
-      "kind": "text",
-      "role": "capacity-term-6",
-      "text": "30%",
-      "text_style_role": "body",
-      "typography_group": "formula-terms",
-      "bbox_hint": [
-        425,
-        270,
-        70,
-        45
-      ],
-      "search_bbox_hint": [
-        361,
-        271,
-        61,
-        32
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "meaningful_visible": true,
-      "reconstruction_significance": "independent_object",
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "regular",
-        "target_font_size_px": 28,
-        "alignment": "left",
-        "line_spacing": 1.0,
-        "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "capacity-term-7",
-      "display_label": "=",
-      "kind": "text",
-      "role": "capacity-term-7",
-      "text": "=",
-      "text_style_role": "body",
-      "typography_group": "formula-terms",
-      "bbox_hint": [
-        492,
-        270,
-        29,
-        45
-      ],
-      "search_bbox_hint": [
-        428,
-        279,
-        20,
-        16
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "meaningful_visible": true,
-      "reconstruction_significance": "independent_object",
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "regular",
-        "target_font_size_px": 28,
-        "alignment": "left",
-        "line_spacing": 1.0,
-        "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "capacity-result",
-      "display_label": "1,944 h",
-      "kind": "text",
-      "role": "capacity-result",
-      "text": "1,944 h",
-      "text_style_role": "body",
-      "typography_group": "formula-results",
-      "bbox_hint": [
-        518,
-        270,
-        110,
-        49
-      ],
-      "search_bbox_hint": [
-        450,
-        266,
-        128,
-        43
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "meaningful_visible": true,
-      "reconstruction_significance": "independent_object",
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "bold",
-        "target_font_size_px": 28,
-        "alignment": "left",
-        "line_spacing": 1.0,
-        "vertical_alignment": "top",
         "observed_foreground_color": "#FD5108",
         "style_authority": "agent_visual_observation"
       },
       "style_token": "data_highlight"
     },
     {
-      "id": "capacity-term-label-0",
-      "display_label": "Engagements",
+      "id": "capacity-labels",
+      "display_label": "Engagements          Research time          Adoption          Time saved",
       "kind": "text",
-      "role": "capacity-term-label-0",
-      "text": "Engagements",
-      "text_style_role": "label",
-      "typography_group": "formula-annotations",
+      "role": "body",
+      "text": "Engagements          Research time          Adoption          Time saved",
+      "text_style_role": "body",
+      "typography_group": "labels",
       "bbox_hint": [
-        37,
-        324,
-        158,
+        65,
+        374,
+        500,
         45
       ],
       "search_bbox_hint": [
-        34,
-        325,
-        111,
-        25
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "meaningful_visible": true,
-      "reconstruction_significance": "independent_object",
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "regular",
-        "target_font_size_px": 24,
-        "alignment": "center",
-        "line_spacing": 1.1,
-        "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "capacity-term-label-1",
-      "display_label": "Research time",
-      "kind": "text",
-      "role": "capacity-term-label-1",
-      "text": "Research\ntime",
-      "text_style_role": "label",
-      "typography_group": "formula-annotations",
-      "bbox_hint": [
-        193,
-        324,
-        111,
-        68
-      ],
-      "search_bbox_hint": [
-        153,
-        322,
-        72,
-        51
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "meaningful_visible": true,
-      "reconstruction_significance": "independent_object",
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "regular",
-        "target_font_size_px": 24,
-        "alignment": "center",
-        "line_spacing": 1.1,
-        "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "capacity-term-label-2",
-      "display_label": "Adoption",
-      "kind": "text",
-      "role": "capacity-term-label-2",
-      "text": "Adoption",
-      "text_style_role": "label",
-      "typography_group": "formula-annotations",
-      "bbox_hint": [
-        303,
-        324,
-        106,
+        65,
+        374,
+        500,
         45
       ],
-      "search_bbox_hint": [
-        258,
-        322,
-        66,
-        25
-      ],
       "geometry_policy": "agent_logical",
       "z": 20,
       "meaningful_visible": true,
@@ -623,45 +219,10 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 24,
+        "target_font_size_px": 19,
         "alignment": "center",
-        "line_spacing": 1.1,
         "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "capacity-term-label-3",
-      "display_label": "Time saved",
-      "kind": "text",
-      "role": "capacity-term-label-3",
-      "text": "Time\nsaved",
-      "text_style_role": "label",
-      "typography_group": "formula-annotations",
-      "bbox_hint": [
-        417,
-        324,
-        78,
-        68
-      ],
-      "search_bbox_hint": [
-        350,
-        322,
-        87,
-        29
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "meaningful_visible": true,
-      "reconstruction_significance": "independent_object",
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "regular",
-        "target_font_size_px": 24,
-        "alignment": "center",
-        "line_spacing": 1.1,
-        "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
@@ -673,46 +234,40 @@
       "shape": "rectangle",
       "role": "native_presentation_geometry",
       "bbox_hint": [
-        39,
-        397,
-        466,
-        1
-      ],
-      "search_bbox_hint": [
-        39,
-        397,
-        466,
+        65,
+        446,
+        490,
         1
       ],
       "geometry_policy": "agent_logical",
       "z": 1,
       "meaningful_visible": true,
       "style_hint": {
-        "fill": "#B5B5B5",
+        "fill": "#C1C4C7",
         "stroke": "none",
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "capacity-valuation",
+      "id": "capacity-value",
       "display_label": "1,944 h \u00d7 $125/h =",
       "kind": "text",
-      "role": "capacity-valuation",
+      "role": "body",
       "text": "1,944 h \u00d7 $125/h =",
       "text_style_role": "body",
-      "typography_group": "formula-terms",
+      "typography_group": "calculation",
       "bbox_hint": [
-        39,
-        451,
-        254,
-        50
+        65,
+        470,
+        270,
+        44
       ],
       "search_bbox_hint": [
-        38,
-        453,
-        247,
-        38
+        65,
+        470,
+        270,
+        44
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -721,33 +276,33 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 28,
+        "target_font_size_px": 27,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "capacity-value",
+      "id": "capacity-value-number",
       "display_label": "$243k",
       "kind": "text",
-      "role": "capacity-value",
+      "role": "large_data_number",
       "text": "$243k",
-      "text_style_role": "body",
-      "typography_group": "formula-results",
+      "text_style_role": "large_data_number",
+      "typography_group": "display-data",
       "bbox_hint": [
-        296,
-        451,
-        245,
-        50
+        330,
+        456,
+        220,
+        60
       ],
       "search_bbox_hint": [
-        294,
-        438,
-        181,
-        59
+        330,
+        456,
+        220,
+        60
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -756,34 +311,34 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 28,
+        "target_font_size_px": 47,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#FD5108",
         "style_authority": "agent_visual_observation"
       },
       "style_token": "data_highlight"
     },
     {
-      "id": "capacity-equivalent",
+      "id": "capacity-caption",
       "display_label": "annual capacity equivalent",
       "kind": "text",
-      "role": "capacity-equivalent",
+      "role": "body",
       "text": "annual capacity equivalent",
       "text_style_role": "body",
-      "typography_group": "body-copy",
+      "typography_group": "caption",
       "bbox_hint": [
-        41,
-        502,
-        578,
-        43
+        65,
+        520,
+        470,
+        34
       ],
       "search_bbox_hint": [
-        40,
-        503,
-        324,
-        32
+        65,
+        520,
+        470,
+        34
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -792,24 +347,59 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 28,
+        "target_font_size_px": 22,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "investment-heading",
+      "display_label": "INVESTMENT",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "INVESTMENT",
+      "text_style_role": "heading_large",
+      "typography_group": "section",
+      "bbox_hint": [
+        620,
+        195,
+        485,
+        38
+      ],
+      "search_bbox_hint": [
+        620,
+        195,
+        485,
+        38
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 27,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
       "id": "investment-table",
-      "display_label": "Five-row investment table",
+      "display_label": "First-year investment",
       "kind": "table",
-      "role": "investment-table",
+      "role": "structured_evidence",
       "bbox_hint": [
-        632,
-        240,
-        377,
-        273
+        620,
+        239,
+        485,
+        272
       ],
       "geometry_policy": "agent_logical",
       "z": 5,
@@ -825,7 +415,13 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left"
+                "align": "left",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -836,7 +432,13 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             }
           ],
@@ -848,8 +450,14 @@
                   "color": "FFFFFF"
                 },
                 "color": "000000",
-                "bold": false,
-                "align": "left"
+                "bold": true,
+                "align": "left",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -860,7 +468,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             }
           ],
@@ -872,8 +486,14 @@
                   "color": "F5F7F8"
                 },
                 "color": "000000",
-                "bold": false,
-                "align": "left"
+                "bold": true,
+                "align": "left",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -884,7 +504,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             }
           ],
@@ -896,8 +522,14 @@
                   "color": "FFFFFF"
                 },
                 "color": "000000",
-                "bold": false,
-                "align": "left"
+                "bold": true,
+                "align": "left",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -908,7 +540,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             }
           ],
@@ -921,7 +559,13 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left"
+                "align": "left",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -931,54 +575,60 @@
                   "color": "FFF5ED"
                 },
                 "color": "000000",
-                "bold": true,
-                "align": "center"
+                "bold": false,
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             }
           ]
         ],
         "column_widths_px": [
-          231,
-          146
+          285,
+          200
         ],
         "row_heights_px": [
-          54,
           52,
-          53,
-          56,
-          58
+          55,
+          55,
+          55,
+          55
         ]
       },
       "style_hint": {
         "font_family": "Arial",
-        "font_size_px": 24,
-        "cell_margin_px": 14,
+        "font_size_px": 22,
+        "cell_margin_px": 8,
         "color": "#000000",
         "fill": "#FFFFFF",
-        "stroke": "#DFE3E6",
+        "stroke": "#C6C9CD",
         "stroke_width_px": 1,
         "vertical_alignment": "middle"
       }
     },
     {
-      "id": "remaining-investment",
+      "id": "investment-note",
       "display_label": "Remaining implementation after the pilot $60k.",
       "kind": "text",
-      "role": "remaining-investment",
-      "text": "Remaining implementation\nafter the pilot $60k.",
+      "role": "body",
+      "text": "Remaining implementation after the pilot $60k.",
       "text_style_role": "body",
-      "typography_group": "body-copy",
+      "typography_group": "note",
       "bbox_hint": [
-        632,
-        522,
-        402,
-        70
+        620,
+        520,
+        485,
+        36
       ],
       "search_bbox_hint": [
-        631,
-        531,
-        400,
-        31
+        620,
+        520,
+        485,
+        36
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -987,24 +637,59 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 28,
+        "target_font_size_px": 21,
         "alignment": "left",
-        "line_spacing": 1.1,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "scenario-table",
-      "display_label": "Three scenarios with explicit first-year ramp",
-      "kind": "table",
-      "role": "scenario-table",
+      "id": "sensitivity-heading",
+      "display_label": "FIRST-YEAR SENSITIVITY \u00b7 50% RAMP",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "FIRST-YEAR SENSITIVITY \u00b7 50% RAMP",
+      "text_style_role": "heading_large",
+      "typography_group": "section",
       "bbox_hint": [
-        1061,
-        240,
-        819,
-        300
+        1135,
+        195,
+        738,
+        38
+      ],
+      "search_bbox_hint": [
+        1135,
+        195,
+        738,
+        38
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 27,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "sensitivity-table",
+      "display_label": "First-year sensitivity at a 50 percent ramp",
+      "kind": "table",
+      "role": "structured_evidence",
+      "bbox_hint": [
+        1135,
+        239,
+        738,
+        320
       ],
       "geometry_policy": "agent_logical",
       "z": 5,
@@ -1020,7 +705,13 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left"
+                "align": "left",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -1031,18 +722,30 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
-              "text": "Time\nsaved",
+              "text": "Time saved",
               "options": {
                 "fill": {
                   "color": "000000"
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -1053,40 +756,64 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
-              "text": "Annual\ncapacity",
+              "text": "Annual capacity",
               "options": {
                 "fill": {
                   "color": "000000"
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
-              "text": "First-year\nvalue",
+              "text": "First-year value",
               "options": {
                 "fill": {
                   "color": "000000"
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
-              "text": "Net vs\n$115k",
+              "text": "Net vs $115k",
               "options": {
                 "fill": {
                   "color": "000000"
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             }
           ],
@@ -1099,7 +826,13 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left"
+                "align": "left",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -1110,7 +843,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -1121,7 +860,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -1132,7 +877,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -1143,7 +894,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -1154,7 +911,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -1165,7 +928,13 @@
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             }
           ],
@@ -1174,77 +943,119 @@
               "text": "Base",
               "options": {
                 "fill": {
-                  "color": "F5F7F8"
+                  "color": "FFF5ED"
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left"
+                "align": "left",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
               "text": "60%",
               "options": {
                 "fill": {
-                  "color": "F5F7F8"
+                  "color": "FFF5ED"
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
               "text": "30%",
               "options": {
                 "fill": {
-                  "color": "F5F7F8"
+                  "color": "FFF5ED"
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
               "text": "1,944",
               "options": {
                 "fill": {
-                  "color": "F5F7F8"
+                  "color": "FFF5ED"
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
               "text": "$243k",
               "options": {
                 "fill": {
-                  "color": "F5F7F8"
+                  "color": "FFF5ED"
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
               "text": "$121.5k",
               "options": {
                 "fill": {
-                  "color": "F5F7F8"
+                  "color": "FFF5ED"
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
               "text": "+$6.5k",
               "options": {
                 "fill": {
-                  "color": "F5F7F8"
+                  "color": "FFF5ED"
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             }
           ],
@@ -1257,7 +1068,13 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left"
+                "align": "left",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -1268,7 +1085,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -1279,7 +1102,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -1290,7 +1119,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -1301,7 +1136,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -1312,7 +1153,13 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             },
             {
@@ -1323,141 +1170,63 @@
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center"
+                "align": "center",
+                "margin": [
+                  3,
+                  8,
+                  3,
+                  8
+                ]
               }
             }
           ]
         ],
         "column_widths_px": [
-          126,
-          126,
-          88,
-          116,
-          120,
-          129,
-          114
+          115,
+          105,
+          95,
+          105,
+          108,
+          112,
+          98
         ],
         "row_heights_px": [
-          79,
-          72,
-          74,
-          75
+          88,
+          77,
+          77,
+          78
         ]
       },
       "style_hint": {
         "font_family": "Arial",
-        "font_size_px": 24,
-        "cell_margin_px": 6,
+        "font_size_px": 18,
+        "cell_margin_px": 8,
         "color": "#000000",
         "fill": "#FFFFFF",
-        "stroke": "#DFE3E6",
+        "stroke": "#C6C9CD",
         "stroke_width_px": 1,
         "vertical_alignment": "middle"
       }
     },
     {
-      "id": "criteria-rule",
-      "display_label": "criteria rule",
-      "kind": "shape",
-      "shape": "rectangle",
-      "role": "native_presentation_geometry",
-      "bbox_hint": [
-        38,
-        607,
-        1842,
-        2
-      ],
-      "search_bbox_hint": [
-        38,
-        593,
-        1842,
-        2
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 1,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "#DFE3E6",
-        "stroke": "none",
-        "stroke_width_px": 0,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "criteria-divider-1",
-      "display_label": "criteria divider 1",
-      "kind": "shape",
-      "shape": "rectangle",
-      "role": "native_presentation_geometry",
-      "bbox_hint": [
-        629,
-        608,
-        1,
-        166
-      ],
-      "search_bbox_hint": [
-        629,
-        594,
-        1,
-        180
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 1,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "#DFE3E6",
-        "stroke": "none",
-        "stroke_width_px": 0,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "criteria-divider-2",
-      "display_label": "criteria divider 2",
-      "kind": "shape",
-      "shape": "rectangle",
-      "role": "native_presentation_geometry",
-      "bbox_hint": [
-        1245,
-        608,
-        1,
-        166
-      ],
-      "search_bbox_hint": [
-        1245,
-        594,
-        1,
-        180
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 1,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "#DFE3E6",
-        "stroke": "none",
-        "stroke_width_px": 0,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "criterion-heading-0",
-      "display_label": "GO",
+      "id": "criteria-heading",
+      "display_label": "DECISION CRITERIA",
       "kind": "text",
-      "role": "criterion-heading-0",
-      "text": "GO",
+      "role": "heading_large",
+      "text": "DECISION CRITERIA",
       "text_style_role": "heading_large",
-      "typography_group": "section-headings",
+      "typography_group": "section",
       "bbox_hint": [
-        131,
-        624,
-        437,
-        48
+        46,
+        590,
+        900,
+        36
       ],
       "search_bbox_hint": [
-        129,
-        631,
-        127,
-        41
+        46,
+        590,
+        900,
+        36
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -1466,33 +1235,137 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 28,
+        "target_font_size_px": 27,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "criterion-body-0",
+      "id": "criterion-panel-go",
+      "display_label": "criterion panel go",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        46,
+        630,
+        596,
+        150
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#F5F7F8",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "criterion-icon-go",
+      "display_label": "GO",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-play-circle-line",
+      "bbox_hint": [
+        76,
+        655,
+        94,
+        94
+      ],
+      "slot_bbox_hint": [
+        76,
+        655,
+        94,
+        94
+      ],
+      "geometry_policy": "agent_logical",
+      "slot_surface": {
+        "visible": false
+      },
+      "style_hint": {
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
+      "z": 30,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "decision-criteria-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-play-circle-line",
+          "remix-play-circle-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "id": "criterion-label-go",
+      "display_label": "GO",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "GO",
+      "text_style_role": "heading_large",
+      "typography_group": "criteria-labels",
+      "bbox_hint": [
+        216,
+        652,
+        180,
+        40
+      ],
+      "search_bbox_hint": [
+        216,
+        652,
+        180,
+        40
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 27,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#FD5108",
+        "style_authority": "agent_visual_observation"
+      },
+      "style_token": "call_to_action"
+    },
+    {
+      "id": "criterion-body-go",
       "display_label": "All four gates hold. Practice lead owns rollout.",
       "kind": "text",
-      "role": "criterion-body-0",
+      "role": "body",
       "text": "All four gates hold.\nPractice lead owns rollout.",
       "text_style_role": "body",
       "typography_group": "criteria-body",
       "bbox_hint": [
-        131,
-        676,
-        491,
-        91
+        216,
+        698,
+        390,
+        65
       ],
       "search_bbox_hint": [
-        129,
-        681,
-        489,
-        71
+        216,
+        698,
+        390,
+        65
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -1501,33 +1374,101 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 28,
+        "target_font_size_px": 22,
         "alignment": "left",
-        "line_spacing": 1.35,
         "vertical_alignment": "top",
+        "line_spacing": 1.15,
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "criterion-heading-1",
+      "id": "criterion-panel-hold",
+      "display_label": "criterion panel hold",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        655,
+        630,
+        596,
+        150
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#F5F7F8",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "criterion-icon-hold",
+      "display_label": "HOLD",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-pause-circle-line",
+      "bbox_hint": [
+        685,
+        655,
+        94,
+        94
+      ],
+      "slot_bbox_hint": [
+        685,
+        655,
+        94,
+        94
+      ],
+      "geometry_policy": "agent_logical",
+      "slot_surface": {
+        "visible": false
+      },
+      "style_hint": {
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
+      "z": 30,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "decision-criteria-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-pause-circle-line",
+          "remix-pause-circle-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "id": "criterion-label-hold",
       "display_label": "HOLD",
       "kind": "text",
-      "role": "criterion-heading-1",
+      "role": "heading_large",
       "text": "HOLD",
       "text_style_role": "heading_large",
-      "typography_group": "section-headings",
+      "typography_group": "criteria-labels",
       "bbox_hint": [
-        752,
-        624,
-        437,
-        48
+        825,
+        652,
+        180,
+        40
       ],
       "search_bbox_hint": [
-        750,
-        631,
-        127,
-        41
+        825,
+        652,
+        180,
+        40
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -1536,33 +1477,34 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 28,
+        "target_font_size_px": 27,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#FD5108",
         "style_authority": "agent_visual_observation"
-      }
+      },
+      "style_token": "call_to_action"
     },
     {
-      "id": "criterion-body-1",
+      "id": "criterion-body-hold",
       "display_label": "Evidence or usage is weak. Extend within an agreed cap.",
       "kind": "text",
-      "role": "criterion-body-1",
+      "role": "body",
       "text": "Evidence or usage is weak.\nExtend within an agreed cap.",
       "text_style_role": "body",
       "typography_group": "criteria-body",
       "bbox_hint": [
-        752,
-        676,
-        491,
-        91
+        825,
+        698,
+        390,
+        65
       ],
       "search_bbox_hint": [
-        750,
-        681,
-        489,
-        71
+        825,
+        698,
+        390,
+        65
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -1571,33 +1513,101 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 28,
+        "target_font_size_px": 22,
         "alignment": "left",
-        "line_spacing": 1.35,
         "vertical_alignment": "top",
+        "line_spacing": 1.15,
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "criterion-heading-2",
+      "id": "criterion-panel-stop",
+      "display_label": "criterion panel stop",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        1264,
+        630,
+        596,
+        150
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#F5F7F8",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "criterion-icon-stop",
+      "display_label": "STOP",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-stop-circle-line",
+      "bbox_hint": [
+        1294,
+        655,
+        94,
+        94
+      ],
+      "slot_bbox_hint": [
+        1294,
+        655,
+        94,
+        94
+      ],
+      "geometry_policy": "agent_logical",
+      "slot_surface": {
+        "visible": false
+      },
+      "style_hint": {
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
+      "z": 30,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "decision-criteria-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-stop-circle-line",
+          "remix-stop-circle-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "id": "criterion-label-stop",
       "display_label": "STOP",
       "kind": "text",
-      "role": "criterion-heading-2",
+      "role": "heading_large",
       "text": "STOP",
       "text_style_role": "heading_large",
-      "typography_group": "section-headings",
+      "typography_group": "criteria-labels",
       "bbox_hint": [
-        1380,
-        624,
-        437,
-        48
+        1434,
+        652,
+        180,
+        40
       ],
       "search_bbox_hint": [
-        1378,
-        631,
-        127,
-        41
+        1434,
+        652,
+        180,
+        40
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -1606,33 +1616,34 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 28,
+        "target_font_size_px": 27,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#FD5108",
         "style_authority": "agent_visual_observation"
-      }
+      },
+      "style_token": "call_to_action"
     },
     {
-      "id": "criterion-body-2",
+      "id": "criterion-body-stop",
       "display_label": "A critical data control fails. Suspend use and close the issue.",
       "kind": "text",
-      "role": "criterion-body-2",
+      "role": "body",
       "text": "A critical data control fails.\nSuspend use and close the issue.",
       "text_style_role": "body",
       "typography_group": "criteria-body",
       "bbox_hint": [
-        1380,
-        676,
-        491,
-        91
+        1434,
+        698,
+        390,
+        65
       ],
       "search_bbox_hint": [
-        1378,
-        681,
-        489,
-        71
+        1434,
+        698,
+        390,
+        65
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -1641,10 +1652,10 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 28,
+        "target_font_size_px": 22,
         "alignment": "left",
-        "line_spacing": 1.35,
         "vertical_alignment": "top",
+        "line_spacing": 1.15,
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
@@ -1656,16 +1667,10 @@
       "shape": "rectangle",
       "role": "native_presentation_geometry",
       "bbox_hint": [
-        48,
-        793,
-        1824,
-        134
-      ],
-      "search_bbox_hint": [
-        38,
-        793,
-        1842,
-        138
+        46,
+        835,
+        1828,
+        93
       ],
       "geometry_policy": "agent_logical",
       "z": 1,
@@ -1684,16 +1689,10 @@
       "shape": "rectangle",
       "role": "native_presentation_geometry",
       "bbox_hint": [
-        48,
-        793,
+        46,
+        835,
         8,
-        134
-      ],
-      "search_bbox_hint": [
-        38,
-        793,
-        18,
-        138
+        93
       ],
       "geometry_policy": "agent_logical",
       "z": 1,
@@ -1709,20 +1708,20 @@
       "id": "decision-label",
       "display_label": "APPROVE $25k NOW",
       "kind": "text",
-      "role": "decision-label",
+      "role": "call_to_action",
       "text": "APPROVE $25k NOW",
       "text_style_role": "call_to_action",
-      "typography_group": "decision-band",
+      "typography_group": "decision",
       "bbox_hint": [
-        100,
-        832,
-        420,
-        52
+        80,
+        853,
+        430,
+        50
       ],
       "search_bbox_hint": [
-        104,
-        841,
-        459,
+        80,
+        853,
+        430,
         50
       ],
       "geometry_policy": "agent_logical",
@@ -1734,8 +1733,8 @@
         "font_weight": "bold",
         "target_font_size_px": 28,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "middle",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#FD5108",
         "style_authority": "agent_visual_observation"
       },
@@ -1745,21 +1744,21 @@
       "id": "decision-message",
       "display_label": "Release the remaining $60k only after the week-12 gate.",
       "kind": "text",
-      "role": "decision-message",
+      "role": "call_to_action",
       "text": "Release the remaining $60k only after the week-12 gate.",
       "text_style_role": "call_to_action",
-      "typography_group": "decision-band",
+      "typography_group": "decision",
       "bbox_hint": [
-        560,
-        832,
-        1265,
-        52
+        520,
+        853,
+        1318,
+        50
       ],
       "search_bbox_hint": [
-        643,
-        850,
-        842,
-        39
+        520,
+        853,
+        1318,
+        50
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -1770,8 +1769,8 @@
         "font_weight": "bold",
         "target_font_size_px": 28,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "middle",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
@@ -1779,109 +1778,61 @@
   ],
   "groups": [
     {
-      "id": "capacity-model",
-      "display_label": "Capacity and valuation assumptions",
-      "semantic_class": "calculation",
-      "group_reason": "The baseline volume, time, adoption and reduction produce capacity hours and their monetary equivalent.",
+      "id": "investment-case",
+      "display_label": "Investment case",
+      "semantic_class": "financial decision model",
       "bbox_hint": [
-        35,
-        201,
-        593,
-        352
+        46,
+        195,
+        1827,
+        364
       ],
       "children": [
         "capacity-heading",
-        "capacity-term-0",
-        "capacity-term-1",
-        "capacity-term-2",
-        "capacity-term-3",
-        "capacity-term-4",
-        "capacity-term-5",
-        "capacity-term-6",
-        "capacity-term-7",
-        "capacity-result",
-        "capacity-term-label-0",
-        "capacity-term-label-1",
-        "capacity-term-label-2",
-        "capacity-term-label-3",
+        "capacity-panel",
+        "capacity-equation",
+        "capacity-labels",
         "capacity-divider",
-        "capacity-valuation",
         "capacity-value",
-        "capacity-equivalent"
-      ]
-    },
-    {
-      "id": "cost-model",
-      "display_label": "Full first-year investment",
-      "semantic_class": "investment model",
-      "group_reason": "One native table preserves the included pilot, operating costs and total. The separate qualification states the remaining implementation cost.",
-      "bbox_hint": [
-        632,
-        201,
-        402,
-        386
-      ],
-      "children": [
+        "capacity-value-number",
+        "capacity-caption",
         "investment-heading",
         "investment-table",
-        "remaining-investment"
-      ]
-    },
-    {
-      "id": "scenario-model",
-      "display_label": "Downside, base and upside",
-      "semantic_class": "scenario comparison",
-      "group_reason": "The native table keeps adoption, time saving, hours, ramp and net value together as three comparable scenarios.",
-      "bbox_hint": [
-        1061,
-        201,
-        819,
-        339
-      ],
-      "children": [
+        "investment-note",
         "sensitivity-heading",
-        "scenario-table"
-      ]
+        "sensitivity-table"
+      ],
+      "group_reason": "The calculation, cost table and sensitivity table expose every assumption behind the request."
     },
     {
-      "id": "release-criteria",
-      "display_label": "Go, hold and stop conditions",
+      "id": "decision-tests",
+      "display_label": "Decision tests",
       "semantic_class": "release criteria",
-      "group_reason": "Three textual conditions assign the next action without decorative pictograms.",
       "bbox_hint": [
-        129,
-        624,
-        1744,
-        145
+        46,
+        590,
+        1814,
+        190
       ],
       "children": [
-        "criterion-heading-0",
-        "criterion-body-0",
-        "criterion-heading-1",
-        "criterion-body-1",
-        "criterion-heading-2",
-        "criterion-body-2"
-      ]
-    },
-    {
-      "id": "funding-request",
-      "display_label": "Conditional funding decision",
-      "semantic_class": "decision request",
-      "group_reason": "The pilot approval and remaining investment condition are separate native text peers in one recurring decision band.",
-      "bbox_hint": [
-        48,
-        793,
-        1824,
-        134
+        "criteria-heading",
+        "criterion-panel-go",
+        "criterion-icon-go",
+        "criterion-label-go",
+        "criterion-body-go",
+        "criterion-panel-hold",
+        "criterion-icon-hold",
+        "criterion-label-hold",
+        "criterion-body-hold",
+        "criterion-panel-stop",
+        "criterion-icon-stop",
+        "criterion-label-stop",
+        "criterion-body-stop"
       ],
-      "children": [
-        "decision-band",
-        "decision-accent",
-        "decision-label",
-        "decision-message"
-      ]
+      "group_reason": "Three canonical symbols separate go, hold and stop decisions without adding a template constraint."
     }
   ],
+  "relationships": [],
   "layout_constraints": {
     "non_overlap_pairs": [
       [
@@ -1889,24 +1840,8 @@
         "subtitle"
       ],
       [
-        "investment-table",
-        "scenario-table"
-      ],
-      [
-        "remaining-investment",
-        "criteria-rule"
-      ],
-      [
-        "criterion-body-0",
-        "decision-band"
-      ],
-      [
-        "criterion-body-1",
-        "decision-band"
-      ],
-      [
-        "criterion-body-2",
-        "decision-band"
+        "decision-band",
+        "headline"
       ]
     ]
   }

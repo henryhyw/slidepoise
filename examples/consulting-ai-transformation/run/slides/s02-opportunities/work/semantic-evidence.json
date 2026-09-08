@@ -4,8 +4,8 @@
     1920,
     960
   ],
-  "entity_count": 34,
-  "group_count": 3,
+  "entity_count": 23,
+  "group_count": 2,
   "blocking_facts": [],
   "agent_interpretation_required": true,
   "note": "No semantic or visual verdict is produced. A host-Agent reviewer must inspect the image, map, profile, and these facts together."

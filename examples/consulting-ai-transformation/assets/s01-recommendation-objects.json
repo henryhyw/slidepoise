@@ -10,36 +10,36 @@
   "source": {
     "pptx": {
       "path": "deliverables/presentation.pptx",
-      "sha256": "aec72faebe53cdaf2c0820391eadd344d34b3f5de4927e7c3a0444ff8f40ca9b"
+      "sha256": "144791ea004117d3e65ce944e93f02a1c721cc38eb3b1c8214ec25095ee2790d"
     },
     "render": {
       "path": "assets/s01-recommendation-render.png",
-      "sha256": "683868ff0e678c2d1e81e86159c87ccbf817af4ab97d5fd969b9bd021228df8c"
+      "sha256": "ef98d340cbdfe9cba2df10f33b510029513810d405c274b960ac08c925469c20"
     }
   },
   "objects": [
     {
       "id": "p1-object-1",
       "native_id": "2",
-      "name": "introduction-rule",
-      "label": "Introduction rule",
+      "name": "metric-divider-1",
+      "label": "Metric divider 1",
       "kind": "shape",
       "polygon": [
         [
-          0.025,
-          0.212037037
+          0.336979167,
+          0.222222222
         ],
         [
-          0.975,
-          0.212037037
+          0.3375,
+          0.222222222
         ],
         [
-          0.975,
-          0.213888889
+          0.3375,
+          0.35
         ],
         [
-          0.025,
-          0.213888889
+          0.336979167,
+          0.35
         ]
       ],
       "stack": 0
@@ -47,25 +47,25 @@
     {
       "id": "p1-object-2",
       "native_id": "3",
-      "name": "metric-divider-1",
-      "label": "Metric divider 1",
+      "name": "metric-divider-2",
+      "label": "Metric divider 2",
       "kind": "shape",
       "polygon": [
         [
-          0.024479167,
-          0.474074074
+          0.6734375,
+          0.222222222
         ],
         [
-          0.301041667,
-          0.474074074
+          0.673958333,
+          0.222222222
         ],
         [
-          0.301041667,
-          0.475
+          0.673958333,
+          0.35
         ],
         [
-          0.024479167,
-          0.475
+          0.6734375,
+          0.35
         ]
       ],
       "stack": 1
@@ -73,25 +73,25 @@
     {
       "id": "p1-object-3",
       "native_id": "4",
-      "name": "metric-divider-2",
-      "label": "Metric divider 2",
+      "name": "decision-band",
+      "label": "Decision band",
       "kind": "shape",
       "polygon": [
         [
-          0.024479167,
-          0.639814815
+          0.023958333,
+          0.832407407
         ],
         [
-          0.301041667,
-          0.639814815
+          0.976041667,
+          0.832407407
         ],
         [
-          0.301041667,
-          0.640740741
+          0.976041667,
+          0.918518519
         ],
         [
-          0.024479167,
-          0.640740741
+          0.023958333,
+          0.918518519
         ]
       ],
       "stack": 2
@@ -99,25 +99,25 @@
     {
       "id": "p1-object-4",
       "native_id": "5",
-      "name": "argument-divider-1",
-      "label": "Argument divider 1",
+      "name": "decision-accent",
+      "label": "Decision accent",
       "kind": "shape",
       "polygon": [
         [
-          0.365104167,
-          0.474074074
+          0.023958333,
+          0.832407407
         ],
         [
-          0.59375,
-          0.474074074
+          0.028125,
+          0.832407407
         ],
         [
-          0.59375,
-          0.475
+          0.028125,
+          0.918518519
         ],
         [
-          0.365104167,
-          0.475
+          0.023958333,
+          0.918518519
         ]
       ],
       "stack": 3
@@ -125,106 +125,28 @@
     {
       "id": "p1-object-5",
       "native_id": "6",
-      "name": "argument-divider-2",
-      "label": "Argument divider 2",
-      "kind": "shape",
-      "polygon": [
-        [
-          0.365104167,
-          0.639814815
-        ],
-        [
-          0.59375,
-          0.639814815
-        ],
-        [
-          0.59375,
-          0.640740741
-        ],
-        [
-          0.365104167,
-          0.640740741
-        ]
-      ],
-      "stack": 4
-    },
-    {
-      "id": "p1-object-6",
-      "native_id": "7",
-      "name": "decision-band",
-      "label": "Decision band",
-      "kind": "shape",
-      "polygon": [
-        [
-          0.025,
-          0.793518519
-        ],
-        [
-          0.975,
-          0.793518519
-        ],
-        [
-          0.975,
-          0.917592593
-        ],
-        [
-          0.025,
-          0.917592593
-        ]
-      ],
-      "stack": 5
-    },
-    {
-      "id": "p1-object-7",
-      "native_id": "8",
-      "name": "decision-accent",
-      "label": "Decision accent",
-      "kind": "shape",
-      "polygon": [
-        [
-          0.025,
-          0.793518519
-        ],
-        [
-          0.029166667,
-          0.793518519
-        ],
-        [
-          0.029166667,
-          0.917592593
-        ],
-        [
-          0.025,
-          0.917592593
-        ]
-      ],
-      "stack": 6
-    },
-    {
-      "id": "p1-object-8",
-      "native_id": "9",
       "name": "scale-gate-table",
       "label": "Scale gate table",
       "kind": "table",
       "polygon": [
         [
-          0.6375,
-          0.325925926
+          0.55625,
+          0.431481481
         ],
         [
-          0.975520833,
-          0.325925926
+          0.972916667,
+          0.431481481
         ],
         [
-          0.975520833,
-          0.763888889
+          0.972916667,
+          0.738888889
         ],
         [
-          0.6375,
-          0.763888889
+          0.55625,
+          0.738888889
         ]
       ],
-      "stack": 7,
+      "stack": 4,
       "rows": [
         [
           "Measure",
@@ -249,30 +171,30 @@
       ]
     },
     {
-      "id": "p1-object-9",
-      "native_id": "10",
+      "id": "p1-object-6",
+      "native_id": "7",
       "name": "headline",
       "label": "Prove the research pilot before scaling AI",
       "kind": "text",
       "polygon": [
         [
-          0.025,
-          0.076851852
+          0.023958333,
+          0.077777778
         ],
         [
-          0.975,
-          0.076851852
+          0.976041667,
+          0.077777778
         ],
         [
-          0.975,
-          0.150925926
+          0.976041667,
+          0.148148148
         ],
         [
-          0.025,
-          0.150925926
+          0.023958333,
+          0.148148148
         ]
       ],
-      "stack": 8,
+      "stack": 5,
       "text": "Prove the research pilot before scaling AI",
       "typography": [
         {
@@ -283,30 +205,30 @@
       ]
     },
     {
-      "id": "p1-object-10",
-      "native_id": "11",
-      "name": "pilot-scope",
+      "id": "p1-object-7",
+      "native_id": "8",
+      "name": "subtitle",
       "label": "One practice. 15 consultants. 20 paired research tasks. A 12-week,…",
       "kind": "text",
       "polygon": [
         [
-          0.025,
-          0.15462963
+          0.024479167,
+          0.152777778
         ],
         [
           0.975,
-          0.15462963
+          0.152777778
         ],
         [
           0.975,
-          0.199074074
+          0.197222222
         ],
         [
-          0.025,
-          0.199074074
+          0.024479167,
+          0.197222222
         ]
       ],
-      "stack": 9,
+      "stack": 6,
       "text": "One practice. 15 consultants. 20 paired research tasks. A 12-week, $25k pilot.",
       "typography": [
         {
@@ -317,36 +239,140 @@
       ]
     },
     {
-      "id": "p1-object-11",
-      "native_id": "12",
-      "name": "capacity-heading",
-      "label": "RESEARCH CAPACITY IMPACT IF WE SCALE",
+      "id": "p1-object-8",
+      "native_id": "9",
+      "name": "baseline",
+      "label": "10,800 h",
       "kind": "text",
       "polygon": [
         [
           0.024479167,
-          0.271296296
+          0.222222222
         ],
         [
-          0.360416667,
-          0.271296296
+          0.284895833,
+          0.222222222
         ],
         [
-          0.360416667,
-          0.311111111
+          0.284895833,
+          0.287037037
         ],
         [
           0.024479167,
-          0.311111111
+          0.287037037
         ]
       ],
-      "stack": 10,
-      "text": "RESEARCH CAPACITY IMPACT IF WE SCALE",
+      "stack": 7,
+      "text": "10,800 h",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 14.0,
+          "size_pt": 29.0,
+          "color": "#FD5108",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p1-object-9",
+      "native_id": "10",
+      "name": "baseline-label",
+      "label": "Annual research baseline",
+      "kind": "text",
+      "polygon": [
+        [
+          0.024479167,
+          0.288888889
+        ],
+        [
+          0.2953125,
+          0.288888889
+        ],
+        [
+          0.2953125,
+          0.318518519
+        ],
+        [
+          0.024479167,
+          0.318518519
+        ]
+      ],
+      "stack": 8,
+      "text": "Annual research baseline",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 12.5,
           "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p1-object-10",
+      "native_id": "11",
+      "name": "baseline-formula",
+      "label": "900 engagements × 12 h",
+      "kind": "text",
+      "polygon": [
+        [
+          0.024479167,
+          0.32037037
+        ],
+        [
+          0.2953125,
+          0.32037037
+        ],
+        [
+          0.2953125,
+          0.35
+        ],
+        [
+          0.024479167,
+          0.35
+        ]
+      ],
+      "stack": 9,
+      "text": "900 engagements × 12 h",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 11.5,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p1-object-11",
+      "native_id": "12",
+      "name": "capacity",
+      "label": "1,944 h",
+      "kind": "text",
+      "polygon": [
+        [
+          0.361458333,
+          0.222222222
+        ],
+        [
+          0.621875,
+          0.222222222
+        ],
+        [
+          0.621875,
+          0.287037037
+        ],
+        [
+          0.361458333,
+          0.287037037
+        ]
+      ],
+      "stack": 10,
+      "text": "1,944 h",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 29.0,
+          "color": "#FD5108",
           "bold": true
         }
       ]
@@ -354,33 +380,33 @@
     {
       "id": "p1-object-12",
       "native_id": "13",
-      "name": "argument-heading",
-      "label": "WHY THIS PILOT FIRST",
+      "name": "capacity-label",
+      "label": "Potential annual capacity",
       "kind": "text",
       "polygon": [
         [
-          0.364583333,
-          0.271296296
+          0.361458333,
+          0.288888889
         ],
         [
-          0.623958333,
-          0.271296296
+          0.632291667,
+          0.288888889
         ],
         [
-          0.623958333,
-          0.311111111
+          0.632291667,
+          0.318518519
         ],
         [
-          0.364583333,
-          0.311111111
+          0.361458333,
+          0.318518519
         ]
       ],
       "stack": 11,
-      "text": "WHY THIS PILOT FIRST",
+      "text": "Potential annual capacity",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 14.0,
+          "size_pt": 12.5,
           "color": "#000000",
           "bold": true
         }
@@ -389,68 +415,67 @@
     {
       "id": "p1-object-13",
       "native_id": "14",
-      "name": "gate-heading",
-      "label": "WEEK-12 SCALE GATE",
+      "name": "capacity-formula",
+      "label": "60% adoption × 30% time reduction",
       "kind": "text",
       "polygon": [
         [
-          0.636979167,
-          0.271296296
+          0.361458333,
+          0.32037037
         ],
         [
-          0.975,
-          0.271296296
+          0.632291667,
+          0.32037037
         ],
         [
-          0.975,
-          0.311111111
+          0.632291667,
+          0.35
         ],
         [
-          0.636979167,
-          0.311111111
+          0.361458333,
+          0.35
         ]
       ],
       "stack": 12,
-      "text": "WEEK-12 SCALE GATE",
+      "text": "60% adoption × 30% time reduction",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 14.0,
-          "color": "#000000",
-          "bold": true
+          "size_pt": 11.5,
+          "color": "#000000"
         }
       ]
     },
     {
       "id": "p1-object-14",
       "native_id": "15",
-      "name": "baseline",
-      "label": "10,800 h",
+      "name": "value",
+      "label": "$243k",
       "kind": "text",
       "polygon": [
         [
-          0.023958333,
-          0.319444444
+          0.697916667,
+          0.222222222
         ],
         [
-          0.330208333,
-          0.319444444
+          0.958333333,
+          0.222222222
         ],
         [
-          0.330208333,
-          0.399074074
+          0.958333333,
+          0.287037037
         ],
         [
-          0.023958333,
-          0.399074074
+          0.697916667,
+          0.287037037
         ]
       ],
       "stack": 13,
-      "text": "10,800 h",
+      "text": "$243k",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 34.0,
+          "size_pt": 29.0,
           "color": "#FD5108",
           "bold": true
         }
@@ -459,34 +484,34 @@
     {
       "id": "p1-object-15",
       "native_id": "16",
-      "name": "capacity",
-      "label": "1,944 h",
+      "name": "value-label",
+      "label": "Annual capacity equivalent",
       "kind": "text",
       "polygon": [
         [
-          0.023958333,
-          0.486111111
+          0.697916667,
+          0.288888889
         ],
         [
-          0.330208333,
-          0.486111111
+          0.96875,
+          0.288888889
         ],
         [
-          0.330208333,
-          0.565740741
+          0.96875,
+          0.318518519
         ],
         [
-          0.023958333,
-          0.565740741
+          0.697916667,
+          0.318518519
         ]
       ],
       "stack": 14,
-      "text": "1,944 h",
+      "text": "Annual capacity equivalent",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 34.0,
-          "color": "#FD5108",
+          "size_pt": 12.5,
+          "color": "#000000",
           "bold": true
         }
       ]
@@ -494,68 +519,67 @@
     {
       "id": "p1-object-16",
       "native_id": "17",
-      "name": "capacity-value",
-      "label": "$243k",
+      "name": "value-formula",
+      "label": "1,944 h × $125 per hour",
       "kind": "text",
       "polygon": [
         [
-          0.023958333,
-          0.646296296
+          0.697916667,
+          0.32037037
         ],
         [
-          0.330208333,
-          0.646296296
+          0.96875,
+          0.32037037
         ],
         [
-          0.330208333,
-          0.725925926
+          0.96875,
+          0.35
         ],
         [
-          0.023958333,
-          0.725925926
+          0.697916667,
+          0.35
         ]
       ],
       "stack": 15,
-      "text": "$243k",
+      "text": "1,944 h × $125 per hour",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 34.0,
-          "color": "#FD5108",
-          "bold": true
+          "size_pt": 11.5,
+          "color": "#000000"
         }
       ]
     },
     {
       "id": "p1-object-17",
       "native_id": "18",
-      "name": "baseline-label",
-      "label": "Annual research baseline",
+      "name": "argument-heading",
+      "label": "WHY THIS PILOT FIRST",
       "kind": "text",
       "polygon": [
         [
           0.024479167,
-          0.387037037
+          0.388888889
         ],
         [
-          0.3390625,
-          0.387037037
+          0.4671875,
+          0.388888889
         ],
         [
-          0.3390625,
-          0.425925926
+          0.4671875,
+          0.427777778
         ],
         [
           0.024479167,
-          0.425925926
+          0.427777778
         ]
       ],
       "stack": 16,
-      "text": "Annual research baseline",
+      "text": "WHY THIS PILOT FIRST",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 14.0,
+          "size_pt": 13.5,
           "color": "#000000",
           "bold": true
         }
@@ -564,33 +588,33 @@
     {
       "id": "p1-object-18",
       "native_id": "19",
-      "name": "capacity-label",
-      "label": "Potential annual capacity",
+      "name": "reason-number-01",
+      "label": "01",
       "kind": "text",
       "polygon": [
         [
-          0.024479167,
-          0.551851852
+          0.0859375,
+          0.450925926
         ],
         [
-          0.3390625,
-          0.551851852
+          0.118229167,
+          0.450925926
         ],
         [
-          0.3390625,
-          0.590740741
+          0.118229167,
+          0.491666667
         ],
         [
-          0.024479167,
-          0.590740741
+          0.0859375,
+          0.491666667
         ]
       ],
       "stack": 17,
-      "text": "Potential annual capacity",
+      "text": "01",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 14.0,
+          "size_pt": 12.5,
           "color": "#000000",
           "bold": true
         }
@@ -599,33 +623,33 @@
     {
       "id": "p1-object-19",
       "native_id": "20",
-      "name": "capacity-value-label",
-      "label": "Annual capacity equivalent",
+      "name": "reason-title-01",
+      "label": "Focus a repeatable task",
       "kind": "text",
       "polygon": [
         [
-          0.024479167,
-          0.710185185
+          0.1328125,
+          0.448148148
         ],
         [
-          0.3390625,
-          0.710185185
+          0.4140625,
+          0.448148148
         ],
         [
-          0.3390625,
-          0.749074074
+          0.4140625,
+          0.480555556
         ],
         [
-          0.024479167,
-          0.749074074
+          0.1328125,
+          0.480555556
         ]
       ],
       "stack": 18,
-      "text": "Annual capacity equivalent",
+      "text": "Focus a repeatable task",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 14.0,
+          "size_pt": 12.5,
           "color": "#000000",
           "bold": true
         }
@@ -634,33 +658,33 @@
     {
       "id": "p1-object-20",
       "native_id": "21",
-      "name": "baseline-formula",
-      "label": "900 engagements × 12 h",
+      "name": "reason-detail-01",
+      "label": "Approved sources, frequent use and comparable inputs.",
       "kind": "text",
       "polygon": [
         [
-          0.024479167,
-          0.422222222
+          0.1328125,
+          0.483333333
         ],
         [
-          0.3390625,
-          0.422222222
+          0.497395833,
+          0.483333333
         ],
         [
-          0.3390625,
-          0.461111111
+          0.497395833,
+          0.52037037
         ],
         [
-          0.024479167,
-          0.461111111
+          0.1328125,
+          0.52037037
         ]
       ],
       "stack": 19,
-      "text": "900 engagements × 12 h",
+      "text": "Approved sources, frequent use and comparable inputs.",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 14.0,
+          "size_pt": 10.5,
           "color": "#000000"
         }
       ]
@@ -668,136 +692,137 @@
     {
       "id": "p1-object-21",
       "native_id": "22",
-      "name": "capacity-formula",
-      "label": "60% adoption × 30% time reduction",
+      "name": "reason-number-02",
+      "label": "02",
       "kind": "text",
       "polygon": [
         [
-          0.024479167,
-          0.587037037
+          0.0859375,
+          0.55
         ],
         [
-          0.3390625,
-          0.587037037
+          0.118229167,
+          0.55
         ],
         [
-          0.3390625,
-          0.625925926
+          0.118229167,
+          0.590740741
         ],
         [
-          0.024479167,
-          0.625925926
+          0.0859375,
+          0.590740741
         ]
       ],
       "stack": 20,
-      "text": "60% adoption × 30% time reduction",
+      "text": "02",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 14.0,
-          "color": "#000000"
-        }
-      ]
-    },
-    {
-      "id": "p1-object-22",
-      "native_id": "23",
-      "name": "capacity-value-formula",
-      "label": "1,944 h × $125 per hour",
-      "kind": "text",
-      "polygon": [
-        [
-          0.024479167,
-          0.743518519
-        ],
-        [
-          0.3390625,
-          0.743518519
-        ],
-        [
-          0.3390625,
-          0.782407407
-        ],
-        [
-          0.024479167,
-          0.782407407
-        ]
-      ],
-      "stack": 21,
-      "text": "1,944 h × $125 per hour",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 14.0,
-          "color": "#000000"
-        }
-      ]
-    },
-    {
-      "id": "p1-object-23",
-      "native_id": "24",
-      "name": "argument-number-01",
-      "label": "01",
-      "kind": "text",
-      "polygon": [
-        [
-          0.364583333,
-          0.325925926
-        ],
-        [
-          0.401041667,
-          0.325925926
-        ],
-        [
-          0.401041667,
-          0.385185185
-        ],
-        [
-          0.364583333,
-          0.385185185
-        ]
-      ],
-      "stack": 22,
-      "text": "01",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 24.0,
+          "size_pt": 12.5,
           "color": "#000000",
           "bold": true
         }
       ]
     },
     {
-      "id": "p1-object-24",
-      "native_id": "25",
-      "name": "argument-title-01",
-      "label": "Focus a repeatable task",
+      "id": "p1-object-22",
+      "native_id": "23",
+      "name": "reason-title-02",
+      "label": "Preserve expert review",
       "kind": "text",
       "polygon": [
         [
-          0.4078125,
-          0.328703704
+          0.1328125,
+          0.547222222
         ],
         [
-          0.6359375,
-          0.328703704
+          0.4140625,
+          0.547222222
         ],
         [
-          0.6359375,
-          0.369444444
+          0.4140625,
+          0.57962963
         ],
         [
-          0.4078125,
-          0.369444444
+          0.1328125,
+          0.57962963
         ]
       ],
-      "stack": 23,
-      "text": "Focus a repeatable task",
+      "stack": 21,
+      "text": "Preserve expert review",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 14.0,
+          "size_pt": 12.5,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p1-object-23",
+      "native_id": "24",
+      "name": "reason-detail-02",
+      "label": "Verify every client claim before release.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.1328125,
+          0.582407407
+        ],
+        [
+          0.497395833,
+          0.582407407
+        ],
+        [
+          0.497395833,
+          0.619444444
+        ],
+        [
+          0.1328125,
+          0.619444444
+        ]
+      ],
+      "stack": 22,
+      "text": "Verify every client claim before release.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 10.5,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p1-object-24",
+      "native_id": "25",
+      "name": "reason-number-03",
+      "label": "03",
+      "kind": "text",
+      "polygon": [
+        [
+          0.0859375,
+          0.649074074
+        ],
+        [
+          0.118229167,
+          0.649074074
+        ],
+        [
+          0.118229167,
+          0.689814815
+        ],
+        [
+          0.0859375,
+          0.689814815
+        ]
+      ],
+      "stack": 23,
+      "text": "03",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 12.5,
           "color": "#000000",
           "bold": true
         }
@@ -806,102 +831,102 @@
     {
       "id": "p1-object-25",
       "native_id": "26",
-      "name": "argument-detail-01",
-      "label": "Approved sources, frequent use and comparable inputs.",
+      "name": "reason-title-03",
+      "label": "Fund against evidence",
       "kind": "text",
       "polygon": [
         [
-          0.4078125,
-          0.361111111
+          0.1328125,
+          0.646296296
         ],
         [
-          0.639583333,
-          0.361111111
+          0.4140625,
+          0.646296296
         ],
         [
-          0.639583333,
-          0.441666667
+          0.4140625,
+          0.678703704
         ],
         [
-          0.4078125,
-          0.441666667
+          0.1328125,
+          0.678703704
         ]
       ],
       "stack": 24,
-      "text": "Approved sources, frequent use\nand comparable inputs.",
+      "text": "Fund against evidence",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 14.0,
-          "color": "#000000"
-        }
-      ]
-    },
-    {
-      "id": "p1-object-26",
-      "native_id": "27",
-      "name": "argument-number-02",
-      "label": "02",
-      "kind": "text",
-      "polygon": [
-        [
-          0.364583333,
-          0.493518519
-        ],
-        [
-          0.401041667,
-          0.493518519
-        ],
-        [
-          0.401041667,
-          0.552777778
-        ],
-        [
-          0.364583333,
-          0.552777778
-        ]
-      ],
-      "stack": 25,
-      "text": "02",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 24.0,
+          "size_pt": 12.5,
           "color": "#000000",
           "bold": true
         }
       ]
     },
     {
-      "id": "p1-object-27",
-      "native_id": "28",
-      "name": "argument-title-02",
-      "label": "Preserve expert review",
+      "id": "p1-object-26",
+      "native_id": "27",
+      "name": "reason-detail-03",
+      "label": "Practice lead and CFO release $60k only after the week-12…",
       "kind": "text",
       "polygon": [
         [
-          0.4078125,
-          0.496296296
+          0.1328125,
+          0.681481481
         ],
         [
-          0.6359375,
-          0.496296296
+          0.497395833,
+          0.681481481
         ],
         [
-          0.6359375,
-          0.537037037
+          0.497395833,
+          0.718518519
         ],
         [
-          0.4078125,
-          0.537037037
+          0.1328125,
+          0.718518519
         ]
       ],
-      "stack": 26,
-      "text": "Preserve expert review",
+      "stack": 25,
+      "text": "Practice lead and CFO release $60k only after the week-12 gate.",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 14.0,
+          "size_pt": 10.5,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p1-object-27",
+      "native_id": "28",
+      "name": "gate-heading",
+      "label": "WEEK-12 SCALE GATE",
+      "kind": "text",
+      "polygon": [
+        [
+          0.55625,
+          0.388888889
+        ],
+        [
+          0.972916667,
+          0.388888889
+        ],
+        [
+          0.972916667,
+          0.427777778
+        ],
+        [
+          0.55625,
+          0.427777778
+        ]
+      ],
+      "stack": 26,
+      "text": "WEEK-12 SCALE GATE",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 13.5,
           "color": "#000000",
           "bold": true
         }
@@ -910,166 +935,28 @@
     {
       "id": "p1-object-28",
       "native_id": "29",
-      "name": "argument-detail-02",
-      "label": "Verify every client claim before release.",
-      "kind": "text",
-      "polygon": [
-        [
-          0.4078125,
-          0.528703704
-        ],
-        [
-          0.639583333,
-          0.528703704
-        ],
-        [
-          0.639583333,
-          0.609259259
-        ],
-        [
-          0.4078125,
-          0.609259259
-        ]
-      ],
-      "stack": 27,
-      "text": "Verify every client claim\nbefore release.",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 14.0,
-          "color": "#000000"
-        }
-      ]
-    },
-    {
-      "id": "p1-object-29",
-      "native_id": "30",
-      "name": "argument-number-03",
-      "label": "03",
-      "kind": "text",
-      "polygon": [
-        [
-          0.364583333,
-          0.658333333
-        ],
-        [
-          0.401041667,
-          0.658333333
-        ],
-        [
-          0.401041667,
-          0.717592593
-        ],
-        [
-          0.364583333,
-          0.717592593
-        ]
-      ],
-      "stack": 28,
-      "text": "03",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 24.0,
-          "color": "#000000",
-          "bold": true
-        }
-      ]
-    },
-    {
-      "id": "p1-object-30",
-      "native_id": "31",
-      "name": "argument-title-03",
-      "label": "Fund against evidence",
-      "kind": "text",
-      "polygon": [
-        [
-          0.4078125,
-          0.661111111
-        ],
-        [
-          0.6359375,
-          0.661111111
-        ],
-        [
-          0.6359375,
-          0.701851852
-        ],
-        [
-          0.4078125,
-          0.701851852
-        ]
-      ],
-      "stack": 29,
-      "text": "Fund against evidence",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 14.0,
-          "color": "#000000",
-          "bold": true
-        }
-      ]
-    },
-    {
-      "id": "p1-object-31",
-      "native_id": "32",
-      "name": "argument-detail-03",
-      "label": "Practice lead and CFO release $60k only after the week-12…",
-      "kind": "text",
-      "polygon": [
-        [
-          0.4078125,
-          0.692592593
-        ],
-        [
-          0.639583333,
-          0.692592593
-        ],
-        [
-          0.639583333,
-          0.773148148
-        ],
-        [
-          0.4078125,
-          0.773148148
-        ]
-      ],
-      "stack": 30,
-      "text": "Practice lead and CFO release\n$60k only after the week-12 gate.",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 14.0,
-          "color": "#000000"
-        }
-      ]
-    },
-    {
-      "id": "p1-object-32",
-      "native_id": "33",
       "name": "decision-label",
       "label": "DECISION REQUESTED",
       "kind": "text",
       "polygon": [
         [
-          0.052083333,
-          0.82962963
+          0.041666667,
+          0.849074074
         ],
         [
-          0.270833333,
-          0.82962963
+          0.265625,
+          0.849074074
         ],
         [
-          0.270833333,
-          0.877777778
+          0.265625,
+          0.89537037
         ],
         [
-          0.052083333,
-          0.877777778
+          0.041666667,
+          0.89537037
         ]
       ],
-      "stack": 31,
+      "stack": 27,
       "text": "DECISION REQUESTED",
       "typography": [
         {
@@ -1081,30 +968,30 @@
       ]
     },
     {
-      "id": "p1-object-33",
-      "native_id": "34",
-      "name": "decision-request",
+      "id": "p1-object-29",
+      "native_id": "30",
+      "name": "decision-message",
       "label": "Approve $25k and name a practice sponsor.",
       "kind": "text",
       "polygon": [
         [
-          0.291666667,
-          0.82962963
+          0.270833333,
+          0.849074074
         ],
         [
-          0.950520833,
-          0.82962963
+          0.957291667,
+          0.849074074
         ],
         [
-          0.950520833,
-          0.877777778
+          0.957291667,
+          0.89537037
         ],
         [
-          0.291666667,
-          0.877777778
+          0.270833333,
+          0.89537037
         ]
       ],
-      "stack": 32,
+      "stack": 28,
       "text": "Approve $25k and name a practice sponsor.",
       "typography": [
         {
@@ -1116,8 +1003,86 @@
       ]
     },
     {
-      "id": "p1-object-34",
-      "native_id": "35",
+      "id": "p1-object-30",
+      "native_id": "31",
+      "name": "reason-icon-01",
+      "label": "Reason icon 01",
+      "kind": "image",
+      "polygon": [
+        [
+          0.040625,
+          0.45
+        ],
+        [
+          0.066666667,
+          0.45
+        ],
+        [
+          0.066666667,
+          0.496296296
+        ],
+        [
+          0.040625,
+          0.496296296
+        ]
+      ],
+      "stack": 29
+    },
+    {
+      "id": "p1-object-31",
+      "native_id": "32",
+      "name": "reason-icon-02",
+      "label": "Reason icon 02",
+      "kind": "image",
+      "polygon": [
+        [
+          0.040625,
+          0.549074074
+        ],
+        [
+          0.066666667,
+          0.549074074
+        ],
+        [
+          0.066666667,
+          0.59537037
+        ],
+        [
+          0.040625,
+          0.59537037
+        ]
+      ],
+      "stack": 30
+    },
+    {
+      "id": "p1-object-32",
+      "native_id": "33",
+      "name": "reason-icon-03",
+      "label": "Reason icon 03",
+      "kind": "image",
+      "polygon": [
+        [
+          0.040625,
+          0.648148148
+        ],
+        [
+          0.066666667,
+          0.648148148
+        ],
+        [
+          0.066666667,
+          0.694444444
+        ],
+        [
+          0.040625,
+          0.694444444
+        ]
+      ],
+      "stack": 31
+    },
+    {
+      "id": "p1-object-33",
+      "native_id": "34",
       "name": "Slide Number Placeholder 0",
       "label": "1",
       "kind": "text",
@@ -1139,7 +1104,7 @@
           0.99537037
         ]
       ],
-      "stack": 33,
+      "stack": 32,
       "text": "1",
       "typography": [
         {

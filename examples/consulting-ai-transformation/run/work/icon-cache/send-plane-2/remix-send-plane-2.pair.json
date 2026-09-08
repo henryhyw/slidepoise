@@ -1,0 +1,58 @@
+{
+  "pair_id": "remix-send-plane-2",
+  "semantic_icon_name": "send-plane-2",
+  "provider": "Remix Icon",
+  "provider_version": "4.9.0",
+  "category": "Business",
+  "candidates": [
+    {
+      "asset_id": "remix-send-plane-2-line",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/send-plane-2/remix-send-plane-2-line.svg",
+      "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Business/send-plane-2-line.svg",
+      "source_repository_path": "icons/Business/send-plane-2-line.svg",
+      "provider": "Remix Icon",
+      "provider_version": "4.9.0",
+      "license": "Remix Icon License v1.0",
+      "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+      "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+      "style_variant": "line",
+      "style_pair_id": "remix-send-plane-2",
+      "pair_asset_ids": [
+        "remix-send-plane-2-line",
+        "remix-send-plane-2-fill"
+      ],
+      "intrinsic_aspect_ratio": 1.0,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "preserve_canonical_color": false,
+      "sha256": "2eae9a2bafb6167c9949d72da52eea400fe00dd2e59b6d39d9d996c4835454cc",
+      "persistence": "run_cache_only",
+      "selection_status": "candidate_pending_post_generation_visual_review"
+    },
+    {
+      "asset_id": "remix-send-plane-2-fill",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/send-plane-2/remix-send-plane-2-fill.svg",
+      "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Business/send-plane-2-fill.svg",
+      "source_repository_path": "icons/Business/send-plane-2-fill.svg",
+      "provider": "Remix Icon",
+      "provider_version": "4.9.0",
+      "license": "Remix Icon License v1.0",
+      "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+      "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+      "style_variant": "fill",
+      "style_pair_id": "remix-send-plane-2",
+      "pair_asset_ids": [
+        "remix-send-plane-2-line",
+        "remix-send-plane-2-fill"
+      ],
+      "intrinsic_aspect_ratio": 1.0,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "preserve_canonical_color": false,
+      "sha256": "3c9ec3d7237c494a178160725abeedc8a127665fb1dfe76a03d10f2f5438bb87",
+      "persistence": "run_cache_only",
+      "selection_status": "candidate_pending_post_generation_visual_review"
+    }
+  ],
+  "selection_owner": "host_agent_post_generation_visual_review"
+}

@@ -1,6 +1,6 @@
 # Showcase production record
 
-The showcase contains two five-slide presentations built with the packaged SlidePoise runtime. Consulting develops an evidence-based decision about an AI pilot. Editorial presents an authored essay about thinking with AI. Both cases retain the argument, image-generation work, semantic interpretation, OpenCV measurements and actual PowerPoint renders.
+The showcase contains two five-slide samples made through the packaged SlidePoise reconstruction runtime. Consulting develops an evidence-based decision about an AI pilot. Editorial presents an authored essay about thinking with AI. The Agent authored the arguments, explored the visual direction with image generation, interpreted the selected designs and inspected the actual PowerPoint renders.
 
 The current Consulting revision separates generated content from the inherited PowerPoint frame and includes a dedicated review across all five pages. The Editorial revision preserves its artwork, substantive text and individual compositions while calibrating the recurring Field Notes identity. The [production plan](SHOWCASE_PRODUCTION_PLAN.md) remains a reusable brief and video outline.
 
@@ -65,4 +65,4 @@ The Editorial photographs and depicted marks come from its retained generated ta
 
 The project page shows both sample previews, compares generated content with reconstructed output, and lets visitors inspect real native objects. Images and process evidence open within the page. PowerPoint is the only public download action. The retained PDF and source ZIP files remain available in the repository assets.
 
-The portable site includes a checksum inventory and needs no application framework or remote service. A direct editing demonstration still requires screen recording from PowerPoint itself.
+The portable site includes a checksum inventory and needs no application framework or remote service. No external deployment or completed PowerPoint screen recording is claimed. Real application footage is still required to demonstrate direct user editing gestures.

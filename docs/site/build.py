@@ -308,6 +308,8 @@ def build(output: Path, manifests: list[Path]) -> dict:
         site_target.mkdir(parents=True)
         for name in STATIC_FILES:
             shutil.copy2(SITE / name, site_target / name)
+        if (SITE / "assets").is_dir():
+            shutil.copytree(SITE / "assets", site_target / "assets")
         if (SITE / "console-demo").is_dir():
             shutil.copytree(SITE / "console-demo", site_target / "console-demo")
         for manifest in manifests:

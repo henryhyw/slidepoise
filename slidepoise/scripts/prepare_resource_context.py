@@ -33,7 +33,7 @@ def main() -> None:
     }
     args.output_resources.parent.mkdir(parents=True,exist_ok=True)
     args.output_resources.write_text(json.dumps(resources,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
-    manifest={'sheet':sheet,'style_context':resources['style_context'],'style_direction':resources.get('style_direction',{}),'items':[{'asset_id':i.get('asset_id'),'label':i.get('contact_sheet_label'),'role':i.get('role'),'canonical_file':i.get('canonical_file') or i.get('preview_file')} for i in items]}
+    manifest={'sheet':sheet,'style_context':resources['style_context'],'style_direction':resources.get('style_direction',{}),'selection_reasoning':resources.get('selection_reasoning',{}),'items':[{'asset_id':i.get('asset_id'),'label':i.get('contact_sheet_label'),'role':i.get('role'),'canonical_file':i.get('canonical_file') or i.get('preview_file')} for i in items]}
     args.manifest.parent.mkdir(parents=True,exist_ok=True)
     args.manifest.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     print(json.dumps({'resources':str(args.output_resources.resolve()),'sheet':sheet,'manifest':str(args.manifest.resolve())},indent=2,ensure_ascii=False))

@@ -1,0 +1,58 @@
+{
+  "pair_id": "remix-user-star",
+  "semantic_icon_name": "user-star",
+  "provider": "Remix Icon",
+  "provider_version": "4.9.0",
+  "category": "User & Faces",
+  "candidates": [
+    {
+      "asset_id": "remix-user-star-line",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/user-star/remix-user-star-line.svg",
+      "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/User%20%26%20Faces/user-star-line.svg",
+      "source_repository_path": "icons/User & Faces/user-star-line.svg",
+      "provider": "Remix Icon",
+      "provider_version": "4.9.0",
+      "license": "Remix Icon License v1.0",
+      "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+      "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+      "style_variant": "line",
+      "style_pair_id": "remix-user-star",
+      "pair_asset_ids": [
+        "remix-user-star-line",
+        "remix-user-star-fill"
+      ],
+      "intrinsic_aspect_ratio": 1.0,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "preserve_canonical_color": false,
+      "sha256": "2f034934ef9b717c90a3f7253ba62c4aeab82d26962599f5956d2ac9c9ff661a",
+      "persistence": "run_cache_only",
+      "selection_status": "candidate_pending_post_generation_visual_review"
+    },
+    {
+      "asset_id": "remix-user-star-fill",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/user-star/remix-user-star-fill.svg",
+      "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/User%20%26%20Faces/user-star-fill.svg",
+      "source_repository_path": "icons/User & Faces/user-star-fill.svg",
+      "provider": "Remix Icon",
+      "provider_version": "4.9.0",
+      "license": "Remix Icon License v1.0",
+      "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+      "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+      "style_variant": "fill",
+      "style_pair_id": "remix-user-star",
+      "pair_asset_ids": [
+        "remix-user-star-line",
+        "remix-user-star-fill"
+      ],
+      "intrinsic_aspect_ratio": 1.0,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "preserve_canonical_color": false,
+      "sha256": "cf26e777fcea035e2466f5e6b6a3daa9de3eff51461f8ca9c495f67bb963de2d",
+      "persistence": "run_cache_only",
+      "selection_status": "candidate_pending_post_generation_visual_review"
+    }
+  ],
+  "selection_owner": "host_agent_post_generation_visual_review"
+}

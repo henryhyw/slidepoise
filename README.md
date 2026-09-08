@@ -1,10 +1,10 @@
 # SlidePoise
 
-**A complete presentation workflow for Codex.**
+**Presentation design beyond fixed templates, reconstructed as editable PowerPoint.**
 
-SlidePoise is an open-source system that helps Codex plan, design, build and review a complete PowerPoint presentation. You and the Agent define the audience, argument, evidence, content and visual direction. The Agent plans the deck, explores each slide through free-form image generation, interprets the selected compositions and reviews the presentation as a whole. OpenCV measures the page, while local tools build native text, charts, tables and shapes in PowerPoint.
+SlidePoise is an open-source Codex skill for designing complete presentations. You develop the argument with the Agent and bring the references and visual assets that matter. Image generation can then explore each composition without squeezing the content into a fixed template.
 
-The architecture separates semantic and visual judgement from pixel measurement. This gives the Agent room to design beyond fixed templates and gives reconstruction a traceable technical path. After construction, the Agent compares the actual renders with the generated designs and checks recurring typography, colour, spacing, headers and footers across the full deck.
+The Agent interprets the chosen design, OpenCV measures its geometry, and local tools reconstruct the deck with editable text, charts, tables, shapes and canonical visual assets. The Agent reviews the rendered slides together for fidelity and consistency.
 
 ![SlidePoise architecture showing intent, image generation, Agent interpretation, OpenCV measurement, editable PowerPoint and deck review](docs/site/architecture.png)
 
@@ -12,27 +12,27 @@ The architecture separates semantic and visual judgement from pixel measurement.
 
 ## Sample presentations
 
-The [project page](https://www.henryw.me/slidepoise/docs/site/) lets you inspect two complete decks slide by slide. Read each slide's plan, compare the generated design with the PowerPoint render, and inspect its element groups and OpenCV measurements.
+Browse the slides, compare the AI designs with actual PowerPoint renders, and inspect each page’s element groups and OpenCV measurements on the [project page](https://www.henryw.me/slidepoise/).
 
 | Consulting sample | Editorial sample |
 | --- | --- |
 | ![Consulting sample PowerPoint](examples/consulting-ai-transformation/assets/s02-opportunities-render.png) | ![Editorial sample PowerPoint](examples/personal-thinking-system/assets/s01-opening-render.png) |
-| **Consulting** · An executive recommendation for an AI pilot, with editable charts and tables. | **Editorial** · A personal essay about thinking with AI, combining editable typography with photographic collage. |
+| **Consulting** · Priorities, responsibilities and an investment decision for an AI pilot. | **Editorial** · An essay about working with AI and developing a point of view. |
 | [Download PowerPoint](examples/consulting-ai-transformation/deliverables/presentation.pptx) | [Download PowerPoint](examples/personal-thinking-system/deliverables/presentation.pptx) |
 
-The Consulting sample uses a fictional firm and illustrative figures. Profiles can describe other visual systems beyond the two shown here.
+The strategy sample uses a fictional firm and illustrative figures.
 
 To open the project page locally, serve the checkout with `python -m http.server 8000` and visit `http://localhost:8000/docs/site/`.
 
 ## Get started
 
-You need **Python 3.10+, Node.js 18+, npm 9+, and Codex with image generation**. Run
+Have **Python 3.10+, Node.js 18+, npm 9+, and Codex with image generation** available, then run
 
 ```bash
 npx github:henryhyw/slidepoise setup
 ```
 
-Setup creates an isolated local runtime, registers the skill, copies the included Profiles and Library Sets, and installs missing preview tools through Homebrew on macOS, winget on Windows, or apt on Debian/Ubuntu. Your system may request administrator access for those preview tools. SlidePoise uses fonts available on your machine.
+Setup installs the local tools and registers the skill. It also installs missing preview tools through Homebrew on macOS, winget on Windows, or apt on Debian/Ubuntu. Your system may request administrator access. Use fonts available on your machine.
 
 <details>
 <summary>Installation contents and optional dependencies</summary>
@@ -45,7 +45,7 @@ OpenCV measures object boundaries, colour and geometry for reconstruction.
 
 </details>
 
-Start a Codex conversation with `$slidepoise`. Describe the audience, the decision or story, the source material and any visual references you want the Agent to use.
+Then ask Codex for a presentation.
 
 ```text
 $slidepoise
@@ -56,7 +56,7 @@ assumptions explicit, and show me one sample before finishing the deck.
 Deliver an editable PowerPoint.
 ```
 
-The [usage guide](docs/USAGE.md) covers installation checks, Profile management and presentation controls.
+Ask the Agent to work autonomously if you prefer. The [usage guide](docs/USAGE.md) covers installation checks and Profile management.
 
 ## How it works
 
@@ -67,21 +67,27 @@ The [usage guide](docs/USAGE.md) covers installation checks, Profile management 
 | Reconstruct | Identify objects, measure their geometry and build the PowerPoint. |
 | Review | Compare actual renders with the designs and check consistency across pages. |
 
-**Image generation receives the content area.** SlidePoise reserves space for enabled headers and footers before calculating the image aspect ratio. PowerPoint adds those shared elements after reconstruction, including native page-number fields.
+**The Agent plans the content and makes design decisions.** Image generation explores the composition using the authored content, references and shared style. The image covers the content area. Headers and footers are added as inherited PowerPoint elements, with a page-number field on each page. The content's aspect ratio is calculated after reserving this space.
 
-**The Agent interprets the design. OpenCV measures it.** The Agent may identify a set of bars, labels and values as one chart. OpenCV measures the visible geometry within that assigned region. The renderer can then build a native chart linked to a workbook.
+**The Agent identifies objects. OpenCV measures them.** A set of bars, labels and values can belong to one chart. OpenCV measures their visible geometry. The renderer builds a native chart linked to a workbook, so its data stays editable.
 
-**The final review covers the whole presentation.** The Agent compares all rendered pages, identifies recurring roles such as titles, labels and folios, and corrects inconsistent treatment before delivery. The [architecture](docs/ARCHITECTURE.md) explains the division of responsibility.
+**Review covers the whole presentation.** The Agent discovers repeated roles, including small labels and folios, applies their common styles to the corresponding objects, and reviews the actual renders again. The [architecture](docs/ARCHITECTURE.md) describes these responsibilities in detail.
 
 Below, an edited copy has a new title and a chart value changed from 1,944 to 1,620. The bar and its label update in PowerPoint.
 
 ![Actual PowerPoint renders before and after editing native text and chart data](examples/consulting-ai-transformation/run/work/native-edit-proof/comparison.png)
 
+## Bring your own visual language
+
+Library Sets hold the icons, logos, visual references and reusable PowerPoint components that belong to your work. The Agent inspects those resources while planning a slide and selects the ones that improve recognition, structure or meaning. Empty asset selection is a design decision that must be reviewed, especially when a presentation has an enabled visual library.
+
+Image generation receives the selected artwork as design context. After a design is accepted, the Agent binds each visible asset role to its canonical file and reviews the available variants at the final size. Reconstruction then replaces generated stand-ins with the original SVG, image or editable component. This keeps the visual system coherent without forcing every page into the same layout.
+
 ## Visual references and Profiles
 
-Profiles save typography, palette, density and visual references for future presentations. The repository includes Consulting, Editorial Archive and Monochrome Modern as starting points. Add your own references and let each slide's layout respond to its message.
+Profiles save typography, palette, density and references for future presentations. Included starting points are Consulting, Editorial Archive and Monochrome Modern. Add your own references and adapt the layout to each message.
 
-Library Sets supply reusable icons and components. Use the local Console to manage your saved styles and resources. Ask Codex to open it, or run the following command after installation.
+Use the local Console to manage Profiles and Library Sets. Ask Codex to open it, or run the following command after installation.
 
 ```bash
 npx github:henryhyw/slidepoise console
@@ -93,7 +99,7 @@ Saved changes apply to future presentations. A session panel adjusts a presentat
 
 ## Editability and compatibility
 
-SlidePoise can construct native text, tables, charts, shapes, connectors and freeforms. Photographs, textures and expressive illustrations remain regional images. Separate text and table values do not gain spreadsheet formulas automatically.
+Text, tables, charts, shapes, connectors and freeforms can remain native. Photographs, textures and expressive illustrations stay as regional images. Separate text and table values do not become spreadsheet formulas automatically.
 
 The integration and samples have been tested with Codex. Local previews use LibreOffice and Poppler. Other Agent hosts need their own integration checks. Fonts are not bundled, and different fonts or Office readers can change text wrapping and appearance.
 

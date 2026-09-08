@@ -4,6 +4,7 @@
   "generation_model_default": "gpt-image-2",
   "host_generation_adapter": {
     "mode": "host_native_or_delegated_image_generation",
+    "max_prompt_chars": 32000,
     "chatgpt": "use the host-native image generation/edit capability directly",
     "codex": "use the available image-generation skill/tool; when the Codex host exposes image-capable agent delegation, delegate only the image call and keep SlidePoise orchestration in the parent agent",
     "unsupported_host_policy": "stop at the image-generation stage rather than replacing creative generation with deterministic drawing"
@@ -186,12 +187,13 @@
     "avoid": [
       "Any generated header, footer, company label, page number, shared-frame rule or repeated source-note strip.",
       "Independent changes to recurring title size, font family or decision-band treatment.",
-      "Decorative icons, invented imagery and miniature type."
+      "Icons that repeat a label without improving recognition or scanability."
     ],
     "visual_obligations": [
       "Generate only the 1920 by 960 substantive canvas at exactly 2:1 aspect ratio. The runtime adds the separate inherited frame.",
       "Use native-friendly text, tables, chart geometry and continuous directed relationships where the content requires them.",
-      "Follow the shared deck design. The five pages vary their evidence structures while recurring roles remain consistent."
+      "Follow the shared deck design. The five pages vary their evidence structures while recurring roles remain consistent.",
+      "Use one finance symbol with a peer group of three decision-state symbols. Keep each state label explicit."
     ],
     "user_required_assets": [],
     "density_intent": "information_rich",
@@ -1498,8 +1500,8 @@
         },
         "resource_catalogs": {
           "visual_references": {
-            "catalog": "/Users/henry/.slidepoise/profiles/consulting/libraries/visual_references/catalog.json",
-            "root": "/Users/henry/.slidepoise/profiles/consulting/libraries/visual_references",
+            "catalog": "/Users/henry/Codes/AI_slide_drafting/profiles/consulting/libraries/visual_references/catalog.json",
+            "root": "/Users/henry/Codes/AI_slide_drafting/profiles/consulting/libraries/visual_references",
             "profile_id": "consulting"
           },
           "components": {
@@ -1513,12 +1515,10 @@
           },
           "icons": {
             "set_ids": [
-              "remix-icon",
-              "wikimedia-identity"
+              "remix-icon"
             ],
             "providers": [
-              "remix_icon",
-              "wikimedia_commons"
+              "remix_icon"
             ]
           }
         }
@@ -1864,6 +1864,38 @@
       "intent": "Dense, readable executive content with Georgia claim titles, Arial supporting roles and one coherent decision-band treatment.",
       "freedom": "Vary the meaningful information layout. Preserve the shared visual roles and body-only canvas."
     },
+    "selection_reasoning": {
+      "icons": {
+        "communication_roles": [
+          "Separate the financial model from the go, hold, and stop release decisions"
+        ],
+        "candidates_inspected": [
+          "Remix Icon money-dollar-circle line/fill pair",
+          "Remix Icon play-circle line/fill pair",
+          "Remix Icon pause-circle line/fill pair",
+          "Remix Icon stop-circle line/fill pair"
+        ],
+        "decision": "Use one finance symbol with a peer group of three decision-state symbols. Keep each state label explicit."
+      },
+      "components": {
+        "communication_roles": [
+          "Provide editable information structures for the slide evidence"
+        ],
+        "candidates_inspected": [
+          "Consulting core component catalog"
+        ],
+        "decision": "Use native tables, charts, connectors, and geometry because the current evidence structures are specific to this argument."
+      },
+      "visual_references": {
+        "communication_roles": [
+          "Preserve the shared title, typography, decision band, and deck rhythm"
+        ],
+        "candidates_inspected": [
+          "Accepted opening slide when available"
+        ],
+        "decision": "Use the shared deck design as the primary authority. Later pages may use the accepted opening only for style calibration."
+      }
+    },
     "selected_visual_references": [
       {
         "id": "northstar-accepted-typography",
@@ -1872,15 +1904,313 @@
         "full_resolution_attachment": true
       }
     ],
-    "selected_assets": [],
-    "generation_asset_descriptions": [],
-    "generation_context_sheet": {
-      "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s05-investment-decision/work/generation-context-sheet.png",
-      "labels": {
-        "northstar-accepted-typography": "R01"
+    "selected_assets": [
+      {
+        "asset_id": "remix-money-dollar-circle-line",
+        "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/money-dollar-circle/remix-money-dollar-circle-line.svg",
+        "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Finance/money-dollar-circle-line.svg",
+        "source_repository_path": "icons/Finance/money-dollar-circle-line.svg",
+        "provider": "Remix Icon",
+        "provider_version": "4.9.0",
+        "license": "Remix Icon License v1.0",
+        "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+        "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+        "style_variant": "line",
+        "style_pair_id": "remix-money-dollar-circle",
+        "pair_asset_ids": [
+          "remix-money-dollar-circle-line",
+          "remix-money-dollar-circle-fill"
+        ],
+        "intrinsic_aspect_ratio": 1.0,
+        "treatment_recolorable": true,
+        "recolor_mode": "fill_all",
+        "preserve_canonical_color": false,
+        "sha256": "c8877cfe1f79365ad20000cb6eeb013f0412764523f5ab000fbab6133a77e6a6",
+        "persistence": "run_cache_only",
+        "selection_status": "candidate_pending_post_generation_visual_review",
+        "role": "supporting communication icon candidate",
+        "selection_mode": "host_agent_selected_pair_before_generation",
+        "user_required": false,
+        "generation_description": "A coherent Remix Icon line symbol for money dollar circle. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
       },
-      "asset_count": 1,
-      "rendered_preview_count": 1,
+      {
+        "asset_id": "remix-money-dollar-circle-fill",
+        "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/money-dollar-circle/remix-money-dollar-circle-fill.svg",
+        "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Finance/money-dollar-circle-fill.svg",
+        "source_repository_path": "icons/Finance/money-dollar-circle-fill.svg",
+        "provider": "Remix Icon",
+        "provider_version": "4.9.0",
+        "license": "Remix Icon License v1.0",
+        "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+        "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+        "style_variant": "fill",
+        "style_pair_id": "remix-money-dollar-circle",
+        "pair_asset_ids": [
+          "remix-money-dollar-circle-line",
+          "remix-money-dollar-circle-fill"
+        ],
+        "intrinsic_aspect_ratio": 1.0,
+        "treatment_recolorable": true,
+        "recolor_mode": "fill_all",
+        "preserve_canonical_color": false,
+        "sha256": "9d28a3c607602d78bca67be2e6cfc88aa6e809ab44e197c4bb7361f1983e597c",
+        "persistence": "run_cache_only",
+        "selection_status": "candidate_pending_post_generation_visual_review",
+        "role": "supporting communication icon candidate",
+        "selection_mode": "host_agent_selected_pair_before_generation",
+        "user_required": false,
+        "generation_description": "A coherent Remix Icon fill symbol for money dollar circle. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+      },
+      {
+        "asset_id": "remix-play-circle-line",
+        "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/play-circle/remix-play-circle-line.svg",
+        "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Media/play-circle-line.svg",
+        "source_repository_path": "icons/Media/play-circle-line.svg",
+        "provider": "Remix Icon",
+        "provider_version": "4.9.0",
+        "license": "Remix Icon License v1.0",
+        "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+        "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+        "style_variant": "line",
+        "style_pair_id": "remix-play-circle",
+        "pair_asset_ids": [
+          "remix-play-circle-line",
+          "remix-play-circle-fill"
+        ],
+        "intrinsic_aspect_ratio": 1.0,
+        "treatment_recolorable": true,
+        "recolor_mode": "fill_all",
+        "preserve_canonical_color": false,
+        "sha256": "1f5603fe9d4c9f90d2251c9f20afd1fac3cbc3917158cc45079e4c30a5ca4dc2",
+        "persistence": "run_cache_only",
+        "selection_status": "candidate_pending_post_generation_visual_review",
+        "role": "supporting communication icon candidate",
+        "selection_mode": "host_agent_selected_pair_before_generation",
+        "user_required": false,
+        "generation_description": "A coherent Remix Icon line symbol for play circle. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+      },
+      {
+        "asset_id": "remix-play-circle-fill",
+        "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/play-circle/remix-play-circle-fill.svg",
+        "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Media/play-circle-fill.svg",
+        "source_repository_path": "icons/Media/play-circle-fill.svg",
+        "provider": "Remix Icon",
+        "provider_version": "4.9.0",
+        "license": "Remix Icon License v1.0",
+        "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+        "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+        "style_variant": "fill",
+        "style_pair_id": "remix-play-circle",
+        "pair_asset_ids": [
+          "remix-play-circle-line",
+          "remix-play-circle-fill"
+        ],
+        "intrinsic_aspect_ratio": 1.0,
+        "treatment_recolorable": true,
+        "recolor_mode": "fill_all",
+        "preserve_canonical_color": false,
+        "sha256": "860a6067f00458e482c8dc9319df1927650511cbbc7b07ee38bbb3f0ea38cee8",
+        "persistence": "run_cache_only",
+        "selection_status": "candidate_pending_post_generation_visual_review",
+        "role": "supporting communication icon candidate",
+        "selection_mode": "host_agent_selected_pair_before_generation",
+        "user_required": false,
+        "generation_description": "A coherent Remix Icon fill symbol for play circle. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+      },
+      {
+        "asset_id": "remix-pause-circle-line",
+        "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/pause-circle/remix-pause-circle-line.svg",
+        "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Media/pause-circle-line.svg",
+        "source_repository_path": "icons/Media/pause-circle-line.svg",
+        "provider": "Remix Icon",
+        "provider_version": "4.9.0",
+        "license": "Remix Icon License v1.0",
+        "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+        "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+        "style_variant": "line",
+        "style_pair_id": "remix-pause-circle",
+        "pair_asset_ids": [
+          "remix-pause-circle-line",
+          "remix-pause-circle-fill"
+        ],
+        "intrinsic_aspect_ratio": 1.0,
+        "treatment_recolorable": true,
+        "recolor_mode": "fill_all",
+        "preserve_canonical_color": false,
+        "sha256": "4ecdef2927524d335ee9cf7d66edabda21d81238cbd666fe2a79bfa7df447824",
+        "persistence": "run_cache_only",
+        "selection_status": "candidate_pending_post_generation_visual_review",
+        "role": "supporting communication icon candidate",
+        "selection_mode": "host_agent_selected_pair_before_generation",
+        "user_required": false,
+        "generation_description": "A coherent Remix Icon line symbol for pause circle. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+      },
+      {
+        "asset_id": "remix-pause-circle-fill",
+        "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/pause-circle/remix-pause-circle-fill.svg",
+        "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Media/pause-circle-fill.svg",
+        "source_repository_path": "icons/Media/pause-circle-fill.svg",
+        "provider": "Remix Icon",
+        "provider_version": "4.9.0",
+        "license": "Remix Icon License v1.0",
+        "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+        "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+        "style_variant": "fill",
+        "style_pair_id": "remix-pause-circle",
+        "pair_asset_ids": [
+          "remix-pause-circle-line",
+          "remix-pause-circle-fill"
+        ],
+        "intrinsic_aspect_ratio": 1.0,
+        "treatment_recolorable": true,
+        "recolor_mode": "fill_all",
+        "preserve_canonical_color": false,
+        "sha256": "b01472826d300ac4e18ca240ab7ed7d34bbb31cf283c4e464b675ac8381f1992",
+        "persistence": "run_cache_only",
+        "selection_status": "candidate_pending_post_generation_visual_review",
+        "role": "supporting communication icon candidate",
+        "selection_mode": "host_agent_selected_pair_before_generation",
+        "user_required": false,
+        "generation_description": "A coherent Remix Icon fill symbol for pause circle. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+      },
+      {
+        "asset_id": "remix-stop-circle-line",
+        "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/stop-circle/remix-stop-circle-line.svg",
+        "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Media/stop-circle-line.svg",
+        "source_repository_path": "icons/Media/stop-circle-line.svg",
+        "provider": "Remix Icon",
+        "provider_version": "4.9.0",
+        "license": "Remix Icon License v1.0",
+        "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+        "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+        "style_variant": "line",
+        "style_pair_id": "remix-stop-circle",
+        "pair_asset_ids": [
+          "remix-stop-circle-line",
+          "remix-stop-circle-fill"
+        ],
+        "intrinsic_aspect_ratio": 1.0,
+        "treatment_recolorable": true,
+        "recolor_mode": "fill_all",
+        "preserve_canonical_color": false,
+        "sha256": "a936a3f96c4b9d5124523dfc759665d9441190d6497316fa8d8099ae2647ab7e",
+        "persistence": "run_cache_only",
+        "selection_status": "candidate_pending_post_generation_visual_review",
+        "role": "supporting communication icon candidate",
+        "selection_mode": "host_agent_selected_pair_before_generation",
+        "user_required": false,
+        "generation_description": "A coherent Remix Icon line symbol for stop circle. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+      },
+      {
+        "asset_id": "remix-stop-circle-fill",
+        "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/stop-circle/remix-stop-circle-fill.svg",
+        "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Media/stop-circle-fill.svg",
+        "source_repository_path": "icons/Media/stop-circle-fill.svg",
+        "provider": "Remix Icon",
+        "provider_version": "4.9.0",
+        "license": "Remix Icon License v1.0",
+        "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+        "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+        "style_variant": "fill",
+        "style_pair_id": "remix-stop-circle",
+        "pair_asset_ids": [
+          "remix-stop-circle-line",
+          "remix-stop-circle-fill"
+        ],
+        "intrinsic_aspect_ratio": 1.0,
+        "treatment_recolorable": true,
+        "recolor_mode": "fill_all",
+        "preserve_canonical_color": false,
+        "sha256": "1ea95ba40a20eb01b439890ba9da0ecf94599e6941bd62164e9084def84aa9ad",
+        "persistence": "run_cache_only",
+        "selection_status": "candidate_pending_post_generation_visual_review",
+        "role": "supporting communication icon candidate",
+        "selection_mode": "host_agent_selected_pair_before_generation",
+        "user_required": false,
+        "generation_description": "A coherent Remix Icon fill symbol for stop circle. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+      }
+    ],
+    "generation_asset_descriptions": [
+      {
+        "asset_id": "remix-money-dollar-circle-line",
+        "contact_sheet_label": "A01",
+        "role": "supporting communication icon candidate",
+        "generation_description": "A coherent Remix Icon line symbol for money dollar circle. Use it only for the communication role described in selection_reasoning and reserve a clean square slot.",
+        "intrinsic_aspect_ratio": 1.0,
+        "require_exact_identity": false
+      },
+      {
+        "asset_id": "remix-money-dollar-circle-fill",
+        "contact_sheet_label": "A02",
+        "role": "supporting communication icon candidate",
+        "generation_description": "A coherent Remix Icon fill symbol for money dollar circle. Use it only for the communication role described in selection_reasoning and reserve a clean square slot.",
+        "intrinsic_aspect_ratio": 1.0,
+        "require_exact_identity": false
+      },
+      {
+        "asset_id": "remix-play-circle-line",
+        "contact_sheet_label": "A03",
+        "role": "supporting communication icon candidate",
+        "generation_description": "A coherent Remix Icon line symbol for play circle. Use it only for the communication role described in selection_reasoning and reserve a clean square slot.",
+        "intrinsic_aspect_ratio": 1.0,
+        "require_exact_identity": false
+      },
+      {
+        "asset_id": "remix-play-circle-fill",
+        "contact_sheet_label": "A04",
+        "role": "supporting communication icon candidate",
+        "generation_description": "A coherent Remix Icon fill symbol for play circle. Use it only for the communication role described in selection_reasoning and reserve a clean square slot.",
+        "intrinsic_aspect_ratio": 1.0,
+        "require_exact_identity": false
+      },
+      {
+        "asset_id": "remix-pause-circle-line",
+        "contact_sheet_label": "A05",
+        "role": "supporting communication icon candidate",
+        "generation_description": "A coherent Remix Icon line symbol for pause circle. Use it only for the communication role described in selection_reasoning and reserve a clean square slot.",
+        "intrinsic_aspect_ratio": 1.0,
+        "require_exact_identity": false
+      },
+      {
+        "asset_id": "remix-pause-circle-fill",
+        "contact_sheet_label": "A06",
+        "role": "supporting communication icon candidate",
+        "generation_description": "A coherent Remix Icon fill symbol for pause circle. Use it only for the communication role described in selection_reasoning and reserve a clean square slot.",
+        "intrinsic_aspect_ratio": 1.0,
+        "require_exact_identity": false
+      },
+      {
+        "asset_id": "remix-stop-circle-line",
+        "contact_sheet_label": "A07",
+        "role": "supporting communication icon candidate",
+        "generation_description": "A coherent Remix Icon line symbol for stop circle. Use it only for the communication role described in selection_reasoning and reserve a clean square slot.",
+        "intrinsic_aspect_ratio": 1.0,
+        "require_exact_identity": false
+      },
+      {
+        "asset_id": "remix-stop-circle-fill",
+        "contact_sheet_label": "A08",
+        "role": "supporting communication icon candidate",
+        "generation_description": "A coherent Remix Icon fill symbol for stop circle. Use it only for the communication role described in selection_reasoning and reserve a clean square slot.",
+        "intrinsic_aspect_ratio": 1.0,
+        "require_exact_identity": false
+      }
+    ],
+    "generation_context_sheet": {
+      "path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/slides/s05-investment-decision/work/generation-context-sheet.png",
+      "labels": {
+        "northstar-accepted-typography": "R01",
+        "remix-money-dollar-circle-line": "A01",
+        "remix-money-dollar-circle-fill": "A02",
+        "remix-play-circle-line": "A03",
+        "remix-play-circle-fill": "A04",
+        "remix-pause-circle-line": "A05",
+        "remix-pause-circle-fill": "A06",
+        "remix-stop-circle-line": "A07",
+        "remix-stop-circle-fill": "A08"
+      },
+      "asset_count": 9,
+      "rendered_preview_count": 9,
       "purpose": "combined_style_assets_approval_and_generation"
     },
     "asset_vocabulary_policy": {
@@ -1922,8 +2252,8 @@
     "Density is a separate user/session control. Apply the selected density inside the profile rather than equating the profile with sparse or dense composition."
   ],
   "deck_design": {
-    "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/work/deck-design.json",
-    "sha256": "a38f6925db5d509cc86d02a4bd0cbfef07e171cba330b96267f3b01512edd179",
+    "path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/deck-design.json",
+    "sha256": "13093fa0fa1e9e50c6b3c54208fda6cb0acb722d443b8b694c12780668deacb3",
     "content": {
       "schema_version": "1.0",
       "design_id": "northstar-consulting-shared-design-03",
@@ -1990,6 +2320,18 @@
           "color": "#FD5108",
           "width_px": 3,
           "guidance": "Clear directional arrowheads with continuous routes. Lines explain relationships."
+        },
+        "supporting_stage_icon": {
+          "purpose": "Help readers distinguish recurring actors, stages, workflows, and decisions before reading supporting text.",
+          "chosen_style": {
+            "provider": "Remix Icon",
+            "variant": "line unless post-generation review supports a separate peer group",
+            "treatment": "black_proxy",
+            "surface": "transparent or #FFF5ED only when the accepted design uses a real surface"
+          },
+          "guidance": "Icons support labels and evidence. Use one treatment within each local peer group and preserve the canonical SVG during reconstruction.",
+          "page_aliases": {},
+          "exceptions": []
         }
       },
       "allowed_variations": [
@@ -2004,7 +2346,8 @@
         "Arial subtitles, body copy, table text and section labels retain their respective peer sizes.",
         "Every decision band uses the same pale orange fill, orange label, black message and left orange bar.",
         "The final PowerPoint uses one shared inherited frame with the same neutral header and footer rules.",
-        "The Agent compares all five actual rendered pages together and corrects observed drift before release."
+        "The Agent compares all five actual rendered pages together and corrects observed drift before release.",
+        "Selected icons remain recognizable, semantically useful, canonical in PowerPoint, and consistent within each peer group."
       ]
     },
     "reference_images": []

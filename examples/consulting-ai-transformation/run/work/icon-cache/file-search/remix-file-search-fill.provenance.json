@@ -1,0 +1,24 @@
+{
+  "asset_id": "remix-file-search-fill",
+  "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/file-search/remix-file-search-fill.svg",
+  "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Document/file-search-fill.svg",
+  "source_repository_path": "icons/Document/file-search-fill.svg",
+  "provider": "Remix Icon",
+  "provider_version": "4.9.0",
+  "license": "Remix Icon License v1.0",
+  "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+  "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+  "style_variant": "fill",
+  "style_pair_id": "remix-file-search",
+  "pair_asset_ids": [
+    "remix-file-search-line",
+    "remix-file-search-fill"
+  ],
+  "intrinsic_aspect_ratio": 1.0,
+  "treatment_recolorable": true,
+  "recolor_mode": "fill_all",
+  "preserve_canonical_color": false,
+  "sha256": "e1e8b35df124a81a32e8294ef3f1cf498e6c2c3fcb0d2f113132d2849d3a03d5",
+  "persistence": "run_cache_only",
+  "selection_status": "candidate_pending_post_generation_visual_review"
+}

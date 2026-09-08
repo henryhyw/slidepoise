@@ -13,7 +13,7 @@ from test_skill_integration import generic_generation_inputs
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT / "slidepoise/scripts"), str(ROOT / "slidepoise/runtime/src")]
-from prepare_generation import build_brief, build_contract, build_request, build_style_context, generation_reference_images, verify_request
+from prepare_generation import build_brief, build_contract, build_request, build_style_context, generation_reference_images, generation_resource_projection, verify_request
 from slidepoise.canvas import derive_canvas, validate_derived_canvas
 from slidepoise.reconstruction.contract import build_reconstruction_contract
 from slidepoise.reconstruction.scene import build_reconstruction_scene
@@ -64,16 +64,38 @@ def test_model_prompt_preserves_complete_visual_inputs_once(compiled_request):
     prompt = build_brief(contract)
     payload = json.loads(prompt.split("```json", 1)[1].split("```", 1)[0])
     assert payload["communication_intent"] == contract["communication_intent"]
-    assert payload["resources"] == {key: value for key, value in contract["resources"].items() if key != "style_context"}
+    assert payload["resources"] == generation_resource_projection(contract["resources"])
     assert payload["deck_design"] == contract["deck_design"]["content"]
     assert payload["canvas"] == contract["canvas"]
-    for key in ("hard_rules", "style_agency", "visual_principles", "writing_principles", "anti_patterns", "density_guidance"):
+    for key in ("hard_rules", "style_agency", "visual_principles", "density_guidance"):
         assert payload["profile"][key] == contract["profile"][key]
+    for key in ("writing_principles", "anti_patterns", "reasoning_principles", "review_questions"):
+        assert key not in payload["profile"]
+    for key in ("semantic_style_tokens", "data_visualization", "explicit_user_visual_requirements"):
+        assert key not in payload["non_negotiable_design"]
+    expected_design = {
+        key: value for key, value in contract["non_negotiable_design"].items()
+        if key not in {"semantic_style_tokens", "data_visualization"}
+    }
     design = {**payload["non_negotiable_design"],
               "explicit_user_visual_requirements": payload["communication_intent"]["explicit_user_visual_requirements"]}
-    assert design == contract["non_negotiable_design"]
+    assert design == expected_design
     assert prompt.count('"communication_intent"') == 1
     assert "continue without per-slide approval" not in prompt
+
+
+def test_resource_selection_reasoning_reaches_the_generation_prompt(tmp_path: Path) -> None:
+    config, intent, resources = generic_generation_inputs(tmp_path)
+    resources["selection_reasoning"] = {
+        "icons": {
+            "communication_roles": ["Distinguish source review from release approval"],
+            "candidates_inspected": ["file-search", "shield-check"],
+            "decision": "Use both as supporting stage markers.",
+        }
+    }
+    contract = build_contract(config, intent, resources)
+    payload = json.loads(build_brief(contract).split("```json", 1)[1].split("```", 1)[0])
+    assert payload["resources"]["selection_reasoning"] == resources["selection_reasoning"]
 
 
 def test_grammar_only_components_remain_prompt_guidance_without_an_image(compiled_request):

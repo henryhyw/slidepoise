@@ -8,8 +8,8 @@
   },
   "libraries": {
     "visual_references": {
-      "catalog": "/Users/henry/.slidepoise/profiles/consulting/libraries/visual_references/catalog.json",
-      "root": "/Users/henry/.slidepoise/profiles/consulting/libraries/visual_references",
+      "catalog": "/Users/henry/Codes/AI_slide_drafting/profiles/consulting/libraries/visual_references/catalog.json",
+      "root": "/Users/henry/Codes/AI_slide_drafting/profiles/consulting/libraries/visual_references",
       "profile_id": "consulting"
     },
     "components": {
@@ -23,12 +23,10 @@
     },
     "icons": {
       "set_ids": [
-        "remix-icon",
-        "wikimedia-identity"
+        "remix-icon"
       ],
       "providers": [
-        "remix_icon",
-        "wikimedia_commons"
+        "remix_icon"
       ]
     }
   },
@@ -49,7 +47,7 @@
   },
   "remote_sources": {
     "remix_icon": {
-      "enabled": false,
+      "enabled": true,
       "resource_role": "generic_icon",
       "provider": "Remix Icon",
       "provider_version": "4.9.0",
@@ -138,6 +136,7 @@
     "default_model": "gpt-image-2",
     "host_adapter": {
       "mode": "host_native_or_delegated_image_generation",
+      "max_prompt_chars": 32000,
       "chatgpt": "use the host-native image generation/edit capability directly",
       "codex": "use the available image-generation skill/tool; when the Codex host exposes image-capable agent delegation, delegate only the image call and keep SlidePoise orchestration in the parent agent",
       "unsupported_host_policy": "stop at the image-generation stage rather than replacing creative generation with deterministic drawing"
@@ -870,8 +869,8 @@
     },
     "resource_catalogs": {
       "visual_references": {
-        "catalog": "/Users/henry/.slidepoise/profiles/consulting/libraries/visual_references/catalog.json",
-        "root": "/Users/henry/.slidepoise/profiles/consulting/libraries/visual_references",
+        "catalog": "/Users/henry/Codes/AI_slide_drafting/profiles/consulting/libraries/visual_references/catalog.json",
+        "root": "/Users/henry/Codes/AI_slide_drafting/profiles/consulting/libraries/visual_references",
         "profile_id": "consulting"
       },
       "components": {
@@ -885,12 +884,10 @@
       },
       "icons": {
         "set_ids": [
-          "remix-icon",
-          "wikimedia-identity"
+          "remix-icon"
         ],
         "providers": [
-          "remix_icon",
-          "wikimedia_commons"
+          "remix_icon"
         ]
       }
     }
@@ -1513,8 +1510,7 @@
     "root": "/Users/henry/.slidepoise/library-sets",
     "selected": {
       "icons": [
-        "remix-icon",
-        "wikimedia-identity"
+        "remix-icon"
       ],
       "components": [
         "consulting-core"
@@ -1530,16 +1526,6 @@
         "provider": "remix_icon",
         "root": "/Users/henry/.slidepoise/library-sets",
         "license": "Remix Icon License v1.0"
-      },
-      "wikimedia-identity": {
-        "id": "wikimedia-identity",
-        "kind": "icons",
-        "name": "Wikimedia identity assets",
-        "description": "Exact logo and public-media candidates with file-page, identity, license, attribution and trademark review.",
-        "source": "remote",
-        "provider": "wikimedia_commons",
-        "root": "/Users/henry/.slidepoise/library-sets",
-        "license": "Per selected Commons file"
       },
       "consulting-core": {
         "id": "consulting-core",
@@ -1561,8 +1547,8 @@
     "header_height_px": 64,
     "footer_height_px": 56,
     "profile_id": "consulting",
-    "profile_path": "/Users/henry/.slidepoise/profiles/consulting/profile.json",
-    "profiles_root": "/Users/henry/.slidepoise/profiles",
+    "profile_path": "/Users/henry/Codes/AI_slide_drafting/profiles/consulting/profile.json",
+    "profiles_root": "/Users/henry/Codes/AI_slide_drafting/profiles",
     "profile_name": "Consulting",
     "profile_visual_reference_priorities": {
       "core": [],

@@ -16,6 +16,7 @@ def main() -> None:
     args = parser.parse_args()
     cfg = json.loads(args.config.read_text(encoding="utf-8"))
     errors: list[str] = []
+    facts: list[str] = []
 
     if cfg.get("scope", {}).get("mode") != "adaptive_presentation":
         errors.append("scope.mode must be adaptive_presentation")
@@ -41,6 +42,8 @@ def main() -> None:
     host_adapter = generation.get("host_adapter", {}) or {}
     if host_adapter.get("mode") != "host_native_or_delegated_image_generation":
         errors.append("generation.host_adapter.mode must use host-native-or-delegated image generation")
+    if not isinstance(host_adapter.get("max_prompt_chars"), int) or host_adapter.get("max_prompt_chars") < 1:
+        errors.append("generation.host_adapter.max_prompt_chars must be a positive integer")
     if generation.get("initial_candidates_per_slide") != 1:
         errors.append("generation.initial_candidates_per_slide must be 1")
     refinement = generation.get("illustration_refinement", {}) or {}
@@ -134,6 +137,14 @@ def main() -> None:
         if source.get("enabled") not in {True, False}:
             errors.append(f"remote_sources.{source_id}.enabled must be boolean")
 
+    selected_icon_sets = cfg.get("library_sets", {}).get("selected", {}).get("icons", []) or []
+    records = cfg.get("library_sets", {}).get("records", {}) or {}
+    for set_id in selected_icon_sets:
+        record = records.get(set_id, {}) or {}
+        provider = record.get("provider")
+        if record.get("source") == "remote" and provider and remote_sources.get(provider, {}).get("enabled") is False:
+            facts.append(f"selected remote icon Library Set is disabled for this run: {set_id} ({provider})")
+
     remix = remote_sources.get("remix_icon", {})
     if remix:
         if remix.get("pair_styles") != ["line", "fill"]:
@@ -163,6 +174,7 @@ def main() -> None:
     report = {
         "evidence_type": "objective_config_structure",
         "blocking_facts": errors,
+        "configuration_facts": facts,
         "agent_interpretation_required": True,
         "config": str(args.config.resolve()),
         "notice": "No overall verdict is produced. The host Agent must interpret these facts together with the profile and current task."

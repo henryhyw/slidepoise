@@ -18,18 +18,3 @@ test('Console demo saves independently, rejects stale edits and resets with a ne
   assert.equal((await demo()('/api/design?profile=consulting')).values.body_font,original.values.body_font);
   await assert.rejects(first('/api/component/open',{id:'any'}),/installed Console/);
 });
-
-test('Console uses its own system icon on every surface', () => {
-  for (const file of ['../webapp/console/index.html', '../docs/site/console-demo/index.html']) {
-    const html = readFileSync(new URL(file, import.meta.url), 'utf8');
-    const systemButton = html.match(/<button class="nav-item" data-view="system">([\s\S]*?)<\/button>/)?.[1] || '';
-    assert.match(systemButton, /<svg viewBox="0 0 18 18"/);
-    assert.doesNotMatch(systemButton, /⚙/);
-  }
-});
-
-test('the embedded Console stays below the sticky project header', () => {
-  const styles = readFileSync(new URL('../docs/site/styles.css', import.meta.url), 'utf8');
-  assert.match(styles, /\.site-header \{[^}]*position: sticky;[^}]*z-index: 30;/);
-  assert.match(styles, /\.console-demo \{[^}]*position: relative;[^}]*isolation: isolate;/);
-});

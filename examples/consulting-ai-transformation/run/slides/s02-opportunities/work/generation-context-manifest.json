@@ -1,11 +1,17 @@
 {
   "sheet": {
-    "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s02-opportunities/work/generation-context-sheet.png",
-    "asset_count": 1,
-    "rendered_preview_count": 1,
+    "path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/slides/s02-opportunities/work/generation-context-sheet.png",
+    "asset_count": 7,
+    "rendered_preview_count": 7,
     "skipped_preview_asset_ids": [],
     "labels": {
-      "northstar-accepted-typography": "R01"
+      "northstar-accepted-typography": "R01",
+      "remix-file-search-line": "A01",
+      "remix-file-search-fill": "A02",
+      "remix-database-2-line": "A03",
+      "remix-database-2-fill": "A04",
+      "remix-user-star-line": "A05",
+      "remix-user-star-fill": "A06"
     },
     "includes_style_context": true
   },
@@ -696,8 +702,8 @@
       },
       "resource_catalogs": {
         "visual_references": {
-          "catalog": "/Users/henry/.slidepoise/profiles/consulting/libraries/visual_references/catalog.json",
-          "root": "/Users/henry/.slidepoise/profiles/consulting/libraries/visual_references",
+          "catalog": "/Users/henry/Codes/AI_slide_drafting/profiles/consulting/libraries/visual_references/catalog.json",
+          "root": "/Users/henry/Codes/AI_slide_drafting/profiles/consulting/libraries/visual_references",
           "profile_id": "consulting"
         },
         "components": {
@@ -711,12 +717,10 @@
         },
         "icons": {
           "set_ids": [
-            "remix-icon",
-            "wikimedia-identity"
+            "remix-icon"
           ],
           "providers": [
-            "remix_icon",
-            "wikimedia_commons"
+            "remix_icon"
           ]
         }
       }
@@ -1062,12 +1066,79 @@
     "intent": "Dense, readable executive content with Georgia claim titles, Arial supporting roles and one coherent decision-band treatment.",
     "freedom": "Vary the meaningful information layout. Preserve the shared visual roles and body-only canvas."
   },
+  "selection_reasoning": {
+    "icons": {
+      "communication_roles": [
+        "Make the three reasons for choosing the first pilot immediately distinguishable"
+      ],
+      "candidates_inspected": [
+        "Remix Icon file-search line/fill pair",
+        "Remix Icon database-2 line/fill pair",
+        "Remix Icon user-star line/fill pair"
+      ],
+      "decision": "Use file search for frequent evidence work, database for a bounded source corpus, and user star for the named expert reviewer. The chart and tables remain the evidence."
+    },
+    "components": {
+      "communication_roles": [
+        "Provide editable information structures for the slide evidence"
+      ],
+      "candidates_inspected": [
+        "Consulting core component catalog"
+      ],
+      "decision": "Use native tables, charts, connectors, and geometry because the current evidence structures are specific to this argument."
+    },
+    "visual_references": {
+      "communication_roles": [
+        "Preserve the shared title, typography, decision band, and deck rhythm"
+      ],
+      "candidates_inspected": [
+        "Accepted opening slide when available"
+      ],
+      "decision": "Use the shared deck design as the primary authority. Later pages may use the accepted opening only for style calibration."
+    }
+  },
   "items": [
     {
       "asset_id": "northstar-accepted-typography",
       "label": "R01",
       "role": "Visual reference. Align the shared Georgia claim-title scale, Arial supporting typography and pale-orange decision band with orange label and black message. Use this page only as a visual style reference. Preserve the current page facts and choose its own chart, workflow, matrix or investment layout. Do not copy the opening content or its three-column composition.",
       "canonical_file": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/accepted-slide.png"
+    },
+    {
+      "asset_id": "remix-file-search-line",
+      "label": "A01",
+      "role": "Selected asset. supporting communication icon candidate",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/file-search/remix-file-search-line.svg"
+    },
+    {
+      "asset_id": "remix-file-search-fill",
+      "label": "A02",
+      "role": "Selected asset. supporting communication icon candidate",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/file-search/remix-file-search-fill.svg"
+    },
+    {
+      "asset_id": "remix-database-2-line",
+      "label": "A03",
+      "role": "Selected asset. supporting communication icon candidate",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/database-2/remix-database-2-line.svg"
+    },
+    {
+      "asset_id": "remix-database-2-fill",
+      "label": "A04",
+      "role": "Selected asset. supporting communication icon candidate",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/database-2/remix-database-2-fill.svg"
+    },
+    {
+      "asset_id": "remix-user-star-line",
+      "label": "A05",
+      "role": "Selected asset. supporting communication icon candidate",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/user-star/remix-user-star-line.svg"
+    },
+    {
+      "asset_id": "remix-user-star-fill",
+      "label": "A06",
+      "role": "Selected asset. supporting communication icon candidate",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/user-star/remix-user-star-fill.svg"
     }
   ]
 }

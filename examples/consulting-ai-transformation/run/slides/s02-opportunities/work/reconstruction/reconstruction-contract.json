@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "source_scene_evidence": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s02-opportunities/work/accepted-slide.png",
+  "source_scene_evidence": "/private/tmp/.slidepoise-rebuild-jkaybi9w/slides/s02-opportunities/work/accepted-slide.png",
   "full_slide_dimensions_px": [
     1920,
     1080
@@ -74,16 +74,16 @@
     {
       "id": "headline",
       "semantic_kind": "text",
-      "semantic_role": "headline",
+      "semantic_role": "slide_title",
       "selected_route": "native_text",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
       "render_owner": "headline",
       "bbox_px": [
-        48,
-        19,
-        1824,
-        80
+        46,
+        20,
+        1828,
+        76
       ],
       "component_id": null
     },
@@ -96,90 +96,42 @@
       "emits_ppt_object": true,
       "render_owner": "subtitle",
       "bbox_px": [
-        48,
-        103,
-        1824,
+        47,
+        101,
+        1825,
         48
-      ],
-      "component_id": null
-    },
-    {
-      "id": "introduction-rule",
-      "semantic_kind": "shape",
-      "semantic_role": "native_presentation_geometry",
-      "selected_route": "native_shape",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "introduction-rule",
-      "bbox_px": [
-        48,
-        165,
-        1824,
-        2
       ],
       "component_id": null
     },
     {
       "id": "capacity-heading",
       "semantic_kind": "text",
-      "semantic_role": "capacity-heading",
+      "semantic_role": "heading_large",
       "selected_route": "native_text",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
       "render_owner": "capacity-heading",
       "bbox_px": [
-        32,
-        192,
-        620,
-        42
-      ],
-      "component_id": null
-    },
-    {
-      "id": "sequencing-heading",
-      "semantic_kind": "text",
-      "semantic_role": "sequencing-heading",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "sequencing-heading",
-      "bbox_px": [
-        670,
-        192,
-        661,
-        42
-      ],
-      "component_id": null
-    },
-    {
-      "id": "reason-heading",
-      "semantic_kind": "text",
-      "semantic_role": "reason-heading",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "reason-heading",
-      "bbox_px": [
-        1382,
-        192,
-        500,
-        42
+        37,
+        158,
+        680,
+        38
       ],
       "component_id": null
     },
     {
       "id": "chart-unit",
       "semantic_kind": "text",
-      "semantic_role": "chart-unit",
+      "semantic_role": "body",
       "selected_route": "native_text",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
       "render_owner": "chart-unit",
       "bbox_px": [
-        32,
-        227,
-        620,
-        36
+        37,
+        194,
+        300,
+        28
       ],
       "component_id": null
     },
@@ -192,362 +144,234 @@
       "emits_ppt_object": true,
       "render_owner": "annual-capacity-chart",
       "bbox_px": [
-        31,
-        261,
-        620,
-        234
+        40,
+        225,
+        660,
+        290
       ],
       "component_id": null
     },
     {
-      "id": "research-category",
+      "id": "value-model-heading",
       "semantic_kind": "text",
-      "semantic_role": "research-category",
+      "semantic_role": "heading_large",
       "selected_route": "native_text",
-      "node_class": "measurement_evidence",
-      "emits_ppt_object": false,
-      "render_owner": "annual-capacity-chart",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "value-model-heading",
       "bbox_px": [
-        31,
-        280,
-        129,
-        53
+        760,
+        158,
+        1110,
+        38
       ],
       "component_id": null
     },
     {
-      "id": "proposal-category",
-      "semantic_kind": "text",
-      "semantic_role": "proposal-category",
-      "selected_route": "native_text",
-      "node_class": "measurement_evidence",
-      "emits_ppt_object": false,
-      "render_owner": "annual-capacity-chart",
-      "bbox_px": [
-        31,
-        356,
-        129,
-        53
-      ],
-      "component_id": null
-    },
-    {
-      "id": "retrieval-category",
-      "semantic_kind": "text",
-      "semantic_role": "retrieval-category",
-      "selected_route": "native_text",
-      "node_class": "measurement_evidence",
-      "emits_ppt_object": false,
-      "render_owner": "annual-capacity-chart",
-      "bbox_px": [
-        31,
-        429,
-        129,
-        55
-      ],
-      "component_id": null
-    },
-    {
-      "id": "research-value",
-      "semantic_kind": "text",
-      "semantic_role": "research-value",
-      "selected_route": "native_text",
-      "node_class": "measurement_evidence",
-      "emits_ppt_object": false,
-      "render_owner": "annual-capacity-chart",
-      "bbox_px": [
-        525,
-        283,
-        123,
-        42
-      ],
-      "component_id": null
-    },
-    {
-      "id": "proposal-value",
-      "semantic_kind": "text",
-      "semantic_role": "proposal-value",
-      "selected_route": "native_text",
-      "node_class": "measurement_evidence",
-      "emits_ppt_object": false,
-      "render_owner": "annual-capacity-chart",
-      "bbox_px": [
-        433,
-        360,
-        120,
-        41
-      ],
-      "component_id": null
-    },
-    {
-      "id": "retrieval-value",
-      "semantic_kind": "text",
-      "semantic_role": "retrieval-value",
-      "selected_route": "native_text",
-      "node_class": "measurement_evidence",
-      "emits_ppt_object": false,
-      "render_owner": "annual-capacity-chart",
-      "bbox_px": [
-        371,
-        437,
-        119,
-        43
-      ],
-      "component_id": null
-    },
-    {
-      "id": "workflow-assumptions",
+      "id": "value-model",
       "semantic_kind": "table",
-      "semantic_role": "structured_comparison",
+      "semantic_role": "structured_evidence",
       "selected_route": "native_table",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
-      "render_owner": "workflow-assumptions",
+      "render_owner": "value-model",
       "bbox_px": [
-        33,
-        502,
-        582,
-        198
+        760,
+        202,
+        1110,
+        230
+      ],
+      "component_id": null
+    },
+    {
+      "id": "formula-strip",
+      "semantic_kind": "shape",
+      "semantic_role": "native_presentation_geometry",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "formula-strip",
+      "bbox_px": [
+        760,
+        432,
+        1110,
+        60
       ],
       "component_id": null
     },
     {
       "id": "capacity-formula",
       "semantic_kind": "text",
-      "semantic_role": "capacity-formula",
+      "semantic_role": "body",
       "selected_route": "native_text",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
       "render_owner": "capacity-formula",
       "bbox_px": [
-        32,
-        707,
-        621,
-        79
+        790,
+        440,
+        1050,
+        44
+      ],
+      "component_id": null
+    },
+    {
+      "id": "reason-heading",
+      "semantic_kind": "text",
+      "semantic_role": "heading_large",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "reason-heading",
+      "bbox_px": [
+        37,
+        532,
+        680,
+        38
+      ],
+      "component_id": null
+    },
+    {
+      "id": "reason-icon-file",
+      "semantic_kind": "icon",
+      "semantic_role": "supporting_visual",
+      "selected_route": "canonical_svg",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "reason-icon-file",
+      "bbox_px": [
+        58,
+        581,
+        45,
+        45
+      ],
+      "component_id": null
+    },
+    {
+      "id": "reason-file",
+      "semantic_kind": "text",
+      "semantic_role": "body",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "reason-file",
+      "bbox_px": [
+        142,
+        583,
+        540,
+        40
+      ],
+      "component_id": null
+    },
+    {
+      "id": "reason-icon-corpus",
+      "semantic_kind": "icon",
+      "semantic_role": "supporting_visual",
+      "selected_route": "canonical_svg",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "reason-icon-corpus",
+      "bbox_px": [
+        58,
+        651,
+        45,
+        45
+      ],
+      "component_id": null
+    },
+    {
+      "id": "reason-corpus",
+      "semantic_kind": "text",
+      "semantic_role": "body",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "reason-corpus",
+      "bbox_px": [
+        142,
+        653,
+        540,
+        40
+      ],
+      "component_id": null
+    },
+    {
+      "id": "reason-icon-reviewer",
+      "semantic_kind": "icon",
+      "semantic_role": "supporting_visual",
+      "selected_route": "canonical_svg",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "reason-icon-reviewer",
+      "bbox_px": [
+        58,
+        721,
+        45,
+        45
+      ],
+      "component_id": null
+    },
+    {
+      "id": "reason-reviewer",
+      "semantic_kind": "text",
+      "semantic_role": "body",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "reason-reviewer",
+      "bbox_px": [
+        142,
+        723,
+        540,
+        40
+      ],
+      "component_id": null
+    },
+    {
+      "id": "sequencing-heading",
+      "semantic_kind": "text",
+      "semantic_role": "heading_large",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "sequencing-heading",
+      "bbox_px": [
+        760,
+        520,
+        1110,
+        38
       ],
       "component_id": null
     },
     {
       "id": "pilot-sequencing",
       "semantic_kind": "table",
-      "semantic_role": "structured_comparison",
+      "semantic_role": "structured_evidence",
       "selected_route": "native_table",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
       "render_owner": "pilot-sequencing",
       "bbox_px": [
-        670,
-        254,
-        661,
-        506
+        760,
+        564,
+        1110,
+        240
       ],
       "component_id": null
     },
     {
-      "id": "reason-number-01",
+      "id": "overlap-note",
       "semantic_kind": "text",
-      "semantic_role": "reason-number-01",
+      "semantic_role": "body",
       "selected_route": "native_text",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
-      "render_owner": "reason-number-01",
+      "render_owner": "overlap-note",
       "bbox_px": [
-        1381,
-        257,
-        72,
-        66
-      ],
-      "component_id": null
-    },
-    {
-      "id": "reason-title-01",
-      "semantic_kind": "text",
-      "semantic_role": "reason-title-01",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "reason-title-01",
-      "bbox_px": [
-        1471,
-        250,
-        428,
-        44
-      ],
-      "component_id": null
-    },
-    {
-      "id": "reason-detail-01",
-      "semantic_kind": "text",
-      "semantic_role": "reason-detail-01",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "reason-detail-01",
-      "bbox_px": [
-        1471,
-        285,
-        429,
-        87
-      ],
-      "component_id": null
-    },
-    {
-      "id": "reason-number-02",
-      "semantic_kind": "text",
-      "semantic_role": "reason-number-02",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "reason-number-02",
-      "bbox_px": [
-        1381,
-        398,
-        72,
-        66
-      ],
-      "component_id": null
-    },
-    {
-      "id": "reason-title-02",
-      "semantic_kind": "text",
-      "semantic_role": "reason-title-02",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "reason-title-02",
-      "bbox_px": [
-        1471,
-        400,
-        428,
-        44
-      ],
-      "component_id": null
-    },
-    {
-      "id": "reason-detail-02",
-      "semantic_kind": "text",
-      "semantic_role": "reason-detail-02",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "reason-detail-02",
-      "bbox_px": [
-        1471,
-        435,
-        429,
-        87
-      ],
-      "component_id": null
-    },
-    {
-      "id": "reason-number-03",
-      "semantic_kind": "text",
-      "semantic_role": "reason-number-03",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "reason-number-03",
-      "bbox_px": [
-        1381,
-        549,
-        72,
-        66
-      ],
-      "component_id": null
-    },
-    {
-      "id": "reason-title-03",
-      "semantic_kind": "text",
-      "semantic_role": "reason-title-03",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "reason-title-03",
-      "bbox_px": [
-        1471,
-        551,
-        428,
-        44
-      ],
-      "component_id": null
-    },
-    {
-      "id": "reason-detail-03",
-      "semantic_kind": "text",
-      "semantic_role": "reason-detail-03",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "reason-detail-03",
-      "bbox_px": [
-        1471,
-        586,
-        429,
-        87
-      ],
-      "component_id": null
-    },
-    {
-      "id": "reason-divider-1",
-      "semantic_kind": "shape",
-      "semantic_role": "native_presentation_geometry",
-      "selected_route": "native_shape",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "reason-divider-1",
-      "bbox_px": [
-        1382,
-        377,
-        500,
-        1
-      ],
-      "component_id": null
-    },
-    {
-      "id": "reason-divider-2",
-      "semantic_kind": "shape",
-      "semantic_role": "native_presentation_geometry",
-      "selected_route": "native_shape",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "reason-divider-2",
-      "bbox_px": [
-        1382,
-        528,
-        500,
-        1
-      ],
-      "component_id": null
-    },
-    {
-      "id": "overlap-note-panel",
-      "semantic_kind": "shape",
-      "semantic_role": "native_presentation_geometry",
-      "selected_route": "native_shape",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "overlap-note-panel",
-      "bbox_px": [
-        1382,
-        682,
-        500,
-        92
-      ],
-      "component_id": null
-    },
-    {
-      "id": "overlap-qualification",
-      "semantic_kind": "text",
-      "semantic_role": "overlap-qualification",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "overlap-qualification",
-      "bbox_px": [
-        1400,
-        689,
-        466,
-        82
+        760,
+        807,
+        850,
+        30
       ],
       "component_id": null
     },
@@ -560,10 +384,10 @@
       "emits_ppt_object": true,
       "render_owner": "decision-band",
       "bbox_px": [
-        48,
-        793,
-        1824,
-        134
+        46,
+        835,
+        1828,
+        93
       ],
       "component_id": null
     },
@@ -576,47 +400,183 @@
       "emits_ppt_object": true,
       "render_owner": "decision-accent",
       "bbox_px": [
-        48,
-        793,
+        46,
+        835,
         8,
-        134
+        93
       ],
       "component_id": null
     },
     {
       "id": "decision-label",
       "semantic_kind": "text",
-      "semantic_role": "decision-label",
+      "semantic_role": "call_to_action",
       "selected_route": "native_text",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
       "render_owner": "decision-label",
       "bbox_px": [
-        100,
-        832,
-        420,
-        52
+        80,
+        853,
+        430,
+        50
       ],
       "component_id": null
     },
     {
       "id": "decision-message",
       "semantic_kind": "text",
-      "semantic_role": "decision-message",
+      "semantic_role": "call_to_action",
       "selected_route": "native_text",
       "node_class": "reconstruction_unit",
       "emits_ppt_object": true,
       "render_owner": "decision-message",
       "bbox_px": [
-        560,
-        832,
-        1265,
-        52
+        520,
+        853,
+        1318,
+        50
       ],
       "component_id": null
     }
   ],
-  "canonical_asset_mappings": [],
+  "canonical_asset_mappings": [
+    {
+      "entity_id": "reason-icon-file",
+      "selected_asset_id": "remix-file-search-line",
+      "selected_asset_path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/file-search/remix-file-search-line.svg",
+      "asset_kind": "icon_slot",
+      "selection_mode": "host_agent_selected_pair_before_generation",
+      "target_bbox_source_px": [
+        58,
+        581,
+        45,
+        45
+      ],
+      "preserve_aspect_ratio": true,
+      "fit": "contain",
+      "alignment": "center",
+      "alternative_candidates": [],
+      "asset_source": "host_agent_selected_pair_before_generation",
+      "intrinsic_aspect_ratio": 1.0,
+      "user_required": false,
+      "preserve_canonical_color": false,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "source_provider": "Remix Icon",
+      "source_provider_version": "4.9.0",
+      "source_license": "Remix Icon License v1.0",
+      "style_pair_id": "remix-file-search",
+      "style_variant": "line",
+      "pair_asset_ids": [
+        "remix-file-search-line",
+        "remix-file-search-fill"
+      ],
+      "variant_visual_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-file-search-line",
+          "remix-file-search-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "entity_id": "reason-icon-corpus",
+      "selected_asset_id": "remix-database-2-line",
+      "selected_asset_path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/database-2/remix-database-2-line.svg",
+      "asset_kind": "icon_slot",
+      "selection_mode": "host_agent_selected_pair_before_generation",
+      "target_bbox_source_px": [
+        58,
+        651,
+        45,
+        45
+      ],
+      "preserve_aspect_ratio": true,
+      "fit": "contain",
+      "alignment": "center",
+      "alternative_candidates": [],
+      "asset_source": "host_agent_selected_pair_before_generation",
+      "intrinsic_aspect_ratio": 1.0,
+      "user_required": false,
+      "preserve_canonical_color": false,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "source_provider": "Remix Icon",
+      "source_provider_version": "4.9.0",
+      "source_license": "Remix Icon License v1.0",
+      "style_pair_id": "remix-database-2",
+      "style_variant": "line",
+      "pair_asset_ids": [
+        "remix-database-2-line",
+        "remix-database-2-fill"
+      ],
+      "variant_visual_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-database-2-line",
+          "remix-database-2-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "entity_id": "reason-icon-reviewer",
+      "selected_asset_id": "remix-user-star-line",
+      "selected_asset_path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/user-star/remix-user-star-line.svg",
+      "asset_kind": "icon_slot",
+      "selection_mode": "host_agent_selected_pair_before_generation",
+      "target_bbox_source_px": [
+        58,
+        721,
+        45,
+        45
+      ],
+      "preserve_aspect_ratio": true,
+      "fit": "contain",
+      "alignment": "center",
+      "alternative_candidates": [],
+      "asset_source": "host_agent_selected_pair_before_generation",
+      "intrinsic_aspect_ratio": 1.0,
+      "user_required": false,
+      "preserve_canonical_color": false,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "source_provider": "Remix Icon",
+      "source_provider_version": "4.9.0",
+      "source_license": "Remix Icon License v1.0",
+      "style_pair_id": "remix-user-star",
+      "style_variant": "line",
+      "pair_asset_ids": [
+        "remix-user-star-line",
+        "remix-user-star-fill"
+      ],
+      "variant_visual_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-user-star-line",
+          "remix-user-star-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    }
+  ],
   "connector_reconstruction_plans": [],
   "connector_configuration": {
     "allowed_families": [
@@ -659,12 +619,8 @@
         "subtitle"
       ],
       [
-        "pilot-sequencing",
-        "decision-band"
-      ],
-      [
-        "overlap-note-panel",
-        "decision-band"
+        "decision-band",
+        "headline"
       ]
     ]
   },

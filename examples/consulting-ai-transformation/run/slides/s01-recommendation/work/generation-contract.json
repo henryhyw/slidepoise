@@ -4,6 +4,7 @@
   "generation_model_default": "gpt-image-2",
   "host_generation_adapter": {
     "mode": "host_native_or_delegated_image_generation",
+    "max_prompt_chars": 32000,
     "chatgpt": "use the host-native image generation/edit capability directly",
     "codex": "use the available image-generation skill/tool; when the Codex host exposes image-capable agent delegation, delegate only the image call and keep SlidePoise orchestration in the parent agent",
     "unsupported_host_policy": "stop at the image-generation stage rather than replacing creative generation with deterministic drawing"
@@ -147,12 +148,13 @@
     "avoid": [
       "Any generated header, footer, company label, page number, shared-frame rule or repeated source-note strip.",
       "Independent changes to recurring title size, font family or decision-band treatment.",
-      "Decorative icons, invented imagery and miniature type."
+      "Icons that repeat a label without improving recognition or scanability."
     ],
     "visual_obligations": [
       "Generate only the 1920 by 960 substantive canvas at exactly 2:1 aspect ratio. The runtime adds the separate inherited frame.",
       "Use native-friendly text, tables, chart geometry and continuous directed relationships where the content requires them.",
-      "Follow the shared deck design. The five pages vary their evidence structures while recurring roles remain consistent."
+      "Follow the shared deck design. The five pages vary their evidence structures while recurring roles remain consistent.",
+      "Use three supporting symbols beside the numbered pilot choices. Keep the financial evidence numeric."
     ],
     "user_required_assets": [],
     "density_intent": "information_rich",
@@ -1459,8 +1461,8 @@
         },
         "resource_catalogs": {
           "visual_references": {
-            "catalog": "/Users/henry/.slidepoise/profiles/consulting/libraries/visual_references/catalog.json",
-            "root": "/Users/henry/.slidepoise/profiles/consulting/libraries/visual_references",
+            "catalog": "/Users/henry/Codes/AI_slide_drafting/profiles/consulting/libraries/visual_references/catalog.json",
+            "root": "/Users/henry/Codes/AI_slide_drafting/profiles/consulting/libraries/visual_references",
             "profile_id": "consulting"
           },
           "components": {
@@ -1474,12 +1476,10 @@
           },
           "icons": {
             "set_ids": [
-              "remix-icon",
-              "wikimedia-identity"
+              "remix-icon"
             ],
             "providers": [
-              "remix_icon",
-              "wikimedia_commons"
+              "remix_icon"
             ]
           }
         }
@@ -1825,14 +1825,270 @@
       "intent": "Dense, readable executive content with Georgia claim titles, Arial supporting roles and one coherent decision-band treatment.",
       "freedom": "Vary the meaningful information layout. Preserve the shared visual roles and body-only canvas."
     },
+    "selection_reasoning": {
+      "icons": {
+        "communication_roles": [
+          "Make the three pilot choices faster to scan: repeatable work, a bounded team, and controlled release"
+        ],
+        "candidates_inspected": [
+          "Remix Icon focus-2 line/fill pair",
+          "Remix Icon team line/fill pair",
+          "Remix Icon shield-check line/fill pair"
+        ],
+        "decision": "Use three supporting symbols beside the numbered pilot choices. Keep the financial evidence numeric."
+      },
+      "components": {
+        "communication_roles": [
+          "Provide editable information structures for the slide evidence"
+        ],
+        "candidates_inspected": [
+          "Consulting core component catalog"
+        ],
+        "decision": "Use native tables, charts, connectors, and geometry because the current evidence structures are specific to this argument."
+      },
+      "visual_references": {
+        "communication_roles": [
+          "Preserve the shared title, typography, decision band, and deck rhythm"
+        ],
+        "candidates_inspected": [
+          "Accepted opening slide when available"
+        ],
+        "decision": "Use the shared deck design as the primary authority. Later pages may use the accepted opening only for style calibration."
+      }
+    },
     "selected_visual_references": [],
-    "selected_assets": [],
-    "generation_asset_descriptions": [],
+    "selected_assets": [
+      {
+        "asset_id": "remix-focus-2-line",
+        "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/focus-2/remix-focus-2-line.svg",
+        "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Design/focus-2-line.svg",
+        "source_repository_path": "icons/Design/focus-2-line.svg",
+        "provider": "Remix Icon",
+        "provider_version": "4.9.0",
+        "license": "Remix Icon License v1.0",
+        "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+        "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+        "style_variant": "line",
+        "style_pair_id": "remix-focus-2",
+        "pair_asset_ids": [
+          "remix-focus-2-line",
+          "remix-focus-2-fill"
+        ],
+        "intrinsic_aspect_ratio": 1.0,
+        "treatment_recolorable": true,
+        "recolor_mode": "fill_all",
+        "preserve_canonical_color": false,
+        "sha256": "b115e8d0ccbe0522bfbf56bacc689d69844bb1fb4589452c37c856eed83d5389",
+        "persistence": "run_cache_only",
+        "selection_status": "candidate_pending_post_generation_visual_review",
+        "role": "supporting communication icon candidate",
+        "selection_mode": "host_agent_selected_pair_before_generation",
+        "user_required": false,
+        "generation_description": "A coherent Remix Icon line symbol for focus 2. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+      },
+      {
+        "asset_id": "remix-focus-2-fill",
+        "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/focus-2/remix-focus-2-fill.svg",
+        "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Design/focus-2-fill.svg",
+        "source_repository_path": "icons/Design/focus-2-fill.svg",
+        "provider": "Remix Icon",
+        "provider_version": "4.9.0",
+        "license": "Remix Icon License v1.0",
+        "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+        "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+        "style_variant": "fill",
+        "style_pair_id": "remix-focus-2",
+        "pair_asset_ids": [
+          "remix-focus-2-line",
+          "remix-focus-2-fill"
+        ],
+        "intrinsic_aspect_ratio": 1.0,
+        "treatment_recolorable": true,
+        "recolor_mode": "fill_all",
+        "preserve_canonical_color": false,
+        "sha256": "48963d1809fb359b80d6cb48b88bc3cb04e197e8a0d9f26ac182ae4ace42fbc1",
+        "persistence": "run_cache_only",
+        "selection_status": "candidate_pending_post_generation_visual_review",
+        "role": "supporting communication icon candidate",
+        "selection_mode": "host_agent_selected_pair_before_generation",
+        "user_required": false,
+        "generation_description": "A coherent Remix Icon fill symbol for focus 2. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+      },
+      {
+        "asset_id": "remix-team-line",
+        "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/team/remix-team-line.svg",
+        "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/User%20%26%20Faces/team-line.svg",
+        "source_repository_path": "icons/User & Faces/team-line.svg",
+        "provider": "Remix Icon",
+        "provider_version": "4.9.0",
+        "license": "Remix Icon License v1.0",
+        "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+        "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+        "style_variant": "line",
+        "style_pair_id": "remix-team",
+        "pair_asset_ids": [
+          "remix-team-line",
+          "remix-team-fill"
+        ],
+        "intrinsic_aspect_ratio": 1.0,
+        "treatment_recolorable": true,
+        "recolor_mode": "fill_all",
+        "preserve_canonical_color": false,
+        "sha256": "50c7d05dca9be031bc5fdc1ff0281465782b77d799216d342a2d05e92a6baaa0",
+        "persistence": "run_cache_only",
+        "selection_status": "candidate_pending_post_generation_visual_review",
+        "role": "supporting communication icon candidate",
+        "selection_mode": "host_agent_selected_pair_before_generation",
+        "user_required": false,
+        "generation_description": "A coherent Remix Icon line symbol for team. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+      },
+      {
+        "asset_id": "remix-team-fill",
+        "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/team/remix-team-fill.svg",
+        "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/User%20%26%20Faces/team-fill.svg",
+        "source_repository_path": "icons/User & Faces/team-fill.svg",
+        "provider": "Remix Icon",
+        "provider_version": "4.9.0",
+        "license": "Remix Icon License v1.0",
+        "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+        "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+        "style_variant": "fill",
+        "style_pair_id": "remix-team",
+        "pair_asset_ids": [
+          "remix-team-line",
+          "remix-team-fill"
+        ],
+        "intrinsic_aspect_ratio": 1.0,
+        "treatment_recolorable": true,
+        "recolor_mode": "fill_all",
+        "preserve_canonical_color": false,
+        "sha256": "daa5115fbdaea086caa12dc561ca5a3151b16e8a20db134e84768167e39b9b74",
+        "persistence": "run_cache_only",
+        "selection_status": "candidate_pending_post_generation_visual_review",
+        "role": "supporting communication icon candidate",
+        "selection_mode": "host_agent_selected_pair_before_generation",
+        "user_required": false,
+        "generation_description": "A coherent Remix Icon fill symbol for team. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+      },
+      {
+        "asset_id": "remix-shield-check-line",
+        "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/shield-check/remix-shield-check-line.svg",
+        "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/System/shield-check-line.svg",
+        "source_repository_path": "icons/System/shield-check-line.svg",
+        "provider": "Remix Icon",
+        "provider_version": "4.9.0",
+        "license": "Remix Icon License v1.0",
+        "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+        "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+        "style_variant": "line",
+        "style_pair_id": "remix-shield-check",
+        "pair_asset_ids": [
+          "remix-shield-check-line",
+          "remix-shield-check-fill"
+        ],
+        "intrinsic_aspect_ratio": 1.0,
+        "treatment_recolorable": true,
+        "recolor_mode": "fill_all",
+        "preserve_canonical_color": false,
+        "sha256": "d357acefbd5eb7e7b3f0af35e2b468caee6d6d6dbaaeb03d0a9cb59035ee9e8f",
+        "persistence": "run_cache_only",
+        "selection_status": "candidate_pending_post_generation_visual_review",
+        "role": "supporting communication icon candidate",
+        "selection_mode": "host_agent_selected_pair_before_generation",
+        "user_required": false,
+        "generation_description": "A coherent Remix Icon line symbol for shield check. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+      },
+      {
+        "asset_id": "remix-shield-check-fill",
+        "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/shield-check/remix-shield-check-fill.svg",
+        "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/System/shield-check-fill.svg",
+        "source_repository_path": "icons/System/shield-check-fill.svg",
+        "provider": "Remix Icon",
+        "provider_version": "4.9.0",
+        "license": "Remix Icon License v1.0",
+        "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+        "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+        "style_variant": "fill",
+        "style_pair_id": "remix-shield-check",
+        "pair_asset_ids": [
+          "remix-shield-check-line",
+          "remix-shield-check-fill"
+        ],
+        "intrinsic_aspect_ratio": 1.0,
+        "treatment_recolorable": true,
+        "recolor_mode": "fill_all",
+        "preserve_canonical_color": false,
+        "sha256": "0dfb6acada0a39fd892a4082df6a87ddce61d9317b48c3b4fe91baaa5bcc2011",
+        "persistence": "run_cache_only",
+        "selection_status": "candidate_pending_post_generation_visual_review",
+        "role": "supporting communication icon candidate",
+        "selection_mode": "host_agent_selected_pair_before_generation",
+        "user_required": false,
+        "generation_description": "A coherent Remix Icon fill symbol for shield check. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+      }
+    ],
+    "generation_asset_descriptions": [
+      {
+        "asset_id": "remix-focus-2-line",
+        "contact_sheet_label": "A01",
+        "role": "supporting communication icon candidate",
+        "generation_description": "A coherent Remix Icon line symbol for focus 2. Use it only for the communication role described in selection_reasoning and reserve a clean square slot.",
+        "intrinsic_aspect_ratio": 1.0,
+        "require_exact_identity": false
+      },
+      {
+        "asset_id": "remix-focus-2-fill",
+        "contact_sheet_label": "A02",
+        "role": "supporting communication icon candidate",
+        "generation_description": "A coherent Remix Icon fill symbol for focus 2. Use it only for the communication role described in selection_reasoning and reserve a clean square slot.",
+        "intrinsic_aspect_ratio": 1.0,
+        "require_exact_identity": false
+      },
+      {
+        "asset_id": "remix-team-line",
+        "contact_sheet_label": "A03",
+        "role": "supporting communication icon candidate",
+        "generation_description": "A coherent Remix Icon line symbol for team. Use it only for the communication role described in selection_reasoning and reserve a clean square slot.",
+        "intrinsic_aspect_ratio": 1.0,
+        "require_exact_identity": false
+      },
+      {
+        "asset_id": "remix-team-fill",
+        "contact_sheet_label": "A04",
+        "role": "supporting communication icon candidate",
+        "generation_description": "A coherent Remix Icon fill symbol for team. Use it only for the communication role described in selection_reasoning and reserve a clean square slot.",
+        "intrinsic_aspect_ratio": 1.0,
+        "require_exact_identity": false
+      },
+      {
+        "asset_id": "remix-shield-check-line",
+        "contact_sheet_label": "A05",
+        "role": "supporting communication icon candidate",
+        "generation_description": "A coherent Remix Icon line symbol for shield check. Use it only for the communication role described in selection_reasoning and reserve a clean square slot.",
+        "intrinsic_aspect_ratio": 1.0,
+        "require_exact_identity": false
+      },
+      {
+        "asset_id": "remix-shield-check-fill",
+        "contact_sheet_label": "A06",
+        "role": "supporting communication icon candidate",
+        "generation_description": "A coherent Remix Icon fill symbol for shield check. Use it only for the communication role described in selection_reasoning and reserve a clean square slot.",
+        "intrinsic_aspect_ratio": 1.0,
+        "require_exact_identity": false
+      }
+    ],
     "generation_context_sheet": {
-      "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/generation-context-sheet.png",
-      "labels": {},
-      "asset_count": 0,
-      "rendered_preview_count": 0,
+      "path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/slides/s01-recommendation/work/generation-context-sheet.png",
+      "labels": {
+        "remix-focus-2-line": "A01",
+        "remix-focus-2-fill": "A02",
+        "remix-team-line": "A03",
+        "remix-team-fill": "A04",
+        "remix-shield-check-line": "A05",
+        "remix-shield-check-fill": "A06"
+      },
+      "asset_count": 6,
+      "rendered_preview_count": 6,
       "purpose": "combined_style_assets_approval_and_generation"
     },
     "asset_vocabulary_policy": {
@@ -1874,8 +2130,8 @@
     "Density is a separate user/session control. Apply the selected density inside the profile rather than equating the profile with sparse or dense composition."
   ],
   "deck_design": {
-    "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/work/deck-design.json",
-    "sha256": "a38f6925db5d509cc86d02a4bd0cbfef07e171cba330b96267f3b01512edd179",
+    "path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/deck-design.json",
+    "sha256": "13093fa0fa1e9e50c6b3c54208fda6cb0acb722d443b8b694c12780668deacb3",
     "content": {
       "schema_version": "1.0",
       "design_id": "northstar-consulting-shared-design-03",
@@ -1942,6 +2198,18 @@
           "color": "#FD5108",
           "width_px": 3,
           "guidance": "Clear directional arrowheads with continuous routes. Lines explain relationships."
+        },
+        "supporting_stage_icon": {
+          "purpose": "Help readers distinguish recurring actors, stages, workflows, and decisions before reading supporting text.",
+          "chosen_style": {
+            "provider": "Remix Icon",
+            "variant": "line unless post-generation review supports a separate peer group",
+            "treatment": "black_proxy",
+            "surface": "transparent or #FFF5ED only when the accepted design uses a real surface"
+          },
+          "guidance": "Icons support labels and evidence. Use one treatment within each local peer group and preserve the canonical SVG during reconstruction.",
+          "page_aliases": {},
+          "exceptions": []
         }
       },
       "allowed_variations": [
@@ -1956,7 +2224,8 @@
         "Arial subtitles, body copy, table text and section labels retain their respective peer sizes.",
         "Every decision band uses the same pale orange fill, orange label, black message and left orange bar.",
         "The final PowerPoint uses one shared inherited frame with the same neutral header and footer rules.",
-        "The Agent compares all five actual rendered pages together and corrects observed drift before release."
+        "The Agent compares all five actual rendered pages together and corrects observed drift before release.",
+        "Selected icons remain recognizable, semantically useful, canonical in PowerPoint, and consistent within each peer group."
       ]
     },
     "reference_images": []

@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "slidepoise"
 version = "0.5.0"
-description = "Complete presentation workflow for Codex with free-form design and native PowerPoint output"
+description = "Profile-driven presentation framework with an Agent skill, isolated libraries, reconstruction runtime, and optional console"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"

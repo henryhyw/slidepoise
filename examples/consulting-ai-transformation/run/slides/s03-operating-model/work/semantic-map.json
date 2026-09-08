@@ -3,7 +3,7 @@
   "provenance": {
     "created_by": "host_agent_visual_reasoning",
     "source": "accepted_generated_image",
-    "source_sha256": "c8ead882cc20d711d3079b79629448058d9fb0c80716cf7154ccf3ce4cae11b6",
+    "source_sha256": "c9e5f21257c82fb253cb3c935cfad3b1f238b1c17a6affcc48f3d67543633787",
     "composition_policy": "accepted_target_geometry_frozen"
   },
   "entities": [
@@ -11,33 +11,33 @@
       "id": "headline",
       "display_label": "Keep expert ownership at every release",
       "kind": "text",
-      "role": "headline",
+      "role": "slide_title",
       "text": "Keep expert ownership at every release",
       "text_style_role": "slide_title",
       "typography_group": "claim-title",
       "bbox_hint": [
-        48,
-        19,
-        1824,
-        80
+        46,
+        20,
+        1828,
+        76
       ],
       "search_bbox_hint": [
         46,
-        25,
-        1122,
-        59
+        20,
+        1828,
+        76
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
-      "reconstruction_significance": "independent_object",
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Georgia",
         "font_weight": "regular",
         "target_font_size_px": 64,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
@@ -51,292 +51,366 @@
       "text_style_role": "subtitle",
       "typography_group": "subtitle",
       "bbox_hint": [
-        48,
-        103,
-        1824,
-        51
+        47,
+        101,
+        1825,
+        48
       ],
       "search_bbox_hint": [
         47,
-        108,
-        1160,
-        34
+        101,
+        1825,
+        48
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
-      "reconstruction_significance": "independent_object",
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
         "target_font_size_px": 32,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "introduction-rule",
-      "display_label": "introduction rule",
-      "kind": "shape",
-      "shape": "rectangle",
-      "role": "native_presentation_geometry",
+      "id": "stage-icon-sources",
+      "display_label": "Approved sources",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-file-search-line",
       "bbox_hint": [
-        48,
-        165,
-        1824,
-        2
+        222,
+        205,
+        76,
+        76
+      ],
+      "slot_bbox_hint": [
+        222,
+        205,
+        76,
+        76
       ],
       "geometry_policy": "agent_logical",
-      "z": 1,
-      "meaningful_visible": true,
+      "slot_surface": {
+        "visible": false
+      },
       "style_hint": {
-        "fill": "#999999",
-        "stroke": "none",
-        "stroke_width_px": 0,
-        "style_authority": "agent_visual_observation"
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
+      "z": 30,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "workflow-stage-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-file-search-line",
+          "remix-file-search-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
       }
     },
     {
-      "id": "stage-1",
-      "display_label": "stage 1",
-      "kind": "shape",
-      "shape": "rectangle",
-      "role": "native_presentation_geometry",
-      "bbox_hint": [
-        89,
-        198,
-        255,
-        91
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 1,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "#FFFFFF",
-        "stroke": "#FD5108",
-        "stroke_width_px": 2,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "stage-1-label",
+      "id": "stage-label-sources",
       "display_label": "Approved sources",
       "kind": "text",
-      "role": "stage-1-label",
-      "text": "Approved\nsources",
+      "role": "heading_large",
+      "text": "Approved sources",
       "text_style_role": "heading_large",
-      "typography_group": "workflow-labels",
+      "typography_group": "stage-labels",
       "bbox_hint": [
-        99,
-        207,
-        235,
-        77
+        100,
+        312,
+        320,
+        42
       ],
       "search_bbox_hint": [
-        117,
-        211,
-        199,
-        66
+        100,
+        312,
+        320,
+        42
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
-      "reconstruction_significance": "independent_object",
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 28,
+        "target_font_size_px": 25,
         "alignment": "center",
-        "line_spacing": 0.95,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "stage-2",
-      "display_label": "stage 2",
-      "kind": "shape",
-      "shape": "rectangle",
-      "role": "native_presentation_geometry",
+      "id": "stage-icon-draft",
+      "display_label": "Grounded draft",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-draft-line",
       "bbox_hint": [
-        444,
-        198,
-        253,
-        91
+        652,
+        205,
+        76,
+        76
+      ],
+      "slot_bbox_hint": [
+        652,
+        205,
+        76,
+        76
       ],
       "geometry_policy": "agent_logical",
-      "z": 1,
-      "meaningful_visible": true,
+      "slot_surface": {
+        "visible": false
+      },
       "style_hint": {
-        "fill": "#FFFFFF",
-        "stroke": "#FD5108",
-        "stroke_width_px": 2,
-        "style_authority": "agent_visual_observation"
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
+      "z": 30,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "workflow-stage-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-draft-line",
+          "remix-draft-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
       }
     },
     {
-      "id": "stage-2-label",
+      "id": "stage-label-draft",
       "display_label": "Grounded draft",
       "kind": "text",
-      "role": "stage-2-label",
-      "text": "Grounded\ndraft",
+      "role": "heading_large",
+      "text": "Grounded draft",
       "text_style_role": "heading_large",
-      "typography_group": "workflow-labels",
+      "typography_group": "stage-labels",
       "bbox_hint": [
-        454,
-        207,
-        233,
-        77
+        530,
+        312,
+        320,
+        42
       ],
       "search_bbox_hint": [
-        472,
-        211,
-        197,
-        66
+        530,
+        312,
+        320,
+        42
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
-      "reconstruction_significance": "independent_object",
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 28,
+        "target_font_size_px": 25,
         "alignment": "center",
-        "line_spacing": 0.95,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "stage-3",
-      "display_label": "stage 3",
-      "kind": "shape",
-      "shape": "rectangle",
-      "role": "native_presentation_geometry",
+      "id": "stage-icon-review",
+      "display_label": "Expert review",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-shield-check-line",
       "bbox_hint": [
-        794,
-        198,
-        255,
-        91
+        1147,
+        205,
+        76,
+        76
+      ],
+      "slot_bbox_hint": [
+        1147,
+        205,
+        76,
+        76
       ],
       "geometry_policy": "agent_logical",
-      "z": 1,
-      "meaningful_visible": true,
+      "slot_surface": {
+        "visible": false
+      },
       "style_hint": {
-        "fill": "#FFFFFF",
-        "stroke": "#FD5108",
-        "stroke_width_px": 2,
-        "style_authority": "agent_visual_observation"
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
+      "z": 30,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "workflow-stage-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-shield-check-line",
+          "remix-shield-check-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
       }
     },
     {
-      "id": "stage-3-label",
+      "id": "stage-label-review",
       "display_label": "Expert review",
       "kind": "text",
-      "role": "stage-3-label",
-      "text": "Expert\nreview",
+      "role": "heading_large",
+      "text": "Expert review",
       "text_style_role": "heading_large",
-      "typography_group": "workflow-labels",
+      "typography_group": "stage-labels",
       "bbox_hint": [
-        804,
-        207,
-        235,
-        77
+        1025,
+        312,
+        320,
+        42
       ],
       "search_bbox_hint": [
-        822,
-        211,
-        199,
-        66
+        1025,
+        312,
+        320,
+        42
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
-      "reconstruction_significance": "independent_object",
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 28,
+        "target_font_size_px": 25,
         "alignment": "center",
-        "line_spacing": 0.95,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "stage-4",
-      "display_label": "stage 4",
-      "kind": "shape",
-      "shape": "rectangle",
-      "role": "native_presentation_geometry",
+      "id": "stage-icon-output",
+      "display_label": "Client-ready output",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-send-plane-2-line",
       "bbox_hint": [
-        1144,
-        198,
-        284,
-        91
+        1572,
+        205,
+        76,
+        76
+      ],
+      "slot_bbox_hint": [
+        1572,
+        205,
+        76,
+        76
       ],
       "geometry_policy": "agent_logical",
-      "z": 1,
-      "meaningful_visible": true,
+      "slot_surface": {
+        "visible": false
+      },
       "style_hint": {
-        "fill": "#FFFFFF",
-        "stroke": "#FD5108",
-        "stroke_width_px": 2,
-        "style_authority": "agent_visual_observation"
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
+      "z": 30,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "workflow-stage-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-send-plane-2-line",
+          "remix-send-plane-2-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
       }
     },
     {
-      "id": "stage-4-label",
+      "id": "stage-label-output",
       "display_label": "Client-ready output",
       "kind": "text",
-      "role": "stage-4-label",
-      "text": "Client-ready\noutput",
+      "role": "heading_large",
+      "text": "Client-ready output",
       "text_style_role": "heading_large",
-      "typography_group": "workflow-labels",
+      "typography_group": "stage-labels",
       "bbox_hint": [
-        1154,
-        207,
-        264,
-        77
+        1450,
+        312,
+        320,
+        42
       ],
       "search_bbox_hint": [
-        1172,
-        211,
-        228,
-        66
+        1450,
+        312,
+        320,
+        42
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
-      "reconstruction_significance": "independent_object",
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 28,
+        "target_font_size_px": 25,
         "alignment": "center",
-        "line_spacing": 0.95,
         "vertical_alignment": "top",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
       "id": "forward-1",
-      "display_label": "Approved sources to Grounded draft",
+      "display_label": "forward 1",
       "kind": "connector",
-      "role": "controlled_workflow_relationship",
+      "role": "directed_workflow_relationship",
       "bbox_hint": [
-        344,
-        229.5,
-        100,
-        28
+        350,
+        231,
+        250,
+        24
       ],
       "geometry_policy": "agent_logical",
       "z": 10,
@@ -345,10 +419,10 @@
         "connector_family": "direct_flow",
         "directed": true,
         "source_entities": [
-          "stage-1"
+          "stage-icon-sources"
         ],
         "target_entities": [
-          "stage-2"
+          "stage-icon-draft"
         ],
         "source_attachment_sides": [
           "right"
@@ -366,20 +440,20 @@
         "route_mode": "minimal_orthogonal",
         "junction_style": "none",
         "visual_route_reviewed": true,
-        "visual_route_decision": "The observed straight corridor connects adjacent stage owners without crossing text.",
+        "visual_route_decision": "The straight route follows the open corridor between adjacent stages.",
         "visual_route_review_artifact": "accepted-slide.png"
       },
       "visual_constraints": {
         "start_anchors_px": [
           [
-            344,
-            243.5
+            350,
+            243
           ]
         ],
         "end_anchors_px": [
           [
-            444,
-            243.5
+            600,
+            243
           ]
         ],
         "arrowhead_treatment": "triangle_at_target",
@@ -392,14 +466,14 @@
     },
     {
       "id": "forward-2",
-      "display_label": "Grounded draft to Expert review",
+      "display_label": "forward 2",
       "kind": "connector",
-      "role": "controlled_workflow_relationship",
+      "role": "directed_workflow_relationship",
       "bbox_hint": [
-        697,
-        229.5,
-        97,
-        28
+        780,
+        231,
+        315,
+        24
       ],
       "geometry_policy": "agent_logical",
       "z": 10,
@@ -408,10 +482,10 @@
         "connector_family": "direct_flow",
         "directed": true,
         "source_entities": [
-          "stage-2"
+          "stage-icon-draft"
         ],
         "target_entities": [
-          "stage-3"
+          "stage-icon-review"
         ],
         "source_attachment_sides": [
           "right"
@@ -429,20 +503,20 @@
         "route_mode": "minimal_orthogonal",
         "junction_style": "none",
         "visual_route_reviewed": true,
-        "visual_route_decision": "The observed straight corridor connects adjacent stage owners without crossing text.",
+        "visual_route_decision": "The straight route follows the open corridor between adjacent stages.",
         "visual_route_review_artifact": "accepted-slide.png"
       },
       "visual_constraints": {
         "start_anchors_px": [
           [
-            697,
-            243.5
+            780,
+            243
           ]
         ],
         "end_anchors_px": [
           [
-            794,
-            243.5
+            1095,
+            243
           ]
         ],
         "arrowhead_treatment": "triangle_at_target",
@@ -455,14 +529,14 @@
     },
     {
       "id": "forward-3",
-      "display_label": "Expert review to Client-ready output",
+      "display_label": "forward 3",
       "kind": "connector",
-      "role": "controlled_workflow_relationship",
+      "role": "directed_workflow_relationship",
       "bbox_hint": [
-        1049,
-        229.5,
-        95,
-        28
+        1275,
+        231,
+        245,
+        24
       ],
       "geometry_policy": "agent_logical",
       "z": 10,
@@ -471,10 +545,10 @@
         "connector_family": "direct_flow",
         "directed": true,
         "source_entities": [
-          "stage-3"
+          "stage-icon-review"
         ],
         "target_entities": [
-          "stage-4"
+          "stage-icon-output"
         ],
         "source_attachment_sides": [
           "right"
@@ -492,20 +566,20 @@
         "route_mode": "minimal_orthogonal",
         "junction_style": "none",
         "visual_route_reviewed": true,
-        "visual_route_decision": "The observed straight corridor connects adjacent stage owners without crossing text.",
+        "visual_route_decision": "The straight route follows the open corridor between adjacent stages.",
         "visual_route_review_artifact": "accepted-slide.png"
       },
       "visual_constraints": {
         "start_anchors_px": [
           [
-            1049,
-            243.5
+            1275,
+            243
           ]
         ],
         "end_anchors_px": [
           [
-            1144,
-            243.5
+            1520,
+            243
           ]
         ],
         "arrowhead_treatment": "triangle_at_target",
@@ -517,15 +591,85 @@
       }
     },
     {
+      "id": "source-return-label",
+      "display_label": "Correct sources via exception register",
+      "kind": "text",
+      "role": "body",
+      "text": "Correct sources via exception register",
+      "text_style_role": "body",
+      "typography_group": "feedback",
+      "bbox_hint": [
+        300,
+        151,
+        430,
+        32
+      ],
+      "search_bbox_hint": [
+        300,
+        151,
+        430,
+        32
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 21,
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "review-return-label",
+      "display_label": "Reject with defect reasons",
+      "kind": "text",
+      "role": "body",
+      "text": "Reject with defect reasons",
+      "text_style_role": "body",
+      "typography_group": "feedback",
+      "bbox_hint": [
+        790,
+        151,
+        430,
+        32
+      ],
+      "search_bbox_hint": [
+        790,
+        151,
+        430,
+        32
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 21,
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
       "id": "responsibility-matrix",
       "display_label": "Inputs, outputs, owners and release controls",
       "kind": "table",
-      "role": "stage_responsibility_matrix",
+      "role": "structured_evidence",
       "bbox_hint": [
-        49,
-        315,
-        1424,
-        333
+        34,
+        382,
+        1836,
+        300
       ],
       "geometry_policy": "agent_logical",
       "z": 5,
@@ -543,9 +687,9 @@
                 "bold": true,
                 "align": "left",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -558,11 +702,11 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left",
+                "align": "center",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -575,11 +719,11 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left",
+                "align": "center",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -592,11 +736,11 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left",
+                "align": "center",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -609,11 +753,11 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left",
+                "align": "center",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -630,9 +774,9 @@
                 "bold": true,
                 "align": "left",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -645,11 +789,11 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "left",
+                "align": "center",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -662,11 +806,11 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "left",
+                "align": "center",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -679,11 +823,11 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "left",
+                "align": "center",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -696,11 +840,11 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "left",
+                "align": "center",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -717,9 +861,9 @@
                 "bold": true,
                 "align": "left",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -732,11 +876,11 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "left",
+                "align": "center",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -749,11 +893,11 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "left",
+                "align": "center",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -766,11 +910,11 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "left",
+                "align": "center",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -783,11 +927,11 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "left",
+                "align": "center",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -804,9 +948,9 @@
                 "bold": true,
                 "align": "left",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -819,11 +963,11 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "left",
+                "align": "center",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -836,11 +980,11 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "left",
+                "align": "center",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -853,11 +997,11 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "left",
+                "align": "center",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -870,11 +1014,11 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "left",
+                "align": "center",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -891,9 +1035,9 @@
                 "bold": true,
                 "align": "left",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -906,11 +1050,11 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "left",
+                "align": "center",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -923,11 +1067,11 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "left",
+                "align": "center",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -940,11 +1084,11 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "left",
+                "align": "center",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -957,11 +1101,11 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "left",
+                "align": "center",
                 "margin": [
-                  2,
+                  3,
                   8,
-                  2,
+                  3,
                   8
                 ]
               }
@@ -969,391 +1113,118 @@
           ]
         ],
         "column_widths_px": [
-          277,
-          288,
-          294,
-          275,
-          290
+          290,
+          385,
+          390,
+          385,
+          386
         ],
         "row_heights_px": [
-          55,
-          65,
-          64,
-          64,
-          85
+          50,
+          58,
+          58,
+          58,
+          76
         ]
       },
       "style_hint": {
         "font_family": "Arial",
-        "font_size_px": 24,
+        "font_size_px": 19,
         "cell_margin_px": 8,
         "color": "#000000",
         "fill": "#FFFFFF",
-        "stroke": "#B5B5B5",
+        "stroke": "#C6C9CD",
         "stroke_width_px": 1,
         "vertical_alignment": "middle"
-      }
-    },
-    {
-      "id": "source-correction",
-      "display_label": "Correct sources via exception register",
-      "kind": "shape",
-      "shape": "authored_path",
-      "role": "feedback_relationship",
-      "reconstruction_route": "fitted_freeform",
-      "bbox_hint": [
-        370,
-        648,
-        305,
-        79
-      ],
-      "geometry_policy": "agent_logical",
-      "path_commands_px": [
-        {
-          "op": "M",
-          "point": [
-            672,
-            648
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            672,
-            700
-          ]
-        },
-        {
-          "op": "C",
-          "control1": [
-            672,
-            714
-          ],
-          "control2": [
-            661,
-            724
-          ],
-          "point": [
-            647,
-            724
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            407,
-            724
-          ]
-        },
-        {
-          "op": "C",
-          "control1": [
-            393,
-            724
-          ],
-          "control2": [
-            382,
-            714
-          ],
-          "point": [
-            382,
-            700
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            382,
-            648
-          ]
-        }
-      ],
-      "z": 11,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "none",
-        "stroke": "#FD5108",
-        "stroke_width_px": 3,
-        "end_arrow_type": "triangle",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "source-correction-label",
-      "display_label": "Correct sources via exception register",
-      "kind": "text",
-      "role": "source-correction-label",
-      "text": "Correct sources via exception register",
-      "text_style_role": "label",
-      "typography_group": "feedback-labels",
-      "bbox_hint": [
-        326,
-        736,
-        451,
-        42
-      ],
-      "search_bbox_hint": [
-        326,
-        736,
-        451,
-        42
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "reconstruction_significance": "independent_object",
-      "meaningful_visible": true,
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "regular",
-        "target_font_size_px": 24,
-        "alignment": "center",
-        "line_spacing": 1.0,
-        "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "expert-rejection",
-      "display_label": "Reject with defect reasons",
-      "kind": "shape",
-      "shape": "authored_path",
-      "role": "feedback_relationship",
-      "reconstruction_route": "fitted_freeform",
-      "bbox_hint": [
-        753,
-        648,
-        322,
-        79
-      ],
-      "geometry_policy": "agent_logical",
-      "path_commands_px": [
-        {
-          "op": "M",
-          "point": [
-            1072,
-            648
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            1072,
-            700
-          ]
-        },
-        {
-          "op": "C",
-          "control1": [
-            1072,
-            714
-          ],
-          "control2": [
-            1061,
-            724
-          ],
-          "point": [
-            1047,
-            724
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            790,
-            724
-          ]
-        },
-        {
-          "op": "C",
-          "control1": [
-            776,
-            724
-          ],
-          "control2": [
-            765,
-            714
-          ],
-          "point": [
-            765,
-            700
-          ]
-        },
-        {
-          "op": "L",
-          "point": [
-            765,
-            648
-          ]
-        }
-      ],
-      "z": 11,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "none",
-        "stroke": "#FD5108",
-        "stroke_width_px": 3,
-        "end_arrow_type": "triangle",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "expert-rejection-label",
-      "display_label": "Reject with defect reasons",
-      "kind": "text",
-      "role": "expert-rejection-label",
-      "text": "Reject with defect reasons",
-      "text_style_role": "label",
-      "typography_group": "feedback-labels",
-      "bbox_hint": [
-        784,
-        736,
-        340,
-        42
-      ],
-      "search_bbox_hint": [
-        784,
-        736,
-        340,
-        42
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "reconstruction_significance": "independent_object",
-      "meaningful_visible": true,
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "regular",
-        "target_font_size_px": 24,
-        "alignment": "center",
-        "line_spacing": 1.0,
-        "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "style_authority": "agent_visual_observation"
       }
     },
     {
       "id": "shared-controls-heading",
       "display_label": "SHARED CONTROLS",
       "kind": "text",
-      "role": "shared-controls-heading",
+      "role": "heading_large",
       "text": "SHARED CONTROLS",
       "text_style_role": "heading_large",
-      "typography_group": "section-headings",
+      "typography_group": "section",
       "bbox_hint": [
-        1515,
-        254,
-        357,
-        46
+        46,
+        700,
+        790,
+        35
       ],
       "search_bbox_hint": [
-        1514,
-        262,
-        340,
-        30
+        46,
+        700,
+        790,
+        35
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
-      "reconstruction_significance": "independent_object",
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 28,
+        "target_font_size_px": 25,
         "alignment": "left",
+        "vertical_alignment": "top",
         "line_spacing": 1.0,
-        "vertical_alignment": "top",
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "shared-register",
-      "display_label": "One register records defects, owners and disposition.",
+      "id": "shared-controls",
+      "display_label": "\u2022  One register records defects, owners and disposition. \u2022  Platform team maintains access controls and audit logs.",
       "kind": "text",
-      "role": "shared-register",
-      "text": "One register records\ndefects, owners and\ndisposition.",
+      "role": "body",
+      "text": "\u2022  One register records defects, owners and disposition.\n\u2022  Platform team maintains access controls and audit logs.",
       "text_style_role": "body",
-      "typography_group": "supporting-body",
+      "typography_group": "body",
       "bbox_hint": [
-        1540,
-        304,
-        331,
-        92
+        46,
+        738,
+        800,
+        70
       ],
       "search_bbox_hint": [
-        1540,
-        310,
-        331,
-        60
+        46,
+        738,
+        800,
+        70
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
-      "reconstruction_significance": "independent_object",
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 28,
+        "target_font_size_px": 21,
         "alignment": "left",
-        "line_spacing": 0.85,
         "vertical_alignment": "top",
+        "line_spacing": 1.15,
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "platform-controls",
-      "display_label": "Platform team maintains access controls and audit logs.",
-      "kind": "text",
-      "role": "platform-controls",
-      "text": "Platform team maintains\naccess controls and\naudit logs.",
-      "text_style_role": "body",
-      "typography_group": "supporting-body",
-      "bbox_hint": [
-        1540,
-        392,
-        331,
-        90
-      ],
-      "search_bbox_hint": [
-        1540,
-        382,
-        331,
-        61
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "reconstruction_significance": "independent_object",
-      "meaningful_visible": true,
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "regular",
-        "target_font_size_px": 28,
-        "alignment": "left",
-        "line_spacing": 0.85,
-        "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "shared-divider",
-      "display_label": "shared divider",
+      "id": "bottom-divider",
+      "display_label": "bottom divider",
       "kind": "shape",
       "shape": "rectangle",
       "role": "native_presentation_geometry",
       "bbox_hint": [
-        1515,
-        486,
-        356,
-        1
+        900,
+        700,
+        1,
+        108
       ],
       "geometry_policy": "agent_logical",
       "z": 1,
       "meaningful_visible": true,
       "style_hint": {
-        "fill": "#B5B5B5",
+        "fill": "#B7BCC2",
         "stroke": "none",
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
@@ -1363,192 +1234,69 @@
       "id": "measurement-heading",
       "display_label": "PILOT MEASUREMENT",
       "kind": "text",
-      "role": "measurement-heading",
+      "role": "heading_large",
       "text": "PILOT MEASUREMENT",
       "text_style_role": "heading_large",
-      "typography_group": "section-headings",
+      "typography_group": "section",
       "bbox_hint": [
-        1515,
-        514,
-        357,
-        46
+        945,
+        700,
+        850,
+        35
       ],
       "search_bbox_hint": [
-        1514,
-        521,
-        340,
-        31
+        945,
+        700,
+        850,
+        35
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
-      "reconstruction_significance": "independent_object",
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 28,
+        "target_font_size_px": 25,
         "alignment": "left",
+        "vertical_alignment": "top",
         "line_spacing": 1.0,
-        "vertical_alignment": "top",
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
     },
     {
-      "id": "baseline-measurement",
-      "display_label": "Compare 20 paired tasks with baseline time logs.",
+      "id": "measurement",
+      "display_label": "\u2022  Compare 20 paired tasks with baseline time logs. \u2022  Verify claim samples and record expert review effort.",
       "kind": "text",
-      "role": "baseline-measurement",
-      "text": "Compare 20 paired\ntasks with baseline time\nlogs.",
+      "role": "body",
+      "text": "\u2022  Compare 20 paired tasks with baseline time logs.\n\u2022  Verify claim samples and record expert review effort.",
       "text_style_role": "body",
-      "typography_group": "supporting-body",
+      "typography_group": "body",
       "bbox_hint": [
-        1540,
-        567,
-        331,
-        92
+        945,
+        738,
+        850,
+        70
       ],
       "search_bbox_hint": [
-        1540,
-        569,
-        331,
-        61
+        945,
+        738,
+        850,
+        70
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
-      "reconstruction_significance": "independent_object",
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 28,
+        "target_font_size_px": 21,
         "alignment": "left",
-        "line_spacing": 0.85,
         "vertical_alignment": "top",
+        "line_spacing": 1.15,
         "observed_foreground_color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "review-measurement",
-      "display_label": "Verify claim samples and record expert review effort.",
-      "kind": "text",
-      "role": "review-measurement",
-      "text": "Verify claim samples\nand record expert review\neffort.",
-      "text_style_role": "body",
-      "typography_group": "supporting-body",
-      "bbox_hint": [
-        1540,
-        661,
-        331,
-        92
-      ],
-      "search_bbox_hint": [
-        1540,
-        645,
-        331,
-        66
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "reconstruction_significance": "independent_object",
-      "meaningful_visible": true,
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "regular",
-        "target_font_size_px": 28,
-        "alignment": "left",
-        "line_spacing": 0.85,
-        "vertical_alignment": "top",
-        "observed_foreground_color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "list-bullet-1",
-      "display_label": "list bullet 1",
-      "kind": "shape",
-      "shape": "ellipse",
-      "role": "native_presentation_geometry",
-      "bbox_hint": [
-        1517,
-        316,
-        8,
-        8
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "#000000",
-        "stroke": "none",
-        "stroke_width_px": 0,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "list-bullet-2",
-      "display_label": "list bullet 2",
-      "kind": "shape",
-      "shape": "ellipse",
-      "role": "native_presentation_geometry",
-      "bbox_hint": [
-        1517,
-        404,
-        8,
-        8
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "#000000",
-        "stroke": "none",
-        "stroke_width_px": 0,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "list-bullet-3",
-      "display_label": "list bullet 3",
-      "kind": "shape",
-      "shape": "ellipse",
-      "role": "native_presentation_geometry",
-      "bbox_hint": [
-        1517,
-        579,
-        8,
-        8
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "#000000",
-        "stroke": "none",
-        "stroke_width_px": 0,
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
-      "id": "list-bullet-4",
-      "display_label": "list bullet 4",
-      "kind": "shape",
-      "shape": "ellipse",
-      "role": "native_presentation_geometry",
-      "bbox_hint": [
-        1517,
-        673,
-        8,
-        8
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "meaningful_visible": true,
-      "style_hint": {
-        "fill": "#000000",
-        "stroke": "none",
-        "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       }
     },
@@ -1559,10 +1307,10 @@
       "shape": "rectangle",
       "role": "native_presentation_geometry",
       "bbox_hint": [
-        48,
-        793,
-        1824,
-        134
+        46,
+        835,
+        1828,
+        93
       ],
       "geometry_policy": "agent_logical",
       "z": 1,
@@ -1581,10 +1329,10 @@
       "shape": "rectangle",
       "role": "native_presentation_geometry",
       "bbox_hint": [
-        48,
-        793,
+        46,
+        835,
         8,
-        134
+        93
       ],
       "geometry_policy": "agent_logical",
       "z": 1,
@@ -1600,33 +1348,33 @@
       "id": "decision-label",
       "display_label": "RELEASE RULE",
       "kind": "text",
-      "role": "decision-label",
+      "role": "call_to_action",
       "text": "RELEASE RULE",
       "text_style_role": "call_to_action",
-      "typography_group": "decision-band",
+      "typography_group": "decision",
       "bbox_hint": [
-        100,
-        832,
-        420,
-        52
+        80,
+        853,
+        430,
+        50
       ],
       "search_bbox_hint": [
-        112,
-        839,
-        246,
-        38
+        80,
+        853,
+        430,
+        50
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
-      "reconstruction_significance": "independent_object",
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
         "target_font_size_px": 28,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "middle",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#FD5108",
         "style_authority": "agent_visual_observation"
       },
@@ -1636,33 +1384,33 @@
       "id": "decision-message",
       "display_label": "No client use without expert and engagement-lead sign-off.",
       "kind": "text",
-      "role": "decision-message",
+      "role": "call_to_action",
       "text": "No client use without expert and engagement-lead sign-off.",
       "text_style_role": "call_to_action",
-      "typography_group": "decision-band",
+      "typography_group": "decision",
       "bbox_hint": [
-        560,
-        832,
-        1265,
-        52
+        520,
+        853,
+        1318,
+        50
       ],
       "search_bbox_hint": [
-        421,
-        842,
-        1250,
-        37
+        520,
+        853,
+        1318,
+        50
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
-      "reconstruction_significance": "independent_object",
       "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
         "target_font_size_px": 28,
         "alignment": "left",
-        "line_spacing": 1.0,
         "vertical_alignment": "middle",
+        "line_spacing": 1.0,
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
@@ -1673,115 +1421,46 @@
       "id": "controlled-flow",
       "display_label": "Controlled release sequence",
       "semantic_class": "directed workflow",
-      "group_reason": "Four stages with three clear handovers.",
+      "bbox_hint": [
+        100,
+        145,
+        1720,
+        215
+      ],
       "children": [
-        "stage-1",
-        "stage-1-label",
-        "stage-2",
-        "stage-2-label",
-        "stage-3",
-        "stage-3-label",
-        "stage-4",
-        "stage-4-label",
+        "stage-icon-sources",
+        "stage-label-sources",
+        "stage-icon-draft",
+        "stage-label-draft",
+        "stage-icon-review",
+        "stage-label-review",
+        "stage-icon-output",
+        "stage-label-output",
         "forward-1",
         "forward-2",
-        "forward-3"
+        "forward-3",
+        "source-return-label",
+        "review-return-label"
       ],
-      "bbox_hint": [
-        89,
-        198,
-        1339,
-        91
-      ]
+      "group_reason": "Four asset-backed stages and explicit feedback labels show how ownership is retained."
     },
     {
       "id": "accountability",
-      "display_label": "One accountable owner per stage",
+      "display_label": "Accountability by stage",
       "semantic_class": "responsibility matrix",
-      "group_reason": "The native table retains all five columns and five rows.",
+      "bbox_hint": [
+        34,
+        382,
+        1836,
+        300
+      ],
       "children": [
         "responsibility-matrix"
       ],
-      "bbox_hint": [
-        49,
-        315,
-        1424,
-        333
-      ]
-    },
-    {
-      "id": "feedback",
-      "display_label": "Two separate correction paths",
-      "semantic_class": "feedback relationships",
-      "group_reason": "Source correction returns draft to sources. Expert rejection returns review to draft. The observed U corridors do not cross.",
-      "children": [
-        "source-correction",
-        "source-correction-label",
-        "expert-rejection",
-        "expert-rejection-label"
-      ],
-      "bbox_hint": [
-        345,
-        648,
-        769,
-        127
-      ]
-    },
-    {
-      "id": "operating-controls",
-      "display_label": "Shared controls and pilot measurement",
-      "semantic_class": "operating assurance",
-      "group_reason": "One exception register, platform controls and paired task measurement support the workflow.",
-      "children": [
-        "shared-controls-heading",
-        "shared-register",
-        "platform-controls",
-        "measurement-heading",
-        "baseline-measurement",
-        "review-measurement"
-      ],
-      "bbox_hint": [
-        1515,
-        254,
-        357,
-        499
-      ]
-    },
-    {
-      "id": "release-decision",
-      "display_label": "Expert and engagement-lead sign-off",
-      "semantic_class": "release rule",
-      "group_reason": "The shared decision band makes client release conditional on both sign-offs.",
-      "children": [
-        "decision-band",
-        "decision-accent",
-        "decision-label",
-        "decision-message"
-      ],
-      "bbox_hint": [
-        48,
-        793,
-        1824,
-        134
-      ]
+      "group_reason": "One native table keeps every stage input, output, owner and control editable."
     }
   ],
-  "relationships": [
-    {
-      "type": "feedback",
-      "display_label": "Correct sources via exception register",
-      "source": "stage-2",
-      "target": "stage-1",
-      "representation": "source-correction"
-    },
-    {
-      "type": "feedback",
-      "display_label": "Reject with defect reasons",
-      "source": "stage-3",
-      "target": "stage-2",
-      "representation": "expert-rejection"
-    }
-  ],
+  "relationships": [],
   "layout_constraints": {
     "non_overlap_pairs": [
       [
@@ -1789,12 +1468,8 @@
         "subtitle"
       ],
       [
-        "responsibility-matrix",
-        "decision-band"
-      ],
-      [
-        "source-correction",
-        "expert-rejection"
+        "decision-band",
+        "headline"
       ]
     ]
   }

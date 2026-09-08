@@ -1,23 +1,23 @@
 {
   "reviewer": "independent_host_agent_visual_reasoning",
-  "reviewed_at_utc": "2026-09-05T14:32:45.567044+00:00",
-  "scope": "Recurring visual-role calibration across five actual standalone PowerPoint renders after page-level correction. Final assembled page order and numbering remain the deck owner review.",
+  "reviewed_at_utc": "2026-09-08T08:23:35.575048+00:00",
+  "scope": "Recurring typography, frame, decision-band and icon treatment across the five-page release deck.",
   "decision": "accepted",
   "material_issues": [],
   "reviewed_slides": [
     {
       "slide_id": "s01-recommendation",
       "render": {
-        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/deliverables/render.png",
-        "sha256": "683868ff0e678c2d1e81e86159c87ccbf817af4ab97d5fd969b9bd021228df8c"
+        "path": "run/preview/slide-001.png",
+        "sha256": "ef98d340cbdfe9cba2df10f33b510029513810d405c274b960ac08c925469c20"
       },
       "constructor_scene": {
-        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/reconstruction/constructor-scene.json",
-        "sha256": "971a749282843338345ae58c3be00c77351e12c7a874cacf4f880d0ebdf9dda8"
+        "path": "run/slides/s01-recommendation/work/reconstruction/constructor-scene.json",
+        "sha256": "059719d8e8eecbdc6facf3e8a77931e45b0843ccfd1f92fdc8c3a1f9acc80116"
       },
       "render_source": {
-        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/deliverables/render.source.json",
-        "sha256": "45cb7b42742bfcf80bbb92eb9f74ab3bd3352868dad399353b7bc0c692ea1be1"
+        "path": "run/preview/slide-001.source.json",
+        "sha256": "39c94c7f9ec6603e47946f342bd6a641b9e3a2621ede5d653b6edeedb12be7c1"
       },
       "text_groups": [
         {
@@ -88,16 +88,16 @@
     {
       "slide_id": "s02-opportunities",
       "render": {
-        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s02-opportunities/deliverables/render.png",
-        "sha256": "be0d3f812ed969cf63b3f2dd26bbfa514fe431fe13ecb8226335c61ce75f282b"
+        "path": "run/preview/slide-002.png",
+        "sha256": "fae91eef16ff0387afe6346f16b2827cbb3b75dc061482351145de7c844be5c4"
       },
       "constructor_scene": {
-        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s02-opportunities/work/reconstruction/constructor-scene.json",
-        "sha256": "b768298af250d899dbc8f576a9c9b1a6431d8619b7708b84e8d8f835292325d2"
+        "path": "run/slides/s02-opportunities/work/reconstruction/constructor-scene.json",
+        "sha256": "621770a01b111d0b2aac742db9455d5fb972f1643d7fa9715e39bdaf68611d94"
       },
       "render_source": {
-        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s02-opportunities/deliverables/render.source.json",
-        "sha256": "2a287f7e63c905c6afccfdbcfb8282b3866891695262f2fa54e82553e2bdbe2e"
+        "path": "run/preview/slide-002.source.json",
+        "sha256": "46043b899b144be9525aea6f6f589937d530b3730555c2fca80784b917338bef"
       },
       "text_groups": [
         {
@@ -169,16 +169,16 @@
     {
       "slide_id": "s03-operating-model",
       "render": {
-        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s03-operating-model/deliverables/render.png",
-        "sha256": "93e127b416ed5f135d59d6661a48a2410244508785ffb9983d312d85930dfa3f"
+        "path": "run/preview/slide-003.png",
+        "sha256": "e3501190eea08ffd8b6edb8663d1f9fcda4f4bd7a1689d5f75aa06cffb6ebafa"
       },
       "constructor_scene": {
-        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s03-operating-model/work/reconstruction/constructor-scene.json",
-        "sha256": "fde81522ad4636200995efa2645f2c902b061ebb5558e301461613d5b4f24e2b"
+        "path": "run/slides/s03-operating-model/work/reconstruction/constructor-scene.json",
+        "sha256": "7cf464552de80cf5d63a5384983961ac8425e8032f69965eb4249f4064d59d20"
       },
       "render_source": {
-        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s03-operating-model/deliverables/render.source.json",
-        "sha256": "725965f3c274facf937105b5c6f03320fa0443a983801a2a5254b4ab3e7a5ac2"
+        "path": "run/preview/slide-003.source.json",
+        "sha256": "4f673b2b7c6eb6643fe02757b0513d60c1f672841e3c2e64b65176ed9cff3da2"
       },
       "text_groups": [
         {
@@ -231,16 +231,16 @@
     {
       "slide_id": "s04-delivery-roadmap",
       "render": {
-        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s04-delivery-roadmap/deliverables/render.png",
-        "sha256": "51e423566d6fda16f1043285d48c3025ec03b78f073aedfa2c600db7abc6922c"
+        "path": "run/preview/slide-004.png",
+        "sha256": "fd1dc67add7e34d62e36c85d2cb9651f33acd3c3bb5a7cb754805c65e5719d5b"
       },
       "constructor_scene": {
-        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s04-delivery-roadmap/work/reconstruction/constructor-scene.json",
-        "sha256": "cf63aba3315b5407213494ea87163a6b8319a0292045d2958f892619e12003a8"
+        "path": "run/slides/s04-delivery-roadmap/work/reconstruction/constructor-scene.json",
+        "sha256": "f20660255fab053ade43ed2c344610624fbc1b10534d7295daf28a9c7eb62838"
       },
       "render_source": {
-        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s04-delivery-roadmap/deliverables/render.source.json",
-        "sha256": "ff9f57737a6adb94f8f7918be7ff3fc5b1a290ff38a9cf5481ad763223d13168"
+        "path": "run/preview/slide-004.source.json",
+        "sha256": "c21b1064f22cc883951c60f7a2ef62a86beb4fd5b10e339d91e01a3d4a61ad7a"
       },
       "text_groups": [
         {
@@ -299,16 +299,16 @@
     {
       "slide_id": "s05-investment-decision",
       "render": {
-        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s05-investment-decision/deliverables/render.png",
-        "sha256": "434a6ab8924923d8a09a10aa916119a78c9aaef3b081fa293c4aa121e8b91f9a"
+        "path": "run/preview/slide-005.png",
+        "sha256": "59ad326155856aab67fa364db780cba1bbd4531cf64ec67f50a14e7018a671c4"
       },
       "constructor_scene": {
-        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s05-investment-decision/work/reconstruction/constructor-scene.json",
-        "sha256": "1e7ab9a0d985d7bed073f59dd62ef1c1bbd20377bcbd962a24590f0f6de2a259"
+        "path": "run/slides/s05-investment-decision/work/reconstruction/constructor-scene.json",
+        "sha256": "5dd5b90e437f11ba6878a91721d86710771886e7e3fc22fd4ef7f0d0acedcb6e"
       },
       "render_source": {
-        "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s05-investment-decision/deliverables/render.source.json",
-        "sha256": "8b97da3cd744ddb5af4c4c543a952e9f08e7d23b4ce8cec8b68dc5969035fd82"
+        "path": "run/preview/slide-005.source.json",
+        "sha256": "8cb859e70d6d1c197cdde2c90ea75be55340b241036a8e7fb3b00d64966c57db"
       },
       "text_groups": [
         {
@@ -381,26 +381,14 @@
     "sha256": "133b9a255486c57045cc2b9a94a7385d059e479dfbc3ce99f554784e09ac3de1"
   },
   "visual_observations": [
-    "I inspected all five current actual LibreOffice renders after calibration and checked their render-source bindings. The Georgia titles now share a stable top origin and apparent size. The Arial subtitle line and neutral divider remain steady as the page content changes.",
-    "The wide pale-orange decision bands now hold a fixed orange label column and black message column. The message no longer jumps horizontally between pages. All five statements stay on one line with sufficient separation from the label, and their 28px peers have matching apparent weight and height.",
-    "All table bodies and headers preserve the24px role. The opening uses a spacious two-column scale table, opportunities uses two denser tables, the operating model uses a responsibility matrix, the roadmap uses a workstream matrix and investment uses two financial tables. Cell wording remains readable within each density.",
-    "The roadmap gate evidence now has the same24px annotation level as the other data notes. Corpus/access/signed and Practice lead+CFO/decide fit in three readable lines. The enlarged allocation does not collide with the gate rule or dependency section.",
-    "No visible text clipping or object collisions remain in the inspected outputs. The investment implementation qualification clears its lower divider. The opportunity calculation remains entirely above its decision band. The operating-model feedback loops and roadmap dependency arrows remain continuous and visible.",
-    "Orange conveys emphasized data, actions and connectors throughout. Black table headers, neutral row fills and the shared pale-orange decision treatment remain consistent. The inherited company header and illustrative-data footer retain the same visible placement and treatment on every page."
+    "The five release renders use one title position, one subtitle rhythm, one inherited frame and one decision-band treatment.",
+    "Seventeen canonical Remix SVG icons appear in four functional peer groups. Each group uses the line variant, black treatment and comparable optical weight.",
+    "The page compositions vary with the argument while recurring roles remain visually stable."
   ],
   "resolved_findings": [
-    {
-      "prior_issue": "s04 gate-evidence reduced from24 to22px",
-      "correction": "All four allocations expanded and line spacing adjusted by the deck owner. Actual24px text is now visible without crowding."
-    },
-    {
-      "prior_issue": "Decision statement x positions varied from407 to644px",
-      "correction": "The common label x100 and message x560 positions now align across all five actual renders. Band geometry and vertical centering are shared."
-    },
-    {
-      "prior_issue": "Opening introduction lower and operating-model title higher than peers",
-      "correction": "Title origin is [48,83] on the full canvas, subtitle begins at [48,167], and the divider is at y229. Titles use80px allocations with unchanged64px type."
-    }
+    "The profile and session now keep the selected icon library enabled.",
+    "Each page records asset obligations, candidates, selection reasoning and canonical reconstruction bindings.",
+    "Generated icon stand-ins were visually reviewed and the final PowerPoint restores the source SVG files."
   ],
   "intentional_variations": [
     "The opening has larger display KPIs and numbered arguments. The opportunity comparison has native chart values. Those data roles differ from the stable title/body/table system.",
