@@ -90,7 +90,7 @@ Read `references/deck-orchestration.md` for the complete contract.
 
 ## Per-slide reconstruction
 
-The generated or user-approved slide image is the visual target for reconstruction. Inspect it and author meaningful PowerPoint-level entities, logical text regions, canonical asset mappings, connector semantics, and raster-source classes.
+The generated or user-approved slide image is the visual target for reconstruction. Inspect it beside the slide intent. First preserve the required content and relationships in the handoff's independent content obligations. Then author meaningful PowerPoint-level entities, logical text regions, canonical asset mappings, connector semantics, and raster-source classes.
 
 For a generated target, those coordinates belong to the substantive region. The compiler maps that region into the full slide using the resolved frame offset. Add shared header and footer content through the inherited frame after construction. Compare the generated target with the corresponding content crop of the actual render, then inspect the whole assembled slide for frame placement and cross-page consistency.
 
@@ -106,7 +106,7 @@ Deterministic tools must report evidence without blocking on aesthetic preferenc
 
 ## Visual reviews
 
-Create host-Agent review records for generated designs, measurement overlays, reconstructed slides, and the assembled deck when those artifacts exist. Bind the exact files that were inspected. Records capture observations and decisions. They are not script-issued scores.
+Create host-Agent review records for generated designs, measurement overlays, reconstructed slides, and the assembled deck when those artifacts exist. Bind the exact files that were inspected. Records capture observations and decisions. Reopen changed images and write fresh findings before accepting them. Never refresh file hashes under reused acceptance statements. Review helpers may prepare evidence but cannot write an acceptance decision.
 
 For a multi-slide deck, use contact sheets or grouped comparisons when they make consistency easier to judge. Inspect full-resolution pages whenever a contact sheet hides a material detail.
 

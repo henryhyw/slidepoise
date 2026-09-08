@@ -165,6 +165,8 @@ def test_deck_preview_publishes_only_complete_page_sets(tmp_path, monkeypatch, r
                 Image.new("RGB", (160, 90), "#D2E8DE").save(f"{command[-1]}-{page}.png")
 
     monkeypatch.setattr(runtime, "run_checked", renderer)
+    monkeypatch.setattr("slidepoise.rendered_text.collect_rendered_table_text",
+                        lambda pptx, pdf: {"available": True, "cells": [], "discrepancies": []})
     if rendered_pages == 1:
         with pytest.raises(ArtifactError, match="produced 1 pages"):
             runtime.command_render_deck_preview(args)

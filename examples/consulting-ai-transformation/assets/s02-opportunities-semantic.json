@@ -1,28 +1,1424 @@
 {
-  "schema_version": "1.0",
-  "source_semantic_map": "semantic-map.json",
-  "source_semantic_map_sha256": "cef981d17b39419738a7197e7ce10f987e8e5061bfadbf54af587c3fb5579afa",
-  "notice": "Selected explanations for readers. The full semantic map retains 23 editable entities.",
+  "schema_version": "3.2.0",
+  "provenance": {
+    "created_by": "host_agent_visual_reasoning",
+    "source": "accepted_generated_image",
+    "source_sha256": "ff333c1826015522f40e68e5fe1fde9438a6997e7e983bb72ca94244b8b4256e",
+    "composition_policy": "accepted_target_geometry_frozen"
+  },
   "entities": [
     {
       "id": "headline",
+      "display_label": "Start where value and control readiness meet",
       "kind": "text",
-      "display_label": "Slide conclusion",
-      "members": [
-        "headline"
-      ],
+      "role": "slide_title",
+      "text": "Start where value and control readiness meet",
+      "text_style_role": "slide_title",
+      "typography_group": "claim-title",
       "bbox_hint": [
         46,
         20,
         1828,
         76
-      ]
+      ],
+      "search_bbox_hint": [
+        46,
+        20,
+        1828,
+        76
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Georgia",
+        "font_weight": "regular",
+        "target_font_size_px": 64,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
     },
     {
+      "id": "subtitle",
+      "display_label": "Capacity creates the opportunity. Control readiness sets the sequence.",
+      "kind": "text",
+      "role": "subtitle",
+      "text": "Capacity creates the opportunity. Control readiness sets the sequence.",
+      "text_style_role": "subtitle",
+      "typography_group": "subtitle",
+      "bbox_hint": [
+        47,
+        101,
+        1825,
+        48
+      ],
+      "search_bbox_hint": [
+        47,
+        101,
+        1825,
+        48
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 32,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "capacity-heading",
+      "display_label": "ANNUAL CAPACITY POTENTIAL",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "ANNUAL CAPACITY POTENTIAL",
+      "text_style_role": "heading_large",
+      "typography_group": "section",
+      "bbox_hint": [
+        37,
+        158,
+        680,
+        38
+      ],
+      "search_bbox_hint": [
+        37,
+        158,
+        680,
+        38
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "chart-unit",
+      "display_label": "Illustrative hours",
+      "kind": "text",
+      "role": "body",
+      "text": "Illustrative hours",
+      "text_style_role": "body",
+      "typography_group": "label",
+      "bbox_hint": [
+        37,
+        194,
+        300,
+        28
+      ],
+      "search_bbox_hint": [
+        37,
+        194,
+        300,
+        28
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 22,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "annual-capacity-chart",
+      "display_label": "Annual capacity potential by workflow",
+      "kind": "chart",
+      "role": "quantified_opportunity_comparison",
+      "bbox_hint": [
+        37,
+        229,
+        670,
+        322
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 4,
+      "meaningful_visible": true,
+      "chart_structure": {
+        "type": "column",
+        "categories": [
+          "Research\nsynthesis",
+          "Proposal\ndrafting",
+          "Knowledge\nretrieval"
+        ],
+        "series": [
+          {
+            "name": "Illustrative annual capacity hours",
+            "values": [
+              1944,
+              1440,
+              1080
+            ]
+          }
+        ],
+        "colors": [
+          "#FD5108",
+          "#FF955F",
+          "#FFC099"
+        ],
+        "show_legend": false,
+        "show_values": true,
+        "show_category_axis": true,
+        "show_value_axis": true,
+        "show_value_gridlines": true,
+        "value_axis_minimum": 0,
+        "value_axis_maximum": 2500,
+        "gap_width_pct": 55,
+        "data_label_position": "outEnd",
+        "data_label_format_code": "#,##0",
+        "data_font_family": "Arial",
+        "data_font_size_px": 28,
+        "data_label_color": "#000000",
+        "data_label_wrap": false,
+        "data_label_colors": [
+          "FD5108",
+          "000000",
+          "000000"
+        ],
+        "data_font_bold": true,
+        "value_axis_format_code": "#,##0"
+      },
+      "style_hint": {
+        "stroke": "none"
+      }
+    },
+    {
+      "id": "value-model-heading",
+      "display_label": "WORKFLOW VALUE MODEL",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "WORKFLOW VALUE MODEL",
+      "text_style_role": "heading_large",
+      "typography_group": "section",
+      "bbox_hint": [
+        760,
+        158,
+        1110,
+        38
+      ],
+      "search_bbox_hint": [
+        760,
+        158,
+        1110,
+        38
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "value-model",
+      "display_label": "Inputs behind the capacity comparison",
+      "kind": "table",
+      "role": "structured_evidence",
+      "bbox_hint": [
+        760,
+        202,
+        1110,
+        230
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 5,
+      "meaningful_visible": true,
+      "table_structure": {
+        "rows": [
+          [
+            {
+              "text": "Workflow",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Baseline h",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Adoption",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Time saved",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Research",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "12",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "60%",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "30%",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Proposal",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "8",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "50%",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "40%",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Retrieval",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "5",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "60%",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "40%",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            }
+          ]
+        ],
+        "column_widths_px": [
+          285,
+          270,
+          270,
+          285
+        ],
+        "row_heights_px": [
+          52,
+          59,
+          59,
+          60
+        ]
+      },
+      "style_hint": {
+        "font_family": "Arial",
+        "font_size_px": 24,
+        "cell_margin_px": 8,
+        "color": "#000000",
+        "fill": "#FFFFFF",
+        "stroke": "#C6C9CD",
+        "stroke_width_px": 1,
+        "vertical_alignment": "middle"
+      }
+    },
+    {
+      "id": "formula-strip",
+      "display_label": "formula strip",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        760,
+        432,
+        1110,
+        60
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#F5F7F8",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "capacity-formula",
+      "display_label": "Annual hours = 900 engagements \u00d7 baseline h \u00d7 adoption \u00d7 time saved",
+      "kind": "text",
+      "role": "body",
+      "text": "Annual hours = 900 engagements \u00d7 baseline h \u00d7 adoption \u00d7 time saved",
+      "text_style_role": "body",
+      "typography_group": "formula",
+      "bbox_hint": [
+        790,
+        440,
+        1050,
+        44
+      ],
+      "search_bbox_hint": [
+        790,
+        440,
+        1050,
+        44
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 24,
+        "alignment": "center",
+        "vertical_alignment": "middle",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-heading",
+      "display_label": "WHY RESEARCH WINS FIRST",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "WHY RESEARCH WINS FIRST",
+      "text_style_role": "heading_large",
+      "typography_group": "section",
+      "bbox_hint": [
+        37,
+        576,
+        700,
+        38
+      ],
+      "search_bbox_hint": [
+        37,
+        576,
+        700,
+        38
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-icon-file",
+      "display_label": "Frequent, comparable tasks",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-file-search-line",
+      "bbox_hint": [
+        54,
+        607,
+        62,
+        62
+      ],
+      "slot_bbox_hint": [
+        54,
+        607,
+        62,
+        62
+      ],
+      "geometry_policy": "agent_logical",
+      "slot_surface": {
+        "visible": false
+      },
+      "style_hint": {
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
+      "z": 30,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "deck-supporting-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-file-search-line",
+          "remix-file-search-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "id": "reason-file",
+      "display_label": "Frequent, comparable tasks",
+      "kind": "text",
+      "role": "body",
+      "text": "Frequent, comparable tasks",
+      "text_style_role": "body",
+      "typography_group": "reason",
+      "bbox_hint": [
+        160,
+        615,
+        552,
+        42
+      ],
+      "search_bbox_hint": [
+        160,
+        615,
+        552,
+        42
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-icon-corpus",
+      "display_label": "A bounded source corpus",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-database-2-line",
+      "bbox_hint": [
+        54,
+        685,
+        62,
+        62
+      ],
+      "slot_bbox_hint": [
+        54,
+        685,
+        62,
+        62
+      ],
+      "geometry_policy": "agent_logical",
+      "slot_surface": {
+        "visible": false
+      },
+      "style_hint": {
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
+      "z": 30,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "deck-supporting-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-database-2-line",
+          "remix-database-2-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "id": "reason-corpus",
+      "display_label": "A bounded source corpus",
+      "kind": "text",
+      "role": "body",
+      "text": "A bounded source corpus",
+      "text_style_role": "body",
+      "typography_group": "reason",
+      "bbox_hint": [
+        160,
+        693,
+        552,
+        42
+      ],
+      "search_bbox_hint": [
+        160,
+        693,
+        552,
+        42
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-icon-reviewer",
+      "display_label": "A named expert reviewer",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-user-star-line",
+      "bbox_hint": [
+        54,
+        763,
+        62,
+        62
+      ],
+      "slot_bbox_hint": [
+        54,
+        763,
+        62,
+        62
+      ],
+      "geometry_policy": "agent_logical",
+      "slot_surface": {
+        "visible": false
+      },
+      "style_hint": {
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
+      "z": 30,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "deck-supporting-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-user-star-line",
+          "remix-user-star-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "id": "reason-reviewer",
+      "display_label": "A named expert reviewer",
+      "kind": "text",
+      "role": "body",
+      "text": "A named expert reviewer",
+      "text_style_role": "body",
+      "typography_group": "reason",
+      "bbox_hint": [
+        160,
+        771,
+        552,
+        42
+      ],
+      "search_bbox_hint": [
+        160,
+        771,
+        552,
+        42
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "sequencing-heading",
+      "display_label": "PILOT SEQUENCING TEST",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "PILOT SEQUENCING TEST",
+      "text_style_role": "heading_large",
+      "typography_group": "section",
+      "bbox_hint": [
+        760,
+        496,
+        1110,
+        38
+      ],
+      "search_bbox_hint": [
+        760,
+        496,
+        1110,
+        38
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "pilot-sequencing",
+      "display_label": "Control readiness and accountable workflow sequence",
+      "kind": "table",
+      "role": "structured_evidence",
+      "bbox_hint": [
+        760,
+        540,
+        1110,
+        254
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 5,
+      "meaningful_visible": true,
+      "table_structure": {
+        "rows": [
+          [
+            {
+              "text": "Workflow",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Control readiness",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Owner",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Sequence",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Research synthesis",
+              "options": {
+                "fill": {
+                  "color": "FFF5ED"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Approved corpus\nExplicit review",
+              "options": {
+                "fill": {
+                  "color": "FFF5ED"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Practice lead",
+              "options": {
+                "fill": {
+                  "color": "FFF5ED"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "START",
+              "options": {
+                "fill": {
+                  "color": "FFF5ED"
+                },
+                "color": "FD5108",
+                "bold": true,
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Proposal drafting",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Claims and commitments\nneed controls",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "BD lead",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "NEXT",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "FD5108",
+                "bold": true,
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Knowledge retrieval",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Permissions need\ncleanup",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Knowledge lead",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "LATER",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "FD5108",
+                "bold": true,
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            }
+          ]
+        ],
+        "column_widths_px": [
+          290,
+          360,
+          250,
+          210
+        ],
+        "row_heights_px": [
+          50,
+          68,
+          68,
+          68
+        ]
+      },
+      "style_hint": {
+        "font_family": "Arial",
+        "font_size_px": 24,
+        "cell_margin_px": 8,
+        "color": "#000000",
+        "fill": "#FFFFFF",
+        "stroke": "#C6C9CD",
+        "stroke_width_px": 1,
+        "vertical_alignment": "middle"
+      }
+    },
+    {
+      "id": "overlap-note",
+      "display_label": "Check task overlap before adding workflow benefits.",
+      "kind": "text",
+      "role": "body",
+      "text": "Check task overlap before adding workflow benefits.",
+      "text_style_role": "body",
+      "typography_group": "note",
+      "bbox_hint": [
+        760,
+        800,
+        1100,
+        28
+      ],
+      "search_bbox_hint": [
+        760,
+        800,
+        1100,
+        28
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 22,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "decision-band",
+      "display_label": "decision band",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        46,
+        835,
+        1828,
+        93
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#FFF5ED",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "decision-accent",
+      "display_label": "decision accent",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        46,
+        835,
+        8,
+        93
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#FD5108",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "decision-label",
+      "display_label": "PILOT BOUNDARY",
+      "kind": "text",
+      "role": "call_to_action",
+      "text": "PILOT BOUNDARY",
+      "text_style_role": "call_to_action",
+      "typography_group": "decision",
+      "bbox_hint": [
+        80,
+        853,
+        430,
+        50
+      ],
+      "search_bbox_hint": [
+        80,
+        853,
+        430,
+        50
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "middle",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#FD5108",
+        "style_authority": "agent_visual_observation"
+      },
+      "style_token": "call_to_action"
+    },
+    {
+      "id": "decision-message",
+      "display_label": "Start with approved-source research synthesis.",
+      "kind": "text",
+      "role": "call_to_action",
+      "text": "Start with approved-source research synthesis.",
+      "text_style_role": "call_to_action",
+      "typography_group": "decision",
+      "bbox_hint": [
+        520,
+        853,
+        1318,
+        50
+      ],
+      "search_bbox_hint": [
+        520,
+        853,
+        1318,
+        50
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "middle",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    }
+  ],
+  "groups": [
+    {
       "id": "opportunity-model",
-      "kind": "group",
       "display_label": "Capacity model",
-      "members": [
+      "semantic_class": "quantitative comparison",
+      "bbox_hint": [
+        37,
+        158,
+        1833,
+        393
+      ],
+      "children": [
         "capacity-heading",
         "chart-unit",
         "annual-capacity-chart",
@@ -31,18 +1427,19 @@
         "formula-strip",
         "capacity-formula"
       ],
-      "bbox_hint": [
-        37,
-        158,
-        1833,
-        334
-      ]
+      "group_reason": "The chart and editable assumption table expose the complete value model."
     },
     {
       "id": "pilot-choice",
-      "kind": "group",
       "display_label": "Pilot choice",
-      "members": [
+      "semantic_class": "decision comparison",
+      "bbox_hint": [
+        37,
+        496,
+        1833,
+        332
+      ],
+      "children": [
         "reason-heading",
         "reason-icon-file",
         "reason-file",
@@ -54,26 +1451,20 @@
         "pilot-sequencing",
         "overlap-note"
       ],
-      "bbox_hint": [
-        37,
-        520,
-        1833,
-        317
-      ]
-    },
-    {
-      "id": "decision-message",
-      "kind": "text",
-      "display_label": "Decision or boundary",
-      "members": [
-        "decision-message"
-      ],
-      "bbox_hint": [
-        520,
-        853,
-        1318,
-        50
-      ]
+      "group_reason": "Icons explain the rationale while the table tests control readiness and ownership."
     }
-  ]
+  ],
+  "relationships": [],
+  "layout_constraints": {
+    "non_overlap_pairs": [
+      [
+        "headline",
+        "subtitle"
+      ],
+      [
+        "decision-band",
+        "headline"
+      ]
+    ]
+  }
 }

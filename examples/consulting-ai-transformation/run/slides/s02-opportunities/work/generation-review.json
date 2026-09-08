@@ -1,44 +1,18 @@
 {
   "reviewer": "host_agent_visual_reasoning",
+  "reviewed_on": "2026-09-08",
+  "stage": "generation",
   "decision": "accepted",
   "material_issues": [],
-  "stage": "generation",
-  "candidate_index": 2,
   "reviewed_artifacts": [
-    {
-      "path": "generated-original.png",
-      "sha256": "f32049509a76af94e2122bb440795080c0fee032bef0dcf1bf327edbf601a4ec"
-    },
     {
       "path": "accepted-slide.png",
       "sha256": "ff333c1826015522f40e68e5fe1fde9438a6997e7e983bb72ca94244b8b4256e"
-    },
-    {
-      "path": "image-edit-request-01.json",
-      "sha256": "4b5f0de070ecbd85c5fc67220f11abbcf76e721d20a4dded399ccb035baf0fb2"
-    },
-    {
-      "path": "generation-contract.json",
-      "sha256": "87d487adc260e5a277eae3ef5b0dce43926c120a88bee7d76c7c392e300f4908"
-    },
-    {
-      "path": "canvas-normalization.json",
-      "sha256": "70f866e132e86e10a7b3abedbf2e2cd1a5c4980b1bbd335699e90041576a28be"
-    },
-    {
-      "path": "generation-call.json",
-      "sha256": "b925098e68a182195f760feeb216003d73fc07347c43a91fa499efe6a665b261"
-    },
-    {
-      "path": "generation-attempt-01/generation-call-and-review.json",
-      "sha256": "458201ff250f29bc0a4e88c27d8dc89fcdb72051da4437607ddc828eec3cc324"
     }
   ],
   "observations": [
-    "I inspected the accepted substantive-body image. It preserves the three annual capacity values, four-column assumptions, formula, readiness comparison, three reasons and task-overlap qualification. The decision sentence recommends approved-source research synthesis.",
-    "The corrected candidate removes the first version's dark numeral squares. Research is orange and the other two bars are gray. The three bare reason numbers maintain a clear sequence without decorative symbols.",
-    "The returned canvas is 1774 by 887, exactly 2:1. Packaged normalization produces 1920 by 960 without cropping or adding a frame. No generated header, footer, page number or company label is present.",
-    "All figures describe a fictional planning model. The left formula exposes the 900-engagement denominator. The warning explicitly requires task-overlap checks before adding the workflow benefits.",
-    "Generated text is narrower and in several places heavier than native Arial. Reconstruction preserves the shared typography and readable line breaks. The shared decision label/message use 28 pixels and the left bar uses 8 pixels, following the frozen deck design."
-  ]
+    "The retained generated design is the source for this reconstruction. No new image-generation call is claimed.",
+    "The generated image contains the substantive content area. The native deck supplies the common header and footer separately."
+  ],
+  "candidate_index": 1
 }

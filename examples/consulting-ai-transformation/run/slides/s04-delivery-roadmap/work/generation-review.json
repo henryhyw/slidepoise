@@ -1,26 +1,19 @@
 {
   "reviewer": "host_agent_visual_reasoning",
+  "reviewed_on": "2026-09-08",
   "stage": "generation",
-  "candidate_index": 1,
   "decision": "accepted",
   "material_issues": [],
   "reviewed_artifacts": [
     {
       "path": "accepted-slide.png",
       "sha256": "8c90ba253f0001c3be639e0cd13e6e0a6148f8152a6dc73d0c877db4bf4ed804"
-    },
-    {
-      "path": "generated-original.png",
-      "sha256": "d480f1e2289d5e5d211b8311bdccd2825d59f2ef8b7a1d31f4cd6bc0ab463930"
-    },
-    {
-      "path": "generation-request.json",
-      "sha256": "51f282c927dcd13a72d07b2b3864bf4e22c8e48cf4369e366e06b96f91aed611"
     }
   ],
   "observations": [
-    "The actual generated design contains only the substantive 2:1 canvas. It has no company header, page number, shared footer or footer rule.",
-    "The left delivery matrix retains four workstreams and four time windows. The four evidence gates and three prerequisites are legible on the right. No decorative icon replaces the directional dependency marks.",
-    "The generated decision treatment and condensed lettering require the already authored deck-wide native font and alignment calibration. Its content and composition remain the reconstruction source."
-  ]
+    "The retained generated design is the source for this reconstruction. No new image-generation call is claimed.",
+    "The generated image contains the substantive content area. The native deck supplies the common header and footer separately.",
+    "The source includes a trailing arrow beyond the final gate. The plan ends at G4, so reconstruction ends the sequence there."
+  ],
+  "candidate_index": 1
 }

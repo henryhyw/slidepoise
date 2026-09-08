@@ -2,10 +2,7 @@
   "title": "A second thinking system",
   "company": "",
   "language": "en-US",
-  "theme": {
-    "display_font": "Bodoni 72",
-    "body_font": "Arial"
-  },
+  "theme": {},
   "schema_version": "1.0",
   "slides": [
     {

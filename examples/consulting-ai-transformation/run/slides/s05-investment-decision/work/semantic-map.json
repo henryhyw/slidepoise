@@ -126,7 +126,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -193,41 +193,6 @@
       "style_token": "data_highlight"
     },
     {
-      "id": "capacity-labels",
-      "display_label": "Engagements          Research time          Adoption          Time saved",
-      "kind": "text",
-      "role": "body",
-      "text": "Engagements          Research time          Adoption          Time saved",
-      "text_style_role": "body",
-      "typography_group": "labels",
-      "bbox_hint": [
-        65,
-        374,
-        500,
-        45
-      ],
-      "search_bbox_hint": [
-        65,
-        374,
-        500,
-        45
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "meaningful_visible": true,
-      "reconstruction_significance": "independent_object",
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "regular",
-        "target_font_size_px": 19,
-        "alignment": "center",
-        "vertical_alignment": "top",
-        "line_spacing": 1.0,
-        "observed_foreground_color": "#000000",
-        "style_authority": "agent_visual_observation"
-      }
-    },
-    {
       "id": "capacity-divider",
       "display_label": "capacity divider",
       "kind": "shape",
@@ -276,7 +241,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -311,7 +276,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 47,
+        "target_font_size_px": 54,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -347,7 +312,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 22,
+        "target_font_size_px": 26,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -382,7 +347,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -415,14 +380,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Amount",
@@ -432,14 +397,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
@@ -450,15 +415,15 @@
                   "color": "FFFFFF"
                 },
                 "color": "000000",
-                "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "$85k",
@@ -468,14 +433,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
@@ -486,15 +451,15 @@
                   "color": "F5F7F8"
                 },
                 "color": "000000",
-                "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "$25k",
@@ -504,14 +469,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
@@ -522,15 +487,15 @@
                   "color": "FFFFFF"
                 },
                 "color": "000000",
-                "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "$30k",
@@ -540,14 +505,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
@@ -559,14 +524,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "$115k",
@@ -575,15 +540,15 @@
                   "color": "FFF5ED"
                 },
                 "color": "000000",
-                "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ]
         ],
@@ -601,7 +566,7 @@
       },
       "style_hint": {
         "font_family": "Arial",
-        "font_size_px": 22,
+        "font_size_px": 24,
         "cell_margin_px": 8,
         "color": "#000000",
         "fill": "#FFFFFF",
@@ -637,7 +602,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 21,
+        "target_font_size_px": 22,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -672,7 +637,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -705,14 +670,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "Adoption",
@@ -722,31 +687,31 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
-              "text": "Time saved",
+              "text": "Time\nsaved",
               "options": {
                 "fill": {
                   "color": "000000"
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "Annual h",
@@ -756,65 +721,65 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
-              "text": "Annual capacity",
+              "text": "Annual\ncapacity",
               "options": {
                 "fill": {
                   "color": "000000"
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
-              "text": "First-year value",
+              "text": "First-year\nvalue",
               "options": {
                 "fill": {
                   "color": "000000"
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
-              "text": "Net vs $115k",
+              "text": "Net vs\n$115k",
               "options": {
                 "fill": {
                   "color": "000000"
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             }
           ],
           [
@@ -826,14 +791,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "40%",
@@ -843,14 +808,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "20%",
@@ -860,14 +825,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "864",
@@ -877,14 +842,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "$108k",
@@ -894,14 +859,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "$54k",
@@ -911,14 +876,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "\u2212$61k",
@@ -928,14 +893,14 @@
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             }
           ],
           [
@@ -947,14 +912,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "60%",
@@ -964,14 +929,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "30%",
@@ -981,14 +946,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "1,944",
@@ -998,14 +963,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "$243k",
@@ -1015,14 +980,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "$121.5k",
@@ -1032,14 +997,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "+$6.5k",
@@ -1049,14 +1014,14 @@
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             }
           ],
           [
@@ -1068,14 +1033,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "75%",
@@ -1085,14 +1050,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "40%",
@@ -1102,14 +1067,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "3,240",
@@ -1119,14 +1084,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "$405k",
@@ -1136,14 +1101,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "$202.5k",
@@ -1153,14 +1118,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "+$87.5k",
@@ -1170,25 +1135,25 @@
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             }
           ]
         ],
         "column_widths_px": [
-          115,
-          105,
-          95,
+          124,
+          112,
+          98,
+          92,
           105,
           108,
-          112,
-          98
+          99
         ],
         "row_heights_px": [
           88,
@@ -1199,7 +1164,7 @@
       },
       "style_hint": {
         "font_family": "Arial",
-        "font_size_px": 18,
+        "font_size_px": 20,
         "cell_margin_px": 8,
         "color": "#000000",
         "fill": "#FFFFFF",
@@ -1235,7 +1200,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -1273,15 +1238,15 @@
       "upstream_asset_id": "remix-play-circle-line",
       "bbox_hint": [
         76,
-        655,
-        94,
-        94
+        646,
+        128,
+        128
       ],
       "slot_bbox_hint": [
         76,
-        655,
-        94,
-        94
+        646,
+        128,
+        128
       ],
       "geometry_policy": "agent_logical",
       "slot_surface": {
@@ -1338,7 +1303,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -1374,7 +1339,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 22,
+        "target_font_size_px": 26,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.15,
@@ -1412,15 +1377,15 @@
       "upstream_asset_id": "remix-pause-circle-line",
       "bbox_hint": [
         685,
-        655,
-        94,
-        94
+        646,
+        128,
+        128
       ],
       "slot_bbox_hint": [
         685,
-        655,
-        94,
-        94
+        646,
+        128,
+        128
       ],
       "geometry_policy": "agent_logical",
       "slot_surface": {
@@ -1477,7 +1442,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -1513,7 +1478,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 22,
+        "target_font_size_px": 26,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.15,
@@ -1551,15 +1516,15 @@
       "upstream_asset_id": "remix-stop-circle-line",
       "bbox_hint": [
         1294,
-        655,
-        94,
-        94
+        646,
+        128,
+        128
       ],
       "slot_bbox_hint": [
         1294,
-        655,
-        94,
-        94
+        646,
+        128,
+        128
       ],
       "geometry_policy": "agent_logical",
       "slot_surface": {
@@ -1616,7 +1581,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -1652,7 +1617,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 22,
+        "target_font_size_px": 26,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.15,
@@ -1774,6 +1739,146 @@
         "observed_foreground_color": "#000000",
         "style_authority": "agent_visual_observation"
       }
+    },
+    {
+      "id": "factor-engagements",
+      "display_label": "Engagements",
+      "kind": "text",
+      "role": "body",
+      "text": "Engagements",
+      "text_style_role": "body",
+      "typography_group": "labels",
+      "bbox_hint": [
+        64,
+        375,
+        120,
+        68
+      ],
+      "search_bbox_hint": [
+        64,
+        375,
+        120,
+        68
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 20,
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "factor-research",
+      "display_label": "Research time",
+      "kind": "text",
+      "role": "body",
+      "text": "Research\ntime",
+      "text_style_role": "body",
+      "typography_group": "labels",
+      "bbox_hint": [
+        202,
+        375,
+        114,
+        68
+      ],
+      "search_bbox_hint": [
+        202,
+        375,
+        114,
+        68
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 20,
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "factor-adoption",
+      "display_label": "Adoption",
+      "kind": "text",
+      "role": "body",
+      "text": "Adoption",
+      "text_style_role": "body",
+      "typography_group": "labels",
+      "bbox_hint": [
+        337,
+        375,
+        110,
+        68
+      ],
+      "search_bbox_hint": [
+        337,
+        375,
+        110,
+        68
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 20,
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "factor-saved",
+      "display_label": "Time saved",
+      "kind": "text",
+      "role": "body",
+      "text": "Time saved",
+      "text_style_role": "body",
+      "typography_group": "labels",
+      "bbox_hint": [
+        462,
+        375,
+        115,
+        68
+      ],
+      "search_bbox_hint": [
+        462,
+        375,
+        115,
+        68
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 20,
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
     }
   ],
   "groups": [
@@ -1791,7 +1896,10 @@
         "capacity-heading",
         "capacity-panel",
         "capacity-equation",
-        "capacity-labels",
+        "factor-engagements",
+        "factor-research",
+        "factor-adoption",
+        "factor-saved",
         "capacity-divider",
         "capacity-value",
         "capacity-value-number",

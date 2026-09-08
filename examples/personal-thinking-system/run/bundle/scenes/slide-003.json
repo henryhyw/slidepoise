@@ -24,6 +24,8 @@
         "stroke_width_px": 1,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 0.0
     },
     {
@@ -42,6 +44,8 @@
         "stroke_width_px": 1,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 0.0
     },
     {
@@ -60,6 +64,8 @@
         "stroke_width_px": 1,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 0.0
     },
     {
@@ -147,6 +153,7 @@
       "bullet_style": null,
       "semantic_role": "practice-title",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     },
     {
@@ -186,6 +193,7 @@
       "bullet_style": null,
       "semantic_role": "practice-subtitle",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     },
     {
@@ -225,6 +233,7 @@
       "bullet_style": null,
       "semantic_role": "collect-heading",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     },
     {
@@ -264,6 +273,7 @@
       "bullet_style": null,
       "semantic_role": "connect-heading",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     },
     {
@@ -303,6 +313,7 @@
       "bullet_style": null,
       "semantic_role": "challenge-heading",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     },
     {
@@ -342,6 +353,7 @@
       "bullet_style": null,
       "semantic_role": "collect-caption",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     },
     {
@@ -381,6 +393,7 @@
       "bullet_style": null,
       "semantic_role": "connect-caption",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     },
     {
@@ -420,6 +433,7 @@
       "bullet_style": null,
       "semantic_role": "challenge-caption",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     },
     {
@@ -459,6 +473,7 @@
       "bullet_style": null,
       "semantic_role": "publication_folio",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     }
   ],
@@ -507,7 +522,7 @@
     "slide_number": 3
   },
   "sources": [
-    "Generated target visual: /Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s03-practice/work/accepted-slide.png"
+    "Generated target visual: /Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s03-practice/work/accepted-slide.png"
   ],
   "compiler_report": {
     "measured_entity_count": 15,
@@ -690,8 +705,8 @@
       "note": "No quality or reconstruction verdict is produced. Visual reasoning remains external."
     },
     "input_bindings": {
-      "measured_scene_sha256": "94d2fba8f73b9f91fde87d92dac6d2eb4ee413c81fb9203a08bad8a5202c0d8b",
-      "reconstruction_contract_sha256": "e7d9b51863a52324d9f3ed16aaa1d70947cf6002def853e20c41f7c259db8d65",
+      "measured_scene_sha256": "573a7110da1dc3b63262905c2708f68b2cdb7644bd620017efe15102e32ee225",
+      "reconstruction_contract_sha256": "88cbf491a474f74f285cda266c3ca41439b433cbb1c892de694d3e8ffda158c2",
       "resolved_design_sha256": "803440a27dca21dc9148b5b4ac29fed93193ccedd3b017e11a7984c0c78c5a86"
     }
   },

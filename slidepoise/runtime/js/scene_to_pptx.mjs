@@ -275,6 +275,16 @@ function addTable(slide, object, dimensions, slideSize) {
   let rows = rawRows.map((row) => row.map((cell) => {
     if (cell && typeof cell === "object" && !Array.isArray(cell)) {
       const options = { ...(cell.options ?? {}) };
+      // Pixel allocations belong to the slide canvas. Legacy options.margin
+      // remains in Office points for compatibility with authored native options.
+      if (cell.margin_px !== undefined) {
+        if (options.margin !== undefined) throw new Error(`Table ${object.id} cell cannot mix margin_px and options.margin`);
+        const margins = Array.isArray(cell.margin_px) ? cell.margin_px : [cell.margin_px, cell.margin_px, cell.margin_px, cell.margin_px];
+        if (margins.length !== 4 || margins.some(value => typeof value !== "number" || !Number.isFinite(value) || value < 0)) {
+          throw new Error(`Table ${object.id} cell requires four finite nonnegative pixel margins`);
+        }
+        options.margin = margins.map(value => pixelPoints(value, dimensions, slideSize));
+      }
       if (cell.rowSpan ?? cell.rowspan) options.rowSpan = cell.rowSpan ?? cell.rowspan;
       if (cell.colSpan ?? cell.colspan) options.colSpan = cell.colSpan ?? cell.colspan;
       return { text: tableCellText(cell.text ?? cell.value), options };
@@ -347,6 +357,9 @@ function addChart(slide, object, dimensions, slideSize, pptx, slideHints) {
       structure.data_label_colors.some(value => typeof value !== "string" || !/^#?[0-9a-f]{6}$/i.test(value)))) {
     throw new Error(`Chart ${object.id} data_label_colors requires one six-digit color per category`);
   }
+  if (structure.data_font_bold !== undefined && typeof structure.data_font_bold !== "boolean") {
+    throw new Error(`Chart ${object.id} data_font_bold must be a boolean`);
+  }
   if (structure.data_label_wrap !== undefined && typeof structure.data_label_wrap !== "boolean") {
     throw new Error(`Chart ${object.id} data_label_wrap must be a boolean`);
   }
@@ -376,6 +389,8 @@ function addChart(slide, object, dimensions, slideSize, pptx, slideHints) {
     dataLabelFormatCode: structure.data_label_format_code ?? undefined,
     dataLabelColor: structure.data_label_color ? hex(structure.data_label_color) : undefined,
     dataLabelFontFace: structure.data_font_family ?? undefined,
+    dataLabelFontBold: structure.data_font_bold ?? undefined,
+    valAxisLabelFormatCode: structure.value_axis_format_code ?? undefined,
     chartColors: structure.colors?.map((value) => hex(value)) ?? undefined,
     showCatName: false,
     showSerName: false,

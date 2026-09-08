@@ -1,0 +1,6 @@
+{
+  "evidence_type": "objective_reconstruction_contract_facts",
+  "blocking_facts": [],
+  "agent_interpretation_required": true,
+  "note": "No reconstruction verdict is produced. The host Agent interprets these facts together with the accepted target and render."
+}

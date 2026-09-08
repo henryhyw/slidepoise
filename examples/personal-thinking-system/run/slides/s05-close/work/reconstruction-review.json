@@ -1,69 +1,50 @@
 {
   "reviewer": "host_agent_visual_reasoning",
+  "reviewed_on": "2026-09-08",
+  "stage": "reconstruction",
   "decision": "accepted",
   "material_issues": [],
-  "review_environment": "Actual LibreOffice rendering on macOS, installed system fonts, 120 DPI. Five full-resolution pages and both contact sheets inspected.",
-  "user_checkpoint": "The user explicitly requested consistent Field Notes typography across all five existing pages while retaining their artwork and compositions.",
-  "stage": "reconstruction",
-  "reasoning_summary": "The actual native render implements the common publication identity while preserving the page's original substantive composition.",
-  "observations": [
-    "The closing folio loses the former bold wide-spaced treatment and aligns with the first four pages. The large serif conclusion, three closing sentences and hand/thread collage retain the original composition.",
-    "The native folio uses Andale Mono regular12pt, zero tracking, dark ink and the common lower-left allocation. All words remain editable.",
-    "Same-DPI actual old/new rendering shows no pixel change outside the authorized folio assembly. Native media payloads and non-folio text typography are unchanged."
-  ],
-  "remaining_fidelity_limits": [
-    "The historical generated lettering and available native fonts have different glyph outlines. This revision preserves the existing approved native body interpretation.",
-    "Photographic collage and intrinsic depicted lettering remain raster. Native paper backgrounds retain sampled flat tones.",
-    "Legacy full-slide generation history is retained honestly. No claim is made that the old images were generated using the current body-only frame policy."
-  ],
   "reviewed_artifacts": [
     {
       "path": "accepted-slide.png",
       "sha256": "e7f6777d1eab069b3cbdedf2ff426e0cd39ef639896e7bf9af63415318ebc22c"
     },
     {
-      "path": "semantic-map.json",
-      "sha256": "166e508ff5bebf504623efe450438ed205e285dbb4b08166de5315a273569594"
-    },
-    {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "0d5cb9b71edb8023f06233fafd63471772928c1d6c5f4599084cc68b8de69c57"
-    },
-    {
-      "path": "reconstruction/measurement/debug_overlay.png",
-      "sha256": "f9d099663de9e92b3b74a7f88a98bbc04ae5bd836aa71ebf230ba41de15b8b3b"
-    },
-    {
-      "path": "reconstruction-handoff.json",
-      "sha256": "afd12e8e53505221f5691149374287a333d028410111a9ea7598a4ad22e85a46"
-    },
-    {
-      "path": "../../../work/deck-design.json",
-      "sha256": "ba33b732616aafff1f22648cf4536809f5583401d6180733363121aa7544358e"
+      "sha256": "7021a74c51bc41880285eb6dafe301a7b5e2cd19ee08f6e15bb4862dfdbf0244"
     },
     {
       "path": "reconstruction/reconstruction-contract.json",
-      "sha256": "28f599039da0872d3bb1cc2050f6f2ce7bbb3ec747d601eefe848c48612af0af"
+      "sha256": "00c59774ea9ae8127279903fc4123e3c079344df784b4f71a0d71ffe05f0afc5"
     },
     {
       "path": "reconstruction/constructor-scene.json",
-      "sha256": "7311b53caff3733084871a8bf70634717826bcd353b6f3864990118984aab75f"
+      "sha256": "eb221616d9358e53d53bb35ff63be1bcf0520180faed172928df943ce3cc3eca"
     },
     {
       "path": "../deliverables/slide.pptx",
-      "sha256": "bd6fc5dc79edca662b467a777755ed4468ec04bc248cd127e035a9b3f40bac5a"
+      "sha256": "0826cb4b6c0c92b3980773403ed2b6b1ee047a7871eb25b1b69a5917065b2554"
     },
     {
       "path": "../deliverables/render.png",
-      "sha256": "63527ea90c84fbd2ba79003c5eaf4fb15551ce1091cfb6429e1d2695682dce7a"
+      "sha256": "70eee51926c5440ec31f425acdabcfeb2d474ebef8f582e7decae56c56beb91e"
     },
     {
       "path": "../deliverables/comparison.png",
-      "sha256": "9b3c515b258d00c77bf4f7186cdc444e7dc453ace47f9454e9e3f42b59120d64"
+      "sha256": "3a8236fbf585e4d4a169b5e2e9bd1f687730a8c31037f916dfd530ce56d9de3b"
     },
     {
-      "path": "../deliverables/difference.png",
-      "sha256": "60d15ca3403bff426b173c16639d8c5a7a0195ec803c7cca1f6dba254ac9b04f"
+      "path": "native-object-evidence.json",
+      "sha256": "74f0f0960a8ee7039f6afd3ec9952526bbc118256d32ee4df2f4570f85f054bb"
+    },
+    {
+      "path": "native-text-audit.json",
+      "sha256": "4bed5e8c33a908fa95da172edd75150f1664e6a2784f2ae5349d94d90fa6d8db"
     }
-  ]
+  ],
+  "observations": [
+    "Georgia restores the closing headline weight and retains all three lines. The hand-and-paper artwork and all three closing statements remain separate and clear.",
+    "The chosen font approximates the generated letterforms, with modest differences in glyph shape and line height. The shared folio is preserved."
+  ],
+  "review_environment": "Actual LibreOffice render on macOS with installed fonts. Source and native content regions compared at a common scale."
 }

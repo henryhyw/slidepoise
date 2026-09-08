@@ -1,5 +1,6 @@
 {
   "reviewer": "host_agent_visual_reasoning",
+  "reviewed_on": "2026-09-08",
   "stage": "reconstruction",
   "decision": "accepted",
   "material_issues": [],
@@ -10,48 +11,40 @@
     },
     {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "4399a8e2dfed4398fa6db145c8fb0b31091c5be70908775259e73f08d107b895"
+      "sha256": "e97faed6de30f965948899f4c8aae25328a778f56ad53d4cd4b3d82e621f5c8a"
     },
     {
       "path": "reconstruction/reconstruction-contract.json",
-      "sha256": "21cf6e325bcface9ef5b3912c04a0ffd6d2811ec0b8719e42b81021fcf598fb6"
+      "sha256": "372ca5b06240a4e02167109c2073a9ce8dd2054edc80206eecc469dd3b675188"
     },
     {
       "path": "reconstruction/constructor-scene.json",
-      "sha256": "fd270ece75b019ad0f71a0709c1b4d5e4b4099293ec5e7a8933328b97e4b8e26"
+      "sha256": "71d8ff6ee802016764fe31a7d3eadb9f86964f3a35ef7c36fa4158637cecb9e1"
     },
     {
       "path": "../deliverables/slide.pptx",
-      "sha256": "def95bbdbf973ce5ea54811e621e1663a029d151fc1284038a17cae782a33604"
+      "sha256": "c0e2db8a8f077df3f320d70675c1deed88be5f0de032c5f2f61e663ac297a5b5"
     },
     {
       "path": "../deliverables/render.png",
-      "sha256": "59ad326155856aab67fa364db780cba1bbd4531cf64ec67f50a14e7018a671c4"
-    },
-    {
-      "path": "../deliverables/render.source.json",
-      "sha256": "bd9eb8f2d0b2320ec862b4ab15ae33781f57ed9d80512f2c40fabf0d510f673c"
+      "sha256": "e728eca4b799a525b9f616dd6fd6ecd34286bfa2d4ae250e37d7883464a25af8"
     },
     {
       "path": "../deliverables/comparison.png",
-      "sha256": "13636b5f09d225a62f1241b373037c794a00df892abfc19d794af8073d696167"
+      "sha256": "01c43531be82f5b680833ec832aa977e63fd6f5a20cd8e32ff09c7633db476ba"
     },
     {
       "path": "native-object-evidence.json",
-      "sha256": "f9efb76496dc3ff1b611b61e2602cb7cbdecc7d9b89bc942fdc8752f2409625b"
+      "sha256": "0e747a7c4bee668c651fd56c232bbd96700a1560629642ca98cc08e586ca4c13"
     },
     {
       "path": "native-text-audit.json",
-      "sha256": "9a2e153909f584f5f94aad7d4431c0c942298190c7bfd18f9719c4d485d85e19"
+      "sha256": "cb442a28b3f1fa795f8dab05202923919a820fcdccd6c530ebd02812385ee22a"
     }
   ],
   "observations": [
-    "I inspected the actual bundled LibreOffice full-slide preview and its cropped-body comparison against the generated target. The three upper information columns, lower action criteria and decision band remain separated and readable. No visible text clipping or overlap remains.",
-    "The native investment table has ten cells and the scenario table has twenty-eight. Exact values and labels match the retained financial intent after whitespace normalization. Adoption remains one word, and the two-line First-year value header stays within its cell. The $60k implementation qualification has two complete lines and visible clearance above the criterion rule.",
-    "The normal-width formula labels use the parent-approved 24px annotation role. Their corresponding factors are spaced to keep semantic alignment. The native $243k value, GO/HOLD/STOP headings and approval label are smaller than the generated glyphs because the deck Agent requires consistent 28px peer roles.",
-    "The exact title omits the model-added terminal period. Title, subtitle, body/section/decision and table text remain 64, 32, 28 and 24 body pixels, equivalent to 32, 16, 14 and 12 PowerPoint points on this canvas. All nine fitted text groups preserve their targets.",
-    "Header and footer are inherited native frame content. The footer states the illustrative planning assumption and the capacity-value qualification. The current standalone preview carries page 1, which the assembled deck will update to its deck position.",
-    "The thirty-nine substantive native objects contain two tables and no pictures. No shape ID is duplicated. The packaged audit inspected sixty-nine text bodies and found no native text-property defects. These objective facts support the visual inspection without replacing it.",
-    "After the deck owner inspected all five pages, I applied the shared introduction and decision geometry and inspected the fresh native render. The title now uses body [48,19,1824,80], subtitle begins at [48,103] and the introduction rule at y165. The decision band uses [48,793,1824,134] with an 8px bar. Both28px texts share body y832/height52, label x100/width420 and message x560/width1265. The long funding condition remains on one line with clear separation from the label. Original source-ink windows and all financial content remain intact."
-  ]
+    "Adoption and Downside render as complete words. The sensitivity rows, net values and investment amounts remain legible. The four factor captions are separate and positioned beneath their factors.",
+    "The three decision symbols retain their prominence. GO, HOLD and STOP labels have consistent orange emphasis. The cost table has larger text than the denser seven-column sensitivity table, an explicit local exception."
+  ],
+  "review_environment": "Actual LibreOffice render on macOS with installed fonts. Source and native content regions compared at a common scale."
 }

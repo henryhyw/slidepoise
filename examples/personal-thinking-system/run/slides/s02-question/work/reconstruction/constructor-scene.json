@@ -24,6 +24,8 @@
         "stroke_width_px": 1,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 0.0
     },
     {
@@ -42,6 +44,8 @@
         "stroke_width_px": 1,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 0.0
     },
     {
@@ -53,7 +57,7 @@
         535,
         555
       ],
-      "source_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s02-question/work/reconstruction/measurement/crops/question-collage.png",
+      "source_path": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s02-question/work/reconstruction/measurement/crops/question-collage.png",
       "selected_asset_id": null,
       "fit": "fill",
       "preserve_aspect_ratio": true,
@@ -97,6 +101,7 @@
       "bullet_style": null,
       "semantic_role": "title-first",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     },
     {
@@ -136,6 +141,7 @@
       "bullet_style": null,
       "semantic_role": "title-second",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     },
     {
@@ -175,6 +181,7 @@
       "bullet_style": null,
       "semantic_role": "premise",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     },
     {
@@ -214,6 +221,7 @@
       "bullet_style": null,
       "semantic_role": "prompt-first",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     },
     {
@@ -253,6 +261,7 @@
       "bullet_style": null,
       "semantic_role": "prompt-second",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     },
     {
@@ -292,6 +301,7 @@
       "bullet_style": null,
       "semantic_role": "conclusion",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     },
     {
@@ -331,6 +341,7 @@
       "bullet_style": null,
       "semantic_role": "publication_folio",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     }
   ],
@@ -379,7 +390,7 @@
     "slide_number": 2
   },
   "sources": [
-    "Generated target visual: /Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s02-question/work/accepted-slide.png"
+    "Generated target visual: /Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s02-question/work/accepted-slide.png"
   ],
   "compiler_report": {
     "measured_entity_count": 10,
@@ -558,8 +569,8 @@
       "note": "No quality or reconstruction verdict is produced. Visual reasoning remains external."
     },
     "input_bindings": {
-      "measured_scene_sha256": "7c84ef19bd40017d902877b9e4b4792c01b0400ea84b31139cd5af934934af7f",
-      "reconstruction_contract_sha256": "fa2e3d8108a937259e028279d1b0bf89470c7bc9d46ed392db2932c2f87ace09",
+      "measured_scene_sha256": "a87e4f175626f18f4dc463db5e11652c6d9b9fbe8853999c4c6540f8bab8d00e",
+      "reconstruction_contract_sha256": "3c2729eb5cc2086177ec0359c36699614beff859ab1660ea37ecc5774beb0f57",
       "resolved_design_sha256": "803440a27dca21dc9148b5b4ac29fed93193ccedd3b017e11a7984c0c78c5a86"
     }
   }

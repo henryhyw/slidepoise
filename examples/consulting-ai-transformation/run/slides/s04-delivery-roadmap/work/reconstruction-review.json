@@ -1,5 +1,6 @@
 {
   "reviewer": "host_agent_visual_reasoning",
+  "reviewed_on": "2026-09-08",
   "stage": "reconstruction",
   "decision": "accepted",
   "material_issues": [],
@@ -10,49 +11,40 @@
     },
     {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "b9d39fa8320a20c5bbddacc7293c75ed90d28e71627c4e25e9bed514dcd18d1d"
+      "sha256": "0884c67241df323db9bf7690427873af196e792a90c5864aa7ba8276a7582b62"
     },
     {
       "path": "reconstruction/reconstruction-contract.json",
-      "sha256": "9a0fafcae431c3303d0089bf08c52cca08982f102e59537698029d85891043fc"
+      "sha256": "b5c040822eddd1d0a2adfe363df397baaade1c576f8de95e619efd40df32966b"
     },
     {
       "path": "reconstruction/constructor-scene.json",
-      "sha256": "0d62736078635ca656ae1d60a6621f512d66be5dfa3cf36aebdf97cddb3f521e"
+      "sha256": "92be5f743cf5c32b2b5b55e86e18cc0d7b654e013f10531b03aac466ed9d8201"
     },
     {
       "path": "../deliverables/slide.pptx",
-      "sha256": "c46ed83f7ea1bacf26d85cbf0aab5ba334b2be14c3321d17f9f440f6ceaa889e"
+      "sha256": "e378bd6748ffd60657bbdfee5428c49632bf515ea71a8a2bedba5b3e10d24a0e"
     },
     {
       "path": "../deliverables/render.png",
-      "sha256": "79dda343bc4f424c182da8989b1ca75e8bc7741a20724008a71b7a5c0c174e12"
-    },
-    {
-      "path": "../deliverables/render.source.json",
-      "sha256": "105fc009628be20b6637e10f5686fc14a5785b62c3e7149be7e3f8cd8e4f451a"
+      "sha256": "0cf9eeb0712520d7b1769681fb121242e49f2364d55987fdb34434a0f69f7605"
     },
     {
       "path": "../deliverables/comparison.png",
-      "sha256": "dae5163fac515e0dc23cb1838e6bba748daf8ab3c3354b426f45f2a63bb878ae"
+      "sha256": "5f1146d10d0a74f96b6cd869437f19b172713fd83a18b02dc049ef31bb5ba036"
     },
     {
       "path": "native-object-evidence.json",
-      "sha256": "fb93439c3aa1fa30b5a7d55b9d544ebc1d6e664f5dc2437f8662413f484b7501"
+      "sha256": "8b183d50a1ebb7c834bc2b1bcc2e7135af09ee2112c477428c04d741bdc8e519"
     },
     {
       "path": "native-text-audit.json",
-      "sha256": "ad6359303ad597ae01fff642ddef57f3988273f00d11c4902d8ee6316cb74db4"
+      "sha256": "68927484aadb5e94c0f54feab5ce190bb1f121ec66a8825c90eb5bd53c28da67"
     }
   ],
   "observations": [
-    "The fourth evidence gate and its detail remain fully inside the evidence-gate region. Neither text box crosses the dependency divider, and the emitted thin-separator collision check reports no finding.",
-    "I inspected the actual LibreOffice full-slide render and generated-body comparison. All table cells and four milestone panels remain complete. The matrix ends above the decision band, and the three dependency arrows are visible inside their circles.",
-    "The native matrix contains 25 editable cells. Row labels are bold and accountable owners are regular. Normal Arial causes some source lines to wrap naturally, without horizontal compression or smaller table type.",
-    "The fill-only native gate panels have no accidental black outline. Their real cubic/polygon geometry remains editable. The dependency arrows are above their white circle fills and point toward the prerequisite statements.",
-    "Gate evidence now uses the same 24px annotation role as peer tables and formula labels. The prior 22px fitted reduction was corrected by expanding the authored logical allocation. The earlier actual render is retained under iterations/before-cross-slide-calibration.",
-    "The 64px Georgia title, 32px subtitle, 28px section/body/decision roles, 32px gate ID markers and 24px evidence role are retained. No fitted group is reduced. Header and footer are inherited native frame content, with a standalone page number of 1 before deck assembly.",
-    "Shared decision label and message columns are aligned with the other four pages. This is a recorded Agent calibration of the repeated visual role. The selected source image remains unchanged.",
-    "The editable PowerPoint contains 47 native substantive objects and no raster pictures or duplicate native shape IDs. The packaged text audit emits no findings. These are factual checks supporting the visual review."
-  ]
+    "Workstream names are bold and owner lines are regular. All four time windows and workstream rows remain legible. The G4 caption wraps before decide and stays left of the dependency divider.",
+    "Three arrows connect four gate icons. The source arrow continuing beyond G4 is omitted because the plan ends at the fourth gate. Week headings are left aligned, a small local difference from the centered source headings."
+  ],
+  "review_environment": "Actual LibreOffice render on macOS with installed fonts. Source and native content regions compared at a common scale."
 }

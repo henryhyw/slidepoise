@@ -7,7 +7,7 @@
       "sha256": "REPLACE_WITH_SHA256_OF_THE_EXACT_INSPECTED_FILE"
     }
   ],
-  "decision": "accepted",
+  "decision": "pending",
   "material_issues": [],
   "reasoning_summary": "Describe the inspected result and any remaining fidelity limits.",
   "observations": [

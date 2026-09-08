@@ -178,13 +178,69 @@
     "At least 11 of 15 pilot users must be weekly active. One comparable research task is measured per pilot engagement."
   ],
   "notes": [
-    "Reconstruction uses a 1920 by 960 substantive canvas, translated down 64 pixels into a 1920 by 1080 presentation with an inherited frame.",
-    "Georgia title stays 64 pixels, Arial section and body roles 28 pixels, table 24 pixels and both decision-band texts 28 pixels. Source condensed glyph proportions are not imitated by compressing type.",
-    "The shared design specifies an 8-pixel decision bar. Its native width follows that shared value, while the accepted source bar is slightly wider.",
-    "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-    "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-    "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-    "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-    "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files."
+    "Retain the prominence of the three capacity figures and the three rationale icons. Scale-gate entries are left aligned.",
+    "The final rationale sentence wraps onto two lines in native Arial to keep it inside its column.",
+    "The semantic map owns current geometry and type roles. The inherited frame is added outside the generated content region. Canonical SVGs replace generated icon stand-ins."
+  ],
+  "content_obligations": [
+    {
+      "id": "pilot-economics",
+      "description": "Three linked numbers show the baseline, capacity and annual equivalent.",
+      "entity_ids": [
+        "baseline",
+        "baseline-label",
+        "baseline-formula",
+        "capacity",
+        "capacity-label",
+        "capacity-formula",
+        "value",
+        "value-label",
+        "value-formula",
+        "metric-divider-1",
+        "metric-divider-2"
+      ]
+    },
+    {
+      "id": "pilot-rationale",
+      "description": "Each reason has a distinct icon, claim and supporting sentence.",
+      "entity_ids": [
+        "reason-icon-01",
+        "reason-number-01",
+        "reason-title-01",
+        "reason-detail-01",
+        "reason-icon-02",
+        "reason-number-02",
+        "reason-title-02",
+        "reason-detail-02",
+        "reason-icon-03",
+        "reason-number-03",
+        "reason-title-03",
+        "reason-detail-03"
+      ]
+    },
+    {
+      "id": "scale-gate",
+      "description": "The table keeps the four measurable release conditions editable.",
+      "entity_ids": [
+        "gate-heading",
+        "scale-gate-table"
+      ]
+    },
+    {
+      "id": "page-message",
+      "description": "The slide claim and its qualification",
+      "entity_ids": [
+        "headline",
+        "subtitle"
+      ]
+    },
+    {
+      "id": "decision",
+      "description": "Pilot funding decision",
+      "entity_ids": [
+        "decision-label",
+        "decision-message"
+      ]
+    }
   ]
 }

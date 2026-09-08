@@ -121,16 +121,56 @@
     "The practice lead and CFO release scale funding only after the evidence gates are reviewed. Critical data exceptions stop expansion."
   ],
   "notes": [
-    "Each pilot engagement supplies one research task. Twenty tasks correspond to twenty engagements.",
-    "The matrix, milestone panels, small dependency arrows and decision band are native presentation geometry. No canonical asset is implied.",
-    "Georgia title 64px, Arial subtitle 32px, section/body 28px, table and gate evidence 24px. Gate dates use the body heading level and gate IDs use a separate 32px marker level.",
-    "Native font proportions preserve the named font families. Source condensed glyph shapes are not imitated through horizontal compression.",
-    "Header and footer are inherited from the resolved shared frame. All mapped source geometry belongs to the 1920 by 960 body canvas.",
-    "The shared decision text and 8px accent follow the deck's explicit visual roles, replacing the image model's oversized accent and label treatment.",
-    "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-    "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-    "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-    "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-    "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files."
+    "Keep each workstream bold and its owner regular within the same editable cell. Week headers and body cells use left alignment.",
+    "The four gate icons form three directed transitions. The source arrow continuing after G4 is omitted because the plan has no fifth gate.",
+    "The G4 description wraps before decide to remain clear of the dependency divider.",
+    "The semantic map owns current geometry and type roles. The inherited frame is added outside the generated content region. Canonical SVGs replace generated icon stand-ins."
+  ],
+  "content_obligations": [
+    {
+      "id": "delivery-plan",
+      "description": "The native matrix links each owner to concrete work in every phase.",
+      "entity_ids": [
+        "roadmap-matrix"
+      ]
+    },
+    {
+      "id": "evidence-gates",
+      "description": "Four canonical flags mark evidence-backed release decisions along one sequence.",
+      "entity_ids": [
+        "gates-heading",
+        "gate-icon-g1",
+        "gate-label-g1",
+        "gate-detail-g1",
+        "gate-icon-g2",
+        "gate-label-g2",
+        "gate-detail-g2",
+        "gate-icon-g3",
+        "gate-label-g3",
+        "gate-detail-g3",
+        "gate-icon-g4",
+        "gate-label-g4",
+        "gate-detail-g4",
+        "gate-flow-1",
+        "gate-flow-2",
+        "gate-flow-3"
+      ]
+    },
+    {
+      "id": "page-message",
+      "description": "The slide claim and its qualification",
+      "entity_ids": [
+        "headline",
+        "subtitle"
+      ]
+    },
+    {
+      "id": "decision",
+      "description": "Stop expansion while critical exceptions remain",
+      "entity_ids": [
+        "decision-label",
+        "decision-message"
+      ]
+    }
   ]
 }

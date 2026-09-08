@@ -16,7 +16,8 @@
       "reconstruction_route": "native_shape",
       "style_hint": {
         "fill": "#FAF9F7",
-        "stroke": "none"
+        "stroke": "none",
+        "style_authority": "agent_visual_observation"
       }
     },
     {
@@ -141,7 +142,8 @@
           205
         ],
         "intrinsic_text_ownership": "Marks and photographed notebook lettering belong to this raster. No presentation copy is inside the crop."
-      }
+      },
+      "raster_fit": "fill"
     },
     {
       "id": "caption",
@@ -230,7 +232,8 @@
       "style_hint": {
         "fill": "none",
         "stroke": "#8A8A88",
-        "stroke_width_px": 1
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
       }
     },
     {
@@ -320,7 +323,8 @@
       "style_hint": {
         "fill": "none",
         "stroke": "#8A8A88",
-        "stroke_width_px": 1
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
       }
     },
     {
@@ -383,7 +387,8 @@
       "style_hint": {
         "fill": "none",
         "stroke": "#8A8A88",
-        "stroke_width_px": 1
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
       }
     },
     {
@@ -473,7 +478,8 @@
       "style_hint": {
         "fill": "none",
         "stroke": "#8A8A88",
-        "stroke_width_px": 1
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
       }
     },
     {
@@ -536,7 +542,8 @@
       "style_hint": {
         "fill": "none",
         "stroke": "#8A8A88",
-        "stroke_width_px": 1
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
       }
     },
     {
@@ -626,7 +633,8 @@
       "style_hint": {
         "fill": "none",
         "stroke": "#8A8A88",
-        "stroke_width_px": 1
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
       }
     },
     {
@@ -689,7 +697,8 @@
       "style_hint": {
         "fill": "none",
         "stroke": "#8A8A88",
-        "stroke_width_px": 1
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
       }
     },
     {
@@ -769,7 +778,8 @@
           691
         ],
         "intrinsic_text_ownership": "Marks and photographed notebook lettering belong to this raster. No presentation copy is inside the crop."
-      }
+      },
+      "raster_fit": "fill"
     },
     {
       "id": "folio",
@@ -793,7 +803,7 @@
         "target_font_size_px": 21,
         "font_weight": "regular",
         "observed_foreground_color": "#242321",
-        "style_authority": "host_reviewed_user_authorized_deck_role",
+        "style_authority": "user_exact",
         "line_spacing": 1,
         "char_spacing_px": 0,
         "italic": false,

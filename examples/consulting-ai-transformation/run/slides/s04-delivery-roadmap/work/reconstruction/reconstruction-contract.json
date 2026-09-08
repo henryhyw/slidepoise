@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "source_scene_evidence": "/private/tmp/.slidepoise-rebuild-h51errnw/slides/s04-delivery-roadmap/work/accepted-slide.png",
+  "source_scene_evidence": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/slides/s04-delivery-roadmap/work/accepted-slide.png",
   "full_slide_dimensions_px": [
     1920,
     1080
@@ -69,6 +69,53 @@
   "speaker_notes": [
     "Each pilot engagement supplies one research task. Twenty paired tasks correspond to twenty engagements.",
     "The practice lead and CFO release scale funding only after the evidence gates are reviewed. Critical data exceptions stop expansion."
+  ],
+  "content_obligations": [
+    {
+      "id": "delivery-plan",
+      "description": "The native matrix links each owner to concrete work in every phase.",
+      "entity_ids": [
+        "roadmap-matrix"
+      ]
+    },
+    {
+      "id": "evidence-gates",
+      "description": "Four canonical flags mark evidence-backed release decisions along one sequence.",
+      "entity_ids": [
+        "gates-heading",
+        "gate-icon-g1",
+        "gate-label-g1",
+        "gate-detail-g1",
+        "gate-icon-g2",
+        "gate-label-g2",
+        "gate-detail-g2",
+        "gate-icon-g3",
+        "gate-label-g3",
+        "gate-detail-g3",
+        "gate-icon-g4",
+        "gate-label-g4",
+        "gate-detail-g4",
+        "gate-flow-1",
+        "gate-flow-2",
+        "gate-flow-3"
+      ]
+    },
+    {
+      "id": "page-message",
+      "description": "The slide claim and its qualification",
+      "entity_ids": [
+        "headline",
+        "subtitle"
+      ]
+    },
+    {
+      "id": "decision",
+      "description": "Stop expansion while critical exceptions remain",
+      "entity_ids": [
+        "decision-label",
+        "decision-message"
+      ]
+    }
   ],
   "reconstruction_units": [
     {
@@ -176,10 +223,10 @@
       "emits_ppt_object": true,
       "render_owner": "gate-detail-g1",
       "bbox_px": [
-        70,
+        65,
         763,
-        300,
-        35
+        310,
+        54
       ],
       "component_id": null
     },
@@ -224,10 +271,10 @@
       "emits_ppt_object": true,
       "render_owner": "gate-detail-g2",
       "bbox_px": [
-        380,
+        375,
         763,
-        300,
-        35
+        310,
+        54
       ],
       "component_id": null
     },
@@ -272,10 +319,10 @@
       "emits_ppt_object": true,
       "render_owner": "gate-detail-g3",
       "bbox_px": [
-        690,
+        685,
         763,
-        300,
-        35
+        310,
+        54
       ],
       "component_id": null
     },
@@ -320,10 +367,10 @@
       "emits_ppt_object": true,
       "render_owner": "gate-detail-g4",
       "bbox_px": [
-        1000,
+        995,
         763,
-        300,
-        35
+        310,
+        54
       ],
       "component_id": null
     },

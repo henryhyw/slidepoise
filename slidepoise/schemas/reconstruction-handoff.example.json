@@ -76,5 +76,25 @@
       "exception_id": "cover-display",
       "application_note": "The Agent materializes this explicit cover exception in the headline style_hint and inspects it beside the peer content pages."
     }
+  ],
+  "content_obligations": [
+    {
+      "id": "review-feedback",
+      "description": "Rejected work returns from review to drafting",
+      "entity_ids": [
+        "feedback-label",
+        "review-to-draft"
+      ],
+      "connection": {
+        "entity_id": "review-to-draft",
+        "source_entities": [
+          "review-stage"
+        ],
+        "target_entities": [
+          "draft-stage"
+        ],
+        "directed": true
+      }
+    }
   ]
 }

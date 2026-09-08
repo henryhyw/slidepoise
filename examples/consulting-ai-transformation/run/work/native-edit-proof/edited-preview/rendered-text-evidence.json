@@ -1,0 +1,4949 @@
+{
+  "evidence_type": "rendered_table_text",
+  "available": true,
+  "pptx_sha256": "8ddbc7911c39bd2b47692d617021c7a141aa263e00591d22fe5d3053d9fb3ee6",
+  "pdf_sha256": "7fac8bf9ae0f7e2a4f96b6199796716c34738eb3b5063a01358836af7e443f00",
+  "cells": [
+    {
+      "slide_number": 1,
+      "table": "scale-gate-table",
+      "row": 0,
+      "column": 0,
+      "bbox_pdf_points": [
+        530.0052166354167,
+        256.0,
+        225.002214609375,
+        30.0
+      ],
+      "expected": "Measure",
+      "rendered": "Measure",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Measure",
+          "box": [
+            535.975,
+            264.931145,
+            584.574523,
+            278.313101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 1,
+      "table": "scale-gate-table",
+      "row": 0,
+      "column": 1,
+      "bbox_pdf_points": [
+        755.0074312447916,
+        256.0,
+        185.00182090104167,
+        30.0
+      ],
+      "expected": "Minimum to scale",
+      "rendered": "Minimum to scale",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Minimum",
+          "box": [
+            760.961,
+            264.931145,
+            813.529544,
+            278.313101
+          ]
+        },
+        {
+          "text": "to",
+          "box": [
+            816.851051,
+            264.931145,
+            828.158564,
+            278.313101
+          ]
+        },
+        {
+          "text": "scale",
+          "box": [
+            831.480071,
+            264.931145,
+            861.457571,
+            278.313101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 1,
+      "table": "scale-gate-table",
+      "row": 1,
+      "column": 0,
+      "bbox_pdf_points": [
+        530.0052166354167,
+        286.0,
+        225.002214609375,
+        34.0
+      ],
+      "expected": "Cycle-time reduction",
+      "rendered": "Cycle-time reduction",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Cycle-time",
+          "box": [
+            535.975,
+            296.934145,
+            596.553532,
+            310.316101
+          ]
+        },
+        {
+          "text": "reduction",
+          "box": [
+            599.863048,
+            296.934145,
+            654.434089,
+            310.316101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 1,
+      "table": "scale-gate-table",
+      "row": 1,
+      "column": 1,
+      "bbox_pdf_points": [
+        755.0074312447916,
+        286.0,
+        185.00182090104167,
+        34.0
+      ],
+      "expected": "25%",
+      "rendered": "25%",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "25%",
+          "box": [
+            760.961,
+            296.934145,
+            784.931009,
+            310.316101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 1,
+      "table": "scale-gate-table",
+      "row": 2,
+      "column": 0,
+      "bbox_pdf_points": [
+        530.0052166354167,
+        320.0,
+        225.002214609375,
+        34.0
+      ],
+      "expected": "Sampled cited claims verified",
+      "rendered": "Sampled cited claims verified",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Sampled",
+          "box": [
+            535.975,
+            330.921145,
+            585.893533,
+            344.303101
+          ]
+        },
+        {
+          "text": "cited",
+          "box": [
+            589.239022,
+            330.921145,
+            617.190043,
+            344.303101
+          ]
+        },
+        {
+          "text": "claims",
+          "box": [
+            620.51155,
+            330.921145,
+            657.80356,
+            344.303101
+          ]
+        },
+        {
+          "text": "verified",
+          "box": [
+            661.125067,
+            330.921145,
+            703.717099,
+            344.303101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 1,
+      "table": "scale-gate-table",
+      "row": 2,
+      "column": 1,
+      "bbox_pdf_points": [
+        755.0074312447916,
+        320.0,
+        185.00182090104167,
+        34.0
+      ],
+      "expected": "95%",
+      "rendered": "95%",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "95%",
+          "box": [
+            760.961,
+            330.921145,
+            784.931009,
+            344.303101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 1,
+      "table": "scale-gate-table",
+      "row": 3,
+      "column": 0,
+      "bbox_pdf_points": [
+        530.0052166354167,
+        354.0,
+        225.002214609375,
+        34.0
+      ],
+      "expected": "Critical data exceptions",
+      "rendered": "Critical data exceptions",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Critical",
+          "box": [
+            535.975,
+            364.909145,
+            576.552544,
+            378.291101
+          ]
+        },
+        {
+          "text": "data",
+          "box": [
+            579.874051,
+            364.909145,
+            604.515556,
+            378.291101
+          ]
+        },
+        {
+          "text": "exceptions",
+          "box": [
+            607.825072,
+            364.909145,
+            670.39411,
+            378.291101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 1,
+      "table": "scale-gate-table",
+      "row": 3,
+      "column": 1,
+      "bbox_pdf_points": [
+        755.0074312447916,
+        354.0,
+        185.00182090104167,
+        34.0
+      ],
+      "expected": "0",
+      "rendered": "0",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "0",
+          "box": [
+            760.961,
+            364.909145,
+            767.627996,
+            378.291101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 1,
+      "table": "scale-gate-table",
+      "row": 4,
+      "column": 0,
+      "bbox_pdf_points": [
+        530.0052166354167,
+        388.0,
+        225.002214609375,
+        35.0
+      ],
+      "expected": "Weekly-active pilot users",
+      "rendered": "Weekly-active pilot users",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Weekly-active",
+          "box": [
+            535.975,
+            399.378145,
+            614.971708,
+            412.760101
+          ]
+        },
+        {
+          "text": "pilot",
+          "box": [
+            618.293215,
+            399.378145,
+            643.558252,
+            412.760101
+          ]
+        },
+        {
+          "text": "users",
+          "box": [
+            646.89175,
+            399.378145,
+            678.847765,
+            412.760101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 1,
+      "table": "scale-gate-table",
+      "row": 4,
+      "column": 1,
+      "bbox_pdf_points": [
+        755.0074312447916,
+        388.0,
+        185.00182090104167,
+        35.0
+      ],
+      "expected": "70% · at least 11 of 15",
+      "rendered": "70% · at least 11 of 15",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "70%",
+          "box": [
+            760.961,
+            399.378145,
+            784.931009,
+            412.760101
+          ]
+        },
+        {
+          "text": "·",
+          "box": [
+            788.252516,
+            399.378145,
+            792.245519,
+            412.760101
+          ]
+        },
+        {
+          "text": "at",
+          "box": [
+            795.579017,
+            399.378145,
+            805.555529,
+            412.760101
+          ]
+        },
+        {
+          "text": "least",
+          "box": [
+            808.901018,
+            399.378145,
+            834.178046,
+            412.760101
+          ]
+        },
+        {
+          "text": "11",
+          "box": [
+            837.499553,
+            399.378145,
+            849.970193,
+            412.760101
+          ]
+        },
+        {
+          "text": "of",
+          "box": [
+            853.2917,
+            399.378145,
+            863.268212,
+            412.760101
+          ]
+        },
+        {
+          "text": "15",
+          "box": [
+            866.589719,
+            399.378145,
+            879.923711,
+            412.760101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "value-model",
+      "row": 0,
+      "column": 0,
+      "bbox_pdf_points": [
+        380.0037402291667,
+        133.0,
+        142.5014025859375,
+        26.0
+      ],
+      "expected": "Workflow",
+      "rendered": "Workflow",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Workflow",
+          "box": [
+            385.994,
+            139.951145,
+            439.665716,
+            153.333101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "value-model",
+      "row": 0,
+      "column": 1,
+      "bbox_pdf_points": [
+        522.5051428151041,
+        133.0,
+        135.001328765625,
+        26.0
+      ],
+      "expected": "Baseline h",
+      "rendered": "Baseline h",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Baseline",
+          "box": [
+            560.013,
+            139.951145,
+            609.248046,
+            153.333101
+          ]
+        },
+        {
+          "text": "h",
+          "box": [
+            612.557562,
+            139.951145,
+            619.872072,
+            153.333101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "value-model",
+      "row": 0,
+      "column": 2,
+      "bbox_pdf_points": [
+        657.5064715807291,
+        133.0,
+        135.001328765625,
+        26.0
+      ],
+      "expected": "Adoption",
+      "rendered": "Adoption",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Adoption",
+          "box": [
+            698.683,
+            139.951145,
+            751.215571,
+            153.333101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "value-model",
+      "row": 0,
+      "column": 3,
+      "bbox_pdf_points": [
+        792.5078003463542,
+        133.0,
+        142.5014025859375,
+        26.0
+      ],
+      "expected": "Time saved",
+      "rendered": "Time saved",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Time",
+          "box": [
+            831.175,
+            139.951145,
+            858.910183,
+            153.333101
+          ]
+        },
+        {
+          "text": "saved",
+          "box": [
+            862.243681,
+            139.951145,
+            896.190202,
+            153.333101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "value-model",
+      "row": 1,
+      "column": 0,
+      "bbox_pdf_points": [
+        380.0037402291667,
+        159.0,
+        142.5014025859375,
+        29.5
+      ],
+      "expected": "Research",
+      "rendered": "Research",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Research",
+          "box": [
+            385.994,
+            167.674145,
+            439.905536,
+            181.056101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "value-model",
+      "row": 1,
+      "column": 1,
+      "bbox_pdf_points": [
+        522.5051428151041,
+        159.0,
+        135.001328765625,
+        29.5
+      ],
+      "expected": "12",
+      "rendered": "12",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "12",
+          "box": [
+            583.342,
+            167.674145,
+            596.664001,
+            181.056101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "value-model",
+      "row": 1,
+      "column": 2,
+      "bbox_pdf_points": [
+        657.5064715807291,
+        159.0,
+        135.001328765625,
+        29.5
+      ],
+      "expected": "60%",
+      "rendered": "60%",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "60%",
+          "box": [
+            712.998,
+            167.674145,
+            736.968009,
+            181.056101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "value-model",
+      "row": 1,
+      "column": 3,
+      "bbox_pdf_points": [
+        792.5078003463542,
+        159.0,
+        142.5014025859375,
+        29.5
+      ],
+      "expected": "30%",
+      "rendered": "30%",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "30%",
+          "box": [
+            851.726,
+            167.674145,
+            875.696009,
+            181.056101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "value-model",
+      "row": 2,
+      "column": 0,
+      "bbox_pdf_points": [
+        380.0037402291667,
+        188.5,
+        142.5014025859375,
+        29.5
+      ],
+      "expected": "Proposal",
+      "rendered": "Proposal",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Proposal",
+          "box": [
+            385.994,
+            197.154145,
+            437.219552,
+            210.536101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "value-model",
+      "row": 2,
+      "column": 1,
+      "bbox_pdf_points": [
+        522.5051428151041,
+        188.5,
+        135.001328765625,
+        29.5
+      ],
+      "expected": "8",
+      "rendered": "8",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "8",
+          "box": [
+            586.687,
+            197.154145,
+            593.353996,
+            210.536101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "value-model",
+      "row": 2,
+      "column": 2,
+      "bbox_pdf_points": [
+        657.5064715807291,
+        188.5,
+        135.001328765625,
+        29.5
+      ],
+      "expected": "50%",
+      "rendered": "50%",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "50%",
+          "box": [
+            712.998,
+            197.154145,
+            736.968009,
+            210.536101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "value-model",
+      "row": 2,
+      "column": 3,
+      "bbox_pdf_points": [
+        792.5078003463542,
+        188.5,
+        142.5014025859375,
+        29.5
+      ],
+      "expected": "40%",
+      "rendered": "40%",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "40%",
+          "box": [
+            851.726,
+            197.154145,
+            875.696009,
+            210.536101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "value-model",
+      "row": 3,
+      "column": 0,
+      "bbox_pdf_points": [
+        380.0037402291667,
+        218.0,
+        142.5014025859375,
+        30.0
+      ],
+      "expected": "Retrieval",
+      "rendered": "Retrieval",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Retrieval",
+          "box": [
+            385.994,
+            226.890145,
+            436.560047,
+            240.272101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "value-model",
+      "row": 3,
+      "column": 1,
+      "bbox_pdf_points": [
+        522.5051428151041,
+        218.0,
+        135.001328765625,
+        30.0
+      ],
+      "expected": "5",
+      "rendered": "5",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "5",
+          "box": [
+            586.687,
+            226.890145,
+            593.353996,
+            240.272101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "value-model",
+      "row": 3,
+      "column": 2,
+      "bbox_pdf_points": [
+        657.5064715807291,
+        218.0,
+        135.001328765625,
+        30.0
+      ],
+      "expected": "60%",
+      "rendered": "60%",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "60%",
+          "box": [
+            712.998,
+            226.890145,
+            736.968009,
+            240.272101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "value-model",
+      "row": 3,
+      "column": 3,
+      "bbox_pdf_points": [
+        792.5078003463542,
+        218.0,
+        142.5014025859375,
+        30.0
+      ],
+      "expected": "40%",
+      "rendered": "40%",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "40%",
+          "box": [
+            851.726,
+            226.890145,
+            875.696009,
+            240.272101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "pilot-sequencing",
+      "row": 0,
+      "column": 0,
+      "bbox_pdf_points": [
+        380.0037402291667,
+        302.0,
+        145.00142719270832,
+        25.0
+      ],
+      "expected": "Workflow",
+      "rendered": "Workflow",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Workflow",
+          "box": [
+            385.994,
+            308.442145,
+            439.665716,
+            321.824101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "pilot-sequencing",
+      "row": 0,
+      "column": 1,
+      "bbox_pdf_points": [
+        525.0051674218751,
+        302.0,
+        180.0017716875,
+        25.0
+      ],
+      "expected": "Control readiness",
+      "rendered": "Control readiness",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Control",
+          "box": [
+            530.986,
+            308.442145,
+            573.55405,
+            321.824101
+          ]
+        },
+        {
+          "text": "readiness",
+          "box": [
+            576.875557,
+            308.442145,
+            632.78959,
+            321.824101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "pilot-sequencing",
+      "row": 0,
+      "column": 2,
+      "bbox_pdf_points": [
+        705.006939109375,
+        302.0,
+        125.00123033854166,
+        25.0
+      ],
+      "expected": "Owner",
+      "rendered": "Owner",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Owner",
+          "box": [
+            710.986,
+            308.442145,
+            748.266019,
+            321.824101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "pilot-sequencing",
+      "row": 0,
+      "column": 3,
+      "bbox_pdf_points": [
+        830.0081694479167,
+        302.0,
+        105.001033484375,
+        25.0
+      ],
+      "expected": "Sequence",
+      "rendered": "Sequence",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Sequence",
+          "box": [
+            854.135,
+            308.442145,
+            910.720529,
+            321.824101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "pilot-sequencing",
+      "row": 1,
+      "column": 0,
+      "bbox_pdf_points": [
+        380.0037402291667,
+        327.0,
+        145.00142719270832,
+        34.0
+      ],
+      "expected": "Research synthesis",
+      "rendered": "Research synthesis",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Research",
+          "box": [
+            385.994,
+            337.923145,
+            439.905536,
+            351.305101
+          ]
+        },
+        {
+          "text": "synthesis",
+          "box": [
+            443.227043,
+            337.923145,
+            498.493562,
+            351.305101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "pilot-sequencing",
+      "row": 1,
+      "column": 1,
+      "bbox_pdf_points": [
+        525.0051674218751,
+        327.0,
+        180.0017716875,
+        34.0
+      ],
+      "expected": "Approved corpus Explicit review",
+      "rendered": "Approved corpus Explicit review",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Approved",
+          "box": [
+            530.986,
+            330.723145,
+            582.259516,
+            344.105101
+          ]
+        },
+        {
+          "text": "corpus",
+          "box": [
+            585.569032,
+            330.723145,
+            621.530041,
+            344.105101
+          ]
+        },
+        {
+          "text": "Explicit",
+          "box": [
+            530.986,
+            345.123145,
+            568.925524,
+            358.505101
+          ]
+        },
+        {
+          "text": "review",
+          "box": [
+            572.247031,
+            345.123145,
+            606.877039,
+            358.505101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "pilot-sequencing",
+      "row": 1,
+      "column": 2,
+      "bbox_pdf_points": [
+        705.006939109375,
+        327.0,
+        125.00123033854166,
+        34.0
+      ],
+      "expected": "Practice lead",
+      "rendered": "Practice lead",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Practice",
+          "box": [
+            710.986,
+            337.923145,
+            754.249528,
+            351.305101
+          ]
+        },
+        {
+          "text": "lead",
+          "box": [
+            757.559044,
+            337.923145,
+            780.210043,
+            351.305101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "pilot-sequencing",
+      "row": 1,
+      "column": 3,
+      "bbox_pdf_points": [
+        830.0081694479167,
+        327.0,
+        105.001033484375,
+        34.0
+      ],
+      "expected": "START",
+      "rendered": "START",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "START",
+          "box": [
+            862.923,
+            337.923145,
+            901.941714,
+            351.305101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "pilot-sequencing",
+      "row": 2,
+      "column": 0,
+      "bbox_pdf_points": [
+        380.0037402291667,
+        361.0,
+        145.00142719270832,
+        34.0
+      ],
+      "expected": "Proposal drafting",
+      "rendered": "Proposal drafting",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Proposal",
+          "box": [
+            385.994,
+            371.910145,
+            437.219552,
+            385.292101
+          ]
+        },
+        {
+          "text": "drafting",
+          "box": [
+            440.541059,
+            371.910145,
+            485.123597,
+            385.292101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "pilot-sequencing",
+      "row": 2,
+      "column": 1,
+      "bbox_pdf_points": [
+        525.0051674218751,
+        361.0,
+        180.0017716875,
+        34.0
+      ],
+      "expected": "Claims and commitments need controls",
+      "rendered": "Claims and commitments need controls",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Claims",
+          "box": [
+            530.986,
+            364.710145,
+            567.570541,
+            378.092101
+          ]
+        },
+        {
+          "text": "and",
+          "box": [
+            570.904039,
+            364.710145,
+            590.893036,
+            378.092101
+          ]
+        },
+        {
+          "text": "commitments",
+          "box": [
+            594.214543,
+            364.710145,
+            665.417101,
+            378.092101
+          ]
+        },
+        {
+          "text": "need",
+          "box": [
+            530.986,
+            379.110145,
+            557.630002,
+            392.492101
+          ]
+        },
+        {
+          "text": "controls",
+          "box": [
+            560.951509,
+            379.110145,
+            602.896027,
+            392.492101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "pilot-sequencing",
+      "row": 2,
+      "column": 2,
+      "bbox_pdf_points": [
+        705.006939109375,
+        361.0,
+        125.00123033854166,
+        34.0
+      ],
+      "expected": "BD lead",
+      "rendered": "BD lead",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "BD",
+          "box": [
+            710.986,
+            371.910145,
+            727.629508,
+            385.292101
+          ]
+        },
+        {
+          "text": "lead",
+          "box": [
+            730.939024,
+            371.910145,
+            753.590023,
+            385.292101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "pilot-sequencing",
+      "row": 2,
+      "column": 3,
+      "bbox_pdf_points": [
+        830.0081694479167,
+        361.0,
+        105.001033484375,
+        34.0
+      ],
+      "expected": "NEXT",
+      "rendered": "NEXT",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "NEXT",
+          "box": [
+            866.494,
+            371.910145,
+            898.438024,
+            385.292101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "pilot-sequencing",
+      "row": 3,
+      "column": 0,
+      "bbox_pdf_points": [
+        380.0037402291667,
+        395.0,
+        145.00142719270832,
+        34.0
+      ],
+      "expected": "Knowledge retrieval",
+      "rendered": "Knowledge retrieval",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Knowledge",
+          "box": [
+            385.994,
+            405.898145,
+            449.870057,
+            419.280101
+          ]
+        },
+        {
+          "text": "retrieval",
+          "box": [
+            453.191564,
+            405.898145,
+            499.78859,
+            419.280101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "pilot-sequencing",
+      "row": 3,
+      "column": 1,
+      "bbox_pdf_points": [
+        525.0051674218751,
+        395.0,
+        180.0017716875,
+        34.0
+      ],
+      "expected": "Permissions need cleanup",
+      "rendered": "Permissions need cleanup",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Permissions",
+          "box": [
+            530.986,
+            398.698145,
+            596.21704,
+            412.080101
+          ]
+        },
+        {
+          "text": "need",
+          "box": [
+            599.550538,
+            398.698145,
+            626.19454,
+            412.080101
+          ]
+        },
+        {
+          "text": "cleanup",
+          "box": [
+            530.986,
+            413.098145,
+            572.930518,
+            426.480101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "pilot-sequencing",
+      "row": 3,
+      "column": 2,
+      "bbox_pdf_points": [
+        705.006939109375,
+        395.0,
+        125.00123033854166,
+        34.0
+      ],
+      "expected": "Knowledge lead",
+      "rendered": "Knowledge lead",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Knowledge",
+          "box": [
+            710.986,
+            405.898145,
+            770.245522,
+            419.280101
+          ]
+        },
+        {
+          "text": "lead",
+          "box": [
+            773.567029,
+            405.898145,
+            796.218028,
+            419.280101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "table": "pilot-sequencing",
+      "row": 3,
+      "column": 3,
+      "bbox_pdf_points": [
+        830.0081694479167,
+        395.0,
+        105.001033484375,
+        34.0
+      ],
+      "expected": "LATER",
+      "rendered": "LATER",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "LATER",
+          "box": [
+            862.923,
+            405.898145,
+            901.953705,
+            419.280101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 0,
+      "column": 1,
+      "bbox_pdf_points": [
+        164.00161420416666,
+        239.0,
+        182.50179629427083,
+        26.0
+      ],
+      "expected": "Approved sources",
+      "rendered": "Approved sources",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Approved",
+          "box": [
+            169.965,
+            245.939145,
+            225.855051,
+            259.321101
+          ]
+        },
+        {
+          "text": "sources",
+          "box": [
+            229.176558,
+            245.939145,
+            275.114079,
+            259.321101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 0,
+      "column": 2,
+      "bbox_pdf_points": [
+        346.5034104984375,
+        239.0,
+        198.50195377760417,
+        26.0
+      ],
+      "expected": "Grounded draft",
+      "rendered": "Grounded draft",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Grounded",
+          "box": [
+            352.46,
+            245.939145,
+            409.669061,
+            259.321101
+          ]
+        },
+        {
+          "text": "draft",
+          "box": [
+            413.01455,
+            245.939145,
+            439.622579,
+            259.321101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 0,
+      "column": 3,
+      "bbox_pdf_points": [
+        545.0053642760417,
+        239.0,
+        198.00194885625,
+        26.0
+      ],
+      "expected": "Expert review",
+      "rendered": "Expert review",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Expert",
+          "box": [
+            550.942,
+            245.939145,
+            588.222019,
+            259.321101
+          ]
+        },
+        {
+          "text": "review",
+          "box": [
+            591.555517,
+            245.939145,
+            628.823545,
+            259.321101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 0,
+      "column": 4,
+      "bbox_pdf_points": [
+        743.0073131322918,
+        239.0,
+        200.00196854166666,
+        26.0
+      ],
+      "expected": "Client-ready output",
+      "rendered": "Client-ready output",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Client-ready",
+          "box": [
+            748.942,
+            245.939145,
+            818.154052,
+            259.321101
+          ]
+        },
+        {
+          "text": "output",
+          "box": [
+            821.475559,
+            245.939145,
+            858.719605,
+            259.321101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 1,
+      "column": 0,
+      "bbox_pdf_points": [
+        17.000167326041666,
+        265.0,
+        147.001446878125,
+        26.0
+      ],
+      "expected": "INPUT",
+      "rendered": "INPUT",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "INPUT",
+          "box": [
+            22.989,
+            271.932145,
+            58.914036,
+            285.314101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 1,
+      "column": 1,
+      "bbox_pdf_points": [
+        164.00161420416666,
+        265.0,
+        182.50179629427083,
+        26.0
+      ],
+      "expected": "Corpus request",
+      "rendered": "Corpus request",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Corpus",
+          "box": [
+            169.965,
+            271.932145,
+            208.57602,
+            285.314101
+          ]
+        },
+        {
+          "text": "request",
+          "box": [
+            211.885536,
+            271.932145,
+            251.815566,
+            285.314101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 1,
+      "column": 2,
+      "bbox_pdf_points": [
+        346.5034104984375,
+        265.0,
+        198.50195377760417,
+        26.0
+      ],
+      "expected": "Source pack + task brief",
+      "rendered": "Source pack + task brief",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Source",
+          "box": [
+            352.46,
+            271.932145,
+            390.399524,
+            285.314101
+          ]
+        },
+        {
+          "text": "pack",
+          "box": [
+            393.70904,
+            271.932145,
+            419.022041,
+            285.314101
+          ]
+        },
+        {
+          "text": "+",
+          "box": [
+            422.331557,
+            271.932145,
+            429.32231,
+            285.314101
+          ]
+        },
+        {
+          "text": "task",
+          "box": [
+            432.655808,
+            271.932145,
+            454.635311,
+            285.314101
+          ]
+        },
+        {
+          "text": "brief",
+          "box": [
+            457.944827,
+            271.932145,
+            481.24334,
+            285.314101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 1,
+      "column": 3,
+      "bbox_pdf_points": [
+        545.0053642760417,
+        265.0,
+        198.00194885625,
+        26.0
+      ],
+      "expected": "Draft + evidence trail",
+      "rendered": "Draft + evidence trail",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Draft",
+          "box": [
+            550.942,
+            271.932145,
+            576.866542,
+            285.314101
+          ]
+        },
+        {
+          "text": "+",
+          "box": [
+            580.188049,
+            271.932145,
+            587.178802,
+            285.314101
+          ]
+        },
+        {
+          "text": "evidence",
+          "box": [
+            590.5123,
+            271.932145,
+            638.440327,
+            285.314101
+          ]
+        },
+        {
+          "text": "trail",
+          "box": [
+            641.773825,
+            271.932145,
+            661.067344,
+            285.314101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 1,
+      "column": 4,
+      "bbox_pdf_points": [
+        743.0073131322918,
+        265.0,
+        200.00196854166666,
+        26.0
+      ],
+      "expected": "Signed draft + resolved defects",
+      "rendered": "Signed draft + resolved defects",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Signed",
+          "box": [
+            748.942,
+            271.932145,
+            786.23401,
+            285.314101
+          ]
+        },
+        {
+          "text": "draft",
+          "box": [
+            789.543526,
+            271.932145,
+            813.513535,
+            285.314101
+          ]
+        },
+        {
+          "text": "+",
+          "box": [
+            816.835042,
+            271.932145,
+            823.825795,
+            285.314101
+          ]
+        },
+        {
+          "text": "resolved",
+          "box": [
+            827.159293,
+            271.932145,
+            872.437309,
+            285.314101
+          ]
+        },
+        {
+          "text": "defects",
+          "box": [
+            875.770807,
+            271.932145,
+            914.393818,
+            285.314101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 2,
+      "column": 0,
+      "bbox_pdf_points": [
+        17.000167326041666,
+        291.0,
+        147.001446878125,
+        28.0
+      ],
+      "expected": "OUTPUT",
+      "rendered": "OUTPUT",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "OUTPUT",
+          "box": [
+            22.989,
+            298.918145,
+            72.224046,
+            312.300101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 2,
+      "column": 1,
+      "bbox_pdf_points": [
+        164.00161420416666,
+        291.0,
+        182.50179629427083,
+        28.0
+      ],
+      "expected": "Versioned source pack",
+      "rendered": "Versioned source pack",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Versioned",
+          "box": [
+            169.965,
+            298.918145,
+            223.253004,
+            312.300101
+          ]
+        },
+        {
+          "text": "source",
+          "box": [
+            226.574511,
+            298.918145,
+            262.523529,
+            312.300101
+          ]
+        },
+        {
+          "text": "pack",
+          "box": [
+            265.833045,
+            298.918145,
+            291.146046,
+            312.300101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 2,
+      "column": 2,
+      "bbox_pdf_points": [
+        346.5034104984375,
+        291.0,
+        198.50195377760417,
+        28.0
+      ],
+      "expected": "Cited draft + uncertainty flags",
+      "rendered": "Cited draft + uncertainty flags",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Cited",
+          "box": [
+            352.46,
+            298.918145,
+            380.411021,
+            312.300101
+          ]
+        },
+        {
+          "text": "draft",
+          "box": [
+            383.720537,
+            298.918145,
+            407.690546,
+            312.300101
+          ]
+        },
+        {
+          "text": "+",
+          "box": [
+            411.012053,
+            298.918145,
+            418.002806,
+            312.300101
+          ]
+        },
+        {
+          "text": "uncertainty",
+          "box": [
+            421.336304,
+            298.918145,
+            479.912339,
+            312.300101
+          ]
+        },
+        {
+          "text": "flags",
+          "box": [
+            483.221855,
+            298.918145,
+            508.534856,
+            312.300101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 2,
+      "column": 3,
+      "bbox_pdf_points": [
+        545.0053642760417,
+        291.0,
+        198.00194885625,
+        28.0
+      ],
+      "expected": "Signed review or defect log",
+      "rendered": "Signed review or defect log",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Signed",
+          "box": [
+            550.942,
+            298.918145,
+            588.23401,
+            312.300101
+          ]
+        },
+        {
+          "text": "review",
+          "box": [
+            591.543526,
+            298.918145,
+            626.161543,
+            312.300101
+          ]
+        },
+        {
+          "text": "or",
+          "box": [
+            629.471059,
+            298.918145,
+            640.131058,
+            312.300101
+          ]
+        },
+        {
+          "text": "defect",
+          "box": [
+            643.440574,
+            298.918145,
+            676.068085,
+            312.300101
+          ]
+        },
+        {
+          "text": "log",
+          "box": [
+            679.389592,
+            298.918145,
+            695.385586,
+            312.300101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 2,
+      "column": 4,
+      "bbox_pdf_points": [
+        743.0073131322918,
+        291.0,
+        200.00196854166666,
+        28.0
+      ],
+      "expected": "Authorized client deliverable",
+      "rendered": "Authorized client deliverable",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Authorized",
+          "box": [
+            748.942,
+            298.918145,
+            806.199025,
+            312.300101
+          ]
+        },
+        {
+          "text": "client",
+          "box": [
+            809.520532,
+            298.918145,
+            837.483544,
+            312.300101
+          ]
+        },
+        {
+          "text": "deliverable",
+          "box": [
+            840.805051,
+            298.918145,
+            898.733572,
+            312.300101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 3,
+      "column": 0,
+      "bbox_pdf_points": [
+        17.000167326041666,
+        319.0,
+        147.001446878125,
+        26.5
+      ],
+      "expected": "OWNER",
+      "rendered": "OWNER",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "OWNER",
+          "box": [
+            22.989,
+            326.131145,
+            68.91453,
+            339.513101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 3,
+      "column": 1,
+      "bbox_pdf_points": [
+        164.00161420416666,
+        319.0,
+        182.50179629427083,
+        26.5
+      ],
+      "expected": "Source steward",
+      "rendered": "Source steward",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Source",
+          "box": [
+            169.965,
+            326.131145,
+            207.904524,
+            339.513101
+          ]
+        },
+        {
+          "text": "steward",
+          "box": [
+            211.21404,
+            326.131145,
+            253.170549,
+            339.513101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 3,
+      "column": 2,
+      "bbox_pdf_points": [
+        346.5034104984375,
+        319.0,
+        198.50195377760417,
+        26.5
+      ],
+      "expected": "Engagement team",
+      "rendered": "Engagement team",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Engagement",
+          "box": [
+            352.46,
+            326.131145,
+            420.377024,
+            339.513101
+          ]
+        },
+        {
+          "text": "team",
+          "box": [
+            423.698531,
+            326.131145,
+            450.318551,
+            339.513101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 3,
+      "column": 3,
+      "bbox_pdf_points": [
+        545.0053642760417,
+        319.0,
+        198.00194885625,
+        26.5
+      ],
+      "expected": "Expert reviewer",
+      "rendered": "Expert reviewer",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Expert",
+          "box": [
+            550.942,
+            326.131145,
+            585.548026,
+            339.513101
+          ]
+        },
+        {
+          "text": "reviewer",
+          "box": [
+            588.893515,
+            326.131145,
+            634.15954,
+            339.513101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 3,
+      "column": 4,
+      "bbox_pdf_points": [
+        743.0073131322918,
+        319.0,
+        200.00196854166666,
+        26.5
+      ],
+      "expected": "Engagement lead",
+      "rendered": "Engagement lead",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Engagement",
+          "box": [
+            748.942,
+            326.131145,
+            816.859024,
+            339.513101
+          ]
+        },
+        {
+          "text": "lead",
+          "box": [
+            820.180531,
+            326.131145,
+            842.83153,
+            339.513101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 4,
+      "column": 0,
+      "bbox_pdf_points": [
+        17.000167326041666,
+        345.5,
+        147.001446878125,
+        42.5
+      ],
+      "expected": "RELEASE CONTROL",
+      "rendered": "RELEASE CONTROL",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "RELEASE",
+          "box": [
+            22.989,
+            360.628145,
+            79.574529,
+            374.010101
+          ]
+        },
+        {
+          "text": "CONTROL",
+          "box": [
+            82.908027,
+            360.628145,
+            142.131576,
+            374.010101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 4,
+      "column": 1,
+      "bbox_pdf_points": [
+        164.00161420416666,
+        345.5,
+        182.50179629427083,
+        42.5
+      ],
+      "expected": "Verify permissions and dates",
+      "rendered": "Verify permissions and dates",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Verify",
+          "box": [
+            169.965,
+            353.428145,
+            199.9425,
+            366.810101
+          ]
+        },
+        {
+          "text": "permissions",
+          "box": [
+            203.252016,
+            353.428145,
+            267.164046,
+            366.810101
+          ]
+        },
+        {
+          "text": "and",
+          "box": [
+            169.965,
+            367.828145,
+            189.942006,
+            381.210101
+          ]
+        },
+        {
+          "text": "dates",
+          "box": [
+            193.251522,
+            367.828145,
+            222.557526,
+            381.210101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 4,
+      "column": 2,
+      "bbox_pdf_points": [
+        346.5034104984375,
+        345.5,
+        198.50195377760417,
+        42.5
+      ],
+      "expected": "Check citations and evidence gaps",
+      "rendered": "Check citations and evidence gaps",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Check",
+          "box": [
+            352.46,
+            353.428145,
+            386.406521,
+            366.810101
+          ]
+        },
+        {
+          "text": "citations",
+          "box": [
+            389.716037,
+            353.428145,
+            433.63907,
+            366.810101
+          ]
+        },
+        {
+          "text": "and",
+          "box": [
+            352.46,
+            367.828145,
+            372.437006,
+            381.210101
+          ]
+        },
+        {
+          "text": "evidence",
+          "box": [
+            375.746522,
+            367.828145,
+            423.710522,
+            381.210101
+          ]
+        },
+        {
+          "text": "gaps",
+          "box": [
+            427.032029,
+            367.828145,
+            453.004535,
+            381.210101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 4,
+      "column": 3,
+      "bbox_pdf_points": [
+        545.0053642760417,
+        345.5,
+        198.00194885625,
+        42.5
+      ],
+      "expected": "Validate claims and quality",
+      "rendered": "Validate claims and quality",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Validate",
+          "box": [
+            550.942,
+            353.428145,
+            593.318194,
+            366.810101
+          ]
+        },
+        {
+          "text": "claims",
+          "box": [
+            596.651692,
+            353.428145,
+            630.574231,
+            366.810101
+          ]
+        },
+        {
+          "text": "and",
+          "box": [
+            550.942,
+            367.828145,
+            570.919006,
+            381.210101
+          ]
+        },
+        {
+          "text": "quality",
+          "box": [
+            574.228522,
+            367.828145,
+            608.846539,
+            381.210101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "table": "responsibility-matrix",
+      "row": 4,
+      "column": 4,
+      "bbox_pdf_points": [
+        743.0073131322918,
+        345.5,
+        200.00196854166666,
+        42.5
+      ],
+      "expected": "Confirm release approval",
+      "rendered": "Confirm release approval",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Confirm",
+          "box": [
+            748.942,
+            353.428145,
+            790.874527,
+            366.810101
+          ]
+        },
+        {
+          "text": "release",
+          "box": [
+            794.184043,
+            353.428145,
+            833.47855,
+            366.810101
+          ]
+        },
+        {
+          "text": "approval",
+          "box": [
+            748.942,
+            367.828145,
+            794.879521,
+            381.210101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 0,
+      "column": 0,
+      "bbox_pdf_points": [
+        21.500211618229166,
+        115.0,
+        177.50174708072916,
+        40.0
+      ],
+      "expected": "WORKSTREAM / OWNER",
+      "rendered": "WORKSTREAM / OWNER",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "WORKSTREAM",
+          "box": [
+            27.468,
+            128.953145,
+            116.009544,
+            142.335101
+          ]
+        },
+        {
+          "text": "/",
+          "box": [
+            119.31906,
+            128.953145,
+            122.640567,
+            142.335101
+          ]
+        },
+        {
+          "text": "OWNER",
+          "box": [
+            125.962074,
+            128.953145,
+            171.899595,
+            142.335101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 0,
+      "column": 1,
+      "bbox_pdf_points": [
+        199.00195869895833,
+        115.0,
+        184.00181105833335,
+        40.0
+      ],
+      "expected": "WEEKS 1–2 Approve & baseline",
+      "rendered": "WEEKS 1–2 Approve & baseline",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "WEEKS",
+          "box": [
+            204.945,
+            121.753145,
+            248.892015,
+            135.135101
+          ]
+        },
+        {
+          "text": "1–2",
+          "box": [
+            252.201531,
+            121.753145,
+            272.190528,
+            135.135101
+          ]
+        },
+        {
+          "text": "Approve",
+          "box": [
+            204.945,
+            136.153145,
+            253.520541,
+            149.535101
+          ]
+        },
+        {
+          "text": "&",
+          "box": [
+            256.830057,
+            136.153145,
+            265.487559,
+            149.535101
+          ]
+        },
+        {
+          "text": "baseline",
+          "box": [
+            268.821057,
+            136.153145,
+            316.737093,
+            149.535101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 0,
+      "column": 2,
+      "bbox_pdf_points": [
+        383.0037697572917,
+        115.0,
+        184.00181105833335,
+        40.0
+      ],
+      "expected": "WEEKS 3–4 Build & test",
+      "rendered": "WEEKS 3–4 Build & test",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "WEEKS",
+          "box": [
+            388.942,
+            121.753145,
+            432.889015,
+            135.135101
+          ]
+        },
+        {
+          "text": "3–4",
+          "box": [
+            436.198531,
+            121.753145,
+            456.187528,
+            135.135101
+          ]
+        },
+        {
+          "text": "Build",
+          "box": [
+            388.942,
+            136.153145,
+            418.859545,
+            149.535101
+          ]
+        },
+        {
+          "text": "&",
+          "box": [
+            422.181052,
+            136.153145,
+            430.838554,
+            149.535101
+          ]
+        },
+        {
+          "text": "test",
+          "box": [
+            434.172052,
+            136.153145,
+            455.468068,
+            149.535101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 0,
+      "column": 3,
+      "bbox_pdf_points": [
+        567.005580815625,
+        115.0,
+        184.00181105833335,
+        40.0
+      ],
+      "expected": "WEEKS 5–8 Pilot & learn",
+      "rendered": "WEEKS 5–8 Pilot & learn",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "WEEKS",
+          "box": [
+            572.939,
+            121.753145,
+            616.886015,
+            135.135101
+          ]
+        },
+        {
+          "text": "5–8",
+          "box": [
+            620.195531,
+            121.753145,
+            640.184528,
+            135.135101
+          ]
+        },
+        {
+          "text": "Pilot",
+          "box": [
+            572.939,
+            136.153145,
+            598.887524,
+            149.535101
+          ]
+        },
+        {
+          "text": "&",
+          "box": [
+            602.19704,
+            136.153145,
+            610.854542,
+            149.535101
+          ]
+        },
+        {
+          "text": "learn",
+          "box": [
+            614.18804,
+            136.153145,
+            642.798566,
+            149.535101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 0,
+      "column": 4,
+      "bbox_pdf_points": [
+        751.0073918739583,
+        115.0,
+        185.50182582239583,
+        40.0
+      ],
+      "expected": "WEEKS 9–12 Prove & decide",
+      "rendered": "WEEKS 9–12 Prove & decide",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "WEEKS",
+          "box": [
+            756.935,
+            121.753145,
+            800.882015,
+            135.135101
+          ]
+        },
+        {
+          "text": "9–12",
+          "box": [
+            804.191531,
+            121.753145,
+            830.847524,
+            135.135101
+          ]
+        },
+        {
+          "text": "Prove",
+          "box": [
+            756.935,
+            136.153145,
+            790.222016,
+            149.535101
+          ]
+        },
+        {
+          "text": "&",
+          "box": [
+            793.543523,
+            136.153145,
+            802.201025,
+            149.535101
+          ]
+        },
+        {
+          "text": "decide",
+          "box": [
+            805.510541,
+            136.153145,
+            843.474047,
+            149.535101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 1,
+      "column": 0,
+      "bbox_pdf_points": [
+        21.500211618229166,
+        155.0,
+        177.50174708072916,
+        44.0
+      ],
+      "expected": "Data & access\nSource steward",
+      "rendered": "Data & access Source steward",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Data",
+          "box": [
+            27.468,
+            163.734145,
+            53.428515,
+            177.116101
+          ]
+        },
+        {
+          "text": "&",
+          "box": [
+            56.750022,
+            163.734145,
+            65.407524,
+            177.116101
+          ]
+        },
+        {
+          "text": "access",
+          "box": [
+            68.71704,
+            163.734145,
+            108.683043,
+            177.116101
+          ]
+        },
+        {
+          "text": "Source",
+          "box": [
+            27.468,
+            178.134145,
+            65.407524,
+            191.516101
+          ]
+        },
+        {
+          "text": "steward",
+          "box": [
+            68.71704,
+            178.134145,
+            110.673549,
+            191.516101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 1,
+      "column": 1,
+      "bbox_pdf_points": [
+        199.00195869895833,
+        155.0,
+        184.00181105833335,
+        44.0
+      ],
+      "expected": "Approved corpus Access register",
+      "rendered": "Approved corpus Access register",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Approved",
+          "box": [
+            204.945,
+            163.734145,
+            256.218516,
+            177.116101
+          ]
+        },
+        {
+          "text": "corpus",
+          "box": [
+            259.528032,
+            163.734145,
+            295.489041,
+            177.116101
+          ]
+        },
+        {
+          "text": "Access",
+          "box": [
+            204.945,
+            178.134145,
+            243.532038,
+            191.516101
+          ]
+        },
+        {
+          "text": "register",
+          "box": [
+            246.865536,
+            178.134145,
+            286.807557,
+            191.516101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 1,
+      "column": 2,
+      "bbox_pdf_points": [
+        383.0037697572917,
+        155.0,
+        184.00181105833335,
+        44.0
+      ],
+      "expected": "Source refresh Named stewards",
+      "rendered": "Source refresh Named stewards",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Source",
+          "box": [
+            388.942,
+            163.734145,
+            426.881524,
+            177.116101
+          ]
+        },
+        {
+          "text": "refresh",
+          "box": [
+            430.19104,
+            163.734145,
+            467.48305,
+            177.116101
+          ]
+        },
+        {
+          "text": "Named",
+          "box": [
+            388.942,
+            178.134145,
+            427.541029,
+            191.516101
+          ]
+        },
+        {
+          "text": "stewards",
+          "box": [
+            430.862536,
+            178.134145,
+            478.778572,
+            191.516101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 1,
+      "column": 3,
+      "bbox_pdf_points": [
+        567.005580815625,
+        155.0,
+        184.00181105833335,
+        44.0
+      ],
+      "expected": "Weekly access and freshness checks",
+      "rendered": "Weekly access and freshness checks",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Weekly",
+          "box": [
+            572.939,
+            163.734145,
+            611.993687,
+            177.116101
+          ]
+        },
+        {
+          "text": "access",
+          "box": [
+            615.303203,
+            163.734145,
+            652.583222,
+            177.116101
+          ]
+        },
+        {
+          "text": "and",
+          "box": [
+            655.892738,
+            163.734145,
+            675.881735,
+            177.116101
+          ]
+        },
+        {
+          "text": "freshness",
+          "box": [
+            572.939,
+            178.134145,
+            624.836048,
+            191.516101
+          ]
+        },
+        {
+          "text": "checks",
+          "box": [
+            628.145564,
+            178.134145,
+            665.425583,
+            191.516101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 1,
+      "column": 4,
+      "bbox_pdf_points": [
+        751.0073918739583,
+        155.0,
+        185.50182582239583,
+        44.0
+      ],
+      "expected": "Audit closeout Release inventory",
+      "rendered": "Audit closeout Release inventory",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Audit",
+          "box": [
+            756.935,
+            163.734145,
+            784.226516,
+            177.116101
+          ]
+        },
+        {
+          "text": "closeout",
+          "box": [
+            787.548023,
+            163.734145,
+            832.154543,
+            177.116101
+          ]
+        },
+        {
+          "text": "Release",
+          "box": [
+            756.935,
+            178.134145,
+            800.858033,
+            191.516101
+          ]
+        },
+        {
+          "text": "inventory",
+          "box": [
+            804.167549,
+            178.134145,
+            852.767072,
+            191.516101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 2,
+      "column": 0,
+      "bbox_pdf_points": [
+        21.500211618229166,
+        199.0,
+        177.50174708072916,
+        44.0
+      ],
+      "expected": "Workflow & product\nProduct lead",
+      "rendered": "Workflow & product Product lead",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Workflow",
+          "box": [
+            27.468,
+            207.728145,
+            81.139716,
+            221.110101
+          ]
+        },
+        {
+          "text": "&",
+          "box": [
+            84.473214,
+            207.728145,
+            93.130716,
+            221.110101
+          ]
+        },
+        {
+          "text": "product",
+          "box": [
+            96.464214,
+            207.728145,
+            141.034761,
+            221.110101
+          ]
+        },
+        {
+          "text": "Product",
+          "box": [
+            27.468,
+            222.128145,
+            68.741022,
+            235.510101
+          ]
+        },
+        {
+          "text": "lead",
+          "box": [
+            72.062529,
+            222.128145,
+            94.713528,
+            235.510101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 2,
+      "column": 1,
+      "bbox_pdf_points": [
+        199.00195869895833,
+        199.0,
+        184.00181105833335,
+        44.0
+      ],
+      "expected": "Task mapping Baseline time logs",
+      "rendered": "Task mapping Baseline time logs",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Task",
+          "box": [
+            204.945,
+            207.728145,
+            229.550532,
+            221.110101
+          ]
+        },
+        {
+          "text": "mapping",
+          "box": [
+            232.88403,
+            207.728145,
+            278.821551,
+            221.110101
+          ]
+        },
+        {
+          "text": "Baseline",
+          "box": [
+            204.945,
+            222.128145,
+            250.894512,
+            235.510101
+          ]
+        },
+        {
+          "text": "time",
+          "box": [
+            254.216019,
+            222.128145,
+            276.843036,
+            235.510101
+          ]
+        },
+        {
+          "text": "logs",
+          "box": [
+            280.152552,
+            222.128145,
+            302.132055,
+            235.510101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 2,
+      "column": 2,
+      "bbox_pdf_points": [
+        383.0037697572917,
+        199.0,
+        184.00181105833335,
+        44.0
+      ],
+      "expected": "Grounded draft Visible citations",
+      "rendered": "Grounded draft Visible citations",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Grounded",
+          "box": [
+            388.942,
+            207.728145,
+            442.218013,
+            221.110101
+          ]
+        },
+        {
+          "text": "draft",
+          "box": [
+            445.53952,
+            207.728145,
+            469.485547,
+            221.110101
+          ]
+        },
+        {
+          "text": "Visible",
+          "box": [
+            388.942,
+            222.128145,
+            424.003684,
+            235.510101
+          ]
+        },
+        {
+          "text": "citations",
+          "box": [
+            427.337182,
+            222.128145,
+            471.272206,
+            235.510101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 2,
+      "column": 3,
+      "bbox_pdf_points": [
+        567.005580815625,
+        199.0,
+        184.00181105833335,
+        44.0
+      ],
+      "expected": "15-user pilot Defect fixes",
+      "rendered": "15-user pilot Defect fixes",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "15-user",
+          "box": [
+            572.939,
+            207.728145,
+            613.540526,
+            221.110101
+          ]
+        },
+        {
+          "text": "pilot",
+          "box": [
+            616.850042,
+            207.728145,
+            638.817554,
+            221.110101
+          ]
+        },
+        {
+          "text": "Defect",
+          "box": [
+            572.939,
+            222.128145,
+            607.509053,
+            235.510101
+          ]
+        },
+        {
+          "text": "fixes",
+          "box": [
+            610.854542,
+            222.128145,
+            635.472065,
+            235.510101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 2,
+      "column": 4,
+      "bbox_pdf_points": [
+        751.0073918739583,
+        199.0,
+        185.50182582239583,
+        44.0
+      ],
+      "expected": "Release candidate Runbook",
+      "rendered": "Release candidate Runbook",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Release",
+          "box": [
+            756.935,
+            207.728145,
+            800.858033,
+            221.110101
+          ]
+        },
+        {
+          "text": "candidate",
+          "box": [
+            804.167549,
+            207.728145,
+            856.124552,
+            221.110101
+          ]
+        },
+        {
+          "text": "Runbook",
+          "box": [
+            756.935,
+            222.128145,
+            804.863027,
+            235.510101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 3,
+      "column": 0,
+      "bbox_pdf_points": [
+        21.500211618229166,
+        243.0,
+        177.50174708072916,
+        44.0
+      ],
+      "expected": "Quality & controls\nExpert reviewer",
+      "rendered": "Quality & controls Expert reviewer",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Quality",
+          "box": [
+            27.468,
+            251.721145,
+            68.057535,
+            265.103101
+          ]
+        },
+        {
+          "text": "&",
+          "box": [
+            71.379042,
+            251.721145,
+            80.036544,
+            265.103101
+          ]
+        },
+        {
+          "text": "controls",
+          "box": [
+            83.34606,
+            251.721145,
+            130.602591,
+            265.103101
+          ]
+        },
+        {
+          "text": "Expert",
+          "box": [
+            27.468,
+            266.121145,
+            62.074026,
+            279.503101
+          ]
+        },
+        {
+          "text": "reviewer",
+          "box": [
+            65.419515,
+            266.121145,
+            110.68554,
+            279.503101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 3,
+      "column": 1,
+      "bbox_pdf_points": [
+        199.00195869895833,
+        243.0,
+        184.00181105833335,
+        44.0
+      ],
+      "expected": "Risk boundaries Review criteria",
+      "rendered": "Risk boundaries Review criteria",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Risk",
+          "box": [
+            204.945,
+            251.721145,
+            228.231522,
+            265.103101
+          ]
+        },
+        {
+          "text": "boundaries",
+          "box": [
+            231.541038,
+            251.721145,
+            290.812551,
+            265.103101
+          ]
+        },
+        {
+          "text": "Review",
+          "box": [
+            204.945,
+            266.121145,
+            244.203534,
+            279.503101
+          ]
+        },
+        {
+          "text": "criteria",
+          "box": [
+            247.51305,
+            266.121145,
+            283.462068,
+            279.503101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 3,
+      "column": 2,
+      "bbox_pdf_points": [
+        383.0037697572917,
+        243.0,
+        184.00181105833335,
+        44.0
+      ],
+      "expected": "Test pack Rejection reasons",
+      "rendered": "Test pack Rejection reasons",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Test",
+          "box": [
+            388.942,
+            251.721145,
+            410.873539,
+            265.103101
+          ]
+        },
+        {
+          "text": "pack",
+          "box": [
+            414.219028,
+            251.721145,
+            439.520038,
+            265.103101
+          ]
+        },
+        {
+          "text": "Rejection",
+          "box": [
+            388.942,
+            266.121145,
+            438.860533,
+            279.503101
+          ]
+        },
+        {
+          "text": "reasons",
+          "box": [
+            442.18204,
+            266.121145,
+            484.786063,
+            279.503101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 3,
+      "column": 3,
+      "bbox_pdf_points": [
+        567.005580815625,
+        243.0,
+        184.00181105833335,
+        44.0
+      ],
+      "expected": "10 reviewed tasks Error triage",
+      "rendered": "10 reviewed tasks Error triage",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "10",
+          "box": [
+            572.939,
+            251.721145,
+            586.261001,
+            265.103101
+          ]
+        },
+        {
+          "text": "reviewed",
+          "box": [
+            589.582508,
+            251.721145,
+            637.522526,
+            265.103101
+          ]
+        },
+        {
+          "text": "tasks",
+          "box": [
+            640.844033,
+            251.721145,
+            668.783063,
+            265.103101
+          ]
+        },
+        {
+          "text": "Error",
+          "box": [
+            572.939,
+            266.121145,
+            599.55902,
+            279.503101
+          ]
+        },
+        {
+          "text": "triage",
+          "box": [
+            602.892518,
+            266.121145,
+            632.846036,
+            279.503101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 3,
+      "column": 4,
+      "bbox_pdf_points": [
+        751.0073918739583,
+        243.0,
+        185.50182582239583,
+        44.0
+      ],
+      "expected": "20 completed tasks Gate evidence",
+      "rendered": "20 completed tasks Gate evidence",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "20",
+          "box": [
+            756.935,
+            251.721145,
+            770.257001,
+            265.103101
+          ]
+        },
+        {
+          "text": "completed",
+          "box": [
+            773.578508,
+            251.721145,
+            828.845027,
+            265.103101
+          ]
+        },
+        {
+          "text": "tasks",
+          "box": [
+            832.166534,
+            251.721145,
+            860.105564,
+            265.103101
+          ]
+        },
+        {
+          "text": "Gate",
+          "box": [
+            756.935,
+            266.121145,
+            782.907506,
+            279.503101
+          ]
+        },
+        {
+          "text": "evidence",
+          "box": [
+            786.229013,
+            266.121145,
+            834.181022,
+            279.503101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 4,
+      "column": 0,
+      "bbox_pdf_points": [
+        21.500211618229166,
+        287.0,
+        177.50174708072916,
+        44.0
+      ],
+      "expected": "Adoption & value\nPractice lead",
+      "rendered": "Adoption & value Practice lead",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Adoption",
+          "box": [
+            27.468,
+            295.715145,
+            80.000571,
+            309.097101
+          ]
+        },
+        {
+          "text": "&",
+          "box": [
+            83.322078,
+            295.715145,
+            91.97958,
+            309.097101
+          ]
+        },
+        {
+          "text": "value",
+          "box": [
+            95.313078,
+            295.715145,
+            125.938092,
+            309.097101
+          ]
+        },
+        {
+          "text": "Practice",
+          "box": [
+            27.468,
+            310.115145,
+            70.731528,
+            323.497101
+          ]
+        },
+        {
+          "text": "lead",
+          "box": [
+            74.041044,
+            310.115145,
+            96.692043,
+            323.497101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 4,
+      "column": 1,
+      "bbox_pdf_points": [
+        199.00195869895833,
+        287.0,
+        184.00181105833335,
+        44.0
+      ],
+      "expected": "Sponsor & users Agree tracking",
+      "rendered": "Sponsor & users Agree tracking",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Sponsor",
+          "box": [
+            204.945,
+            295.715145,
+            249.55152,
+            309.097101
+          ]
+        },
+        {
+          "text": "&",
+          "box": [
+            252.885018,
+            295.715145,
+            260.871024,
+            309.097101
+          ]
+        },
+        {
+          "text": "users",
+          "box": [
+            264.204522,
+            295.715145,
+            293.498535,
+            309.097101
+          ]
+        },
+        {
+          "text": "Agree",
+          "box": [
+            204.945,
+            310.115145,
+            236.913006,
+            323.497101
+          ]
+        },
+        {
+          "text": "tracking",
+          "box": [
+            240.234513,
+            310.115145,
+            282.16704,
+            323.497101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 4,
+      "column": 2,
+      "bbox_pdf_points": [
+        383.0037697572917,
+        287.0,
+        184.00181105833335,
+        44.0
+      ],
+      "expected": "Training & support Measurement plan",
+      "rendered": "Training & support Measurement plan",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Training",
+          "box": [
+            388.942,
+            295.715145,
+            431.773852,
+            309.097101
+          ]
+        },
+        {
+          "text": "&",
+          "box": [
+            435.095359,
+            295.715145,
+            443.081365,
+            309.097101
+          ]
+        },
+        {
+          "text": "support",
+          "box": [
+            446.414863,
+            295.715145,
+            486.344893,
+            309.097101
+          ]
+        },
+        {
+          "text": "Measurement",
+          "box": [
+            388.942,
+            310.115145,
+            462.147055,
+            323.497101
+          ]
+        },
+        {
+          "text": "plan",
+          "box": [
+            465.468562,
+            310.115145,
+            488.119561,
+            323.497101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 4,
+      "column": 3,
+      "bbox_pdf_points": [
+        567.005580815625,
+        287.0,
+        184.00181105833335,
+        44.0
+      ],
+      "expected": "Weekly usage Feedback sessions",
+      "rendered": "Weekly usage Feedback sessions",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Weekly",
+          "box": [
+            572.939,
+            295.715145,
+            611.993687,
+            309.097101
+          ]
+        },
+        {
+          "text": "usage",
+          "box": [
+            615.303203,
+            295.715145,
+            647.930714,
+            309.097101
+          ]
+        },
+        {
+          "text": "Feedback",
+          "box": [
+            572.939,
+            310.115145,
+            625.531526,
+            323.497101
+          ]
+        },
+        {
+          "text": "sessions",
+          "box": [
+            628.841042,
+            310.115145,
+            675.46205,
+            323.497101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "table": "roadmap-matrix",
+      "row": 4,
+      "column": 4,
+      "bbox_pdf_points": [
+        751.0073918739583,
+        287.0,
+        185.50182582239583,
+        44.0
+      ],
+      "expected": "Benefit case Scale recommendation",
+      "rendered": "Benefit case Scale recommendation",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Benefit",
+          "box": [
+            756.935,
+            295.715145,
+            794.215019,
+            309.097101
+          ]
+        },
+        {
+          "text": "case",
+          "box": [
+            797.536526,
+            295.715145,
+            822.849527,
+            309.097101
+          ]
+        },
+        {
+          "text": "Scale",
+          "box": [
+            756.935,
+            310.115145,
+            786.900509,
+            323.497101
+          ]
+        },
+        {
+          "text": "recommendation",
+          "box": [
+            790.222016,
+            310.115145,
+            879.435056,
+            323.497101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "investment-table",
+      "row": 0,
+      "column": 0,
+      "bbox_pdf_points": [
+        310.00305123958333,
+        151.5,
+        142.5014025859375,
+        26.0
+      ],
+      "expected": "Cost item",
+      "rendered": "Cost item",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Cost",
+          "box": [
+            315.978,
+            158.461145,
+            342.586029,
+            171.843101
+          ]
+        },
+        {
+          "text": "item",
+          "box": [
+            345.919527,
+            158.461145,
+            370.549041,
+            171.843101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "investment-table",
+      "row": 0,
+      "column": 1,
+      "bbox_pdf_points": [
+        452.50445382552084,
+        151.5,
+        100.00098427083333,
+        26.0
+      ],
+      "expected": "Amount",
+      "rendered": "Amount",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Amount",
+          "box": [
+            458.476,
+            158.461145,
+            503.706052,
+            171.843101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "investment-table",
+      "row": 1,
+      "column": 0,
+      "bbox_pdf_points": [
+        310.00305123958333,
+        177.5,
+        142.5014025859375,
+        27.5
+      ],
+      "expected": "Implementation",
+      "rendered": "Implementation",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Implementation",
+          "box": [
+            315.978,
+            185.192145,
+            397.852548,
+            198.574101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "investment-table",
+      "row": 1,
+      "column": 1,
+      "bbox_pdf_points": [
+        452.50445382552084,
+        177.5,
+        100.00098427083333,
+        27.5
+      ],
+      "expected": "$85k",
+      "rendered": "$85k",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "$85k",
+          "box": [
+            458.476,
+            185.192145,
+            484.448506,
+            198.574101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "investment-table",
+      "row": 2,
+      "column": 0,
+      "bbox_pdf_points": [
+        310.00305123958333,
+        205.0,
+        142.5014025859375,
+        27.5
+      ],
+      "expected": "Pilot included",
+      "rendered": "Pilot included",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Pilot",
+          "box": [
+            315.978,
+            212.688145,
+            339.264522,
+            226.070101
+          ]
+        },
+        {
+          "text": "included",
+          "box": [
+            342.610011,
+            212.688145,
+            387.228522,
+            226.070101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "investment-table",
+      "row": 2,
+      "column": 1,
+      "bbox_pdf_points": [
+        452.50445382552084,
+        205.0,
+        100.00098427083333,
+        27.5
+      ],
+      "expected": "$25k",
+      "rendered": "$25k",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "$25k",
+          "box": [
+            458.476,
+            212.688145,
+            484.448506,
+            226.070101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "investment-table",
+      "row": 3,
+      "column": 0,
+      "bbox_pdf_points": [
+        310.00305123958333,
+        232.5,
+        142.5014025859375,
+        27.5
+      ],
+      "expected": "Annual operations",
+      "rendered": "Annual operations",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Annual",
+          "box": [
+            315.978,
+            240.184145,
+            353.27001,
+            253.566101
+          ]
+        },
+        {
+          "text": "operations",
+          "box": [
+            356.579526,
+            240.184145,
+            412.529532,
+            253.566101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "investment-table",
+      "row": 3,
+      "column": 1,
+      "bbox_pdf_points": [
+        452.50445382552084,
+        232.5,
+        100.00098427083333,
+        27.5
+      ],
+      "expected": "$30k",
+      "rendered": "$30k",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "$30k",
+          "box": [
+            458.476,
+            240.184145,
+            484.448506,
+            253.566101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "investment-table",
+      "row": 4,
+      "column": 0,
+      "bbox_pdf_points": [
+        310.00305123958333,
+        260.0,
+        142.5014025859375,
+        27.5
+      ],
+      "expected": "First-year total",
+      "rendered": "First-year total",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "First-year",
+          "box": [
+            315.978,
+            267.680145,
+            370.549041,
+            281.062101
+          ]
+        },
+        {
+          "text": "total",
+          "box": [
+            373.882539,
+            267.680145,
+            399.147576,
+            281.062101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "investment-table",
+      "row": 4,
+      "column": 1,
+      "bbox_pdf_points": [
+        452.50445382552084,
+        260.0,
+        100.00098427083333,
+        27.5
+      ],
+      "expected": "$115k",
+      "rendered": "$115k",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "$115k",
+          "box": [
+            458.476,
+            267.680145,
+            491.127493,
+            281.062101
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 0,
+      "column": 0,
+      "bbox_pdf_points": [
+        567.5055857369791,
+        151.5,
+        62.00061024791667,
+        44.0
+      ],
+      "expected": "Scenario",
+      "rendered": "Scenario",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Scenario",
+          "box": [
+            570.983,
+            168.45057,
+            613.088248,
+            179.617266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 0,
+      "column": 1,
+      "bbox_pdf_points": [
+        629.5061959848958,
+        151.5,
+        56.000551191666666,
+        44.0
+      ],
+      "expected": "Adoption",
+      "rendered": "Adoption",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Adoption",
+          "box": [
+            635.641,
+            168.45057,
+            679.347208,
+            179.617266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 0,
+      "column": 2,
+      "bbox_pdf_points": [
+        685.5067471765625,
+        151.5,
+        49.000482292708334,
+        44.0
+      ],
+      "expected": "Time saved",
+      "rendered": "Time saved",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Time",
+          "box": [
+            698.428,
+            162.44057,
+            721.521848,
+            173.607266
+          ]
+        },
+        {
+          "text": "saved",
+          "box": [
+            695.849,
+            174.45957,
+            724.11595,
+            185.626266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 0,
+      "column": 3,
+      "bbox_pdf_points": [
+        734.5072294692708,
+        151.5,
+        46.000452764583336,
+        44.0
+      ],
+      "expected": "Annual h",
+      "rendered": "Annual h",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Annual",
+          "box": [
+            740.58,
+            162.44057,
+            774.35025,
+            173.607266
+          ]
+        },
+        {
+          "text": "h",
+          "box": [
+            754.413,
+            174.45957,
+            760.51666,
+            185.626266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 0,
+      "column": 4,
+      "bbox_pdf_points": [
+        780.5076822338541,
+        151.5,
+        52.5005167421875,
+        44.0
+      ],
+      "expected": "Annual capacity",
+      "rendered": "Annual capacity",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Annual",
+          "box": [
+            789.817,
+            162.44057,
+            823.58725,
+            173.607266
+          ]
+        },
+        {
+          "text": "capacity",
+          "box": [
+            786.756,
+            174.45957,
+            826.649922,
+            185.626266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 0,
+      "column": 5,
+      "bbox_pdf_points": [
+        833.0081989760416,
+        151.5,
+        54.00053150625,
+        44.0
+      ],
+      "expected": "First-year value",
+      "rendered": "First-year value",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "First-year",
+          "box": [
+            837.241,
+            162.44057,
+            882.678246,
+            173.607266
+          ]
+        },
+        {
+          "text": "value",
+          "box": [
+            847.219,
+            174.45957,
+            872.714288,
+            185.626266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 0,
+      "column": 6,
+      "bbox_pdf_points": [
+        887.0087304822916,
+        151.5,
+        49.5004872140625,
+        44.0
+      ],
+      "expected": "Net vs $115k",
+      "rendered": "Net vs $115k",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Net",
+          "box": [
+            896.74,
+            162.44057,
+            912.809636,
+            173.607266
+          ]
+        },
+        {
+          "text": "vs",
+          "box": [
+            915.55128,
+            162.44057,
+            926.677952,
+            173.607266
+          ]
+        },
+        {
+          "text": "$115k",
+          "box": [
+            898.101,
+            174.45957,
+            925.287302,
+            185.626266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 1,
+      "column": 0,
+      "bbox_pdf_points": [
+        567.5055857369791,
+        195.5,
+        62.00061024791667,
+        38.5
+      ],
+      "expected": "Downside",
+      "rendered": "Downside",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Downside",
+          "box": [
+            570.983,
+            209.69457,
+            618.031212,
+            220.861266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 1,
+      "column": 1,
+      "bbox_pdf_points": [
+        629.5061959848958,
+        195.5,
+        56.000551191666666,
+        38.5
+      ],
+      "expected": "40%",
+      "rendered": "40%",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "40%",
+          "box": [
+            647.518,
+            209.69457,
+            667.47997,
+            220.861266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 1,
+      "column": 2,
+      "bbox_pdf_points": [
+        685.5067471765625,
+        195.5,
+        49.000482292708334,
+        38.5
+      ],
+      "expected": "20%",
+      "rendered": "20%",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "20%",
+          "box": [
+            700.016,
+            209.69457,
+            719.97797,
+            220.861266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 1,
+      "column": 3,
+      "bbox_pdf_points": [
+        734.5072294692708,
+        195.5,
+        46.000452764583336,
+        38.5
+      ],
+      "expected": "864",
+      "rendered": "864",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "864",
+          "box": [
+            749.14,
+            209.69457,
+            765.769972,
+            220.861266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 1,
+      "column": 4,
+      "bbox_pdf_points": [
+        780.5076822338541,
+        195.5,
+        52.5005167421875,
+        38.5
+      ],
+      "expected": "$108k",
+      "rendered": "$108k",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "$108k",
+          "box": [
+            793.134,
+            209.69457,
+            820.30029,
+            220.861266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 1,
+      "column": 5,
+      "bbox_pdf_points": [
+        833.0081989760416,
+        195.5,
+        54.00053150625,
+        38.5
+      ],
+      "expected": "$54k",
+      "rendered": "$54k",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "$54k",
+          "box": [
+            849.146,
+            209.69457,
+            870.778972,
+            220.861266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 1,
+      "column": 6,
+      "bbox_pdf_points": [
+        887.0087304822916,
+        195.5,
+        49.5004872140625,
+        38.5
+      ],
+      "expected": "−$61k",
+      "rendered": "−$61k",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "−$61k",
+          "box": [
+            897.704,
+            209.69457,
+            925.710794,
+            220.861266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 2,
+      "column": 0,
+      "bbox_pdf_points": [
+        567.5055857369791,
+        234.0,
+        62.00061024791667,
+        38.5
+      ],
+      "expected": "Base",
+      "rendered": "Base",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Base",
+          "box": [
+            570.983,
+            248.18857,
+            594.817292,
+            259.355266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 2,
+      "column": 1,
+      "bbox_pdf_points": [
+        629.5061959848958,
+        234.0,
+        56.000551191666666,
+        38.5
+      ],
+      "expected": "60%",
+      "rendered": "60%",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "60%",
+          "box": [
+            647.518,
+            248.18857,
+            667.47997,
+            259.355266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 2,
+      "column": 2,
+      "bbox_pdf_points": [
+        685.5067471765625,
+        234.0,
+        49.000482292708334,
+        38.5
+      ],
+      "expected": "30%",
+      "rendered": "30%",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "30%",
+          "box": [
+            700.016,
+            248.18857,
+            719.97797,
+            259.355266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 2,
+      "column": 3,
+      "bbox_pdf_points": [
+        734.5072294692708,
+        234.0,
+        46.000452764583336,
+        38.5
+      ],
+      "expected": "1,944",
+      "rendered": "1,944",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "1,944",
+          "box": [
+            745.002,
+            248.18857,
+            769.936952,
+            259.355266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 2,
+      "column": 4,
+      "bbox_pdf_points": [
+        780.5076822338541,
+        234.0,
+        52.5005167421875,
+        38.5
+      ],
+      "expected": "$243k",
+      "rendered": "$243k",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "$243k",
+          "box": [
+            793.134,
+            248.18857,
+            820.30029,
+            259.355266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 2,
+      "column": 5,
+      "bbox_pdf_points": [
+        833.0081989760416,
+        234.0,
+        54.00053150625,
+        38.5
+      ],
+      "expected": "$121.5k",
+      "rendered": "$121.5k",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "$121.5k",
+          "box": [
+            842.23,
+            248.18857,
+            877.70127,
+            259.355266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 2,
+      "column": 6,
+      "bbox_pdf_points": [
+        887.0087304822916,
+        234.0,
+        49.5004872140625,
+        38.5
+      ],
+      "expected": "+$6.5k",
+      "rendered": "+$6.5k",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "+$6.5k",
+          "box": [
+            896.315,
+            248.18857,
+            927.103462,
+            259.355266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 3,
+      "column": 0,
+      "bbox_pdf_points": [
+        567.5055857369791,
+        272.5,
+        62.00061024791667,
+        39.0
+      ],
+      "expected": "Upside",
+      "rendered": "Upside",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "Upside",
+          "box": [
+            570.983,
+            286.93857,
+            604.212926,
+            298.105266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 3,
+      "column": 1,
+      "bbox_pdf_points": [
+        629.5061959848958,
+        272.5,
+        56.000551191666666,
+        39.0
+      ],
+      "expected": "75%",
+      "rendered": "75%",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "75%",
+          "box": [
+            647.518,
+            286.93857,
+            667.47997,
+            298.105266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 3,
+      "column": 2,
+      "bbox_pdf_points": [
+        685.5067471765625,
+        272.5,
+        49.000482292708334,
+        39.0
+      ],
+      "expected": "40%",
+      "rendered": "40%",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "40%",
+          "box": [
+            700.016,
+            286.93857,
+            719.97797,
+            298.105266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 3,
+      "column": 3,
+      "bbox_pdf_points": [
+        734.5072294692708,
+        272.5,
+        46.000452764583336,
+        39.0
+      ],
+      "expected": "3,240",
+      "rendered": "3,240",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "3,240",
+          "box": [
+            745.002,
+            286.93857,
+            769.936952,
+            298.105266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 3,
+      "column": 4,
+      "bbox_pdf_points": [
+        780.5076822338541,
+        272.5,
+        52.5005167421875,
+        39.0
+      ],
+      "expected": "$405k",
+      "rendered": "$405k",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "$405k",
+          "box": [
+            793.134,
+            286.93857,
+            820.30029,
+            298.105266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 3,
+      "column": 5,
+      "bbox_pdf_points": [
+        833.0081989760416,
+        272.5,
+        54.00053150625,
+        39.0
+      ],
+      "expected": "$202.5k",
+      "rendered": "$202.5k",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "$202.5k",
+          "box": [
+            842.23,
+            286.93857,
+            877.70127,
+            298.105266
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "table": "sensitivity-table",
+      "row": 3,
+      "column": 6,
+      "bbox_pdf_points": [
+        887.0087304822916,
+        272.5,
+        49.5004872140625,
+        39.0
+      ],
+      "expected": "+$87.5k",
+      "rendered": "+$87.5k",
+      "missing_complete_tokens": [],
+      "rendered_words": [
+        {
+          "text": "+$87.5k",
+          "box": [
+            893.537,
+            286.93857,
+            929.848774,
+            298.105266
+          ]
+        }
+      ]
+    }
+  ],
+  "discrepancies": [],
+  "agent_interpretation_required": true,
+  "limitations": "PDF extraction can differ for ligatures or unusual scripts. An absent complete token is evidence to inspect, not a visual acceptance decision."
+}

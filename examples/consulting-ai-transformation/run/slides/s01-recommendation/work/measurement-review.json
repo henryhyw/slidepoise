@@ -1,5 +1,6 @@
 {
   "reviewer": "host_agent_visual_reasoning",
+  "reviewed_on": "2026-09-08",
   "stage": "measurement",
   "decision": "accepted",
   "material_issues": [],
@@ -10,27 +11,24 @@
     },
     {
       "path": "semantic-map.json",
-      "sha256": "2fa9939d5c3e019908db445bb9fb137c4744934f7f9686b5d6b48fb6d3e42888"
+      "sha256": "d344af5489d025889a2196c43ce38b6a0c5d6cb2f1b718376a1e4e9343fa181d"
     },
     {
       "path": "reconstruction-handoff.json",
-      "sha256": "1bffbbe20e2dd3ac303c79f8def53b6de6a0ca170d71b22b606d648e5c44c36f"
+      "sha256": "c94b93f7252ab1b280d2e35a5ffec8e66fe60cd31d9c9c87dad6d582862fea29"
     },
     {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "458bd571ba34c59becd0c3a9dba3d51ef7818233a36557b4826e76fd90445c7d"
+      "sha256": "6177652acb9ebaef3d1fdfba399a6c209ba9275da917b84e79e3ecfa1337ffc7"
     },
     {
       "path": "reconstruction/measurement/debug_overlay.png",
-      "sha256": "05136cf1ef0b481f30d54e4439d360f6180e19d8392da68112da503f14cfa701"
+      "sha256": "8937beb3b93891c1c6214b1e77b86221544b4982c36389a357297927a8eabb75"
     }
   ],
   "observations": [
-    "The overlay covers the full Georgia headline ink while retaining a separate, slightly higher native logical allocation for the Office baseline. The subtitle and each section have independent source-ink windows.",
-    "Three metric stacks, three numbered arguments, the ten-cell gate table and the decision band each retain their semantic ownership. Thin horizontal rules separate evidence blocks. No decorative connector, icon or raster owner has been introduced.",
-    "The reason-detail logical allocations move upward by eight body pixels after actual LibreOffice inspection. Their search windows remain fixed to the complete original two-line source text, including the exact $60k condition.",
-    "Four semantic groups describe the economic hypothesis, bounded-pilot reasoning, observable scale conditions and funding request. The native table owns its cells and no duplicate floating cell text is emitted.",
-    "The title, subtitle, body/section and decision text retain the shared 64, 32 and 28-pixel targets. All ten fitted text groups reach the authored size without an allocation-driven reduction.",
-    "Deck-level calibration aligns the title allocation at body x48 y19, the subtitle at y103, and the introduction rule at y165. The decision band uses body [48,793,1824,134], an 8-pixel bar and shared label/message allocations. Search windows remain anchored to the generated source ink, including the original separator and accent locations."
+    "I inspected the source and the OpenCV overlay. Visible-ink search regions are evidence for the host-authored objects. Coloured layout bounds can differ where native type wrapping or a recorded correction requires another allocation.",
+    "The three orange figures again dominate the opening. The rationale symbols and their text are legible at the same viewing scale as the gate table. The four gate values are left aligned.",
+    "The full semantic map is retained. Table and chart interiors belong to their native parent object. The measurement overlay does not independently judge semantic completeness."
   ]
 }

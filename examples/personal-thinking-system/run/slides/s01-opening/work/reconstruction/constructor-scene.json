@@ -24,6 +24,8 @@
         "stroke_width_px": 1,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 0.0
     },
     {
@@ -42,6 +44,8 @@
         "stroke_width_px": 1,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 0.0
     },
     {
@@ -53,7 +57,7 @@
         649,
         735
       ],
-      "source_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s01-opening/work/reconstruction/measurement/crops/hand-staircase-collage.png",
+      "source_path": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s01-opening/work/reconstruction/measurement/crops/hand-staircase-collage.png",
       "selected_asset_id": null,
       "fit": "fill",
       "preserve_aspect_ratio": true,
@@ -97,6 +101,7 @@
       "bullet_style": null,
       "semantic_role": "title-first",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     },
     {
@@ -136,6 +141,7 @@
       "bullet_style": null,
       "semantic_role": "title-second",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     },
     {
@@ -175,6 +181,7 @@
       "bullet_style": null,
       "semantic_role": "title-third",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     },
     {
@@ -214,6 +221,7 @@
       "bullet_style": null,
       "semantic_role": "subtitle",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     },
     {
@@ -253,6 +261,7 @@
       "bullet_style": null,
       "semantic_role": "publication_folio",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     },
     {
@@ -292,6 +301,7 @@
       "bullet_style": null,
       "semantic_role": "essay-label",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 30.0
     }
   ],
@@ -340,7 +350,7 @@
     "slide_number": 1
   },
   "sources": [
-    "Generated target visual: /Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s01-opening/work/accepted-slide.png"
+    "Generated target visual: /Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s01-opening/work/accepted-slide.png"
   ],
   "compiler_report": {
     "measured_entity_count": 9,
@@ -495,8 +505,8 @@
       "note": "No quality or reconstruction verdict is produced. Visual reasoning remains external."
     },
     "input_bindings": {
-      "measured_scene_sha256": "73fec8b5353cac74c4d3baba67ff5c9fcae51e318785489e861b1a9008d35979",
-      "reconstruction_contract_sha256": "e8d0a72b2d4a703e4e610552f1db12b98c4feb6a61e516c1fa5d43fa93c255e1",
+      "measured_scene_sha256": "61a99002ef04c842827ec06de5f2581494040ad439e0ffd8d07e9c984cae4d08",
+      "reconstruction_contract_sha256": "48511133853e0db0bf517d217f3ad1a6c0bbd72f703fc6b79d7ba3e535c3db6e",
       "resolved_design_sha256": "803440a27dca21dc9148b5b4ac29fed93193ccedd3b017e11a7984c0c78c5a86"
     }
   }

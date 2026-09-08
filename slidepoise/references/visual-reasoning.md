@@ -47,3 +47,19 @@ Inspect the accepted target beside the generation-region crop of the reconstruct
 - for novel illustrations, whether the chosen original/refined raster remains aspect-correct, visually clean, and centered/maximized inside the frozen measured box without changing layout geometry.
 
 If an issue requires visual judgement, record it in the host-Agent review artifact. Deterministic scripts may enforce an explicit resulting constraint but may not create or substitute the judgement.
+
+## Compare the content, then the treatment
+
+Before mapping, read the slide intent beside the generated image. Inventory the claims, evidence, qualifications and relationships that must survive. Carry that inventory independently in `reconstruction-handoff.json` as `content_obligations`. Bind each obligation to its semantic entity IDs. A directed relationship also binds its connector ID, source owners, target owners and direction. A caption alone does not fulfil a relationship. The constructor checks these explicit bindings. It cannot discover an obligation the host omitted.
+
+During reconstruction review, compare every substantive region at the same scale. Record concrete differences in emphasis, alignment, typography, geometry and meaning. Review the actual table cells, chart labels and connector paths, including secondary feedback routes. Separate intentional profile or canonical-asset substitutions from unintended loss. A shared role does not authorize smaller unrelated content or a different local layout. Retain the target's hierarchy and optical footprint when normalizing peers.
+
+If a generated connector is malformed, use the intended owners to correct it and record the exact change. If the intended relationship is unclear, return to the plan. Never discard a path because its generated geometry looks strange.
+
+## Review records are observations
+
+Write a new review only after opening the current persisted images. A change invalidates the affected review. Keep the previous record as history or leave its old hashes intact until inspection. Never refresh hashes under unchanged acceptance prose, run a script that reproduces fixed acceptance statements, or infer review from the successful reproduction of a previous deck. Hash checks establish which files a record describes. They cannot establish whether its observations are true.
+
+Review helpers may produce comparison images, crops, object inventories and blank finding forms. They must not prefill an acceptance decision or favourable observations. Record each material finding, the upstream change that addresses it, and the inspected result. Preserve any remaining limitation accurately.
+
+`render-deck-preview` also writes `rendered-text-evidence.json` when Poppler text extraction is available. It compares each native table cell with the complete words rendered inside that cell's PDF coordinates. Inspect reported discrepancies such as a source word rendered as two fragments. A matching word in a different cell does not conceal the discrepancy. Extraction evidence does not replace visual inspection, and unusual scripts or ligatures may need direct review.

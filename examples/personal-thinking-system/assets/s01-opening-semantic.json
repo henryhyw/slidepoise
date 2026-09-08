@@ -1,67 +1,302 @@
 {
-  "purpose": "Host-authored explanation of selected semantic groups. The full semantic map remains the reconstruction input.",
-  "source_semantic_map": "semantic-map.json",
-  "source_sha256": "361e38f8ac0abfea7d83b3fa1f0223ccd44f910bca0662f77d3e80f0ebd9c3e1",
+  "schema_version": "3.2.0",
+  "provenance": {
+    "created_by": "host_agent_visual_reasoning",
+    "source": "accepted_generated_image",
+    "composition_policy": "accepted_artwork_and_body_preserved_with_user_authorized_publication_folio_calibration",
+    "text_allocation_note": "Source-ink search windows and native textbox allocations are independently authored. Larger native serif allocations preserve the actual Office baseline and descenders.",
+    "revision": "Recurring publication_folio role and its cover-only companions follow work/deck-design.json. Source ink remains measured at the original target locations."
+  },
   "entities": [
     {
-      "id": "explanation-1",
-      "kind": "text",
-      "display_label": "Editable editorial typography",
+      "id": "paper-field",
+      "display_label": "Warm ivory page",
+      "kind": "shape",
+      "role": "paper-field",
+      "shape": "rectangle",
       "bbox_hint": [
-        86,
-        62,
-        765,
-        621
+        0,
+        0,
+        1672,
+        941
       ],
-      "source_member_ids": [
-        "title-first",
-        "title-second",
-        "title-third"
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 0,
+      "style_hint": {
+        "fill": "#FDFAF7",
+        "stroke": "none",
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "title-first",
+      "display_label": "A second",
+      "kind": "text",
+      "role": "title-first",
+      "text_style_role": "slide_title",
+      "text": "A second",
+      "bbox_hint": [
+        91,
+        62,
+        760,
+        246
+      ],
+      "typography_group": "opening-title",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 203
+      },
+      "search_bbox_hint": [
+        79,
+        111,
+        719,
+        169
       ]
     },
     {
-      "id": "explanation-2",
+      "id": "title-second",
+      "display_label": "thinking",
       "kind": "text",
-      "display_label": "Editable essay framing",
+      "role": "title-second",
+      "text_style_role": "slide_title",
+      "text": "thinking",
+      "bbox_hint": [
+        89,
+        245,
+        730,
+        262
+      ],
+      "typography_group": "opening-title",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 203
+      },
+      "search_bbox_hint": [
+        80,
+        297,
+        663,
+        205
+      ]
+    },
+    {
+      "id": "title-third",
+      "display_label": "system",
+      "kind": "text",
+      "role": "title-third",
+      "text_style_role": "slide_title",
+      "text": "system",
+      "bbox_hint": [
+        86,
+        408,
+        650,
+        275
+      ],
+      "typography_group": "opening-title",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Bodoni 72",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 203
+      },
+      "search_bbox_hint": [
+        87,
+        501,
+        543,
+        173
+      ]
+    },
+    {
+      "id": "subtitle",
+      "display_label": "Working with AI without outsourcing a point of view.",
+      "kind": "text",
+      "role": "subtitle",
+      "text_style_role": "subtitle",
+      "text": "Working with AI without outsourcing a point of view.",
       "bbox_hint": [
         90,
         680,
         745,
         42
       ],
-      "source_member_ids": [
-        "subtitle"
+      "typography_group": "opening-subtitle",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 28.5
+      },
+      "search_bbox_hint": [
+        86,
+        684,
+        649,
+        41
       ]
     },
     {
-      "id": "explanation-3",
+      "id": "field-note",
+      "display_label": "Field Notes series marker, part 01",
+      "kind": "text",
+      "role": "publication_folio",
+      "text_style_role": "emphasis_label",
+      "text": "FIELD NOTES / 01",
+      "bbox_hint": [
+        90,
+        868,
+        300,
+        38
+      ],
+      "typography_group": "publication-folio",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Andale Mono",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "user_exact",
+        "target_font_size_px": 21,
+        "char_spacing_px": 0,
+        "italic": false,
+        "align": "left",
+        "valign": "top",
+        "line_spacing": 1
+      },
+      "search_bbox_hint": [
+        87,
+        812,
+        218,
+        36
+      ]
+    },
+    {
+      "id": "footer-rule",
+      "display_label": "Short editorial rule",
+      "kind": "shape",
+      "role": "footer-rule",
+      "shape": "rectangle",
+      "bbox_hint": [
+        356,
+        883,
+        101,
+        1
+      ],
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 0,
+      "style_hint": {
+        "fill": "#77716B",
+        "stroke": "none",
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
+      },
+      "search_bbox_hint": [
+        356,
+        829,
+        101,
+        1
+      ]
+    },
+    {
+      "id": "essay-label",
+      "display_label": "An essay in five parts",
+      "kind": "text",
+      "role": "essay-label",
+      "text_style_role": "label",
+      "text": "An essay in five parts",
+      "bbox_hint": [
+        517,
+        865,
+        310,
+        36
+      ],
+      "typography_group": "essay-label",
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 30,
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "observed_foreground_color": "#242321",
+        "style_authority": "agent_visual_observation",
+        "target_font_size_px": 25.5
+      },
+      "search_bbox_hint": [
+        510,
+        812,
+        256,
+        39
+      ]
+    },
+    {
+      "id": "hand-staircase-collage",
+      "display_label": "Hand, paper and architectural staircase",
       "kind": "image",
-      "display_label": "Preserved photographic collage",
+      "role": "editorial_collage",
+      "visual_source_class": "novel_illustration",
       "bbox_hint": [
         920,
         87,
         678,
         769
       ],
-      "source_member_ids": [
-        "hand-staircase-collage"
-      ]
-    },
-    {
-      "id": "explanation-publication-folio",
-      "kind": "text",
-      "display_label": "Series identity, before calibration",
-      "bbox_hint": [
-        90,
-        814,
-        240,
-        32
-      ],
-      "source_member_ids": [
-        "field-note"
-      ],
-      "region_basis": "Original target allocation. The native publication role now uses the common deck allocation."
+      "geometry_policy": "agent_logical",
+      "reconstruction_significance": "independent_object",
+      "meaningful_visible": true,
+      "z": 10,
+      "raster_fit": "fill",
+      "raster_decision": {
+        "action": "reuse_original",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "reason": "The hand, staircase photograph, translucent paper and fine archival mark form one overlapping collage. This regional crop preserves its shadows and grain without including the title or subtitle.",
+        "source_dimensions_px": [
+          678,
+          769
+        ],
+        "intended_output_size_px": [
+          678,
+          769
+        ],
+        "intrinsic_text_ownership": "Handwritten and depicted marks remain part of the collage. No external presentation copy is included.",
+        "occluding_native_text_ids": []
+      },
+      "style_hint": {
+        "style_authority": "accepted_generated_image"
+      }
     }
   ],
-  "revision_note": "The recurring publication folio is calibrated after user review. Existing generated targets remain retained full-slide historical sources."
+  "groups": [],
+  "relationships": [],
+  "layout_constraints": {
+    "non_overlap_pairs": []
+  }
 }

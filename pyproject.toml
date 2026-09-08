@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "slidepoise"
-version = "0.5.0"
+version = "0.6.0"
 description = "Profile-driven presentation framework with an Agent skill, isolated libraries, reconstruction runtime, and optional console"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -31,6 +31,7 @@ framework = ["defaults/*.json", "templates/*.json", "node-runtime-package.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = [".", "slidepoise/runtime/src"]
 cache_dir = "workspace/pytest-cache"
 
 [tool.ruff]

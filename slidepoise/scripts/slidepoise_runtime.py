@@ -298,6 +298,8 @@ def command_render_deck_preview(args: argparse.Namespace) -> None:
             pages.append(destination)
         make_preview_contact_sheet(pages, staged / "contact-sheet.png")
         shutil.copyfile(pdf, staged / "presentation.pdf")
+        from slidepoise.rendered_text import collect_rendered_table_text
+        write(staged / "rendered-text-evidence.json", collect_rendered_table_text(args.pptx, pdf))
         record = {"schema_version": "1.0", "source_sha256": source_digest, "dpi": args.dpi,
                   "font_environment": font_evidence, "slides": records,
                   "contact_sheet": {"path": "contact-sheet.png", "sha256": file_hash(staged / "contact-sheet.png")},

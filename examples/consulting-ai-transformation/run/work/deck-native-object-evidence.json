@@ -1,99 +1,47 @@
 {
-  "pptx_sha256": "638f70392a6eea2919d908ab1a558bd4f26221661df02ee0cdc5a1b795769c71",
+  "evidence_type": "native_package_inventory",
+  "pptx_sha256": "13497442c7d6afb9b6d1cf83fa8606604f7ef07aaec2ab92ae5bc589f351c4cf",
   "slides": [
     {
-      "slide_id": "s01-recommendation",
-      "native_objects": 32,
-      "object_kinds": {
-        "image": 3,
-        "shape": 4,
-        "table": 1,
-        "textbox": 24
-      },
-      "native_tables": 1,
-      "native_table_cells": 10,
-      "native_charts": 0,
-      "charts": [],
-      "raster_pictures": 3,
-      "duplicate_shape_ids": [],
-      "text_crosses_thin_separator": []
+      "part": "ppt/slides/slide1.xml",
+      "shape_count": 34,
+      "tables": 1,
+      "table_cells": 10,
+      "pictures": 3,
+      "duplicate_shape_ids": []
     },
     {
-      "slide_id": "s02-opportunities",
-      "native_objects": 23,
-      "object_kinds": {
-        "chart": 1,
-        "image": 3,
-        "shape": 3,
-        "table": 2,
-        "textbox": 14
-      },
-      "native_tables": 2,
-      "native_table_cells": 32,
-      "native_charts": 1,
-      "charts": [
-        {
-          "part": "ppt/charts/chart1.xml",
-          "bar_direction": "col"
-        }
-      ],
-      "raster_pictures": 3,
-      "duplicate_shape_ids": [],
-      "text_crosses_thin_separator": []
+      "part": "ppt/slides/slide2.xml",
+      "shape_count": 25,
+      "tables": 2,
+      "table_cells": 32,
+      "pictures": 3,
+      "duplicate_shape_ids": []
     },
     {
-      "slide_id": "s03-operating-model",
-      "native_objects": 25,
-      "object_kinds": {
-        "connector_graph": 3,
-        "image": 4,
-        "shape": 3,
-        "table": 1,
-        "textbox": 14
-      },
-      "native_tables": 1,
-      "native_table_cells": 25,
-      "native_charts": 0,
-      "charts": [],
-      "raster_pictures": 4,
-      "duplicate_shape_ids": [],
-      "text_crosses_thin_separator": []
+      "part": "ppt/slides/slide3.xml",
+      "shape_count": 35,
+      "tables": 1,
+      "table_cells": 25,
+      "pictures": 4,
+      "duplicate_shape_ids": []
     },
     {
-      "slide_id": "s04-delivery-roadmap",
-      "native_objects": 32,
-      "object_kinds": {
-        "connector_graph": 3,
-        "image": 4,
-        "shape": 7,
-        "table": 1,
-        "textbox": 17
-      },
-      "native_tables": 1,
-      "native_table_cells": 25,
-      "native_charts": 0,
-      "charts": [],
-      "raster_pictures": 4,
-      "duplicate_shape_ids": [],
-      "text_crosses_thin_separator": []
+      "part": "ppt/slides/slide4.xml",
+      "shape_count": 34,
+      "tables": 1,
+      "table_cells": 25,
+      "pictures": 4,
+      "duplicate_shape_ids": []
     },
     {
-      "slide_id": "s05-investment-decision",
-      "native_objects": 33,
-      "object_kinds": {
-        "image": 3,
-        "shape": 8,
-        "table": 2,
-        "textbox": 20
-      },
-      "native_tables": 2,
-      "native_table_cells": 38,
-      "native_charts": 0,
-      "charts": [],
-      "raster_pictures": 3,
-      "duplicate_shape_ids": [],
-      "text_crosses_thin_separator": []
+      "part": "ppt/slides/slide5.xml",
+      "shape_count": 38,
+      "tables": 2,
+      "table_cells": 38,
+      "pictures": 3,
+      "duplicate_shape_ids": []
     }
   ],
-  "all_text_clear_of_thin_separators": true
+  "scope": "Package structure only. Picture objects include canonical SVG assets. No visual verdict."
 }

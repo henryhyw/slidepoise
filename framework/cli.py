@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from framework import __version__
+
 import argparse
 import json
 import subprocess
@@ -142,7 +144,7 @@ def command_run(args):
 
 def parser() -> argparse.ArgumentParser:
     root = argparse.ArgumentParser(prog="slidepoise", description="Install and operate the SlidePoise presentation framework.")
-    root.add_argument("--version", action="version", version="slidepoise 0.5.0")
+    root.add_argument("--version", action="version", version=f"slidepoise {__version__}")
     commands = root.add_subparsers(dest="command", required=True)
 
     setup_cmd = commands.add_parser("setup", help="Install profiles, dependencies, and the Codex skill.")

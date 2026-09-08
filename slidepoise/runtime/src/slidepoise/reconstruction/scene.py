@@ -742,6 +742,20 @@ def build_reconstruction_scene(
             actual_structure = dict(entity.get("structure") or entity.get("table_structure") or {})
             defaults = dict((component_record or {}).get("constructor_defaults") or {})
             structure = _deep_merge(defaults.get("table_structure", {}), actual_structure)
+            # Cell pixel measurements belong to the same source canvas as the
+            # table bounds. Office-point margins already have physical units.
+            for row in structure.get("rows", []):
+                for cell in row:
+                    if isinstance(cell, dict) and "margin_px" in cell:
+                        margin = cell["margin_px"]
+                        if isinstance(margin, (int, float)) and not isinstance(margin, bool):
+                            margin = [margin] * 4
+                        if (not isinstance(margin, list) or len(margin) != 4
+                                or any(isinstance(v, bool) or not isinstance(v, (int, float))
+                                       or v < 0 for v in margin)):
+                            raise ValueError("Table cell margin_px must contain four nonnegative pixel values")
+                        cell["margin_px"] = [v * scale_xy[1 if i % 2 == 0 else 0]
+                                             for i, v in enumerate(margin)]
             table_style = _deep_merge(defaults.get("table_style", {}), actual_structure.get("table_style", {}))
             if table_style:
                 structure["table_style"] = table_style
@@ -795,7 +809,7 @@ def build_reconstruction_scene(
                 raise ValueError(f"Shape entity {entity_id} requires an explicit shape")
             shape = {"rounded_rect": "rounded_rectangle", "circle": "ellipse"}.get(shape, shape)
             if shape in {"rectangle", "line", "parallelogram", "trapezoid", "ellipse", "rounded_rectangle"}:
-                shape_object = {"id": entity_id, "kind": "shape", "shape": shape, "bbox_px": box, "style": _resolved_entity_style(entity, design), "allow_text_crossing": entity.get("allow_text_crossing") is True, "z": z}
+                shape_object = {"id": entity_id, "kind": "shape", "shape": shape, "bbox_px": box, "style": _resolved_entity_style(entity, design), "allow_text_crossing": entity.get("allow_text_crossing") is True, "structural_boundary": entity.get("structural_boundary") is True, "z": z}
                 if shape == "rounded_rectangle":
                     radius_px, adjustment = _round_rect_adjustment(entity, box, design, scale_xy)
                     shape_object["corner_radius_px"] = round(radius_px, 3)

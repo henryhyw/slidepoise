@@ -1,69 +1,50 @@
 {
   "reviewer": "host_agent_visual_reasoning",
+  "reviewed_on": "2026-09-08",
+  "stage": "reconstruction",
   "decision": "accepted",
   "material_issues": [],
-  "review_environment": "Actual LibreOffice rendering on macOS, installed system fonts, 120 DPI. Five full-resolution pages and both contact sheets inspected.",
-  "user_checkpoint": "The user explicitly requested consistent Field Notes typography across all five existing pages while retaining their artwork and compositions.",
-  "stage": "reconstruction",
-  "reasoning_summary": "The actual native render implements the common publication identity while preserving the page's original substantive composition.",
-  "observations": [
-    "The folio sits below the three collage columns with clear breathing room. The subtitle and captions keep their existing typewriter voice, while the folio now has the same physical size and baseline as its peers.",
-    "The native folio uses Andale Mono regular12pt, zero tracking, dark ink and the common lower-left allocation. All words remain editable.",
-    "Same-DPI actual old/new rendering shows no pixel change outside the authorized folio assembly. Native media payloads and non-folio text typography are unchanged."
-  ],
-  "remaining_fidelity_limits": [
-    "The historical generated lettering and available native fonts have different glyph outlines. This revision preserves the existing approved native body interpretation.",
-    "Photographic collage and intrinsic depicted lettering remain raster. Native paper backgrounds retain sampled flat tones.",
-    "Legacy full-slide generation history is retained honestly. No claim is made that the old images were generated using the current body-only frame policy."
-  ],
   "reviewed_artifacts": [
     {
       "path": "accepted-slide.png",
       "sha256": "767e54f0f34faafae4aa1985b26c3824e3ece0521a6e706cf5260579fedbe3c6"
     },
     {
-      "path": "semantic-map.json",
-      "sha256": "1c8145e8772452fc60d275a594e318d6e85a1a1fe2dae65c90c3b2ea55a28f34"
-    },
-    {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "3d35791fddaf6cc5de6616d50f83b265108baf2d6526f162ca8abe1fa69c0a2b"
-    },
-    {
-      "path": "reconstruction/measurement/debug_overlay.png",
-      "sha256": "fe772eeb561b937d3ed77c1774ba04b53eee742aa3c50df865752e71dbc11c33"
-    },
-    {
-      "path": "reconstruction-handoff.json",
-      "sha256": "691879ff81137b81717726ab71ef58017126e7a1230059d29a2fcf281e9d946a"
-    },
-    {
-      "path": "../../../work/deck-design.json",
-      "sha256": "ba33b732616aafff1f22648cf4536809f5583401d6180733363121aa7544358e"
+      "sha256": "096c544f9ba20eb2bb06ca8b0bc2a847b662cfaab3b70ecaa8f6fc8c43bb02b3"
     },
     {
       "path": "reconstruction/reconstruction-contract.json",
-      "sha256": "bd90a88ee0c818ded67aa1bc69398691b73ed1dc7cadb37f5c1264d0c02313d1"
+      "sha256": "60f88e412954d1affce197b33eaab2b236f58d95de0c8222f4a0c2d3569ebd92"
     },
     {
       "path": "reconstruction/constructor-scene.json",
-      "sha256": "5a2120ce4685eba215ee4ffd1bc42ba4169d70bd143f5f4ef552f6d69a45ccc0"
+      "sha256": "4244dfc9ee56a66eac66c2ce4aa482bac5111e5b33f6ff2f0c2b62f5e23aa756"
     },
     {
       "path": "../deliverables/slide.pptx",
-      "sha256": "0b595c612db2ad07b3cce82969cd8f41aa5532d2c35f9f74a6a57f5d27a83fbf"
+      "sha256": "112b8948ae1c0611c598858cd727e6f9c79044e051b5cb64cda41cd675358f4e"
     },
     {
       "path": "../deliverables/render.png",
-      "sha256": "b3c20d8804e59f7768b432b4367b4bd0fa2b7bd02a47585072b2d01c366f4c86"
+      "sha256": "e09078d28ef5dec40a5d0bdd34cf0807ca37dc3c954d9c45239d077c3330fc5d"
     },
     {
       "path": "../deliverables/comparison.png",
-      "sha256": "6229c4ff40029496821de84fcca208e5a173754d6da3dd4e5d574435f0de8065"
+      "sha256": "989f8dc28ee892a8c8f608be1b5c7909018d3a75d1b54495c342496d6929682f"
     },
     {
-      "path": "../deliverables/difference.png",
-      "sha256": "23c92d171a3084e8238f3de4d5d53baf5930c644bf4c1abbb7bf64e4fb823d54"
+      "path": "native-object-evidence.json",
+      "sha256": "469e6683b01e6dce910aa912f4c1fef6e6124b964d9e6423c554e89bc03a8d59"
+    },
+    {
+      "path": "native-text-audit.json",
+      "sha256": "30b060681b570c05fed1452c2a572483f1039163ac13f565f49d89b89d01d7e1"
     }
-  ]
+  ],
+  "observations": [
+    "All three artwork regions and their respective headings and captions remain intact. The three-column organization and vertical rules are preserved.",
+    "Monospaced subtitle and caption tracking differs slightly from the source. The text remains complete, with the shared folio on the same baseline as the other pages."
+  ],
+  "review_environment": "Actual LibreOffice render on macOS with installed fonts. Source and native content regions compared at a common scale."
 }

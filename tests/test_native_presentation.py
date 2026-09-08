@@ -129,7 +129,7 @@ def test_chart_values_are_workbook_bound_native_labels_with_authored_typography(
              "structure": {"categories": ["Research", "Drafting"], "series": [{"name": "Hours", "values": [12, 8]}],
                            "show_values": True, "data_label_position": "outEnd", "data_label_format_code": "0",
                            "data_font_family": "Arial", "data_font_size_px": 27.5, "data_label_color": "#123456",
-                           "data_label_colors": ["#FD5108", "#000000"]}}]}
+                           "data_label_colors": ["#FD5108", "#000000"], "data_font_bold": True}}]}
     result, target = emit(scene, tmp_path)
     assert result.returncode == 0, result.stderr
     with zipfile.ZipFile(target) as archive:
@@ -140,6 +140,7 @@ def test_chart_values_are_workbook_bound_native_labels_with_authored_typography(
         assert labels.find("c:numFmt", NS).get("formatCode") == "0"
         formatting = labels.find("c:txPr/a:p/a:pPr/a:defRPr", NS)
         assert formatting.get("sz") == "1650"
+        assert formatting.get("b") == "1"
         assert formatting.find("a:latin", NS).get("typeface") == "Arial"
         assert formatting.find("a:solidFill/a:srgbClr", NS).get("val") == "123456"
         points = labels.findall("c:dLbl", NS)
@@ -197,3 +198,19 @@ def test_invalid_line_spacing_is_rejected_by_fitting_and_native_emission(tmp_pat
          "style": {"font_size_pt": 20, "line_spacing_multiple": spacing}}]}, tmp_path)
     assert result.returncode != 0 and "line_spacing_multiple" in result.stderr
     assert target.read_bytes() == b"previous usable output"
+
+
+def test_table_pixel_margins_use_slide_units_and_keep_legacy_points(tmp_path):
+    scene = {"dimensions_px": [1920, 1080], "slide_size_inches": [13.333333, 7.5], "objects": [{
+        "id": "table", "kind": "table", "bbox_px": [40, 40, 900, 200],
+        "style": {"font_family": "Arial", "font_size_px": 24},
+        "structure": {"rows": [[{"text": "Pixel", "margin_px": [4, 8, 4, 8]},
+                                    {"text": "Point", "options": {"margin": [2, 4, 2, 4]}}]]}}]}
+    result, target = emit(scene, tmp_path)
+    assert result.returncode == 0, result.stderr
+    with zipfile.ZipFile(target) as z:
+        root = ET.fromstring(z.read("ppt/slides/slide1.xml"))
+    cells = root.findall(".//a:tcPr", NS)
+    assert len(cells) == 2
+    assert cells[0].get("marL") == cells[1].get("marL")
+    assert int(cells[0].get("marL")) == 50800

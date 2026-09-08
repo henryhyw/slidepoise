@@ -99,7 +99,7 @@ def main():
         assert labels and all(label.find("c:showVal", NS).get("val") == "1" for label in labels)
         assert all(label.find("c:txPr/a:bodyPr", NS).get("wrap") == "none" for label in labels)
         assert all(label.find("c:tx", NS) is None for group in labels for label in group.findall("c:dLbl", NS))
-        assert all(group.find("c:numFmt", NS).get("formatCode") == '#,##0" h"' for group in labels)
+        assert all(group.find("c:numFmt", NS).get("formatCode") == '#,##0' for group in labels)
     commands = []
 
     def run(*command):
@@ -117,7 +117,7 @@ def main():
     pages = run("pdftotext", "-layout", HERE / "edited-preview/presentation.pdf", "-").split("\f")
     write(HERE / "actual-pdf-text.json", {"page_number": 2, "text": pages[1]})
     assert new_title in pages[1]
-    assert any(re.search(r"1,620\s+h\b", line) for line in pages[1].splitlines())
+    assert any(re.search(r"1,620\b", line) for line in pages[1].splitlines())
     assert "1,944" not in pages[1]
     comparison = HERE / "comparison.png"
     run(sys.executable, ROOT / "slidepoise/scripts/make_visual_comparison.py",
@@ -135,7 +135,7 @@ def main():
     chart_box = next(obj["bbox_px"] for obj in scene["objects"] if obj["id"] == chart_shape.name)
     before_bar = orange_bar_pixels(HERE / "official-preview/slide-002.png", chart_box, scene["dimensions_px"])
     after_bar = orange_bar_pixels(HERE / "edited-preview/slide-002.png", chart_box, scene["dimensions_px"])
-    assert abs(after_bar["width_px"] - before_bar["width_px"] * 1620 / 1944) <= 2
+    assert abs(after_bar["height_px"] - before_bar["height_px"] * 1620 / 1944) <= 2
     write(HERE / "bar-edit-evidence.json", {"chart_bbox_px": chart_box, "dimensions_px": scene["dimensions_px"],
           "official_bar": before_bar, "edited_bar": after_bar, "expected_value_ratio": 1620 / 1944,
           "official_render_sha256": digest(HERE / "official-preview/slide-002.png"),
@@ -149,7 +149,7 @@ def main():
         "title_edit": {"object_name": title.name, "before": old_title, "after": new_title},
         "chart_edit": {"object_name": chart_shape.name, "before": before_values, "after": cache,
                        "embedded_workbook_first_value": workbook_value, "native_labels_bound_to_values": True,
-                       "native_wrap_policy": "none", "actual_pdf_label": "1,620 h"},
+                       "native_wrap_policy": "none", "actual_pdf_label": "1,620"},
         "source_preserved": True, "editable_numeric_textboxes_created": 0, "unmodified_pages": untouched_pages,
         "edited_preview": "edited-preview/slide-002.png", "edited_preview_sha256": digest(HERE / "edited-preview/slide-002.png"),
         "comparison": comparison.name, "comparison_sha256": digest(comparison),

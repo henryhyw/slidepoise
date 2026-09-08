@@ -1,27 +1,19 @@
 # A second thinking system
 
-A five-page Editorial sample about working with AI while keeping questions, connections and judgement visible. Its first-person voice belongs to the authored essay.
+A five-page editorial sample about working with AI while retaining a personal point of view. It combines editable typography and rules with photographic collage preserved as regional images.
 
-The presentation combines editable typography and rules with preserved photographic collage. The native output has 46 text boxes, nine shapes and seven editable freeforms. Eight regional images retain the generated notebook, hands, paper and depicted marks.
+## Design and reconstruction
 
-## Shared identity, individual pages
+The original generated images remain the visual references. Their paper, hands, notebook and photographic fragments are preserved. Native text approximates the generated lettering. The closing headline uses Georgia to recover its weight and proportions.
 
-The second revision keeps the original artwork, body copy and distinctive page compositions. It calibrates the repeated `FIELD NOTES / 01` through `05` markers to Andale Mono regular at 12 pt, with zero character spacing, dark ink and one lower-left baseline. The cover-only short rule and essay descriptor move with its marker to preserve their relationship.
+Every page uses the same Field Notes type, size and baseline. This deliberately corrects the inconsistent folios in the source images. The cover's short rule and essay descriptor remain beside its folio. Small glyph and tracking differences are recorded in the page reviews.
 
-The Agent discovered that the same publication role appeared under different local entity names. `run/work/deck-design.json` records the shared treatment and aliases. Every reconstruction handoff binds that decision by hash, while the actual semantic styles implement it. The role declaration does not choose or apply typography automatically.
+These historical source images include their folios. New presentations use the current content-area generation policy, with inherited headers and footers constructed separately.
 
-`run/work/folio-calibration/folio-comparison.png` shows the actual native before/after result. Same-DPI comparison found no changed pixels outside the authorized series-marker regions and cover companions. Native media payloads and every non-folio text object's content and typography stayed unchanged.
+## Inspect and reproduce
 
-## Creative source and reconstruction
+`run/` retains the accepted images, semantic maps, OpenCV measurements, native scenes, actual renders and host reviews. `run/work/deck-review.json` records the assembled review. `run/bundle/deck-scenes.json` is the portable scene entry point.
 
-The original generated targets are retained honestly as historical full-slide designs. No new image call was made for this native calibration. Their old folio placements remain visible in target comparisons. New presentations follow the current body-only generation and inherited-frame policy.
+From the repository, run `examples/rebuild.py` with this example and a new output directory. It resolves a clean configuration and repeats measurement and construction. `examples/verify_rebuild.py` compares that output with the recorded pages. The current receipt is `run/work/rebuild-verification.json`. Reproduction applies to the recorded renderer, fonts and DPI. It does not establish visual quality by itself.
 
-The Agent retained the original collage crops, revised the semantic inputs and ran the packaged OpenCV measurement, contract, compiler and renderer again. Every page has current measurements, actual PowerPoint renders and exact-file visual reviews. Available native font outlines differ from the generated lettering. Photograph texture and intrinsic depicted marks remain raster.
-
-## Reproduce and inspect
-
-Run `examples/rebuild.py` from the repository to repeat native reconstruction from the retained creative inputs. The second revision was rebuilt in an isolated home with repository resources. All five actual 120 DPI previews were pixel-identical, and seven slide, layout and master XML parts matched. The portable bundle also rendered identically after the original temporary crop paths were removed. These results describe the recorded macOS LibreOffice and font environment.
-
-`run/bundle/deck-scenes.json` is the portable scene entry point. `run/work/rebuild-verification.json` records the current checks. The source ZIP includes that bundle and the complete authoring evidence. The project page offers one PowerPoint download action. PDF and source files remain available in the repository.
-
-The previous local example was retained at `output/showcase-revisions/personal-v1-at-replacement`. No external deployment is implied.
+The source ZIP contains the active reconstruction inputs and portable scenes. Earlier iterations remain in the repository history and retained run folders. The project page offers one PowerPoint download.

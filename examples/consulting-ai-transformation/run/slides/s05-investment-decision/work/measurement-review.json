@@ -1,5 +1,6 @@
 {
   "reviewer": "host_agent_visual_reasoning",
+  "reviewed_on": "2026-09-08",
   "stage": "measurement",
   "decision": "accepted",
   "material_issues": [],
@@ -10,35 +11,24 @@
     },
     {
       "path": "semantic-map.json",
-      "sha256": "d1a2b67a2c8e00213e562a609dd1a71910bb93f0ef43d6f7389daf01306383e5"
+      "sha256": "ebb66de6d8a54d0767d36f30c18dce08ede7812b20c4a5edcdc603729b4327b6"
     },
     {
       "path": "reconstruction-handoff.json",
-      "sha256": "f911ff20ee004b63d4fcdfacb54b22062c7b7aaa0e929d3d1cbb3e369fdf12fa"
+      "sha256": "0268a83864688c2f2aaca37447f96636d193b515794fba3bd243947271699577"
     },
     {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "4399a8e2dfed4398fa6db145c8fb0b31091c5be70908775259e73f08d107b895"
+      "sha256": "e97faed6de30f965948899f4c8aae25328a778f56ad53d4cd4b3d82e621f5c8a"
     },
     {
       "path": "reconstruction/measurement/debug_overlay.png",
-      "sha256": "2b7521e88b9a57dfe05ae750c1eb0c89995401df82d6519d140cbc80fff31288"
-    },
-    {
-      "path": "semantic-explanation.json",
-      "sha256": "ad294bcf08b939ff1b7e9a02e0b250100f5f4f5b7f156dc9255460515fe8dce3"
-    },
-    {
-      "path": "../deliverables/semantic-explanation.png",
-      "sha256": "0f980cdb6bc216040f172a64ff6cdb4e59dc6ce0a76035b3cbc4fa5fb504f13c"
+      "sha256": "4776deb8d763a3539da09bb8651de47ebd05cd908ba80b4cf4a7c70b3edb567d"
     }
   ],
   "observations": [
-    "I inspected the actual OpenCV debug overlay and readable semantic-group overlay. Two tables own their cells, and thirty standalone text entities preserve the title, subtitle, calculation, annotations, release criteria and funding conditions. No duplicate floating cell text or raster ownership is introduced.",
-    "The exact source-ink windows separate each factor, operator and orange capacity result. Host-authored logical allocations spread the native factors so their normal-width 24px labels remain centered below their meanings. Research time and Time saved wrap onto two lines.",
-    "The formula and decision size differences reflect explicit shared-role decisions. Source windows remain tied to the visible original glyphs while native logical boxes allow the 64px Georgia title, 32px subtitle, 28px body and 24px annotation sizes.",
-    "Actual native inspection exposed cost-label and scenario-header wrapping. Regular cost labels and adjusted scenario column widths preserve the exact table values. The remaining-investment qualification receives two lines at 28px. Its lower rule moves down fourteen body pixels, and the adjoining vertical separators retain their lower endpoints.",
-    "OpenCV measured the host-selected regions. SAM was disabled and did not contribute. All nine fitted typography groups reach their authored sizes without a group or single-object reduction.",
-    "After the deck owner inspected all five pages, I applied the shared introduction and decision geometry and inspected the fresh native render. The title now uses body [48,19,1824,80], subtitle begins at [48,103] and the introduction rule at y165. The decision band uses [48,793,1824,134] with an 8px bar. Both28px texts share body y832/height52, label x100/width420 and message x560/width1265. The long funding condition remains on one line with clear separation from the label. Original source-ink windows and all financial content remain intact."
+    "I inspected the source and the OpenCV overlay. Visible-ink search regions are evidence for the host-authored objects. Coloured layout bounds can differ where native type wrapping or a recorded correction requires another allocation.",
+    "Adoption and Downside render as complete words. The sensitivity rows, net values and investment amounts remain legible. The four factor captions are separate and positioned beneath their factors.",
+    "The full semantic map is retained. Table and chart interiors belong to their native parent object. The measurement overlay does not independently judge semantic completeness."
   ]
 }

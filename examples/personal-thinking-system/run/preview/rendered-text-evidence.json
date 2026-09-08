@@ -1,0 +1,10 @@
+{
+  "evidence_type": "rendered_table_text",
+  "available": true,
+  "pptx_sha256": "e157273ac51ecfb282dfd1e3c2fd3a7b47b9775940a800017135eb5dbda1e232",
+  "pdf_sha256": "fab20921296989bae22be33c50f4091a25a5da7a40ab3b0a630e6d39e196bf5c",
+  "cells": [],
+  "discrepancies": [],
+  "agent_interpretation_required": true,
+  "limitations": "PDF extraction can differ for ligatures or unusual scripts. An absent complete token is evidence to inspect, not a visual acceptance decision."
+}

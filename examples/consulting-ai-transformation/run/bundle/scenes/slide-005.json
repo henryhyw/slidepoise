@@ -24,6 +24,8 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 1.0
     },
     {
@@ -42,6 +44,8 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 1.0
     },
     {
@@ -60,6 +64,8 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 1.0
     },
     {
@@ -78,6 +84,8 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 1.0
     },
     {
@@ -96,6 +104,8 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 1.0
     },
     {
@@ -114,6 +124,8 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 1.0
     },
     {
@@ -132,6 +144,8 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 1.0
     },
     {
@@ -150,6 +164,8 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 1.0
     },
     {
@@ -172,14 +188,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Amount",
@@ -189,14 +205,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ],
           [
@@ -207,15 +223,15 @@
                   "color": "FFFFFF"
                 },
                 "color": "000000",
-                "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "$85k",
@@ -225,14 +241,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ],
           [
@@ -243,15 +259,15 @@
                   "color": "F5F7F8"
                 },
                 "color": "000000",
-                "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "$25k",
@@ -261,14 +277,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ],
           [
@@ -279,15 +295,15 @@
                   "color": "FFFFFF"
                 },
                 "color": "000000",
-                "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "$30k",
@@ -297,14 +313,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ],
           [
@@ -316,14 +332,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "$115k",
@@ -332,15 +348,15 @@
                   "color": "FFF5ED"
                 },
                 "color": "000000",
-                "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ]
         ],
@@ -358,7 +374,7 @@
       },
       "style": {
         "font_family": "Arial",
-        "font_size_px": 22,
+        "font_size_px": 24,
         "cell_margin_px": 8,
         "color": "#000000",
         "fill": "#FFFFFF",
@@ -390,14 +406,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
               "text": "Adoption",
@@ -407,31 +423,31 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
-              "text": "Time saved",
+              "text": "Time\nsaved",
               "options": {
                 "fill": {
                   "color": "000000"
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
               "text": "Annual h",
@@ -441,65 +457,65 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
-              "text": "Annual capacity",
+              "text": "Annual\ncapacity",
               "options": {
                 "fill": {
                   "color": "000000"
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
-              "text": "First-year value",
+              "text": "First-year\nvalue",
               "options": {
                 "fill": {
                   "color": "000000"
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
-              "text": "Net vs $115k",
+              "text": "Net vs\n$115k",
               "options": {
                 "fill": {
                   "color": "000000"
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             }
           ],
           [
@@ -511,14 +527,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
               "text": "40%",
@@ -528,14 +544,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
               "text": "20%",
@@ -545,14 +561,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
               "text": "864",
@@ -562,14 +578,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
               "text": "$108k",
@@ -579,14 +595,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
               "text": "$54k",
@@ -596,14 +612,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
               "text": "−$61k",
@@ -613,14 +629,14 @@
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             }
           ],
           [
@@ -632,14 +648,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
               "text": "60%",
@@ -649,14 +665,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
               "text": "30%",
@@ -666,14 +682,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
               "text": "1,944",
@@ -683,14 +699,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
               "text": "$243k",
@@ -700,14 +716,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
               "text": "$121.5k",
@@ -717,14 +733,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
               "text": "+$6.5k",
@@ -734,14 +750,14 @@
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             }
           ],
           [
@@ -753,14 +769,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
               "text": "75%",
@@ -770,14 +786,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
               "text": "40%",
@@ -787,14 +803,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
               "text": "3,240",
@@ -804,14 +820,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
               "text": "$405k",
@@ -821,14 +837,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
               "text": "$202.5k",
@@ -838,14 +854,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             },
             {
               "text": "+$87.5k",
@@ -855,25 +871,25 @@
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                7.0,
+                5.0,
+                7.0
+              ]
             }
           ]
         ],
         "column_widths_px": [
-          115,
-          105,
-          95,
+          124,
+          112,
+          98,
+          92,
           105,
           108,
-          112,
-          98
+          99
         ],
         "row_heights_px": [
           88,
@@ -884,7 +900,7 @@
       },
       "style": {
         "font_family": "Arial",
-        "font_size_px": 18,
+        "font_size_px": 20,
         "cell_margin_px": 8,
         "color": "#000000",
         "fill": "#FFFFFF",
@@ -933,6 +949,7 @@
       "bullet_style": null,
       "semantic_role": "slide_title",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -972,6 +989,7 @@
       "bullet_style": null,
       "semantic_role": "subtitle",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -986,8 +1004,8 @@
       "text": "BASE-CASE CAPACITY MODEL",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 27.0,
-        "font_size_pt": 13.5,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1011,6 +1029,7 @@
       "bullet_style": null,
       "semantic_role": "heading_large",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1051,45 +1070,7 @@
       "bullet_style": null,
       "semantic_role": "large_data_number",
       "parent_id": null,
-      "z": 20.0
-    },
-    {
-      "id": "capacity-labels",
-      "kind": "textbox",
-      "bbox_px": [
-        65,
-        438,
-        500,
-        45
-      ],
-      "text": "Engagements Research time Adoption Time saved",
-      "style": {
-        "font_family": "Arial",
-        "font_size_px": 19.0,
-        "font_size_pt": 9.5,
-        "font_weight": "regular",
-        "italic": false,
-        "char_spacing_px": 0.0,
-        "color": "#000000",
-        "alignment": "center",
-        "vertical_alignment": "top",
-        "margins_px": [
-          2.0,
-          2.0,
-          2.0,
-          2.0
-        ],
-        "line_spacing_multiple": 1.0,
-        "paragraph_spacing_px": 0,
-        "autofit": "none",
-        "outer_geometry_is_fixed": true
-      },
-      "paragraphs": [
-        "Engagements Research time Adoption Time saved"
-      ],
-      "bullet_style": null,
-      "semantic_role": "body",
-      "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1104,8 +1085,8 @@
       "text": "1,944 h × $125/h =",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 27.0,
-        "font_size_pt": 13.5,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1129,6 +1110,7 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1143,8 +1125,8 @@
       "text": "$243k",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 47.0,
-        "font_size_pt": 23.5,
+        "font_size_px": 53.0,
+        "font_size_pt": 26.5,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1168,6 +1150,7 @@
       "bullet_style": null,
       "semantic_role": "large_data_number",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1182,8 +1165,8 @@
       "text": "annual capacity equivalent",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 22.0,
-        "font_size_pt": 11.0,
+        "font_size_px": 26.0,
+        "font_size_pt": 13.0,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1207,6 +1190,7 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1221,8 +1205,8 @@
       "text": "INVESTMENT",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 27.0,
-        "font_size_pt": 13.5,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1246,6 +1230,7 @@
       "bullet_style": null,
       "semantic_role": "heading_large",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1260,8 +1245,8 @@
       "text": "Remaining implementation after the pilot $60k.",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 21.0,
-        "font_size_pt": 10.5,
+        "font_size_px": 22.0,
+        "font_size_pt": 11.0,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1285,6 +1270,7 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1299,8 +1285,8 @@
       "text": "FIRST-YEAR SENSITIVITY · 50% RAMP",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 27.0,
-        "font_size_pt": 13.5,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1324,6 +1310,7 @@
       "bullet_style": null,
       "semantic_role": "heading_large",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1338,8 +1325,8 @@
       "text": "DECISION CRITERIA",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 27.0,
-        "font_size_pt": 13.5,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1363,6 +1350,7 @@
       "bullet_style": null,
       "semantic_role": "heading_large",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1377,8 +1365,8 @@
       "text": "GO",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 27.0,
-        "font_size_pt": 13.5,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1402,6 +1390,7 @@
       "bullet_style": null,
       "semantic_role": "heading_large",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1416,8 +1405,8 @@
       "text": "All four gates hold.\nPractice lead owns rollout.",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 22.0,
-        "font_size_pt": 11.0,
+        "font_size_px": 24.0,
+        "font_size_pt": 12.0,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1442,6 +1431,7 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1456,8 +1446,8 @@
       "text": "HOLD",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 27.0,
-        "font_size_pt": 13.5,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1481,6 +1471,7 @@
       "bullet_style": null,
       "semantic_role": "heading_large",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1495,8 +1486,8 @@
       "text": "Evidence or usage is weak.\nExtend within an agreed cap.",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 22.0,
-        "font_size_pt": 11.0,
+        "font_size_px": 24.0,
+        "font_size_pt": 12.0,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1521,6 +1512,7 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1535,8 +1527,8 @@
       "text": "STOP",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 27.0,
-        "font_size_pt": 13.5,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1560,6 +1552,7 @@
       "bullet_style": null,
       "semantic_role": "heading_large",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1574,8 +1567,8 @@
       "text": "A critical data control fails.\nSuspend use and close the issue.",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 22.0,
-        "font_size_pt": 11.0,
+        "font_size_px": 24.0,
+        "font_size_pt": 12.0,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1600,6 +1593,7 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1639,6 +1633,7 @@
       "bullet_style": null,
       "semantic_role": "call_to_action",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1678,16 +1673,178 @@
       "bullet_style": null,
       "semantic_role": "call_to_action",
       "parent_id": null,
+      "allow_boundary_crossing": false,
+      "z": 20.0
+    },
+    {
+      "id": "factor-engagements",
+      "kind": "textbox",
+      "bbox_px": [
+        64,
+        439,
+        120,
+        68
+      ],
+      "text": "Engagements",
+      "style": {
+        "font_family": "Arial",
+        "font_size_px": 18.0,
+        "font_size_pt": 9.0,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": 0.0,
+        "color": "#000000",
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "margins_px": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "line_spacing_multiple": 1.0,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "Engagements"
+      ],
+      "bullet_style": null,
+      "semantic_role": "body",
+      "parent_id": null,
+      "allow_boundary_crossing": false,
+      "z": 20.0
+    },
+    {
+      "id": "factor-research",
+      "kind": "textbox",
+      "bbox_px": [
+        202,
+        439,
+        114,
+        68
+      ],
+      "text": "Research\ntime",
+      "style": {
+        "font_family": "Arial",
+        "font_size_px": 18.0,
+        "font_size_pt": 9.0,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": 0.0,
+        "color": "#000000",
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "margins_px": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "line_spacing_multiple": 1.0,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "Research",
+        "time"
+      ],
+      "bullet_style": null,
+      "semantic_role": "body",
+      "parent_id": null,
+      "allow_boundary_crossing": false,
+      "z": 20.0
+    },
+    {
+      "id": "factor-adoption",
+      "kind": "textbox",
+      "bbox_px": [
+        337,
+        439,
+        110,
+        68
+      ],
+      "text": "Adoption",
+      "style": {
+        "font_family": "Arial",
+        "font_size_px": 18.0,
+        "font_size_pt": 9.0,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": 0.0,
+        "color": "#000000",
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "margins_px": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "line_spacing_multiple": 1.0,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "Adoption"
+      ],
+      "bullet_style": null,
+      "semantic_role": "body",
+      "parent_id": null,
+      "allow_boundary_crossing": false,
+      "z": 20.0
+    },
+    {
+      "id": "factor-saved",
+      "kind": "textbox",
+      "bbox_px": [
+        462,
+        439,
+        115,
+        68
+      ],
+      "text": "Time saved",
+      "style": {
+        "font_family": "Arial",
+        "font_size_px": 18.0,
+        "font_size_pt": 9.0,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": 0.0,
+        "color": "#000000",
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "margins_px": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "line_spacing_multiple": 1.0,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "Time saved"
+      ],
+      "bullet_style": null,
+      "semantic_role": "body",
+      "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
       "id": "criterion-icon-go",
       "kind": "image",
       "bbox_px": [
-        80,
-        723,
-        86,
-        86
+        81,
+        715,
+        118,
+        118
       ],
       "source_path": "../assets/1f5603fe9d4c9f90d2251c9f20afd1fac3cbc3917158cc45079e4c30a5ca4dc2.svg",
       "recolor": "#000000",
@@ -1705,10 +1862,10 @@
       "id": "criterion-icon-hold",
       "kind": "image",
       "bbox_px": [
-        689,
-        723,
-        86,
-        86
+        690,
+        715,
+        118,
+        118
       ],
       "source_path": "../assets/4ecdef2927524d335ee9cf7d66edabda21d81238cbd666fe2a79bfa7df447824.svg",
       "recolor": "#000000",
@@ -1726,10 +1883,10 @@
       "id": "criterion-icon-stop",
       "kind": "image",
       "bbox_px": [
-        1298,
-        723,
-        86,
-        86
+        1299,
+        715,
+        118,
+        118
       ],
       "source_path": "../assets/a936a3f96c4b9d5124523dfc759665d9441190d6497316fa8d8099ae2647ab7e.svg",
       "recolor": "#000000",
@@ -1789,14 +1946,14 @@
     "slide_number": 1
   },
   "sources": [
-    "Generated target visual: /private/tmp/.slidepoise-rebuild-h51errnw/slides/s05-investment-decision/work/accepted-slide.png",
+    "Generated target visual: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/slides/s05-investment-decision/work/accepted-slide.png",
     "Canonical asset remix-play-circle-line: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/play-circle/remix-play-circle-line.svg",
     "Canonical asset remix-pause-circle-line: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/pause-circle/remix-pause-circle-line.svg",
     "Canonical asset remix-stop-circle-line: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/stop-circle/remix-stop-circle-line.svg"
   ],
   "compiler_report": {
-    "measured_entity_count": 33,
-    "emitted_object_count": 33,
+    "measured_entity_count": 36,
+    "emitted_object_count": 36,
     "evidence_objects_emitted": 0,
     "measurement": {
       "engine": "OpenCV",
@@ -1806,7 +1963,7 @@
     "canonical_asset_count": 3,
     "text_fitting": {
       "source": "constructor_text_fit_evidence",
-      "fitted_textbox_count": 20,
+      "fitted_textbox_count": 23,
       "quantization_step_pt": 0.5,
       "all_textboxes_fit_within_allocations": true,
       "peer_typography_preserved": true,
@@ -1869,13 +2026,13 @@
             "sensitivity-heading",
             "criteria-heading"
           ],
-          "shared_font_size_pt": 13.5,
-          "shared_font_size_px": 27.0,
-          "agent_target_font_size_px": 27.0,
+          "shared_font_size_pt": 14.0,
+          "shared_font_size_px": 28.0,
+          "agent_target_font_size_px": 28.0,
           "explicit_peer_group": true,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 13.5,
-          "agent_target_unquantized_pt": 13.5,
+          "agent_target_ceiling_pt": 14.0,
+          "agent_target_unquantized_pt": 14.0,
           "quantization_reduction_pt": 0,
           "reduced_from_agent_target": false,
           "reduced_for_fit": false,
@@ -1914,43 +2071,19 @@
           "overflow_evidence": "no_overflow_detected_by_text_measurement"
         },
         {
-          "typography_group": "labels",
-          "semantic_role": "body",
-          "text_style_role": "body",
-          "member_ids": [
-            "capacity-labels"
-          ],
-          "shared_font_size_pt": 9.5,
-          "shared_font_size_px": 19.0,
-          "agent_target_font_size_px": 19.0,
-          "explicit_peer_group": false,
-          "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 9.5,
-          "agent_target_unquantized_pt": 9.5,
-          "quantization_reduction_pt": 0,
-          "reduced_from_agent_target": false,
-          "reduced_for_fit": false,
-          "members_not_fitting_target": [],
-          "font_measurement_sources": {
-            "capacity-labels": "/System/Library/Fonts/Supplemental/Arial.ttf"
-          },
-          "profile_adjustments": {},
-          "overflow_evidence": "no_overflow_detected_by_text_measurement"
-        },
-        {
           "typography_group": "calculation",
           "semantic_role": "body",
           "text_style_role": "body",
           "member_ids": [
             "capacity-value"
           ],
-          "shared_font_size_pt": 13.5,
-          "shared_font_size_px": 27.0,
-          "agent_target_font_size_px": 27.0,
+          "shared_font_size_pt": 14.0,
+          "shared_font_size_px": 28.0,
+          "agent_target_font_size_px": 28.0,
           "explicit_peer_group": false,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 13.5,
-          "agent_target_unquantized_pt": 13.5,
+          "agent_target_ceiling_pt": 14.0,
+          "agent_target_unquantized_pt": 14.0,
           "quantization_reduction_pt": 0,
           "reduced_from_agent_target": false,
           "reduced_for_fit": false,
@@ -1968,17 +2101,19 @@
           "member_ids": [
             "capacity-value-number"
           ],
-          "shared_font_size_pt": 23.5,
-          "shared_font_size_px": 47.0,
-          "agent_target_font_size_px": 47.0,
+          "shared_font_size_pt": 26.5,
+          "shared_font_size_px": 53.0,
+          "agent_target_font_size_px": 54.0,
           "explicit_peer_group": false,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 23.5,
-          "agent_target_unquantized_pt": 23.5,
+          "agent_target_ceiling_pt": 27.0,
+          "agent_target_unquantized_pt": 27.0,
           "quantization_reduction_pt": 0,
-          "reduced_from_agent_target": false,
-          "reduced_for_fit": false,
-          "members_not_fitting_target": [],
+          "reduced_from_agent_target": true,
+          "reduced_for_fit": true,
+          "members_not_fitting_target": [
+            "capacity-value-number"
+          ],
           "font_measurement_sources": {
             "capacity-value-number": "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
           },
@@ -1992,13 +2127,13 @@
           "member_ids": [
             "capacity-caption"
           ],
-          "shared_font_size_pt": 11.0,
-          "shared_font_size_px": 22.0,
-          "agent_target_font_size_px": 22.0,
+          "shared_font_size_pt": 13.0,
+          "shared_font_size_px": 26.0,
+          "agent_target_font_size_px": 26.0,
           "explicit_peer_group": false,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 11.0,
-          "agent_target_unquantized_pt": 11.0,
+          "agent_target_ceiling_pt": 13.0,
+          "agent_target_unquantized_pt": 13.0,
           "quantization_reduction_pt": 0,
           "reduced_from_agent_target": false,
           "reduced_for_fit": false,
@@ -2016,13 +2151,13 @@
           "member_ids": [
             "investment-note"
           ],
-          "shared_font_size_pt": 10.5,
-          "shared_font_size_px": 21.0,
-          "agent_target_font_size_px": 21.0,
+          "shared_font_size_pt": 11.0,
+          "shared_font_size_px": 22.0,
+          "agent_target_font_size_px": 22.0,
           "explicit_peer_group": false,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 10.5,
-          "agent_target_unquantized_pt": 10.5,
+          "agent_target_ceiling_pt": 11.0,
+          "agent_target_unquantized_pt": 11.0,
           "quantization_reduction_pt": 0,
           "reduced_from_agent_target": false,
           "reduced_for_fit": false,
@@ -2042,13 +2177,13 @@
             "criterion-label-hold",
             "criterion-label-stop"
           ],
-          "shared_font_size_pt": 13.5,
-          "shared_font_size_px": 27.0,
-          "agent_target_font_size_px": 27.0,
+          "shared_font_size_pt": 14.0,
+          "shared_font_size_px": 28.0,
+          "agent_target_font_size_px": 28.0,
           "explicit_peer_group": true,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 13.5,
-          "agent_target_unquantized_pt": 13.5,
+          "agent_target_ceiling_pt": 14.0,
+          "agent_target_unquantized_pt": 14.0,
           "quantization_reduction_pt": 0,
           "reduced_from_agent_target": false,
           "reduced_for_fit": false,
@@ -2070,17 +2205,21 @@
             "criterion-body-hold",
             "criterion-body-stop"
           ],
-          "shared_font_size_pt": 11.0,
-          "shared_font_size_px": 22.0,
-          "agent_target_font_size_px": 22.0,
+          "shared_font_size_pt": 12.0,
+          "shared_font_size_px": 24.0,
+          "agent_target_font_size_px": 26.0,
           "explicit_peer_group": true,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 11.0,
-          "agent_target_unquantized_pt": 11.0,
+          "agent_target_ceiling_pt": 13.0,
+          "agent_target_unquantized_pt": 13.0,
           "quantization_reduction_pt": 0,
-          "reduced_from_agent_target": false,
-          "reduced_for_fit": false,
-          "members_not_fitting_target": [],
+          "reduced_from_agent_target": true,
+          "reduced_for_fit": true,
+          "members_not_fitting_target": [
+            "criterion-body-go",
+            "criterion-body-hold",
+            "criterion-body-stop"
+          ],
           "font_measurement_sources": {
             "criterion-body-go": "/System/Library/Fonts/Supplemental/Arial.ttf",
             "criterion-body-hold": "/System/Library/Fonts/Supplemental/Arial.ttf",
@@ -2114,6 +2253,38 @@
           },
           "profile_adjustments": {},
           "overflow_evidence": "no_overflow_detected_by_text_measurement"
+        },
+        {
+          "typography_group": "labels",
+          "semantic_role": "body",
+          "text_style_role": "body",
+          "member_ids": [
+            "factor-engagements",
+            "factor-research",
+            "factor-adoption",
+            "factor-saved"
+          ],
+          "shared_font_size_pt": 9.0,
+          "shared_font_size_px": 18.0,
+          "agent_target_font_size_px": 20.0,
+          "explicit_peer_group": true,
+          "technical_floor_pt": 0.5,
+          "agent_target_ceiling_pt": 10.0,
+          "agent_target_unquantized_pt": 10.0,
+          "quantization_reduction_pt": 0,
+          "reduced_from_agent_target": true,
+          "reduced_for_fit": true,
+          "members_not_fitting_target": [
+            "factor-engagements"
+          ],
+          "font_measurement_sources": {
+            "factor-engagements": "/System/Library/Fonts/Supplemental/Arial.ttf",
+            "factor-research": "/System/Library/Fonts/Supplemental/Arial.ttf",
+            "factor-adoption": "/System/Library/Fonts/Supplemental/Arial.ttf",
+            "factor-saved": "/System/Library/Fonts/Supplemental/Arial.ttf"
+          },
+          "profile_adjustments": {},
+          "overflow_evidence": "no_overflow_detected_by_text_measurement"
         }
       ]
     },
@@ -2135,13 +2306,13 @@
         "offset_y_px": 64
       },
       "required_counts": {
-        "text_entities": 20,
+        "text_entities": 23,
         "canonical_assets": 3,
         "icon_slot_surfaces": 0,
         "connector_graphs": 0
       },
       "emitted_counts": {
-        "text_entities": 20,
+        "text_entities": 23,
         "canonical_assets": 3,
         "icon_slot_surfaces": 0,
         "connector_graphs": 0
@@ -2151,8 +2322,8 @@
       "note": "No quality or reconstruction verdict is produced. Visual reasoning remains external."
     },
     "input_bindings": {
-      "measured_scene_sha256": "8882c3a6087080de1e91af982f95ea576277ec28ace400c3c8bdd3249509f22e",
-      "reconstruction_contract_sha256": "dec43f33de2f68ad4070f5a60f21fdd0444cd398e50c2bb64eee9aef313625cb",
+      "measured_scene_sha256": "d4b15b600f44fd927caa3890960380a22283c0c2d9e79534495cf15538e72879",
+      "reconstruction_contract_sha256": "bd97af658de76d2f7a50d96c0d782da208caf1436d601fbaa11a211c638d8bb1",
       "resolved_design_sha256": "ee255d93bab18eea1c3d44524732402c57d708a2a01e8270dec54f3fa8c2c88f"
     }
   },

@@ -1,5 +1,6 @@
 {
   "reviewer": "host_agent_visual_reasoning",
+  "reviewed_on": "2026-09-08",
   "stage": "measurement",
   "decision": "accepted",
   "material_issues": [],
@@ -10,28 +11,24 @@
     },
     {
       "path": "semantic-map.json",
-      "sha256": "17490ed62799f4a31511bd3d9e9571e6351d30722d07f364b119f1ce838234fc"
+      "sha256": "bdc990d8bce5f413cb8ed608f97544a89b71153043b731ce2303d3af56d87cef"
     },
     {
       "path": "reconstruction-handoff.json",
-      "sha256": "382e1a5a1974c4419424a193284411d864d8703d5ebbf93a6c4353d47132056c"
+      "sha256": "928cbaa491fc2a6d8b47a10fac9f6d89c6d1542df2fbda9fef0208da009e0915"
     },
     {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "a50fa6a4e0123827bee9726229dad855a6546224dcdf006c8420844d22fb4094"
+      "sha256": "39559b5c80f75205e06fa4c68645984e82439a5b663f21357cac25e32a8668e0"
     },
     {
       "path": "reconstruction/measurement/debug_overlay.png",
-      "sha256": "23f60f3d21f68be48ac23def5b86fd5c31da5d72a521e3e754bacf088a46a699"
+      "sha256": "20ba599fc9c0b58664937d008e53fa372862dfd8127cf7b6ab90848ee1d2cbd5"
     }
   ],
   "observations": [
-    "I inspected the accepted 1920 by 960 body and the OpenCV debug overlay. The title and subtitle have independent ink-search windows and native logical allocations. Four native stage labels remain inside the four observed orange boxes.",
-    "The complete responsibility matrix is one native table with five columns and five rows. Each cell retains its own editable text, fill, emphasis and owner. Its row heights remain 55, 65, 64, 64 and 85 body pixels.",
-    "All three forward corridors connect adjacent stage boundaries at mid-height. Both feedback corridors were traced from the current source and remain separate. The first returns Grounded draft to Approved sources and the second returns Expert review to Grounded draft.",
-    "The accepted raster has small endpoint gaps. The authored native freeform endpoints meet the observed responsibility-column bottom at body y 648. Each route retains two cubic corners and one target arrowhead. Both relationships are identified in the semantic map and handoff.",
-    "Normal Arial wrapping takes three lines per supporting paragraph. Its logical allocations preserve the shared 28-pixel size while the search windows remain bound to the original source ink. No horizontal text scaling is used.",
-    "All seven fitted text groups reach the authored 64, 32, 28 or 24-pixel target with no quantization or allocation reduction. OpenCV completed the whole measurement route with no SAM dependency.",
-    "The final independent cross-page review calibrated the title allocation to body [48,19,1824,80], subtitle to [48,103,1824,51] and divider y165. The decision band is [48,793,1824,134]. Its label starts x100 and message x560, both sharing y832, height52 and centered vertical alignment. Source ink-search windows remain unchanged and no body text was reduced."
+    "I inspected the source and the OpenCV overlay. Visible-ink search regions are evidence for the host-authored objects. Coloured layout bounds can differ where native type wrapping or a recorded correction requires another allocation.",
+    "Both feedback relationships are present. Expert review returns to Grounded draft and Grounded draft returns to Approved sources. The two orange routes have separate horizontal corridors and visible downward arrowheads entering the preceding stage.",
+    "The full semantic map is retained. Table and chart interiors belong to their native parent object. The measurement overlay does not independently judge semantic completeness."
   ]
 }

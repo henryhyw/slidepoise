@@ -1,8 +1,9 @@
 {
   "reviewer": "host_agent_visual_reasoning",
+  "reviewed_on": "2026-09-08",
+  "stage": "measurement",
   "decision": "accepted",
   "material_issues": [],
-  "stage": "measurement",
   "reviewed_artifacts": [
     {
       "path": "accepted-slide.png",
@@ -10,27 +11,24 @@
     },
     {
       "path": "semantic-map.json",
-      "sha256": "cef981d17b39419738a7197e7ce10f987e8e5061bfadbf54af587c3fb5579afa"
+      "sha256": "0aaf9207a355dd59651c4dfa9ed292c1420ea890d4606c63eea9eb1688af1a95"
     },
     {
       "path": "reconstruction-handoff.json",
-      "sha256": "dbcc3311184654f1e204cdddcf7e22d16396d5467b37d741e56457f226fc89a8"
+      "sha256": "5b7dbca144de092b64e24bd0e52e4131ee21f938046371f38e9db3c141a511c1"
     },
     {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "e6c8f4f680eda3dbf0738106d0f76c388576ac032440328372db332166cac0a3"
+      "sha256": "d3c65bbd696cb9381cf58bd62da5cc55d42b12f84d8a52d18a0b48838a85197e"
     },
     {
       "path": "reconstruction/measurement/debug_overlay.png",
-      "sha256": "fab55c38b6ad16cc89e06d595867ad516692f543f6606ad0590fba61bacd2e4e"
+      "sha256": "52cf27596aa7d0410215e7fc3b91f8ea7d01d74938a98a26cd8f151659c8e982"
     }
   ],
   "observations": [
-    "I inspected the final OpenCV overlay. Headline and subtitle source-ink windows are separate from native logical allocations. The three right-side title/detail windows cover the original glyphs completely after baseline adjustments.",
-    "The chart owns six measured category/value regions. Those regions remain evidence members and emit no independent text. A native chart retains the category and value semantics together.",
-    "The two tables retain their complete authored row and column structure. The formula and overlap qualification remain separate substantive text regions. Three semantic groups express opportunity calculation, control readiness and the pilot rationale.",
-    "All ten emitting typography groups reach their host-authored targets without reduction. OpenCV supplies local pixel geometry, and the observed native font baseline determines the logical text placement.",
-    "No raster object, icon or connector was invented. The native rectangle allocations represent the observed rules, gray qualification panel and shared decision band.",
-    "Deck-level calibration aligns the title allocation at body x48 y19, the subtitle at y103, and the introduction rule at y165. The decision band uses body [48,793,1824,134], an 8-pixel bar and shared label/message allocations. Search windows remain anchored to the generated source ink, including the original separator and accent locations."
+    "I inspected the source and the OpenCV overlay. Visible-ink search regions are evidence for the host-authored objects. Coloured layout bounds can differ where native type wrapping or a recorded correction requires another allocation.",
+    "The chart has three vertical columns in the source order. The first value is orange and all three values are bold. The selected Research synthesis row has a pale orange fill.",
+    "The full semantic map is retained. Table and chart interiors belong to their native parent object. The measurement overlay does not independently judge semantic completeness."
   ]
 }

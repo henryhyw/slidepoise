@@ -1,5 +1,6 @@
 {
   "reviewer": "host_agent_visual_reasoning",
+  "reviewed_on": "2026-09-08",
   "stage": "measurement",
   "decision": "accepted",
   "material_issues": [],
@@ -10,25 +11,24 @@
     },
     {
       "path": "semantic-map.json",
-      "sha256": "3c60c3b923178de2b326e5f85a40aaf62c64ac6474db2f3a71e97a27a45e91bb"
+      "sha256": "da3b80fa051ca670aa6adeabd0c1e09d3cdd5d68faced343262bee9f7ee9dd06"
     },
     {
       "path": "reconstruction-handoff.json",
-      "sha256": "fa8870fcb828ac2e842ecd5fc85d3e0d3971ee1b24d368f63b6ce4bf44951997"
+      "sha256": "389dc0c1c8093d79da1d5de91fe8f877fd811e7569ce7f912c197963f861bd43"
     },
     {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "b9d39fa8320a20c5bbddacc7293c75ed90d28e71627c4e25e9bed514dcd18d1d"
+      "sha256": "0884c67241df323db9bf7690427873af196e792a90c5864aa7ba8276a7582b62"
     },
     {
       "path": "reconstruction/measurement/debug_overlay.png",
-      "sha256": "2c9bc502b7b13c830ca101331826ecd9e94de751592a803becc3598c0450816b"
+      "sha256": "9acca1dc56d95ba698038fc0ab9880726e15d8b3ff56d509c49f9d17b57e3ea9"
     }
   ],
   "observations": [
-    "I inspected the actual OpenCV overlay. The measured table, four gate panels, timeline markers, three arrows and substantive decision band correspond to the source image.",
-    "The native allocation preserves named Arial and Georgia fonts. Title, subtitle and decision positions follow the parent Agent cross-slide calibration. Source search windows still refer to the original image ink.",
-    "Gate evidence allocations are 133 by 114 body pixels. This accommodates the three-line fourth gate at the shared 24px annotation size. The compiler now reports no reduction in any of the eight text groups.",
-    "OpenCV supplies all required measurement evidence. SAM is disabled and contributes no mask."
+    "I inspected the source and the OpenCV overlay. Visible-ink search regions are evidence for the host-authored objects. Coloured layout bounds can differ where native type wrapping or a recorded correction requires another allocation.",
+    "Workstream names are bold and owner lines are regular. All four time windows and workstream rows remain legible. The G4 caption wraps before decide and stays left of the dependency divider.",
+    "The full semantic map is retained. Table and chart interiors belong to their native parent object. The measurement overlay does not independently judge semantic completeness."
   ]
 }

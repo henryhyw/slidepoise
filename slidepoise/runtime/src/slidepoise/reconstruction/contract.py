@@ -137,6 +137,10 @@ def build_reconstruction_contract(
     speaker_notes = handoff.get("speaker_notes", [])
     if not isinstance(speaker_notes, list) or any(not isinstance(note, str) for note in speaker_notes):
         raise ValueError("handoff.speaker_notes must be an array of strings")
+    from .coverage import content_obligation_errors
+    coverage_errors = content_obligation_errors(measured_scene.get("entities", []), handoff)
+    if coverage_errors:
+        raise ValueError(f"Unfulfilled content obligations: {coverage_errors}")
     source = measured_scene["source"]
     geometry = reconstruction_geometry(design, [source["width_px"], source["height_px"]])
     # Full-slide geometry and frame heights come only from the resolved config.
@@ -192,6 +196,7 @@ def build_reconstruction_contract(
         **geometry,
         "frame_configuration": frame_configuration,
         **({"speaker_notes": list(speaker_notes)} if speaker_notes else {}),
+        "content_obligations": handoff.get("content_obligations", []),
         "reconstruction_units": units,
         "canonical_asset_mappings": assets,
         "connector_reconstruction_plans": connectors,

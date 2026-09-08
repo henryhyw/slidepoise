@@ -177,19 +177,55 @@
     "The three workflow estimates may overlap and cannot be added without checking task boundaries. Capacity released is not a cash saving. Control readiness determines the proposed sequence, and expert review remains required before any client release."
   ],
   "notes": [
-    "Values are planning assumptions for a fictional firm. Check task overlap before aggregating workflow benefits.",
-    "The chart contains one real workbook-linked series. Category names and numeric labels are native chart components, including the hours suffix. The six source labels are non-emitting chart-owned measurement members.",
-    "Native numeric labels explicitly disable wrapping after actual LibreOffice rendering showed its default narrow label allocation split the digits. This preserves one-line values without independent textboxes.",
-    "Changing a category in the workbook updates the chart. The separate comparison and assumption tables are independent editable business views and require corresponding authored content updates.",
-    "Two native tables retain explicit header/body roles and every row. Owner cells use minimal horizontal padding so full Arial Knowledge remains readable at the shared 24-pixel table size.",
-    "The generated first bar is orange and the other bars are gray. Native fills use the exact flat orange and two gray colors from the accepted edit request.",
-    "The shared native title, subtitle, section/body, table and decision sizes stay 64, 32, 28, 24 and 28 pixels. Explicit paragraph reflow preserves every word where native Arial is wider than the generated glyphs.",
-    "The source has no numeral squares, icons, arrows or raster artwork. The gray overlap warning is substantive content, separate from the inherited frame.",
-    "Generation uses the 1920 by 960 substantive body and the runtime adds the separate inherited 64-pixel header and 56-pixel footer.",
-    "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-    "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-    "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-    "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-    "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files."
+    "Preserve vertical chart columns, category order, orange first value, and the selected research row. Numeric labels remain linked to chart values.",
+    "The assumptions and sequencing tables are separate editable business views. Editing the chart does not recalculate them.",
+    "The semantic map owns current geometry and type roles. The inherited frame is added outside the generated content region. Canonical SVGs replace generated icon stand-ins."
+  ],
+  "content_obligations": [
+    {
+      "id": "opportunity-model",
+      "description": "The chart and editable assumption table expose the complete value model.",
+      "entity_ids": [
+        "capacity-heading",
+        "chart-unit",
+        "annual-capacity-chart",
+        "value-model-heading",
+        "value-model",
+        "formula-strip",
+        "capacity-formula"
+      ]
+    },
+    {
+      "id": "pilot-choice",
+      "description": "Icons explain the rationale while the table tests control readiness and ownership.",
+      "entity_ids": [
+        "reason-heading",
+        "reason-icon-file",
+        "reason-file",
+        "reason-icon-corpus",
+        "reason-corpus",
+        "reason-icon-reviewer",
+        "reason-reviewer",
+        "sequencing-heading",
+        "pilot-sequencing",
+        "overlap-note"
+      ]
+    },
+    {
+      "id": "page-message",
+      "description": "The slide claim and its qualification",
+      "entity_ids": [
+        "headline",
+        "subtitle"
+      ]
+    },
+    {
+      "id": "decision",
+      "description": "Approved-source pilot boundary",
+      "entity_ids": [
+        "decision-label",
+        "decision-message"
+      ]
+    }
   ]
 }

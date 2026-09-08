@@ -1,28 +1,1317 @@
 {
-  "schema_version": "1.0",
-  "source_semantic_map": "semantic-map.json",
-  "source_semantic_map_sha256": "2fa9939d5c3e019908db445bb9fb137c4744934f7f9686b5d6b48fb6d3e42888",
-  "notice": "Selected explanations for readers. The full semantic map retains 32 editable entities.",
+  "schema_version": "3.2.0",
+  "provenance": {
+    "created_by": "host_agent_visual_reasoning",
+    "source": "accepted_generated_image",
+    "source_sha256": "8901e2a892e61bcdaab3931929e840de1317f8409eee606534a3d7b247dd3d05",
+    "composition_policy": "accepted_target_geometry_frozen"
+  },
   "entities": [
     {
       "id": "headline",
+      "display_label": "Prove the research pilot before scaling AI",
       "kind": "text",
-      "display_label": "Slide conclusion",
-      "members": [
-        "headline"
-      ],
+      "role": "slide_title",
+      "text": "Prove the research pilot before scaling AI",
+      "text_style_role": "slide_title",
+      "typography_group": "claim-title",
       "bbox_hint": [
         46,
         20,
         1828,
         76
-      ]
+      ],
+      "search_bbox_hint": [
+        46,
+        20,
+        1828,
+        76
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Georgia",
+        "font_weight": "regular",
+        "target_font_size_px": 64,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
     },
     {
+      "id": "subtitle",
+      "display_label": "One practice. 15 consultants. 20 paired research tasks. A 12-week, $25k pilot.",
+      "kind": "text",
+      "role": "subtitle",
+      "text": "One practice. 15 consultants. 20 paired research tasks. A 12-week, $25k pilot.",
+      "text_style_role": "subtitle",
+      "typography_group": "subtitle",
+      "bbox_hint": [
+        47,
+        101,
+        1825,
+        48
+      ],
+      "search_bbox_hint": [
+        47,
+        101,
+        1825,
+        48
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 32,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "baseline",
+      "display_label": "10,800 h",
+      "kind": "text",
+      "role": "large_data_number",
+      "text": "10,800 h",
+      "text_style_role": "large_data_number",
+      "typography_group": "display-data",
+      "bbox_hint": [
+        47,
+        191,
+        500,
+        94
+      ],
+      "search_bbox_hint": [
+        47,
+        191,
+        500,
+        94
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 80,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#FD5108",
+        "style_authority": "agent_visual_observation"
+      },
+      "style_token": "data_highlight"
+    },
+    {
+      "id": "baseline-label",
+      "display_label": "Annual research baseline",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "Annual research baseline",
+      "text_style_role": "heading_large",
+      "typography_group": "metric-labels",
+      "bbox_hint": [
+        47,
+        282,
+        500,
+        38
+      ],
+      "search_bbox_hint": [
+        47,
+        282,
+        500,
+        38
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "baseline-formula",
+      "display_label": "900 engagements \u00d7 12 h",
+      "kind": "text",
+      "role": "body",
+      "text": "900 engagements \u00d7 12 h",
+      "text_style_role": "body",
+      "typography_group": "metric-formulas",
+      "bbox_hint": [
+        47,
+        326,
+        500,
+        42
+      ],
+      "search_bbox_hint": [
+        47,
+        326,
+        500,
+        42
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 26,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "capacity",
+      "display_label": "1,944 h",
+      "kind": "text",
+      "role": "large_data_number",
+      "text": "1,944 h",
+      "text_style_role": "large_data_number",
+      "typography_group": "display-data",
+      "bbox_hint": [
+        722,
+        191,
+        500,
+        94
+      ],
+      "search_bbox_hint": [
+        722,
+        191,
+        500,
+        94
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 80,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#FD5108",
+        "style_authority": "agent_visual_observation"
+      },
+      "style_token": "data_highlight"
+    },
+    {
+      "id": "capacity-label",
+      "display_label": "Potential annual capacity",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "Potential annual capacity",
+      "text_style_role": "heading_large",
+      "typography_group": "metric-labels",
+      "bbox_hint": [
+        722,
+        282,
+        500,
+        38
+      ],
+      "search_bbox_hint": [
+        722,
+        282,
+        500,
+        38
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "capacity-formula",
+      "display_label": "60% adoption \u00d7 30% time reduction",
+      "kind": "text",
+      "role": "body",
+      "text": "60% adoption \u00d7 30% time reduction",
+      "text_style_role": "body",
+      "typography_group": "metric-formulas",
+      "bbox_hint": [
+        722,
+        326,
+        500,
+        42
+      ],
+      "search_bbox_hint": [
+        722,
+        326,
+        500,
+        42
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 26,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "value",
+      "display_label": "$243k",
+      "kind": "text",
+      "role": "large_data_number",
+      "text": "$243k",
+      "text_style_role": "large_data_number",
+      "typography_group": "display-data",
+      "bbox_hint": [
+        1408,
+        191,
+        500,
+        94
+      ],
+      "search_bbox_hint": [
+        1408,
+        191,
+        500,
+        94
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 80,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#FD5108",
+        "style_authority": "agent_visual_observation"
+      },
+      "style_token": "data_highlight"
+    },
+    {
+      "id": "value-label",
+      "display_label": "Annual capacity equivalent",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "Annual capacity equivalent",
+      "text_style_role": "heading_large",
+      "typography_group": "metric-labels",
+      "bbox_hint": [
+        1408,
+        282,
+        500,
+        38
+      ],
+      "search_bbox_hint": [
+        1408,
+        282,
+        500,
+        38
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "value-formula",
+      "display_label": "1,944 h \u00d7 $125 per hour",
+      "kind": "text",
+      "role": "body",
+      "text": "1,944 h \u00d7 $125 per hour",
+      "text_style_role": "body",
+      "typography_group": "metric-formulas",
+      "bbox_hint": [
+        1408,
+        326,
+        500,
+        42
+      ],
+      "search_bbox_hint": [
+        1408,
+        326,
+        500,
+        42
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 26,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "metric-divider-1",
+      "display_label": "metric divider 1",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        642,
+        210,
+        1,
+        140
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#D0D0D0",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      },
+      "structural_boundary": true
+    },
+    {
+      "id": "metric-divider-2",
+      "display_label": "metric divider 2",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        1313,
+        210,
+        1,
+        140
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#D0D0D0",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      },
+      "structural_boundary": true
+    },
+    {
+      "id": "argument-heading",
+      "display_label": "WHY THIS PILOT FIRST",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "WHY THIS PILOT FIRST",
+      "text_style_role": "heading_large",
+      "typography_group": "section",
+      "bbox_hint": [
+        47,
+        397,
+        910,
+        42
+      ],
+      "search_bbox_hint": [
+        47,
+        397,
+        910,
+        42
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-icon-01",
+      "display_label": "Focus a repeatable task",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-focus-2-line",
+      "bbox_hint": [
+        74,
+        449,
+        94,
+        94
+      ],
+      "slot_bbox_hint": [
+        74,
+        449,
+        94,
+        94
+      ],
+      "geometry_policy": "agent_logical",
+      "slot_surface": {
+        "visible": false
+      },
+      "style_hint": {
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
+      "z": 30,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "deck-supporting-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-focus-2-line",
+          "remix-focus-2-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "id": "reason-number-01",
+      "display_label": "01",
+      "kind": "text",
+      "role": "body",
+      "text": "01",
+      "text_style_role": "body",
+      "typography_group": "reason-numbers",
+      "bbox_hint": [
+        214,
+        456,
+        65,
+        40
+      ],
+      "search_bbox_hint": [
+        214,
+        456,
+        65,
+        40
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 30,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-title-01",
+      "display_label": "Focus a repeatable task",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "Focus a repeatable task",
+      "text_style_role": "heading_large",
+      "typography_group": "reason-titles",
+      "bbox_hint": [
+        305,
+        458,
+        700,
+        38
+      ],
+      "search_bbox_hint": [
+        305,
+        458,
+        700,
+        38
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-detail-01",
+      "display_label": "Approved sources, frequent use and comparable inputs.",
+      "kind": "text",
+      "role": "body",
+      "text": "Approved sources, frequent use and comparable inputs.",
+      "text_style_role": "body",
+      "typography_group": "reason-details",
+      "bbox_hint": [
+        305,
+        500,
+        730,
+        65
+      ],
+      "search_bbox_hint": [
+        305,
+        500,
+        730,
+        65
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 26,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-icon-02",
+      "display_label": "Preserve expert review",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-team-line",
+      "bbox_hint": [
+        74,
+        573,
+        94,
+        94
+      ],
+      "slot_bbox_hint": [
+        74,
+        573,
+        94,
+        94
+      ],
+      "geometry_policy": "agent_logical",
+      "slot_surface": {
+        "visible": false
+      },
+      "style_hint": {
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
+      "z": 30,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "deck-supporting-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-team-line",
+          "remix-team-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "id": "reason-number-02",
+      "display_label": "02",
+      "kind": "text",
+      "role": "body",
+      "text": "02",
+      "text_style_role": "body",
+      "typography_group": "reason-numbers",
+      "bbox_hint": [
+        214,
+        580,
+        65,
+        40
+      ],
+      "search_bbox_hint": [
+        214,
+        580,
+        65,
+        40
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 30,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-title-02",
+      "display_label": "Preserve expert review",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "Preserve expert review",
+      "text_style_role": "heading_large",
+      "typography_group": "reason-titles",
+      "bbox_hint": [
+        305,
+        582,
+        700,
+        38
+      ],
+      "search_bbox_hint": [
+        305,
+        582,
+        700,
+        38
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-detail-02",
+      "display_label": "Verify every client claim before release.",
+      "kind": "text",
+      "role": "body",
+      "text": "Verify every client claim before release.",
+      "text_style_role": "body",
+      "typography_group": "reason-details",
+      "bbox_hint": [
+        305,
+        624,
+        730,
+        65
+      ],
+      "search_bbox_hint": [
+        305,
+        624,
+        730,
+        65
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 26,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-icon-03",
+      "display_label": "Fund against evidence",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-shield-check-line",
+      "bbox_hint": [
+        74,
+        693,
+        94,
+        94
+      ],
+      "slot_bbox_hint": [
+        74,
+        693,
+        94,
+        94
+      ],
+      "geometry_policy": "agent_logical",
+      "slot_surface": {
+        "visible": false
+      },
+      "style_hint": {
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
+      "z": 30,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "deck-supporting-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-shield-check-line",
+          "remix-shield-check-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "id": "reason-number-03",
+      "display_label": "03",
+      "kind": "text",
+      "role": "body",
+      "text": "03",
+      "text_style_role": "body",
+      "typography_group": "reason-numbers",
+      "bbox_hint": [
+        214,
+        700,
+        65,
+        40
+      ],
+      "search_bbox_hint": [
+        214,
+        700,
+        65,
+        40
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 30,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-title-03",
+      "display_label": "Fund against evidence",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "Fund against evidence",
+      "text_style_role": "heading_large",
+      "typography_group": "reason-titles",
+      "bbox_hint": [
+        305,
+        702,
+        700,
+        38
+      ],
+      "search_bbox_hint": [
+        305,
+        702,
+        700,
+        38
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "reason-detail-03",
+      "display_label": "Practice lead and CFO release $60k only after the week-12 gate.",
+      "kind": "text",
+      "role": "body",
+      "text": "Practice lead and CFO release $60k\nonly after the week-12 gate.",
+      "text_style_role": "body",
+      "typography_group": "reason-details",
+      "bbox_hint": [
+        305,
+        744,
+        730,
+        65
+      ],
+      "search_bbox_hint": [
+        305,
+        744,
+        730,
+        65
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 26,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "gate-heading",
+      "display_label": "WEEK-12 SCALE GATE",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "WEEK-12 SCALE GATE",
+      "text_style_role": "heading_large",
+      "typography_group": "section",
+      "bbox_hint": [
+        1060,
+        397,
+        820,
+        42
+      ],
+      "search_bbox_hint": [
+        1060,
+        397,
+        820,
+        42
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "scale-gate-table",
+      "display_label": "Four conditions for scaling the pilot",
+      "kind": "table",
+      "role": "structured_evidence",
+      "bbox_hint": [
+        1060,
+        448,
+        820,
+        334
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 5,
+      "meaningful_visible": true,
+      "table_structure": {
+        "rows": [
+          [
+            {
+              "text": "Measure",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Minimum to scale",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Cycle-time reduction",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "25%",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Sampled cited claims verified",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "95%",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Critical data exceptions",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "0",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Weekly-active pilot users",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "70% \u00b7 at least 11 of 15",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            }
+          ]
+        ],
+        "column_widths_px": [
+          450,
+          370
+        ],
+        "row_heights_px": [
+          60,
+          68,
+          68,
+          68,
+          70
+        ]
+      },
+      "style_hint": {
+        "font_family": "Arial",
+        "font_size_px": 24,
+        "cell_margin_px": 8,
+        "color": "#000000",
+        "fill": "#FFFFFF",
+        "stroke": "#C6C9CD",
+        "stroke_width_px": 1,
+        "vertical_alignment": "middle"
+      }
+    },
+    {
+      "id": "decision-band",
+      "display_label": "decision band",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        46,
+        835,
+        1828,
+        93
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#FFF5ED",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "decision-accent",
+      "display_label": "decision accent",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        46,
+        835,
+        8,
+        93
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#FD5108",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "decision-label",
+      "display_label": "DECISION REQUESTED",
+      "kind": "text",
+      "role": "call_to_action",
+      "text": "DECISION REQUESTED",
+      "text_style_role": "call_to_action",
+      "typography_group": "decision",
+      "bbox_hint": [
+        80,
+        853,
+        430,
+        50
+      ],
+      "search_bbox_hint": [
+        80,
+        853,
+        430,
+        50
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "middle",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#FD5108",
+        "style_authority": "agent_visual_observation"
+      },
+      "style_token": "call_to_action"
+    },
+    {
+      "id": "decision-message",
+      "display_label": "Approve $25k and name a practice sponsor.",
+      "kind": "text",
+      "role": "call_to_action",
+      "text": "Approve $25k and name a practice sponsor.",
+      "text_style_role": "call_to_action",
+      "typography_group": "decision",
+      "bbox_hint": [
+        520,
+        853,
+        1318,
+        50
+      ],
+      "search_bbox_hint": [
+        520,
+        853,
+        1318,
+        50
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "middle",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    }
+  ],
+  "groups": [
+    {
       "id": "pilot-economics",
-      "kind": "group",
       "display_label": "Pilot economics",
-      "members": [
+      "semantic_class": "planning calculation",
+      "bbox_hint": [
+        47,
+        191,
+        1861,
+        177
+      ],
+      "children": [
         "baseline",
         "baseline-label",
         "baseline-formula",
@@ -35,18 +1324,19 @@
         "metric-divider-1",
         "metric-divider-2"
       ],
-      "bbox_hint": [
-        47,
-        176,
-        1820,
-        138
-      ]
+      "group_reason": "Three linked numbers show the baseline, capacity and annual equivalent."
     },
     {
       "id": "pilot-rationale",
-      "kind": "group",
       "display_label": "Why this pilot first",
-      "members": [
+      "semantic_class": "decision argument",
+      "bbox_hint": [
+        74,
+        449,
+        961,
+        360
+      ],
+      "children": [
         "reason-icon-01",
         "reason-number-01",
         "reason-title-01",
@@ -60,41 +1350,36 @@
         "reason-title-03",
         "reason-detail-03"
       ],
-      "bbox_hint": [
-        47,
-        356,
-        940,
-        370
-      ]
+      "group_reason": "Each reason has a distinct icon, claim and supporting sentence."
     },
     {
       "id": "scale-gate",
-      "kind": "group",
       "display_label": "Week-12 scale gate",
-      "members": [
+      "semantic_class": "release criteria",
+      "bbox_hint": [
+        1060,
+        397,
+        820,
+        385
+      ],
+      "children": [
         "gate-heading",
         "scale-gate-table"
       ],
-      "bbox_hint": [
-        1068,
-        356,
-        800,
-        378
-      ]
-    },
-    {
-      "id": "decision-message",
-      "kind": "text",
-      "display_label": "Decision or boundary",
-      "members": [
-        "decision-message"
-      ],
-      "bbox_hint": [
-        520,
-        853,
-        1318,
-        50
-      ]
+      "group_reason": "The table keeps the four measurable release conditions editable."
     }
-  ]
+  ],
+  "relationships": [],
+  "layout_constraints": {
+    "non_overlap_pairs": [
+      [
+        "headline",
+        "subtitle"
+      ],
+      [
+        "decision-band",
+        "headline"
+      ]
+    ]
+  }
 }

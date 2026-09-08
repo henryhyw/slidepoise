@@ -88,7 +88,7 @@ The final visual review must compare silhouettes. An in-range radius is only mec
 ## Layout integrity and survival
 Only the host Agent decides which independent content regions must not overlap. Record those pairs in the semantic map. The runtime enforces the declared pairs after canonical asset placement and text fitting.
 
-The runtime also treats thin rules and dividers as structural boundaries. Text crossing one is a blocking fact. For an intentional composition such as a label placed across a rule, set `allow_text_crossing: true` on that rule or `allow_boundary_crossing: true` on the text entity and record the reason in the visual review.
+The host marks meaningful dividers with `structural_boundary: true`. A textbox allocation crossing a declared boundary is a blocking fact. A thin shape alone does not establish semantic separation, and an allocated textbox is not its visible ink. For an intentional composition such as a label placed across a rule, set `allow_text_crossing: true` on that rule or `allow_boundary_crossing: true` on the text entity and record the reason in the visual review.
 
 Every meaningful visible entity in the accepted target must survive reconstruction. It must either emit its own PowerPoint object or explicitly identify a distinct emitted `render_owner` that replaces/owns it. `measurement_evidence` may be non-emitting only when `meaningful_visible=false`. Never remove an entity merely because a canonical asset is unavailable or because the Agent thinks the slide would be simpler without it; such a candidate should have been rejected upstream.
 
@@ -99,3 +99,11 @@ The host inspects the measured overlay and authors any necessary local correctio
 The substantive image excludes enabled header/footer regions. Reconstruction maps that image into the derived generation region, then the renderer creates inherited frame content through the PowerPoint Slide Master/layout hierarchy.
 
 PowerPoint slides do not expose a native slide-header placeholder, so header text/rules are master-layer inherited elements. Footer text/rules are also inherited master/layout elements. Slide number uses PowerPoint's native slide-number field on the master. These frame elements must not be emitted as ordinary slide objects.
+
+## Content obligations and native tables
+
+The handoff's `content_obligations` preserves a host-authored inventory independently of the semantic map. Each entry has a unique `id`, a `description`, and nonempty `entity_ids`. A relationship additionally declares `connection` with `entity_id`, `source_entities`, `target_entities`, and boolean `directed`. The constructor rejects missing required entities and changed relationship ownership or direction. This is an exact contract check. The host still judges whether the inventory covers the plan and image.
+
+Treat a table as a composition of cells. Preserve each cell's alignment, selected-row fill, run-level emphasis and intentional line breaks. Cell `margin_px` accepts four nonnegative pixel values in top, right, bottom, left order. The renderer converts those slide-canvas pixels into Office points. Legacy `options.margin` already uses points. Do not mix both fields or pass measured pixels as Office points. Named fonts, margins and column widths jointly determine wrapping. Inspect the actual native render for broken words and row growth.
+
+Separate spatially distinct formula annotations into individual text entities. Padding a single string with spaces cannot preserve the relationship between factors and captions through font substitution or text fitting.

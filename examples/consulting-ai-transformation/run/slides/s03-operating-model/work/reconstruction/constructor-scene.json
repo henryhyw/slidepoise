@@ -13,10 +13,10 @@
       "kind": "shape",
       "shape": "rectangle",
       "bbox_px": [
-        900,
-        764,
+        958,
+        796,
         1,
-        108
+        97
       ],
       "style": {
         "fill": "#B7BCC2",
@@ -24,6 +24,8 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": true,
       "z": 1.0
     },
     {
@@ -42,6 +44,8 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 1.0
     },
     {
@@ -60,6 +64,88 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
+      "z": 1.0
+    },
+    {
+      "id": "shared-controls-1-bullet",
+      "kind": "shape",
+      "shape": "ellipse",
+      "bbox_px": [
+        52,
+        833,
+        10,
+        10
+      ],
+      "style": {
+        "fill": "#FD5108",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
+      "z": 1.0
+    },
+    {
+      "id": "shared-controls-2-bullet",
+      "kind": "shape",
+      "shape": "ellipse",
+      "bbox_px": [
+        52,
+        867,
+        10,
+        10
+      ],
+      "style": {
+        "fill": "#FD5108",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
+      "z": 1.0
+    },
+    {
+      "id": "measurement-1-bullet",
+      "kind": "shape",
+      "shape": "ellipse",
+      "bbox_px": [
+        1003,
+        833,
+        10,
+        10
+      ],
+      "style": {
+        "fill": "#FD5108",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
+      "z": 1.0
+    },
+    {
+      "id": "measurement-2-bullet",
+      "kind": "shape",
+      "shape": "ellipse",
+      "bbox_px": [
+        1003,
+        867,
+        10,
+        10
+      ],
+      "style": {
+        "fill": "#FD5108",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 1.0
     },
     {
@@ -67,9 +153,9 @@
       "kind": "table",
       "bbox_px": [
         34,
-        446,
-        1836,
-        300
+        478,
+        1852,
+        298
       ],
       "structure": {
         "rows": [
@@ -82,14 +168,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Approved sources",
@@ -99,14 +185,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Grounded draft",
@@ -116,14 +202,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Expert review",
@@ -133,14 +219,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Client-ready output",
@@ -150,14 +236,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ],
           [
@@ -169,14 +255,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Corpus request",
@@ -186,14 +272,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Source pack + task brief",
@@ -203,14 +289,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Draft + evidence trail",
@@ -220,14 +306,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Signed draft + resolved defects",
@@ -237,14 +323,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ],
           [
@@ -256,14 +342,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Versioned source pack",
@@ -273,14 +359,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Cited draft + uncertainty flags",
@@ -290,14 +376,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Signed review or defect log",
@@ -307,14 +393,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Authorized client deliverable",
@@ -324,14 +410,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ],
           [
@@ -343,14 +429,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Source steward",
@@ -360,14 +446,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Engagement team",
@@ -377,14 +463,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Expert reviewer",
@@ -394,14 +480,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Engagement lead",
@@ -411,14 +497,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ],
           [
@@ -430,14 +516,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Verify permissions\nand dates",
@@ -447,14 +533,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Check citations\nand evidence gaps",
@@ -464,14 +550,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Validate claims\nand quality",
@@ -481,14 +567,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Confirm release\napproval",
@@ -498,35 +584,35 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ]
         ],
         "column_widths_px": [
-          290,
-          385,
-          390,
-          385,
-          386
+          294,
+          365,
+          397,
+          396,
+          400
         ],
         "row_heights_px": [
-          50,
-          58,
-          58,
-          58,
-          76
+          52,
+          52,
+          56,
+          53,
+          85
         ]
       },
       "style": {
         "font_family": "Arial",
-        "font_size_px": 19,
+        "font_size_px": 24,
         "cell_margin_px": 8,
         "color": "#000000",
         "fill": "#FFFFFF",
@@ -543,14 +629,14 @@
       "kind": "connector_graph",
       "sources_px": [
         [
-          298.0,
-          307.0
+          337.0,
+          340.0
         ]
       ],
       "targets_px": [
         [
-          652.0,
-          307.0
+          683.0,
+          340.0
         ]
       ],
       "junctions_px": [],
@@ -617,10 +703,10 @@
       "grouping_side": null,
       "grouping_depth_px": null,
       "grouping_bbox_px": [
-        222,
-        269,
-        76,
-        76
+        233,
+        288,
+        104,
+        104
       ],
       "source_attachment_sides": [
         "right"
@@ -632,12 +718,12 @@
       "target_routes_px": [
         [
           [
-            298.0,
-            307.0
+            337.0,
+            340.0
           ],
           [
-            652.0,
-            307.0
+            683.0,
+            340.0
           ]
         ]
       ],
@@ -652,14 +738,14 @@
       "kind": "connector_graph",
       "sources_px": [
         [
-          728.0,
-          307.0
+          787.0,
+          340.0
         ]
       ],
       "targets_px": [
         [
-          1147.0,
-          307.0
+          1148.0,
+          340.0
         ]
       ],
       "junctions_px": [],
@@ -726,10 +812,10 @@
       "grouping_side": null,
       "grouping_depth_px": null,
       "grouping_bbox_px": [
-        652,
-        269,
-        76,
-        76
+        683,
+        288,
+        104,
+        104
       ],
       "source_attachment_sides": [
         "right"
@@ -741,12 +827,12 @@
       "target_routes_px": [
         [
           [
-            728.0,
-            307.0
+            787.0,
+            340.0
           ],
           [
-            1147.0,
-            307.0
+            1148.0,
+            340.0
           ]
         ]
       ],
@@ -761,14 +847,14 @@
       "kind": "connector_graph",
       "sources_px": [
         [
-          1223.0,
-          307.0
+          1252.0,
+          340.0
         ]
       ],
       "targets_px": [
         [
-          1572.0,
-          307.0
+          1583.0,
+          340.0
         ]
       ],
       "junctions_px": [],
@@ -835,10 +921,10 @@
       "grouping_side": null,
       "grouping_depth_px": null,
       "grouping_bbox_px": [
-        1147,
-        269,
-        76,
-        76
+        1148,
+        288,
+        104,
+        104
       ],
       "source_attachment_sides": [
         "right"
@@ -850,18 +936,252 @@
       "target_routes_px": [
         [
           [
-            1223.0,
-            307.0
+            1252.0,
+            340.0
           ],
           [
-            1572.0,
-            307.0
+            1583.0,
+            340.0
           ]
         ]
       ],
       "source_path_representations": [],
       "target_path_representations": [
         "native_connector"
+      ],
+      "z": 10.0
+    },
+    {
+      "id": "source-return",
+      "kind": "connector_graph",
+      "sources_px": [
+        [
+          719.4,
+          288.0
+        ]
+      ],
+      "targets_px": [
+        [
+          285.0,
+          288.0
+        ]
+      ],
+      "junctions_px": [],
+      "route": "orthogonal_dependency",
+      "style": {
+        "color": "#FD5108",
+        "width_px": 3.0,
+        "dash": "solid"
+      },
+      "arrowhead_treatment": "triangle_at_target",
+      "arrowhead": {
+        "type": "triangle",
+        "powerpoint_size": "lg",
+        "minimum_visible_endpoint_px": 18,
+        "minimum_clear_segment_px": 16,
+        "length_px": 14,
+        "width_px": 12
+      },
+      "junction_style": {
+        "style": "none",
+        "diameter_px": null
+      },
+      "routing_constraints": {
+        "minimum_clearance_px": 12,
+        "maximum_ordinary_bends": 2,
+        "grouping_brace_depth_px": 34,
+        "grouping_bracket_depth_px": 22,
+        "grouping_brace_preset_depth_factor": 1.7
+      },
+      "route_visual_review": {
+        "reviewed": true,
+        "decision": "A separate overhead corridor returns rejected work to its accountable previous stage. The target arrow enters the top of that stage. Generated bracket-like fragments are corrected using the explicit feedback intent.",
+        "review_artifact": "accepted-slide.png"
+      },
+      "semantic_intent": {
+        "connector_family": "orthogonal_dependency",
+        "directed": true,
+        "source_entities": [
+          "stage-icon-draft"
+        ],
+        "target_entities": [
+          "stage-icon-sources"
+        ],
+        "source_attachment_sides": [
+          "top"
+        ],
+        "target_attachment_sides": [
+          "top"
+        ],
+        "source_attachment_fractions": [
+          0.35
+        ],
+        "target_attachment_fractions": [
+          0.5
+        ],
+        "semantic_topology_verified": true,
+        "route_mode": "authored_waypoints",
+        "junction_style": "none",
+        "visual_route_reviewed": true,
+        "visual_route_decision": "A separate overhead corridor returns rejected work to its accountable previous stage. The target arrow enters the top of that stage. Generated bracket-like fragments are corrected using the explicit feedback intent.",
+        "visual_route_review_artifact": "accepted-slide.png"
+      },
+      "connector_family": "orthogonal_dependency",
+      "grouping_side": null,
+      "grouping_depth_px": null,
+      "grouping_bbox_px": [
+        683,
+        288,
+        104,
+        104
+      ],
+      "source_attachment_sides": [
+        "top"
+      ],
+      "target_attachment_sides": [
+        "top"
+      ],
+      "source_routes_px": [],
+      "target_routes_px": [
+        [
+          [
+            719.4,
+            288.0
+          ],
+          [
+            719.4,
+            254.0
+          ],
+          [
+            285.0,
+            254.0
+          ],
+          [
+            285.0,
+            288.0
+          ]
+        ]
+      ],
+      "source_path_representations": [],
+      "target_path_representations": [
+        "editable_freeform"
+      ],
+      "z": 10.0
+    },
+    {
+      "id": "review-return",
+      "kind": "connector_graph",
+      "sources_px": [
+        [
+          1200.0,
+          288.0
+        ]
+      ],
+      "targets_px": [
+        [
+          761.0,
+          288.0
+        ]
+      ],
+      "junctions_px": [],
+      "route": "orthogonal_dependency",
+      "style": {
+        "color": "#FD5108",
+        "width_px": 3.0,
+        "dash": "solid"
+      },
+      "arrowhead_treatment": "triangle_at_target",
+      "arrowhead": {
+        "type": "triangle",
+        "powerpoint_size": "lg",
+        "minimum_visible_endpoint_px": 18,
+        "minimum_clear_segment_px": 16,
+        "length_px": 14,
+        "width_px": 12
+      },
+      "junction_style": {
+        "style": "none",
+        "diameter_px": null
+      },
+      "routing_constraints": {
+        "minimum_clearance_px": 12,
+        "maximum_ordinary_bends": 2,
+        "grouping_brace_depth_px": 34,
+        "grouping_bracket_depth_px": 22,
+        "grouping_brace_preset_depth_factor": 1.7
+      },
+      "route_visual_review": {
+        "reviewed": true,
+        "decision": "A separate overhead corridor returns rejected work to its accountable previous stage. The target arrow enters the top of that stage. Generated bracket-like fragments are corrected using the explicit feedback intent.",
+        "review_artifact": "accepted-slide.png"
+      },
+      "semantic_intent": {
+        "connector_family": "orthogonal_dependency",
+        "directed": true,
+        "source_entities": [
+          "stage-icon-review"
+        ],
+        "target_entities": [
+          "stage-icon-draft"
+        ],
+        "source_attachment_sides": [
+          "top"
+        ],
+        "target_attachment_sides": [
+          "top"
+        ],
+        "source_attachment_fractions": [
+          0.5
+        ],
+        "target_attachment_fractions": [
+          0.75
+        ],
+        "semantic_topology_verified": true,
+        "route_mode": "authored_waypoints",
+        "junction_style": "none",
+        "visual_route_reviewed": true,
+        "visual_route_decision": "A separate overhead corridor returns rejected work to its accountable previous stage. The target arrow enters the top of that stage. Generated bracket-like fragments are corrected using the explicit feedback intent.",
+        "visual_route_review_artifact": "accepted-slide.png"
+      },
+      "connector_family": "orthogonal_dependency",
+      "grouping_side": null,
+      "grouping_depth_px": null,
+      "grouping_bbox_px": [
+        1148,
+        288,
+        104,
+        104
+      ],
+      "source_attachment_sides": [
+        "top"
+      ],
+      "target_attachment_sides": [
+        "top"
+      ],
+      "source_routes_px": [],
+      "target_routes_px": [
+        [
+          [
+            1200.0,
+            288.0
+          ],
+          [
+            1200.0,
+            254.0
+          ],
+          [
+            761.0,
+            254.0
+          ],
+          [
+            761.0,
+            288.0
+          ]
+        ]
+      ],
+      "source_path_representations": [],
+      "target_path_representations": [
+        "editable_freeform"
       ],
       "z": 10.0
     },
@@ -902,6 +1222,7 @@
       "bullet_style": null,
       "semantic_role": "slide_title",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -941,22 +1262,23 @@
       "bullet_style": null,
       "semantic_role": "subtitle",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
       "id": "stage-label-sources",
       "kind": "textbox",
       "bbox_px": [
-        100,
-        376,
-        320,
-        42
+        95,
+        415,
+        380,
+        43
       ],
       "text": "Approved sources",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 25.0,
-        "font_size_pt": 12.5,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -980,22 +1302,23 @@
       "bullet_style": null,
       "semantic_role": "heading_large",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
       "id": "stage-label-draft",
       "kind": "textbox",
       "bbox_px": [
-        530,
-        376,
-        320,
-        42
+        545,
+        415,
+        380,
+        43
       ],
       "text": "Grounded draft",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 25.0,
-        "font_size_pt": 12.5,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1019,22 +1342,23 @@
       "bullet_style": null,
       "semantic_role": "heading_large",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
       "id": "stage-label-review",
       "kind": "textbox",
       "bbox_px": [
-        1025,
-        376,
-        320,
-        42
+        1010,
+        415,
+        380,
+        43
       ],
       "text": "Expert review",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 25.0,
-        "font_size_pt": 12.5,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1058,22 +1382,23 @@
       "bullet_style": null,
       "semantic_role": "heading_large",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
       "id": "stage-label-output",
       "kind": "textbox",
       "bbox_px": [
-        1450,
-        376,
-        320,
-        42
+        1445,
+        415,
+        380,
+        43
       ],
       "text": "Client-ready output",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 25.0,
-        "font_size_pt": 12.5,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1097,22 +1422,23 @@
       "bullet_style": null,
       "semantic_role": "heading_large",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
       "id": "source-return-label",
       "kind": "textbox",
       "bbox_px": [
-        300,
+        318,
         215,
-        430,
-        32
+        398,
+        33
       ],
       "text": "Correct sources via exception register",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 21.0,
-        "font_size_pt": 10.5,
+        "font_size_px": 20.0,
+        "font_size_pt": 10.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1136,22 +1462,23 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
       "id": "review-return-label",
       "kind": "textbox",
       "bbox_px": [
-        790,
+        797,
         215,
-        430,
-        32
+        405,
+        33
       ],
       "text": "Reject with defect reasons",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 21.0,
-        "font_size_pt": 10.5,
+        "font_size_px": 20.0,
+        "font_size_pt": 10.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1175,6 +1502,7 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1182,15 +1510,15 @@
       "kind": "textbox",
       "bbox_px": [
         46,
-        764,
+        784,
         790,
-        35
+        36
       ],
       "text": "SHARED CONTROLS",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 25.0,
-        "font_size_pt": 12.5,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1214,62 +1542,23 @@
       "bullet_style": null,
       "semantic_role": "heading_large",
       "parent_id": null,
-      "z": 20.0
-    },
-    {
-      "id": "shared-controls",
-      "kind": "textbox",
-      "bbox_px": [
-        46,
-        802,
-        800,
-        70
-      ],
-      "text": "• One register records defects, owners and disposition.\n• Platform team maintains access controls and audit logs.",
-      "style": {
-        "font_family": "Arial",
-        "font_size_px": 21.0,
-        "font_size_pt": 10.5,
-        "font_weight": "regular",
-        "italic": false,
-        "char_spacing_px": 0.0,
-        "color": "#000000",
-        "alignment": "left",
-        "vertical_alignment": "top",
-        "margins_px": [
-          2.0,
-          2.0,
-          2.0,
-          2.0
-        ],
-        "line_spacing_multiple": 1.15,
-        "paragraph_spacing_px": 0,
-        "autofit": "none",
-        "outer_geometry_is_fixed": true
-      },
-      "paragraphs": [
-        "• One register records defects, owners and disposition.",
-        "• Platform team maintains access controls and audit logs."
-      ],
-      "bullet_style": null,
-      "semantic_role": "body",
-      "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
       "id": "measurement-heading",
       "kind": "textbox",
       "bbox_px": [
-        945,
-        764,
-        850,
-        35
+        1000,
+        784,
+        870,
+        36
       ],
       "text": "PILOT MEASUREMENT",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 25.0,
-        "font_size_pt": 12.5,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1293,46 +1582,7 @@
       "bullet_style": null,
       "semantic_role": "heading_large",
       "parent_id": null,
-      "z": 20.0
-    },
-    {
-      "id": "measurement",
-      "kind": "textbox",
-      "bbox_px": [
-        945,
-        802,
-        850,
-        70
-      ],
-      "text": "• Compare 20 paired tasks with baseline time logs.\n• Verify claim samples and record expert review effort.",
-      "style": {
-        "font_family": "Arial",
-        "font_size_px": 21.0,
-        "font_size_pt": 10.5,
-        "font_weight": "regular",
-        "italic": false,
-        "char_spacing_px": 0.0,
-        "color": "#000000",
-        "alignment": "left",
-        "vertical_alignment": "top",
-        "margins_px": [
-          2.0,
-          2.0,
-          2.0,
-          2.0
-        ],
-        "line_spacing_multiple": 1.15,
-        "paragraph_spacing_px": 0,
-        "autofit": "none",
-        "outer_geometry_is_fixed": true
-      },
-      "paragraphs": [
-        "• Compare 20 paired tasks with baseline time logs.",
-        "• Verify claim samples and record expert review effort."
-      ],
-      "bullet_style": null,
-      "semantic_role": "body",
-      "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1372,6 +1622,7 @@
       "bullet_style": null,
       "semantic_role": "call_to_action",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1411,16 +1662,177 @@
       "bullet_style": null,
       "semantic_role": "call_to_action",
       "parent_id": null,
+      "allow_boundary_crossing": false,
+      "z": 20.0
+    },
+    {
+      "id": "shared-controls-1",
+      "kind": "textbox",
+      "bbox_px": [
+        87,
+        823,
+        846,
+        34
+      ],
+      "text": "One register records defects, owners and disposition.",
+      "style": {
+        "font_family": "Arial",
+        "font_size_px": 24.0,
+        "font_size_pt": 12.0,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": 0.0,
+        "color": "#000000",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "line_spacing_multiple": 1.15,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "One register records defects, owners and disposition."
+      ],
+      "bullet_style": null,
+      "semantic_role": "body",
+      "parent_id": null,
+      "allow_boundary_crossing": false,
+      "z": 20.0
+    },
+    {
+      "id": "shared-controls-2",
+      "kind": "textbox",
+      "bbox_px": [
+        87,
+        857,
+        846,
+        34
+      ],
+      "text": "Platform team maintains access controls and audit logs.",
+      "style": {
+        "font_family": "Arial",
+        "font_size_px": 24.0,
+        "font_size_pt": 12.0,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": 0.0,
+        "color": "#000000",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "line_spacing_multiple": 1.15,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "Platform team maintains access controls and audit logs."
+      ],
+      "bullet_style": null,
+      "semantic_role": "body",
+      "parent_id": null,
+      "allow_boundary_crossing": false,
+      "z": 20.0
+    },
+    {
+      "id": "measurement-1",
+      "kind": "textbox",
+      "bbox_px": [
+        1038,
+        823,
+        835,
+        34
+      ],
+      "text": "Compare 20 paired tasks with baseline time logs.",
+      "style": {
+        "font_family": "Arial",
+        "font_size_px": 24.0,
+        "font_size_pt": 12.0,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": 0.0,
+        "color": "#000000",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "line_spacing_multiple": 1.15,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "Compare 20 paired tasks with baseline time logs."
+      ],
+      "bullet_style": null,
+      "semantic_role": "body",
+      "parent_id": null,
+      "allow_boundary_crossing": false,
+      "z": 20.0
+    },
+    {
+      "id": "measurement-2",
+      "kind": "textbox",
+      "bbox_px": [
+        1038,
+        857,
+        835,
+        34
+      ],
+      "text": "Verify claim samples and record expert review effort.",
+      "style": {
+        "font_family": "Arial",
+        "font_size_px": 24.0,
+        "font_size_pt": 12.0,
+        "font_weight": "regular",
+        "italic": false,
+        "char_spacing_px": 0.0,
+        "color": "#000000",
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "margins_px": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "line_spacing_multiple": 1.15,
+        "paragraph_spacing_px": 0,
+        "autofit": "none",
+        "outer_geometry_is_fixed": true
+      },
+      "paragraphs": [
+        "Verify claim samples and record expert review effort."
+      ],
+      "bullet_style": null,
+      "semantic_role": "body",
+      "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
       "id": "stage-icon-sources",
       "kind": "image",
       "bbox_px": [
-        225,
-        272,
-        70,
-        70
+        237,
+        292,
+        96,
+        96
       ],
       "source_path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/file-search/remix-file-search-line.svg",
       "recolor": "#000000",
@@ -1438,10 +1850,10 @@
       "id": "stage-icon-draft",
       "kind": "image",
       "bbox_px": [
-        655,
-        272,
-        70,
-        70
+        687,
+        292,
+        96,
+        96
       ],
       "source_path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/draft/remix-draft-line.svg",
       "recolor": "#000000",
@@ -1459,10 +1871,10 @@
       "id": "stage-icon-review",
       "kind": "image",
       "bbox_px": [
-        1150,
-        272,
-        70,
-        70
+        1152,
+        292,
+        96,
+        96
       ],
       "source_path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/shield-check/remix-shield-check-line.svg",
       "recolor": "#000000",
@@ -1480,10 +1892,10 @@
       "id": "stage-icon-output",
       "kind": "image",
       "bbox_px": [
-        1575,
-        272,
-        70,
-        70
+        1587,
+        292,
+        96,
+        96
       ],
       "source_path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/send-plane-2/remix-send-plane-2-line.svg",
       "recolor": "#000000",
@@ -1543,7 +1955,7 @@
     "slide_number": 1
   },
   "sources": [
-    "Generated target visual: /private/tmp/.slidepoise-rebuild-h51errnw/slides/s03-operating-model/work/accepted-slide.png",
+    "Generated target visual: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/slides/s03-operating-model/work/accepted-slide.png",
     "Canonical asset remix-file-search-line: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/file-search/remix-file-search-line.svg",
     "Canonical asset remix-draft-line: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/draft/remix-draft-line.svg",
     "Canonical asset remix-shield-check-line: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/shield-check/remix-shield-check-line.svg",
@@ -1551,21 +1963,21 @@
   ],
   "speaker_notes": [
     "This is an illustrative planning scenario. Twenty paired tasks represent one research task from each of twenty pilot engagements, with ten tasks at the week-eight interim review. The sampled 95% claim-verification gate measures pilot quality. Every client claim still requires expert sign-off and every client release requires engagement-lead approval.",
-    "The two curved feedback paths are editable native freeforms. They preserve the observed direction and curve geometry, but moving the table or its columns in Office does not automatically reattach these paths."
+    "Rejected drafts return to the drafting team. Source exceptions return to the source steward. The editable feedback paths are regenerated from their named owners when the deck is rebuilt. Moving objects manually in PowerPoint does not reattach the paths."
   ],
   "compiler_report": {
-    "measured_entity_count": 25,
-    "emitted_object_count": 25,
+    "measured_entity_count": 33,
+    "emitted_object_count": 33,
     "evidence_objects_emitted": 0,
     "measurement": {
       "engine": "OpenCV",
       "opencv": "5.0.0"
     },
-    "connector_graph_count": 3,
+    "connector_graph_count": 5,
     "canonical_asset_count": 4,
     "text_fitting": {
       "source": "constructor_text_fit_evidence",
-      "fitted_textbox_count": 14,
+      "fitted_textbox_count": 16,
       "quantization_step_pt": 0.5,
       "all_textboxes_fit_within_allocations": true,
       "peer_typography_preserved": true,
@@ -1628,13 +2040,13 @@
             "stage-label-review",
             "stage-label-output"
           ],
-          "shared_font_size_pt": 12.5,
-          "shared_font_size_px": 25.0,
-          "agent_target_font_size_px": 25.0,
+          "shared_font_size_pt": 14.0,
+          "shared_font_size_px": 28.0,
+          "agent_target_font_size_px": 28.0,
           "explicit_peer_group": true,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 12.5,
-          "agent_target_unquantized_pt": 12.5,
+          "agent_target_ceiling_pt": 14.0,
+          "agent_target_unquantized_pt": 14.0,
           "quantization_reduction_pt": 0,
           "reduced_from_agent_target": false,
           "reduced_for_fit": false,
@@ -1656,17 +2068,19 @@
             "source-return-label",
             "review-return-label"
           ],
-          "shared_font_size_pt": 10.5,
-          "shared_font_size_px": 21.0,
-          "agent_target_font_size_px": 21.0,
+          "shared_font_size_pt": 10.0,
+          "shared_font_size_px": 20.0,
+          "agent_target_font_size_px": 22.0,
           "explicit_peer_group": true,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 10.5,
-          "agent_target_unquantized_pt": 10.5,
+          "agent_target_ceiling_pt": 11.0,
+          "agent_target_unquantized_pt": 11.0,
           "quantization_reduction_pt": 0,
-          "reduced_from_agent_target": false,
-          "reduced_for_fit": false,
-          "members_not_fitting_target": [],
+          "reduced_from_agent_target": true,
+          "reduced_for_fit": true,
+          "members_not_fitting_target": [
+            "source-return-label"
+          ],
           "font_measurement_sources": {
             "source-return-label": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
             "review-return-label": "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
@@ -1682,13 +2096,13 @@
             "shared-controls-heading",
             "measurement-heading"
           ],
-          "shared_font_size_pt": 12.5,
-          "shared_font_size_px": 25.0,
-          "agent_target_font_size_px": 25.0,
+          "shared_font_size_pt": 14.0,
+          "shared_font_size_px": 28.0,
+          "agent_target_font_size_px": 28.0,
           "explicit_peer_group": true,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 12.5,
-          "agent_target_unquantized_pt": 12.5,
+          "agent_target_ceiling_pt": 14.0,
+          "agent_target_unquantized_pt": 14.0,
           "quantization_reduction_pt": 0,
           "reduced_from_agent_target": false,
           "reduced_for_fit": false,
@@ -1696,32 +2110,6 @@
           "font_measurement_sources": {
             "shared-controls-heading": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
             "measurement-heading": "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
-          },
-          "profile_adjustments": {},
-          "overflow_evidence": "no_overflow_detected_by_text_measurement"
-        },
-        {
-          "typography_group": "body",
-          "semantic_role": "body",
-          "text_style_role": "body",
-          "member_ids": [
-            "shared-controls",
-            "measurement"
-          ],
-          "shared_font_size_pt": 10.5,
-          "shared_font_size_px": 21.0,
-          "agent_target_font_size_px": 21.0,
-          "explicit_peer_group": true,
-          "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 10.5,
-          "agent_target_unquantized_pt": 10.5,
-          "quantization_reduction_pt": 0,
-          "reduced_from_agent_target": false,
-          "reduced_for_fit": false,
-          "members_not_fitting_target": [],
-          "font_measurement_sources": {
-            "shared-controls": "/System/Library/Fonts/Supplemental/Arial.ttf",
-            "measurement": "/System/Library/Fonts/Supplemental/Arial.ttf"
           },
           "profile_adjustments": {},
           "overflow_evidence": "no_overflow_detected_by_text_measurement"
@@ -1751,6 +2139,41 @@
           },
           "profile_adjustments": {},
           "overflow_evidence": "no_overflow_detected_by_text_measurement"
+        },
+        {
+          "typography_group": "body",
+          "semantic_role": "body",
+          "text_style_role": "body",
+          "member_ids": [
+            "shared-controls-1",
+            "shared-controls-2",
+            "measurement-1",
+            "measurement-2"
+          ],
+          "shared_font_size_pt": 12.0,
+          "shared_font_size_px": 24.0,
+          "agent_target_font_size_px": 25.0,
+          "explicit_peer_group": true,
+          "technical_floor_pt": 0.5,
+          "agent_target_ceiling_pt": 12.5,
+          "agent_target_unquantized_pt": 12.5,
+          "quantization_reduction_pt": 0,
+          "reduced_from_agent_target": true,
+          "reduced_for_fit": true,
+          "members_not_fitting_target": [
+            "shared-controls-1",
+            "shared-controls-2",
+            "measurement-1",
+            "measurement-2"
+          ],
+          "font_measurement_sources": {
+            "shared-controls-1": "/System/Library/Fonts/Supplemental/Arial.ttf",
+            "shared-controls-2": "/System/Library/Fonts/Supplemental/Arial.ttf",
+            "measurement-1": "/System/Library/Fonts/Supplemental/Arial.ttf",
+            "measurement-2": "/System/Library/Fonts/Supplemental/Arial.ttf"
+          },
+          "profile_adjustments": {},
+          "overflow_evidence": "no_overflow_detected_by_text_measurement"
         }
       ]
     },
@@ -1772,24 +2195,24 @@
         "offset_y_px": 64
       },
       "required_counts": {
-        "text_entities": 14,
+        "text_entities": 16,
         "canonical_assets": 4,
         "icon_slot_surfaces": 0,
-        "connector_graphs": 3
+        "connector_graphs": 5
       },
       "emitted_counts": {
-        "text_entities": 14,
+        "text_entities": 16,
         "canonical_assets": 4,
         "icon_slot_surfaces": 0,
-        "connector_graphs": 3
+        "connector_graphs": 5
       },
       "blocking_facts": {},
       "agent_interpretation_required": true,
       "note": "No quality or reconstruction verdict is produced. Visual reasoning remains external."
     },
     "input_bindings": {
-      "measured_scene_sha256": "8b50e0434ff55f5814eb56086a85f26393565a2c58df47a7fbf8e9deb1966ae0",
-      "reconstruction_contract_sha256": "3e6babceb57e68e9a270c1d451fab19e14b5463a393865efd628add8f81e0735",
+      "measured_scene_sha256": "f4cb689cde5e44374f70687334a137c0f5b699f7cc47c2bd92844f501a449580",
+      "reconstruction_contract_sha256": "cc2b5e5e33f77a130f446d540be7ae782dff9ae4921d2b64f33cf8a5ad2af600",
       "resolved_design_sha256": "ee255d93bab18eea1c3d44524732402c57d708a2a01e8270dec54f3fa8c2c88f"
     }
   }

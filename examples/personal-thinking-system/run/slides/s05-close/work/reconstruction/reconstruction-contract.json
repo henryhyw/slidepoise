@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "source_scene_evidence": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s05-close/work/accepted-slide.png",
+  "source_scene_evidence": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s05-close/work/accepted-slide.png",
   "full_slide_dimensions_px": [
     1600,
     900
@@ -66,6 +66,7 @@
     },
     "slide_number": 1
   },
+  "content_obligations": [],
   "reconstruction_units": [
     {
       "id": "paper-field",
@@ -93,7 +94,7 @@
       "render_owner": "title-first",
       "bbox_px": [
         139,
-        78,
+        88,
         900,
         201
       ],
@@ -109,7 +110,7 @@
       "render_owner": "title-second",
       "bbox_px": [
         139,
-        249,
+        259,
         900,
         201
       ],
@@ -125,7 +126,7 @@
       "render_owner": "title-third",
       "bbox_px": [
         139,
-        397,
+        407,
         900,
         212
       ],

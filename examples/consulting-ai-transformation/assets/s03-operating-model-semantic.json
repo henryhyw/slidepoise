@@ -1,28 +1,1738 @@
 {
-  "schema_version": "1.0",
-  "source_semantic_map": "semantic-map.json",
-  "source_semantic_map_sha256": "17490ed62799f4a31511bd3d9e9571e6351d30722d07f364b119f1ce838234fc",
-  "notice": "Selected explanations for readers. The full semantic map retains 25 editable entities.",
+  "schema_version": "3.2.0",
+  "provenance": {
+    "created_by": "host_agent_visual_reasoning",
+    "source": "accepted_generated_image",
+    "source_sha256": "c9e5f21257c82fb253cb3c935cfad3b1f238b1c17a6affcc48f3d67543633787",
+    "composition_policy": "accepted_target_geometry_frozen"
+  },
   "entities": [
     {
       "id": "headline",
+      "display_label": "Keep expert ownership at every release",
       "kind": "text",
-      "display_label": "Slide conclusion",
-      "members": [
-        "headline"
-      ],
+      "role": "slide_title",
+      "text": "Keep expert ownership at every release",
+      "text_style_role": "slide_title",
+      "typography_group": "claim-title",
       "bbox_hint": [
         46,
         20,
         1828,
         76
-      ]
+      ],
+      "search_bbox_hint": [
+        46,
+        20,
+        1828,
+        76
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Georgia",
+        "font_weight": "regular",
+        "target_font_size_px": 64,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
     },
     {
+      "id": "subtitle",
+      "display_label": "A controlled path from permissioned evidence to approved client work.",
+      "kind": "text",
+      "role": "subtitle",
+      "text": "A controlled path from permissioned evidence to approved client work.",
+      "text_style_role": "subtitle",
+      "typography_group": "subtitle",
+      "bbox_hint": [
+        47,
+        101,
+        1825,
+        48
+      ],
+      "search_bbox_hint": [
+        47,
+        101,
+        1825,
+        48
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 32,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "stage-icon-sources",
+      "display_label": "Approved sources",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-file-search-line",
+      "bbox_hint": [
+        233,
+        224,
+        104,
+        104
+      ],
+      "slot_bbox_hint": [
+        233,
+        224,
+        104,
+        104
+      ],
+      "geometry_policy": "agent_logical",
+      "slot_surface": {
+        "visible": false
+      },
+      "style_hint": {
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
+      "z": 30,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "workflow-stage-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-file-search-line",
+          "remix-file-search-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "id": "stage-label-sources",
+      "display_label": "Approved sources",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "Approved sources",
+      "text_style_role": "heading_large",
+      "typography_group": "stage-labels",
+      "bbox_hint": [
+        95,
+        351,
+        380,
+        43
+      ],
+      "search_bbox_hint": [
+        95,
+        351,
+        380,
+        43
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "stage-icon-draft",
+      "display_label": "Grounded draft",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-draft-line",
+      "bbox_hint": [
+        683,
+        224,
+        104,
+        104
+      ],
+      "slot_bbox_hint": [
+        683,
+        224,
+        104,
+        104
+      ],
+      "geometry_policy": "agent_logical",
+      "slot_surface": {
+        "visible": false
+      },
+      "style_hint": {
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
+      "z": 30,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "workflow-stage-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-draft-line",
+          "remix-draft-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "id": "stage-label-draft",
+      "display_label": "Grounded draft",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "Grounded draft",
+      "text_style_role": "heading_large",
+      "typography_group": "stage-labels",
+      "bbox_hint": [
+        545,
+        351,
+        380,
+        43
+      ],
+      "search_bbox_hint": [
+        545,
+        351,
+        380,
+        43
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "stage-icon-review",
+      "display_label": "Expert review",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-shield-check-line",
+      "bbox_hint": [
+        1148,
+        224,
+        104,
+        104
+      ],
+      "slot_bbox_hint": [
+        1148,
+        224,
+        104,
+        104
+      ],
+      "geometry_policy": "agent_logical",
+      "slot_surface": {
+        "visible": false
+      },
+      "style_hint": {
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
+      "z": 30,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "workflow-stage-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-shield-check-line",
+          "remix-shield-check-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "id": "stage-label-review",
+      "display_label": "Expert review",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "Expert review",
+      "text_style_role": "heading_large",
+      "typography_group": "stage-labels",
+      "bbox_hint": [
+        1010,
+        351,
+        380,
+        43
+      ],
+      "search_bbox_hint": [
+        1010,
+        351,
+        380,
+        43
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "stage-icon-output",
+      "display_label": "Client-ready output",
+      "kind": "icon",
+      "role": "supporting_visual",
+      "upstream_asset_id": "remix-send-plane-2-line",
+      "bbox_hint": [
+        1583,
+        224,
+        104,
+        104
+      ],
+      "slot_bbox_hint": [
+        1583,
+        224,
+        104,
+        104
+      ],
+      "geometry_policy": "agent_logical",
+      "slot_surface": {
+        "visible": false
+      },
+      "style_hint": {
+        "preserve_canonical_color": false,
+        "icon_inset_fraction": 0.04
+      },
+      "z": 30,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "icon_treatment_group": "workflow-stage-icons",
+      "icon_treatment": "black_proxy",
+      "icon_variant": "line",
+      "icon_variant_review": {
+        "stage": "post_generation_visual_review",
+        "reviewed_by": "host_agent_visual_reasoning",
+        "evaluated_asset_ids": [
+          "remix-send-plane-2-line",
+          "remix-send-plane-2-fill"
+        ],
+        "decision": "The line variant matches the deck's rules, arrows and supporting type.",
+        "observations": [
+          "The symbol remains legible at its final size.",
+          "The fill variant is heavier than the peer symbols."
+        ]
+      }
+    },
+    {
+      "id": "stage-label-output",
+      "display_label": "Client-ready output",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "Client-ready output",
+      "text_style_role": "heading_large",
+      "typography_group": "stage-labels",
+      "bbox_hint": [
+        1445,
+        351,
+        380,
+        43
+      ],
+      "search_bbox_hint": [
+        1445,
+        351,
+        380,
+        43
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "forward-1",
+      "display_label": "forward 1",
+      "kind": "connector",
+      "role": "directed_workflow_relationship",
+      "bbox_hint": [
+        378,
+        269,
+        267,
+        28
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "meaningful_visible": true,
+      "connector_intent": {
+        "connector_family": "direct_flow",
+        "directed": true,
+        "source_entities": [
+          "stage-icon-sources"
+        ],
+        "target_entities": [
+          "stage-icon-draft"
+        ],
+        "source_attachment_sides": [
+          "right"
+        ],
+        "target_attachment_sides": [
+          "left"
+        ],
+        "source_attachment_fractions": [
+          0.5
+        ],
+        "target_attachment_fractions": [
+          0.5
+        ],
+        "semantic_topology_verified": true,
+        "route_mode": "minimal_orthogonal",
+        "junction_style": "none",
+        "visual_route_reviewed": true,
+        "visual_route_decision": "The straight route follows the open corridor between adjacent stages.",
+        "visual_route_review_artifact": "accepted-slide.png"
+      },
+      "visual_constraints": {
+        "start_anchors_px": [
+          [
+            350,
+            243
+          ]
+        ],
+        "end_anchors_px": [
+          [
+            600,
+            243
+          ]
+        ],
+        "arrowhead_treatment": "triangle_at_target",
+        "stroke_style": {
+          "color": "#FD5108",
+          "width_px": 3,
+          "dash": "solid"
+        }
+      }
+    },
+    {
+      "id": "forward-2",
+      "display_label": "forward 2",
+      "kind": "connector",
+      "role": "directed_workflow_relationship",
+      "bbox_hint": [
+        830,
+        269,
+        271,
+        28
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "meaningful_visible": true,
+      "connector_intent": {
+        "connector_family": "direct_flow",
+        "directed": true,
+        "source_entities": [
+          "stage-icon-draft"
+        ],
+        "target_entities": [
+          "stage-icon-review"
+        ],
+        "source_attachment_sides": [
+          "right"
+        ],
+        "target_attachment_sides": [
+          "left"
+        ],
+        "source_attachment_fractions": [
+          0.5
+        ],
+        "target_attachment_fractions": [
+          0.5
+        ],
+        "semantic_topology_verified": true,
+        "route_mode": "minimal_orthogonal",
+        "junction_style": "none",
+        "visual_route_reviewed": true,
+        "visual_route_decision": "The straight route follows the open corridor between adjacent stages.",
+        "visual_route_review_artifact": "accepted-slide.png"
+      },
+      "visual_constraints": {
+        "start_anchors_px": [
+          [
+            780,
+            243
+          ]
+        ],
+        "end_anchors_px": [
+          [
+            1095,
+            243
+          ]
+        ],
+        "arrowhead_treatment": "triangle_at_target",
+        "stroke_style": {
+          "color": "#FD5108",
+          "width_px": 3,
+          "dash": "solid"
+        }
+      }
+    },
+    {
+      "id": "forward-3",
+      "display_label": "forward 3",
+      "kind": "connector",
+      "role": "directed_workflow_relationship",
+      "bbox_hint": [
+        1273,
+        269,
+        266,
+        28
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "meaningful_visible": true,
+      "connector_intent": {
+        "connector_family": "direct_flow",
+        "directed": true,
+        "source_entities": [
+          "stage-icon-review"
+        ],
+        "target_entities": [
+          "stage-icon-output"
+        ],
+        "source_attachment_sides": [
+          "right"
+        ],
+        "target_attachment_sides": [
+          "left"
+        ],
+        "source_attachment_fractions": [
+          0.5
+        ],
+        "target_attachment_fractions": [
+          0.5
+        ],
+        "semantic_topology_verified": true,
+        "route_mode": "minimal_orthogonal",
+        "junction_style": "none",
+        "visual_route_reviewed": true,
+        "visual_route_decision": "The straight route follows the open corridor between adjacent stages.",
+        "visual_route_review_artifact": "accepted-slide.png"
+      },
+      "visual_constraints": {
+        "start_anchors_px": [
+          [
+            1275,
+            243
+          ]
+        ],
+        "end_anchors_px": [
+          [
+            1520,
+            243
+          ]
+        ],
+        "arrowhead_treatment": "triangle_at_target",
+        "stroke_style": {
+          "color": "#FD5108",
+          "width_px": 3,
+          "dash": "solid"
+        }
+      }
+    },
+    {
+      "id": "source-return-label",
+      "display_label": "Correct sources via exception register",
+      "kind": "text",
+      "role": "body",
+      "text": "Correct sources via exception register",
+      "text_style_role": "body",
+      "typography_group": "feedback",
+      "bbox_hint": [
+        318,
+        151,
+        398,
+        33
+      ],
+      "search_bbox_hint": [
+        318,
+        151,
+        398,
+        33
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 22,
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "review-return-label",
+      "display_label": "Reject with defect reasons",
+      "kind": "text",
+      "role": "body",
+      "text": "Reject with defect reasons",
+      "text_style_role": "body",
+      "typography_group": "feedback",
+      "bbox_hint": [
+        797,
+        151,
+        405,
+        33
+      ],
+      "search_bbox_hint": [
+        797,
+        151,
+        405,
+        33
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 22,
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "responsibility-matrix",
+      "display_label": "Inputs, outputs, owners and release controls",
+      "kind": "table",
+      "role": "structured_evidence",
+      "bbox_hint": [
+        34,
+        414,
+        1852,
+        298
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 5,
+      "meaningful_visible": true,
+      "table_structure": {
+        "rows": [
+          [
+            {
+              "text": "",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Approved sources",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Grounded draft",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Expert review",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Client-ready output",
+              "options": {
+                "fill": {
+                  "color": "000000"
+                },
+                "color": "FFFFFF",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            }
+          ],
+          [
+            {
+              "text": "INPUT",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Corpus request",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Source pack + task brief",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Draft + evidence trail",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Signed draft + resolved defects",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            }
+          ],
+          [
+            {
+              "text": "OUTPUT",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Versioned source pack",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Cited draft + uncertainty flags",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Signed review or defect log",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Authorized client deliverable",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            }
+          ],
+          [
+            {
+              "text": "OWNER",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Source steward",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Engagement team",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Expert reviewer",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Engagement lead",
+              "options": {
+                "fill": {
+                  "color": "FFFFFF"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            }
+          ],
+          [
+            {
+              "text": "RELEASE CONTROL",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Verify permissions\nand dates",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Check citations\nand evidence gaps",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Validate claims\nand quality",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            },
+            {
+              "text": "Confirm release\napproval",
+              "options": {
+                "fill": {
+                  "color": "F5F7F8"
+                },
+                "color": "000000",
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
+            }
+          ]
+        ],
+        "column_widths_px": [
+          294,
+          365,
+          397,
+          396,
+          400
+        ],
+        "row_heights_px": [
+          52,
+          52,
+          56,
+          53,
+          85
+        ]
+      },
+      "style_hint": {
+        "font_family": "Arial",
+        "font_size_px": 24,
+        "cell_margin_px": 8,
+        "color": "#000000",
+        "fill": "#FFFFFF",
+        "stroke": "#C6C9CD",
+        "stroke_width_px": 1,
+        "vertical_alignment": "middle"
+      }
+    },
+    {
+      "id": "shared-controls-heading",
+      "display_label": "SHARED CONTROLS",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "SHARED CONTROLS",
+      "text_style_role": "heading_large",
+      "typography_group": "section",
+      "bbox_hint": [
+        46,
+        720,
+        790,
+        36
+      ],
+      "search_bbox_hint": [
+        46,
+        720,
+        790,
+        36
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "bottom-divider",
+      "display_label": "bottom divider",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        958,
+        732,
+        1,
+        97
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#B7BCC2",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      },
+      "structural_boundary": true
+    },
+    {
+      "id": "measurement-heading",
+      "display_label": "PILOT MEASUREMENT",
+      "kind": "text",
+      "role": "heading_large",
+      "text": "PILOT MEASUREMENT",
+      "text_style_role": "heading_large",
+      "typography_group": "section",
+      "bbox_hint": [
+        1000,
+        720,
+        870,
+        36
+      ],
+      "search_bbox_hint": [
+        1000,
+        720,
+        870,
+        36
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "decision-band",
+      "display_label": "decision band",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        46,
+        835,
+        1828,
+        93
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#FFF5ED",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "decision-accent",
+      "display_label": "decision accent",
+      "kind": "shape",
+      "shape": "rectangle",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        46,
+        835,
+        8,
+        93
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#FD5108",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "decision-label",
+      "display_label": "RELEASE RULE",
+      "kind": "text",
+      "role": "call_to_action",
+      "text": "RELEASE RULE",
+      "text_style_role": "call_to_action",
+      "typography_group": "decision",
+      "bbox_hint": [
+        80,
+        853,
+        430,
+        50
+      ],
+      "search_bbox_hint": [
+        80,
+        853,
+        430,
+        50
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "middle",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#FD5108",
+        "style_authority": "agent_visual_observation"
+      },
+      "style_token": "call_to_action"
+    },
+    {
+      "id": "decision-message",
+      "display_label": "No client use without expert and engagement-lead sign-off.",
+      "kind": "text",
+      "role": "call_to_action",
+      "text": "No client use without expert and engagement-lead sign-off.",
+      "text_style_role": "call_to_action",
+      "typography_group": "decision",
+      "bbox_hint": [
+        520,
+        853,
+        1318,
+        50
+      ],
+      "search_bbox_hint": [
+        520,
+        853,
+        1318,
+        50
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "bold",
+        "target_font_size_px": 28,
+        "alignment": "left",
+        "vertical_alignment": "middle",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "source-return",
+      "display_label": "Correct sources via exception register",
+      "kind": "connector",
+      "role": "directed_workflow_relationship",
+      "bbox_hint": [
+        285.0,
+        190,
+        434.4,
+        34
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "meaningful_visible": true,
+      "connector_intent": {
+        "connector_family": "orthogonal_dependency",
+        "directed": true,
+        "source_entities": [
+          "stage-icon-draft"
+        ],
+        "target_entities": [
+          "stage-icon-sources"
+        ],
+        "source_attachment_sides": [
+          "top"
+        ],
+        "target_attachment_sides": [
+          "top"
+        ],
+        "source_attachment_fractions": [
+          0.35
+        ],
+        "target_attachment_fractions": [
+          0.5
+        ],
+        "semantic_topology_verified": true,
+        "route_mode": "authored_waypoints",
+        "junction_style": "none",
+        "visual_route_reviewed": true,
+        "visual_route_decision": "A separate overhead corridor returns rejected work to its accountable previous stage. The target arrow enters the top of that stage. Generated bracket-like fragments are corrected using the explicit feedback intent.",
+        "visual_route_review_artifact": "accepted-slide.png"
+      },
+      "visual_constraints": {
+        "start_anchors_px": [
+          [
+            719.4,
+            224
+          ]
+        ],
+        "end_anchors_px": [
+          [
+            285.0,
+            224
+          ]
+        ],
+        "arrowhead_treatment": "triangle_at_target",
+        "stroke_style": {
+          "color": "#FD5108",
+          "width_px": 3,
+          "dash": "solid"
+        },
+        "route_waypoints_px": [
+          [
+            719.4,
+            190
+          ],
+          [
+            285.0,
+            190
+          ]
+        ]
+      }
+    },
+    {
+      "id": "review-return",
+      "display_label": "Reject with defect reasons",
+      "kind": "connector",
+      "role": "directed_workflow_relationship",
+      "bbox_hint": [
+        761.0,
+        190,
+        439.0,
+        34
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 10,
+      "meaningful_visible": true,
+      "connector_intent": {
+        "connector_family": "orthogonal_dependency",
+        "directed": true,
+        "source_entities": [
+          "stage-icon-review"
+        ],
+        "target_entities": [
+          "stage-icon-draft"
+        ],
+        "source_attachment_sides": [
+          "top"
+        ],
+        "target_attachment_sides": [
+          "top"
+        ],
+        "source_attachment_fractions": [
+          0.5
+        ],
+        "target_attachment_fractions": [
+          0.75
+        ],
+        "semantic_topology_verified": true,
+        "route_mode": "authored_waypoints",
+        "junction_style": "none",
+        "visual_route_reviewed": true,
+        "visual_route_decision": "A separate overhead corridor returns rejected work to its accountable previous stage. The target arrow enters the top of that stage. Generated bracket-like fragments are corrected using the explicit feedback intent.",
+        "visual_route_review_artifact": "accepted-slide.png"
+      },
+      "visual_constraints": {
+        "start_anchors_px": [
+          [
+            1200.0,
+            224
+          ]
+        ],
+        "end_anchors_px": [
+          [
+            761.0,
+            224
+          ]
+        ],
+        "arrowhead_treatment": "triangle_at_target",
+        "stroke_style": {
+          "color": "#FD5108",
+          "width_px": 3,
+          "dash": "solid"
+        },
+        "route_waypoints_px": [
+          [
+            1200.0,
+            190
+          ],
+          [
+            761.0,
+            190
+          ]
+        ]
+      }
+    },
+    {
+      "id": "shared-controls-1",
+      "display_label": "One register records defects, owners and disposition.",
+      "kind": "text",
+      "role": "body",
+      "text": "One register records defects, owners and disposition.",
+      "text_style_role": "body",
+      "typography_group": "body",
+      "bbox_hint": [
+        87,
+        759,
+        846,
+        34
+      ],
+      "search_bbox_hint": [
+        87,
+        759,
+        846,
+        34
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 25,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.15,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "shared-controls-1-bullet",
+      "display_label": "Bullet",
+      "kind": "shape",
+      "shape": "ellipse",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        52,
+        769,
+        10,
+        10
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#FD5108",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "shared-controls-2",
+      "display_label": "Platform team maintains access controls and audit logs.",
+      "kind": "text",
+      "role": "body",
+      "text": "Platform team maintains access controls and audit logs.",
+      "text_style_role": "body",
+      "typography_group": "body",
+      "bbox_hint": [
+        87,
+        793,
+        846,
+        34
+      ],
+      "search_bbox_hint": [
+        87,
+        793,
+        846,
+        34
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 25,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.15,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "shared-controls-2-bullet",
+      "display_label": "Bullet",
+      "kind": "shape",
+      "shape": "ellipse",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        52,
+        803,
+        10,
+        10
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#FD5108",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "measurement-1",
+      "display_label": "Compare 20 paired tasks with baseline time logs.",
+      "kind": "text",
+      "role": "body",
+      "text": "Compare 20 paired tasks with baseline time logs.",
+      "text_style_role": "body",
+      "typography_group": "body",
+      "bbox_hint": [
+        1038,
+        759,
+        835,
+        34
+      ],
+      "search_bbox_hint": [
+        1038,
+        759,
+        835,
+        34
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 25,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.15,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "measurement-1-bullet",
+      "display_label": "Bullet",
+      "kind": "shape",
+      "shape": "ellipse",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        1003,
+        769,
+        10,
+        10
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#FD5108",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "measurement-2",
+      "display_label": "Verify claim samples and record expert review effort.",
+      "kind": "text",
+      "role": "body",
+      "text": "Verify claim samples and record expert review effort.",
+      "text_style_role": "body",
+      "typography_group": "body",
+      "bbox_hint": [
+        1038,
+        793,
+        835,
+        34
+      ],
+      "search_bbox_hint": [
+        1038,
+        793,
+        835,
+        34
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 25,
+        "alignment": "left",
+        "vertical_alignment": "top",
+        "line_spacing": 1.15,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      }
+    },
+    {
+      "id": "measurement-2-bullet",
+      "display_label": "Bullet",
+      "kind": "shape",
+      "shape": "ellipse",
+      "role": "native_presentation_geometry",
+      "bbox_hint": [
+        1003,
+        803,
+        10,
+        10
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 1,
+      "meaningful_visible": true,
+      "style_hint": {
+        "fill": "#FD5108",
+        "stroke": "none",
+        "stroke_width_px": 0,
+        "style_authority": "agent_visual_observation"
+      }
+    }
+  ],
+  "groups": [
+    {
       "id": "controlled-flow",
-      "kind": "group",
       "display_label": "Controlled release sequence",
-      "members": [
+      "semantic_class": "directed workflow",
+      "bbox_hint": [
+        95,
+        151,
+        1730,
+        243
+      ],
+      "children": [
         "stage-icon-sources",
         "stage-label-sources",
         "stage-icon-draft",
@@ -35,42 +1745,39 @@
         "forward-2",
         "forward-3",
         "source-return-label",
-        "review-return-label"
+        "review-return-label",
+        "source-return",
+        "review-return"
       ],
-      "bbox_hint": [
-        100,
-        145,
-        1720,
-        215
-      ]
+      "group_reason": "Four asset-backed stages and explicit feedback labels show how ownership is retained."
     },
     {
       "id": "accountability",
-      "kind": "group",
       "display_label": "Accountability by stage",
-      "members": [
-        "responsibility-matrix"
-      ],
+      "semantic_class": "responsibility matrix",
       "bbox_hint": [
         34,
-        382,
-        1836,
-        300
-      ]
-    },
-    {
-      "id": "decision-message",
-      "kind": "text",
-      "display_label": "Decision or boundary",
-      "members": [
-        "decision-message"
+        414,
+        1852,
+        298
       ],
-      "bbox_hint": [
-        520,
-        853,
-        1318,
-        50
-      ]
+      "children": [
+        "responsibility-matrix"
+      ],
+      "group_reason": "One native table keeps every stage input, output, owner and control editable."
     }
-  ]
+  ],
+  "relationships": [],
+  "layout_constraints": {
+    "non_overlap_pairs": [
+      [
+        "headline",
+        "subtitle"
+      ],
+      [
+        "decision-band",
+        "headline"
+      ]
+    ]
+  }
 }

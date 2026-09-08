@@ -323,8 +323,10 @@ def build(output: Path, manifests: list[Path]) -> dict:
             '<!doctype html><html lang="en"><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width, initial-scale=1">'
             '<title>SlidePoise showcase</title>'
-            '<meta http-equiv="refresh" content="0; url=docs/site/">'
-            '<p><a href="docs/site/">Open the SlidePoise showcase</a></p></html>\n',
+            '<style>html{background:#faf9f6}</style>'
+            '<script>location.replace("docs/site/"+location.search+location.hash)</script>'
+            '<noscript><meta http-equiv="refresh" content="0; url=docs/site/">'
+            '<a href="docs/site/">Open SlidePoise</a></noscript></html>\n',
             encoding="utf-8",
         )
         inventory = []

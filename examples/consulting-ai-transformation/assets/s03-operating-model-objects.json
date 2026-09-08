@@ -10,11 +10,11 @@
   "source": {
     "pptx": {
       "path": "deliverables/presentation.pptx",
-      "sha256": "638f70392a6eea2919d908ab1a558bd4f26221661df02ee0cdc5a1b795769c71"
+      "sha256": "13497442c7d6afb9b6d1cf83fa8606604f7ef07aaec2ab92ae5bc589f351c4cf"
     },
     "render": {
       "path": "assets/s03-operating-model-render.png",
-      "sha256": "e3501190eea08ffd8b6edb8663d1f9fcda4f4bd7a1689d5f75aa06cffb6ebafa"
+      "sha256": "71fd8241b80f0b6434328e4453bec7ce5a3bad52e20d5067cdd15219fa2d8661"
     }
   },
   "objects": [
@@ -26,20 +26,20 @@
       "kind": "shape",
       "polygon": [
         [
-          0.46875,
-          0.707407407
+          0.498958333,
+          0.737037037
         ],
         [
-          0.469270833,
-          0.707407407
+          0.499479167,
+          0.737037037
         ],
         [
-          0.469270833,
-          0.807407407
+          0.499479167,
+          0.826851852
         ],
         [
-          0.46875,
-          0.807407407
+          0.498958333,
+          0.826851852
         ]
       ],
       "stack": 0
@@ -99,28 +99,132 @@
     {
       "id": "p3-object-4",
       "native_id": "5",
+      "name": "shared-controls-1-bullet",
+      "label": "Shared controls 1 bullet",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.027083333,
+          0.771296296
+        ],
+        [
+          0.032291667,
+          0.771296296
+        ],
+        [
+          0.032291667,
+          0.780555556
+        ],
+        [
+          0.027083333,
+          0.780555556
+        ]
+      ],
+      "stack": 3
+    },
+    {
+      "id": "p3-object-5",
+      "native_id": "6",
+      "name": "shared-controls-2-bullet",
+      "label": "Shared controls 2 bullet",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.027083333,
+          0.802777778
+        ],
+        [
+          0.032291667,
+          0.802777778
+        ],
+        [
+          0.032291667,
+          0.812037037
+        ],
+        [
+          0.027083333,
+          0.812037037
+        ]
+      ],
+      "stack": 4
+    },
+    {
+      "id": "p3-object-6",
+      "native_id": "7",
+      "name": "measurement-1-bullet",
+      "label": "Measurement 1 bullet",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.522395833,
+          0.771296296
+        ],
+        [
+          0.527604167,
+          0.771296296
+        ],
+        [
+          0.527604167,
+          0.780555556
+        ],
+        [
+          0.522395833,
+          0.780555556
+        ]
+      ],
+      "stack": 5
+    },
+    {
+      "id": "p3-object-7",
+      "native_id": "8",
+      "name": "measurement-2-bullet",
+      "label": "Measurement 2 bullet",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.522395833,
+          0.802777778
+        ],
+        [
+          0.527604167,
+          0.802777778
+        ],
+        [
+          0.527604167,
+          0.812037037
+        ],
+        [
+          0.522395833,
+          0.812037037
+        ]
+      ],
+      "stack": 6
+    },
+    {
+      "id": "p3-object-8",
+      "native_id": "9",
       "name": "responsibility-matrix",
       "label": "Responsibility matrix",
       "kind": "table",
       "polygon": [
         [
           0.017708333,
-          0.412962963
+          0.442592593
         ],
         [
-          0.973958333,
-          0.412962963
+          0.982291667,
+          0.442592593
         ],
         [
-          0.973958333,
-          0.690740741
+          0.982291667,
+          0.718518519
         ],
         [
           0.017708333,
-          0.690740741
+          0.718518519
         ]
       ],
-      "stack": 3,
+      "stack": 7,
       "rows": [
         [
           "",
@@ -160,38 +264,38 @@
       ]
     },
     {
-      "id": "p3-object-5",
-      "native_id": "6",
+      "id": "p3-object-9",
+      "native_id": "10",
       "name": "SC_CONNECTOR__forward-1__0",
       "label": "Forward 1 0",
       "kind": "connector",
       "polygon": [
         [
-          0.155208333,
-          0.284259259
+          0.175520833,
+          0.314814815
         ],
         [
-          0.339583333,
-          0.284259259
+          0.355729167,
+          0.314814815
         ],
         [
-          0.339583333,
-          0.284259259
+          0.355729167,
+          0.314814815
         ],
         [
-          0.155208333,
-          0.284259259
+          0.175520833,
+          0.314814815
         ]
       ],
-      "stack": 4,
+      "stack": 8,
       "line": [
         [
-          0.155208333,
-          0.284259259
+          0.175520833,
+          0.314814815
         ],
         [
-          0.339583333,
-          0.284259259
+          0.355729167,
+          0.314814815
         ]
       ],
       "arrows": {
@@ -206,38 +310,38 @@
       }
     },
     {
-      "id": "p3-object-6",
-      "native_id": "7",
+      "id": "p3-object-10",
+      "native_id": "11",
       "name": "SC_CONNECTOR__forward-2__0",
       "label": "Forward 2 0",
       "kind": "connector",
       "polygon": [
         [
-          0.379166667,
-          0.284259259
+          0.409895833,
+          0.314814815
         ],
         [
-          0.597395833,
-          0.284259259
+          0.597916667,
+          0.314814815
         ],
         [
-          0.597395833,
-          0.284259259
+          0.597916667,
+          0.314814815
         ],
         [
-          0.379166667,
-          0.284259259
+          0.409895833,
+          0.314814815
         ]
       ],
-      "stack": 5,
+      "stack": 9,
       "line": [
         [
-          0.379166667,
-          0.284259259
+          0.409895833,
+          0.314814815
         ],
         [
-          0.597395833,
-          0.284259259
+          0.597916667,
+          0.314814815
         ]
       ],
       "arrows": {
@@ -252,38 +356,38 @@
       }
     },
     {
-      "id": "p3-object-7",
-      "native_id": "8",
+      "id": "p3-object-11",
+      "native_id": "12",
       "name": "SC_CONNECTOR__forward-3__0",
       "label": "Forward 3 0",
       "kind": "connector",
       "polygon": [
         [
-          0.636979167,
-          0.284259259
+          0.652083333,
+          0.314814815
         ],
         [
-          0.81875,
-          0.284259259
+          0.824479167,
+          0.314814815
         ],
         [
-          0.81875,
-          0.284259259
+          0.824479167,
+          0.314814815
         ],
         [
-          0.636979167,
-          0.284259259
+          0.652083333,
+          0.314814815
         ]
       ],
-      "stack": 6,
+      "stack": 10,
       "line": [
         [
-          0.636979167,
-          0.284259259
+          0.652083333,
+          0.314814815
         ],
         [
-          0.81875,
-          0.284259259
+          0.824479167,
+          0.314814815
         ]
       ],
       "arrows": {
@@ -298,8 +402,60 @@
       }
     },
     {
-      "id": "p3-object-8",
-      "native_id": "9",
+      "id": "p3-object-12",
+      "native_id": "13",
+      "name": "SC_FREEFORM_ROUTE__source-return__0",
+      "label": "Sc freeform route source return 0",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.1484375,
+          0.235185185
+        ],
+        [
+          0.3746875,
+          0.235185185
+        ],
+        [
+          0.3746875,
+          0.266666667
+        ],
+        [
+          0.1484375,
+          0.266666667
+        ]
+      ],
+      "stack": 11
+    },
+    {
+      "id": "p3-object-13",
+      "native_id": "14",
+      "name": "SC_FREEFORM_ROUTE__review-return__0",
+      "label": "Sc freeform route review return 0",
+      "kind": "shape",
+      "polygon": [
+        [
+          0.396354167,
+          0.235185185
+        ],
+        [
+          0.625,
+          0.235185185
+        ],
+        [
+          0.625,
+          0.266666667
+        ],
+        [
+          0.396354167,
+          0.266666667
+        ]
+      ],
+      "stack": 12
+    },
+    {
+      "id": "p3-object-14",
+      "native_id": "15",
       "name": "headline",
       "label": "Keep expert ownership at every release",
       "kind": "text",
@@ -321,7 +477,7 @@
           0.148148148
         ]
       ],
-      "stack": 7,
+      "stack": 13,
       "text": "Keep expert ownership at every release",
       "typography": [
         {
@@ -332,8 +488,8 @@
       ]
     },
     {
-      "id": "p3-object-9",
-      "native_id": "10",
+      "id": "p3-object-15",
+      "native_id": "16",
       "name": "subtitle",
       "label": "A controlled path from permissioned evidence to approved client work.",
       "kind": "text",
@@ -355,7 +511,7 @@
           0.197222222
         ]
       ],
-      "stack": 8,
+      "stack": 14,
       "text": "A controlled path from permissioned evidence to approved client work.",
       "typography": [
         {
@@ -366,245 +522,35 @@
       ]
     },
     {
-      "id": "p3-object-10",
-      "native_id": "11",
+      "id": "p3-object-16",
+      "native_id": "17",
       "name": "stage-label-sources",
       "label": "Approved sources",
       "kind": "text",
       "polygon": [
         [
-          0.052083333,
-          0.348148148
+          0.049479167,
+          0.384259259
         ],
         [
-          0.21875,
-          0.348148148
+          0.247395833,
+          0.384259259
         ],
         [
-          0.21875,
-          0.387037037
+          0.247395833,
+          0.424074074
         ],
         [
-          0.052083333,
-          0.387037037
+          0.049479167,
+          0.424074074
         ]
       ],
-      "stack": 9,
+      "stack": 15,
       "text": "Approved sources",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 12.5,
-          "color": "#000000",
-          "bold": true
-        }
-      ]
-    },
-    {
-      "id": "p3-object-11",
-      "native_id": "12",
-      "name": "stage-label-draft",
-      "label": "Grounded draft",
-      "kind": "text",
-      "polygon": [
-        [
-          0.276041667,
-          0.348148148
-        ],
-        [
-          0.442708333,
-          0.348148148
-        ],
-        [
-          0.442708333,
-          0.387037037
-        ],
-        [
-          0.276041667,
-          0.387037037
-        ]
-      ],
-      "stack": 10,
-      "text": "Grounded draft",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 12.5,
-          "color": "#000000",
-          "bold": true
-        }
-      ]
-    },
-    {
-      "id": "p3-object-12",
-      "native_id": "13",
-      "name": "stage-label-review",
-      "label": "Expert review",
-      "kind": "text",
-      "polygon": [
-        [
-          0.533854167,
-          0.348148148
-        ],
-        [
-          0.700520833,
-          0.348148148
-        ],
-        [
-          0.700520833,
-          0.387037037
-        ],
-        [
-          0.533854167,
-          0.387037037
-        ]
-      ],
-      "stack": 11,
-      "text": "Expert review",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 12.5,
-          "color": "#000000",
-          "bold": true
-        }
-      ]
-    },
-    {
-      "id": "p3-object-13",
-      "native_id": "14",
-      "name": "stage-label-output",
-      "label": "Client-ready output",
-      "kind": "text",
-      "polygon": [
-        [
-          0.755208333,
-          0.348148148
-        ],
-        [
-          0.921875,
-          0.348148148
-        ],
-        [
-          0.921875,
-          0.387037037
-        ],
-        [
-          0.755208333,
-          0.387037037
-        ]
-      ],
-      "stack": 12,
-      "text": "Client-ready output",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 12.5,
-          "color": "#000000",
-          "bold": true
-        }
-      ]
-    },
-    {
-      "id": "p3-object-14",
-      "native_id": "15",
-      "name": "source-return-label",
-      "label": "Correct sources via exception register",
-      "kind": "text",
-      "polygon": [
-        [
-          0.15625,
-          0.199074074
-        ],
-        [
-          0.380208333,
-          0.199074074
-        ],
-        [
-          0.380208333,
-          0.228703704
-        ],
-        [
-          0.15625,
-          0.228703704
-        ]
-      ],
-      "stack": 13,
-      "text": "Correct sources via exception register",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 10.5,
-          "color": "#000000",
-          "bold": true
-        }
-      ]
-    },
-    {
-      "id": "p3-object-15",
-      "native_id": "16",
-      "name": "review-return-label",
-      "label": "Reject with defect reasons",
-      "kind": "text",
-      "polygon": [
-        [
-          0.411458333,
-          0.199074074
-        ],
-        [
-          0.635416667,
-          0.199074074
-        ],
-        [
-          0.635416667,
-          0.228703704
-        ],
-        [
-          0.411458333,
-          0.228703704
-        ]
-      ],
-      "stack": 14,
-      "text": "Reject with defect reasons",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 10.5,
-          "color": "#000000",
-          "bold": true
-        }
-      ]
-    },
-    {
-      "id": "p3-object-16",
-      "native_id": "17",
-      "name": "shared-controls-heading",
-      "label": "SHARED CONTROLS",
-      "kind": "text",
-      "polygon": [
-        [
-          0.023958333,
-          0.707407407
-        ],
-        [
-          0.435416667,
-          0.707407407
-        ],
-        [
-          0.435416667,
-          0.739814815
-        ],
-        [
-          0.023958333,
-          0.739814815
-        ]
-      ],
-      "stack": 15,
-      "text": "SHARED CONTROLS",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 12.5,
+          "size_pt": 14.0,
           "color": "#000000",
           "bold": true
         }
@@ -613,67 +559,68 @@
     {
       "id": "p3-object-17",
       "native_id": "18",
-      "name": "shared-controls",
-      "label": "• One register records defects, owners and disposition. • Platform…",
+      "name": "stage-label-draft",
+      "label": "Grounded draft",
       "kind": "text",
       "polygon": [
         [
-          0.023958333,
-          0.742592593
+          0.283854167,
+          0.384259259
         ],
         [
-          0.440625,
-          0.742592593
+          0.481770833,
+          0.384259259
         ],
         [
-          0.440625,
-          0.807407407
+          0.481770833,
+          0.424074074
         ],
         [
-          0.023958333,
-          0.807407407
+          0.283854167,
+          0.424074074
         ]
       ],
       "stack": 16,
-      "text": "• One register records defects, owners and disposition.\n• Platform team maintains access controls and audit logs.",
+      "text": "Grounded draft",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 10.5,
-          "color": "#000000"
+          "size_pt": 14.0,
+          "color": "#000000",
+          "bold": true
         }
       ]
     },
     {
       "id": "p3-object-18",
       "native_id": "19",
-      "name": "measurement-heading",
-      "label": "PILOT MEASUREMENT",
+      "name": "stage-label-review",
+      "label": "Expert review",
       "kind": "text",
       "polygon": [
         [
-          0.4921875,
-          0.707407407
+          0.526041667,
+          0.384259259
         ],
         [
-          0.934895833,
-          0.707407407
+          0.723958333,
+          0.384259259
         ],
         [
-          0.934895833,
-          0.739814815
+          0.723958333,
+          0.424074074
         ],
         [
-          0.4921875,
-          0.739814815
+          0.526041667,
+          0.424074074
         ]
       ],
       "stack": 17,
-      "text": "PILOT MEASUREMENT",
+      "text": "Expert review",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 12.5,
+          "size_pt": 14.0,
           "color": "#000000",
           "bold": true
         }
@@ -682,40 +629,181 @@
     {
       "id": "p3-object-19",
       "native_id": "20",
-      "name": "measurement",
-      "label": "• Compare 20 paired tasks with baseline time logs. •…",
+      "name": "stage-label-output",
+      "label": "Client-ready output",
       "kind": "text",
       "polygon": [
         [
-          0.4921875,
-          0.742592593
+          0.752604167,
+          0.384259259
         ],
         [
-          0.934895833,
-          0.742592593
+          0.950520833,
+          0.384259259
         ],
         [
-          0.934895833,
-          0.807407407
+          0.950520833,
+          0.424074074
         ],
         [
-          0.4921875,
-          0.807407407
+          0.752604167,
+          0.424074074
         ]
       ],
       "stack": 18,
-      "text": "• Compare 20 paired tasks with baseline time logs.\n• Verify claim samples and record expert review effort.",
+      "text": "Client-ready output",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 10.5,
-          "color": "#000000"
+          "size_pt": 14.0,
+          "color": "#000000",
+          "bold": true
         }
       ]
     },
     {
       "id": "p3-object-20",
       "native_id": "21",
+      "name": "source-return-label",
+      "label": "Correct sources via exception register",
+      "kind": "text",
+      "polygon": [
+        [
+          0.165625,
+          0.199074074
+        ],
+        [
+          0.372916667,
+          0.199074074
+        ],
+        [
+          0.372916667,
+          0.22962963
+        ],
+        [
+          0.165625,
+          0.22962963
+        ]
+      ],
+      "stack": 19,
+      "text": "Correct sources via exception register",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 10.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p3-object-21",
+      "native_id": "22",
+      "name": "review-return-label",
+      "label": "Reject with defect reasons",
+      "kind": "text",
+      "polygon": [
+        [
+          0.415104167,
+          0.199074074
+        ],
+        [
+          0.626041667,
+          0.199074074
+        ],
+        [
+          0.626041667,
+          0.22962963
+        ],
+        [
+          0.415104167,
+          0.22962963
+        ]
+      ],
+      "stack": 20,
+      "text": "Reject with defect reasons",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 10.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p3-object-22",
+      "native_id": "23",
+      "name": "shared-controls-heading",
+      "label": "SHARED CONTROLS",
+      "kind": "text",
+      "polygon": [
+        [
+          0.023958333,
+          0.725925926
+        ],
+        [
+          0.435416667,
+          0.725925926
+        ],
+        [
+          0.435416667,
+          0.759259259
+        ],
+        [
+          0.023958333,
+          0.759259259
+        ]
+      ],
+      "stack": 21,
+      "text": "SHARED CONTROLS",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p3-object-23",
+      "native_id": "24",
+      "name": "measurement-heading",
+      "label": "PILOT MEASUREMENT",
+      "kind": "text",
+      "polygon": [
+        [
+          0.520833333,
+          0.725925926
+        ],
+        [
+          0.973958333,
+          0.725925926
+        ],
+        [
+          0.973958333,
+          0.759259259
+        ],
+        [
+          0.520833333,
+          0.759259259
+        ]
+      ],
+      "stack": 22,
+      "text": "PILOT MEASUREMENT",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 14.0,
+          "color": "#000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "p3-object-24",
+      "native_id": "25",
       "name": "decision-label",
       "label": "RELEASE RULE",
       "kind": "text",
@@ -737,7 +825,7 @@
           0.89537037
         ]
       ],
-      "stack": 19,
+      "stack": 23,
       "text": "RELEASE RULE",
       "typography": [
         {
@@ -749,8 +837,8 @@
       ]
     },
     {
-      "id": "p3-object-21",
-      "native_id": "22",
+      "id": "p3-object-25",
+      "native_id": "26",
       "name": "decision-message",
       "label": "No client use without expert and engagement-lead sign-off.",
       "kind": "text",
@@ -772,7 +860,7 @@
           0.89537037
         ]
       ],
-      "stack": 20,
+      "stack": 24,
       "text": "No client use without expert and engagement-lead sign-off.",
       "typography": [
         {
@@ -784,112 +872,248 @@
       ]
     },
     {
-      "id": "p3-object-22",
-      "native_id": "23",
+      "id": "p3-object-26",
+      "native_id": "27",
+      "name": "shared-controls-1",
+      "label": "One register records defects, owners and disposition.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.0453125,
+          0.762037037
+        ],
+        [
+          0.4859375,
+          0.762037037
+        ],
+        [
+          0.4859375,
+          0.793518519
+        ],
+        [
+          0.0453125,
+          0.793518519
+        ]
+      ],
+      "stack": 25,
+      "text": "One register records defects, owners and disposition.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 12.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p3-object-27",
+      "native_id": "28",
+      "name": "shared-controls-2",
+      "label": "Platform team maintains access controls and audit logs.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.0453125,
+          0.793518519
+        ],
+        [
+          0.4859375,
+          0.793518519
+        ],
+        [
+          0.4859375,
+          0.825
+        ],
+        [
+          0.0453125,
+          0.825
+        ]
+      ],
+      "stack": 26,
+      "text": "Platform team maintains access controls and audit logs.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 12.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p3-object-28",
+      "native_id": "29",
+      "name": "measurement-1",
+      "label": "Compare 20 paired tasks with baseline time logs.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.540625,
+          0.762037037
+        ],
+        [
+          0.975520833,
+          0.762037037
+        ],
+        [
+          0.975520833,
+          0.793518519
+        ],
+        [
+          0.540625,
+          0.793518519
+        ]
+      ],
+      "stack": 27,
+      "text": "Compare 20 paired tasks with baseline time logs.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 12.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p3-object-29",
+      "native_id": "30",
+      "name": "measurement-2",
+      "label": "Verify claim samples and record expert review effort.",
+      "kind": "text",
+      "polygon": [
+        [
+          0.540625,
+          0.793518519
+        ],
+        [
+          0.975520833,
+          0.793518519
+        ],
+        [
+          0.975520833,
+          0.825
+        ],
+        [
+          0.540625,
+          0.825
+        ]
+      ],
+      "stack": 28,
+      "text": "Verify claim samples and record expert review effort.",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 12.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p3-object-30",
+      "native_id": "31",
       "name": "stage-icon-sources",
       "label": "Stage icon sources",
       "kind": "image",
       "polygon": [
         [
-          0.1171875,
-          0.251851852
+          0.1234375,
+          0.27037037
         ],
         [
-          0.153645833,
-          0.251851852
+          0.1734375,
+          0.27037037
         ],
         [
-          0.153645833,
-          0.316666667
+          0.1734375,
+          0.359259259
         ],
         [
-          0.1171875,
-          0.316666667
+          0.1234375,
+          0.359259259
         ]
       ],
-      "stack": 21
+      "stack": 29
     },
     {
-      "id": "p3-object-23",
-      "native_id": "24",
+      "id": "p3-object-31",
+      "native_id": "32",
       "name": "stage-icon-draft",
       "label": "Stage icon draft",
       "kind": "image",
       "polygon": [
         [
-          0.341145833,
-          0.251851852
+          0.3578125,
+          0.27037037
         ],
         [
-          0.377604167,
-          0.251851852
+          0.4078125,
+          0.27037037
         ],
         [
-          0.377604167,
-          0.316666667
+          0.4078125,
+          0.359259259
         ],
         [
-          0.341145833,
-          0.316666667
+          0.3578125,
+          0.359259259
         ]
       ],
-      "stack": 22
+      "stack": 30
     },
     {
-      "id": "p3-object-24",
-      "native_id": "25",
+      "id": "p3-object-32",
+      "native_id": "33",
       "name": "stage-icon-review",
       "label": "Stage icon review",
       "kind": "image",
       "polygon": [
         [
-          0.598958333,
-          0.251851852
+          0.6,
+          0.27037037
         ],
         [
-          0.635416667,
-          0.251851852
+          0.65,
+          0.27037037
         ],
         [
-          0.635416667,
-          0.316666667
+          0.65,
+          0.359259259
         ],
         [
-          0.598958333,
-          0.316666667
+          0.6,
+          0.359259259
         ]
       ],
-      "stack": 23
+      "stack": 31
     },
     {
-      "id": "p3-object-25",
-      "native_id": "26",
+      "id": "p3-object-33",
+      "native_id": "34",
       "name": "stage-icon-output",
       "label": "Stage icon output",
       "kind": "image",
       "polygon": [
         [
-          0.8203125,
-          0.251851852
+          0.8265625,
+          0.27037037
         ],
         [
-          0.856770833,
-          0.251851852
+          0.8765625,
+          0.27037037
         ],
         [
-          0.856770833,
-          0.316666667
+          0.8765625,
+          0.359259259
         ],
         [
-          0.8203125,
-          0.316666667
+          0.8265625,
+          0.359259259
         ]
       ],
-      "stack": 24
+      "stack": 32
     },
     {
-      "id": "p3-object-26",
-      "native_id": "27",
+      "id": "p3-object-34",
+      "native_id": "35",
       "name": "Slide Number Placeholder 0",
       "label": "3",
       "kind": "text",
@@ -911,7 +1135,7 @@
           0.99537037
         ]
       ],
-      "stack": 25,
+      "stack": 33,
       "text": "3",
       "typography": [
         {

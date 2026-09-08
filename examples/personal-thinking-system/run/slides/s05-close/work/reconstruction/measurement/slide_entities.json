@@ -1,8 +1,8 @@
 {
   "schema_version": "3.0.0",
   "source": {
-    "image": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s05-close/work/accepted-slide.png",
-    "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s05-close/work/accepted-slide.png",
+    "image": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s05-close/work/accepted-slide.png",
+    "path": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s05-close/work/accepted-slide.png",
     "width_px": 1672,
     "height_px": 941
   },
@@ -43,7 +43,8 @@
       "reconstruction_route": "native_shape",
       "style_hint": {
         "fill": "#F9F7F5",
-        "stroke": "none"
+        "stroke": "none",
+        "style_authority": "agent_visual_observation"
       },
       "measurement": {
         "layout_bbox": {
@@ -603,7 +604,7 @@
       "text": "The point of",
       "bbox_hint": [
         139,
-        78,
+        88,
         900,
         201
       ],
@@ -614,8 +615,8 @@
       "text_style_role": "slide_title",
       "typography_group": "slide_title",
       "style_hint": {
-        "font_family": "Bodoni 72",
-        "target_font_size_px": 176,
+        "font_family": "Georgia",
+        "target_font_size_px": 150,
         "font_weight": "regular",
         "observed_foreground_color": "#242321",
         "style_authority": "agent_visual_observation",
@@ -632,7 +633,7 @@
         "layout_bbox": {
           "px": [
             139,
-            78,
+            88,
             900,
             201
           ]
@@ -1203,7 +1204,7 @@
       "text": "view is still",
       "bbox_hint": [
         139,
-        249,
+        259,
         900,
         201
       ],
@@ -1214,8 +1215,8 @@
       "text_style_role": "slide_title",
       "typography_group": "slide_title",
       "style_hint": {
-        "font_family": "Bodoni 72",
-        "target_font_size_px": 176,
+        "font_family": "Georgia",
+        "target_font_size_px": 150,
         "font_weight": "regular",
         "observed_foreground_color": "#242321",
         "style_authority": "agent_visual_observation",
@@ -1232,7 +1233,7 @@
         "layout_bbox": {
           "px": [
             139,
-            249,
+            259,
             900,
             201
           ]
@@ -1767,7 +1768,7 @@
       "text": "yours.",
       "bbox_hint": [
         139,
-        397,
+        407,
         900,
         212
       ],
@@ -1778,8 +1779,8 @@
       "text_style_role": "slide_title",
       "typography_group": "slide_title",
       "style_hint": {
-        "font_family": "Bodoni 72",
-        "target_font_size_px": 176,
+        "font_family": "Georgia",
+        "target_font_size_px": 150,
         "font_weight": "regular",
         "observed_foreground_color": "#242321",
         "style_authority": "agent_visual_observation",
@@ -1796,7 +1797,7 @@
         "layout_bbox": {
           "px": [
             139,
-            397,
+            407,
             900,
             212
           ]
@@ -3438,6 +3439,7 @@
         ],
         "intrinsic_text_ownership": "Marks and photographed notebook lettering belong to this raster. No presentation copy is inside the crop."
       },
+      "raster_fit": "fill",
       "measurement": {
         "layout_bbox": {
           "px": [
@@ -3698,7 +3700,7 @@
           ]
         },
         "image_object": {
-          "screenshot_crop_absolute": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s05-close/work/reconstruction/measurement/crops/signature-collage.png",
+          "screenshot_crop_absolute": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s05-close/work/reconstruction/measurement/crops/signature-collage.png",
           "crop_mode": "fill",
           "source_kind": "accepted_slide_crop"
         }
@@ -3726,7 +3728,7 @@
         "target_font_size_px": 21,
         "font_weight": "regular",
         "observed_foreground_color": "#242321",
-        "style_authority": "host_reviewed_user_authorized_deck_role",
+        "style_authority": "user_exact",
         "line_spacing": 1,
         "char_spacing_px": 0,
         "italic": false,

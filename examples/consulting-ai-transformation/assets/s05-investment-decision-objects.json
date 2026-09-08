@@ -10,11 +10,11 @@
   "source": {
     "pptx": {
       "path": "deliverables/presentation.pptx",
-      "sha256": "638f70392a6eea2919d908ab1a558bd4f26221661df02ee0cdc5a1b795769c71"
+      "sha256": "13497442c7d6afb9b6d1cf83fa8606604f7ef07aaec2ab92ae5bc589f351c4cf"
     },
     "render": {
       "path": "assets/s05-investment-decision-render.png",
-      "sha256": "59ad326155856aab67fa364db780cba1bbd4531cf64ec67f50a14e7018a671c4"
+      "sha256": "680f89b070f101ead97e20972736db753ae93590aa5e2ce548c0bd039ff3d7b8"
     }
   },
   "objects": [
@@ -303,11 +303,11 @@
         [
           "Scenario",
           "Adoption",
-          "Time saved",
+          "Time\nsaved",
           "Annual h",
-          "Annual capacity",
-          "First-year value",
-          "Net vs $115k"
+          "Annual\ncapacity",
+          "First-year\nvalue",
+          "Net vs\n$115k"
         ],
         [
           "Downside",
@@ -435,7 +435,7 @@
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 13.5,
+          "size_pt": 14.0,
           "color": "#000000",
           "bold": true
         }
@@ -479,40 +479,6 @@
     {
       "id": "p5-object-15",
       "native_id": "16",
-      "name": "capacity-labels",
-      "label": "Engagements Research time Adoption Time saved",
-      "kind": "text",
-      "polygon": [
-        [
-          0.033854167,
-          0.405555556
-        ],
-        [
-          0.294270833,
-          0.405555556
-        ],
-        [
-          0.294270833,
-          0.447222222
-        ],
-        [
-          0.033854167,
-          0.447222222
-        ]
-      ],
-      "stack": 14,
-      "text": "Engagements Research time Adoption Time saved",
-      "typography": [
-        {
-          "family": "Arial",
-          "size_pt": 9.5,
-          "color": "#000000"
-        }
-      ]
-    },
-    {
-      "id": "p5-object-16",
-      "native_id": "17",
       "name": "capacity-value",
       "label": "1,944 h × $125/h =",
       "kind": "text",
@@ -534,19 +500,19 @@
           0.535185185
         ]
       ],
-      "stack": 15,
+      "stack": 14,
       "text": "1,944 h × $125/h =",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 13.5,
+          "size_pt": 14.0,
           "color": "#000000"
         }
       ]
     },
     {
-      "id": "p5-object-17",
-      "native_id": "18",
+      "id": "p5-object-16",
+      "native_id": "17",
       "name": "capacity-value-number",
       "label": "$243k",
       "kind": "text",
@@ -568,20 +534,20 @@
           0.537037037
         ]
       ],
-      "stack": 16,
+      "stack": 15,
       "text": "$243k",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 23.5,
+          "size_pt": 26.5,
           "color": "#FD5108",
           "bold": true
         }
       ]
     },
     {
-      "id": "p5-object-18",
-      "native_id": "19",
+      "id": "p5-object-17",
+      "native_id": "18",
       "name": "capacity-caption",
       "label": "annual capacity equivalent",
       "kind": "text",
@@ -603,19 +569,19 @@
           0.572222222
         ]
       ],
-      "stack": 17,
+      "stack": 16,
       "text": "annual capacity equivalent",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 11.0,
+          "size_pt": 13.0,
           "color": "#000000"
         }
       ]
     },
     {
-      "id": "p5-object-19",
-      "native_id": "20",
+      "id": "p5-object-18",
+      "native_id": "19",
       "name": "investment-heading",
       "label": "INVESTMENT",
       "kind": "text",
@@ -637,20 +603,20 @@
           0.275
         ]
       ],
-      "stack": 18,
+      "stack": 17,
       "text": "INVESTMENT",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 13.5,
+          "size_pt": 14.0,
           "color": "#000000",
           "bold": true
         }
       ]
     },
     {
-      "id": "p5-object-20",
-      "native_id": "21",
+      "id": "p5-object-19",
+      "native_id": "20",
       "name": "investment-note",
       "label": "Remaining implementation after the pilot $60k.",
       "kind": "text",
@@ -672,19 +638,19 @@
           0.574074074
         ]
       ],
-      "stack": 19,
+      "stack": 18,
       "text": "Remaining implementation after the pilot $60k.",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 10.5,
+          "size_pt": 11.0,
           "color": "#000000"
         }
       ]
     },
     {
-      "id": "p5-object-21",
-      "native_id": "22",
+      "id": "p5-object-20",
+      "native_id": "21",
       "name": "sensitivity-heading",
       "label": "FIRST-YEAR SENSITIVITY · 50% RAMP",
       "kind": "text",
@@ -706,20 +672,20 @@
           0.275
         ]
       ],
-      "stack": 20,
+      "stack": 19,
       "text": "FIRST-YEAR SENSITIVITY · 50% RAMP",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 13.5,
+          "size_pt": 14.0,
           "color": "#000000",
           "bold": true
         }
       ]
     },
     {
-      "id": "p5-object-22",
-      "native_id": "23",
+      "id": "p5-object-21",
+      "native_id": "22",
       "name": "criteria-heading",
       "label": "DECISION CRITERIA",
       "kind": "text",
@@ -741,20 +707,20 @@
           0.638888889
         ]
       ],
-      "stack": 21,
+      "stack": 20,
       "text": "DECISION CRITERIA",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 13.5,
+          "size_pt": 14.0,
           "color": "#000000",
           "bold": true
         }
       ]
     },
     {
-      "id": "p5-object-23",
-      "native_id": "24",
+      "id": "p5-object-22",
+      "native_id": "23",
       "name": "criterion-label-go",
       "label": "GO",
       "kind": "text",
@@ -776,20 +742,20 @@
           0.7
         ]
       ],
-      "stack": 22,
+      "stack": 21,
       "text": "GO",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 13.5,
+          "size_pt": 14.0,
           "color": "#FD5108",
           "bold": true
         }
       ]
     },
     {
-      "id": "p5-object-24",
-      "native_id": "25",
+      "id": "p5-object-23",
+      "native_id": "24",
       "name": "criterion-body-go",
       "label": "All four gates hold. Practice lead owns rollout.",
       "kind": "text",
@@ -811,19 +777,19 @@
           0.765740741
         ]
       ],
-      "stack": 23,
+      "stack": 22,
       "text": "All four gates hold.\nPractice lead owns rollout.",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 11.0,
+          "size_pt": 12.0,
           "color": "#000000"
         }
       ]
     },
     {
-      "id": "p5-object-25",
-      "native_id": "26",
+      "id": "p5-object-24",
+      "native_id": "25",
       "name": "criterion-label-hold",
       "label": "HOLD",
       "kind": "text",
@@ -845,20 +811,20 @@
           0.7
         ]
       ],
-      "stack": 24,
+      "stack": 23,
       "text": "HOLD",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 13.5,
+          "size_pt": 14.0,
           "color": "#FD5108",
           "bold": true
         }
       ]
     },
     {
-      "id": "p5-object-26",
-      "native_id": "27",
+      "id": "p5-object-25",
+      "native_id": "26",
       "name": "criterion-body-hold",
       "label": "Evidence or usage is weak. Extend within an agreed cap.",
       "kind": "text",
@@ -880,19 +846,19 @@
           0.765740741
         ]
       ],
-      "stack": 25,
+      "stack": 24,
       "text": "Evidence or usage is weak.\nExtend within an agreed cap.",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 11.0,
+          "size_pt": 12.0,
           "color": "#000000"
         }
       ]
     },
     {
-      "id": "p5-object-27",
-      "native_id": "28",
+      "id": "p5-object-26",
+      "native_id": "27",
       "name": "criterion-label-stop",
       "label": "STOP",
       "kind": "text",
@@ -914,20 +880,20 @@
           0.7
         ]
       ],
-      "stack": 26,
+      "stack": 25,
       "text": "STOP",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 13.5,
+          "size_pt": 14.0,
           "color": "#FD5108",
           "bold": true
         }
       ]
     },
     {
-      "id": "p5-object-28",
-      "native_id": "29",
+      "id": "p5-object-27",
+      "native_id": "28",
       "name": "criterion-body-stop",
       "label": "A critical data control fails. Suspend use and close the…",
       "kind": "text",
@@ -949,19 +915,19 @@
           0.765740741
         ]
       ],
-      "stack": 27,
+      "stack": 26,
       "text": "A critical data control fails.\nSuspend use and close the issue.",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 11.0,
+          "size_pt": 12.0,
           "color": "#000000"
         }
       ]
     },
     {
-      "id": "p5-object-29",
-      "native_id": "30",
+      "id": "p5-object-28",
+      "native_id": "29",
       "name": "decision-label",
       "label": "APPROVE $25k NOW",
       "kind": "text",
@@ -983,7 +949,7 @@
           0.89537037
         ]
       ],
-      "stack": 28,
+      "stack": 27,
       "text": "APPROVE $25k NOW",
       "typography": [
         {
@@ -995,8 +961,8 @@
       ]
     },
     {
-      "id": "p5-object-30",
-      "native_id": "31",
+      "id": "p5-object-29",
+      "native_id": "30",
       "name": "decision-message",
       "label": "Release the remaining $60k only after the week-12 gate.",
       "kind": "text",
@@ -1018,7 +984,7 @@
           0.89537037
         ]
       ],
-      "stack": 29,
+      "stack": 28,
       "text": "Release the remaining $60k only after the week-12 gate.",
       "typography": [
         {
@@ -1030,86 +996,222 @@
       ]
     },
     {
+      "id": "p5-object-30",
+      "native_id": "31",
+      "name": "factor-engagements",
+      "label": "Engagements",
+      "kind": "text",
+      "polygon": [
+        [
+          0.033333333,
+          0.406481481
+        ],
+        [
+          0.095833333,
+          0.406481481
+        ],
+        [
+          0.095833333,
+          0.469444444
+        ],
+        [
+          0.033333333,
+          0.469444444
+        ]
+      ],
+      "stack": 29,
+      "text": "Engagements",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 9.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
       "id": "p5-object-31",
       "native_id": "32",
+      "name": "factor-research",
+      "label": "Research time",
+      "kind": "text",
+      "polygon": [
+        [
+          0.105208333,
+          0.406481481
+        ],
+        [
+          0.164583333,
+          0.406481481
+        ],
+        [
+          0.164583333,
+          0.469444444
+        ],
+        [
+          0.105208333,
+          0.469444444
+        ]
+      ],
+      "stack": 30,
+      "text": "Research\ntime",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 9.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p5-object-32",
+      "native_id": "33",
+      "name": "factor-adoption",
+      "label": "Adoption",
+      "kind": "text",
+      "polygon": [
+        [
+          0.175520833,
+          0.406481481
+        ],
+        [
+          0.2328125,
+          0.406481481
+        ],
+        [
+          0.2328125,
+          0.469444444
+        ],
+        [
+          0.175520833,
+          0.469444444
+        ]
+      ],
+      "stack": 31,
+      "text": "Adoption",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 9.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p5-object-33",
+      "native_id": "34",
+      "name": "factor-saved",
+      "label": "Time saved",
+      "kind": "text",
+      "polygon": [
+        [
+          0.240625,
+          0.406481481
+        ],
+        [
+          0.300520833,
+          0.406481481
+        ],
+        [
+          0.300520833,
+          0.469444444
+        ],
+        [
+          0.240625,
+          0.469444444
+        ]
+      ],
+      "stack": 32,
+      "text": "Time saved",
+      "typography": [
+        {
+          "family": "Arial",
+          "size_pt": 9.0,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "p5-object-34",
+      "native_id": "35",
       "name": "criterion-icon-go",
       "label": "Criterion icon go",
       "kind": "image",
       "polygon": [
         [
-          0.041666667,
-          0.669444444
+          0.0421875,
+          0.662037037
         ],
         [
-          0.086458333,
-          0.669444444
+          0.103645833,
+          0.662037037
         ],
         [
-          0.086458333,
-          0.749074074
+          0.103645833,
+          0.771296296
         ],
         [
-          0.041666667,
-          0.749074074
+          0.0421875,
+          0.771296296
         ]
       ],
-      "stack": 30
+      "stack": 33
     },
     {
-      "id": "p5-object-32",
-      "native_id": "33",
+      "id": "p5-object-35",
+      "native_id": "36",
       "name": "criterion-icon-hold",
       "label": "Criterion icon hold",
       "kind": "image",
       "polygon": [
         [
-          0.358854167,
-          0.669444444
+          0.359375,
+          0.662037037
         ],
         [
-          0.403645833,
-          0.669444444
+          0.420833333,
+          0.662037037
         ],
         [
-          0.403645833,
-          0.749074074
+          0.420833333,
+          0.771296296
         ],
         [
-          0.358854167,
-          0.749074074
+          0.359375,
+          0.771296296
         ]
       ],
-      "stack": 31
+      "stack": 34
     },
     {
-      "id": "p5-object-33",
-      "native_id": "34",
+      "id": "p5-object-36",
+      "native_id": "37",
       "name": "criterion-icon-stop",
       "label": "Criterion icon stop",
       "kind": "image",
       "polygon": [
         [
-          0.676041667,
-          0.669444444
+          0.6765625,
+          0.662037037
         ],
         [
-          0.720833333,
-          0.669444444
+          0.738020833,
+          0.662037037
         ],
         [
-          0.720833333,
-          0.749074074
+          0.738020833,
+          0.771296296
         ],
         [
-          0.676041667,
-          0.749074074
+          0.6765625,
+          0.771296296
         ]
       ],
-      "stack": 32
+      "stack": 35
     },
     {
-      "id": "p5-object-34",
-      "native_id": "35",
+      "id": "p5-object-37",
+      "native_id": "38",
       "name": "Slide Number Placeholder 0",
       "label": "5",
       "kind": "text",
@@ -1131,7 +1233,7 @@
           0.99537037
         ]
       ],
-      "stack": 33,
+      "stack": 36,
       "text": "5",
       "typography": [
         {

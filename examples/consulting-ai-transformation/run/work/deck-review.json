@@ -1,118 +1,55 @@
 {
   "reviewer": "host_agent_visual_reasoning",
+  "reviewed_on": "2026-09-08",
   "stage": "assembled_release_deck",
   "decision": "accepted",
   "material_issues": [],
   "reviewed_artifacts": [
     {
-      "path": "preview/contact-sheet.png",
-      "sha256": "7d6f01a7d699106ee491d553c371443b3e280584899ee9973e9d29a2f254f187"
+      "path": "../deliverables/presentation.pptx",
+      "sha256": "13497442c7d6afb9b6d1cf83fa8606604f7ef07aaec2ab92ae5bc589f351c4cf"
     },
     {
-      "path": "deliverables/presentation.pptx",
-      "sha256": "638f70392a6eea2919d908ab1a558bd4f26221661df02ee0cdc5a1b795769c71"
+      "path": "../preview/contact-sheet.png",
+      "sha256": "034f1319380f55bf967cfc8c4d148a1f9f72b4f52f056872762751c991eb5b92"
     },
     {
-      "path": "work/deck-design.json",
-      "sha256": "80b12b15c09c7da26364898a2579b95a7d5db6e77e2af85f677e829fed08f4e3"
+      "path": "../preview/rendered-text-evidence.json",
+      "sha256": "60dd12e887709664001dca858ba7c63cc36a5ce65e7659a67bac1a313b21819c"
     },
     {
-      "path": "work/cross-slide-calibration-review.json",
-      "sha256": "d98123c35703cd3f092846a7a1771c153a8e67649a7d4364c2be4b106c43a058"
+      "path": "../preview/slide-001.png",
+      "sha256": "8951d297041159db989dc26bd9c05ba6d6601fdad915094b91d59558ef04483e"
     },
     {
-      "path": "preview/slide-001.png",
-      "sha256": "ef98d340cbdfe9cba2df10f33b510029513810d405c274b960ac08c925469c20"
+      "path": "../preview/slide-002.png",
+      "sha256": "e2db6ea3f7c6b91db29cc85ff113cb05daad1cc4a4e2b9bb8da652dab05a4823"
     },
     {
-      "path": "slides/s01-recommendation/work/semantic-map.json",
-      "sha256": "2fa9939d5c3e019908db445bb9fb137c4744934f7f9686b5d6b48fb6d3e42888"
+      "path": "../preview/slide-003.png",
+      "sha256": "71fd8241b80f0b6434328e4453bec7ce5a3bad52e20d5067cdd15219fa2d8661"
     },
     {
-      "path": "slides/s01-recommendation/work/reconstruction/constructor-scene.json",
-      "sha256": "8cdeb8e5fc77290c858114241fc2ff0038b5a55aad50e5d8a40ad504c330c077"
+      "path": "../preview/slide-004.png",
+      "sha256": "b07eb57728452e7b9b49865f2c5611d6389083db11978aab8ecf60ce9c458b4b"
     },
     {
-      "path": "slides/s01-recommendation/work/semantic-evidence.json",
-      "sha256": "46b02dac4f2ee8ba43b3ee10bacd186dbbe9392da620873845939696f897040a"
+      "path": "../preview/slide-005.png",
+      "sha256": "680f89b070f101ead97e20972736db753ae93590aa5e2ce548c0bd039ff3d7b8"
     },
     {
-      "path": "preview/slide-002.png",
-      "sha256": "dd0e32533a4a2dc5c3fa4b8ec67e0b0cbb6dc42c4b775ae37504daae84f3d546"
-    },
-    {
-      "path": "slides/s02-opportunities/work/semantic-map.json",
-      "sha256": "cef981d17b39419738a7197e7ce10f987e8e5061bfadbf54af587c3fb5579afa"
-    },
-    {
-      "path": "slides/s02-opportunities/work/reconstruction/constructor-scene.json",
-      "sha256": "4c2944fcfb95eb080bb8bb68429bf3486961d5f05f0c0f8f748a67c97a5a820d"
-    },
-    {
-      "path": "slides/s02-opportunities/work/semantic-evidence.json",
-      "sha256": "740dce52856eb95198ae6ce5be113712e7710289e9fcf899a006b93674c9f1ed"
-    },
-    {
-      "path": "preview/slide-003.png",
-      "sha256": "e3501190eea08ffd8b6edb8663d1f9fcda4f4bd7a1689d5f75aa06cffb6ebafa"
-    },
-    {
-      "path": "slides/s03-operating-model/work/semantic-map.json",
-      "sha256": "17490ed62799f4a31511bd3d9e9571e6351d30722d07f364b119f1ce838234fc"
-    },
-    {
-      "path": "slides/s03-operating-model/work/reconstruction/constructor-scene.json",
-      "sha256": "50708e5a4a44e47407b702c515d8f72962c55f187a56ff1a374be5d159fcb8ef"
-    },
-    {
-      "path": "slides/s03-operating-model/work/semantic-evidence.json",
-      "sha256": "c72ceb2f35335277f7074d0250b3b04d1f71cdb2063910ede66760db07a7e7df"
-    },
-    {
-      "path": "preview/slide-004.png",
-      "sha256": "79dda343bc4f424c182da8989b1ca75e8bc7741a20724008a71b7a5c0c174e12"
-    },
-    {
-      "path": "slides/s04-delivery-roadmap/work/semantic-map.json",
-      "sha256": "3c60c3b923178de2b326e5f85a40aaf62c64ac6474db2f3a71e97a27a45e91bb"
-    },
-    {
-      "path": "slides/s04-delivery-roadmap/work/reconstruction/constructor-scene.json",
-      "sha256": "0d62736078635ca656ae1d60a6621f512d66be5dfa3cf36aebdf97cddb3f521e"
-    },
-    {
-      "path": "slides/s04-delivery-roadmap/work/semantic-evidence.json",
-      "sha256": "52e6361afc73793c2aa90b53af3c898833b253817ebc8530c8eab8bb6f99e669"
-    },
-    {
-      "path": "preview/slide-005.png",
-      "sha256": "59ad326155856aab67fa364db780cba1bbd4531cf64ec67f50a14e7018a671c4"
-    },
-    {
-      "path": "slides/s05-investment-decision/work/semantic-map.json",
-      "sha256": "d1a2b67a2c8e00213e562a609dd1a71910bb93f0ef43d6f7389daf01306383e5"
-    },
-    {
-      "path": "slides/s05-investment-decision/work/reconstruction/constructor-scene.json",
-      "sha256": "fd270ece75b019ad0f71a0709c1b4d5e4b4099293ec5e7a8933328b97e4b8e26"
-    },
-    {
-      "path": "slides/s05-investment-decision/work/semantic-evidence.json",
-      "sha256": "289cb8771debd7e3951dfd8f0dfdc25a2369ae0bd528065aab9ce5b03a23bb9b"
+      "path": "cross-slide-calibration-review.json",
+      "sha256": "75cbec47ccf1d205d677c5c9c546b4276d7d9d2170d5796220bab5c1b71ef137"
     }
   ],
   "observations": [
-    "The argument progresses from a bounded pilot decision through opportunity selection, release accountability, delivery gates and conditional investment.",
-    "All five pages share calibrated Georgia titles, Arial supporting roles, restrained orange emphasis, consistent decision bands and one inherited native frame.",
-    "Seventeen source-bound Remix icons clarify rationale, workflow stages, evidence gates and release criteria. They remain canonical SVG objects in PowerPoint.",
-    "The generated images cover the 1920 by 960 content region. PowerPoint adds the common header, footer and page number through one shared layout.",
-    "The capacity chart remains linked to its workbook. Tables, text, arrows, icons and decision controls remain separate native objects.",
-    "Every page retains its image-generation request, asset selection, semantic map, OpenCV evidence, compiled scene, render and visual comparison.",
-    "The native capacity chart uses vertical columns, preserving the target orientation and category order. The roadmap gate labels and detail text remain clear of the dependency divider."
+    "I compared all five consulting pages together. Claim titles, subtitles, orange decision labels, pale decision bands and inherited frames have consistent treatments.",
+    "The capacity figures, native tables and chart preserve the intended hierarchy. The narrower sensitivity table uses its own smaller type role. The two return paths and final-gate boundary are now explicit.",
+    "All earlier material and important visual findings were repaired. Local native wrapping and the left-aligned roadmap headers remain documented page differences."
   ],
   "editability_limits": [
-    "Native chart values and labels are linked to their embedded workbook. Separate formula text and scenario table cells do not recalculate automatically.",
-    "The two feedback routes are editable PowerPoint freeforms. Automatic connector reattachment after moving their related objects is not claimed.",
-    "Verification uses the recorded macOS LibreOffice and installed fonts. Pixel identity across other Office renderers is not claimed."
+    "Workbook-linked chart values update native chart labels. Separate scenario cells and formula text do not recalculate automatically.",
+    "Regeneration resolves named connector owners. Manual Office edits do not automatically reattach the drawn paths.",
+    "The recorded macOS LibreOffice and installed fonts define this review environment. Other fonts and readers can change wrapping."
   ]
 }

@@ -1,179 +1,122 @@
 {
-  "schema_version": "1.0",
-  "method": "examples/rebuild.py with accepted targets, host semantic maps and reconstruction handoffs. Re-resolved repository configuration in an isolated home, then OpenCV measurement, contract compilation and native deck construction. Both actual LibreOffice renders use 160 DPI.",
-  "source_pptx_sha256": "aec72faebe53cdaf2c0820391eadd344d34b3f5de4927e7c3a0444ff8f40ca9b",
-  "rebuilt_pptx_sha256": "26255787836e2b6cb2bf427b285f2c8cbff83d9542d2244afd4c4dff4b9fed8a",
-  "render_comparisons": [
-    {
-      "page": 1,
-      "reference_sha256": "683868ff0e678c2d1e81e86159c87ccbf817af4ab97d5fd969b9bd021228df8c",
-      "rebuilt_sha256": "683868ff0e678c2d1e81e86159c87ccbf817af4ab97d5fd969b9bd021228df8c",
-      "dimensions": [
-        2134,
-        1200
-      ],
-      "pixels_identical": true
-    },
-    {
-      "page": 2,
-      "reference_sha256": "58527f660f12c23421c096e18cec4e79acfce371957a99010108725a74456c38",
-      "rebuilt_sha256": "58527f660f12c23421c096e18cec4e79acfce371957a99010108725a74456c38",
-      "dimensions": [
-        2134,
-        1200
-      ],
-      "pixels_identical": true
-    },
-    {
-      "page": 3,
-      "reference_sha256": "1dfd8f855dff83a2c369a0c0133a43175bcf8000076e42d4a62e98b3726ea593",
-      "rebuilt_sha256": "1dfd8f855dff83a2c369a0c0133a43175bcf8000076e42d4a62e98b3726ea593",
-      "dimensions": [
-        2134,
-        1200
-      ],
-      "pixels_identical": true
-    },
-    {
-      "page": 4,
-      "reference_sha256": "1f506699df25b1cd143beb3a466f7eae745f6e03fa858c8816c60ef1cbc0afba",
-      "rebuilt_sha256": "1f506699df25b1cd143beb3a466f7eae745f6e03fa858c8816c60ef1cbc0afba",
-      "dimensions": [
-        2134,
-        1200
-      ],
-      "pixels_identical": true
-    },
-    {
-      "page": 5,
-      "reference_sha256": "e098559224df798cce8d18f33ecbb3663e6ec894b30db06bb0bf7ace141da803",
-      "rebuilt_sha256": "e098559224df798cce8d18f33ecbb3663e6ec894b30db06bb0bf7ace141da803",
-      "dimensions": [
-        2134,
-        1200
-      ],
-      "pixels_identical": true
-    }
-  ],
-  "native_xml_comparisons": [
-    {
-      "part": "ppt/slideLayouts/slideLayout1.xml",
-      "identical": true
-    },
-    {
-      "part": "ppt/slideLayouts/slideLayout2.xml",
-      "identical": true
-    },
-    {
-      "part": "ppt/slides/slide1.xml",
-      "identical": true
-    },
-    {
-      "part": "ppt/notesSlides/notesSlide1.xml",
-      "identical": false
-    },
-    {
-      "part": "ppt/slides/slide2.xml",
-      "identical": true
-    },
-    {
-      "part": "ppt/notesSlides/notesSlide2.xml",
-      "identical": false
-    },
-    {
-      "part": "ppt/slides/slide3.xml",
-      "identical": true
-    },
-    {
-      "part": "ppt/notesSlides/notesSlide3.xml",
-      "identical": false
-    },
-    {
-      "part": "ppt/slides/slide4.xml",
-      "identical": true
-    },
-    {
-      "part": "ppt/notesSlides/notesSlide4.xml",
-      "identical": false
-    },
-    {
-      "part": "ppt/slides/slide5.xml",
-      "identical": true
-    },
-    {
-      "part": "ppt/notesSlides/notesSlide5.xml",
-      "identical": false
-    },
-    {
-      "part": "ppt/slideMasters/slideMaster1.xml",
-      "identical": true
-    },
-    {
-      "part": "ppt/charts/chart1.xml",
-      "identical": true
-    }
-  ],
+  "evidence_type": "frozen_input_reproduction",
+  "source_pptx_sha256": "13497442c7d6afb9b6d1cf83fa8606604f7ef07aaec2ab92ae5bc589f351c4cf",
+  "rebuilt_pptx_sha256": "de57c853e64d9c3e19235f7815b0bad5e12ea3d3af160bebb559fa24b46916e8",
   "frozen_input_bindings": [
     {
-      "path": "run/slides/s01-recommendation/work/accepted-slide.png",
-      "sha256": "65320ec1e13c44d39f96dd36d5159195731aeb7b1a7444dff652f1bf3f4b24e7"
+      "path": "work/deck-design.json",
+      "sha256": "80b12b15c09c7da26364898a2579b95a7d5db6e77e2af85f677e829fed08f4e3",
+      "matches_rebuild_input": true
     },
     {
-      "path": "run/slides/s01-recommendation/work/semantic-map.json",
-      "sha256": "cd2c571d15500021a8b5bbae19a6c83120f1200a5b2b3f57e38dab959cfe097c"
+      "path": "slides/s01-recommendation/work/accepted-slide.png",
+      "sha256": "8901e2a892e61bcdaab3931929e840de1317f8409eee606534a3d7b247dd3d05",
+      "matches_rebuild_input": true
     },
     {
-      "path": "run/slides/s01-recommendation/work/reconstruction-handoff.json",
-      "sha256": "19511ea5511a5fadbb06dd5381214053aadb241dc5bbbeee22da3287bf058783"
+      "path": "slides/s01-recommendation/work/semantic-map.json",
+      "sha256": "d344af5489d025889a2196c43ce38b6a0c5d6cb2f1b718376a1e4e9343fa181d",
+      "matches_rebuild_input": true
     },
     {
-      "path": "run/slides/s02-opportunities/work/accepted-slide.png",
-      "sha256": "a49ee87afd9d13eab0ea6e70a03fb68d197b7319273b5a3d998f7bb116827280"
+      "path": "slides/s01-recommendation/work/reconstruction-handoff.json",
+      "sha256": "c94b93f7252ab1b280d2e35a5ffec8e66fe60cd31d9c9c87dad6d582862fea29",
+      "matches_rebuild_input": true
     },
     {
-      "path": "run/slides/s02-opportunities/work/semantic-map.json",
-      "sha256": "0ad877fe86736ab223eec6e439531893912317831526ddbf27c9f2c092c6f1a0"
+      "path": "slides/s02-opportunities/work/accepted-slide.png",
+      "sha256": "ff333c1826015522f40e68e5fe1fde9438a6997e7e983bb72ca94244b8b4256e",
+      "matches_rebuild_input": true
     },
     {
-      "path": "run/slides/s02-opportunities/work/reconstruction-handoff.json",
-      "sha256": "e2f9905ac861f0e5bed5ed6511ad3ba704978a00c1967d2a603c53a2b0133418"
+      "path": "slides/s02-opportunities/work/semantic-map.json",
+      "sha256": "0aaf9207a355dd59651c4dfa9ed292c1420ea890d4606c63eea9eb1688af1a95",
+      "matches_rebuild_input": true
     },
     {
-      "path": "run/slides/s03-operating-model/work/accepted-slide.png",
-      "sha256": "c8ead882cc20d711d3079b79629448058d9fb0c80716cf7154ccf3ce4cae11b6"
+      "path": "slides/s02-opportunities/work/reconstruction-handoff.json",
+      "sha256": "5b7dbca144de092b64e24bd0e52e4131ee21f938046371f38e9db3c141a511c1",
+      "matches_rebuild_input": true
     },
     {
-      "path": "run/slides/s03-operating-model/work/semantic-map.json",
-      "sha256": "12f423ba213dbe9e2a36ad2525f2d64664c11c5324827c1d9cf36c1a42f12724"
+      "path": "slides/s03-operating-model/work/accepted-slide.png",
+      "sha256": "c9e5f21257c82fb253cb3c935cfad3b1f238b1c17a6affcc48f3d67543633787",
+      "matches_rebuild_input": true
     },
     {
-      "path": "run/slides/s03-operating-model/work/reconstruction-handoff.json",
-      "sha256": "9dee38638ec23ca19eca6f182e9edc71dcaa91d4846c5b33dfc356c57b9dc49f"
+      "path": "slides/s03-operating-model/work/semantic-map.json",
+      "sha256": "bdc990d8bce5f413cb8ed608f97544a89b71153043b731ce2303d3af56d87cef",
+      "matches_rebuild_input": true
     },
     {
-      "path": "run/slides/s04-delivery-roadmap/work/accepted-slide.png",
-      "sha256": "ca744f8927ada435cb066b41ea8b3a3c8c951f27c99a5c3bbf28f37e8d9c9a5a"
+      "path": "slides/s03-operating-model/work/reconstruction-handoff.json",
+      "sha256": "928cbaa491fc2a6d8b47a10fac9f6d89c6d1542df2fbda9fef0208da009e0915",
+      "matches_rebuild_input": true
     },
     {
-      "path": "run/slides/s04-delivery-roadmap/work/semantic-map.json",
-      "sha256": "fec586c49f23fe8a29e124db22b08ee4db9eac9bf984a940f5509726ee2837ef"
+      "path": "slides/s04-delivery-roadmap/work/accepted-slide.png",
+      "sha256": "8c90ba253f0001c3be639e0cd13e6e0a6148f8152a6dc73d0c877db4bf4ed804",
+      "matches_rebuild_input": true
     },
     {
-      "path": "run/slides/s04-delivery-roadmap/work/reconstruction-handoff.json",
-      "sha256": "ad3b58fa510ed4c9cb44c20b5858a8e5e95d9d0c043a28351cc7b442e9907693"
+      "path": "slides/s04-delivery-roadmap/work/semantic-map.json",
+      "sha256": "da3b80fa051ca670aa6adeabd0c1e09d3cdd5d68faced343262bee9f7ee9dd06",
+      "matches_rebuild_input": true
     },
     {
-      "path": "run/slides/s05-investment-decision/work/accepted-slide.png",
-      "sha256": "6f63f75099b63a4b14aa1d3e9479e895d3401d03342374aa1f858f1e586f9ab6"
+      "path": "slides/s04-delivery-roadmap/work/reconstruction-handoff.json",
+      "sha256": "389dc0c1c8093d79da1d5de91fe8f877fd811e7569ce7f912c197963f861bd43",
+      "matches_rebuild_input": true
     },
     {
-      "path": "run/slides/s05-investment-decision/work/semantic-map.json",
-      "sha256": "944199dc1a9804b76d9a9826df256bac77d4150f7280e0fc987d22017c606ac5"
+      "path": "slides/s05-investment-decision/work/accepted-slide.png",
+      "sha256": "d209b68bdb55a094f90190b32ca032a43a9689b55db9f73614250f737a3cbfb2",
+      "matches_rebuild_input": true
     },
     {
-      "path": "run/slides/s05-investment-decision/work/reconstruction-handoff.json",
-      "sha256": "f4fc7b2d7f2e757da8e1b643afca1a49e275a65ada82a50c555549ebcb304713"
+      "path": "slides/s05-investment-decision/work/semantic-map.json",
+      "sha256": "ebb66de6d8a54d0767d36f30c18dce08ede7812b20c4a5edcdc603729b4327b6",
+      "matches_rebuild_input": true
+    },
+    {
+      "path": "slides/s05-investment-decision/work/reconstruction-handoff.json",
+      "sha256": "0268a83864688c2f2aaca37447f96636d193b515794fba3bd243947271699577",
+      "matches_rebuild_input": true
     }
   ],
-  "preview_environment_scope": "Recorded macOS LibreOffice and fonts. This establishes reproducibility of frozen reconstruction inputs, not deterministic image generation."
+  "render_comparisons": [
+    {
+      "page": "slide-001.png",
+      "reference_sha256": "8951d297041159db989dc26bd9c05ba6d6601fdad915094b91d59558ef04483e",
+      "rebuilt_sha256": "8951d297041159db989dc26bd9c05ba6d6601fdad915094b91d59558ef04483e",
+      "pixels_identical": true
+    },
+    {
+      "page": "slide-002.png",
+      "reference_sha256": "e2db6ea3f7c6b91db29cc85ff113cb05daad1cc4a4e2b9bb8da652dab05a4823",
+      "rebuilt_sha256": "e2db6ea3f7c6b91db29cc85ff113cb05daad1cc4a4e2b9bb8da652dab05a4823",
+      "pixels_identical": true
+    },
+    {
+      "page": "slide-003.png",
+      "reference_sha256": "71fd8241b80f0b6434328e4453bec7ce5a3bad52e20d5067cdd15219fa2d8661",
+      "rebuilt_sha256": "71fd8241b80f0b6434328e4453bec7ce5a3bad52e20d5067cdd15219fa2d8661",
+      "pixels_identical": true
+    },
+    {
+      "page": "slide-004.png",
+      "reference_sha256": "b07eb57728452e7b9b49865f2c5611d6389083db11978aab8ecf60ce9c458b4b",
+      "rebuilt_sha256": "b07eb57728452e7b9b49865f2c5611d6389083db11978aab8ecf60ce9c458b4b",
+      "pixels_identical": true
+    },
+    {
+      "page": "slide-005.png",
+      "reference_sha256": "680f89b070f101ead97e20972736db753ae93590aa5e2ce548c0bd039ff3d7b8",
+      "rebuilt_sha256": "680f89b070f101ead97e20972736db753ae93590aa5e2ce548c0bd039ff3d7b8",
+      "pixels_identical": true
+    }
+  ],
+  "all_inputs_current": true,
+  "all_pages_pixel_identical": true,
+  "scope": "Frozen reconstruction inputs in the recorded renderer, fonts and DPI. Image generation and visual acceptance remain Agent decisions."
 }

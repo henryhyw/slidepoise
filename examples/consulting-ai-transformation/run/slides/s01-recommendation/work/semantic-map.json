@@ -87,15 +87,15 @@
       "typography_group": "display-data",
       "bbox_hint": [
         47,
-        176,
+        191,
         500,
-        70
+        94
       ],
       "search_bbox_hint": [
         47,
-        176,
+        191,
         500,
-        70
+        94
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -104,7 +104,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 58,
+        "target_font_size_px": 80,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -123,15 +123,15 @@
       "typography_group": "metric-labels",
       "bbox_hint": [
         47,
-        248,
-        520,
-        32
+        282,
+        500,
+        38
       ],
       "search_bbox_hint": [
         47,
-        248,
-        520,
-        32
+        282,
+        500,
+        38
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -140,7 +140,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 25,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -158,15 +158,15 @@
       "typography_group": "metric-formulas",
       "bbox_hint": [
         47,
-        282,
-        520,
-        32
+        326,
+        500,
+        42
       ],
       "search_bbox_hint": [
         47,
-        282,
-        520,
-        32
+        326,
+        500,
+        42
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -175,7 +175,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 23,
+        "target_font_size_px": 26,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -192,16 +192,16 @@
       "text_style_role": "large_data_number",
       "typography_group": "display-data",
       "bbox_hint": [
-        694,
-        176,
+        722,
+        191,
         500,
-        70
+        94
       ],
       "search_bbox_hint": [
-        694,
-        176,
+        722,
+        191,
         500,
-        70
+        94
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -210,7 +210,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 58,
+        "target_font_size_px": 80,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -228,16 +228,16 @@
       "text_style_role": "heading_large",
       "typography_group": "metric-labels",
       "bbox_hint": [
-        694,
-        248,
-        520,
-        32
+        722,
+        282,
+        500,
+        38
       ],
       "search_bbox_hint": [
-        694,
-        248,
-        520,
-        32
+        722,
+        282,
+        500,
+        38
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -246,7 +246,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 25,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -263,16 +263,16 @@
       "text_style_role": "body",
       "typography_group": "metric-formulas",
       "bbox_hint": [
-        694,
-        282,
-        520,
-        32
+        722,
+        326,
+        500,
+        42
       ],
       "search_bbox_hint": [
-        694,
-        282,
-        520,
-        32
+        722,
+        326,
+        500,
+        42
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -281,7 +281,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 23,
+        "target_font_size_px": 26,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -298,16 +298,16 @@
       "text_style_role": "large_data_number",
       "typography_group": "display-data",
       "bbox_hint": [
-        1340,
-        176,
+        1408,
+        191,
         500,
-        70
+        94
       ],
       "search_bbox_hint": [
-        1340,
-        176,
+        1408,
+        191,
         500,
-        70
+        94
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -316,7 +316,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 58,
+        "target_font_size_px": 80,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -334,16 +334,16 @@
       "text_style_role": "heading_large",
       "typography_group": "metric-labels",
       "bbox_hint": [
-        1340,
-        248,
-        520,
-        32
+        1408,
+        282,
+        500,
+        38
       ],
       "search_bbox_hint": [
-        1340,
-        248,
-        520,
-        32
+        1408,
+        282,
+        500,
+        38
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -352,7 +352,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 25,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -369,16 +369,16 @@
       "text_style_role": "body",
       "typography_group": "metric-formulas",
       "bbox_hint": [
-        1340,
-        282,
-        520,
-        32
+        1408,
+        326,
+        500,
+        42
       ],
       "search_bbox_hint": [
-        1340,
-        282,
-        520,
-        32
+        1408,
+        326,
+        500,
+        42
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -387,7 +387,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 23,
+        "target_font_size_px": 26,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -402,10 +402,10 @@
       "shape": "rectangle",
       "role": "native_presentation_geometry",
       "bbox_hint": [
-        647,
-        176,
+        642,
+        210,
         1,
-        138
+        140
       ],
       "geometry_policy": "agent_logical",
       "z": 1,
@@ -415,7 +415,8 @@
         "stroke": "none",
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
-      }
+      },
+      "structural_boundary": true
     },
     {
       "id": "metric-divider-2",
@@ -424,10 +425,10 @@
       "shape": "rectangle",
       "role": "native_presentation_geometry",
       "bbox_hint": [
-        1293,
-        176,
+        1313,
+        210,
         1,
-        138
+        140
       ],
       "geometry_policy": "agent_logical",
       "z": 1,
@@ -437,7 +438,8 @@
         "stroke": "none",
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
-      }
+      },
+      "structural_boundary": true
     },
     {
       "id": "argument-heading",
@@ -449,14 +451,14 @@
       "typography_group": "section",
       "bbox_hint": [
         47,
-        356,
-        850,
+        397,
+        910,
         42
       ],
       "search_bbox_hint": [
         47,
-        356,
-        850,
+        397,
+        910,
         42
       ],
       "geometry_policy": "agent_logical",
@@ -466,7 +468,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -481,16 +483,16 @@
       "role": "supporting_visual",
       "upstream_asset_id": "remix-focus-2-line",
       "bbox_hint": [
-        76,
-        420,
-        54,
-        54
+        74,
+        449,
+        94,
+        94
       ],
       "slot_bbox_hint": [
-        76,
-        420,
-        54,
-        54
+        74,
+        449,
+        94,
+        94
       ],
       "geometry_policy": "agent_logical",
       "slot_surface": {
@@ -529,16 +531,16 @@
       "text_style_role": "body",
       "typography_group": "reason-numbers",
       "bbox_hint": [
-        165,
-        423,
-        62,
-        44
+        214,
+        456,
+        65,
+        40
       ],
       "search_bbox_hint": [
-        165,
-        423,
-        62,
-        44
+        214,
+        456,
+        65,
+        40
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -547,7 +549,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 25,
+        "target_font_size_px": 30,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -564,16 +566,16 @@
       "text_style_role": "heading_large",
       "typography_group": "reason-titles",
       "bbox_hint": [
-        255,
-        420,
-        540,
-        35
+        305,
+        458,
+        700,
+        38
       ],
       "search_bbox_hint": [
-        255,
-        420,
-        540,
-        35
+        305,
+        458,
+        700,
+        38
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -582,7 +584,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 25,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -599,16 +601,16 @@
       "text_style_role": "body",
       "typography_group": "reason-details",
       "bbox_hint": [
-        255,
-        458,
-        700,
-        40
+        305,
+        500,
+        730,
+        65
       ],
       "search_bbox_hint": [
-        255,
-        458,
-        700,
-        40
+        305,
+        500,
+        730,
+        65
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -617,7 +619,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 21,
+        "target_font_size_px": 26,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -632,16 +634,16 @@
       "role": "supporting_visual",
       "upstream_asset_id": "remix-team-line",
       "bbox_hint": [
-        76,
-        527,
-        54,
-        54
+        74,
+        573,
+        94,
+        94
       ],
       "slot_bbox_hint": [
-        76,
-        527,
-        54,
-        54
+        74,
+        573,
+        94,
+        94
       ],
       "geometry_policy": "agent_logical",
       "slot_surface": {
@@ -680,16 +682,16 @@
       "text_style_role": "body",
       "typography_group": "reason-numbers",
       "bbox_hint": [
-        165,
-        530,
-        62,
-        44
+        214,
+        580,
+        65,
+        40
       ],
       "search_bbox_hint": [
-        165,
-        530,
-        62,
-        44
+        214,
+        580,
+        65,
+        40
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -698,7 +700,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 25,
+        "target_font_size_px": 30,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -715,16 +717,16 @@
       "text_style_role": "heading_large",
       "typography_group": "reason-titles",
       "bbox_hint": [
-        255,
-        527,
-        540,
-        35
+        305,
+        582,
+        700,
+        38
       ],
       "search_bbox_hint": [
-        255,
-        527,
-        540,
-        35
+        305,
+        582,
+        700,
+        38
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -733,7 +735,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 25,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -750,16 +752,16 @@
       "text_style_role": "body",
       "typography_group": "reason-details",
       "bbox_hint": [
-        255,
-        565,
-        700,
-        40
+        305,
+        624,
+        730,
+        65
       ],
       "search_bbox_hint": [
-        255,
-        565,
-        700,
-        40
+        305,
+        624,
+        730,
+        65
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -768,7 +770,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 21,
+        "target_font_size_px": 26,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -783,16 +785,16 @@
       "role": "supporting_visual",
       "upstream_asset_id": "remix-shield-check-line",
       "bbox_hint": [
-        76,
-        634,
-        54,
-        54
+        74,
+        693,
+        94,
+        94
       ],
       "slot_bbox_hint": [
-        76,
-        634,
-        54,
-        54
+        74,
+        693,
+        94,
+        94
       ],
       "geometry_policy": "agent_logical",
       "slot_surface": {
@@ -831,16 +833,16 @@
       "text_style_role": "body",
       "typography_group": "reason-numbers",
       "bbox_hint": [
-        165,
-        637,
-        62,
-        44
+        214,
+        700,
+        65,
+        40
       ],
       "search_bbox_hint": [
-        165,
-        637,
-        62,
-        44
+        214,
+        700,
+        65,
+        40
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -849,7 +851,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 25,
+        "target_font_size_px": 30,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -866,16 +868,16 @@
       "text_style_role": "heading_large",
       "typography_group": "reason-titles",
       "bbox_hint": [
-        255,
-        634,
-        540,
-        35
+        305,
+        702,
+        700,
+        38
       ],
       "search_bbox_hint": [
-        255,
-        634,
-        540,
-        35
+        305,
+        702,
+        700,
+        38
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -884,7 +886,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 25,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -897,20 +899,20 @@
       "display_label": "Practice lead and CFO release $60k only after the week-12 gate.",
       "kind": "text",
       "role": "body",
-      "text": "Practice lead and CFO release $60k only after the week-12 gate.",
+      "text": "Practice lead and CFO release $60k\nonly after the week-12 gate.",
       "text_style_role": "body",
       "typography_group": "reason-details",
       "bbox_hint": [
-        255,
-        672,
-        700,
-        40
+        305,
+        744,
+        730,
+        65
       ],
       "search_bbox_hint": [
-        255,
-        672,
-        700,
-        40
+        305,
+        744,
+        730,
+        65
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -919,7 +921,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 21,
+        "target_font_size_px": 26,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -936,15 +938,15 @@
       "text_style_role": "heading_large",
       "typography_group": "section",
       "bbox_hint": [
-        1068,
-        356,
-        800,
+        1060,
+        397,
+        820,
         42
       ],
       "search_bbox_hint": [
-        1068,
-        356,
-        800,
+        1060,
+        397,
+        820,
         42
       ],
       "geometry_policy": "agent_logical",
@@ -954,7 +956,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -968,10 +970,10 @@
       "kind": "table",
       "role": "structured_evidence",
       "bbox_hint": [
-        1068,
-        402,
-        800,
-        332
+        1060,
+        448,
+        820,
+        334
       ],
       "geometry_policy": "agent_logical",
       "z": 5,
@@ -987,14 +989,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Minimum to scale",
@@ -1004,14 +1006,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
@@ -1023,14 +1025,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "25%",
@@ -1040,14 +1042,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
@@ -1059,14 +1061,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "95%",
@@ -1076,14 +1078,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
@@ -1095,14 +1097,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "0",
@@ -1112,14 +1114,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
@@ -1131,14 +1133,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "70% \u00b7 at least 11 of 15",
@@ -1148,32 +1150,32 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ]
         ],
         "column_widths_px": [
-          440,
-          360
+          450,
+          370
         ],
         "row_heights_px": [
-          54,
-          69,
-          69,
-          69,
-          71
+          60,
+          68,
+          68,
+          68,
+          70
         ]
       },
       "style_hint": {
         "font_family": "Arial",
-        "font_size_px": 22,
+        "font_size_px": 24,
         "cell_margin_px": 8,
         "color": "#000000",
         "fill": "#FFFFFF",
@@ -1305,9 +1307,9 @@
       "semantic_class": "planning calculation",
       "bbox_hint": [
         47,
-        176,
-        1820,
-        138
+        191,
+        1861,
+        177
       ],
       "children": [
         "baseline",
@@ -1329,10 +1331,10 @@
       "display_label": "Why this pilot first",
       "semantic_class": "decision argument",
       "bbox_hint": [
-        47,
-        356,
-        940,
-        370
+        74,
+        449,
+        961,
+        360
       ],
       "children": [
         "reason-icon-01",
@@ -1355,10 +1357,10 @@
       "display_label": "Week-12 scale gate",
       "semantic_class": "release criteria",
       "bbox_hint": [
-        1068,
-        356,
-        800,
-        378
+        1060,
+        397,
+        820,
+        385
       ],
       "children": [
         "gate-heading",

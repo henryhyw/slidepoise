@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "source_scene_evidence": "/private/tmp/.slidepoise-rebuild-h51errnw/slides/s03-operating-model/work/accepted-slide.png",
+  "source_scene_evidence": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/slides/s03-operating-model/work/accepted-slide.png",
   "full_slide_dimensions_px": [
     1920,
     1080
@@ -68,7 +68,158 @@
   },
   "speaker_notes": [
     "This is an illustrative planning scenario. Twenty paired tasks represent one research task from each of twenty pilot engagements, with ten tasks at the week-eight interim review. The sampled 95% claim-verification gate measures pilot quality. Every client claim still requires expert sign-off and every client release requires engagement-lead approval.",
-    "The two curved feedback paths are editable native freeforms. They preserve the observed direction and curve geometry, but moving the table or its columns in Office does not automatically reattach these paths."
+    "Rejected drafts return to the drafting team. Source exceptions return to the source steward. The editable feedback paths are regenerated from their named owners when the deck is rebuilt. Moving objects manually in PowerPoint does not reattach the paths."
+  ],
+  "content_obligations": [
+    {
+      "id": "controlled-flow",
+      "description": "Four asset-backed stages and explicit feedback labels show how ownership is retained.",
+      "entity_ids": [
+        "stage-icon-sources",
+        "stage-label-sources",
+        "stage-icon-draft",
+        "stage-label-draft",
+        "stage-icon-review",
+        "stage-label-review",
+        "stage-icon-output",
+        "stage-label-output",
+        "forward-1",
+        "forward-2",
+        "forward-3",
+        "source-return-label",
+        "review-return-label",
+        "source-return",
+        "review-return"
+      ]
+    },
+    {
+      "id": "accountability",
+      "description": "One native table keeps every stage input, output, owner and control editable.",
+      "entity_ids": [
+        "responsibility-matrix"
+      ]
+    },
+    {
+      "id": "source-return-meaning",
+      "description": "Correct sources via exception register",
+      "entity_ids": [
+        "source-return",
+        "source-return-label"
+      ],
+      "connection": {
+        "entity_id": "source-return",
+        "source_entities": [
+          "stage-icon-draft"
+        ],
+        "target_entities": [
+          "stage-icon-sources"
+        ],
+        "directed": true
+      }
+    },
+    {
+      "id": "review-return-meaning",
+      "description": "Reject with defect reasons",
+      "entity_ids": [
+        "review-return",
+        "review-return-label"
+      ],
+      "connection": {
+        "entity_id": "review-return",
+        "source_entities": [
+          "stage-icon-review"
+        ],
+        "target_entities": [
+          "stage-icon-draft"
+        ],
+        "directed": true
+      }
+    },
+    {
+      "id": "page-message",
+      "description": "The slide claim and its qualification",
+      "entity_ids": [
+        "headline",
+        "subtitle"
+      ]
+    },
+    {
+      "id": "controls",
+      "description": "Shared defect register and audit controls",
+      "entity_ids": [
+        "shared-controls-heading",
+        "shared-controls-1",
+        "shared-controls-2"
+      ]
+    },
+    {
+      "id": "measurement",
+      "description": "Paired task measurement and verification",
+      "entity_ids": [
+        "measurement-heading",
+        "measurement-1",
+        "measurement-2"
+      ]
+    },
+    {
+      "id": "decision",
+      "description": "Required expert and engagement-lead approval",
+      "entity_ids": [
+        "decision-label",
+        "decision-message"
+      ]
+    },
+    {
+      "id": "forward-stage-1",
+      "description": "sources proceeds to draft",
+      "entity_ids": [
+        "forward-1"
+      ],
+      "connection": {
+        "entity_id": "forward-1",
+        "source_entities": [
+          "stage-icon-sources"
+        ],
+        "target_entities": [
+          "stage-icon-draft"
+        ],
+        "directed": true
+      }
+    },
+    {
+      "id": "forward-stage-2",
+      "description": "draft proceeds to review",
+      "entity_ids": [
+        "forward-2"
+      ],
+      "connection": {
+        "entity_id": "forward-2",
+        "source_entities": [
+          "stage-icon-draft"
+        ],
+        "target_entities": [
+          "stage-icon-review"
+        ],
+        "directed": true
+      }
+    },
+    {
+      "id": "forward-stage-3",
+      "description": "review proceeds to output",
+      "entity_ids": [
+        "forward-3"
+      ],
+      "connection": {
+        "entity_id": "forward-3",
+        "source_entities": [
+          "stage-icon-review"
+        ],
+        "target_entities": [
+          "stage-icon-output"
+        ],
+        "directed": true
+      }
+    }
   ],
   "reconstruction_units": [
     {
@@ -112,10 +263,10 @@
       "emits_ppt_object": true,
       "render_owner": "stage-icon-sources",
       "bbox_px": [
-        222,
-        205,
-        76,
-        76
+        233,
+        224,
+        104,
+        104
       ],
       "component_id": null
     },
@@ -128,10 +279,10 @@
       "emits_ppt_object": true,
       "render_owner": "stage-label-sources",
       "bbox_px": [
-        100,
-        312,
-        320,
-        42
+        95,
+        351,
+        380,
+        43
       ],
       "component_id": null
     },
@@ -144,10 +295,10 @@
       "emits_ppt_object": true,
       "render_owner": "stage-icon-draft",
       "bbox_px": [
-        652,
-        205,
-        76,
-        76
+        683,
+        224,
+        104,
+        104
       ],
       "component_id": null
     },
@@ -160,10 +311,10 @@
       "emits_ppt_object": true,
       "render_owner": "stage-label-draft",
       "bbox_px": [
-        530,
-        312,
-        320,
-        42
+        545,
+        351,
+        380,
+        43
       ],
       "component_id": null
     },
@@ -176,10 +327,10 @@
       "emits_ppt_object": true,
       "render_owner": "stage-icon-review",
       "bbox_px": [
-        1147,
-        205,
-        76,
-        76
+        1148,
+        224,
+        104,
+        104
       ],
       "component_id": null
     },
@@ -192,10 +343,10 @@
       "emits_ppt_object": true,
       "render_owner": "stage-label-review",
       "bbox_px": [
-        1025,
-        312,
-        320,
-        42
+        1010,
+        351,
+        380,
+        43
       ],
       "component_id": null
     },
@@ -208,10 +359,10 @@
       "emits_ppt_object": true,
       "render_owner": "stage-icon-output",
       "bbox_px": [
-        1572,
-        205,
-        76,
-        76
+        1583,
+        224,
+        104,
+        104
       ],
       "component_id": null
     },
@@ -224,10 +375,10 @@
       "emits_ppt_object": true,
       "render_owner": "stage-label-output",
       "bbox_px": [
-        1450,
-        312,
-        320,
-        42
+        1445,
+        351,
+        380,
+        43
       ],
       "component_id": null
     },
@@ -240,10 +391,10 @@
       "emits_ppt_object": true,
       "render_owner": "forward-1",
       "bbox_px": [
-        350,
-        231,
-        250,
-        24
+        378,
+        269,
+        267,
+        28
       ],
       "component_id": null
     },
@@ -256,10 +407,10 @@
       "emits_ppt_object": true,
       "render_owner": "forward-2",
       "bbox_px": [
-        780,
-        231,
-        315,
-        24
+        830,
+        269,
+        271,
+        28
       ],
       "component_id": null
     },
@@ -272,10 +423,10 @@
       "emits_ppt_object": true,
       "render_owner": "forward-3",
       "bbox_px": [
-        1275,
-        231,
-        245,
-        24
+        1273,
+        269,
+        266,
+        28
       ],
       "component_id": null
     },
@@ -288,10 +439,10 @@
       "emits_ppt_object": true,
       "render_owner": "source-return-label",
       "bbox_px": [
-        300,
+        318,
         151,
-        430,
-        32
+        398,
+        33
       ],
       "component_id": null
     },
@@ -304,10 +455,10 @@
       "emits_ppt_object": true,
       "render_owner": "review-return-label",
       "bbox_px": [
-        790,
+        797,
         151,
-        430,
-        32
+        405,
+        33
       ],
       "component_id": null
     },
@@ -321,9 +472,9 @@
       "render_owner": "responsibility-matrix",
       "bbox_px": [
         34,
-        382,
-        1836,
-        300
+        414,
+        1852,
+        298
       ],
       "component_id": null
     },
@@ -337,25 +488,9 @@
       "render_owner": "shared-controls-heading",
       "bbox_px": [
         46,
-        700,
+        720,
         790,
-        35
-      ],
-      "component_id": null
-    },
-    {
-      "id": "shared-controls",
-      "semantic_kind": "text",
-      "semantic_role": "body",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "shared-controls",
-      "bbox_px": [
-        46,
-        738,
-        800,
-        70
+        36
       ],
       "component_id": null
     },
@@ -368,10 +503,10 @@
       "emits_ppt_object": true,
       "render_owner": "bottom-divider",
       "bbox_px": [
-        900,
-        700,
+        958,
+        732,
         1,
-        108
+        97
       ],
       "component_id": null
     },
@@ -384,26 +519,10 @@
       "emits_ppt_object": true,
       "render_owner": "measurement-heading",
       "bbox_px": [
-        945,
-        700,
-        850,
-        35
-      ],
-      "component_id": null
-    },
-    {
-      "id": "measurement",
-      "semantic_kind": "text",
-      "semantic_role": "body",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "measurement",
-      "bbox_px": [
-        945,
-        738,
-        850,
-        70
+        1000,
+        720,
+        870,
+        36
       ],
       "component_id": null
     },
@@ -470,6 +589,166 @@
         50
       ],
       "component_id": null
+    },
+    {
+      "id": "source-return",
+      "semantic_kind": "connector",
+      "semantic_role": "directed_workflow_relationship",
+      "selected_route": "native_connector_graph",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "source-return",
+      "bbox_px": [
+        285,
+        190,
+        434,
+        34
+      ],
+      "component_id": null
+    },
+    {
+      "id": "review-return",
+      "semantic_kind": "connector",
+      "semantic_role": "directed_workflow_relationship",
+      "selected_route": "native_connector_graph",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "review-return",
+      "bbox_px": [
+        761,
+        190,
+        439,
+        34
+      ],
+      "component_id": null
+    },
+    {
+      "id": "shared-controls-1",
+      "semantic_kind": "text",
+      "semantic_role": "body",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "shared-controls-1",
+      "bbox_px": [
+        87,
+        759,
+        846,
+        34
+      ],
+      "component_id": null
+    },
+    {
+      "id": "shared-controls-1-bullet",
+      "semantic_kind": "shape",
+      "semantic_role": "native_presentation_geometry",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "shared-controls-1-bullet",
+      "bbox_px": [
+        52,
+        769,
+        10,
+        10
+      ],
+      "component_id": null
+    },
+    {
+      "id": "shared-controls-2",
+      "semantic_kind": "text",
+      "semantic_role": "body",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "shared-controls-2",
+      "bbox_px": [
+        87,
+        793,
+        846,
+        34
+      ],
+      "component_id": null
+    },
+    {
+      "id": "shared-controls-2-bullet",
+      "semantic_kind": "shape",
+      "semantic_role": "native_presentation_geometry",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "shared-controls-2-bullet",
+      "bbox_px": [
+        52,
+        803,
+        10,
+        10
+      ],
+      "component_id": null
+    },
+    {
+      "id": "measurement-1",
+      "semantic_kind": "text",
+      "semantic_role": "body",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "measurement-1",
+      "bbox_px": [
+        1038,
+        759,
+        835,
+        34
+      ],
+      "component_id": null
+    },
+    {
+      "id": "measurement-1-bullet",
+      "semantic_kind": "shape",
+      "semantic_role": "native_presentation_geometry",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "measurement-1-bullet",
+      "bbox_px": [
+        1003,
+        769,
+        10,
+        10
+      ],
+      "component_id": null
+    },
+    {
+      "id": "measurement-2",
+      "semantic_kind": "text",
+      "semantic_role": "body",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "measurement-2",
+      "bbox_px": [
+        1038,
+        793,
+        835,
+        34
+      ],
+      "component_id": null
+    },
+    {
+      "id": "measurement-2-bullet",
+      "semantic_kind": "shape",
+      "semantic_role": "native_presentation_geometry",
+      "selected_route": "native_shape",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "measurement-2-bullet",
+      "bbox_px": [
+        1003,
+        803,
+        10,
+        10
+      ],
+      "component_id": null
     }
   ],
   "canonical_asset_mappings": [
@@ -480,10 +759,10 @@
       "asset_kind": "icon_slot",
       "selection_mode": "host_agent_selected_pair_before_generation",
       "target_bbox_source_px": [
-        222,
-        205,
-        76,
-        76
+        233,
+        224,
+        104,
+        104
       ],
       "preserve_aspect_ratio": true,
       "fit": "contain",
@@ -525,10 +804,10 @@
       "asset_kind": "icon_slot",
       "selection_mode": "host_agent_selected_pair_before_generation",
       "target_bbox_source_px": [
-        652,
-        205,
-        76,
-        76
+        683,
+        224,
+        104,
+        104
       ],
       "preserve_aspect_ratio": true,
       "fit": "contain",
@@ -570,10 +849,10 @@
       "asset_kind": "icon_slot",
       "selection_mode": "host_agent_selected_pair_before_generation",
       "target_bbox_source_px": [
-        1147,
-        205,
-        76,
-        76
+        1148,
+        224,
+        104,
+        104
       ],
       "preserve_aspect_ratio": true,
       "fit": "contain",
@@ -615,10 +894,10 @@
       "asset_kind": "icon_slot",
       "selection_mode": "host_agent_selected_pair_before_generation",
       "target_bbox_source_px": [
-        1572,
-        205,
-        76,
-        76
+        1583,
+        224,
+        104,
+        104
       ],
       "preserve_aspect_ratio": true,
       "fit": "contain",
@@ -687,14 +966,14 @@
       },
       "approximate_start_anchors_px": [
         [
-          298.0,
-          243.0
+          337.0,
+          276.0
         ]
       ],
       "approximate_end_anchors_px": [
         [
-          652.0,
-          243.0
+          683.0,
+          276.0
         ]
       ],
       "junction_positions_px": [],
@@ -768,14 +1047,14 @@
       },
       "approximate_start_anchors_px": [
         [
-          728.0,
-          243.0
+          787.0,
+          276.0
         ]
       ],
       "approximate_end_anchors_px": [
         [
-          1147.0,
-          243.0
+          1148.0,
+          276.0
         ]
       ],
       "junction_positions_px": [],
@@ -849,14 +1128,14 @@
       },
       "approximate_start_anchors_px": [
         [
-          1223.0,
-          243.0
+          1252.0,
+          276.0
         ]
       ],
       "approximate_end_anchors_px": [
         [
-          1572.0,
-          243.0
+          1583.0,
+          276.0
         ]
       ],
       "junction_positions_px": [],
@@ -897,6 +1176,186 @@
         "left"
       ],
       "connector_family": "direct_flow"
+    },
+    {
+      "entity_id": "source-return",
+      "relationship_intent": {
+        "connector_family": "orthogonal_dependency",
+        "directed": true,
+        "source_entities": [
+          "stage-icon-draft"
+        ],
+        "target_entities": [
+          "stage-icon-sources"
+        ],
+        "source_attachment_sides": [
+          "top"
+        ],
+        "target_attachment_sides": [
+          "top"
+        ],
+        "source_attachment_fractions": [
+          0.35
+        ],
+        "target_attachment_fractions": [
+          0.5
+        ],
+        "semantic_topology_verified": true,
+        "route_mode": "authored_waypoints",
+        "junction_style": "none",
+        "visual_route_reviewed": true,
+        "visual_route_decision": "A separate overhead corridor returns rejected work to its accountable previous stage. The target arrow enters the top of that stage. Generated bracket-like fragments are corrected using the explicit feedback intent.",
+        "visual_route_review_artifact": "accepted-slide.png"
+      },
+      "approximate_start_anchors_px": [
+        [
+          719.4,
+          224.0
+        ]
+      ],
+      "approximate_end_anchors_px": [
+        [
+          285.0,
+          224.0
+        ]
+      ],
+      "junction_positions_px": [],
+      "measured_junction_evidence_px": [],
+      "stroke_style": {
+        "color": "#FD5108",
+        "width_px": 3,
+        "dash": "solid"
+      },
+      "arrowhead_treatment": "triangle_at_target",
+      "junction_treatment": "none",
+      "junction_diameter_px": null,
+      "grouping_depth_px": null,
+      "routing_corridor_px": null,
+      "route_waypoints_px": [
+        [
+          719.4,
+          190.0
+        ],
+        [
+          285.0,
+          190.0
+        ]
+      ],
+      "route_mode": "authored_waypoints",
+      "route_visual_review": {
+        "reviewed": true,
+        "decision": "A separate overhead corridor returns rejected work to its accountable previous stage. The target arrow enters the top of that stage. Generated bracket-like fragments are corrected using the explicit feedback intent.",
+        "review_artifact": "accepted-slide.png"
+      },
+      "endpoint_ownership_audit": [
+        {
+          "endpoint": "stage-icon-draft",
+          "role": "source",
+          "side": "top"
+        },
+        {
+          "endpoint": "stage-icon-sources",
+          "role": "target",
+          "side": "top"
+        }
+      ],
+      "source_attachment_sides": [
+        "top"
+      ],
+      "target_attachment_sides": [
+        "top"
+      ],
+      "connector_family": "orthogonal_dependency"
+    },
+    {
+      "entity_id": "review-return",
+      "relationship_intent": {
+        "connector_family": "orthogonal_dependency",
+        "directed": true,
+        "source_entities": [
+          "stage-icon-review"
+        ],
+        "target_entities": [
+          "stage-icon-draft"
+        ],
+        "source_attachment_sides": [
+          "top"
+        ],
+        "target_attachment_sides": [
+          "top"
+        ],
+        "source_attachment_fractions": [
+          0.5
+        ],
+        "target_attachment_fractions": [
+          0.75
+        ],
+        "semantic_topology_verified": true,
+        "route_mode": "authored_waypoints",
+        "junction_style": "none",
+        "visual_route_reviewed": true,
+        "visual_route_decision": "A separate overhead corridor returns rejected work to its accountable previous stage. The target arrow enters the top of that stage. Generated bracket-like fragments are corrected using the explicit feedback intent.",
+        "visual_route_review_artifact": "accepted-slide.png"
+      },
+      "approximate_start_anchors_px": [
+        [
+          1200.0,
+          224.0
+        ]
+      ],
+      "approximate_end_anchors_px": [
+        [
+          761.0,
+          224.0
+        ]
+      ],
+      "junction_positions_px": [],
+      "measured_junction_evidence_px": [],
+      "stroke_style": {
+        "color": "#FD5108",
+        "width_px": 3,
+        "dash": "solid"
+      },
+      "arrowhead_treatment": "triangle_at_target",
+      "junction_treatment": "none",
+      "junction_diameter_px": null,
+      "grouping_depth_px": null,
+      "routing_corridor_px": null,
+      "route_waypoints_px": [
+        [
+          1200.0,
+          190.0
+        ],
+        [
+          761.0,
+          190.0
+        ]
+      ],
+      "route_mode": "authored_waypoints",
+      "route_visual_review": {
+        "reviewed": true,
+        "decision": "A separate overhead corridor returns rejected work to its accountable previous stage. The target arrow enters the top of that stage. Generated bracket-like fragments are corrected using the explicit feedback intent.",
+        "review_artifact": "accepted-slide.png"
+      },
+      "endpoint_ownership_audit": [
+        {
+          "endpoint": "stage-icon-review",
+          "role": "source",
+          "side": "top"
+        },
+        {
+          "endpoint": "stage-icon-draft",
+          "role": "target",
+          "side": "top"
+        }
+      ],
+      "source_attachment_sides": [
+        "top"
+      ],
+      "target_attachment_sides": [
+        "top"
+      ],
+      "connector_family": "orthogonal_dependency"
     }
   ],
   "connector_configuration": {

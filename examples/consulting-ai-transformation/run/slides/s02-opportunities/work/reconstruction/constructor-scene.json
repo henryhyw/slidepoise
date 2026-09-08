@@ -24,6 +24,8 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 1.0
     },
     {
@@ -42,6 +44,8 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 1.0
     },
     {
@@ -60,16 +64,18 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 1.0
     },
     {
       "id": "annual-capacity-chart",
       "kind": "chart",
       "bbox_px": [
-        40,
-        289,
-        660,
-        290
+        37,
+        293,
+        670,
+        322
       ],
       "structure": {
         "type": "column",
@@ -104,9 +110,16 @@
         "data_label_position": "outEnd",
         "data_label_format_code": "#,##0",
         "data_font_family": "Arial",
-        "data_font_size_px": 24,
+        "data_font_size_px": 28,
         "data_label_color": "#000000",
         "data_label_wrap": false,
+        "data_label_colors": [
+          "FD5108",
+          "000000",
+          "000000"
+        ],
+        "data_font_bold": true,
+        "value_axis_format_code": "#,##0",
         "title_font_family": "Georgia",
         "gridline_color": "#DFE3E6"
       },
@@ -137,14 +150,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Baseline h",
@@ -154,14 +167,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Adoption",
@@ -171,14 +184,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Time saved",
@@ -188,14 +201,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ],
           [
@@ -207,14 +220,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "12",
@@ -224,14 +237,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "60%",
@@ -241,14 +254,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "30%",
@@ -258,14 +271,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ],
           [
@@ -277,14 +290,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "8",
@@ -294,14 +307,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "50%",
@@ -311,14 +324,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "40%",
@@ -328,14 +341,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ],
           [
@@ -347,14 +360,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "5",
@@ -364,14 +377,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "60%",
@@ -381,14 +394,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "40%",
@@ -398,14 +411,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ]
         ],
@@ -424,7 +437,7 @@
       },
       "style": {
         "font_family": "Arial",
-        "font_size_px": 22,
+        "font_size_px": 24,
         "cell_margin_px": 8,
         "color": "#000000",
         "fill": "#FFFFFF",
@@ -441,9 +454,9 @@
       "kind": "table",
       "bbox_px": [
         760,
-        628,
+        604,
         1110,
-        240
+        254
       ],
       "structure": {
         "rows": [
@@ -456,14 +469,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Control readiness",
@@ -473,14 +486,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Owner",
@@ -490,14 +503,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Sequence",
@@ -507,14 +520,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ],
           [
@@ -522,69 +535,69 @@
               "text": "Research synthesis",
               "options": {
                 "fill": {
-                  "color": "FFFFFF"
+                  "color": "FFF5ED"
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Approved corpus\nExplicit review",
               "options": {
                 "fill": {
-                  "color": "FFFFFF"
+                  "color": "FFF5ED"
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Practice lead",
               "options": {
                 "fill": {
-                  "color": "FFFFFF"
+                  "color": "FFF5ED"
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "START",
               "options": {
                 "fill": {
-                  "color": "FFFFFF"
+                  "color": "FFF5ED"
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ],
           [
@@ -596,14 +609,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Claims and commitments\nneed controls",
@@ -613,14 +626,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "BD lead",
@@ -630,14 +643,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "NEXT",
@@ -647,14 +660,14 @@
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ],
           [
@@ -666,14 +679,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Permissions need\ncleanup",
@@ -683,14 +696,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Knowledge lead",
@@ -700,14 +713,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "LATER",
@@ -717,14 +730,14 @@
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ]
         ],
@@ -736,14 +749,14 @@
         ],
         "row_heights_px": [
           50,
-          63,
-          63,
-          64
+          68,
+          68,
+          68
         ]
       },
       "style": {
         "font_family": "Arial",
-        "font_size_px": 20,
+        "font_size_px": 24,
         "cell_margin_px": 8,
         "color": "#000000",
         "fill": "#FFFFFF",
@@ -792,6 +805,7 @@
       "bullet_style": null,
       "semantic_role": "slide_title",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -831,6 +845,7 @@
       "bullet_style": null,
       "semantic_role": "subtitle",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -845,8 +860,8 @@
       "text": "ANNUAL CAPACITY POTENTIAL",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 27.0,
-        "font_size_pt": 13.5,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -870,6 +885,7 @@
       "bullet_style": null,
       "semantic_role": "heading_large",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -909,6 +925,7 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -923,8 +940,8 @@
       "text": "WORKFLOW VALUE MODEL",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 27.0,
-        "font_size_pt": 13.5,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -948,6 +965,7 @@
       "bullet_style": null,
       "semantic_role": "heading_large",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -987,6 +1005,7 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -994,15 +1013,15 @@
       "kind": "textbox",
       "bbox_px": [
         37,
-        596,
-        680,
+        640,
+        700,
         38
       ],
       "text": "WHY RESEARCH WINS FIRST",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 27.0,
-        "font_size_pt": 13.5,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1026,22 +1045,23 @@
       "bullet_style": null,
       "semantic_role": "heading_large",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
       "id": "reason-file",
       "kind": "textbox",
       "bbox_px": [
-        142,
-        647,
-        540,
-        40
+        160,
+        679,
+        552,
+        42
       ],
       "text": "Frequent, comparable tasks",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 24.0,
-        "font_size_pt": 12.0,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1065,22 +1085,23 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
       "id": "reason-corpus",
       "kind": "textbox",
       "bbox_px": [
-        142,
-        717,
-        540,
-        40
+        160,
+        757,
+        552,
+        42
       ],
       "text": "A bounded source corpus",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 24.0,
-        "font_size_pt": 12.0,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1104,22 +1125,23 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
       "id": "reason-reviewer",
       "kind": "textbox",
       "bbox_px": [
-        142,
-        787,
-        540,
-        40
+        160,
+        835,
+        552,
+        42
       ],
       "text": "A named expert reviewer",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 24.0,
-        "font_size_pt": 12.0,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1143,6 +1165,7 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1150,15 +1173,15 @@
       "kind": "textbox",
       "bbox_px": [
         760,
-        584,
+        560,
         1110,
         38
       ],
       "text": "PILOT SEQUENCING TEST",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 27.0,
-        "font_size_pt": 13.5,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1182,6 +1205,7 @@
       "bullet_style": null,
       "semantic_role": "heading_large",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1189,15 +1213,15 @@
       "kind": "textbox",
       "bbox_px": [
         760,
-        871,
-        850,
-        30
+        864,
+        1100,
+        28
       ],
       "text": "Check task overlap before adding workflow benefits.",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 20.0,
-        "font_size_pt": 10.0,
+        "font_size_px": 22.0,
+        "font_size_pt": 11.0,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1221,6 +1245,7 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1260,6 +1285,7 @@
       "bullet_style": null,
       "semantic_role": "call_to_action",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1299,16 +1325,17 @@
       "bullet_style": null,
       "semantic_role": "call_to_action",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
       "id": "reason-icon-file",
       "kind": "image",
       "bbox_px": [
-        60,
-        647,
-        41,
-        41
+        56,
+        673,
+        57,
+        57
       ],
       "source_path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/file-search/remix-file-search-line.svg",
       "recolor": "#000000",
@@ -1326,10 +1353,10 @@
       "id": "reason-icon-corpus",
       "kind": "image",
       "bbox_px": [
-        60,
-        717,
-        41,
-        41
+        56,
+        751,
+        57,
+        57
       ],
       "source_path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/database-2/remix-database-2-line.svg",
       "recolor": "#000000",
@@ -1347,10 +1374,10 @@
       "id": "reason-icon-reviewer",
       "kind": "image",
       "bbox_px": [
-        60,
-        787,
-        41,
-        41
+        56,
+        829,
+        57,
+        57
       ],
       "source_path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/user-star/remix-user-star-line.svg",
       "recolor": "#000000",
@@ -1410,7 +1437,7 @@
     "slide_number": 1
   },
   "sources": [
-    "Generated target visual: /private/tmp/.slidepoise-rebuild-h51errnw/slides/s02-opportunities/work/accepted-slide.png",
+    "Generated target visual: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/slides/s02-opportunities/work/accepted-slide.png",
     "Canonical asset remix-file-search-line: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/file-search/remix-file-search-line.svg",
     "Canonical asset remix-database-2-line: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/database-2/remix-database-2-line.svg",
     "Canonical asset remix-user-star-line: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/user-star/remix-user-star-line.svg"
@@ -1494,13 +1521,13 @@
             "reason-heading",
             "sequencing-heading"
           ],
-          "shared_font_size_pt": 13.5,
-          "shared_font_size_px": 27.0,
-          "agent_target_font_size_px": 27.0,
+          "shared_font_size_pt": 14.0,
+          "shared_font_size_px": 28.0,
+          "agent_target_font_size_px": 28.0,
           "explicit_peer_group": true,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 13.5,
-          "agent_target_unquantized_pt": 13.5,
+          "agent_target_ceiling_pt": 14.0,
+          "agent_target_unquantized_pt": 14.0,
           "quantization_reduction_pt": 0,
           "reduced_from_agent_target": false,
           "reduced_for_fit": false,
@@ -1571,13 +1598,13 @@
             "reason-corpus",
             "reason-reviewer"
           ],
-          "shared_font_size_pt": 12.0,
-          "shared_font_size_px": 24.0,
-          "agent_target_font_size_px": 24.0,
+          "shared_font_size_pt": 14.0,
+          "shared_font_size_px": 28.0,
+          "agent_target_font_size_px": 28.0,
           "explicit_peer_group": true,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 12.0,
-          "agent_target_unquantized_pt": 12.0,
+          "agent_target_ceiling_pt": 14.0,
+          "agent_target_unquantized_pt": 14.0,
           "quantization_reduction_pt": 0,
           "reduced_from_agent_target": false,
           "reduced_for_fit": false,
@@ -1597,13 +1624,13 @@
           "member_ids": [
             "overlap-note"
           ],
-          "shared_font_size_pt": 10.0,
-          "shared_font_size_px": 20.0,
-          "agent_target_font_size_px": 20.0,
+          "shared_font_size_pt": 11.0,
+          "shared_font_size_px": 22.0,
+          "agent_target_font_size_px": 22.0,
           "explicit_peer_group": false,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 10.0,
-          "agent_target_unquantized_pt": 10.0,
+          "agent_target_ceiling_pt": 11.0,
+          "agent_target_unquantized_pt": 11.0,
           "quantization_reduction_pt": 0,
           "reduced_from_agent_target": false,
           "reduced_for_fit": false,
@@ -1676,8 +1703,8 @@
       "note": "No quality or reconstruction verdict is produced. Visual reasoning remains external."
     },
     "input_bindings": {
-      "measured_scene_sha256": "3a045ae78c8d0c4f4650f51d2e660b666018d51632d8760f2c31d9b640e31512",
-      "reconstruction_contract_sha256": "1ffb9fbaa7941bda1141540090ae9ae4035b0ca84f14512baa7a1788cc7228b3",
+      "measured_scene_sha256": "1935040957a6d30a38c37870fe6bfb43c64285e1ffccbad70b314313a3575f31",
+      "reconstruction_contract_sha256": "bb18c686adef83771dcd7ce03e2aed47a8be64472bf773f9a75d27a50db87ad6",
       "resolved_design_sha256": "ee255d93bab18eea1c3d44524732402c57d708a2a01e8270dec54f3fa8c2c88f"
     }
   }

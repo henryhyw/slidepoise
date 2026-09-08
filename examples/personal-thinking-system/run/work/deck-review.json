@@ -1,90 +1,54 @@
 {
   "reviewer": "host_agent_visual_reasoning",
-  "stage": "assembled_deck",
+  "reviewed_on": "2026-09-08",
+  "stage": "assembled_release_deck",
   "decision": "accepted",
   "material_issues": [],
-  "review_scope": "Inspected all five actual full-resolution page renders, the old/new contact sheets, five measurement overlays and the enlarged folio comparison. Native object facts and actual pixel differences corroborate the reviewed scope.",
-  "observations": [
-    "All five Field Notes part markers now form one publication identity with the same typeface, physical size, regular weight, tracking, dark ink and lower-left baseline.",
-    "The five distinct compositions remain an editorial essay sequence. Large statements, body copy, record rows and photographic collages keep their intended differences.",
-    "The cover-only descriptor and short linking rule retain their relationship to the series marker. They are recorded as a specific exception, not a new recurring motif.",
-    "A renewed cross-page scan found no further accidental repeat-role drift within this bounded revision. Large title sizes and content-specific captions are retained as intentional composition differences."
-  ],
-  "native_object_counts": {
-    "shape": 9,
-    "image": 8,
-    "textbox": 46,
-    "freeform": 7
-  },
   "reviewed_artifacts": [
     {
-      "path": "../slides/s01-opening/deliverables/render.png",
-      "sha256": "cf24a4e03904ba72d71f8676965f5a00176c5b5007078bbc665d4957821951c3"
-    },
-    {
-      "path": "../slides/s01-opening/work/reconstruction/constructor-scene.json",
-      "sha256": "b63b7b99c6bde53e17826b66f993c0af7d71725a563221cc21c50da4f8d83fd7"
-    },
-    {
-      "path": "../slides/s02-question/deliverables/render.png",
-      "sha256": "a1beead3cf1fb575451e1274a327ffd2b6db633a9b5a90029d5a892cd94cb884"
-    },
-    {
-      "path": "../slides/s02-question/work/reconstruction/constructor-scene.json",
-      "sha256": "dd42e838451ec6ebf72e25bde5dba1c9bcf9f28283f7332694f79a8b88c31076"
-    },
-    {
-      "path": "../slides/s03-practice/deliverables/render.png",
-      "sha256": "b3c20d8804e59f7768b432b4367b4bd0fa2b7bd02a47585072b2d01c366f4c86"
-    },
-    {
-      "path": "../slides/s03-practice/work/reconstruction/constructor-scene.json",
-      "sha256": "5a2120ce4685eba215ee4ffd1bc42ba4169d70bd143f5f4ef552f6d69a45ccc0"
-    },
-    {
-      "path": "../slides/s04-trace/deliverables/render.png",
-      "sha256": "f7b6ec0db44704a145786216ae14904234396851b3f71b2456836e90b3d020cb"
-    },
-    {
-      "path": "../slides/s04-trace/work/reconstruction/constructor-scene.json",
-      "sha256": "e738b2d69e039d8ebb866941128e5cc36695cb450603cf3630fa4bbf5a2416a5"
-    },
-    {
-      "path": "../slides/s05-close/deliverables/render.png",
-      "sha256": "63527ea90c84fbd2ba79003c5eaf4fb15551ce1091cfb6429e1d2695682dce7a"
-    },
-    {
-      "path": "../slides/s05-close/work/reconstruction/constructor-scene.json",
-      "sha256": "7311b53caff3733084871a8bf70634717826bcd353b6f3864990118984aab75f"
-    },
-    {
       "path": "../deliverables/presentation.pptx",
-      "sha256": "3d8499644935076fa1bf388c2ee86657ff95801aef670e1bcbb43e93af46891b"
-    },
-    {
-      "path": "../preview/presentation.pdf",
-      "sha256": "abe8035b9815420abb741d59524c2f8a445e14034fefc4eec0c061aa1c656e85"
+      "sha256": "e157273ac51ecfb282dfd1e3c2fd3a7b47b9775940a800017135eb5dbda1e232"
     },
     {
       "path": "../preview/contact-sheet.png",
-      "sha256": "8df762acc54e0f290f2da71b1bc89c2ad4cb9d1cb78329df885a7c3ba618c7f4"
+      "sha256": "39d00324cecfab376831d80482b9e47a3bbf4fd02479f05bb21aea0ee1688d7b"
     },
     {
-      "path": "deck-design.json",
-      "sha256": "ba33b732616aafff1f22648cf4536809f5583401d6180733363121aa7544358e"
+      "path": "../preview/rendered-text-evidence.json",
+      "sha256": "8091f969a3928599ddaaf2058ccd90c268a63a5a55bfb620ac85b6f491320dd7"
     },
     {
-      "path": "folio-calibration/folio-comparison.png",
-      "sha256": "8a6aac867aa1d116687e25547b33c0754e5a92b3fa223a446c09e07a3b339ff8"
+      "path": "../preview/slide-001.png",
+      "sha256": "cf24a4e03904ba72d71f8676965f5a00176c5b5007078bbc665d4957821951c3"
     },
     {
-      "path": "folio-calibration/verification.json",
-      "sha256": "5f3a54cc83627199ec2b53032b4f9263894a64754ee2847acc2ae574d6be8eed"
+      "path": "../preview/slide-002.png",
+      "sha256": "a1beead3cf1fb575451e1274a327ffd2b6db633a9b5a90029d5a892cd94cb884"
     },
     {
-      "path": "folio-calibration/native-text-audit.json",
-      "sha256": "00b9b8a5db1ca8adcb12e622d39d906c28e340608d6b6a014852ba7b4348bca5"
+      "path": "../preview/slide-003.png",
+      "sha256": "b3c20d8804e59f7768b432b4367b4bd0fa2b7bd02a47585072b2d01c366f4c86"
+    },
+    {
+      "path": "../preview/slide-004.png",
+      "sha256": "f7b6ec0db44704a145786216ae14904234396851b3f71b2456836e90b3d020cb"
+    },
+    {
+      "path": "../preview/slide-005.png",
+      "sha256": "89bbfd3ec2b2521d78afdd3135964a8f7bda878f4de261fb8f547436dff1acf4"
+    },
+    {
+      "path": "cross-slide-calibration-review.json",
+      "sha256": "9a0ddd98cbaceb6f6acfd8564ef1e216d66c115f11adf608a465b1304a70645c"
     }
   ],
-  "publication_status": "Prepared in an isolated authoring run. Root publication to the live example is pending."
+  "observations": [
+    "I compared all five editorial pages together. The artwork remains intact and the folios share one native font, size and baseline.",
+    "The closing headline now has the intended weight. Small native glyph and tracking differences remain, with no material content loss found in this review."
+  ],
+  "editability_limits": [
+    "Workbook-linked chart values update native chart labels. Separate scenario cells and formula text do not recalculate automatically.",
+    "Regeneration resolves named connector owners. Manual Office edits do not automatically reattach the drawn paths.",
+    "The recorded macOS LibreOffice and installed fonts define this review environment. Other fonts and readers can change wrapping."
+  ]
 }

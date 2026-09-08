@@ -1,0 +1,47 @@
+{
+  "evidence_type": "native_package_inventory",
+  "pptx_sha256": "e157273ac51ecfb282dfd1e3c2fd3a7b47b9775940a800017135eb5dbda1e232",
+  "slides": [
+    {
+      "part": "ppt/slides/slide1.xml",
+      "shape_count": 10,
+      "tables": 0,
+      "table_cells": 0,
+      "pictures": 1,
+      "duplicate_shape_ids": []
+    },
+    {
+      "part": "ppt/slides/slide2.xml",
+      "shape_count": 11,
+      "tables": 0,
+      "table_cells": 0,
+      "pictures": 1,
+      "duplicate_shape_ids": []
+    },
+    {
+      "part": "ppt/slides/slide3.xml",
+      "shape_count": 16,
+      "tables": 0,
+      "table_cells": 0,
+      "pictures": 3,
+      "duplicate_shape_ids": []
+    },
+    {
+      "part": "ppt/slides/slide4.xml",
+      "shape_count": 28,
+      "tables": 0,
+      "table_cells": 0,
+      "pictures": 2,
+      "duplicate_shape_ids": []
+    },
+    {
+      "part": "ppt/slides/slide5.xml",
+      "shape_count": 10,
+      "tables": 0,
+      "table_cells": 0,
+      "pictures": 1,
+      "duplicate_shape_ids": []
+    }
+  ],
+  "scope": "Package structure only. Picture objects include canonical SVG assets. No visual verdict."
+}

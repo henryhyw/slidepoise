@@ -1,5 +1,6 @@
 {
   "reviewer": "host_agent_visual_reasoning",
+  "reviewed_on": "2026-09-08",
   "stage": "reconstruction",
   "decision": "accepted",
   "material_issues": [],
@@ -9,46 +10,42 @@
       "sha256": "c9e5f21257c82fb253cb3c935cfad3b1f238b1c17a6affcc48f3d67543633787"
     },
     {
-      "path": "reconstruction/constructor-scene.json",
-      "sha256": "50708e5a4a44e47407b702c515d8f72962c55f187a56ff1a374be5d159fcb8ef"
-    },
-    {
-      "path": "../deliverables/slide.pptx",
-      "sha256": "1b0d195174cea864ed8cedb50fab325f5bae4cdc078771a169e19a4707358404"
-    },
-    {
-      "path": "../deliverables/render.png",
-      "sha256": "e3501190eea08ffd8b6edb8663d1f9fcda4f4bd7a1689d5f75aa06cffb6ebafa"
-    },
-    {
-      "path": "../deliverables/comparison.png",
-      "sha256": "0019013889b3aa466b87920760afc24a1f144d56d3800a84acbc42f4a7b0b567"
-    },
-    {
-      "path": "native-object-evidence.json",
-      "sha256": "4166f87cec59d9a96b3f903dd51cc8c1eec6e50bfe4ee94b29a6b44334956028"
-    },
-    {
-      "path": "native-text-audit.json",
-      "sha256": "a60808555a5c8c69c633d03c84b410c569128ab6b3e93b09daf31e75517545d2"
-    },
-    {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "a50fa6a4e0123827bee9726229dad855a6546224dcdf006c8420844d22fb4094"
+      "sha256": "39559b5c80f75205e06fa4c68645984e82439a5b663f21357cac25e32a8668e0"
     },
     {
       "path": "reconstruction/reconstruction-contract.json",
-      "sha256": "2f73c2a1dbea42dd792da28f7cc84b9b94fdcebd646d6bd97e38ab8c370f4a22"
+      "sha256": "9f37f2a7d8f86e2b5513bcbe91ab3cd9e934d72fb907860e89ef03f982fa8bcf"
+    },
+    {
+      "path": "reconstruction/constructor-scene.json",
+      "sha256": "966e2fd861b096cdc0e2fe8642edfdc47ad84f4c03b789ff2946e871106a0f2c"
+    },
+    {
+      "path": "../deliverables/slide.pptx",
+      "sha256": "2a70f906b2b636b187351e408c10f1feb06e2fc2f9061962ccae4d89d4ea49c7"
+    },
+    {
+      "path": "../deliverables/render.png",
+      "sha256": "974ffcbf61049e326e33e6c40b892b7adbfe4e92f104d9a0f9af33e9f34ad96a"
+    },
+    {
+      "path": "../deliverables/comparison.png",
+      "sha256": "d21dd31227a8c2af879951443ae8dff97b3ea3e2dd829c9cef7c67abc60e1b49"
+    },
+    {
+      "path": "native-object-evidence.json",
+      "sha256": "015d830429b21095d3f647c54f917162822f6480e7494ab8cf2076890b2ee874"
+    },
+    {
+      "path": "native-text-audit.json",
+      "sha256": "d0d563500bcb1e24ab9994a27d77b8f121434b056df4454ea560d1a2b9113ca4"
     }
   ],
   "observations": [
-    "I inspected the actual headless LibreOffice full-slide render and the body-only target comparison. The headline, four-stage sequence, responsibility table, operating controls, measurement notes and release rule are complete and legible.",
-    "The three straight forward arrows enter the next stage from the left. Both orange return paths keep their round corners and remain visually continuous in LibreOffice. The left return points up into Approved sources and the right return points up into Grounded draft. Their tails meet the correct source responsibility columns, and the two corridors do not cross.",
-    "The return paths are native editable cubic freeforms with arrowheads, not automatically attached Office connectors. Moving table columns in Office does not reattach them. Recompiling the authored map retains the named semantic relationships. This limitation and the pilot scenario assumption are explicitly authored speaker notes. I checked the native notes XML after the final render. Internal handoff notes are excluded.",
-    "Native Arial is wider than the generated glyphs. The table and supporting column use ordinary wrapping at the shared 24 and 28-pixel sizes. Their row allocations and paragraph rhythm are clear, with no clipping or overlap. Both return captions use the same native 24-pixel label size.",
-    "The native title is Georgia 32pt for 64 body pixels, the subtitle is Arial 16pt, workflow and supporting text is Arial 14pt and the table is Arial 12pt. The orange and black decision texts are equal 14pt peers, with the shared 8-pixel orange bar.",
-    "The shared header and footer are inherited from the native frame and absent from the substantive source. The standalone page number is native and will be sequenced during assembly. The native document contains one 25-cell table, three native straight connectors, two cubic freeforms, no pictures and no duplicate drawing IDs.",
-    "All 42 audited text bodies have zero structural findings. Objective semantic and reconstruction collectors report no blocking facts. Visual acceptance is based on inspection of the persisted target, overlay, actual Office render and comparison.",
-    "I inspected the final actual Office render after shared geometry calibration. The Georgia title and Arial subtitle align with the deck-wide native positions. Both decision texts are vertically centered on the same baseline in the 134-pixel band, with the shared label and message starting positions. The workflow, table, controls and all arrowheads remain complete and clear. No fitted group changed its exact authored size."
-  ]
+    "Both feedback relationships are present. Expert review returns to Grounded draft and Grounded draft returns to Approved sources. The two orange routes have separate horizontal corridors and visible downward arrowheads entering the preceding stage.",
+    "The three forward arrows, four stage labels, responsibility table, two shared-control bullets and two measurement bullets are complete. Body cells are left aligned and the lower bullets remain above the decision band.",
+    "The malformed generated return geometry is intentionally redrawn. These editable paths follow named owners during reconstruction. Moving objects manually in Office does not automatically reattach them."
+  ],
+  "review_environment": "Actual LibreOffice render on macOS with installed fonts. Source and native content regions compared at a common scale."
 }

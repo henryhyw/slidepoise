@@ -10,11 +10,11 @@
   "source": {
     "pptx": {
       "path": "deliverables/presentation.pptx",
-      "sha256": "3d8499644935076fa1bf388c2ee86657ff95801aef670e1bcbb43e93af46891b"
+      "sha256": "e157273ac51ecfb282dfd1e3c2fd3a7b47b9775940a800017135eb5dbda1e232"
     },
     "render": {
       "path": "assets/s05-close-render.png",
-      "sha256": "63527ea90c84fbd2ba79003c5eaf4fb15551ce1091cfb6429e1d2695682dce7a"
+      "sha256": "89bbfd3ec2b2521d78afdd3135964a8f7bda878f4de261fb8f547436dff1acf4"
     }
   },
   "objects": [
@@ -79,27 +79,27 @@
       "polygon": [
         [
           0.083125,
-          0.083333333
+          0.093333333
         ],
         [
           0.62125,
-          0.083333333
+          0.093333333
         ],
         [
           0.62125,
-          0.296666667
+          0.306666667
         ],
         [
           0.083125,
-          0.296666667
+          0.306666667
         ]
       ],
       "stack": 2,
       "text": "The point of",
       "typography": [
         {
-          "family": "Bodoni 72",
-          "size_pt": 100.5,
+          "family": "Georgia",
+          "size_pt": 86.0,
           "color": "#242321"
         }
       ]
@@ -113,27 +113,27 @@
       "polygon": [
         [
           0.083125,
-          0.264444444
+          0.275555556
         ],
         [
           0.62125,
-          0.264444444
+          0.275555556
         ],
         [
           0.62125,
-          0.477777778
+          0.488888889
         ],
         [
           0.083125,
-          0.477777778
+          0.488888889
         ]
       ],
       "stack": 3,
       "text": "view is still",
       "typography": [
         {
-          "family": "Bodoni 72",
-          "size_pt": 100.5,
+          "family": "Georgia",
+          "size_pt": 86.0,
           "color": "#242321"
         }
       ]
@@ -147,27 +147,27 @@
       "polygon": [
         [
           0.083125,
-          0.422222222
+          0.432222222
         ],
         [
           0.62125,
-          0.422222222
+          0.432222222
         ],
         [
           0.62125,
-          0.647777778
+          0.657777778
         ],
         [
           0.083125,
-          0.647777778
+          0.657777778
         ]
       ],
       "stack": 4,
       "text": "yours.",
       "typography": [
         {
-          "family": "Bodoni 72",
-          "size_pt": 100.5,
+          "family": "Georgia",
+          "size_pt": 86.0,
           "color": "#242321"
         }
       ]

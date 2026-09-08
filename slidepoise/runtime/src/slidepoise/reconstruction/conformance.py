@@ -100,25 +100,18 @@ def _boxes_overlap(first: list[float], second: list[float], tolerance: float = 0
 def _structural_boundary_collisions(objects: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """Report text boxes that cross emitted divider or rule shapes.
 
-    Thin rules are structural boundaries. Their geometry is objective enough to
-    check mechanically, while the host still decides whether broader proximity
-    or spacing looks right during visual review.
+    The host explicitly marks structural boundaries. We check allocated boxes
+    against that declaration without interpreting a decorative line as a divider
+    or claiming that a textbox allocation equals its rendered ink.
     """
     textboxes = [
         item for item in objects
         if item.get("kind") == "textbox" and item.get("bbox_px") and item.get("allow_boundary_crossing") is not True
     ]
-    separators = []
-    for item in objects:
-        if (item.get("kind") != "shape" or item.get("shape") not in {"line", "rectangle"}
-                or item.get("allow_text_crossing") is True):
-            continue
-        box = item.get("bbox_px")
-        if not box:
-            continue
-        _, _, width, height = map(float, box)
-        if min(width, height) <= 3.0 and max(width, height) >= 12.0:
-            separators.append(item)
+    separators = [item for item in objects
+                  if item.get("kind") == "shape" and item.get("bbox_px")
+                  and item.get("structural_boundary") is True
+                  and item.get("allow_text_crossing") is not True]
 
     collisions: list[dict[str, Any]] = []
     for textbox in textboxes:

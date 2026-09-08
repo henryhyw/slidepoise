@@ -16,7 +16,8 @@
       "reconstruction_route": "native_shape",
       "style_hint": {
         "fill": "#F9F7F5",
-        "stroke": "none"
+        "stroke": "none",
+        "style_authority": "agent_visual_observation"
       }
     },
     {
@@ -26,7 +27,7 @@
       "text": "The point of",
       "bbox_hint": [
         139,
-        78,
+        88,
         900,
         201
       ],
@@ -37,8 +38,8 @@
       "text_style_role": "slide_title",
       "typography_group": "slide_title",
       "style_hint": {
-        "font_family": "Bodoni 72",
-        "target_font_size_px": 176,
+        "font_family": "Georgia",
+        "target_font_size_px": 150,
         "font_weight": "regular",
         "observed_foreground_color": "#242321",
         "style_authority": "agent_visual_observation",
@@ -59,7 +60,7 @@
       "text": "view is still",
       "bbox_hint": [
         139,
-        249,
+        259,
         900,
         201
       ],
@@ -70,8 +71,8 @@
       "text_style_role": "slide_title",
       "typography_group": "slide_title",
       "style_hint": {
-        "font_family": "Bodoni 72",
-        "target_font_size_px": 176,
+        "font_family": "Georgia",
+        "target_font_size_px": 150,
         "font_weight": "regular",
         "observed_foreground_color": "#242321",
         "style_authority": "agent_visual_observation",
@@ -92,7 +93,7 @@
       "text": "yours.",
       "bbox_hint": [
         139,
-        397,
+        407,
         900,
         212
       ],
@@ -103,8 +104,8 @@
       "text_style_role": "slide_title",
       "typography_group": "slide_title",
       "style_hint": {
-        "font_family": "Bodoni 72",
-        "target_font_size_px": 176,
+        "font_family": "Georgia",
+        "target_font_size_px": 150,
         "font_weight": "regular",
         "observed_foreground_color": "#242321",
         "style_authority": "agent_visual_observation",
@@ -222,7 +223,8 @@
           481
         ],
         "intrinsic_text_ownership": "Marks and photographed notebook lettering belong to this raster. No presentation copy is inside the crop."
-      }
+      },
+      "raster_fit": "fill"
     },
     {
       "id": "folio",
@@ -246,7 +248,7 @@
         "target_font_size_px": 21,
         "font_weight": "regular",
         "observed_foreground_color": "#242321",
-        "style_authority": "host_reviewed_user_authorized_deck_role",
+        "style_authority": "user_exact",
         "line_spacing": 1,
         "char_spacing_px": 0,
         "italic": false,

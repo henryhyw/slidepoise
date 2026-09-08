@@ -1,5 +1,6 @@
 {
   "reviewer": "host_agent_visual_reasoning",
+  "reviewed_on": "2026-09-08",
   "stage": "reconstruction",
   "decision": "accepted",
   "material_issues": [],
@@ -9,50 +10,41 @@
       "sha256": "8901e2a892e61bcdaab3931929e840de1317f8409eee606534a3d7b247dd3d05"
     },
     {
-      "path": "reconstruction/constructor-scene.json",
-      "sha256": "8cdeb8e5fc77290c858114241fc2ff0038b5a55aad50e5d8a40ad504c330c077"
-    },
-    {
-      "path": "../deliverables/slide.pptx",
-      "sha256": "db88681f8f70fc52ffab0536b9fdc4cc730bf34a96c515eabf0f7de3dd160e01"
-    },
-    {
-      "path": "../deliverables/render.png",
-      "sha256": "ef98d340cbdfe9cba2df10f33b510029513810d405c274b960ac08c925469c20"
-    },
-    {
-      "path": "../deliverables/comparison.png",
-      "sha256": "3c424ddcd4a991b9bbd590fc8c7d49e5a08c2783b172bea54b0f744c32eb9703"
-    },
-    {
-      "path": "native-object-evidence.json",
-      "sha256": "10a744a59ff660056bf02c6cf46012f902183066e8a6f2518dbcea3c5c7b7a4d"
-    },
-    {
-      "path": "native-text-audit.json",
-      "sha256": "516c94e9b06711d913868b1043c7f965ccb459af954cb60bb882c432dbf8ed06"
-    },
-    {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "458bd571ba34c59becd0c3a9dba3d51ef7818233a36557b4826e76fd90445c7d"
+      "sha256": "6177652acb9ebaef3d1fdfba399a6c209ba9275da917b84e79e3ecfa1337ffc7"
     },
     {
       "path": "reconstruction/reconstruction-contract.json",
-      "sha256": "83e91e236096ec8c4deeba2dab09fbb88460ca833dd60f5a676622cc988521df"
+      "sha256": "32b10095437932d4a4127c661a1420057bbb699df056e0f8d1bb9ce9f2608bb0"
     },
     {
-      "path": "typography-evidence.json",
-      "sha256": "08ef510a51f94d926d1d592f4c81c3574cc8c9a544952dd84d725ef9b5dc92ff"
+      "path": "reconstruction/constructor-scene.json",
+      "sha256": "62c58f43d2ead32a350c6935e2ac8f14e4573d311498e6ac65e0f343ae8c43de"
+    },
+    {
+      "path": "../deliverables/slide.pptx",
+      "sha256": "de9f564ef883fb5b1d4460eb867aa44b083cf24cc296730914b3839434549d87"
+    },
+    {
+      "path": "../deliverables/render.png",
+      "sha256": "fee7cc66efdfe14ff4b8a703e5fe76ad8b8474a7cfa90f019addcc22d2e8ee78"
+    },
+    {
+      "path": "../deliverables/comparison.png",
+      "sha256": "f7e6cb89bd925ce769b0a23ec9a78283c9599561c14ee444ddada31359c74190"
+    },
+    {
+      "path": "native-object-evidence.json",
+      "sha256": "249a95b34f040ec49f20ba5da08f381b403802fb9e44ee724ea3924375c803b7"
+    },
+    {
+      "path": "native-text-audit.json",
+      "sha256": "baa2239761fefdd59db28d80c12104225812d49c270c506dc4b4e4293d5be5b1"
     }
   ],
   "observations": [
-    "I inspected the actual headless LibreOffice full-slide render and the body-only target comparison. Georgia title position and baseline are close to the accepted source. The three evidence columns retain their separation and hierarchy, with no clipped or overlapping visible content.",
-    "The corrected unit conversion now preserves the exact authored typography. The native title is 32pt for 64 body pixels, subtitle 16pt for 32 pixels, body/sections/decision 14pt for 28 pixels and table 12pt for 24 pixels.",
-    "The native Arial table label Sampled cited claims verified wraps onto two lines within its unchanged row allocation. All four measures and thresholds remain legible. This records the real native-font difference from the narrower generated glyphs.",
-    "Both decision-band texts use the same 28-pixel peer size. The label is orange, the approval sentence is black, the fill is pale orange and the bar is the shared 8-pixel width. The source image uses a somewhat larger label and wider bar, which the deck owner deliberately resolved through shared native roles.",
-    "The $25k approval and the conditional remaining $60k are complete native text. The capacity formulas and gate thresholds are editable. The native table contains ten cells, and there are no image objects or duplicate object IDs.",
-    "Header and footer appear as inherited shared frame content, separate from the generated body. The footer carries the illustrative assumption disclosure and native page number. All 36 audited text bodies have explicit valid native text properties with zero findings.",
-    "I inspected the recalibrated actual LibreOffice render. Both opening pages now share the same title/subtitle origin, divider position and decision-band geometry. The decision label begins at x100 and message at x560, both in vertically centered 28-pixel text allocations. The calculation, table and final right-side argument remain clear above the band.",
-    "The native speaker notes preserve the planning disclosure, separate the 95% sampled-test gate from expert approval of each client release, and state the minimum 11 of 15 weekly-active users. These are audience-facing notes, separate from production instructions."
-  ]
+    "The three orange figures again dominate the opening. The rationale symbols and their text are legible at the same viewing scale as the gate table. The four gate values are left aligned.",
+    "The final rationale wraps onto two lines and remains above the decision band. Native Georgia and Arial approximate the generated lettering without horizontal compression."
+  ],
+  "review_environment": "Actual LibreOffice render on macOS with installed fonts. Source and native content regions compared at a common scale."
 }

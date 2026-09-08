@@ -1,8 +1,8 @@
 {
   "schema_version": "3.0.0",
   "source": {
-    "image": "/private/tmp/.slidepoise-rebuild-h51errnw/slides/s05-investment-decision/work/accepted-slide.png",
-    "path": "/private/tmp/.slidepoise-rebuild-h51errnw/slides/s05-investment-decision/work/accepted-slide.png",
+    "image": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/slides/s05-investment-decision/work/accepted-slide.png",
+    "path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/slides/s05-investment-decision/work/accepted-slide.png",
     "width_px": 1920,
     "height_px": 960
   },
@@ -1292,7 +1292,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -3304,809 +3304,6 @@
       "reconstruction_route": "native_text"
     },
     {
-      "id": "capacity-labels",
-      "display_label": "Engagements          Research time          Adoption          Time saved",
-      "kind": "text",
-      "role": "body",
-      "text": "Engagements          Research time          Adoption          Time saved",
-      "text_style_role": "body",
-      "typography_group": "labels",
-      "bbox_hint": [
-        65,
-        374,
-        500,
-        45
-      ],
-      "search_bbox_hint": [
-        65,
-        374,
-        500,
-        45
-      ],
-      "geometry_policy": "agent_logical",
-      "z": 20,
-      "meaningful_visible": true,
-      "reconstruction_significance": "independent_object",
-      "style_hint": {
-        "font_family": "Arial",
-        "font_weight": "regular",
-        "target_font_size_px": 19,
-        "alignment": "center",
-        "vertical_alignment": "top",
-        "line_spacing": 1.0,
-        "observed_foreground_color": "#000000",
-        "style_authority": "agent_visual_observation"
-      },
-      "measurement": {
-        "layout_bbox": {
-          "px": [
-            65,
-            374,
-            500,
-            45
-          ]
-        },
-        "search_bbox": {
-          "px": [
-            65,
-            374,
-            500,
-            45
-          ]
-        },
-        "visible_bbox": {
-          "px": [
-            65,
-            379,
-            493,
-            38
-          ]
-        },
-        "color_evidence": {
-          "background": "#FEF6F0",
-          "foreground": "#9C9A9A",
-          "foreground_fraction": 0.1429
-        },
-        "contours_px": [
-          [
-            [
-              218,
-              380
-            ],
-            [
-              219,
-              394
-            ],
-            [
-              221,
-              388
-            ],
-            [
-              228,
-              393
-            ],
-            [
-              228,
-              385
-            ],
-            [
-              233,
-              394
-            ],
-            [
-              237,
-              391
-            ],
-            [
-              231,
-              390
-            ],
-            [
-              239,
-              386
-            ],
-            [
-              245,
-              390
-            ],
-            [
-              239,
-              391
-            ],
-            [
-              242,
-              394
-            ],
-            [
-              248,
-              390
-            ],
-            [
-              254,
-              394
-            ],
-            [
-              256,
-              391
-            ],
-            [
-              252,
-              392
-            ],
-            [
-              251,
-              389
-            ],
-            [
-              257,
-              389
-            ],
-            [
-              261,
-              394
-            ],
-            [
-              267,
-              393
-            ],
-            [
-              264,
-              383
-            ],
-            [
-              259,
-              384
-            ],
-            [
-              261,
-              387
-            ],
-            [
-              258,
-              389
-            ],
-            [
-              255,
-              383
-            ],
-            [
-              248,
-              386
-            ],
-            [
-              245,
-              383
-            ],
-            [
-              238,
-              386
-            ],
-            [
-              232,
-              383
-            ],
-            [
-              229,
-              386
-            ],
-            [
-              226,
-              379
-            ]
-          ],
-          [
-            [
-              388,
-              383
-            ],
-            [
-              384,
-              381
-            ],
-            [
-              382,
-              386
-            ],
-            [
-              379,
-              383
-            ],
-            [
-              373,
-              383
-            ],
-            [
-              372,
-              387
-            ],
-            [
-              369,
-              383
-            ],
-            [
-              365,
-              383
-            ],
-            [
-              363,
-              385
-            ],
-            [
-              363,
-              392
-            ],
-            [
-              368,
-              394
-            ],
-            [
-              372,
-              390
-            ],
-            [
-              373,
-              397
-            ],
-            [
-              375,
-              397
-            ],
-            [
-              376,
-              393
-            ],
-            [
-              379,
-              394
-            ],
-            [
-              382,
-              391
-            ],
-            [
-              383,
-              385
-            ],
-            [
-              384,
-              392
-            ],
-            [
-              387,
-              394
-            ],
-            [
-              388,
-              392
-            ],
-            [
-              386,
-              391
-            ],
-            [
-              386,
-              386
-            ]
-          ],
-          [
-            [
-              557,
-              379
-            ],
-            [
-              555,
-              379
-            ],
-            [
-              554,
-              384
-            ],
-            [
-              551,
-              383
-            ],
-            [
-              547,
-              387
-            ],
-            [
-              544,
-              383
-            ],
-            [
-              541,
-              383
-            ],
-            [
-              538,
-              386
-            ],
-            [
-              535,
-              384
-            ],
-            [
-              533,
-              390
-            ],
-            [
-              531,
-              384
-            ],
-            [
-              529,
-              384
-            ],
-            [
-              532,
-              394
-            ],
-            [
-              534,
-              394
-            ],
-            [
-              537,
-              386
-            ],
-            [
-              538,
-              391
-            ],
-            [
-              541,
-              394
-            ],
-            [
-              546,
-              393
-            ],
-            [
-              546,
-              391
-            ],
-            [
-              542,
-              392
-            ],
-            [
-              541,
-              389
-            ],
-            [
-              547,
-              389
-            ],
-            [
-              549,
-              393
-            ],
-            [
-              556,
-              394
-            ]
-          ],
-          [
-            [
-              87,
-              385
-            ],
-            [
-              87,
-              396
-            ],
-            [
-              90,
-              398
-            ],
-            [
-              94,
-              397
-            ],
-            [
-              97,
-              392
-            ],
-            [
-              100,
-              394
-            ],
-            [
-              105,
-              393
-            ],
-            [
-              105,
-              385
-            ],
-            [
-              103,
-              383
-            ],
-            [
-              98,
-              384
-            ],
-            [
-              98,
-              386
-            ],
-            [
-              100,
-              387
-            ],
-            [
-              97,
-              389
-            ],
-            [
-              95,
-              383
-            ],
-            [
-              89,
-              383
-            ]
-          ],
-          [
-            [
-              344,
-              379
-            ],
-            [
-              339,
-              392
-            ],
-            [
-              340,
-              394
-            ],
-            [
-              343,
-              390
-            ],
-            [
-              348,
-              390
-            ],
-            [
-              350,
-              394
-            ],
-            [
-              352,
-              391
-            ],
-            [
-              355,
-              394
-            ],
-            [
-              361,
-              394
-            ],
-            [
-              361,
-              379
-            ],
-            [
-              359,
-              379
-            ],
-            [
-              358,
-              384
-            ],
-            [
-              355,
-              383
-            ],
-            [
-              352,
-              386
-            ],
-            [
-              351,
-              391
-            ],
-            [
-              347,
-              380
-            ]
-          ],
-          [
-            [
-              177,
-              385
-            ],
-            [
-              175,
-              383
-            ],
-            [
-              171,
-              383
-            ],
-            [
-              169,
-              385
-            ],
-            [
-              166,
-              380
-            ],
-            [
-              162,
-              385
-            ],
-            [
-              160,
-              383
-            ],
-            [
-              154,
-              383
-            ],
-            [
-              154,
-              393
-            ],
-            [
-              156,
-              393
-            ],
-            [
-              155,
-              387
-            ],
-            [
-              157,
-              385
-            ],
-            [
-              160,
-              386
-            ],
-            [
-              160,
-              393
-            ],
-            [
-              162,
-              393
-            ],
-            [
-              163,
-              385
-            ],
-            [
-              164,
-              392
-            ],
-            [
-              166,
-              394
-            ],
-            [
-              169,
-              392
-            ],
-            [
-              174,
-              394
-            ],
-            [
-              177,
-              392
-            ],
-            [
-              177,
-              389
-            ],
-            [
-              171,
-              386
-            ]
-          ],
-          [
-            [
-              128,
-              383
-            ],
-            [
-              128,
-              393
-            ],
-            [
-              130,
-              393
-            ],
-            [
-              131,
-              385
-            ],
-            [
-              134,
-              386
-            ],
-            [
-              134,
-              393
-            ],
-            [
-              136,
-              393
-            ],
-            [
-              137,
-              385
-            ],
-            [
-              140,
-              386
-            ],
-            [
-              140,
-              393
-            ],
-            [
-              142,
-              393
-            ],
-            [
-              143,
-              390
-            ],
-            [
-              147,
-              394
-            ],
-            [
-              152,
-              392
-            ],
-            [
-              147,
-              392
-            ],
-            [
-              145,
-              390
-            ],
-            [
-              152,
-              389
-            ],
-            [
-              152,
-              385
-            ],
-            [
-              150,
-              383
-            ],
-            [
-              146,
-              383
-            ],
-            [
-              143,
-              387
-            ],
-            [
-              140,
-              383
-            ]
-          ],
-          [
-            [
-              510,
-              385
-            ],
-            [
-              510,
-              387
-            ],
-            [
-              516,
-              391
-            ],
-            [
-              510,
-              391
-            ],
-            [
-              513,
-              394
-            ],
-            [
-              516,
-              394
-            ],
-            [
-              518,
-              392
-            ],
-            [
-              522,
-              394
-            ],
-            [
-              528,
-              393
-            ],
-            [
-              527,
-              385
-            ],
-            [
-              525,
-              383
-            ],
-            [
-              522,
-              383
-            ],
-            [
-              520,
-              385
-            ],
-            [
-              521,
-              388
-            ],
-            [
-              519,
-              390
-            ],
-            [
-              517,
-              388
-            ],
-            [
-              517,
-              384
-            ],
-            [
-              513,
-              383
-            ]
-          ]
-        ],
-        "mask_source": "opencv",
-        "text_geometry": {
-          "line_boxes_px": [
-            [
-              65,
-              379,
-              493,
-              20
-            ],
-            [
-              238,
-              401,
-              4,
-              4
-            ],
-            [
-              232,
-              403,
-              36,
-              14
-            ]
-          ],
-          "line_count_evidence": 3,
-          "median_ink_height_px": 14.0,
-          "estimated_font_size_pt": 7.0
-        },
-        "text_color_evidence": {
-          "background": "#FEF6F0",
-          "foreground": "#9C9A9A"
-        }
-      },
-      "reconstruction_route": "native_text"
-    },
-    {
       "id": "capacity-divider",
       "display_label": "capacity divider",
       "kind": "shape",
@@ -4189,7 +3386,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -4802,7 +3999,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 47,
+        "target_font_size_px": 54,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -5228,7 +4425,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 22,
+        "target_font_size_px": 26,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -5911,7 +5108,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -6332,14 +5529,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Amount",
@@ -6349,14 +5546,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
@@ -6367,15 +5564,15 @@
                   "color": "FFFFFF"
                 },
                 "color": "000000",
-                "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "$85k",
@@ -6385,14 +5582,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
@@ -6403,15 +5600,15 @@
                   "color": "F5F7F8"
                 },
                 "color": "000000",
-                "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "$25k",
@@ -6421,14 +5618,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
@@ -6439,15 +5636,15 @@
                   "color": "FFFFFF"
                 },
                 "color": "000000",
-                "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "$30k",
@@ -6457,14 +5654,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
@@ -6476,14 +5673,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "$115k",
@@ -6492,15 +5689,15 @@
                   "color": "FFF5ED"
                 },
                 "color": "000000",
-                "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "bold": true,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ]
         ],
@@ -6518,7 +5715,7 @@
       },
       "style_hint": {
         "font_family": "Arial",
-        "font_size_px": 22,
+        "font_size_px": 24,
         "cell_margin_px": 8,
         "color": "#000000",
         "fill": "#FFFFFF",
@@ -7201,7 +6398,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 21,
+        "target_font_size_px": 22,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -7956,7 +7153,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -8693,14 +7890,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "Adoption",
@@ -8710,31 +7907,31 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
-              "text": "Time saved",
+              "text": "Time\nsaved",
               "options": {
                 "fill": {
                   "color": "000000"
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "Annual h",
@@ -8744,65 +7941,65 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
-              "text": "Annual capacity",
+              "text": "Annual\ncapacity",
               "options": {
                 "fill": {
                   "color": "000000"
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
-              "text": "First-year value",
+              "text": "First-year\nvalue",
               "options": {
                 "fill": {
                   "color": "000000"
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
-              "text": "Net vs $115k",
+              "text": "Net vs\n$115k",
               "options": {
                 "fill": {
                   "color": "000000"
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             }
           ],
           [
@@ -8814,14 +8011,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "40%",
@@ -8831,14 +8028,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "20%",
@@ -8848,14 +8045,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "864",
@@ -8865,14 +8062,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "$108k",
@@ -8882,14 +8079,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "$54k",
@@ -8899,14 +8096,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "−$61k",
@@ -8916,14 +8113,14 @@
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             }
           ],
           [
@@ -8935,14 +8132,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "60%",
@@ -8952,14 +8149,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "30%",
@@ -8969,14 +8166,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "1,944",
@@ -8986,14 +8183,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "$243k",
@@ -9003,14 +8200,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "$121.5k",
@@ -9020,14 +8217,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "+$6.5k",
@@ -9037,14 +8234,14 @@
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             }
           ],
           [
@@ -9056,14 +8253,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "75%",
@@ -9073,14 +8270,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "40%",
@@ -9090,14 +8287,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "3,240",
@@ -9107,14 +8304,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "$405k",
@@ -9124,14 +8321,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "$202.5k",
@@ -9141,14 +8338,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             },
             {
               "text": "+$87.5k",
@@ -9158,25 +8355,25 @@
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                7,
+                5,
+                7
+              ]
             }
           ]
         ],
         "column_widths_px": [
-          115,
-          105,
-          95,
+          124,
+          112,
+          98,
+          92,
           105,
           108,
-          112,
-          98
+          99
         ],
         "row_heights_px": [
           88,
@@ -9187,7 +8384,7 @@
       },
       "style_hint": {
         "font_family": "Arial",
-        "font_size_px": 18,
+        "font_size_px": 20,
         "cell_margin_px": 8,
         "color": "#000000",
         "fill": "#FFFFFF",
@@ -9962,7 +9159,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -11075,15 +10272,15 @@
       "upstream_asset_id": "remix-play-circle-line",
       "bbox_hint": [
         76,
-        655,
-        94,
-        94
+        646,
+        128,
+        128
       ],
       "slot_bbox_hint": [
         76,
-        655,
-        94,
-        94
+        646,
+        128,
+        128
       ],
       "geometry_policy": "agent_logical",
       "slot_surface": {
@@ -11116,45 +10313,37 @@
         "layout_bbox": {
           "px": [
             76,
-            655,
-            94,
-            94
+            646,
+            128,
+            128
           ]
         },
         "search_bbox": {
           "px": [
             76,
-            655,
-            94,
-            94
+            646,
+            128,
+            128
           ]
         },
         "visible_bbox": {
           "px": [
             78,
-            655,
-            92,
-            94
+            656,
+            106,
+            105
           ]
         },
         "color_evidence": {
           "background": "#F4F5F7",
-          "foreground": "#070707",
-          "foreground_fraction": 0.2995
+          "foreground": "#080808",
+          "foreground_fraction": 0.2228
         },
         "contours_px": [
           [
             [
-              164,
-              668
-            ],
-            [
-              137,
-              655
-            ],
-            [
               124,
-              655
+              656
             ],
             [
               102,
@@ -11165,100 +10354,48 @@
               678
             ],
             [
+              79,
+              695
+            ],
+            [
               78,
               715
+            ],
+            [
+              86,
+              736
             ],
             [
               97,
               748
             ],
             [
-              116,
-              748
+              131,
+              760
             ],
             [
-              100,
+              156,
+              753
+            ],
+            [
+              172,
               739
             ],
             [
-              89,
-              723
-            ],
-            [
-              87,
-              700
-            ],
-            [
-              94,
-              683
-            ],
-            [
-              115,
-              667
-            ],
-            [
-              139,
-              665
-            ],
-            [
-              158,
-              674
-            ],
-            [
-              169,
-              688
-            ]
-          ],
-          [
-            [
-              119,
-              688
-            ],
-            [
-              118,
-              726
-            ],
-            [
-              123,
-              727
-            ],
-            [
-              149,
-              710
-            ],
-            [
-              150,
+              183,
               706
             ],
             [
-              123,
-              688
-            ]
-          ],
-          [
-            [
-              169,
-              727
+              178,
+              686
             ],
             [
-              165,
-              734
+              164,
+              668
             ],
             [
-              157,
-              742
-            ],
-            [
-              145,
-              748
-            ],
-            [
-              163,
-              748
-            ],
-            [
-              169,
-              742
+              142,
+              657
             ]
           ]
         ],
@@ -11293,7 +10430,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -11493,7 +10630,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 22,
+        "target_font_size_px": 26,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.15,
@@ -12628,15 +11765,15 @@
       "upstream_asset_id": "remix-pause-circle-line",
       "bbox_hint": [
         685,
-        655,
-        94,
-        94
+        646,
+        128,
+        128
       ],
       "slot_bbox_hint": [
         685,
-        655,
-        94,
-        94
+        646,
+        128,
+        128
       ],
       "geometry_policy": "agent_logical",
       "slot_surface": {
@@ -12669,45 +11806,41 @@
         "layout_bbox": {
           "px": [
             685,
-            655,
-            94,
-            94
+            646,
+            128,
+            128
           ]
         },
         "search_bbox": {
           "px": [
             685,
-            655,
-            94,
-            94
+            646,
+            128,
+            128
           ]
         },
         "visible_bbox": {
           "px": [
             690,
-            655,
-            89,
-            94
+            654,
+            109,
+            111
           ]
         },
         "color_evidence": {
-          "background": "#F3F5F6",
+          "background": "#F3F5F7",
           "foreground": "#090909",
-          "foreground_fraction": 0.297
+          "foreground_fraction": 0.2485
         },
         "contours_px": [
           [
             [
-              776,
-              665
+              739,
+              654
             ],
             [
-              759,
-              655
-            ],
-            [
-              729,
-              655
+              716,
+              662
             ],
             [
               702,
@@ -12722,90 +11855,40 @@
               718
             ],
             [
-              706,
-              748
+              697,
+              737
             ],
             [
-              720,
-              748
+              712,
+              754
             ],
             [
-              708,
-              738
+              731,
+              763
             ],
             [
-              699,
-              717
+              752,
+              764
             ],
             [
-              707,
-              682
+              786,
+              744
             ],
             [
-              721,
+              797,
+              722
+            ],
+            [
+              798,
+              702
+            ],
+            [
+              781,
               669
             ],
             [
-              741,
-              663
-            ],
-            [
-              765,
-              668
-            ],
-            [
-              778,
-              679
-            ]
-          ],
-          [
-            [
-              750,
-              691
-            ],
-            [
-              749,
-              728
-            ],
-            [
-              760,
-              728
-            ],
-            [
-              761,
-              692
-            ]
-          ],
-          [
-            [
-              727,
-              691
-            ],
-            [
-              727,
-              728
-            ],
-            [
-              738,
-              728
-            ],
-            [
-              738,
-              692
-            ]
-          ],
-          [
-            [
-              778,
-              739
-            ],
-            [
-              768,
-              748
-            ],
-            [
-              778,
-              748
+              762,
+              657
             ]
           ]
         ],
@@ -12840,7 +11923,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -13072,7 +12155,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 22,
+        "target_font_size_px": 26,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.15,
@@ -14475,15 +13558,15 @@
       "upstream_asset_id": "remix-stop-circle-line",
       "bbox_hint": [
         1294,
-        655,
-        94,
-        94
+        646,
+        128,
+        128
       ],
       "slot_bbox_hint": [
         1294,
-        655,
-        94,
-        94
+        646,
+        128,
+        128
       ],
       "geometry_policy": "agent_logical",
       "slot_surface": {
@@ -14516,111 +13599,93 @@
         "layout_bbox": {
           "px": [
             1294,
-            655,
-            94,
-            94
+            646,
+            128,
+            128
           ]
         },
         "search_bbox": {
           "px": [
             1294,
-            655,
-            94,
-            94
+            646,
+            128,
+            128
           ]
         },
         "visible_bbox": {
           "px": [
-            1306,
-            655,
-            82,
-            94
+            1305,
+            654,
+            110,
+            111
           ]
         },
         "color_evidence": {
-          "background": "#F3F5F6",
-          "foreground": "#060606",
-          "foreground_fraction": 0.3147
+          "background": "#F3F5F7",
+          "foreground": "#070707",
+          "foreground_fraction": 0.2711
         },
         "contours_px": [
           [
             [
-              1387,
-              662
-            ],
-            [
-              1374,
+              1348,
               655
             ],
             [
-              1345,
-              655
+              1326,
+              666
             ],
             [
-              1319,
-              673
-            ],
-            [
-              1308,
-              692
+              1313,
+              681
             ],
             [
               1306,
-              719
+              699
             ],
             [
-              1322,
-              748
+              1306,
+              720
             ],
             [
-              1335,
-              748
+              1312,
+              736
             ],
             [
-              1321,
-              734
+              1328,
+              754
             ],
             [
-              1315,
-              719
+              1343,
+              762
             ],
             [
-              1315,
-              700
-            ],
-            [
-              1323,
-              682
-            ],
-            [
-              1337,
-              669
-            ],
-            [
-              1355,
-              663
+              1368,
+              764
             ],
             [
               1387,
-              672
-            ]
-          ],
-          [
-            [
-              1343,
-              692
+              757
             ],
             [
-              1343,
-              728
+              1405,
+              740
             ],
             [
-              1377,
-              728
+              1414,
+              716
             ],
             [
-              1377,
-              692
+              1413,
+              697
+            ],
+            [
+              1403,
+              676
+            ],
+            [
+              1386,
+              661
             ]
           ]
         ],
@@ -14655,7 +13720,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -14871,7 +13936,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 22,
+        "target_font_size_px": 26,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.15,
@@ -17979,6 +17044,1704 @@
         }
       },
       "reconstruction_route": "native_text"
+    },
+    {
+      "id": "factor-engagements",
+      "display_label": "Engagements",
+      "kind": "text",
+      "role": "body",
+      "text": "Engagements",
+      "text_style_role": "body",
+      "typography_group": "labels",
+      "bbox_hint": [
+        64,
+        375,
+        120,
+        68
+      ],
+      "search_bbox_hint": [
+        64,
+        375,
+        120,
+        68
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 20,
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      },
+      "measurement": {
+        "layout_bbox": {
+          "px": [
+            64,
+            375,
+            120,
+            68
+          ]
+        },
+        "search_bbox": {
+          "px": [
+            64,
+            375,
+            120,
+            68
+          ]
+        },
+        "visible_bbox": {
+          "px": [
+            66,
+            379,
+            112,
+            20
+          ]
+        },
+        "color_evidence": {
+          "background": "#FEF6F0",
+          "foreground": "#999998",
+          "foreground_fraction": 0.1168
+        },
+        "contours_px": [
+          [
+            [
+              87,
+              385
+            ],
+            [
+              87,
+              396
+            ],
+            [
+              90,
+              398
+            ],
+            [
+              94,
+              397
+            ],
+            [
+              97,
+              392
+            ],
+            [
+              100,
+              394
+            ],
+            [
+              105,
+              393
+            ],
+            [
+              105,
+              385
+            ],
+            [
+              103,
+              383
+            ],
+            [
+              98,
+              384
+            ],
+            [
+              98,
+              386
+            ],
+            [
+              100,
+              387
+            ],
+            [
+              97,
+              389
+            ],
+            [
+              95,
+              383
+            ],
+            [
+              89,
+              383
+            ]
+          ],
+          [
+            [
+              177,
+              385
+            ],
+            [
+              175,
+              383
+            ],
+            [
+              171,
+              383
+            ],
+            [
+              169,
+              385
+            ],
+            [
+              166,
+              380
+            ],
+            [
+              162,
+              385
+            ],
+            [
+              160,
+              383
+            ],
+            [
+              154,
+              383
+            ],
+            [
+              154,
+              393
+            ],
+            [
+              156,
+              393
+            ],
+            [
+              155,
+              387
+            ],
+            [
+              157,
+              385
+            ],
+            [
+              160,
+              386
+            ],
+            [
+              160,
+              393
+            ],
+            [
+              162,
+              393
+            ],
+            [
+              163,
+              385
+            ],
+            [
+              164,
+              392
+            ],
+            [
+              166,
+              394
+            ],
+            [
+              169,
+              392
+            ],
+            [
+              174,
+              394
+            ],
+            [
+              177,
+              392
+            ],
+            [
+              177,
+              389
+            ],
+            [
+              171,
+              386
+            ]
+          ],
+          [
+            [
+              128,
+              383
+            ],
+            [
+              128,
+              393
+            ],
+            [
+              130,
+              393
+            ],
+            [
+              131,
+              385
+            ],
+            [
+              134,
+              386
+            ],
+            [
+              134,
+              393
+            ],
+            [
+              136,
+              393
+            ],
+            [
+              137,
+              385
+            ],
+            [
+              140,
+              386
+            ],
+            [
+              140,
+              393
+            ],
+            [
+              142,
+              393
+            ],
+            [
+              143,
+              390
+            ],
+            [
+              147,
+              394
+            ],
+            [
+              152,
+              392
+            ],
+            [
+              147,
+              392
+            ],
+            [
+              145,
+              390
+            ],
+            [
+              152,
+              389
+            ],
+            [
+              152,
+              385
+            ],
+            [
+              150,
+              383
+            ],
+            [
+              146,
+              383
+            ],
+            [
+              143,
+              387
+            ],
+            [
+              140,
+              383
+            ]
+          ],
+          [
+            [
+              116,
+              383
+            ],
+            [
+              110,
+              383
+            ],
+            [
+              107,
+              386
+            ],
+            [
+              107,
+              391
+            ],
+            [
+              109,
+              393
+            ],
+            [
+              114,
+              394
+            ],
+            [
+              112,
+              396
+            ],
+            [
+              108,
+              395
+            ],
+            [
+              111,
+              398
+            ],
+            [
+              113,
+              398
+            ],
+            [
+              116,
+              395
+            ]
+          ],
+          [
+            [
+              66,
+              379
+            ],
+            [
+              66,
+              393
+            ],
+            [
+              74,
+              394
+            ],
+            [
+              75,
+              392
+            ],
+            [
+              69,
+              392
+            ],
+            [
+              68,
+              388
+            ],
+            [
+              75,
+              386
+            ],
+            [
+              69,
+              385
+            ],
+            [
+              68,
+              382
+            ],
+            [
+              75,
+              381
+            ],
+            [
+              75,
+              379
+            ]
+          ],
+          [
+            [
+              120,
+              383
+            ],
+            [
+              118,
+              385
+            ],
+            [
+              118,
+              392
+            ],
+            [
+              123,
+              394
+            ],
+            [
+              126,
+              391
+            ],
+            [
+              122,
+              392
+            ],
+            [
+              119,
+              390
+            ],
+            [
+              126,
+              389
+            ],
+            [
+              126,
+              385
+            ],
+            [
+              124,
+              383
+            ]
+          ],
+          [
+            [
+              77,
+              383
+            ],
+            [
+              77,
+              393
+            ],
+            [
+              79,
+              393
+            ],
+            [
+              80,
+              385
+            ],
+            [
+              83,
+              386
+            ],
+            [
+              83,
+              393
+            ],
+            [
+              85,
+              393
+            ],
+            [
+              85,
+              385
+            ],
+            [
+              83,
+              383
+            ]
+          ]
+        ],
+        "mask_source": "opencv",
+        "text_geometry": {
+          "line_boxes_px": [
+            [
+              66,
+              379,
+              112,
+              20
+            ]
+          ],
+          "line_count_evidence": 1,
+          "median_ink_height_px": 20.0,
+          "estimated_font_size_pt": 10.0
+        },
+        "text_color_evidence": {
+          "background": "#FEF6F0",
+          "foreground": "#999998"
+        }
+      },
+      "reconstruction_route": "native_text"
+    },
+    {
+      "id": "factor-research",
+      "display_label": "Research time",
+      "kind": "text",
+      "role": "body",
+      "text": "Research\ntime",
+      "text_style_role": "body",
+      "typography_group": "labels",
+      "bbox_hint": [
+        202,
+        375,
+        114,
+        68
+      ],
+      "search_bbox_hint": [
+        202,
+        375,
+        114,
+        68
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 20,
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      },
+      "measurement": {
+        "layout_bbox": {
+          "px": [
+            202,
+            375,
+            114,
+            68
+          ]
+        },
+        "search_bbox": {
+          "px": [
+            202,
+            375,
+            114,
+            68
+          ]
+        },
+        "visible_bbox": {
+          "px": [
+            218,
+            379,
+            75,
+            38
+          ]
+        },
+        "color_evidence": {
+          "background": "#FEF6F0",
+          "foreground": "#929391",
+          "foreground_fraction": 0.1201
+        },
+        "contours_px": [
+          [
+            [
+              218,
+              380
+            ],
+            [
+              219,
+              394
+            ],
+            [
+              221,
+              388
+            ],
+            [
+              228,
+              393
+            ],
+            [
+              228,
+              385
+            ],
+            [
+              233,
+              394
+            ],
+            [
+              237,
+              391
+            ],
+            [
+              231,
+              390
+            ],
+            [
+              239,
+              386
+            ],
+            [
+              245,
+              390
+            ],
+            [
+              239,
+              391
+            ],
+            [
+              242,
+              394
+            ],
+            [
+              248,
+              390
+            ],
+            [
+              254,
+              394
+            ],
+            [
+              256,
+              391
+            ],
+            [
+              252,
+              392
+            ],
+            [
+              251,
+              389
+            ],
+            [
+              257,
+              389
+            ],
+            [
+              261,
+              394
+            ],
+            [
+              267,
+              393
+            ],
+            [
+              264,
+              383
+            ],
+            [
+              259,
+              384
+            ],
+            [
+              261,
+              387
+            ],
+            [
+              258,
+              389
+            ],
+            [
+              255,
+              383
+            ],
+            [
+              248,
+              386
+            ],
+            [
+              245,
+              383
+            ],
+            [
+              238,
+              386
+            ],
+            [
+              232,
+              383
+            ],
+            [
+              229,
+              386
+            ],
+            [
+              226,
+              379
+            ]
+          ],
+          [
+            [
+              233,
+              403
+            ],
+            [
+              233,
+              415
+            ],
+            [
+              240,
+              416
+            ],
+            [
+              241,
+              407
+            ]
+          ],
+          [
+            [
+              261,
+              405
+            ],
+            [
+              258,
+              408
+            ],
+            [
+              258,
+              413
+            ],
+            [
+              261,
+              416
+            ],
+            [
+              265,
+              416
+            ],
+            [
+              266,
+              413
+            ],
+            [
+              264,
+              412
+            ],
+            [
+              267,
+              411
+            ],
+            [
+              267,
+              408
+            ],
+            [
+              264,
+              405
+            ]
+          ],
+          [
+            [
+              243,
+              406
+            ],
+            [
+              243,
+              416
+            ],
+            [
+              245,
+              415
+            ],
+            [
+              246,
+              407
+            ],
+            [
+              248,
+              408
+            ],
+            [
+              248,
+              416
+            ],
+            [
+              250,
+              416
+            ],
+            [
+              250,
+              409
+            ],
+            [
+              252,
+              407
+            ],
+            [
+              254,
+              408
+            ],
+            [
+              254,
+              415
+            ],
+            [
+              256,
+              416
+            ],
+            [
+              256,
+              407
+            ],
+            [
+              254,
+              405
+            ]
+          ],
+          [
+            [
+              268,
+              384
+            ],
+            [
+              269,
+              393
+            ],
+            [
+              270,
+              387
+            ],
+            [
+              272,
+              385
+            ],
+            [
+              274,
+              386
+            ],
+            [
+              274,
+              391
+            ],
+            [
+              277,
+              394
+            ],
+            [
+              282,
+              392
+            ],
+            [
+              282,
+              390
+            ],
+            [
+              279,
+              392
+            ],
+            [
+              276,
+              390
+            ],
+            [
+              277,
+              385
+            ],
+            [
+              282,
+              387
+            ],
+            [
+              280,
+              383
+            ]
+          ],
+          [
+            [
+              284,
+              379
+            ],
+            [
+              284,
+              393
+            ],
+            [
+              286,
+              393
+            ],
+            [
+              287,
+              385
+            ],
+            [
+              290,
+              386
+            ],
+            [
+              290,
+              393
+            ],
+            [
+              292,
+              393
+            ],
+            [
+              292,
+              385
+            ],
+            [
+              290,
+              383
+            ],
+            [
+              287,
+              383
+            ],
+            [
+              286,
+              379
+            ]
+          ],
+          [
+            [
+              239,
+              401
+            ],
+            [
+              238,
+              403
+            ],
+            [
+              240,
+              404
+            ],
+            [
+              241,
+              402
+            ]
+          ]
+        ],
+        "mask_source": "opencv",
+        "text_geometry": {
+          "line_boxes_px": [
+            [
+              218,
+              379,
+              75,
+              16
+            ],
+            [
+              238,
+              401,
+              4,
+              4
+            ],
+            [
+              232,
+              403,
+              36,
+              14
+            ]
+          ],
+          "line_count_evidence": 3,
+          "median_ink_height_px": 14.0,
+          "estimated_font_size_pt": 7.0
+        },
+        "text_color_evidence": {
+          "background": "#FEF6F0",
+          "foreground": "#929391"
+        }
+      },
+      "reconstruction_route": "native_text"
+    },
+    {
+      "id": "factor-adoption",
+      "display_label": "Adoption",
+      "kind": "text",
+      "role": "body",
+      "text": "Adoption",
+      "text_style_role": "body",
+      "typography_group": "labels",
+      "bbox_hint": [
+        337,
+        375,
+        110,
+        68
+      ],
+      "search_bbox_hint": [
+        337,
+        375,
+        110,
+        68
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 20,
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      },
+      "measurement": {
+        "layout_bbox": {
+          "px": [
+            337,
+            375,
+            110,
+            68
+          ]
+        },
+        "search_bbox": {
+          "px": [
+            337,
+            375,
+            110,
+            68
+          ]
+        },
+        "visible_bbox": {
+          "px": [
+            339,
+            379,
+            74,
+            19
+          ]
+        },
+        "color_evidence": {
+          "background": "#FEF6F0",
+          "foreground": "#A9A6A6",
+          "foreground_fraction": 0.0802
+        },
+        "contours_px": [
+          [
+            [
+              388,
+              383
+            ],
+            [
+              384,
+              381
+            ],
+            [
+              382,
+              386
+            ],
+            [
+              379,
+              383
+            ],
+            [
+              373,
+              383
+            ],
+            [
+              372,
+              387
+            ],
+            [
+              369,
+              383
+            ],
+            [
+              365,
+              383
+            ],
+            [
+              363,
+              385
+            ],
+            [
+              363,
+              392
+            ],
+            [
+              368,
+              394
+            ],
+            [
+              372,
+              390
+            ],
+            [
+              373,
+              397
+            ],
+            [
+              375,
+              397
+            ],
+            [
+              376,
+              393
+            ],
+            [
+              379,
+              394
+            ],
+            [
+              382,
+              391
+            ],
+            [
+              383,
+              385
+            ],
+            [
+              384,
+              392
+            ],
+            [
+              387,
+              394
+            ],
+            [
+              388,
+              392
+            ],
+            [
+              386,
+              391
+            ],
+            [
+              386,
+              386
+            ]
+          ],
+          [
+            [
+              344,
+              379
+            ],
+            [
+              339,
+              392
+            ],
+            [
+              340,
+              394
+            ],
+            [
+              343,
+              390
+            ],
+            [
+              348,
+              390
+            ],
+            [
+              350,
+              394
+            ],
+            [
+              352,
+              391
+            ],
+            [
+              355,
+              394
+            ],
+            [
+              361,
+              394
+            ],
+            [
+              361,
+              379
+            ],
+            [
+              359,
+              379
+            ],
+            [
+              358,
+              384
+            ],
+            [
+              355,
+              383
+            ],
+            [
+              352,
+              386
+            ],
+            [
+              351,
+              391
+            ],
+            [
+              347,
+              380
+            ]
+          ],
+          [
+            [
+              396,
+              383
+            ],
+            [
+              393,
+              386
+            ],
+            [
+              393,
+              391
+            ],
+            [
+              398,
+              394
+            ],
+            [
+              402,
+              391
+            ],
+            [
+              401,
+              384
+            ]
+          ],
+          [
+            [
+              404,
+              383
+            ],
+            [
+              404,
+              394
+            ],
+            [
+              406,
+              393
+            ],
+            [
+              405,
+              387
+            ],
+            [
+              407,
+              385
+            ],
+            [
+              410,
+              386
+            ],
+            [
+              410,
+              393
+            ],
+            [
+              412,
+              393
+            ],
+            [
+              412,
+              385
+            ],
+            [
+              410,
+              383
+            ]
+          ],
+          [
+            [
+              390,
+              383
+            ],
+            [
+              391,
+              394
+            ]
+          ]
+        ],
+        "mask_source": "opencv",
+        "text_geometry": {
+          "line_boxes_px": [
+            [
+              339,
+              379,
+              74,
+              19
+            ]
+          ],
+          "line_count_evidence": 1,
+          "median_ink_height_px": 19.0,
+          "estimated_font_size_pt": 9.5
+        },
+        "text_color_evidence": {
+          "background": "#FEF6F0",
+          "foreground": "#A9A6A6"
+        }
+      },
+      "reconstruction_route": "native_text"
+    },
+    {
+      "id": "factor-saved",
+      "display_label": "Time saved",
+      "kind": "text",
+      "role": "body",
+      "text": "Time saved",
+      "text_style_role": "body",
+      "typography_group": "labels",
+      "bbox_hint": [
+        462,
+        375,
+        115,
+        68
+      ],
+      "search_bbox_hint": [
+        462,
+        375,
+        115,
+        68
+      ],
+      "geometry_policy": "agent_logical",
+      "z": 20,
+      "meaningful_visible": true,
+      "reconstruction_significance": "independent_object",
+      "style_hint": {
+        "font_family": "Arial",
+        "font_weight": "regular",
+        "target_font_size_px": 20,
+        "alignment": "center",
+        "vertical_alignment": "top",
+        "line_spacing": 1.0,
+        "observed_foreground_color": "#000000",
+        "style_authority": "agent_visual_observation"
+      },
+      "measurement": {
+        "layout_bbox": {
+          "px": [
+            462,
+            375,
+            115,
+            68
+          ]
+        },
+        "search_bbox": {
+          "px": [
+            462,
+            375,
+            115,
+            68
+          ]
+        },
+        "visible_bbox": {
+          "px": [
+            464,
+            379,
+            94,
+            16
+          ]
+        },
+        "color_evidence": {
+          "background": "#FEF6F0",
+          "foreground": "#9C9A99",
+          "foreground_fraction": 0.0917
+        },
+        "contours_px": [
+          [
+            [
+              557,
+              379
+            ],
+            [
+              555,
+              379
+            ],
+            [
+              554,
+              384
+            ],
+            [
+              551,
+              383
+            ],
+            [
+              547,
+              387
+            ],
+            [
+              544,
+              383
+            ],
+            [
+              541,
+              383
+            ],
+            [
+              538,
+              386
+            ],
+            [
+              535,
+              384
+            ],
+            [
+              533,
+              390
+            ],
+            [
+              531,
+              384
+            ],
+            [
+              529,
+              384
+            ],
+            [
+              532,
+              394
+            ],
+            [
+              534,
+              394
+            ],
+            [
+              537,
+              386
+            ],
+            [
+              538,
+              391
+            ],
+            [
+              541,
+              394
+            ],
+            [
+              546,
+              393
+            ],
+            [
+              546,
+              391
+            ],
+            [
+              542,
+              392
+            ],
+            [
+              541,
+              389
+            ],
+            [
+              547,
+              389
+            ],
+            [
+              549,
+              393
+            ],
+            [
+              556,
+              394
+            ]
+          ],
+          [
+            [
+              510,
+              385
+            ],
+            [
+              510,
+              387
+            ],
+            [
+              516,
+              391
+            ],
+            [
+              510,
+              391
+            ],
+            [
+              513,
+              394
+            ],
+            [
+              516,
+              394
+            ],
+            [
+              518,
+              392
+            ],
+            [
+              522,
+              394
+            ],
+            [
+              528,
+              393
+            ],
+            [
+              527,
+              385
+            ],
+            [
+              525,
+              383
+            ],
+            [
+              522,
+              383
+            ],
+            [
+              520,
+              385
+            ],
+            [
+              521,
+              388
+            ],
+            [
+              519,
+              390
+            ],
+            [
+              517,
+              388
+            ],
+            [
+              517,
+              384
+            ],
+            [
+              513,
+              383
+            ]
+          ],
+          [
+            [
+              479,
+              384
+            ],
+            [
+              480,
+              394
+            ],
+            [
+              482,
+              393
+            ],
+            [
+              483,
+              385
+            ],
+            [
+              485,
+              386
+            ],
+            [
+              486,
+              394
+            ],
+            [
+              487,
+              387
+            ],
+            [
+              489,
+              385
+            ],
+            [
+              491,
+              386
+            ],
+            [
+              491,
+              393
+            ],
+            [
+              493,
+              394
+            ],
+            [
+              493,
+              385
+            ],
+            [
+              491,
+              383
+            ]
+          ],
+          [
+            [
+              498,
+              383
+            ],
+            [
+              495,
+              386
+            ],
+            [
+              496,
+              393
+            ],
+            [
+              501,
+              394
+            ],
+            [
+              504,
+              391
+            ],
+            [
+              499,
+              392
+            ],
+            [
+              497,
+              390
+            ],
+            [
+              504,
+              389
+            ],
+            [
+              504,
+              386
+            ],
+            [
+              501,
+              383
+            ]
+          ],
+          [
+            [
+              477,
+              379
+            ],
+            [
+              464,
+              379
+            ],
+            [
+              464,
+              381
+            ],
+            [
+              468,
+              382
+            ],
+            [
+              468,
+              394
+            ],
+            [
+              470,
+              393
+            ],
+            [
+              470,
+              382
+            ],
+            [
+              478,
+              381
+            ]
+          ],
+          [
+            [
+              476,
+              383
+            ],
+            [
+              475,
+              393
+            ],
+            [
+              477,
+              394
+            ]
+          ]
+        ],
+        "mask_source": "opencv",
+        "text_geometry": {
+          "line_boxes_px": [
+            [
+              464,
+              379,
+              94,
+              16
+            ]
+          ],
+          "line_count_evidence": 1,
+          "median_ink_height_px": 16.0,
+          "estimated_font_size_pt": 8.0
+        },
+        "text_color_evidence": {
+          "background": "#FEF6F0",
+          "foreground": "#9C9A99"
+        }
+      },
+      "reconstruction_route": "native_text"
     }
   ],
   "groups": [
@@ -17996,7 +18759,10 @@
         "capacity-heading",
         "capacity-panel",
         "capacity-equation",
-        "capacity-labels",
+        "factor-engagements",
+        "factor-research",
+        "factor-adoption",
+        "factor-saved",
         "capacity-divider",
         "capacity-value",
         "capacity-value-number",
@@ -18281,21 +19047,69 @@
       "Host-authored illustrative planning model. The preserved work/planning-assumptions.json carries the exact calculation assumptions."
     ],
     "notes": [
-      "Financial rows and exact funding conditions come from the retained slide intent and illustrative planning model.",
-      "The two native tables own 10 and 28 cells. There are no floating duplicate cell text objects, charts, icons or raster objects.",
-      "The source image contains a model-added terminal title period. Parent instruction restores the exact upstream title without that period.",
-      "The generated body is 1920 by 960 and is translated down 64 pixels into the full 1920 by 1080 native frame.",
-      "Shared roles use Georgia 64px, subtitle Arial 32px, section/body/decision Arial 28px and tables Arial 24px.",
-      "The parent Agent approved all four formula-term labels as a separate 24px data-annotation level using the configured label role. Research time and Time saved wrap. Factor allocations widen to align each label with its value in normal-width Arial without horizontal compression. Source-ink windows remain tied to the original generated terms.",
-      "Actual Office inspection required regular cost-row labels, wider Adoption and First-year value headers, and a two-line 28px remaining-investment qualification. The criterion rule moves down 14px to clear that qualification, with vertical separators shortened to preserve their lower endpoints.",
-      "The source exaggerates the orange calculated values, GO/HOLD/STOP headings and decision label. Shared native roles take precedence over those source size variations.",
-      "The deck owner reviewed the five actual renders and requested common geometry. The title begins at body x48/y19, subtitle x48/y103 and divider y165. The decision band is [48,793,1824,134], its accent is 8px, its label begins at x100 and its message at x560. Both decision texts use body y832 and height52 with vertical centering. Original source-ink windows stay unchanged.",
-      "Capacity equivalent is not a cash saving. The inherited footer carries that shared qualification, and the remaining-$60k qualification stays in the substantive body.",
-      "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-      "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-      "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-      "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-      "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files."
+      "The four formula captions are separate text objects aligned beneath their respective factors.",
+      "The dense seven-column sensitivity table uses a smaller text role than the cost table. Verify Adoption and Downside as complete words in the rendered PDF.",
+      "Capacity value is not a cash saving. The cost table and sensitivity cells do not recalculate when another object is edited.",
+      "The semantic map owns current geometry and type roles. The inherited frame is added outside the generated content region. Canonical SVGs replace generated icon stand-ins."
+    ],
+    "content_obligations": [
+      {
+        "id": "investment-case",
+        "description": "The calculation, cost table and sensitivity table expose every assumption behind the request.",
+        "entity_ids": [
+          "capacity-heading",
+          "capacity-panel",
+          "capacity-equation",
+          "factor-engagements",
+          "factor-research",
+          "factor-adoption",
+          "factor-saved",
+          "capacity-divider",
+          "capacity-value",
+          "capacity-value-number",
+          "capacity-caption",
+          "investment-heading",
+          "investment-table",
+          "investment-note",
+          "sensitivity-heading",
+          "sensitivity-table"
+        ]
+      },
+      {
+        "id": "decision-tests",
+        "description": "Three canonical symbols separate go, hold and stop decisions without adding a template constraint.",
+        "entity_ids": [
+          "criteria-heading",
+          "criterion-panel-go",
+          "criterion-icon-go",
+          "criterion-label-go",
+          "criterion-body-go",
+          "criterion-panel-hold",
+          "criterion-icon-hold",
+          "criterion-label-hold",
+          "criterion-body-hold",
+          "criterion-panel-stop",
+          "criterion-icon-stop",
+          "criterion-label-stop",
+          "criterion-body-stop"
+        ]
+      },
+      {
+        "id": "page-message",
+        "description": "The slide claim and its qualification",
+        "entity_ids": [
+          "headline",
+          "subtitle"
+        ]
+      },
+      {
+        "id": "decision",
+        "description": "Conditional release of the remaining implementation funding",
+        "entity_ids": [
+          "decision-label",
+          "decision-message"
+        ]
+      }
     ]
   }
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "source_scene_evidence": "/private/tmp/.slidepoise-rebuild-h51errnw/slides/s05-investment-decision/work/accepted-slide.png",
+  "source_scene_evidence": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/slides/s05-investment-decision/work/accepted-slide.png",
   "full_slide_dimensions_px": [
     1920,
     1080
@@ -66,6 +66,65 @@
     },
     "slide_number": 1
   },
+  "content_obligations": [
+    {
+      "id": "investment-case",
+      "description": "The calculation, cost table and sensitivity table expose every assumption behind the request.",
+      "entity_ids": [
+        "capacity-heading",
+        "capacity-panel",
+        "capacity-equation",
+        "factor-engagements",
+        "factor-research",
+        "factor-adoption",
+        "factor-saved",
+        "capacity-divider",
+        "capacity-value",
+        "capacity-value-number",
+        "capacity-caption",
+        "investment-heading",
+        "investment-table",
+        "investment-note",
+        "sensitivity-heading",
+        "sensitivity-table"
+      ]
+    },
+    {
+      "id": "decision-tests",
+      "description": "Three canonical symbols separate go, hold and stop decisions without adding a template constraint.",
+      "entity_ids": [
+        "criteria-heading",
+        "criterion-panel-go",
+        "criterion-icon-go",
+        "criterion-label-go",
+        "criterion-body-go",
+        "criterion-panel-hold",
+        "criterion-icon-hold",
+        "criterion-label-hold",
+        "criterion-body-hold",
+        "criterion-panel-stop",
+        "criterion-icon-stop",
+        "criterion-label-stop",
+        "criterion-body-stop"
+      ]
+    },
+    {
+      "id": "page-message",
+      "description": "The slide claim and its qualification",
+      "entity_ids": [
+        "headline",
+        "subtitle"
+      ]
+    },
+    {
+      "id": "decision",
+      "description": "Conditional release of the remaining implementation funding",
+      "entity_ids": [
+        "decision-label",
+        "decision-message"
+      ]
+    }
+  ],
   "reconstruction_units": [
     {
       "id": "headline",
@@ -160,22 +219,6 @@
         258,
         505,
         115
-      ],
-      "component_id": null
-    },
-    {
-      "id": "capacity-labels",
-      "semantic_kind": "text",
-      "semantic_role": "body",
-      "selected_route": "native_text",
-      "node_class": "reconstruction_unit",
-      "emits_ppt_object": true,
-      "render_owner": "capacity-labels",
-      "bbox_px": [
-        65,
-        374,
-        500,
-        45
       ],
       "component_id": null
     },
@@ -365,9 +408,9 @@
       "render_owner": "criterion-icon-go",
       "bbox_px": [
         76,
-        655,
-        94,
-        94
+        646,
+        128,
+        128
       ],
       "component_id": null
     },
@@ -429,9 +472,9 @@
       "render_owner": "criterion-icon-hold",
       "bbox_px": [
         685,
-        655,
-        94,
-        94
+        646,
+        128,
+        128
       ],
       "component_id": null
     },
@@ -493,9 +536,9 @@
       "render_owner": "criterion-icon-stop",
       "bbox_px": [
         1294,
-        655,
-        94,
-        94
+        646,
+        128,
+        128
       ],
       "component_id": null
     },
@@ -594,6 +637,70 @@
         50
       ],
       "component_id": null
+    },
+    {
+      "id": "factor-engagements",
+      "semantic_kind": "text",
+      "semantic_role": "body",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "factor-engagements",
+      "bbox_px": [
+        64,
+        375,
+        120,
+        68
+      ],
+      "component_id": null
+    },
+    {
+      "id": "factor-research",
+      "semantic_kind": "text",
+      "semantic_role": "body",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "factor-research",
+      "bbox_px": [
+        202,
+        375,
+        114,
+        68
+      ],
+      "component_id": null
+    },
+    {
+      "id": "factor-adoption",
+      "semantic_kind": "text",
+      "semantic_role": "body",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "factor-adoption",
+      "bbox_px": [
+        337,
+        375,
+        110,
+        68
+      ],
+      "component_id": null
+    },
+    {
+      "id": "factor-saved",
+      "semantic_kind": "text",
+      "semantic_role": "body",
+      "selected_route": "native_text",
+      "node_class": "reconstruction_unit",
+      "emits_ppt_object": true,
+      "render_owner": "factor-saved",
+      "bbox_px": [
+        462,
+        375,
+        115,
+        68
+      ],
+      "component_id": null
     }
   ],
   "canonical_asset_mappings": [
@@ -605,9 +712,9 @@
       "selection_mode": "host_agent_selected_pair_before_generation",
       "target_bbox_source_px": [
         76,
-        655,
-        94,
-        94
+        646,
+        128,
+        128
       ],
       "preserve_aspect_ratio": true,
       "fit": "contain",
@@ -650,9 +757,9 @@
       "selection_mode": "host_agent_selected_pair_before_generation",
       "target_bbox_source_px": [
         685,
-        655,
-        94,
-        94
+        646,
+        128,
+        128
       ],
       "preserve_aspect_ratio": true,
       "fit": "contain",
@@ -695,9 +802,9 @@
       "selection_mode": "host_agent_selected_pair_before_generation",
       "target_bbox_source_px": [
         1294,
-        655,
-        94,
-        94
+        646,
+        128,
+        128
       ],
       "preserve_aspect_ratio": true,
       "fit": "contain",

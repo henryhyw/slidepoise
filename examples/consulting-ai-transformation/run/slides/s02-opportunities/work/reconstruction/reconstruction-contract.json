@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "source_scene_evidence": "/private/tmp/.slidepoise-rebuild-h51errnw/slides/s02-opportunities/work/accepted-slide.png",
+  "source_scene_evidence": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/slides/s02-opportunities/work/accepted-slide.png",
   "full_slide_dimensions_px": [
     1920,
     1080
@@ -69,6 +69,53 @@
   "speaker_notes": [
     "This is an illustrative planning model for fictional Northstar Advisory. Annual capacity assumes 900 engagements. Research uses 900 x 12 baseline hours x 60% adoption x 30% time saved = 1,944 hours. The same formula produces 1,440 proposal hours and 1,080 retrieval hours from the displayed assumptions.",
     "The three workflow estimates may overlap and cannot be added without checking task boundaries. Capacity released is not a cash saving. Control readiness determines the proposed sequence, and expert review remains required before any client release."
+  ],
+  "content_obligations": [
+    {
+      "id": "opportunity-model",
+      "description": "The chart and editable assumption table expose the complete value model.",
+      "entity_ids": [
+        "capacity-heading",
+        "chart-unit",
+        "annual-capacity-chart",
+        "value-model-heading",
+        "value-model",
+        "formula-strip",
+        "capacity-formula"
+      ]
+    },
+    {
+      "id": "pilot-choice",
+      "description": "Icons explain the rationale while the table tests control readiness and ownership.",
+      "entity_ids": [
+        "reason-heading",
+        "reason-icon-file",
+        "reason-file",
+        "reason-icon-corpus",
+        "reason-corpus",
+        "reason-icon-reviewer",
+        "reason-reviewer",
+        "sequencing-heading",
+        "pilot-sequencing",
+        "overlap-note"
+      ]
+    },
+    {
+      "id": "page-message",
+      "description": "The slide claim and its qualification",
+      "entity_ids": [
+        "headline",
+        "subtitle"
+      ]
+    },
+    {
+      "id": "decision",
+      "description": "Approved-source pilot boundary",
+      "entity_ids": [
+        "decision-label",
+        "decision-message"
+      ]
+    }
   ],
   "reconstruction_units": [
     {
@@ -144,10 +191,10 @@
       "emits_ppt_object": true,
       "render_owner": "annual-capacity-chart",
       "bbox_px": [
-        40,
-        225,
-        660,
-        290
+        37,
+        229,
+        670,
+        322
       ],
       "component_id": null
     },
@@ -225,8 +272,8 @@
       "render_owner": "reason-heading",
       "bbox_px": [
         37,
-        532,
-        680,
+        576,
+        700,
         38
       ],
       "component_id": null
@@ -240,10 +287,10 @@
       "emits_ppt_object": true,
       "render_owner": "reason-icon-file",
       "bbox_px": [
-        58,
-        581,
-        45,
-        45
+        54,
+        607,
+        62,
+        62
       ],
       "component_id": null
     },
@@ -256,10 +303,10 @@
       "emits_ppt_object": true,
       "render_owner": "reason-file",
       "bbox_px": [
-        142,
-        583,
-        540,
-        40
+        160,
+        615,
+        552,
+        42
       ],
       "component_id": null
     },
@@ -272,10 +319,10 @@
       "emits_ppt_object": true,
       "render_owner": "reason-icon-corpus",
       "bbox_px": [
-        58,
-        651,
-        45,
-        45
+        54,
+        685,
+        62,
+        62
       ],
       "component_id": null
     },
@@ -288,10 +335,10 @@
       "emits_ppt_object": true,
       "render_owner": "reason-corpus",
       "bbox_px": [
-        142,
-        653,
-        540,
-        40
+        160,
+        693,
+        552,
+        42
       ],
       "component_id": null
     },
@@ -304,10 +351,10 @@
       "emits_ppt_object": true,
       "render_owner": "reason-icon-reviewer",
       "bbox_px": [
-        58,
-        721,
-        45,
-        45
+        54,
+        763,
+        62,
+        62
       ],
       "component_id": null
     },
@@ -320,10 +367,10 @@
       "emits_ppt_object": true,
       "render_owner": "reason-reviewer",
       "bbox_px": [
-        142,
-        723,
-        540,
-        40
+        160,
+        771,
+        552,
+        42
       ],
       "component_id": null
     },
@@ -337,7 +384,7 @@
       "render_owner": "sequencing-heading",
       "bbox_px": [
         760,
-        520,
+        496,
         1110,
         38
       ],
@@ -353,9 +400,9 @@
       "render_owner": "pilot-sequencing",
       "bbox_px": [
         760,
-        564,
+        540,
         1110,
-        240
+        254
       ],
       "component_id": null
     },
@@ -369,9 +416,9 @@
       "render_owner": "overlap-note",
       "bbox_px": [
         760,
-        807,
-        850,
-        30
+        800,
+        1100,
+        28
       ],
       "component_id": null
     },
@@ -448,10 +495,10 @@
       "asset_kind": "icon_slot",
       "selection_mode": "host_agent_selected_pair_before_generation",
       "target_bbox_source_px": [
-        58,
-        581,
-        45,
-        45
+        54,
+        607,
+        62,
+        62
       ],
       "preserve_aspect_ratio": true,
       "fit": "contain",
@@ -493,10 +540,10 @@
       "asset_kind": "icon_slot",
       "selection_mode": "host_agent_selected_pair_before_generation",
       "target_bbox_source_px": [
-        58,
-        651,
-        45,
-        45
+        54,
+        685,
+        62,
+        62
       ],
       "preserve_aspect_ratio": true,
       "fit": "contain",
@@ -538,10 +585,10 @@
       "asset_kind": "icon_slot",
       "selection_mode": "host_agent_selected_pair_before_generation",
       "target_bbox_source_px": [
-        58,
-        721,
-        45,
-        45
+        54,
+        763,
+        62,
+        62
       ],
       "preserve_aspect_ratio": true,
       "fit": "contain",

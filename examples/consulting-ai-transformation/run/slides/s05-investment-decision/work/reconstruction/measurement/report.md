@@ -1,8 +1,8 @@
 # Measurement report
 
-- Image: `/private/tmp/.slidepoise-rebuild-h51errnw/slides/s05-investment-decision/work/accepted-slide.png`
+- Image: `/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/slides/s05-investment-decision/work/accepted-slide.png`
 - Size: 1920 x 960
-- Entities measured: 33
+- Entities measured: 36
 - OpenCV: 5.0.0
 - Host-authored geometry adjustments: 0
 

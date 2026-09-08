@@ -1,8 +1,8 @@
 {
   "schema_version": "3.0.0",
   "source": {
-    "image": "/private/tmp/.slidepoise-rebuild-h51errnw/slides/s04-delivery-roadmap/work/accepted-slide.png",
-    "path": "/private/tmp/.slidepoise-rebuild-h51errnw/slides/s04-delivery-roadmap/work/accepted-slide.png",
+    "image": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/slides/s04-delivery-roadmap/work/accepted-slide.png",
+    "path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/slides/s04-delivery-roadmap/work/accepted-slide.png",
     "width_px": 1920,
     "height_px": 960
   },
@@ -1208,14 +1208,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "WEEKS 1–2\nApprove & baseline",
@@ -1225,14 +1225,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "WEEKS 3–4\nBuild & test",
@@ -1242,14 +1242,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "WEEKS 5–8\nPilot & learn",
@@ -1259,14 +1259,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "WEEKS 9–12\nProve & decide",
@@ -1276,33 +1276,46 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
             {
-              "text": "Data & access\nSource steward",
+              "text": [
+                {
+                  "text": "Data & access\n",
+                  "options": {
+                    "bold": true
+                  }
+                },
+                {
+                  "text": "Source steward",
+                  "options": {
+                    "bold": false
+                  }
+                }
+              ],
               "options": {
                 "fill": {
                   "color": "FFFFFF"
                 },
                 "color": "000000",
-                "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Approved corpus\nAccess register",
@@ -1312,14 +1325,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Source refresh\nNamed stewards",
@@ -1329,14 +1342,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Weekly access and\nfreshness checks",
@@ -1346,14 +1359,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Audit closeout\nRelease inventory",
@@ -1363,33 +1376,46 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
             {
-              "text": "Workflow & product\nProduct lead",
+              "text": [
+                {
+                  "text": "Workflow & product\n",
+                  "options": {
+                    "bold": true
+                  }
+                },
+                {
+                  "text": "Product lead",
+                  "options": {
+                    "bold": false
+                  }
+                }
+              ],
               "options": {
                 "fill": {
                   "color": "F5F7F8"
                 },
                 "color": "000000",
-                "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Task mapping\nBaseline time logs",
@@ -1399,14 +1425,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Grounded draft\nVisible citations",
@@ -1416,14 +1442,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "15-user pilot\nDefect fixes",
@@ -1433,14 +1459,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Release candidate\nRunbook",
@@ -1450,33 +1476,46 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
             {
-              "text": "Quality & controls\nExpert reviewer",
+              "text": [
+                {
+                  "text": "Quality & controls\n",
+                  "options": {
+                    "bold": true
+                  }
+                },
+                {
+                  "text": "Expert reviewer",
+                  "options": {
+                    "bold": false
+                  }
+                }
+              ],
               "options": {
                 "fill": {
                   "color": "FFFFFF"
                 },
                 "color": "000000",
-                "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Risk boundaries\nReview criteria",
@@ -1486,14 +1525,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Test pack\nRejection reasons",
@@ -1503,14 +1542,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "10 reviewed tasks\nError triage",
@@ -1520,14 +1559,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "20 completed tasks\nGate evidence",
@@ -1537,33 +1576,46 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
             {
-              "text": "Adoption & value\nPractice lead",
+              "text": [
+                {
+                  "text": "Adoption & value\n",
+                  "options": {
+                    "bold": true
+                  }
+                },
+                {
+                  "text": "Practice lead",
+                  "options": {
+                    "bold": false
+                  }
+                }
+              ],
               "options": {
                 "fill": {
                   "color": "F5F7F8"
                 },
                 "color": "000000",
-                "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Sponsor & users\nAgree tracking",
@@ -1573,14 +1625,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Training & support\nMeasurement plan",
@@ -1590,14 +1642,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Weekly usage\nFeedback sessions",
@@ -1607,14 +1659,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Benefit case\nScale recommendation",
@@ -1624,14 +1676,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ]
         ],
@@ -1652,7 +1704,7 @@
       },
       "style_hint": {
         "font_family": "Arial",
-        "font_size_px": 20,
+        "font_size_px": 24,
         "cell_margin_px": 8,
         "color": "#000000",
         "fill": "#FFFFFF",
@@ -2379,7 +2431,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 25,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -3050,7 +3102,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 23,
+        "target_font_size_px": 26,
         "alignment": "center",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -3450,16 +3502,16 @@
       "text_style_role": "body",
       "typography_group": "gate-details",
       "bbox_hint": [
-        70,
+        65,
         763,
-        300,
-        35
+        310,
+        54
       ],
       "search_bbox_hint": [
-        70,
+        65,
         763,
-        300,
-        35
+        310,
+        54
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -3468,7 +3520,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 19,
+        "target_font_size_px": 23,
         "alignment": "center",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -3478,32 +3530,32 @@
       "measurement": {
         "layout_bbox": {
           "px": [
-            70,
+            65,
             763,
-            300,
-            35
+            310,
+            54
           ]
         },
         "search_bbox": {
           "px": [
-            70,
+            65,
             763,
-            300,
-            35
+            310,
+            54
           ]
         },
         "visible_bbox": {
           "px": [
             150,
             763,
-            220,
-            35
+            225,
+            39
           ]
         },
         "color_evidence": {
-          "background": "#FDFDFD",
-          "foreground": "#A7A7A3",
-          "foreground_fraction": 0.1736
+          "background": "#FEFEFE",
+          "foreground": "#A9A8A3",
+          "foreground_fraction": 0.114
         },
         "contours_px": [
           [
@@ -3524,8 +3576,8 @@
               791
             ],
             [
-              244,
-              795
+              245,
+              796
             ],
             [
               254,
@@ -3560,12 +3612,8 @@
               794
             ],
             [
-              270,
-              794
-            ],
-            [
-              268,
-              790
+              269,
+              793
             ],
             [
               270,
@@ -3622,15 +3670,15 @@
               788
             ],
             [
-              182,
+              184,
               786
             ],
             [
-              185,
-              787
+              186,
+              801
             ],
             [
-              185,
+              188,
               797
             ],
             [
@@ -3656,10 +3704,6 @@
             [
               205,
               784
-            ],
-            [
-              205,
-              791
             ],
             [
               203,
@@ -3688,6 +3732,120 @@
           ],
           [
             [
+              277,
+              789
+            ],
+            [
+              280,
+              796
+            ],
+            [
+              287,
+              795
+            ],
+            [
+              287,
+              793
+            ],
+            [
+              281,
+              794
+            ],
+            [
+              280,
+              792
+            ],
+            [
+              289,
+              789
+            ],
+            [
+              296,
+              793
+            ],
+            [
+              289,
+              793
+            ],
+            [
+              291,
+              796
+            ],
+            [
+              296,
+              796
+            ],
+            [
+              298,
+              793
+            ],
+            [
+              301,
+              796
+            ],
+            [
+              308,
+              794
+            ],
+            [
+              308,
+              791
+            ],
+            [
+              301,
+              787
+            ],
+            [
+              308,
+              787
+            ],
+            [
+              306,
+              784
+            ],
+            [
+              299,
+              786
+            ],
+            [
+              299,
+              789
+            ],
+            [
+              305,
+              794
+            ],
+            [
+              291,
+              787
+            ],
+            [
+              297,
+              787
+            ],
+            [
+              295,
+              784
+            ],
+            [
+              291,
+              784
+            ],
+            [
+              288,
+              789
+            ],
+            [
+              285,
+              784
+            ],
+            [
+              280,
+              784
+            ]
+          ],
+          [
+            [
               151,
               783
             ],
@@ -3708,8 +3866,8 @@
               796
             ],
             [
-              165,
-              792
+              164,
+              793
             ],
             [
               168,
@@ -3802,6 +3960,38 @@
               796
             ],
             [
+              374,
+              795
+            ],
+            [
+              374,
+              792
+            ],
+            [
+              373,
+              794
+            ],
+            [
+              370,
+              794
+            ],
+            [
+              368,
+              790
+            ],
+            [
+              370,
+              786
+            ],
+            [
+              374,
+              787
+            ],
+            [
+              373,
+              784
+            ],
+            [
               369,
               784
             ],
@@ -3820,107 +4010,9 @@
           ],
           [
             [
-              289,
-              786
-            ],
-            [
-              289,
-              789
-            ],
-            [
-              296,
-              793
-            ],
-            [
-              289,
-              793
-            ],
-            [
-              291,
-              796
-            ],
-            [
-              296,
-              796
-            ],
-            [
-              298,
-              793
-            ],
-            [
-              301,
-              796
-            ],
-            [
-              306,
-              796
-            ],
-            [
-              308,
-              794
-            ],
-            [
-              308,
-              791
-            ],
-            [
-              301,
-              787
-            ],
-            [
-              308,
-              787
-            ],
-            [
-              306,
+              341,
               784
             ],
-            [
-              301,
-              784
-            ],
-            [
-              299,
-              786
-            ],
-            [
-              299,
-              789
-            ],
-            [
-              306,
-              793
-            ],
-            [
-              305,
-              794
-            ],
-            [
-              299,
-              793
-            ],
-            [
-              296,
-              789
-            ],
-            [
-              291,
-              787
-            ],
-            [
-              297,
-              787
-            ],
-            [
-              297,
-              785
-            ],
-            [
-              291,
-              784
-            ]
-          ],
-          [
             [
               332,
               785
@@ -3938,58 +4030,16 @@
               797
             ],
             [
-              341,
-              797
+              331,
+              799
+            ],
+            [
+              336,
+              801
             ],
             [
               341,
-              784
-            ]
-          ],
-          [
-            [
-              280,
-              784
-            ],
-            [
-              277,
-              789
-            ],
-            [
-              278,
-              794
-            ],
-            [
-              280,
-              796
-            ],
-            [
-              287,
-              795
-            ],
-            [
-              287,
-              793
-            ],
-            [
-              280,
-              793
-            ],
-            [
-              281,
-              791
-            ],
-            [
-              287,
-              791
-            ],
-            [
-              287,
-              786
-            ],
-            [
-              285,
-              784
+              798
             ]
           ],
           [
@@ -4029,6 +4079,60 @@
               351,
               784
             ]
+          ],
+          [
+            [
+              211,
+              784
+            ],
+            [
+              209,
+              786
+            ],
+            [
+              209,
+              789
+            ],
+            [
+              216,
+              793
+            ],
+            [
+              212,
+              794
+            ],
+            [
+              209,
+              792
+            ],
+            [
+              209,
+              795
+            ],
+            [
+              216,
+              796
+            ],
+            [
+              218,
+              794
+            ],
+            [
+              218,
+              791
+            ],
+            [
+              211,
+              787
+            ],
+            [
+              217,
+              787
+            ],
+            [
+              217,
+              785
+            ]
           ]
         ],
         "mask_source": "opencv",
@@ -4043,17 +4147,17 @@
             [
               150,
               779,
-              220,
-              19
+              225,
+              23
             ]
           ],
           "line_count_evidence": 2,
-          "median_ink_height_px": 10.5,
-          "estimated_font_size_pt": 5.25
+          "median_ink_height_px": 12.5,
+          "estimated_font_size_pt": 6.25
         },
         "text_color_evidence": {
-          "background": "#FDFDFD",
-          "foreground": "#A7A7A3"
+          "background": "#FEFEFE",
+          "foreground": "#A9A8A3"
         }
       },
       "reconstruction_route": "native_text"
@@ -4218,7 +4322,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 23,
+        "target_font_size_px": 26,
         "alignment": "center",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -4684,16 +4788,16 @@
       "text_style_role": "body",
       "typography_group": "gate-details",
       "bbox_hint": [
-        380,
+        375,
         763,
-        300,
-        35
+        310,
+        54
       ],
       "search_bbox_hint": [
-        380,
+        375,
         763,
-        300,
-        35
+        310,
+        54
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -4702,7 +4806,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 19,
+        "target_font_size_px": 23,
         "alignment": "center",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -4712,32 +4816,32 @@
       "measurement": {
         "layout_bbox": {
           "px": [
-            380,
+            375,
             763,
-            300,
-            35
+            310,
+            54
           ]
         },
         "search_bbox": {
           "px": [
-            380,
+            375,
             763,
-            300,
-            35
+            310,
+            54
           ]
         },
         "visible_bbox": {
           "px": [
-            458,
+            375,
             763,
-            194,
-            35
+            277,
+            39
           ]
         },
         "color_evidence": {
-          "background": "#FEFDFD",
-          "foreground": "#A9A9A4",
-          "foreground_fraction": 0.1648
+          "background": "#FEFEFE",
+          "foreground": "#ABAAA5",
+          "foreground_fraction": 0.1093
         },
         "contours_px": [
           [
@@ -4844,16 +4948,16 @@
           ],
           [
             [
-              529,
-              787
+              528,
+              785
             ],
             [
-              527,
-              784
-            ],
-            [
-              523,
+              524,
               783
+            ],
+            [
+              521,
+              784
             ],
             [
               519,
@@ -4877,6 +4981,14 @@
             ],
             [
               506,
+              800
+            ],
+            [
+              508,
+              801
+            ],
+            [
+              509,
               797
             ],
             [
@@ -5000,12 +5112,20 @@
           ],
           [
             [
-              572,
+              580,
               784
             ],
             [
               572,
-              797
+              784
+            ],
+            [
+              573,
+              801
+            ],
+            [
+              576,
+              796
             ],
             [
               580,
@@ -5018,24 +5138,24 @@
             [
               583,
               787
-            ],
-            [
-              580,
-              784
             ]
           ],
           [
             [
+              593,
+              784
+            ],
+            [
               585,
               784
             ],
             [
               585,
-              797
+              800
             ],
             [
               587,
-              797
+              800
             ],
             [
               588,
@@ -5052,10 +5172,6 @@
             [
               596,
               787
-            ],
-            [
-              593,
-              784
             ]
           ],
           [
@@ -5106,7 +5222,7 @@
               796
             ],
             [
-              465,
+              466,
               796
             ],
             [
@@ -5179,19 +5295,19 @@
               2
             ],
             [
-              458,
+              375,
               779,
-              194,
-              19
+              277,
+              23
             ]
           ],
           "line_count_evidence": 2,
-          "median_ink_height_px": 10.5,
-          "estimated_font_size_pt": 5.25
+          "median_ink_height_px": 12.5,
+          "estimated_font_size_pt": 6.25
         },
         "text_color_evidence": {
-          "background": "#FEFDFD",
-          "foreground": "#A9A9A4"
+          "background": "#FEFEFE",
+          "foreground": "#ABAAA5"
         }
       },
       "reconstruction_route": "native_text"
@@ -5354,7 +5470,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 23,
+        "target_font_size_px": 26,
         "alignment": "center",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -5836,16 +5952,16 @@
       "text_style_role": "body",
       "typography_group": "gate-details",
       "bbox_hint": [
-        690,
+        685,
         763,
-        300,
-        35
+        310,
+        54
       ],
       "search_bbox_hint": [
-        690,
+        685,
         763,
-        300,
-        35
+        310,
+        54
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -5854,7 +5970,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 19,
+        "target_font_size_px": 23,
         "alignment": "center",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -5864,18 +5980,18 @@
       "measurement": {
         "layout_bbox": {
           "px": [
-            690,
+            685,
             763,
-            300,
-            35
+            310,
+            54
           ]
         },
         "search_bbox": {
           "px": [
-            690,
+            685,
             763,
-            300,
-            35
+            310,
+            54
           ]
         },
         "visible_bbox": {
@@ -5887,9 +6003,9 @@
           ]
         },
         "color_evidence": {
-          "background": "#FEFDFD",
+          "background": "#FEFEFE",
           "foreground": "#ABA9A6",
-          "foreground_fraction": 0.156
+          "foreground_fraction": 0.0981
         },
         "contours_px": [
           [
@@ -6061,7 +6177,7 @@
             ],
             [
               877,
-              795
+              796
             ],
             [
               880,
@@ -6206,8 +6322,12 @@
           ],
           [
             [
-              809,
-              784
+              811,
+              783
+            ],
+            [
+              807,
+              786
             ],
             [
               807,
@@ -6238,12 +6358,16 @@
               796
             ],
             [
-              816,
-              795
+              814,
+              796
             ],
             [
-              816,
-              790
+              817,
+              792
+            ],
+            [
+              815,
+              789
             ],
             [
               810,
@@ -6406,7 +6530,7 @@
           "estimated_font_size_pt": 5.25
         },
         "text_color_evidence": {
-          "background": "#FEFDFD",
+          "background": "#FEFEFE",
           "foreground": "#ABA9A6"
         }
       },
@@ -6592,7 +6716,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 23,
+        "target_font_size_px": 26,
         "alignment": "center",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -7026,20 +7150,20 @@
       "display_label": "Practice lead + CFO decide",
       "kind": "text",
       "role": "body",
-      "text": "Practice lead + CFO decide",
+      "text": "Practice lead + CFO\ndecide",
       "text_style_role": "body",
       "typography_group": "gate-details",
       "bbox_hint": [
-        1000,
+        995,
         763,
-        300,
-        35
+        310,
+        54
       ],
       "search_bbox_hint": [
-        1000,
+        995,
         763,
-        300,
-        35
+        310,
+        54
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -7048,7 +7172,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 19,
+        "target_font_size_px": 23,
         "alignment": "center",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -7058,18 +7182,18 @@
       "measurement": {
         "layout_bbox": {
           "px": [
-            1000,
+            995,
             763,
-            300,
-            35
+            310,
+            54
           ]
         },
         "search_bbox": {
           "px": [
-            1000,
+            995,
             763,
-            300,
-            35
+            310,
+            54
           ]
         },
         "visible_bbox": {
@@ -7077,19 +7201,89 @@
             1004,
             763,
             270,
-            35
+            36
           ]
         },
         "color_evidence": {
-          "background": "#FDFDFD",
-          "foreground": "#9A9A99",
-          "foreground_fraction": 0.2159
+          "background": "#FEFEFE",
+          "foreground": "#A5A4A2",
+          "foreground_fraction": 0.1431
         },
         "contours_px": [
           [
             [
-              1189,
-              781
+              1095,
+              789
+            ],
+            [
+              1095,
+              794
+            ],
+            [
+              1098,
+              798
+            ],
+            [
+              1104,
+              797
+            ],
+            [
+              1105,
+              792
+            ],
+            [
+              1107,
+              793
+            ],
+            [
+              1107,
+              796
+            ],
+            [
+              1109,
+              798
+            ],
+            [
+              1117,
+              798
+            ],
+            [
+              1117,
+              788
+            ],
+            [
+              1114,
+              785
+            ],
+            [
+              1108,
+              787
+            ],
+            [
+              1108,
+              789
+            ],
+            [
+              1110,
+              790
+            ],
+            [
+              1107,
+              793
+            ],
+            [
+              1102,
+              785
+            ],
+            [
+              1097,
+              786
+            ]
+          ],
+          [
+            [
+              1191,
+              780
             ],
             [
               1186,
@@ -7100,12 +7294,12 @@
               792
             ],
             [
-              1189,
-              797
+              1190,
+              798
             ],
             [
-              1197,
-              797
+              1195,
+              798
             ],
             [
               1200,
@@ -7122,64 +7316,16 @@
           ],
           [
             [
-              1220,
-              790
+              1247,
+              781
             ],
             [
-              1220,
-              793
-            ],
-            [
-              1223,
-              797
-            ],
-            [
-              1229,
-              797
-            ],
-            [
-              1231,
-              792
-            ],
-            [
-              1235,
-              797
-            ],
-            [
-              1241,
-              797
+              1245,
+              781
             ],
             [
               1243,
-              795
-            ],
-            [
-              1241,
-              794
-            ],
-            [
-              1237,
-              796
-            ],
-            [
-              1234,
-              792
-            ],
-            [
-              1237,
-              787
-            ],
-            [
-              1242,
-              789
-            ],
-            [
-              1242,
-              787
-            ],
-            [
-              1239,
-              785
+              788
             ],
             [
               1236,
@@ -7196,6 +7342,62 @@
             [
               1224,
               785
+            ],
+            [
+              1220,
+              793
+            ],
+            [
+              1224,
+              798
+            ],
+            [
+              1228,
+              798
+            ],
+            [
+              1231,
+              792
+            ],
+            [
+              1233,
+              796
+            ],
+            [
+              1240,
+              798
+            ],
+            [
+              1243,
+              794
+            ],
+            [
+              1237,
+              796
+            ],
+            [
+              1234,
+              791
+            ],
+            [
+              1237,
+              787
+            ],
+            [
+              1241,
+              789
+            ],
+            [
+              1244,
+              787
+            ],
+            [
+              1245,
+              798
+            ],
+            [
+              1247,
+              798
             ]
           ],
           [
@@ -7205,7 +7407,7 @@
             ],
             [
               1017,
-              797
+              798
             ],
             [
               1020,
@@ -7237,7 +7439,7 @@
             ],
             [
               1034,
-              797
+              798
             ],
             [
               1033,
@@ -7270,12 +7472,46 @@
               794
             ],
             [
-              1121,
-              797
+              1122,
+              798
             ],
             [
               1130,
               797
+            ]
+          ],
+          [
+            [
+              1260,
+              781
+            ],
+            [
+              1258,
+              781
+            ],
+            [
+              1257,
+              786
+            ],
+            [
+              1253,
+              785
+            ],
+            [
+              1249,
+              790
+            ],
+            [
+              1250,
+              796
+            ],
+            [
+              1253,
+              798
+            ],
+            [
+              1260,
+              798
             ]
           ],
           [
@@ -7304,42 +7540,16 @@
               793
             ],
             [
-              1210,
-              797
+              1211,
+              798
+            ],
+            [
+              1218,
+              798
             ],
             [
               1219,
               796
-            ]
-          ],
-          [
-            [
-              1260,
-              781
-            ],
-            [
-              1258,
-              781
-            ],
-            [
-              1257,
-              786
-            ],
-            [
-              1251,
-              786
-            ],
-            [
-              1249,
-              790
-            ],
-            [
-              1251,
-              797
-            ],
-            [
-              1260,
-              797
             ]
           ],
           [
@@ -7353,11 +7563,11 @@
             ],
             [
               1004,
-              797
+              798
             ],
             [
               1006,
-              797
+              798
             ],
             [
               1007,
@@ -7375,36 +7585,6 @@
               1015,
               783
             ]
-          ],
-          [
-            [
-              1266,
-              785
-            ],
-            [
-              1262,
-              790
-            ],
-            [
-              1262,
-              794
-            ],
-            [
-              1264,
-              797
-            ],
-            [
-              1271,
-              797
-            ],
-            [
-              1273,
-              789
-            ],
-            [
-              1271,
-              786
-            ]
           ]
         ],
         "mask_source": "opencv",
@@ -7420,16 +7600,16 @@
               1004,
               780,
               270,
-              18
+              19
             ]
           ],
           "line_count_evidence": 2,
-          "median_ink_height_px": 10.0,
-          "estimated_font_size_pt": 5.0
+          "median_ink_height_px": 10.5,
+          "estimated_font_size_pt": 5.25
         },
         "text_color_evidence": {
-          "background": "#FDFDFD",
-          "foreground": "#9A9A99"
+          "background": "#FEFEFE",
+          "foreground": "#A5A4A2"
         }
       },
       "reconstruction_route": "native_text"
@@ -7822,6 +8002,7 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "structural_boundary": true,
       "measurement": {
         "layout_bbox": {
           "px": [
@@ -7884,7 +8065,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 25,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -8535,7 +8716,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 20,
+        "target_font_size_px": 23,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -9321,7 +9502,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 20,
+        "target_font_size_px": 23,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -10003,7 +10184,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 20,
+        "target_font_size_px": 23,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -12963,8 +13144,8 @@
       "bbox_hint": [
         43,
         617,
-        1260,
-        181
+        1262,
+        200
       ],
       "children": [
         "gates-heading",
@@ -13131,17 +13312,57 @@
       "The practice lead and CFO release scale funding only after the evidence gates are reviewed. Critical data exceptions stop expansion."
     ],
     "notes": [
-      "Each pilot engagement supplies one research task. Twenty tasks correspond to twenty engagements.",
-      "The matrix, milestone panels, small dependency arrows and decision band are native presentation geometry. No canonical asset is implied.",
-      "Georgia title 64px, Arial subtitle 32px, section/body 28px, table and gate evidence 24px. Gate dates use the body heading level and gate IDs use a separate 32px marker level.",
-      "Native font proportions preserve the named font families. Source condensed glyph shapes are not imitated through horizontal compression.",
-      "Header and footer are inherited from the resolved shared frame. All mapped source geometry belongs to the 1920 by 960 body canvas.",
-      "The shared decision text and 8px accent follow the deck's explicit visual roles, replacing the image model's oversized accent and label treatment.",
-      "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-      "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-      "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-      "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-      "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files."
+      "Keep each workstream bold and its owner regular within the same editable cell. Week headers and body cells use left alignment.",
+      "The four gate icons form three directed transitions. The source arrow continuing after G4 is omitted because the plan has no fifth gate.",
+      "The G4 description wraps before decide to remain clear of the dependency divider.",
+      "The semantic map owns current geometry and type roles. The inherited frame is added outside the generated content region. Canonical SVGs replace generated icon stand-ins."
+    ],
+    "content_obligations": [
+      {
+        "id": "delivery-plan",
+        "description": "The native matrix links each owner to concrete work in every phase.",
+        "entity_ids": [
+          "roadmap-matrix"
+        ]
+      },
+      {
+        "id": "evidence-gates",
+        "description": "Four canonical flags mark evidence-backed release decisions along one sequence.",
+        "entity_ids": [
+          "gates-heading",
+          "gate-icon-g1",
+          "gate-label-g1",
+          "gate-detail-g1",
+          "gate-icon-g2",
+          "gate-label-g2",
+          "gate-detail-g2",
+          "gate-icon-g3",
+          "gate-label-g3",
+          "gate-detail-g3",
+          "gate-icon-g4",
+          "gate-label-g4",
+          "gate-detail-g4",
+          "gate-flow-1",
+          "gate-flow-2",
+          "gate-flow-3"
+        ]
+      },
+      {
+        "id": "page-message",
+        "description": "The slide claim and its qualification",
+        "entity_ids": [
+          "headline",
+          "subtitle"
+        ]
+      },
+      {
+        "id": "decision",
+        "description": "Stop expansion while critical exceptions remain",
+        "entity_ids": [
+          "decision-label",
+          "decision-message"
+        ]
+      }
     ]
   }
 }

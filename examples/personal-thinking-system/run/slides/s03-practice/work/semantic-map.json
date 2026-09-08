@@ -467,7 +467,7 @@
         "font_family": "Andale Mono",
         "font_weight": "regular",
         "observed_foreground_color": "#242321",
-        "style_authority": "host_reviewed_user_authorized_deck_role",
+        "style_authority": "user_exact",
         "target_font_size_px": 21,
         "char_spacing_px": 0,
         "italic": false,

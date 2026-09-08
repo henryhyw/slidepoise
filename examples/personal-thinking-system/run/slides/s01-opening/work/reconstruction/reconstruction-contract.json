@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "source_scene_evidence": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s01-opening/work/accepted-slide.png",
+  "source_scene_evidence": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s01-opening/work/accepted-slide.png",
   "full_slide_dimensions_px": [
     1600,
     900
@@ -66,6 +66,7 @@
     },
     "slide_number": 1
   },
+  "content_obligations": [],
   "reconstruction_units": [
     {
       "id": "paper-field",

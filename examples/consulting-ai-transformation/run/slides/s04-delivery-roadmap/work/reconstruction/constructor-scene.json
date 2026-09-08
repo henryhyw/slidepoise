@@ -24,6 +24,8 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": true,
       "z": 1.0
     },
     {
@@ -42,6 +44,8 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 1.0
     },
     {
@@ -60,6 +64,8 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 1.0
     },
     {
@@ -78,6 +84,8 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 1.0
     },
     {
@@ -96,6 +104,8 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 4.0
     },
     {
@@ -114,6 +124,8 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 4.0
     },
     {
@@ -132,6 +144,8 @@
         "stroke_width_px": 0,
         "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 4.0
     },
     {
@@ -154,14 +168,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "WEEKS 1–2\nApprove & baseline",
@@ -171,14 +185,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "WEEKS 3–4\nBuild & test",
@@ -188,14 +202,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "WEEKS 5–8\nPilot & learn",
@@ -205,14 +219,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "WEEKS 9–12\nProve & decide",
@@ -222,33 +236,46 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ],
           [
             {
-              "text": "Data & access\nSource steward",
+              "text": [
+                {
+                  "text": "Data & access\n",
+                  "options": {
+                    "bold": true
+                  }
+                },
+                {
+                  "text": "Source steward",
+                  "options": {
+                    "bold": false
+                  }
+                }
+              ],
               "options": {
                 "fill": {
                   "color": "FFFFFF"
                 },
                 "color": "000000",
-                "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Approved corpus\nAccess register",
@@ -258,14 +285,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Source refresh\nNamed stewards",
@@ -275,14 +302,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Weekly access and\nfreshness checks",
@@ -292,14 +319,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Audit closeout\nRelease inventory",
@@ -309,33 +336,46 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ],
           [
             {
-              "text": "Workflow & product\nProduct lead",
+              "text": [
+                {
+                  "text": "Workflow & product\n",
+                  "options": {
+                    "bold": true
+                  }
+                },
+                {
+                  "text": "Product lead",
+                  "options": {
+                    "bold": false
+                  }
+                }
+              ],
               "options": {
                 "fill": {
                   "color": "F5F7F8"
                 },
                 "color": "000000",
-                "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Task mapping\nBaseline time logs",
@@ -345,14 +385,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Grounded draft\nVisible citations",
@@ -362,14 +402,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "15-user pilot\nDefect fixes",
@@ -379,14 +419,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Release candidate\nRunbook",
@@ -396,33 +436,46 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ],
           [
             {
-              "text": "Quality & controls\nExpert reviewer",
+              "text": [
+                {
+                  "text": "Quality & controls\n",
+                  "options": {
+                    "bold": true
+                  }
+                },
+                {
+                  "text": "Expert reviewer",
+                  "options": {
+                    "bold": false
+                  }
+                }
+              ],
               "options": {
                 "fill": {
                   "color": "FFFFFF"
                 },
                 "color": "000000",
-                "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Risk boundaries\nReview criteria",
@@ -432,14 +485,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Test pack\nRejection reasons",
@@ -449,14 +502,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "10 reviewed tasks\nError triage",
@@ -466,14 +519,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "20 completed tasks\nGate evidence",
@@ -483,33 +536,46 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ],
           [
             {
-              "text": "Adoption & value\nPractice lead",
+              "text": [
+                {
+                  "text": "Adoption & value\n",
+                  "options": {
+                    "bold": true
+                  }
+                },
+                {
+                  "text": "Practice lead",
+                  "options": {
+                    "bold": false
+                  }
+                }
+              ],
               "options": {
                 "fill": {
                   "color": "F5F7F8"
                 },
                 "color": "000000",
-                "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "bold": false,
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Sponsor & users\nAgree tracking",
@@ -519,14 +585,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Training & support\nMeasurement plan",
@@ -536,14 +602,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Weekly usage\nFeedback sessions",
@@ -553,14 +619,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             },
             {
               "text": "Benefit case\nScale recommendation",
@@ -570,14 +636,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5.0,
+                12.0,
+                5.0,
+                12.0
+              ]
             }
           ]
         ],
@@ -598,7 +664,7 @@
       },
       "style": {
         "font_family": "Arial",
-        "font_size_px": 20,
+        "font_size_px": 24,
         "cell_margin_px": 8,
         "color": "#000000",
         "fill": "#FFFFFF",
@@ -974,6 +1040,7 @@
       "bullet_style": null,
       "semantic_role": "slide_title",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1013,6 +1080,7 @@
       "bullet_style": null,
       "semantic_role": "subtitle",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1027,8 +1095,8 @@
       "text": "EVIDENCE GATES",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 25.0,
-        "font_size_pt": 12.5,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1052,6 +1120,7 @@
       "bullet_style": null,
       "semantic_role": "heading_large",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1066,8 +1135,8 @@
       "text": "G1 · Week 2",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 23.0,
-        "font_size_pt": 11.5,
+        "font_size_px": 26.0,
+        "font_size_pt": 13.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1091,22 +1160,23 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
       "id": "gate-detail-g1",
       "kind": "textbox",
       "bbox_px": [
-        70,
+        65,
         827,
-        300,
-        35
+        310,
+        54
       ],
       "text": "Corpus + access signed",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 19.0,
-        "font_size_pt": 9.5,
+        "font_size_px": 23.0,
+        "font_size_pt": 11.5,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1130,6 +1200,7 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1144,8 +1215,8 @@
       "text": "G2 · Week 4",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 23.0,
-        "font_size_pt": 11.5,
+        "font_size_px": 26.0,
+        "font_size_pt": 13.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1169,22 +1240,23 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
       "id": "gate-detail-g2",
       "kind": "textbox",
       "bbox_px": [
-        380,
+        375,
         827,
-        300,
-        35
+        310,
+        54
       ],
       "text": "Test pack approved",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 19.0,
-        "font_size_pt": 9.5,
+        "font_size_px": 23.0,
+        "font_size_pt": 11.5,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1208,6 +1280,7 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1222,8 +1295,8 @@
       "text": "G3 · Week 8",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 23.0,
-        "font_size_pt": 11.5,
+        "font_size_px": 26.0,
+        "font_size_pt": 13.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1247,22 +1320,23 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
       "id": "gate-detail-g3",
       "kind": "textbox",
       "bbox_px": [
-        690,
+        685,
         827,
-        300,
-        35
+        310,
+        54
       ],
       "text": "10 tasks reviewed",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 19.0,
-        "font_size_pt": 9.5,
+        "font_size_px": 23.0,
+        "font_size_pt": 11.5,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1286,6 +1360,7 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1300,8 +1375,8 @@
       "text": "G4 · Week 12",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 23.0,
-        "font_size_pt": 11.5,
+        "font_size_px": 26.0,
+        "font_size_pt": 13.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1325,22 +1400,23 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
       "id": "gate-detail-g4",
       "kind": "textbox",
       "bbox_px": [
-        1000,
+        995,
         827,
-        300,
-        35
+        310,
+        54
       ],
-      "text": "Practice lead + CFO decide",
+      "text": "Practice lead + CFO\ndecide",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 19.0,
-        "font_size_pt": 9.5,
+        "font_size_px": 23.0,
+        "font_size_pt": 11.5,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1359,11 +1435,13 @@
         "outer_geometry_is_fixed": true
       },
       "paragraphs": [
-        "Practice lead + CFO decide"
+        "Practice lead + CFO",
+        "decide"
       ],
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1378,8 +1456,8 @@
       "text": "DEPENDENCIES",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 25.0,
-        "font_size_pt": 12.5,
+        "font_size_px": 28.0,
+        "font_size_pt": 14.0,
         "font_weight": "bold",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1403,6 +1481,7 @@
       "bullet_style": null,
       "semantic_role": "heading_large",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1417,8 +1496,8 @@
       "text": "Permissions before retrieval tests",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 20.0,
-        "font_size_pt": 10.0,
+        "font_size_px": 23.0,
+        "font_size_pt": 11.5,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1442,6 +1521,7 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1456,8 +1536,8 @@
       "text": "Approved test pack before pilot",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 20.0,
-        "font_size_pt": 10.0,
+        "font_size_px": 23.0,
+        "font_size_pt": 11.5,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1481,6 +1561,7 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1495,8 +1576,8 @@
       "text": "Quality evidence before benefit case",
       "style": {
         "font_family": "Arial",
-        "font_size_px": 20.0,
-        "font_size_pt": 10.0,
+        "font_size_px": 23.0,
+        "font_size_pt": 11.5,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -1520,6 +1601,7 @@
       "bullet_style": null,
       "semantic_role": "body",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1559,6 +1641,7 @@
       "bullet_style": null,
       "semantic_role": "call_to_action",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1598,6 +1681,7 @@
       "bullet_style": null,
       "semantic_role": "call_to_action",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 20.0
     },
     {
@@ -1730,7 +1814,7 @@
     "slide_number": 1
   },
   "sources": [
-    "Generated target visual: /private/tmp/.slidepoise-rebuild-h51errnw/slides/s04-delivery-roadmap/work/accepted-slide.png",
+    "Generated target visual: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/slides/s04-delivery-roadmap/work/accepted-slide.png",
     "Canonical asset remix-flag-line: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/flag/remix-flag-line.svg"
   ],
   "speaker_notes": [
@@ -1810,13 +1894,13 @@
             "gates-heading",
             "dependencies-heading"
           ],
-          "shared_font_size_pt": 12.5,
-          "shared_font_size_px": 25.0,
-          "agent_target_font_size_px": 25.0,
+          "shared_font_size_pt": 14.0,
+          "shared_font_size_px": 28.0,
+          "agent_target_font_size_px": 28.0,
           "explicit_peer_group": true,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 12.5,
-          "agent_target_unquantized_pt": 12.5,
+          "agent_target_ceiling_pt": 14.0,
+          "agent_target_unquantized_pt": 14.0,
           "quantization_reduction_pt": 0,
           "reduced_from_agent_target": false,
           "reduced_for_fit": false,
@@ -1838,13 +1922,13 @@
             "gate-label-g3",
             "gate-label-g4"
           ],
-          "shared_font_size_pt": 11.5,
-          "shared_font_size_px": 23.0,
-          "agent_target_font_size_px": 23.0,
+          "shared_font_size_pt": 13.0,
+          "shared_font_size_px": 26.0,
+          "agent_target_font_size_px": 26.0,
           "explicit_peer_group": true,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 11.5,
-          "agent_target_unquantized_pt": 11.5,
+          "agent_target_ceiling_pt": 13.0,
+          "agent_target_unquantized_pt": 13.0,
           "quantization_reduction_pt": 0,
           "reduced_from_agent_target": false,
           "reduced_for_fit": false,
@@ -1868,13 +1952,13 @@
             "gate-detail-g3",
             "gate-detail-g4"
           ],
-          "shared_font_size_pt": 9.5,
-          "shared_font_size_px": 19.0,
-          "agent_target_font_size_px": 19.0,
+          "shared_font_size_pt": 11.5,
+          "shared_font_size_px": 23.0,
+          "agent_target_font_size_px": 23.0,
           "explicit_peer_group": true,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 9.5,
-          "agent_target_unquantized_pt": 9.5,
+          "agent_target_ceiling_pt": 11.5,
+          "agent_target_unquantized_pt": 11.5,
           "quantization_reduction_pt": 0,
           "reduced_from_agent_target": false,
           "reduced_for_fit": false,
@@ -1897,13 +1981,13 @@
             "dependency-text-2",
             "dependency-text-3"
           ],
-          "shared_font_size_pt": 10.0,
-          "shared_font_size_px": 20.0,
-          "agent_target_font_size_px": 20.0,
+          "shared_font_size_pt": 11.5,
+          "shared_font_size_px": 23.0,
+          "agent_target_font_size_px": 23.0,
           "explicit_peer_group": true,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 10.0,
-          "agent_target_unquantized_pt": 10.0,
+          "agent_target_ceiling_pt": 11.5,
+          "agent_target_unquantized_pt": 11.5,
           "quantization_reduction_pt": 0,
           "reduced_from_agent_target": false,
           "reduced_for_fit": false,
@@ -1978,8 +2062,8 @@
       "note": "No quality or reconstruction verdict is produced. Visual reasoning remains external."
     },
     "input_bindings": {
-      "measured_scene_sha256": "1f7624f07fd78263c5cd817293c1fe452927d56cf15cb0524d8df6ae4fdbeece",
-      "reconstruction_contract_sha256": "ee125d386bf3348bb31ac0c06227b78257401e48803b143b15c136a5a88a842f",
+      "measured_scene_sha256": "5d8c708595664b0fe50d39d58a45d3cd76392ac3bff9db009278d47413f53e08",
+      "reconstruction_contract_sha256": "a6f4512ae21747dfd3ad56c662f7dd31c30e4456b8694c568d574f116299dd54",
       "resolved_design_sha256": "ee255d93bab18eea1c3d44524732402c57d708a2a01e8270dec54f3fa8c2c88f"
     }
   }

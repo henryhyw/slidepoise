@@ -72,7 +72,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        12.5
+        14.0
       ],
       "has_visible_text": true,
       "body_properties": {
@@ -102,7 +102,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        11.5
+        13.0
       ],
       "has_visible_text": true,
       "body_properties": {
@@ -132,7 +132,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        9.5
+        11.5
       ],
       "has_visible_text": true,
       "body_properties": {
@@ -162,7 +162,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        11.5
+        13.0
       ],
       "has_visible_text": true,
       "body_properties": {
@@ -192,7 +192,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        9.5
+        11.5
       ],
       "has_visible_text": true,
       "body_properties": {
@@ -222,7 +222,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        11.5
+        13.0
       ],
       "has_visible_text": true,
       "body_properties": {
@@ -252,7 +252,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        9.5
+        11.5
       ],
       "has_visible_text": true,
       "body_properties": {
@@ -282,7 +282,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        11.5
+        13.0
       ],
       "has_visible_text": true,
       "body_properties": {
@@ -306,13 +306,13 @@
     },
     {
       "name": "gate-detail-g4",
-      "paragraph_count": 1,
-      "run_count": 1,
+      "paragraph_count": 2,
+      "run_count": 2,
       "fonts": [
         "Arial"
       ],
       "font_sizes_pt": [
-        9.5
+        11.5
       ],
       "has_visible_text": true,
       "body_properties": {
@@ -342,7 +342,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        12.5
+        14.0
       ],
       "has_visible_text": true,
       "body_properties": {
@@ -372,7 +372,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        11.5
       ],
       "has_visible_text": true,
       "body_properties": {
@@ -402,7 +402,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        11.5
       ],
       "has_visible_text": true,
       "body_properties": {
@@ -432,7 +432,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        11.5
       ],
       "has_visible_text": true,
       "body_properties": {
@@ -546,7 +546,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -557,10 +557,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -574,7 +574,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -585,10 +585,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -602,7 +602,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -613,10 +613,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -630,7 +630,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -641,10 +641,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -658,7 +658,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -669,10 +669,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -680,13 +680,13 @@
     },
     {
       "name": "roadmap-matrix.R2C1",
-      "paragraph_count": 2,
+      "paragraph_count": 1,
       "run_count": 2,
       "fonts": [
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -697,10 +697,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -714,7 +714,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -725,10 +725,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -742,7 +742,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -753,10 +753,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -770,7 +770,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -781,10 +781,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -798,7 +798,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -809,10 +809,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -820,13 +820,13 @@
     },
     {
       "name": "roadmap-matrix.R3C1",
-      "paragraph_count": 2,
+      "paragraph_count": 1,
       "run_count": 2,
       "fonts": [
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -837,10 +837,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -854,7 +854,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -865,10 +865,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -882,7 +882,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -893,10 +893,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -910,7 +910,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -921,10 +921,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -938,7 +938,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -949,10 +949,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -960,13 +960,13 @@
     },
     {
       "name": "roadmap-matrix.R4C1",
-      "paragraph_count": 2,
+      "paragraph_count": 1,
       "run_count": 2,
       "fonts": [
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -977,10 +977,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -994,7 +994,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -1005,10 +1005,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -1022,7 +1022,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -1033,10 +1033,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -1050,7 +1050,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -1061,10 +1061,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -1078,7 +1078,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -1089,10 +1089,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -1100,13 +1100,13 @@
     },
     {
       "name": "roadmap-matrix.R5C1",
-      "paragraph_count": 2,
+      "paragraph_count": 1,
       "run_count": 2,
       "fonts": [
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -1117,10 +1117,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -1134,7 +1134,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -1145,10 +1145,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -1162,7 +1162,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -1173,10 +1173,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -1190,7 +1190,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -1201,10 +1201,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",
@@ -1218,7 +1218,7 @@
         "Arial"
       ],
       "font_sizes_pt": [
-        10.0
+        12.0
       ],
       "has_visible_text": true,
       "body_properties": {},
@@ -1229,10 +1229,10 @@
       "all_runs_have_size": true,
       "invalid_font_sizes": [],
       "cell_properties": {
-        "marL": "101600",
-        "marR": "101600",
-        "marT": "38100",
-        "marB": "38100",
+        "marL": "76200",
+        "marR": "76200",
+        "marT": "31750",
+        "marB": "31750",
         "anchor": "ctr"
       },
       "slide_part": "ppt/slides/slide1.xml",

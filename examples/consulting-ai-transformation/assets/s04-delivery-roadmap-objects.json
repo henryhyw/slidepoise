@@ -10,11 +10,11 @@
   "source": {
     "pptx": {
       "path": "deliverables/presentation.pptx",
-      "sha256": "638f70392a6eea2919d908ab1a558bd4f26221661df02ee0cdc5a1b795769c71"
+      "sha256": "13497442c7d6afb9b6d1cf83fa8606604f7ef07aaec2ab92ae5bc589f351c4cf"
     },
     "render": {
       "path": "assets/s04-delivery-roadmap-render.png",
-      "sha256": "79dda343bc4f424c182da8989b1ca75e8bc7741a20724008a71b7a5c0c174e12"
+      "sha256": "b07eb57728452e7b9b49865f2c5611d6389083db11978aab8ecf60ce9c458b4b"
     }
   },
   "objects": [
@@ -498,7 +498,7 @@
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 12.5,
+          "size_pt": 14.0,
           "color": "#000000",
           "bold": true
         }
@@ -533,7 +533,7 @@
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 11.5,
+          "size_pt": 13.0,
           "color": "#FD5108",
           "bold": true
         }
@@ -547,20 +547,20 @@
       "kind": "text",
       "polygon": [
         [
-          0.036458333,
+          0.033854167,
           0.765740741
         ],
         [
-          0.192708333,
+          0.1953125,
           0.765740741
         ],
         [
-          0.192708333,
-          0.798148148
+          0.1953125,
+          0.815740741
         ],
         [
-          0.036458333,
-          0.798148148
+          0.033854167,
+          0.815740741
         ]
       ],
       "stack": 15,
@@ -568,7 +568,7 @@
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 9.5,
+          "size_pt": 11.5,
           "color": "#000000"
         }
       ]
@@ -602,7 +602,7 @@
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 11.5,
+          "size_pt": 13.0,
           "color": "#FD5108",
           "bold": true
         }
@@ -616,20 +616,20 @@
       "kind": "text",
       "polygon": [
         [
-          0.197916667,
+          0.1953125,
           0.765740741
         ],
         [
-          0.354166667,
+          0.356770833,
           0.765740741
         ],
         [
-          0.354166667,
-          0.798148148
+          0.356770833,
+          0.815740741
         ],
         [
-          0.197916667,
-          0.798148148
+          0.1953125,
+          0.815740741
         ]
       ],
       "stack": 17,
@@ -637,7 +637,7 @@
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 9.5,
+          "size_pt": 11.5,
           "color": "#000000"
         }
       ]
@@ -671,7 +671,7 @@
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 11.5,
+          "size_pt": 13.0,
           "color": "#FD5108",
           "bold": true
         }
@@ -685,20 +685,20 @@
       "kind": "text",
       "polygon": [
         [
-          0.359375,
+          0.356770833,
           0.765740741
         ],
         [
-          0.515625,
+          0.518229167,
           0.765740741
         ],
         [
-          0.515625,
-          0.798148148
+          0.518229167,
+          0.815740741
         ],
         [
-          0.359375,
-          0.798148148
+          0.356770833,
+          0.815740741
         ]
       ],
       "stack": 19,
@@ -706,7 +706,7 @@
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 9.5,
+          "size_pt": 11.5,
           "color": "#000000"
         }
       ]
@@ -740,7 +740,7 @@
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 11.5,
+          "size_pt": 13.0,
           "color": "#FD5108",
           "bold": true
         }
@@ -754,28 +754,28 @@
       "kind": "text",
       "polygon": [
         [
-          0.520833333,
+          0.518229167,
           0.765740741
         ],
         [
-          0.677083333,
+          0.6796875,
           0.765740741
         ],
         [
-          0.677083333,
-          0.798148148
+          0.6796875,
+          0.815740741
         ],
         [
-          0.520833333,
-          0.798148148
+          0.518229167,
+          0.815740741
         ]
       ],
       "stack": 21,
-      "text": "Practice lead + CFO decide",
+      "text": "Practice lead + CFO\ndecide",
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 9.5,
+          "size_pt": 11.5,
           "color": "#000000"
         }
       ]
@@ -809,7 +809,7 @@
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 12.5,
+          "size_pt": 14.0,
           "color": "#000000",
           "bold": true
         }
@@ -844,7 +844,7 @@
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 10.0,
+          "size_pt": 11.5,
           "color": "#000000"
         }
       ]
@@ -878,7 +878,7 @@
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 10.0,
+          "size_pt": 11.5,
           "color": "#000000"
         }
       ]
@@ -912,7 +912,7 @@
       "typography": [
         {
           "family": "Arial",
-          "size_pt": 10.0,
+          "size_pt": 11.5,
           "color": "#000000"
         }
       ]

@@ -104,7 +104,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -153,10 +153,10 @@
       "kind": "chart",
       "role": "quantified_opportunity_comparison",
       "bbox_hint": [
-        40,
-        225,
-        660,
-        290
+        37,
+        229,
+        670,
+        322
       ],
       "geometry_policy": "agent_logical",
       "z": 4,
@@ -194,9 +194,16 @@
         "data_label_position": "outEnd",
         "data_label_format_code": "#,##0",
         "data_font_family": "Arial",
-        "data_font_size_px": 24,
+        "data_font_size_px": 28,
         "data_label_color": "#000000",
-        "data_label_wrap": false
+        "data_label_wrap": false,
+        "data_label_colors": [
+          "FD5108",
+          "000000",
+          "000000"
+        ],
+        "data_font_bold": true,
+        "value_axis_format_code": "#,##0"
       },
       "style_hint": {
         "stroke": "none"
@@ -229,7 +236,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -262,14 +269,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Baseline h",
@@ -279,14 +286,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Adoption",
@@ -296,14 +303,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Time saved",
@@ -313,14 +320,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
@@ -332,14 +339,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "12",
@@ -349,14 +356,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "60%",
@@ -366,14 +373,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "30%",
@@ -383,14 +390,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
@@ -402,14 +409,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "8",
@@ -419,14 +426,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "50%",
@@ -436,14 +443,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "40%",
@@ -453,14 +460,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
@@ -472,14 +479,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "5",
@@ -489,14 +496,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "60%",
@@ -506,14 +513,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "40%",
@@ -523,14 +530,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ]
         ],
@@ -549,7 +556,7 @@
       },
       "style_hint": {
         "font_family": "Arial",
-        "font_size_px": 22,
+        "font_size_px": 24,
         "cell_margin_px": 8,
         "color": "#000000",
         "fill": "#FFFFFF",
@@ -625,14 +632,14 @@
       "typography_group": "section",
       "bbox_hint": [
         37,
-        532,
-        680,
+        576,
+        700,
         38
       ],
       "search_bbox_hint": [
         37,
-        532,
-        680,
+        576,
+        700,
         38
       ],
       "geometry_policy": "agent_logical",
@@ -642,7 +649,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -657,16 +664,16 @@
       "role": "supporting_visual",
       "upstream_asset_id": "remix-file-search-line",
       "bbox_hint": [
-        58,
-        581,
-        45,
-        45
+        54,
+        607,
+        62,
+        62
       ],
       "slot_bbox_hint": [
-        58,
-        581,
-        45,
-        45
+        54,
+        607,
+        62,
+        62
       ],
       "geometry_policy": "agent_logical",
       "slot_surface": {
@@ -705,16 +712,16 @@
       "text_style_role": "body",
       "typography_group": "reason",
       "bbox_hint": [
-        142,
-        583,
-        540,
-        40
+        160,
+        615,
+        552,
+        42
       ],
       "search_bbox_hint": [
-        142,
-        583,
-        540,
-        40
+        160,
+        615,
+        552,
+        42
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -723,7 +730,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 24,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -738,16 +745,16 @@
       "role": "supporting_visual",
       "upstream_asset_id": "remix-database-2-line",
       "bbox_hint": [
-        58,
-        651,
-        45,
-        45
+        54,
+        685,
+        62,
+        62
       ],
       "slot_bbox_hint": [
-        58,
-        651,
-        45,
-        45
+        54,
+        685,
+        62,
+        62
       ],
       "geometry_policy": "agent_logical",
       "slot_surface": {
@@ -786,16 +793,16 @@
       "text_style_role": "body",
       "typography_group": "reason",
       "bbox_hint": [
-        142,
-        653,
-        540,
-        40
+        160,
+        693,
+        552,
+        42
       ],
       "search_bbox_hint": [
-        142,
-        653,
-        540,
-        40
+        160,
+        693,
+        552,
+        42
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -804,7 +811,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 24,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -819,16 +826,16 @@
       "role": "supporting_visual",
       "upstream_asset_id": "remix-user-star-line",
       "bbox_hint": [
-        58,
-        721,
-        45,
-        45
+        54,
+        763,
+        62,
+        62
       ],
       "slot_bbox_hint": [
-        58,
-        721,
-        45,
-        45
+        54,
+        763,
+        62,
+        62
       ],
       "geometry_policy": "agent_logical",
       "slot_surface": {
@@ -867,16 +874,16 @@
       "text_style_role": "body",
       "typography_group": "reason",
       "bbox_hint": [
-        142,
-        723,
-        540,
-        40
+        160,
+        771,
+        552,
+        42
       ],
       "search_bbox_hint": [
-        142,
-        723,
-        540,
-        40
+        160,
+        771,
+        552,
+        42
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -885,7 +892,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 24,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -903,13 +910,13 @@
       "typography_group": "section",
       "bbox_hint": [
         760,
-        520,
+        496,
         1110,
         38
       ],
       "search_bbox_hint": [
         760,
-        520,
+        496,
         1110,
         38
       ],
@@ -920,7 +927,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "bold",
-        "target_font_size_px": 27,
+        "target_font_size_px": 28,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -935,9 +942,9 @@
       "role": "structured_evidence",
       "bbox_hint": [
         760,
-        564,
+        540,
         1110,
-        240
+        254
       ],
       "geometry_policy": "agent_logical",
       "z": 5,
@@ -953,14 +960,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Control readiness",
@@ -970,14 +977,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Owner",
@@ -987,14 +994,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Sequence",
@@ -1004,14 +1011,14 @@
                 },
                 "color": "FFFFFF",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
@@ -1019,69 +1026,69 @@
               "text": "Research synthesis",
               "options": {
                 "fill": {
-                  "color": "FFFFFF"
+                  "color": "FFF5ED"
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Approved corpus\nExplicit review",
               "options": {
                 "fill": {
-                  "color": "FFFFFF"
+                  "color": "FFF5ED"
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Practice lead",
               "options": {
                 "fill": {
-                  "color": "FFFFFF"
+                  "color": "FFF5ED"
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "START",
               "options": {
                 "fill": {
-                  "color": "FFFFFF"
+                  "color": "FFF5ED"
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
@@ -1093,14 +1100,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Claims and commitments\nneed controls",
@@ -1110,14 +1117,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "BD lead",
@@ -1127,14 +1134,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "NEXT",
@@ -1144,14 +1151,14 @@
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ],
           [
@@ -1163,14 +1170,14 @@
                 },
                 "color": "000000",
                 "bold": true,
-                "align": "left",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Permissions need\ncleanup",
@@ -1180,14 +1187,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "Knowledge lead",
@@ -1197,14 +1204,14 @@
                 },
                 "color": "000000",
                 "bold": false,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "left"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             },
             {
               "text": "LATER",
@@ -1214,14 +1221,14 @@
                 },
                 "color": "FD5108",
                 "bold": true,
-                "align": "center",
-                "margin": [
-                  3,
-                  8,
-                  3,
-                  8
-                ]
-              }
+                "align": "center"
+              },
+              "margin_px": [
+                5,
+                12,
+                5,
+                12
+              ]
             }
           ]
         ],
@@ -1233,14 +1240,14 @@
         ],
         "row_heights_px": [
           50,
-          63,
-          63,
-          64
+          68,
+          68,
+          68
         ]
       },
       "style_hint": {
         "font_family": "Arial",
-        "font_size_px": 20,
+        "font_size_px": 24,
         "cell_margin_px": 8,
         "color": "#000000",
         "fill": "#FFFFFF",
@@ -1259,15 +1266,15 @@
       "typography_group": "note",
       "bbox_hint": [
         760,
-        807,
-        850,
-        30
+        800,
+        1100,
+        28
       ],
       "search_bbox_hint": [
         760,
-        807,
-        850,
-        30
+        800,
+        1100,
+        28
       ],
       "geometry_policy": "agent_logical",
       "z": 20,
@@ -1276,7 +1283,7 @@
       "style_hint": {
         "font_family": "Arial",
         "font_weight": "regular",
-        "target_font_size_px": 20,
+        "target_font_size_px": 22,
         "alignment": "left",
         "vertical_alignment": "top",
         "line_spacing": 1.0,
@@ -1409,7 +1416,7 @@
         37,
         158,
         1833,
-        334
+        393
       ],
       "children": [
         "capacity-heading",
@@ -1428,9 +1435,9 @@
       "semantic_class": "decision comparison",
       "bbox_hint": [
         37,
-        520,
+        496,
         1833,
-        317
+        332
       ],
       "children": [
         "reason-heading",

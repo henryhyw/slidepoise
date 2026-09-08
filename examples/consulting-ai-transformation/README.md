@@ -6,7 +6,7 @@ All figures are illustrative planning assumptions. Capacity value is not cash sa
 
 ## The presentation
 
-The delivered PowerPoint contains 150 editable objects across five slides. The deck includes seven native tables, one workbook-linked chart, six directed connectors and 17 canonical Remix Icon SVGs. No slide is flattened into a background image.
+The PowerPoint contains native tables, a workbook-linked chart, text, directed paths and canonical Remix Icon SVGs. No slide is flattened into a background image.
 
 The full slide is 1920 by 1080. Image generation produces only the 1920 by 960 content region, beginning 64 pixels below the top of the full slide. A shared native layout supplies the company header and footer. The page number is a native slide field. The Agent reviewed all five actual renders together and calibrated recurring title, subtitle and decision treatments.
 
@@ -18,8 +18,6 @@ The sample also exercises the complete visual-asset path. The Agent selected lin
 
 `run/` retains the actual generated candidates, compiled creative requests, selected body targets, asset decisions, semantic maps, OpenCV overlays, contracts, scenes and corrections. `run/work/deck-review.json` records the assembled review. `run/work/native-edit-proof/` demonstrates editing the existing PowerPoint title and changing the research chart from 1,944 to 1,620 hours in a copy. The official scenario remains unchanged.
 
-`run/bundle/deck-scenes.json` is the portable scene manifest. `examples/rebuild.py` repeats measurement and native construction from the frozen accepted targets and authored maps. This reconstruction was re-run in an isolated home, and all five actual previews were pixel-identical at the same 160 DPI in the recorded macOS LibreOffice environment. Image generation remains a creative step.
+`run/bundle/deck-scenes.json` is the portable scene manifest. `examples/rebuild.py` repeats measurement and native construction from the frozen accepted targets and authored maps. The current reconstruction was repeated in an isolated home. `examples/verify_rebuild.py` checks the frozen input bindings and actual rendered pages against the retained release. Its results are in `run/work/rebuild-verification.json`. Image generation remains a creative step.
 
-The source archive retains both the portable scenes and complete authoring evidence. The project page presents a single PowerPoint download action. PDF and source files remain available in the repository for maintainers.
-
-The previous Consulting revision is preserved in the development workspace at `output/showcase-revisions/consulting-v2-at-replacement`.
+The source archive retains the portable scenes and active reconstruction inputs. Earlier iterations remain in the repository history and retained run folders. The project page presents a single PowerPoint download action. PDF and source files remain available in the repository for maintainers.

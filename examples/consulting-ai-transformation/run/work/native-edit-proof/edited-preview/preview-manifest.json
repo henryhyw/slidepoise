@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "source_sha256": "94490073d95e79aa8aecc76fa92a7efb603314f15eb7e2597bcd4a4ac4536e46",
+  "source_sha256": "8ddbc7911c39bd2b47692d617021c7a141aa263e00591d22fe5d3053d9fb3ee6",
   "dpi": 120,
   "font_environment": {
     "fontconfig_source": "macos_system_font_directories",
@@ -14,35 +14,35 @@
     {
       "slide_number": 1,
       "render": "slide-001.png",
-      "sha256": "472cc3e16d0903aab1897405aad1e66cc92002c756d8d6ba9220767c97ca742d"
+      "sha256": "8951d297041159db989dc26bd9c05ba6d6601fdad915094b91d59558ef04483e"
     },
     {
       "slide_number": 2,
       "render": "slide-002.png",
-      "sha256": "16d9b56cc0e432877ac8ff4bf4b76d81c56b6f7cd074dc3eb9c14a4789d3a8bd"
+      "sha256": "e8d1f6600d20cc7a2cf8f41bc103d0f1d4b99355534958268fd8ef1f08b705ff"
     },
     {
       "slide_number": 3,
       "render": "slide-003.png",
-      "sha256": "a1c57dcdac7a8da1795c2a2530998f05a68e2275ee1af79af973289a4aaee17f"
+      "sha256": "71fd8241b80f0b6434328e4453bec7ce5a3bad52e20d5067cdd15219fa2d8661"
     },
     {
       "slide_number": 4,
       "render": "slide-004.png",
-      "sha256": "d82d00bd420a844a8cca91e158dbdab4c726ad4ea8bcc82d14f43121fb15a6f5"
+      "sha256": "b07eb57728452e7b9b49865f2c5611d6389083db11978aab8ecf60ce9c458b4b"
     },
     {
       "slide_number": 5,
       "render": "slide-005.png",
-      "sha256": "862576bac3460ad0d632865508a178972f26e301b25991ae3eaa57cb78d4238f"
+      "sha256": "680f89b070f101ead97e20972736db753ae93590aa5e2ce548c0bd039ff3d7b8"
     }
   ],
   "contact_sheet": {
     "path": "contact-sheet.png",
-    "sha256": "0b6d5a343005ab795b4df19612fca5ee20f81e94796fdce8e09b74e4585ab86f"
+    "sha256": "da71e9364fcbb2568bde561b5809c41aba79f50ade07462f03443d031914ee60"
   },
   "pdf": {
     "path": "presentation.pdf",
-    "sha256": "972de4c3c6bd35d6c99fdc64e50bc1732d782d5e3fbbb56bee1fbfccf8ab241b"
+    "sha256": "7fac8bf9ae0f7e2a4f96b6199796716c34738eb3b5063a01358836af7e443f00"
   }
 }

@@ -230,22 +230,162 @@
   ],
   "speaker_notes": [
     "This is an illustrative planning scenario. Twenty paired tasks represent one research task from each of twenty pilot engagements, with ten tasks at the week-eight interim review. The sampled 95% claim-verification gate measures pilot quality. Every client claim still requires expert sign-off and every client release requires engagement-lead approval.",
-    "The two curved feedback paths are editable native freeforms. They preserve the observed direction and curve geometry, but moving the table or its columns in Office does not automatically reattach these paths."
+    "Rejected drafts return to the drafting team. Source exceptions return to the source steward. The editable feedback paths are regenerated from their named owners when the deck is rebuilt. Moving objects manually in PowerPoint does not reattach the paths."
   ],
   "notes": [
-    "Twenty measured tasks correspond to twenty pilot engagements, with one comparable research task per engagement. The week-eight interim measurement contains ten tasks.",
-    "The sampled 95% claim-verification gate is an experimental quality measure. Every client claim still requires expert sign-off, and every client release requires engagement-lead approval.",
-    "The 70% weekly-active user threshold means at least eleven of fifteen users. It is measured across the pilot team.",
-    "All substantive content is native editable text, shapes, one 25-cell table, three straight native lines and two open cubic freeforms. No raster objects are needed.",
-    "The cubic feedback paths retain the observed round corners. The return heads and tails are aligned with the named responsibility columns at the table bottom. They are editable freeform paths and do not automatically reattach after moving a table column in Office.",
-    "Forward connectors retain source and target ownership in the semantic contract and are regenerated from those owners. The emitted Office lines are positioned geometry and do not claim automatic shape attachment.",
-    "Source coordinates were observed on this 1920 by 960 accepted body. The shared frame adds sixty-four pixels above and fifty-six below. Shared Georgia64, Arial32/28/24 and decision28 remain unchanged.",
-    "Generated narrow glyphs are not reproduced through text compression. Normal native wrapping and local paragraph rhythm preserve Arial28 in the narrow supporting column. Feedback captions use the shared24-pixel label level.",
-    "The cross-page host review sets title x48 y19, subtitle x48 y103 and the shared decision band at x48 y793 with height134. The two 28-pixel decision texts share a vertically centered 52-pixel allocation at y832, with label x100 and message x560. Original ink-search windows remain bound to the accepted source.",
-    "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-    "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-    "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-    "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
-    "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files."
+    "Retain three forward relationships and two return relationships. Expert review returns rejected drafts to Grounded draft. Grounded draft returns source exceptions to Approved sources.",
+    "The malformed source returns are redrawn as separate orthogonal paths above the stages. Named ownership determines their endpoints. Moving objects manually in Office does not reattach the paths.",
+    "The semantic map owns current geometry and type roles. The inherited frame is added outside the generated content region. Canonical SVGs replace generated icon stand-ins."
+  ],
+  "content_obligations": [
+    {
+      "id": "controlled-flow",
+      "description": "Four asset-backed stages and explicit feedback labels show how ownership is retained.",
+      "entity_ids": [
+        "stage-icon-sources",
+        "stage-label-sources",
+        "stage-icon-draft",
+        "stage-label-draft",
+        "stage-icon-review",
+        "stage-label-review",
+        "stage-icon-output",
+        "stage-label-output",
+        "forward-1",
+        "forward-2",
+        "forward-3",
+        "source-return-label",
+        "review-return-label",
+        "source-return",
+        "review-return"
+      ]
+    },
+    {
+      "id": "accountability",
+      "description": "One native table keeps every stage input, output, owner and control editable.",
+      "entity_ids": [
+        "responsibility-matrix"
+      ]
+    },
+    {
+      "id": "source-return-meaning",
+      "description": "Correct sources via exception register",
+      "entity_ids": [
+        "source-return",
+        "source-return-label"
+      ],
+      "connection": {
+        "entity_id": "source-return",
+        "source_entities": [
+          "stage-icon-draft"
+        ],
+        "target_entities": [
+          "stage-icon-sources"
+        ],
+        "directed": true
+      }
+    },
+    {
+      "id": "review-return-meaning",
+      "description": "Reject with defect reasons",
+      "entity_ids": [
+        "review-return",
+        "review-return-label"
+      ],
+      "connection": {
+        "entity_id": "review-return",
+        "source_entities": [
+          "stage-icon-review"
+        ],
+        "target_entities": [
+          "stage-icon-draft"
+        ],
+        "directed": true
+      }
+    },
+    {
+      "id": "page-message",
+      "description": "The slide claim and its qualification",
+      "entity_ids": [
+        "headline",
+        "subtitle"
+      ]
+    },
+    {
+      "id": "controls",
+      "description": "Shared defect register and audit controls",
+      "entity_ids": [
+        "shared-controls-heading",
+        "shared-controls-1",
+        "shared-controls-2"
+      ]
+    },
+    {
+      "id": "measurement",
+      "description": "Paired task measurement and verification",
+      "entity_ids": [
+        "measurement-heading",
+        "measurement-1",
+        "measurement-2"
+      ]
+    },
+    {
+      "id": "decision",
+      "description": "Required expert and engagement-lead approval",
+      "entity_ids": [
+        "decision-label",
+        "decision-message"
+      ]
+    },
+    {
+      "id": "forward-stage-1",
+      "description": "sources proceeds to draft",
+      "entity_ids": [
+        "forward-1"
+      ],
+      "connection": {
+        "entity_id": "forward-1",
+        "source_entities": [
+          "stage-icon-sources"
+        ],
+        "target_entities": [
+          "stage-icon-draft"
+        ],
+        "directed": true
+      }
+    },
+    {
+      "id": "forward-stage-2",
+      "description": "draft proceeds to review",
+      "entity_ids": [
+        "forward-2"
+      ],
+      "connection": {
+        "entity_id": "forward-2",
+        "source_entities": [
+          "stage-icon-draft"
+        ],
+        "target_entities": [
+          "stage-icon-review"
+        ],
+        "directed": true
+      }
+    },
+    {
+      "id": "forward-stage-3",
+      "description": "review proceeds to output",
+      "entity_ids": [
+        "forward-3"
+      ],
+      "connection": {
+        "entity_id": "forward-3",
+        "source_entities": [
+          "stage-icon-review"
+        ],
+        "target_entities": [
+          "stage-icon-output"
+        ],
+        "directed": true
+      }
+    }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "source_scene_evidence": "/private/tmp/.slidepoise-rebuild-h51errnw/slides/s01-recommendation/work/accepted-slide.png",
+  "source_scene_evidence": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/slides/s01-recommendation/work/accepted-slide.png",
   "full_slide_dimensions_px": [
     1920,
     1080
@@ -71,6 +71,67 @@
     "The 95% gate applies to a sampled test set. Each client release separately requires expert verification and engagement-lead approval.",
     "At least 11 of 15 pilot users must be weekly active. One comparable research task is measured per pilot engagement."
   ],
+  "content_obligations": [
+    {
+      "id": "pilot-economics",
+      "description": "Three linked numbers show the baseline, capacity and annual equivalent.",
+      "entity_ids": [
+        "baseline",
+        "baseline-label",
+        "baseline-formula",
+        "capacity",
+        "capacity-label",
+        "capacity-formula",
+        "value",
+        "value-label",
+        "value-formula",
+        "metric-divider-1",
+        "metric-divider-2"
+      ]
+    },
+    {
+      "id": "pilot-rationale",
+      "description": "Each reason has a distinct icon, claim and supporting sentence.",
+      "entity_ids": [
+        "reason-icon-01",
+        "reason-number-01",
+        "reason-title-01",
+        "reason-detail-01",
+        "reason-icon-02",
+        "reason-number-02",
+        "reason-title-02",
+        "reason-detail-02",
+        "reason-icon-03",
+        "reason-number-03",
+        "reason-title-03",
+        "reason-detail-03"
+      ]
+    },
+    {
+      "id": "scale-gate",
+      "description": "The table keeps the four measurable release conditions editable.",
+      "entity_ids": [
+        "gate-heading",
+        "scale-gate-table"
+      ]
+    },
+    {
+      "id": "page-message",
+      "description": "The slide claim and its qualification",
+      "entity_ids": [
+        "headline",
+        "subtitle"
+      ]
+    },
+    {
+      "id": "decision",
+      "description": "Pilot funding decision",
+      "entity_ids": [
+        "decision-label",
+        "decision-message"
+      ]
+    }
+  ],
   "reconstruction_units": [
     {
       "id": "headline",
@@ -114,9 +175,9 @@
       "render_owner": "baseline",
       "bbox_px": [
         47,
-        176,
+        191,
         500,
-        70
+        94
       ],
       "component_id": null
     },
@@ -130,9 +191,9 @@
       "render_owner": "baseline-label",
       "bbox_px": [
         47,
-        248,
-        520,
-        32
+        282,
+        500,
+        38
       ],
       "component_id": null
     },
@@ -146,9 +207,9 @@
       "render_owner": "baseline-formula",
       "bbox_px": [
         47,
-        282,
-        520,
-        32
+        326,
+        500,
+        42
       ],
       "component_id": null
     },
@@ -161,10 +222,10 @@
       "emits_ppt_object": true,
       "render_owner": "capacity",
       "bbox_px": [
-        694,
-        176,
+        722,
+        191,
         500,
-        70
+        94
       ],
       "component_id": null
     },
@@ -177,10 +238,10 @@
       "emits_ppt_object": true,
       "render_owner": "capacity-label",
       "bbox_px": [
-        694,
-        248,
-        520,
-        32
+        722,
+        282,
+        500,
+        38
       ],
       "component_id": null
     },
@@ -193,10 +254,10 @@
       "emits_ppt_object": true,
       "render_owner": "capacity-formula",
       "bbox_px": [
-        694,
-        282,
-        520,
-        32
+        722,
+        326,
+        500,
+        42
       ],
       "component_id": null
     },
@@ -209,10 +270,10 @@
       "emits_ppt_object": true,
       "render_owner": "value",
       "bbox_px": [
-        1340,
-        176,
+        1408,
+        191,
         500,
-        70
+        94
       ],
       "component_id": null
     },
@@ -225,10 +286,10 @@
       "emits_ppt_object": true,
       "render_owner": "value-label",
       "bbox_px": [
-        1340,
-        248,
-        520,
-        32
+        1408,
+        282,
+        500,
+        38
       ],
       "component_id": null
     },
@@ -241,10 +302,10 @@
       "emits_ppt_object": true,
       "render_owner": "value-formula",
       "bbox_px": [
-        1340,
-        282,
-        520,
-        32
+        1408,
+        326,
+        500,
+        42
       ],
       "component_id": null
     },
@@ -257,10 +318,10 @@
       "emits_ppt_object": true,
       "render_owner": "metric-divider-1",
       "bbox_px": [
-        647,
-        176,
+        642,
+        210,
         1,
-        138
+        140
       ],
       "component_id": null
     },
@@ -273,10 +334,10 @@
       "emits_ppt_object": true,
       "render_owner": "metric-divider-2",
       "bbox_px": [
-        1293,
-        176,
+        1313,
+        210,
         1,
-        138
+        140
       ],
       "component_id": null
     },
@@ -290,8 +351,8 @@
       "render_owner": "argument-heading",
       "bbox_px": [
         47,
-        356,
-        850,
+        397,
+        910,
         42
       ],
       "component_id": null
@@ -305,10 +366,10 @@
       "emits_ppt_object": true,
       "render_owner": "reason-icon-01",
       "bbox_px": [
-        76,
-        420,
-        54,
-        54
+        74,
+        449,
+        94,
+        94
       ],
       "component_id": null
     },
@@ -321,10 +382,10 @@
       "emits_ppt_object": true,
       "render_owner": "reason-number-01",
       "bbox_px": [
-        165,
-        423,
-        62,
-        44
+        214,
+        456,
+        65,
+        40
       ],
       "component_id": null
     },
@@ -337,10 +398,10 @@
       "emits_ppt_object": true,
       "render_owner": "reason-title-01",
       "bbox_px": [
-        255,
-        420,
-        540,
-        35
+        305,
+        458,
+        700,
+        38
       ],
       "component_id": null
     },
@@ -353,10 +414,10 @@
       "emits_ppt_object": true,
       "render_owner": "reason-detail-01",
       "bbox_px": [
-        255,
-        458,
-        700,
-        40
+        305,
+        500,
+        730,
+        65
       ],
       "component_id": null
     },
@@ -369,10 +430,10 @@
       "emits_ppt_object": true,
       "render_owner": "reason-icon-02",
       "bbox_px": [
-        76,
-        527,
-        54,
-        54
+        74,
+        573,
+        94,
+        94
       ],
       "component_id": null
     },
@@ -385,10 +446,10 @@
       "emits_ppt_object": true,
       "render_owner": "reason-number-02",
       "bbox_px": [
-        165,
-        530,
-        62,
-        44
+        214,
+        580,
+        65,
+        40
       ],
       "component_id": null
     },
@@ -401,10 +462,10 @@
       "emits_ppt_object": true,
       "render_owner": "reason-title-02",
       "bbox_px": [
-        255,
-        527,
-        540,
-        35
+        305,
+        582,
+        700,
+        38
       ],
       "component_id": null
     },
@@ -417,10 +478,10 @@
       "emits_ppt_object": true,
       "render_owner": "reason-detail-02",
       "bbox_px": [
-        255,
-        565,
-        700,
-        40
+        305,
+        624,
+        730,
+        65
       ],
       "component_id": null
     },
@@ -433,10 +494,10 @@
       "emits_ppt_object": true,
       "render_owner": "reason-icon-03",
       "bbox_px": [
-        76,
-        634,
-        54,
-        54
+        74,
+        693,
+        94,
+        94
       ],
       "component_id": null
     },
@@ -449,10 +510,10 @@
       "emits_ppt_object": true,
       "render_owner": "reason-number-03",
       "bbox_px": [
-        165,
-        637,
-        62,
-        44
+        214,
+        700,
+        65,
+        40
       ],
       "component_id": null
     },
@@ -465,10 +526,10 @@
       "emits_ppt_object": true,
       "render_owner": "reason-title-03",
       "bbox_px": [
-        255,
-        634,
-        540,
-        35
+        305,
+        702,
+        700,
+        38
       ],
       "component_id": null
     },
@@ -481,10 +542,10 @@
       "emits_ppt_object": true,
       "render_owner": "reason-detail-03",
       "bbox_px": [
-        255,
-        672,
-        700,
-        40
+        305,
+        744,
+        730,
+        65
       ],
       "component_id": null
     },
@@ -497,9 +558,9 @@
       "emits_ppt_object": true,
       "render_owner": "gate-heading",
       "bbox_px": [
-        1068,
-        356,
-        800,
+        1060,
+        397,
+        820,
         42
       ],
       "component_id": null
@@ -513,10 +574,10 @@
       "emits_ppt_object": true,
       "render_owner": "scale-gate-table",
       "bbox_px": [
-        1068,
-        402,
-        800,
-        332
+        1060,
+        448,
+        820,
+        334
       ],
       "component_id": null
     },
@@ -593,10 +654,10 @@
       "asset_kind": "icon_slot",
       "selection_mode": "host_agent_selected_pair_before_generation",
       "target_bbox_source_px": [
-        76,
-        420,
-        54,
-        54
+        74,
+        449,
+        94,
+        94
       ],
       "preserve_aspect_ratio": true,
       "fit": "contain",
@@ -638,10 +699,10 @@
       "asset_kind": "icon_slot",
       "selection_mode": "host_agent_selected_pair_before_generation",
       "target_bbox_source_px": [
-        76,
-        527,
-        54,
-        54
+        74,
+        573,
+        94,
+        94
       ],
       "preserve_aspect_ratio": true,
       "fit": "contain",
@@ -683,10 +744,10 @@
       "asset_kind": "icon_slot",
       "selection_mode": "host_agent_selected_pair_before_generation",
       "target_bbox_source_px": [
-        76,
-        634,
-        54,
-        54
+        74,
+        693,
+        94,
+        94
       ],
       "preserve_aspect_ratio": true,
       "fit": "contain",
