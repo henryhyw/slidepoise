@@ -201,15 +201,14 @@ section[tabindex="-1"]:focus { outline: none; }
 .evidence-crop > img { position: absolute; max-width: none; object-fit: fill; }
 .evidence-caption { display: block; font-size: 12px; line-height: 1.65; color: #596476; }
 .architecture-review { color: #626c7b; font-size: 12px; line-height: 1.8; max-width: 940px; margin-top: 25px; }
-.asset-system { display: grid; grid-template-columns: minmax(240px, .7fr) minmax(580px, 1.3fr); gap: 40px; align-items: center; margin-top: 64px; padding: 40px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
-.asset-system-copy h3 { margin-top: 12px; font-size: 27px; line-height: 1.25; font-weight: 550; letter-spacing: -.035em; }
-.asset-system-copy > p:last-child { margin-top: 18px; color: #5f6671; font-size: 14px; line-height: 1.75; text-wrap: pretty; }
+.asset-system { margin-top: 32px; padding-top: 28px; border-top: 1px solid var(--line); }
+.asset-system-copy > p { max-width: 850px; margin-top: 12px; color: #5f6671; font-size: 13px; line-height: 1.75; text-wrap: pretty; }
 .asset-system-figure { display: grid; grid-template-columns: minmax(150px, 1fr) 64px minmax(150px, 1fr) 64px minmax(150px, 1fr); align-items: stretch; margin: 0; min-width: 0; }
 .asset-stage { min-width: 0; min-height: 194px; display: flex; flex-direction: column; padding: 18px; border: 1px solid #dfe2e6; border-radius: 8px; background: #f8f8f7; }
 .asset-stage-label { font-size: 10px; font-weight: 600; color: #555b64; letter-spacing: .01em; }
-.asset-stage small { margin-top: auto; padding-top: 14px; color: #70757e; font-size: 9px; line-height: 1.45; }
+.asset-stage small { margin-top: auto; padding-top: 14px; color: #70757e; font-size: 11px; line-height: 1.55; }
 .asset-glyphs { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 25px; }
-.asset-glyphs span { display: grid; place-items: center; flex: 0 0 32px; width: 32px; height: 32px; border: 1px solid #d9dde2; border-radius: 5px; background: #fff; }
+.asset-glyphs span { display: grid; place-items: center; flex: 0 0 38px; width: 38px; height: 38px; border: 1px solid #d9dde2; border-radius: 5px; background: #fff; }
 .asset-glyphs img { width: 21px; height: 21px; }
 .asset-connection { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px; color: #747a84; }
 .asset-connection i { display: block; position: relative; width: 46px; height: 1px; background: #b9bec6; }
@@ -284,8 +283,6 @@ section[tabindex="-1"]:focus { outline: none; }
 
 @media (min-width: 1450px) { .hero { padding-top: 60px; padding-bottom: 58px; } }
 @media (max-width: 1100px) {
-  .asset-system { grid-template-columns: 1fr; gap: 32px; padding: 34px; }
-  .asset-system-copy { max-width: 680px; }
   .page-width { width: calc(100% - 48px); }
   .toolbar-hint { display: none; }
   .canvas-wrap { padding: 22px; }
@@ -463,9 +460,7 @@ body[data-input="keyboard"] *, body[data-input="keyboard"] *::before, body[data-
   .evidence-crop { margin-block: 17px 15px; }
   .evidence-caption { font-size: 12px; }
   .architecture-review { font-size: 11px; margin-top: 22px; }
-  .asset-system { margin-top: 44px; padding: 25px 20px; }
-  .asset-system-copy h3 { font-size: 24px; }
-  .asset-system-copy > p:last-child { font-size: 13px; }
+  .asset-system { margin-top: 28px; padding-top: 24px; }
   .workflow-grid { grid-template-columns: 1fr; gap: 0; }
   .workflow-stage, .workflow-stage:first-child, .workflow-stage:last-child { padding: 20px 0; border-left: 0; border-top: 1px solid var(--line); }
   .workflow-stage > p { min-height: 0; margin-top: 10px; }
