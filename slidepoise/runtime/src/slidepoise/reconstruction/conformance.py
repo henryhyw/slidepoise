@@ -97,6 +97,71 @@ def _boxes_overlap(first: list[float], second: list[float], tolerance: float = 0
     return min(ax + aw, bx + bw) - max(ax, bx) > tolerance and min(ay + ah, by + bh) - max(ay, by) > tolerance
 
 
+def _structural_boundary_collisions(objects: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Report text boxes that cross emitted divider or rule shapes.
+
+    Thin rules are structural boundaries. Their geometry is objective enough to
+    check mechanically, while the host still decides whether broader proximity
+    or spacing looks right during visual review.
+    """
+    textboxes = [
+        item for item in objects
+        if item.get("kind") == "textbox" and item.get("bbox_px") and item.get("allow_boundary_crossing") is not True
+    ]
+    separators = []
+    for item in objects:
+        if (item.get("kind") != "shape" or item.get("shape") not in {"line", "rectangle"}
+                or item.get("allow_text_crossing") is True):
+            continue
+        box = item.get("bbox_px")
+        if not box:
+            continue
+        _, _, width, height = map(float, box)
+        if min(width, height) <= 3.0 and max(width, height) >= 12.0:
+            separators.append(item)
+
+    collisions: list[dict[str, Any]] = []
+    for textbox in textboxes:
+        for separator in separators:
+            if _boxes_overlap(list(textbox["bbox_px"]), list(separator["bbox_px"])):
+                collisions.append({
+                    "text": str(textbox.get("id")),
+                    "separator": str(separator.get("id")),
+                    "text_bbox_px": list(textbox["bbox_px"]),
+                    "separator_bbox_px": list(separator["bbox_px"]),
+                })
+    return collisions
+
+
+def _chart_structure_failures(objects: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Check chart facts that must survive semantic reconstruction."""
+    supported = {"area", "bar", "column", "doughnut", "line", "pie", "scatter"}
+    failures: list[dict[str, Any]] = []
+    for item in objects:
+        if item.get("kind") != "chart":
+            continue
+        structure = item.get("structure") or {}
+        chart_type = str(structure.get("type") or "")
+        categories = structure.get("categories") or []
+        series = structure.get("series") or []
+        if chart_type not in supported:
+            failures.append({"chart": str(item.get("id")), "reason": "chart_type_must_be_explicit", "type": chart_type})
+            continue
+        if chart_type != "scatter" and not categories:
+            failures.append({"chart": str(item.get("id")), "reason": "chart_categories_missing"})
+        for index, record in enumerate(series):
+            values = record.get("values") or []
+            if chart_type != "scatter" and len(values) != len(categories):
+                failures.append({
+                    "chart": str(item.get("id")),
+                    "reason": "chart_series_category_length_mismatch",
+                    "series_index": index,
+                    "categories": len(categories),
+                    "values": len(values),
+                })
+    return failures
+
+
 def _bend_count(points: list[list[float]]) -> int:
     if len(points) < 3:
         return 0
@@ -359,6 +424,8 @@ def validate_contract_consumption(
         "unexpected_icon_slot_surfaces": unexpected_icon_surfaces,
         "icon_glyphs_outside_slots": icon_containment_failures,
         "declared_non_overlap_constraints": declared_overlap_failures,
+        "structural_boundary_collisions": _structural_boundary_collisions(objects),
+        "chart_structure_contract": _chart_structure_failures(objects),
         "missing_connector_graphs": sorted(connector_ids - emitted_connector_ids),
         "connector_endpoint_contract": endpoint_failures,
         "connector_topology_contract": topology_failures,

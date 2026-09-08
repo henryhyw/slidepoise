@@ -6,11 +6,11 @@
   "reviewed_artifacts": [
     {
       "path": "preview/contact-sheet.png",
-      "sha256": "c8f3cf70a27763e91db689e4894e63d8b86835d430e1fac91aeba3d887b92aa6"
+      "sha256": "7d6f01a7d699106ee491d553c371443b3e280584899ee9973e9d29a2f254f187"
     },
     {
       "path": "deliverables/presentation.pptx",
-      "sha256": "144791ea004117d3e65ce944e93f02a1c721cc38eb3b1c8214ec25095ee2790d"
+      "sha256": "638f70392a6eea2919d908ab1a558bd4f26221661df02ee0cdc5a1b795769c71"
     },
     {
       "path": "work/deck-design.json",
@@ -18,7 +18,7 @@
     },
     {
       "path": "work/cross-slide-calibration-review.json",
-      "sha256": "125dbfd0b5bb7f1fb40623f518e8125813bba34d5e08a06c3a95c02473d3d2d8"
+      "sha256": "d98123c35703cd3f092846a7a1771c153a8e67649a7d4364c2be4b106c43a058"
     },
     {
       "path": "preview/slide-001.png",
@@ -30,7 +30,7 @@
     },
     {
       "path": "slides/s01-recommendation/work/reconstruction/constructor-scene.json",
-      "sha256": "059719d8e8eecbdc6facf3e8a77931e45b0843ccfd1f92fdc8c3a1f9acc80116"
+      "sha256": "8cdeb8e5fc77290c858114241fc2ff0038b5a55aad50e5d8a40ad504c330c077"
     },
     {
       "path": "slides/s01-recommendation/work/semantic-evidence.json",
@@ -38,15 +38,15 @@
     },
     {
       "path": "preview/slide-002.png",
-      "sha256": "fae91eef16ff0387afe6346f16b2827cbb3b75dc061482351145de7c844be5c4"
+      "sha256": "dd0e32533a4a2dc5c3fa4b8ec67e0b0cbb6dc42c4b775ae37504daae84f3d546"
     },
     {
       "path": "slides/s02-opportunities/work/semantic-map.json",
-      "sha256": "13f5ed1dad2105a11c6a74de7d91cc213fa4f47253e1496ed43606dc365b6bf8"
+      "sha256": "cef981d17b39419738a7197e7ce10f987e8e5061bfadbf54af587c3fb5579afa"
     },
     {
       "path": "slides/s02-opportunities/work/reconstruction/constructor-scene.json",
-      "sha256": "621770a01b111d0b2aac742db9455d5fb972f1643d7fa9715e39bdaf68611d94"
+      "sha256": "4c2944fcfb95eb080bb8bb68429bf3486961d5f05f0c0f8f748a67c97a5a820d"
     },
     {
       "path": "slides/s02-opportunities/work/semantic-evidence.json",
@@ -62,7 +62,7 @@
     },
     {
       "path": "slides/s03-operating-model/work/reconstruction/constructor-scene.json",
-      "sha256": "7cf464552de80cf5d63a5384983961ac8425e8032f69965eb4249f4064d59d20"
+      "sha256": "50708e5a4a44e47407b702c515d8f72962c55f187a56ff1a374be5d159fcb8ef"
     },
     {
       "path": "slides/s03-operating-model/work/semantic-evidence.json",
@@ -70,15 +70,15 @@
     },
     {
       "path": "preview/slide-004.png",
-      "sha256": "fd1dc67add7e34d62e36c85d2cb9651f33acd3c3bb5a7cb754805c65e5719d5b"
+      "sha256": "79dda343bc4f424c182da8989b1ca75e8bc7741a20724008a71b7a5c0c174e12"
     },
     {
       "path": "slides/s04-delivery-roadmap/work/semantic-map.json",
-      "sha256": "51a9689ec52dead2386f90b9ce6038e4b97d2e4e3cf8fd3a6ad701222152a220"
+      "sha256": "3c60c3b923178de2b326e5f85a40aaf62c64ac6474db2f3a71e97a27a45e91bb"
     },
     {
       "path": "slides/s04-delivery-roadmap/work/reconstruction/constructor-scene.json",
-      "sha256": "f20660255fab053ade43ed2c344610624fbc1b10534d7295daf28a9c7eb62838"
+      "sha256": "0d62736078635ca656ae1d60a6621f512d66be5dfa3cf36aebdf97cddb3f521e"
     },
     {
       "path": "slides/s04-delivery-roadmap/work/semantic-evidence.json",
@@ -94,7 +94,7 @@
     },
     {
       "path": "slides/s05-investment-decision/work/reconstruction/constructor-scene.json",
-      "sha256": "5dd5b90e437f11ba6878a91721d86710771886e7e3fc22fd4ef7f0d0acedcb6e"
+      "sha256": "fd270ece75b019ad0f71a0709c1b4d5e4b4099293ec5e7a8933328b97e4b8e26"
     },
     {
       "path": "slides/s05-investment-decision/work/semantic-evidence.json",
@@ -107,7 +107,8 @@
     "Seventeen source-bound Remix icons clarify rationale, workflow stages, evidence gates and release criteria. They remain canonical SVG objects in PowerPoint.",
     "The generated images cover the 1920 by 960 content region. PowerPoint adds the common header, footer and page number through one shared layout.",
     "The capacity chart remains linked to its workbook. Tables, text, arrows, icons and decision controls remain separate native objects.",
-    "Every page retains its image-generation request, asset selection, semantic map, OpenCV evidence, compiled scene, render and visual comparison."
+    "Every page retains its image-generation request, asset selection, semantic map, OpenCV evidence, compiled scene, render and visual comparison.",
+    "The native capacity chart uses vertical columns, preserving the target orientation and category order. The roadmap gate labels and detail text remain clear of the dependency divider."
   ],
   "editability_limits": [
     "Native chart values and labels are linked to their embedded workbook. Separate formula text and scenario table cells do not recalculate automatically.",

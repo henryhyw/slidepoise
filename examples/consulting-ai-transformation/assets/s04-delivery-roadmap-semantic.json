@@ -1,111 +1,78 @@
 {
   "schema_version": "1.0",
   "source_semantic_map": "semantic-map.json",
-  "source_semantic_map_sha256": "fec586c49f23fe8a29e124db22b08ee4db9eac9bf984a940f5509726ee2837ef",
-  "notice": "Selected host-authored explanations. The full semantic map retains 47 editable entities.",
+  "source_semantic_map_sha256": "3c60c3b923178de2b326e5f85a40aaf62c64ac6474db2f3a71e97a27a45e91bb",
+  "notice": "Selected explanations for readers. The full semantic map retains 32 editable entities.",
   "entities": [
     {
       "id": "headline",
-      "kind": "group",
-      "display_label": "One delivery conclusion",
+      "kind": "text",
+      "display_label": "Slide conclusion",
       "members": [
         "headline"
       ],
       "bbox_hint": [
-        47,
-        27,
-        1205,
-        71
+        46,
+        20,
+        1828,
+        76
       ]
     },
     {
-      "id": "delivery-matrix",
-      "kind": "table",
-      "display_label": "Workstreams, owners and four phases",
-      "members": [
-        "delivery-matrix"
-      ],
-      "bbox_hint": [
-        50,
-        187,
-        1223,
-        565
-      ]
-    },
-    {
-      "id": "gates",
+      "id": "delivery-plan",
       "kind": "group",
-      "display_label": "Evidence releases each phase",
+      "display_label": "Pilot workstreams",
       "members": [
-        "gate-timeline",
-        "gate-1-field",
-        "gate-1-marker",
-        "gate-1-label",
-        "gate-1-week",
-        "gate-1-rule",
-        "gate-1-evidence",
-        "gate-2-field",
-        "gate-2-marker",
-        "gate-2-label",
-        "gate-2-week",
-        "gate-2-rule",
-        "gate-2-evidence",
-        "gate-3-field",
-        "gate-3-marker",
-        "gate-3-label",
-        "gate-3-week",
-        "gate-3-rule",
-        "gate-3-evidence",
-        "gate-4-field",
-        "gate-4-marker",
-        "gate-4-label",
-        "gate-4-week",
-        "gate-4-rule",
-        "gate-4-evidence"
+        "roadmap-matrix"
       ],
       "bbox_hint": [
-        1313,
-        230,
-        564,
-        263
+        43,
+        166,
+        1830,
+        432
       ]
     },
     {
-      "id": "dependencies",
+      "id": "evidence-gates",
       "kind": "group",
-      "display_label": "Three delivery prerequisites",
+      "display_label": "Evidence gates",
       "members": [
-        "dependency-1-circle",
-        "dependency-1-arrow",
-        "dependency-1-text",
-        "dependency-1-rule",
-        "dependency-2-circle",
-        "dependency-2-arrow",
-        "dependency-2-text",
-        "dependency-2-rule",
-        "dependency-3-circle",
-        "dependency-3-arrow",
-        "dependency-3-text"
+        "gates-heading",
+        "gate-icon-g1",
+        "gate-label-g1",
+        "gate-detail-g1",
+        "gate-icon-g2",
+        "gate-label-g2",
+        "gate-detail-g2",
+        "gate-icon-g3",
+        "gate-label-g3",
+        "gate-detail-g3",
+        "gate-icon-g4",
+        "gate-label-g4",
+        "gate-detail-g4",
+        "gate-flow-1",
+        "gate-flow-2",
+        "gate-flow-3"
       ],
       "bbox_hint": [
-        1312,
-        580,
-        557,
-        177
+        43,
+        617,
+        1260,
+        181
       ]
     },
     {
       "id": "decision-message",
-      "kind": "group",
-      "display_label": "One explicit stop condition",
+      "kind": "text",
+      "display_label": "Decision or boundary",
       "members": [
         "decision-message"
       ],
       "bbox_hint": [
-        406,
-        843,
-        834,
-        42
+        520,
+        853,
+        1318,
+        50
       ]
     }
   ]

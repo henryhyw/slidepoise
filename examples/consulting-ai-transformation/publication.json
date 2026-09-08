@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "revision": 4,
-  "pptx_sha256": "144791ea004117d3e65ce944e93f02a1c721cc38eb3b1c8214ec25095ee2790d",
+  "revision": 5,
+  "pptx_sha256": "638f70392a6eea2919d908ab1a558bd4f26221661df02ee0cdc5a1b795769c71",
   "body_canvas_px": [
     1920,
     960
@@ -13,5 +13,5 @@
   "all_five_reconstructed_via_packaged_runtime": true,
   "canonical_visual_assets_restored": true,
   "public_download": "PowerPoint only",
-  "source_archive_sha256": "50a71640ed4c4da71c4107a0d369c74b8f8653be2652061eb8e1e510ce880bc5"
+  "source_archive_sha256": "f8c49ee48c8277433d7d163b17985a8fe1eef658d137e8e3e2ce9a946cdf14c9"
 }

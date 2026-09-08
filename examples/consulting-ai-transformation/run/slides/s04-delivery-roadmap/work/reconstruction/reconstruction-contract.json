@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "source_scene_evidence": "/private/tmp/.slidepoise-rebuild-jkaybi9w/slides/s04-delivery-roadmap/work/accepted-slide.png",
+  "source_scene_evidence": "/private/tmp/.slidepoise-rebuild-h51errnw/slides/s04-delivery-roadmap/work/accepted-slide.png",
   "full_slide_dimensions_px": [
     1920,
     1080
@@ -144,7 +144,7 @@
       "emits_ppt_object": true,
       "render_owner": "gate-icon-g1",
       "bbox_px": [
-        226,
+        196,
         668,
         48,
         48
@@ -160,7 +160,7 @@
       "emits_ppt_object": true,
       "render_owner": "gate-label-g1",
       "bbox_px": [
-        120,
+        90,
         729,
         260,
         32
@@ -176,7 +176,7 @@
       "emits_ppt_object": true,
       "render_owner": "gate-detail-g1",
       "bbox_px": [
-        100,
+        70,
         763,
         300,
         35
@@ -192,7 +192,7 @@
       "emits_ppt_object": true,
       "render_owner": "gate-icon-g2",
       "bbox_px": [
-        551,
+        506,
         668,
         48,
         48
@@ -208,7 +208,7 @@
       "emits_ppt_object": true,
       "render_owner": "gate-label-g2",
       "bbox_px": [
-        445,
+        400,
         729,
         260,
         32
@@ -224,7 +224,7 @@
       "emits_ppt_object": true,
       "render_owner": "gate-detail-g2",
       "bbox_px": [
-        425,
+        380,
         763,
         300,
         35
@@ -240,7 +240,7 @@
       "emits_ppt_object": true,
       "render_owner": "gate-icon-g3",
       "bbox_px": [
-        876,
+        816,
         668,
         48,
         48
@@ -256,7 +256,7 @@
       "emits_ppt_object": true,
       "render_owner": "gate-label-g3",
       "bbox_px": [
-        770,
+        710,
         729,
         260,
         32
@@ -272,7 +272,7 @@
       "emits_ppt_object": true,
       "render_owner": "gate-detail-g3",
       "bbox_px": [
-        750,
+        690,
         763,
         300,
         35
@@ -288,7 +288,7 @@
       "emits_ppt_object": true,
       "render_owner": "gate-icon-g4",
       "bbox_px": [
-        1201,
+        1126,
         668,
         48,
         48
@@ -304,7 +304,7 @@
       "emits_ppt_object": true,
       "render_owner": "gate-label-g4",
       "bbox_px": [
-        1095,
+        1020,
         729,
         260,
         32
@@ -320,7 +320,7 @@
       "emits_ppt_object": true,
       "render_owner": "gate-detail-g4",
       "bbox_px": [
-        1075,
+        1000,
         763,
         300,
         35
@@ -336,9 +336,9 @@
       "emits_ppt_object": true,
       "render_owner": "gate-flow-1",
       "bbox_px": [
-        296,
+        266,
         680,
-        233,
+        218,
         24
       ],
       "component_id": null
@@ -352,9 +352,9 @@
       "emits_ppt_object": true,
       "render_owner": "gate-flow-2",
       "bbox_px": [
-        621,
+        576,
         680,
-        233,
+        218,
         24
       ],
       "component_id": null
@@ -368,9 +368,9 @@
       "emits_ppt_object": true,
       "render_owner": "gate-flow-3",
       "bbox_px": [
-        946,
+        886,
         680,
-        233,
+        218,
         24
       ],
       "component_id": null
@@ -592,7 +592,7 @@
       "asset_kind": "icon_slot",
       "selection_mode": "host_agent_selected_pair_before_generation",
       "target_bbox_source_px": [
-        226,
+        196,
         668,
         48,
         48
@@ -637,7 +637,7 @@
       "asset_kind": "icon_slot",
       "selection_mode": "host_agent_selected_pair_before_generation",
       "target_bbox_source_px": [
-        551,
+        506,
         668,
         48,
         48
@@ -682,7 +682,7 @@
       "asset_kind": "icon_slot",
       "selection_mode": "host_agent_selected_pair_before_generation",
       "target_bbox_source_px": [
-        876,
+        816,
         668,
         48,
         48
@@ -727,7 +727,7 @@
       "asset_kind": "icon_slot",
       "selection_mode": "host_agent_selected_pair_before_generation",
       "target_bbox_source_px": [
-        1201,
+        1126,
         668,
         48,
         48
@@ -799,13 +799,13 @@
       },
       "approximate_start_anchors_px": [
         [
-          274.0,
+          244.0,
           692.0
         ]
       ],
       "approximate_end_anchors_px": [
         [
-          551.0,
+          506.0,
           692.0
         ]
       ],
@@ -880,13 +880,13 @@
       },
       "approximate_start_anchors_px": [
         [
-          599.0,
+          554.0,
           692.0
         ]
       ],
       "approximate_end_anchors_px": [
         [
-          876.0,
+          816.0,
           692.0
         ]
       ],
@@ -961,13 +961,13 @@
       },
       "approximate_start_anchors_px": [
         [
-          924.0,
+          864.0,
           692.0
         ]
       ],
       "approximate_end_anchors_px": [
         [
-          1201.0,
+          1126.0,
           692.0
         ]
       ],
@@ -1054,6 +1054,14 @@
       [
         "decision-band",
         "headline"
+      ],
+      [
+        "gate-label-g4",
+        "dependency-divider"
+      ],
+      [
+        "gate-detail-g4",
+        "dependency-divider"
       ]
     ]
   },

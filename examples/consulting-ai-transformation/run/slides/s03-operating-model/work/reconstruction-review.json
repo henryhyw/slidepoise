@@ -6,39 +6,39 @@
   "reviewed_artifacts": [
     {
       "path": "accepted-slide.png",
-      "sha256": "c8ead882cc20d711d3079b79629448058d9fb0c80716cf7154ccf3ce4cae11b6"
+      "sha256": "c9e5f21257c82fb253cb3c935cfad3b1f238b1c17a6affcc48f3d67543633787"
     },
     {
       "path": "reconstruction/constructor-scene.json",
-      "sha256": "fde81522ad4636200995efa2645f2c902b061ebb5558e301461613d5b4f24e2b"
+      "sha256": "50708e5a4a44e47407b702c515d8f72962c55f187a56ff1a374be5d159fcb8ef"
     },
     {
       "path": "../deliverables/slide.pptx",
-      "sha256": "83e27577cda140f0b849a6a254805b2d4480e030629eddd7c10894f39ceb7fd2"
+      "sha256": "1b0d195174cea864ed8cedb50fab325f5bae4cdc078771a169e19a4707358404"
     },
     {
       "path": "../deliverables/render.png",
-      "sha256": "93e127b416ed5f135d59d6661a48a2410244508785ffb9983d312d85930dfa3f"
+      "sha256": "e3501190eea08ffd8b6edb8663d1f9fcda4f4bd7a1689d5f75aa06cffb6ebafa"
     },
     {
       "path": "../deliverables/comparison.png",
-      "sha256": "51d491be726f0d376268077c75a6061a31df8b12d73c3b1ebab3489ca459ea97"
+      "sha256": "0019013889b3aa466b87920760afc24a1f144d56d3800a84acbc42f4a7b0b567"
     },
     {
       "path": "native-object-evidence.json",
-      "sha256": "3c6db8b4f828960b81f497e3ed54dc41fbbc330251614c4ad5d87f8ac51d31da"
+      "sha256": "4166f87cec59d9a96b3f903dd51cc8c1eec6e50bfe4ee94b29a6b44334956028"
     },
     {
       "path": "native-text-audit.json",
-      "sha256": "5b2c9be37fe005a9c6f0e0b8db68fdfa55d3357bce4b6d14f71e50adf3cf07fc"
+      "sha256": "a60808555a5c8c69c633d03c84b410c569128ab6b3e93b09daf31e75517545d2"
     },
     {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "eaa834f80cd468d31b2ddfeff2615dccb211c6580cd33d9f428ca6fb30b6eac2"
+      "sha256": "a50fa6a4e0123827bee9726229dad855a6546224dcdf006c8420844d22fb4094"
     },
     {
       "path": "reconstruction/reconstruction-contract.json",
-      "sha256": "ded278366b88c433cef38894b5bdc9c0564d58db85265c81cc382412e0cfdfe7"
+      "sha256": "2f73c2a1dbea42dd792da28f7cc84b9b94fdcebd646d6bd97e38ab8c370f4a22"
     }
   ],
   "observations": [

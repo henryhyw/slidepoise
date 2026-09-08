@@ -1,8 +1,8 @@
 {
   "schema_version": "3.0.0",
   "source": {
-    "image": "/private/tmp/.slidepoise-rebuild-jkaybi9w/slides/s01-recommendation/work/accepted-slide.png",
-    "path": "/private/tmp/.slidepoise-rebuild-jkaybi9w/slides/s01-recommendation/work/accepted-slide.png",
+    "image": "/private/tmp/.slidepoise-rebuild-h51errnw/slides/s01-recommendation/work/accepted-slide.png",
+    "path": "/private/tmp/.slidepoise-rebuild-h51errnw/slides/s01-recommendation/work/accepted-slide.png",
     "width_px": 1920,
     "height_px": 960
   },
@@ -11355,6 +11355,7 @@
       "Reconstruction uses a 1920 by 960 substantive canvas, translated down 64 pixels into a 1920 by 1080 presentation with an inherited frame.",
       "Georgia title stays 64 pixels, Arial section and body roles 28 pixels, table 24 pixels and both decision-band texts 28 pixels. Source condensed glyph proportions are not imitated by compressing type.",
       "The shared design specifies an 8-pixel decision bar. Its native width follows that shared value, while the accepted source bar is slightly wider.",
+      "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
       "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
       "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
       "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",

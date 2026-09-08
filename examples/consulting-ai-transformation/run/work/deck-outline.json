@@ -36,9 +36,9 @@
       "dominant_message": "Prove the research pilot before scaling AI",
       "communication_job": "Make a bounded funding decision with a quantified hypothesis, clear scale gates and named accountability.",
       "content_obligations": [
-        "Annual research baseline 10,800 hours from 900 engagements × 12 research hours.",
-        "Potential annual capacity 1,944 hours from 60% adoption × 30% time reduction applied to the baseline.",
-        "Annual capacity equivalent $243k from 1,944 hours × $125 per hour. This is capacity value, not cash savings.",
+        "Annual research baseline 10,800 hours from 900 engagements \u00d7 12 research hours.",
+        "Potential annual capacity 1,944 hours from 60% adoption \u00d7 30% time reduction applied to the baseline.",
+        "Annual capacity equivalent $243k from 1,944 hours \u00d7 $125 per hour. This is capacity value, not cash savings.",
         "One practice, 15 consultants and 20 research-synthesis engagements in a 12-week pilot capped at $25k.",
         "Scale-readiness table with cycle-time reduction at least 25%, at least 95% of sampled cited claims verified, zero critical data exceptions, and at least 70% weekly-active pilot users, meaning at least 11 of 15.",
         "Concentrate on repeatable research work, embed review in the workflow and release funding against evidence.",
@@ -66,8 +66,8 @@
       "dominant_message": "Start where value and control readiness meet",
       "communication_job": "Compare three specific workflows with a native capacity chart and a native decision table that distinguishes feasible controlled pilot scope from later releases.",
       "content_obligations": [
-        "Native horizontal chart of illustrative annual capacity hours for research synthesis 1,944, proposal drafting 1,440 and knowledge retrieval 1,080.",
-        "All three estimates use 900 annual engagements × baseline task hours × adoption × time reduction.",
+        "Native vertical column chart of illustrative annual capacity hours for research synthesis 1,944, proposal drafting 1,440 and knowledge retrieval 1,080.",
+        "All three estimates use 900 annual engagements \u00d7 baseline task hours \u00d7 adoption \u00d7 time reduction.",
         "Native assumptions table. Research 12 hours, 60% adoption, 30% time reduction. Proposal 8 hours, 50% adoption, 40% time reduction. Retrieval 5 hours, 60% adoption, 40% time reduction.",
         "Native sequencing table. Research synthesis has an approved pilot corpus and explicit review, owned by the practice lead, sequence START. Proposal drafting needs claim and commercial-commitment controls, owned by the BD lead, sequence NEXT. Knowledge retrieval needs permissions cleanup, owned by the knowledge lead, sequence LATER.",
         "Research wins first through frequent comparable tasks, a bounded source corpus and a named expert reviewer.",
@@ -89,7 +89,8 @@
         "Use only the substantive body region defined by the resolved configuration.",
         "Use the shared title role from work/deck-design.json without a page-specific font-size exception.",
         "Use the shared pale-orange decision band with an orange label, black message, left orange bar and no outline."
-      ]
+      ],
+      "required_content": []
     },
     {
       "slide_id": "s03-operating-model",
@@ -97,7 +98,7 @@
       "dominant_message": "Keep expert ownership at every release",
       "communication_job": "Show a controlled source-to-client flow and the responsibilities, evidence records and rejection feedback needed to operate it.",
       "content_obligations": [
-        "Directed chain Approved sources → Grounded draft → Expert review → Client-ready output.",
+        "Directed chain Approved sources \u2192 Grounded draft \u2192 Expert review \u2192 Client-ready output.",
         "Responsibility matrix with four stages and rows INPUT, OUTPUT, OWNER and RELEASE CONTROL.",
         "Approved sources. Input corpus request. Output versioned source pack. Owner source steward. Control verify permissions and dates.",
         "Grounded draft. Input source pack and task brief. Output cited draft and uncertainty flags. Owner engagement team. Control check citations and evidence gaps.",
@@ -131,7 +132,7 @@
       "dominant_message": "Run the pilot through four evidence gates",
       "communication_job": "Make workstream dependencies, decision dates, owners and deliverables operational through a time matrix.",
       "content_obligations": [
-        "Native workstream matrix with time columns weeks 1–2 Approve and baseline, weeks 3–4 Build and test, weeks 5–8 Pilot and learn, weeks 9–12 Prove and decide.",
+        "Native workstream matrix with time columns weeks 1\u20132 Approve and baseline, weeks 3\u20134 Build and test, weeks 5\u20138 Pilot and learn, weeks 9\u201312 Prove and decide.",
         "Data and access, owner source steward. Approved corpus and access register. Source refresh and named stewards. Weekly access and freshness checks. Audit closeout and release inventory.",
         "Workflow and product, owner product lead. Task mapping and baseline time logs. Grounded draft and visible citations. 15-user pilot and defect fixes. Release candidate and runbook.",
         "Quality and controls, owner expert reviewer. Risk boundaries and review criteria. Test pack and rejection reasons. 10 reviewed tasks and error triage. 20 completed tasks and gate evidence.",
@@ -163,9 +164,9 @@
       "dominant_message": "Release the next investment against evidence",
       "communication_job": "Expose the economic calculation, first-year ramp, scenario sensitivity and exact release conditions for the remaining investment.",
       "content_obligations": [
-        "Base-case annual capacity equation 900 engagements × 12 research hours × 60% adoption × 30% time reduction = 1,944 hours. At $125 per hour this is $243k annual capacity equivalent.",
+        "Base-case annual capacity equation 900 engagements \u00d7 12 research hours \u00d7 60% adoption \u00d7 30% time reduction = 1,944 hours. At $125 per hour this is $243k annual capacity equivalent.",
         "Native investment ledger. Implementation $85k includes the $25k pilot and conditional remaining $60k. Annual operations add $30k. Full first-year cost is $115k.",
-        "Native sensitivity table with a 50% first-year ramp. Downside 40% adoption and 20% time reduction give 864 hours, $108k annual capacity, $54k first-year capacity and −$61k against full cost.",
+        "Native sensitivity table with a 50% first-year ramp. Downside 40% adoption and 20% time reduction give 864 hours, $108k annual capacity, $54k first-year capacity and \u2212$61k against full cost.",
         "Base 60% adoption and 30% time reduction give 1,944 hours, $243k annual capacity, $121.5k first-year capacity and +$6.5k against full cost.",
         "Upside 75% adoption and 40% time reduction give 3,240 hours, $405k annual capacity, $202.5k first-year capacity and +$87.5k against full cost.",
         "The model values released capacity. It does not claim revenue or cash savings. First-year value is 50% of annual potential.",

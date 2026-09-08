@@ -6,39 +6,39 @@
   "reviewed_artifacts": [
     {
       "path": "accepted-slide.png",
-      "sha256": "a49ee87afd9d13eab0ea6e70a03fb68d197b7319273b5a3d998f7bb116827280"
+      "sha256": "ff333c1826015522f40e68e5fe1fde9438a6997e7e983bb72ca94244b8b4256e"
     },
     {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "ef1ff46cdf54e5ed4122f058ba864de1cfd6d6bd6da0dd730d445ec3c396adf3"
+      "sha256": "e6c8f4f680eda3dbf0738106d0f76c388576ac032440328372db332166cac0a3"
     },
     {
       "path": "reconstruction/reconstruction-contract.json",
-      "sha256": "9703e8ed664dd8dcb67de6c1253d29d7e379bfe173d155f8e737842d401b7bee"
+      "sha256": "288fe2296d1b5d00e4e04cb669fe5404ad073f6aef58292211d1d8c488fd7c17"
     },
     {
       "path": "reconstruction/constructor-scene.json",
-      "sha256": "b768298af250d899dbc8f576a9c9b1a6431d8619b7708b84e8d8f835292325d2"
+      "sha256": "4c2944fcfb95eb080bb8bb68429bf3486961d5f05f0c0f8f748a67c97a5a820d"
     },
     {
       "path": "../deliverables/slide.pptx",
-      "sha256": "8b1b72c633dfe4c965d63b6fe7b6ad9dc716dfbdb52f04f4d9abebd66b5fd141"
+      "sha256": "9de1dada29ec4b6c20db94d876d24d6f92dde04d42b7ea001849b7381638e017"
     },
     {
       "path": "../deliverables/render.png",
-      "sha256": "be0d3f812ed969cf63b3f2dd26bbfa514fe431fe13ecb8226335c61ce75f282b"
+      "sha256": "dd0e32533a4a2dc5c3fa4b8ec67e0b0cbb6dc42c4b775ae37504daae84f3d546"
     },
     {
       "path": "../deliverables/comparison.png",
-      "sha256": "a3f44f9af50f87579f5644d2699c6ae1e11dfd801a65faa670432ccf7ca7fdaa"
+      "sha256": "19ddbc7d59b401e88b60e504ea6eb57aab6256a5a5592535ae7673368bf1f0b3"
     },
     {
       "path": "native-object-evidence.json",
-      "sha256": "f96b3792bcae281685950aaa716e272179633c4ca899b64e050051fcf330d8e9"
+      "sha256": "f7a174104e08a4fffd81872c51a3500dc26d250ea9328fc8babde423ec3e7892"
     },
     {
       "path": "native-text-audit.json",
-      "sha256": "f73b0993bc613ae09f3223c701888d684ee0b8dbc9bdafff6ff82818c0764c36"
+      "sha256": "a69f72703a5e40c0cb38a8e6a76e16137aca8ec5dd14d8b6716a3a351a81da95"
     },
     {
       "path": "typography-evidence.json",
@@ -46,6 +46,7 @@
     }
   ],
   "observations": [
+    "The editable chart preserves the accepted design as vertical columns. Research, proposal and retrieval remain in the same left-to-right order, with matching values and orange emphasis.",
     "I inspected the full actual headless LibreOffice render and the cropped body comparison. All three chart values appear on one line, the two native tables remain readable, and the right-side reasons and overlap qualification have no visible clipping.",
     "The real native chart contains workbook cells B2:B4 with 1944, 1440 and 1080. The native series cache matches those cells. Its category names and numeric labels remain chart components. No numeric floating textboxes or raster chart image are present.",
     "The first native attempt split digits into two lines under the Office reader's default label allocation. A diagnostic copy proved that explicit no-wrap retained the complete label. The final packaged route uses the general data_label_wrap=false property and preserves outEnd positioning and the hours format.",

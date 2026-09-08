@@ -72,7 +72,7 @@
         290
       ],
       "structure": {
-        "type": "bar",
+        "type": "column",
         "categories": [
           "Research\nsynthesis",
           "Proposal\ndrafting",
@@ -1410,7 +1410,7 @@
     "slide_number": 1
   },
   "sources": [
-    "Generated target visual: /private/tmp/.slidepoise-rebuild-jkaybi9w/slides/s02-opportunities/work/accepted-slide.png",
+    "Generated target visual: /private/tmp/.slidepoise-rebuild-h51errnw/slides/s02-opportunities/work/accepted-slide.png",
     "Canonical asset remix-file-search-line: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/file-search/remix-file-search-line.svg",
     "Canonical asset remix-database-2-line: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/database-2/remix-database-2-line.svg",
     "Canonical asset remix-user-star-line: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/user-star/remix-user-star-line.svg"
@@ -1676,8 +1676,8 @@
       "note": "No quality or reconstruction verdict is produced. Visual reasoning remains external."
     },
     "input_bindings": {
-      "measured_scene_sha256": "fb2421b33d7809d3d40945cf0a1a2ec42764609046c5e8f7352ac0942a04fc0e",
-      "reconstruction_contract_sha256": "40377cd298c1284e7563d4128504473c6d7b38f592f5884b33ef0b9ac556d384",
+      "measured_scene_sha256": "3a045ae78c8d0c4f4650f51d2e660b666018d51632d8760f2c31d9b640e31512",
+      "reconstruction_contract_sha256": "1ffb9fbaa7941bda1141540090ae9ae4035b0ca84f14512baa7a1788cc7228b3",
       "resolved_design_sha256": "ee255d93bab18eea1c3d44524732402c57d708a2a01e8270dec54f3fa8c2c88f"
     }
   }

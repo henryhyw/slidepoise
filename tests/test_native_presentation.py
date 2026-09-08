@@ -57,6 +57,20 @@ def test_malformed_chart_data_cannot_overwrite_a_usable_deck(tmp_path):
     assert target.read_bytes() == b"previous usable output"
 
 
+@pytest.mark.parametrize(("chart_type", "bar_direction"), [("column", "col"), ("bar", "bar")])
+def test_chart_type_preserves_authored_orientation(tmp_path, chart_type, bar_direction):
+    scene = {"dimensions_px": [1600, 900], "objects": [{
+        "id": "capacity", "kind": "chart", "bbox_px": [50, 50, 600, 400],
+        "structure": {"type": chart_type, "categories": ["Research", "Drafting"],
+                      "series": [{"name": "Hours", "values": [12, 8]}]},
+    }]}
+    result, target = emit(scene, tmp_path)
+    assert result.returncode == 0, result.stderr
+    with zipfile.ZipFile(target) as archive:
+        chart = ET.fromstring(archive.read("ppt/charts/chart1.xml"))
+        assert chart.find(".//c:barDir", NS).get("val") == bar_direction
+
+
 def test_native_table_preserves_word_level_formatting_with_component_styling(tmp_path):
     scene = {"dimensions_px": [1600, 900], "objects": [{
         "id": "workstreams", "kind": "table", "bbox_px": [40, 40, 900, 250],

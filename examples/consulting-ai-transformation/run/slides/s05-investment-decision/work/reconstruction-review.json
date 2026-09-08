@@ -6,43 +6,43 @@
   "reviewed_artifacts": [
     {
       "path": "accepted-slide.png",
-      "sha256": "6f63f75099b63a4b14aa1d3e9479e895d3401d03342374aa1f858f1e586f9ab6"
+      "sha256": "d209b68bdb55a094f90190b32ca032a43a9689b55db9f73614250f737a3cbfb2"
     },
     {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "f3ec830665da32fafe556395fc9529927954880b6e891f6515de7909aa1db0b2"
+      "sha256": "4399a8e2dfed4398fa6db145c8fb0b31091c5be70908775259e73f08d107b895"
     },
     {
       "path": "reconstruction/reconstruction-contract.json",
-      "sha256": "162e5dcaa9f41e25e0c3d7873d87e5f3951fb616319ca37eb02812ef7eb99e43"
+      "sha256": "21cf6e325bcface9ef5b3912c04a0ffd6d2811ec0b8719e42b81021fcf598fb6"
     },
     {
       "path": "reconstruction/constructor-scene.json",
-      "sha256": "1e7ab9a0d985d7bed073f59dd62ef1c1bbd20377bcbd962a24590f0f6de2a259"
+      "sha256": "fd270ece75b019ad0f71a0709c1b4d5e4b4099293ec5e7a8933328b97e4b8e26"
     },
     {
       "path": "../deliverables/slide.pptx",
-      "sha256": "a167babb91d03386a518f22348af445313c38515b49ff57b2298a52b3e89b854"
+      "sha256": "def95bbdbf973ce5ea54811e621e1663a029d151fc1284038a17cae782a33604"
     },
     {
       "path": "../deliverables/render.png",
-      "sha256": "434a6ab8924923d8a09a10aa916119a78c9aaef3b081fa293c4aa121e8b91f9a"
+      "sha256": "59ad326155856aab67fa364db780cba1bbd4531cf64ec67f50a14e7018a671c4"
     },
     {
       "path": "../deliverables/render.source.json",
-      "sha256": "8b97da3cd744ddb5af4c4c543a952e9f08e7d23b4ce8cec8b68dc5969035fd82"
+      "sha256": "bd9eb8f2d0b2320ec862b4ab15ae33781f57ed9d80512f2c40fabf0d510f673c"
     },
     {
       "path": "../deliverables/comparison.png",
-      "sha256": "934f53f167af5200507ed9933baacf8ac6cf9b72ea3ec450a156f778cdeb37f3"
+      "sha256": "13636b5f09d225a62f1241b373037c794a00df892abfc19d794af8073d696167"
     },
     {
       "path": "native-object-evidence.json",
-      "sha256": "96fbab95ffc344f201aea32b3cdbe5029241dde12a8e28de3ac36af7ebfd2b08"
+      "sha256": "f9efb76496dc3ff1b611b61e2602cb7cbdecc7d9b89bc942fdc8752f2409625b"
     },
     {
       "path": "native-text-audit.json",
-      "sha256": "0878ae98b456f24a6a3426a537bc34c67bd82268b5a719cb9d6d5a26f4eeabb5"
+      "sha256": "9a2e153909f584f5f94aad7d4431c0c942298190c7bfd18f9719c4d485d85e19"
     }
   ],
   "observations": [

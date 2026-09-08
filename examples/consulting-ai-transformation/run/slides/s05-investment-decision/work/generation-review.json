@@ -11,7 +11,7 @@
     },
     {
       "path": "accepted-slide.png",
-      "sha256": "6f63f75099b63a4b14aa1d3e9479e895d3401d03342374aa1f858f1e586f9ab6"
+      "sha256": "d209b68bdb55a094f90190b32ca032a43a9689b55db9f73614250f737a3cbfb2"
     },
     {
       "path": "image-edit-request-01.json",
@@ -23,7 +23,7 @@
     },
     {
       "path": "generation-contract.json",
-      "sha256": "287155b01b0e91b8d9b1b6c5af3b4ac2f0a565e56c19938aa87deaa03e0d12d5"
+      "sha256": "fd9c20bd9cc2d83b5dde08948711e8d4e24ac8cb3a127ccf5bd0182369b088bb"
     },
     {
       "path": "canvas-normalization.json",
@@ -31,7 +31,7 @@
     },
     {
       "path": "slide-intent.json",
-      "sha256": "d8118939437d871ecb632b74ea4b49fe7278d00f98a43e3aece06f47eaef67d2"
+      "sha256": "27b02ef56c0d882e48ac9d95bfc36f3406aa990f925ec34517023886bd43d8a5"
     }
   ],
   "observations": [

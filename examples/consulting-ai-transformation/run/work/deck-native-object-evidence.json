@@ -1,304 +1,99 @@
 {
+  "pptx_sha256": "638f70392a6eea2919d908ab1a558bd4f26221661df02ee0cdc5a1b795769c71",
   "slides": [
     {
       "slide_id": "s01-recommendation",
-      "native_objects": 33,
-      "native_textboxes": 25,
+      "native_objects": 32,
+      "object_kinds": {
+        "image": 3,
+        "shape": 4,
+        "table": 1,
+        "textbox": 24
+      },
       "native_tables": 1,
       "native_table_cells": 10,
       "native_charts": 0,
-      "native_connectors": 0,
-      "native_freeforms": 0,
-      "raster_pictures": 0,
+      "charts": [],
+      "raster_pictures": 3,
       "duplicate_shape_ids": [],
-      "standalone_page_xml_matches_after_page_metadata_and_local_shape_id_normalization": true,
-      "text_groups": [
-        {
-          "role": "claim-title",
-          "font_size_px": 64.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "subtitle",
-          "font_size_px": 32.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "section-headings",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "display-data",
-          "font_size_px": 68.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "metric-labels",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "metric-calculations",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "argument-numbers",
-          "font_size_px": 48.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "argument-titles",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "argument-details",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "decision-band",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        }
-      ]
+      "text_crosses_thin_separator": []
     },
     {
       "slide_id": "s02-opportunities",
-      "native_objects": 28,
-      "native_textboxes": 19,
+      "native_objects": 23,
+      "object_kinds": {
+        "chart": 1,
+        "image": 3,
+        "shape": 3,
+        "table": 2,
+        "textbox": 14
+      },
       "native_tables": 2,
       "native_table_cells": 32,
       "native_charts": 1,
-      "native_connectors": 0,
-      "native_freeforms": 0,
-      "raster_pictures": 0,
-      "duplicate_shape_ids": [],
-      "standalone_page_xml_matches_after_page_metadata_and_local_shape_id_normalization": true,
-      "text_groups": [
+      "charts": [
         {
-          "role": "claim-title",
-          "font_size_px": 64.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "subtitle",
-          "font_size_px": 32.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "section-headings",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "chart-unit",
-          "font_size_px": 24.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "calculation",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "reason-numbers",
-          "font_size_px": 48.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "reason-titles",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "reason-details",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "overlap-qualification",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "decision-band",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
+          "part": "ppt/charts/chart1.xml",
+          "bar_direction": "col"
         }
-      ]
+      ],
+      "raster_pictures": 3,
+      "duplicate_shape_ids": [],
+      "text_crosses_thin_separator": []
     },
     {
       "slide_id": "s03-operating-model",
-      "native_objects": 34,
-      "native_textboxes": 16,
+      "native_objects": 25,
+      "object_kinds": {
+        "connector_graph": 3,
+        "image": 4,
+        "shape": 3,
+        "table": 1,
+        "textbox": 14
+      },
       "native_tables": 1,
       "native_table_cells": 25,
       "native_charts": 0,
-      "native_connectors": 3,
-      "native_freeforms": 2,
-      "raster_pictures": 0,
+      "charts": [],
+      "raster_pictures": 4,
       "duplicate_shape_ids": [],
-      "standalone_page_xml_matches_after_page_metadata_and_local_shape_id_normalization": true,
-      "text_groups": [
-        {
-          "role": "claim-title",
-          "font_size_px": 64.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "subtitle",
-          "font_size_px": 32.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "workflow-labels",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "feedback-labels",
-          "font_size_px": 24.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "section-headings",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "supporting-body",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "decision-band",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        }
-      ]
+      "text_crosses_thin_separator": []
     },
     {
       "slide_id": "s04-delivery-roadmap",
-      "native_objects": 47,
-      "native_textboxes": 21,
+      "native_objects": 32,
+      "object_kinds": {
+        "connector_graph": 3,
+        "image": 4,
+        "shape": 7,
+        "table": 1,
+        "textbox": 17
+      },
       "native_tables": 1,
       "native_table_cells": 25,
       "native_charts": 0,
-      "native_connectors": 0,
-      "native_freeforms": 7,
-      "raster_pictures": 0,
+      "charts": [],
+      "raster_pictures": 4,
       "duplicate_shape_ids": [],
-      "standalone_page_xml_matches_after_page_metadata_and_local_shape_id_normalization": true,
-      "text_groups": [
-        {
-          "role": "claim-title",
-          "font_size_px": 64.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "subtitle",
-          "font_size_px": 32.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "section-headings",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "gate-labels",
-          "font_size_px": 32.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "gate-weeks",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "gate-evidence",
-          "font_size_px": 24.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "dependency-statements",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "decision-band",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        }
-      ]
+      "text_crosses_thin_separator": []
     },
     {
       "slide_id": "s05-investment-decision",
-      "native_objects": 39,
-      "native_textboxes": 30,
+      "native_objects": 33,
+      "object_kinds": {
+        "image": 3,
+        "shape": 8,
+        "table": 2,
+        "textbox": 20
+      },
       "native_tables": 2,
       "native_table_cells": 38,
       "native_charts": 0,
-      "native_connectors": 0,
-      "native_freeforms": 0,
-      "raster_pictures": 0,
+      "charts": [],
+      "raster_pictures": 3,
       "duplicate_shape_ids": [],
-      "standalone_page_xml_matches_after_page_metadata_and_local_shape_id_normalization": true,
-      "text_groups": [
-        {
-          "role": "claim-title",
-          "font_size_px": 64.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "subtitle",
-          "font_size_px": 32.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "section-headings",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "formula-terms",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "formula-results",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "formula-annotations",
-          "font_size_px": 24.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "body-copy",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "criteria-body",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        },
-        {
-          "role": "decision-band",
-          "font_size_px": 28.0,
-          "reduced_for_fit": false
-        }
-      ]
+      "text_crosses_thin_separator": []
     }
   ],
-  "shared_layout_targets": [
-    "../slideLayouts/slideLayout2.xml"
-  ],
-  "all_pages_share_one_layout": true,
-  "notes_pages": 5
+  "all_text_clear_of_thin_separators": true
 }

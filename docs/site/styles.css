@@ -114,6 +114,8 @@ body:has(dialog[open]) { overflow: hidden; }
 .dialog-actions .tool-button { min-height: 34px; }
 .artifact-body { background: #f1f3f6; padding: 24px; min-height: 250px; max-height: calc(100dvh - 235px); overflow: auto; display: flex; align-items: flex-start; justify-content: center; }
 .artifact-body > img { object-fit: contain; max-height: calc(100dvh - 290px); width: 100%; align-self: center; }
+.artifact-slide-frame { position: relative; width: 100%; max-height: calc(100dvh - 290px); background: #fff; box-shadow: 0 1px 3px #20283910; overflow: hidden; align-self: center; }
+.artifact-slide-frame > img { position: absolute; object-fit: contain; }
 .artifact-body object { width: 100%; height: calc(100dvh - 290px); border: 0; }
 .dialog-description { margin: 0; padding: 16px 24px 19px; font-size: 12px; line-height: 1.6; color: #676f7d; }
 .artifact-loading, .artifact-unavailable { width: 100%; min-height: 230px; display: grid; place-content: center; text-align: center; font-size: 13px; color: #676f7d; max-width: 500px; }

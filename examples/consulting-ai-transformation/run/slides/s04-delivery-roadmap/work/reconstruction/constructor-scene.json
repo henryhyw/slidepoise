@@ -615,13 +615,13 @@
       "kind": "connector_graph",
       "sources_px": [
         [
-          274.0,
+          244.0,
           756.0
         ]
       ],
       "targets_px": [
         [
-          551.0,
+          506.0,
           756.0
         ]
       ],
@@ -689,7 +689,7 @@
       "grouping_side": null,
       "grouping_depth_px": null,
       "grouping_bbox_px": [
-        226,
+        196,
         732,
         48,
         48
@@ -704,11 +704,11 @@
       "target_routes_px": [
         [
           [
-            274.0,
+            244.0,
             756.0
           ],
           [
-            551.0,
+            506.0,
             756.0
           ]
         ]
@@ -724,13 +724,13 @@
       "kind": "connector_graph",
       "sources_px": [
         [
-          599.0,
+          554.0,
           756.0
         ]
       ],
       "targets_px": [
         [
-          876.0,
+          816.0,
           756.0
         ]
       ],
@@ -798,7 +798,7 @@
       "grouping_side": null,
       "grouping_depth_px": null,
       "grouping_bbox_px": [
-        551,
+        506,
         732,
         48,
         48
@@ -813,11 +813,11 @@
       "target_routes_px": [
         [
           [
-            599.0,
+            554.0,
             756.0
           ],
           [
-            876.0,
+            816.0,
             756.0
           ]
         ]
@@ -833,13 +833,13 @@
       "kind": "connector_graph",
       "sources_px": [
         [
-          924.0,
+          864.0,
           756.0
         ]
       ],
       "targets_px": [
         [
-          1201.0,
+          1126.0,
           756.0
         ]
       ],
@@ -907,7 +907,7 @@
       "grouping_side": null,
       "grouping_depth_px": null,
       "grouping_bbox_px": [
-        876,
+        816,
         732,
         48,
         48
@@ -922,11 +922,11 @@
       "target_routes_px": [
         [
           [
-            924.0,
+            864.0,
             756.0
           ],
           [
-            1201.0,
+            1126.0,
             756.0
           ]
         ]
@@ -1058,7 +1058,7 @@
       "id": "gate-label-g1",
       "kind": "textbox",
       "bbox_px": [
-        120,
+        90,
         793,
         260,
         32
@@ -1097,7 +1097,7 @@
       "id": "gate-detail-g1",
       "kind": "textbox",
       "bbox_px": [
-        100,
+        70,
         827,
         300,
         35
@@ -1136,7 +1136,7 @@
       "id": "gate-label-g2",
       "kind": "textbox",
       "bbox_px": [
-        445,
+        400,
         793,
         260,
         32
@@ -1175,7 +1175,7 @@
       "id": "gate-detail-g2",
       "kind": "textbox",
       "bbox_px": [
-        425,
+        380,
         827,
         300,
         35
@@ -1214,7 +1214,7 @@
       "id": "gate-label-g3",
       "kind": "textbox",
       "bbox_px": [
-        770,
+        710,
         793,
         260,
         32
@@ -1253,7 +1253,7 @@
       "id": "gate-detail-g3",
       "kind": "textbox",
       "bbox_px": [
-        750,
+        690,
         827,
         300,
         35
@@ -1292,7 +1292,7 @@
       "id": "gate-label-g4",
       "kind": "textbox",
       "bbox_px": [
-        1095,
+        1020,
         793,
         260,
         32
@@ -1331,7 +1331,7 @@
       "id": "gate-detail-g4",
       "kind": "textbox",
       "bbox_px": [
-        1075,
+        1000,
         827,
         300,
         35
@@ -1604,7 +1604,7 @@
       "id": "gate-icon-g1",
       "kind": "image",
       "bbox_px": [
-        228,
+        198,
         734,
         44,
         44
@@ -1625,7 +1625,7 @@
       "id": "gate-icon-g2",
       "kind": "image",
       "bbox_px": [
-        553,
+        508,
         734,
         44,
         44
@@ -1646,7 +1646,7 @@
       "id": "gate-icon-g3",
       "kind": "image",
       "bbox_px": [
-        878,
+        818,
         734,
         44,
         44
@@ -1667,7 +1667,7 @@
       "id": "gate-icon-g4",
       "kind": "image",
       "bbox_px": [
-        1203,
+        1128,
         734,
         44,
         44
@@ -1730,7 +1730,7 @@
     "slide_number": 1
   },
   "sources": [
-    "Generated target visual: /private/tmp/.slidepoise-rebuild-jkaybi9w/slides/s04-delivery-roadmap/work/accepted-slide.png",
+    "Generated target visual: /private/tmp/.slidepoise-rebuild-h51errnw/slides/s04-delivery-roadmap/work/accepted-slide.png",
     "Canonical asset remix-flag-line: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/flag/remix-flag-line.svg"
   ],
   "speaker_notes": [
@@ -1978,8 +1978,8 @@
       "note": "No quality or reconstruction verdict is produced. Visual reasoning remains external."
     },
     "input_bindings": {
-      "measured_scene_sha256": "1229a6a602dfcdfdf9364cf78b4c05b9db831c85eaec14075c4bfe92198ec398",
-      "reconstruction_contract_sha256": "39b0d36817193181266d2cb617e42bafc69b10d2b9aa0678a91866aa29e52ac4",
+      "measured_scene_sha256": "1f7624f07fd78263c5cd817293c1fe452927d56cf15cb0524d8df6ae4fdbeece",
+      "reconstruction_contract_sha256": "ee125d386bf3348bb31ac0c06227b78257401e48803b143b15c136a5a88a842f",
       "resolved_design_sha256": "ee255d93bab18eea1c3d44524732402c57d708a2a01e8270dec54f3fa8c2c88f"
     }
   }

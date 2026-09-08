@@ -597,13 +597,13 @@
       "role": "supporting_visual",
       "upstream_asset_id": "remix-flag-line",
       "bbox_hint": [
-        226,
+        196,
         668,
         48,
         48
       ],
       "slot_bbox_hint": [
-        226,
+        196,
         668,
         48,
         48
@@ -645,13 +645,13 @@
       "text_style_role": "body",
       "typography_group": "gate-labels",
       "bbox_hint": [
-        120,
+        90,
         729,
         260,
         32
       ],
       "search_bbox_hint": [
-        120,
+        90,
         729,
         260,
         32
@@ -681,13 +681,13 @@
       "text_style_role": "body",
       "typography_group": "gate-details",
       "bbox_hint": [
-        100,
+        70,
         763,
         300,
         35
       ],
       "search_bbox_hint": [
-        100,
+        70,
         763,
         300,
         35
@@ -714,13 +714,13 @@
       "role": "supporting_visual",
       "upstream_asset_id": "remix-flag-line",
       "bbox_hint": [
-        551,
+        506,
         668,
         48,
         48
       ],
       "slot_bbox_hint": [
-        551,
+        506,
         668,
         48,
         48
@@ -762,13 +762,13 @@
       "text_style_role": "body",
       "typography_group": "gate-labels",
       "bbox_hint": [
-        445,
+        400,
         729,
         260,
         32
       ],
       "search_bbox_hint": [
-        445,
+        400,
         729,
         260,
         32
@@ -798,13 +798,13 @@
       "text_style_role": "body",
       "typography_group": "gate-details",
       "bbox_hint": [
-        425,
+        380,
         763,
         300,
         35
       ],
       "search_bbox_hint": [
-        425,
+        380,
         763,
         300,
         35
@@ -831,13 +831,13 @@
       "role": "supporting_visual",
       "upstream_asset_id": "remix-flag-line",
       "bbox_hint": [
-        876,
+        816,
         668,
         48,
         48
       ],
       "slot_bbox_hint": [
-        876,
+        816,
         668,
         48,
         48
@@ -879,13 +879,13 @@
       "text_style_role": "body",
       "typography_group": "gate-labels",
       "bbox_hint": [
-        770,
+        710,
         729,
         260,
         32
       ],
       "search_bbox_hint": [
-        770,
+        710,
         729,
         260,
         32
@@ -915,13 +915,13 @@
       "text_style_role": "body",
       "typography_group": "gate-details",
       "bbox_hint": [
-        750,
+        690,
         763,
         300,
         35
       ],
       "search_bbox_hint": [
-        750,
+        690,
         763,
         300,
         35
@@ -948,13 +948,13 @@
       "role": "supporting_visual",
       "upstream_asset_id": "remix-flag-line",
       "bbox_hint": [
-        1201,
+        1126,
         668,
         48,
         48
       ],
       "slot_bbox_hint": [
-        1201,
+        1126,
         668,
         48,
         48
@@ -996,13 +996,13 @@
       "text_style_role": "body",
       "typography_group": "gate-labels",
       "bbox_hint": [
-        1095,
+        1020,
         729,
         260,
         32
       ],
       "search_bbox_hint": [
-        1095,
+        1020,
         729,
         260,
         32
@@ -1032,13 +1032,13 @@
       "text_style_role": "body",
       "typography_group": "gate-details",
       "bbox_hint": [
-        1075,
+        1000,
         763,
         300,
         35
       ],
       "search_bbox_hint": [
-        1075,
+        1000,
         763,
         300,
         35
@@ -1064,9 +1064,9 @@
       "kind": "connector",
       "role": "directed_workflow_relationship",
       "bbox_hint": [
-        296,
+        266,
         680,
-        233,
+        218,
         24
       ],
       "geometry_policy": "agent_logical",
@@ -1103,13 +1103,13 @@
       "visual_constraints": {
         "start_anchors_px": [
           [
-            296,
+            266,
             692
           ]
         ],
         "end_anchors_px": [
           [
-            529,
+            484,
             692
           ]
         ],
@@ -1127,9 +1127,9 @@
       "kind": "connector",
       "role": "directed_workflow_relationship",
       "bbox_hint": [
-        621,
+        576,
         680,
-        233,
+        218,
         24
       ],
       "geometry_policy": "agent_logical",
@@ -1166,13 +1166,13 @@
       "visual_constraints": {
         "start_anchors_px": [
           [
-            621,
+            576,
             692
           ]
         ],
         "end_anchors_px": [
           [
-            854,
+            794,
             692
           ]
         ],
@@ -1190,9 +1190,9 @@
       "kind": "connector",
       "role": "directed_workflow_relationship",
       "bbox_hint": [
-        946,
+        886,
         680,
-        233,
+        218,
         24
       ],
       "geometry_policy": "agent_logical",
@@ -1229,13 +1229,13 @@
       "visual_constraints": {
         "start_anchors_px": [
           [
-            946,
+            886,
             692
           ]
         ],
         "end_anchors_px": [
           [
-            1179,
+            1104,
             692
           ]
         ],
@@ -1670,6 +1670,14 @@
       [
         "decision-band",
         "headline"
+      ],
+      [
+        "gate-label-g4",
+        "dependency-divider"
+      ],
+      [
+        "gate-detail-g4",
+        "dependency-divider"
       ]
     ]
   }

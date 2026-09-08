@@ -1,6 +1,6 @@
 # Measurement report
 
-- Image: `/private/tmp/.slidepoise-rebuild-jkaybi9w/slides/s03-operating-model/work/accepted-slide.png`
+- Image: `/private/tmp/.slidepoise-rebuild-h51errnw/slides/s03-operating-model/work/accepted-slide.png`
 - Size: 1920 x 960
 - Entities measured: 25
 - OpenCV: 5.0.0

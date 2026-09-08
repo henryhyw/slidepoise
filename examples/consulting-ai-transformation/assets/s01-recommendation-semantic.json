@@ -1,79 +1,99 @@
 {
   "schema_version": "1.0",
   "source_semantic_map": "semantic-map.json",
-  "source_semantic_map_sha256": "cd2c571d15500021a8b5bbae19a6c83120f1200a5b2b3f57e38dab959cfe097c",
-  "notice": "Selected host-authored explanations for readers. The full map and measurement preserve every entity and four semantic argument groups.",
+  "source_semantic_map_sha256": "2fa9939d5c3e019908db445bb9fb137c4744934f7f9686b5d6b48fb6d3e42888",
+  "notice": "Selected explanations for readers. The full semantic map retains 32 editable entities.",
   "entities": [
     {
       "id": "headline",
       "kind": "text",
-      "bbox_hint": [
-        43,
-        35,
-        1195,
-        70
-      ],
-      "display_label": "One executive conclusion",
+      "display_label": "Slide conclusion",
       "members": [
         "headline"
-      ]
-    },
-    {
-      "id": "baseline",
-      "kind": "text",
+      ],
       "bbox_hint": [
         46,
-        294,
-        275,
-        63
-      ],
-      "display_label": "Explicit planning baseline",
-      "members": [
-        "baseline"
+        20,
+        1828,
+        76
       ]
     },
     {
-      "id": "controlled-investment",
-      "kind": "text",
-      "bbox_hint": [
-        700,
-        650,
-        528,
-        129
-      ],
-      "display_label": "Conditional investment",
+      "id": "pilot-economics",
+      "kind": "group",
+      "display_label": "Pilot economics",
       "members": [
-        "argument-number-03",
-        "argument-title-03",
-        "argument-detail-03"
+        "baseline",
+        "baseline-label",
+        "baseline-formula",
+        "capacity",
+        "capacity-label",
+        "capacity-formula",
+        "value",
+        "value-label",
+        "value-formula",
+        "metric-divider-1",
+        "metric-divider-2"
+      ],
+      "bbox_hint": [
+        47,
+        176,
+        1820,
+        138
       ]
     },
     {
-      "id": "scale-gate-table",
-      "kind": "table",
-      "bbox_hint": [
-        1224,
-        288,
-        649,
-        473
-      ],
-      "display_label": "Native gate table",
+      "id": "pilot-rationale",
+      "kind": "group",
+      "display_label": "Why this pilot first",
       "members": [
+        "reason-icon-01",
+        "reason-number-01",
+        "reason-title-01",
+        "reason-detail-01",
+        "reason-icon-02",
+        "reason-number-02",
+        "reason-title-02",
+        "reason-detail-02",
+        "reason-icon-03",
+        "reason-number-03",
+        "reason-title-03",
+        "reason-detail-03"
+      ],
+      "bbox_hint": [
+        47,
+        356,
+        940,
+        370
+      ]
+    },
+    {
+      "id": "scale-gate",
+      "kind": "group",
+      "display_label": "Week-12 scale gate",
+      "members": [
+        "gate-heading",
         "scale-gate-table"
+      ],
+      "bbox_hint": [
+        1068,
+        356,
+        800,
+        378
       ]
     },
     {
-      "id": "decision-request",
+      "id": "decision-message",
       "kind": "text",
-      "bbox_hint": [
-        561,
-        852,
-        655,
-        38
-      ],
-      "display_label": "Bounded approval request",
+      "display_label": "Decision or boundary",
       "members": [
-        "decision-request"
+        "decision-message"
+      ],
+      "bbox_hint": [
+        520,
+        853,
+        1318,
+        50
       ]
     }
   ]

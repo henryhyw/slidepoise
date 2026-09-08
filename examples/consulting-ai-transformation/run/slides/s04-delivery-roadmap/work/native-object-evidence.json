@@ -1,90 +1,208 @@
 {
-  "pptx_sha256": "4f5ed5c8a1ed3a6cdc16e68b2c1cb6992d44650ddfe3f87dfad3e7766db066be",
-  "native_objects": 47,
-  "native_textboxes": 21,
+  "pptx_sha256": "c46ed83f7ea1bacf26d85cbf0aab5ba334b2be14c3321d17f9f440f6ceaa889e",
+  "native_objects": 32,
+  "object_kinds": {
+    "connector_graph": 3,
+    "image": 4,
+    "shape": 7,
+    "table": 1,
+    "textbox": 17
+  },
   "native_tables": 1,
   "native_table_cells": 25,
-  "native_table_data": [
-    [
-      [
-        "WORKSTREAM / OWNER",
-        "WEEKS 1\u20132Approve & baseline",
-        "WEEKS 3\u20134Build & test",
-        "WEEKS 5\u20138Pilot & learn",
-        "WEEKS 9\u201312Prove & decide"
-      ],
-      [
-        "Data & accessSource steward",
-        "Approved corpusAccess register",
-        "Source refreshNamed stewards",
-        "Weekly access andfreshness checks",
-        "Audit closeoutRelease inventory"
-      ],
-      [
-        "Workflow & productProduct lead",
-        "Task mappingBaseline time logs",
-        "Grounded draftVisible citations",
-        "15-user pilotDefect fixes",
-        "Release candidateRunbook"
-      ],
-      [
-        "Quality & controlsExpert reviewer",
-        "Risk boundariesReview criteria",
-        "Test packRejection reasons",
-        "10 reviewed tasksError triage",
-        "20 completed tasksGate evidence"
-      ],
-      [
-        "Adoption & valuePractice lead",
-        "Sponsor & usersAgree tracking",
-        "Training & supportMeasurement plan",
-        "Weekly usageFeedback sessions",
-        "Benefit caseScale recommendation"
-      ]
-    ]
-  ],
-  "native_picture_objects": 0,
+  "native_charts": 0,
+  "charts": [],
+  "native_picture_objects": 4,
   "duplicate_shape_ids": [],
+  "text_crosses_thin_separator": [],
   "typography_groups": [
     {
-      "name": "claim-title",
-      "font_size_px": 64.0,
-      "reduced_from_target": false
+      "typography_group": "claim-title",
+      "semantic_role": "slide_title",
+      "text_style_role": "slide_title",
+      "member_ids": [
+        "headline"
+      ],
+      "shared_font_size_pt": 32.0,
+      "shared_font_size_px": 64.0,
+      "agent_target_font_size_px": 64.0,
+      "explicit_peer_group": false,
+      "technical_floor_pt": 0.5,
+      "agent_target_ceiling_pt": 32.0,
+      "agent_target_unquantized_pt": 32.0,
+      "quantization_reduction_pt": 0,
+      "reduced_from_agent_target": false,
+      "reduced_for_fit": false,
+      "members_not_fitting_target": [],
+      "font_measurement_sources": {
+        "headline": "/System/Library/Fonts/Supplemental/Georgia.ttf"
+      },
+      "profile_adjustments": {},
+      "overflow_evidence": "no_overflow_detected_by_text_measurement"
     },
     {
-      "name": "subtitle",
-      "font_size_px": 32.0,
-      "reduced_from_target": false
+      "typography_group": "subtitle",
+      "semantic_role": "subtitle",
+      "text_style_role": "subtitle",
+      "member_ids": [
+        "subtitle"
+      ],
+      "shared_font_size_pt": 16.0,
+      "shared_font_size_px": 32.0,
+      "agent_target_font_size_px": 32.0,
+      "explicit_peer_group": false,
+      "technical_floor_pt": 0.5,
+      "agent_target_ceiling_pt": 16.0,
+      "agent_target_unquantized_pt": 16.0,
+      "quantization_reduction_pt": 0,
+      "reduced_from_agent_target": false,
+      "reduced_for_fit": false,
+      "members_not_fitting_target": [],
+      "font_measurement_sources": {
+        "subtitle": "/System/Library/Fonts/Supplemental/Arial.ttf"
+      },
+      "profile_adjustments": {},
+      "overflow_evidence": "no_overflow_detected_by_text_measurement"
     },
     {
-      "name": "section-headings",
-      "font_size_px": 28.0,
-      "reduced_from_target": false
+      "typography_group": "section",
+      "semantic_role": "heading_large",
+      "text_style_role": "heading_large",
+      "member_ids": [
+        "gates-heading",
+        "dependencies-heading"
+      ],
+      "shared_font_size_pt": 12.5,
+      "shared_font_size_px": 25.0,
+      "agent_target_font_size_px": 25.0,
+      "explicit_peer_group": true,
+      "technical_floor_pt": 0.5,
+      "agent_target_ceiling_pt": 12.5,
+      "agent_target_unquantized_pt": 12.5,
+      "quantization_reduction_pt": 0,
+      "reduced_from_agent_target": false,
+      "reduced_for_fit": false,
+      "members_not_fitting_target": [],
+      "font_measurement_sources": {
+        "gates-heading": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+        "dependencies-heading": "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
+      },
+      "profile_adjustments": {},
+      "overflow_evidence": "no_overflow_detected_by_text_measurement"
     },
     {
-      "name": "gate-labels",
-      "font_size_px": 32.0,
-      "reduced_from_target": false
+      "typography_group": "gate-labels",
+      "semantic_role": "body",
+      "text_style_role": "body",
+      "member_ids": [
+        "gate-label-g1",
+        "gate-label-g2",
+        "gate-label-g3",
+        "gate-label-g4"
+      ],
+      "shared_font_size_pt": 11.5,
+      "shared_font_size_px": 23.0,
+      "agent_target_font_size_px": 23.0,
+      "explicit_peer_group": true,
+      "technical_floor_pt": 0.5,
+      "agent_target_ceiling_pt": 11.5,
+      "agent_target_unquantized_pt": 11.5,
+      "quantization_reduction_pt": 0,
+      "reduced_from_agent_target": false,
+      "reduced_for_fit": false,
+      "members_not_fitting_target": [],
+      "font_measurement_sources": {
+        "gate-label-g1": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+        "gate-label-g2": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+        "gate-label-g3": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+        "gate-label-g4": "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
+      },
+      "profile_adjustments": {},
+      "overflow_evidence": "no_overflow_detected_by_text_measurement"
     },
     {
-      "name": "gate-weeks",
-      "font_size_px": 28.0,
-      "reduced_from_target": false
+      "typography_group": "gate-details",
+      "semantic_role": "body",
+      "text_style_role": "body",
+      "member_ids": [
+        "gate-detail-g1",
+        "gate-detail-g2",
+        "gate-detail-g3",
+        "gate-detail-g4"
+      ],
+      "shared_font_size_pt": 9.5,
+      "shared_font_size_px": 19.0,
+      "agent_target_font_size_px": 19.0,
+      "explicit_peer_group": true,
+      "technical_floor_pt": 0.5,
+      "agent_target_ceiling_pt": 9.5,
+      "agent_target_unquantized_pt": 9.5,
+      "quantization_reduction_pt": 0,
+      "reduced_from_agent_target": false,
+      "reduced_for_fit": false,
+      "members_not_fitting_target": [],
+      "font_measurement_sources": {
+        "gate-detail-g1": "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "gate-detail-g2": "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "gate-detail-g3": "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "gate-detail-g4": "/System/Library/Fonts/Supplemental/Arial.ttf"
+      },
+      "profile_adjustments": {},
+      "overflow_evidence": "no_overflow_detected_by_text_measurement"
     },
     {
-      "name": "gate-evidence",
-      "font_size_px": 24.0,
-      "reduced_from_target": false
+      "typography_group": "dependencies",
+      "semantic_role": "body",
+      "text_style_role": "body",
+      "member_ids": [
+        "dependency-text-1",
+        "dependency-text-2",
+        "dependency-text-3"
+      ],
+      "shared_font_size_pt": 10.0,
+      "shared_font_size_px": 20.0,
+      "agent_target_font_size_px": 20.0,
+      "explicit_peer_group": true,
+      "technical_floor_pt": 0.5,
+      "agent_target_ceiling_pt": 10.0,
+      "agent_target_unquantized_pt": 10.0,
+      "quantization_reduction_pt": 0,
+      "reduced_from_agent_target": false,
+      "reduced_for_fit": false,
+      "members_not_fitting_target": [],
+      "font_measurement_sources": {
+        "dependency-text-1": "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "dependency-text-2": "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "dependency-text-3": "/System/Library/Fonts/Supplemental/Arial.ttf"
+      },
+      "profile_adjustments": {},
+      "overflow_evidence": "no_overflow_detected_by_text_measurement"
     },
     {
-      "name": "dependency-statements",
-      "font_size_px": 28.0,
-      "reduced_from_target": false
-    },
-    {
-      "name": "decision-band",
-      "font_size_px": 28.0,
-      "reduced_from_target": false
+      "typography_group": "decision",
+      "semantic_role": "call_to_action",
+      "text_style_role": "call_to_action",
+      "member_ids": [
+        "decision-label",
+        "decision-message"
+      ],
+      "shared_font_size_pt": 14.0,
+      "shared_font_size_px": 28.0,
+      "agent_target_font_size_px": 28.0,
+      "explicit_peer_group": true,
+      "technical_floor_pt": 0.5,
+      "agent_target_ceiling_pt": 14.0,
+      "agent_target_unquantized_pt": 14.0,
+      "quantization_reduction_pt": 0,
+      "reduced_from_agent_target": false,
+      "reduced_for_fit": false,
+      "members_not_fitting_target": [],
+      "font_measurement_sources": {
+        "decision-label": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+        "decision-message": "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
+      },
+      "profile_adjustments": {},
+      "overflow_evidence": "no_overflow_detected_by_text_measurement"
     }
   ]
 }

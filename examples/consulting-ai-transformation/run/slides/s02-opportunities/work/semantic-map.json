@@ -162,7 +162,7 @@
       "z": 4,
       "meaningful_visible": true,
       "chart_structure": {
-        "type": "bar",
+        "type": "column",
         "categories": [
           "Research\nsynthesis",
           "Proposal\ndrafting",

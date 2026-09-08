@@ -450,7 +450,7 @@ async function loadWalkthrough(configuration) {
     const region = byId('walkthrough-chart-region');
     Object.assign(region.style, { left: (100 * x / size[0]) + '%', top: (100 * y / size[1]) + '%', width: (100 * width / size[0]) + '%', height: (100 * height / size[1]) + '%' });
     const crop = [x - 18, y - 30, width + 36, height + 42];
-    cropEvidence(byId('walkthrough-semantic-crop'), byId('walkthrough-semantic-image'), slide.evidence, crop, size, 'The Agent maps these bars, labels and values as one native chart.');
+    cropEvidence(byId('walkthrough-semantic-crop'), byId('walkthrough-semantic-image'), slide.evidence, crop, size, 'The Agent maps these columns, labels and values as one native chart.');
     cropEvidence(byId('walkthrough-measurement-crop'), byId('walkthrough-measurement-image'), paths.measurement_image, crop, size, 'OpenCV measurement overlay for the same chart region.');
     byId('walkthrough-semantic-caption').textContent = 'The Agent groups categories and values as one chart.';
     const ink = measured.measurement.visible_bbox.px;
@@ -464,8 +464,8 @@ async function loadWalkthrough(configuration) {
       [nativeLeft - 18, nativeTop - 30, nativeWidth + 36, nativeHeight + 42], fullSize,
       'The reconstructed native chart from the actual PowerPoint render.');
     bindArtifact('walkthrough-brief', 'Slide brief', '', paths.intent, { render: () => renderSlideBrief(intent, slide.planning.inputs) });
-    bindArtifact('walkthrough-target-open', 'AI-generated design', 'The generated content image. Shared headers and footers are added in PowerPoint.', slide.target);
-    bindArtifact('walkthrough-semantic-open', 'Chart interpretation', 'The Agent treats these categories, values and bars as a single editable chart.', slide.evidence, { crop: { box: crop, size } });
+    bindArtifact('walkthrough-target-open', 'AI-generated design', 'The generated content image is shown in its final slide position. PowerPoint supplies the shared header and footer.', slide.target, { canvas: deck.canvas });
+    bindArtifact('walkthrough-semantic-open', 'Chart interpretation', 'The Agent treats these categories, values and columns as a single editable chart.', slide.evidence, { crop: { box: crop, size } });
     bindArtifact('walkthrough-measurement-open', 'Chart measurements', 'OpenCV records ' + ink[2] + ' × ' + ink[3] + ' pixel bounds around the visible ink in this chart region. The Agent uses this evidence to set object geometry.', paths.measurement_image, { crop: { box: crop, size } });
     state.walkthrough = { deckIndex, slideId: slide.id, objectId: native.id };
     byId('walkthrough').hidden = false;
@@ -573,7 +573,7 @@ function closeArtifact() {
   motion.finished.then(() => { if (state.artifactMotion === motion) dialog.close(); }).catch(() => {});
 }
 
-async function openArtifact({ title, description = '', url, trigger = document.activeElement, crop = null, render = null }) {
+async function openArtifact({ title, description = '', url, trigger = document.activeElement, crop = null, render = null, canvas = null }) {
   if (!url) return;
   const dialog = byId('artifact-dialog');
   const opening = !dialog.open;
@@ -606,6 +606,12 @@ async function openArtifact({ title, description = '', url, trigger = document.a
         cropEvidence(region, image, url, crop.box, crop.size, description || title);
         region.append(image);
         body.replaceChildren(region);
+      } else if (canvas) {
+        const frame = element('div', 'artifact-slide-frame');
+        frame.style.aspectRatio = canvas.full_slide_px.join(' / ');
+        placeTarget(image, canvas);
+        frame.append(image);
+        body.replaceChildren(frame);
       } else body.replaceChildren(image);
     }, { once: true });
     image.addEventListener('error', () => {
@@ -744,7 +750,7 @@ byId('presentation-goal').addEventListener('click', () => {
 });
 byId('design-image-open').addEventListener('click', () => {
   const slide = state.deck?.slides[state.slideIndex];
-  if (slide) openArtifact({ title: 'AI-generated design', description: slide.title, url: slide.target, trigger: byId('design-image-open') });
+  if (slide) openArtifact({ title: 'AI-generated design', description: slide.title, url: slide.target, trigger: byId('design-image-open'), canvas: state.deck.canvas });
 });
 byId('walkthrough-native-open').addEventListener('click', async () => {
   const example = state.walkthrough;

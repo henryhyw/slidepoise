@@ -66,6 +66,10 @@ A component is not copied verbatim. Start from its generic constructor defaults,
 ## Data visualisation
 When an editable chart has authored data but no explicit series colours, use the resolved profile's chart colour defaults rather than PowerPoint's theme colours. Explicit Agent-authored chart colours remain authoritative only when they are compatible with the selected profile or an intentional profile exception.
 
+Record the chart geometry explicitly. Use `column` for vertical columns and `bar` for horizontal bars. Orientation, category order, axis direction, stacking, labels and scale are part of the chart's semantic structure. Compare each of them with the accepted target in the rendered PowerPoint. Correct data alone does not establish fidelity.
+
+Review the generated design and the actual PowerPoint in one full-slide coordinate system. Confirm the position and relative scale of every major region, then inspect chart orientation, category order, axes, labels and emphasis. Place a body-only generated image at its configured content offset before comparing it with the full slide. Never stretch the body image to fill the complete slide for review.
+
 ## Shape geometry
 ### Authored paths and stacking
 
@@ -83,6 +87,8 @@ The final visual review must compare silhouettes. An in-range radius is only mec
 
 ## Layout integrity and survival
 Only the host Agent decides which independent content regions must not overlap. Record those pairs in the semantic map. The runtime enforces the declared pairs after canonical asset placement and text fitting.
+
+The runtime also treats thin rules and dividers as structural boundaries. Text crossing one is a blocking fact. For an intentional composition such as a label placed across a rule, set `allow_text_crossing: true` on that rule or `allow_boundary_crossing: true` on the text entity and record the reason in the visual review.
 
 Every meaningful visible entity in the accepted target must survive reconstruction. It must either emit its own PowerPoint object or explicitly identify a distinct emitted `render_owner` that replaces/owns it. `measurement_evidence` may be non-emitting only when `meaningful_visible=false`. Never remove an entity merely because a canonical asset is unavailable or because the Agent thinks the slide would be simpler without it; such a candidate should have been rejected upstream.
 

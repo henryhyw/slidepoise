@@ -1543,7 +1543,7 @@
     "slide_number": 1
   },
   "sources": [
-    "Generated target visual: /private/tmp/.slidepoise-rebuild-jkaybi9w/slides/s03-operating-model/work/accepted-slide.png",
+    "Generated target visual: /private/tmp/.slidepoise-rebuild-h51errnw/slides/s03-operating-model/work/accepted-slide.png",
     "Canonical asset remix-file-search-line: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/file-search/remix-file-search-line.svg",
     "Canonical asset remix-draft-line: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/draft/remix-draft-line.svg",
     "Canonical asset remix-shield-check-line: /Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/shield-check/remix-shield-check-line.svg",
@@ -1788,8 +1788,8 @@
       "note": "No quality or reconstruction verdict is produced. Visual reasoning remains external."
     },
     "input_bindings": {
-      "measured_scene_sha256": "ab53eb616ea2d3d11eb9ffd3f22cd4ce1c8e9b582615017c698c5497f57cc6bf",
-      "reconstruction_contract_sha256": "4d8ccca9cbc841bc6978405d490210bacc0a3bbbbe0e0c774ae71d35db68dc31",
+      "measured_scene_sha256": "8b50e0434ff55f5814eb56086a85f26393565a2c58df47a7fbf8e9deb1966ae0",
+      "reconstruction_contract_sha256": "3e6babceb57e68e9a270c1d451fab19e14b5463a393865efd628add8f81e0735",
       "resolved_design_sha256": "ee255d93bab18eea1c3d44524732402c57d708a2a01e8270dec54f3fa8c2c88f"
     }
   },

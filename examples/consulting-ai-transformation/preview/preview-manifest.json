@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "source_sha256": "144791ea004117d3e65ce944e93f02a1c721cc38eb3b1c8214ec25095ee2790d",
+  "source_sha256": "638f70392a6eea2919d908ab1a558bd4f26221661df02ee0cdc5a1b795769c71",
   "dpi": 120,
   "font_environment": {
     "fontconfig_source": "macos_system_font_directories",
@@ -19,7 +19,7 @@
     {
       "slide_number": 2,
       "render": "slide-002.png",
-      "sha256": "fae91eef16ff0387afe6346f16b2827cbb3b75dc061482351145de7c844be5c4"
+      "sha256": "dd0e32533a4a2dc5c3fa4b8ec67e0b0cbb6dc42c4b775ae37504daae84f3d546"
     },
     {
       "slide_number": 3,
@@ -29,7 +29,7 @@
     {
       "slide_number": 4,
       "render": "slide-004.png",
-      "sha256": "fd1dc67add7e34d62e36c85d2cb9651f33acd3c3bb5a7cb754805c65e5719d5b"
+      "sha256": "79dda343bc4f424c182da8989b1ca75e8bc7741a20724008a71b7a5c0c174e12"
     },
     {
       "slide_number": 5,
@@ -39,10 +39,10 @@
   ],
   "contact_sheet": {
     "path": "contact-sheet.png",
-    "sha256": "c8f3cf70a27763e91db689e4894e63d8b86835d430e1fac91aeba3d887b92aa6"
+    "sha256": "7d6f01a7d699106ee491d553c371443b3e280584899ee9973e9d29a2f254f187"
   },
   "pdf": {
     "path": "presentation.pdf",
-    "sha256": "b0451553393b4766ada77065e52067c46621eee31b8495e55e594dc5b0e3ccdc"
+    "sha256": "918368d107d989a0f162d6d445186a2eb8aa4e25dc11c8f2323a55f41dc32468"
   }
 }

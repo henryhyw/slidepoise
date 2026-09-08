@@ -584,6 +584,7 @@ def build_reconstruction_scene(
                 "bullet_style": entity.get("bullet_style"),
                 "semantic_role": entity.get("role"),
                 "parent_id": entity.get("parent_id") or entity.get("parent"),
+                "allow_boundary_crossing": entity.get("allow_boundary_crossing") is True,
                 "z": z,
             })
         elif kind in {"icon", "icon_slot"}:
@@ -794,7 +795,7 @@ def build_reconstruction_scene(
                 raise ValueError(f"Shape entity {entity_id} requires an explicit shape")
             shape = {"rounded_rect": "rounded_rectangle", "circle": "ellipse"}.get(shape, shape)
             if shape in {"rectangle", "line", "parallelogram", "trapezoid", "ellipse", "rounded_rectangle"}:
-                shape_object = {"id": entity_id, "kind": "shape", "shape": shape, "bbox_px": box, "style": _resolved_entity_style(entity, design), "z": z}
+                shape_object = {"id": entity_id, "kind": "shape", "shape": shape, "bbox_px": box, "style": _resolved_entity_style(entity, design), "allow_text_crossing": entity.get("allow_text_crossing") is True, "z": z}
                 if shape == "rounded_rectangle":
                     radius_px, adjustment = _round_rect_adjustment(entity, box, design, scale_xy)
                     shape_object["corner_radius_px"] = round(radius_px, 3)

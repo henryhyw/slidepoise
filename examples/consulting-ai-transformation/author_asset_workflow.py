@@ -108,13 +108,19 @@ def write(slide: str, build):
         })
 
     build(text, shape, icon, table, connector, entities, groups, relationships)
+    non_overlap_pairs = [["headline", "subtitle"], ["decision-band", "headline"]]
+    if slide == "s04-delivery-roadmap":
+        non_overlap_pairs.extend([
+            ["gate-label-g4", "dependency-divider"],
+            ["gate-detail-g4", "dependency-divider"],
+        ])
     semantic = {
         "schema_version": "3.2.0",
         "provenance": {"created_by": "host_agent_visual_reasoning", "source": "accepted_generated_image",
             "source_sha256": hashlib.sha256(target.read_bytes()).hexdigest(),
             "composition_policy": "accepted_target_geometry_frozen"},
         "entities": entities, "groups": groups, "relationships": relationships,
-        "layout_constraints": {"non_overlap_pairs": [["headline", "subtitle"], ["decision-band", "headline"]]},
+        "layout_constraints": {"non_overlap_pairs": non_overlap_pairs},
     }
     (work / "semantic-map.json").write_text(json.dumps(semantic, indent=2) + "\n")
     previous = json.loads((work / "reconstruction-handoff.json").read_text())
@@ -188,7 +194,7 @@ def slide2(text, shape, icon, table, connector, entities, groups, relationships)
     text("chart-unit", "Illustrative hours", [37, 194, 300, 28], 22, group="label")
     chart_id="annual-capacity-chart"
     entities.append({"id":chart_id,"display_label":"Annual capacity potential by workflow","kind":"chart","role":"quantified_opportunity_comparison","bbox_hint":[40,225,660,290],"geometry_policy":"agent_logical","z":4,"meaningful_visible":True,
-        "chart_structure":{"type":"bar","categories":["Research\nsynthesis","Proposal\ndrafting","Knowledge\nretrieval"],"series":[{"name":"Illustrative annual capacity hours","values":[1944,1440,1080]}],"colors":[ORANGE,"#FF955F","#FFC099"],"show_legend":False,"show_values":True,"show_category_axis":True,"show_value_axis":True,"show_value_gridlines":True,"value_axis_minimum":0,"value_axis_maximum":2500,"gap_width_pct":55,"data_label_position":"outEnd","data_label_format_code":"#,##0","data_font_family":"Arial","data_font_size_px":24,"data_label_color":INK,"data_label_wrap":False},"style_hint":{"stroke":"none"}})
+        "chart_structure":{"type":"column","categories":["Research\nsynthesis","Proposal\ndrafting","Knowledge\nretrieval"],"series":[{"name":"Illustrative annual capacity hours","values":[1944,1440,1080]}],"colors":[ORANGE,"#FF955F","#FFC099"],"show_legend":False,"show_values":True,"show_category_axis":True,"show_value_axis":True,"show_value_gridlines":True,"value_axis_minimum":0,"value_axis_maximum":2500,"gap_width_pct":55,"data_label_position":"outEnd","data_label_format_code":"#,##0","data_font_family":"Arial","data_font_size_px":24,"data_label_color":INK,"data_label_wrap":False},"style_hint":{"stroke":"none"}})
     text("value-model-heading", "WORKFLOW VALUE MODEL", [760, 158, 1110, 38], 27, bold=True, role="heading_large", group="section")
     table("value-model", "Inputs behind the capacity comparison", [["Workflow","Baseline h","Adoption","Time saved"],["Research","12","60%","30%"],["Proposal","8","50%","40%"],["Retrieval","5","60%","40%"]], [760,202,1110,230], [285,270,270,285], [52,59,59,60], font=22)
     shape("formula-strip", [760,432,1110,60], GRAY)
@@ -239,7 +245,7 @@ def slide4(text, shape, icon, table, connector, entities, groups, relationships)
     rows=[["WORKSTREAM / OWNER","WEEKS 1–2\nApprove & baseline","WEEKS 3–4\nBuild & test","WEEKS 5–8\nPilot & learn","WEEKS 9–12\nProve & decide"],["Data & access\nSource steward","Approved corpus\nAccess register","Source refresh\nNamed stewards","Weekly access and\nfreshness checks","Audit closeout\nRelease inventory"],["Workflow & product\nProduct lead","Task mapping\nBaseline time logs","Grounded draft\nVisible citations","15-user pilot\nDefect fixes","Release candidate\nRunbook"],["Quality & controls\nExpert reviewer","Risk boundaries\nReview criteria","Test pack\nRejection reasons","10 reviewed tasks\nError triage","20 completed tasks\nGate evidence"],["Adoption & value\nPractice lead","Sponsor & users\nAgree tracking","Training & support\nMeasurement plan","Weekly usage\nFeedback sessions","Benefit case\nScale recommendation"]]
     table("roadmap-matrix","Twelve-week workstream roadmap",rows,[43,166,1830,432],[355,368,368,368,371],[80,88,88,88,88],font=20)
     text("gates-heading","EVIDENCE GATES",[43,617,900,36],25,bold=True,role="heading_large",group="section")
-    gate_data=[("g1","G1 · Week 2","Corpus + access signed",250),("g2","G2 · Week 4","Test pack approved",575),("g3","G3 · Week 8","10 tasks reviewed",900),("g4","G4 · Week 12","Practice lead + CFO decide",1225)]
+    gate_data=[("g1","G1 · Week 2","Corpus + access signed",220),("g2","G2 · Week 4","Test pack approved",530),("g3","G3 · Week 8","10 tasks reviewed",840),("g4","G4 · Week 12","Practice lead + CFO decide",1150)]
     for ident,label,detail,x in gate_data:
         icon("gate-icon-"+ident,"remix-flag-line",[x-24,668,48,48],label,"roadmap-gate-icons")
         text("gate-label-"+ident,label,[x-130,729,260,32],23,bold=True,color=ORANGE,align="center",group="gate-labels")

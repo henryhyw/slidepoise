@@ -1,99 +1,76 @@
 {
   "schema_version": "1.0",
   "source_semantic_map": "semantic-map.json",
-  "source_semantic_map_sha256": "12f423ba213dbe9e2a36ad2525f2d64664c11c5324827c1d9cf36c1a42f12724",
-  "notice": "Selected host-authored explanations for readers. The full reconstruction retains 34 entities and five semantic groups. These explanation boxes highlight the accepted source image and do not change native geometry.",
+  "source_semantic_map_sha256": "17490ed62799f4a31511bd3d9e9571e6351d30722d07f364b119f1ce838234fc",
+  "notice": "Selected explanations for readers. The full semantic map retains 25 editable entities.",
   "entities": [
     {
-      "id": "controlled-flow",
-      "kind": "connector",
-      "bbox_hint": [
-        89,
-        198,
-        1339,
-        91
-      ],
-      "display_label": "Four stages, three controlled handovers",
+      "id": "headline",
+      "kind": "text",
+      "display_label": "Slide conclusion",
       "members": [
-        "stage-1",
-        "stage-1-label",
-        "stage-2",
-        "stage-2-label",
-        "stage-3",
-        "stage-3-label",
-        "stage-4",
-        "stage-4-label",
+        "headline"
+      ],
+      "bbox_hint": [
+        46,
+        20,
+        1828,
+        76
+      ]
+    },
+    {
+      "id": "controlled-flow",
+      "kind": "group",
+      "display_label": "Controlled release sequence",
+      "members": [
+        "stage-icon-sources",
+        "stage-label-sources",
+        "stage-icon-draft",
+        "stage-label-draft",
+        "stage-icon-review",
+        "stage-label-review",
+        "stage-icon-output",
+        "stage-label-output",
         "forward-1",
         "forward-2",
-        "forward-3"
+        "forward-3",
+        "source-return-label",
+        "review-return-label"
+      ],
+      "bbox_hint": [
+        100,
+        145,
+        1720,
+        215
       ]
     },
     {
-      "id": "responsibility-matrix",
-      "kind": "table",
-      "bbox_hint": [
-        49,
-        315,
-        1424,
-        333
-      ],
-      "display_label": "One native matrix, 25 editable cells",
+      "id": "accountability",
+      "kind": "group",
+      "display_label": "Accountability by stage",
       "members": [
         "responsibility-matrix"
-      ]
-    },
-    {
-      "id": "operating-controls",
-      "kind": "text",
-      "bbox_hint": [
-        1515,
-        254,
-        357,
-        459
       ],
-      "display_label": "Controls and paired-task evidence",
-      "members": [
-        "shared-controls-heading",
-        "shared-register",
-        "platform-controls",
-        "measurement-heading",
-        "baseline-measurement",
-        "review-measurement"
+      "bbox_hint": [
+        34,
+        382,
+        1836,
+        300
       ]
     },
     {
       "id": "decision-message",
       "kind": "text",
-      "bbox_hint": [
-        424,
-        837,
-        851,
-        48
-      ],
-      "display_label": "Client release requires both sign-offs",
+      "display_label": "Decision or boundary",
       "members": [
         "decision-message"
-      ]
-    }
-  ],
-  "groups": [
-    {
-      "id": "feedback",
-      "display_label": "Two distinct correction loops",
-      "semantic_class": "Editable cubic paths",
+      ],
       "bbox_hint": [
-        326,
-        648,
-        810,
-        130
-      ],
-      "children": [
-        "source-correction",
-        "source-correction-label",
-        "expert-rejection",
-        "expert-rejection-label"
-      ],
-      "group_reason": "One path returns draft to sources, and the other returns expert review to draft. Their separate observed corridors remain visible. Native freeforms preserve the curves and do not automatically reattach after moving table columns in Office."
+        520,
+        853,
+        1318,
+        50
+      ]
     }
   ]
 }

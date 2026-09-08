@@ -6,39 +6,39 @@
   "reviewed_artifacts": [
     {
       "path": "accepted-slide.png",
-      "sha256": "65320ec1e13c44d39f96dd36d5159195731aeb7b1a7444dff652f1bf3f4b24e7"
+      "sha256": "8901e2a892e61bcdaab3931929e840de1317f8409eee606534a3d7b247dd3d05"
     },
     {
       "path": "reconstruction/constructor-scene.json",
-      "sha256": "971a749282843338345ae58c3be00c77351e12c7a874cacf4f880d0ebdf9dda8"
+      "sha256": "8cdeb8e5fc77290c858114241fc2ff0038b5a55aad50e5d8a40ad504c330c077"
     },
     {
       "path": "../deliverables/slide.pptx",
-      "sha256": "250640f29ae76fdf4343921c12f57a09dd0cfeb7a41b2a5766ce629ef7b92b51"
+      "sha256": "db88681f8f70fc52ffab0536b9fdc4cc730bf34a96c515eabf0f7de3dd160e01"
     },
     {
       "path": "../deliverables/render.png",
-      "sha256": "683868ff0e678c2d1e81e86159c87ccbf817af4ab97d5fd969b9bd021228df8c"
+      "sha256": "ef98d340cbdfe9cba2df10f33b510029513810d405c274b960ac08c925469c20"
     },
     {
       "path": "../deliverables/comparison.png",
-      "sha256": "8d7a971bf8a3bc7f03dcd7dceaccf323e8f4a2e024b098934a759d338b4aaf1c"
+      "sha256": "3c424ddcd4a991b9bbd590fc8c7d49e5a08c2783b172bea54b0f744c32eb9703"
     },
     {
       "path": "native-object-evidence.json",
-      "sha256": "90e3fa9e6318f47ec0d75294fb8258f748a4c0e464df93afdb5038081d80cf59"
+      "sha256": "10a744a59ff660056bf02c6cf46012f902183066e8a6f2518dbcea3c5c7b7a4d"
     },
     {
       "path": "native-text-audit.json",
-      "sha256": "4dc3b55ea7dd5819b2d428676cb59f5d2c960b3de8ee1fdc64212245ad74b955"
+      "sha256": "516c94e9b06711d913868b1043c7f965ccb459af954cb60bb882c432dbf8ed06"
     },
     {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "eedee23a54be7d0d4ce691c7f5b315d24227b9abd831b52dfc5503c6477be73b"
+      "sha256": "458bd571ba34c59becd0c3a9dba3d51ef7818233a36557b4826e76fd90445c7d"
     },
     {
       "path": "reconstruction/reconstruction-contract.json",
-      "sha256": "dfa80a36ed74bb4d0f53110837f6160d2069fb06cc42623872bfbd4e736dbf30"
+      "sha256": "83e91e236096ec8c4deeba2dab09fbb88460ca833dd60f5a676622cc988521df"
     },
     {
       "path": "typography-evidence.json",

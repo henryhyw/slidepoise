@@ -11,7 +11,7 @@
     },
     {
       "path": "accepted-slide.png",
-      "sha256": "c8ead882cc20d711d3079b79629448058d9fb0c80716cf7154ccf3ce4cae11b6"
+      "sha256": "c9e5f21257c82fb253cb3c935cfad3b1f238b1c17a6affcc48f3d67543633787"
     },
     {
       "path": "image-edit-request-01.json",
@@ -19,7 +19,7 @@
     },
     {
       "path": "generation-contract.json",
-      "sha256": "80d3bba6b9aeb115b5ac6b63f28eb01e8be76a96b652c7dcf26200e649ed6199"
+      "sha256": "d6379cebf4d706ac90ba0a347e04af767ea84d13e02fa9f28b3abc5a6d54e3e3"
     },
     {
       "path": "canvas-normalization.json",

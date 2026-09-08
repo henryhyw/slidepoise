@@ -6,23 +6,23 @@
   "reviewed_artifacts": [
     {
       "path": "accepted-slide.png",
-      "sha256": "a49ee87afd9d13eab0ea6e70a03fb68d197b7319273b5a3d998f7bb116827280"
+      "sha256": "ff333c1826015522f40e68e5fe1fde9438a6997e7e983bb72ca94244b8b4256e"
     },
     {
       "path": "semantic-map.json",
-      "sha256": "0ad877fe86736ab223eec6e439531893912317831526ddbf27c9f2c092c6f1a0"
+      "sha256": "cef981d17b39419738a7197e7ce10f987e8e5061bfadbf54af587c3fb5579afa"
     },
     {
       "path": "reconstruction-handoff.json",
-      "sha256": "e2f9905ac861f0e5bed5ed6511ad3ba704978a00c1967d2a603c53a2b0133418"
+      "sha256": "dbcc3311184654f1e204cdddcf7e22d16396d5467b37d741e56457f226fc89a8"
     },
     {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "ef1ff46cdf54e5ed4122f058ba864de1cfd6d6bd6da0dd730d445ec3c396adf3"
+      "sha256": "e6c8f4f680eda3dbf0738106d0f76c388576ac032440328372db332166cac0a3"
     },
     {
       "path": "reconstruction/measurement/debug_overlay.png",
-      "sha256": "a03ed74673f8f07be76a88641f1b787cf587915ef6742cdde05138be2faee951"
+      "sha256": "fab55c38b6ad16cc89e06d595867ad516692f543f6606ad0590fba61bacd2e4e"
     }
   ],
   "observations": [

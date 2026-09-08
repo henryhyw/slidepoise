@@ -77,27 +77,27 @@
     },
     {
       "path": "scenes/slide-001.json",
-      "sha256": "379b492adca97b5759aaceb665ec4d8b5a970a0f1a2848fd6b8aebf5685e0ebc",
+      "sha256": "9ff5eb84da9ed1acd77f2814e5dcaa7ad3bac8b9ba41d3c93aa1c4d2333fe14c",
       "bytes": 45065
     },
     {
       "path": "scenes/slide-002.json",
-      "sha256": "438bdb5ff3a1a72fee9ffc9ae9840fa879db3bbc488b31f3137277a4e0a9b990",
-      "bytes": 44716
+      "sha256": "73432e94703fa35b19b9cfdb7dd1f46bb3ea102f1625378c2905a0afbe479249",
+      "bytes": 44719
     },
     {
       "path": "scenes/slide-003.json",
-      "sha256": "fd5c4394e926473aabc47be17354b26b819e2c5011c88ed04b72fd39e06da874",
+      "sha256": "ecdedd6f2ace109c5467bbcf73ac3831252959b46232b912470bd9d46978e601",
       "bytes": 48358
     },
     {
       "path": "scenes/slide-004.json",
-      "sha256": "ca01863827629b19d3c79598cfa713be7fbfa95426a81e59205ec775456997eb",
-      "bytes": 51532
+      "sha256": "2cda34aa278b5e30108fb1a4661f80b58bd69765602df492051fe64a4c2a49fb",
+      "bytes": 51530
     },
     {
       "path": "scenes/slide-005.json",
-      "sha256": "32c2675198693500753a3fa3745daad656dc14209ce62e92d0872d653a27b624",
+      "sha256": "8ec4d6a13f54f112f1069cdd3220d6ca004a9ea2891cbc7b57f1ec8025f96b45",
       "bytes": 56598
     }
   ]

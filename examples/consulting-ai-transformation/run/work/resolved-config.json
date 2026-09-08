@@ -14,9 +14,9 @@
     },
     "components": {
       "catalogs": [
-        "/Users/henry/.slidepoise/library-sets/components/consulting-core/catalog.json"
+        "/Users/henry/Codes/AI_slide_drafting/library-sets/components/consulting-core/catalog.json"
       ],
-      "catalog": "/Users/henry/.slidepoise/library-sets/components/consulting-core/catalog.json",
+      "catalog": "/Users/henry/Codes/AI_slide_drafting/library-sets/components/consulting-core/catalog.json",
       "set_ids": [
         "consulting-core"
       ]
@@ -875,9 +875,9 @@
       },
       "components": {
         "catalogs": [
-          "/Users/henry/.slidepoise/library-sets/components/consulting-core/catalog.json"
+          "/Users/henry/Codes/AI_slide_drafting/library-sets/components/consulting-core/catalog.json"
         ],
-        "catalog": "/Users/henry/.slidepoise/library-sets/components/consulting-core/catalog.json",
+        "catalog": "/Users/henry/Codes/AI_slide_drafting/library-sets/components/consulting-core/catalog.json",
         "set_ids": [
           "consulting-core"
         ]
@@ -1507,7 +1507,7 @@
     "always_attach_visual_references": []
   },
   "library_sets": {
-    "root": "/Users/henry/.slidepoise/library-sets",
+    "root": "/Users/henry/Codes/AI_slide_drafting/library-sets",
     "selected": {
       "icons": [
         "remix-icon"
@@ -1524,7 +1524,7 @@
         "description": "A coherent open-source line and fill icon family. The Agent compares both variants against the approved slide before reconstruction.",
         "source": "remote",
         "provider": "remix_icon",
-        "root": "/Users/henry/.slidepoise/library-sets",
+        "root": "/Users/henry/Codes/AI_slide_drafting/library-sets",
         "license": "Remix Icon License v1.0"
       },
       "consulting-core": {
@@ -1533,7 +1533,7 @@
         "name": "Consulting core",
         "description": "Editable information structures for evidence-rich recommendations, operating models and executive communication.",
         "source": "local",
-        "root": "/Users/henry/.slidepoise/library-sets/components/consulting-core"
+        "root": "/Users/henry/Codes/AI_slide_drafting/library-sets/components/consulting-core"
       }
     }
   },

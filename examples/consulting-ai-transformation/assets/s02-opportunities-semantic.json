@@ -1,83 +1,78 @@
 {
   "schema_version": "1.0",
   "source_semantic_map": "semantic-map.json",
-  "source_semantic_map_sha256": "0ad877fe86736ab223eec6e439531893912317831526ddbf27c9f2c092c6f1a0",
-  "notice": "Selected host-authored explanations. Full measurement retains every source entity and three semantic argument groups.",
+  "source_semantic_map_sha256": "cef981d17b39419738a7197e7ce10f987e8e5061bfadbf54af587c3fb5579afa",
+  "notice": "Selected explanations for readers. The full semantic map retains 23 editable entities.",
   "entities": [
     {
-      "id": "annual-capacity-chart",
-      "kind": "chart",
-      "bbox_hint": [
-        31,
-        274,
-        620,
-        221
-      ],
-      "display_label": "One workbook-linked chart",
-      "members": [
-        "annual-capacity-chart",
-        "research-category",
-        "proposal-category",
-        "retrieval-category",
-        "research-value",
-        "proposal-value",
-        "retrieval-value"
-      ]
-    },
-    {
-      "id": "workflow-assumptions",
-      "kind": "table",
-      "bbox_hint": [
-        33,
-        502,
-        582,
-        198
-      ],
-      "display_label": "Transparent model inputs",
-      "members": [
-        "workflow-assumptions"
-      ]
-    },
-    {
-      "id": "pilot-sequencing",
-      "kind": "table",
-      "bbox_hint": [
-        670,
-        254,
-        661,
-        506
-      ],
-      "display_label": "Native decision comparison",
-      "members": [
-        "pilot-sequencing"
-      ]
-    },
-    {
-      "id": "overlap-qualification",
+      "id": "headline",
       "kind": "text",
-      "bbox_hint": [
-        1399,
-        700,
-        391,
-        59
-      ],
-      "display_label": "Avoid double-counting",
+      "display_label": "Slide conclusion",
       "members": [
-        "overlap-qualification"
+        "headline"
+      ],
+      "bbox_hint": [
+        46,
+        20,
+        1828,
+        76
+      ]
+    },
+    {
+      "id": "opportunity-model",
+      "kind": "group",
+      "display_label": "Capacity model",
+      "members": [
+        "capacity-heading",
+        "chart-unit",
+        "annual-capacity-chart",
+        "value-model-heading",
+        "value-model",
+        "formula-strip",
+        "capacity-formula"
+      ],
+      "bbox_hint": [
+        37,
+        158,
+        1833,
+        334
+      ]
+    },
+    {
+      "id": "pilot-choice",
+      "kind": "group",
+      "display_label": "Pilot choice",
+      "members": [
+        "reason-heading",
+        "reason-icon-file",
+        "reason-file",
+        "reason-icon-corpus",
+        "reason-corpus",
+        "reason-icon-reviewer",
+        "reason-reviewer",
+        "sequencing-heading",
+        "pilot-sequencing",
+        "overlap-note"
+      ],
+      "bbox_hint": [
+        37,
+        520,
+        1833,
+        317
       ]
     },
     {
       "id": "decision-message",
       "kind": "text",
-      "bbox_hint": [
-        509,
-        847,
-        774,
-        43
-      ],
-      "display_label": "Bounded pilot recommendation",
+      "display_label": "Decision or boundary",
       "members": [
         "decision-message"
+      ],
+      "bbox_hint": [
+        520,
+        853,
+        1318,
+        50
       ]
     }
   ]

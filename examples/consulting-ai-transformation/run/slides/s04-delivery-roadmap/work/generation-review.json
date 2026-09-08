@@ -7,7 +7,7 @@
   "reviewed_artifacts": [
     {
       "path": "accepted-slide.png",
-      "sha256": "ca744f8927ada435cb066b41ea8b3a3c8c951f27c99a5c3bbf28f37e8d9c9a5a"
+      "sha256": "8c90ba253f0001c3be639e0cd13e6e0a6148f8152a6dc73d0c877db4bf4ed804"
     },
     {
       "path": "generated-original.png",
@@ -15,7 +15,7 @@
     },
     {
       "path": "generation-request.json",
-      "sha256": "3e78d064e7c5b36b529b49270ba287c1390aa1e831f22c542993c440126af6ed"
+      "sha256": "51f282c927dcd13a72d07b2b3864bf4e22c8e48cf4369e366e06b96f91aed611"
     }
   ],
   "observations": [

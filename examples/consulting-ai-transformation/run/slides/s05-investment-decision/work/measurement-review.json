@@ -6,31 +6,31 @@
   "reviewed_artifacts": [
     {
       "path": "accepted-slide.png",
-      "sha256": "6f63f75099b63a4b14aa1d3e9479e895d3401d03342374aa1f858f1e586f9ab6"
+      "sha256": "d209b68bdb55a094f90190b32ca032a43a9689b55db9f73614250f737a3cbfb2"
     },
     {
       "path": "semantic-map.json",
-      "sha256": "944199dc1a9804b76d9a9826df256bac77d4150f7280e0fc987d22017c606ac5"
+      "sha256": "d1a2b67a2c8e00213e562a609dd1a71910bb93f0ef43d6f7389daf01306383e5"
     },
     {
       "path": "reconstruction-handoff.json",
-      "sha256": "f4fc7b2d7f2e757da8e1b643afca1a49e275a65ada82a50c555549ebcb304713"
+      "sha256": "f911ff20ee004b63d4fcdfacb54b22062c7b7aaa0e929d3d1cbb3e369fdf12fa"
     },
     {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "f3ec830665da32fafe556395fc9529927954880b6e891f6515de7909aa1db0b2"
+      "sha256": "4399a8e2dfed4398fa6db145c8fb0b31091c5be70908775259e73f08d107b895"
     },
     {
       "path": "reconstruction/measurement/debug_overlay.png",
-      "sha256": "c941bd4710b1010aff3106faf20a902f84ea77cdb535031edb2cbd9d423bdc79"
+      "sha256": "2b7521e88b9a57dfe05ae750c1eb0c89995401df82d6519d140cbc80fff31288"
     },
     {
-      "path": "semantic-explanation-map.json",
-      "sha256": "bd331e728e390ce8b4c608955be990c2f64b575680fe155561bb8d141ff25bd6"
+      "path": "semantic-explanation.json",
+      "sha256": "ad294bcf08b939ff1b7e9a02e0b250100f5f4f5b7f156dc9255460515fe8dce3"
     },
     {
-      "path": "semantic-explanation.png",
-      "sha256": "083e69a58454b429e0a766ce9baff2d0d682e501f16f8c6e64e4b36d1d4040fd"
+      "path": "../deliverables/semantic-explanation.png",
+      "sha256": "0f980cdb6bc216040f172a64ff6cdb4e59dc6ce0a76035b3cbc4fa5fb504f13c"
     }
   ],
   "observations": [

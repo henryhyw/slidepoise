@@ -1,80 +1,202 @@
 {
-  "pptx_sha256": "83e27577cda140f0b849a6a254805b2d4480e030629eddd7c10894f39ceb7fd2",
+  "pptx_sha256": "1b0d195174cea864ed8cedb50fab325f5bae4cdc078771a169e19a4707358404",
+  "native_objects": 25,
+  "object_kinds": {
+    "connector_graph": 3,
+    "image": 4,
+    "shape": 3,
+    "table": 1,
+    "textbox": 14
+  },
   "native_tables": 1,
   "native_table_cells": 25,
-  "native_picture_objects": 0,
-  "native_straight_connectors": 3,
+  "native_charts": 0,
+  "charts": [],
+  "native_picture_objects": 4,
   "duplicate_shape_ids": [],
-  "table_font_sizes_pt": [
-    12.0
-  ],
-  "headline_font_sizes_pt": [
-    32.0
-  ],
-  "table_row_heights_px": [
-    55.0,
-    65.0,
-    64.0,
-    64.0,
-    85.0
-  ],
-  "feedback_paths": [
+  "text_crosses_thin_separator": [],
+  "typography_groups": [
     {
-      "name": "source-correction",
-      "native_element": "sp",
-      "cubic_segments": 2,
-      "arrow_type_at_end": "triangle",
-      "automatic_shape_attachment": false,
-      "stroke_width_px": 3.0
+      "typography_group": "claim-title",
+      "semantic_role": "slide_title",
+      "text_style_role": "slide_title",
+      "member_ids": [
+        "headline"
+      ],
+      "shared_font_size_pt": 32.0,
+      "shared_font_size_px": 64.0,
+      "agent_target_font_size_px": 64.0,
+      "explicit_peer_group": false,
+      "technical_floor_pt": 0.5,
+      "agent_target_ceiling_pt": 32.0,
+      "agent_target_unquantized_pt": 32.0,
+      "quantization_reduction_pt": 0,
+      "reduced_from_agent_target": false,
+      "reduced_for_fit": false,
+      "members_not_fitting_target": [],
+      "font_measurement_sources": {
+        "headline": "/System/Library/Fonts/Supplemental/Georgia.ttf"
+      },
+      "profile_adjustments": {},
+      "overflow_evidence": "no_overflow_detected_by_text_measurement"
     },
     {
-      "name": "expert-rejection",
-      "native_element": "sp",
-      "cubic_segments": 2,
-      "arrow_type_at_end": "triangle",
-      "automatic_shape_attachment": false,
-      "stroke_width_px": 3.0
+      "typography_group": "subtitle",
+      "semantic_role": "subtitle",
+      "text_style_role": "subtitle",
+      "member_ids": [
+        "subtitle"
+      ],
+      "shared_font_size_pt": 16.0,
+      "shared_font_size_px": 32.0,
+      "agent_target_font_size_px": 32.0,
+      "explicit_peer_group": false,
+      "technical_floor_pt": 0.5,
+      "agent_target_ceiling_pt": 16.0,
+      "agent_target_unquantized_pt": 16.0,
+      "quantization_reduction_pt": 0,
+      "reduced_from_agent_target": false,
+      "reduced_for_fit": false,
+      "members_not_fitting_target": [],
+      "font_measurement_sources": {
+        "subtitle": "/System/Library/Fonts/Supplemental/Arial.ttf"
+      },
+      "profile_adjustments": {},
+      "overflow_evidence": "no_overflow_detected_by_text_measurement"
+    },
+    {
+      "typography_group": "stage-labels",
+      "semantic_role": "heading_large",
+      "text_style_role": "heading_large",
+      "member_ids": [
+        "stage-label-sources",
+        "stage-label-draft",
+        "stage-label-review",
+        "stage-label-output"
+      ],
+      "shared_font_size_pt": 12.5,
+      "shared_font_size_px": 25.0,
+      "agent_target_font_size_px": 25.0,
+      "explicit_peer_group": true,
+      "technical_floor_pt": 0.5,
+      "agent_target_ceiling_pt": 12.5,
+      "agent_target_unquantized_pt": 12.5,
+      "quantization_reduction_pt": 0,
+      "reduced_from_agent_target": false,
+      "reduced_for_fit": false,
+      "members_not_fitting_target": [],
+      "font_measurement_sources": {
+        "stage-label-sources": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+        "stage-label-draft": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+        "stage-label-review": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+        "stage-label-output": "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
+      },
+      "profile_adjustments": {},
+      "overflow_evidence": "no_overflow_detected_by_text_measurement"
+    },
+    {
+      "typography_group": "feedback",
+      "semantic_role": "body",
+      "text_style_role": "body",
+      "member_ids": [
+        "source-return-label",
+        "review-return-label"
+      ],
+      "shared_font_size_pt": 10.5,
+      "shared_font_size_px": 21.0,
+      "agent_target_font_size_px": 21.0,
+      "explicit_peer_group": true,
+      "technical_floor_pt": 0.5,
+      "agent_target_ceiling_pt": 10.5,
+      "agent_target_unquantized_pt": 10.5,
+      "quantization_reduction_pt": 0,
+      "reduced_from_agent_target": false,
+      "reduced_for_fit": false,
+      "members_not_fitting_target": [],
+      "font_measurement_sources": {
+        "source-return-label": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+        "review-return-label": "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
+      },
+      "profile_adjustments": {},
+      "overflow_evidence": "no_overflow_detected_by_text_measurement"
+    },
+    {
+      "typography_group": "section",
+      "semantic_role": "heading_large",
+      "text_style_role": "heading_large",
+      "member_ids": [
+        "shared-controls-heading",
+        "measurement-heading"
+      ],
+      "shared_font_size_pt": 12.5,
+      "shared_font_size_px": 25.0,
+      "agent_target_font_size_px": 25.0,
+      "explicit_peer_group": true,
+      "technical_floor_pt": 0.5,
+      "agent_target_ceiling_pt": 12.5,
+      "agent_target_unquantized_pt": 12.5,
+      "quantization_reduction_pt": 0,
+      "reduced_from_agent_target": false,
+      "reduced_for_fit": false,
+      "members_not_fitting_target": [],
+      "font_measurement_sources": {
+        "shared-controls-heading": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+        "measurement-heading": "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
+      },
+      "profile_adjustments": {},
+      "overflow_evidence": "no_overflow_detected_by_text_measurement"
+    },
+    {
+      "typography_group": "body",
+      "semantic_role": "body",
+      "text_style_role": "body",
+      "member_ids": [
+        "shared-controls",
+        "measurement"
+      ],
+      "shared_font_size_pt": 10.5,
+      "shared_font_size_px": 21.0,
+      "agent_target_font_size_px": 21.0,
+      "explicit_peer_group": true,
+      "technical_floor_pt": 0.5,
+      "agent_target_ceiling_pt": 10.5,
+      "agent_target_unquantized_pt": 10.5,
+      "quantization_reduction_pt": 0,
+      "reduced_from_agent_target": false,
+      "reduced_for_fit": false,
+      "members_not_fitting_target": [],
+      "font_measurement_sources": {
+        "shared-controls": "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "measurement": "/System/Library/Fonts/Supplemental/Arial.ttf"
+      },
+      "profile_adjustments": {},
+      "overflow_evidence": "no_overflow_detected_by_text_measurement"
+    },
+    {
+      "typography_group": "decision",
+      "semantic_role": "call_to_action",
+      "text_style_role": "call_to_action",
+      "member_ids": [
+        "decision-label",
+        "decision-message"
+      ],
+      "shared_font_size_pt": 14.0,
+      "shared_font_size_px": 28.0,
+      "agent_target_font_size_px": 28.0,
+      "explicit_peer_group": true,
+      "technical_floor_pt": 0.5,
+      "agent_target_ceiling_pt": 14.0,
+      "agent_target_unquantized_pt": 14.0,
+      "quantization_reduction_pt": 0,
+      "reduced_from_agent_target": false,
+      "reduced_for_fit": false,
+      "members_not_fitting_target": [],
+      "font_measurement_sources": {
+        "decision-label": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+        "decision-message": "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
+      },
+      "profile_adjustments": {},
+      "overflow_evidence": "no_overflow_detected_by_text_measurement"
     }
-  ],
-  "frame_emitted_on_slide": false,
-  "release_rule_present": true,
-  "speaker_notes": [
-    "This is an illustrative planning scenario. Twenty paired tasks represent one research task from each of twenty pilot engagements, with ten tasks at the week-eight interim review. The sampled 95% claim-verification gate measures pilot quality. Every client claim still requires expert sign-off and every client release requires engagement-lead approval.",
-    "The two curved feedback paths are editable native freeforms. They preserve the observed direction and curve geometry, but moving the table or its columns in Office does not automatically reattach these paths."
-  ],
-  "internal_handoff_notes_excluded": true,
-  "shared_geometry_calibration": {
-    "title_body": [
-      48,
-      19,
-      1824,
-      80
-    ],
-    "subtitle_body": [
-      48,
-      103,
-      1824,
-      51
-    ],
-    "decision_band_body": [
-      48,
-      793,
-      1824,
-      134
-    ],
-    "decision_label_body": [
-      100,
-      832,
-      420,
-      52
-    ],
-    "decision_message_body": [
-      560,
-      832,
-      1265,
-      52
-    ],
-    "decision_text_anchor": "ctr",
-    "decision_font_size_pt": 14
-  }
+  ]
 }

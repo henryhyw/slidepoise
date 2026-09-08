@@ -1,8 +1,8 @@
 {
   "schema_version": "3.0.0",
   "source": {
-    "image": "/private/tmp/.slidepoise-rebuild-jkaybi9w/slides/s02-opportunities/work/accepted-slide.png",
-    "path": "/private/tmp/.slidepoise-rebuild-jkaybi9w/slides/s02-opportunities/work/accepted-slide.png",
+    "image": "/private/tmp/.slidepoise-rebuild-h51errnw/slides/s02-opportunities/work/accepted-slide.png",
+    "path": "/private/tmp/.slidepoise-rebuild-h51errnw/slides/s02-opportunities/work/accepted-slide.png",
     "width_px": 1920,
     "height_px": 960
   },
@@ -2454,7 +2454,7 @@
       "z": 4,
       "meaningful_visible": true,
       "chart_structure": {
-        "type": "bar",
+        "type": "column",
         "categories": [
           "Research\nsynthesis",
           "Proposal\ndrafting",
@@ -12127,6 +12127,7 @@
       "The shared native title, subtitle, section/body, table and decision sizes stay 64, 32, 28, 24 and 28 pixels. Explicit paragraph reflow preserves every word where native Arial is wider than the generated glyphs.",
       "The source has no numeral squares, icons, arrows or raster artwork. The gray overlap warning is substantive content, separate from the inherited frame.",
       "Generation uses the 1920 by 960 substantive body and the runtime adds the separate inherited 64-pixel header and 56-pixel footer.",
+      "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
       "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
       "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
       "The host Agent selected line and fill candidates before generation, reviewed both variants in context, and bound the chosen line SVGs to semantic icon roles. Reconstruction restores the canonical SVG files.",
