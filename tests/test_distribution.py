@@ -40,7 +40,7 @@ def test_sdist_builds_self_contained_wheel_and_runs_outside_repository(tmp_path)
             assert "framework/_bundled/" + path in names
         assert "webapp/ui/session-panel.js" in names
         assert "webapp/console/index.html" in names
-        assert wheel.read("webapp/console/mark.svg") == (source / "docs/site/mark.svg").read_bytes()
+        assert wheel.read("webapp/console/mark.svg") == (source / "webapp/console/mark.svg").read_bytes()
         assert any(name.endswith(".dist-info/licenses/LICENSE") for name in names)
         assert not any("__pycache__" in name for name in names)
         wheel.extractall(installed)

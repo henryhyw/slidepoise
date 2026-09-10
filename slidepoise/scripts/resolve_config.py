@@ -113,7 +113,15 @@ def main() -> None:
     repository_root = Path(__file__).resolve().parents[2]
     installed_root = Path(os.environ.get("SLIDEPOISE_HOME", Path.home() / ".slidepoise")) / "profiles"
     profiles_root = Path(frozen.get("profiles_root") or args.profiles_root or (installed_root if installed_root.is_dir() else repository_root / "profiles")).expanduser().resolve()
+    aliases_path = profiles_root / "aliases.json"
+    aliases = load(aliases_path) if aliases_path.is_file() else {}
+    requested_id = profile_id
+    if not frozen and not (profiles_root / profile_id / "profile.json").is_file():
+        profile_id = aliases.get(profile_id, profile_id)
     profile_path = profiles_root / profile_id / "profile.json"
+    if frozen and not profile_path.is_file():
+        # Keep the captured design while locating its renamed reference directory.
+        profile_path = profiles_root / aliases.get(profile_id, profile_id) / "profile.json"
     if frozen and profile_id not in frozen["profiles"]:
         raise SystemExit("Profile was not captured for this session. Explicitly update session defaults first.")
     if not frozen and not profile_path.is_file():
@@ -126,6 +134,8 @@ def main() -> None:
     if not isinstance(overlay, dict):
         raise SystemExit("profile.design_overrides must be an object")
     merge_profile(cfg["design"], overlay)
+    if requested_id != profile_id:
+        merge_profile(cfg["design"], cfg.get("user_design_overrides", {}).get(requested_id, {}), replace_profile_owned_maps=False)
     merge_profile(
         cfg["design"],
         cfg.get("user_design_overrides", {}).get(profile_id, {}),
@@ -137,8 +147,14 @@ def main() -> None:
     cfg["design"]["profile_hard_rules"] = copy.deepcopy(profile.get("hard_rules", {}))
     cfg["resolved_profile"] = profile
     profile_root = profile_path.parent
-    locations = cfg.get("library_locations", {}).get(profile_id, {})
+    locations = cfg.get("library_locations", {}).get(profile_id, cfg.get("library_locations", {}).get(requested_id, {}))
     visual_root = Path(locations["visual_references"]).expanduser().resolve() if "visual_references" in locations else (profile_root / "libraries" / "visual_references").resolve()
+    if not visual_root.exists():
+        for old, new in aliases.items():
+            old_root = profiles_root / old
+            if visual_root.is_relative_to(old_root):
+                visual_root = profiles_root / new / visual_root.relative_to(old_root)
+                break
     cfg["libraries"] = {"visual_references": {"catalog": str(visual_root / "catalog.json"), "root": str(visual_root), "profile_id": profile_id}}
     library_sets_root = Path(os.environ.get("SLIDEPOISE_HOME", Path.home() / ".slidepoise")) / "library-sets"
     if not (library_sets_root / "catalog.json").is_file():

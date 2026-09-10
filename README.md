@@ -37,8 +37,6 @@ Browse the slides, compare the AI designs with actual PowerPoint renders, and in
 
 The strategy sample uses a fictional firm and illustrative figures.
 
-To open the project page locally, serve the checkout with `python -m http.server 8000` and visit `http://localhost:8000/docs/site/`.
-
 ## Get started
 
 Have **Python 3.10+, Node.js 18+, npm 9+, and Codex with image generation** available, then run
@@ -100,7 +98,7 @@ Below, an edited copy has a new title and a chart value changed from 1,944 to 1,
 
 ## Bring your own visual language
 
-Library Sets hold the icons, logos, visual references and reusable PowerPoint components that belong to your work. The Agent inspects those resources while planning a slide and selects the ones that improve recognition, structure or meaning. Empty asset selection is a design decision that must be reviewed, especially when a presentation has an enabled visual library.
+Library Sets hold icons, logos and reusable PowerPoint components. Profiles hold visual references. Use the included Remix Icon integration, retrieve identity assets through Wikimedia Commons, or add your own files. The Agent inspects those resources while planning a slide and selects the ones that improve recognition, structure or meaning.
 
 Image generation receives the selected artwork as design context. After a design is accepted, the Agent binds each visible asset role to its canonical file and reviews the available variants at the final size. Reconstruction then replaces generated stand-ins with the original SVG, image or editable component. This keeps the visual system coherent without forcing every page into the same layout.
 
@@ -108,7 +106,7 @@ Small generated illustrations can be regenerated individually at higher resoluti
 
 ## Visual references and Profiles
 
-Profiles save typography, palette, density and references for future presentations. Included starting points are Consulting, Editorial Archive and Monochrome Modern. Add your own references and adapt the layout to each message.
+Profiles save typography, palette, density and references for future presentations. Included starting points are [Consulting, Editorial Archive and Monochrome Modern](profiles/README.md). Add your own references and adapt the layout to each message.
 
 Use the local Console to manage Profiles and Library Sets. Ask Codex to open it, or run the following command after installation.
 

@@ -9,7 +9,7 @@ import uuid
 from pathlib import Path
 
 from .paths import active_profiles_root, data_home
-from .profiles import active_profile_id, library_catalog, library_root, list_profiles, profile_record
+from .profiles import canonical_profile_id, active_profile_id, library_catalog, library_root, list_profiles, profile_record
 from .storage import read, revision, update, write
 
 
@@ -26,7 +26,7 @@ def slug(value: str) -> str:
 
 
 def create_profile(name: str, *, profile_id: str | None = None, based_on: str | None = None, purpose: str = "") -> dict:
-    based_on = based_on or active_profile_id()
+    based_on = canonical_profile_id(based_on or active_profile_id())
     identifier = slug(profile_id or name)
     root = data_home() / "profiles" / identifier
     if root.exists():
@@ -75,6 +75,7 @@ def apply_profile_values(profile_id: str, profile: dict, values: dict) -> dict:
 
 
 def update_profile(profile_id: str, values: dict, expected: str) -> dict:
+    profile_id = canonical_profile_id(profile_id)
     path = Path(profile_record(profile_id)["path"])
     update(path, lambda profile: apply_profile_values(profile_id, profile, values), expected=expected, default={})
     return profile_record(profile_id)

@@ -20,7 +20,7 @@ def clean(value: Any) -> str:
 
 
 def request(url: str, accept: str = "*/*") -> tuple[bytes, str]:
-    headers = {"User-Agent": "SlidePoise/0.4 (remote media retrieval)", "Accept": accept}
+    headers = {"User-Agent": "SlidePoise (https://github.com/henryhyw/slidepoise; media retrieval)", "Accept": accept}
     with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=30) as response:
         data = response.read(20 * 1024 * 1024 + 1)
         return data, response.headers.get_content_type()
@@ -46,6 +46,8 @@ def main() -> None:
     parser.add_argument("--asset-id", required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
     args = parser.parse_args()
+    if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_.-]*", args.asset_id):
+        raise SystemExit("Asset ID must start with a letter or number and contain only letters, numbers, dots, underscores or hyphens")
     config = json.loads(args.config.read_text(encoding="utf-8"))
     source = ((config.get("remote_sources") or {}).get("wikimedia_commons") or {})
     if not source.get("enabled"):
@@ -61,7 +63,10 @@ def main() -> None:
     }
     api_url = str(source.get("api_url") or "https://commons.wikimedia.org/w/api.php") + "?" + urllib.parse.urlencode(params)
     metadata_bytes, _ = request(api_url, "application/json")
-    page = ((json.loads(metadata_bytes.decode("utf-8")).get("query") or {}).get("pages") or [{}])[0]
+    metadata_payload = json.loads(metadata_bytes.decode("utf-8"))
+    if metadata_payload.get("error"):
+        raise SystemExit(f"Wikimedia Commons lookup failed: {metadata_payload['error'].get('info', metadata_payload['error'])}")
+    page = ((metadata_payload.get("query") or {}).get("pages") or [{}])[0]
     if page.get("missing") is True or not page.get("imageinfo"):
         raise SystemExit(f"Wikimedia Commons file not found: {title}")
     info = page["imageinfo"][0]

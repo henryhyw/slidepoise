@@ -121,7 +121,7 @@ def test_review_rejects_changed_render_and_missing_observations(tmp_path):
 
 
 def test_personal_profile_preserves_observed_font_and_color():
-    profile = json.loads((ROOT / "profiles/personal-website/profile.json").read_text())
+    profile = json.loads((ROOT / "profiles/editorial-archive/profile.json").read_text())
     design = {**profile["design_overrides"], "profile_hard_rules": profile["hard_rules"]}
     entity = {"text_style_role": "label", "style_hint": {"font_family": "Courier New", "observed_foreground_color": "#504943", "style_authority": "agent_visual_observation", "italic": True}}
     style = _base_style(entity, design)

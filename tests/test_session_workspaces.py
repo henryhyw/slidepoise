@@ -36,17 +36,17 @@ def test_runs_capture_defaults_and_remain_isolated(home):
 def test_default_profile_selection_is_shared_and_preserves_existing_runs(home):
     original = active_profile_id()
     first = sessions.create("Existing presentation")
-    profile_path = home / "profiles/personal-monochrome/profile.json"
+    profile_path = home / "profiles/monochrome-modern/profile.json"
     before = profile_path.read_bytes()
-    set_active_profile("personal-monochrome")
-    assert design.defaults_payload(original)["active_profile"] == "personal-monochrome"
-    assert design.defaults_payload()["values"]["profile"] == "personal-monochrome"
+    set_active_profile("monochrome-modern")
+    assert design.defaults_payload(original)["active_profile"] == "monochrome-modern"
+    assert design.defaults_payload()["values"]["profile"] == "monochrome-modern"
     assert sessions.resolve(first)["design"]["profile"] == original
-    assert sessions.resolve(sessions.create("New presentation"))["design"]["profile"] == "personal-monochrome"
+    assert sessions.resolve(sessions.create("New presentation"))["design"]["profile"] == "monochrome-modern"
     assert profile_path.read_bytes() == before
     with pytest.raises(FileNotFoundError):
         set_active_profile("missing-profile")
-    assert active_profile_id() == "personal-monochrome"
+    assert active_profile_id() == "monochrome-modern"
 
 
 def test_concurrent_session_update_requires_current_revision(home):
@@ -55,7 +55,7 @@ def test_concurrent_session_update_requires_current_revision(home):
     old = revision(path)
     sessions.save_overrides(root, {"profile": "consulting", "density": "spacious"}, old)
     with pytest.raises(ConflictError, match="another window or Agent"):
-        sessions.save_overrides(root, {"profile": "personal-website"}, old)
+        sessions.save_overrides(root, {"profile": "editorial-archive"}, old)
 
 
 def test_agent_can_create_profile_and_add_reference(home, tmp_path):

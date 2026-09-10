@@ -10,7 +10,7 @@ from contextlib import ExitStack
 from pathlib import Path
 
 from .paths import DEFAULT_CONFIG, SKILL_ROOT, active_profiles_root, data_home
-from .profiles import active_profile_id, list_profiles
+from .profiles import canonical_profile_id, active_profile_id, list_profiles
 from .library_sets import list_sets, profile_set_ids
 from .storage import ConflictError, locked, read, revision, update, write
 
@@ -144,6 +144,7 @@ def defaults_payload(profile=None):
 
 
 def save_defaults(profile, values, expected, reset=False):
+    profile = canonical_profile_id(profile)
     patch = design_patch(resolve_default(profile), values)
     def change(cfg):
         defaults = cfg.setdefault("user_design_overrides", {})
@@ -170,6 +171,7 @@ def save_runtime(values, expected):
 
 
 def save_profile_style(profile, values, profile_values, expected, profile_expected):
+    profile = canonical_profile_id(profile)
     """Save one Console edit with both revisions checked before either write."""
     from .profile_authoring import apply_profile_values
     from .profiles import profile_record

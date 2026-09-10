@@ -118,7 +118,7 @@ def test_migration_preserves_settings_and_backs_up_changed_config(isolated_home)
     }
     original = json.dumps(config).encode()
     (legacy / "config.json").write_bytes(original)
-    settings = b'{"active_profile":"personal-website"}'
+    settings = b'{"active_profile":"editorial-archive"}'
     (legacy / "settings.json").write_bytes(settings)
     migrate_legacy_home()
     home = isolated_home / ".slidepoise"

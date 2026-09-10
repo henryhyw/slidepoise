@@ -70,7 +70,7 @@ def test_settings_snapshot_cannot_pair_old_values_with_a_new_write_token(run, mo
 
     def write_new_settings():
         write_started.set()
-        storage.update(target, lambda _: {"profile": "personal-website"}, expected=before)
+        storage.update(target, lambda _: {"profile": "editorial-archive"}, expected=before)
 
     monkeypatch.setattr(cli, "read", paused_read)
     with ThreadPoolExecutor(max_workers=2) as executor:
@@ -87,7 +87,7 @@ def test_settings_snapshot_cannot_pair_old_values_with_a_new_write_token(run, mo
         writing.result(timeout=3)
     assert snapshot["overrides"] == {"profile": "consulting"}
     assert snapshot["overrides_revision"] == before
-    assert storage.read(target) == {"profile": "personal-website"}
+    assert storage.read(target) == {"profile": "editorial-archive"}
     assert storage.revision(target) != snapshot["overrides_revision"]
 
 

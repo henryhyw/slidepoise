@@ -94,9 +94,9 @@ The GitHub installer keeps the working CLI inside SlidePoise's isolated Python e
 ```bash
 slidepoise doctor
 slidepoise profile list
-slidepoise profile show personal-website
-slidepoise profile select personal-website
-slidepoise profile create "My Studio" --based-on personal-website
+slidepoise profile show editorial-archive
+slidepoise profile select editorial-archive
+slidepoise profile create "My Studio" --based-on editorial-archive
 slidepoise profile add-resource my-studio visual_references reference.png --name "Editorial rhythm" --description "Asymmetric type and image treatment"
 slidepoise library list
 slidepoise library create icons "Research symbols"

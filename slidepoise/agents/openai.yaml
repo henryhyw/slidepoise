@@ -1,6 +1,6 @@
 interface:
   display_name: "SlidePoise"
-  short_description: "Create one slide or a complete polished editable PowerPoint deck"
+  short_description: "Plan and design presentations as editable PowerPoint"
   brand_color: '#FD5108'
   icon_small: "assets/icon.svg"
   icon_large: "assets/icon.svg"

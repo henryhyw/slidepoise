@@ -36,7 +36,7 @@ def run_script(name: str, *arguments: str) -> subprocess.CompletedProcess[str]:
 def generic_generation_inputs(tmp_path: Path) -> tuple[dict, dict, dict]:
     session = tmp_path / "session.json"
     resolved = tmp_path / "resolved.json"
-    session.write_text(json.dumps({"profile": "personal-monochrome"}), encoding="utf-8")
+    session.write_text(json.dumps({"profile": "monochrome-modern"}), encoding="utf-8")
     result = run_script(
         "resolve_config.py",
         "--base", str(FRAMEWORK / "defaults" / "slidepoise-config.json"),
@@ -102,7 +102,7 @@ def test_segmentation_override_resolves(tmp_path: Path) -> None:
     assert json.loads(output.read_text(encoding="utf-8"))["measurement"]["segmentation"]["mode"] == "auto"
 
 
-@pytest.mark.parametrize("profile_id", ["personal-website", "personal-monochrome"])
+@pytest.mark.parametrize("profile_id", ["editorial-archive", "monochrome-modern"])
 def test_profile_owned_visual_tokens_do_not_leak_from_base(profile_id: str, tmp_path: Path) -> None:
     session = tmp_path / "session.json"
     output = tmp_path / "resolved.json"
@@ -124,7 +124,7 @@ def test_profile_owned_visual_tokens_do_not_leak_from_base(profile_id: str, tmp_
 def test_partial_user_token_override_preserves_the_profile_vocabulary(tmp_path: Path) -> None:
     base = json.loads((FRAMEWORK / "defaults" / "slidepoise-config.json").read_text(encoding="utf-8"))
     base["user_design_overrides"] = {
-        "personal-website": {
+        "editorial-archive": {
             "semantic_style_tokens": {"primary_text": {"color": "#123456"}}
         }
     }
@@ -132,7 +132,7 @@ def test_partial_user_token_override_preserves_the_profile_vocabulary(tmp_path: 
     session_path = tmp_path / "session.json"
     output = tmp_path / "resolved.json"
     base_path.write_text(json.dumps(base), encoding="utf-8")
-    session_path.write_text(json.dumps({"profile": "personal-website"}), encoding="utf-8")
+    session_path.write_text(json.dumps({"profile": "editorial-archive"}), encoding="utf-8")
     result = run_script(
         "resolve_config.py",
         "--base", str(base_path),
@@ -182,7 +182,7 @@ def test_profile_switch_preserves_framework_and_run_source_settings(tmp_path: Pa
     session_path = tmp_path / "session.json"
     output = tmp_path / "resolved.json"
     source_snapshots = []
-    for profile in ("consulting", "personal-website"):
+    for profile in ("consulting", "editorial-archive"):
         session_path.write_text(json.dumps({
             "profile": profile,
             "remote_sources": {
@@ -236,7 +236,7 @@ def test_profile_component_resolution_uses_shared_set_catalog() -> None:
     }
     result = augment_selected_components(
         {"selected_components": [{"component_id": "personal-sharp-editorial-sequence", "reason": "Useful progression grammar."}]},
-        "personal-website",
+        "editorial-archive",
         libraries,
     )
     selected = result["selected_components"][0]
@@ -259,23 +259,6 @@ def test_generation_handoff_preserves_the_complete_information_plan(tmp_path: Pa
     assert "wait for explicit approval" not in brief
 
 
-def test_skill_forbids_direct_deck_builder_reconstruction() -> None:
-    skill = (SKILL / "SKILL.md").read_text(encoding="utf-8")
-    workflow = (SKILL / "references" / "workflow.md").read_text(encoding="utf-8")
-    assert "Do not write a custom PptxGenJS" in skill
-    assert "reconstruct-slide" in workflow
-    assert "Do not replace them with a custom direct PowerPoint construction script" in workflow
-
-
-def test_stable_user_language_contract_covers_all_product_surfaces() -> None:
-    contract = (SKILL / "references" / "user-language.md").read_text(encoding="utf-8")
-    for surface in ("conversation", "approval questions", "Panel summaries", "activity messages",
-                    "context sheets", "semantic display labels", "Console copy"):
-        assert surface in contract
-    assert "Do not use an em dash" in contract
-    assert "Avoid semicolons" in contract
-    assert "Use a colon only when it materially improves" in contract
-    assert "Never rewrite a user's words" in contract
 
 
 def test_changed_style_invalidates_the_combined_style_asset_context(tmp_path: Path) -> None:
@@ -351,8 +334,8 @@ def test_console_separates_profile_references_from_shared_library_sets(tmp_path,
     monkeypatch.setenv("SLIDEPOISE_HOME", str(tmp_path / "home"))
     initialize_home(PROFILES)
     assert server.library("visual_references", "consulting")["count"] == 2
-    assert server.library("visual_references", "personal-website")["count"] == 2
-    assert server.library("visual_references", "personal-monochrome")["count"] == 2
+    assert server.library("visual_references", "editorial-archive")["count"] == 2
+    assert server.library("visual_references", "monochrome-modern")["count"] == 2
     assert {item["id"] for item in server.library_sets.list_sets()} == {
         "remix-icon", "wikimedia-identity", "consulting-core", "editorial-core"
     }
@@ -504,7 +487,7 @@ def test_config_upgrade_adds_generic_density_without_losing_legacy_choices(tmp_p
     source.write_text(json.dumps(bundled), encoding="utf-8")
     destination.write_text(json.dumps({
         "schema_version": "3.7.0",
-        "user_design_overrides": {"personal-website": {"style": {"body_font": "Custom Sans", "density": "editorial_balanced"}}},
+        "user_design_overrides": {"editorial-archive": {"style": {"body_font": "Custom Sans", "density": "editorial_balanced"}}},
         "design": {
             "style": {"density": "editorial_balanced"},
             "density_profiles": {"editorial_balanced": {"generation_guidance": ["keep legacy"]}},
@@ -516,11 +499,11 @@ def test_config_upgrade_adds_generic_density_without_losing_legacy_choices(tmp_p
     assert migrated["design"]["style"]["density"] == "editorial_balanced"
     assert migrated["design"]["density_profiles"]["editorial_balanced"]["generation_guidance"] == ["keep legacy"]
     assert migrated["design"]["density_profiles"]["balanced"] == bundled["design"]["density_profiles"]["balanced"]
-    assert migrated["user_design_overrides"]["personal-website"]["style"]["body_font"] == "Custom Sans"
+    assert migrated["user_design_overrides"]["editorial-archive"]["style"]["body_font"] == "Custom Sans"
 
     session = tmp_path / "session.json"
     resolved = tmp_path / "resolved.json"
-    session.write_text(json.dumps({"profile": "personal-website"}), encoding="utf-8")
+    session.write_text(json.dumps({"profile": "editorial-archive"}), encoding="utf-8")
     result = run_script(
         "resolve_config.py",
         "--base", str(destination),

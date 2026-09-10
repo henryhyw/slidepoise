@@ -8,11 +8,18 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-from .paths import BUNDLED_LIBRARY_SETS_ROOT, DEFAULT_CONFIG, SESSION_TEMPLATE, active_profiles_root, data_home, settings_path
+from .paths import BUNDLED_LIBRARY_SETS_ROOT, BUNDLED_PROFILES_ROOT, DEFAULT_CONFIG, SESSION_TEMPLATE, active_profiles_root, data_home, settings_path
 
 
 LIBRARY_KINDS = {"visual_references"}
-PROFILE_ID_ALIASES = {"pwc-consulting": "consulting"}
+PROFILE_ID_ALIASES = json.loads((BUNDLED_PROFILES_ROOT / "aliases.json").read_text(encoding="utf-8"))
+
+
+def canonical_profile_id(profile_id: str) -> str:
+    # An explicitly installed profile takes precedence over a retired bundle name.
+    if (active_profiles_root() / profile_id / "profile.json").is_file():
+        return profile_id
+    return PROFILE_ID_ALIASES.get(profile_id, profile_id)
 
 
 def merge_known_values(base: Any, configured: Any) -> Any:
@@ -33,8 +40,6 @@ def migrate_config(source: Path, destination: Path, archive_root: Path) -> bool:
         and current["scope"].get("mode") == "single_slide"
         and bundled.get("scope", {}).get("mode") == "adaptive_presentation"
     )
-    if str(current.get("schema_version")) == str(bundled.get("schema_version")) and not legacy_single_slide:
-        return False
     migrated = merge_known_values(bundled, current)
     if legacy_single_slide:
         # Scope is a retired runtime contract, not a user presentation preference.
@@ -46,12 +51,26 @@ def migrate_config(source: Path, destination: Path, archive_root: Path) -> bool:
         values = migrated.get(field)
         if isinstance(values, dict):
             for legacy_id, current_id in PROFILE_ID_ALIASES.items():
+                if (active_profiles_root() / legacy_id / "profile.json").is_file():
+                    continue
                 if legacy_id in values and current_id not in values:
                     values[current_id] = values.pop(legacy_id)
+    for locations in migrated.get("library_locations", {}).values():
+        for kind, location in locations.items():
+            path = Path(location).expanduser().resolve()
+            if path.exists():
+                continue
+            for old, new in PROFILE_ID_ALIASES.items():
+                old_root = active_profiles_root() / old
+                if path.is_relative_to(old_root):
+                    locations[kind] = str(active_profiles_root() / new / path.relative_to(old_root))
+                    break
     design = migrated.get("design")
     if isinstance(design, dict) and design.get("profile") in PROFILE_ID_ALIASES:
-        design["profile"] = PROFILE_ID_ALIASES[design["profile"]]
+        design["profile"] = canonical_profile_id(design["profile"])
     migrated["schema_version"] = bundled["schema_version"]
+    if migrated == current:
+        return False
     archive_root.mkdir(parents=True, exist_ok=True)
     backup = archive_root / f"config-before-{bundled['schema_version']}.json"
     if backup.exists():
@@ -107,7 +126,7 @@ def list_profiles(root: Path | None = None) -> list[dict[str, Any]]:
 def active_profile_id() -> str:
     available = list_profiles()
     ids = {item["id"] for item in available}
-    requested = str((read_json(settings_path(), {}) or {}).get("active_profile") or "consulting")
+    requested = canonical_profile_id(str((read_json(settings_path(), {}) or {}).get("active_profile") or "consulting"))
     if requested in ids:
         return requested
     return available[0]["id"] if available else ""
@@ -116,11 +135,12 @@ def active_profile_id() -> str:
 def set_active_profile(profile_id: str) -> dict[str, Any]:
     profile = profile_record(profile_id)
     from .storage import update
-    update(settings_path(), lambda settings: {**settings, "active_profile": profile_id}, default={})
+    update(settings_path(), lambda settings: {**settings, "active_profile": profile["id"]}, default={})
     return profile
 
 
 def profile_record(profile_id: str) -> dict[str, Any]:
+    profile_id = canonical_profile_id(profile_id)
     for item in list_profiles():
         if item["id"] == profile_id:
             payload = read_json(Path(item["path"]), {}) or {}
@@ -129,6 +149,7 @@ def profile_record(profile_id: str) -> dict[str, Any]:
 
 
 def library_root(profile_id: str, kind: str) -> Path:
+    profile_id = canonical_profile_id(profile_id)
     if kind not in LIBRARY_KINDS:
         raise ValueError(f"{kind} is a shared Library Set. Only visual references belong directly to a profile.")
     configured = read_json(data_home() / "config.json", {}).get("library_locations", {}).get(profile_id, {}).get(kind)

@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from .paths import DEFAULT_CONFIG, SKILL_ROOT, active_profiles_root, data_home, workspace_root
-from .profiles import active_profile_id, list_profiles
+from .profiles import canonical_profile_id, active_profile_id, list_profiles
 from .storage import ConflictError, locked, read, revision, update, write
 
 
@@ -63,7 +63,7 @@ def create(name, location=None, profile=None, *, workspace=None, registry_file=N
     if root.exists() and any(root.iterdir()):
         raise ValueError("Choose an empty dedicated folder, or ask the Agent to continue an existing run.")
     frozen = snapshot()
-    selected = profile or frozen["active_profile"]
+    selected = canonical_profile_id(profile or frozen["active_profile"])
     if selected not in frozen["profiles"]:
         raise ValueError("Unknown guidance profile")
     for folder in ("work", "work/reviews", "slides", "deliverables", "uploads"):

@@ -86,7 +86,7 @@ async function loadDesign() {
   state.design = design;
   state.overview.active_profile = design.active_profile;
   state.overview.profiles = design.profiles;
-  const order = { 'consulting': 0, 'personal-website': 1, 'personal-monochrome': 2 };
+  const order = { 'consulting': 0, 'editorial-archive': 1, 'monochrome-modern': 2 };
   const profiles = state.design.profiles.slice().sort((a, b) => (order[a.id] ?? 99) - (order[b.id] ?? 99));
   if (!state.consoleProfile) {
     $('#profile-chooser').innerHTML = '<div class="profile-list-actions"><button class="quiet-button" id="new-profile">＋ Add profile</button></div><div class="profile-strip">' + profiles.map(profile => { const selected = state.overview.active_profile === profile.id; return '<article class="profile-tile ' + (selected ? 'selected' : '') + '"><button class="profile-open" data-profile-open="' + esc(profile.id) + '">' + profilePreview(profile) + '<span><strong>' + esc(profile.name) + '</strong><small>' + esc(profile.purpose) + '</small></span><b aria-hidden="true">›</b></button><button class="profile-default-control ' + (selected ? 'selected' : '') + '" data-profile-default="' + esc(profile.id) + '" aria-pressed="' + selected + '" ' + (selected ? 'disabled' : '') + '><i aria-hidden="true"></i>' + (selected ? 'Default' : 'Use as default') + '</button></article>'; }).join('') + '</div>';

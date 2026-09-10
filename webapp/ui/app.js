@@ -78,7 +78,7 @@ function profilePreview(profile, values = {}) {
 }
 async function loadDesign() {
   state.design = await api("/api/design");
-  const order = { "consulting": 0, "personal-website": 1, "personal-monochrome": 2 };
+  const order = { "consulting": 0, "editorial-archive": 1, "monochrome-modern": 2 };
   const profiles = state.design.profiles.slice().sort((a, b) => (order[a.id] ?? 99) - (order[b.id] ?? 99));
   $("#profile-chooser").innerHTML = `<div class="profile-strip-heading"><div><p class="eyebrow">GUIDANCE PROFILES</p><h3>Your profiles</h3></div></div><div class="profile-strip">${profiles.map(profile => `<button class="profile-tile ${profile.id === state.design.values.profile ? "selected" : ""}" data-profile-choice="${esc(profile.id)}">${profilePreview(profile)}<span><strong>${esc(profile.name)}</strong><small>${esc(profile.purpose)}</small></span><i aria-hidden="true"></i></button>`).join("")}</div>`;
   $("#design-settings").innerHTML = styleCards(state.design) + '<button class="text-button" id="reset-default-style">Restore this profile’s original style</button>';

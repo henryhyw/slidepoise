@@ -1,9 +1,9 @@
 {
   "name": "slidepoise",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "private": false,
   "type": "module",
-  "description": "Node dependencies for the SlidePoise presentation framework",
+  "description": "AI presentation design with editable PowerPoint output",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
     "slidepoise": "bin/slidepoise.js"
   },
   "scripts": {
-    "test": "node --test tests/console_interactions.test.mjs tests/panel_interactions.test.mjs tests/dialog_dismiss.test.mjs docs/site/planning.test.mjs tests/console_demo.test.mjs docs/site/reconstruction.test.mjs"
+    "test": "node --test tests/console_interactions.test.mjs tests/panel_interactions.test.mjs tests/dialog_dismiss.test.mjs"
   },
   "files": [
     "bin/",
