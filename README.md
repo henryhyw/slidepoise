@@ -1,8 +1,8 @@
 # SlidePoise
 
-**Presentation design beyond fixed templates, reconstructed as editable PowerPoint.**
+**Open-source Agentic Slide Generation Framework**
 
-SlidePoise combines AI content planning with the design freedom of image generation to create editable PowerPoint presentations. Work with the Agent in Codex to develop your content and choose the references and visual assets that guide the design.
+SlidePoise is an open-source agentic slide generation framework that combines content planning with the design freedom of image generation to create editable PowerPoint presentations. Work with the Agent in Codex to develop your content and choose the references and visual assets that guide the design.
 
 The Agent interprets the chosen design, OpenCV measures its geometry, and local tools reconstruct the deck with editable text, charts, tables, shapes and canonical visual assets. The Agent reviews the rendered slides together for fidelity and consistency.
 
