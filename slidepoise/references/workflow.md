@@ -26,7 +26,7 @@ When a selected visual reference needs readable typography or fine detail, set i
 
 Run `scripts/prepare_generation.py` to compile the resolved canvas, profile guidance, intent, resources, shared deck design and generation budget into the contract, brief and `work/generation-request.json`.
 
-Pass the request's prompt to the host image capability without rewriting it. Attach the recorded reference images using the host's supported mechanism. Save the actual call and returned image reference when the host exposes them. A missing tool capability is a host integration issue, not permission to use a separate construction path.
+Follow `image-generation.md` to discover the configured tool or export a manual exchange. Pass the compiled prompt unchanged with its ordered reference images. Save the actual call and returned image reference when the host exposes them. If no suitable tool is available, offer manual generation or help connect one.
 
 Generate one purposeful substantive-region candidate. Visually inspect its content, frame exclusion and aspect ratio. Compare repeated title and body styles, accent meanings and recurring treatments with the shared deck direction and earlier accepted candidates. If it misses the communication job or has a material visual defect, make a focused edit or regenerate. Update the upstream inputs and recompile when changing generation instructions.
 

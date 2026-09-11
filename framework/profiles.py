@@ -41,6 +41,11 @@ def migrate_config(source: Path, destination: Path, archive_root: Path) -> bool:
         and bundled.get("scope", {}).get("mode") == "adaptive_presentation"
     )
     migrated = merge_known_values(bundled, current)
+    adapter = migrated.get("generation", {}).get("host_adapter", {})
+    if adapter.get("mode") == "host_native_or_delegated_image_generation":
+        adapter["mode"] = "agent_discovered_or_manual"
+        for key in ("chatgpt", "codex", "unsupported_host_policy"):
+            adapter.pop(key, None)
     if legacy_single_slide:
         # Scope is a retired runtime contract, not a user presentation preference.
         migrated["scope"]["mode"] = "adaptive_presentation"

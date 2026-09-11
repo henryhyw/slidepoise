@@ -53,7 +53,7 @@ async function interactiveSetup() {
   if (input.isTTY && output.isTTY) {
     output.write("\nSlidePoise framework setup\n\n");
     const prompts = createInterface({ input, output });
-    const skill = (await prompts.question("Install or update the Codex skill? [Y/n] ")).trim().toLowerCase();
+    const skill = (await prompts.question("Install or update the skill for your Agent platforms? [Y/n] ")).trim().toLowerCase();
     const node = (await prompts.question("Verify and install Node dependencies? [Y/n] ")).trim().toLowerCase();
     await prompts.close();
     if (skill === "n" || skill === "no") setupArgs.push("--skip-skill");

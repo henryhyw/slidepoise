@@ -27,5 +27,6 @@
   },
   "design_overrides": {},
   "profile": null,
-  "generation_model": null
+  "generation_model": null,
+  "image_generation": null
 }

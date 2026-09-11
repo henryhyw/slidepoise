@@ -214,6 +214,28 @@ def main():
     ]
     args.brief.parent.mkdir(parents=True, exist_ok=True)
     args.brief.write_text("\n".join(brief) + "\n", encoding="utf-8")
+    # Each edit is a separate portable request, so tools and manual exchanges use
+    # the same source crop and instructions without attaching unrelated artwork.
+    from prepare_generation import file_binding
+    import hashlib
+    for item in items:
+        source = Path(item["source_crop"])
+        prompt = "\n".join([
+            "Edit the attached illustration while preserving its identity and intrinsic lettering.",
+            "Keep the canvas aspect ratio, original margins and placement of the subject.",
+            ("Remove only the slide backdrop. Preserve paper, photographic content and soft shadows belonging to the artwork. Return a PNG or WebP with genuine alpha transparency."
+             if item["background"] == "transparent" else "Preserve the source background and any existing transparency."),
+            novel.get("guidance", ""), *[str(v) for v in profile.get("visual_principles", [])],
+        ]) + "\n"
+        prompt_path = source.with_suffix('.edit.txt')
+        prompt_path.write_text(prompt, encoding='utf-8')
+        request = {"schema_version": "1.0", "purpose": "host_illustration_edit_request", "prompt": prompt,
+                   "prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest(),
+                   "canvas": {"dimensions_px": item["source_bbox_px"][2:]}, "background": item["background"],
+                   "reference_images": [{"id": item["entity_id"], "purpose": "Original illustration to edit", **file_binding(source)}],
+                   "input_bindings": {"config": file_binding(args.config), "manifest": file_binding(args.manifest),
+                                      "brief": file_binding(prompt_path), "source": file_binding(args.image)}}
+        source.with_suffix('.request.json').write_text(json.dumps(request, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     print(
         json.dumps(
             {

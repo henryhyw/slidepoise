@@ -106,13 +106,10 @@
     },
     "initial_candidates_per_slide": 1,
     "revision_guidance": "Inspect the current candidate and choose a focused edit or fresh generation from the actual defect and the user's intent.",
-    "default_model": "gpt-image-2",
+    "default_model": "",
     "host_adapter": {
-      "mode": "host_native_or_delegated_image_generation",
-      "max_prompt_chars": 32000,
-      "chatgpt": "use the host-native image generation/edit capability directly",
-      "codex": "use the available image-generation skill/tool; when the Codex host exposes image-capable agent delegation, delegate only the image call and keep SlidePoise orchestration in the parent agent",
-      "unsupported_host_policy": "stop at the image-generation stage rather than replacing creative generation with deterministic drawing"
+      "mode": "agent_discovered_or_manual",
+      "max_prompt_chars": 32000
     },
     "illustration_refinement": {
       "enabled_by_default": true,
@@ -129,6 +126,12 @@
       "no_visible_borders_or_labels_in_model_input": true,
       "preserve_each_source_aspect_ratio": true,
       "preferred_output_use": "crop deterministic board slots and insert the refined rasters into the original measured slide boxes with aspect-preserving contain-fit"
+    },
+    "preferences": {
+      "mode": "auto",
+      "tool": "",
+      "model": "",
+      "instructions": ""
     }
   },
   "measurement": {

@@ -1,25 +1,27 @@
 # Usage
 
-SlidePoise is a Codex skill and local runtime for creating editable presentations. The Agent develops the content and visual direction, interprets the generated design as meaningful objects, and reviews the actual PowerPoint render. Local tools supply measurement, text fitting, native construction and deck assembly.
+SlidePoise is an Agent skill and local runtime for creating editable presentations. The Agent develops the content and visual direction, interprets the generated design as meaningful objects, and reviews the actual PowerPoint render. Local tools supply measurement, text fitting, native construction and deck assembly.
 
-The [README](../README.md) introduces the project and shows sample presentations. This guide covers installation, your first request and reusable visual settings. The current integration has been exercised with Codex. Other Agent hosts need their own integration checks.
+The [README](../README.md) introduces the project and shows sample presentations. This guide covers installation, your first request and reusable visual settings. Setup supports Codex, Claude Code and Qoder. See the [image-generation guide](IMAGE_GENERATION.md) to use available tools or generate images manually.
 
 ## Quick start
 
-Before setup, have Python 3.10+, Node.js 18+, npm 9+, and Codex with image generation available.
+You can ask your Agent to handle installation by pasting the prompt in the [README](../README.md#ask-your-agent). The [Agent setup guide](AGENT_SETUP.md) covers environment checks, installation and image-generation preferences.
+
+Before setup, have Python 3.10+, Node.js 18+, npm 9+, and an Agent with local execution and image inspection available.
 
 ```bash
 npx github:henryhyw/slidepoise setup
 ```
 
-Setup may ask whether to install the Codex skill and Node dependencies. Keep those choices enabled for the usual installation. Codex must be detectable through its executable or an existing `~/.codex/skills` directory for automatic skill registration.
+Setup detects installed Agent platforms and registers the skill with each one. Use `--agent claude`, `--agent qoder` or `--agent codex` to choose explicitly. Repeat the option for several platforms. Restart the host or reload its skills after installation.
 
 | Setup prepares | Default location |
 | --- | --- |
 | Isolated Python environment with Pillow, python-pptx, NumPy and OpenCV | `~/.slidepoise/python/` |
 | PptxGenJS and JSZip for native construction | `~/.slidepoise/node/` |
 | Reusable Profiles and Library Sets | `~/.slidepoise/profiles/` and `~/.slidepoise/library-sets/` |
-| Codex skill and its self-contained reconstruction runtime | `~/.codex/skills/slidepoise/` |
+| Skill and its self-contained reconstruction runtime | `~/.codex/skills/slidepoise/`, `~/.claude/skills/slidepoise/` or `~/.qoder/skills/slidepoise/` |
 
 Check the installation with
 
@@ -29,14 +31,12 @@ npx github:henryhyw/slidepoise doctor
 
 Setup also prepares local previews. LibreOffice opens and renders the PowerPoint. Poppler converts the rendered pages to images for review. Missing tools are installed with Homebrew on macOS, winget on Windows, or apt on Debian/Ubuntu. These system packages may request administrator access. On macOS, Homebrew must already be installed. Other Linux distributions need equivalent packages from their own package manager.
 
-Setup checks both executables after installation and reports an incomplete installation as an error. Resolve the reported issue and rerun the same command. If your Agent host already provides PowerPoint rendering, advanced users can pass `--skip-preview`. Codex, image generation and fonts remain part of your environment.
+Setup checks both executables after installation and reports an incomplete installation as an error. Resolve the reported issue and rerun the same command. If your Agent host already provides PowerPoint rendering, advanced users can pass `--skip-preview`. Your Agent, image-generation access and fonts remain part of your environment.
 
-Then start a presentation in Codex.
+Then start a presentation with your Agent.
 
 ```text
-$slidepoise
-
-Create a five-slide presentation for our leadership team about an AI pilot.
+Use SlidePoise to create a five-slide presentation for our leadership team about an AI pilot.
 Use the Consulting Profile. Develop a clear recommendation, make the
 assumptions explicit, and show me one sample before finishing the deck.
 Deliver an editable PowerPoint.
@@ -85,7 +85,7 @@ On Windows, use `.venv\Scripts\pip.exe` and `.venv\Scripts\slidepoise.exe`. You 
 
 Use `npx . setup --skip-python` only when the Python environment selected by the launcher already contains SlidePoise and its runtime dependencies. The launcher prefers an existing managed Python environment, then `PYTHON` when set, then the system Python command.
 
-Setup copies reusable resources into the external framework home and prepares workspace and cache folders. It archives changed Codex skill content before replacement. Repeating setup with identical skill content does not create another backup. `SLIDEPOISE_HOME` selects a custom framework home.
+Setup copies reusable resources into the external framework home and prepares workspace and cache folders. It archives changed skill content before replacement. Repeating setup with identical skill content does not create another backup. `SLIDEPOISE_HOME` selects a custom framework home.
 
 ## CLI
 

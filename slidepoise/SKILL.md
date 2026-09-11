@@ -21,7 +21,7 @@ After selecting `accepted-slide.png`, every delivered editable slide must pass t
 
 The generated image contains the substantive content region only. Header, footer, page numbers and shared frame rules belong to the inherited PowerPoint frame. Resolve that frame before generation and derive the content aspect ratio from the full slide minus the enabled frame heights. A 16:9 PowerPoint does not imply a 16:9 generation canvas. Disabling a frame removes it from the presentation and never transfers its content into image generation.
 
-Submit the compiled generation request through the host image tool. Do not prepare an authoritative brief and then replace it with a separately written prompt. Change intent, resources or shared design decisions upstream and compile again when the prompt needs revision. Visually check the returned canvas and excluded frame content before semantic mapping.
+Read the resolved image-generation preferences. Submit the compiled request through a suitable available tool, or export its exact prompt and references when the user selects manual generation. Do not prepare an authoritative brief and then replace it with a separately written prompt. Change intent, resources or shared design decisions upstream and compile again when the prompt needs revision. Visually check the returned canvas and excluded frame content before semantic mapping.
 
 Do not write a custom PptxGenJS, python-pptx, HTML, SVG, or other direct deck builder as a substitute. Do not redraw the generated target from memory or guessed coordinates. PptxGenJS is an implementation detail behind the packaged scene renderer. If a required reconstruction artifact or command is unclear or fails, inspect the packaged schema and command help, then repair the input or report the exact blocker. Never silently switch reconstruction methods.
 
@@ -32,7 +32,7 @@ At the start of every run
 1. Resolve the SlidePoise CLI once. Use `slidepoise` when it is on `PATH`. Respect `SLIDEPOISE_HOME` when it is set. Run `doctor` and `profile show` to locate the framework home and active external profile.
 2. Read the external framework config, selected profile, and its selected Library Sets. Profiles, visual references, icons, and components never live inside this skill.
 3. Resolve current-presentation overrides with `scripts/resolve_config.py`.
-4. Read `references/deck-orchestration.md`, `references/workflow.md`, and `references/runtime-host.md`.
+4. Read `references/deck-orchestration.md`, `references/workflow.md`, `references/runtime-host.md` and `references/image-generation.md`.
 5. Read `references/human-approval.md` for adaptive user checkpoints. It does not define mandatory gates.
 6. Read `references/resource-library.md` before resource selection.
 7. Before semantic mapping or reconstruction, read `references/visual-reasoning.md`, `references/connectors.md`, and `references/reconstruction.md`.
@@ -116,8 +116,9 @@ The user should not have to initiate routine corrections. Repair issues within t
 
 ## Runtime
 
-- ChatGPT uses the native image-generation or editing capability.
-- Codex uses the available image-generation skill or tool.
+- Discover generation and editing capabilities in the current host, including native tools, MCP tools and installed integrations. Respect the selected tool or manual preference.
+- Codex, Claude Code and Qoder use the same compiled requests and reconstruction runtime. Installation support does not imply that image generation is available.
+- Manual mode exports the exact prompt and references, then imports the returned image for Agent review.
 - Use the framework's Python and OpenCV scripts for measurement and raster operations.
 - Use the packaged scene renderer, which uses Node and PptxGenJS internally, for editable PowerPoint construction. Do not invoke PptxGenJS directly for a presentation run.
 - Prefer `scripts/slidepoise_runtime.py render-preview` when LibreOffice is available.

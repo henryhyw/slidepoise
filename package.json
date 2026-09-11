@@ -1,6 +1,6 @@
 {
   "name": "slidepoise",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "private": false,
   "type": "module",
   "description": "AI presentation design with editable PowerPoint output",

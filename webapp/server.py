@@ -21,7 +21,7 @@ from urllib.parse import parse_qs, urlparse
 from framework.paths import DEFAULT_CONFIG, SKILL_ROOT, active_profiles_root, active_library_sets_root, data_home, node_runtime_root, workspace_root
 from framework.profiles import active_profile_id, library_catalog, library_root, list_profiles, profile_record, set_active_profile
 from framework import library_sets, components, run_events
-from framework import sessions, design
+from framework import sessions, design, image_generation
 from framework import profile_authoring
 from framework.storage import ConflictError, revision, update, write
 from . import panel
@@ -297,6 +297,8 @@ class Handler(BaseHTTPRequestHandler):
             if parsed.path == "/api/settings":
                 path = data_home() / "config.json"
                 return self.json_response({"config": read_json(path if path.is_file() else DEFAULT_CONFIG), "revision": revision(path)})
+            if parsed.path == "/api/generation":
+                return self.json_response(image_generation.payload())
             if parsed.path == "/api/library":
                 return self.json_response(library(query["kind"][0], query.get("profile", [None])[0]))
             if parsed.path == "/api/library-sets":
@@ -394,6 +396,8 @@ class Handler(BaseHTTPRequestHandler):
                 design.save_runtime(body["values"], body["revision"])
                 path = data_home() / "config.json"
                 return self.json_response({"status": "ok", "config": read_json(path), "revision": revision(path)})
+            if self.path == "/api/generation":
+                return self.json_response(image_generation.configure(body["values"], body["revision"]))
             if self.path == "/api/run/defaults":
                 root = resolve_run(body["run"])
                 sessions.adopt_defaults(root, body["revision"])

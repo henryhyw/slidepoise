@@ -27,3 +27,7 @@ Use `scripts/apply_illustration_sources.py` for inspected, selected items. It bi
 When the edit fails, set `raster_decision.action` to `reuse_original` and record the reason. Measurement then uses the accepted-slide crop even if an earlier override remains in the authoring record. Make a focused retry when a changed request can address the failure. Repeated retries are not evidence of reliable host support. Keep the existing crop or composite route available so transparent generation never becomes a prerequisite for finishing a deck.
 
 Clean plates retain their panel or full-slide coordinate system and use targeted editing. Do not send them through isolated illustration extraction. A transparent PNG remains a raster image whose position and size can be edited in PowerPoint. It does not make the image's internal strokes or lettering native objects.
+
+## Generation route
+
+The preparation command emits a `.request.json` and `.edit.txt` beside each source crop. Follow `image-generation.md` to route each request through the selected image tool or export it for manual generation. Preserve one source per edit. A provider must support image editing and genuine alpha output for transparent requests. If it cannot, keep a suitable original or agree on a different route with the user.

@@ -2,7 +2,7 @@
 
 **Open-source Agentic Slide Generation Framework**
 
-SlidePoise is an open-source agentic slide generation framework that combines content planning with the design freedom of image generation to create editable PowerPoint presentations. Work with the Agent in Codex to develop your content and choose the references and visual assets that guide the design.
+SlidePoise is an open-source agentic slide generation framework that combines content planning with the design freedom of image generation to create editable PowerPoint presentations. Work with your Agent to develop your content and choose the references and visual assets that guide the design.
 
 The Agent interprets the chosen design, OpenCV measures its geometry, and local tools reconstruct the deck with editable text, charts, tables, shapes and canonical visual assets. The Agent reviews the rendered slides together for fidelity and consistency.
 
@@ -39,7 +39,17 @@ The strategy sample uses a fictional firm and illustrative figures.
 
 ## Get started
 
-Have **Python 3.10+, Node.js 18+, npm 9+, and Codex with image generation** available, then run
+### Ask your Agent
+
+Paste this into Codex, Claude Code or Qoder. The Agent can check your environment, run setup and help configure image generation.
+
+```text
+Install and set up SlidePoise for me from https://github.com/henryhyw/slidepoise.
+```
+
+### Install from your terminal
+
+Have **Python 3.10+, Node.js 18+, npm 9+, and an Agent with local file execution and image inspection** available, then run
 
 ```bash
 npx github:henryhyw/slidepoise setup
@@ -50,26 +60,32 @@ Setup installs the local tools and registers the skill. It also installs missing
 <details>
 <summary>Installation contents and optional dependencies</summary>
 
-`npx` installs the Python measurement tools and Node.js PowerPoint renderer under `~/.slidepoise`. It registers the skill in `~/.codex/skills/slidepoise` when Codex is detected, and copies the bundled Profiles and Library Sets.
+`npx` installs the Python measurement tools and Node.js PowerPoint renderer under `~/.slidepoise`. It registers the skill with detected Codex, Claude Code and Qoder installations, and copies the bundled Profiles and Library Sets. Use `--agent codex`, `--agent claude` or `--agent qoder` to choose explicitly.
 
-Python dependencies include Pillow, python-pptx, NumPy and OpenCV. The Node runtime uses PptxGenJS and JSZip. LibreOffice renders PowerPoint pages. Poppler converts those pages into images for review. Setup prepares these through the system package manager and checks that both executables are available. If installation cannot finish, it reports the missing tool and exits with an error so you can resolve the issue and rerun setup. Codex, image generation and fonts are supplied by your environment.
+Python dependencies include Pillow, python-pptx, NumPy and OpenCV. The Node runtime uses PptxGenJS and JSZip. LibreOffice renders PowerPoint pages. Poppler converts those pages into images for review. Setup prepares these through the system package manager and checks that both executables are available. If installation cannot finish, it reports the missing tool and exits with an error so you can resolve the issue and rerun setup. Your Agent, image-generation access and fonts are supplied by your environment.
 
 OpenCV measures object boundaries, colour and geometry for reconstruction.
 
 </details>
 
-Then ask Codex for a presentation.
+Then ask your Agent for a presentation.
 
 ```text
-$slidepoise
-
-Create a five-slide presentation for our leadership team about an AI pilot.
+Use SlidePoise to create a five-slide presentation for our leadership team about an AI pilot.
 Use the Consulting Profile. Develop a clear recommendation, make the
 assumptions explicit, and show me one sample before finishing the deck.
 Deliver an editable PowerPoint.
 ```
 
 Ask the Agent to work autonomously if you prefer. The [usage guide](docs/USAGE.md) covers installation checks and Profile management.
+
+## Choose how images are generated
+
+In automatic mode, the Agent discovers image-generation capabilities available in the conversation, including native tools and connected MCP tools. It checks support for the compiled prompt, visual references and any requested edits before choosing a tool. You can ask it to use a specific tool or model and save that preference.
+
+Prefer to generate images in another app? Tell the Agent to use manual generation. It supplies the exact prompt and an ordered reference bundle. Return the downloaded image and it continues with visual review and editable reconstruction. The same exchange supports slide corrections and transparent illustration edits.
+
+These choices are also available under **System → Image generation** in the local Console. Defaults apply to future presentations. Ask the Agent to change just the current presentation when needed. See the [image-generation guide](docs/IMAGE_GENERATION.md) for setup and manual exchanges.
 
 ## How it works
 
@@ -108,7 +124,7 @@ Small generated illustrations can be regenerated individually at higher resoluti
 
 Profiles save typography, palette, density and references for future presentations. Included starting points are [Consulting, Editorial Archive and Monochrome Modern](profiles/README.md). Add your own references and adapt the layout to each message.
 
-Use the local Console to manage Profiles and Library Sets. Ask Codex to open it, or run the following command after installation.
+Create and refine Profiles and Library Sets together with your Agent. Use the optional local Console to inspect or adjust them. Ask your Agent to open it, or run the following command after installation.
 
 ```bash
 npx github:henryhyw/slidepoise console
@@ -122,7 +138,7 @@ Saved changes apply to future presentations. A session panel adjusts a presentat
 
 Text, tables, charts, shapes, connectors and freeforms can remain native. Photographs, textures and expressive illustrations stay as regional images. Separate text and table values do not become spreadsheet formulas automatically.
 
-The integration and samples have been tested with Codex. Local previews use LibreOffice and Poppler. Other Agent hosts need their own integration checks. Fonts are not bundled, and different fonts or Office readers can change text wrapping and appearance.
+The included presentations were created with Codex. Installation, shared settings and generation handoffs are tested for Codex, Claude Code and Qoder. Image tools depend on what is connected in each conversation. Claude and Qoder end-to-end presentation runs still need verification in those hosts. Local previews use LibreOffice and Poppler. Fonts are not bundled, and different fonts or Office readers can change text wrapping and appearance.
 
 ## Develop and contribute
 

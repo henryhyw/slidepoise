@@ -9,6 +9,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "runtime/src"))
 from slidepoise.canvas import validate_derived_canvas
+from slidepoise.generation import resolve_preferences
 
 def main() -> None:
     parser = argparse.ArgumentParser()
@@ -37,11 +38,13 @@ def main() -> None:
         errors.append("measurement.segmentation.eligible_roles must be a non-empty array")
 
     generation = cfg.get("generation", {})
-    if not str(generation.get("default_model", "")).strip():
-        errors.append("generation.default_model must name a preferred image-generation model")
+    try:
+        resolve_preferences(generation)
+    except ValueError as error:
+        errors.append(str(error))
     host_adapter = generation.get("host_adapter", {}) or {}
-    if host_adapter.get("mode") != "host_native_or_delegated_image_generation":
-        errors.append("generation.host_adapter.mode must use host-native-or-delegated image generation")
+    if host_adapter.get("mode") not in {"agent_discovered_or_manual", "host_native_or_delegated_image_generation"}:
+        errors.append("generation.host_adapter.mode must use Agent-discovered or manual image generation")
     if not isinstance(host_adapter.get("max_prompt_chars"), int) or host_adapter.get("max_prompt_chars") < 1:
         errors.append("generation.host_adapter.max_prompt_chars must be a positive integer")
     if generation.get("initial_candidates_per_slide") != 1:

@@ -67,6 +67,7 @@ test('system loads the supported tools and opens named, bounded detail views', a
   const names = ['Python', 'OpenCV', 'Node', 'PptxGenJS', 'LibreOffice', 'Poppler'];
   h.context.systemRequest = async path => {
     if (path === '/api/settings') return { config: {}, revision: 'current' };
+    if (path === '/api/generation') return { values: { mode: 'auto', tool: '', model: '', instructions: '' }, revision: 'current' };
     if (path === '/api/health') return names.map(name => ({ name, available: true, detail: 'Installed' }));
     throw new Error(`Unexpected system request ${path}`);
   };

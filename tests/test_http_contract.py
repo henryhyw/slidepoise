@@ -179,3 +179,18 @@ def test_foreign_origin_cannot_write_and_uploaded_asset_round_trips_through_pane
     status, _, downloaded = request("GET", material["url"])
     assert status == 200 and downloaded == content
     assert [item["kind"] for item in run_events.pending(run)["events"]] == ["asset_added"]
+
+
+def test_generation_preferences_are_shared_revisioned_and_validated(service):
+    _, request = service
+    status, _, body = request('GET', '/api/generation')
+    assert status == 200
+    initial = json.loads(body)
+    status, _, body = request('POST', '/api/generation', {'values': {'mode': 'manual'}, 'revision': initial['revision']})
+    assert status == 200 and json.loads(body)['values']['mode'] == 'manual'
+    status, _, _ = request('POST', '/api/generation', {'values': {'mode': 'auto'}, 'revision': initial['revision']})
+    assert status == 409
+    current = json.loads(request('GET', '/api/generation')[2])
+    status, _, _ = request('POST', '/api/generation', {'values': {'mode': 'tool', 'tool': ''}, 'revision': current['revision']})
+    assert status == 400
+    assert json.loads(request('GET', '/api/generation')[2])['values']['mode'] == 'manual'

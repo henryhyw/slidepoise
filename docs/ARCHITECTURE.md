@@ -17,6 +17,14 @@ SlidePoise turns an authored visual target into an editable presentation while k
 
 The Agent can revise an outline, reconsider an object or rerun one page at any point. Runtime checks reject malformed or stale inputs. They never infer beauty, decide semantic ownership or issue visual acceptance from a score.
 
+## Host and image-generation boundary
+
+Codex, Claude Code and Qoder load the same skill and invoke the same local runtime. Setup detects their installation directories or accepts an explicit platform. Host-specific task notifications are optional. Durable session changes remain available to every host through `run sync`.
+
+Image-generation preferences are shared by the Agent CLI and Console and captured with each presentation's defaults. The Agent discovers tools in its active conversation, including native and MCP capabilities. Runtime checks compare declared tool capabilities with the compiled request's prompt, attachments and operation. They do not rank providers or invoke a guessed tool API.
+
+Automatic mode leaves tool choice to the Agent. A selected tool or model is an explicit constraint. Manual mode exports the same prompt and ordered references in a portable bundle. Import binds the returned candidate to the unchanged request and records image facts. Visual acceptance and reconstruction follow the same path for every provider. Focused slide edits and per-illustration alpha requests use this boundary too.
+
 ## Two separations
 
 Planning separates the slide's argument from its visual composition. The Agent organizes the message, evidence and narrative. Image generation explores how that material can look. The chosen design then becomes a concrete visual reference.

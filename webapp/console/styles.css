@@ -315,3 +315,16 @@ dialog.component-dialog { box-sizing: border-box; width: min(1220px, calc(100vw 
   .profile-system-card { padding: 14px; }.guidance-card-footer { flex-wrap: wrap; }
   .file-row { flex-wrap: wrap; }.file-row > span { overflow-wrap: anywhere; }
 }
+
+.generation-setting { display: flex; align-items: center; gap: 24px; background: white; }
+.generation-setting > div { flex: 1; min-width: 0; }
+.generation-setting h3 { margin: 6px 0; font-size: 22px; }
+.generation-setting p:not(.eyebrow) { margin: 0 0 8px; max-width: 640px; font-size: 13px; color: var(--muted); }
+.generation-setting small { color: var(--muted); font-size: 11px; }
+.generation-choices .generation-choice { display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: 10px; cursor: pointer; }
+.generation-choice:has(input:checked) { background: rgba(230,107,72,.08); }
+.generation-choice input { flex: 0 0 auto; width: 17px; height: 17px; accent-color: var(--accent); }
+.generation-choice strong, .generation-choice small { display: block; }
+.generation-choice strong { color: var(--ink); font-size: 13px; }
+.generation-choice small { margin-top: 3px; font-size: 11px; }
+#editor-fields #generation-tool-field[hidden] { display: none; }

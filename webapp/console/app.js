@@ -44,7 +44,7 @@ async function navigate(view, focusHeading = false) {
     overview: "Your reusable styles, resources, and local capabilities.",
     design: "Create and customize your presentation styles.",
     resources: "Icons and editable components for your slides.",
-    system: "Tools installed on this computer."
+    system: "Image generation preferences and tools installed on this computer."
   }[view];
   $("#view-description").textContent = description;
   $("#view-description").hidden = !description;
@@ -164,9 +164,22 @@ async function openLibrarySet(setId) {
 }
 async function loadSystem() {
   state.system = await api("/api/settings");
+  state.generation = await api("/api/generation");
   const health = await api("/api/health"); state.health = health;
-  $("#system-settings").innerHTML = "";
+  const labels = { auto: 'Automatic', tool: 'Selected tool', manual: 'Manual' };
+  const descriptions = { auto: 'The Agent finds suitable image tools in the current conversation, including connected MCP tools.', tool: 'The Agent uses your chosen tool and checks that it can handle the prompt and references.', manual: 'The Agent gives you the exact prompt and reference files. Generate the image elsewhere and return it to continue.' };
+  const value = state.generation.values;
+  $("#system-settings").innerHTML = `<article class="settings-panel generation-setting"><div><p class="eyebrow">Image generation</p><h3>${labels[value.mode]}</h3><p>${descriptions[value.mode]}</p><small>Set this together with the Agent or change it here. Saved preferences apply to future presentations.</small></div><button class="quiet-button" id="edit-generation">Change</button></article>`;
   renderHealth();
+}
+function editGeneration() {
+  const values = state.generation.values;
+  const options = [['auto', 'Automatic', 'Use suitable image tools available to the Agent.'], ['tool', 'Choose a tool', 'Use the tool you have configured with the Agent.'], ['manual', 'Generate elsewhere', 'Receive a prompt and references, then return the image.']];
+  editor('Image generation', `<fieldset class="generation-choices"><legend>How should images be generated?</legend>${options.map(([id, name, detail]) => `<label class="generation-choice"><input type="radio" name="mode" value="${id}" ${values.mode === id ? 'checked' : ''}><span><strong>${name}</strong><small>${detail}</small></span></label>`).join('')}</fieldset><label id="generation-tool-field" ${values.mode === 'tool' ? '' : 'hidden'}>Tool name<input name="tool" maxlength="300" value="${esc(values.tool)}" placeholder="The tool name confirmed with your Agent"></label><label>Model, if you have a preference<input name="model" maxlength="200" value="${esc(values.model)}" placeholder="Let the Agent choose"></label><label>Additional preferences<textarea name="instructions" maxlength="4000" rows="3" placeholder="Any preferences for the Agent. Keep API keys in your tool's configuration.">${esc(values.instructions)}</textarea></label>`, async form => {
+    await api('/api/generation', { values: Object.fromEntries(['mode', 'tool', 'model', 'instructions'].map(key => [key, form.get(key)])), revision: state.generation.revision });
+    await loadSystem();
+    toast('Image generation preferences saved');
+  });
 }
 function renderHealth() {
   $("#health-grid").innerHTML = state.health.map(item => { const info = capabilityInfo[item.name]; return `<button class="health-card" data-capability="${esc(item.name)}"><span class="status-label ${item.available ? "" : "unavailable"}">${item.available ? "Ready" : "Not installed"}</span><h4>${esc(item.name)}</h4><p>${esc(info?.card || item.detail)}</p><b aria-hidden="true">›</b></button>`; }).join("");
@@ -182,6 +195,7 @@ async function fileData(file) { const bytes = new Uint8Array(await file.arrayBuf
 document.addEventListener("click", event => attempt(async () => {
   const button = event.target.closest("button"); if (!button) return;
   if (button.hasAttribute("data-close")) return button.closest("dialog").close();
+  if (button.id === "edit-generation") return editGeneration();
   if (button.dataset.view) return navigate(button.dataset.view, true);
   if (button.dataset.profileDefault) return selectDefaultProfile(button.dataset.profileDefault);
   if (button.dataset.profileOpen) { state.consoleProfile = button.dataset.profileOpen; return loadDesign(); }
@@ -199,6 +213,9 @@ document.addEventListener("click", event => attempt(async () => {
 }));
 
 document.addEventListener("input", event => { if (event.target.dataset.colorFor) $(`#editor-fields input[name="${event.target.dataset.colorFor}"]`).value = event.target.value; });
+document.addEventListener('change', event => {
+  if (event.target.name === 'mode' && $('#generation-tool-field')) $('#generation-tool-field').hidden = event.target.value !== 'tool';
+});
 $("#editor-form").addEventListener("submit", async event => { event.preventDefault(); $("#editor-save").disabled = true; $("#editor-error").hidden = true; try { await saveEditor(new FormData(event.currentTarget)); $("#editor-dialog").close(); } catch (error) { $("#editor-error").textContent = error.message; $("#editor-error").hidden = false; } finally { $("#editor-save").disabled = false; } });
 $$('dialog').forEach(dialog => { const title = dialog.querySelector('h2[id]'); if (title) dialog.setAttribute('aria-labelledby', title.id); });
 let sharedRevision, sharedPoll;

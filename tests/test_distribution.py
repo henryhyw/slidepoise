@@ -40,6 +40,7 @@ def test_sdist_builds_self_contained_wheel_and_runs_outside_repository(tmp_path)
             assert "framework/_bundled/" + path in names
         assert "webapp/ui/session-panel.js" in names
         assert "webapp/console/index.html" in names
+        assert "framework/_bundled/slidepoise/scripts/generation_handoff.py" in names
         assert wheel.read("webapp/console/mark.svg") == (source / "webapp/console/mark.svg").read_bytes()
         assert any(name.endswith(".dist-info/licenses/LICENSE") for name in names)
         assert not any("__pycache__" in name for name in names)
@@ -48,6 +49,8 @@ def test_sdist_builds_self_contained_wheel_and_runs_outside_repository(tmp_path)
     outside = tmp_path / "user-project"
     outside.mkdir()
     command(["-m", "framework.cli", "setup", "--skip-skill", "--skip-node"], outside, environment)
+    configured = command(["-m", "framework.cli", "generation", "configure", "--mode", "manual"], outside, environment)
+    assert json.loads(configured.stdout)["values"]["mode"] == "manual"
     result = command(["-m", "framework.cli", "run", "create", "Packaged", "--location", "presentation"], outside, environment)
     run = json.loads(result.stdout)["path"]
     command(["-m", "framework.cli", "run", "resolve", run], outside, environment)

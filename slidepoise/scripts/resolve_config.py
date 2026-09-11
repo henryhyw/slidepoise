@@ -16,6 +16,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "runtime/src"))
 from slidepoise.canvas import derive_canvas
+from slidepoise.generation import resolve_preferences
 
 
 def load(path: Path) -> dict:
@@ -99,7 +100,7 @@ def main() -> None:
         cfg = copy.deepcopy(frozen["base_config"])
     allowed_top = {
         "slide_role", "density", "palette", "profile", "guidance_profile",
-        "generation_model", "header", "footer", "remote_sources", "external_icon_fetch", "measurement", "design_overrides", "library_sets",
+        "generation_model", "image_generation", "header", "footer", "remote_sources", "external_icon_fetch", "measurement", "design_overrides", "library_sets",
     }
     unknown = sorted(set(session) - allowed_top)
     if unknown:
@@ -194,6 +195,13 @@ def main() -> None:
         cfg["scope"]["current_slide_role"] = session["slide_role"]
     if session.get("generation_model") is not None:
         cfg["generation"]["default_model"] = str(session["generation_model"])
+    try:
+        generation_overrides = session.get("image_generation")
+        if session.get("generation_model") is not None and isinstance(generation_overrides, (dict, type(None))):
+            generation_overrides = {"model": str(session["generation_model"]), **(generation_overrides or {})}
+        cfg["generation"]["preferences"] = resolve_preferences(cfg["generation"], generation_overrides)
+    except ValueError as error:
+        raise SystemExit(str(error)) from error
 
     if session.get("density") is not None:
         density = str(session["density"])
