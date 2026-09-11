@@ -10,13 +10,12 @@ from __future__ import annotations
 import argparse
 import io
 import json
-import shutil
-import subprocess
 import textwrap
 from pathlib import Path
 from typing import Any
 
 from PIL import Image, ImageDraw, ImageFont
+from resvg_py import svg_to_bytes
 from inspect_asset import svg_dimensions
 
 
@@ -41,52 +40,16 @@ def _svg_to_image(path: Path, size: int) -> Image.Image | None:
     except (ValueError, OSError, SyntaxError, OverflowError):
         return None
     try:
-        import cairosvg  # type: ignore
-        data = cairosvg.svg2png(url=str(path), output_width=output_width, output_height=output_height)
+        data = svg_to_bytes(svg_path=str(path), width=output_width, height=output_height)
         return Image.open(io.BytesIO(data)).convert('RGBA')
-    except Exception:
-        pass
-    rsvg = shutil.which('rsvg-convert')
-    if rsvg:
-        try:
-            result = subprocess.run([rsvg, '-w', str(output_width), '-h', str(output_height), str(path)], capture_output=True, check=True)
-            return Image.open(io.BytesIO(result.stdout)).convert('RGBA')
-        except Exception:
-            pass
-    convert = shutil.which('magick') or shutil.which('convert')
-    if convert:
-        try:
-            command = [convert]
-            if Path(convert).name == 'magick':
-                command += ['convert']
-            result = subprocess.run(command + ['-background', 'none', str(path), '-resize', f'{size}x{size}', 'png:-'], capture_output=True, check=True)
-            return Image.open(io.BytesIO(result.stdout)).convert('RGBA')
-        except Exception:
-            pass
-    return None
-
-
-def _packaged_svg_preview(path: Path) -> Path | None:
-    root = Path(__file__).resolve().parents[1]
-    icons_root = (root / 'assets' / 'icons').resolve()
-    try:
-        rel = path.resolve().relative_to(icons_root)
-    except Exception:
+    except (ValueError, OSError):
         return None
-    candidate = root / 'assets' / 'icon_previews' / rel.with_suffix('.png')
-    return candidate if candidate.is_file() else None
 
 
 def _load_preview(path: Path, size: int) -> Image.Image | None:
     if not path.is_file():
         return None
     if path.suffix.lower() == '.svg':
-        packaged = _packaged_svg_preview(path)
-        if packaged is not None:
-            try:
-                return Image.open(packaged).convert('RGBA')
-            except Exception:
-                pass
         return _svg_to_image(path, size)
     try:
         return Image.open(path).convert('RGBA')
