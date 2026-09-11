@@ -9,6 +9,7 @@ import zipfile
 from pathlib import Path
 
 import pytest
+from PIL import Image, ImageColor
 
 from webapp import server
 from framework.profiles import initialize_home, migrate_config
@@ -19,7 +20,7 @@ FRAMEWORK = ROOT / "framework"
 PROFILES = ROOT / "profiles"
 sys.path.insert(0, str(SKILL / "scripts"))
 
-from prepare_generation import augment_selected_components, build_brief, build_contract, build_style_context
+from prepare_generation import augment_selected_components, build_contract, build_style_context
 from make_asset_contact_sheet import build_contact_sheet
 from slidepoise_runtime import resolve_scene_paths
 
@@ -259,17 +260,7 @@ def test_generation_handoff_preserves_the_complete_information_plan(tmp_path: Pa
     config, intent, resources = generic_generation_inputs(tmp_path)
     contract = build_contract(config, intent, resources)
     assert contract["communication_intent"] == intent
-    assert contract["communication_intent"]["information_structure"]["type"] == intent["information_structure"]["type"]
     assert contract["resources"]["style_context"] == build_style_context(config)
-    assert contract["user_language"]["reader_first"] is True
-    assert contract["user_language"]["new_copy_em_dash"] == "avoid"
-    brief = build_brief(contract)
-    assert "USER-FACING LANGUAGE" in brief
-    assert "Do not use an em dash in newly authored copy" in brief
-    assert "continue without per-slide approval" not in brief
-    assert "wait for explicit approval" not in brief
-
-
 
 
 def test_changed_style_invalidates_the_combined_style_asset_context(tmp_path: Path) -> None:
@@ -281,21 +272,18 @@ def test_changed_style_invalidates_the_combined_style_asset_context(tmp_path: Pa
 
 def test_style_only_context_sheet_remains_a_reviewable_artifact(tmp_path: Path) -> None:
     config, _intent, _resources = generic_generation_inputs(tmp_path)
+    config["design"]["style"]["accent_colors"] = ["#B12573", "#248A6D"]
     output = tmp_path / "style-assets.png"
     result = build_contact_sheet([], output, style_context=build_style_context(config),
                                  style_direction={"intent": "Quiet technical explanation"})
     assert output.is_file()
     assert result["asset_count"] == 0
     assert result["includes_style_context"] is True
-
-
-def test_config_evidence_does_not_issue_stage_verdict() -> None:
-    result = run_script("preflight_config.py", str(FRAMEWORK / "defaults" / "slidepoise-config.json"))
-    payload = json.loads(result.stdout)
-    assert result.returncode == 0
-    assert payload["blocking_facts"] == []
-    assert "mechanically_valid" not in payload
-    assert "passed" not in payload
+    with Image.open(output) as image:
+        colors = {rgb: count for count, rgb in image.convert("RGB").getcolors(image.width * image.height)}
+    # Both authored swatches must actually reach the reference image.
+    for color in config["design"]["style"]["accent_colors"]:
+        assert colors.get(ImageColor.getrgb(color), 0) > 100
 
 
 def test_config_evidence_reports_a_selected_remote_icon_set_disabled_by_the_session(tmp_path: Path) -> None:

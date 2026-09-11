@@ -109,15 +109,10 @@ async function openStyleEditor(mode, session) {
     const selectedLibrarySets = mode === "libraries" ? { icons: form.getAll("icon_sets"), components: form.getAll("component_sets") } : null;
     if (!session && selectedLibrarySets) { profileValues.library_sets = selectedLibrarySets; delete values.icon_sets; delete values.component_sets; }
     for (const key of Object.keys(values)) if (values[key] === v[key]) delete values[key];
-    if (session) { if (selectedLibrarySets) state.run = await api("/api/override", { run: state.run.path, key: "library_sets", value: selectedLibrarySets, revision: state.run.overrides_revision }); else if (Object.keys(values).length) state.run = await api("/api/run/design", { run: state.run.path, values, revision: state.run.overrides_revision }); renderRun(); }
+    if (session) { if (selectedLibrarySets) state.run = await api("/api/override", { run: state.run.path, key: "library_sets", value: selectedLibrarySets, revision: state.run.overrides_revision }); else if (Object.keys(values).length) state.run = await api("/api/run/design", { run: state.run.path, values, revision: state.run.overrides_revision }); }
     else { if (Object.keys(profileValues).length) await api("/api/profile/update", { profile_id: v.profile, revision: payload.profile_revision, values: profileValues }); if (Object.keys(values).length) { const latest = await api(`/api/design?profile=${encodeURIComponent(v.profile)}`); await api("/api/design", { profile: v.profile, values, revision: latest.revision }); } await refreshOverview(); await loadDesign(); }
     toast(session ? "Applied to this presentation" : "Profile style saved");
   }, { scope: session ? "THIS PRESENTATION" : "GUIDANCE PROFILE", help: session ? "Your saved profile stays unchanged." : "", label: session ? "Apply" : "Save changes" });
-}
-
-async function renderRun() {
-  if (state.view === "design") await loadStyleSurface();
-  else await refreshPanel(true);
 }
 
 async function loadResources() {
@@ -155,9 +150,27 @@ document.addEventListener("click", event => attempt(async () => {
   if (button.id === "edit-profile") return openProfileWorkspace();
   
   if (button.id === "reset-default-style") return editor("Restore profile style?", "<p>Restore this profile’s original fonts, colors, and density. Existing presentations stay the same.</p>", async () => { await api("/api/design", { profile: state.design.values.profile, reset: true, revision: state.design.revision }); await loadDesign(); toast("Profile style restored"); }, { label: "Restore style" });
-  if (button.id === "reset-run-style") return editor("Use the saved profile?", "<p>Remove the font, palette, and density changes made for this presentation.</p>", async () => { state.run = await api("/api/run/design", { run: state.run.path, reset: true, revision: state.run.overrides_revision }); renderRun(); toast("Saved profile restored"); }, { scope: "THIS PRESENTATION", label: "Use saved profile" });
-  if (button.id === "refresh-run-defaults") return editor("Update from the profile?", "<p>Bring in the latest profile and Library Sets. Changes made for this presentation will stay in place.</p>", async () => { state.run = await api("/api/run/defaults", { run: state.run.path, revision: state.run.defaults_revision }); renderRun(); toast("Profile updated"); }, { scope: "THIS PRESENTATION", label: "Update" });
+  if (button.id === "reset-run-style") return editor("Use the saved profile?", "<p>Remove the font, palette, and density changes made for this presentation.</p>", async () => { state.run = await api("/api/run/design", { run: state.run.path, reset: true, revision: state.run.overrides_revision }); toast("Saved profile restored"); }, { scope: "THIS PRESENTATION", label: "Use saved profile" });
+  if (button.id === "refresh-run-defaults") return editor("Update from the profile?", "<p>Bring in the latest profile and Library Sets. Changes made for this presentation will stay in place.</p>", async () => { state.run = await api("/api/run/defaults", { run: state.run.path, revision: state.run.defaults_revision }); toast("Profile updated"); }, { scope: "THIS PRESENTATION", label: "Update" });
 }));
 
 document.addEventListener("input", event => { if (event.target.dataset.colorFor) $(`#editor-fields input[name="${event.target.dataset.colorFor}"]`).value = event.target.value; });
-$("#editor-form").addEventListener("submit", async event => { event.preventDefault(); $("#editor-save").disabled = true; $("#editor-error").hidden = true; try { await saveEditor(new FormData(event.currentTarget)); $("#editor-dialog").close(); } catch (error) { $("#editor-error").textContent = error.message; $("#editor-error").hidden = false; } finally { $("#editor-save").disabled = false; } });
+$("#editor-form").addEventListener("submit", async event => {
+  event.preventDefault();
+  $("#editor-save").disabled = true;
+  $("#editor-error").hidden = true;
+  try {
+    try {
+      await saveEditor(new FormData(event.currentTarget));
+    } catch (error) {
+      $("#editor-error").textContent = error.message;
+      $("#editor-error").hidden = false;
+      return;
+    }
+    $("#editor-dialog").close();
+    // Background refresh protects open drafts. Refresh saved values after closing.
+    if (state.run && state.view === "session") await attempt(() => refreshPanel(true));
+  } finally {
+    $("#editor-save").disabled = false;
+  }
+});

@@ -142,8 +142,6 @@ def test_session_panel_snapshot_only_exposes_settings_assets_and_events(run):
     view = panel.snapshot(run)
     assert set(view) == {"path", "materials", "pending_events", "settings_revisions", "revision"}
     assert view["materials"][0]["name"] == "reference.png"
-    for removed in ("stages", "downloads", "versions", "activity", "approvals", "developer"):
-        assert removed not in view
 
 
 def test_npm_entry_keeps_callers_working_directory(home, tmp_path):

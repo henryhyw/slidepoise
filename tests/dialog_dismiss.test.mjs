@@ -73,10 +73,3 @@ test('changing dialogs during a gesture cannot dismiss either', () => {
   h.fire('pointerdown'); h.fire('pointerup', 50, 50, { dialog: upper }); h.fire('click', 50, 50, { dialog: upper });
   assert.ok(h.dialog.open && upper.open);
 });
-
-test('Console and Panel both load the shared dismissal behavior', () => {
-  for (const surface of ['ui', 'console']) {
-    const html = readFileSync(new URL(`../webapp/${surface}/index.html`, import.meta.url), 'utf8');
-    assert.match(html, /<script src="\/dialog-dismiss\.js"><\/script>/);
-  }
-});

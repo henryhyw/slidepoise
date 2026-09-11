@@ -37,17 +37,13 @@ function presentation() {
   };
 }
 
-test('bound presentation renders scoped editing actions and escaped asset names', () => {
+test('presentation and asset names are escaped before inserting HTML', () => {
   const h = harness();
   h.context.presentation = presentation();
   h.run(`state.run=presentation;sessionSnapshot={materials:[{name:'Client <draft>.pdf',url:'/api/artifact?path=client.pdf',size:2048}]};renderPanel()`);
   const html = h.node('#session-content').innerHTML;
   assert.match(html, /Strategy &lt;review&gt;/);
   assert.match(html, /Client &lt;draft&gt;\.pdf/);
-  assert.equal((html.match(/data-session="true"/g) || []).length, 4);
-  assert.deepEqual([...html.matchAll(/data-edit="([^"]+)"/g)].map(match => match[1]), ['guidance', 'typography', 'visual', 'libraries']);
-  assert.match(html, /id="session-assets" type="file" multiple/);
-  assert.match(html, /id="reset-run-style"/);
 });
 
 test('disconnected or moved presentation does not render writable controls', () => {
@@ -69,22 +65,13 @@ test('editing presentation typography sends only changed values with the current
     writes.push({ path, body: JSON.parse(JSON.stringify(body)) });
     return { ...presentation(), overrides_revision: 'revision-2' };
   };
-  h.run('state.run=presentation;api=saveRequest;renderRun=async()=>{};toast=()=>{}');
+  h.run('state.run=presentation;api=saveRequest;toast=()=>{}');
   await h.run("openStyleEditor('typography',true)");
   await h.run("saveEditor(new Map([['display_font','Georgia'],['body_font','Courier New']]))");
   assert.deepEqual(writes, [{ path: '/api/run/design', body: {
     run: '/presentations/strategy', values: { body_font: 'Courier New' }, revision: 'revision-1',
   } }]);
   assert.equal(h.run('state.run.overrides_revision'), 'revision-2');
-});
-
-test('style surface identifies inherited and overridden values', () => {
-  const h = harness();
-  h.run(`state.run={overrides:{design_overrides:{style:{density:'spacious'}}}};
-    var payload={values:{density:'spacious',display_font:'Georgia',body_font:'Arial',primary:'#111111',secondary:'#222222',highlight:'#333333',surface:'#eeeeee'},densities:{spacious:'Spacious'},style_agency:{density:'guided',typography:'guided',palette:'guided'},selected_sets:{icons:[],components:[]}}`);
-  const cards = h.run('styleCards(payload,true)');
-  assert.equal((cards.match(/Changed for this presentation/g) || []).length, 1);
-  assert.equal((cards.match(/Using the saved profile/g) || []).length, 3);
 });
 
 test('refresh waits while a settings editor is active', async () => {
@@ -97,13 +84,4 @@ test('refresh waits while a settings editor is active', async () => {
   h.document.activeElement = { matches: selector => selector.includes('input') };
   await h.run('refreshPanel(true)');
   assert.equal(h.run('calls'), 0);
-});
-
-test('pending changes explain adoption timing without workflow progress', () => {
-  const h = harness();
-  h.run("sessionSnapshot={pending_events:{events:[{id:'one'}]}};");
-  const message = h.run('pendingChanges()');
-  assert.match(message, /1 change saved/);
-  assert.match(message, /next affected operation/);
-  assert.doesNotMatch(message, /Stage progress|approval/);
 });

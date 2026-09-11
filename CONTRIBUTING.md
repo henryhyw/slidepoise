@@ -1,6 +1,6 @@
 # Contributing
 
-SlidePoise turns a visually selected slide into an editable PowerPoint through a traceable reconstruction process. A useful contribution improves that user journey, protects a real failure boundary, or makes the project easier to understand and maintain.
+SlidePoise helps Agents plan presentation content, explore visual designs and construct editable PowerPoint. A useful contribution improves that workflow, protects a real failure boundary, or makes the project easier to understand and maintain.
 
 Read [AGENTS.md](AGENTS.md), [the skill](slidepoise/SKILL.md), and [maintenance guidance](slidepoise/references/maintenance.md) before changing the framework. The packaged skill is the product source of truth. The host Agent owns visual, semantic, narrative, and interaction judgement. Runtime code measures, validates, transforms, constructs, and records evidence.
 
@@ -29,7 +29,7 @@ Write tests around a behavior someone depends on. A good test names its failure 
 - Use focused unit tests for geometry, fitting, transforms, and malformed inputs where edge cases matter.
 - Use integration tests for measurement-to-constructor handoffs, native PowerPoint structure, state revisions, uploads, and package installation outside the checkout.
 - Use real renderer tests for output that can fail despite valid XML. The preview smoke checks English and Chinese text in an actual rendered PDF and preserves its PNG for inspection.
-- Use interaction tests for concurrent saves, retries, editor preservation, and accessible dismissal behavior. They complement browser review and do not prove layout quality.
+- Use focused interaction tests for concurrent saves, retries and gesture edge cases. Use browser tests against the real local service for button wiring, persisted settings, uploads and dialog behaviour. They complement visual review and do not prove layout quality.
 
 Avoid source-text assertions that freeze function names, copy, or implementation syntax. Avoid tests that merely check an output file exists, duplicate another scenario, or repeat the implementation as the expected answer. Replace weak coverage with a stronger observation before removing it. Test counts and visual similarity scores do not establish product quality.
 
@@ -38,6 +38,8 @@ Run the focused tests while developing, then the complete checks before a pull r
 ```bash
 PYTHONDONTWRITEBYTECODE=1 python -m pytest -q
 npm test
+npx playwright install chromium
+npm run test:browser
 python -m ruff check --select E9,F63,F7,F82 framework webapp slidepoise tests setup.py
 python slidepoise/scripts/preflight_config.py framework/defaults/slidepoise-config.json
 python slidepoise/scripts/preflight_catalogs.py --profiles-root profiles
@@ -45,6 +47,10 @@ python slidepoise/scripts/audit_skill_boundaries.py
 ```
 
 In PowerShell, set `$env:PYTHONDONTWRITEBYTECODE = "1"` before running the Python commands. LibreOffice, `pdftoppm`, and `pdftotext` enable the real preview test. It skips locally when these dependencies are unavailable. CI installs them together with Noto CJK fonts and requires the test to run. Run it locally with `python -m pytest tests/test_preview_rendering.py -q --basetemp=workspace/preview-tests` to retain the artifacts.
+
+The browser suite uses Chromium at desktop and phone widths. It starts a temporary local server and cleans up its isolated settings. Playwright is a development dependency and is not installed with the product. Failed browser runs retain screenshots and traces in `workspace/test-results/browser/`. Inspect a trace with `npx playwright show-trace <trace.zip>`. Set `SLIDEPOISE_TEST_PYTHON` if the test server should use a Python interpreter outside `.venv`.
+
+When reviewing test coverage, temporarily introduce a representative fault and confirm that a relevant assertion fails. Restore the implementation before running the final suite. Record surviving faults and coverage limits, as in the [test-suite audit](docs/quality/test-suite-audit.md).
 
 The preview smoke verifies that both languages survive Office conversion and remain in the correct page order. It does not establish exact font matching across operating systems. A renderer may substitute an installed typeface while preserving readable text. Inspect the retained images and font evidence when typeface fidelity matters.
 

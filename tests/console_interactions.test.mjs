@@ -34,14 +34,18 @@ test('default selection prevents overlapping writes and restores controls', asyn
   const h = harness();
   let finish;
   let writes = 0;
-  h.context.saveRequest = async () => { writes++; await new Promise(resolve => { finish = resolve; }); };
-  h.run('api = saveRequest');
+  h.context.saveRequest = async (path, body) => {
+    assert.equal(path, '/api/profile');
+    assert.deepEqual(JSON.parse(JSON.stringify(body)), { profile_id: 'b' });
+    writes++;
+    await new Promise(resolve => { finish = resolve; });
+  };
+  h.run("api = saveRequest; refreshOverview=async()=>{state.overview={active_profile:'b'}}");
   const pending = h.run("selectDefaultProfile('b')");
   assert.equal(h.controls[1].textContent, 'Applying…');
   assert.ok(h.controls.every(control => control.disabled));
   await h.run("selectDefaultProfile('b')");
   assert.equal(writes, 1);
-  h.run("state.overview.active_profile='b'");
   finish();
   await pending;
   assert.equal(h.run('state.defaultSaving'), false);
@@ -58,28 +62,6 @@ test('failed default selection leaves the old default and remains retryable', as
   assert.equal(h.run('state.defaultSaving'), false);
   assert.equal(h.controls[1].disabled, false);
   assert.equal(h.controls[1].attributes['aria-busy'], undefined);
-});
-
-test('system loads the supported tools and opens named, bounded detail views', async () => {
-  const h = harness();
-  const dialog = h.node('#preview-dialog');
-  dialog.showModal = () => { dialog.open = true; };
-  const names = ['Python', 'OpenCV', 'Node', 'PptxGenJS', 'LibreOffice', 'Poppler'];
-  h.context.systemRequest = async path => {
-    if (path === '/api/settings') return { config: {}, revision: 'current' };
-    if (path === '/api/generation') return { values: { mode: 'auto', tool: '', model: '', instructions: '' }, revision: 'current' };
-    if (path === '/api/health') return names.map(name => ({ name, available: true, detail: 'Installed' }));
-    throw new Error(`Unexpected system request ${path}`);
-  };
-  h.run('api = systemRequest');
-  await h.run('loadSystem()');
-  for (const name of names) {
-    h.run(`openCapability(${JSON.stringify(name)})`);
-    assert.equal(h.node('#preview-title').textContent, name);
-    assert.ok(h.node('#preview-body').innerHTML.includes('capability-detail'));
-    assert.equal(dialog.open, true);
-    dialog.open = false;
-  }
 });
 
 test('shared Agent changes refresh Console without overwriting an open editor', async () => {

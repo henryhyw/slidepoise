@@ -1,6 +1,6 @@
 {
   "name": "slidepoise",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "private": false,
   "type": "module",
   "description": "AI presentation design with editable PowerPoint output",
@@ -23,7 +23,8 @@
     "slidepoise": "bin/slidepoise.js"
   },
   "scripts": {
-    "test": "node --test tests/console_interactions.test.mjs tests/panel_interactions.test.mjs tests/dialog_dismiss.test.mjs"
+    "test": "node --test tests/console_interactions.test.mjs tests/panel_interactions.test.mjs tests/dialog_dismiss.test.mjs",
+    "test:browser": "node --test tests/browser/*.test.mjs"
   },
   "files": [
     "bin/",
@@ -44,5 +45,8 @@
   "dependencies": {
     "jszip": "^3.10.1",
     "pptxgenjs": "^4.0.1"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
   }
 }
