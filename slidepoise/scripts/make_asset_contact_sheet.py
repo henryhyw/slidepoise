@@ -17,6 +17,7 @@ from pathlib import Path
 from typing import Any
 
 from PIL import Image, ImageDraw, ImageFont
+from inspect_asset import svg_dimensions
 
 
 def _font(size: int, bold: bool = False) -> ImageFont.ImageFont:
@@ -32,15 +33,23 @@ def _font(size: int, bold: bool = False) -> ImageFont.ImageFont:
 
 def _svg_to_image(path: Path, size: int) -> Image.Image | None:
     try:
+        width, height = svg_dimensions(path)
+        if not width or not height:
+            return None
+        scale = size / max(width, height)
+        output_width, output_height = max(1, round(width * scale)), max(1, round(height * scale))
+    except (ValueError, OSError, SyntaxError, OverflowError):
+        return None
+    try:
         import cairosvg  # type: ignore
-        data = cairosvg.svg2png(url=str(path), output_width=size, output_height=size)
+        data = cairosvg.svg2png(url=str(path), output_width=output_width, output_height=output_height)
         return Image.open(io.BytesIO(data)).convert('RGBA')
     except Exception:
         pass
     rsvg = shutil.which('rsvg-convert')
     if rsvg:
         try:
-            result = subprocess.run([rsvg, '-w', str(size), '-h', str(size), str(path)], capture_output=True, check=True)
+            result = subprocess.run([rsvg, '-w', str(output_width), '-h', str(output_height), str(path)], capture_output=True, check=True)
             return Image.open(io.BytesIO(result.stdout)).convert('RGBA')
         except Exception:
             pass
@@ -50,7 +59,7 @@ def _svg_to_image(path: Path, size: int) -> Image.Image | None:
             command = [convert]
             if Path(convert).name == 'magick':
                 command += ['convert']
-            result = subprocess.run(command + [str(path), '-resize', f'{size}x{size}', 'png:-'], capture_output=True, check=True)
+            result = subprocess.run(command + ['-background', 'none', str(path), '-resize', f'{size}x{size}', 'png:-'], capture_output=True, check=True)
             return Image.open(io.BytesIO(result.stdout)).convert('RGBA')
         except Exception:
             pass
@@ -148,7 +157,8 @@ def collect_resource_review_items(payload: dict[str, Any]) -> list[dict[str, Any
     for index, record in enumerate(payload.get('selected_assets') or [], start=1):
         copy = dict(record)
         copy['contact_sheet_label'] = f'A{index:02d}'
-        source = 'User upload' if record.get('source') == 'current_chat_upload' or record.get('user_required') else 'Selected asset'
+        source = ('User upload' if record.get('source') == 'current_chat_upload' else
+                  'Required asset' if record.get('user_required') or record.get('required_for_slide') else 'Selected asset')
         copy['role'] = f"{source}. {record.get('role') or record.get('asset_id') or 'Asset'}"
         items.append(copy)
     return items

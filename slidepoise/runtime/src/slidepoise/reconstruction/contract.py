@@ -138,7 +138,7 @@ def build_reconstruction_contract(
     if not isinstance(speaker_notes, list) or any(not isinstance(note, str) for note in speaker_notes):
         raise ValueError("handoff.speaker_notes must be an array of strings")
     from .coverage import content_obligation_errors
-    coverage_errors = content_obligation_errors(measured_scene.get("entities", []), handoff)
+    coverage_errors = content_obligation_errors(measured_scene.get("entities", []), handoff, measured_scene.get("groups", []))
     if coverage_errors:
         raise ValueError(f"Unfulfilled content obligations: {coverage_errors}")
     source = measured_scene["source"]

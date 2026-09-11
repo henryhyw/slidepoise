@@ -24,7 +24,9 @@ The reviewer must distinguish communication structure from visual layout. A plan
 
 ### Style and asset review
 
-Give the reviewer the current plan, resolved profile, resolved style snapshot, resource selection draft, candidate provenance, and combined context sheet. Ask it to check semantic coverage, profile fit, creative-freedom boundaries, exact user assets, source licensing, unnecessary assets, and whether the selected pool prematurely dictates a layout.
+Give the reviewer the original request, relevant source materials or project paths, enabled libraries and profile, plus actual page images when available. First ask what identity, evidence or explanatory resources the content warrants. The reviewer should inspect concrete candidates where an omission is plausible and identify pages that benefit from typography or native geometry alone. Then provide the current plan, resource selection and context sheet for comparison. Keep the author's selection reasons and acceptance statements out of the first reading so they cannot define the reviewer's entire scope.
+
+Check both unnecessary assets and missed opportunities supported by the source. Distinguish a user obligation from an Agent proposal. Challenge proposals that prematurely narrow the visual design, including unsupported rejection of an entire resource class. Cite the source asset and the communication role it could serve. Do not recommend icons merely to increase their count. Reuse the existing finding format and revise the existing plan or selection when warranted.
 
 ### Semantic-map review
 

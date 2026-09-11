@@ -8,11 +8,19 @@ Author `work/slide-intent.json` from the corresponding entry in `work/deck-outli
 
 Do not force a numbered process unless the information is sequential. Do not prescribe a detailed layout before resources and visual reasoning unless the user already did.
 
+Establish how the audience will encounter the slide. A page read without a presenter needs enough explanation to interpret its evidence. A spoken presentation may carry that explanation in speaker notes. Record this in the intent's optional `reading_context` when it affects the content. Infer it from the request when clear. Do not add a user-facing mode or a required approval.
+
+For a claim supported by evidence, use the existing `evidence`, `assumptions` and `open_questions` to distinguish observations, estimates, inferences and unresolved conditions. Explain which part of the claim each material observation supports and where its support ends. Numbers need their units, population, period and comparison basis where relevant. If the evidence cannot sustain the proposed conclusion, narrow the conclusion or preserve the uncertainty. Never invent support to make a stronger slide.
+
+Describe in `information_structure` and `semantic_relationships` what the audience should be able to compare, trace or infer. For example, a cost comparison needs comparable cost components and their contribution to the total. This specifies the explanatory work without prescribing a chart type, metaphor, container arrangement or coordinates. When a visual convention could overstate the evidence, capture the prohibited implication in `avoid`. Direction can imply causality, enclosure can imply ownership, and a status mark can imply verification. Each must have support in the intent.
+
+Use `hierarchy` to give each content role a distinct purpose. A conclusion, its explanation, supporting evidence and a qualification should have appropriate emphasis. Remove repeated claims when editing is authorised, while preserving their substantive qualifications. Decide whether a closing implication adds anything to the title. There is no universal requirement for an action title, subtitle, dominant diagram or bottom takeaway. Dense content needs readable relationships and explanation, not an arbitrary word limit. For exact user wording, preserve it and resolve repetition through emphasis or an agreed revision.
+
 ## 2. Resolve configuration and resources
 
 Use the deck's resolved configuration and shared resource selection. Add page-specific visual references, icons, components, images, or user assets only where they help this slide.
 
-Before writing the resource selection, make a visual-role pass over the slide intent. Look for concepts that would be read faster or remembered more clearly with a known icon, exact identity asset, reusable component, photograph, or other visual resource. Inspect the libraries that are actually enabled. Do not infer that an empty `asset_obligations` array means no assets can help. Record the decision for each relevant resource class in `selection_reasoning`, including a concrete reason when the selection remains empty. A multi-slide run with an enabled icon library and no selected icons on any page deserves a second deck-level review before generation. Icons remain optional. The Agent decides whether they improve the communication.
+Follow `resource-library.md` to compare concrete source assets and enabled library candidates against this page's purpose. Begin with the original task and source material, then assess the draft intent. The draft may omit a useful identity, example or piece of evidence. Amend it when source inspection reveals that omission. Keep unsupported design assumptions revisable. A library demonstration on one page does not establish that resource choices on other pages are sufficient, and an empty asset list does not require adding decoration.
 
 For a deck, read the same `work/deck-design.json` used by the other pages. Its recurring visual roles are host-authored decisions. Preserve them during page work and return a proposed change to the deck owner when an exception is needed.
 

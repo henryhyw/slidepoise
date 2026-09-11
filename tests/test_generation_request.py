@@ -60,6 +60,24 @@ def test_model_prompt_preserves_complete_visual_inputs_once(compiled_request):
     contract = json.loads((compiled_request.parent / "contract.json").read_text())
     # Preserve future authored fields too, without an allowlist of slide facts.
     contract["communication_intent"]["qualifications"] = ["Evidence is preliminary", "保留原始限定条件"]
+    contract["communication_intent"]["reading_context"] = "Read without a presenter"
+    contract["communication_intent"]["evidence"] = [{
+        "observation": "18 of 24 invited users returned in week two",
+        "supports": "Short-term use among the invited cohort",
+        "limits": "No observation of paid renewal or longer-term retention",
+        "status": "Illustrative observation",
+    }]
+    contract["communication_intent"]["avoid"] = ["Do not depict paid renewal as verified"]
+    contract["profile"]["writing_principles"] = ["Keep stated uncertainty beside the claim it qualifies"]
+    contract["profile"]["anti_patterns"] = ["Do not use decorative status badges or glossy gradients"]
+    contract["non_negotiable_design"]["semantic_style_tokens"] = {
+        "qualified_claim": {"fill": "#F4F3F0", "text_color": "#242321"},
+    }
+    contract["non_negotiable_design"]["data_visualization"] = {
+        "default_series_colors": ["#242321", "#8F8F8F"],
+        "gridline_color": "#D8D7D3",
+        "chart_title_font": "Georgia",
+    }
     contract["resources"]["selected_assets"] = [{"asset_id": "required-mark", "generation_instruction": "Preserve this identity"}]
     prompt = build_brief(contract)
     payload = json.loads(prompt.split("```json", 1)[1].split("```", 1)[0])
@@ -67,35 +85,53 @@ def test_model_prompt_preserves_complete_visual_inputs_once(compiled_request):
     assert payload["resources"] == generation_resource_projection(contract["resources"])
     assert payload["deck_design"] == contract["deck_design"]["content"]
     assert payload["canvas"] == contract["canvas"]
-    for key in ("hard_rules", "style_agency", "visual_principles", "density_guidance"):
+    for key in ("hard_rules", "style_agency", "visual_principles", "density_guidance", "writing_principles", "anti_patterns"):
         assert payload["profile"][key] == contract["profile"][key]
-    for key in ("writing_principles", "anti_patterns", "reasoning_principles", "review_questions"):
+    for key in ("reasoning_principles", "review_questions"):
         assert key not in payload["profile"]
-    for key in ("semantic_style_tokens", "data_visualization", "explicit_user_visual_requirements"):
-        assert key not in payload["non_negotiable_design"]
-    expected_design = {
-        key: value for key, value in contract["non_negotiable_design"].items()
-        if key not in {"semantic_style_tokens", "data_visualization"}
-    }
+    assert "explicit_user_visual_requirements" not in payload["non_negotiable_design"]
     design = {**payload["non_negotiable_design"],
               "explicit_user_visual_requirements": payload["communication_intent"]["explicit_user_visual_requirements"]}
-    assert design == expected_design
+    assert design == contract["non_negotiable_design"]
+    for key in ("writing_principles", "anti_patterns", "semantic_style_tokens", "data_visualization"):
+        assert prompt.count(f'"{key}"') == 1
     assert prompt.count('"communication_intent"') == 1
     assert "continue without per-slide approval" not in prompt
 
 
-def test_resource_selection_reasoning_reaches_the_generation_prompt(tmp_path: Path) -> None:
+def test_selection_deliberation_stays_with_host_and_asset_requirements_reach_model(tmp_path: Path) -> None:
     config, intent, resources = generic_generation_inputs(tmp_path)
     resources["selection_reasoning"] = {
         "icons": {
             "communication_roles": ["Distinguish source review from release approval"],
             "candidates_inspected": ["file-search", "shield-check"],
-            "decision": "Use both as supporting stage markers.",
+            "decision": "Provisional rejection of all icons pending comparison with source material.",
         }
     }
+    resources["selected_assets"] = [
+        {"asset_id": "project-mark", "canonical_file": str(tmp_path / "mark.svg"),
+         "generation_description": "Exact project mark", "user_required": True,
+         "intrinsic_aspect_ratio": 1.0},
+        {"asset_id": "stage-symbol", "canonical_file": str(tmp_path / "stage.svg"),
+         "generation_description": "Optional source-review symbol"},
+        {"asset_id": "source-diagram", "canonical_file": str(tmp_path / "diagram.png"),
+         "generation_description": "Required evidence diagram", "required_for_slide": True},
+    ]
     contract = build_contract(config, intent, resources)
-    payload = json.loads(build_brief(contract).split("```json", 1)[1].split("```", 1)[0])
-    assert payload["resources"]["selection_reasoning"] == resources["selection_reasoning"]
+    prompt = build_brief(contract)
+    payload = json.loads(prompt.split("```json", 1)[1].split("```", 1)[0])
+    assert contract["resources"]["selection_reasoning"] == resources["selection_reasoning"]
+    assert "selection_reasoning" not in payload["resources"]
+    assert resources["selection_reasoning"]["icons"]["decision"] not in prompt
+    assets = {item["asset_id"]: item for item in payload["resources"]["generation_asset_descriptions"]}
+    assert assets["project-mark"]["required_for_slide"] is True
+    assert assets["project-mark"]["user_required"] is True
+    assert assets["project-mark"]["require_exact_identity"] is True
+    assert assets["project-mark"]["intrinsic_aspect_ratio"] == 1.0
+    assert assets["stage-symbol"]["required_for_slide"] is False
+    assert assets["stage-symbol"]["generation_description"] == "Optional source-review symbol"
+    assert assets["source-diagram"]["required_for_slide"] is True
+    assert assets["source-diagram"]["user_required"] is False
 
 
 def test_grammar_only_components_remain_prompt_guidance_without_an_image(compiled_request):
@@ -196,6 +232,72 @@ def test_changed_reference_pixels_invalidate_the_request(compiled_request):
     Image.new("RGB", (60, 40), "black").save(compiled_request.parent / "references.png")
     with pytest.raises(SystemExit, match="differs"):
         verify_request(compiled_request)
+
+
+@pytest.mark.parametrize("width,height", [(400, 100), (100, 400)])
+@pytest.mark.parametrize("representation", ["individual_attachments", "full_context_sheet"])
+def test_svg_asset_context_prepares_bound_transparent_raster_transport(tmp_path, width, height, representation):
+    from make_asset_contact_sheet import collect_resource_review_items
+
+    config, intent, resources = generic_generation_inputs(tmp_path)
+    config["resolved_profile"]["hard_rules"]["asset_vocabulary"] = {
+        "mode": "open", "generation_representation": representation}
+    source = tmp_path / "brand-mark.svg"
+    original = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}">'
+                f'<rect x="10" y="10" width="{width - 20}" height="{height - 20}" fill="#123456"/></svg>')
+    source.write_text(original)
+    resources["selected_assets"] = [{"asset_id": "brand-mark", "canonical_file": str(source),
+        "generation_description": "Use the exact project mark", "user_required": True, "source": "project_repository"}]
+    with pytest.raises(SystemExit, match="SVG attachment needs a prepared PNG preview"):
+        generation_reference_images({"resources": resources})
+    for name, value in (("config", config), ("intent", intent), ("draft", resources)):
+        write(tmp_path / f"{name}.json", value)
+    prepared = subprocess.run([sys.executable, str(ROOT / "slidepoise/scripts/prepare_resource_context.py"),
+        "--config", str(tmp_path / "config.json"), "--intent", str(tmp_path / "intent.json"),
+        "--resources", str(tmp_path / "draft.json"), "--output-resources", str(tmp_path / "resources.json"),
+        "--sheet", str(tmp_path / "context.png"), "--manifest", str(tmp_path / "context.json")],
+        capture_output=True, text=True)
+    assert prepared.returncode == 0, prepared.stdout + prepared.stderr
+    resolved = json.loads((tmp_path / "resources.json").read_text())
+    asset = resolved["selected_assets"][0]
+    assert asset["canonical_file"] == str(source)
+    preview = Path(asset["generation_preview"]["path"])
+    preview_bytes = preview.read_bytes()
+    with Image.open(preview) as image:
+        assert image.format == "PNG" and image.mode == "RGBA"
+        assert image.width / image.height == width / height
+        assert max(image.size) == 1024
+        assert image.getpixel((0, 0))[3] == 0
+        assert image.getpixel((image.width // 2, image.height // 2)) == (18, 52, 86, 255)
+    assert collect_resource_review_items(resolved)[0]["role"].startswith("Required asset.")
+    asset["source"] = "current_chat_upload"
+    assert collect_resource_review_items(resolved)[0]["role"].startswith("User upload.")
+
+    command = [sys.executable, str(ROOT / "slidepoise/scripts/prepare_generation.py")]
+    for name, path in (("config", "config.json"), ("intent", "intent.json"), ("resources", "resources.json"),
+                       ("contract", "contract.json"), ("brief", "brief.md")):
+        command += ["--" + name, str(tmp_path / path)]
+    compiled = subprocess.run(command, capture_output=True, text=True)
+    assert compiled.returncode == 0, compiled.stdout + compiled.stderr
+    request_path = tmp_path / "generation-request.json"
+    request = verify_request(request_path)
+    if representation == "individual_attachments":
+        attachment = next(item for item in request["reference_images"] if item["id"] == "brand-mark")
+        assert attachment["path"] == str(preview)
+        assert attachment["sha256"] == hashlib.sha256(preview_bytes).hexdigest()
+        assert attachment["source"] == {"path": str(source.resolve()), "sha256": hashlib.sha256(source.read_bytes()).hexdigest()}
+    else:
+        assert [item["id"] for item in request["reference_images"]] == ["generation-context"]
+    source.write_text(original.replace("#123456", "#ABCDEF"))
+    with pytest.raises(SystemExit, match="SVG preview source changed"):
+        verify_request(request_path)
+    source.write_text(original)
+    Image.new("RGBA", (1024, 256), "red").save(preview)
+    with pytest.raises(SystemExit, match="SVG preview changed"):
+        verify_request(request_path)
+    # Recompilation must not bless altered pixels under the old source binding.
+    stale = subprocess.run(command, capture_output=True, text=True)
+    assert stale.returncode != 0 and "SVG preview changed" in stale.stderr
 
 
 def test_a_rewritten_prompt_cannot_silently_replace_the_compiled_brief(compiled_request):

@@ -6,11 +6,26 @@ cannot discover meaning or decide whether that inventory is complete.
 from __future__ import annotations
 
 
-def content_obligation_errors(entities: list[dict], handoff: dict) -> list[dict]:
+def content_obligation_errors(entities: list[dict], handoff: dict, groups: list[dict] | None = None) -> list[dict]:
     obligations = handoff.get("content_obligations", [])
     if not isinstance(obligations, list):
         return [{"reason": "content_obligations_must_be_a_list"}]
     lookup = {item.get("id"): item for item in entities}
+    group_lookup = {item.get("id"): item for item in groups or []}
+
+    def valid_group(identifier: str, ancestors: frozenset[str] = frozenset()) -> bool:
+        # A semantic group can own an endpoint without emitting its own shape.
+        # Its members still have to resolve to actual entities through an
+        # acyclic, nonempty group tree. Ordinary entity obligations stay below.
+        if identifier in ancestors:
+            return False
+        children = group_lookup[identifier].get("children")
+        if not isinstance(children, list) or not children:
+            return False
+        return all(isinstance(child, str) and (
+            child in lookup or child in group_lookup and valid_group(child, ancestors | {identifier})
+        ) for child in children)
+
     errors = []
     seen = set()
     for obligation in obligations:
@@ -56,8 +71,12 @@ def content_obligation_errors(entities: list[dict], handoff: dict) -> list[dict]
                 fail("required_connection_needs_endpoints", field=field)
             elif set(expected) != set(intent.get(field, [])):
                 fail("required_connection_endpoints_changed", field=field)
-            elif any(v not in lookup for v in expected):
+            elif any(v not in lookup and v not in group_lookup for v in expected):
                 fail("required_connection_owner_missing", field=field)
+            else:
+                for owner in expected:
+                    if owner not in lookup and not valid_group(owner):
+                        fail("required_connection_group_invalid", field=field, group=owner)
         if not isinstance(connection.get("directed"), bool) or intent.get("directed") is not connection["directed"]:
             fail("required_connection_direction_changed")
     return errors

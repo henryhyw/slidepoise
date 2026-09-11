@@ -6,7 +6,10 @@ For collage, intrinsic lettering, texture, and image-text overlaps, read `raster
 
 ## Generation review
 Inspect the candidate image itself. Judge:
-- message clarity, hierarchy, and semantic relationships;
+- the conclusion a reader would draw from the image and whether the evidence supports it, including uncertainty that could be concealed by a checkmark, arrow, grouping, colour or visual metaphor;
+- whether the intended comparison, dependency or other relationship is visible, with values attached unambiguously to the evidence they describe and comparable quantities using a consistent basis;
+- whether each text role adds useful information, emphasis follows its importance and repeated conclusions compete for attention;
+- whether the page supplies the explanation its reading context needs, preserving material evidence without confusing visual weight with information volume;
 - fidelity to the resolved profile hard rules and exact design config;
 - typography family/role use, content completeness, and text colour treatment;
 - whole-page density and whitespace balance relative to the resolved density profile;
@@ -18,6 +21,8 @@ Inspect the candidate image itself. Judge:
 - whether any model-created illustrative raster is semantically justified by the active profile/slide role rather than decorative filler. Do not reject a useful novel illustration merely because it is not a packaged asset when the profile permits it; classify it explicitly downstream instead.
 
 Reject material defects before reconstruction. Density does not override profile principles and a profile does not imply one density.
+
+When a page fails these readings, identify whether the source claim, explanatory relationship, text hierarchy or generated treatment caused the problem. Revise the corresponding intent or shared guidance and compile again before another generation call. A palette change cannot repair an unsupported conclusion. Keep this judgement in the existing generation review, with the observed issue and correction. Do not introduce a separate score or aesthetic gate.
 
 ## Measurement review
 Inspect the accepted image and OpenCV overlay together. Judge whether meaningful objects are mapped once at the right semantic level, logical text regions and parent ownership are correct, and typography groups reflect the actual content hierarchy. Every emitting entity must declare whether its logical Agent-authored box or its OpenCV visible box controls reconstruction through `geometry_policy`. It must also have an explicit `z` layer. Every meaningful textbox must have a `typography_group` and an Agent-authored `target_font_size_px`. Boxes at one content level share the same group and target size. The Agent must justify different groups for similarly named roles in distinct visual hierarchies. Every meaningful icon or icon slot must also have an `icon_treatment_group` and an observed `icon_inset_fraction`. Icons at one visual level share one explicit profile treatment. Also judge whether other peer groups are defensible, canonical asset slots are correct, rounded-container intent and observed radius reflect the visible shape, declared non-overlap pairs match the intended layout, and connector intent matches what the diagram should communicate. For every connector, explicitly verify semantic topology and choose its route mode, arrowhead treatment, and junction style. Correct generated misconnections in the semantic intent instead of copying the raster mistake.

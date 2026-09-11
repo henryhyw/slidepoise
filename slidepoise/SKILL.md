@@ -7,7 +7,7 @@ description: "Create one slide or a complete polished presentation as editable P
 
 Act as the host Agent for presentation creation. Infer whether the user wants one slide, several slides, or a complete deck. Use one adaptable workflow for every scope. Do not ask the user to choose a product mode.
 
-Own interpretation, communication design, deck structure, resource choice, image-generation orchestration, every visual judgement, semantic mapping, reconstruction intent, review, revision, and delivery. Use deterministic code for measurement, transformation, fitting, construction, packaging, and objective file facts. A script never decides whether a slide is beautiful, readable enough, faithful enough, or ready to release.
+Own interpretation, communication design, deck structure, resource choice, image-generation orchestration, every visual judgement, semantic mapping, reconstruction intent, review, revision, and delivery. Use deterministic code for measurement, transformation, fitting, construction, packaging, and objective file facts. A script never decides whether a slide is beautiful, readable enough, faithful enough, or ready to release. Scripts may serialize decisions already made from inspected sources. Never fill page-specific selection reasons or acceptance statements through a generic loop and treat the populated files as completed reasoning.
 
 ## Absolute authority rule
 
@@ -41,6 +41,8 @@ At the start of every run
 10. Read `references/user-language.md` before authoring user-facing prose.
 
 ## Product shape
+
+When a user supplies visual references to establish or evolve a reusable style, read `references/profile-authoring.md`. Use its reference synthesis and transfer review before treating the resulting guidance as established. Persist through the existing Profile commands so conversation, Console and generation share the same settings.
 
 - Conversation is the primary control surface. Present outlines, context sheets, generated slides, comparisons, and final files directly in the conversation.
 - The optional session panel is a lightweight editor for current-presentation style and asset overrides. Open it only when the user asks to inspect or adjust those settings, or when a visual control would clearly help.
@@ -78,9 +80,9 @@ Read `references/deck-orchestration.md` for the complete contract.
 
 ## Core workflow
 
-1. Understand the source, audience, purpose, desired scope, evidence, constraints, and user assets.
+1. Understand the source, audience, purpose, reading context, desired scope, evidence, constraints, and user assets. Follow the intent guidance in `references/workflow.md` to connect claims to their support, preserve uncertainty and define what the visual needs to explain before generating it.
 2. Create or revise the deck outline. For a single slide, keep this compact. For a deck, plan the narrative arc and each slide's communication job before detailed slide composition.
-3. Resolve the Profile and current-presentation overrides once. Inspect the enabled visual libraries against the deck's communication jobs before accepting an empty resource selection. Select shared references and reusable resources at deck level, then add page-specific resources where they clarify meaning or preserve identity. Record why each resource class was used or left unused.
+3. Resolve the Profile and current-presentation overrides once. Discover relevant assets in the supplied project or source material as well as the enabled libraries. Compare concrete candidates against the deck's communication jobs, then select shared and page-specific resources. Keep explicit user obligations distinct from the Agent's current proposals. An empty selection leaves the design question open to later evidence. Follow `references/resource-library.md` for candidate inspection and reconsideration.
 4. Decide the useful collaboration checkpoints. A sample slide is often helpful for a large or visually uncertain deck. It is optional.
 5. Establish the deck's shared visual decisions using `references/deck-orchestration.md`. Discover recurring visual functions from the actual pages and references, including small recurring marks. The role inventory stays open as generated candidates and native renders reveal new peers. Map each role to page-local entity aliases and materialize its chosen treatment in those entities. For each active slide, author its intent and generation context, generate or edit one substantive-region design, inspect it against the shared direction, then reconstruct it with the page-local pipeline in `references/workflow.md`.
 6. Process independent slides concurrently when the host supports it. The parent Agent owns the outline, shared style, cross-slide consistency, ordering, and final assembly. A page worker owns only its slide directory.

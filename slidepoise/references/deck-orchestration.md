@@ -17,6 +17,8 @@ The outline records
 - dependencies on earlier or later slides
 - disposition such as active or omitted
 
+Establish whether the deck must stand on its own or accompanies a presenter, and plan explanatory depth accordingly. Across the ordered slides, check what the reader already knows, what each page adds and whether its evidence warrants the next conclusion. Shared evidence must keep the same meaning and qualifications when reused. Repeating an uncertain claim on several pages does not strengthen its support.
+
 Do not store detailed visual coordinates in the outline.
 
 ## Shared visual decisions
@@ -86,7 +88,7 @@ Independent slides may be processed concurrently when the host exposes subagents
 
 Parallelism is an optimization. If subagents are unavailable, the parent Agent may process pages sequentially. Do not block the deck merely because parallel execution is unavailable.
 
-Give each worker the current resolved configuration, deck design, relevant accepted style reference and assigned content obligations. Workers resolve the supplied role aliases to their actual page entities and return those bindings, observed native values, proposed exceptions and newly discovered recurring candidates. The parent compares pages together and decides whether to revise the page, adjust the shared design or retain an intentional exception. Different local typography-group names do not excuse drift within one deck role. Per-page approval and successful local fitting do not establish cross-page consistency.
+Give each worker the original task context, relevant source material or source paths, current resolved configuration, deck design, relevant accepted style reference and assigned content obligations. Identify which constraints come from the user and which choices are Agent proposals. Workers can challenge a missing asset or an unsupported exclusion and return a proposed upstream revision. A page assignment does not turn the parent's provisional resource decision into a user requirement. Workers resolve the supplied role aliases to their actual page entities and return those bindings, observed native values, proposed exceptions and newly discovered recurring candidates. The parent compares pages together and decides whether to revise the page, adjust the shared design or retain an intentional exception. Different local typography-group names do not excuse drift within one deck role. Per-page approval and successful local fitting do not establish cross-page consistency.
 
 ## Deck scene manifest
 
@@ -106,7 +108,7 @@ The runtime verifies structural compatibility and assembles the ordered deck. It
 
 ## Deck-level review
 
-After assembly, inspect the deck as a sequence. Check
+After assembly, read the original task and relevant source material again before inspecting the deck as a sequence. Check whether planning omitted something material, including subject identity, available evidence or an explanatory visual. Agreement between the plan and output cannot establish that the plan was sufficient. Use the source-first review in `multi-agent-review.md` when an independent reviewer is available. Check
 
 - whether the opening earns attention and frames the question
 - whether each slide adds a distinct piece of the argument

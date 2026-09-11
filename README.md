@@ -10,7 +10,7 @@ Agentic slide generation needs both freedom of layout and control over the final
 
 Fixed templates keep layouts consistent, but restrict how content can be presented. Image generation allows freer design, yet leaves the work of maintaining consistency and turning those designs into accurate, editable slides.
 
-SlidePoise combines an Agent-led workflow with a toolkit for visual measurement and PowerPoint construction. A shared content plan, style guidance and asset library inform the design of each slide. The Agent uses the toolkit to build editable objects, then reviews the rendered deck to correct errors and maintain consistency.
+SlidePoise gives that creative process a structured workflow, supported by tools for visual measurement and PowerPoint construction. A shared content plan, style and asset library guide the Agent as it develops designs, builds editable slides and reviews the resulting deck.
 
 SlidePoise is built and tested with Codex, using its native image-generation tools. Claude Code and Qoder can run the same skill and local runtime through connected image tools, including MCP, or a manual generation exchange.
 

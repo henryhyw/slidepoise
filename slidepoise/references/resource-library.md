@@ -6,7 +6,7 @@ During a run, use `scripts/list_library.py --config work/resolved-config.json --
 - `<profiles-root>/<profile-id>/libraries/visual_references/catalog.json` contains style and communication precedents. Never copy their factual content by default.
 - `<library-sets-root>/catalog.json` contains reusable icon and component set definitions.
 - A profile's `library_sets.icons` and `library_sets.components` select complete sets. Different profiles may share the same set.
-- Current-chat/user files: exact images, icons, logos, screenshots, and other assets supplied for the current slide.
+- Current-chat/user files and supplied project materials contain exact images, icons, logos, screenshots and other subject-specific assets. Inspect relevant source directories or documents before reaching for remote substitutes. A reusable Profile supplies a style and available libraries, not an inventory of the subject being presented.
 
 ## Profile-aware selection
 Read `resolved_profile.visual_reference_priorities` after config resolution. Inspect relevant profile references first, then add slide-specific precedents when useful. A visual reference teaches visual language; semantic intent/user content still determines composition.
@@ -15,7 +15,11 @@ The host Agent selects resources by semantic role, visual fit, profile compatibi
 
 Treat resource selection as part of communication design. Inspect the slide's claims, comparisons, actors, stages, decisions and recurring concepts before deciding that text and geometry are sufficient. A useful icon can make a role or action faster to recognize. A reusable component can carry a familiar information structure. An exact asset can preserve identity. Avoid decoration that adds no meaning.
 
-Record `selection_reasoning` in the resource-selection file. Name the resource classes considered, the communication roles they could serve, the candidates inspected, and why the selected resources earned space in the composition. When a class remains empty, give the actual reason. For a deck, compare these decisions across pages. If a selected Library Set is disabled by a session override, treat that as a deliberate limitation and revisit it when the slide would benefit from that source.
+Record the comparison in the existing `selection_reasoning` field after inspecting candidates. Identify actual files or catalog items and their potential communication roles. A provider name establishes availability only. State why a candidate helps or does not help this page. Do not copy a generic rejection across pages or treat an empty list as evidence that retrieval was unnecessary. Shared choices can be reused where their purpose is shared. A Profile that favours restraint does not prohibit useful imagery.
+
+Keep user requirements in `user_required_assets` and mark selected assets with `user_required` when the user actually requires them. Use `required_for_slide` for an Agent-selected asset that the current design depends on, and `require_exact_identity` when its identity must be preserved. Other selected assets form an optional candidate pool. Put the artwork's intended use in `generation_description`. Keep deliberation and rejected alternatives in `selection_reasoning`, which stays in the host contract and is excluded from the image prompt. Do not move tentative rejections into `avoid`, profile hard rules or user requirements.
+
+Reconsider selection when a generated design reveals a useful visual role or a review exposes missing identity or evidence. An unselected pictogram may suggest a role worth filling with a canonical asset. Evaluate its purpose, retrieve a suitable original when useful, then update the selection and recompile. Remove meaningless graphics after considering their role. Preserve explicit exclusions and closed asset policies. If a Library Set is disabled by a session override, respect that boundary and revisit the setting only within the user's authority.
 
 Exact user-required assets override packaged alternatives. Brand identity requires an exact asset; never substitute a generic icon for a missing logo.
 

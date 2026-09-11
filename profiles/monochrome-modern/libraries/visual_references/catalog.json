@@ -5,7 +5,7 @@
       "id": "personal-monochrome-system",
       "name": "Monochrome system",
       "path": "monochrome-system.png",
-      "description": "Generated light-mode reference for sharp blocks, editorial hierarchy, architectural photography, and continuous process connectors.",
+      "description": "Light reference. Large high-contrast serif display text contrasts with compact sans-serif explanations. Dark section fields and thin rules organise dense information on an off-white ground. Borrow tonal hierarchy, spacing relationships and crisp edges. Its staircase, personal-portfolio header, wording, columns and four-step process are incidental. The reference does not establish an exact font identity.",
       "tags": [
         "monochrome-modern",
         "modern-blocks",
@@ -23,7 +23,7 @@
       "id": "personal-dark-editorial-grid",
       "name": "Dark editorial grid",
       "path": "dark-editorial-grid.png",
-      "description": "Generated dark-mode reference for charcoal fields, off-white type, grayscale photography, and precise block hierarchy.",
+      "description": "Dark reference. Off-white serif display text and neutral sans-serif explanations sit on charcoal. Grey fields separate related evidence with minimal borders. Borrow coherent light/dark role inversion and differences in typographic weight. Its staircase, personal learning content, numbered labels and specific grid are incidental. The visible tonal shading is not a requirement for gradients.",
       "tags": [
         "monochrome-modern",
         "dark-editorial",

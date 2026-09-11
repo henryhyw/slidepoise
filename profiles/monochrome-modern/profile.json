@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "profile_id": "monochrome-modern",
   "name": "Monochrome Modern",
-  "purpose": "Create forward-looking black, white and grey slides with flat blocks, editorial typography, crisp geometry and controlled image-led contrast.",
+  "purpose": "Create monochrome presentations with expressive serif titles, clear sans-serif information and deliberate tonal contrast. Adapt the composition to the content while preserving a recognisable typographic and spatial character.",
   "library_sets": {
     "icons": [
       "remix-icon",
@@ -52,7 +52,7 @@
         "enabled": true,
         "height_px": 34,
         "font_family": "Arial",
-        "font_size_px": 11,
+        "font_size_px": 18,
         "font_weight": "regular",
         "text_color": "#505050",
         "secondary_text_color": "#8F8F8F",
@@ -66,7 +66,7 @@
         "enabled": true,
         "height_px": 34,
         "font_family": "Arial",
-        "font_size_px": 10,
+        "font_size_px": 16,
         "font_weight": "regular",
         "left_font_weight": "regular",
         "text_color": "#686868",
@@ -119,8 +119,8 @@
         "#FBFAF8",
         "#FFFFFF"
       ],
-      "visual_language": "Monochrome editorial portfolio language with sharp rectangular modules, deliberate asymmetry, flat tonal fields, generous negative space, precise optical alignment, serif and humanist sans contrast, occasional archival texture, typewriter metadata, and restrained handwritten annotation.",
-      "whitespace": "Treat empty space as active structure. Preserve clear outer margins and allow one dominant visual or statement to breathe."
+      "visual_language": "Monochrome editorial typography with expressive serif titles, neutral sans-serif explanations, flat tonal fields, crisp rules and content-led composition. The references establish contrast and spacing relationships, not a fixed page layout.",
+      "whitespace": "Separate distinct ideas and protect the dominant message while respecting the selected density. Avoid unnecessary empty areas on evidence-heavy pages."
     },
     "semantic_style_tokens": {
       "accent_badge": {
@@ -182,16 +182,16 @@
           "line_spacing": 1.1
         },
         "body": {
-          "font_family": "Georgia",
+          "font_family": "Arial",
           "font_weight": "regular",
           "color": "#505050",
-          "line_spacing": 1.35
+          "line_spacing": 1.15
         },
         "body_standard": {
-          "font_family": "Georgia",
+          "font_family": "Arial",
           "font_weight": "regular",
           "color": "#505050",
-          "line_spacing": 1.35
+          "line_spacing": 1.15
         },
         "body_compact": {
           "font_family": "Arial",
@@ -262,12 +262,12 @@
   "modes": {
     "modern_blocks": {
       "default": true,
-      "description": "Sharp monochrome modules, flat fills, large type, architectural photography, and a disciplined editorial grid.",
+      "description": "Near-white ground, dark serif display type, sans-serif evidence and square tonal fields where grouping helps. Layout follows the communication job.",
       "reconstruction": "Favor native text, rectangles, rules, charts, tables, and continuous connectors. Photographs remain raster."
     },
     "editorial_archive": {
       "default": false,
-      "description": "Warm paper, archival fragments, typewriter labels, sparse handwriting, translucent paper layers, and restrained diagram marks.",
+      "description": "Optional legacy variation for an explicit archival direction. Paper, handwriting and typewriter treatments are separate choices and do not belong to the default Monochrome Modern style.",
       "reconstruction": "Rebuild title, labels, rules, major blocks, and semantic connectors natively. Preserve complex collage textures, handwriting, paper grain, and blended photography as one or more generated raster regions."
     },
     "dark_editorial": {
@@ -295,7 +295,7 @@
       ]
     },
     "color": [
-      "Do not introduce green as a presentation accent. Preserve exact canonical asset identity when a required source contains green."
+      "Use neutral monochrome for authored presentation elements. Preserve source colours in exact canonical assets when identity requires them."
     ],
     "geometry": [
       "Core information modules use square corners or an optically negligible radius.",
@@ -319,10 +319,10 @@
     ]
   },
   "reconstruction_guidance": {
-    "palette_authority": "The accepted image supplies observed colors. Profile swatches are starting points, not a closed whitelist. Preserve quiet chromatic variations when they support the composition.",
+    "palette_authority": "The accepted image supplies observed colours. Preserve quiet neutral and warm-grey variation within the monochrome direction. Exact canonical identity assets retain their source colours. Profile swatches are starting points for these tonal roles.",
     "color_alignment": "The host decides which objects intentionally share a color role. Sample interior pixels and inspect antialiasing, grain, shadows, transparency, and local contrast before selecting one shared color. Do not quantize photographs or paper texture globally.",
-    "font_authority": "Match visible type using available fonts and rendered comparisons. Font identity inferred from a raster is uncertain. Declare substitutions, preserve typewriter rhythm and handwriting where meaningful, and retain inseparable lettering as raster.",
-    "typography": "Use serif, sans, typewriter, and handwritten voices according to the approved composition. No mandatory serif title. Keep essential text legible.",
+    "font_authority": "Reference font identities are uncertain. Use the declared available font roles, compare their appearance and preserve optical hierarchy. Any substitution must remain consistent across peer text.",
+    "typography": "Preserve the chosen serif display and sans-serif explanatory roles. Verify recurring sizes, line breaks and tone in the render. Use archival voices only when the chosen mode explicitly calls for them.",
     "raster_reuse": "Prefer existing sharp crops at their intended display size. Preserve intrinsic lettering, layered paper, and background texture. Regenerate only when a specific quality or separation problem justifies it."
   },
   "visual_reference_priorities": {
@@ -334,5 +334,35 @@
       "personal-dark-editorial-grid",
       "personal-monochrome-system"
     ]
-  }
+  },
+  "reasoning_principles": [
+    "Infer the visual structure from the message. The light reference combines a large opening statement with a dense process, while the dark reference gives different weights to the statement and supporting explanation. Neither arrangement is a universal template.",
+    "Preserve the contrast between display type and explanatory type as information density changes. Balanced is a starting preference. A detailed slide can use the same visual language with more information and less empty space.",
+    "Choose light or dark treatment for a communication reason and hold that choice across related pages. Invert tonal roles coherently instead of introducing unrelated decoration.",
+    "Treat reference photographs as examples of framing and light. Their architecture, staircase subject and words are incidental and must not recur without a content reason."
+  ],
+  "visual_principles": [
+    "Use a high-contrast serif for expressive titles and a neutral sans serif for explanations, diagram labels and evidence. Georgia and Arial are portable starting choices, not verified font identities from the references.",
+    "Let a small number of tonal roles establish emphasis. Near-black carries primary information on a near-white field, mid-grey supports it, and quiet rules or pale fields organise related material. Dark treatment reverses the foreground and background roles.",
+    "Organise content through shared alignments, text scale and proportion. Square fields and thin rules can clarify relationships without turning every group into a floating card.",
+    "Keep close spacing within related content and visibly greater separation between distinct ideas. Exact column counts, coordinates and box sizes follow each page.",
+    "Use flat backgrounds and clean edges for native content. Monochrome photographs may retain real texture and directional light when they explain or embody the subject. Avoid adding architectural stock imagery just to imitate the references.",
+    "Use canonical monochrome icons where they help identify a concept or asset. Keep the optical scale and stroke treatment consistent among peers and give them no compulsory badge.",
+    "Keep recurring labels and text roles consistent across a deck. A cover can use larger display type through an explicit role exception. Essential qualifications remain readable."
+  ],
+  "review_questions": [
+    "Does the page retain the reference contrast between expressive titles and clear explanatory text?",
+    "Can the reader distinguish the main statement, supporting information and qualifications through tone and typography?",
+    "Does this composition explain the new content, or merely repeat a reference arrangement?",
+    "Do spacing and tonal fields express genuine groups at the requested density?",
+    "Are shared type roles and tonal meanings consistent in the actual PowerPoint renders?",
+    "Does each photograph, icon or other visual contribute to the message?"
+  ],
+  "anti_patterns": [
+    "Copying reference wording, personal-portfolio metadata, staircase imagery or its process labels into unrelated content.",
+    "Equating monochrome style with sparse content or forcing every page into the same asymmetric split.",
+    "Mixing handwriting, typewriter metadata and paper collage into the clean default direction without an explicit mode choice.",
+    "Using low-contrast grey for substantive text, or multiplying outlines and repeated dark label strips until the page becomes noisy.",
+    "Adding glows, bevels, glossy gradients, fake interface controls or decorative status symbols."
+  ]
 }

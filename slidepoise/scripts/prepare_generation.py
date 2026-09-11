@@ -195,6 +195,8 @@ def generation_asset_descriptions(profile: dict[str, Any], resources: dict[str, 
             "generation_description": description or str(item.get("role") or item.get("asset_id")),
             "intrinsic_aspect_ratio": item.get("intrinsic_aspect_ratio"),
             "require_exact_identity": bool(item.get("require_exact_identity") or item.get("user_required")),
+            "required_for_slide": _asset_is_required(item),
+            "user_required": bool(item.get("user_required")),
         })
     return result
 
@@ -358,7 +360,7 @@ def build_contract(config: dict[str, Any], intent: dict[str, Any], resources: di
 
 
 def generation_resource_projection(resources: dict[str, Any]) -> dict[str, Any]:
-    """Return the information the image model needs without file and provenance duplication."""
+    """Project selected artwork and its use, keeping selection deliberation with the host."""
     references = [
         {key: item.get(key) for key in ("id", "reason") if item.get(key) is not None}
         for item in resources.get("selected_visual_references", [])
@@ -367,11 +369,10 @@ def generation_resource_projection(resources: dict[str, Any]) -> dict[str, Any]:
     for item in resources.get("selected_components", []):
         components.append({
             key: value for key, value in item.items()
-            if key not in {"canonical_file", "preview_file", "source", "native_source_slide_number"}
+            if key not in {"canonical_file", "preview_file", "generation_preview", "source", "native_source_slide_number"}
         })
     return {
         "style_direction": resources.get("style_direction", {}),
-        "selection_reasoning": resources.get("selection_reasoning", {}),
         "selected_visual_references": references,
         "generation_asset_descriptions": resources.get("generation_asset_descriptions", []),
         "selected_components": components,
@@ -388,7 +389,7 @@ def build_brief(contract: dict[str, Any]) -> str:
         "canvas", "communication_intent", "user_language", "composition_freedom",
     )}
     # These requirements already occur verbatim in the complete communication intent.
-    duplicated_design_fields = {"explicit_user_visual_requirements", "semantic_style_tokens", "data_visualization"}
+    duplicated_design_fields = {"explicit_user_visual_requirements"}
     payload["non_negotiable_design"] = {
         key: value for key, value in contract["non_negotiable_design"].items()
         if key not in duplicated_design_fields
@@ -396,7 +397,7 @@ def build_brief(contract: dict[str, Any]) -> str:
     # Agent reasoning, reference selection and review belong in the host's contract.
     host_profile_fields = {
         "reasoning_principles", "review_questions", "visual_reference_priorities", "resolution_precedence",
-        "writing_principles", "anti_patterns", "purpose",
+        "purpose",
     }
     payload["profile"] = {key: value for key, value in contract["profile"].items() if key not in host_profile_fields}
     # The style-context fingerprint duplicates the resolved design and profile below.
@@ -409,14 +410,20 @@ def build_brief(contract: dict[str, Any]) -> str:
         "Exclude the Slide Master frame. Do not draw headers, footers, page numbers or master-frame decoration.",
         "Preserve the complete communication intent, facts, qualifications, exact wording, negatives and asset obligations. "
         "Use optional context selectively. Content arrays do not imply a numbered process. Session and explicit user requirements take precedence.",
+        "Make the recorded information relationships legible. Keep quantities associated with what they measure and preserve their comparison basis. "
+        "Arrows, enclosures, status marks and colour must express only relationships and certainty supported by the intent. "
+        "Give content roles distinct emphasis, keep necessary qualifications readable and use the recorded reading context to guide explanatory depth. "
+        "Choose the visual form freely unless the user specifies it. Do not invent evidence or repeat a claim merely to fill another text role.",
         "Apply profile hard rules and shared deck roles. For style agency, specified values are exact, guided values preserve character, "
         "and agent_decides or agent_decides_from_references values are fallbacks. Choose composition within these constraints.",
         "USER-FACING LANGUAGE. Preserve user-authored wording. Do not use an em dash in newly authored copy. "
         "Use direct reader-facing language with the recorded writing rules.",
         "Attachments provide the recorded visual vocabulary. Context-sheet arrangement and sample text/data are not slide content. "
         "Adapt useful component grammar to the current information. Use references for style unless factual reuse is explicitly authorized. "
-        "Preserve selected asset identities and intrinsic proportions. Canonical assets are restored in reconstruction. "
-        "Closed asset vocabulary permits only selected identities and profile-authorized novel illustrations. Native presentation geometry remains available.",
+        "Include assets required by the intent or marked required_for_slide. Other supplied assets are candidates to use where they help the content. "
+        "When using an asset, preserve its identity and intrinsic proportions. Canonical files are restored in reconstruction. "
+        "An empty asset selection does not itself prohibit visual explanation. Respect explicit exclusions and the profile's asset policy. "
+        "When that policy closes the asset vocabulary, use only selected identities and profile-authorized novel illustrations. Native presentation geometry remains available.",
         "The following JSON contains each visual decision once.",
         "```json",
         json.dumps(payload, ensure_ascii=False, separators=(",", ":")),
@@ -490,13 +497,25 @@ def generation_reference_images(contract: dict) -> list[dict]:
                                       ("selected_components", "preview_file", "component_id"),
                                       ("selected_assets", "canonical_file", "asset_id")):
         for item in resources.get(field, []):
+            if field == "selected_components" and item.get("resource_form") == "grammar_only":
+                continue
+            source = Path(item[path_key])
+            attachment = file_binding(source)
+            if source.suffix.lower() == ".svg":
+                preview = item.get("generation_preview") or {}
+                if not preview.get("path") or preview.get("format") != "png":
+                    raise SystemExit(f"SVG attachment needs a prepared PNG preview. Run prepare_resource_context.py again. {source}")
+                if preview.get("source") != attachment:
+                    raise SystemExit(f"SVG preview source changed. Run prepare_resource_context.py again. {source}")
+                preview_binding = file_binding(Path(preview["path"]))
+                if preview_binding["sha256"] != preview.get("sha256"):
+                    raise SystemExit(f"SVG preview changed. Run prepare_resource_context.py again. {preview['path']}")
+                attachment = {**preview_binding, "source": attachment}
             if representation == "full_context_sheet" and not (
                     field == "selected_visual_references" and item.get("full_resolution_attachment") is True):
                 continue
-            if field == "selected_components" and item.get("resource_form") == "grammar_only":
-                continue
             references.append({"id": item.get(identity), "purpose": item.get("reason") or item.get("role") or field,
-                               **file_binding(Path(item[path_key]))})
+                               **attachment})
     references.extend((contract.get("deck_design") or {}).get("reference_images", []))
     unique = {}
     for item in references:
