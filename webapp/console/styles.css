@@ -278,11 +278,11 @@ dialog.component-dialog { box-sizing: border-box; width: min(1220px, calc(100vw 
 #native-inspector legend { margin-bottom: 10px; font-size: 12px; }
 .geometry-inputs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .grammar-notice { background: #efede9; border-radius: 12px; padding: 22px; font-size: 13px; line-height: 1.6; }
-.capability-detail { display: grid; grid-template-columns: 210px minmax(0,1fr); gap: 26px; align-items: stretch; }.capability-sample { min-height: 250px; display: grid; place-content: center; gap: 24px; overflow: hidden; border: 1px solid var(--line); border-radius: 15px; color: var(--accent); background: var(--soft); }.capability-sample > strong { font-size: 44px; font-weight: 650; letter-spacing: -.06em; text-align: center; }.capability-sample > span { width: 116px; display: grid; gap: 8px; }.capability-sample i { height: 9px; display: block; border-radius: 4px; background: currentColor; opacity: .16; }.capability-sample i:nth-child(2) { width: 72%; opacity: .35; }.capability-sample i:nth-child(3) { width: 88%; opacity: .12; }.capability-sample.opencv > span { grid-template-columns: repeat(3,1fr); }.capability-sample.opencv i { width: auto; height: 32px; }.capability-copy { min-width: 0; align-self: center; }.capability-lead { margin: 0 0 22px; font-size: 15px; line-height: 1.6; }.capability-copy dl { margin: 0; }.capability-copy dl > div { padding: 13px 0; border-top: 1px solid var(--line); }.capability-copy dt { margin-bottom: 4px; color: var(--muted); font-size: 10px; font-weight: 650; text-transform: uppercase; letter-spacing: .08em; }.capability-copy dd { margin: 0; overflow-wrap: anywhere; font-size: 12px; line-height: 1.5; }.capability-copy .quiet-button { margin-top: 17px; }
+.capability-detail { display: block; }.capability-copy { min-width: 0; align-self: center; }.capability-lead { margin: 0 0 22px; font-size: 15px; line-height: 1.6; }.capability-copy dl { margin: 0; }.capability-copy dl > div { padding: 13px 0; border-top: 1px solid var(--line); }.capability-copy dt { margin-bottom: 4px; color: var(--muted); font-size: 10px; font-weight: 650; text-transform: uppercase; letter-spacing: .08em; }.capability-copy dd { margin: 0; overflow-wrap: anywhere; font-size: 12px; line-height: 1.5; }.capability-copy .quiet-button { margin-top: 17px; }
 .set-choice > span { position: relative; padding-right: 30px; }
 .set-choice input:checked + span::after { content: '✓'; position: absolute; right: 12px; top: 12px; color: var(--accent); font-size: 14px; }
 .choice-card input:focus-visible + span, .set-choice input:focus-visible + span { outline: 3px solid var(--accent); outline-offset: 3px; }
-@media (max-width: 800px) { .native-workspace { grid-template-columns: 1fr; }.collection-dialog .library-item-grid { grid-template-columns: 1fr; }.choice-grid { grid-template-columns: 1fr; }.choice-card .density-illustration { max-width: 230px; }.remote-source-preview, .capability-detail { grid-template-columns: 1fr; }.capability-sample { min-height: 160px; } }
+@media (max-width: 800px) { .native-workspace { grid-template-columns: 1fr; }.collection-dialog .library-item-grid { grid-template-columns: 1fr; }.choice-grid { grid-template-columns: 1fr; }.choice-card .density-illustration { max-width: 230px; }.remote-source-preview { grid-template-columns: 1fr; }}
 .profile-workspace-heading { display: grid; gap: 22px; margin-bottom: 24px; }
 .profile-workspace-heading .text-button { justify-self: start; }
 .profile-workspace-heading h2 { margin: 5px 0 8px; font-size: 34px; letter-spacing: -.045em; }
@@ -320,7 +320,6 @@ dialog.component-dialog { box-sizing: border-box; width: min(1220px, calc(100vw 
 .generation-setting > div { flex: 1; min-width: 0; }
 .generation-setting h3 { margin: 6px 0; font-size: 22px; }
 .generation-setting p:not(.eyebrow) { margin: 0 0 8px; max-width: 640px; font-size: 13px; color: var(--muted); }
-.generation-setting small { color: var(--muted); font-size: 11px; }
 .generation-choices .generation-choice { display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: 10px; cursor: pointer; }
 .generation-choice:has(input:checked) { background: rgba(230,107,72,.08); }
 .generation-choice input { flex: 0 0 auto; width: 17px; height: 17px; accent-color: var(--accent); }

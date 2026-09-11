@@ -85,52 +85,52 @@
   "process": [
     {
       "title": "Start with a decision",
-      "description": "The authored outline gives every page a conclusion and specifies the evidence, calculation and responsibility it must carry.",
+      "description": "The outline sets out each slide’s conclusion, supporting evidence and required calculations.",
       "artifact": "run/work/deck-outline.json"
     },
     {
       "title": "Expose the assumptions",
-      "description": "The baseline, adoption, time reduction, cost and ramp are explicit. Sample quality gates remain separate from approval of each client release.",
+      "description": "The plan records the assumptions behind the pilot’s benefits, costs and delivery schedule.",
       "artifact": "run/work/planning-assumptions.json"
     },
     {
       "title": "Explore the content area",
-      "description": "The compiled brief carries the argument, shared design and selected visual assets into a 2:1 content image. PowerPoint adds the common frame later.",
+      "description": "The generation prompt combines the slide content, shared style and selected assets. It reserves space for headers and footers to be added in PowerPoint.",
       "artifact": "assets/s02-opportunities-target.png"
     },
     {
       "title": "Identify meaningful editable objects",
-      "description": "The host identifies one native chart, two tables and the supporting decision text before constructing the page.",
+      "description": "The Agent identifies the chart, tables and supporting text that need to become PowerPoint objects.",
       "artifact": "assets/s02-opportunities-semantic.png"
     },
     {
       "title": "Measure the chosen regions",
-      "description": "OpenCV records visible ink and geometry within authored regions. The Agent interprets those measurements and inspects the overlay.",
+      "description": "OpenCV measures the visible content inside the regions identified by the Agent. The overlay shows the detected boundaries.",
       "artifact": "run/slides/s02-opportunities/work/reconstruction/measurement/debug_overlay.png"
     },
     {
       "title": "Construct the native page",
-      "description": "A compiled scene preserves the chart data, table cells, text and geometry, then restores the selected icons from their canonical SVG files.",
+      "description": "The PowerPoint objects retain the chart data, table cells and text. Selected icons are placed using their original SVG files.",
       "artifact": "run/slides/s02-opportunities/work/reconstruction/constructor-scene.json"
     },
     {
       "title": "Check the actual PowerPoint",
-      "description": "The generated target and the real rendered output are retained together. The native chart labels remain linked to the workbook.",
+      "description": "This comparison shows the generated design beside the rendered PowerPoint slide.",
       "artifact": "run/slides/s02-opportunities/deliverables/comparison.png"
     },
     {
       "title": "Calibrate across the deck",
-      "description": "The Agent compares all five rendered pages and aligns recurring titles, type sizes and decision bands. The review keeps the observed differences and their corrections.",
+      "description": "The Agent compares the five slides and corrects differences in recurring titles, font sizes and decision bands. This record documents the changes.",
       "artifact": "run/work/cross-slide-calibration-review.json"
     },
     {
       "title": "Review the full argument",
-      "description": "The review records observations across the slides, editable structures and remaining visual differences.",
+      "description": "The Agent’s review records content checks, editable objects and remaining visual differences across the deck.",
       "artifact": "run/work/deck-review.json"
     },
     {
       "title": "Edit the existing PowerPoint",
-      "description": "An existing title and chart workbook are edited in a copy. The research value changes from 1,944 to 1,620 and its native label updates in the actual render. This demonstration leaves the official scenario unchanged.",
+      "description": "A copy of the PowerPoint has an edited title and a chart value changed from 1,944 to 1,620. The comparison shows the updated bar and label.",
       "artifact": "run/work/native-edit-proof/comparison.png"
     }
   ],

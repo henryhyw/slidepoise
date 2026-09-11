@@ -5,12 +5,12 @@ const esc = value => String(value ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;
 const at = (value, key, fallback = null) => key.split(".").reduce((v, k) => v?.[k], value) ?? fallback;
 const viewNames = { overview: "Overview", design: "Style", resources: "Resources", system: "System" };
 const capabilityInfo = {
-  Python: { key: "python", card: "Local tools", mark: "Py", purpose: "Prepares files and runs the tools used to build your presentation.", example: "Prepare a slide for measurement and reconstruction." },
-  OpenCV: { key: "opencv", card: "Visual measurement", mark: "CV", purpose: "Measures positions, colors, edges, and connectors in the approved design.", example: "Match editable objects to the design you approved." },
-  Node: { key: "node", card: "PowerPoint builder", mark: "JS", purpose: "Builds the editable PowerPoint file on this computer.", example: "Reconstruct an approved design as a PowerPoint slide." },
-  PptxGenJS: { key: "pptx", card: "Editable objects", mark: "P", purpose: "Creates editable text, shapes, images, tables, and connectors.", example: "Keep supported slide elements editable in PowerPoint." },
-  LibreOffice: { key: "libreoffice", card: "Slide previews", mark: "Pg", purpose: "Renders PowerPoint previews on this computer.", example: "Review the reconstructed slide before downloading it." },
-  Poppler: { key: "poppler", card: "Preview images", mark: "PDF", purpose: "Converts LibreOffice PDF pages into images for visual review.", example: "Inspect each rendered slide with its text, charts and images." },
+  Python: { card: "Local tools", purpose: "Runs SlidePoise’s file preparation and measurement tools." },
+  OpenCV: { card: "Visual measurement", purpose: "Measures object positions, colours and boundaries in the generated design." },
+  Node: { card: "JavaScript runtime", purpose: "Runs the PowerPoint renderer." },
+  PptxGenJS: { card: "PowerPoint construction", purpose: "Creates PowerPoint text, charts, tables and shapes." },
+  LibreOffice: { card: "Slide previews", purpose: "Renders PowerPoint slides as PDF pages for review." },
+  Poppler: { card: "Preview images", purpose: "Converts PDF pages into images the Agent can inspect." },
 };
 
 async function api(path, body) {
@@ -44,7 +44,7 @@ async function navigate(view, focusHeading = false) {
     overview: "Your reusable styles, resources, and local capabilities.",
     design: "Create and customize your presentation styles.",
     resources: "Icons and editable components for your slides.",
-    system: "Image generation preferences and tools installed on this computer."
+    system: "Image generation and local tools."
   }[view];
   $("#view-description").textContent = description;
   $("#view-description").hidden = !description;
@@ -166,19 +166,19 @@ async function loadSystem() {
   state.system = await api("/api/settings");
   state.generation = await api("/api/generation");
   const health = await api("/api/health"); state.health = health;
-  const labels = { auto: 'Automatic', tool: 'Selected tool', manual: 'Manual' };
-  const descriptions = { auto: 'The Agent finds suitable image tools in the current conversation, including connected MCP tools.', tool: 'The Agent uses your chosen tool and checks that it can handle the prompt and references.', manual: 'The Agent gives you the exact prompt and reference files. Generate the image elsewhere and return it to continue.' };
+  const labels = { auto: 'Automatic', tool: 'Selected tool', manual: 'Generate elsewhere' };
+  const descriptions = { auto: 'The Agent chooses an available image generator.', tool: 'Use the image tool you select.', manual: 'Get the prompt and references, generate the image in another app, then return it to the Agent.' };
   const value = state.generation.values;
-  $("#system-settings").innerHTML = `<article class="settings-panel generation-setting"><div><p class="eyebrow">Image generation</p><h3>${labels[value.mode]}</h3><p>${descriptions[value.mode]}</p><small>Set this together with the Agent or change it here. Saved preferences apply to future presentations.</small></div><button class="quiet-button" id="edit-generation">Change</button></article>`;
+  $("#system-settings").innerHTML = `<article class="settings-panel generation-setting"><div><p class="eyebrow">Image generation</p><h3>${esc(value.mode === 'tool' ? value.tool || labels.tool : labels[value.mode])}</h3><p>${descriptions[value.mode]}</p></div><button class="quiet-button" id="edit-generation">Change</button></article>`;
   renderHealth();
 }
 function editGeneration() {
   const values = state.generation.values;
-  const options = [['auto', 'Automatic', 'Use suitable image tools available to the Agent.'], ['tool', 'Choose a tool', 'Use the tool you have configured with the Agent.'], ['manual', 'Generate elsewhere', 'Receive a prompt and references, then return the image.']];
-  editor('Image generation', `<fieldset class="generation-choices"><legend>How should images be generated?</legend>${options.map(([id, name, detail]) => `<label class="generation-choice"><input type="radio" name="mode" value="${id}" ${values.mode === id ? 'checked' : ''}><span><strong>${name}</strong><small>${detail}</small></span></label>`).join('')}</fieldset><label id="generation-tool-field" ${values.mode === 'tool' ? '' : 'hidden'}>Tool name<input name="tool" maxlength="300" value="${esc(values.tool)}" placeholder="The tool name confirmed with your Agent"></label><label>Model, if you have a preference<input name="model" maxlength="200" value="${esc(values.model)}" placeholder="Let the Agent choose"></label><label>Additional preferences<textarea name="instructions" maxlength="4000" rows="3" placeholder="Any preferences for the Agent. Keep API keys in your tool's configuration.">${esc(values.instructions)}</textarea></label>`, async form => {
+  const options = [['auto', 'Automatic', 'The Agent chooses an available image generator.'], ['tool', 'Choose a tool', 'Use a connected image tool by name.'], ['manual', 'Generate elsewhere', 'Get the prompt and references, then return your image.']];
+  editor('Image generation', `<fieldset class="generation-choices"><legend>How should images be generated?</legend>${options.map(([id, name, detail]) => `<label class="generation-choice"><input type="radio" name="mode" value="${id}" ${values.mode === id ? 'checked' : ''}><span><strong>${name}</strong><small>${detail}</small></span></label>`).join('')}</fieldset><label id="generation-tool-field" ${values.mode === 'tool' ? '' : 'hidden'}>Tool name<input name="tool" maxlength="300" value="${esc(values.tool)}" placeholder="Name of a connected image tool"></label><label>Model (optional)<input name="model" maxlength="200" value="${esc(values.model)}" placeholder="Let the Agent choose"></label><label>Instructions (optional)<textarea name="instructions" maxlength="4000" rows="3" placeholder="Image requirements. Configure API keys in the image tool.">${esc(values.instructions)}</textarea></label>`, async form => {
     await api('/api/generation', { values: Object.fromEntries(['mode', 'tool', 'model', 'instructions'].map(key => [key, form.get(key)])), revision: state.generation.revision });
     await loadSystem();
-    toast('Image generation preferences saved');
+    toast('Saved for future presentations');
   });
 }
 function renderHealth() {
@@ -187,7 +187,7 @@ function renderHealth() {
 function openCapability(name) {
   const item = state.health.find(entry => entry.name === name); const info = capabilityInfo[name]; if (!item || !info) return;
   $("#preview-title").textContent = item.name;
-  $("#preview-body").innerHTML = `<div class="capability-detail"><div class="capability-sample ${esc(info.key)}" aria-hidden="true"><strong>${esc(info.mark)}</strong><span><i></i><i></i><i></i></span></div><div class="capability-copy"><p class="capability-lead">${esc(info.purpose)}</p><dl><div><dt>Example</dt><dd>${esc(info.example)}</dd></div><div><dt>Status</dt><dd>${item.available ? "Ready on this computer" : "Not installed"}</dd></div><div><dt>Installation details</dt><dd>${esc(item.detail)}</dd></div></dl></div></div>`;
+  $("#preview-body").innerHTML = `<div class="capability-detail"><div class="capability-copy"><p class="capability-lead">${esc(info.purpose)}</p><dl><div><dt>Status</dt><dd>${item.available ? "Ready" : "Not installed"}</dd></div><div><dt>Installation details</dt><dd>${esc(item.detail)}</dd></div></dl></div></div>`;
   if (!$("#preview-dialog").open) $("#preview-dialog").showModal();
 }
 async function fileData(file) { const bytes = new Uint8Array(await file.arrayBuffer()); let binary = ""; for (let offset = 0; offset < bytes.length; offset += 8192) binary += String.fromCharCode(...bytes.subarray(offset, offset + 8192)); return btoa(binary); }

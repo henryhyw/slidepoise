@@ -83,37 +83,37 @@
   "process": [
     {
       "title": "Start with a story",
-      "description": "The outline gives each slide a purpose and leaves room for its own composition.",
+      "description": "The outline sets out what each slide should communicate and how the essay develops across the deck.",
       "artifact": "run/work/deck-outline.json"
     },
     {
       "title": "Give the idea a visual form",
-      "description": "The generated design becomes the visual reference for the editable slide.",
+      "description": "The generated design guides the layout and appearance of the PowerPoint slide.",
       "artifact": "assets/s04-trace-target.png"
     },
     {
       "title": "Name what should stay editable",
-      "description": "The Agent identifies the text and artwork that give the slide its meaning.",
+      "description": "The Agent identifies the slide’s text and illustrations before rebuilding them as separate objects.",
       "artifact": "assets/s04-trace-semantic.png"
     },
     {
       "title": "Measure the visible evidence",
-      "description": "OpenCV measures visible ink and geometry in the regions the Agent has identified.",
+      "description": "OpenCV measures the visible content inside the regions identified by the Agent.",
       "artifact": "run/slides/s04-trace/work/reconstruction/measurement/debug_overlay.png"
     },
     {
       "title": "Construct the native objects",
-      "description": "The scene connects typography, geometry and source artwork to native PowerPoint objects.",
+      "description": "The PowerPoint combines editable text with separately placed artwork using the chosen fonts and measured positions.",
       "artifact": "run/slides/s04-trace/work/reconstruction/constructor-scene.json"
     },
     {
       "title": "Review the actual PowerPoint",
-      "description": "The generated target and rendered PowerPoint are shown together for visual review.",
+      "description": "This comparison shows the generated design beside the rendered PowerPoint slide.",
       "artifact": "run/slides/s04-trace/deliverables/comparison.png"
     },
     {
       "title": "Keep the series coherent",
-      "description": "The Agent compares the actual pages and applies one Field Notes identity. The review records the shared role, its page aliases and the preserved artwork.",
+      "description": "The Agent reviews the slides together and applies a consistent style to the recurring Field Notes label. This record documents those choices.",
       "artifact": "run/work/deck-review.json"
     }
   ],

@@ -2,9 +2,15 @@
 
 **Open-source Agentic Slide Generation Framework**
 
-SlidePoise is an open-source agentic slide generation framework that combines content planning with the design freedom of image generation to create editable PowerPoint presentations. Work with your Agent to develop your content and choose the references and visual assets that guide the design.
+SlidePoise helps an AI Agent develop presentation content, explore designs through image generation and build editable PowerPoint slides. Your references and visual assets guide the design throughout.
 
-The Agent interprets the chosen design, OpenCV measures its geometry, and local tools reconstruct the deck with editable text, charts, tables, shapes and canonical visual assets. The Agent reviews the rendered slides together for fidelity and consistency.
+## Why SlidePoise
+
+Agentic slide generation needs both freedom of layout and control over the final deck.
+
+Fixed templates keep layouts consistent, but restrict how content can be presented. Image generation allows freer design, yet leaves the work of maintaining consistency and turning those designs into accurate, editable slides.
+
+SlidePoise combines an Agent-led workflow with a toolkit for visual measurement and PowerPoint construction. A shared content plan, style guidance and asset library inform the design of each slide. The Agent uses the toolkit to build editable objects, then reviews the rendered deck to correct errors and maintain consistency.
 
 SlidePoise is built and tested with Codex, using its native image-generation tools. Claude Code and Qoder can run the same skill and local runtime through connected image tools, including MCP, or a manual generation exchange.
 
@@ -37,7 +43,7 @@ Browse the slides, compare the AI designs with actual PowerPoint renders, and in
   </tr>
 </table>
 
-The strategy sample uses a fictional firm and illustrative figures.
+The consulting sample uses a fictional firm and illustrative figures.
 
 ## Get started
 
@@ -60,7 +66,7 @@ npx github:henryhyw/slidepoise setup
 Setup installs the local tools and registers the skill. It also installs missing preview tools through Homebrew on macOS, winget on Windows, or apt on Debian/Ubuntu. Your system may request administrator access. Use fonts available on your machine.
 
 <details>
-<summary>Installation contents and optional dependencies</summary>
+<summary>What setup installs</summary>
 
 `npx` installs the Python measurement tools and Node.js PowerPoint renderer under `~/.slidepoise`. It registers the skill with detected Codex, Claude Code and Qoder installations, and copies the bundled Profiles and Library Sets. Use `--agent codex`, `--agent claude` or `--agent qoder` to choose explicitly.
 
@@ -83,7 +89,7 @@ Ask the Agent to work autonomously if you prefer. The [usage guide](docs/USAGE.m
 
 ## Choose how images are generated
 
-In automatic mode, the Agent discovers image-generation capabilities available in the conversation, including native tools and connected MCP tools. It checks support for the compiled prompt, visual references and any requested edits before choosing a tool. You can ask it to use a specific tool or model and save that preference.
+In automatic mode, the Agent discovers image-generation capabilities available in the conversation, including native tools and connected MCP tools. It checks that a tool can accept the prompt and reference images and perform any requested edits before choosing it. You can ask it to use a specific tool or model and save that preference.
 
 Prefer to generate images in another app? Tell the Agent to use manual generation. It supplies the exact prompt and an ordered reference bundle. Return the downloaded image and it continues with visual review and editable reconstruction. The same exchange supports slide corrections and transparent illustration edits.
 
@@ -91,7 +97,7 @@ These choices are also available under **System → Image generation** in the lo
 
 ## How it works
 
-The same slide plans, visual references and original assets guide generation and reconstruction. Each slide passes through design, interpretation, measurement and construction, with review bringing corrections back into the process and checking the deck as a whole.
+The Agent plans what the presentation should communicate and how its slides fit together. An image model explores layouts using the content, style references and selected assets. The Agent then identifies objects and relationships in the chosen design. Local tools measure their geometry and build the PowerPoint, which the Agent reviews against the plan.
 
 [![SlidePoise architecture showing shared context, per-slide design and reconstruction, and deck review](docs/images/slidepoise-architecture.png)](docs/images/slidepoise-architecture.svg)
 
@@ -102,13 +108,13 @@ The same slide plans, visual references and original assets guide generation and
 | Reconstruct | Identify objects, measure their geometry and build the PowerPoint. |
 | Review | Compare actual renders with the designs and check consistency across pages. |
 
-**The Agent plans the content and makes design decisions.** Image generation explores the composition using the authored content, references and shared style. The image covers the content area. Headers and footers are added as inherited PowerPoint elements, with a page-number field on each page. The content's aspect ratio is calculated after reserving this space.
+**Planning establishes what each slide needs to communicate.** The Agent develops the message and supporting information with you. Image generation receives this content, visual references and shared style guidance, leaving the composition open. The image covers the content area. Headers and footers are added as inherited PowerPoint elements, with a page-number field on each page. The content's aspect ratio is calculated after reserving this space.
 
-**The Agent identifies objects. OpenCV measures them.** A set of bars, labels and values can belong to one chart. OpenCV measures their visible geometry. The renderer builds a native chart linked to a workbook, so its data stays editable.
+**Interpretation gives the chosen image an editable structure.** To reconstruct it in PowerPoint, the Agent identifies which elements belong together and what they represent. Bars, labels and values may form one chart. OpenCV, a computer-vision library, measures their visible geometry. The renderer combines these inputs to build a native chart linked to a workbook.
 
-**Review covers the whole presentation.** The Agent discovers repeated roles, including small labels and folios, applies their common styles to the corresponding objects, and reviews the actual renders again. The [architecture](docs/ARCHITECTURE.md) describes these responsibilities in detail.
+**Review covers the whole presentation.** The Agent identifies elements that should look consistent across slides, including titles, captions and page numbers. It applies shared styles and checks the rendered PowerPoint again. The [architecture](docs/ARCHITECTURE.md) describes these responsibilities in detail.
 
-The Agent records required content and relationships before construction. The runtime checks those declarations so a caption cannot stand in for a missing arrow. Rendered table text is checked against the actual PDF, where broken words can appear despite valid font settings. The Agent then inspects the images for layout, emphasis and fidelity.
+The Agent records required content and relationships before construction. It checks what each arrow should connect, correcting mistaken connections in the generated design. The runtime builds the specified routes using the connected objects’ measured geometry and checks content coverage and rendered text. The Agent uses this evidence alongside visual inspection to refine alignment, resolve text-fitting problems and preserve the intended emphasis.
 
 Below, an edited copy has a new title and a chart value changed from 1,944 to 1,620. The bar and its label update in PowerPoint.
 
@@ -116,9 +122,9 @@ Below, an edited copy has a new title and a chart value changed from 1,944 to 1,
 
 ## Bring your own visual language
 
-Library Sets hold icons, logos and reusable PowerPoint components. Profiles hold visual references. Use the included Remix Icon integration, retrieve identity assets through Wikimedia Commons, or add your own files. The Agent inspects those resources while planning a slide and selects the ones that improve recognition, structure or meaning.
+Library Sets make icons, logos and reusable PowerPoint components available to the Agent. Use the included Remix Icon integration, find images and logos through Wikimedia Commons, or add your own files. The Agent selects assets that help communicate each slide’s content.
 
-Image generation receives the selected artwork as design context. After a design is accepted, the Agent binds each visible asset role to its canonical file and reviews the available variants at the final size. Reconstruction then replaces generated stand-ins with the original SVG, image or editable component. This keeps the visual system coherent without forcing every page into the same layout.
+The Agent sends the selected artwork to image generation as visual references. During reconstruction, it matches the assets shown in the design to their original files, checks which versions fit at the final size, and places those SVGs, images or editable components in PowerPoint. The same artwork can be used consistently across different slide layouts.
 
 Small generated illustrations can be regenerated individually at higher resolution with transparent backgrounds. The Agent checks the new detail and edges, then places the artwork in its original position. Text, charts and tables remain native. The [Editorial sample’s third slide](examples/personal-thinking-system/assets/s03-practice-render.png) uses three such illustrations.
 
@@ -138,7 +144,7 @@ Saved changes apply to future presentations. A session panel adjusts a presentat
 
 ## Editability and compatibility
 
-Text, tables, charts, shapes, connectors and freeforms can remain native. Photographs, textures and expressive illustrations stay as regional images. Separate text and table values do not become spreadsheet formulas automatically.
+Text, tables, charts, shapes, connectors and freeforms can be built as editable PowerPoint objects. Charts retain their underlying data. Photographs, textures and illustrations are placed as separate images whose position, size and layering can be edited.
 
 The included presentations were created with Codex. Installation, shared settings and generation handoffs are tested for Codex, Claude Code and Qoder. Image tools depend on what is connected in each conversation. Claude and Qoder end-to-end presentation runs still need verification in those hosts. Local previews use LibreOffice and Poppler. Fonts are not bundled, and different fonts or Office readers can change text wrapping and appearance.
 
