@@ -1,6 +1,6 @@
 # Image generation and Agent platforms
 
-Use SlidePoise with an Agent that can read the skill, run local commands and inspect images. Image generation can come from a tool connected to that Agent or from an app you use yourself.
+SlidePoise is built and tested with Codex and its native image-generation tools. Claude Code and Qoder can use the same skill and local runtime with a connected image generator, including MCP, or a manual exchange. Every host needs local command execution, file access and image inspection.
 
 ## Install for your Agent
 

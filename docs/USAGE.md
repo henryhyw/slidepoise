@@ -2,7 +2,7 @@
 
 SlidePoise is an Agent skill and local runtime for creating editable presentations. The Agent develops the content and visual direction, interprets the generated design as meaningful objects, and reviews the actual PowerPoint render. Local tools supply measurement, text fitting, native construction and deck assembly.
 
-The [README](../README.md) introduces the project and shows sample presentations. This guide covers installation, your first request and reusable visual settings. Setup supports Codex, Claude Code and Qoder. See the [image-generation guide](IMAGE_GENERATION.md) to use available tools or generate images manually.
+The [README](../README.md) introduces the project and shows sample presentations. This guide covers installation, your first request and reusable visual settings. Codex is the primary, end-to-end tested setup. Claude Code and Qoder use the same skill and local runtime with connected image tools or manual generation. See the [image-generation guide](IMAGE_GENERATION.md) to use available tools or generate images manually.
 
 ## Quick start
 

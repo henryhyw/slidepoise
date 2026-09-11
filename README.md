@@ -6,6 +6,8 @@ SlidePoise is an open-source agentic slide generation framework that combines co
 
 The Agent interprets the chosen design, OpenCV measures its geometry, and local tools reconstruct the deck with editable text, charts, tables, shapes and canonical visual assets. The Agent reviews the rendered slides together for fidelity and consistency.
 
+SlidePoise is built and tested with Codex, using its native image-generation tools. Claude Code and Qoder can run the same skill and local runtime through connected image tools, including MCP, or a manual generation exchange.
+
 [![SlidePoise consulting example with editable text, tables and a native chart](docs/images/slidepoise-consulting.webp)](https://www.henryw.me/slidepoise/docs/site/)
 
 [![SlidePoise editorial example with five slides, editable typography and separate original artwork](docs/images/slidepoise-editorial.webp)](https://www.henryw.me/slidepoise/docs/site/)
@@ -41,7 +43,7 @@ The strategy sample uses a fictional firm and illustrative figures.
 
 ### Ask your Agent
 
-Paste this into Codex, Claude Code or Qoder. The Agent can check your environment, run setup and help configure image generation.
+Paste this into your Agent to install and set up SlidePoise.
 
 ```text
 Install and set up SlidePoise for me from https://github.com/henryhyw/slidepoise.
