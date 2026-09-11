@@ -131,6 +131,6 @@ Portable bundles copy the compiled scenes and deduplicate raster sources by cont
 
 Tests exercise external behavior and file semantics. Examples include real HTTP GET and HEAD responses, setting conflicts, relocated deck rendering, malformed chart rejection, native text properties, multislide order and actual mixed Chinese and English PDF rendering. Tests that only required internal function names, source strings or ceremonial stage records have been removed.
 
-The two [showcases](../examples/) exercise different design demands through the same runtime. The [production record](SHOWCASE_PRODUCTION.md) identifies their retained assets and rendering limits. Neither test counts nor these examples establish universal visual fidelity. Rich text effects, font substitution and Office-specific behavior need their own representative evidence as support expands.
+The [examples README](../examples/README.md) explains how to rebuild the sample decks and which fonts and renderer they use. Neither test counts nor these examples establish universal visual fidelity. Rich text effects, font substitution and Office-specific behavior need their own representative evidence as support expands.
 
 Implementation contracts live in [the skill](../slidepoise/SKILL.md), [reconstruction](../slidepoise/references/reconstruction.md), [deck orchestration](../slidepoise/references/deck-orchestration.md) and [portable artifacts](../slidepoise/references/portable-artifacts.md).

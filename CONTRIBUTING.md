@@ -50,7 +50,7 @@ In PowerShell, set `$env:PYTHONDONTWRITEBYTECODE = "1"` before running the Pytho
 
 The browser suite uses Chromium at desktop and phone widths. It starts a temporary local server and cleans up its isolated settings. Playwright is a development dependency and is not installed with the product. Failed browser runs retain screenshots and traces in `workspace/test-results/browser/`. Inspect a trace with `npx playwright show-trace <trace.zip>`. Set `SLIDEPOISE_TEST_PYTHON` if the test server should use a Python interpreter outside `.venv`.
 
-When reviewing test coverage, temporarily introduce a representative fault and confirm that a relevant assertion fails. Restore the implementation before running the final suite. Record surviving faults and coverage limits, as in the [test-suite audit](docs/quality/test-suite-audit.md).
+When reviewing test coverage, temporarily introduce a representative fault and confirm that a relevant assertion fails. Restore the implementation before running the final suite.
 
 The preview smoke verifies that both languages survive Office conversion and remain in the correct page order. It does not establish exact font matching across operating systems. A renderer may substitute an installed typeface while preserving readable text. Inspect the retained images and font evidence when typeface fidelity matters.
 

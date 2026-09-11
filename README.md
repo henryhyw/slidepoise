@@ -108,7 +108,7 @@ The same slide plans, visual references and original assets guide generation and
 
 **Review covers the whole presentation.** The Agent discovers repeated roles, including small labels and folios, applies their common styles to the corresponding objects, and reviews the actual renders again. The [architecture](docs/ARCHITECTURE.md) describes these responsibilities in detail.
 
-The Agent records required content and relationships before construction. The runtime checks those declarations so a caption cannot stand in for a missing arrow. Rendered table text is checked against the actual PDF, where broken words can appear despite valid font settings. The Agent then inspects the images for layout, emphasis and fidelity. See the [reconstruction audit](docs/quality/reconstruction-audit.md) for the defects this review uncovered and the corrections.
+The Agent records required content and relationships before construction. The runtime checks those declarations so a caption cannot stand in for a missing arrow. Rendered table text is checked against the actual PDF, where broken words can appear despite valid font settings. The Agent then inspects the images for layout, emphasis and fidelity.
 
 Below, an edited copy has a new title and a chart value changed from 1,944 to 1,620. The bar and its label update in PowerPoint.
 

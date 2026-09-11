@@ -56,7 +56,7 @@ Generated images contain the slide's content area. Shared headers, footers and p
 
 The Agent interprets the selected image as meaningful objects, inspects OpenCV's measured evidence, and reviews the rendered PowerPoint. It compares the content crop with the generated target and the full pages with one another. Repeated typography, callouts, accents and frame details receive a separate visual calibration across the deck. A successful build or separate page reviews do not establish that consistency.
 
-Routine corrections belong to the Agent. It checks the output against your brief as well as the generated design, inspects rendered-text discrepancies, and revisits the relevant inputs when something is missing or does not fit. When the host supports subagents, a separate reviewer inspects decks and complex slides before delivery. This reduces dependence on the author spotting its own mistakes. The [review evaluation](quality/autonomous-review.md) records what has been tested and the remaining limits.
+Routine corrections belong to the Agent. It checks the output against your brief as well as the generated design, inspects rendered-text discrepancies, and revisits the relevant inputs when something is missing or does not fit. When the host supports subagents, a separate reviewer inspects decks and complex slides before delivery. This reduces dependence on the author spotting its own mistakes.
 
 ## Detailed illustrations and transparent backgrounds
 
