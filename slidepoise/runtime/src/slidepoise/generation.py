@@ -10,7 +10,7 @@ def preferences(values=None):
     if not isinstance(values, dict) or set(values) - DEFAULTS.keys():
         raise ValueError("Unknown image generation setting")
     result = {**DEFAULTS, **values}
-    if result["mode"] not in {"auto", "tool", "manual"}:
+    if not isinstance(result["mode"], str) or result["mode"] not in {"auto", "tool", "manual"}:
         raise ValueError("Choose automatic, a specific tool or manual image generation")
     for key, maximum in (("tool", 300), ("model", 200), ("instructions", 4000)):
         if not isinstance(result[key], str) or len(result[key]) > maximum:
@@ -22,6 +22,8 @@ def preferences(values=None):
 
 
 def resolve_preferences(generation, override=None):
+    if not isinstance(generation, dict):
+        raise ValueError("Image generation configuration must be an object")
     result = preferences(generation.get("preferences"))
     if override is not None:
         if not isinstance(override, dict):
@@ -40,7 +42,7 @@ def compatible_tools(request, inventory, settings):
         if not isinstance(tool, dict) or not isinstance(tool.get("id"), str) or not tool["id"].strip() or tool["id"] in seen:
             raise ValueError("Discovered tools need unique, non-empty IDs")
         seen.add(tool["id"])
-        if not isinstance(tool.get("operations"), list) or any(op not in {"generate", "edit"} for op in tool["operations"]):
+        if not isinstance(tool.get("operations"), list) or any(not isinstance(op, str) or op not in {"generate", "edit"} for op in tool["operations"]):
             raise ValueError("Tool operations must list generate and/or edit")
         reasons = []
         if tool.get("available") is not True:

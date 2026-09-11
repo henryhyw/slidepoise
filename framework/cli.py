@@ -9,7 +9,7 @@ import sys
 
 from .installer import detect_host, setup
 from .paths import data_home
-from .profiles import active_profile_id, list_profiles, profile_record, set_active_profile
+from .profiles import active_profile_id, list_profiles, set_active_profile
 from . import sessions, run_versions
 from . import profile_authoring
 from . import library_sets, components

@@ -70,6 +70,37 @@ def test_detection_does_not_claim_image_generation(monkeypatch, tmp_path):
     assert 'current conversation' in hosts['image_generation']
 
 
+@pytest.mark.parametrize('failure', ['copy', 'replace'])
+def test_failed_skill_update_preserves_working_installation(home, tmp_path, monkeypatch, failure):
+    monkeypatch.setattr(Path, 'home', classmethod(lambda cls: tmp_path / 'user'))
+    target = Path(installer.install_skill_for('claude'))
+    (target / 'SKILL.md').write_text('User customisation')
+    if failure == 'copy':
+        def copy(*args, **kwargs):
+            raise OSError('Disk full')
+        monkeypatch.setattr(installer.shutil, 'copytree', copy)
+    else:
+        replace = Path.replace
+        def fail_replace(path, destination):
+            if Path(destination) == target:
+                raise OSError('Disk full')
+            return replace(path, destination)
+        monkeypatch.setattr(Path, 'replace', fail_replace)
+    with pytest.raises(OSError, match='Disk full'):
+        installer.install_skill_for('claude')
+    assert (target / 'SKILL.md').read_text() == 'User customisation'
+    assert (target / 'scripts/generation_handoff.py').is_file()
+    assert not list(target.parent.glob('.slidepoise-install-*'))
+
+
+@pytest.mark.parametrize('mode', [[], {}, 1, None])
+def test_invalid_mode_does_not_modify_saved_preferences(home, mode):
+    previous = (home / 'config.json').read_bytes()
+    with pytest.raises(ValueError, match='Choose automatic'):
+        image_generation.configure({'mode': mode}, image_generation.payload()['revision'])
+    assert (home / 'config.json').read_bytes() == previous
+
+
 def test_capability_selection_does_not_drop_references_or_substitute_tools(compiled_request):
     request = json.loads(compiled_request.read_text())
     tools = {'tools': [
@@ -94,6 +125,7 @@ def test_manual_bundle_keeps_prompt_bytes_and_all_references_and_resumes(compile
         refs = json.loads(bundle.read('request.json'))['references']
         assert len(refs) == len(request['reference_images'])
         for packaged, original in zip(refs, request['reference_images']):
+            assert '\\' not in packaged['file']
             assert bundle.read(packaged['file']) == Path(original['path']).read_bytes()
         assert str(tmp_path).encode() not in bundle.read('request.json')
         assert 'handoff.json' not in bundle.namelist()

@@ -25,10 +25,18 @@ def main() -> None:
     profile_dirs = [args.profiles_root / args.profile] if args.profile else sorted(path.parent for path in args.profiles_root.glob("*/profile.json"))
     errors: list[str] = []
     counts: dict[str, dict[str, int]] = {}
+    if not args.profiles_root.is_dir():
+        errors.append(f"profiles folder missing: {args.profiles_root}")
+    elif not profile_dirs:
+        errors.append(f"no profiles found in: {args.profiles_root}")
     sets_root = args.library_sets_root or (args.profiles_root.parent / "library-sets")
-    if not (sets_root / "catalog.json").is_file():
+    if args.library_sets_root is None and not (sets_root / "catalog.json").is_file():
         sets_root = Path(__file__).resolve().parents[2] / "library-sets"
-    set_index = json.loads((sets_root / "catalog.json").read_text(encoding="utf-8")).get("items", {})
+    if (sets_root / "catalog.json").is_file():
+        set_index = json.loads((sets_root / "catalog.json").read_text(encoding="utf-8")).get("items", {})
+    else:
+        errors.append(f"library sets catalog missing: {sets_root / 'catalog.json'}")
+        set_index = {}
     for profile_dir in profile_dirs:
         profile_path = profile_dir / "profile.json"
         if not profile_path.is_file():

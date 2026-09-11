@@ -1,7 +1,6 @@
 """Shared, portable slide-run records. No workflow or visual acceptance decisions."""
 from __future__ import annotations
 
-import copy
 import re
 import subprocess
 import sys

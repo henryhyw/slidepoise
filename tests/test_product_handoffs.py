@@ -25,7 +25,6 @@ from make_asset_contact_sheet import collect_resource_review_items
 def home(tmp_path, monkeypatch):
     monkeypatch.setenv("SLIDEPOISE_HOME", str(tmp_path / "home"))
     initialize_home(BUNDLED_PROFILES_ROOT)
-    monkeypatch.setattr(server, "REGISTRY", data_home() / "workspace/runs.json")
     return data_home()
 
 

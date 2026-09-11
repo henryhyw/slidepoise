@@ -17,7 +17,9 @@ def test_sdist_builds_self_contained_wheel_and_runs_outside_repository(tmp_path)
     for name in ("framework", "webapp", "slidepoise", "profiles", "library-sets"):
         shutil.copytree(source / name, build / name, ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
     def command(arguments, cwd, env=None):
-        return subprocess.run([sys.executable, *arguments], cwd=cwd, env=env, text=True, capture_output=True, check=True)
+        result = subprocess.run([sys.executable, *arguments], cwd=cwd, env=env, text=True, capture_output=True)
+        assert result.returncode == 0, result.stdout + result.stderr
+        return result
     command(["-m", "build", "--sdist"], build)
     extracted = tmp_path / "sdist"
     extracted.mkdir()
@@ -48,7 +50,7 @@ def test_sdist_builds_self_contained_wheel_and_runs_outside_repository(tmp_path)
     environment = {**os.environ, "PYTHONPATH": str(installed), "SLIDEPOISE_HOME": str(tmp_path / "home")}
     outside = tmp_path / "user-project"
     outside.mkdir()
-    command(["-m", "framework.cli", "setup", "--skip-skill", "--skip-node"], outside, environment)
+    command(["-m", "framework.cli", "setup", "--skip-skill", "--skip-node", "--skip-preview"], outside, environment)
     configured = command(["-m", "framework.cli", "generation", "configure", "--mode", "manual"], outside, environment)
     assert json.loads(configured.stdout)["values"]["mode"] == "manual"
     result = command(["-m", "framework.cli", "run", "create", "Packaged", "--location", "presentation"], outside, environment)

@@ -80,7 +80,7 @@ def export_bundle(path, output):
         stage = Path(temporary) / 'handoff'
         bundle = stage / 'bundle'
         bundle.mkdir(parents=True)
-        (bundle / 'prompt.txt').write_text(request['prompt'], encoding='utf-8')
+        (bundle / 'prompt.txt').write_bytes(request['prompt'].encode('utf-8'))
         attachments = []
         for number, reference in enumerate(request['reference_images'], 1):
             source = Path(reference['path'])
@@ -90,7 +90,7 @@ def export_bundle(path, output):
             shutil.copyfile(source, target)
             if file_binding(target)['sha256'] != reference['sha256']:
                 raise ValueError('A reference changed during export. Prepare the request again.')
-            attachments.append({'file': str(target.relative_to(bundle)), 'purpose': reference.get('purpose', ''),
+            attachments.append({'file': target.relative_to(bundle).as_posix(), 'purpose': reference.get('purpose', ''),
                                 'sha256': reference['sha256']})
         settings = request_settings(request)
         portable = {'operation': request['purpose'], 'canvas': request['canvas'], 'background': request.get('background'),
@@ -107,7 +107,7 @@ def export_bundle(path, output):
         if settings['instructions']:
             lines += ['', settings['instructions']]
         (bundle / 'README.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
-        hashes = {str(p.relative_to(bundle)): file_binding(p)['sha256'] for p in sorted(bundle.rglob('*')) if p.is_file()}
+        hashes = {p.relative_to(bundle).as_posix(): file_binding(p)['sha256'] for p in sorted(bundle.rglob('*')) if p.is_file()}
         archive_path = stage / 'image-generation.zip'
         with zipfile.ZipFile(archive_path, 'w', zipfile.ZIP_DEFLATED) as archive:
             for name in hashes:

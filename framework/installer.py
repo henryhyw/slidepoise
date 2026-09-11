@@ -4,6 +4,7 @@ import json
 import shutil
 import subprocess
 import sys
+import tempfile
 from datetime import datetime
 from pathlib import Path
 
@@ -44,19 +45,27 @@ def install_skill_for(host: str) -> str:
         raise ValueError(f"Unknown Agent platform {host}")
     target = Path.home() / HOSTS[host]["directory"] / "skills" / "slidepoise"
     target.parent.mkdir(parents=True, exist_ok=True)
+    if not target.exists() or not _same_skill(target):
+        with tempfile.TemporaryDirectory(prefix=".slidepoise-install-", dir=target.parent) as temporary:
+            staged = Path(temporary) / "slidepoise"
+            shutil.copytree(SKILL_ROOT, staged, ignore=shutil.ignore_patterns("__pycache__", "*.pyc", ".DS_Store"))
+            archive = None
+            if target.exists():
+                stamp = datetime.now().strftime("%Y%m%d-%H%M%S-%f")
+                archive = data_home() / "archive" / f"{host}-skill-{stamp}"
+                archive.parent.mkdir(parents=True, exist_ok=True)
+                shutil.move(str(target), str(archive))
+            try:
+                staged.replace(target)
+            except OSError:
+                if archive is not None:
+                    shutil.move(str(archive), str(target))
+                raise
     legacy = target.with_name("slidecraft")
     if legacy.exists():
         archive = data_home() / "archive" / f"legacy-skill-{datetime.now().strftime('%Y%m%d-%H%M%S-%f')}"
         archive.parent.mkdir(parents=True, exist_ok=True)
         shutil.move(str(legacy), str(archive))
-    if target.exists():
-        if _same_skill(target):
-            return str(target)
-        stamp = datetime.now().strftime("%Y%m%d-%H%M%S-%f")
-        archive = data_home() / "archive" / f"{host}-skill-{stamp}"
-        archive.parent.mkdir(parents=True, exist_ok=True)
-        shutil.move(str(target), str(archive))
-    shutil.copytree(SKILL_ROOT, target, ignore=shutil.ignore_patterns("__pycache__", "*.pyc", ".DS_Store"))
     return str(target)
 
 
@@ -94,12 +103,12 @@ def install_node_dependencies() -> bool:
 
 
 def setup(*, force_profiles: bool = False, install_skill: bool = True, install_node: bool = True, install_preview: bool = False, hosts: list[str] | None = None) -> dict[str, object]:
+    if hosts is not None and set(hosts) - HOSTS.keys():
+        raise ValueError("Choose codex, claude or qoder for skill installation")
     migration = migrate_legacy_home()
     initial_host = detect_host()
     framework_home = initialize_home(BUNDLED_PROFILES_ROOT, force=force_profiles)
     selected = hosts if hosts is not None else [name for name, record in initial_host["agents"].items() if record["detected"]]
-    if set(selected) - HOSTS.keys():
-        raise ValueError("Choose codex, claude or qoder for skill installation")
     skills = {name: install_skill_for(name) for name in dict.fromkeys(selected)} if install_skill else {}
     node_dependencies = install_node_dependencies() if install_node else None
     preview = install_preview_tools() if install_preview else {"status": "not_requested", "tools": preview_status()}

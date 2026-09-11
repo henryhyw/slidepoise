@@ -18,12 +18,12 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import parse_qs, urlparse
 
-from framework.paths import DEFAULT_CONFIG, SKILL_ROOT, active_profiles_root, active_library_sets_root, data_home, node_runtime_root, workspace_root
+from framework.paths import DEFAULT_CONFIG, SKILL_ROOT, active_profiles_root, active_library_sets_root, data_home, node_runtime_root
 from framework.profiles import active_profile_id, library_catalog, library_root, list_profiles, profile_record, set_active_profile
 from framework import library_sets, components, run_events
 from framework import sessions, design, image_generation
 from framework import profile_authoring
-from framework.storage import ConflictError, revision, update, write
+from framework.storage import ConflictError, revision, update
 from . import panel
 from framework import panel_binding
 
@@ -31,8 +31,6 @@ ROOT = Path(__file__).resolve().parents[1]
 SKILL = SKILL_ROOT
 UI = Path(__file__).resolve().parent / "ui"
 CONSOLE_UI = ROOT / "webapp" / "console"
-WORKSPACE = workspace_root()
-REGISTRY = WORKSPACE / "runs.json"
 LIBRARIES = {"visual_references"}
 def read_json(path: Path, default: Any = None) -> Any:
     if not path.is_file():
@@ -60,10 +58,6 @@ def console_revision():
 
 def resolve_run(path: str) -> Path:
     return sessions.require_run(path)
-
-
-def create_run(name: str, location: str | None = None) -> dict[str, Any]:
-    return run_summary(sessions.create(name, location, workspace=WORKSPACE, registry_file=REGISTRY))
 
 
 def run_summary(root: Path, name: str | None = None) -> dict[str, Any]:
@@ -465,7 +459,6 @@ class Handler(BaseHTTPRequestHandler):
 
 
 def serve(host: str = "127.0.0.1", port: int = 8765, open_browser: bool = True, view: str = "overview") -> None:
-    WORKSPACE.mkdir(parents=True, exist_ok=True)
     server = ThreadingHTTPServer((host, port), Handler)
     view = "design" if view == "style" else view
     url = f"http://{host}:{port}/console/#{view}"

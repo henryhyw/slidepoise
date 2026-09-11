@@ -8,8 +8,8 @@ import tempfile
 import uuid
 from pathlib import Path
 
-from .paths import active_profiles_root, data_home
-from .profiles import canonical_profile_id, active_profile_id, library_catalog, library_root, list_profiles, profile_record
+from .paths import data_home
+from .profiles import canonical_profile_id, active_profile_id, library_catalog, library_root, profile_record
 from .storage import read, revision, update, write
 
 

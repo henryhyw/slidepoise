@@ -65,6 +65,17 @@ def test_framework_and_profiles_validate() -> None:
     assert catalogs.returncode == 0, catalogs.stderr or catalogs.stdout
 
 
+def test_catalog_preflight_does_not_validate_a_different_or_empty_library(tmp_path):
+    missing = run_script("preflight_catalogs.py", "--profiles-root", str(PROFILES),
+                         "--library-sets-root", str(tmp_path / "missing"))
+    assert missing.returncode == 2
+    assert "library sets catalog missing" in missing.stdout
+    empty = run_script("preflight_catalogs.py", "--profiles-root", str(tmp_path),
+                       "--library-sets-root", str(ROOT / "library-sets"))
+    assert empty.returncode == 2
+    assert "no profiles found" in empty.stdout
+
+
 def test_profile_catalog_rejects_unregistered_assets(tmp_path: Path) -> None:
     profiles = tmp_path / "profiles"
     shutil.copytree(PROFILES / "consulting", profiles / "consulting")
@@ -343,9 +354,10 @@ def test_console_separates_profile_references_from_shared_library_sets(tmp_path,
 
 
 def test_run_creation_initializes_a_live_deck_outline(tmp_path: Path, monkeypatch) -> None:
-    monkeypatch.setattr(server, "REGISTRY", tmp_path / "registry.json")
-    run = server.create_run("Example", str(tmp_path / "example"))
-    root = Path(run["path"])
+    from framework import sessions
+    monkeypatch.setenv("SLIDEPOISE_HOME", str(tmp_path / "home"))
+    initialize_home(PROFILES)
+    root = sessions.create("Example", str(tmp_path / "example"))
     assert (root / "session-overrides.json").is_file()
     outline = json.loads((root / "work" / "deck-outline.json").read_text())
     assert outline["title"] == "Example"
