@@ -2,17 +2,13 @@
 
 **Open-source Agentic Slide Generation Framework**
 
-SlidePoise helps an AI Agent develop presentation content, explore designs through image generation and build editable PowerPoint slides. Your references and visual assets guide the design throughout.
+SlidePoise is an open-source framework for creating editable PowerPoint presentations with an AI Agent. You develop the argument, content and visual direction together. The Agent plans the deck, explores slide designs through image generation and reconstructs the selected compositions as editable text, charts, tables and shapes.
 
 ## Why SlidePoise
 
-Agentic slide generation needs both freedom of layout and control over the final deck.
+Different ideas call for different layouts. A comparison, a diagram and a photographic essay each need a composition that helps communicate their content. Image generation opens up that design space, guided by your references and original assets. Turning the resulting images into a useful presentation also requires editable objects and a consistent visual language across slides.
 
-Fixed templates keep layouts consistent, but restrict how content can be presented. Image generation allows freer design, yet leaves the work of maintaining consistency and turning those designs into accurate, editable slides.
-
-SlidePoise gives that creative process a structured workflow, supported by tools for visual measurement and PowerPoint construction. A shared content plan, style and asset library guide the Agent as it develops designs, builds editable slides and reviews the resulting deck.
-
-SlidePoise is built and tested with Codex, using its native image-generation tools. Claude Code and Qoder can run the same skill and local runtime through connected image tools, including MCP, or a manual generation exchange.
+SlidePoise connects these stages through a shared plan, style and asset library. The Agent interprets the meaning and relationships in each design. OpenCV measures the geometry, and local tools build the PowerPoint using native objects and original artwork. The Agent then reviews the rendered slides together, refining individual pages and recurring typography, colour and spacing across the deck.
 
 [![SlidePoise consulting example with editable text, tables and a native chart](docs/images/slidepoise-consulting.webp)](https://www.henryw.me/slidepoise/docs/site/)
 
@@ -87,13 +83,16 @@ Deliver an editable PowerPoint.
 
 Ask the Agent to work autonomously if you prefer. The [usage guide](docs/USAGE.md) covers installation checks and Profile management.
 
-## Choose how images are generated
+<details>
+<summary>Agent and image-generation options</summary>
 
-In automatic mode, the Agent discovers image-generation capabilities available in the conversation, including native tools and connected MCP tools. It checks that a tool can accept the prompt and reference images and perform any requested edits before choosing it. You can ask it to use a specific tool or model and save that preference.
+SlidePoise supports installation in Codex, Claude Code and Qoder. The included presentations were made with Codex. Claude Code and Qoder use the same skill and local runtime with a connected image generator or manual generation. Their end-to-end presentation workflows remain to be verified.
 
-Prefer to generate images in another app? Tell the Agent to use manual generation. It supplies the exact prompt and an ordered reference bundle. Return the downloaded image and it continues with visual review and editable reconstruction. The same exchange supports slide corrections and transparent illustration edits.
+The Agent can use native image tools or a connected tool through MCP, the Model Context Protocol. You can choose a particular tool or model. To generate images in another app, ask for manual generation. The Agent supplies the prompt and reference files, then continues with the image you return.
 
-These choices are also available under **System → Image generation** in the local Console. Defaults apply to future presentations. Ask the Agent to change just the current presentation when needed. See the [image-generation guide](docs/IMAGE_GENERATION.md) for setup and manual exchanges.
+These options are available under **System → Image generation** in the local Console. The [image-generation guide](docs/IMAGE_GENERATION.md) covers platform setup, tool selection and manual exchanges.
+
+</details>
 
 ## How it works
 
@@ -146,7 +145,7 @@ Saved changes apply to future presentations. A session panel adjusts a presentat
 
 Text, tables, charts, shapes, connectors and freeforms can be built as editable PowerPoint objects. Charts retain their underlying data. Photographs, textures and illustrations are placed as separate images whose position, size and layering can be edited.
 
-The included presentations were created with Codex. Installation, shared settings and generation handoffs are tested for Codex, Claude Code and Qoder. Image tools depend on what is connected in each conversation. Claude and Qoder end-to-end presentation runs still need verification in those hosts. Local previews use LibreOffice and Poppler. Fonts are not bundled, and different fonts or Office readers can change text wrapping and appearance.
+Local previews use LibreOffice and Poppler. Fonts are supplied by your environment, so font substitutions and different Office readers can change text wrapping and appearance. See [Agent and image-generation options](#get-started) for platform support.
 
 ## Develop and contribute
 
