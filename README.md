@@ -10,9 +10,9 @@ Different ideas call for different layouts. A comparison, a diagram and a photog
 
 SlidePoise connects these stages through a shared plan, style and asset library. The Agent interprets the meaning and relationships in each design. OpenCV measures the geometry, and local tools build the PowerPoint using native objects and original artwork. The Agent then reviews the rendered slides together, refining individual pages and recurring typography, colour and spacing across the deck.
 
-[![SlidePoise consulting example with editable text, tables and a native chart](docs/images/slidepoise-consulting.webp)](https://www.henryw.me/slidepoise/docs/site/)
+[![SlidePoise consulting example with editable text, tables and a native chart](docs/images/slidepoise-consulting.webp)](https://www.henryw.me/slidepoise/)
 
-[![SlidePoise editorial example with five slides, editable typography and separate original artwork](docs/images/slidepoise-editorial.webp)](https://www.henryw.me/slidepoise/docs/site/)
+[![SlidePoise editorial example with five slides, editable typography and separate original artwork](docs/images/slidepoise-editorial.webp)](https://www.henryw.me/slidepoise/)
 
 [Get started](#get-started) · [Usage guide](docs/USAGE.md) · [Architecture](docs/ARCHITECTURE.md) · [Contribute](CONTRIBUTING.md)
 
@@ -26,8 +26,8 @@ Browse the slides, compare the AI designs with actual PowerPoint renders, and in
     <th width="50%">Editorial sample · Slide 4</th>
   </tr>
   <tr>
-    <td width="50%"><a href="https://www.henryw.me/slidepoise/docs/site/?deck=consulting-ai-transformation&amp;slide=s05-investment-decision"><img src="examples/consulting-ai-transformation/assets/s05-investment-decision-render.png" alt="Consulting slide 5, Release the next investment against evidence" width="800"></a></td>
-    <td width="50%"><a href="https://www.henryw.me/slidepoise/docs/site/?deck=personal-thinking-system&amp;slide=s04-trace"><img src="examples/personal-thinking-system/assets/s04-trace-render.png" alt="Editorial slide 4, Leave a trace of the thinking" width="800"></a></td>
+    <td width="50%"><a href="https://www.henryw.me/slidepoise/?deck=consulting-ai-transformation&amp;slide=s05-investment-decision"><img src="examples/consulting-ai-transformation/assets/s05-investment-decision-render.png" alt="Consulting slide 5, Release the next investment against evidence" width="800"></a></td>
+    <td width="50%"><a href="https://www.henryw.me/slidepoise/?deck=personal-thinking-system&amp;slide=s04-trace"><img src="examples/personal-thinking-system/assets/s04-trace-render.png" alt="Editorial slide 4, Leave a trace of the thinking" width="800"></a></td>
   </tr>
   <tr>
     <td>An investment model, sensitivity table and decision criteria for an AI pilot.</td>
@@ -137,7 +137,7 @@ Create and refine Profiles and Library Sets together with your Agent. Use the op
 npx github:henryhyw/slidepoise console
 ```
 
-[Try the interactive Console demo](https://www.henryw.me/slidepoise/docs/site/#console). It uses sample data and does not inspect your computer.
+[Try the interactive Console demo](https://www.henryw.me/slidepoise/#console). It uses sample data and does not inspect your computer.
 
 Saved changes apply to future presentations. A session panel adjusts a presentation already in progress without changing its saved Profile.
 

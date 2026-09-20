@@ -1,6 +1,6 @@
 # Sample presentations
 
-Explore both decks on the [project page](https://www.henryw.me/slidepoise/docs/site/).
+Explore both decks on the [project page](https://www.henryw.me/slidepoise/).
 
 - [Consulting](consulting-ai-transformation/) presents an AI pilot recommendation with editable charts, tables and an operating model.
 - [Editorial](personal-thinking-system/) combines native typography with photographic collage and transparent illustrations.
