@@ -6,7 +6,7 @@ Create editable PowerPoint presentations with an AI Agent. SlidePoise uses image
 
 [Project website](https://slidepoise.github.io/) · [Get started](#get-started) · [How it works](#how-it-works) · [Usage guide](docs/USAGE.md)
 
-https://github.com/user-attachments/assets/7840e0c1-3263-4dfd-960b-04438a3dea2d
+https://github.com/user-attachments/assets/070b31c1-5497-4fd1-9bfd-09de4e9d9fd5
 
 ## Sample presentations
 
