@@ -4,6 +4,10 @@
 
 SlidePoise is an open-source framework for creating editable PowerPoint presentations with an AI Agent. You develop the argument, content and visual direction together. The Agent plans the deck, explores slide designs through image generation and reconstructs the selected compositions as editable text, charts, tables and shapes.
 
+[![Watch the SlidePoise introduction](docs/images/slidepoise-video.webp)](https://slidepoise.github.io/?hero=video#overview)
+
+[Watch the introduction · 2 min 5 sec](https://slidepoise.github.io/?hero=video#overview)
+
 ## Why SlidePoise
 
 Different ideas call for different layouts. A comparison, a diagram and a photographic essay each need a composition that helps communicate their content. Image generation opens up that design space, guided by your references and original assets. Turning the resulting images into a useful presentation also requires editable objects and a consistent visual language across slides.
