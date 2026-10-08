@@ -17,6 +17,9 @@ Apply this contract to every user-facing sentence authored by SlidePoise. It cov
 - Give the main conclusion the most prominent position. Use the visual to show the evidence and put supporting mechanics in details. Do not repeat the same point in a heading, introduction, caption and footnote.
 - Name expandable content concretely, such as a slide outline or a reconstruction comparison. Make its affordance visible and show a relevant preview when it helps the reader decide whether to open it. Generic labels such as “View sample evidence” leave that decision unexplained.
 
+- Name artifacts by what they are across the workflow. Use “generated slide image” in architecture diagrams, review interfaces and product explanations. Describe its role as a reconstruction reference only within the explanation of that stage. A stage-specific role is not the artifact's overall name or the slide's communication goal. The contact sheet is a separate, human-readable input to image generation that combines the chosen style and selected visual resources.
+- Identify what each review examines. Generated-image review checks content, readability and composition against the brief. PowerPoint review checks the actual render against the brief and generated slide image, including reconstruction fidelity and deck-wide consistency. Describe an image comparison only when both images exist. Diagram connectors must distinguish reference inputs from the construction steps that produce the editable file.
+
 ## Keep the voice natural
 
 - Avoid ceremonial introductions, generic reassurance, filler transitions, and narration of obvious interface behavior.

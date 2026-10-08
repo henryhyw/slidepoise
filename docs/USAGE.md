@@ -46,6 +46,8 @@ Include the source material, intended audience and decision when you have them. 
 
 ## What happens after your request
 
+A contact sheet assembles selected references and asset previews alongside the chosen style. The image model receives it with the slide instructions. The Agent reviews the generated image against the brief before reconstruction, then checks the PowerPoint render against the brief and generated slide image.
+
 The Agent develops the argument and shared visual direction before producing pages. It identifies elements that serve the same purpose across the deck, including small recurring labels and page identifiers, and chooses their treatment together. Each layout can respond to its message. Repeated elements found later in generated designs or actual renders join the same deck review.
 
 Each image call uses one request compiled from the current content, canvas, references and shared design. The Agent sends that prompt and its recorded attachments to the image tool. A change in direction updates those inputs before the next request. You can guide these decisions in conversation without managing intermediate files.

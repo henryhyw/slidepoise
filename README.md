@@ -6,7 +6,7 @@ SlidePoise is an open-source system that helps Codex plan, design, build and rev
 
 The architecture separates semantic and visual judgement from pixel measurement. This gives the Agent room to design beyond fixed templates and gives reconstruction a traceable technical path. After construction, the Agent compares the actual renders with the generated designs and checks recurring typography, colour, spacing, headers and footers across the full deck.
 
-![SlidePoise architecture showing intent, image generation, Agent interpretation, OpenCV measurement, editable PowerPoint and deck review](docs/site/architecture.png)
+![SlidePoise architecture showing intent, image generation, Agent interpretation, OpenCV measurement, editable PowerPoint and deck review](docs/images/slidepoise-architecture.png)
 
 [Get started](#get-started) · [Usage guide](docs/USAGE.md) · [Architecture](docs/ARCHITECTURE.md) · [Contribute](CONTRIBUTING.md)
 
@@ -59,6 +59,8 @@ Deliver an editable PowerPoint.
 The [usage guide](docs/USAGE.md) covers installation checks, Profile management and presentation controls.
 
 ## How it works
+
+The Agent retrieves relevant references and assets before generation. A [contact sheet](https://slidepoise.github.io/#contact-sheet) combines their previews with the chosen style so both you and the image model can inspect them. The Agent checks the generated image against the brief for content, readability and layout before reconstruction. After reconstruction, it reviews the PowerPoint render against the brief and generated slide image.
 
 | Stage | Work |
 | --- | --- |
