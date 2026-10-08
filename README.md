@@ -37,11 +37,15 @@ A comparison and a photographic essay need different layouts. These two decks sh
 
 The Agent makes the content and design decisions. Local tools provide measurement, construction and rendering so the Agent can inspect what the PowerPoint actually contains.
 
-[![SlidePoise architecture showing the shared slide plan, style, assets and reusable components feeding generation, interpretation, measurement and reconstruction](docs/images/slidepoise-architecture.png)](docs/images/slidepoise-architecture.svg)
+[![Four stages of SlidePoise showing image review before reconstruction and PowerPoint review after rendering](docs/images/slidepoise-architecture.png)](docs/images/slidepoise-architecture.svg)
 
-### Plan the content and explore the design
+### Plan the content
 
-You and the Agent establish the audience, message and supporting material. The Agent develops the slide sequence and a shared visual direction, then sends each slide’s content, style references and selected assets to image generation. The composition remains open to the needs of that slide. You can review a representative design before the Agent continues or ask it to complete the deck autonomously.
+You and the Agent establish the audience, message and supporting material. The Agent develops the slide sequence and identifies what each slide needs to communicate.
+
+### Retrieve resources and explore the design
+
+The Agent searches the indexed reference library for useful visual precedents, inspects relevant icons, logos and native components, then selects resources for each slide. A [contact sheet](https://slidepoise.github.io/#contact-sheet) combines their previews with the chosen style in a form you can inspect. The image model receives this sheet alongside the slide instructions. The Agent checks the generated image against the brief for content, readability and layout before reconstruction. You can review a representative design before the Agent continues or ask it to complete the deck autonomously.
 
 ### Reconstruct meaningful objects
 

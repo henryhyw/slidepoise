@@ -30,7 +30,7 @@ Author `work/resource-selection.draft.json`, then run `scripts/prepare_resource_
 
 When a selected visual reference needs readable typography or fine detail, set its `full_resolution_attachment` to `true` to attach its canonical image with a verified hash after the context sheet, in selection order, even under `full_context_sheet`. The default is `false`, and this reference choice is independent of canonical asset attachment policy.
 
-## 3. Prepare and generate the visual target
+## 3. Prepare and generate the slide image
 
 Run `scripts/prepare_generation.py` to compile the resolved canvas, profile guidance, intent, resources, shared deck design and generation budget into the contract, brief and `work/generation-request.json`.
 

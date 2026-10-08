@@ -1,6 +1,14 @@
 # SlidePoise architecture
 
-SlidePoise turns an authored visual target into an editable presentation while keeping design decisions visible. Conversation provides the working interface. A self-contained skill carries the reasoning contract and reconstruction runtime. Reusable Profiles and Library Sets stay outside that skill.
+SlidePoise develops slide content and composition, then reconstructs the selected images as editable PowerPoint objects. Conversation provides the working interface. A self-contained skill carries the reasoning contract and reconstruction runtime. Reusable Profiles and Library Sets stay outside that skill.
+
+[![SlidePoise architecture](images/slidepoise-architecture.png)](images/slidepoise-architecture.svg)
+
+## Four stages
+
+**Content planning** establishes the audience, evidence and slide narrative. **Visual design** retrieves relevant references and assets, combines them with style guidance on a contact sheet, then generates a slide image. The Agent reviews that image against the brief for content, readability and layout before reconstruction. The contact sheet is readable by both the user and the image model. **Reconstruction** uses the selected slide image as its reference, combines the Agent's interpretation with OpenCV measurements and builds native PowerPoint objects. **Review** checks the rendered PowerPoint against the brief and generated slide image for content, reconstruction fidelity and deck-wide consistency. A finding can return to the content, design or object that needs revision.
+
+Interpretation and measurement inform each other inside reconstruction. They are complementary sources of evidence for Build. Original logos, icons and component definitions remain available through this process.
 
 ## Ownership
 
@@ -8,7 +16,7 @@ SlidePoise turns an authored visual target into an editable presentation while k
 | --- | --- | --- |
 | Host Agent | Message, narrative, resource choice, semantic ownership, visual review | Outline, semantic map, reconstruction handoff, review observations |
 | Generation request compiler | Resolved content canvas, intent, references and shared design | One request with the prompt, attachments and source bindings |
-| Host image generation | Explore the substantive slide composition within the request | Candidate images and the selected content target |
+| Host image generation | Explore the substantive slide composition within the request | Candidate images and the selected slide image |
 | OpenCV measurement | Pixel bounds, ink regions, contours, colors, regional crops | Measurement JSON and diagnostic overlay |
 | Reconstruction compiler | Source binding, coordinate transforms, text fitting, object construction instructions | Reconstruction contract and constructor scene |
 | PowerPoint renderer | Native text, shapes, charts, connectors, freeforms and image placement | Editable PPTX |
@@ -85,19 +93,28 @@ The Agent compares actual appearance with emitted native facts, including family
 
 ```mermaid
 flowchart LR
-    I[Intent and outline] --> Q[One compiled generation request]
-    D[Shared design and references] --> Q
+    I[Intent and outline] --> A[Retrieve references and assets]
+    A --> H[Contact sheet]
+    H --> Q[One compiled generation request]
+    D[Shared design] --> Q
     F[Resolved canvas and native frame] --> Q
-    Q --> G[Generated content target]
-    G --> S[Agent semantic map]
+    Q --> G[Generated slide image]
+    G --> J[Review image against brief]
+    I --> J
+    J -->|Revise composition| Q
+    J --> S[Agent semantic map]
     S --> M[OpenCV evidence]
-    G --> M
+    M -->|Agent refines interpretation| S
+    J --> M
     M --> C[Bound contract]
     C --> N[Constructor scene]
+    A -->|Original assets and native definitions| N
     N --> P[Editable PowerPoint]
     F --> P
     P --> R[Actual render]
-    R --> V[Agent visual review]
+    R --> V[Review PowerPoint against brief and slide image]
+    I --> V
+    G -->|Image reference| V
     V -->|Local correction| S
     G --> O[Agent discovers recurring roles and page aliases]
     R --> O

@@ -52,6 +52,8 @@ The Agent develops the argument and a shared visual direction before producing t
 
 Each image call uses one request compiled from the current content, canvas, references and shared design. The Agent sends that prompt and its recorded attachments to the image tool. Changes to the direction update those inputs before another request is compiled. You can guide these decisions in conversation without managing the intermediate files.
 
+A contact sheet assembles selected references and asset previews alongside the chosen style. The image model receives it with the slide instructions. The Agent reviews the generated image against the brief before reconstruction, then checks the PowerPoint render against the brief and generated slide image.
+
 Generated images contain the slide's content area. Shared headers, footers and page numbers are added later in PowerPoint through its inherited frame. The enabled frame heights are subtracted from the full slide before generation. The content image is reconstructed in that reserved area without stretching.
 
 The Agent interprets the selected image as meaningful objects, inspects OpenCV's measured evidence, and reviews the rendered PowerPoint. It compares the content crop with the generated target and the full pages with one another. Repeated typography, callouts, accents and frame details receive a separate visual calibration across the deck. A successful build or separate page reviews do not establish that consistency.
