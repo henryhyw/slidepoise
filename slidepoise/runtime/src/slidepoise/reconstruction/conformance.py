@@ -155,6 +155,52 @@ def _chart_structure_failures(objects: list[dict[str, Any]]) -> list[dict[str, A
     return failures
 
 
+def _segment_crosses_box(start: list[float], end: list[float], box: list[float]) -> bool:
+    """Intersect a line with the strict interior of an allocated text rectangle."""
+    x, y, width, height = map(float, box)
+    if width <= 0 or height <= 0:
+        return False
+    low, high = 0.0, 1.0
+    for origin, delta, lower, upper in (
+        (float(start[0]), float(end[0]) - float(start[0]), x + 0.01, x + width - 0.01),
+        (float(start[1]), float(end[1]) - float(start[1]), y + 0.01, y + height - 0.01),
+    ):
+        if abs(delta) < 1e-9:
+            if not lower < origin < upper:
+                return False
+            continue
+        a, b = sorted(((lower - origin) / delta, (upper - origin) / delta))
+        low, high = max(low, a), min(high, b)
+        if low >= high:
+            return False
+    return low < high
+
+
+def _connector_text_intersections(objects: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Report crossings as review evidence, including labels that mask a shaft.
+
+    Text allocation is not text ink. An intentional line label can intersect its
+    route, so these facts do not block rendering or decide visual suitability.
+    """
+    textboxes = [item for item in objects if item.get("kind") == "textbox" and item.get("bbox_px")]
+    findings = []
+    for connector in objects:
+        if connector.get("kind") != "connector_graph":
+            continue
+        for textbox in textboxes:
+            segments = []
+            for kind in ("source_routes_px", "target_routes_px"):
+                for route_index, route in enumerate(connector.get(kind, [])):
+                    for segment_index, (start, end) in enumerate(zip(route, route[1:])):
+                        if _segment_crosses_box(start, end, textbox["bbox_px"]):
+                            segments.append({"route_set": kind, "route_index": route_index,
+                                             "segment_index": segment_index, "start_px": start, "end_px": end})
+            if segments:
+                findings.append({"connector": connector["id"], "text": textbox["id"],
+                                 "text_bbox_px": textbox["bbox_px"], "segments": segments})
+    return findings
+
+
 def _bend_count(points: list[list[float]]) -> int:
     if len(points) < 3:
         return 0
@@ -443,6 +489,7 @@ def validate_contract_consumption(
             "connector_graphs": len(connector_ids & emitted_connector_ids),
         },
         "blocking_facts": failures,
+        "visual_review_facts": {"connector_text_intersections": _connector_text_intersections(objects)},
         "agent_interpretation_required": True,
         "note": "No quality or reconstruction verdict is produced. Visual reasoning remains external.",
     }

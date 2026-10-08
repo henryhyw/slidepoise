@@ -34,7 +34,8 @@ At the start of every run
 3. Resolve current-presentation overrides with `scripts/resolve_config.py`.
 4. Read `references/deck-orchestration.md`, `references/workflow.md`, `references/runtime-host.md` and `references/image-generation.md`.
 5. Read `references/human-approval.md` for adaptive user checkpoints. It does not define mandatory gates.
-6. Read `references/resource-library.md` before resource selection.
+6. Read `references/resource-library.md` and `references/reference-retrieval.md` before resource selection. Retrieve visual-reference candidates for each slide from its intent, then inspect and select them yourself.
+   Read `references/visual-exploration.md` when developing a visual approach. Explore how the composition can explain the information before fixing its layout.
 7. Before semantic mapping or reconstruction, read `references/visual-reasoning.md`, `references/connectors.md`, and `references/reconstruction.md`.
 8. Read `references/raster-composition.md` for raster artwork, intrinsic lettering, texture, or overlapping text. Read `references/illustration-refinement.md` before an optional raster edit.
 9. Read `references/multi-agent-review.md` when the host exposes subagents. Use an independent final review for a multi-slide deck or a slide with dense tables, charts or directed relationships. Keep the review read-only and bounded. Without subagents, use a separate inspection pass.
@@ -61,6 +62,12 @@ Infer the amount of interaction from the user's request.
 - User feedback can add, remove, reorder, merge, split, or revise slides at any time. Update the deck outline and only invalidate affected downstream artifacts.
 - Never require a plan, resource, image, or illustration approval record as a condition for continuing. Record important user decisions when they exist so later work can respect them.
 
+## Optional content refinement
+
+For client-facing consulting work that needs message development or wording review, use an available `consulting-content` skill when requested or useful. Keep its content judgement separate from SlidePoise's design and construction work. Routine exact-copy reproduction does not need an additional writing pass. Preserve the user's latest accepted wording and supplied firm frame.
+
+Read `references/content-refinement.md` when using this companion or making an authorised wording-only revision. It covers copy checks before and after image generation and native text corrections within the accepted layout. It adds no mandatory generation call or approval gate.
+
 ## Deck model
 
 Author `work/deck-outline.json` for any presentation, including a one-slide presentation. Use stable slide IDs and an explicit ordered list. Each entry records the slide role, communication job, dominant message, content obligations, evidence and asset obligations, dependencies, and current disposition.
@@ -82,7 +89,7 @@ Read `references/deck-orchestration.md` for the complete contract.
 
 1. Understand the source, audience, purpose, reading context, desired scope, evidence, constraints, and user assets. Follow the intent guidance in `references/workflow.md` to connect claims to their support, preserve uncertainty and define what the visual needs to explain before generating it.
 2. Create or revise the deck outline. For a single slide, keep this compact. For a deck, plan the narrative arc and each slide's communication job before detailed slide composition.
-3. Resolve the Profile and current-presentation overrides once. Discover relevant assets in the supplied project or source material as well as the enabled libraries. Compare concrete candidates against the deck's communication jobs, then select shared and page-specific resources. Keep explicit user obligations distinct from the Agent's current proposals. An empty selection leaves the design question open to later evidence. Follow `references/resource-library.md` for candidate inspection and reconsideration.
+3. Resolve the Profile and current-presentation overrides once. For every active slide, automatically retrieve indexed reference candidates using its communication job, semantic relationships and role. Inspect the actual pages and make a purpose-specific selection before generation. Shared style references do not replace this page-local search. Discover relevant assets in the supplied project or source material as well as the enabled libraries. When recognizable organizations, products or evidence objects carry the argument, actively research exact assets that could aid recognition or explanation. Compare concrete candidates before dismissing them. Keep explicit user obligations distinct from the Agent's proposals. An empty selection leaves the design question open to later evidence. Follow `references/resource-library.md` for candidate inspection and reconsideration, and `references/visual-exploration.md` for choosing a meaningful composition.
 4. Decide the useful collaboration checkpoints. A sample slide is often helpful for a large or visually uncertain deck. It is optional.
 5. Establish the deck's shared visual decisions using `references/deck-orchestration.md`. Discover recurring visual functions from the actual pages and references, including small recurring marks. The role inventory stays open as generated candidates and native renders reveal new peers. Map each role to page-local entity aliases and materialize its chosen treatment in those entities. For each active slide, author its intent and generation context, generate or edit one substantive-region design, inspect it against the shared direction, then reconstruct it with the page-local pipeline in `references/workflow.md`.
 6. Process independent slides concurrently when the host supports it. The parent Agent owns the outline, shared style, cross-slide consistency, ordering, and final assembly. A page worker owns only its slide directory.
@@ -132,7 +139,9 @@ The user should not have to initiate routine corrections. Repair issues within t
 - Density is qualitative guidance. It is never an occupancy score or a font-size gate.
 - Preserve compositional freedom. Do not force grids, cards, chart types, connector families, or rounded corners unless the content, profile, or user calls for them.
 - Keep a coherent deck-wide visual identity while allowing layouts to vary with slide role.
+- Visual appeal should support understanding. Explore the information relationships before committing to a layout, and judge whether the resulting visual makes them easier to grasp. Tables and repeated panels remain available when their structure serves that purpose.
 - Never synthesize or approximate an exact logo or required user asset.
+- Keep reference candidates separate from selected generation inputs. Verify source provenance and respect user exclusions. A generated example cannot stand in for a requested authentic source, and a retrieval rank never establishes visual acceptance.
 
 ## Maintenance
 

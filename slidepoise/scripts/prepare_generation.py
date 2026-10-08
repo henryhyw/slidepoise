@@ -19,6 +19,7 @@ from component_preview import ensure_preview
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "runtime/src"))
 from slidepoise.canvas import validate_derived_canvas
 from slidepoise.artifacts import file_hash, write_json
+from slidepoise.reference_retrieval import validate_host_selection
 
 
 def load(path: Path) -> dict[str, Any]:
@@ -61,6 +62,12 @@ def augment_profile_core_references(
     supplies their canonical files. It does not choose slide-specific references.
     """
     result = json.loads(json.dumps(resources))
+    if "reference_retrieval" in result:
+        try:
+            validate_host_selection(result)
+        except (OSError, ValueError) as error:
+            raise SystemExit(str(error)) from error
+        return result
     required = list(profile.get("always_attach_visual_references") or [])
     if not required:
         return result
@@ -119,7 +126,11 @@ def augment_selected_components(
     by_id, origins = {}, {}
     for value in catalog_values:
         catalog_path = Path(str(value)).expanduser().resolve()
-        for record in (load(catalog_path).get("items") or {}).values():
+        catalog = load(catalog_path)
+        for raw in (catalog.get("items") or {}).values():
+            record = dict(raw)
+            if not record.get("path") and catalog.get("native_source"):
+                record["path"] = catalog["native_source"]
             identifier = str(record.get("id", ""))
             if identifier in by_id:
                 raise SystemExit(f"Duplicate component ID across selected sets: {identifier}")
@@ -138,7 +149,7 @@ def augment_selected_components(
         preview_value = str(record.get("preview_path") or "").strip()
         # Older imported records only stored their source path.
         if donor_value.lower().endswith(".pptx") and not preview_value:
-            preview_value = str(Path(donor_value).with_suffix(".preview.png"))
+            preview_value = str(Path(donor_value).with_suffix(f".slide-{int(record.get('native_source_slide_number', 1))}.preview.png"))
         donor = catalog_path.parent / donor_value if donor_value else None
         preview = catalog_path.parent / preview_value if preview_value else None
         if donor and preview and donor.is_file():
@@ -165,6 +176,9 @@ def augment_selected_components(
             merged["canonical_file"] = str(donor.resolve())
             merged["preview_file"] = str(preview.resolve())
             merged["native_source_slide_number"] = int(record.get("native_source_slide_number", 1))
+            merged["native_source_binding"] = {"source_sha256": file_hash(donor), "preview_sha256": file_hash(preview),
+                                               "slide_number": merged["native_source_slide_number"]}
+            merged["resource_form"] = "native_component" if donor.suffix.lower() == ".pptx" else "visual_precedent"
         elif preview is not None:
             merged["preview_file"] = str(preview.resolve())
             merged["resource_form"] = "visual_precedent"

@@ -22,7 +22,7 @@ from framework.paths import DEFAULT_CONFIG, SKILL_ROOT, active_profiles_root, ac
 from framework.profiles import active_profile_id, library_catalog, library_root, list_profiles, profile_record, set_active_profile
 from framework import library_sets, components, run_events
 from framework import sessions, design, image_generation
-from framework import profile_authoring
+from framework import profile_authoring, reference_library
 from framework.storage import ConflictError, revision, update
 from . import panel
 from framework import panel_binding
@@ -284,6 +284,15 @@ class Handler(BaseHTTPRequestHandler):
                 return self.json_response(run_detail(root))
             if parsed.path == "/api/design":
                 return self.json_response(design.defaults_payload(query.get("profile", [None])[0]))
+            if parsed.path == "/api/reference-search":
+                selected = query.get("profile", [active_profile_id()])[0]
+                result = reference_library.search(selected, query.get("query", [""])[0],
+                                                  query.get("authenticity", ["authentic"])[0])
+                assets = {item["id"]: item for item in library("visual_references", selected)["items"]}
+                result["items"] = [{**assets[item["id"]], "matched_terms": item["matched_terms"],
+                                    "authenticity": item["authenticity"]} for item in result["candidates"]]
+                del result["candidates"]
+                return self.json_response(result)
             if parsed.path == "/api/profile":
                 return self.json_response(profile_authoring.profile_payload(query.get("profile", [active_profile_id()])[0]))
             if parsed.path == "/api/health":
@@ -347,7 +356,10 @@ class Handler(BaseHTTPRequestHandler):
                     source = Path(directory) / Path(body["filename"]).name
                     source.write_bytes(base64.b64decode(body["content_base64"], validate=True))
                     result = profile_authoring.add_resource(body["profile_id"], "visual_references", source,
-                        name=body.get("name", ""), description=body.get("description", ""))
+                        name=body.get("name", ""), description=body.get("description", ""),
+                        tags=body.get("tags", []), source_url=body.get("source_url", ""),
+                        source_type=body.get("source_type", "unknown"), source_page=body.get("source_page", ""),
+                        license_name=body.get("license", ""))
                 return self.json_response(result, HTTPStatus.CREATED)
             if self.path == "/api/profile/reference/update":
                 path, _ = library_catalog(body["profile_id"], "visual_references")

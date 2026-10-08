@@ -99,6 +99,10 @@ def _component_catalog(design: dict[str, Any]) -> tuple[Path, dict[str, dict[str
             if identifier in by_id:
                 raise ValueError(f"Duplicate component ID across selected sets: {identifier}")
             record = copy.deepcopy(raw)
+            if not record.get("path") and payload.get("native_source"):
+                record["path"] = payload["native_source"]
+            if str(record.get("path", "")).lower().endswith(".pptx") and not record.get("preview_path"):
+                record["preview_path"] = str(Path(record["path"]).with_suffix(f".slide-{int(record.get('native_source_slide_number', 1))}.preview.png"))
             for key in ("path", "preview_path"):
                 if record.get(key):
                     record[key] = str((path.parent / record[key]).resolve())
@@ -123,7 +127,7 @@ def _component_record(component_id: Any, expected_kind: str, design: dict[str, A
     reference = {
         "component_id": str(component_id),
         "native_donor_path": str(donor.resolve()),
-        "native_source_slide_number": int(record.get("native_source_slide_number")),
+        "native_source_slide_number": int(record.get("native_source_slide_number", 1)),
         "preview_path": str(preview.resolve()),
         "grammar": copy.deepcopy(record.get("grammar") or {}),
         "adaptation_rules": list(record.get("adaptation_rules") or []),
@@ -644,7 +648,7 @@ def build_reconstruction_scene(
                 raise ValueError(
                     f"Icon {entity_id} belongs to treatment group {treatment_group!r} but its selected asset is not declared treatment-recolorable"
                 )
-            glyph_color = treatment.get("glyph")
+            glyph_color = treatment.get("glyph_color", treatment.get("glyph"))
             glyph_gradient = treatment.get("glyph_gradient")
             if "icon_inset_fraction" not in entity_hint:
                 raise ValueError(f"Icon {entity.get('id')} requires host-Agent-authored icon_inset_fraction")
@@ -698,10 +702,10 @@ def build_reconstruction_scene(
                 # The accepted image/Agent-authored style evidence is authoritative for
                 # connector appearance unless no local style was supplied. Configuration
                 # provides defaults, not a forced recoloring of every relationship.
-                stroke_style.setdefault("color", configured_stroke.get("color", "#222222"))
-                stroke_style.setdefault("width_px", configured_stroke.get("width_px", 3))
+                stroke_style.setdefault("color", stroke_style.get("stroke", configured_stroke.get("color", "#222222")))
+                stroke_style.setdefault("width_px", stroke_style.get("stroke_width_px", configured_stroke.get("width_px", 3)))
                 stroke_style.setdefault("dash", configured_stroke.get("dash", "solid"))
-                arrowhead_config = connector_configuration.get("arrowhead", {})
+                arrowhead_config = {"powerpoint_size": "med", **connector_configuration.get("arrowhead", {}), **plan.get("arrowhead", {})}
                 stroke_style["width_px"] = max(0.5, float(stroke_style.get("width_px", configured_stroke.get("width_px", 3))))
                 source_points, target_points, junction_points = _semantic_connector_points(plan, entity_by_id, group_by_id)
                 source_routes, target_routes = _connector_routes(plan, source_points, target_points, junction_points)
@@ -714,7 +718,7 @@ def build_reconstruction_scene(
                     "route": plan.get("connector_family", "direct_flow"),
                     "style": stroke_style,
                     "arrowhead_treatment": plan["arrowhead_treatment"],
-                    "arrowhead": arrowhead_config or {"type": "triangle", "powerpoint_size": "lg", "minimum_visible_endpoint_px": 18},
+                    "arrowhead": arrowhead_config,
                     "junction_style": {"style": plan["junction_treatment"], "diameter_px": plan.get("junction_diameter_px")},
                     "routing_constraints": connector_configuration.get("routing", {}),
                     "route_visual_review": plan.get("route_visual_review", {}),

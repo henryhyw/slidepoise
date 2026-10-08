@@ -54,7 +54,8 @@ def command_profile(args: argparse.Namespace) -> None:
     elif args.profile_command == "add-resource":
         emit(profile_authoring.add_resource(args.profile_id, args.kind, Path(args.file), name=args.name,
                                             description=args.description, tags=[tag.strip() for tag in args.tags.split(",") if tag.strip()],
-                                            source_url=args.source_url, license_name=args.license))
+                                            source_url=args.source_url, license_name=args.license,
+                                            source_type=args.source_type, source_page=args.source_page))
 
 
 def command_console(args: argparse.Namespace) -> None:
@@ -249,6 +250,8 @@ def parser() -> argparse.ArgumentParser:
     profile_resource.add_argument("--tags", default="")
     profile_resource.add_argument("--source-url", default="")
     profile_resource.add_argument("--license", default="")
+    profile_resource.add_argument("--source-type", choices=["unknown", "published_document", "user_private_document", "generated_image"], default="unknown")
+    profile_resource.add_argument("--source-page", default="")
     profile_resource.set_defaults(func=command_profile)
 
     library = commands.add_parser("library", help="Manage coherent icon and component sets shared by profiles.")

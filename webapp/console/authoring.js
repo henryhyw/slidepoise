@@ -90,9 +90,47 @@ async function openReferencesWorkspace() {
   state.profileReferences = references;
   $('#profile-dialog-scope').textContent = 'VISUAL REFERENCES';
   $('#profile-title').textContent = profileDocument.profile.name;
-  const cards = references.items.map(item => `<article class="resource-card"><button class="resource-thumbnail" data-preview="${esc(item.asset_url)}" data-title="${esc(item.name || item.id)}"><img src="${esc(item.asset_url)}" alt="${esc(item.name || item.id)}"></button><div class="resource-copy"><h4>${esc(item.name || item.id)}</h4><p>${esc(item.description || '')}</p><button class="text-button" data-edit-reference="${esc(item.id)}">Edit guidance</button></div></article>`).join('');
-  $('#profile-content').innerHTML = `<div class="reference-workspace-heading"><p>Use these examples to define the look of this profile.</p><button class="quiet-button" data-add-reference>＋ Add visual reference</button></div><div class="library-item-grid reference-editor-grid">${cards}</div>`;
+  const cards = referenceCards(references.items);
+  /* Cards retain the same editable catalog metadata used by Agent retrieval. */
+
+  $('#profile-content').innerHTML = `<div class="reference-workspace-heading"><p>The Agent searches these references for each slide’s message and structure, then inspects suitable pages before designing.</p><button class="quiet-button" data-add-reference>＋ Add visual reference</button></div><div class="reference-search"><label>Find references for a slide<input id="reference-query" type="search" maxlength="1200" placeholder="For example, compare options or explain a process"></label><label>Search sources<select id="reference-origin"><option value="authentic">Recorded original sources</option><option value="exclude-generated">Include unclassified sources</option><option value="any">All sources, including generated</option></select></label></div><p id="reference-search-status" class="setting-help" role="status">Browse the library or describe what your slide needs to explain.</p><div id="reference-results" class="library-item-grid reference-editor-grid">${cards}</div>`;
+  referenceSearchRequest++;
   if (!$('#profile-dialog').open) $('#profile-dialog').showModal();
+}
+
+function referenceCards(items) {
+  return items.map(item => {
+    const source = item.provenance || {};
+    const origin = item.source_type || source.source_type || 'unknown';
+    const originLabel = ({published_document: 'Published source', user_private_document: 'Private reference', generated_image: 'Generated reference'})[origin] || 'Source unclassified';
+    return `<article class="resource-card"><button class="resource-thumbnail" data-preview="${esc(item.asset_url)}" data-title="${esc(item.name || item.id)}"><img src="${esc(item.asset_url)}" alt="${esc(item.name || item.id)}"></button><div class="resource-copy"><span class="eyebrow">${esc(originLabel)}</span><h4>${esc(item.name || item.id)}</h4><p>${esc(item.description || '')}</p>${item.retrieval_eligible === false ? '<p class="setting-help">Kept for context. Excluded from retrieval.</p>' : ''}${item.matched_terms?.length ? `<p class="setting-help">Matches ${esc(item.matched_terms.join(', '))}</p>` : ''}<button class="text-button" data-edit-reference="${esc(item.id)}">Edit guidance</button></div></article>`;
+  }).join('');
+}
+let referenceSearchRequest = 0, referenceSearchTimer;
+async function searchReferences(request) {
+  const field = $('#reference-query');
+  if (!field) return;
+  const query = field.value.trim();
+  const profile = profileDocument.id;
+  if (!query) {
+    $('#reference-results').innerHTML = referenceCards(state.profileReferences.items);
+    $('#reference-search-status').textContent = 'Browse the library or describe what your slide needs to explain.';
+    return;
+  }
+  $('#reference-search-status').textContent = 'Finding relevant references…';
+  try {
+    const result = await api(`/api/reference-search?profile=${encodeURIComponent(profile)}&query=${encodeURIComponent(query)}&authenticity=${encodeURIComponent($('#reference-origin').value)}`);
+    if (request !== referenceSearchRequest || !$('#reference-results') || profile !== profileDocument.id) return;
+    $('#reference-results').innerHTML = referenceCards(result.items);
+    $('#reference-search-status').textContent = result.items.length ? `${result.matching_candidate_count} matching references. The Agent inspects candidates before selecting them.` : 'No matching references. Try a related term or review the source filter.';
+  } catch (error) {
+    if (request === referenceSearchRequest && $('#reference-search-status')) $('#reference-search-status').textContent = error.message;
+  }
+}
+function queueReferenceSearch() {
+  clearTimeout(referenceSearchTimer);
+  const request = ++referenceSearchRequest;
+  referenceSearchTimer = setTimeout(() => searchReferences(request), 220);
 }
 function remoteSetContents(item) {
   const remix = item.provider === 'remix_icon';
@@ -109,11 +147,12 @@ document.addEventListener('click', event => attempt(async () => {
       await refreshOverview(); await loadDesign(); await openProfileWorkspace(); toast('Profile guidance saved');
     }, '');
   }
-  if (button.hasAttribute('data-add-reference')) return editor('Add visual reference', '<label>Image<input name="file" type="file" accept=".png,.jpg,.jpeg,.webp" required></label>' + input('name', '', 'Reference name') + '<label>What should this reference influence?<textarea name="description" rows="4"></textarea></label>', async form => {
+  if (button.hasAttribute('data-add-reference')) return editor('Add visual reference', '<label>Image<input name="file" type="file" accept=".png,.jpg,.jpeg,.webp" required></label>' + input('name', '', 'Reference name') + '<label>What can this reference help explain?<textarea name="description" rows="3" placeholder="Useful composition, relationships or evidence treatment"></textarea></label>' + input('tags', '', 'Search terms, separated by commas') + '<label>Origin<select name="source_type"><option value="unknown">Unclassified</option><option value="published_document">Published document</option><option value="user_private_document">My original reference</option><option value="generated_image">AI-generated image</option></select></label>' + input('source_url', '', 'Source URL or document name') + input('source_page', '', 'Source page or image locator') + input('license', '', 'Usage or attribution notes'), async form => {
     const file = form.get('file');
-    await api('/api/profile/reference/add', { profile_id: profileDocument.id, name: form.get('name'), description: form.get('description'), filename: file.name, content_base64: await fileData(file) });
+    const values = Object.fromEntries(['name', 'description', 'source_type', 'source_url', 'source_page', 'license'].map(key => [key, form.get(key)]));
+    await api('/api/profile/reference/add', { ...values, tags: form.get('tags').split(',').map(tag => tag.trim()).filter(Boolean), profile_id: profileDocument.id, filename: file.name, content_base64: await fileData(file) });
     await loadDesign(); await openReferencesWorkspace(); toast('Reference added');
-  }, { scope: 'PROFILE VISUAL REFERENCES', help: 'Saved to this profile.', label: 'Add reference' });
+  }, { scope: 'PROFILE VISUAL REFERENCES', help: 'Saved locally. Source details let the Agent distinguish original material from generated examples.', label: 'Add reference' });
   if (button.dataset.editReference) {
     const item = state.profileReferences.items.find(item => item.id === button.dataset.editReference);
     return editStructured('Reference guidance', Object.fromEntries(Object.entries(item).filter(([key]) => !['id', 'asset_url', 'path', 'preview_path'].includes(key))), async value => {
@@ -130,7 +169,8 @@ document.addEventListener('click', event => attempt(async () => {
   if (button.dataset.edit) decorateChoices();
 }));
 document.addEventListener('input', event => {
+  if (event.target.id === 'reference-query') queueReferenceSearch();
   if (event.target.id === 'structured-source') { event.target.dataset.edited = 'true'; $('#structured-fields').classList.add('source-overridden'); }
   if (event.target.closest('#editor-fields') && $('#palette-live')) updateTreatmentPreview();
 });
-document.addEventListener('change', event => { if (event.target.name === 'icon_treatment') updateTreatmentPreview(); });
+document.addEventListener('change', event => { if (event.target.id === 'reference-origin') queueReferenceSearch(); if (event.target.name === 'icon_treatment') updateTreatmentPreview(); });

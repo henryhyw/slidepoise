@@ -87,12 +87,17 @@ def profile_payload(profile_id: str) -> dict:
 
 
 def add_resource(profile_id: str, kind: str, source: Path, *, name: str, description: str,
-                 tags: list[str] | None = None, source_url: str = "", license_name: str = "") -> dict:
+                 tags: list[str] | None = None, source_url: str = "", license_name: str = "",
+                 source_type: str = "unknown", source_page: str = "") -> dict:
     if kind not in KINDS:
         raise ValueError("Unknown resource kind")
     source = source.expanduser().resolve()
     if not source.is_file() or source.suffix.lower() not in KINDS[kind]:
         raise ValueError(f"Unsupported {kind} file")
+    if source_type not in {"unknown", "published_document", "user_private_document", "generated_image"}:
+        raise ValueError("Choose a known reference origin")
+    if tags is not None and (not isinstance(tags, list) or any(not isinstance(tag, str) for tag in tags)):
+        raise ValueError("Reference tags must be a list of strings")
     catalog_path, _ = library_catalog(profile_id, kind)
     identifier = uuid.uuid4().hex[:12]
     destination = catalog_path.parent / f"{identifier}-{source.name}"
@@ -104,7 +109,12 @@ def add_resource(profile_id: str, kind: str, source: Path, *, name: str, descrip
             "description": description.strip(),
             "tags": tags or [],
             "path": destination.name,
-            "provenance": {"provider": "user_or_agent_added", "source_url": source_url, "license": license_name},
+            "provenance": {"provider": "user_or_agent_added", "source_type": source_type,
+                "source_url": source_url or (source.name if source_type == "user_private_document" else ""),
+                "source_page": source_page or ("Uploaded image" if source_type == "user_private_document" else ""),
+                "generated_reference": True if source_type == "generated_image" else
+                    False if source_type in {"published_document", "user_private_document"} else None,
+                "license": license_name},
         }
         return catalog
     update(catalog_path, change, default={"items": {}})

@@ -13,10 +13,11 @@ Apply this contract to every user-facing sentence authored by SlidePoise. It cov
 - Use direct language that fits the user's vocabulary and level of expertise.
 - Keep sentences compact. Split a sentence when punctuation is carrying too much structure.
 - Explain a control through its effect. Explain a stage through what the user can review or decide.
+- Do not use “From X to Y” as a slide title, section heading or persuasive framing. State the substantive actor, action, object or consequence directly. This restriction concerns the rhetorical construction, not ordinary factual uses of the prepositions.
+- Replace internal process labels with the work they describe. A participant name beside “reviews one request” or “two contributions” leaves the reader to infer the purpose, offer and benefit. Make those relationships explicit where they carry the argument.
 - Name a real next action only when one exists.
 - Give the main conclusion the most prominent position. Use the visual to show the evidence and put supporting mechanics in details. Do not repeat the same point in a heading, introduction, caption and footnote.
 - Name expandable content concretely, such as a slide outline or a reconstruction comparison. Make its affordance visible and show a relevant preview when it helps the reader decide whether to open it. Generic labels such as “View sample evidence” leave that decision unexplained.
-
 - Name artifacts by what they are across the workflow. Use “generated slide image” in architecture diagrams, review interfaces and product explanations. Describe its role as a reconstruction reference only within the explanation of that stage. A stage-specific role is not the artifact's overall name or the slide's communication goal. The contact sheet is a separate, human-readable input to image generation that combines the chosen style and selected visual resources.
 - Identify what each review examines. Generated-image review checks content, readability and composition against the brief. PowerPoint review checks the actual render against the brief and generated slide image, including reconstruction fidelity and deck-wide consistency. Describe an image comparison only when both images exist. Diagram connectors must distinguish reference inputs from the construction steps that produce the editable file.
 

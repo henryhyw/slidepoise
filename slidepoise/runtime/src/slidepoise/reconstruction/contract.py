@@ -101,6 +101,7 @@ def _connector_plan(entity: dict[str, Any], connector_config: dict[str, Any]) ->
         "measured_junction_evidence_px": measured_junctions,
         "stroke_style": visual.get("stroke_style", entity.get("style_hint", {})),
         "arrowhead_treatment": arrowhead_treatment,
+        "arrowhead": dict(visual.get("arrowhead") or {}),
         "junction_treatment": junction_treatment,
         "junction_diameter_px": (float(intent["junction_diameter_px"]) if intent.get("junction_diameter_px") is not None else None),
         "grouping_depth_px": (float(intent["grouping_depth_px"]) if intent.get("grouping_depth_px") is not None else None),

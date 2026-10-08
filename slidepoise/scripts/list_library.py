@@ -30,7 +30,14 @@ def main() -> None:
     parser.add_argument("--profiles-root", type=Path, default=default_profiles_root())
     parser.add_argument("--library-sets-root", type=Path, default=default_sets_root())
     parser.add_argument("--query", default="")
+    from retrieve_references import add_retrieval_arguments, run_retrieval
+    add_retrieval_arguments(parser)
     args = parser.parse_args()
+    if args.intent:
+        if args.kind not in ("all", "visual_references"):
+            parser.error("Per-slide reference retrieval requires --kind visual_references or all")
+        run_retrieval(args, parser)
+        return
 
     selected = KINDS if args.kind == "all" else (args.kind,)
     output: dict[str, list[dict]] = {}

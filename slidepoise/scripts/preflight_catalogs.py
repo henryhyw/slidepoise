@@ -86,7 +86,8 @@ def main() -> None:
             unregistered = sorted(
                 path.relative_to(catalog_path.parent).as_posix()
                 for path in catalog_path.parent.rglob("*")
-                if path.is_file() and path != catalog_path and not path.name.startswith(".")
+                if path.is_file() and path not in (catalog_path, catalog_path.with_suffix(".json.lock"))
+                and not path.name.startswith(".")
                 and path.resolve() not in registered_assets
             )
             for relative in unregistered:

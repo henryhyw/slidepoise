@@ -17,10 +17,10 @@ Give the reviewer the user request, resolved profile, relevant profile guidance,
 - missed or contradicted user instructions
 - missing front-half workflow stages such as communication planning, profile resolution, or retrieval
 - claims unsupported by the current project
-- visual structure prescribed before the user requested or approved it
+- premature layout restrictions unsupported by the user's requirements or inspected design evidence
 - wording that would fail in the intended publication context
 
-The reviewer must distinguish communication structure from visual layout. A plan may define hierarchy, relationships, evidence, and obligations. It should not assign content to left, right, top, bottom, cards, lanes, or a fixed diagram unless the user explicitly requested that level of structure.
+The reviewer must distinguish communication structure from visual layout. The initial intent defines hierarchy, relationships, evidence and obligations. A user-specified layout is a requirement. An Agent may develop a composition within the authorised brief after inspecting resources and exploring the visual argument. Check its reasoning and remaining freedom, and keep the selected direction in `style_direction`. Challenge unsupported restrictions without requiring the user to approve routine design choices.
 
 ### Style and asset review
 
@@ -28,13 +28,17 @@ Give the reviewer the original request, relevant source materials or project pat
 
 Check both unnecessary assets and missed opportunities supported by the source. Distinguish a user obligation from an Agent proposal. Challenge proposals that prematurely narrow the visual design, including unsupported rejection of an entire resource class. Cite the source asset and the communication role it could serve. Do not recommend icons merely to increase their count. Reuse the existing finding format and revise the existing plan or selection when warranted.
 
+For central named firms or products, check whether the author inspected relevant identity candidates before omitting them. For the composition, ask what the visual helps a cold reader infer beyond the prose. Challenge a familiar table or panel structure when it only mirrors the outline, and retain it when aligned comparison is the explanatory job. Look for meaningful exploration in the actual references, candidate assets and visual alternatives. A populated selection field or attractive typography alone does not establish that work.
+
 ### Semantic-map review
 
 Give the reviewer the accepted slide, semantic map, reconstruction handoff, and profile. Ask it to inspect meaningful object coverage, render ownership, intrinsic raster lettering, connector semantics, typography and icon peer groups, canonical asset mappings, and likely reconstruction failure modes.
 
 ### Reconstruction review
 
-Give the reviewer the original intent, accepted slide, actual PowerPoint render, visual comparison, constructor scene, reconstruction contract and rendered-text evidence. Ask it to identify missing meaning, defects already in the generated design, material visual differences, editability losses, unexplained rasterization, connector defects, text fitting problems, and unsupported patch coordinates. Ask for a fresh reading before sharing the author's acceptance statements or proposed fixes. The reviewer must open the images and cite visible evidence. Reading the review JSON is insufficient.
+First give the reviewer the intended audience and actual page image, without the author's intent or explanation. Ask for the meaning they can establish from that page and any context they had to assume. For an unfamiliar journey, this includes the initial need, actor-owned actions and resulting change. Use this first reading to expose missing context before the brief supplies it.
+
+Then give the reviewer the original intent, accepted slide, visual comparison, constructor scene, reconstruction contract and rendered-text evidence. Ask it to identify missing meaning, defects already in the generated design, material visual differences, editability losses, unexplained rasterization, connector defects, text fitting problems, and unsupported patch coordinates. Keep the author's acceptance statements and proposed fixes out of the first reading. The reviewer must open the images and cite visible evidence. Reading the review JSON is insufficient.
 
 ### Cross-page visual calibration
 

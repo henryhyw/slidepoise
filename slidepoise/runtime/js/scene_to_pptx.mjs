@@ -502,11 +502,15 @@ function addLine(slide, start, end, dimensions, slideSize, style, arrowAtEnd, pp
   });
 }
 
-function addPolylineRoute(slide, points, dimensions, slideSize, style, arrowAtEnd, pptx, nextName) {
+function addPolylineRoute(slide, points, dimensions, slideSize, style, arrowAtEnd, pptx, nextName, slideHints) {
   if (!Array.isArray(points) || points.length < 2) return;
+  const name = points.length === 2 ? nextName() : nextName().replace("SC_CONNECTOR__", "SC_FREEFORM_ROUTE__");
+  if (arrowAtEnd && style.arrowhead_native_size) {
+    slideHints.arrowhead_sizes[name] = style.arrowhead_native_size;
+  }
   if (points.length === 2) {
     // A native line preset carries explicit direction through its transform.
-    addLine(slide, points[0], points[1], dimensions, slideSize, style, arrowAtEnd, pptx, nextName());
+    addLine(slide, points[0], points[1], dimensions, slideSize, style, arrowAtEnd, pptx, name);
     return;
   }
   const converted = points.map(point => [
@@ -527,7 +531,7 @@ function addPolylineRoute(slide, points, dimensions, slideSize, style, arrowAtEn
   slide.addShape(pptx.ShapeType.custGeom, {
     // LibreOffice reroutes custom geometry stored as p:cxnSp. Retain authored
     // multi-segment paths as one editable freeform without automatic attachment.
-    objectName: nextName().replace("SC_CONNECTOR__", "SC_FREEFORM_ROUTE__"),
+    objectName: name,
     x: minX,
     y: minY,
     w: width,
@@ -597,7 +601,7 @@ function addGroupingConnector(slide, object, dimensions, slideSize, pptx, nextNa
   }
 }
 
-function addConnectorGraph(slide, object, dimensions, slideSize, pptx) {
+function addConnectorGraph(slide, object, dimensions, slideSize, pptx, slideHints) {
   let segment = 0;
   const nextName = () => `SC_CONNECTOR__${object.id}__${segment++}`;
   if (["grouping_bracket", "grouping_brace"].includes(String(object.connector_family ?? ""))) {
@@ -616,12 +620,19 @@ function addConnectorGraph(slide, object, dimensions, slideSize, pptx) {
     throw new Error(`Directional connector ${object.id} has no compiled route segments`);
   }
   for (const route of object.source_routes_px) {
-    addPolylineRoute(slide, route, dimensions, slideSize, object.style, false, pptx, nextName);
+    addPolylineRoute(slide, route, dimensions, slideSize, object.style, false, pptx, nextName, slideHints);
   }
   for (const route of object.target_routes_px) {
     const directed = object.arrowhead_treatment !== "none" && object.semantic_intent?.directed !== false;
     const routeStyle = { ...object.style, end_arrow_type: object.arrowhead_treatment === "open_arrow_at_target" ? "arrow" : "triangle" };
-    addPolylineRoute(slide, route, dimensions, slideSize, routeStyle, directed, pptx, nextName);
+    const arrowhead = object.arrowhead ?? {};
+    const width = arrowhead.powerpoint_width ?? arrowhead.powerpoint_size ?? "med";
+    const length = arrowhead.powerpoint_length ?? arrowhead.powerpoint_size ?? "med";
+    if (![width, length].every(value => ["sm", "med", "lg"].includes(value))) {
+      throw new Error(`Connector ${object.id} requires sm, med or lg native arrowhead dimensions`);
+    }
+    routeStyle.arrowhead_native_size = { width, length };
+    addPolylineRoute(slide, route, dimensions, slideSize, routeStyle, directed, pptx, nextName, slideHints);
   }
   const junctionStyle = object.junction_style ?? {};
   if (junctionStyle.style === "filled_circle") {
@@ -775,7 +786,7 @@ async function main() {
   const postprocessHints = { slides: {} };
   const frameMasters = new Map();
   for (const [index, scene] of scenes.entries()) {
-    const slideHints = { round_rect_adjustments: {}, text_character_spacing: {}, chart_label_treatments: {} };
+    const slideHints = { round_rect_adjustments: {}, text_character_spacing: {}, chart_label_treatments: {}, arrowhead_sizes: {} };
     postprocessHints.slides[`ppt/slides/slide${index + 1}.xml`] = slideHints;
     const masterKey = frameMasterKey(scene);
     if (!frameMasters.has(masterKey)) frameMasters.set(masterKey, defineFrameMaster(pptx, scene, slideSize, frameMasters.size + 1));
@@ -788,7 +799,7 @@ async function main() {
       if (object.kind === "textbox") addTextbox(slide, object, scene.dimensions_px, slideSize, slideHints);
       else if (object.kind === "shape") addShape(slide, object, scene.dimensions_px, slideSize, pptx, slideHints);
       else if (object.kind === "image") addImage(slide, object, scene.dimensions_px, slideSize);
-      else if (object.kind === "connector_graph") addConnectorGraph(slide, object, scene.dimensions_px, slideSize, pptx);
+      else if (object.kind === "connector_graph") addConnectorGraph(slide, object, scene.dimensions_px, slideSize, pptx, slideHints);
       else if (object.kind === "table") addTable(slide, object, scene.dimensions_px, slideSize);
       else if (object.kind === "chart") addChart(slide, object, scene.dimensions_px, slideSize, pptx, slideHints);
       else if (object.kind === "freeform") addFreeform(slide, object, scene.dimensions_px, slideSize, pptx);

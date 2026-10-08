@@ -1,0 +1,2390 @@
+{
+  "schema_version": "1.0.0",
+  "selection_owner": "host_agent",
+  "items": {
+    "02fab1d0269c": {
+      "id": "02fab1d0269c",
+      "name": "B2B SaaS publication cover",
+      "description": "A darkened photograph fills the page. A compact white serif title and date sit at left, while a large brand mark occupies the right.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "cover",
+        "low-relevance",
+        "exclude-analytical-retrieval"
+      ],
+      "path": "02fab1d0269c-page-01.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 1,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "cover"
+      ],
+      "layout": "photographic cover",
+      "relationships": [],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 1,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "B2B SaaS publication cover",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nStrategy& B2B SaaS \nPublication 2024\nDecember, 2024",
+      "what_to_borrow": "Retain the restrained title hierarchy only when a cover is needed. This page is excluded from analytical retrieval.",
+      "retrieval_eligible": false,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "93b219417877f28412e4da8068b66abe1fd6b6d65547fbf66a730ab673c1f064",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p01",
+      "preview_path": "02fab1d0269c-page-01.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "Strategy& B2B SaaS Publication 2024",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 36.0,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "8b6eaab72b67": {
+      "id": "8b6eaab72b67",
+      "name": "Executive summary",
+      "description": "A photographic banner takes the top third. Four equally spaced text columns below have short pink messages over compact black explanatory paragraphs.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "executive summary",
+        "synthesis"
+      ],
+      "path": "8b6eaab72b67-page-02.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 2,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "executive summary",
+        "synthesis"
+      ],
+      "layout": "four parallel text columns",
+      "relationships": [
+        "parallel evidence"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 2,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Executive summary",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nStrategy& B2B SaaS Publication 2024\nExecutive summary\nNorwegian B2B SaaS\nNotes: 1) Based on 262 identified Norwegian B2B SaaS companies, 2) Of 55 respondents, only 42 submitted both revenue growth and EBITDA-margin figures (hence 19 \nRule of 40 companies have been identified). To achieve the Rule of 40 criteria, the sum of the EBITDA% and Revenue growth% must equal or exceed 40%.\nSources: PwC Strategy& analysis\nDecember 2024\n2\nNorwegian B2B SaaS companies are \ntypically quite specialized and target \nmid-market and enterprise customers\nNorwegian B2B SaaS companies are \ntypically specialized towards a business \nfunction (e.g. HR) and/or industries (e.g. \nmaritime)\nThey often highlight mid-market and \nenterprise customers as their primary \ncustomer segments. In these segments (as \nopposed to SMB), proximity, customer \nservice and adaptation to client-specific \nneeds serve as critical differentiators \nagainst global competitors.\nStrong financial performance1 among \nNorwegian companies, with 2020-2023 \naverage revenue growth of 21% and \nEBITDA-margins of 12%\nAs much as 45% of the surveyed \ncompanies (N=552) satisfy the rule of 40 \ncriteria, and 74% are EBITDA-positive.\nGrowth expectations for 2024 are down by \n3ppts to 19% (from 22%), likely driven by a \nmore challenging macroeconomic \nenvironment, in particular affecting the \ncompany\u2019s ability to attract new customers.\nLooking ahead, surveyed companies \nwill focus on customer acquisition and \nnew growth opportunities, and \nanticipate increased use of AI\nLooking forward, companies are focused \non acquiring new customers, as this is \nconsidered a key challenge. For early-\nstage companies, this will be supported by \ncontinued development of core products. \nMeanwhile, larger companies seek growth \nthrough new products and geographies.\nB2B SaaS companies are anticipating \nincreased use of AI over the next 3-5 \nyears, particularly for product \ndevelopment and \u2013capabilities, and BI \nand reporting.\nB2B SaaS provides strong value \npropositions, attractive business models \nand substantial growth opportunities.\nNordic companies have a significant \npresence in the space, and multiple Nordic \nB2B SaaS transactions have been made in \nrecent years. Additionally, new companies \nare continuously arising.\nNordic B2B SaaS players are attractive \ninvestment targets, with new companies \nfrequently entering the space",
+      "what_to_borrow": "Use parallel message columns to summarize distinct findings with comparable length and a clear reading order.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "94e20364a821cc861a3060efb44cd10b285e8e9cbfd77b7f1a2df2343d2a6bf8",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p02",
+      "preview_path": "8b6eaab72b67-page-02.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "Strategy& B2B SaaS Publication 2024",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "41f12ab24813": {
+      "id": "41f12ab24813",
+      "name": "Study context and contents",
+      "description": "The broad left column contains context and two respondent panels. A narrow right column lists sections and page numbers.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "context",
+        "agenda",
+        "methodology"
+      ],
+      "path": "41f12ab24813-page-03.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 3,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "context",
+        "agenda",
+        "methodology"
+      ],
+      "layout": "two-column overview with nested horizontal panels",
+      "relationships": [
+        "hierarchy",
+        "sequence"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 3,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Study context and contents",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nNorwegian B2B SaaS Notes: 1) With revenues > NOK 30m\nSources: PwC Strategy& analysis\nDecember 2024\n3\nIntroduction to Nordic B2B SaaS 4\nCompany profiling 12\nFinancial & Operational performance 17\nManagement considerations and outlook 24\nStrategy& B2B SaaS team 28\nThe B2B SaaS market is continually growing, with new companies frequently emerging to address the changing needs \nof businesses. This sector attracts investors due to its strong value proposition, attractive business model and \nsignificant market opportunities.\nStrategy& have identified and analyzed 250+ Norwegian B2B SaaS companies1 on their functional targeting and \nfinancial performance. To gain further insight into the current performance and outlook of the Norwegian B2B SaaS \nmarket, we have asked 55 executives about their company\u2019s financial performance, operational KPIs, strategic \nchallenges and main priorities moving forward.\n49% 51%\n80%\n20% Norway\nOther Nordic countries\nCEO\nOther executives\nThe survey respondents primarily consist of C-level executives holding key \nstrategic and financial roles\nRole of respondents\nMarket presence of respondents\nThe surveyed companies are mostly headquartered in Norway. However, we \nhave also included some companies from other Nordic countries with a \nsignificant market presence in Norway.\nContext\nIntroduction and table of contents\nTable of contents\nSurvey\n",
+      "what_to_borrow": "Separate study basis from navigation. Use a consistent header bar for distinct evidence groups.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "1e88748c354b1045559325a104176598a0d8c9d256c7c162314600cca9971083",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p03",
+      "preview_path": "41f12ab24813-page-03.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "Introduction and table of contents",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "09d1612c8fc4": {
+      "id": "09d1612c8fc4",
+      "name": "Introduction section divider",
+      "description": "Large serif section text sits on a white left half with a short underline. A darkened photograph occupies the right half.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "section divider",
+        "low-relevance",
+        "exclude-analytical-retrieval"
+      ],
+      "path": "09d1612c8fc4-page-04.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 4,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "section divider"
+      ],
+      "layout": "split title and photograph",
+      "relationships": [],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 4,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Introduction section divider",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nDecember 2024\n4\nIntroduction to \nNordic B2B SaaS\nNorwegian B2B SaaS\n",
+      "what_to_borrow": "This page is a navigation reference with low analytical relevance.",
+      "retrieval_eligible": false,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "a62fa9fdf0bb531e2b76c1e589bc9e9edfee6238fbcd6610021c90fc5c8868a3",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p04",
+      "preview_path": "09d1612c8fc4-page-04.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "Introduction to Nordic B2B SaaS",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 44.04,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "73ff699f7446": {
+      "id": "73ff699f7446",
+      "name": "Long-term market performance",
+      "description": "A large assertion headline and colored subtitle introduce a line chart. Three summary metrics sit in a horizontal strip above the plot, with a compact legend below.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "evidence",
+        "market context"
+      ],
+      "path": "73ff699f7446-page-05.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 5,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "evidence",
+        "market context"
+      ],
+      "layout": "full-width line chart with metric strip",
+      "relationships": [
+        "time series",
+        "quantitative comparison"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 5,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Long-term market performance",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nNordic SaaS has outperformed other sectors in the long run, despite the \n2022 valuation correction\nListed Nordic SaaS companies (total return) vs. common indices (Jan\u201918 to Oct\u201924)\nNorwegian B2B SaaS\nSources: S&P Capital IQ, Viking Venture, PwC Strategy& analysis 5\nDecember 2024\nIndex (Jan\u201918 = 100)\n1\nTotal Market Cap\n20.5 billion EUR\nAverage Revenue Multiple\n4.7x\nAverage Revenue Growth\n10.5%\nListed Nordic SaaS",
+      "what_to_borrow": "Lead with an evidence-backed conclusion and retain explicit units, time basis, legend and source.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "c111b46822724875bbd70dc1ecb163f48b8a99cf603f5d7294047cd8252b2e05",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p05",
+      "preview_path": "73ff699f7446-page-05.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "Nordic SaaS has outperformed other sectors in the long run, despite the 2022 valuation correction",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "ccb698020ad5": {
+      "id": "ccb698020ad5",
+      "name": "Four reasons for the business model",
+      "description": "Four equal columns run from need to value proposition, recurring model and market. Colored headers organize text, icons and one regional fact.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "business model",
+        "value proposition"
+      ],
+      "path": "ccb698020ad5-strategyand-b2b-saas-2024-p06.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 6,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "business model",
+        "value proposition"
+      ],
+      "layout": "four parallel vertical panels",
+      "relationships": [
+        "parallel argument",
+        "cause and effect"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 6,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Four reasons for the business model",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nThe emergence of B2B SaaS is driven by an attractive value proposition \nand business model, coupled with strong market opportunities\nB2B SaaS \u2013 why is it so interesting for investors?\nNorwegian B2B SaaS\nSources: PwC Strategy& analysis 6\nDecember 2024\nConstant wave of B2B SaaS \ncompanies reflecting evolving \nneeds of businesses\nAttractive, recurring and scalable \nbusiness model with potential \nhigh margins\nStrong, growing market \nopportunities with potentially \nglobal reach\nStrong value proposition enabling \nincreased efficiency and cost \nsavings\nBusinesses are \nundergoing a digital \ntransformation to stay \ncompetitive and efficient\nStrategy& has identified \n250+ B2B SaaS \ncompanies in Norway \nwith revenue > 3m EUR\nB2B SaaS play a \npivotal role in this \ntransformation, \noffering solutions to \nenhance operational \nprocesses, efficiency \nand collaboration\n250+\nB2B SaaS streamline business \nprocesses by optimizing workflows, \nautomating repetitive tasks, and \nimproving overall efficiency, leading to \ntime savings and higher productivity at \nlower cost\nReporting and analytics \ncan help leverage \ninsights to make \ninformed decisions and \noptimize strategies\nSubscription-based model yields \npredictable and recurring \nrevenue streams\nStrong economies \nof scale for mature \ncompanies \u2013 limited \nadditional R&D or \nG&A costs for each \nnew customer, \nenabling high \nmargins\nLarge and growing markets, often with \nsignificant adoption increase potential\nCompanies can \nreach customers on \na global scale, \npresenting an \nopportunity for rapid \nexpansion and \nrevenue growth\n",
+      "what_to_borrow": "Use four distinct business arguments under one assertion. Keep icon density lower for a short client deck.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "610f8f05bcc0fe4406dd2e61aef7c34bf505d6a15fb223ec7456e4136ec7f69f",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p06",
+      "preview_path": "ccb698020ad5-strategyand-b2b-saas-2024-p06.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1800,
+        1013
+      ],
+      "extracted_title": "The emergence of B2B SaaS is driven by an attractive value proposition and business model, coupled with strong market opportunities",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "ebca4064c888": {
+      "id": "ebca4064c888",
+      "name": "Market segmentation framework",
+      "description": "A full-width market band groups three panels for function, sector and maturity. Each panel uses a different explanatory device beneath the same header treatment.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "framework",
+        "segmentation"
+      ],
+      "path": "ebca4064c888-strategyand-b2b-saas-2024-p07.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 7,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "framework",
+        "segmentation"
+      ],
+      "layout": "three-column taxonomy",
+      "relationships": [
+        "classification",
+        "hierarchy"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 7,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Market segmentation framework",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nMaturity\nWhat maturity level have the companies reached?\nIndustry verticals\nIn which sectors are their customers operating?\nSector-agnostic\nOffshore\nSector-specific\nFinancial Services\nConstr. & Real Estate\nRetail & Wholesale\nHealth & Pharma\nStrategy& segments B2B SaaS companies by target customer business \nfunctions, verticals and company maturity\nStrategy& B2B SaaS categorization\nNorwegian B2B SaaS Notes: 1) B2B SaaS companies with Operations as target business function includes software used in production and field operations, administration and asset management, maintenance, etc. \nSources: PwC Strategy& analysis 7\nDecember 2024\nBusiness functions \nWhich business functions do SaaS companies \nsupport?\nUtilities\nPublic administration\nTechnology & media\nSales & \nmarketing\nBI, Reporting \n& Analytics\nCollaboration\nOperations1\nHR, IT & Admin\nFinance & Accounting\nCustomer \nservice\nEarly-stage Growth Mature\n< EUR 5m EUR 5-30m > EUR 30m\nB2B SaaS Market",
+      "what_to_borrow": "Define comparison dimensions before presenting the market. Reuse only the dimension logic, with simpler diagrams where possible.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "2ba18c3ffcd3990ee7f7ede63a3f327d284e0baee320380b32e83c0df42fd63f",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p07",
+      "preview_path": "ebca4064c888-strategyand-b2b-saas-2024-p07.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1800,
+        1013
+      ],
+      "extracted_title": "Strategy& segments B2B SaaS companies by target customer business functions, verticals and company maturity",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "4c6db3c1b281": {
+      "id": "4c6db3c1b281",
+      "name": "Market landscape by category",
+      "description": "Seven tall category columns have colored headers. Two horizontal peer groups share the same columns, separated by one dashed rule. The common grid makes the two groups easy to scan.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "comparison",
+        "competitive positioning",
+        "market landscape",
+        "curated-selection"
+      ],
+      "path": "4c6db3c1b281-strategyand-b2b-saas-2024-p08.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 8,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "comparison",
+        "competitive positioning",
+        "market landscape"
+      ],
+      "layout": "matrix table with category columns and two peer groups",
+      "relationships": [
+        "classification",
+        "comparison"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 8,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Market landscape by category",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nThere is a significant presence of Nordic companies with strong market \npositions across all B2B SaaS categories\nSelected global B2B SaaS category leaders and Nordic market leaders\nNorwegian B2B SaaS\nSources: PwC Strategy& analysis 8\nDecember 2024\nGlobal \ncategory \nleaders\nEasypark\nNavtor\nnShift\nVolue\nStormGeo\nMicrosoft\nSAP\nOracle\nOperations\nZendesk\nIntercom\nTwilio\nPuzzel\nTrustpilot\nTeleopti\nSinch\nSimplifai\nSelected \nNordic market \nleaders\nSalesforce\nShopify\nHubspot\nSuperOffice\nSitecore\nOptimizely\nVoyado\nLime Technologies\nSales & \nMarketing\nPower BI\nQlik\nTableau\nForsta\nCognite\nInfront\nMacrobond\nSpacemaker\nBI, Reporting & \nAnalytics\nWorkday\nBambooHR\nServiceNow\nSimployer\nCatalystOne\nSympa\nOutpost24\nPlanday\nIT, HR and \nAdmin\nNetsuite\nPaypal\nIntacct\nVisma\nPagero\nFiken\nXledger\nTripletex\nFinance & \nAccounting\nSlack\nZoom\nAsana\nKahoot!\nWhereby\nMintra Group\nPexip\nMentimeter\nCollaboration\nCustomer \nService\n",
+      "what_to_borrow": "Borrow the row and column logic for a sourced qualitative comparison. Keep consistent comparison dimensions and avoid unsupported feature-absence marks.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "2fb6a3997e8dedf3bb6310fd74723ff6fb46e0388df418a1193dc656c098bbaa",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p08",
+      "preview_path": "4c6db3c1b281-strategyand-b2b-saas-2024-p08.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1800,
+        1013
+      ],
+      "extracted_title": "There is a significant presence of Nordic companies with strong market positions across all B2B SaaS categories",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "2ccfd149f619": {
+      "id": "2ccfd149f619",
+      "name": "Category performance and implications",
+      "description": "Seven category rows align metrics, miniature bars, growth cues and a rightmost insights column. One total row closes the table.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "evidence",
+        "performance comparison"
+      ],
+      "path": "2ccfd149f619-page-09.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 9,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "evidence",
+        "performance comparison"
+      ],
+      "layout": "row-aligned dashboard table",
+      "relationships": [
+        "comparison",
+        "evidence to implication"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 9,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Category performance and implications",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nThere is strong financial performance in multiple B2B SaaS categories \nin Norway \u2013 average \u201920-\u201923 growth of 21%\nFinancial performance for selected Norwegian B2B SaaS companies, 2023\nNorwegian B2B SaaS Notes: 1) Aggregated revenue and EBITDA development of 262 identified Norwegian software companies (> NOK \n30m revenue). EUR/NOK exchange rate of 11.42 based on 2023 avg. 2) Includes inorganic growth. Only companies \nwith revenues all 3 years are included in CAGR\nSources: Proff Forvalt, Norges Bank, PwC Strategy& analysis\nDecember 2024\n9\n27\n6\n25\n47\n12\n21\n124\n262\n286\n73\n776\n728\n408\n406\n2 488\n5 164\nBusiness function Key performance metrics\nCAGR, \u201920-\u2019232Revenue1, EURm # companiesEBITDA%\n~3%\n~4%\n~14%\n~12%\n~17%\n~2%\n~7%\nOperations\nFinance & \nAccounting\nCollaboration\nIT, HR & Admin\nCustomer Service\nBI, Reporting & \nAnalytics\nSales & Marketing\nTotal ~12%\n17%\n18%\n21%\n18%\n15%\n18%\n34%\n21%\nKey insights\n\u2022 Country-specific barriers reduce international competition\n\u2022 Multiple Norwegian companies with market leading positions \nin the Nordics (e.g. Visma and Vipps)\n\u2022 Services requiring lower amount of sector-specific \nadaptation, value-added features such as analytics and \ncriticality of services allow for higher margins\n\u2022 Nordic players are typically industry-specific and provide \nanalytics capabilities of both external and internal data\n\u2022 Norwegian players have experienced strong growth the last \nperiod, but are highly cyclical with high risk of churn\n\u2022 High growth strongly driven by Kahoot! \n\u2022 Relatively low churn due to large number of onboarded \nusers and user-generated data\n\u2022 Normally industry-specific, as operations-solutions typically \nrequire more tailored solutions\n\u2022 Many of the newer companies are utilizing AI-capabilities \n(e.g. Kindly, Boost Ai, etc)\nPositiveHighly \nnegative\nGrowth\nNeutralNegative Highly \npositive",
+      "what_to_borrow": "Align evidence and interpretation on the same row. Simplify the metric count when the decision requires fewer dimensions.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "6b0f1ad272f64073feca597eaac60e0c41c54d65172919cd18e95cadffefd672",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p09",
+      "preview_path": "2ccfd149f619-page-09.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "There is strong financial performance in multiple B2B SaaS categories in Norway \u2013 average \u201920 - \u201923 growth of 21%",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "42c6d3613dcc": {
+      "id": "42c6d3613dcc",
+      "name": "Recent transaction evidence",
+      "description": "A dark header row defines transaction fields. White rows, subtle horizontal rules and consistent column widths make a dense evidence table scannable.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "evidence",
+        "market activity"
+      ],
+      "path": "42c6d3613dcc-page-10.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 10,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "evidence",
+        "market activity"
+      ],
+      "layout": "full-width native-style table",
+      "relationships": [
+        "comparison",
+        "chronology"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 10,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Recent transaction evidence",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nTarget HQ Description Acquirer Seller Date Revenue \nFY23, EURm\nEBITDA% \nFY23\nBenify Web-based app and platform for employee \nbenefits \nZellis Holdings Ltd Vitruvian Partners LLP Sep 2024 64.7 9.5%\nBannerflow1 Cloud-based platform for HTML5 creation \nand management\nTenzing PE Ltd Founders Jul 2024 18.5 19.5%\nSensio Smart health monitoring solutions for elderly \nand social care settings\nNordic Capital Svenska AB Longship AS Jul 2024 40.5 23.0%\nAccountor IT environments and infrastructures, \ndatacentres, and digital lifecycle services \nKKR & Co Inc Vitruvian Partners LLP Jul 2024 285.0 20.7%\nNext One \nTechnology\nOperating systems for service industries and \nconstruction\nAdelis Equity Partners AB, \nEQT AB\nMonterro Software \nInvestment AB\nDes 2023 12 (5.9%)\nAcos IT consulting and services for archive \nsoftware\nVisma AS Founders Aug 2023 27.0 26.5%\nKiona2 Proptech-platform integrating data from \nvarious sources\nCarel Industries SpA Summa Equity AB Jul 2023 8.9 6.9%\nMacrobond Automated data insight Francisco Partners \nManagement LP\nNordic Capital Svenska \nAB\nJul 2023 31.33 38.2%1\nKabal Logistics management software for oil & gas \noperators\nInsight Venture \nManagement LLC\nNorvestor Equity AS May 2023 20.1 57.9%\nThe large number of attractive Nordic B2B SaaS companies have \nresulted in multiple transactions within recent years\nSelected recent Nordic B2B SaaS transactions\nNorwegian B2B SaaS Notes: 1) Undisclosed stake; 2) 82.4% stake; 3) From 2022\nSources: Mergermarket, Valu8, Proff Forvalt, PwC Strategy& Analysis\nDecember 2024\n10\n",
+      "what_to_borrow": "Use a native editable table for factual comparators. Allocate the broadest column to the explanation readers need.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "cee38fc7fb16cee3571939a0ca9ec932416155fb0efc840076257e0fc1aae7a5",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p10",
+      "preview_path": "42c6d3613dcc-page-10.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "The large number of attractive Nordic B2B SaaS companies have resulted in multiple transactions within recent years",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "3444c84a7b51": {
+      "id": "3444c84a7b51",
+      "name": "Valuation evidence and interpretation",
+      "description": "The left plot includes labeled points, a dashed trend line and a vertical threshold. The right panel has a colored title strip and a vertical accent rule. The headline states the analytical conclusion.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "evidence",
+        "analysis",
+        "implication",
+        "curated-selection"
+      ],
+      "path": "3444c84a7b51-strategyand-b2b-saas-2024-p11.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 11,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "evidence",
+        "analysis",
+        "implication"
+      ],
+      "layout": "two-thirds scatterplot and one-third insights panel",
+      "relationships": [
+        "correlation",
+        "threshold",
+        "evidence to implication"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 11,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Valuation evidence and interpretation",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nKey insights\n\u2022 The market pricing of SaaS companies generally has \nlow correlation with traditional valuation metrics such \nas EV/EBITDA\n\u2013 The main reason for this is that even the SaaS \ncompanies with the best unit economics normally \nwill have low or negative EBITDA when they are in \na growth phase where they typically invest a lot in \nacquiring new customers\n\u2022 There is strong correlation between \u201cRule of 40\u201d \n(Sales growth + EBITDA margin =< 40) and trading \nmultiples for SaaS companies\n\u2013 While low profitability can weigh negatively to \ninvestors, sales growth is a stronger driver of \nhigher valuation than EBITDA\n\u2013 The relationship is especially strong for companies \nin the same stage in terms of growth/profitability \ntradeoff\n\u2022 Customer acquisition cost (sales & marketing) \ntypically has a payback time of more than 12 months, \nleading to short term \u201ccash burn\u201d when investing in \ngrowth\nThere is a strong correlation between Rule of 40 and trading multiples \nfor SaaS companies\nValuation of selected listed Nordic B2B SaaS by EV / Sales, and EBITDA margin + Sales growth\nNorwegian B2B SaaS\nSources: S&P Capital IQ, Viking Ventures, PwC Strategy& analysis\nDecember 2024\n11\n0% 10% 20% 30% 40% 60% 70%\n6.0x\n8.0x\n0.0x\n10.0x\n50%\n2.0x\n80%\n18.0x\n4.0x\n20.0x\n16.0x\nEBITDA-Margin FY24E + Sales growth FY24E (\u201cRule of 40\u201d)\nEV/Sales\n4C Strategies\nTecnotree Corp\ncBrain A/S\nLemonsoft OyjUpsales Technology AB\nAwardit AB\nVertiseit\nAdmicom Oyj\nVitec Software Group AB\nNordhealth AS\nSmartCraft ASA\nVolue AS\nZalaris ASA\nEnea AB OrderYOYO A/S\nEnento Group PLC\nLime Technologies AB\nPenneo A/S\nKarnov Group AB\nSSH Communications Security Oyj\nLeadDesk Oyj\nPexip Holding ASA\nCarasent ASA\nFortnox AB\nF-Secure\nSinch AB\nQt Group PLC\nLINK Mobility Group Holding ASA\nGeneric Sweden AB\nSkolon\nSectra AB\nFormpipe Software AB\nRule of 40 cutoffCompanies at \u201crule of 40\u201d \nhave average valuation of  \n~5x EV/sales",
+      "what_to_borrow": "Give the main evidence more area than the interpretation. Use a concise insight column and source the relationship claimed.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "5116d09a19f7502bfc200ed669d83e3ebe7599f03b21edc7118779ce09d151f5",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p11",
+      "preview_path": "3444c84a7b51-strategyand-b2b-saas-2024-p11.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1800,
+        1013
+      ],
+      "extracted_title": "There is a strong correlation between Rule of 40 and trading multiples for SaaS companies",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "26ee2e94e3fe": {
+      "id": "26ee2e94e3fe",
+      "name": "Company profiling divider",
+      "description": "A white title half and a darkened photograph half repeat the deck section divider system.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "section divider",
+        "low-relevance",
+        "exclude-analytical-retrieval"
+      ],
+      "path": "26ee2e94e3fe-page-12.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 12,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "section divider"
+      ],
+      "layout": "split title and photograph",
+      "relationships": [],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 12,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Company profiling divider",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nDecember 2024\n12\nCompany profiling\nNorwegian B2B SaaS\n",
+      "what_to_borrow": "Preserve consistency between section breaks. Excluded from analytical retrieval.",
+      "retrieval_eligible": false,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "ef4c0eff2f99b1c2e8099feb3286ed07c8d77fc7638abf837c7b6e7bf8322c4e",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p12",
+      "preview_path": "26ee2e94e3fe-page-12.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "Company profiling",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 44.06,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "7f0a2f0e84e7": {
+      "id": "7f0a2f0e84e7",
+      "name": "Respondent profile",
+      "description": "A left panel shows company size. Two broad panels on the right show function and sector profiles. Red underlines and pale gray backgrounds keep the three exhibits distinct.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "methodology",
+        "segmentation",
+        "evidence"
+      ],
+      "path": "7f0a2f0e84e7-page-13.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 13,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "methodology",
+        "segmentation",
+        "evidence"
+      ],
+      "layout": "one tall bar chart plus two stacked chart panels",
+      "relationships": [
+        "classification",
+        "comparison"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 13,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Respondent profile",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nMost Norwegian B2B SaaS companies are specialized towards specific \nbusiness functions and industry verticals\nSurvey respondents stats\nNorwegian B2B SaaS\nSources: Strategy& B2B SaaS survey, PwC Strategy& analysis\nDecember 2024\n13\n14 11 10 10 10 8 8 7\nConstruction/\nReal estate\nPublic \nadmin.\nFinancial \nServices\nTMT Offshore Health & \nPharma\nRetail & \nWholesale\nUtilities\n10\n45\nSector \nagnostic\nSector \nspecific\n12\n43\nCross \nfunctional\nSpecific \nfunction\n20\n11 8 6 5 3 3\nOperations IT, HR & \nAdmin\nSales & \nMarketing\nCollaboration BI, \nReporting \n& Analytics\nCustomer \nservice\nFinance & \nAccounting\nQuestion: Which corporate business functions are the main users of your software? (Select up to 3)\nN = 55\nQuestion: Is your software targeting customers from a specific industry vertical? (Select up to 3)\nN = 55\n22\n21\n12\nEarly-stage\n<EUR 5m\nGrowth\nEUR 5-30m\nMature\n> EUR 30m\nQuestion: What was your company\u2019s total revenue in 2023? \nN = 55\nSurvey respondents by revenue size Survey respondents by target business function and industry vertical\nCompany profilingsurvey\n",
+      "what_to_borrow": "Group related measurements under one assertion while preserving their own questions and sample definitions.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "3ec3d52efc7cf2ad2a939bf2266bcc705c2eed9efa73dcc08cf9cacc9318ef31",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p13",
+      "preview_path": "7f0a2f0e84e7-page-13.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "Most Norwegian B2B SaaS companies are specialized towards specific business functions and industry verticals",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "9f53abcaa6de": {
+      "id": "9f53abcaa6de",
+      "name": "Sales model and customer segments",
+      "description": "Customer sizes form columns and sales approaches form rows. Colored cells encode the respondent counts. Three callouts explain specific matrix regions.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "positioning",
+        "segmentation",
+        "evidence"
+      ],
+      "path": "9f53abcaa6de-page-14.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 14,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "positioning",
+        "segmentation",
+        "evidence"
+      ],
+      "layout": "two-axis heatmap matrix with callouts",
+      "relationships": [
+        "matrix",
+        "comparison",
+        "association"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 14,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Sales model and customer segments",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nN=12\nA significant share of Norwegian B2B SaaS companies target enterprise \nand mid-market customers with a field sales approach\nB2B SaaS sales model and target customers\nNorwegian B2B SaaS December 2024\n14\nSelf service / \nproduct led\n(Inbound)\nField sales\n(Physical meetings)\nSMB \n(<100FTEs)\nMid-market \n(100-1,000FTEs)\nInside sales\n(Phone/virtual meetings)\nEnterprise \n(>1,000FTEs)\nSales model\nCustomer size\nQuestion: What is your primary sales model(s)? Select up to 2\nQuestion: What is your primary target customers? Select up to 2 \nN =55\nN=16\nN=5\nN=8\nN=8\nN=3\nN=3\nLarge presence of companies targeting enterprise customers \nwith field sales approach, often requiring longer sales cycles \n\u2013 typically combined with channel / implementation partners\nThe self-service sales model is not very \ncommon among enterprise customers, due to \nthe more complex requirements, requiring longer \nimplementation and custom configurations\nFewer Norwegian B2B SaaS customers in \nSMB segment. Need for standardized products \nwith low touch service- and sales model leads to \nhigher competition from global players\nSources: Strategy& B2B SaaS survey, PwC Strategy& analysis\n(n) between 10 and 14(n) between 5 and 9(n) lower than 5 (n) equal or higher than 15\nCompany profilingsurvey\n",
+      "what_to_borrow": "Choose a matrix when two real dimensions drive the decision. Label cell encoding and keep commentary attached to the relevant region.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "239b07e95e96d8969ac2640445b0be7558e89def4f4b61cb5cf74168545e64d1",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p14",
+      "preview_path": "9f53abcaa6de-page-14.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "A significant share of Norwegian B2B SaaS companies target enterprise and mid - market customers with a field sales approach",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "43083cb9d817": {
+      "id": "43083cb9d817",
+      "name": "Competitive differentiation factors",
+      "description": "A wide bar chart ranks differentiators. A thin colored outline groups selected categories and a callout explains that grouping.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "differentiation",
+        "evidence"
+      ],
+      "path": "43083cb9d817-page-15.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 15,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "differentiation",
+        "evidence"
+      ],
+      "layout": "ranked column chart with outlined emphasis group",
+      "relationships": [
+        "ranking",
+        "comparison"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 15,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Competitive differentiation factors",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nHigher quality products and higher customer service are highlighted by \nrespondents as areas where they stand out from competitors\nCompetitive advantage and differentiation \nNorwegian B2B SaaS\nSources: Strategy& B2B SaaS survey, PwC Strategy& analysis\nDecember 2024\n15\n0,00\n0,05\n0,10\n0,15\n0,20\n0,25\n0,30\n0,35\n0,40\n0,45\n0,50\n0,55\n0,60\n0,65\n0,70\n0,75\n0,80\n0,85\n0,90\n0,95\n1,00\n0\n5\n10\n15\n20\n25\n30\n35\n40\n45\n50\n55\n60\n65\n70\n75\nHigher quality \nproducts\nMore innovative and \nmodern solution\nHigher level of \ncustomer service\nStronger brand Adapting to individual \nclient needs\nBetter onboarding \nprocess\nLower prices Richer \nintegration library\n71%\n41%\n35%\n24% 22% 20%\n12% 10%\nY AxisY Axis\nQuestion: Where do you believe you stand out from your competitors? (Select up to 3)\nn = 51\nNorwegian B2B SaaS companies frequently target mid-\nmarket and enterprise segments, where physical proximity \nand client-specific adaptation serve as a critical differentiator. \nThis enables them to stand out from competitors, especially \nbeneficial against global players\nCompany profilingsurvey\n",
+      "what_to_borrow": "Highlight a meaningful subset of evidence without adding a second competing chart.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "93eb7c139a28c356cbc863dd1403e50a26b8953cb49d0ea650706a42a6e6ab3a",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p15",
+      "preview_path": "43083cb9d817-page-15.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "Higher quality products and higher customer service are highlighted by respondents as areas where they stand out from competitors",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "081d500b7a36": {
+      "id": "081d500b7a36",
+      "name": "Deployment mix by sector",
+      "description": "One aggregate bar is separated from several sector bars. A common legend, percentage labels and a short callout explain the mix.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "architecture context",
+        "comparison",
+        "evidence"
+      ],
+      "path": "081d500b7a36-page-16.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 16,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "architecture context",
+        "comparison",
+        "evidence"
+      ],
+      "layout": "stacked bar chart with aggregate and sector detail",
+      "relationships": [
+        "part to whole",
+        "comparison"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 16,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Deployment mix by sector",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nAll respondents are fully or partly in the cloud \u2013 Offshore, utilities and \npublic sector have the largest deployment of hybrid cloud/on-premise\nSurvey respondent sectors and software deployment\nNorwegian B2B SaaS\nSources: Strategy& B2B SaaS survey, PwC Strategy& analysis\nDecember 2024\n16\nQuestion: What is your software deployment model?\nn =54\n80% 80%\n57% 50%\n25% 27%\n43%\n60%\n10% 10%\n21%\n25%\n50% 45%\n29%\n40%\n10% 10%\n21% 25% 25% 27% 29%\nFinancial \nservices\nTMT Construction, \nEngineering \nor Real estate\nRetail Health Public sector Utilities Offshore\n10 10 14 8 8 11 7 10\nCloud (Cloud native) Cloud (Migrated solution) Hybrid solution (Cloud+On-premise)\n67%\n20%\n13%\n54\nSector exposure \n(multiple sectors possible)All respondents\nLegacy maritime software players \nare running on hybrid solutions or \nin a cloud migration process, while \nemerging players are cloud native\nCompany profilingsurvey\n",
+      "what_to_borrow": "Separate the overall baseline from the comparison groups and keep all groups on the same scale.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "cc00f256ee4f9db058a049569a2b362b492804cbb0f410c53c050d365232e139",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p16",
+      "preview_path": "081d500b7a36-page-16.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "All respondents are fully or partly in the cloud \u2013 Offshore, utilities and public sector have the largest deployment of hybrid cloud/on - premise",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "5a46495c6eb7": {
+      "id": "5a46495c6eb7",
+      "name": "Financial and operational performance divider",
+      "description": "The standard white and photograph split carries a three-line serif section title.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "section divider",
+        "low-relevance",
+        "exclude-analytical-retrieval"
+      ],
+      "path": "5a46495c6eb7-page-17.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 17,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "section divider"
+      ],
+      "layout": "split title and photograph",
+      "relationships": [],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 17,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Financial and operational performance divider",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nDecember 2024\n17\nFinancial & \noperational \nperformance\nNorwegian B2B SaaS\n",
+      "what_to_borrow": "Navigation only. Excluded from analytical retrieval.",
+      "retrieval_eligible": false,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "973834e4da88ab3685e3a6e3669982d025c4f0f922e468aea19d569520c16c1e",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p17",
+      "preview_path": "5a46495c6eb7-page-17.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "Financial & operational performance",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 44.04,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "236d30e685b7": {
+      "id": "236d30e685b7",
+      "name": "Growth and margin trade-off",
+      "description": "Three group markers sit on a growth versus margin plot. A diagonal threshold and dashed average guides establish the interpretation, with labeled boxes attached to the groups.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "economics",
+        "trade-off",
+        "evidence"
+      ],
+      "path": "236d30e685b7-page-18.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 18,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "economics",
+        "trade-off",
+        "evidence"
+      ],
+      "layout": "scatterplot with threshold area and labeled groups",
+      "relationships": [
+        "trade-off",
+        "threshold",
+        "comparison"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 18,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Growth and margin trade-off",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nAverage organic growth was 22% and EBITDA margin was 15% in 2023 \n\u2013 45% of companies satisfy the Rule of 40 criteria\nFinancial performance \u2013 Revenue growth (\u201923) vs. EBITDA-% (\u201923) by company size brackets\nNorwegian B2B SaaS Notes: 1) To achieve the Rule of 40 criteria, the sum of the EBITDA% and Revenue growth% must equal or exceed 40%\nSources: Strategy& B2B SaaS survey, PwC Strategy& analysis\nDecember 2024\n18\n0% 5% 10% 15% 20% 25% 30% 35% 40% 45% 50%\n-20%\n-10%\n0%\n10%\n20%\n30%\n40%\nOrganic growth (\u201923)\nEBITDA-margin (\u201923)\nQuestion: What was your organic growth in 2023?\nQuestion: What was your EBITDA margin in 2023? \nn =42\nRule of 401: 19 companies\nWeighted avg. growth: 22%\nWeighted avg. EBITDA: 15%\nMature companies\n(>EUR 30m)\nGrowth: 20%\nEBITDA margin: 17%\nn=11\nGrowth companies\n(EUR 5-30m)\nGrowth: 27%\nEBITDA margin: 11%\nn=17\nEarly-stage companies\n(<EUR 5m)\nGrowth: 43%\nEBITDA margin: -6%\nn=14\nFinancial & operational performancesurvey\n",
+      "what_to_borrow": "Use explicit axes and thresholds for measured economic trade-offs. A conceptual trade-off must be labeled as conceptual.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "407d5a08b2787564e446774ad9a482e29af2317303a0279bfb8eac12231ba038",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p18",
+      "preview_path": "236d30e685b7-page-18.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "Average organic growth was 22% and EBITDA margin was 15% in 2023 \u2013 45% of companies satisfy the Rule of 40 criteria",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "16bbfb316745": {
+      "id": "16bbfb316745",
+      "name": "Actual and expected growth",
+      "description": "An aggregate paired bar appears at left, followed by three company-size pairs. A right-hand pink headed panel supplies the contextual explanation.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "forecast",
+        "performance comparison"
+      ],
+      "path": "16bbfb316745-page-19.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 19,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "forecast",
+        "performance comparison"
+      ],
+      "layout": "paired bars with explanatory right column",
+      "relationships": [
+        "before and after",
+        "comparison",
+        "evidence to implication"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 19,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Actual and expected growth",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nThe macroeconomic climate impacts short-term growth expectation \u2013 \nrespondents expect lower growth rate in 2024, compared to 2023\nLatest and forecasted organic annual revenue growth1 (2023A, 2024E) by company size brackets\nNorwegian B2B SaaS Notes: 1) Weighted average by total revenue\nSources: Strategy& B2B SaaS survey, The central bank of Norway, Statistics Norway, PwC Strategy& analysis\nDecember 2024\n19\nEarly-stage\n<EUR 5m\nGrowth\nEUR 5-30m\nMature\n>EUR 30m\n43%\n27% 27%\n25%\n20%\n17%\nTotal\n22%\n19%\nQuestion: What was your organic revenue growth in 2023?\nQuestion: What do you estimate your company\u2019s organic revenue growth to be in 2024? \nn =42\nIn Norway, the macroeconomic climate is challenging with higher than \nnormal inflation- and interest rates, putting pressure on costs and \nprofitability. Job vacancies have also been trending down since Q2/Q3 \n2023, indicating lower recruitment needs and growth expectations \namong Norwegian organizations. \nIn line with the larger macroeconomic picture, B2B SaaS companies are \nexperiencing more challenging markets, and surveyed companies \nexpect lower revenue growth in 2024 compared to 2023 (-3ppt). \nManagement of surveyed companies highlight acquiring new \ncustomers as a key challenge in today\u2019s market, likely due to budget \ncuts across Norwegian organizations.\nDespite this, the growth outlook remains attractive at 19%. The B2B \nSaaS market is very resilient, with strong performance and growth \nacross the existing customer base. This is driven by continued product \ndevelopment and a strong customer value proposition, enabling price \nincreases and customer upsell.\nLonger-term macroeconomic outlook is positive, with the interest \npolicy rate expected to come down below 3% in 2027 (from 4.5% today). \nThis is likely to provide an even better growth outlook for Norwegian B2B \nSaaS companies over the next 3-5 years.\nWhy are growth expectations lower for 2024 vs. 2023?\nFinancial & operational performancesurvey\n2023A\n2024E",
+      "what_to_borrow": "Use one visual encoding for actual and expected values and reserve a separate region for explanatory drivers.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "53bd69f3a8d68ac7f2131583547b71a03e71ef922b29cb2ac11a0c56b5b7a8db",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p19",
+      "preview_path": "16bbfb316745-page-19.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "The macroeconomic climate impacts short - term growth expectation \u2013 respondents expect lower growth rate in 2024, compared to 2023",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "22eaba66f1b8": {
+      "id": "22eaba66f1b8",
+      "name": "Revenue growth bridge by company stage",
+      "description": "Three equal panels show opening value, positive contributions, churn and closing value. Vertical rules separate stages. Consistent colors and braces reveal how net retention relates to the bridge.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "economics",
+        "value creation",
+        "decomposition",
+        "curated-selection"
+      ],
+      "path": "22eaba66f1b8-strategyand-b2b-saas-2024-p20.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 20,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "economics",
+        "value creation",
+        "decomposition"
+      ],
+      "layout": "three comparable waterfall panels",
+      "relationships": [
+        "decomposition",
+        "addition and subtraction",
+        "comparison"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 20,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Revenue growth bridge by company stage",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nStrong growth and customer retention metrics \u2013 mature B2B SaaS \ncompanies with a larger share of growth from existing customers\nB2B SaaS revenue growth bridge by company size\nNorwegian B2B SaaS December 2024\n20\nFY22\n59%\nNew\n18%\nNet \nupsell\n10%\nChurn FY23\n+67%1\nQuestion: What was your net retention rate, churn rate, and organic growth in 2023?\nn =31\nEarly-stage companies\n(n=8)\nGrowth companies\n(n=16)\nMature companies\n(n=7)\nFY22\n23%\nNew\n14%\nNet \nupsell\n8%\nChurn FY23\n+29%1\nFY22\n12%\nNew\n17%\nNet \nupsell\n7%\nChurn FY23\n+22%1\nNotes: 1) Weighted average growth. The figures differ from the section 'Financial Performance' as the sample size (n) is different \u2013 fewer companies have provided their net retention rate (NRR)\nSources: Strategy& B2B SaaS survey, PwC Strategy& analysis\nWeighted average Index=100 New Net upsell Churn\nNRR1 = 108%\nMature companies prioritize creating new \nproducts and M&A, focusing on upselling \nto existing customers, while highlighting \nacquisition of new customers as their main \nchallenge (see slide 25 and 26)\nNRR = 106% NRR = 110%\nFinancial & operational performancesurvey\n",
+      "what_to_borrow": "Keep gains, offsets and final value visible within one accounting identity. Cathay Flex needs measured inputs before using proportional waterfall bars.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "3da24923038f5ddf92cc14e6a1f66e09ffe25f14ec9653d6321c3cb28824fa94",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p20",
+      "preview_path": "22eaba66f1b8-strategyand-b2b-saas-2024-p20.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1800,
+        1013
+      ],
+      "extracted_title": "Strong growth and customer retention metrics \u2013 mature B2B SaaS companies with a larger share of growth from existing customers",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "23e848c2909c": {
+      "id": "23e848c2909c",
+      "name": "Churn across functions",
+      "description": "Seven dots share one vertical scale. A dashed average line supplies the benchmark and callouts attach explanations to selected categories.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "performance comparison",
+        "evidence"
+      ],
+      "path": "23e848c2909c-page-21.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 21,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "performance comparison",
+        "evidence"
+      ],
+      "layout": "categorical dot plot with reference line",
+      "relationships": [
+        "ranking",
+        "comparison",
+        "benchmark"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 21,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Churn across functions",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nLowest churn for companies with customers in critical business \nfunctions \u2013 Finance & Accounting, Operations and Collaboration\nCustomer churn by target business function (%)\nNorwegian B2B SaaS December 2024\n21\n0%\n1%\n2%\n3%\n4%\n5%\n6%\n7%\n8%\n9%\n10%\n11%\n12%\n13%\n14%\nChurn (%)\nSales & Marketing BI, Reporting \n& Analytics\nIT, HR & Admin Customer service Finance & Accounting Operations Collaboration\nQuestion: What was your churn rate in 2023 in % of total revenue?\nn =45 Average churn rate%\nSources: Strategy& B2B SaaS survey, Pwc Strategy& analysis\nSales and marketing are more cyclical and fragile to economic \ndownturns compared to software targeting critical business functions \nsuch as Finance & Accounting, and Collaboration\nAvg. churn rate across \nbusiness function: 8%\nCollaboration software often enables \nintensive user collaboration and produce \nuser generated data, leading to low \ncustomer churn rates\nSales & marketing are more cyclical and fragile to economic \ndownturns compared to software targeting critical business functions \nsuch as Finance & Accounting and Operational team\nFinancial & operational performancesurvey\n",
+      "what_to_borrow": "A reference line can make an evidence-based comparison legible without a full panel of repeated text.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "2dc08d55e40fc82647268c8c04856e49425809296f35d4a851c6805b4543ffc1",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p21",
+      "preview_path": "23e848c2909c-page-21.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "Lowest churn for companies with customers in critical business functions \u2013 Finance & Accounting, Operations and Collaboration",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "81e70efd1569": {
+      "id": "81e70efd1569",
+      "name": "Reasons for churn",
+      "description": "A descending column chart has two callouts anchored to selected findings. The assertion headline names the strongest drivers.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "problem diagnosis",
+        "prioritization",
+        "evidence"
+      ],
+      "path": "81e70efd1569-page-22.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 22,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "problem diagnosis",
+        "prioritization",
+        "evidence"
+      ],
+      "layout": "ranked columns with targeted callouts",
+      "relationships": [
+        "ranking",
+        "contributing factors"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 22,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Reasons for churn",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nClient cost saving initatives and competition are highlighted by \nNorwegian B2B SaaS copmanies as the main reasons for churn\nReasons behind churn\nSources: Strategy& B2B SaaS survey, PwC Strategy& analysis\nDecember 2024\n22\nQuestion: What are the main reasons for your customer churn? (Multiple selection)\nSubset: Customer churn equal to 5% or higher\nn = 28\nClient cost \nsaving initiative\nCompetition Inability to \nrealize value\nClient bankruptcy Lack of client \nengagement\nInsourcing Lack of support \n/ follow-up\nContract \nrenewal issues\n46%\n36%\n25% 25%\n18%\n11% 11%\n7%\nClient cost saving initiative is more often highlighted as a churn \nreason compared to competition, which reflects the current \nmacroeconomic difficulties customers experience. Within the Sales & \nMarketing target business function, 100% (n=7) identify client cost-\nsaving initiative as one reason for customer churn.\nLack of client engagement is 3 times higher for B2B SaaS \ncompanies with 5% or higher churn, than companies with \nlower churn. This indicates the importance of focusing on \ncustomer excellence and engagement.\nNorwegian B2B SaaS\nFinancial & operational performancesurvey\n",
+      "what_to_borrow": "Rank measured problems and explain the few that matter. Keep survey responses distinct from proven causes.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "2e65414ae2f81e5dbf0618fccbc6ccc91b9dd3acdd872cfda1e597e6d04eeff1",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p22",
+      "preview_path": "81e70efd1569-page-22.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "Client cost saving initatives and competition are highlighted by Norwegian B2B SaaS copmanies as the main reasons for churn",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "b73540cac768": {
+      "id": "b73540cac768",
+      "name": "Staffing mix by maturity",
+      "description": "Three full-height stacked bars show the workforce mix. Dashed guides connect selected boundaries, while a right column groups explanatory notes by business meaning.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "operating model",
+        "resource allocation"
+      ],
+      "path": "b73540cac768-page-23.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 23,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "operating model",
+        "resource allocation"
+      ],
+      "layout": "three stacked columns and aligned interpretation",
+      "relationships": [
+        "part to whole",
+        "comparison"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 23,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Staffing mix by maturity",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\n49%\n38%\n28%\n9%\n8%\n9%\n9%\n11%\n11%\n11%\n17%\n13%\n7% 13%\n15%\n15% 14%\n24%\nEarly-stage\n<EUR 5m\nGrowth\nEUR 5-30m\nMature\n>EUR 30m\n100% 100% 100%\nSales and customer-facing business functions typically grow with \ncompany size to support expansion, whereas R&D is highly scalable\nNumber of FTE allocation by business function and maturity\nNorwegian B2B SaaS\nSources: Strategy& B2B SaaS survey, PwC Strategy& analysis\nDecember 2024\n23\nSales and marketing Professional services Customer success and support Finance, HR & Admin R&D \u2013 Outsourced R&D \u2013 In-house\nQuestion: How many FTEs did your company have per department in 2023? Total should equal your company\u2019s average FTEs\nn =49\nMany of the larger Norwegian B2B SaaS companies have an enterprise \nfocus, requiring significant resources for implementation projects and \ncustomer support.\nOnboarding & customer success\nEarly-stage companies prioritize R&D resources to build a strong \nproduct, with as much as 58% of FTEs allocated to the R&D function. \nAs the company grows and the product matures, the R&D function \ntypically scales down towards levels of ~30% (for more mature B2B \nSaaS companies).\nScalable costs\nCustomer acquisition costs comprise the sales and marketing functions \nand typically grow in line with the company\u2019s sales budget for new \ncustomers.\nCustomer acquisition costs\nFinancial & operational performancesurvey\n",
+      "what_to_borrow": "Make resource allocation comparable across stages, then connect changes in the mix to operating implications.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "f53c1f5bae8ce2c72ba1c9ba30772360e3ea86d212408f7ca9122a36643e6e1e",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p23",
+      "preview_path": "b73540cac768-page-23.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "Sales and customer - facing business functions typically grow with company size to support expansion, whereas R&D is highly scalable",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "21c5cfa4c0cc": {
+      "id": "21c5cfa4c0cc",
+      "name": "Management considerations divider",
+      "description": "A large multiline title sits left, with the repeated darkened photograph on the right.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "section divider",
+        "low-relevance",
+        "exclude-analytical-retrieval"
+      ],
+      "path": "21c5cfa4c0cc-page-24.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 24,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "section divider"
+      ],
+      "layout": "split title and photograph",
+      "relationships": [],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 24,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Management considerations divider",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nDecember 2024\n24\nManagement \nconsiderations and \noutlook\nNorwegian B2B SaaS\n",
+      "what_to_borrow": "Navigation only. Excluded from analytical retrieval.",
+      "retrieval_eligible": false,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "452041c9310ca6829273587ea88b9080974459afa08f0c4a7e5c346678c83c7e",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p24",
+      "preview_path": "21c5cfa4c0cc-page-24.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "Management considerations and outlook",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 44.04,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "a68a8e5f33d0": {
+      "id": "a68a8e5f33d0",
+      "name": "Strategic challenge priorities",
+      "description": "A descending set of pink bars occupies the lower area. Three outlined callouts are positioned above the relevant columns.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "prioritization",
+        "problem diagnosis",
+        "evidence"
+      ],
+      "path": "a68a8e5f33d0-page-25.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 25,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "prioritization",
+        "problem diagnosis",
+        "evidence"
+      ],
+      "layout": "ranked column chart with three callouts",
+      "relationships": [
+        "ranking",
+        "comparison"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 25,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Strategic challenge priorities",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nCompanies highlight acquisition of new customers and realization of \nfull pricing potential as their two main challenges in the current market \nMain strategic challenges\nNorwegian B2B SaaS Notes: 1) Financial performance are defined as the sum of revenue growth% (\u201923) and EBITDA% (\u201923)\nSources: Strategy& B2B SaaS survey, PwC Strategy& analysis\nDecember 2024\n25\nAcquire new \ncustomers\nRealise our full \npotential on pricing\nGrow our business \nwith our existing \ncustomers\nHigh cash burn Poor sales and \nmarketing execution\nHigh customer churn Attract new employees Innovate and develop \nnew products\n41%\n35%\n22% 22%\n20%\n12%\n10% 10%\nQuestion: What are the biggest challenges currently faced by your business? (Select up to 3)\nn =51\nCompanies highlight acquiring new customers as their \nmain challenge. This corresponds well with the current \nmacroeconomic environment, where customers are more \nlikely to postpone investment decisions.\nIn a high-inflation market, companies need to increase prices \nonto their customers to maintain margins. Pricing is therefore \nhighlighted as one of the main challenges today, given the \nincreased risk of churn from significant price increases.\nMore mature B2B SaaS companies struggle with \nsales and marketing execution. This is typically \ndriven by higher organizational complexity, broader \nproduct ranges, and several pricing options.\nManagement considerations and outlooksurvey\n",
+      "what_to_borrow": "State the priority in the headline and attach brief interpretation to the evidence that establishes it.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "45be19a6763f87c4fdcba66fb9325d3305461ac849a8b38eb1213c15282562ff",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p25",
+      "preview_path": "a68a8e5f33d0-page-25.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "Companies highlight acquisition of new customers and realization of full pricing potential as their two main challenges in the current market",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "43675d328220": {
+      "id": "43675d328220",
+      "name": "Strategic priorities by stage",
+      "description": "Three increasing circles and connecting arrows establish company stages. Below each stage, one narrow ruled column contains corresponding priorities.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "roadmap",
+        "strategy",
+        "segmentation"
+      ],
+      "path": "43675d328220-strategyand-b2b-saas-2024-p26.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 26,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "roadmap",
+        "strategy",
+        "segmentation"
+      ],
+      "layout": "three stages with parallel explanatory columns",
+      "relationships": [
+        "sequence",
+        "comparison"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 26,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Strategic priorities by stage",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nMost surveyed companies will explore new go-to-market strategies and \nfocus on customer retention and expansion going forward\nRoadmap of strategic priorities by customer size\nNorwegian B2B SaaS\nSources: Strategy& B2B SaaS survey, PwC Strategy& analysis\nDecember 2024\n26\nQuestion: What are your main strategic priorities? (Select up to 3)\nn =51\nEarly-stage\n<EUR 5m\n\u2022 Improving existing products and software \narchitecture (48%) is highlighted as early-\nstage companies main focus, which is also \nreflected in their significant share of R&D \nresources in order to build strong products\n\u2022 Cost rationalization (35%) is also \nhighlighted by early-stage companies as \nthey need to maintain sustainable cost \nlevels before being able to generate their \nown profits and/or receives significant \nfunding\nGrowth\nEUR 5-30m\n\u2022 Growing outside the core geographies \n(60%) is highlighted as the key strategic \npriority for growth companies, who \ntypically wants to expand customer reach \nand prove they can grow outside their \ncore market\n\u2022 Developing new products (25%) is also \nvery relevant for this group of companies, \nas they try to increase customer value \nand spend\nMature\n>EUR 30m\n\u2022 M&A agenda (55%) is the main strategic \npriority for mature companies and is an \nefficient method for acquiring new \ncustomers, capabilities and/or products\n\u2022 Developing new products (36%) is \nessential to continue organic growth as \nthe flagship products' growth starts to \ndecline in a saturated market\nManagement considerations and outlooksurvey\n",
+      "what_to_borrow": "Borrow stage-specific priorities and parallel reading order. Use simple restrained stage markers, since the decorative arrows add little analytical meaning.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "607281d6e01c25f2d02c691488a47c76a0f06afa7d23ec5cf96ecadb652995a7",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p26",
+      "preview_path": "43675d328220-strategyand-b2b-saas-2024-p26.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1800,
+        1013
+      ],
+      "extracted_title": "Most surveyed companies will explore new go - to - market strategies and focus on customer retention and expansion going forward",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "72303ddb0547": {
+      "id": "72303ddb0547",
+      "name": "Current and expected AI adoption",
+      "description": "Four domains use paired dark and light pink bars for current and expected adoption. A shared legend and two callouts explain the major shifts.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "future state",
+        "evidence",
+        "comparison"
+      ],
+      "path": "72303ddb0547-page-27.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 27,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "future state",
+        "evidence",
+        "comparison"
+      ],
+      "layout": "four paired column groups with callouts",
+      "relationships": [
+        "before and after",
+        "comparison"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 27,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Current and expected AI adoption",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nUse of AI is particularly high in product capabilities and development \u2013 \nhighest increase in adoption expected within analytics, BI and reporting\nAI adoption by main business domain, Today vs. 3-5 years from now\nNorwegian B2B SaaS\nSources: Strategy& B2B SaaS survey, PwC Strategy& analysis\nDecember 2024\n27\nQuestion: How do you currently utilise artificial intelligence? (Select up to 3)\nQuestion:  For the next 3-5 years, where do you anticipate the most significant impact of AI on your business? (Select \nup to 3)\nn =51\nProduct development \nand product capabilities\nOperational efficiency and automation Data analytics, business \nintelligence and reporting\nPersonalisation and customer experience\n61%\n82%\n43%\n65%\n25%\n67%\n22%\n12%\nToday In 3-5 years\nAI has several use cases, such as \nproblem solving and optimization, \ncode generation and quality \nassurance, and generative design \nand UX optimization, among others\nA large increase in AI adoption is expected within data analytics, \nBI, and reporting. This is likely due to current challenges in \neffectively utilizing company-specific data with new AI tools, \nwhich are expected to improve over the next 3-5 years\nManagement considerations and outlooksurvey\n",
+      "what_to_borrow": "Keep current and future states paired within each domain and distinguish expectations from measured outcomes.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "d78f570d552a1ecb6583f2d5e2d97567fa43b97ebf5afa5a6daa619d626410f3",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p27",
+      "preview_path": "72303ddb0547-page-27.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "Use of AI is particularly high in product capabilities and development \u2013 highest increase in adoption expected within analytics, BI and reporting",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "3056ccee2f4b": {
+      "id": "3056ccee2f4b",
+      "name": "Team and contacts",
+      "description": "Author portraits and contact details align in rows on the left. Contributors occupy a separate right column.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "contacts",
+        "low-relevance",
+        "exclude-analytical-retrieval"
+      ],
+      "path": "3056ccee2f4b-page-28.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 28,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "contacts"
+      ],
+      "layout": "roster with portraits and contributors",
+      "relationships": [],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 28,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Team and contacts",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nDecember 2024\nOur team brings a broad range of relevant expertise towards Nordic \nB2B SaaS \nKey contacts\nSpecial thanks goes to J\u00f8rgen Loeng and the wider Strategy& and PwC Deals Norway team for additional editorial input. 28\nMain Authors\nAnders Brun\nManaging Partner,\nOslo\nEmail: anders.brun@pwc.com\nTel: +47 982 04 010\nContributors\nMarte Bolstad\nAnne Bockelie\nMilos Bartosek\nDirector,\nOslo\nEmail: bartosek.milos@pwc.com\nTel: +47 952 60 758\nNorwegian B2B SaaS\nHans Erlend Meland\nTeam\nErik Wall\nPartner,\nStockholm\nEmail: erik.wall@pwc.com\nTel:  +46 70 929 31 25\nErling Endresen Fiskerud\nJ\u00f8rgen Frost B\u00f8\nOle Kristian Larsg\u00e5rd",
+      "what_to_borrow": "Administrative page with low analytical relevance. Excluded from retrieval.",
+      "retrieval_eligible": false,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "7eb0f79a1c7e560680f5d3629e79ab117800123cd729bc7ba675ebabe6146322",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p28",
+      "preview_path": "3056ccee2f4b-page-28.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "Our team brings a broad range of relevant expertise towards Nordic B2B SaaS",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "dd5e71468785": {
+      "id": "dd5e71468785",
+      "name": "Related maritime software case study",
+      "description": "Three headed columns move from context to company examples to small report previews. Thin rules and small arrows connect the sequence.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "case study",
+        "further reading"
+      ],
+      "path": "dd5e71468785-page-29.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 29,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "case study",
+        "further reading"
+      ],
+      "layout": "three-column context examples and document previews",
+      "relationships": [
+        "evidence chain",
+        "examples"
+      ],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 29,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Related maritime software case study",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nWe have also published thought leadership within Maritime software, a \nB2B SaaS vertical with a large presence of Norwegian category leaders\nVertical SaaS: Maritime software case study\nNorwegian B2B SaaS December 2024\n29\nNorway has long traditions with the maritime \nindustry, while being frontrunners when it comes \nto digital adoption. It is therefore no surprise that \nmany of the maritime software category leaders \noriginate from Norway. \nSuch players have attracted high interest from \nNordic and international buyout funds, with \nexamples such as Navtor (Accel KKR), Unisea \n(Adelis Equity), Seagull (Oakley Capital / OTG) \nand Star (Longship)\nMaritime software as a B2B SaaS vertical\n Examples of Norwegian category leaders Strategy& with separate thought leadership\nSources: Strategy& B2B SaaS survey, PwC Strategy& analysis\nRelevant Strategy& publications\nNavtor StormGeo\nStar Bassnet\nUnisea Vesselman\nOcean Technologies Group",
+      "what_to_borrow": "Use a context, examples and evidence sequence when the content requires it. Small document thumbnails are unsuitable as the main message.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "812cfaaf5caade476b53ab99e7c60def836519901276675382520cdc0b01ea33",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p29",
+      "preview_path": "dd5e71468785-page-29.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "We have also published thought leadership within Maritime software, a B2B SaaS vertical with a large presence of Norwegian category leaders",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 27.96,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "50249ec39c00": {
+      "id": "50249ec39c00",
+      "name": "Closing page",
+      "description": "A short closing title, underline and legal footer occupy a mostly white page.",
+      "tags": [
+        "official-pwc",
+        "strategyand",
+        "authentic-published-reference",
+        "16:9",
+        "serif-assertion-headline",
+        "closing",
+        "low-relevance",
+        "exclude-analytical-retrieval"
+      ],
+      "path": "50249ec39c00-page-30.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+        "source_page": 30,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "closing"
+      ],
+      "layout": "minimal title with brand and legal text",
+      "relationships": [],
+      "source_url": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source": "https://www.pwc.no/no/publikasjoner/strategyand-desember-b2b-saas-2024.pdf",
+      "source_page": 30,
+      "source_document": "Strategy& B2B SaaS Publication 2024",
+      "source_document_path": "../../source-documents/strategyand-b2b-saas-2024.pdf",
+      "source_filename": "strategyand-b2b-saas-2024.pdf",
+      "source_date": "December 2024, printed on cover and pages",
+      "page_title": "Closing page",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Strategy&\nThank you\nstrategyand.pwc.com\n\u00a9 2024 PwC. All rights reserved.\nPwC refers to the PwC network and/or one or more of its member firms, each of which is a separate legal entity. Please see pwc.com/structure for further details.\nDisclaimer: This content is general information purposes only, and should not be used as a substitute for consultation with professional advisors.\n",
+      "what_to_borrow": "Administrative closing reference with low analytical relevance. Excluded from analytical retrieval.",
+      "retrieval_eligible": false,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "900px page in inspection sheet and extracted text, with 1800px single-page inspection for pages 6, 7, 8, 11, 20 and 26",
+        "reviewed": true
+      },
+      "image_sha256": "07f7c78233db6d02199fa4f6b5776099cf1954584a5c24e298108320db407f90",
+      "source_pdf_sha256": "d5188a3a8ed96280faf392a313072faf62542935989a32da2d81901afe55a062",
+      "source_reference_id": "pwc-strategyand-b2b-saas-2024-p30",
+      "preview_path": "50249ec39c00-page-30.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1440,
+        810
+      ],
+      "extracted_title": "Thank you",
+      "title_font": "Georgia",
+      "title_font_size_pdf_points": 44.04,
+      "source_document_title": "Strategy& B2B SaaS Publication 2024"
+    },
+    "a0139f775f12": {
+      "id": "a0139f775f12",
+      "name": "Three operating model options",
+      "description": "Three equally sized panels compare centralized, hybrid and decentralized organization structures. The center header uses a strong accent and the flanking arrows converge on it. Each panel has a diagram over concise implications.",
+      "tags": [
+        "official-pwc",
+        "authentic-published-reference",
+        "16:9",
+        "comparison",
+        "operating model",
+        "recommendation",
+        "curated-selection"
+      ],
+      "path": "a0139f775f12-pwc-enterprise-architecture-agile-p09.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.de/de/strategie-organisation-prozesse-systeme/pwc-enterprise-architecture-in-an-agile-world.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.de/de/strategie-organisation-prozesse-systeme/pwc-enterprise-architecture-in-an-agile-world.pdf",
+        "source_page": 9,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "comparison",
+        "operating model",
+        "recommendation"
+      ],
+      "layout": "three aligned option panels",
+      "relationships": [
+        "comparison",
+        "convergence",
+        "hierarchy"
+      ],
+      "source_url": "https://www.pwc.de/de/strategie-organisation-prozesse-systeme/pwc-enterprise-architecture-in-an-agile-world.pdf",
+      "source": "https://www.pwc.de/de/strategie-organisation-prozesse-systeme/pwc-enterprise-architecture-in-an-agile-world.pdf",
+      "source_page": 9,
+      "source_document": "Enterprise architecture in an agile world",
+      "source_document_path": "../../source-documents/pwc-enterprise-architecture-agile.pdf",
+      "source_filename": "pwc-enterprise-architecture-agile.pdf",
+      "source_date": "No publication date established. PDF metadata modified 21 April 2023.",
+      "page_title": "Three operating model options",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "One potential future organisational setup of EA combines a \ncentral core team with embedded domain architects\n\u25cf Leveraging a global network of domain \narchitects and solution architects who \nare based within programmes and/or \nbusiness functions\n\u25cf Architecture work primarily organised in \nvarious different virtual communities\nProgramme/ \nvalue stream\nProgramme/ \nvalue stream\nProgramme/\nvalue stream\n\u25cf Dedicated EA department with full-time \narchitects, anchored in the CIO \norganisation\n\u25cf Clear hierarchical structure to cover all \ndomains and regions\nDomain ...  \narchitects\nSolution X  \narchitects\nDomain A Domain B Domain\n...\nEnterprise  \narchitect\nEA department\nChief \narchitect\nEnterprise  \narchitect\nCentrally organised\nEA practice\nFully decentralised\nvirtual EA community\nDomain A  \narchitects\nSolution Y  \narchitects\nDomain C\narchitects\nEA core\nteam\nProgramme/ \nvalue stream\nDomainA \narchitects\nProgramme/ \nvalue stream\nDomain\u2026 \narchitects\nHybrid:\nCentral EA core team and \nembedded domain architects\nChief\narchitect Enterprise  \narchitect\nProgramme/ \nvalue stream\nSolution X \narchitects\nCentres of Excellence\n\u25cf Dedicated central core team with full-time \nenterprise architects takes ownership for \nkey processes and architecture products\n\u25cf Virtual community of domain and solution \narchitects embedded in key transformation \nprogrammes\nPwC | Enterprise architecturein an agile world 9",
+      "what_to_borrow": "Compare real alternatives using the same internal anatomy. Use accent to identify a recommended option only when the content supports the recommendation.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "1800px single-page render inspected",
+        "reviewed": true
+      },
+      "image_sha256": "761e086b9d951f998c6c9627dfac86571d8ec77c4add7751038cdf052c139a8f",
+      "source_pdf_sha256": "b54f2bd8451f3be70e59d83170fbbac476b2c605b3b55d6e868f8ab31e2c3042",
+      "source_reference_id": "pwc-enterprise-architecture-agile-p09",
+      "preview_path": "a0139f775f12-pwc-enterprise-architecture-agile-p09.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1800,
+        1013
+      ],
+      "extracted_title": null,
+      "title_extraction_note": "Page text extracted. Descriptive index title supplied by host after visual inspection.",
+      "source_document_title": "Enterprise architecture in an agile world"
+    },
+    "93b8da0c98a5": {
+      "id": "93b8da0c98a5",
+      "name": "Architecture and implementation process",
+      "description": "A large assertion title introduces a central white diagram with red directional steps. Two side columns explain the responsibilities and investment logic. The central exhibit illustrates capacity built and then consumed over implementation.",
+      "tags": [
+        "official-pwc",
+        "authentic-published-reference",
+        "16:9",
+        "architecture",
+        "implementation",
+        "mechanism",
+        "curated-selection"
+      ],
+      "path": "93b8da0c98a5-pwc-enterprise-architecture-agile-p20.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.de/de/strategie-organisation-prozesse-systeme/pwc-enterprise-architecture-in-an-agile-world.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.de/de/strategie-organisation-prozesse-systeme/pwc-enterprise-architecture-in-an-agile-world.pdf",
+        "source_page": 20,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "architecture",
+        "implementation",
+        "mechanism"
+      ],
+      "layout": "central explanatory diagram flanked by two text columns",
+      "relationships": [
+        "sequence",
+        "dependency",
+        "capacity consumption"
+      ],
+      "source_url": "https://www.pwc.de/de/strategie-organisation-prozesse-systeme/pwc-enterprise-architecture-in-an-agile-world.pdf",
+      "source": "https://www.pwc.de/de/strategie-organisation-prozesse-systeme/pwc-enterprise-architecture-in-an-agile-world.pdf",
+      "source_page": 20,
+      "source_document": "Enterprise architecture in an agile world",
+      "source_document_path": "../../source-documents/pwc-enterprise-architecture-agile.pdf",
+      "source_filename": "pwc-enterprise-architecture-agile.pdf",
+      "source_date": "No publication date established. PDF metadata modified 21 April 2023.",
+      "page_title": "Architecture and implementation process",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "Architecture development needs to be naturally incorporated \ninto the agile implementation process\nArchitects work on \nvarious levels to build up \nan architectural runway \nfor the delivery teams:\n\u2022 Enterprise architects \ndefine architecture \nenablers at portfolio level \nto realise the architecture \nstrategy and respond to \nstrategic business \ndemands.\n\u2022 Domain/solution architects \nrefine these enablers \nwithin their programmes \nand guide the \nimplementation teams \n(e.g. using agile planning \ntools).\nInvestment in the architec-\nture is guided by enablers, \nwhich address technical \ndebt or capabilities \nrequired by feature teams:\n\u2022 There is a commitment to \ninvest in these enablers \nincrementally \u2013 based on \nspecific demand \u2013 but \ncontinuously,e.g. by \nreserving fixed capacity \n(story points) in each \nsprint/increment.\n\u2022 This should avoid both \nexcessive technical re-\nfactoring and large \namounts of effort in up-\nfront architecture design.\nExample: architectural runway in SAFe\u00ae\nTechnicalfoundation to support near-term feature implementation\nArchitectural\nrunway\nSource: Scaled Agile, Inc.\nFeature\nFeature\nFeature\nFeature\nPwC | Enterprise architecturein an agile world 20",
+      "what_to_borrow": "Place the mechanism at the center and use the flanks to explain responsibilities and control logic. Keep connector directions tied to the actual technical relationship.",
+      "retrieval_eligible": true,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "1800px single-page render inspected",
+        "reviewed": true
+      },
+      "image_sha256": "a81da27d708b26dd5bedf3126b269e538fba20ff5753048ab8b1c6b41cdcae57",
+      "source_pdf_sha256": "b54f2bd8451f3be70e59d83170fbbac476b2c605b3b55d6e868f8ab31e2c3042",
+      "source_reference_id": "pwc-enterprise-architecture-agile-p20",
+      "preview_path": "93b8da0c98a5-pwc-enterprise-architecture-agile-p20.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1800,
+        1013
+      ],
+      "extracted_title": null,
+      "title_extraction_note": "Page text extracted. Descriptive index title supplied by host after visual inspection.",
+      "source_document_title": "Enterprise architecture in an agile world"
+    },
+    "0eb2db3a3b2a": {
+      "id": "0eb2db3a3b2a",
+      "name": "Ecosystem roles",
+      "description": "A long prose column occupies most of the page. A gray sidebar contains a small network diagram and organization examples. Dense prose and small figures limit presentation legibility.",
+      "tags": [
+        "official-pwc",
+        "authentic-published-reference",
+        "16:9",
+        "ecosystem",
+        "roles",
+        "supplementary-semantic-reference",
+        "publication-density",
+        "exclude-analytical-retrieval"
+      ],
+      "path": "0eb2db3a3b2a-pwc-open-insurance-ecosystem-p06.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.nl/nl/actueel-publicaties/assets/pdfs/pwc-whitepaper-insurance-ecosystem.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.nl/nl/actueel-publicaties/assets/pdfs/pwc-whitepaper-insurance-ecosystem.pdf",
+        "source_page": 6,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "ecosystem",
+        "roles"
+      ],
+      "layout": "text-led publication page with evidence sidebar",
+      "relationships": [
+        "network",
+        "classification"
+      ],
+      "source_url": "https://www.pwc.nl/nl/actueel-publicaties/assets/pdfs/pwc-whitepaper-insurance-ecosystem.pdf",
+      "source": "https://www.pwc.nl/nl/actueel-publicaties/assets/pdfs/pwc-whitepaper-insurance-ecosystem.pdf",
+      "source_page": 6,
+      "source_document": "Building the open insurance company of the future",
+      "source_document_path": "../../source-documents/pwc-open-insurance-ecosystem.pdf",
+      "source_filename": "pwc-open-insurance-ecosystem.pdf",
+      "source_date": "January 2021 printed on cover",
+      "page_title": "Ecosystem roles",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "6 | PwC | Building the \u201copen\u201d insurance company of the future\nDifferent roles within an ecosystem - Insurers can take the role of\necosystem orchestrator, partner or engage in a combined approach\nAn ecosystem holds various roles for the organizations within it. Roughly divided, organizations within an ecosystem have\neither the role of orchestrator or partner.\nAs the orchestrator, you are the leader and shaper of the ecosystem. The orchestrator acts as the connecting hub\nfacilitating and encouraging customer interaction while managing the web of partner organizations. Delivering an optimal\ncustomer and partner experience comes with the orchestrator responsibility. This position within the ecosystem allows\ninsurers to change their role from product supplier or risk carrier to (for example) provide a solution around \u2018Health\u2019 and puts\nthem in the frontline towards the customer.\nThe orchestrator defines the customer experience and the terms and conditions, including service levels, under which the\npartners operate in the ecosystem. Therefore, it is a very interesting role to pursue. However, an insurers ability to claim\nthis role is directly correlated with its ability to attract a sufficient number of active customers to the platform. This is\nmainly driven by the level of the customer experience, the strength of the brand and the quality of the offering. Orchestrators\nplay a true balancing act by keeping both customers and partners happy at the same time.\nA partner provides a service or product to the customers of the ecosystem. A partner needs to integrate its service with the\norchestrator platform and with the services of the other partners, to provide one seamless proposition. For a partner, engaging\nin an ecosystem enables him to quickly scale-up his business through the customer base of the ecosystem. Being a partner\nwithin multiple different ecosystems allows an organization a certain level of flexibility. Through engaging in different\necosystems, it can access a wider variety of markets and possibly test or offer new services, products, features and\npricing. For a partner, there is no or only a limited investment needed to join an ecosystem, but they can still benefit from the\nbrand position and customer base of the ecosystem. However, it might be required to adapt to the service levels and business\nmodel of the specific ecosystem.\nInsurance companies with multiple business units or operating in various geographic areas have the option to build a\nportfolio of ecosystems. Those insurers have the option to take on different roles in different ecosystems. This approach of\ntaking various roles across different ecosystems is referred to as the hybrid approach.\n\u2022 Ecosystem owner\n\u2022 Product provider (primary proposition)\n\u2022 Service provider (primary proposition)\n\u2022 Enabling service / data provider\nSuccessful \norchestrators\nSuccessful product \nproviders / enablers\nFigure 3: Various roles and players in an ecosystem\n\u201cBeing an orchestrator is often a new and yet undiscovered role for insurers. It has a\nstrong appeal though: taking on the role of orchestrator has the most potential upside in\nterms of client relationships and revenue.\u201d\nExamples of insurers that ventured successfully into ecosystem business\nmodel can be found in multiple territories, for instance China. Two of the\nmost innovative insurers, Ping An and Zhong An, have a different\nstrategy when it comes to their role within the ecosystem. Whereas Ping\nAn fully orchestrates five ecosystems on which it sells its products, Zhong\nAn sells its more than 240 non-traditional insurance products via its\nnetwork of over 300 partners. Both of them partner up with successful\ndigital platforms such as e-commerce players or social apps.",
+      "what_to_borrow": "Use only the semantic distinction between actor roles. This is a supplementary source, excluded from analytical layout retrieval.",
+      "retrieval_eligible": false,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "1800px single-page render inspected",
+        "reviewed": true
+      },
+      "image_sha256": "2b0c5c98780fce940a7e040d9186fa366d58de5082bc10e894cc5d11c19745d1",
+      "source_pdf_sha256": "49ed703e4c9c4bba5edf392510e4cd771d0674137f5f784966e528253eb26ba4",
+      "source_reference_id": "pwc-open-insurance-ecosystem-p06",
+      "preview_path": "0eb2db3a3b2a-pwc-open-insurance-ecosystem-p06.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1800,
+        1013
+      ],
+      "extracted_title": null,
+      "title_extraction_note": "Page text extracted. Descriptive index title supplied by host after visual inspection.",
+      "source_document_title": "Building the open insurance company of the future"
+    },
+    "4b788b4b87c7": {
+      "id": "4b788b4b87c7",
+      "name": "Orchestrator operating model framework",
+      "description": "A multi-level capability map occupies the left two-thirds. Pink and gray distinguish capability classes. A right text column explains the map. The map has many small labels and publication-level density.",
+      "tags": [
+        "official-pwc",
+        "authentic-published-reference",
+        "16:9",
+        "operating model",
+        "architecture",
+        "capability map",
+        "supplementary-semantic-reference",
+        "publication-density",
+        "exclude-analytical-retrieval"
+      ],
+      "path": "4b788b4b87c7-pwc-open-insurance-ecosystem-p08.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.nl/nl/actueel-publicaties/assets/pdfs/pwc-whitepaper-insurance-ecosystem.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.nl/nl/actueel-publicaties/assets/pdfs/pwc-whitepaper-insurance-ecosystem.pdf",
+        "source_page": 8,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "operating model",
+        "architecture",
+        "capability map"
+      ],
+      "layout": "large framework and explanatory text column",
+      "relationships": [
+        "hierarchy",
+        "grouping",
+        "capability dependency"
+      ],
+      "source_url": "https://www.pwc.nl/nl/actueel-publicaties/assets/pdfs/pwc-whitepaper-insurance-ecosystem.pdf",
+      "source": "https://www.pwc.nl/nl/actueel-publicaties/assets/pdfs/pwc-whitepaper-insurance-ecosystem.pdf",
+      "source_page": 8,
+      "source_document": "Building the open insurance company of the future",
+      "source_document_path": "../../source-documents/pwc-open-insurance-ecosystem.pdf",
+      "source_filename": "pwc-open-insurance-ecosystem.pdf",
+      "source_date": "January 2021 printed on cover",
+      "page_title": "Orchestrator operating model framework",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "The target operating model of an\necosystem orchestrator\nThe key components of an operating model are\nbusiness, experience and technology. The operating\nmodel is the vehicle through which an organization puts\nits strategy into practice. In the framework we specifically\ndeveloped for the transformation from insurer to\necosystem orchestrator (shown in figure 4), we combine\nbusiness expertise (Business), a customer-centric\napproach to thinking (eXperience), and technological\nknow-how (Technology).\nAs a starting point, we used the traditional insurance\noperating model and focus on identifying the key\ncapabilities required for insurers aiming to become an\necosystem orchestrator. We divided these capabilities in\nthose that will remain relevant, but are hygiene factors for\nthe orchestrator role (light grey), those that most insurers\nhave but should be the focus of (significant) improvement\nor change (dark grey) and capabilities that, potentially,\nwould allow you to differentiate your ecosystem from\nothers (pink).\nThe components of the operating model are grouped by\neach component of BXT. These capabilities are\nsupported by the functions of data analytics, risk, legal,\ncompliance & security and finance.\nThe next slides will elaborate further on each component\nof the BXT, and what will change in the operating model\nwhen an insurer opts for the orchestrating role within an\necosystem.\n8 | PwC | Building the \u201copen\u201d insurance company of the future\nFigure 4: Operating model framework for an ecosystem orchestrator\nSource for figure: PwC\u2019s Five archetypes of insurance operating models (to be published)",
+      "what_to_borrow": "Use the tiered grouping and explicit legend as a supplementary semantic reference. Reduce to the few capabilities relevant to the decision.",
+      "retrieval_eligible": false,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "1800px single-page render inspected",
+        "reviewed": true
+      },
+      "image_sha256": "807918c66019a9713078f92b97c6e66aec0853ea0019a44b1e45e53ea0dc79ed",
+      "source_pdf_sha256": "49ed703e4c9c4bba5edf392510e4cd771d0674137f5f784966e528253eb26ba4",
+      "source_reference_id": "pwc-open-insurance-ecosystem-p08",
+      "preview_path": "4b788b4b87c7-pwc-open-insurance-ecosystem-p08.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1800,
+        1013
+      ],
+      "extracted_title": null,
+      "title_extraction_note": "Page text extracted. Descriptive index title supplied by host after visual inspection.",
+      "source_document_title": "Building the open insurance company of the future"
+    },
+    "76a9e39fda6f": {
+      "id": "76a9e39fda6f",
+      "name": "Technical ecosystem integration",
+      "description": "A prose-heavy left column explains technology themes. A right diagram separates user groups, API channels and enterprise systems, with arrows linking layers.",
+      "tags": [
+        "official-pwc",
+        "authentic-published-reference",
+        "16:9",
+        "architecture",
+        "integration",
+        "ecosystem",
+        "supplementary-semantic-reference",
+        "publication-density",
+        "exclude-analytical-retrieval"
+      ],
+      "path": "76a9e39fda6f-pwc-open-insurance-ecosystem-p11.png",
+      "provenance": {
+        "provider": "PwC / Strategy&",
+        "source_url": "https://www.pwc.nl/nl/actueel-publicaties/assets/pdfs/pwc-whitepaper-insurance-ecosystem.pdf",
+        "license": "Third-party PwC / Strategy& copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.nl/nl/actueel-publicaties/assets/pdfs/pwc-whitepaper-insurance-ecosystem.pdf",
+        "source_page": 11,
+        "authentic_official": true,
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "roles": [
+        "architecture",
+        "integration",
+        "ecosystem"
+      ],
+      "layout": "text column and layered architecture sidebar",
+      "relationships": [
+        "layering",
+        "integration",
+        "directional flow"
+      ],
+      "source_url": "https://www.pwc.nl/nl/actueel-publicaties/assets/pdfs/pwc-whitepaper-insurance-ecosystem.pdf",
+      "source": "https://www.pwc.nl/nl/actueel-publicaties/assets/pdfs/pwc-whitepaper-insurance-ecosystem.pdf",
+      "source_page": 11,
+      "source_document": "Building the open insurance company of the future",
+      "source_document_path": "../../source-documents/pwc-open-insurance-ecosystem.pdf",
+      "source_filename": "pwc-open-insurance-ecosystem.pdf",
+      "source_date": "January 2021 printed on cover",
+      "page_title": "Technical ecosystem integration",
+      "page_title_type": "host-authored descriptive index title",
+      "extracted_text": "11 | PwC | Building the \u201copen\u201d insurance company of the future\nDeep Dive: Technology\nAn ecosystem orchestrator should implement tools that allow for quick change, API management and integration,\nand Data & Information management\nWhen entering the world of digital ecosystems, the IT landscape is fundamental. It supports the development of the\ncapabilities required to excel in an ecosystem and should enable experience and tooling that can leverage an ecosystem-\nbased business model (using intelligent platforms like Salesforce or MS Dynamics) while being in control of security and\ntechnical risks. We identified three elements that are essential to realize the required landscape: Way of working, API\nManagement and Data & Information Management.*\nWay of working:\nAlthough not a purely Technology element of the operating model (but a Business one), an agile mindset, setup and DevOps\npractices facilitate the ability to quickly adapt to changes. Challenges with existing legacy systems, such as non-scalability\nand issues in external connectivity must be overcome by modernizing legacy systems. Moving to the Cloud gives\norganizations the flexibility to respond rapidly. Additionally, making use of collaboration tools like Jira/Confluence (amongst\nothers) may foster digital collaboration and communication on the operational level.\nBeing an orchestrator, you\u2019re speed of change (driven by the way of working) and ability to plug and play third-party products\nand services sets the pace for the ecosystem and -partially- determines the success of the ecosystem. Sharing knowledge\nand best practices through the ecosystem (on both strategic, tactical and operational level) supports the quality of services\nacross the ecosystem, but needs to be supported by high-quality technical connections.\nAPI Management and integration:\nA well functioning API framework and enablement process, as well as matching integration capabilities support the\nconnection to external parties, such as your customers and partners. The figure on the right displays an exemplary API\nframework for a digital orchestrator organization. Using modern systems (in-house or SaaS), which offer out-of-the-box\nintegration capabilities, and at the same time exploring best fit solutions for \u2018exploiting\u2019 the power of legacy systems enables\nseamless exchange of information across the ecosystem value chain.\nData & Information Management:\nState-of-the-art data management programs, robust data storing and exchange platforms, analytical applications and mature\nanalytical capabilities fuel data-driven decision making and discovery. This setup enables companies to strengthen the\ncapabilities that leverage the ecosystem, while remaining \u2018in control\u2019 (of risk, legal, security and compliance matters).\nFigure 7: Digital orchestrator organization, technical \nperspective \nEnterprise applications e.g. Policy \nadministration\n(Custom, off-the-shelf, cloud, on premise)\nProducts\nOpen web \nAPI\u2019s\nB2B API\u2019sUI and \nDigital \nexperience\nProduct \nAPI\u2019s\nBusiness \npartners\nTech-savvy \nconsumers\nProduct eco-\nsystems\nOperational and capability usage\nProduct \nintegration \nand \ninnovation\nInternal API\u2019s & orchestration\nDigital \nchannel users\nTech-savvy \nconsumers\nInnovators\nDisruptors\nBusiness \npartners\nDistribution \npartners\nSuppliers\nBuild on existing capabilities/products Build new \n(Innovation)\nAPI framework that supports both: incremental innovation and fundamental\ninnovation e.g. developing new products from the scratch.\n*PwC has various alliances with market leading parties that can help you with the technological enablement. Examples are Data Republic, Cloudera, SAS etc. \nfor data and information management capabilities and MuleSoft for setting up your API framework (amongst others in a broad range of partnerships).",
+      "what_to_borrow": "Borrow the layered integration logic as a supplementary reference. The overall page is too text dense to serve as the main slide layout.",
+      "retrieval_eligible": false,
+      "visual_review": {
+        "reviewer": "host_agent_visual_reasoning",
+        "method": "1800px single-page render inspected",
+        "reviewed": true
+      },
+      "image_sha256": "52d4a3a5d9707112aa58b83c39af9c753856ec340d61ab650f4c919d17cbcfdc",
+      "source_pdf_sha256": "49ed703e4c9c4bba5edf392510e4cd771d0674137f5f784966e528253eb26ba4",
+      "source_reference_id": "pwc-open-insurance-ecosystem-p11",
+      "preview_path": "76a9e39fda6f-pwc-open-insurance-ecosystem-p11.png",
+      "reuse_policy": "Study composition and hierarchy. Source facts, logos and artwork remain source-specific.",
+      "visibility": "public_reference",
+      "image_dimensions": [
+        1800,
+        1013
+      ],
+      "extracted_title": null,
+      "title_extraction_note": "Page text extracted. Descriptive index title supplied by host after visual inspection.",
+      "source_document_title": "Building the open insurance company of the future"
+    },
+    "pwc-iiot-operational-architecture-p12": {
+      "id": "pwc-iiot-operational-architecture-p12",
+      "name": "PwC IIoT operational reference architecture",
+      "path": "pwc-iiot-reference-p12.png",
+      "description": "Figure 5 separates interaction, platform, data messaging, connectivity and source responsibilities into horizontal functional layers. A separate security column spans the layers and connects bidirectionally. Borrow labelled responsibility grouping and separation of shared controls. Its IIoT entities, red palette, exact layer count and portrait page layout are incidental.",
+      "roles": [
+        "technical architecture",
+        "system responsibilities",
+        "shared control"
+      ],
+      "layout": [
+        "functional layers",
+        "cross-cutting control plane",
+        "labelled native blocks"
+      ],
+      "relationships": [
+        "dependency",
+        "data integration",
+        "shared state",
+        "cross-cutting control"
+      ],
+      "source": "https://www.pwc.com/m1/en/publications/documents/role-of-cio-in-integrating-iiot-for-industrial-companies.pdf",
+      "source_page": 12,
+      "source_document": "The Role of the CIO in Integrating IIoT for Industrial Companies",
+      "printed_page": 10,
+      "source_document_path": "../../source-documents/pwc-iiot-architecture.pdf",
+      "source_pdf_sha256": "04d8f39279d6ecc156d5392c874b27f85920869c22b18851ec8f1fbdaaba6976",
+      "provenance": {
+        "generated_reference": false,
+        "source_type": "published_document",
+        "source": "https://www.pwc.com/m1/en/publications/documents/role-of-cio-in-integrating-iiot-for-industrial-companies.pdf",
+        "source_page": 12,
+        "publisher": "PwC",
+        "license": "Third-party PwC copyright. Publicly published source reproduced here as a design-study reference. This material is outside the SlidePoise MIT licence.",
+        "source_family": "pwc-iiot-role-of-cio",
+        "canonical_sha256": "41e8e7ce7ace9eeea4a62489c1dc77089e5129c02d0db2cb1336a73d26b345b5",
+        "source_url": "https://www.pwc.com/m1/en/publications/documents/role-of-cio-in-integrating-iiot-for-industrial-companies.pdf",
+        "redistribution": "Preserve publisher attribution and the source document. No endorsement or open-content licence is asserted."
+      },
+      "tags": [
+        "architecture",
+        "functional layers",
+        "shared state",
+        "shared controls",
+        "system boundary",
+        "data integration"
+      ],
+      "reuse_policy": "style_and_composition_precedent_only",
+      "retrieval_eligible": true,
+      "source_filename": "pwc-iiot-architecture.pdf",
+      "source_url": "https://www.pwc.com/m1/en/publications/documents/role-of-cio-in-integrating-iiot-for-industrial-companies.pdf",
+      "preview_path": "pwc-iiot-reference-p12.png",
+      "image_sha256": "41e8e7ce7ace9eeea4a62489c1dc77089e5129c02d0db2cb1336a73d26b345b5",
+      "visibility": "public_reference"
+    }
+  }
+}

@@ -43,6 +43,10 @@ def test_sdist_builds_self_contained_wheel_and_runs_outside_repository(tmp_path)
         assert "webapp/ui/session-panel.js" in names
         assert "webapp/console/index.html" in names
         assert "framework/_bundled/slidepoise/scripts/generation_handoff.py" in names
+        assert "framework/_bundled/profiles/pwc-public/NOTICE.md" in names
+        public_catalog = json.loads(wheel.read("framework/_bundled/profiles/pwc-public/libraries/visual_references/catalog.json"))
+        assert all(item["provenance"]["source_type"] == "published_document" for item in public_catalog["items"].values())
+        assert "framework/_bundled/profiles/pwc-public/source-documents/strategyand-b2b-saas-2024.pdf" in names
         assert wheel.read("webapp/console/mark.svg") == (source / "webapp/console/mark.svg").read_bytes()
         assert any(name.endswith(".dist-info/licenses/LICENSE") for name in names)
         assert not any("__pycache__" in name for name in names)

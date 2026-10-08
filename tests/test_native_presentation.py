@@ -57,6 +57,42 @@ def test_malformed_chart_data_cannot_overwrite_a_usable_deck(tmp_path):
     assert target.read_bytes() == b"previous usable output"
 
 
+def test_arrowhead_size_survives_native_lines_and_freeform_routes(tmp_path):
+    scene = {"dimensions_px": [1600, 900], "objects": [
+        {"id": "short", "kind": "connector_graph", "source_routes_px": [],
+         "target_routes_px": [[[100, 100], [130, 100]]], "arrowhead_treatment": "triangle_at_target",
+         "arrowhead": {"powerpoint_size": "sm"}, "style": {"width_px": 1.6}},
+        {"id": "return", "kind": "connector_graph", "source_routes_px": [],
+         "target_routes_px": [[[400, 200], [400, 300], [200, 300], [200, 200]]],
+         "arrowhead_treatment": "open_arrow_at_target",
+         "arrowhead": {"powerpoint_width": "sm", "powerpoint_length": "lg"}, "style": {"width_px": 2}},
+        {"id": "default", "kind": "connector_graph", "source_routes_px": [],
+         "target_routes_px": [[[100, 400], [300, 400]]], "arrowhead_treatment": "triangle_at_target",
+         "style": {"width_px": 2}},
+    ]}
+    result, target = emit(scene, tmp_path)
+    assert result.returncode == 0, result.stderr
+    with zipfile.ZipFile(target) as archive:
+        root = ET.fromstring(archive.read("ppt/slides/slide1.xml"))
+        ends = root.findall('.//a:tailEnd', NS)
+        assert [end.attrib for end in ends] == [
+            {"type": "triangle", "w": "sm", "len": "sm"},
+            {"type": "arrow", "w": "sm", "len": "lg"},
+            {"type": "triangle", "w": "med", "len": "med"},
+        ]
+
+
+def test_invalid_arrowhead_size_preserves_previous_output(tmp_path):
+    target = tmp_path / "slide.pptx"
+    target.write_bytes(b"previous usable output")
+    scene = {"dimensions_px": [1600, 900], "objects": [{"id": "flow", "kind": "connector_graph",
+             "source_routes_px": [], "target_routes_px": [[[100, 100], [200, 100]]],
+             "arrowhead_treatment": "triangle_at_target", "arrowhead": {"powerpoint_size": "huge"}}]}
+    result, _ = emit(scene, tmp_path)
+    assert result.returncode != 0 and "native arrowhead dimensions" in result.stderr
+    assert target.read_bytes() == b"previous usable output"
+
+
 @pytest.mark.parametrize(("chart_type", "bar_direction"), [("column", "col"), ("bar", "bar")])
 def test_chart_type_preserves_authored_orientation(tmp_path, chart_type, bar_direction):
     scene = {"dimensions_px": [1600, 900], "objects": [{

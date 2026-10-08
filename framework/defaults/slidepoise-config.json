@@ -411,7 +411,7 @@
       },
       "arrowhead": {
         "type": "triangle",
-        "powerpoint_size": "lg",
+        "powerpoint_size": "med",
         "minimum_visible_endpoint_px": 18,
         "minimum_clear_segment_px": 16,
         "length_px": 14,

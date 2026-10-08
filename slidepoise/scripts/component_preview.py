@@ -17,9 +17,11 @@ def ensure_preview(source: Path, preview: Path, slide_number: int = 1) -> Path:
     digest = hashlib.sha256(source.read_bytes()).hexdigest()
     expected = {"source_sha256": digest, "slide_number": slide_number}
     if preview.is_file():
-        if binding.is_file() and json.loads(binding.read_text()) == expected:
-            return preview
-        if not binding.is_file() and preview.stat().st_mtime_ns >= source.stat().st_mtime_ns:
+        try:
+            recorded = json.loads(binding.read_text()) if binding.is_file() else {}
+        except (ValueError, OSError):
+            recorded = {}
+        if all(recorded.get(key) == value for key, value in expected.items()) and recorded.get("preview_sha256") == hashlib.sha256(preview.read_bytes()).hexdigest():
             return preview
     command = [sys.executable, str(Path(__file__).with_name("slidepoise_runtime.py")),
                "render-preview", "--pptx", str(source), "--output", str(preview),
@@ -30,5 +32,6 @@ def ensure_preview(source: Path, preview: Path, slide_number: int = 1) -> Path:
                          "Install LibreOffice and Poppler, or provide a host-rendered preview. " + result.stderr.strip())
     if hashlib.sha256(source.read_bytes()).hexdigest() != digest:
         raise ValueError("The component changed during preview rendering. Retry with its latest source.")
+    expected["preview_sha256"] = hashlib.sha256(preview.read_bytes()).hexdigest()
     binding.write_text(json.dumps(expected) + "\n")
     return preview

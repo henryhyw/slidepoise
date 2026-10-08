@@ -1,6 +1,8 @@
 # Profile references, shared Library Sets, and current-chat resources
 
-During a run, use `scripts/list_library.py --config work/resolved-config.json --query "keywords"`. This reads the captured profile, session-selected sets, provider switches and configured reference location used by generation. Resolve configuration again after settings change. Use `--profile <profile_id>` only to browse a shared profile outside a run. Filtering reduces recall only. The host Agent chooses by semantic and visual fit.
+During a run, retrieve visual references for every slide using `scripts/retrieve_references.py --config work/resolved-config.json --intent work/slide-intent.json --output work/reference-candidates.json --sheet work/reference-candidates.png`. Read `reference-retrieval.md` for the indexed search, provenance checks and host selection workflow. This is the default resource step and needs no separate user request.
+
+For general catalog browsing, use `scripts/list_library.py --config work/resolved-config.json --query "keywords"`. This reads the captured profile, session-selected sets, provider switches and configured reference location used by generation. Resolve configuration again after settings change. Use `--profile <profile_id>` only to browse a shared profile outside a run. Filtering reduces recall only. The host Agent chooses by semantic and visual fit.
 
 ## Sources
 - `<profiles-root>/<profile-id>/libraries/visual_references/catalog.json` contains style and communication precedents. Never copy their factual content by default.
@@ -9,7 +11,7 @@ During a run, use `scripts/list_library.py --config work/resolved-config.json --
 - Current-chat/user files and supplied project materials contain exact images, icons, logos, screenshots and other subject-specific assets. Inspect relevant source directories or documents before reaching for remote substitutes. A reusable Profile supplies a style and available libraries, not an inventory of the subject being presented.
 
 ## Profile-aware selection
-Read `resolved_profile.visual_reference_priorities` after config resolution. Inspect relevant profile references first, then add slide-specific precedents when useful. A visual reference teaches visual language; semantic intent/user content still determines composition.
+Read `resolved_profile.visual_reference_priorities` after config resolution. Treat these as candidates to inspect alongside references retrieved for the current communication job. Inspect the exact user-supplied reference first when the user names it as the desired direction. Preserve its origin and the intended use. Select references for identifiable jobs such as explaining a dependency, comparing alternatives or showing how evidence supports a decision. Record the observed treatment to borrow and the incidental facts or geometry to leave behind. A visual reference teaches visual language. Semantic intent and user content still determine composition.
 
 The host Agent selects resources by semantic role, visual fit, profile compatibility, identity requirements, and downstream reconstruction value. Do not turn selection into a numeric relevance winner. Respect configured budgets; user-required assets are exempt from the optional-asset cap.
 
@@ -22,6 +24,18 @@ Keep user requirements in `user_required_assets` and mark selected assets with `
 Reconsider selection when a generated design reveals a useful visual role or a review exposes missing identity or evidence. An unselected pictogram may suggest a role worth filling with a canonical asset. Evaluate its purpose, retrieve a suitable original when useful, then update the selection and recompile. Remove meaningless graphics after considering their role. Preserve explicit exclusions and closed asset policies. If a Library Set is disabled by a session override, respect that boundary and revisit the setting only within the user's authority.
 
 Exact user-required assets override packaged alternatives. Brand identity requires an exact asset; never substitute a generic icon for a missing logo.
+
+## Research identity and explanatory assets
+
+When named organizations or products are central to a comparison, precedent, ecosystem or example, assess whether recognizable identity would help the reader locate and connect the evidence. When it would, search the enabled Wikimedia or official sources, inspect actual logo candidates and select an appropriate exact mark. A user request for logos where useful calls for this active consideration on the relevant pages. A plain-text treatment remains valid when it communicates better, the mention is incidental or a specific usage restriction applies.
+
+Apply the same initiative to subject-specific evidence and explanatory assets, including product views, physical objects and useful icons. Inspect supplied materials first, then use the relevant available sources. Do not stop at an empty local catalog when remote retrieval is enabled and a useful role remains unresolved.
+
+Record concrete candidate files or source pages and the communication decision under `selection_reasoning`, using a field such as `identity_assets`. A promise to search, an enabled provider or a generic statement that logos are unnecessary is not candidate inspection. Keep a retrieval failure distinct from a visual decision. Try a relevant alternative source when reasonable, and state a genuine limitation accurately.
+
+Use each selected logo as an identity cue with the adjacent evidence or actor it identifies. Preserve its canonical proportions and colours unless an authorised variant is available. Distinguish product identity from parent-company identity. Keep the claim's scope explicit so a source citation cannot be mistaken for a partner badge or endorsement. Do not place every logo in a disconnected row simply to show that assets were used.
+
+An Agent's preference for restraint, a concern about endorsement or a restriction on one asset does not justify a blanket ban on brand marks. Trace actual restrictions to the user or source, evaluate their scope and keep unrelated choices open. There is no logo quota and no requirement to illustrate incidental names.
 
 ## Generation context sheet
 After retrieval, the selected resource pool is consolidated into `work/generation-context-sheet.png` with `scripts/prepare_resource_context.py`.
@@ -56,17 +70,23 @@ A profile may allow model-generated illustrations even when known reusable asset
 ## Icons
 Use the existing `icon` / `icon_slot` path for icons and pictograms alike. Prefer profile-approved packaged icons when available. The logical icon slot is separate from any optional visible background surface. A generation-only localization boundary is scaffolding, not a reconstructable decorative box.
 
+When a generated design introduces a useful generic symbol, treat it as a retrieval lead. Search Remix Icon for the same meaning and a compatible silhouette before rejecting the composition or removing the visual. Inspect the candidates at the actual slot size beside the surrounding type and rules. Record the chosen canonical asset and any visible difference. Exact brand identity continues to require an authentic source. If no library match preserves the meaning, assess whether the mark is a simple native diagram shape or a permitted novel illustration, or revise that specific mark upstream.
+
+Choose a Remix variant that suits the slide's visual language. Apparent weight depends on viewBox, painted bounds, stroke width, slot size and neighbouring type. Compare real SVGs in the PowerPoint render. Remix outline icons use filled paths. Adjust their apparent weight through canonical variant, symbol choice, scale and surrounding typography. Preserve their geometry and a coherent treatment among peers.
+
 ## Remote sets
 Check `resolved_config.library_sets.selected` and `resolved_config.remote_sources` before any remote query. Remix Icon and Wikimedia identity assets are remote Library Sets. Selecting a set makes its provider available. A session may override its captured set selection without changing the profile. Profiles still govern visual treatment and appropriate use.
 
 When the user requests a temporary source change, update that run's `library_sets` override and resolve the config again. Change the profile's selected sets only when the user wants the choice to recur. Trace which slides use the changed source and revise only those whose inputs changed.
 
-- Remix Icon is the consistent generic-icon source. Fetch an official line/fill pair with `scripts/fetch_remix_icon_pair.py --config work/resolved-config.json`, keep both candidates in the run cache with provenance, and include both on the resource context sheet. Read `icon-variants.md` before choosing the post-generation reconstruction variant.
+- Remix Icon supplies a consistent line/fill family. Fetch an official pair with `scripts/fetch_remix_icon_pair.py --config work/resolved-config.json`, keep both candidates in the run cache with provenance, and include both on the resource context sheet. Read `icon-variants.md` before choosing the post-generation reconstruction variant.
 - Wikimedia Commons is the structured candidate source for exact logos and public media. Use `scripts/search_wikimedia_commons.py`, inspect the exact file page, then use `scripts/fetch_wikimedia_commons_asset.py` only after verifying identity, source, author, license, attribution, and trademark constraints. Commons availability does not itself grant trademark permission.
 
-An official organization site or brand portal remains a valid exact-logo source when the active profile allows it. The Agent chooses an exact official HTTPS asset and records usage terms with `scripts/fetch_remote_asset.py`. If identity or permission cannot be verified, pause and ask the user. Persistent library updates require an explicit profile-maintenance request.
+An official organization site or brand portal remains a valid exact-logo source when the active profile allows it. The Agent chooses an exact official HTTPS asset and records usage terms with `scripts/fetch_remote_asset.py`. Keep copyright provenance and trademark guidance distinct. Resolve an uncertain candidate through another suitable source or an accurate text treatment, and continue independent work. Ask only when an unresolved asset constraint prevents a material user requirement. Persistent library updates require an explicit profile-maintenance request.
 
 ## Components
 Components provide design grammar without fixing the layout. Select one only when it is structurally useful, carry `component_id` + reason, pass the focused preview through the context sheet, and adapt its sample content, counts and dimensions to the slide. Assign `component_id` downstream only when the accepted target actually uses that grammar.
 
 Imported PPTX components retain their native source and selected page. Resource preparation renders a current preview of that page when needed. If the local renderer is unavailable, use the host's native renderer and supply the matching preview before generation. Image-only precedents remain image-only. Never describe them as editable PowerPoint components.
+
+Reuse stored previews when their binding matches the native source hash, selected page and preview hash. Render again after a source or page change. Carry that source binding into the generation resources. Supported chart and table components provide constructor defaults for native reconstruction. Adapt those defaults to the accepted design and real data. Other imported pages provide native object precedents for semantic reconstruction. A preview alone does not define an arbitrary PowerPoint component emitter.

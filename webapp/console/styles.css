@@ -327,3 +327,8 @@ dialog.component-dialog { box-sizing: border-box; width: min(1220px, calc(100vw 
 .generation-choice strong { color: var(--ink); font-size: 13px; }
 .generation-choice small { margin-top: 3px; font-size: 11px; }
 #editor-fields #generation-tool-field[hidden] { display: none; }
+
+.reference-search { display:grid; grid-template-columns:minmax(0,2fr) minmax(180px,1fr); gap:16px; margin:20px 0 8px; }
+.reference-search label { display:grid; gap:8px; font-size:12px; }
+.reference-search input, .reference-search select { width:100%; min-width:0; padding:11px; border:1px solid #d8dde3; border-radius:8px; background:white; color:inherit; font:inherit; }
+@media (max-width:600px) { .reference-search { grid-template-columns:1fr; } }

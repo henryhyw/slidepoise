@@ -8,6 +8,8 @@ Use a fitted freeform only for a meaningful editable irregular shape that cannot
 ## Profile authority
 The resolved profile contributes exact design values and hard rules before reconstruction. The accepted generated image remains the source of truth for composition and non-canonical visual details. Once accepted, its substantive geometry is frozen: reconstruction must not aesthetically realign, redistribute, simplify, or delete meaningful content.
 
+For an authorised wording-only refinement, `content-refinement.md` defines the narrow exception for native text content. The accepted image still governs composition and geometry. Record the original and revised strings, update the intent and obligations, and use `authored_text` for the revised native wording. Keep the packaged reconstruction path and inspect the actual render. This exception does not authorise changing data, meaning or visual relationships.
+
 If a profile rule conflicts with a generated candidate, that conflict should normally have been caught during generation review. Mechanical evidence collection may report explicit violations that can be established without visual judgement. The Agent decides the response.
 
 ## Text

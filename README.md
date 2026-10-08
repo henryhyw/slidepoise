@@ -72,6 +72,8 @@ The [technical architecture](docs/ARCHITECTURE.md) explains the semantic map, me
 
 Save fonts, colours and visual references in a **Profile**, a reusable style configuration. The included [Consulting, Editorial Archive and Monochrome Modern profiles](profiles/README.md) provide starting points that you can adapt with your Agent.
 
+The [public PwC and Strategy& reference collection](profiles/pwc-public/README.md) includes a complete consulting deck and indexed pages from related publications. For each slide, the Agent retrieves candidates by communication purpose and information structure, then inspects and selects useful precedents. Source provenance and exclusions stay attached to the selected pages. Private references can remain in local profiles.
+
 Keep logos, icons, artwork and reusable PowerPoint components in asset libraries called **Library Sets**. SlidePoise includes access to Remix Icon and Wikimedia Commons, and you can add your own files. Selected artwork guides image generation. During reconstruction, the Agent places the original files in the slide so their identity and detail are preserved.
 
 Small generated illustrations can be refined separately at higher resolution, including transparent backgrounds. The Agent checks them in the chosen composition before replacing the original image regions. The [third editorial slide](examples/personal-thinking-system/assets/s03-practice-render.png) uses three such illustrations.

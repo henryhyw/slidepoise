@@ -21,6 +21,8 @@ Establish whether the deck must stand on its own or accompanies a presenter, and
 
 Do not store detailed visual coordinates in the outline.
 
+Keep the outline's content categories independent of slide layout. Compare possible visual approaches using `visual-exploration.md` before assigning page workers a composition. Do not turn provisional choices such as equal columns, no logos or a particular table into inherited requirements. Pass their rationale and remaining freedom when a reasoned choice is useful.
+
 ## Shared visual decisions
 
 Before independent page production, author `work/deck-design.json` from the user's requirements, Profile, references and communication needs. Use `schemas/deck-design.example.json` as a starting point. This is the Agent's shared design brief, not a template or an automatic consistency score.
@@ -33,7 +35,7 @@ Revisit this inventory after generated candidates and again after actual PowerPo
 
 The resolved configuration owns the shared frame and physical canvas. The generated image owns only the substantive region. Header, footer, page numbers and master-frame rules are excluded from generation even when a style reference shows them. All workers use the same enabled frame heights and content offset. Never turn off the frame merely to make a generated image fit.
 
-Generate a representative content page first when its visual language will guide other pages. Inspect it against the shared brief, refine the brief if necessary, and make its accepted substantive image available as a style reference. Rebuild affected generation requests after changing the shared design. A diagram and a financial table can use different layouts while retaining the same title scale, text hierarchy, rules and accent meanings.
+Generate a representative content page first when its visual language will guide other pages. Inspect it against the shared brief, refine the brief if necessary, and make its accepted substantive image available as a style reference when the user's source policy permits generated references. Carry its typography, colour and visual finish across pages without copying its layout into unrelated arguments. Rebuild affected generation requests after changing the shared design. A diagram and a financial table can use different layouts while retaining the same title scale, text hierarchy, rules and accent meanings.
 
 Pass the same deck design into each generation request and read it during semantic mapping. Keep its identity and source hash with the page's inputs. This prevents the shared direction from becoming a parent-only note that page workers never consume.
 

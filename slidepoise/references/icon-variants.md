@@ -1,4 +1,8 @@
-# Remix Icon variants
+# Icon family and variant review
+
+Use Remix Icon for generic public icons. Compare its canonical line and fill variants at the intended size. Use `resource-library.md` for retrieval. A generated generic icon can lead to a post-generation Remix search. Preserve a good composition while resolving its symbols to suitable canonical assets.
+
+## Remix Icon pairs
 
 Read when generic public icons are useful. Remix Icon supplies most concepts as one 24 x 24 line/fill pair. When `remote_sources.remix_icon.enabled` is true, retrieve both official SVGs before generation with `scripts/fetch_remix_icon_pair.py --config work/resolved-config.json`. Keep them in the run cache and retain the pair provenance.
 

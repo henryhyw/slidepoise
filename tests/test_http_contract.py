@@ -194,3 +194,38 @@ def test_generation_preferences_are_shared_revisioned_and_validated(service):
     status, _, _ = request('POST', '/api/generation', {'values': {'mode': 'tool', 'tool': ''}, 'revision': current['revision']})
     assert status == 400
     assert json.loads(request('GET', '/api/generation')[2])['values']['mode'] == 'manual'
+
+
+def test_console_reference_search_uses_live_metadata_and_source_restrictions(service):
+    from io import BytesIO
+    from PIL import Image
+    _, request = service
+    image = BytesIO()
+    Image.new('RGB', (12, 12), 'white').save(image, 'PNG')
+    created = {}
+    for origin in ['published_document', 'user_private_document', 'generated_image', 'unknown']:
+        status, _, raw = request('POST', '/api/profile/reference/add', {
+            'profile_id':'consulting', 'filename':'reference.png', 'name':origin,
+            'description':'Orchestration architecture and data flow', 'tags':['architecture'],
+            'source_type':origin, 'source_url':'https://example.org/report.pdf', 'source_page':'12',
+            'content_base64':base64.b64encode(image.getvalue()).decode()})
+        assert status == 201
+        created[origin] = json.loads(raw)['id']
+    query = '/api/reference-search?' + urlencode({'profile':'consulting','query':'orchestration architecture'})
+    status, _, raw = request('GET', query)
+    assert status == 200
+    result = json.loads(raw)
+    ids = {item['id'] for item in result['items']}
+    assert created['published_document'] in ids and created['user_private_document'] in ids
+    assert created['generated_image'] not in ids and created['unknown'] not in ids
+    assert result['selection_owner'] == 'host_agent'
+    _, _, raw = request('GET', query + '&authenticity=any')
+    assert set(created.values()) <= {item['id'] for item in json.loads(raw)['items']}
+    _, _, raw = request('GET', '/api/library?kind=visual_references&profile=consulting')
+    status, _, _ = request('POST', '/api/profile/reference/update', {
+        'profile_id':'consulting', 'id':created['published_document'],
+        'revision':json.loads(raw)['revision'], 'values':{'retrieval_eligible':False}})
+    assert status == 200
+    _, _, raw = request('GET', query)
+    assert created['published_document'] not in {item['id'] for item in json.loads(raw)['items']}
+    assert request('GET', query + '&authenticity=unsupported')[0] == 400

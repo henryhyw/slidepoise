@@ -85,7 +85,9 @@ def test_measured_group_endpoints_compile_without_becoming_content_entities(tmp_
                          "semantic_topology_verified": True, "visual_route_reviewed": True,
                          "visual_route_decision": "The clear horizontal corridor connects the two stage groups.",
                          "route_mode": "minimal_orthogonal", "junction_style": "none"},
-                     "visual_constraints": {"arrowhead_treatment": "open_arrow_at_target"}})
+                     "visual_constraints": {"arrowhead_treatment": "open_arrow_at_target",
+                         "arrowhead": {"powerpoint_size": "sm"},
+                         "stroke_style": {"stroke": "#006564", "stroke_width_px": 1.6}}})
     handoff = {"content_obligations": [{"id": "flow", "description": "Drafting proceeds to review",
         "entity_ids": ["flow"], "connection": {"entity_id": "flow", "source_entities": ["draft-group"],
             "target_entities": ["review-group"], "directed": True}}]}
@@ -102,6 +104,9 @@ def test_measured_group_endpoints_compile_without_becoming_content_entities(tmp_
     connector = next(item for item in scene["objects"] if item["id"] == "flow")
     # Ports belong to the enclosing groups, not the smaller visible children.
     assert connector["target_routes_px"] == [[[300.0, 160.0], [650.0, 160.0]]]
+    assert connector["style"]["color"] == "#006564"
+    assert connector["style"]["width_px"] == 1.6
+    assert connector["arrowhead"]["powerpoint_size"] == "sm"
     measured = json.loads((tmp_path / "reconstruction/measurement/slide_entities.json").read_text())
     missing = deepcopy(measured)
     missing["groups"].pop()

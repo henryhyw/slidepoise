@@ -5,6 +5,8 @@ A visual question must be answered by looking at the relevant image. Never infer
 For collage, intrinsic lettering, texture, and image-text overlaps, read `raster-composition.md`. Inspect both intended output scale and relevant details. Reviews must include actual observations and SHA-256 bindings for every inspected artifact. Measurement review binds the accepted image, active semantic map, measured scene, and overlay. Reconstruction review binds the accepted image, constructor scene, PPTX, and persisted render. A changed file invalidates its old review. These checks establish evidence freshness only.
 
 ## Generation review
+Start with a reading of the actual slide before rereading its intent or the author's explanation. State briefly what the intended audience could understand from the page alone. For a journey or use case, identify whose situation is being shown, what they need, why another participant acts and what changes for each participant. Record missing context as a finding. Internal stage labels and chronology do not establish that context. If the explanation depends on facts remembered from the brief, revise the page's information structure before judging its polish.
+
 Inspect the candidate image itself. Judge:
 - the conclusion a reader would draw from the image and whether the evidence supports it, including uncertainty that could be concealed by a checkmark, arrow, grouping, colour or visual metaphor;
 - whether the intended comparison, dependency or other relationship is visible, with values attached unambiguously to the evidence they describe and comparable quantities using a consistent basis;

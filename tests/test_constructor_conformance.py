@@ -1,4 +1,26 @@
-from slidepoise.reconstruction.conformance import _chart_structure_failures, _structural_boundary_collisions
+from slidepoise.reconstruction.conformance import _chart_structure_failures, _structural_boundary_collisions, _connector_text_intersections
+
+
+def test_connector_crossing_label_is_reported_for_visual_review():
+    objects = [
+        {"id": "read", "kind": "connector_graph", "source_routes_px": [],
+         "target_routes_px": [[[100, 100], [100, 300]]]},
+        {"id": "label", "kind": "textbox", "bbox_px": [80, 180, 80, 40]},
+        {"id": "clear", "kind": "textbox", "bbox_px": [200, 180, 80, 40]},
+    ]
+    findings = _connector_text_intersections(objects)
+    assert len(findings) == 1
+    assert findings[0]["connector"] == "read" and findings[0]["text"] == "label"
+    assert findings[0]["segments"][0]["start_px"] == [100, 100]
+
+
+def test_connector_contact_at_text_boundary_is_not_interior_crossing():
+    objects = [
+        {"id": "flow", "kind": "connector_graph", "source_routes_px": [],
+         "target_routes_px": [[[0, 50], [100, 50]]]},
+        {"id": "target", "kind": "textbox", "bbox_px": [100, 20, 80, 60]},
+    ]
+    assert _connector_text_intersections(objects) == []
 
 
 def test_text_crossing_thin_separator_is_reported():
