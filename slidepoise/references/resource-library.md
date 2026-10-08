@@ -61,7 +61,7 @@ For each selected current-chat/exact identity asset:
 If a generated slot is materially incompatible with the canonical asset ratio, revise the upstream composition. Never stretch the asset to fill it.
 
 ## Novel illustrations versus known assets
-A profile may allow model-generated illustrations even when known reusable assets use a controlled vocabulary. This is not permission to invent substitute logos/icons/user images.
+A profile may allow model-generated illustrations even when known reusable assets use a controlled vocabulary. Exact logos, required project icons and supplied user images retain their authentic identity. Generic explanatory symbols have no equivalent identity restriction merely because they are absent from the current catalog.
 
 - Known and reusable visual identity comes from the selected resource pool.
 - Novel illustrations are allowed only according to the active profile's `novel_illustrations` guidance and the slide's communication role.
@@ -70,7 +70,7 @@ A profile may allow model-generated illustrations even when known reusable asset
 ## Icons
 Use the existing `icon` / `icon_slot` path for icons and pictograms alike. Prefer profile-approved packaged icons when available. The logical icon slot is separate from any optional visible background surface. A generation-only localization boundary is scaffolding, not a reconstructable decorative box.
 
-When a generated design introduces a useful generic symbol, treat it as a retrieval lead. Search Remix Icon for the same meaning and a compatible silhouette before rejecting the composition or removing the visual. Inspect the candidates at the actual slot size beside the surrounding type and rules. Record the chosen canonical asset and any visible difference. Exact brand identity continues to require an authentic source. If no library match preserves the meaning, assess whether the mark is a simple native diagram shape or a permitted novel illustration, or revise that specific mark upstream.
+When a generated design introduces a useful generic symbol, treat it as a retrieval lead. Search Remix Icon for the same meaning and a compatible silhouette before rejecting the composition or removing the visual. Inspect the candidates at the actual slot size beside the surrounding type and rules. Record the chosen canonical asset and any visible difference. Exact brand identity continues to require an authentic source. If no library match preserves the meaning and treatment, use a suitable original crop, a simple native diagram shape or a permitted novel illustration. Read `raster-composition.md` and `illustration-refinement.md` to preserve or improve the artwork, including actual transparent output when useful. Do not replace a distinctive explanatory visual with a weak library match solely to keep every internal stroke editable.
 
 Choose a Remix variant that suits the slide's visual language. Apparent weight depends on viewBox, painted bounds, stroke width, slot size and neighbouring type. Compare real SVGs in the PowerPoint render. Remix outline icons use filled paths. Adjust their apparent weight through canonical variant, symbol choice, scale and surrounding typography. Preserve their geometry and a coherent treatment among peers.
 
