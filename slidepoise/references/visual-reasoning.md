@@ -37,6 +37,11 @@ OpenCV may reveal pixel evidence. It cannot decide semantic ownership, visual pe
 
 
 ## Reconstruction review
+
+An optical alignment pass is required for every reconstructed slide before acceptance. Compare the accepted target and actual PowerPoint content crop at the same scale, first as a whole and then by substantive region. Inspect visible text ink, shared baselines, apparent artwork centres, visual mass and surrounding gaps. Judge the intended relationships between peers and preserve deliberate asymmetry. Matching boxes, numerical centring or successful text fitting cannot establish optical alignment. Inspect the full-slide render for alignment with the inherited frame as well.
+
+When a rendered offset disrupts an intended relationship, follow `reconstruction.md` to correct it within the accepted composition. Re-render and inspect the affected region and its neighbours. Record the concrete alignment observations in the existing reconstruction review, including any mismatch, affected entities, correction and observed result. If no correction is needed, describe the visible relationships that support that judgement. The host Agent owns this decision without an automatic alignment score or threshold.
+
 Inspect the accepted target beside the generation-region crop of the reconstructed render, and inspect the full-slide render separately for the master frame. Judge:
 - foreground/background colour fidelity and profile compliance;
 - typography hierarchy, exact font-size equality within every declared `typography_group`, wrapping, readability, and prohibited treatments such as accidental italics;
@@ -51,7 +56,7 @@ Inspect the accepted target beside the generation-region crop of the reconstruct
 - gradient fidelity when a profile gradient is present, including whether a raster/canonical region was used instead of inventing unsupported stops;
 - Slide Master header/footer height, content, alignment, and slide number;
 - shape geometry, z-order, raster use, whole-page density/whitespace balance, and professional finish;
-- for novel illustrations, whether the chosen original/refined raster remains aspect-correct, visually clean, and centered/maximized inside the frozen measured box without changing layout geometry.
+- for novel illustrations, whether the chosen original/refined raster remains aspect-correct and visually clean within its intended region, preserves its registered canvas and internal placement, and retains the intended optical alignment after any authorised local offset.
 
 If an issue requires visual judgement, record it in the host-Agent review artifact. Deterministic scripts may enforce an explicit resulting constraint but may not create or substitute the judgement.
 

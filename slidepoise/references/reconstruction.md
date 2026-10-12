@@ -6,7 +6,7 @@ Use native PowerPoint text, shapes, tables, charts, and connector graphs when th
 Use a fitted freeform only for a meaningful editable irregular shape that cannot be represented by a standard PowerPoint primitive. Use a screenshot crop for a genuine raster/illustrative region when no exact reusable asset exists and editable decomposition would invent unsupported structure. This raster route is also appropriate for a proprietary/profile gradient whose exact editable stops are not specified and no canonical gradient asset is available.
 
 ## Profile authority
-The resolved profile contributes exact design values and hard rules before reconstruction. The accepted generated image remains the source of truth for composition and non-canonical visual details. Once accepted, its substantive geometry is frozen: reconstruction must not aesthetically realign, redistribute, simplify, or delete meaningful content.
+The resolved profile contributes exact design values and hard rules before reconstruction. The accepted generated image remains the source of truth for composition and non-canonical visual details. Preserve its substantive layout, hierarchy, grouping and meaningful content. Local corrective offsets are permitted when rendered text metrics, asset insets or native geometry disturb the intended optical alignment. The host Agent must inspect the actual render, identify the affected visual relationship and verify that the correction restores it within the accepted composition. This does not authorise unrelated redistribution, simplification or deletion of content. Follow the optical alignment guidance below.
 
 For an authorised wording-only refinement, `content-refinement.md` defines the narrow exception for native text content. The accepted image still governs composition and geometry. Record the original and revised strings, update the intent and obligations, and use `authored_text` for the revised native wording. Keep the packaged reconstruction path and inspect the actual render. This exception does not authorise changing data, meaning or visual relationships.
 
@@ -94,8 +94,13 @@ The host marks meaningful dividers with `structural_boundary: true`. A textbox a
 
 Every meaningful visible entity in the accepted target must survive reconstruction. It must either emit its own PowerPoint object or explicitly identify a distinct emitted `render_owner` that replaces/owns it. `measurement_evidence` may be non-emitting only when `meaningful_visible=false`. Never remove an entity merely because a canonical asset is unavailable or because the Agent thinks the slide would be simpler without it; such a candidate should have been rejected upstream.
 
-## Alignment
-The host inspects the measured overlay and authors any necessary local corrections in `geometry_adjustments`. Runtime applies those exact, version-checked decisions. Without a decision it keeps the measured position. It does not infer peers, choose median anchors, snap nearby objects, or decide whether a movement is visually appropriate. Re-render and inspect after every correction batch. Discuss material compositional changes with the user when their intent is unclear.
+## Optical alignment
+
+The host Agent must check optical alignment on every reconstructed slide before acceptance. Inspect the measured overlay for geometry evidence, then compare the actual PowerPoint render with the accepted target at the same scale. Judge visible text edges and baselines, apparent centres and visual mass of artwork, and gaps within and between related groups. Equal textbox or container coordinates do not establish equal visible alignment. Preserve intentional asymmetry and distinct hierarchy when deciding which elements should align.
+
+Author necessary local position corrections in `geometry_adjustments`. Inspect font metrics, text insets and asset padding when they explain an apparent offset. Preserve registered raster canvases and their internal placement as required by the raster-source rules. Runtime applies the exact, version-checked decisions. Without a decision it keeps the measured position. It does not infer peers, choose median anchors, snap nearby objects, or decide whether a movement is visually appropriate.
+
+Re-render and inspect the corrected region, its neighbours and the whole slide after every correction batch. Record the affected entities, observed mismatch, correction and visible result in the reconstruction review. Routine offsets that restore intended alignment are part of reconstruction. Discuss material compositional changes with the user when their intent is unclear.
 
 ## Master frame
 The substantive image excludes enabled header/footer regions. Reconstruction maps that image into the derived generation region, then the renderer creates inherited frame content through the PowerPoint Slide Master/layout hierarchy.

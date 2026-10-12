@@ -115,6 +115,8 @@ Deterministic tools must report evidence without blocking on aesthetic preferenc
 
 ## Visual reviews
 
+Before accepting any reconstructed slide, the host Agent must inspect optical alignment in the actual PowerPoint render. Compare visible text ink, baselines, artwork silhouettes and surrounding gaps with the accepted target at the same scale. Matching object coordinates alone cannot establish alignment. Apply local corrective offsets when needed to restore the intended visual relationships, preserve the accepted composition, then render and inspect again. Follow `references/reconstruction.md` and `references/visual-reasoning.md` and record the observed result in the reconstruction review.
+
 Create host-Agent review records for generated designs, measurement overlays, reconstructed slides, and the assembled deck when those artifacts exist. Bind the exact files that were inspected. Records capture observations and decisions. Reopen changed images and write fresh findings before accepting them. Never refresh file hashes under reused acceptance statements. Review helpers may prepare evidence but cannot write an acceptance decision.
 
 For a multi-slide deck, use contact sheets or grouped comparisons when they make consistency easier to judge. Inspect full-resolution pages whenever a contact sheet hides a material detail.
