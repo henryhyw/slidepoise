@@ -4,8 +4,16 @@
   "name": "Consulting",
   "purpose": "Create disciplined, evidence-rich executive slides with clear arguments, precise hierarchy and restrained moments of emphasis.",
   "library_sets": {
-    "icons": ["remix-icon", "wikimedia-identity"],
-    "components": ["consulting-core"]
+    "icons": [
+      "remix-icon",
+      "wikimedia-identity"
+    ],
+    "components": [
+      "consulting-core"
+    ],
+    "visual_references": [
+      "consulting-references"
+    ]
   },
   "style_agency": {
     "palette": "specified",

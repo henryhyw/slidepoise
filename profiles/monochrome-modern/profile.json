@@ -10,6 +10,9 @@
     ],
     "components": [
       "editorial-core"
+    ],
+    "visual_references": [
+      "monochrome-references"
     ]
   },
   "style_agency": {
@@ -17,11 +20,6 @@
     "typography": "guided",
     "density": "guided",
     "icon_treatment": "agent_decides_within_profile"
-  },
-  "library": {
-    "root": "libraries",
-    "isolation": "profile_private",
-    "visual_references": "libraries/visual_references/catalog.json"
   },
   "asset_policy": {
     "logos": {
@@ -327,12 +325,12 @@
   },
   "visual_reference_priorities": {
     "modern_blocks": [
-      "personal-monochrome-system",
-      "personal-dark-editorial-grid"
+      "monochrome-references:personal-monochrome-system",
+      "monochrome-references:personal-dark-editorial-grid"
     ],
     "dark_editorial": [
-      "personal-dark-editorial-grid",
-      "personal-monochrome-system"
+      "monochrome-references:personal-dark-editorial-grid",
+      "monochrome-references:personal-monochrome-system"
     ]
   },
   "reasoning_principles": [

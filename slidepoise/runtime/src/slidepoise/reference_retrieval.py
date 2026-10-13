@@ -16,6 +16,7 @@ from pathlib import Path
 from typing import Any
 
 from PIL import Image, ImageDraw, ImageFont, ImageOps
+from .resource_catalogs import catalog_sources, scope_reference_records
 
 SCHEMA_VERSION = "1"
 AUTHENTICITY_MODES = ("authentic", "exclude-generated", "any")
@@ -163,6 +164,8 @@ def normalize_exclusions(value: dict | None = None, exclude_ids: list[str] | Non
 
 
 def restriction_reason(record: dict, authenticity: str, exclusions: dict, include_ineligible: bool = False) -> str | None:
+    if record.get("resource_id") in exclusions.get("ids", []):
+        return "excluded_ids"
     for key, field in (("ids", "id"), ("canonical_paths", "canonical_file"), ("sha256", "sha256"),
                        ("source_families", "source_family"), ("source_types", "source_type")):
         if record.get(field) is not None and str(record[field]) in exclusions.get(key, []):
@@ -317,12 +320,19 @@ def build_contact_sheet(candidates: list[dict], path: Path) -> dict:
 
 
 def configured_catalogs(config: dict, config_path: Path) -> list[Path]:
+    return [Path(source["catalog"]).expanduser().resolve() for source in configured_sources(config, config_path)]
+
+
+def configured_sources(config: dict, config_path: Path) -> list[dict]:
     library = config.get("libraries", {}).get("visual_references", {})
-    values = library.get("catalogs") or [library.get("catalog")]
-    if not isinstance(values, list) or not values or any(not isinstance(value, str) or not value for value in values):
-        raise ValueError("Resolved config requires a visual-reference catalog or catalogs array")
-    return [(Path(value).expanduser() if Path(value).expanduser().is_absolute() else config_path.parent / value).resolve()
-            for value in values]
+    sources = catalog_sources(library)
+    for source in sources:
+        value = source["catalog"]
+        if not isinstance(value, str) or not value:
+            raise ValueError("Resolved config requires valid reference catalog paths")
+        path = Path(value).expanduser()
+        source["catalog"] = str((path if path.is_absolute() else config_path.parent / path).resolve())
+    return sources
 
 
 def retrieve(config_path: Path, intent_path: Path, output_path: Path, sheet_path: Path, *,
@@ -331,8 +341,12 @@ def retrieve(config_path: Path, intent_path: Path, output_path: Path, sheet_path
              exclude_ids: list[str] | None = None, authenticity: str = "authentic", query: str = "", limit: int = 12,
              include_ineligible: bool = False) -> dict:
     config, intent = read_json(config_path), read_json(intent_path)
-    catalogs = [*configured_catalogs(config, config_path), *(extra_catalogs or [])]
-    records, bindings = load_records(catalogs, asset_roots)
+    sources = configured_sources(config, config_path)
+    scoped_paths = {source["catalog"] for source in sources}
+    sources.extend({"catalog": str(path.expanduser().resolve())} for path in (extra_catalogs or [])
+                   if str(path.expanduser().resolve()) not in scoped_paths)
+    records, bindings = load_records([Path(source["catalog"]) for source in sources], asset_roots)
+    records = scope_reference_records(records, sources)
     index_path = (index_path or output_path.with_suffix(".sqlite")).resolve()
     outputs = [output_path.resolve(), sheet_path.resolve(), index_path]
     inputs = {config_path.resolve(), intent_path.resolve(), *(Path(binding["path"]) for binding in bindings),
@@ -353,7 +367,7 @@ def retrieve(config_path: Path, intent_path: Path, output_path: Path, sheet_path
                    "reference_retrieval": {"selection_mode": "host_selected", "authenticity": authenticity,
                                            "include_ineligible": include_ineligible,
                                            "profile_id": config.get("resolved_profile", {}).get("profile_id"),
-                                           "catalogs": bindings,
+                                           "catalogs": bindings, "sources": sources,
                                            "asset_roots": [str(root.expanduser().resolve()) for root in asset_roots or []],
                                            "exclusions": exclusions}})
     result["contact_sheet"] = build_contact_sheet(result["candidates"], sheet_path)
@@ -362,7 +376,7 @@ def retrieve(config_path: Path, intent_path: Path, output_path: Path, sheet_path
     return result
 
 
-def validate_host_selection(resources: dict) -> None:
+def validate_host_selection(resources: dict, library: dict | None = None) -> None:
     """Apply the retrieval restrictions again at the generation boundary."""
     policy = resources.get("reference_retrieval")
     if policy is None:
@@ -374,10 +388,21 @@ def validate_host_selection(resources: dict) -> None:
         raise ValueError("Unsupported reference_retrieval authenticity mode")
     paths = [Path(binding["path"]) for binding in policy.get("catalogs", [])]
     records, _ = load_records(paths, [Path(root) for root in policy.get("asset_roots", [])])
+    if "sources" in policy:
+        sources = policy["sources"]
+        if library is not None and "sources" in library:
+            current = {str(Path(source["catalog"]).resolve()): source for source in catalog_sources(library)}
+            sources = [current.get(str(Path(source["catalog"]).resolve()), source)
+                       for source in sources
+                       if not source.get("set_id") or str(Path(source["catalog"]).resolve()) in current]
+        records = scope_reference_records(records, sources)
+    elif library is not None and "sources" in library:
+        records = scope_reference_records(records, catalog_sources(library))
     exclusions = normalize_exclusions(policy.get("exclusions"))
     for selected in resources.get("selected_visual_references", []):
         path = str(Path(selected.get("canonical_file", "")).expanduser().resolve())
         matches = [record for record in records if record["id"] == str(selected.get("id"))
+                   and (not selected.get("resource_id") or record.get("resource_id") == selected["resource_id"])
                    and record["canonical_file"] == path]
         if len(matches) != 1:
             raise ValueError(f"Selected reference {selected.get('id')} must resolve uniquely in the retrieval catalogs")

@@ -43,7 +43,11 @@ These divisions preserve design freedom while keeping a shared direction across 
 
 ## Visual assets through the full path
 
-Profiles can select Library Sets containing icons, logos, visual references and reusable PowerPoint components. Before generation, the Agent inspects the communication jobs on the slide and decides which resources help. An empty asset list remains possible, though it requires an explicit reason. A deck with an enabled icon library and no selected icons receives a second deck-level review.
+Visual references, icons and components use the same shared Library Set model. Each set owns its resource catalog and files outside the skill. Profiles store style guidance, selected set IDs in `library_sets` and optional per-set item IDs in `library_items`. An omitted item subset selects all current and future items. An empty subset selects none. Resource identity is qualified as `<set-id>:<item-id>` to prevent collisions between sets. Creating a profile copies style and selection without copying assets.
+
+Console and the skill resolve those selections against the same current catalogs. A run captures its style while resource resolution reads the profile's current selection and any run-specific resource overrides. Existing generation artifacts retain exact file hashes and bindings. A shared resource update therefore becomes available for subsequent use without silently rewriting reviewed outputs. Visual-reference access and icon selection remain independent.
+
+Before generation, the Agent inspects the communication jobs on the slide and decides which enabled resources help. An empty asset list remains possible, though it requires an explicit reason. A deck with an enabled icon library and no selected icons receives a second deck-level review.
 
 Selected artwork enters the generation request as visual context. Its canonical file, source, license, variant family and integrity hash remain in the resource handoff. Image generation can use that artwork while exploring the composition. It does not become the source of truth for the final asset.
 

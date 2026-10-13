@@ -11,7 +11,7 @@ from typing import Any
 from .paths import BUNDLED_LIBRARY_SETS_ROOT, BUNDLED_PROFILES_ROOT, DEFAULT_CONFIG, SESSION_TEMPLATE, active_profiles_root, data_home, settings_path
 
 
-LIBRARY_KINDS = {"visual_references"}
+LIBRARY_KINDS = {"visual_references", "icons", "components"}
 PROFILE_ID_ALIASES = json.loads((BUNDLED_PROFILES_ROOT / "aliases.json").read_text(encoding="utf-8"))
 
 
@@ -114,7 +114,8 @@ def list_profiles(root: Path | None = None) -> list[dict[str, Any]]:
             "path": str(path),
             "root": str(path.parent),
             "modes": list((payload.get("modes") or {}).keys()),
-            "library_sets": copy.deepcopy(payload.get("library_sets", {"icons": [], "components": []})),
+            "library_sets": copy.deepcopy(payload.get("library_sets", {"visual_references": [], "icons": [], "components": []})),
+            "library_items": copy.deepcopy(payload.get("library_items", {})),
             "style_agency": copy.deepcopy(payload.get("style_agency", {})),
             "preview": {
                 "colors": [
@@ -154,11 +155,19 @@ def profile_record(profile_id: str) -> dict[str, Any]:
 
 
 def library_root(profile_id: str, kind: str) -> Path:
+    """Compatibility access for a single catalog. Use selected_items for aggregation."""
     profile_id = canonical_profile_id(profile_id)
     if kind not in LIBRARY_KINDS:
-        raise ValueError(f"{kind} is a shared Library Set. Only visual references belong directly to a profile.")
+        raise ValueError(f"Unknown resource kind {kind}")
+    record = profile_record(profile_id)
+    from .library_sets import profile_set_ids, set_record
+    for set_id in profile_set_ids(record["profile"], kind):
+        selected = set_record(set_id)
+        if selected.get("source") == "local":
+            return Path(selected["root"])
+    # Read-only compatibility with old catalogs and captured presentation fixtures.
     configured = read_json(data_home() / "config.json", {}).get("library_locations", {}).get(profile_id, {}).get(kind)
-    root = Path(configured).expanduser().resolve() if configured else Path(profile_record(profile_id)["root"]) / "libraries" / kind
+    root = Path(configured).expanduser().resolve() if configured else Path(record["root"]) / "libraries" / kind
     if not root.is_dir():
         raise FileNotFoundError(root)
     return root
@@ -240,9 +249,15 @@ def migrate_profile_ids(home: Path, previous_manifest: dict[str, str]) -> tuple[
 def retire_managed_files(home: Path, target: Path, previous: dict[str, str], current: dict[str, str],
                          prefix: str, archive: Path, counts: dict[str, int]) -> None:
     """Archive removed bundled files and leave user-modified files in place."""
+    retained = set()
+    for record in read_json(home / "library-sets/catalog.json", {}).get("items", {}).values():
+        migration = record.get("migration", {})
+        retained.update(migration.get("legacy_files", []))
+        if migration.get("legacy_catalog"):
+            retained.add(migration["legacy_catalog"])
     for relative in sorted(set(previous) - set(current)):
         target_file = target / relative.removeprefix(prefix)
-        if not target_file.is_file():
+        if not target_file.is_file() or str(target_file.resolve()) in retained:
             continue
         if hash_file(target_file) == previous[relative]:
             archived = archive / relative.removeprefix(prefix)
@@ -257,6 +272,8 @@ def initialize_home(source_profiles: Path, *, force: bool = False) -> dict[str, 
     home = data_home()
     home.mkdir(parents=True, exist_ok=True)
     target = home / "profiles"
+    from .shared_resource_migration import migrate_shared_resources
+    migrated_resources = migrate_shared_resources(home)
     if force and target.exists():
         backup = home / "archive" / "profiles-before-setup"
         if backup.exists():
@@ -281,6 +298,14 @@ def initialize_home(source_profiles: Path, *, force: bool = False) -> dict[str, 
     sets_target = home / "library-sets"
     set_manifest, set_counts = copy_profiles(BUNDLED_LIBRARY_SETS_ROOT, sets_target, set_previous, manifest_prefix="library-sets/")
     manifest.update(set_manifest)
+    # A user-owned index keeps its existing records and receives newly bundled sets.
+    bundled_sets = read_json(BUNDLED_LIBRARY_SETS_ROOT / "catalog.json", {"items": {}})
+    installed_index = read_json(sets_target / "catalog.json", {"schema_version": "1.0.0", "items": {}})
+    before_index = copy.deepcopy(installed_index)
+    for identifier, record in bundled_sets.get("items", {}).items():
+        installed_index.setdefault("items", {}).setdefault(identifier, record)
+    if installed_index != before_index:
+        write_json(sets_target / "catalog.json", installed_index)
     for key, value in set_counts.items():
         counts[key] = counts.get(key, 0) + value
     retire_managed_files(home, sets_target, set_previous, set_manifest, "library-sets/", retirement_root, counts)
@@ -313,4 +338,6 @@ def initialize_home(source_profiles: Path, *, force: bool = False) -> dict[str, 
     write_json(settings_path(), settings)
     for folder in (home / "workspace", home / "cache"):
         folder.mkdir(parents=True, exist_ok=True)
-    return {"home": str(home), "profiles": len(list(target.glob("*/profile.json"))), "active_profile": settings["active_profile"], "files": counts}
+    after_resources = migrate_shared_resources(home)
+    return {"home": str(home), "profiles": len(list(target.glob("*/profile.json"))), "active_profile": settings["active_profile"], "files": counts,
+            "shared_resources": after_resources if after_resources["migrated"] else migrated_resources}

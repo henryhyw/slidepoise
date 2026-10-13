@@ -80,7 +80,8 @@ def command_library(args: argparse.Namespace) -> None:
     elif args.library_command == "add-resource":
         emit(library_sets.add_resource(args.set_id, Path(args.file), name=args.name, description=args.description,
                                        tags=[tag.strip() for tag in args.tags.split(",") if tag.strip()],
-                                       source_url=args.source_url, license_name=args.license))
+                                       source_url=args.source_url, license_name=args.license,
+                                       source_type=args.source_type, source_page=args.source_page))
     elif args.library_command == "inspect":
         emit(components.inspect(args.set_id, args.component_id))
     elif args.library_command == "edit-object":
@@ -220,7 +221,7 @@ def parser() -> argparse.ArgumentParser:
     panel.add_argument("--view", choices=["session", "style"], default="session")
     panel.set_defaults(func=lambda args: emit(open_panel(args.run, args.port, args.view, args.id)))
 
-    profile = commands.add_parser("profile", help="List, inspect, or select isolated guidance profiles.")
+    profile = commands.add_parser("profile", help="List, inspect, or select reusable guidance profiles.")
     profile_commands = profile.add_subparsers(dest="profile_command", required=True)
     profile_list = profile_commands.add_parser("list")
     profile_list.set_defaults(func=command_profile)
@@ -254,7 +255,7 @@ def parser() -> argparse.ArgumentParser:
     profile_resource.add_argument("--source-page", default="")
     profile_resource.set_defaults(func=command_profile)
 
-    library = commands.add_parser("library", help="Manage coherent icon and component sets shared by profiles.")
+    library = commands.add_parser("library", help="Manage shared visual references, icons and component sets.")
     library_commands = library.add_subparsers(dest="library_command", required=True)
     library_list = library_commands.add_parser("list")
     library_list.set_defaults(func=command_library)
@@ -271,6 +272,8 @@ def parser() -> argparse.ArgumentParser:
     library_resource.add_argument("--tags", default="")
     library_resource.add_argument("--source-url", default="")
     library_resource.add_argument("--license", default="")
+    library_resource.add_argument("--source-type", choices=sorted(library_sets.SOURCE_TYPES), default="unknown")
+    library_resource.add_argument("--source-page", default="")
     library_resource.set_defaults(func=command_library)
     for name in ("inspect", "edit-object", "edit-component"):
         command = library_commands.add_parser(name)

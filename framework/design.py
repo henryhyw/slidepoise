@@ -139,7 +139,8 @@ def defaults_payload(profile=None):
     return {"values": presentation_values(cfg), "config": cfg, "profiles": list_profiles(), "active_profile": active_profile_id(),
             "fonts": FONTS, "densities": DENSITIES, "revision": revision(data_home() / "config.json"),
             "profile_revision": revision(Path(selected["path"])), "style_agency": profile_payload.get("style_agency", {}),
-            "selected_sets": {kind: profile_set_ids(profile_payload, kind) for kind in ("icons", "components")},
+            "selected_sets": {kind: profile_set_ids(profile_payload, kind) for kind in ("visual_references", "icons", "components")},
+            "selected_items": copy.deepcopy(profile_payload.get("library_items", {})),
             "library_sets": list_sets()}
 
 
@@ -175,7 +176,7 @@ def save_profile_style(profile, values, profile_values, expected, profile_expect
     """Save one Console edit with both revisions checked before either write."""
     from .profile_authoring import apply_profile_values
     from .profiles import profile_record
-    if set(profile_values) - {"style_agency", "library_sets"}:
+    if set(profile_values) - {"style_agency", "library_sets", "library_items"}:
         raise ValueError("Unknown profile style setting")
     modes = {"typography": {"specified", "guided", "agent_decides"},
              "density": {"specified", "guided", "agent_decides"},

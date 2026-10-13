@@ -8,7 +8,10 @@
       "remix-icon",
       "wikimedia-identity"
     ],
-    "components": []
+    "components": [],
+    "visual_references": [
+      "pwc-public-references"
+    ]
   },
   "style_agency": {
     "palette": "guided",

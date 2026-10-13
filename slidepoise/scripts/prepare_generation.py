@@ -20,6 +20,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "runtime/src"))
 from slidepoise.canvas import validate_derived_canvas
 from slidepoise.artifacts import file_hash, write_json
 from slidepoise.reference_retrieval import validate_host_selection
+from slidepoise.resource_catalogs import selected_records
 
 
 def load(path: Path) -> dict[str, Any]:
@@ -64,19 +65,25 @@ def augment_profile_core_references(
     result = json.loads(json.dumps(resources))
     if "reference_retrieval" in result:
         try:
-            validate_host_selection(result)
+            validate_host_selection(result, (libraries or {}).get("visual_references"))
         except (OSError, ValueError) as error:
             raise SystemExit(str(error)) from error
         return result
     required = list(profile.get("always_attach_visual_references") or [])
     if not required:
         return result
-    catalog_value = ((libraries or {}).get("visual_references") or {}).get("catalog")
-    if not catalog_value:
-        raise SystemExit("Resolved profile visual-reference catalog is required for always-on references")
-    catalog_path = Path(str(catalog_value)).expanduser().resolve()
-    catalog = load(catalog_path)
-    by_id = {str(item.get("id")): (filename, item) for filename, item in (catalog.get("items") or {}).items()}
+    library = (libraries or {}).get("visual_references") or {}
+    by_id = {}
+    ambiguous = set()
+    for catalog_path, catalog, record in selected_records(library):
+        identifier = record["id"]
+        if identifier in by_id:
+            ambiguous.add(identifier)
+        by_id[identifier] = (catalog_path, record)
+        if record.get("resource_id"):
+            by_id[record["resource_id"]] = (catalog_path, record)
+    for identifier in ambiguous:
+        by_id.pop(identifier, None)
     selected = list(result.get("selected_visual_references") or [])
     selected_ids = {str(item.get("id")) for item in selected}
     for ref_id in required:
@@ -84,13 +91,16 @@ def augment_profile_core_references(
         if ref_id in selected_ids:
             continue
         if ref_id not in by_id:
+            if "sources" in library:
+                continue  # Explicit resource deselection overrides an older profile priority.
             raise SystemExit(f"Profile requires missing visual reference catalog id: {ref_id}")
-        filename, record = by_id[ref_id]
-        canonical = catalog_path.parent / str(record.get("path") or filename)
+        catalog_path, record = by_id[ref_id]
+        canonical = catalog_path.parent / str(record.get("path") or record["id"])
         if not canonical.is_file():
             raise SystemExit(f"Profile visual reference file is missing: {canonical}")
         selected.append({
-            "id": ref_id,
+            "id": record["id"],
+            **({"resource_id": record["resource_id"]} if record.get("resource_id") else {}),
             "canonical_file": str(canonical.resolve()),
             "reason": f"Always-on visual precedent required by profile {profile.get('profile_id')}: {record.get('description', '')}",
             "source": "profile_core_reference",
@@ -119,26 +129,24 @@ def augment_selected_components(
         result["selected_components"] = []
         return result
     component_library = (libraries or {}).get("components") or {}
-    catalog_values = component_library.get("catalogs", [component_library.get("catalog")])
-    catalog_values = [value for value in catalog_values if value]
-    if not catalog_values:
-        raise SystemExit("Resolved profile component catalog is required when a component is selected")
-    by_id, origins = {}, {}
-    for value in catalog_values:
-        catalog_path = Path(str(value)).expanduser().resolve()
-        catalog = load(catalog_path)
-        for raw in (catalog.get("items") or {}).values():
-            record = dict(raw)
-            if not record.get("path") and catalog.get("native_source"):
-                record["path"] = catalog["native_source"]
-            identifier = str(record.get("id", ""))
-            if identifier in by_id:
-                raise SystemExit(f"Duplicate component ID across selected sets: {identifier}")
-            if identifier:
-                by_id[identifier], origins[identifier] = record, catalog_path
+    by_id, origins, ambiguous = {}, {}, set()
+    for catalog_path, catalog, raw in selected_records(component_library):
+        record = dict(raw)
+        if not record.get("path") and catalog.get("native_source"):
+            record["path"] = catalog["native_source"]
+        identifier = record["id"]
+        if identifier in by_id:
+            ambiguous.add(identifier)
+        by_id[identifier], origins[identifier] = record, catalog_path
+        if record.get("resource_id"):
+            qualified = record["resource_id"]
+            by_id[qualified], origins[qualified] = record, catalog_path
+    for identifier in ambiguous:
+        by_id.pop(identifier, None)
+        origins.pop(identifier, None)
     resolved: list[dict[str, Any]] = []
     for item in requested:
-        component_id = str(item.get("component_id") or item.get("id") or "")
+        component_id = str(item.get("resource_id") or item.get("component_id") or item.get("id") or "")
         if not component_id:
             raise SystemExit("Every selected component requires component_id or id")
         record = by_id.get(component_id)

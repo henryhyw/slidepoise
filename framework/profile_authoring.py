@@ -3,13 +3,11 @@ from __future__ import annotations
 
 import copy
 import re
-import shutil
 import tempfile
-import uuid
 from pathlib import Path
 
 from .paths import data_home
-from .profiles import canonical_profile_id, active_profile_id, library_catalog, library_root, profile_record
+from .profiles import canonical_profile_id, active_profile_id, profile_record
 from .storage import read, revision, update, write
 
 
@@ -31,8 +29,10 @@ def create_profile(name: str, *, profile_id: str | None = None, based_on: str | 
     root = data_home() / "profiles" / identifier
     if root.exists():
         raise FileExistsError(f"Profile already exists: {identifier}")
+    # Older custom locations join the same shared catalogs before their selection is copied.
+    from .shared_resource_migration import migrate_shared_resources
+    migrate_shared_resources(data_home())
     source = Path(profile_record(based_on)["root"])
-    references = library_root(based_on, "visual_references")
     profile = read(source / "profile.json", {})
     from .design import merge
     configured = read(data_home() / "config.json", {}).get("user_design_overrides", {}).get(based_on, {})
@@ -43,9 +43,7 @@ def create_profile(name: str, *, profile_id: str | None = None, based_on: str | 
     # Keep the copy invisible to profile discovery until its identity is distinct.
     with tempfile.TemporaryDirectory(prefix="profile-create-", dir=data_home()) as directory:
         staged = Path(directory) / "profile"
-        shutil.copytree(source, staged)
-        if references.resolve() != (source / "libraries/visual_references").resolve():
-            shutil.copytree(references, staged / "libraries/visual_references", dirs_exist_ok=True)
+        staged.mkdir()
         write(staged / "profile.json", profile)
         staged.rename(root)
     return profile_record(identifier)
@@ -57,19 +55,14 @@ def apply_profile_values(profile_id: str, profile: dict, values: dict) -> dict:
         raise ValueError("Profile fields must use lower-case names")
     if {"profile_id", "schema_version"} & set(values):
         raise ValueError("Profile identity and schema version cannot be changed here")
-    if "library_sets" in values:
-        from .library_sets import set_record
-        selections = values["library_sets"]
-        if not isinstance(selections, dict) or set(selections) - {"icons", "components"}:
-            raise ValueError("Choose icon or component sets")
-        for kind, identifiers in selections.items():
-            if not isinstance(identifiers, list) or any(not isinstance(identifier, str) or set_record(identifier)["kind"] != kind for identifier in identifiers):
-                raise ValueError("A selected set has the wrong resource type")
     result = copy.deepcopy(profile)
     for key, value in values.items():
         if key in {"name", "purpose"} and (not isinstance(value, str) or not value.strip()):
             raise ValueError(f"{key} must be meaningful text")
         result[key] = copy.deepcopy(value)
+    if "library_sets" in values or "library_items" in values:
+        from .library_sets import validate_selection
+        validate_selection(result)
     result["profile_id"] = profile_id
     return result
 
@@ -98,24 +91,33 @@ def add_resource(profile_id: str, kind: str, source: Path, *, name: str, descrip
         raise ValueError("Choose a known reference origin")
     if tags is not None and (not isinstance(tags, list) or any(not isinstance(tag, str) for tag in tags)):
         raise ValueError("Reference tags must be a list of strings")
-    catalog_path, _ = library_catalog(profile_id, kind)
-    identifier = uuid.uuid4().hex[:12]
-    destination = catalog_path.parent / f"{identifier}-{source.name}"
-    shutil.copy2(source, destination)
-    def change(catalog):
-        catalog.setdefault("items", {})[identifier] = {
-            "id": identifier,
-            "name": name.strip() or source.stem,
-            "description": description.strip(),
-            "tags": tags or [],
-            "path": destination.name,
-            "provenance": {"provider": "user_or_agent_added", "source_type": source_type,
-                "source_url": source_url or (source.name if source_type == "user_private_document" else ""),
-                "source_page": source_page or ("Uploaded image" if source_type == "user_private_document" else ""),
-                "generated_reference": True if source_type == "generated_image" else
-                    False if source_type in {"published_document", "user_private_document"} else None,
-                "license": license_name},
-        }
-        return catalog
-    update(catalog_path, change, default={"items": {}})
-    return {"id": identifier, "path": str(destination), "profile": profile_id, "kind": kind}
+    from . import library_sets
+    profile_id = canonical_profile_id(profile_id)
+    record = profile_record(profile_id)
+    profile = record["profile"]
+    set_ids = library_sets.profile_set_ids(profile, kind)
+    local = [set_id for set_id in set_ids if library_sets.set_record(set_id).get("source") == "local"]
+    if local:
+        set_id = local[0]
+    else:
+        stem = f"{profile_id}-references"
+        candidate = stem
+        suffix = 2
+        existing = {item["id"] for item in library_sets.list_sets()}
+        while candidate in existing:
+            candidate = f"{stem}-{suffix}"
+            suffix += 1
+        set_id = library_sets.create_set(candidate, kind, f"References first collected for {record['name']}")["id"]
+    added = library_sets.add_resource(set_id, source, name=name, description=description, tags=tags,
+                                     source_url=source_url, license_name=license_name,
+                                     source_type=source_type, source_page=source_page)
+    def select(document):
+        chosen = document.setdefault("library_sets", {}).setdefault(kind, [])
+        if set_id not in chosen:
+            chosen.append(set_id)
+        subset = document.get("library_items", {}).get(kind, {}).get(set_id)
+        if subset is not None and added["id"] not in subset:
+            subset.append(added["id"])
+        return document
+    update(Path(record["path"]), select, default={})
+    return {**added, "profile": profile_id, "kind": kind}

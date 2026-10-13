@@ -10,6 +10,9 @@
     ],
     "components": [
       "editorial-core"
+    ],
+    "visual_references": [
+      "editorial-references"
     ]
   },
   "style_agency": {
@@ -17,11 +20,6 @@
     "typography": "guided",
     "density": "guided",
     "icon_treatment": "agent_decides_within_profile"
-  },
-  "library": {
-    "root": "libraries",
-    "isolation": "profile_private",
-    "visual_references": "libraries/visual_references/catalog.json"
   },
   "asset_policy": {
     "logos": {
@@ -327,8 +325,8 @@
   },
   "visual_reference_priorities": {
     "editorial_archive": [
-      "personal-editorial-archive",
-      "human-model-cognition-user-reference"
+      "editorial-references:personal-editorial-archive",
+      "editorial-references:human-model-cognition-user-reference"
     ]
   }
 }

@@ -6,8 +6,8 @@ from pathlib import Path
 from slidepoise.reference_retrieval import retrieve
 
 ROOT = Path(__file__).resolve().parents[1]
-PROFILE = ROOT / 'profiles/pwc-public'
-CATALOG = PROFILE / 'libraries/visual_references/catalog.json'
+REFERENCE_SET = ROOT / 'library-sets/visual_references/pwc-public-references'
+CATALOG = REFERENCE_SET / 'catalog.json'
 
 
 def test_bundled_references_have_public_provenance_and_portable_verified_sources():
@@ -21,14 +21,26 @@ def test_bundled_references_have_public_provenance_and_portable_verified_sources
         assert entry['visibility'] == 'public_reference'
         image = (CATALOG.parent / entry['path']).resolve()
         pdf = (CATALOG.parent / entry['source_document_path']).resolve()
-        assert image.is_relative_to(PROFILE.resolve())
-        assert pdf.is_relative_to(PROFILE.resolve())
+        assert image.is_relative_to(REFERENCE_SET.resolve())
+        assert pdf.is_relative_to(REFERENCE_SET.resolve())
         assert hashlib.sha256(image.read_bytes()).hexdigest() == entry['image_sha256']
         assert hashlib.sha256(pdf.read_bytes()).hexdigest() == entry['source_pdf_sha256']
     metadata = CATALOG.read_text()
     assert '/Users/' not in metadata
     assert 'user_private_document' not in metadata
     assert 'codex-clipboard' not in metadata
+
+
+def test_packaged_profiles_select_shared_reference_sets_without_asset_copies():
+    definitions = json.loads((ROOT / 'library-sets/catalog.json').read_text())['items']
+    for profile_path in (ROOT / 'profiles').glob('*/profile.json'):
+        profile = json.loads(profile_path.read_text())
+        assert not (profile_path.parent / 'libraries').exists()
+        assert not (profile_path.parent / 'source-documents').exists()
+        for set_id in profile['library_sets']['visual_references']:
+            definition = definitions[set_id]
+            assert definition['kind'] == 'visual_references'
+            assert (ROOT / 'library-sets' / definition['root'] / 'catalog.json').is_file()
 
 
 def test_complete_primary_deck_and_default_retrieval_respect_editorial_eligibility(tmp_path):

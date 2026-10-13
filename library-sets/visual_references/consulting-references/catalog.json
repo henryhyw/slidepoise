@@ -6,7 +6,15 @@
       "id": "consulting-ai-prioritization-reference",
       "path": "consulting-ai-prioritization-reference.png",
       "description": "User-supplied generated consulting reference for a conclusion-led title, controlled 2x2 prioritization, orange emphasis, restrained neutral panels, governance sidebar, and implementation-wave footer.",
-      "tags": ["consulting", "ai", "prioritization", "matrix", "governance", "orange", "user supplied"],
+      "tags": [
+        "consulting",
+        "ai",
+        "prioritization",
+        "matrix",
+        "governance",
+        "orange",
+        "user supplied"
+      ],
       "reuse_policy": "style_and_composition_precedent_only",
       "provenance": {
         "provider": "user supplied in conversation",
@@ -19,7 +27,15 @@
       "id": "consulting-ai-operating-model-reference",
       "path": "consulting-ai-operating-model-reference.png",
       "description": "User-supplied generated consulting reference for a three-stage operating-model story, large communication icons, directional flow, quantified impact strip, and governance guardrails.",
-      "tags": ["consulting", "ai", "operating model", "process", "governance", "orange", "user supplied"],
+      "tags": [
+        "consulting",
+        "ai",
+        "operating model",
+        "process",
+        "governance",
+        "orange",
+        "user supplied"
+      ],
       "reuse_policy": "style_and_composition_precedent_only",
       "provenance": {
         "provider": "user supplied in conversation",

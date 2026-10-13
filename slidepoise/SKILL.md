@@ -30,7 +30,7 @@ Do not write a custom PptxGenJS, python-pptx, HTML, SVG, or other direct deck bu
 At the start of every run
 
 1. Resolve the SlidePoise CLI once. Use `slidepoise` when it is on `PATH`. Respect `SLIDEPOISE_HOME` when it is set. Run `doctor` and `profile show` to locate the framework home and active external profile.
-2. Read the external framework config, selected profile, and its selected Library Sets. Profiles, visual references, icons, and components never live inside this skill.
+2. Read the external framework config, selected profile, and its selected Library Sets and items. Visual references, icons and components share the same resource model. Profiles store style and resource selections. Resolve those selections against the current catalogs before use. Profiles and assets never live inside this skill.
 3. Resolve current-presentation overrides with `scripts/resolve_config.py`.
 4. Read `references/deck-orchestration.md`, `references/workflow.md`, `references/runtime-host.md` and `references/image-generation.md`.
 5. Read `references/human-approval.md` for adaptive user checkpoints. It does not define mandatory gates.
@@ -43,7 +43,7 @@ At the start of every run
 
 ## Product shape
 
-When a user supplies visual references to establish or evolve a reusable style, read `references/profile-authoring.md`. Use its reference synthesis and transfer review before treating the resulting guidance as established. Persist through the existing Profile commands so conversation, Console and generation share the same settings.
+When a user supplies reusable assets or wants to establish or evolve a style, read `references/profile-authoring.md`. Register user-authorized persistent assets in shared Library Sets and select them for the intended profiles through the existing commands. Reuse existing records when selecting them for another profile. For visual guidance, use reference synthesis and transfer review before treating that guidance as established. Verify that Console and skill retrieval see the same selection.
 
 - Conversation is the primary control surface. Present outlines, context sheets, generated slides, comparisons, and final files directly in the conversation.
 - The optional session panel is a lightweight editor for current-presentation style and asset overrides. Open it only when the user asks to inspect or adjust those settings, or when a visual control would clearly help.

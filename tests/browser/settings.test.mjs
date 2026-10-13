@@ -174,3 +174,74 @@ for (const viewport of [{ width: 1280, height: 900 }, { width: 390, height: 844 
     assert.deepEqual(h.errors, []);
   });
 }
+
+for (const viewport of [{ width: 1280, height: 900 }, { width: 390, height: 844 }]) {
+  test(`Shared resources stay independent and palette fits at ${viewport.width}px`, { timeout: 60_000 }, async t => {
+    const h = await fixture(t, viewport);
+    const { page } = h;
+    await page.goto(h.url + '/console/#design');
+    await page.locator('[data-profile-open="consulting"]').click();
+    const colorCard = page.locator('[data-edit="visual"]');
+    await colorCard.waitFor({ state: 'visible' });
+    assert.equal(await colorCard.locator(':scope > .design-copy').count(), 1);
+    assert.equal(await colorCard.locator(':scope > .palette-preview').count(), 1);
+    const layout = await colorCard.evaluate(card => {
+      const bounds = card.getBoundingClientRect();
+      const preview = card.querySelector('.palette-preview').getBoundingClientRect();
+      return { overflow: card.scrollWidth > card.clientWidth, width: bounds.width,
+        previewWidth: preview.width, inside: preview.left >= bounds.left && preview.right <= bounds.right,
+        previewHeight: preview.height };
+    });
+    assert.equal(layout.overflow, false);
+    assert.equal(layout.inside, true);
+    assert.ok(layout.previewWidth <= 180 && layout.previewHeight < 145);
+
+    const before = await h.get('/api/profile?profile=consulting');
+    await page.locator('[data-edit="libraries"]').click();
+    await page.locator('[data-expand-set="consulting-references"]').click();
+    const firstItem = page.locator('[data-item-set="consulting-references"]').first();
+    await firstItem.waitFor({ state: 'visible' });
+    const omittedId = await firstItem.getAttribute('data-select-item');
+    await firstItem.uncheck();
+    await page.locator('[data-select-set="editorial-references"]').check();
+    await page.locator('#resource-picker-save').click();
+    await page.locator('#resources-dialog').waitFor({ state: 'hidden' });
+    const after = await h.get('/api/profile?profile=consulting');
+    assert.deepEqual(after.profile.library_sets.icons, before.profile.library_sets.icons);
+    assert.deepEqual(after.profile.library_sets.components, before.profile.library_sets.components);
+    assert.deepEqual(after.profile.library_sets.visual_references, ['consulting-references', 'editorial-references']);
+    assert.equal(after.profile.library_items.visual_references['consulting-references'].includes(omittedId), false);
+    assert.equal((await h.get('/api/library?kind=visual_references&profile=consulting')).count, 3);
+
+    // Resources offers profile selection directly, without changing the default.
+    await page.locator('.nav-item[data-view="resources"]').click();
+    await page.locator('#resource-profile').selectOption('editorial-archive');
+    await page.locator('.resource-profile-bar [data-choose-resources]').click();
+    await page.locator('#resources-dialog').waitFor({ state: 'visible' });
+    assert.equal(await page.locator('#resource-picker-title').textContent(), 'Resources for Editorial Archive');
+    await page.locator('#resources-dialog [data-close]').first().click();
+    assert.equal((await h.get('/api/context')).active_profile, 'consulting');
+
+    // A new profile starts with shared selections and opens the same picker.
+    await page.locator('.nav-item[data-view="design"]').click();
+    await page.locator('#all-profiles').click();
+    await page.locator('#new-profile').click();
+    await page.locator('#editor-fields input[name="name"]').fill('Resource test profile');
+    await page.locator('.choice-card').filter({ has: page.locator('input[name="based_on"][value="editorial-archive"]') }).click();
+    await page.locator('#editor-save').click();
+    await page.locator('#resources-dialog').waitFor({ state: 'visible' });
+    assert.equal(await page.locator('#resource-picker-title').textContent(), 'Resources for Resource test profile');
+    const created = await h.get('/api/profile?profile=resource-test-profile');
+    const base = await h.get('/api/profile?profile=editorial-archive');
+    assert.deepEqual(created.profile.library_sets, base.profile.library_sets);
+    await page.locator('[data-resource-kind="icons"]').click();
+    await page.locator('[data-select-set="remix-icon"]').uncheck();
+    await page.locator('#resource-picker-save').click();
+    await page.locator('#resources-dialog').waitFor({ state: 'hidden' });
+    const changed = await h.get('/api/profile?profile=resource-test-profile');
+    assert.equal(changed.profile.library_sets.icons.includes('remix-icon'), false);
+    assert.deepEqual((await h.get('/api/profile?profile=editorial-archive')).profile.library_sets, base.profile.library_sets);
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
+    assert.deepEqual(h.errors, []);
+  });
+}

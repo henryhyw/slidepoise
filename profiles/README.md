@@ -8,7 +8,7 @@ Choose a starting point, then adjust its typography, palette and references in t
 | Editorial Archive | `editorial-archive` | Paper textures, archival collage and image-led compositions |
 | Monochrome Modern | `monochrome-modern` | Sharp blocks, grayscale photography and contrasting type |
 
-Each folder contains a profile and its visual reference catalog. Shared icon sources and reusable components live in `library-sets/`.
+Each folder contains style guidance and resource selections in `profile.json`. Visual references, icons and reusable components live in shared `library-sets/`. Any profile can select whole sets or individual items. Creating a profile copies its guidance and selection without duplicating assets.
 
 Run `slidepoise setup` to update an installation. Setup renames retired bundled profile folders and preserves custom files and settings. Earlier profile names remain accepted through `aliases.json`. If both names already exist locally, both folders are preserved. Existing presentations retain their captured design settings.
 

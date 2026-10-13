@@ -43,7 +43,7 @@ async function navigate(view, focusHeading = false) {
   const description = {
     overview: "Your reusable styles, resources, and local capabilities.",
     design: "Create and customize your presentation styles.",
-    resources: "Icons and editable components for your slides.",
+    resources: "Shared visual references, icons, and components. Choose what each profile uses.",
     system: "Image generation and local tools."
   }[view];
   $("#view-description").textContent = description;
@@ -59,11 +59,11 @@ function agencyLabel(value) { return ({ specified: "Defined", guided: "Flexible"
 function styleCards(payload) {
   const v = payload.values;
   const agency = payload.style_agency || payload.config?.resolved_profile?.style_agency || {};
-  const selectedSets = payload.selected_sets || payload.config?.library_sets?.selected || { icons: [], components: [] };
+  const selectedSets = payload.selected_sets || payload.config?.library_sets?.selected || { visual_references: [], icons: [], components: [] };
   return `<button class="design-control" data-edit="guidance"><div class="design-copy"><span class="eyebrow">Information density</span><strong>${esc(payload.densities[v.density] || v.density)}</strong><p>Choose how much information your slides usually carry.</p><div class="density-summary"><span>${esc(agencyLabel(agency.density))}</span><span class="density-bars">${"<i></i>".repeat(v.density === "spacious" ? 2 : v.density === "information_rich" ? 6 : 4)}</span></div></div><div class="design-visual"><span class="communication-mini"><i></i><b></b><b></b><em></em></span><small>Choose</small></div></button>
   <button class="design-control" data-edit="typography"><div class="design-copy"><span class="eyebrow">Typography</span><strong>${esc(v.display_font)} <span class="type-divider">/</span> ${esc(v.body_font)}</strong><p>Choose typefaces for headings and body text.</p></div><div class="type-preview" data-display-font="${esc(v.display_font)}" data-body-font="${esc(v.body_font)}"><b>Aa</b><small>${esc(agencyLabel(agency.typography))}</small></div></button>
-  <button class="design-control" data-edit="visual"><div class="design-copy"><span class="eyebrow">Color and treatment</span><strong>${esc(agencyLabel(agency.palette))} palette</strong><p>Set a palette or draw colors from your visual references.</p><div class="palette-preview">${[v.primary, v.secondary, v.highlight, v.surface].map(color => `<i data-color="${esc(color)}"></i>`).join("")}<small>Choose</small></div></button>
-  <button class="design-control" data-edit="libraries"><div class="design-copy"><span class="eyebrow">Reusable elements</span><strong>${selectedSets.icons.length} icon · ${selectedSets.components.length} component set${selectedSets.components.length === 1 ? "" : "s"}</strong><p>Choose the icon and component sets available to this profile.</p></div><div class="set-stack" aria-hidden="true"><span>◇</span><span>▦</span><small>Choose sets</small></div></button>`;
+  <button class="design-control" data-edit="visual"><div class="design-copy"><span class="eyebrow">Color and treatment</span><strong>${esc(agencyLabel(agency.palette))} palette</strong><p>Set a palette or draw colors from your visual references.</p></div><div class="palette-preview"><span class="palette-swatches">${[v.primary, v.secondary, v.highlight, v.surface].map(color => `<i data-color="${esc(color)}"></i>`).join("")}</span><small>Choose colors</small></div></button>
+  <button class="design-control" data-edit="libraries"><div class="design-copy"><span class="eyebrow">Shared resources</span><strong>Resources for this profile</strong><p>${selectedSets.visual_references?.length || 0} reference · ${selectedSets.icons.length} icon · ${selectedSets.components.length} component sets selected</p></div><div class="set-stack" aria-hidden="true"><span>◇</span><span>▦</span><small>Choose resources</small></div></button>`;
 }
 function applyPreviews() {
   $$('[data-edit="guidance"] .design-visual').forEach(element => {
@@ -71,7 +71,7 @@ function applyPreviews() {
   });
   $$('[data-edit="visual"] .palette-preview').forEach(element => {
     element.querySelector('.treatment-illustration')?.remove();
-    element.insertAdjacentHTML('beforeend', treatmentIllustration(state.design.values.icon_treatment));
+    element.querySelector('small').insertAdjacentHTML('beforebegin', treatmentIllustration(state.design.values.icon_treatment));
   });
   $$('[data-color]').forEach(element => { if (/^#[0-9a-f]{6}$/i.test(element.dataset.color)) element.style.backgroundColor = element.dataset.color; });
   $$('[data-display-font]').forEach(element => { element.querySelector("b").style.fontFamily = `${JSON.stringify(element.dataset.displayFont)}, serif`; element.querySelector("small").style.fontFamily = `${JSON.stringify(element.dataset.bodyFont)}, sans-serif`; });
@@ -128,22 +128,17 @@ function editor(title, fields, save, options = {}) {
 }
 function fontPicker(role, value, fonts) { return `<fieldset><legend>${role === "display_font" ? "Display typeface" : "Body typeface"}</legend><div class="font-grid">${[...new Set([value, ...fonts])].map(font => `<button type="button" class="font-choice ${value === font ? "selected" : ""}" data-font="${esc(font)}" data-font-role="${role}"><strong>${esc(font)}</strong><span>Ag 你好</span></button>`).join("")}</div>${input(role, value, "Typeface name")}</fieldset>`; }
 async function openStyleEditor(mode) {
+  if (mode === "libraries") return openResourcePicker();
   const payload = state.design; const v = payload.values;
   const agency = payload.style_agency || payload.config?.resolved_profile?.style_agency || {}; let fields = "";
   if (mode === "guidance") fields = choiceCards("density", v.density, { spacious: ["Spacious", "One clear idea with generous room"], balanced: ["Balanced", "A focused argument with supporting detail"], information_rich: ["Information-rich", "Detailed analysis with a clear reading order"] }, "Information density") + choiceCards("density_mode", agency.density || "guided", { specified: "Keep this density", guided: "Allow some flexibility", agent_decides: "Choose for each presentation" }, "How flexible can it be?", true);
   if (mode === "typography") fields = choiceCards("typography_mode", agency.typography || "specified", { specified: "Use these typefaces", guided: "Use as a starting point", agent_decides: "Choose for each presentation" }, "Typography direction", true) + fontPicker("display_font", v.display_font, payload.fonts) + fontPicker("body_font", v.body_font, payload.fonts);
   if (mode === "visual") fields = choiceCards("palette_mode", agency.palette || "specified", { specified: ["Defined palette", "Use the values below"], guided: ["Flexible palette", "Keep its character while adapting"], agent_decides_from_references: ["From references", "Draw a coherent palette from the selected visuals"] }, "Color direction") + `<fieldset><legend>Palette</legend><div class="color-grid">${Object.entries({ primary: "Primary", secondary: "Secondary", highlight: "Highlight", surface: "Soft surface", text: "Text", background: "Background" }).map(([key, name]) => `<label>${name}<div class="color-input"><input type="color" data-color-for="${key}" value="${esc(v[key])}"><input name="${key}" value="${esc(v[key])}" pattern="#[0-9a-fA-F]{6}"></div></label>`).join("")}</div></fieldset>` + choiceCards("icon_treatment", v.icon_treatment, { agent_decides: ["Choose for each presentation", "Match line, fill, and container to the composition"], plain: ["Plain", "No surrounding surface"], tinted_surface: ["Tinted surface", "Use a quiet supporting container"] }, "Icon treatment", true);
-  if (mode === "libraries") {
-    const selected = payload.selected_sets || payload.config?.library_sets?.selected || { icons: [], components: [] }; const sets = payload.library_sets || state.design.library_sets;
-    fields = `<fieldset><legend>Icon Sets</legend><div class="set-choice-grid">${sets.filter(item => item.kind === "icons").map(item => `<label class="set-choice"><input type="checkbox" name="icon_sets" value="${esc(item.id)}" ${selected.icons.includes(item.id) ? "checked" : ""}><span><b>${item.source === "remote" ? "↗" : "◇"}</b><strong>${esc(item.name)}</strong><small>${esc(item.description)}</small></span></label>`).join("")}</div></fieldset><fieldset><legend>Component Sets</legend><div class="set-choice-grid">${sets.filter(item => item.kind === "components").map(item => `<label class="set-choice"><input type="checkbox" name="component_sets" value="${esc(item.id)}" ${selected.components.includes(item.id) ? "checked" : ""}><span><b>▦</b><strong>${esc(item.name)}</strong><small>${esc(item.description)}</small></span></label>`).join("")}</div></fieldset>`;
-  }
   editor({ guidance: "Information density", typography: "Choose typefaces", visual: "Color and treatment", libraries: "Library Sets" }[mode], fields, async form => {
     const values = Object.fromEntries(form); const profileValues = {};
     if (mode === "guidance") { profileValues.style_agency = { density: values.density_mode }; delete values.density_mode; }
     if (mode === "typography") { profileValues.style_agency = { typography: values.typography_mode }; delete values.typography_mode; }
     if (mode === "visual") { profileValues.style_agency = { palette: values.palette_mode }; delete values.palette_mode; }
-    const selectedLibrarySets = mode === "libraries" ? { icons: form.getAll("icon_sets"), components: form.getAll("component_sets") } : null;
-    if (selectedLibrarySets) { profileValues.library_sets = selectedLibrarySets; delete values.icon_sets; delete values.component_sets; }
     for (const key of Object.keys(values)) if (values[key] === v[key]) delete values[key];
     if (Object.keys(profileValues).length || Object.keys(values).length) await api("/api/profile/style", { profile: v.profile, values, profile_values: profileValues, revision: payload.revision, profile_revision: payload.profile_revision });
     await refreshOverview(); await loadDesign();
@@ -151,17 +146,6 @@ async function openStyleEditor(mode) {
   }, { scope: "GUIDANCE PROFILE", help: "These choices guide future presentations." });
 }
 
-async function loadResources() {
-  state.librarySets = await api("/api/library-sets");
-  const groups = { icons: state.librarySets.sets.filter(item => item.kind === "icons"), components: state.librarySets.sets.filter(item => item.kind === "components") };
-  $("#library-grid").innerHTML = `<section class="library-group"><div class="library-group-heading"><div><p class="eyebrow">VISUAL REFERENCES</p><h3>Reference library</h3><p>Search the references in each Profile by the message or relationship a slide needs to explain.</p></div><button class="quiet-button" data-view="design">Choose a Profile</button></div></section>` + Object.entries(groups).map(([kind, items]) => `<section class="library-group"><div class="library-group-heading"><span class="collection-symbol">${kind === "icons" ? iconGlyph() : "▦"}</span><div><p class="eyebrow">${kind === "icons" ? "ICONS" : "COMPONENTS"}</p><h3>${kind === "icons" ? "Icon Sets" : "Component Sets"}</h3><p>${items.length} sets</p></div><button class="icon-button add-set-button" data-new-set="${kind}" aria-label="Add ${kind === "icons" ? "Icon" : "Component"} Set">＋</button></div><div class="set-list">${items.map(item => `<button class="set-row" data-library-set="${esc(item.id)}"><span class="set-source">${item.source === "remote" ? "Online" : "Local"}</span><span><strong>${esc(item.name)}</strong><small>${esc(item.description)}</small></span><b>›</b></button>`).join("")}</div></section>`).join("");
-}
-async function openLibrarySet(setId) {
-  state.openSet = await api(`/api/library-set?set_id=${encodeURIComponent(setId)}`); const item = state.openSet;
-  $("#library-title").textContent = item.name;
-  $("#library-detail").innerHTML = `<div class="collection-intro"><p>${esc(item.description)}</p><div class="inline-actions"><button class="text-button" data-edit-set>Set details</button>${item.source === "local" ? '<button class="quiet-button" id="add-set-resource">＋ Add to set</button>' : ""}</div></div>${item.source === "remote" ? remoteSetContents(item) : `<div class="library-item-grid">${item.items.map(asset => item.kind === "components" ? `<button class="resource-card native-tile" data-component="${esc(asset.id)}"><div class="native-mini">${componentSymbol(asset)}</div><div class="resource-copy"><span class="eyebrow">${asset.path?.endsWith(".pptx") ? "EDITABLE POWERPOINT" : "DESIGN GRAMMAR"}</span><h4>${esc(asset.name || asset.id)}</h4><p>${esc(asset.description || "")}</p><span class="text-link">Inspect component</span></div></button>` : `<article class="resource-card"><button class="resource-thumbnail" data-preview="${esc(asset.asset_url || "")}" data-title="${esc(asset.name || asset.id)}"><img src="${esc(asset.asset_url || "")}" alt="${esc(asset.name || asset.id)}"></button><div class="resource-copy"><h4>${esc(asset.name || asset.id)}</h4><p>${esc(asset.description || "")}</p></div></article>`).join("")}</div>`}`;
-  if (!$("#library-dialog").open) $("#library-dialog").showModal();
-}
 async function loadSystem() {
   state.system = await api("/api/settings");
   state.generation = await api("/api/generation");
@@ -206,9 +190,14 @@ document.addEventListener("click", event => attempt(async () => {
   if (button.dataset.librarySet) return openLibrarySet(button.dataset.librarySet);
   if (button.dataset.capability) return openCapability(button.dataset.capability);
   if (button.id === "close-library-set") { state.openSet = null; $("#library-detail").hidden = true; return; }
-  if (button.id === "new-library-set") return editor("Create a Library Set", choiceCards("kind", "icons", { icons: ["Icon Set", "A coherent symbol family"], components: ["Component Set", "Reusable editable structures"] }, "Set type") + input("name", "", "Set name") + '<label>Description<textarea name="description" rows="3"></textarea></label>', async form => { const created = await api("/api/library-set/create", Object.fromEntries(form)); await loadResources(); await openLibrarySet(created.id); toast("Library Set created"); }, { scope: "RESOURCE LIBRARY", help: "Profiles can share a set without duplicating its assets.", label: "Create set" });
-  if (button.id === "add-set-resource") return editor("Add to Library Set", '<label>File<input type="file" name="file" required></label>' + input("name", "", "Name") + '<label>Description<textarea name="description" rows="3"></textarea></label>' + input("tags", "", "Tags · comma separated") + input("source_url", "", "Source URL") + input("license", "", "License / usage permission"), async form => { const values = Object.fromEntries(form); const file = values.file; delete values.file; values.tags = values.tags.split(",").map(tag => tag.trim()).filter(Boolean); await api("/api/library-set/add", { ...values, set_id: state.openSet.id, filename: file.name, content_base64: await fileData(file) }); await openLibrarySet(state.openSet.id); toast("Resource added to the set"); }, { scope: state.openSet.name.toUpperCase(), help: "Icons require license information. Components keep their source and descriptive metadata.", label: "Add resource" });
-  if (button.id === "new-profile") return editor("Create a guidance profile", input("name", "", "Profile name") + choiceCards("based_on", state.design.values.profile, Object.fromEntries(state.overview.profiles.map(profile => [profile.id, [profile.name, profile.purpose]])), "Starting point") + '<label>What should this style express?<textarea name="purpose" rows="4"></textarea></label>', async form => { const result = await api("/api/profile/create", Object.fromEntries(form)); await refreshOverview(); await loadDesign(); toast(`${result.profile.name} created`); }, { scope: "GUIDANCE PROFILE", help: "Start with the closest look and adjust it anytime.", label: "Create profile" });
+  if (button.id === "add-set-resource") return addSharedResource();
+  if (button.id === "new-profile") return editor("Create a profile", input("name", "", "Profile name") + choiceCards("based_on", state.design.values.profile, Object.fromEntries(state.overview.profiles.map(profile => [profile.id, [profile.name, profile.purpose]])), "Starting style") + '<label>What should this style express?<textarea name="purpose" rows="4"></textarea></label>', async form => {
+    const result = await api("/api/profile/create", Object.fromEntries(form));
+    state.consoleProfile = result.profile.id;
+    await refreshOverview(); await loadDesign();
+    setTimeout(() => attempt(() => openResourcePicker()), 0);
+    toast("Profile created. Choose its shared resources.");
+  }, { scope: "GUIDANCE PROFILE", help: "The starting style includes its resource selections. You can change them next.", label: "Create and choose resources" });
   if (button.id === "reset-default-style") return editor("Restore profile style?", "<p>Restore this profile’s original fonts, colors, and density. Existing presentations stay the same.</p>", async () => { await api("/api/design", { profile: state.design.values.profile, reset: true, revision: state.design.revision }); await loadDesign(); toast("Profile style restored"); }, { label: "Restore style" });
 }));
 

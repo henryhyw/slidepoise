@@ -75,7 +75,7 @@ def test_profile_clone_copies_effective_style_and_is_independent(home):
     assert design.resolve_default(created["id"])["design"]["style"]["body_font"] == "Courier New"
 
 
-def test_clone_captures_custom_reference_location(home, tmp_path):
+def test_clone_shares_migrated_custom_reference_location(home, tmp_path):
     custom = tmp_path / "references"
     write(custom / "catalog.json", {"items": {"custom": {"id": "custom", "path": "image.png"}}})
     (custom / "image.png").write_bytes(b"reference fixture")
@@ -83,23 +83,30 @@ def test_clone_captures_custom_reference_location(home, tmp_path):
     cfg["library_locations"] = {"editorial-archive": {"visual_references": str(custom)}}
     write(home / "config.json", cfg)
     clone = profile_authoring.create_profile("Custom references", based_on="editorial-archive")
-    copied = Path(clone["root"]) / "libraries/visual_references"
-    assert read(copied / "catalog.json")["items"]["custom"]["id"] == "custom"
-    assert (copied / "image.png").read_bytes() == b"reference fixture"
+    original = profile_authoring.profile_payload("editorial-archive")["profile"]
+    assert clone["profile"]["library_sets"] == original["library_sets"]
+    assert not (Path(clone["root"]) / "libraries").exists()
+    selected = library_sets.selected_items(clone["profile"], "visual_references")
+    imported = next(item for item in selected if item["id"] == "custom")
+    assert Path(imported["path"]).read_bytes() == b"reference fixture"
+    assert Path(imported["path"]).is_relative_to(home / "library-sets")
+    assert "editorial-archive" not in read(home / "config.json")["library_locations"]
 
 
-def test_library_listing_uses_session_sets_and_custom_reference_location(run, tmp_path):
-    cfg = sessions.resolve(run)
-    cfg["library_sets"]["selected"] = {"icons": [], "components": []}
-    custom = tmp_path / "custom.json"
-    write(custom, {"items": {"only": {"id": "only", "name": "Only selected reference"}}})
-    cfg["libraries"]["visual_references"]["catalog"] = str(custom)
+def test_library_listing_uses_session_selected_shared_references(run, tmp_path):
+    family = library_sets.create_set("Custom references", "visual_references")
+    catalog, _ = library_sets.set_catalog(family["id"])
+    write(catalog, {"items": {"only": {"id": "only", "name": "Only selected reference"}}})
+    overrides = read(run / "session-overrides.json")
+    overrides["library_sets"] = {"icons": [], "components": [], "visual_references": [family["id"]]}
+    sessions.save_overrides(run, overrides, revision(run / "session-overrides.json"))
     resolved = tmp_path / "resolved.json"
-    write(resolved, cfg)
+    write(resolved, sessions.resolve(run))
     result = subprocess.run([sys.executable, str(ROOT / "slidepoise/scripts/list_library.py"), "--config", str(resolved)], capture_output=True, text=True, check=True)
     listed = json.loads(result.stdout)
     assert listed["icons"] == [] and listed["components"] == []
     assert [r["id"] for r in listed["visual_references"]] == ["only"]
+    assert listed["visual_references"][0]["resource_id"] == f"{family['id']}:only"
 
 
 def test_imported_native_component_has_usable_generation_preview(home, tmp_path, monkeypatch):

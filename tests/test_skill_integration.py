@@ -77,17 +77,19 @@ def test_catalog_preflight_does_not_validate_a_different_or_empty_library(tmp_pa
     assert "no profiles found" in empty.stdout
 
 
-def test_profile_catalog_rejects_unregistered_assets(tmp_path: Path) -> None:
+def test_shared_reference_catalog_rejects_unregistered_assets(tmp_path: Path) -> None:
     profiles = tmp_path / "profiles"
     shutil.copytree(PROFILES / "consulting", profiles / "consulting")
-    extra = profiles / "consulting" / "libraries" / "visual_references" / "unregistered.png"
+    libraries = tmp_path / "library-sets"
+    shutil.copytree(ROOT / "library-sets", libraries)
+    extra = libraries / "visual_references" / "consulting-references" / "unregistered.png"
     extra.write_bytes(b"unregistered")
     result = run_script(
         "preflight_catalogs.py",
         "--profiles-root",
         str(profiles),
         "--library-sets-root",
-        str(ROOT / "library-sets"),
+        str(libraries),
     )
     assert result.returncode == 2
     assert "unregistered asset unregistered.png" in result.stdout
@@ -329,14 +331,15 @@ def test_sam_auto_falls_back_without_checkpoint() -> None:
     assert report["eligible_entity_ids"] == ["irregular-a"]
 
 
-def test_console_separates_profile_references_from_shared_library_sets(tmp_path, monkeypatch) -> None:
+def test_console_reads_selected_references_from_shared_library_sets(tmp_path, monkeypatch) -> None:
     monkeypatch.setenv("SLIDEPOISE_HOME", str(tmp_path / "home"))
     initialize_home(PROFILES)
     assert server.library("visual_references", "consulting")["count"] == 2
     assert server.library("visual_references", "editorial-archive")["count"] == 2
     assert server.library("visual_references", "monochrome-modern")["count"] == 2
     assert {item["id"] for item in server.library_sets.list_sets()} == {
-        "remix-icon", "wikimedia-identity", "consulting-core", "editorial-core"
+        "remix-icon", "wikimedia-identity", "consulting-core", "editorial-core",
+        "consulting-references", "editorial-references", "monochrome-references", "pwc-public-references",
     }
     assert server.library_set("consulting-core")["count"] == 13
 

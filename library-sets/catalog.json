@@ -36,6 +36,38 @@
       "description": "Restrained editorial structures that support image-led, archival and monochrome compositions.",
       "source": "local",
       "root": "components/editorial-core"
+    },
+    "consulting-references": {
+      "id": "consulting-references",
+      "kind": "visual_references",
+      "name": "Consulting references",
+      "description": "Generated consulting composition references for hierarchy, prioritization and operating models.",
+      "source": "local",
+      "root": "visual_references/consulting-references"
+    },
+    "editorial-references": {
+      "id": "editorial-references",
+      "kind": "visual_references",
+      "name": "Editorial references",
+      "description": "Image-led archival and documentary composition references.",
+      "source": "local",
+      "root": "visual_references/editorial-references"
+    },
+    "monochrome-references": {
+      "id": "monochrome-references",
+      "kind": "visual_references",
+      "name": "Monochrome references",
+      "description": "High-contrast editorial typography and geometric composition references.",
+      "source": "local",
+      "root": "visual_references/monochrome-references"
+    },
+    "pwc-public-references": {
+      "id": "pwc-public-references",
+      "kind": "visual_references",
+      "name": "Public PwC and Strategy& references",
+      "description": "Published source pages for consulting communication, with source PDFs and page provenance.",
+      "source": "local",
+      "root": "visual_references/pwc-public-references"
     }
   }
 }

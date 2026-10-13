@@ -99,32 +99,38 @@ slidepoise profile list
 slidepoise profile show editorial-archive
 slidepoise profile select editorial-archive
 slidepoise profile create "My Studio" --based-on editorial-archive
-slidepoise profile add-resource my-studio visual_references reference.png --name "Editorial rhythm" --description "Asymmetric type and image treatment"
 slidepoise library list
+slidepoise library create visual_references "Studio references"
+slidepoise library add-resource studio-references reference.png --name "Editorial rhythm" --description "Asymmetric type and image treatment"
 slidepoise library create icons "Research symbols"
 slidepoise library add-resource research-symbols icon.svg --name "Research" --license "CC0"
 slidepoise console
 ```
 
-## Isolated profile structure
+## Shared resources and profile selections
 
 ```text
 profiles/<profile-id>/
   profile.json
-  libraries/
-    visual_references/catalog.json
 
 library-sets/
   catalog.json
+  visual_references/<set-id>/catalog.json
   icons/<set-id>/catalog.json
   components/<set-id>/catalog.json
 ```
 
-Visual references belong to a profile because they define its point of view. Icons and components belong to coherent Library Sets because multiple profiles can share them without duplication. A profile selects complete sets. A run may temporarily override the captured selection.
+Visual references, icons and components all live in shared Library Sets. A profile stores its style guidance and resource selection. Several profiles can use the same resources with different typography, palettes and selected items. Creating a profile copies its style and selection without duplicating resource files.
+
+In Console, choose a profile and use Resources to select sets or individual items. Whole-set selections include new items added later. Choosing particular items keeps that explicit selection until you change it. Unchecking a resource removes it from that profile's selection while leaving it available to other profiles. Visual reference and icon choices are separate, so a profile can use a consulting reference collection while using a different icon family.
+
+The underlying `library_sets` field selects set IDs for each kind. Optional `library_items` entries select item IDs within those sets. For example, `{"visual_references": {"editorial-references": ["comparison-page"]}}` selects one page. An absent set entry means all its current and future items. An empty array means none. Each resource has a stable qualified ID such as `editorial-references:comparison-page`, which distinguishes it from items in another set.
+
+Console and the skill resolve the same shared catalogs. Resource additions, edits and profile selection changes become available whenever those catalogs are refreshed or resolved. A run retains its captured profile style until you ask it to adopt newer design defaults. Its resources follow the profile's current choices unless you set a resource override for that run. The Agent resolves selected resources before using them and binds exact source files to each generated output.
 
 Remix Icon and Wikimedia identity assets are remote Library Sets. The Agent inspects identity, visual fit, license terms, and provenance before selecting an asset. Retrieved files remain in the run cache.
 
-Profiles are user-owned and can evolve through ordinary Agent conversation or the Console. The Agent can create a profile from the closest included starting point, translate the user's references and intent into guidance, and add an approved visual reference to the profile's private catalog. A run upload remains session-only until the user indicates that it should influence future work.
+Profiles and libraries can evolve through ordinary Agent conversation or Console. Ask the Agent to make supplied material reusable and it handles inspection, import, stable IDs, searchable metadata and profile selection. It checks that the resources can be found and used through the same catalogs shown in Console. A run upload remains session-only until you indicate that it should influence future work.
 
 Profiles can specify a palette, typography, density, or icon treatment, express those values as guidance, or leave the decision to the Agent. Concrete fallback values remain available for reconstruction even when image generation has visual freedom.
 
@@ -133,8 +139,8 @@ Profiles can specify a palette, typography, density, or icon treatment, express 
 ```text
 ~/.codex/skills/slidepoise/      stable Agent entrypoint and reconstruction runtime
 ~/.slidepoise/config.json        framework defaults and global provider switches
-~/.slidepoise/profiles/          isolated guidance profiles and their libraries
-~/.slidepoise/library-sets/      reusable icon and component families
+~/.slidepoise/profiles/          style guidance and resource selections
+~/.slidepoise/library-sets/      shared visual references, icons and components
 ~/.slidepoise/settings.json      active profile
 ~/.slidepoise/node/              PptxGenJS and Node runtime dependencies
 ~/.slidepoise/python/            npx-managed Python environment, when npx setup is used
@@ -170,7 +176,7 @@ The Agent opens this panel only when current-presentation controls would help. I
 
 Applying an edit writes a durable event for the Agent. An override affects only the bound presentation and never changes the shared Profile. The panel must be opened with a known run. It has no presentation picker or project-management surface.
 
-The standalone Console is available at `/console/` on the same local service. It manages global Profiles, Profile-owned references, Library Sets, and system capabilities. It does not manage presentation runs.
+The standalone Console is available at `/console/` on the same local service. It manages Profiles, shared Library Sets, each profile's resource selection and system capabilities. It does not manage presentation runs.
 
 ```bash
 slidepoise run create "Executive summary"

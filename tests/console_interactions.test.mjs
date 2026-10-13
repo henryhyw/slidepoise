@@ -77,3 +77,38 @@ test('shared Agent changes refresh Console without overwriting an open editor', 
   await h.run('refreshSharedFiles()');
   assert.equal(h.run('loads'), 1);
 });
+
+function resourceHarness() {
+  const h = harness();
+  vm.runInContext(readFileSync(new URL('../webapp/console/resources.js', import.meta.url), 'utf8'), h.context);
+  h.run(`var sets=[{id:'refs',kind:'visual_references'},{id:'brand',kind:'icons'},{id:'parts',kind:'components'}];`);
+  return h;
+}
+
+test('resource picker preserves complete sets and explicit item subsets independently', () => {
+  const h = resourceHarness();
+  const result = h.run(`selectedResourceValues(resourceSelection({
+    library_sets:{visual_references:['refs'],icons:[],components:['parts']},
+    library_items:{visual_references:{refs:['r1']}}
+  },sets),sets)`);
+  assert.deepEqual(JSON.parse(JSON.stringify(result)), {
+    library_sets: {visual_references:['refs'],icons:[],components:['parts']},
+    library_items: {visual_references:{refs:['r1']},icons:{},components:{}}
+  });
+});
+
+test('deselecting an item materializes a subset and does not enable other kinds', () => {
+  const h = resourceHarness();
+  const choice = h.run(`toggleResourceItem({enabled:true,ids:null},[{id:'r1'},{id:'r2'}],'r2',false)`);
+  assert.deepEqual(JSON.parse(JSON.stringify(choice)), {enabled:true,ids:['r1']});
+  const none = h.run(`toggleResourceItem({enabled:true,ids:['r1']},[{id:'r1'},{id:'r2'}],'r1',false)`);
+  assert.deepEqual(JSON.parse(JSON.stringify(none)), {enabled:false,ids:[]});
+  const one = h.run(`toggleResourceItem({enabled:false,ids:null},[{id:'r1'},{id:'r2'}],'r2',true)`);
+  assert.deepEqual(JSON.parse(JSON.stringify(one)), {enabled:true,ids:['r2']});
+});
+
+test('deselecting a set removes its saved item restriction', () => {
+  const h = resourceHarness();
+  const result = h.run(`selectedResourceValues({refs:{enabled:false,ids:['r1']},brand:{enabled:false,ids:null},parts:{enabled:true,ids:null}},sets)`);
+  assert.deepEqual(JSON.parse(JSON.stringify(result.library_items)), {visual_references:{},icons:{},components:{}});
+});

@@ -229,3 +229,82 @@ def test_console_reference_search_uses_live_metadata_and_source_restrictions(ser
     _, _, raw = request('GET', query)
     assert created['published_document'] not in {item['id'] for item in json.loads(raw)['items']}
     assert request('GET', query + '&authenticity=unsupported')[0] == 400
+
+
+def test_shared_resource_selection_and_edits_remain_live_across_profiles(service):
+    from io import BytesIO
+    from PIL import Image
+    _, request = service
+
+    def read(route):
+        status, _, raw = request('GET', route)
+        assert status == 200, raw
+        return json.loads(raw)
+
+    def post(route, payload):
+        status, _, raw = request('POST', route, payload)
+        assert status in {200, 201}, raw
+        return json.loads(raw)
+
+    image = BytesIO()
+    Image.new('RGB', (12, 12), 'white').save(image, 'PNG')
+    encoded = base64.b64encode(image.getvalue()).decode()
+    refs = post('/api/library-set/create', {'name': 'Shared test references', 'kind': 'visual_references'})
+    icons = post('/api/library-set/create', {'name': 'Shared test icons', 'kind': 'icons'})
+
+    def add(set_id, name):
+        return post('/api/library-set/add', {'set_id': set_id, 'filename': 'resource.png',
+            'content_base64': encoded, 'name': name, 'description': 'Shared decision reference',
+            'source_type': 'user_private_document', 'source_page': '3', 'license': 'User supplied'})
+
+    first = add(refs['id'], 'First reference')
+    second = add(refs['id'], 'Second reference')
+    add(icons['id'], 'Private brand icon')
+    for profile_id, subset, enabled_icons in [('consulting', None, [icons['id']]), ('editorial-archive', [first['id']], [])]:
+        profile = read('/api/profile?profile=' + profile_id)
+        post('/api/profile/update', {'profile_id': profile_id, 'revision': profile['revision'], 'values': {
+            'library_sets': {'visual_references': [refs['id']], 'icons': enabled_icons, 'components': []},
+            'library_items': {'visual_references': {} if subset is None else {refs['id']: subset}, 'icons': {}, 'components': {}}}})
+    third = add(refs['id'], 'Added later')
+    all_refs = read('/api/library?kind=visual_references&profile=consulting')['items']
+    subset = read('/api/library?kind=visual_references&profile=editorial-archive')['items']
+    assert {item['id'] for item in all_refs} == {first['id'], second['id'], third['id']}
+    assert [item['id'] for item in subset] == [first['id']]
+    assert subset[0]['resource_id'] == f"{refs['id']}:{first['id']}"
+    assert subset[0]['provenance']['source_type'] == 'user_private_document'
+    assert read('/api/library?kind=icons&profile=editorial-archive')['items'] == []
+    assert len(read('/api/library?kind=icons&profile=consulting')['items']) == 1
+    post('/api/library-set/item/update', {'set_id': refs['id'], 'id': first['id'],
+        'revision': subset[0]['catalog_revision'], 'values': {'name': 'Updated shared reference'}})
+    for profile_id in ['consulting', 'editorial-archive']:
+        items = read('/api/library?kind=visual_references&profile=' + profile_id)['items']
+        assert next(item for item in items if item['id'] == first['id'])['name'] == 'Updated shared reference'
+    status, _, _ = request('POST', '/api/library-set/item/update', {'set_id': refs['id'], 'id': first['id'],
+        'revision': subset[0]['catalog_revision'], 'values': {'name': 'Stale overwrite'}})
+    assert status == 409
+    selection = read('/api/design?profile=editorial-archive')
+    assert selection['selected_sets']['visual_references'] == [refs['id']]
+    assert selection['selected_items']['visual_references'] == {refs['id']: [first['id']]}
+
+
+def test_shared_resource_edit_uses_item_identity_and_safe_source_paths(service):
+    from framework import library_sets
+    _, request = service
+    path, catalog = library_sets.set_catalog('consulting-references')
+    item = next(iter(catalog['items'].values()))
+    item_id = item['id']
+    # Historical catalogs use filenames as dictionary keys and IDs inside records.
+    assert item_id not in catalog['items']
+    status, _, raw = request('GET', '/api/library-set?set_id=consulting-references')
+    assert status == 200
+    payload = json.loads(raw)
+    status, _, raw = request('POST', '/api/library-set/item/update', {
+        'set_id': 'consulting-references', 'id': item_id,
+        'revision': payload['catalog_revision'], 'values': {'description': 'Shared guidance'}})
+    assert status == 200, raw
+    updated = json.loads(raw)
+    assert next(item for item in updated['items'] if item['id'] == item_id)['description'] == 'Shared guidance'
+    status, _, _ = request('POST', '/api/library-set/item/update', {
+        'set_id': 'consulting-references', 'id': item_id,
+        'revision': updated['catalog_revision'], 'values': {'path': '../outside.png'}})
+    assert status == 400

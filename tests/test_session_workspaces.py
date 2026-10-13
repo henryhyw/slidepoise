@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from pathlib import Path
 
 import pytest
 
@@ -65,7 +66,9 @@ def test_agent_can_create_profile_and_add_reference(home, tmp_path):
     result = profile_authoring.add_resource(profile["id"], "visual_references", reference,
                                              name="Editorial rhythm", description="Asymmetric type and image rhythm")
     assert result["profile"] == "studio-notes"
-    assert (home / "profiles/studio-notes/libraries/visual_references" / result["path"].split("/")[-1]).is_file()
+    assert Path(result["path"]).is_file()
+    assert Path(result["path"]).is_relative_to(home / "library-sets")
+    assert not (home / "profiles/studio-notes/libraries").exists()
 
 
 def test_profile_selects_shared_sets_and_run_can_override_them(home):
@@ -76,7 +79,8 @@ def test_profile_selects_shared_sets_and_run_can_override_them(home):
     overrides["library_sets"] = {"icons": ["remix-icon"], "components": ["editorial-core"]}
     sessions.save_overrides(root, overrides, revision(root / "session-overrides.json"))
     resolved = sessions.resolve(root)
-    assert resolved["library_sets"]["selected"] == overrides["library_sets"]
+    assert all(resolved["library_sets"]["selected"][kind] == values for kind, values in overrides["library_sets"].items())
+    assert resolved["library_sets"]["selected"]["visual_references"] == ["consulting-references"]
     assert resolved["remote_sources"]["remix_icon"]["enabled"] is True
     assert resolved["remote_sources"]["wikimedia_commons"]["enabled"] is False
 

@@ -14,7 +14,7 @@ python scripts/retrieve_references.py \
   --sheet work/reference-candidates.png
 ```
 
-Paths in this example are relative to a one-slide run. A deck page uses its page-local intent and output paths with the shared resolved config. The command indexes configured local reference metadata and renders a labelled sheet of candidate previews. It does not search the web, infer hidden slide meaning from pixels, verify publishers, or choose generation inputs. Use `--catalog` to include a run-local catalog of user or newly retrieved source pages. Keep the index outside the stable skill.
+Paths in this example are relative to a one-slide run. A deck page uses its page-local intent and output paths with the shared resolved config. Resolve configuration before retrieval so the run's selected set and item IDs use the latest shared catalog records. The command indexes only enabled local references and renders a labelled sheet of candidate previews. Whole-set selections include newly registered references. Explicit item subsets exclude unchecked pages. It does not search the web, infer hidden slide meaning from pixels, verify publishers, or choose generation inputs. Use `--catalog` to include a run-local catalog of user or newly retrieved source pages. Keep the index outside the stable skill.
 
 Query from the audience question, communication job, slide role and semantic relationships. Add `--query` when the intent needs useful synonyms. For example, explaining system responsibilities and shared state calls for ownership, layers, dependencies and feedback. A decision page may need options, evaluation criteria and a recommendation. Matching the subject alone will miss useful structures in other industries.
 
@@ -36,13 +36,13 @@ python scripts/retrieve_references.py \
   --sheet work/reference-candidates.png
 ```
 
-Keep private catalogs and images outside the repository. Adding a catalog for a run does not copy its sources into a bundled profile. Paths, hashes and provenance still pass through the selection checks.
+Keep private catalogs and images outside the repository. Adding a catalog for a run leaves its sources local to that run. When the user requests reusable references, register them in a shared Library Set and select the set or its individual items for the intended profiles using `profile-authoring.md`. Paths, hashes and provenance still pass through the selection checks.
 
 When the user asks to anonymize an internal deck for a private reference library, keep the source separate and make a derived copy. Remove identifying content from editable text, imagery, inherited slide furniture, notes, metadata and embedded documents. Inspect every rendered page and any retained raster diagrams. Placeholder substitution should preserve the relationships and density that make the layout useful. Record the derivative origin and privacy scope in the catalog. Anonymization does not grant redistribution rights. Only the reviewed derivative should enter retrieval or generation inputs. Review it again as a composition in its own right. If removing confidential material leaves empty evidence areas, broken grouping or visibly unbalanced regions, exclude that page from the active library unless the user wants it repaired. Preserving geometry alone does not make a useful visual reference.
 
 An inspected catalog record may set `retrieval_eligible` to `false`, for example for a cover or contact page that remains useful as source context. This host-authored flag excludes it from normal results. Use `--include-ineligible` only when that context is relevant. Eligibility expresses a recorded use decision and does not establish aesthetic quality.
 
-The bundled `pwc-public` profile provides genuine published sources for this workflow. Its complete Strategy& deck supports neighboring-page inspection as well as individual-page retrieval. Private user references remain separate.
+The bundled `pwc-public-references` Library Set provides genuine published sources for this workflow. The `pwc-public` profile selects it by default, and other profiles may also select it. Its complete Strategy& deck supports neighboring-page inspection as well as individual-page retrieval. Private user references remain in external user-owned sets.
 
 ## Check source and inspect the page
 
@@ -62,7 +62,7 @@ Keep retrieval results in `work/reference-candidates.json`. They are a candidate
 
 Copy the result's `reference_retrieval` block unchanged into the resource draft alongside your selected references. It records `selection_mode: host_selected`, the authenticity policy, exclusions and source catalogs. The compiler uses this block to preserve host selection, suppress automatic profile-reference additions and check selected references against the same source restrictions. It never promotes retrieved candidates into selected references.
 
-For each selection, retain its exact ID, canonical file and provenance, then write a concrete reason that covers
+For each selection, retain its qualified `resource_id`, canonical file and provenance, then write a concrete reason that covers
 
 - the communication job it helps this page perform
 - the observed treatment to borrow, such as separating responsibilities from a shared dependency
@@ -80,4 +80,4 @@ Pass repeatable `--exclude-id` arguments for individual IDs or `--exclusions wor
 
 When the user rejects generated references or asks for a genuine publisher's work, exclude the rejected source family and its derived guidance from subsequent generation. Review shared design prose, inherited reference priorities, always-attached defaults, context sheets and compiled prompts as well as the image list. Re-resolve session settings and recompile affected requests. Preserve the rejected pass for traceability and keep useful factual research separately available.
 
-This is a correction to the current run unless the user asks to evolve a persistent profile. Do not silently delete profile assets or promote a temporary user upload into the permanent library. An empty eligible candidate set calls for honest further retrieval or a stated source limitation. It never justifies recycling a rejected reference.
+This is a correction to the current run unless the user asks to evolve a persistent profile. Removing a resource from one profile changes that profile's selection and preserves the shared asset for other profiles. Do not silently delete shared assets or promote a temporary user upload into the permanent library. An empty eligible candidate set calls for honest further retrieval or a stated source limitation. It never justifies recycling a rejected reference.

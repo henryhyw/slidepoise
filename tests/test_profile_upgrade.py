@@ -26,6 +26,7 @@ def test_upgrade_preserves_settings_assets_and_captured_sessions(tmp_path, monke
     profile['purpose'] = 'My custom direction'
     write(legacy / 'profile.json', profile)
     extra = legacy / 'libraries/visual_references/custom.txt'
+    extra.parent.mkdir(parents=True, exist_ok=True)
     extra.write_text('User-owned resource')
     manifest = read(home / 'manifest.json')
     manifest['files'] = {k.replace(f'profiles/{new}/', f'profiles/{old}/'): v for k, v in manifest['files'].items()}
