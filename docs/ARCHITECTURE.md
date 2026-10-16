@@ -2,7 +2,7 @@
 
 SlidePoise develops slide content and composition, then reconstructs the selected images as editable PowerPoint objects. Conversation provides the working interface. A self-contained skill carries the reasoning contract and reconstruction runtime. Reusable Profiles and Library Sets stay outside that skill.
 
-[![SlidePoise architecture](images/slidepoise-architecture.png)](images/slidepoise-architecture.svg)
+[![SlidePoise workflow](images/slidepoise-architecture.png)](images/slidepoise-architecture.svg)
 
 ## Four stages
 
