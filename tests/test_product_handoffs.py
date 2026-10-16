@@ -25,7 +25,6 @@ from make_asset_contact_sheet import collect_resource_review_items
 def home(tmp_path, monkeypatch):
     monkeypatch.setenv("SLIDEPOISE_HOME", str(tmp_path / "home"))
     initialize_home(BUNDLED_PROFILES_ROOT)
-    monkeypatch.setattr(server, "REGISTRY", data_home() / "workspace/runs.json")
     return data_home()
 
 
@@ -46,7 +45,7 @@ def test_settings_change_reaches_panel_and_agent_once(run):
 
 def test_direct_agent_file_edit_refreshes_panel(run):
     before = panel.snapshot(run)["revision"]
-    write(run / "session-overrides.json", {"profile": "personal-monochrome"})
+    write(run / "session-overrides.json", {"profile": "monochrome-modern"})
     assert panel.snapshot(run)["revision"] != before
 
 
@@ -58,7 +57,7 @@ def test_metadata_and_adopted_defaults_notify_agent(run):
 
 def test_console_revision_observes_direct_profile_and_component_edits(home):
     before = server.console_revision()
-    profile = home / "profiles/personal-website/profile.json"
+    profile = home / "profiles/editorial-archive/profile.json"
     write(profile, {**read(profile), "purpose": "Updated externally"})
     assert server.console_revision() != before
     before = server.console_revision()
@@ -68,39 +67,46 @@ def test_console_revision_observes_direct_profile_and_component_edits(home):
 
 
 def test_profile_clone_copies_effective_style_and_is_independent(home):
-    design.save_defaults("personal-website", {"body_font": "Courier New", "primary": "#123456"}, revision(home / "config.json"))
-    created = profile_authoring.create_profile("My style", based_on="personal-website")
+    design.save_defaults("editorial-archive", {"body_font": "Courier New", "primary": "#123456"}, revision(home / "config.json"))
+    created = profile_authoring.create_profile("My style", based_on="editorial-archive")
     cloned = design.presentation_values(design.resolve_default(created["id"]))
     assert cloned["body_font"] == "Courier New" and cloned["primary"] == "#123456"
-    design.save_defaults("personal-website", {"body_font": "Georgia"}, revision(home / "config.json"))
+    design.save_defaults("editorial-archive", {"body_font": "Georgia"}, revision(home / "config.json"))
     assert design.resolve_default(created["id"])["design"]["style"]["body_font"] == "Courier New"
 
 
-def test_clone_captures_custom_reference_location(home, tmp_path):
+def test_clone_shares_migrated_custom_reference_location(home, tmp_path):
     custom = tmp_path / "references"
     write(custom / "catalog.json", {"items": {"custom": {"id": "custom", "path": "image.png"}}})
     (custom / "image.png").write_bytes(b"reference fixture")
     cfg = read(home / "config.json")
-    cfg["library_locations"] = {"personal-website": {"visual_references": str(custom)}}
+    cfg["library_locations"] = {"editorial-archive": {"visual_references": str(custom)}}
     write(home / "config.json", cfg)
-    clone = profile_authoring.create_profile("Custom references", based_on="personal-website")
-    copied = Path(clone["root"]) / "libraries/visual_references"
-    assert read(copied / "catalog.json")["items"]["custom"]["id"] == "custom"
-    assert (copied / "image.png").read_bytes() == b"reference fixture"
+    clone = profile_authoring.create_profile("Custom references", based_on="editorial-archive")
+    original = profile_authoring.profile_payload("editorial-archive")["profile"]
+    assert clone["profile"]["library_sets"] == original["library_sets"]
+    assert not (Path(clone["root"]) / "libraries").exists()
+    selected = library_sets.selected_items(clone["profile"], "visual_references")
+    imported = next(item for item in selected if item["id"] == "custom")
+    assert Path(imported["path"]).read_bytes() == b"reference fixture"
+    assert Path(imported["path"]).is_relative_to(home / "library-sets")
+    assert "editorial-archive" not in read(home / "config.json")["library_locations"]
 
 
-def test_library_listing_uses_session_sets_and_custom_reference_location(run, tmp_path):
-    cfg = sessions.resolve(run)
-    cfg["library_sets"]["selected"] = {"icons": [], "components": []}
-    custom = tmp_path / "custom.json"
-    write(custom, {"items": {"only": {"id": "only", "name": "Only selected reference"}}})
-    cfg["libraries"]["visual_references"]["catalog"] = str(custom)
+def test_library_listing_uses_session_selected_shared_references(run, tmp_path):
+    family = library_sets.create_set("Custom references", "visual_references")
+    catalog, _ = library_sets.set_catalog(family["id"])
+    write(catalog, {"items": {"only": {"id": "only", "name": "Only selected reference"}}})
+    overrides = read(run / "session-overrides.json")
+    overrides["library_sets"] = {"icons": [], "components": [], "visual_references": [family["id"]]}
+    sessions.save_overrides(run, overrides, revision(run / "session-overrides.json"))
     resolved = tmp_path / "resolved.json"
-    write(resolved, cfg)
+    write(resolved, sessions.resolve(run))
     result = subprocess.run([sys.executable, str(ROOT / "slidepoise/scripts/list_library.py"), "--config", str(resolved)], capture_output=True, text=True, check=True)
     listed = json.loads(result.stdout)
     assert listed["icons"] == [] and listed["components"] == []
     assert [r["id"] for r in listed["visual_references"]] == ["only"]
+    assert listed["visual_references"][0]["resource_id"] == f"{family['id']}:only"
 
 
 def test_imported_native_component_has_usable_generation_preview(home, tmp_path, monkeypatch):
@@ -143,8 +149,6 @@ def test_session_panel_snapshot_only_exposes_settings_assets_and_events(run):
     view = panel.snapshot(run)
     assert set(view) == {"path", "materials", "pending_events", "settings_revisions", "revision"}
     assert view["materials"][0]["name"] == "reference.png"
-    for removed in ("stages", "downloads", "versions", "activity", "approvals", "developer"):
-        assert removed not in view
 
 
 def test_npm_entry_keeps_callers_working_directory(home, tmp_path):

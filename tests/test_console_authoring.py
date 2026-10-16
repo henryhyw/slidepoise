@@ -19,7 +19,7 @@ def home(tmp_path, monkeypatch):
 
 
 def test_full_profile_guidance_is_editable_and_revisioned(home):
-    before = profile_authoring.profile_payload("personal-monochrome")
+    before = profile_authoring.profile_payload("monochrome-modern")
     values = {"reconstruction_guidance": {"palette_authority": "Use observed neutrals"},
               "asset_policy": {"photography": "Architectural details"},
               "visual_direction": {"custom_note": "Quiet geometric pages"}}
@@ -32,7 +32,7 @@ def test_full_profile_guidance_is_editable_and_revisioned(home):
 
 
 def test_profile_rejects_identity_and_wrong_kind_sets(home):
-    before = profile_authoring.profile_payload("personal-monochrome")
+    before = profile_authoring.profile_payload("monochrome-modern")
     with pytest.raises(ValueError):
         profile_authoring.update_profile(before["id"], {"profile_id": "other"}, before["revision"])
     with pytest.raises(ValueError):

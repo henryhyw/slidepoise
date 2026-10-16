@@ -5,9 +5,11 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import sys
 from pathlib import Path
 
-KINDS = ("icons", "visual_references", "components")
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "runtime/src"))
+from slidepoise.resource_catalogs import KINDS, resolve_libraries, selected_records
 
 
 def default_profiles_root() -> Path:
@@ -30,7 +32,14 @@ def main() -> None:
     parser.add_argument("--profiles-root", type=Path, default=default_profiles_root())
     parser.add_argument("--library-sets-root", type=Path, default=default_sets_root())
     parser.add_argument("--query", default="")
+    from retrieve_references import add_retrieval_arguments, run_retrieval
+    add_retrieval_arguments(parser)
     args = parser.parse_args()
+    if args.intent:
+        if args.kind not in ("all", "visual_references"):
+            parser.error("Per-slide reference retrieval requires --kind visual_references or all")
+        run_retrieval(args, parser)
+        return
 
     selected = KINDS if args.kind == "all" else (args.kind,)
     output: dict[str, list[dict]] = {}
@@ -38,46 +47,41 @@ def main() -> None:
     if cfg:
         profile = cfg["resolved_profile"]
         args.profile = profile["profile_id"]
-        args.library_sets_root = Path(cfg["library_sets"]["root"])
-        set_index = cfg["library_sets"]["records"]
-        selected_sets = cfg["library_sets"]["selected"]
-        visual_catalog = Path(cfg["libraries"]["visual_references"]["catalog"])
+        libraries = cfg.get("libraries", {})
+        set_index = cfg.get("library_sets", {}).get("records", {})
     else:
         if not args.profile:
             parser.error("Use --config for a session, or --profile to browse a shared profile")
         profile = json.loads((args.profiles_root / args.profile / "profile.json").read_text(encoding="utf-8"))
-        set_index = json.loads((args.library_sets_root / "catalog.json").read_text(encoding="utf-8")).get("items", {})
-        selected_sets = profile.get("library_sets", {})
-        visual_catalog = args.profiles_root / args.profile / "libraries/visual_references/catalog.json"
+        base_path = args.profiles_root.parent / "config.json"
+        base = json.loads(base_path.read_text()) if base_path.is_file() else {}
+        location = base.get("library_locations", {}).get(args.profile, {}).get("visual_references")
+        legacy = (Path(location) if location else args.profiles_root / args.profile / "libraries/visual_references") / "catalog.json"
+        try:
+            libraries, context = resolve_libraries(profile, args.library_sets_root, legacy_visual_catalog=legacy)
+        except (ValueError, OSError) as error:
+            parser.error(str(error))
+        set_index = context["records"]
     for kind in selected:
-        catalogs = []
-        if kind == "visual_references":
-            catalogs = [(visual_catalog, None)]
-        else:
-            for set_id in selected_sets.get(kind, []):
-                record = set_index.get(set_id, {})
-                if record.get("source") == "local":
-                    catalogs.append((args.library_sets_root / record["root"] / "catalog.json", set_id))
-                else:
-                    if cfg and not cfg.get("remote_sources", {}).get(record.get("provider"), {}).get("enabled"):
-                        continue
-                    output.setdefault(kind, []).append({"set_id": set_id, "name": record.get("name"), "source": "remote", "provider": record.get("provider")})
-        records: list[dict] = []
-        for catalog_path, set_id in catalogs:
-            catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
-            for key, item in (catalog.get("items") or {}).items():
-                haystack = " ".join([str(item.get("id", "")), str(item.get("name", "")), str(item.get("description", "")), " ".join(map(str, item.get("tags", []) or []))]).lower()
-                terms = [term for term in args.query.lower().split() if term]
-                if terms and not all(term in haystack for term in terms):
+        library = libraries.get(kind, {})
+        records = []
+        for set_id in library.get("set_ids", []):
+            record = set_index.get(set_id, {})
+            if record.get("source") == "remote":
+                if cfg and not cfg.get("remote_sources", {}).get(record.get("provider"), {}).get("enabled"):
                     continue
-                record = dict(item)
-                asset_path = catalog_path.parent / str(item.get("preview_path") or item.get("path", key))
-                record["absolute_path"] = str(asset_path.resolve()) if asset_path.exists() else None
-                record["profile_id"] = args.profile
-                if set_id:
-                    record["set_id"] = set_id
-                records.append(record)
-        output.setdefault(kind, []).extend(records)
+                records.append({"set_id": set_id, "name": record.get("name"), "source": "remote", "provider": record.get("provider")})
+        for catalog_path, catalog, item in selected_records(library):
+            haystack = " ".join([str(item.get("resource_id", item.get("id", ""))), str(item.get("name", "")), str(item.get("description", "")), " ".join(map(str, item.get("tags", []) or []))]).lower()
+            terms = [term for term in args.query.lower().split() if term]
+            if terms and not all(term in haystack for term in terms):
+                continue
+            record = dict(item)
+            asset_path = catalog_path.parent / str(item.get("preview_path") or item.get("path") or item.get("definition_path") or "")
+            record["absolute_path"] = str(asset_path.resolve()) if asset_path.is_file() else None
+            record["profile_id"] = args.profile
+            records.append(record)
+        output[kind] = records
     print(json.dumps(output, indent=2, ensure_ascii=False))
 
 

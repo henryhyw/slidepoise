@@ -1,5 +1,6 @@
 {
   "audience_question": "What should the audience understand or decide?",
+  "reading_context": "Describe the audience's prior context and whether the slide must be understood without a presenter.",
   "dominant_message": "One precise slide message",
   "information_structure": {
     "type": "comparison, argument, system, grouping, sequence, or another content-led form",

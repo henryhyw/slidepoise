@@ -17,15 +17,16 @@ def clean(value: Any) -> str:
 
 
 def request_json(url: str) -> dict[str, Any]:
-    request = urllib.request.Request(url, headers={"User-Agent": "SlidePoise/0.4 (remote media retrieval)"})
+    request = urllib.request.Request(url, headers={"User-Agent": "SlidePoise (https://github.com/henryhyw/slidepoise; media retrieval)"})
     with urllib.request.urlopen(request, timeout=30) as response:
         return json.loads(response.read().decode("utf-8"))
 
 
-def source_enabled(config: Path) -> None:
+def source_enabled(config: Path) -> dict:
     payload = json.loads(config.read_text(encoding="utf-8"))
     if not bool(((payload.get("remote_sources") or {}).get("wikimedia_commons") or {}).get("enabled")):
         raise SystemExit("Wikimedia Commons retrieval is disabled in the resolved config")
+    return payload["remote_sources"]["wikimedia_commons"]
 
 
 def main() -> None:
@@ -35,7 +36,7 @@ def main() -> None:
     parser.add_argument("--limit", type=int, default=8)
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
-    source_enabled(args.config)
+    source = source_enabled(args.config)
     limit = max(1, min(20, args.limit))
     params = {
         "action": "query",
@@ -48,8 +49,10 @@ def main() -> None:
         "format": "json",
         "formatversion": "2",
     }
-    url = "https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode(params)
+    url = str(source.get("api_url") or "https://commons.wikimedia.org/w/api.php") + "?" + urllib.parse.urlencode(params)
     payload = request_json(url)
+    if payload.get("error"):
+        raise SystemExit(f"Wikimedia Commons search failed: {payload['error'].get('info', payload['error'])}")
     candidates = []
     for page in (payload.get("query") or {}).get("pages", []) or []:
         info = ((page.get("imageinfo") or [{}])[0])
@@ -59,6 +62,7 @@ def main() -> None:
             "description_url": info.get("descriptionurl"),
             "original_url": info.get("url"),
             "mime": info.get("mime"),
+            "download_supported": info.get("mime") in source.get("allowed_media_types", []),
             "width": info.get("width"),
             "height": info.get("height"),
             "artist": clean(metadata.get("Artist")),

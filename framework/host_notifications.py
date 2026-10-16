@@ -5,6 +5,8 @@ The durable run event remains authoritative if the local transport is unavailabl
 """
 from __future__ import annotations
 
+from framework import __version__
+
 import json
 import queue
 import shutil
@@ -33,7 +35,7 @@ class CodexProxy:
             self.messages.put(None)
         threading.Thread(target=receive, daemon=True).start()
         try:
-            self.request("initialize", {"clientInfo": {"name": "slidepoise", "version": "0.5.0"}})
+            self.request("initialize", {"clientInfo": {"name": "slidepoise", "version": __version__}})
             self.send({"method": "initialized"})
         except Exception:
             self.__exit__(None, None, None)

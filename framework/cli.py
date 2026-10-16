@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from framework import __version__
+
 import argparse
 import json
 import subprocess
@@ -7,10 +9,11 @@ import sys
 
 from .installer import detect_host, setup
 from .paths import data_home
-from .profiles import active_profile_id, list_profiles, profile_record, set_active_profile
+from .profiles import active_profile_id, list_profiles, set_active_profile
 from . import sessions, run_versions
 from . import profile_authoring
 from . import library_sets, components
+from . import image_generation
 from .panel import open_panel
 from .storage import locked, read, revision, write
 from pathlib import Path
@@ -22,7 +25,7 @@ def emit(value: object) -> None:
 
 def command_setup(args: argparse.Namespace) -> None:
     result = setup(force_profiles=args.force_profiles, install_skill=not args.skip_skill,
-                   install_node=not args.skip_node, install_preview=not args.skip_preview)
+                   install_node=not args.skip_node, install_preview=not args.skip_preview, hosts=args.agent)
     emit(result)
     if result["node_dependencies"] is False or result["preview"]["status"] == "incomplete":
         raise SystemExit(1)
@@ -51,7 +54,8 @@ def command_profile(args: argparse.Namespace) -> None:
     elif args.profile_command == "add-resource":
         emit(profile_authoring.add_resource(args.profile_id, args.kind, Path(args.file), name=args.name,
                                             description=args.description, tags=[tag.strip() for tag in args.tags.split(",") if tag.strip()],
-                                            source_url=args.source_url, license_name=args.license))
+                                            source_url=args.source_url, license_name=args.license,
+                                            source_type=args.source_type, source_page=args.source_page))
 
 
 def command_console(args: argparse.Namespace) -> None:
@@ -76,13 +80,41 @@ def command_library(args: argparse.Namespace) -> None:
     elif args.library_command == "add-resource":
         emit(library_sets.add_resource(args.set_id, Path(args.file), name=args.name, description=args.description,
                                        tags=[tag.strip() for tag in args.tags.split(",") if tag.strip()],
-                                       source_url=args.source_url, license_name=args.license))
+                                       source_url=args.source_url, license_name=args.license,
+                                       source_type=args.source_type, source_page=args.source_page))
     elif args.library_command == "inspect":
         emit(components.inspect(args.set_id, args.component_id))
     elif args.library_command == "edit-object":
         emit(components.save_object(args.set_id, args.component_id, args.object_id, json.loads(args.json), args.expected, args.slide))
     elif args.library_command == "edit-component":
         emit(components.update_definition(args.set_id, args.component_id, json.loads(args.json), args.expected))
+
+
+def command_generation(args):
+    action = args.generation_command
+    if action in {"show", "configure"}:
+        if args.run:
+            root = sessions.require_run(args.run)
+            current = run_settings(root)
+            if action == "configure":
+                values = {key: getattr(args, key) for key in ("mode", "tool", "model", "instructions") if getattr(args, key) is not None}
+                previous = current["overrides"].get("image_generation") or {}
+                current["overrides"]["image_generation"] = {**previous, **values}
+                sessions.save_overrides(root, current["overrides"], args.expected or current["overrides_revision"])
+            emit({"values": sessions.resolve(root)["generation"]["preferences"], "scope": "presentation"})
+        elif action == "show":
+            emit(image_generation.payload())
+        else:
+            values = {key: getattr(args, key) for key in ("mode", "tool", "model", "instructions") if getattr(args, key) is not None}
+            emit(image_generation.configure(values, args.expected or image_generation.payload()["revision"]))
+        return
+    from .paths import SKILL_ROOT
+    command = [sys.executable, str(SKILL_ROOT / "scripts/generation_handoff.py"), action]
+    for key in ("request", "capabilities", "tool", "output", "handoff", "image"):
+        value = getattr(args, key, None)
+        if value is not None:
+            command.extend(["--" + key, str(value)])
+    raise SystemExit(subprocess.run(command).returncode)
 
 
 def run_settings(root):
@@ -142,10 +174,11 @@ def command_run(args):
 
 def parser() -> argparse.ArgumentParser:
     root = argparse.ArgumentParser(prog="slidepoise", description="Install and operate the SlidePoise presentation framework.")
-    root.add_argument("--version", action="version", version="slidepoise 0.5.0")
+    root.add_argument("--version", action="version", version=f"slidepoise {__version__}")
     commands = root.add_subparsers(dest="command", required=True)
 
-    setup_cmd = commands.add_parser("setup", help="Install profiles, dependencies, and the Codex skill.")
+    setup_cmd = commands.add_parser("setup", help="Install profiles, dependencies and the skill for detected Agent platforms.")
+    setup_cmd.add_argument("--agent", action="append", choices=["codex", "claude", "qoder"], help="Install for this platform. Repeat to choose several. Omit to detect installed platforms.")
     setup_cmd.add_argument("--force-profiles", action="store_true")
     setup_cmd.add_argument("--skip-skill", action="store_true")
     setup_cmd.add_argument("--skip-node", action="store_true")
@@ -157,6 +190,30 @@ def parser() -> argparse.ArgumentParser:
     doctor = commands.add_parser("doctor", help="Inspect framework dependencies and active configuration.")
     doctor.set_defaults(func=command_doctor)
 
+    generation = commands.add_parser("generation", help="Choose image generation or exchange prompts and returned images.")
+    generation_commands = generation.add_subparsers(dest="generation_command", required=True)
+    for name in ("show", "configure", "route", "export", "import"):
+        command = generation_commands.add_parser(name)
+        command.set_defaults(func=command_generation)
+        if name in {"show", "configure"}:
+            command.add_argument("--run", help="Apply to one presentation. Otherwise use saved defaults.")
+        if name == "configure":
+            command.add_argument("--mode", choices=["auto", "tool", "manual"])
+            command.add_argument("--tool", help="Tool name or MCP tool ID, confirmed with the Agent.")
+            command.add_argument("--model", help="Optional model selection. Use an empty string to clear it.")
+            command.add_argument("--instructions", help="Preferences for the Agent. Do not include credentials.")
+            command.add_argument("--expected", help="Revision returned by generation show or run sync.")
+        if name in {"route", "export"}:
+            command.add_argument("--request", required=True)
+        if name == "route":
+            command.add_argument("--capabilities", help="Inventory discovered by the Agent in the current conversation.")
+            command.add_argument("--tool", help="The compatible tool chosen by the Agent.")
+        if name in {"export", "import"}:
+            command.add_argument("--output", required=True)
+        if name == "import":
+            command.add_argument("--handoff", required=True)
+            command.add_argument("--image", required=True)
+
     panel = commands.add_parser("panel", help="Open style and asset overrides for one presentation.")
     panel.add_argument("--run", help="Presentation folder to bind.")
     panel.add_argument("--id", help="Reuse this conversation's panel and preserve its selection unless --run is supplied.")
@@ -164,7 +221,7 @@ def parser() -> argparse.ArgumentParser:
     panel.add_argument("--view", choices=["session", "style"], default="session")
     panel.set_defaults(func=lambda args: emit(open_panel(args.run, args.port, args.view, args.id)))
 
-    profile = commands.add_parser("profile", help="List, inspect, or select isolated guidance profiles.")
+    profile = commands.add_parser("profile", help="List, inspect, or select reusable guidance profiles.")
     profile_commands = profile.add_subparsers(dest="profile_command", required=True)
     profile_list = profile_commands.add_parser("list")
     profile_list.set_defaults(func=command_profile)
@@ -194,9 +251,11 @@ def parser() -> argparse.ArgumentParser:
     profile_resource.add_argument("--tags", default="")
     profile_resource.add_argument("--source-url", default="")
     profile_resource.add_argument("--license", default="")
+    profile_resource.add_argument("--source-type", choices=["unknown", "published_document", "user_private_document", "generated_image"], default="unknown")
+    profile_resource.add_argument("--source-page", default="")
     profile_resource.set_defaults(func=command_profile)
 
-    library = commands.add_parser("library", help="Manage coherent icon and component sets shared by profiles.")
+    library = commands.add_parser("library", help="Manage shared visual references, icons and component sets.")
     library_commands = library.add_subparsers(dest="library_command", required=True)
     library_list = library_commands.add_parser("list")
     library_list.set_defaults(func=command_library)
@@ -213,6 +272,8 @@ def parser() -> argparse.ArgumentParser:
     library_resource.add_argument("--tags", default="")
     library_resource.add_argument("--source-url", default="")
     library_resource.add_argument("--license", default="")
+    library_resource.add_argument("--source-type", choices=sorted(library_sets.SOURCE_TYPES), default="unknown")
+    library_resource.add_argument("--source-page", default="")
     library_resource.set_defaults(func=command_library)
     for name in ("inspect", "edit-object", "edit-component"):
         command = library_commands.add_parser(name)

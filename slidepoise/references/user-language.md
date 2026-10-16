@@ -6,6 +6,8 @@ Apply this contract to every user-facing sentence authored by SlidePoise. It cov
 
 - Decide what the reader needs to understand before choosing a heading or sentence. Grammatical accuracy does not establish that a statement belongs in its context.
 - Describe the product through the work it helps someone accomplish. An implementation count, an interface arrangement or a collection of sample styles is not a product proposition.
+- Keep drafting context separate from the deliverable. Public-facing copy must stand alone for its intended reader. A conversation, supplied screenshot or video, earlier draft, or instruction belongs in the copy only when the reader needs that context to understand the subject or use the feature. Review headings, labels, captions, descriptions and metadata for this boundary before publishing.
+- Describe a feature or resource through what it offers and how it is used. Include implementation comparisons, development history or qualifications only when they help the reader understand or decide.
 - Present sample presentations as examples of output. Their number and visual styles do not define the product's range. Give each sample a subject and purpose, with its style as supporting information.
 - Explain a shared workflow once. Individual production records provide examples and details within that workflow. Differences in retained artifacts or revision counts do not create different workflows for different visual styles.
 - Introduce a technical example by naming the question it answers. Keep the input, interpretation and result visibly connected. A correct quotation, chart or measurement without that connection does not explain the architecture.
@@ -13,10 +15,11 @@ Apply this contract to every user-facing sentence authored by SlidePoise. It cov
 - Use direct language that fits the user's vocabulary and level of expertise.
 - Keep sentences compact. Split a sentence when punctuation is carrying too much structure.
 - Explain a control through its effect. Explain a stage through what the user can review or decide.
+- Do not use “From X to Y” as a slide title, section heading or persuasive framing. State the substantive actor, action, object or consequence directly. This restriction concerns the rhetorical construction, not ordinary factual uses of the prepositions.
+- Replace internal process labels with the work they describe. A participant name beside “reviews one request” or “two contributions” leaves the reader to infer the purpose, offer and benefit. Make those relationships explicit where they carry the argument.
 - Name a real next action only when one exists.
 - Give the main conclusion the most prominent position. Use the visual to show the evidence and put supporting mechanics in details. Do not repeat the same point in a heading, introduction, caption and footnote.
 - Name expandable content concretely, such as a slide outline or a reconstruction comparison. Make its affordance visible and show a relevant preview when it helps the reader decide whether to open it. Generic labels such as “View sample evidence” leave that decision unexplained.
-
 - Name artifacts by what they are across the workflow. Use “generated slide image” in architecture diagrams, review interfaces and product explanations. Describe its role as a reconstruction reference only within the explanation of that stage. A stage-specific role is not the artifact's overall name or the slide's communication goal. The contact sheet is a separate, human-readable input to image generation that combines the chosen style and selected visual resources.
 - Identify what each review examines. Generated-image review checks content, readability and composition against the brief. PowerPoint review checks the actual render against the brief and generated slide image, including reconstruction fidelity and deck-wide consistency. Describe an image comparison only when both images exist. Diagram connectors must distinguish reference inputs from the construction steps that produce the editable file.
 
@@ -32,6 +35,7 @@ Apply this contract to every user-facing sentence authored by SlidePoise. It cov
 
 - Do not use an em dash in newly authored user-facing prose.
 - Avoid semicolons. Use a period or conjunction in ordinary prose.
+- Do not join phrases with middle dots or inline bullet separators. Use a coherent sentence or visually separate labels when the items have distinct roles. This does not prohibit normal vertical bullet lists.
 - Use a colon only when it materially improves a label, quotation, data value, or short lead-in. Avoid colon-heavy headings and stacked label prose.
 - Preserve punctuation inside user-authored text, direct quotations, citations, code, URLs, file paths, data, and official names.
 

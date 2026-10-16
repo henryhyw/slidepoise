@@ -40,6 +40,7 @@ def _resolve_asset(entity: dict[str, Any], handoff: dict[str, Any]) -> dict[str,
         "entity_id": entity["id"],
         "selected_asset_id": selected["asset_id"],
         "selected_asset_path": selected["canonical_file"],
+        "selected_asset_sha256": selected.get("sha256"),
         "asset_kind": asset_kind,
         "selection_mode": selected.get("selection_mode", "exact_agent_selected_asset"),
         "target_bbox_source_px": entity["measurement"]["layout_bbox"]["px"],
@@ -55,6 +56,10 @@ def _resolve_asset(entity: dict[str, Any], handoff: dict[str, Any]) -> dict[str,
         "recolor_mode": selected.get("recolor_mode"),
         "source_provider": selected.get("provider"),
         "source_provider_version": selected.get("provider_version"),
+        "geometry_treatment": selected.get("geometry_treatment"),
+        "upstream_source_asset_id": selected.get("source_asset_id"),
+        "upstream_source_file": selected.get("source_file"),
+        "upstream_source_sha256": selected.get("source_sha256"),
         "source_license": selected.get("license"),
         "style_pair_id": selected.get("style_pair_id"),
         "style_variant": selected.get("style_variant"),
@@ -101,6 +106,7 @@ def _connector_plan(entity: dict[str, Any], connector_config: dict[str, Any]) ->
         "measured_junction_evidence_px": measured_junctions,
         "stroke_style": visual.get("stroke_style", entity.get("style_hint", {})),
         "arrowhead_treatment": arrowhead_treatment,
+        "arrowhead": dict(visual.get("arrowhead") or {}),
         "junction_treatment": junction_treatment,
         "junction_diameter_px": (float(intent["junction_diameter_px"]) if intent.get("junction_diameter_px") is not None else None),
         "grouping_depth_px": (float(intent["grouping_depth_px"]) if intent.get("grouping_depth_px") is not None else None),
@@ -137,6 +143,10 @@ def build_reconstruction_contract(
     speaker_notes = handoff.get("speaker_notes", [])
     if not isinstance(speaker_notes, list) or any(not isinstance(note, str) for note in speaker_notes):
         raise ValueError("handoff.speaker_notes must be an array of strings")
+    from .coverage import content_obligation_errors
+    coverage_errors = content_obligation_errors(measured_scene.get("entities", []), handoff, measured_scene.get("groups", []))
+    if coverage_errors:
+        raise ValueError(f"Unfulfilled content obligations: {coverage_errors}")
     source = measured_scene["source"]
     geometry = reconstruction_geometry(design, [source["width_px"], source["height_px"]])
     # Full-slide geometry and frame heights come only from the resolved config.
@@ -192,6 +202,7 @@ def build_reconstruction_contract(
         **geometry,
         "frame_configuration": frame_configuration,
         **({"speaker_notes": list(speaker_notes)} if speaker_notes else {}),
+        "content_obligations": handoff.get("content_obligations", []),
         "reconstruction_units": units,
         "canonical_asset_mappings": assets,
         "connector_reconstruction_plans": connectors,

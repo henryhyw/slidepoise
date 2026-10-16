@@ -26,7 +26,7 @@
         <div class="overview-metrics" id="metrics"></div>
         <div class="overview-guidance">
         <div class="section-heading"><div><p class="eyebrow">GLOBAL DEFAULTS</p><h3>Reusable presentation guidance</h3></div></div>
-        <div class="overview-links"><button class="overview-link" data-view="design"><h4>Guidance profiles</h4><p>Typography, palette, density, and visual direction.</p><span class="open-label">Manage styles <b>›</b></span></button><button class="overview-link" data-view="resources"><h4>Library Sets</h4><p>Reusable icons and editable components.</p><span class="open-label">Manage resources <b>›</b></span></button><button class="overview-link" data-view="system"><h4>Local capabilities</h4><p>Rendering, measurement, and PowerPoint construction tools.</p><span class="open-label">Check system <b>›</b></span></button></div>
+        <div class="overview-links"><button class="overview-link" data-view="design"><h4>Guidance profiles</h4><p>Typography, palette, density, and visual direction.</p><span class="open-label">Manage styles <b>›</b></span></button><button class="overview-link" data-view="resources"><h4>Shared resources</h4><p>Visual references, icons, and editable components.</p><span class="open-label">Manage resources <b>›</b></span></button><button class="overview-link" data-view="system"><h4>Local capabilities</h4><p>Rendering, measurement, and PowerPoint construction tools.</p><span class="open-label">Check system <b>›</b></span></button></div>
         </div>
       </section>
       <section class="view" id="view-design"><div id="profile-chooser"></div><div class="design-settings" id="design-settings"></div></section>
@@ -39,10 +39,12 @@
   <dialog id="library-dialog" class="collection-dialog"><div class="dialog-heading"><div><p class="eyebrow">LIBRARY SET</p><h2 id="library-title"></h2></div><button class="icon-button" data-close aria-label="Close set">×</button></div><div id="library-detail"></div></dialog>
   <dialog id="profile-dialog" class="collection-dialog"><div class="dialog-heading"><div><p class="eyebrow" id="profile-dialog-scope">GUIDANCE PROFILE</p><h2 id="profile-title"></h2></div><button class="icon-button" data-close aria-label="Close profile">×</button></div><div id="profile-content"></div></dialog>
   <dialog id="component-dialog" class="component-dialog"><div class="dialog-heading"><div><p class="eyebrow">NATIVE COMPONENT</p><h2 id="component-title"></h2></div><button class="icon-button" data-close aria-label="Close component">×</button></div><div id="component-content"></div></dialog>
+  <dialog id="resources-dialog" class="collection-dialog resource-picker-dialog"><form id="resource-picker-form"><div class="dialog-heading"><div><p class="eyebrow" id="resource-picker-scope">PROFILE RESOURCES</p><h2 id="resource-picker-title">Choose resources</h2></div><button type="button" class="icon-button" data-close aria-label="Close resource selection">×</button></div><p class="resource-picker-intro">Choose entire sets or individual items. Shared edits are available to every profile that uses them.</p><div class="resource-tabs" id="resource-picker-tabs" role="tablist" aria-label="Resource types"></div><div id="resource-picker-content" role="tabpanel"></div><p id="resource-picker-error" class="error-message" role="alert" hidden></p><div class="resource-picker-footer"><span id="resource-picker-summary" role="status"></span><div class="dialog-actions"><button type="button" class="quiet-button" data-close>Cancel</button><button type="submit" class="primary-button" id="resource-picker-save">Save selection</button></div></div></form></dialog>
   <div id="toast" class="toast" role="status" hidden></div>
   <script src="/dialog-dismiss.js"></script>
   <script src="/console/app.js"></script>
   <script src="/console/authoring.js"></script>
   <script src="/console/components.js"></script>
+  <script src="/console/resources.js"></script>
 </body>
 </html>

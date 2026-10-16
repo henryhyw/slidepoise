@@ -1,3 +1,5 @@
+Website maintenance has moved to `personalpage/public/slidepoise/`. The current project page is https://www.henryw.me/slidepoise/docs/site/. Any older website build or deployment commands below are historical and retired. Sample artifact production remains in this repository.
+
 # Sample presentations
 
 These two complete decks show SlidePoise working with different arguments, layouts and native PowerPoint structures. Browse every slide on the [project page](../docs/site/), where you can compare the generated design with the PowerPoint render and inspect its plan, element groups and OpenCV measurements.

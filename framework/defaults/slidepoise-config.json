@@ -31,15 +31,31 @@
       "resource_role": "generic_icon",
       "provider": "Remix Icon",
       "provider_version": "4.9.0",
+      "line_weight": "fine",
       "allowed_repository": "Remix-Design/RemixIcon",
-      "pair_styles": ["line", "fill"],
+      "pair_styles": [
+        "line",
+        "fill"
+      ],
       "repository_tree_url": "https://api.github.com/repos/Remix-Design/RemixIcon/git/trees/v{version}?recursive=1",
       "raw_url_template": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v{version}/{repository_path}",
       "license": "Remix Icon License v1.0",
       "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v{version}/License",
       "selection_stage": "post_generation_visual_review",
       "selection_owner": "host_agent_visual_reasoning",
-      "selection_rule": "retrieve both official variants before generation, then select one variant per peer treatment group through post-generation visual inspection"
+      "selection_rule": "retrieve both official variants, prepare the Fine line candidate before generation, then select one variant and coherent weight per peer treatment group through post-generation visual inspection"
+    },
+    "mdi": {
+      "enabled": false,
+      "resource_role": "generic_icon",
+      "provider": "Material Design Icons",
+      "provider_version": "1.2.3",
+      "source_package": "@iconify-json/mdi",
+      "line_weight": "fine",
+      "license": "Apache-2.0",
+      "site_url": "https://icon-sets.iconify.design/mdi/",
+      "selection_owner": "host_agent_visual_reasoning",
+      "selection_rule": "prepare Fine outline candidates before generation, visually compare them with peer icons and preserve solid and brand artwork"
     },
     "wikimedia_commons": {
       "enabled": false,
@@ -51,7 +67,10 @@
       "selection_rule": "inspect the exact Commons file page and verify identity, source, author, license, attribution, and any trademark restrictions before use",
       "require_file_page": true,
       "require_license_metadata": true,
-      "allowed_media_types": ["image/svg+xml", "image/png"]
+      "allowed_media_types": [
+        "image/svg+xml",
+        "image/png"
+      ]
     },
     "shared_policy": {
       "persist_location": "run_cache_only",
@@ -106,12 +125,10 @@
     },
     "initial_candidates_per_slide": 1,
     "revision_guidance": "Inspect the current candidate and choose a focused edit or fresh generation from the actual defect and the user's intent.",
-    "default_model": "gpt-image-2",
+    "default_model": "",
     "host_adapter": {
-      "mode": "host_native_or_delegated_image_generation",
-      "chatgpt": "use the host-native image generation/edit capability directly",
-      "codex": "use the available image-generation skill/tool; when the Codex host exposes image-capable agent delegation, delegate only the image call and keep SlidePoise orchestration in the parent agent",
-      "unsupported_host_policy": "stop at the image-generation stage rather than replacing creative generation with deterministic drawing"
+      "mode": "agent_discovered_or_manual",
+      "max_prompt_chars": 32000
     },
     "illustration_refinement": {
       "enabled_by_default": true,
@@ -128,6 +145,12 @@
       "no_visible_borders_or_labels_in_model_input": true,
       "preserve_each_source_aspect_ratio": true,
       "preferred_output_use": "crop deterministic board slots and insert the refined rasters into the original measured slide boxes with aspect-preserving contain-fit"
+    },
+    "preferences": {
+      "mode": "auto",
+      "tool": "",
+      "model": "",
+      "instructions": ""
     }
   },
   "measurement": {
@@ -152,7 +175,10 @@
     },
     "layout_geometry_policy": {
       "selection_owner": "host_agent_visual_reasoning",
-      "allowed_values": ["agent_logical", "opencv_visible"],
+      "allowed_values": [
+        "agent_logical",
+        "opencv_visible"
+      ],
       "require_explicit_policy_for_every_emitting_entity": true,
       "opencv_role": "supply visible-bound evidence when the host Agent selects opencv_visible",
       "connector": "agent_semantics_plus_deterministic_boundary_ports"
@@ -407,7 +433,7 @@
       },
       "arrowhead": {
         "type": "triangle",
-        "powerpoint_size": "lg",
+        "powerpoint_size": "med",
         "minimum_visible_endpoint_px": 18,
         "minimum_clear_segment_px": 16,
         "length_px": 14,
@@ -568,6 +594,9 @@
       "footer.center_text",
       "footer.slide_number.enabled",
       "remote_sources.remix_icon.enabled",
+      "remote_sources.remix_icon.line_weight",
+      "remote_sources.mdi.enabled",
+      "remote_sources.mdi.line_weight",
       "remote_sources.wikimedia_commons.enabled",
       "measurement.segmentation.mode",
       "measurement.segmentation.checkpoint",

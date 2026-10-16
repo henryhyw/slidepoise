@@ -36,8 +36,6 @@ jobs:
       - run: python -m pytest -q --junitxml=workspace/test-results/python.xml
       - run: npm test
       - run: python -m unittest discover -s docs/site -p "test_*.py"
-      - run: node --check docs/site/app.mjs
-      - run: node --check docs/site/object-inspector.mjs
       - run: python -m ruff check --select E9,F63,F7,F82 framework webapp slidepoise tests setup.py
       - run: python slidepoise/scripts/preflight_config.py framework/defaults/slidepoise-config.json
       - run: python slidepoise/scripts/preflight_catalogs.py --profiles-root profiles

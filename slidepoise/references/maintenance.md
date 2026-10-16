@@ -2,10 +2,10 @@
 
 Use this workflow only when the user explicitly asks to modify the framework, stable skill, or a profile.
 
-1. Identify the layer first. Stable reasoning and host workflow belong in the skill. Runtime mechanics belong in the framework. Configurable design and visual references belong in an external profile. Reusable icons and components belong in shared Library Sets selected by profiles.
+1. Identify the layer first. Stable reasoning and host workflow belong in the skill. Runtime mechanics belong in the framework. Configurable design and resource selections belong in an external profile. Visual references, icons and components belong in shared Library Sets.
 2. Never add profile assets or visual references to the installed skill.
-3. Modify a profile under `<profiles-root>/<profile-id>`. For user-facing Agent operations, prefer `slidepoise profile create`, `slidepoise profile update`, and `slidepoise profile add-resource`. Use `slidepoise library create` and `slidepoise library add-resource` for coherent icon or component sets. They edit the same installed profiles and catalogs shown by the Console.
-4. Remote logos and generic icons stay in a run cache unless the user explicitly requests a persistent profile update.
+3. Modify a profile under `<profiles-root>/<profile-id>`. For user-facing Agent operations, prefer `slidepoise profile create` and `slidepoise profile update`. Use `slidepoise library create` and `slidepoise library add-resource` for all reusable asset kinds. Profiles select set IDs and optional item IDs. Preserve stable IDs and provenance when moving legacy profile catalogs into shared sets. Creating a profile copies its style and selection without copying resource files. These commands edit the same installed profiles and catalogs shown by Console.
+4. Remote logos and generic icons stay in a run cache unless the user requests persistent reuse. Selecting a visual-reference set does not enable its publisher's icons or grant additional artwork permissions.
 5. Do not add a script when host-Agent visual reasoning is the correct mechanism. Scripts may measure, transform, package, and check objective contracts.
 6. Never encode one slide's IDs, coordinates, wording, bend pattern, or observed defect into generic runtime code.
 7. Mechanical checks emit facts, measurements, blocking structural findings, and artifact bindings. They must not emit an overall validity, quality, acceptance, or release verdict. A host-Agent reasoning review consumes this evidence and owns the checkpoint decision.

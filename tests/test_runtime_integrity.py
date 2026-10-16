@@ -231,3 +231,19 @@ def test_profile_style_substitutions_are_reported():
 def test_nonfinite_search_bounds_are_rejected():
     with pytest.raises(ValueError, match="finite"):
         _largest_size([], {}, float("inf"), 0.5)
+
+
+def test_measured_table_margins_scale_with_source_geometry():
+    scene = {"source": {"width_px": 800, "height_px": 450}, "entities": [{
+        "id": "table", "kind": "table", "reconstruction_route": "native_table", "z": 0,
+        "measurement": {"layout_bbox": {"px": [20, 20, 300, 200]}},
+        "table_structure": {"rows": [[{"text": "Pixels", "margin_px": [4, 8, 4, 8]},
+                                        {"text": "Points", "options": {"margin": 3}}]]}}]}
+    design = {"full_slide_px": [1600, 900], "frame": {"header": {"enabled": False}, "footer": {"enabled": False}}}
+    contract = build_reconstruction_contract(scene, design)
+    result = build_reconstruction_scene(measured_scene=scene, contract=contract, design=design, slide_id="table")
+    table = result["objects"][0]
+    assert table["bbox_px"] == [40, 40, 600, 400]
+    assert table["structure"]["rows"][0][0]["margin_px"] == [8, 16, 8, 16]
+    assert table["structure"]["rows"][0][1]["options"]["margin"] == 3
+    assert scene["entities"][0]["table_structure"]["rows"][0][0]["margin_px"] == [4, 8, 4, 8]

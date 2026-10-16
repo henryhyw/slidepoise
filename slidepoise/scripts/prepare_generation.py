@@ -19,6 +19,8 @@ from component_preview import ensure_preview
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "runtime/src"))
 from slidepoise.canvas import validate_derived_canvas
 from slidepoise.artifacts import file_hash, write_json
+from slidepoise.reference_retrieval import validate_host_selection
+from slidepoise.resource_catalogs import selected_records
 
 
 def load(path: Path) -> dict[str, Any]:
@@ -61,15 +63,27 @@ def augment_profile_core_references(
     supplies their canonical files. It does not choose slide-specific references.
     """
     result = json.loads(json.dumps(resources))
+    if "reference_retrieval" in result:
+        try:
+            validate_host_selection(result, (libraries or {}).get("visual_references"))
+        except (OSError, ValueError) as error:
+            raise SystemExit(str(error)) from error
+        return result
     required = list(profile.get("always_attach_visual_references") or [])
     if not required:
         return result
-    catalog_value = ((libraries or {}).get("visual_references") or {}).get("catalog")
-    if not catalog_value:
-        raise SystemExit("Resolved profile visual-reference catalog is required for always-on references")
-    catalog_path = Path(str(catalog_value)).expanduser().resolve()
-    catalog = load(catalog_path)
-    by_id = {str(item.get("id")): (filename, item) for filename, item in (catalog.get("items") or {}).items()}
+    library = (libraries or {}).get("visual_references") or {}
+    by_id = {}
+    ambiguous = set()
+    for catalog_path, catalog, record in selected_records(library):
+        identifier = record["id"]
+        if identifier in by_id:
+            ambiguous.add(identifier)
+        by_id[identifier] = (catalog_path, record)
+        if record.get("resource_id"):
+            by_id[record["resource_id"]] = (catalog_path, record)
+    for identifier in ambiguous:
+        by_id.pop(identifier, None)
     selected = list(result.get("selected_visual_references") or [])
     selected_ids = {str(item.get("id")) for item in selected}
     for ref_id in required:
@@ -77,13 +91,16 @@ def augment_profile_core_references(
         if ref_id in selected_ids:
             continue
         if ref_id not in by_id:
+            if "sources" in library:
+                continue  # Explicit resource deselection overrides an older profile priority.
             raise SystemExit(f"Profile requires missing visual reference catalog id: {ref_id}")
-        filename, record = by_id[ref_id]
-        canonical = catalog_path.parent / str(record.get("path") or filename)
+        catalog_path, record = by_id[ref_id]
+        canonical = catalog_path.parent / str(record.get("path") or record["id"])
         if not canonical.is_file():
             raise SystemExit(f"Profile visual reference file is missing: {canonical}")
         selected.append({
-            "id": ref_id,
+            "id": record["id"],
+            **({"resource_id": record["resource_id"]} if record.get("resource_id") else {}),
             "canonical_file": str(canonical.resolve()),
             "reason": f"Always-on visual precedent required by profile {profile.get('profile_id')}: {record.get('description', '')}",
             "source": "profile_core_reference",
@@ -112,22 +129,24 @@ def augment_selected_components(
         result["selected_components"] = []
         return result
     component_library = (libraries or {}).get("components") or {}
-    catalog_values = component_library.get("catalogs", [component_library.get("catalog")])
-    catalog_values = [value for value in catalog_values if value]
-    if not catalog_values:
-        raise SystemExit("Resolved profile component catalog is required when a component is selected")
-    by_id, origins = {}, {}
-    for value in catalog_values:
-        catalog_path = Path(str(value)).expanduser().resolve()
-        for record in (load(catalog_path).get("items") or {}).values():
-            identifier = str(record.get("id", ""))
-            if identifier in by_id:
-                raise SystemExit(f"Duplicate component ID across selected sets: {identifier}")
-            if identifier:
-                by_id[identifier], origins[identifier] = record, catalog_path
+    by_id, origins, ambiguous = {}, {}, set()
+    for catalog_path, catalog, raw in selected_records(component_library):
+        record = dict(raw)
+        if not record.get("path") and catalog.get("native_source"):
+            record["path"] = catalog["native_source"]
+        identifier = record["id"]
+        if identifier in by_id:
+            ambiguous.add(identifier)
+        by_id[identifier], origins[identifier] = record, catalog_path
+        if record.get("resource_id"):
+            qualified = record["resource_id"]
+            by_id[qualified], origins[qualified] = record, catalog_path
+    for identifier in ambiguous:
+        by_id.pop(identifier, None)
+        origins.pop(identifier, None)
     resolved: list[dict[str, Any]] = []
     for item in requested:
-        component_id = str(item.get("component_id") or item.get("id") or "")
+        component_id = str(item.get("resource_id") or item.get("component_id") or item.get("id") or "")
         if not component_id:
             raise SystemExit("Every selected component requires component_id or id")
         record = by_id.get(component_id)
@@ -138,7 +157,7 @@ def augment_selected_components(
         preview_value = str(record.get("preview_path") or "").strip()
         # Older imported records only stored their source path.
         if donor_value.lower().endswith(".pptx") and not preview_value:
-            preview_value = str(Path(donor_value).with_suffix(".preview.png"))
+            preview_value = str(Path(donor_value).with_suffix(f".slide-{int(record.get('native_source_slide_number', 1))}.preview.png"))
         donor = catalog_path.parent / donor_value if donor_value else None
         preview = catalog_path.parent / preview_value if preview_value else None
         if donor and preview and donor.is_file():
@@ -165,6 +184,9 @@ def augment_selected_components(
             merged["canonical_file"] = str(donor.resolve())
             merged["preview_file"] = str(preview.resolve())
             merged["native_source_slide_number"] = int(record.get("native_source_slide_number", 1))
+            merged["native_source_binding"] = {"source_sha256": file_hash(donor), "preview_sha256": file_hash(preview),
+                                               "slide_number": merged["native_source_slide_number"]}
+            merged["resource_form"] = "native_component" if donor.suffix.lower() == ".pptx" else "visual_precedent"
         elif preview is not None:
             merged["preview_file"] = str(preview.resolve())
             merged["resource_form"] = "visual_precedent"
@@ -195,6 +217,8 @@ def generation_asset_descriptions(profile: dict[str, Any], resources: dict[str, 
             "generation_description": description or str(item.get("role") or item.get("asset_id")),
             "intrinsic_aspect_ratio": item.get("intrinsic_aspect_ratio"),
             "require_exact_identity": bool(item.get("require_exact_identity") or item.get("user_required")),
+            "required_for_slide": _asset_is_required(item),
+            "user_required": bool(item.get("user_required")),
         })
     return result
 
@@ -337,6 +361,7 @@ def build_contract(config: dict[str, Any], intent: dict[str, Any], resources: di
         "resources": {
             "style_context": resources.get("style_context"),
             "style_direction": resources.get("style_direction", {}),
+            "selection_reasoning": resources.get("selection_reasoning", {}),
             "selected_visual_references": resources.get("selected_visual_references", []),
             "selected_assets": resources.get("selected_assets", []),
             "generation_asset_descriptions": asset_descriptions,
@@ -356,6 +381,26 @@ def build_contract(config: dict[str, Any], intent: dict[str, Any], resources: di
     return contract
 
 
+def generation_resource_projection(resources: dict[str, Any]) -> dict[str, Any]:
+    """Project selected artwork and its use, keeping selection deliberation with the host."""
+    references = [
+        {key: item.get(key) for key in ("id", "reason") if item.get(key) is not None}
+        for item in resources.get("selected_visual_references", [])
+    ]
+    components = []
+    for item in resources.get("selected_components", []):
+        components.append({
+            key: value for key, value in item.items()
+            if key not in {"canonical_file", "preview_file", "generation_preview", "source", "native_source_slide_number"}
+        })
+    return {
+        "style_direction": resources.get("style_direction", {}),
+        "selected_visual_references": references,
+        "generation_asset_descriptions": resources.get("generation_asset_descriptions", []),
+        "selected_components": components,
+    }
+
+
 def build_brief(contract: dict[str, Any]) -> str:
     """Project visual instructions once, without host workflow or evidence bookkeeping.
 
@@ -366,13 +411,19 @@ def build_brief(contract: dict[str, Any]) -> str:
         "canvas", "communication_intent", "user_language", "composition_freedom",
     )}
     # These requirements already occur verbatim in the complete communication intent.
-    payload["non_negotiable_design"] = {key: value for key, value in contract["non_negotiable_design"].items()
-                                         if key != "explicit_user_visual_requirements"}
+    duplicated_design_fields = {"explicit_user_visual_requirements"}
+    payload["non_negotiable_design"] = {
+        key: value for key, value in contract["non_negotiable_design"].items()
+        if key not in duplicated_design_fields
+    }
     # Agent reasoning, reference selection and review belong in the host's contract.
-    host_profile_fields = {"reasoning_principles", "review_questions", "visual_reference_priorities", "resolution_precedence"}
+    host_profile_fields = {
+        "reasoning_principles", "review_questions", "visual_reference_priorities", "resolution_precedence",
+        "purpose",
+    }
     payload["profile"] = {key: value for key, value in contract["profile"].items() if key not in host_profile_fields}
     # The style-context fingerprint duplicates the resolved design and profile below.
-    payload["resources"] = {key: value for key, value in contract["resources"].items() if key != "style_context"}
+    payload["resources"] = generation_resource_projection(contract["resources"])
     if contract.get("deck_design"):
         payload["deck_design"] = contract["deck_design"]["content"]
     instructions = [
@@ -381,14 +432,20 @@ def build_brief(contract: dict[str, Any]) -> str:
         "Exclude the Slide Master frame. Do not draw headers, footers, page numbers or master-frame decoration.",
         "Preserve the complete communication intent, facts, qualifications, exact wording, negatives and asset obligations. "
         "Use optional context selectively. Content arrays do not imply a numbered process. Session and explicit user requirements take precedence.",
+        "Make the recorded information relationships legible. Keep quantities associated with what they measure and preserve their comparison basis. "
+        "Arrows, enclosures, status marks and colour must express only relationships and certainty supported by the intent. "
+        "Give content roles distinct emphasis, keep necessary qualifications readable and use the recorded reading context to guide explanatory depth. "
+        "Choose the visual form freely unless the user specifies it. Do not invent evidence or repeat a claim merely to fill another text role.",
         "Apply profile hard rules and shared deck roles. For style agency, specified values are exact, guided values preserve character, "
         "and agent_decides or agent_decides_from_references values are fallbacks. Choose composition within these constraints.",
         "USER-FACING LANGUAGE. Preserve user-authored wording. Do not use an em dash in newly authored copy. "
         "Use direct reader-facing language with the recorded writing rules.",
         "Attachments provide the recorded visual vocabulary. Context-sheet arrangement and sample text/data are not slide content. "
         "Adapt useful component grammar to the current information. Use references for style unless factual reuse is explicitly authorized. "
-        "Preserve selected asset identities and intrinsic proportions. Canonical assets are restored in reconstruction. "
-        "Closed asset vocabulary permits only selected identities and profile-authorized novel illustrations. Native presentation geometry remains available.",
+        "Include assets required by the intent or marked required_for_slide. Other supplied assets are candidates to use where they help the content. "
+        "When using an asset, preserve its identity and intrinsic proportions. Canonical files are restored in reconstruction. "
+        "An empty asset selection does not itself prohibit visual explanation. Respect explicit exclusions and the profile's asset policy. "
+        "When that policy closes the asset vocabulary, use only selected identities and profile-authorized novel illustrations. Native presentation geometry remains available.",
         "The following JSON contains each visual decision once.",
         "```json",
         json.dumps(payload, ensure_ascii=False, separators=(",", ":")),
@@ -462,13 +519,25 @@ def generation_reference_images(contract: dict) -> list[dict]:
                                       ("selected_components", "preview_file", "component_id"),
                                       ("selected_assets", "canonical_file", "asset_id")):
         for item in resources.get(field, []):
+            if field == "selected_components" and item.get("resource_form") == "grammar_only":
+                continue
+            source = Path(item[path_key])
+            attachment = file_binding(source)
+            if source.suffix.lower() == ".svg":
+                preview = item.get("generation_preview") or {}
+                if not preview.get("path") or preview.get("format") != "png":
+                    raise SystemExit(f"SVG attachment needs a prepared PNG preview. Run prepare_resource_context.py again. {source}")
+                if preview.get("source") != attachment:
+                    raise SystemExit(f"SVG preview source changed. Run prepare_resource_context.py again. {source}")
+                preview_binding = file_binding(Path(preview["path"]))
+                if preview_binding["sha256"] != preview.get("sha256"):
+                    raise SystemExit(f"SVG preview changed. Run prepare_resource_context.py again. {preview['path']}")
+                attachment = {**preview_binding, "source": attachment}
             if representation == "full_context_sheet" and not (
                     field == "selected_visual_references" and item.get("full_resolution_attachment") is True):
                 continue
-            if field == "selected_components" and item.get("resource_form") == "grammar_only":
-                continue
             references.append({"id": item.get(identity), "purpose": item.get("reason") or item.get("role") or field,
-                               **file_binding(Path(item[path_key]))})
+                               **attachment})
     references.extend((contract.get("deck_design") or {}).get("reference_images", []))
     unique = {}
     for item in references:
@@ -545,7 +614,10 @@ def main() -> None:
         if not context_path.is_file():
             raise SystemExit("Generation context sheet is missing. Run prepare_resource_context.py first.")
     brief = build_brief(contract)
-    validate_prompt_capacity(brief, args.max_prompt_chars)
+    configured_maximum = ((config.get("generation") or {}).get("host_adapter") or {}).get("max_prompt_chars")
+    limits = [value for value in (args.max_prompt_chars, configured_maximum) if value is not None]
+    maximum_prompt_chars = min(limits) if limits else None
+    validate_prompt_capacity(brief, maximum_prompt_chars)
     request_path = args.request or args.contract.with_name("generation-request.json")
     inputs = {name: getattr(args, name) for name in ("config", "intent", "resources")}
     if args.deck_design:
@@ -560,7 +632,7 @@ def main() -> None:
     write_json(args.contract, contract)
     args.brief.write_text(brief, encoding="utf-8")
     write_json(request_path, build_request(contract, inputs={**inputs, "contract": args.contract, "brief": args.brief},
-                                           max_prompt_chars=args.max_prompt_chars))
+                                           max_prompt_chars=maximum_prompt_chars))
     print(json.dumps({
         "contract": str(args.contract.resolve()),
         "brief": str(args.brief.resolve()),

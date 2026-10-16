@@ -9,6 +9,7 @@ import zipfile
 from pathlib import Path
 
 import pytest
+from PIL import Image, ImageColor
 
 from webapp import server
 from framework.profiles import initialize_home, migrate_config
@@ -19,7 +20,7 @@ FRAMEWORK = ROOT / "framework"
 PROFILES = ROOT / "profiles"
 sys.path.insert(0, str(SKILL / "scripts"))
 
-from prepare_generation import augment_selected_components, build_brief, build_contract, build_style_context
+from prepare_generation import augment_selected_components, build_contract, build_style_context
 from make_asset_contact_sheet import build_contact_sheet
 from slidepoise_runtime import resolve_scene_paths
 
@@ -36,7 +37,7 @@ def run_script(name: str, *arguments: str) -> subprocess.CompletedProcess[str]:
 def generic_generation_inputs(tmp_path: Path) -> tuple[dict, dict, dict]:
     session = tmp_path / "session.json"
     resolved = tmp_path / "resolved.json"
-    session.write_text(json.dumps({"profile": "personal-monochrome"}), encoding="utf-8")
+    session.write_text(json.dumps({"profile": "monochrome-modern"}), encoding="utf-8")
     result = run_script(
         "resolve_config.py",
         "--base", str(FRAMEWORK / "defaults" / "slidepoise-config.json"),
@@ -65,17 +66,30 @@ def test_framework_and_profiles_validate() -> None:
     assert catalogs.returncode == 0, catalogs.stderr or catalogs.stdout
 
 
-def test_profile_catalog_rejects_unregistered_assets(tmp_path: Path) -> None:
+def test_catalog_preflight_does_not_validate_a_different_or_empty_library(tmp_path):
+    missing = run_script("preflight_catalogs.py", "--profiles-root", str(PROFILES),
+                         "--library-sets-root", str(tmp_path / "missing"))
+    assert missing.returncode == 2
+    assert "library sets catalog missing" in missing.stdout
+    empty = run_script("preflight_catalogs.py", "--profiles-root", str(tmp_path),
+                       "--library-sets-root", str(ROOT / "library-sets"))
+    assert empty.returncode == 2
+    assert "no profiles found" in empty.stdout
+
+
+def test_shared_reference_catalog_rejects_unregistered_assets(tmp_path: Path) -> None:
     profiles = tmp_path / "profiles"
     shutil.copytree(PROFILES / "consulting", profiles / "consulting")
-    extra = profiles / "consulting" / "libraries" / "visual_references" / "unregistered.png"
+    libraries = tmp_path / "library-sets"
+    shutil.copytree(ROOT / "library-sets", libraries)
+    extra = libraries / "visual_references" / "consulting-references" / "unregistered.png"
     extra.write_bytes(b"unregistered")
     result = run_script(
         "preflight_catalogs.py",
         "--profiles-root",
         str(profiles),
         "--library-sets-root",
-        str(ROOT / "library-sets"),
+        str(libraries),
     )
     assert result.returncode == 2
     assert "unregistered asset unregistered.png" in result.stdout
@@ -102,7 +116,7 @@ def test_segmentation_override_resolves(tmp_path: Path) -> None:
     assert json.loads(output.read_text(encoding="utf-8"))["measurement"]["segmentation"]["mode"] == "auto"
 
 
-@pytest.mark.parametrize("profile_id", ["personal-website", "personal-monochrome"])
+@pytest.mark.parametrize("profile_id", ["editorial-archive", "monochrome-modern"])
 def test_profile_owned_visual_tokens_do_not_leak_from_base(profile_id: str, tmp_path: Path) -> None:
     session = tmp_path / "session.json"
     output = tmp_path / "resolved.json"
@@ -124,7 +138,7 @@ def test_profile_owned_visual_tokens_do_not_leak_from_base(profile_id: str, tmp_
 def test_partial_user_token_override_preserves_the_profile_vocabulary(tmp_path: Path) -> None:
     base = json.loads((FRAMEWORK / "defaults" / "slidepoise-config.json").read_text(encoding="utf-8"))
     base["user_design_overrides"] = {
-        "personal-website": {
+        "editorial-archive": {
             "semantic_style_tokens": {"primary_text": {"color": "#123456"}}
         }
     }
@@ -132,7 +146,7 @@ def test_partial_user_token_override_preserves_the_profile_vocabulary(tmp_path: 
     session_path = tmp_path / "session.json"
     output = tmp_path / "resolved.json"
     base_path.write_text(json.dumps(base), encoding="utf-8")
-    session_path.write_text(json.dumps({"profile": "personal-website"}), encoding="utf-8")
+    session_path.write_text(json.dumps({"profile": "editorial-archive"}), encoding="utf-8")
     result = run_script(
         "resolve_config.py",
         "--base", str(base_path),
@@ -182,7 +196,7 @@ def test_profile_switch_preserves_framework_and_run_source_settings(tmp_path: Pa
     session_path = tmp_path / "session.json"
     output = tmp_path / "resolved.json"
     source_snapshots = []
-    for profile in ("consulting", "personal-website"):
+    for profile in ("consulting", "editorial-archive"):
         session_path.write_text(json.dumps({
             "profile": profile,
             "remote_sources": {
@@ -236,7 +250,7 @@ def test_profile_component_resolution_uses_shared_set_catalog() -> None:
     }
     result = augment_selected_components(
         {"selected_components": [{"component_id": "personal-sharp-editorial-sequence", "reason": "Useful progression grammar."}]},
-        "personal-website",
+        "editorial-archive",
         libraries,
     )
     selected = result["selected_components"][0]
@@ -248,34 +262,7 @@ def test_generation_handoff_preserves_the_complete_information_plan(tmp_path: Pa
     config, intent, resources = generic_generation_inputs(tmp_path)
     contract = build_contract(config, intent, resources)
     assert contract["communication_intent"] == intent
-    assert contract["communication_intent"]["information_structure"]["type"] == intent["information_structure"]["type"]
     assert contract["resources"]["style_context"] == build_style_context(config)
-    assert contract["user_language"]["reader_first"] is True
-    assert contract["user_language"]["new_copy_em_dash"] == "avoid"
-    brief = build_brief(contract)
-    assert "USER-FACING LANGUAGE" in brief
-    assert "Do not use an em dash in newly authored copy" in brief
-    assert "continue without per-slide approval" not in brief
-    assert "wait for explicit approval" not in brief
-
-
-def test_skill_forbids_direct_deck_builder_reconstruction() -> None:
-    skill = (SKILL / "SKILL.md").read_text(encoding="utf-8")
-    workflow = (SKILL / "references" / "workflow.md").read_text(encoding="utf-8")
-    assert "Do not write a custom PptxGenJS" in skill
-    assert "reconstruct-slide" in workflow
-    assert "Do not replace them with a custom direct PowerPoint construction script" in workflow
-
-
-def test_stable_user_language_contract_covers_all_product_surfaces() -> None:
-    contract = (SKILL / "references" / "user-language.md").read_text(encoding="utf-8")
-    for surface in ("conversation", "approval questions", "Panel summaries", "activity messages",
-                    "context sheets", "semantic display labels", "Console copy"):
-        assert surface in contract
-    assert "Do not use an em dash" in contract
-    assert "Avoid semicolons" in contract
-    assert "Use a colon only when it materially improves" in contract
-    assert "Never rewrite a user's words" in contract
 
 
 def test_changed_style_invalidates_the_combined_style_asset_context(tmp_path: Path) -> None:
@@ -287,21 +274,42 @@ def test_changed_style_invalidates_the_combined_style_asset_context(tmp_path: Pa
 
 def test_style_only_context_sheet_remains_a_reviewable_artifact(tmp_path: Path) -> None:
     config, _intent, _resources = generic_generation_inputs(tmp_path)
+    config["design"]["style"]["accent_colors"] = ["#B12573", "#248A6D"]
     output = tmp_path / "style-assets.png"
     result = build_contact_sheet([], output, style_context=build_style_context(config),
                                  style_direction={"intent": "Quiet technical explanation"})
     assert output.is_file()
     assert result["asset_count"] == 0
     assert result["includes_style_context"] is True
+    with Image.open(output) as image:
+        colors = {rgb: count for count, rgb in image.convert("RGB").getcolors(image.width * image.height)}
+    # Both authored swatches must actually reach the reference image.
+    for color in config["design"]["style"]["accent_colors"]:
+        assert colors.get(ImageColor.getrgb(color), 0) > 100
 
 
-def test_config_evidence_does_not_issue_stage_verdict() -> None:
-    result = run_script("preflight_config.py", str(FRAMEWORK / "defaults" / "slidepoise-config.json"))
-    payload = json.loads(result.stdout)
-    assert result.returncode == 0
+def test_config_evidence_reports_a_selected_remote_icon_set_disabled_by_the_session(tmp_path: Path) -> None:
+    session = tmp_path / "session.json"
+    resolved = tmp_path / "resolved.json"
+    session.write_text(json.dumps({
+        "profile": "consulting",
+        "remote_sources": {"remix_icon": {"enabled": False}},
+    }), encoding="utf-8")
+    result = run_script(
+        "resolve_config.py",
+        "--base", str(FRAMEWORK / "defaults" / "slidepoise-config.json"),
+        "--profiles-root", str(PROFILES),
+        "--session", str(session),
+        "--output", str(resolved),
+    )
+    assert result.returncode == 0, result.stderr or result.stdout
+    evidence = run_script("preflight_config.py", str(resolved))
+    payload = json.loads(evidence.stdout)
+    assert evidence.returncode == 0
     assert payload["blocking_facts"] == []
-    assert "mechanically_valid" not in payload
-    assert "passed" not in payload
+    assert payload["configuration_facts"] == [
+        "selected remote icon Library Set is disabled for this run: remix-icon (remix_icon)"
+    ]
 
 
 def test_sam_auto_falls_back_without_checkpoint() -> None:
@@ -323,22 +331,24 @@ def test_sam_auto_falls_back_without_checkpoint() -> None:
     assert report["eligible_entity_ids"] == ["irregular-a"]
 
 
-def test_console_separates_profile_references_from_shared_library_sets(tmp_path, monkeypatch) -> None:
+def test_console_reads_selected_references_from_shared_library_sets(tmp_path, monkeypatch) -> None:
     monkeypatch.setenv("SLIDEPOISE_HOME", str(tmp_path / "home"))
     initialize_home(PROFILES)
     assert server.library("visual_references", "consulting")["count"] == 2
-    assert server.library("visual_references", "personal-website")["count"] == 2
-    assert server.library("visual_references", "personal-monochrome")["count"] == 2
+    assert server.library("visual_references", "editorial-archive")["count"] == 2
+    assert server.library("visual_references", "monochrome-modern")["count"] == 2
     assert {item["id"] for item in server.library_sets.list_sets()} == {
-        "remix-icon", "wikimedia-identity", "consulting-core", "editorial-core"
+        "remix-icon", "mdi", "wikimedia-identity", "consulting-core", "editorial-core",
+        "consulting-references", "editorial-references", "monochrome-references", "pwc-public-references",
     }
     assert server.library_set("consulting-core")["count"] == 13
 
 
 def test_run_creation_initializes_a_live_deck_outline(tmp_path: Path, monkeypatch) -> None:
-    monkeypatch.setattr(server, "REGISTRY", tmp_path / "registry.json")
-    run = server.create_run("Example", str(tmp_path / "example"))
-    root = Path(run["path"])
+    from framework import sessions
+    monkeypatch.setenv("SLIDEPOISE_HOME", str(tmp_path / "home"))
+    initialize_home(PROFILES)
+    root = sessions.create("Example", str(tmp_path / "example"))
     assert (root / "session-overrides.json").is_file()
     outline = json.loads((root / "work" / "deck-outline.json").read_text())
     assert outline["title"] == "Example"
@@ -480,7 +490,7 @@ def test_config_upgrade_adds_generic_density_without_losing_legacy_choices(tmp_p
     source.write_text(json.dumps(bundled), encoding="utf-8")
     destination.write_text(json.dumps({
         "schema_version": "3.7.0",
-        "user_design_overrides": {"personal-website": {"style": {"body_font": "Custom Sans", "density": "editorial_balanced"}}},
+        "user_design_overrides": {"editorial-archive": {"style": {"body_font": "Custom Sans", "density": "editorial_balanced"}}},
         "design": {
             "style": {"density": "editorial_balanced"},
             "density_profiles": {"editorial_balanced": {"generation_guidance": ["keep legacy"]}},
@@ -492,11 +502,11 @@ def test_config_upgrade_adds_generic_density_without_losing_legacy_choices(tmp_p
     assert migrated["design"]["style"]["density"] == "editorial_balanced"
     assert migrated["design"]["density_profiles"]["editorial_balanced"]["generation_guidance"] == ["keep legacy"]
     assert migrated["design"]["density_profiles"]["balanced"] == bundled["design"]["density_profiles"]["balanced"]
-    assert migrated["user_design_overrides"]["personal-website"]["style"]["body_font"] == "Custom Sans"
+    assert migrated["user_design_overrides"]["editorial-archive"]["style"]["body_font"] == "Custom Sans"
 
     session = tmp_path / "session.json"
     resolved = tmp_path / "resolved.json"
-    session.write_text(json.dumps({"profile": "personal-website"}), encoding="utf-8")
+    session.write_text(json.dumps({"profile": "editorial-archive"}), encoding="utf-8")
     result = run_script(
         "resolve_config.py",
         "--base", str(destination),

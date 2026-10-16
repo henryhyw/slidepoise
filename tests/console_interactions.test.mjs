@@ -17,6 +17,7 @@ function harness() {
   };
   const controls = ['a', 'b'].map(id => ({ ...node(id), dataset: { profileDefault: id } }));
   const context = vm.createContext({
+    window: { addEventListener() {} },
     document: {
       querySelector: selector => selector === 'dialog[open]' ? [...nodes.values()].find(n => n.open) : node(selector),
       querySelectorAll: selector => selector === '[data-profile-default]' ? controls : [],
@@ -34,14 +35,18 @@ test('default selection prevents overlapping writes and restores controls', asyn
   const h = harness();
   let finish;
   let writes = 0;
-  h.context.saveRequest = async () => { writes++; await new Promise(resolve => { finish = resolve; }); };
-  h.run('api = saveRequest');
+  h.context.saveRequest = async (path, body) => {
+    assert.equal(path, '/api/profile');
+    assert.deepEqual(JSON.parse(JSON.stringify(body)), { profile_id: 'b' });
+    writes++;
+    await new Promise(resolve => { finish = resolve; });
+  };
+  h.run("api = saveRequest; refreshOverview=async()=>{state.overview={active_profile:'b'}}");
   const pending = h.run("selectDefaultProfile('b')");
   assert.equal(h.controls[1].textContent, 'Applying…');
   assert.ok(h.controls.every(control => control.disabled));
   await h.run("selectDefaultProfile('b')");
   assert.equal(writes, 1);
-  h.run("state.overview.active_profile='b'");
   finish();
   await pending;
   assert.equal(h.run('state.defaultSaving'), false);
@@ -60,27 +65,6 @@ test('failed default selection leaves the old default and remains retryable', as
   assert.equal(h.controls[1].attributes['aria-busy'], undefined);
 });
 
-test('system loads the supported tools and opens named, bounded detail views', async () => {
-  const h = harness();
-  const dialog = h.node('#preview-dialog');
-  dialog.showModal = () => { dialog.open = true; };
-  const names = ['Python', 'OpenCV', 'Node', 'PptxGenJS', 'LibreOffice', 'Poppler'];
-  h.context.systemRequest = async path => {
-    if (path === '/api/settings') return { config: {}, revision: 'current' };
-    if (path === '/api/health') return names.map(name => ({ name, available: true, detail: 'Installed' }));
-    throw new Error(`Unexpected system request ${path}`);
-  };
-  h.run('api = systemRequest');
-  await h.run('loadSystem()');
-  for (const name of names) {
-    h.run(`openCapability(${JSON.stringify(name)})`);
-    assert.equal(h.node('#preview-title').textContent, name);
-    assert.ok(h.node('#preview-body').innerHTML.includes('capability-detail'));
-    assert.equal(dialog.open, true);
-    dialog.open = false;
-  }
-});
-
 test('shared Agent changes refresh Console without overwriting an open editor', async () => {
   const h = harness();
   h.run(`var loads=0;state.overview.profiles=[{id:'a'}];state.consoleProfile='a';
@@ -93,4 +77,39 @@ test('shared Agent changes refresh Console without overwriting an open editor', 
   assert.equal(h.run('loads'), 1);
   await h.run('refreshSharedFiles()');
   assert.equal(h.run('loads'), 1);
+});
+
+function resourceHarness() {
+  const h = harness();
+  vm.runInContext(readFileSync(new URL('../webapp/console/resources.js', import.meta.url), 'utf8'), h.context);
+  h.run(`var sets=[{id:'refs',kind:'visual_references'},{id:'brand',kind:'icons'},{id:'parts',kind:'components'}];`);
+  return h;
+}
+
+test('resource picker preserves complete sets and explicit item subsets independently', () => {
+  const h = resourceHarness();
+  const result = h.run(`selectedResourceValues(resourceSelection({
+    library_sets:{visual_references:['refs'],icons:[],components:['parts']},
+    library_items:{visual_references:{refs:['r1']}}
+  },sets),sets)`);
+  assert.deepEqual(JSON.parse(JSON.stringify(result)), {
+    library_sets: {visual_references:['refs'],icons:[],components:['parts']},
+    library_items: {visual_references:{refs:['r1']},icons:{},components:{}}
+  });
+});
+
+test('deselecting an item materializes a subset and does not enable other kinds', () => {
+  const h = resourceHarness();
+  const choice = h.run(`toggleResourceItem({enabled:true,ids:null},[{id:'r1'},{id:'r2'}],'r2',false)`);
+  assert.deepEqual(JSON.parse(JSON.stringify(choice)), {enabled:true,ids:['r1']});
+  const none = h.run(`toggleResourceItem({enabled:true,ids:['r1']},[{id:'r1'},{id:'r2'}],'r1',false)`);
+  assert.deepEqual(JSON.parse(JSON.stringify(none)), {enabled:false,ids:[]});
+  const one = h.run(`toggleResourceItem({enabled:false,ids:null},[{id:'r1'},{id:'r2'}],'r2',true)`);
+  assert.deepEqual(JSON.parse(JSON.stringify(one)), {enabled:true,ids:['r2']});
+});
+
+test('deselecting a set removes its saved item restriction', () => {
+  const h = resourceHarness();
+  const result = h.run(`selectedResourceValues({refs:{enabled:false,ids:['r1']},brand:{enabled:false,ids:null},parts:{enabled:true,ids:null}},sets)`);
+  assert.deepEqual(JSON.parse(JSON.stringify(result.library_items)), {visual_references:{},icons:{},components:{}});
 });

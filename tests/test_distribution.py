@@ -17,7 +17,9 @@ def test_sdist_builds_self_contained_wheel_and_runs_outside_repository(tmp_path)
     for name in ("framework", "webapp", "slidepoise", "profiles", "library-sets"):
         shutil.copytree(source / name, build / name, ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
     def command(arguments, cwd, env=None):
-        return subprocess.run([sys.executable, *arguments], cwd=cwd, env=env, text=True, capture_output=True, check=True)
+        result = subprocess.run([sys.executable, *arguments], cwd=cwd, env=env, text=True, capture_output=True)
+        assert result.returncode == 0, result.stdout + result.stderr
+        return result
     command(["-m", "build", "--sdist"], build)
     extracted = tmp_path / "sdist"
     extracted.mkdir()
@@ -40,14 +42,25 @@ def test_sdist_builds_self_contained_wheel_and_runs_outside_repository(tmp_path)
             assert "framework/_bundled/" + path in names
         assert "webapp/ui/session-panel.js" in names
         assert "webapp/console/index.html" in names
-        assert wheel.read("webapp/console/mark.svg") == (source / "docs/site/mark.svg").read_bytes()
+        assert "framework/_bundled/slidepoise/scripts/generation_handoff.py" in names
+        assert "framework/_bundled/slidepoise/scripts/fetch_mdi_icon.py" in names
+        assert "framework/_bundled/slidepoise/runtime/src/slidepoise/icon_geometry.py" in names
+        public_set = "framework/_bundled/library-sets/visual_references/pwc-public-references/"
+        assert public_set + "NOTICE.md" in names
+        public_catalog = json.loads(wheel.read(public_set + "catalog.json"))
+        assert all(item["provenance"]["source_type"] == "published_document" for item in public_catalog["items"].values())
+        assert public_set + "source-documents/strategyand-b2b-saas-2024.pdf" in names
+        assert not any("framework/_bundled/profiles/" in name and "/libraries/" in name for name in names)
+        assert wheel.read("webapp/console/mark.svg") == (source / "webapp/console/mark.svg").read_bytes()
         assert any(name.endswith(".dist-info/licenses/LICENSE") for name in names)
         assert not any("__pycache__" in name for name in names)
         wheel.extractall(installed)
     environment = {**os.environ, "PYTHONPATH": str(installed), "SLIDEPOISE_HOME": str(tmp_path / "home")}
     outside = tmp_path / "user-project"
     outside.mkdir()
-    command(["-m", "framework.cli", "setup", "--skip-skill", "--skip-node"], outside, environment)
+    command(["-m", "framework.cli", "setup", "--skip-skill", "--skip-node", "--skip-preview"], outside, environment)
+    configured = command(["-m", "framework.cli", "generation", "configure", "--mode", "manual"], outside, environment)
+    assert json.loads(configured.stdout)["values"]["mode"] == "manual"
     result = command(["-m", "framework.cli", "run", "create", "Packaged", "--location", "presentation"], outside, environment)
     run = json.loads(result.stdout)["path"]
     command(["-m", "framework.cli", "run", "resolve", run], outside, environment)

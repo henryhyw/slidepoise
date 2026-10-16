@@ -8,6 +8,7 @@ connector intent, and every visual-quality judgement remain host-Agent decisions
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 from typing import Any
@@ -18,6 +19,7 @@ import numpy as np
 from PIL import Image
 
 from sam_optional import attempt as attempt_sam
+from raster_sources import image_facts, validate_background, validate_canvas, validate_source
 
 KIND_ROUTE = {
     "text": "native_text",
@@ -393,15 +395,32 @@ def main() -> None:
             Image.fromarray(rgb[cy:cy + ch, cx:cx + cw]).save(crop_path)
             measurement["source_crop_bbox"] = {"px": list(layout)}
             override = entity.get("raster_source_override") if kind == "image" else None
+            if (entity.get("raster_decision") or {}).get("action") == "reuse_original":
+                override = None
             if override:
-                override_path = Path(str(override)).expanduser().resolve()
+                override_path = Path(str(override)).expanduser()
+                if not override_path.is_absolute():
+                    override_path = Path(args.semantic_map).resolve().parent / override_path
+                override_path = override_path.resolve()
                 if not override_path.is_file():
                     raise FileNotFoundError(f"{entity['id']}: raster_source_override is missing: {override_path}")
+                source_contract = entity.get("raster_source")
+                if source_contract:
+                    facts = validate_source(override_path, source_contract)
+                    if source_contract.get("source_image_sha256") != hashlib.sha256(image_path.read_bytes()).hexdigest():
+                        raise ValueError(f"{entity['id']}: illustration was prepared against a different slide image")
+                    if list(layout) != source_contract.get("source_bbox_px"):
+                        raise ValueError(f"{entity['id']}: measured canvas changed after illustration preparation")
+                    validate_canvas(facts["canvas_dimensions_px"], list(layout)[2:])
+                else:
+                    facts = image_facts(override_path)
+                validate_background(facts, (entity.get("raster_decision") or {}).get("background", "preserve"))
                 measurement["image_object"] = {
                     "screenshot_crop_absolute": str(override_path),
                     "original_slide_crop_absolute": str(crop_path),
                     "crop_mode": str(entity.get("raster_fit") or "contain"),
                     "source_kind": "refined_raster_override",
+                    "raster_source_facts": facts,
                 }
             else:
                 measurement["image_object"] = {

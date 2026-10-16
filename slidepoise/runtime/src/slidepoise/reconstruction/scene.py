@@ -99,6 +99,10 @@ def _component_catalog(design: dict[str, Any]) -> tuple[Path, dict[str, dict[str
             if identifier in by_id:
                 raise ValueError(f"Duplicate component ID across selected sets: {identifier}")
             record = copy.deepcopy(raw)
+            if not record.get("path") and payload.get("native_source"):
+                record["path"] = payload["native_source"]
+            if str(record.get("path", "")).lower().endswith(".pptx") and not record.get("preview_path"):
+                record["preview_path"] = str(Path(record["path"]).with_suffix(f".slide-{int(record.get('native_source_slide_number', 1))}.preview.png"))
             for key in ("path", "preview_path"):
                 if record.get(key):
                     record[key] = str((path.parent / record[key]).resolve())
@@ -123,7 +127,7 @@ def _component_record(component_id: Any, expected_kind: str, design: dict[str, A
     reference = {
         "component_id": str(component_id),
         "native_donor_path": str(donor.resolve()),
-        "native_source_slide_number": int(record.get("native_source_slide_number")),
+        "native_source_slide_number": int(record.get("native_source_slide_number", 1)),
         "preview_path": str(preview.resolve()),
         "grammar": copy.deepcopy(record.get("grammar") or {}),
         "adaptation_rules": list(record.get("adaptation_rules") or []),
@@ -584,6 +588,7 @@ def build_reconstruction_scene(
                 "bullet_style": entity.get("bullet_style"),
                 "semantic_role": entity.get("role"),
                 "parent_id": entity.get("parent_id") or entity.get("parent"),
+                "allow_boundary_crossing": entity.get("allow_boundary_crossing") is True,
                 "z": z,
             })
         elif kind in {"icon", "icon_slot"}:
@@ -643,7 +648,7 @@ def build_reconstruction_scene(
                 raise ValueError(
                     f"Icon {entity_id} belongs to treatment group {treatment_group!r} but its selected asset is not declared treatment-recolorable"
                 )
-            glyph_color = treatment.get("glyph")
+            glyph_color = treatment.get("glyph_color", treatment.get("glyph"))
             glyph_gradient = treatment.get("glyph_gradient")
             if "icon_inset_fraction" not in entity_hint:
                 raise ValueError(f"Icon {entity.get('id')} requires host-Agent-authored icon_inset_fraction")
@@ -653,6 +658,7 @@ def build_reconstruction_scene(
                 "kind": "image",
                 "bbox_px": _contain(slot, _image_ratio(path), inset_fraction),
                 "source_path": str(path.resolve()),
+                **({"source_sha256": mapping["selected_asset_sha256"]} if mapping.get("selected_asset_sha256") else {}),
                 "recolor": glyph_color,
                 "recolor_gradient": glyph_gradient,
                 "recolor_mode": mapping.get("recolor_mode"),
@@ -672,6 +678,9 @@ def build_reconstruction_scene(
                 source_path = Path(source)
                 if not source_path.is_file():
                     raise FileNotFoundError(f"Raster source for {entity_id} does not exist: {source_path}")
+                source_hash = None if mapping else image.get("raster_source_facts", {}).get("sha256")
+                if source_hash and hashlib.sha256(source_path.read_bytes()).hexdigest() != source_hash:
+                    raise ValueError(f"Raster source for {entity_id} changed after measurement")
                 fit_mode = "contain" if mapping else str(image.get("crop_mode", "fill"))
                 target_box = _contain(box, _image_ratio(source_path), 0) if (mapping or fit_mode == "contain") else box
                 objects.append({
@@ -679,6 +688,7 @@ def build_reconstruction_scene(
                     "kind": "image",
                     "bbox_px": target_box,
                     "source_path": str(source_path.resolve()),
+                    **({"source_sha256": source_hash} if source_hash else {}),
                     "selected_asset_id": mapping.get("selected_asset_id") if mapping else None,
                     "fit": fit_mode,
                     "preserve_aspect_ratio": True,
@@ -693,10 +703,10 @@ def build_reconstruction_scene(
                 # The accepted image/Agent-authored style evidence is authoritative for
                 # connector appearance unless no local style was supplied. Configuration
                 # provides defaults, not a forced recoloring of every relationship.
-                stroke_style.setdefault("color", configured_stroke.get("color", "#222222"))
-                stroke_style.setdefault("width_px", configured_stroke.get("width_px", 3))
+                stroke_style.setdefault("color", stroke_style.get("stroke", configured_stroke.get("color", "#222222")))
+                stroke_style.setdefault("width_px", stroke_style.get("stroke_width_px", configured_stroke.get("width_px", 3)))
                 stroke_style.setdefault("dash", configured_stroke.get("dash", "solid"))
-                arrowhead_config = connector_configuration.get("arrowhead", {})
+                arrowhead_config = {"powerpoint_size": "med", **connector_configuration.get("arrowhead", {}), **plan.get("arrowhead", {})}
                 stroke_style["width_px"] = max(0.5, float(stroke_style.get("width_px", configured_stroke.get("width_px", 3))))
                 source_points, target_points, junction_points = _semantic_connector_points(plan, entity_by_id, group_by_id)
                 source_routes, target_routes = _connector_routes(plan, source_points, target_points, junction_points)
@@ -709,7 +719,7 @@ def build_reconstruction_scene(
                     "route": plan.get("connector_family", "direct_flow"),
                     "style": stroke_style,
                     "arrowhead_treatment": plan["arrowhead_treatment"],
-                    "arrowhead": arrowhead_config or {"type": "triangle", "powerpoint_size": "lg", "minimum_visible_endpoint_px": 18},
+                    "arrowhead": arrowhead_config,
                     "junction_style": {"style": plan["junction_treatment"], "diameter_px": plan.get("junction_diameter_px")},
                     "routing_constraints": connector_configuration.get("routing", {}),
                     "route_visual_review": plan.get("route_visual_review", {}),
@@ -741,6 +751,20 @@ def build_reconstruction_scene(
             actual_structure = dict(entity.get("structure") or entity.get("table_structure") or {})
             defaults = dict((component_record or {}).get("constructor_defaults") or {})
             structure = _deep_merge(defaults.get("table_structure", {}), actual_structure)
+            # Cell pixel measurements belong to the same source canvas as the
+            # table bounds. Office-point margins already have physical units.
+            for row in structure.get("rows", []):
+                for cell in row:
+                    if isinstance(cell, dict) and "margin_px" in cell:
+                        margin = cell["margin_px"]
+                        if isinstance(margin, (int, float)) and not isinstance(margin, bool):
+                            margin = [margin] * 4
+                        if (not isinstance(margin, list) or len(margin) != 4
+                                or any(isinstance(v, bool) or not isinstance(v, (int, float))
+                                       or v < 0 for v in margin)):
+                            raise ValueError("Table cell margin_px must contain four nonnegative pixel values")
+                        cell["margin_px"] = [v * scale_xy[1 if i % 2 == 0 else 0]
+                                             for i, v in enumerate(margin)]
             table_style = _deep_merge(defaults.get("table_style", {}), actual_structure.get("table_style", {}))
             if table_style:
                 structure["table_style"] = table_style
@@ -794,7 +818,7 @@ def build_reconstruction_scene(
                 raise ValueError(f"Shape entity {entity_id} requires an explicit shape")
             shape = {"rounded_rect": "rounded_rectangle", "circle": "ellipse"}.get(shape, shape)
             if shape in {"rectangle", "line", "parallelogram", "trapezoid", "ellipse", "rounded_rectangle"}:
-                shape_object = {"id": entity_id, "kind": "shape", "shape": shape, "bbox_px": box, "style": _resolved_entity_style(entity, design), "z": z}
+                shape_object = {"id": entity_id, "kind": "shape", "shape": shape, "bbox_px": box, "style": _resolved_entity_style(entity, design), "allow_text_crossing": entity.get("allow_text_crossing") is True, "structural_boundary": entity.get("structural_boundary") is True, "z": z}
                 if shape == "rounded_rectangle":
                     radius_px, adjustment = _round_rect_adjustment(entity, box, design, scale_xy)
                     shape_object["corner_radius_px"] = round(radius_px, 3)

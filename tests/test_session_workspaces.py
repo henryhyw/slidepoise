@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from pathlib import Path
 
 import pytest
 
@@ -36,17 +37,17 @@ def test_runs_capture_defaults_and_remain_isolated(home):
 def test_default_profile_selection_is_shared_and_preserves_existing_runs(home):
     original = active_profile_id()
     first = sessions.create("Existing presentation")
-    profile_path = home / "profiles/personal-monochrome/profile.json"
+    profile_path = home / "profiles/monochrome-modern/profile.json"
     before = profile_path.read_bytes()
-    set_active_profile("personal-monochrome")
-    assert design.defaults_payload(original)["active_profile"] == "personal-monochrome"
-    assert design.defaults_payload()["values"]["profile"] == "personal-monochrome"
+    set_active_profile("monochrome-modern")
+    assert design.defaults_payload(original)["active_profile"] == "monochrome-modern"
+    assert design.defaults_payload()["values"]["profile"] == "monochrome-modern"
     assert sessions.resolve(first)["design"]["profile"] == original
-    assert sessions.resolve(sessions.create("New presentation"))["design"]["profile"] == "personal-monochrome"
+    assert sessions.resolve(sessions.create("New presentation"))["design"]["profile"] == "monochrome-modern"
     assert profile_path.read_bytes() == before
     with pytest.raises(FileNotFoundError):
         set_active_profile("missing-profile")
-    assert active_profile_id() == "personal-monochrome"
+    assert active_profile_id() == "monochrome-modern"
 
 
 def test_concurrent_session_update_requires_current_revision(home):
@@ -55,7 +56,7 @@ def test_concurrent_session_update_requires_current_revision(home):
     old = revision(path)
     sessions.save_overrides(root, {"profile": "consulting", "density": "spacious"}, old)
     with pytest.raises(ConflictError, match="another window or Agent"):
-        sessions.save_overrides(root, {"profile": "personal-website"}, old)
+        sessions.save_overrides(root, {"profile": "editorial-archive"}, old)
 
 
 def test_agent_can_create_profile_and_add_reference(home, tmp_path):
@@ -65,7 +66,9 @@ def test_agent_can_create_profile_and_add_reference(home, tmp_path):
     result = profile_authoring.add_resource(profile["id"], "visual_references", reference,
                                              name="Editorial rhythm", description="Asymmetric type and image rhythm")
     assert result["profile"] == "studio-notes"
-    assert (home / "profiles/studio-notes/libraries/visual_references" / result["path"].split("/")[-1]).is_file()
+    assert Path(result["path"]).is_file()
+    assert Path(result["path"]).is_relative_to(home / "library-sets")
+    assert not (home / "profiles/studio-notes/libraries").exists()
 
 
 def test_profile_selects_shared_sets_and_run_can_override_them(home):
@@ -76,7 +79,8 @@ def test_profile_selects_shared_sets_and_run_can_override_them(home):
     overrides["library_sets"] = {"icons": ["remix-icon"], "components": ["editorial-core"]}
     sessions.save_overrides(root, overrides, revision(root / "session-overrides.json"))
     resolved = sessions.resolve(root)
-    assert resolved["library_sets"]["selected"] == overrides["library_sets"]
+    assert all(resolved["library_sets"]["selected"][kind] == values for kind, values in overrides["library_sets"].items())
+    assert resolved["library_sets"]["selected"]["visual_references"] == ["consulting-references"]
     assert resolved["remote_sources"]["remix_icon"]["enabled"] is True
     assert resolved["remote_sources"]["wikimedia_commons"]["enabled"] is False
 

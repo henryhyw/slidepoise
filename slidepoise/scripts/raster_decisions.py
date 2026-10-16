@@ -15,6 +15,11 @@ def illustration_decisions(semantic: dict) -> list[tuple[dict, dict]]:
             raise ValueError(f"{entity.get('id')}: raster choice needs host visual reasoning")
         if action == "refine" and decision.get("occluding_native_text_ids"):
             raise ValueError(f"{entity.get('id')}: resolve editable text occlusion before isolated refinement")
+        if decision.get("background", "preserve") not in {"preserve", "transparent"}:
+            raise ValueError(f"{entity.get('id')}: raster background must be preserve or transparent")
+        edits = decision.get("edit_instructions", [])
+        if not isinstance(edits, list) or any(not isinstance(item, str) or not item.strip() for item in edits):
+            raise ValueError(f"{entity.get('id')}: edit_instructions must be an array of nonempty strings")
         result.append((entity, decision))
     return result
 

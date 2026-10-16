@@ -16,14 +16,14 @@ from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import parse_qs, urlparse, urlencode
 
-from framework.paths import DEFAULT_CONFIG, SKILL_ROOT, active_profiles_root, active_library_sets_root, data_home, node_runtime_root, workspace_root
-from framework.profiles import active_profile_id, library_catalog, library_root, list_profiles, profile_record, set_active_profile
+from framework.paths import DEFAULT_CONFIG, SKILL_ROOT, active_profiles_root, active_library_sets_root, data_home, node_runtime_root
+from framework.profiles import active_profile_id, list_profiles, profile_record, set_active_profile
 from framework import library_sets, components, run_events
-from framework import sessions, design
-from framework import profile_authoring
-from framework.storage import ConflictError, revision, update, write
+from framework import sessions, design, image_generation
+from framework import profile_authoring, reference_library
+from framework.storage import ConflictError, revision, update
 from . import panel
 from framework import panel_binding
 
@@ -31,9 +31,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SKILL = SKILL_ROOT
 UI = Path(__file__).resolve().parent / "ui"
 CONSOLE_UI = ROOT / "webapp" / "console"
-WORKSPACE = workspace_root()
-REGISTRY = WORKSPACE / "runs.json"
-LIBRARIES = {"visual_references"}
+LIBRARIES = {"visual_references", "icons", "components"}
 def read_json(path: Path, default: Any = None) -> Any:
     if not path.is_file():
         return default
@@ -44,8 +42,7 @@ def console_revision():
     """Observe shared files, including edits made directly by an Agent."""
     files = {data_home() / "config.json", data_home() / "settings.json"}
     folders = {active_profiles_root(), active_library_sets_root()}
-    for profile in list_profiles():
-        folders.add(library_root(profile["id"], "visual_references"))
+    folders.update(Path(record["root"]) for record in library_sets.list_sets() if record.get("source") == "local")
     for folder in folders:
         files.update(p for p in folder.rglob("*") if p.is_file() and ".history" not in p.parts and p.suffix != ".lock")
     records = []
@@ -60,10 +57,6 @@ def console_revision():
 
 def resolve_run(path: str) -> Path:
     return sessions.require_run(path)
-
-
-def create_run(name: str, location: str | None = None) -> dict[str, Any]:
-    return run_summary(sessions.create(name, location, workspace=WORKSPACE, registry_file=REGISTRY))
 
 
 def run_summary(root: Path, name: str | None = None) -> dict[str, Any]:
@@ -86,51 +79,46 @@ def run_summary(root: Path, name: str | None = None) -> dict[str, Any]:
 
 
 def library(kind: str, profile_id: str | None = None) -> dict[str, Any]:
+    """Read the current shared selection, with qualified identities across sets."""
     if kind not in LIBRARIES:
         raise ValueError(f"Unknown library: {kind}")
     profile_id = profile_id or active_profile_id()
-    catalog_path, catalog = library_catalog(profile_id, kind)
-    items = []
-    raw_items = catalog.get("items", {})
-    values = raw_items.values() if isinstance(raw_items, dict) else raw_items
-    for raw in values:
-        item = dict(raw)
-        item["id"] = str(item.get("id") or item.get("asset_id") or item.get("component_id") or item.get("name"))
-        relative = item.get("path") or item.get("preview") or item.get("preview_path") or item.get("file")
-        item["asset_url"] = f"/api/library-file?profile={profile_id}&kind={kind}&id={item['id']}" if relative else None
-        items.append(item)
-    return {"profile_id": profile_id, "kind": kind, "items": items, "count": len(items), "catalog": str(catalog_path), "location": str(catalog_path.parent), "revision": revision(catalog_path)}
+    profile = profile_record(profile_id)["profile"]
+    selected = library_sets.profile_set_ids(profile, kind)
+    restrictions = profile.get("library_items", {}).get(kind, {})
+    items, revisions = [], []
+    for set_id in selected:
+        payload = library_set(set_id)
+        revisions.append((set_id, payload["catalog_revision"]))
+        allowed = restrictions.get(set_id)
+        items.extend(item for item in payload["items"] if allowed is None or item["id"] in allowed)
+    return {"profile_id": profile_id, "kind": kind, "items": items, "count": len(items),
+            "selected_sets": selected, "revision": revisions[0][1] if len(revisions) == 1 else hashlib.sha256(json.dumps(revisions).encode()).hexdigest()}
 
 
 def library_path(kind: str, identifier: str, profile_id: str | None = None) -> Path:
-    profile_id = profile_id or active_profile_id()
     payload = library(kind, profile_id)
-    item = next((value for value in payload["items"] if value["id"] == identifier), None)
-    if item is None:
+    matches = [item for item in payload["items"] if item["resource_id"] == identifier or item["id"] == identifier]
+    if len(matches) != 1:
         raise FileNotFoundError(identifier)
-    relative = item.get("preview") or item.get("preview_path") or item.get("path") or item.get("file")
-    if not relative:
-        raise FileNotFoundError(identifier)
-    root = library_root(profile_id, kind)
-    candidate = (root / str(relative)).resolve()
-    if root.resolve() not in candidate.parents or not candidate.is_file():
-        raise FileNotFoundError(identifier)
-    return candidate
+    return library_set_path(matches[0]["set_id"], matches[0]["id"])
 
 
 def library_set(set_id: str) -> dict[str, Any]:
     record = library_sets.set_record(set_id)
-    _path, catalog = library_sets.set_catalog(set_id)
-    raw_items = catalog.get("items", {})
-    values = raw_items.values() if isinstance(raw_items, dict) else raw_items
+    catalog_path, catalog = library_sets.set_catalog(set_id)
+    catalog_revision = revision(catalog_path)
     items = []
-    for raw in values:
+    for identifier, raw in library_sets.catalog_items(catalog).items():
         item = dict(raw)
-        item["id"] = str(item.get("id") or item.get("component_id") or item.get("asset_id") or item.get("name"))
+        item["id"] = identifier
         relative = item.get("preview") or item.get("preview_path") or item.get("path") or item.get("file")
-        item["asset_url"] = f"/api/library-set-file?set_id={set_id}&id={item['id']}" if relative else None
+        item["resource_id"] = f"{set_id}:{item['id']}"
+        item["set_id"] = set_id
+        item["catalog_revision"] = catalog_revision
+        item["asset_url"] = "/api/library-set-file?" + urlencode({"set_id": set_id, "id": item["id"]}) if relative else None
         items.append(item)
-    return {**record, "items": items, "count": len(items), "revision": library_sets.payload()["revision"]}
+    return {**record, "items": items, "count": len(items), "catalog_revision": catalog_revision, "revision": library_sets.payload()["revision"]}
 
 
 def library_set_path(set_id: str, identifier: str) -> Path:
@@ -146,6 +134,24 @@ def library_set_path(set_id: str, identifier: str) -> Path:
     if root not in candidate.parents or not candidate.is_file():
         raise FileNotFoundError(identifier)
     return candidate
+
+
+def update_library_item(set_id: str, identifier: str, values: dict[str, Any], expected: str):
+    record = library_sets.set_record(set_id)
+    if record.get("source") != "local":
+        raise ValueError("Online sources do not have local resource guidance")
+    protected = {"id", "asset_id", "component_id", "resource_id", "set_id", "path", "preview",
+                 "preview_path", "file", "definition_path", "asset_url", "catalog_revision"}
+    if protected & set(values):
+        raise ValueError("Resource identity and source files cannot be changed in guidance")
+    path, _ = library_sets.set_catalog(set_id)
+    def change(catalog):
+        item = library_sets.catalog_items(catalog).get(identifier)
+        if item is None:
+            raise FileNotFoundError(identifier)
+        item.update(values)
+        return catalog
+    update(path, change, expected=expected)
 
 
 def runtime_health() -> list[dict[str, Any]]:
@@ -196,39 +202,38 @@ def run_detail(root):
             "resolved_config": cfg, "values": design.presentation_values(cfg),
             "profiles": list_profiles(), "fonts": design.FONTS, "densities": design.DENSITIES,
             "style_agency": cfg.get("resolved_profile", {}).get("style_agency", {}),
-            "selected_sets": cfg.get("library_sets", {}).get("selected", {"icons": [], "components": []}),
+            "selected_sets": cfg.get("library_sets", {}).get("selected", {"visual_references": [], "icons": [], "components": []}),
+            "selected_items": cfg.get("library_sets", {}).get("items", {}),
             "library_sets": library_sets.list_sets()}
 
 
 def library_update(body):
+    """Compatibility route using the same shared storage as Resources."""
     profile, kind = body["profile"], body["kind"]
-    path, catalog = library_catalog(profile, kind)
-    def change(catalog):
-        items = catalog.setdefault("items", {})
-        if body["action"] == "add":
-            filename = Path(body["filename"]).name
-            if Path(filename).suffix.lower() not in {".png", ".jpg", ".jpeg", ".webp", ".svg", ".pptx", ".json"}:
-                raise ValueError("Unsupported resource file type")
-            if kind == "icons" and not body.get("license"):
-                raise ValueError("Persistent icons need license information")
-            identifier = uuid.uuid4().hex[:12]
-            filename = identifier + "-" + filename
-            (path.parent / filename).write_bytes(base64.b64decode(body["content_base64"], validate=True))
-            items[identifier] = {"id": identifier, "name": body.get("name") or body["filename"], "path": filename,
-                                 "description": body.get("description", ""), "tags": body.get("tags", []),
-                                 "provenance": {"provider": "user_upload", "source_url": body.get("source_url", ""), "license": body.get("license", "")}}
-        elif body["action"] == "edit":
-            item = next((item for item in items.values() if item.get("id") == body["id"]), None)
-            if item is None:
-                raise FileNotFoundError(body["id"])
-            for key in ("name", "description", "tags"):
-                if key in body:
-                    item[key] = body[key]
-            item.setdefault("provenance", {}).update({key: body[key] for key in ("source_url", "license") if key in body})
-        else:
-            raise ValueError("Unknown library action")
-        return catalog
-    update(path, change, expected=body["revision"], default=catalog)
+    current = library(kind, profile)
+    if current["revision"] != body["revision"]:
+        raise ConflictError("Changed in another window or Agent. Reload before saving your changes.")
+    if body["action"] == "edit":
+        matches = [item for item in current["items"] if item["resource_id"] == body["id"] or item["id"] == body["id"]]
+        if len(matches) != 1:
+            raise ValueError("Choose the shared resource by its full ID")
+        item = matches[0]
+        values = {key: body[key] for key in ("name", "description", "tags") if key in body}
+        values["provenance"] = {**item.get("provenance", {}), **{key: body[key] for key in ("source_url", "license") if key in body}}
+        update_library_item(item["set_id"], item["id"], values, item["catalog_revision"])
+    elif body["action"] == "add":
+        local_sets = [set_id for set_id in current["selected_sets"] if library_sets.set_record(set_id).get("source") == "local"]
+        set_id = body.get("set_id") or (local_sets[0] if len(local_sets) == 1 else None)
+        if not set_id or library_sets.set_record(set_id)["kind"] != kind:
+            raise ValueError("Choose a shared set for the resource")
+        with tempfile.TemporaryDirectory(prefix="slidepoise-resource-") as directory:
+            source = Path(directory) / Path(body["filename"]).name
+            source.write_bytes(base64.b64decode(body["content_base64"], validate=True))
+            library_sets.add_resource(set_id, source, name=body.get("name") or body["filename"],
+                                      description=body.get("description", ""), tags=body.get("tags", []),
+                                      source_url=body.get("source_url", ""), license_name=body.get("license", ""))
+    else:
+        raise ValueError("Unknown library action")
     return library(kind, profile)
 
 
@@ -290,6 +295,15 @@ class Handler(BaseHTTPRequestHandler):
                 return self.json_response(run_detail(root))
             if parsed.path == "/api/design":
                 return self.json_response(design.defaults_payload(query.get("profile", [None])[0]))
+            if parsed.path == "/api/reference-search":
+                selected = query.get("profile", [active_profile_id()])[0]
+                result = reference_library.search(selected, query.get("query", [""])[0],
+                                                  query.get("authenticity", ["authentic"])[0])
+                assets = {item["resource_id"]: item for item in library("visual_references", selected)["items"]}
+                result["items"] = [{**assets[item.get("resource_id", item["id"])], "matched_terms": item["matched_terms"],
+                                    "authenticity": item["authenticity"]} for item in result["candidates"]]
+                del result["candidates"]
+                return self.json_response(result)
             if parsed.path == "/api/profile":
                 return self.json_response(profile_authoring.profile_payload(query.get("profile", [active_profile_id()])[0]))
             if parsed.path == "/api/health":
@@ -297,6 +311,8 @@ class Handler(BaseHTTPRequestHandler):
             if parsed.path == "/api/settings":
                 path = data_home() / "config.json"
                 return self.json_response({"config": read_json(path if path.is_file() else DEFAULT_CONFIG), "revision": revision(path)})
+            if parsed.path == "/api/generation":
+                return self.json_response(image_generation.payload())
             if parsed.path == "/api/library":
                 return self.json_response(library(query["kind"][0], query.get("profile", [None])[0]))
             if parsed.path == "/api/library-sets":
@@ -351,18 +367,22 @@ class Handler(BaseHTTPRequestHandler):
                     source = Path(directory) / Path(body["filename"]).name
                     source.write_bytes(base64.b64decode(body["content_base64"], validate=True))
                     result = profile_authoring.add_resource(body["profile_id"], "visual_references", source,
-                        name=body.get("name", ""), description=body.get("description", ""))
+                        name=body.get("name", ""), description=body.get("description", ""),
+                        tags=body.get("tags", []), source_url=body.get("source_url", ""),
+                        source_type=body.get("source_type", "unknown"), source_page=body.get("source_page", ""),
+                        license_name=body.get("license", ""))
                 return self.json_response(result, HTTPStatus.CREATED)
-            if self.path == "/api/profile/reference/update":
-                path, _ = library_catalog(body["profile_id"], "visual_references")
-                def change_reference(catalog):
-                    item = catalog["items"][body["id"]]
-                    if {"id", "path", "preview_path", "asset_url"} & set(body["values"]):
-                        raise ValueError("Image identity cannot be changed in guidance")
-                    item.update(body["values"])
-                    return catalog
-                update(path, change_reference, expected=body["revision"])
-                return self.json_response(library("visual_references", body["profile_id"]))
+            if self.path in {"/api/profile/reference/update", "/api/library-set/item/update"}:
+                set_id = body.get("set_id")
+                if not set_id:
+                    matches = [item for item in library("visual_references", body["profile_id"])["items"]
+                               if item["resource_id"] == body["id"] or item["id"] == body["id"]]
+                    if len(matches) != 1:
+                        raise ValueError("Choose the shared set for this resource")
+                    set_id = matches[0]["set_id"]
+                    body["id"] = matches[0]["id"]
+                update_library_item(set_id, body["id"], body["values"], body["revision"])
+                return self.json_response(library_set(set_id))
             if self.path == "/api/library-set/update":
                 return self.json_response(library_sets.update_set_metadata(body["set_id"], body["values"], body["revision"]))
             if self.path == "/api/component/object":
@@ -385,7 +405,8 @@ class Handler(BaseHTTPRequestHandler):
                     temporary.flush()
                     result = library_sets.add_resource(body["set_id"], Path(temporary.name), name=body.get("name") or body["filename"],
                                                        description=body.get("description", ""), tags=body.get("tags", []),
-                                                       source_url=body.get("source_url", ""), license_name=body.get("license", ""))
+                                                       source_url=body.get("source_url", ""), license_name=body.get("license", ""),
+                                                       source_type=body.get("source_type", "unknown"), source_page=body.get("source_page", ""))
                 return self.json_response(result, HTTPStatus.CREATED)
             if self.path == "/api/design":
                 design.save_defaults(body["profile"], body.get("values", {}), body["revision"], body.get("reset", False))
@@ -394,6 +415,8 @@ class Handler(BaseHTTPRequestHandler):
                 design.save_runtime(body["values"], body["revision"])
                 path = data_home() / "config.json"
                 return self.json_response({"status": "ok", "config": read_json(path), "revision": revision(path)})
+            if self.path == "/api/generation":
+                return self.json_response(image_generation.configure(body["values"], body["revision"]))
             if self.path == "/api/run/defaults":
                 root = resolve_run(body["run"])
                 sessions.adopt_defaults(root, body["revision"])
@@ -461,7 +484,6 @@ class Handler(BaseHTTPRequestHandler):
 
 
 def serve(host: str = "127.0.0.1", port: int = 8765, open_browser: bool = True, view: str = "overview") -> None:
-    WORKSPACE.mkdir(parents=True, exist_ok=True)
     server = ThreadingHTTPServer((host, port), Handler)
     view = "design" if view == "style" else view
     url = f"http://{host}:{port}/console/#{view}"

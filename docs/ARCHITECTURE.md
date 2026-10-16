@@ -25,21 +25,51 @@ Interpretation and measurement inform each other inside reconstruction. They are
 
 The Agent can revise an outline, reconsider an object or rerun one page at any point. Runtime checks reject malformed or stale inputs. They never infer beauty, decide semantic ownership or issue visual acceptance from a score.
 
-## Division of work
+## Host and image-generation boundary
 
-### Message and composition
+Codex, Claude Code and Qoder load the same skill and invoke the same local runtime. Setup detects their installation directories or accepts an explicit platform. Host-specific task notifications are optional. Durable session changes remain available to every host through `run sync`.
 
-The Agent organizes the message, evidence and narrative before choosing a composition. Image generation explores how that material can look. The selected image becomes the visual reference for reconstruction.
+Image-generation preferences are shared by the Agent CLI and Console and captured with each presentation's defaults. The Agent discovers tools in its active conversation, including native and MCP capabilities. Runtime checks compare declared tool capabilities with the compiled request's prompt, attachments and operation. They do not rank providers or invoke a guessed tool API.
 
-### Interpretation and measurement
+Automatic mode leaves tool choice to the Agent. A selected tool or model is an explicit constraint. Manual mode exports the same prompt and ordered references in a portable bundle. Import binds the returned candidate to the unchanged request and records image facts. Visual acceptance and reconstruction follow the same path for every provider. Focused slide edits and per-illustration alpha requests use this boundary too.
 
-The Agent identifies meaningful objects and relationships in the selected image. OpenCV measures visible pixels within the regions the Agent assigned. The compiler combines those inputs to construct editable objects. The Agent reviews the render and decides what needs revision.
+## Two separations
 
-Deck consistency remains an Agent responsibility. The Agent defines recurring visual roles, carries those decisions into individual pages and compares the finished renders together.
+Planning separates the slide's argument from its visual composition. The Agent organizes the message, evidence and narrative. Image generation explores how that material can look. The chosen design then becomes a concrete visual reference.
+
+Reconstruction separates semantic interpretation from pixel measurement. The Agent identifies meaningful objects and relationships. OpenCV measures visible evidence within the assigned regions. The compiler combines those two inputs to construct editable objects. The Agent judges the rendered result and decides what to revise.
+
+These divisions preserve design freedom while keeping a shared direction across the deck. They do not give every page an independent typography or color system. The deck Agent authors recurring visual roles, passes them to page work and compares the results together.
+
+## Visual assets through the full path
+
+Visual references, icons and components use the same shared Library Set model. Each set owns its resource catalog and files outside the skill. Profiles store style guidance, selected set IDs in `library_sets` and optional per-set item IDs in `library_items`. An omitted item subset selects all current and future items. An empty subset selects none. Resource identity is qualified as `<set-id>:<item-id>` to prevent collisions between sets. Creating a profile copies style and selection without copying assets.
+
+Console and the skill resolve those selections against the same current catalogs. A run captures its style while resource resolution reads the profile's current selection and any run-specific resource overrides. Existing generation artifacts retain exact file hashes and bindings. A shared resource update therefore becomes available for subsequent use without silently rewriting reviewed outputs. Visual-reference access and icon selection remain independent.
+
+Before generation, the Agent retrieves reference pages by the slide's communication purpose and information structure, inspects the candidates and chooses resources that help explain the message. Source provenance, source restrictions and exclusions remain attached to those choices. An empty asset list remains possible when the composition benefits from typography and native geometry alone.
+
+The Console exposes the same indexed reference recall through `/api/reference-search`. It rebuilds the index from the current catalog so metadata edits affect the next search. Search returns candidates for inspection. The Agent owns selection.
+
+Selected artwork enters the generation request as visual context. Its canonical file, source, license, variant family and integrity hash remain in the resource handoff. Image generation can use that artwork while exploring the composition. It does not become the source of truth for the final asset.
+
+After a design is accepted, the Agent identifies each asset role and reviews available variants at the final size. The semantic map binds the chosen role to a canonical asset ID. Reconstruction places original SVG and image files in their authored slots. Supported chart and table components supply native constructor defaults that are adapted to the slide's data and geometry. Other imported PowerPoint pages supply editable precedents for object-level reconstruction.
+
+Native component previews are stored alongside their sources. A hash binding records the source file, selected page and preview bytes. Preparation reuses a matching preview and renders a new one when the source or page changes. Generation and reconstruction resolve the same donor page and component definition.
+
+## Generated artwork within a slide
+
+After selecting a slide design, the Agent reviews each illustration at its intended size. A small region in a full-slide image may benefit from an independent generation at higher resolution. The Agent can request a transparent version using that region as its reference, while retaining the surrounding slide composition. Exact user assets and canonical Library Set resources keep their original files.
+
+This uses the existing raster `refine` action. Source preparation records the original crop, canvas and hashes. Each returned image is registered individually. A transparent request requires actual alpha pixels, including partial transparency at soft edges. Registration preserves the entire canvas and its margins. OpenCV supplies visible bounds as evidence, while reconstruction places the full registered canvas at its authored coordinates. Tight alpha bounds never silently replace that placement.
+
+The Agent compares RGB previews composited on light and dark backgrounds, then inspects the actual PowerPoint render. Higher pixel dimensions alone do not establish better detail or faithful artwork. If an edit is unsuitable, `reuse_original` restores the accepted source crop. File checks reject opaque substitutes, altered source bindings and unintended changes to aspect ratio. They do not decide whether the new artwork is visually acceptable.
+
+Transparency is optional. It does not add a mandatory generation stage or a new presentation mode. Transparent artwork remains a raster image with editable position, size and layering. Presentation text, charts, tables and connectors follow their existing native reconstruction paths.
 
 ## Shared frame and content canvas
 
-The PowerPoint canvas includes the full slide and its inherited header and footer. Image generation receives the substantive region between them.
+The PowerPoint canvas and image-generation canvas have different responsibilities. The resolved configuration owns the full slide and inherited header and footer. Generation owns the substantive region between them.
 
 ```text
 content width  = full slide width
@@ -53,13 +83,13 @@ Header text, footer text, page numbers and master-frame rules never belong in th
 
 `prepare_generation.py` compiles the resolved canvas, intent, resources and shared deck design into `generation-request.json`. The human-readable brief and request prompt are the same text. The request also lists the reference images and binds its source files by hash. The host submits that prompt with the recorded attachments. A changed instruction belongs in the upstream inputs and a newly compiled request.
 
-Request verification detects changed source files, prompt text or attachments before a host call. It records the prepared instructions. The Agent still inspects the returned image for the requested canvas, excluded frame content and visual direction. Host call evidence records the actual submission when the integration exposes it.
+Request verification detects changed source files, prompt text or attachments before a host call. It establishes which instructions were prepared. The Agent must still inspect the returned image for the requested canvas, excluded frame content and visual direction. Host call evidence records the actual submission when the integration exposes it.
 
 Focused image edits use the same request as their base. The edit adapter binds the current candidate and the authored changes, retains the canvas and shared design, and checks the host's prompt capacity. An Agent can initiate a correction after visual review. Source changes or an oversized prompt require a new request before the next call.
 
 ## Cross-page design responsibility
 
-The Agent records recurring visual functions in `work/deck-design.json`. Role names come from the actual deck. A caption, series label, source line, section marker or folio can matter as much as a headline. Shared wording alone does not define a role, and differently worded objects can still be peers. The configuration remains the sole source of frame geometry.
+The Agent discovers recurring visual functions and records them in `work/deck-design.json`. Role names are freely authored from the actual deck. A caption, series label, source line, section marker or folio can recur as meaningfully as a headline. Matching words do not automatically imply one role, and differently worded objects can be peers. The configuration remains the sole source of frame geometry.
 
 A representative generated page can serve as a style reference for later pages. The Agent revisits the role inventory when candidates arrive and after native rendering, using a contact sheet to discover repeated visual functions and full-resolution pages to inspect them. This search includes elements omitted from the initial brief. An inventory confined to familiar heading or callout categories can miss a recurring series marker whose page-local names differ.
 
@@ -67,7 +97,7 @@ Each discovered role carries its purpose, concrete chosen style, page/entity ali
 
 The Agent compares actual appearance with emitted native facts, including family, face, point size, tracking, color and alignment. If a style changed during fitting or font resolution, the Agent decides how to revise its allocation, content, shared treatment or explicit exception. Re-rendering closes that feedback loop. Native facts diagnose what was emitted. They never infer peerhood, select a visual treatment or issue a consistency verdict. A different layout can preserve a recurring visual system without copying one page composition.
 
-## Reconstruction flow
+## One reconstruction path
 
 ```mermaid
 flowchart LR
@@ -102,7 +132,7 @@ flowchart LR
 
 Every delivered example page uses the packaged path. The examples do not contain a second PowerPoint builder. `examples/rebuild.py` only orchestrates existing commands from retained targets, semantic maps and handoffs.
 
-Three coordinate concepts remain explicit. A search region says where measurement may inspect pixels. Visible evidence describes the ink or contour found there. A logical box describes the intended native object allocation. Serif descenders can occupy a different region from the text box needed for an Office baseline. Keeping these boxes separate prevents neighbouring text from entering measurements and distorting text fitting.
+Three coordinate concepts remain explicit. A search region says where measurement may inspect pixels. Visible evidence describes the ink or contour found there. A logical box describes the intended native object allocation. Serif descenders can occupy a different region from the text box needed for an Office baseline. Treating those boxes as interchangeable previously contaminated neighboring text measurements and distorted fitting.
 
 Raster ownership is equally explicit. Photography, textured paper and intrinsic marks can stay in a regional image object. Essential slide text remains native when faithful. OpenCV supplies the complete measurement route. Setup installs the required measurement tools without a segmentation-model download.
 
@@ -122,10 +152,10 @@ Outputs are published through a staging boundary. Missing images, failed convers
 
 Portable bundles copy the compiled scenes and deduplicate raster sources by content hash. Relative paths make the compiled inputs independent of the author's temporary directory. A closed inventory detects changed, added or missing files. Preserved evidence keeps its original authored pointers, so its provenance can be inspected separately from the renderable bundle.
 
-## Verification limits
+## Evidence that matters
 
-Tests exercise observable behavior and file semantics. Examples include real HTTP GET and HEAD responses, setting conflicts, relocated deck rendering, malformed chart rejection, native text properties, multislide order and mixed Chinese and English PDF rendering. Tests that only checked internal function names, source strings or unused stage records have been removed.
+Tests exercise external behavior and file semantics. Examples include real HTTP GET and HEAD responses, setting conflicts, relocated deck rendering, malformed chart rejection, native text properties, multislide order and actual mixed Chinese and English PDF rendering. Tests that only required internal function names, source strings or ceremonial stage records have been removed.
 
-The two [showcases](../examples/) exercise different design demands through the same runtime. The [production record](SHOWCASE_PRODUCTION.md) identifies their retained assets and rendering limits. Neither test counts nor these examples establish universal visual fidelity. Rich text effects, font substitution and Office-specific behavior need their own representative evidence as support expands.
+The [examples README](../examples/README.md) explains how to rebuild the sample decks and which fonts and renderer they use. Neither test counts nor these examples establish universal visual fidelity. Rich text effects, font substitution and Office-specific behavior need their own representative evidence as support expands.
 
 Implementation contracts live in [the skill](../slidepoise/SKILL.md), [reconstruction](../slidepoise/references/reconstruction.md), [deck orchestration](../slidepoise/references/deck-orchestration.md) and [portable artifacts](../slidepoise/references/portable-artifacts.md).

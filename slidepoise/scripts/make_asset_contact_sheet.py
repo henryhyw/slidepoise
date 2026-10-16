@@ -10,13 +10,13 @@ from __future__ import annotations
 import argparse
 import io
 import json
-import shutil
-import subprocess
 import textwrap
 from pathlib import Path
 from typing import Any
 
 from PIL import Image, ImageDraw, ImageFont
+from resvg_py import svg_to_bytes
+from inspect_asset import svg_dimensions
 
 
 def _font(size: int, bold: bool = False) -> ImageFont.ImageFont:
@@ -32,52 +32,24 @@ def _font(size: int, bold: bool = False) -> ImageFont.ImageFont:
 
 def _svg_to_image(path: Path, size: int) -> Image.Image | None:
     try:
-        import cairosvg  # type: ignore
-        data = cairosvg.svg2png(url=str(path), output_width=size, output_height=size)
-        return Image.open(io.BytesIO(data)).convert('RGBA')
-    except Exception:
-        pass
-    rsvg = shutil.which('rsvg-convert')
-    if rsvg:
-        try:
-            result = subprocess.run([rsvg, '-w', str(size), '-h', str(size), str(path)], capture_output=True, check=True)
-            return Image.open(io.BytesIO(result.stdout)).convert('RGBA')
-        except Exception:
-            pass
-    convert = shutil.which('magick') or shutil.which('convert')
-    if convert:
-        try:
-            command = [convert]
-            if Path(convert).name == 'magick':
-                command += ['convert']
-            result = subprocess.run(command + [str(path), '-resize', f'{size}x{size}', 'png:-'], capture_output=True, check=True)
-            return Image.open(io.BytesIO(result.stdout)).convert('RGBA')
-        except Exception:
-            pass
-    return None
-
-
-def _packaged_svg_preview(path: Path) -> Path | None:
-    root = Path(__file__).resolve().parents[1]
-    icons_root = (root / 'assets' / 'icons').resolve()
-    try:
-        rel = path.resolve().relative_to(icons_root)
-    except Exception:
+        width, height = svg_dimensions(path)
+        if not width or not height:
+            return None
+        scale = size / max(width, height)
+        output_width, output_height = max(1, round(width * scale)), max(1, round(height * scale))
+    except (ValueError, OSError, SyntaxError, OverflowError):
         return None
-    candidate = root / 'assets' / 'icon_previews' / rel.with_suffix('.png')
-    return candidate if candidate.is_file() else None
+    try:
+        data = svg_to_bytes(svg_path=str(path), width=output_width, height=output_height)
+        return Image.open(io.BytesIO(data)).convert('RGBA')
+    except (ValueError, OSError):
+        return None
 
 
 def _load_preview(path: Path, size: int) -> Image.Image | None:
     if not path.is_file():
         return None
     if path.suffix.lower() == '.svg':
-        packaged = _packaged_svg_preview(path)
-        if packaged is not None:
-            try:
-                return Image.open(packaged).convert('RGBA')
-            except Exception:
-                pass
         return _svg_to_image(path, size)
     try:
         return Image.open(path).convert('RGBA')
@@ -148,7 +120,8 @@ def collect_resource_review_items(payload: dict[str, Any]) -> list[dict[str, Any
     for index, record in enumerate(payload.get('selected_assets') or [], start=1):
         copy = dict(record)
         copy['contact_sheet_label'] = f'A{index:02d}'
-        source = 'User upload' if record.get('source') == 'current_chat_upload' or record.get('user_required') else 'Selected asset'
+        source = ('User upload' if record.get('source') == 'current_chat_upload' else
+                  'Required asset' if record.get('user_required') or record.get('required_for_slide') else 'Selected asset')
         copy['role'] = f"{source}. {record.get('role') or record.get('asset_id') or 'Asset'}"
         items.append(copy)
     return items

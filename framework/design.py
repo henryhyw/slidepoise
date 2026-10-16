@@ -10,7 +10,7 @@ from contextlib import ExitStack
 from pathlib import Path
 
 from .paths import DEFAULT_CONFIG, SKILL_ROOT, active_profiles_root, data_home
-from .profiles import active_profile_id, list_profiles
+from .profiles import canonical_profile_id, active_profile_id, list_profiles
 from .library_sets import list_sets, profile_set_ids
 from .storage import ConflictError, locked, read, revision, update, write
 
@@ -139,11 +139,13 @@ def defaults_payload(profile=None):
     return {"values": presentation_values(cfg), "config": cfg, "profiles": list_profiles(), "active_profile": active_profile_id(),
             "fonts": FONTS, "densities": DENSITIES, "revision": revision(data_home() / "config.json"),
             "profile_revision": revision(Path(selected["path"])), "style_agency": profile_payload.get("style_agency", {}),
-            "selected_sets": {kind: profile_set_ids(profile_payload, kind) for kind in ("icons", "components")},
+            "selected_sets": {kind: profile_set_ids(profile_payload, kind) for kind in ("visual_references", "icons", "components")},
+            "selected_items": copy.deepcopy(profile_payload.get("library_items", {})),
             "library_sets": list_sets()}
 
 
 def save_defaults(profile, values, expected, reset=False):
+    profile = canonical_profile_id(profile)
     patch = design_patch(resolve_default(profile), values)
     def change(cfg):
         defaults = cfg.setdefault("user_design_overrides", {})
@@ -156,11 +158,11 @@ def save_defaults(profile, values, expected, reset=False):
 
 
 def save_runtime(values, expected):
-    allowed = {"remix_icon", "wikimedia_commons"}
+    allowed = {"remix_icon", "mdi", "wikimedia_commons"}
     if set(values) - allowed:
         raise ValueError("Unknown runtime setting")
     def change(cfg):
-        for source in ("remix_icon", "wikimedia_commons"):
+        for source in ("remix_icon", "mdi", "wikimedia_commons"):
             if source in values:
                 if type(values[source]) is not bool:
                     raise ValueError("Resource switches must be boolean")
@@ -170,10 +172,11 @@ def save_runtime(values, expected):
 
 
 def save_profile_style(profile, values, profile_values, expected, profile_expected):
+    profile = canonical_profile_id(profile)
     """Save one Console edit with both revisions checked before either write."""
     from .profile_authoring import apply_profile_values
     from .profiles import profile_record
-    if set(profile_values) - {"style_agency", "library_sets"}:
+    if set(profile_values) - {"style_agency", "library_sets", "library_items"}:
         raise ValueError("Unknown profile style setting")
     modes = {"typography": {"specified", "guided", "agent_decides"},
              "density": {"specified", "guided", "agent_decides"},

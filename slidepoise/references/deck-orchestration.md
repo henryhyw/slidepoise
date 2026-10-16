@@ -17,7 +17,26 @@ The outline records
 - dependencies on earlier or later slides
 - disposition such as active or omitted
 
+Establish whether the deck must stand on its own or accompanies a presenter, and plan explanatory depth accordingly. Across the ordered slides, check what the reader already knows, what each page adds and whether its evidence warrants the next conclusion. Shared evidence must keep the same meaning and qualifications when reused. Repeating an uncertain claim on several pages does not strengthen its support.
+
 Do not store detailed visual coordinates in the outline.
+
+Keep the outline's content categories independent of slide layout. Compare possible visual approaches using `visual-exploration.md` before assigning page workers a composition. Do not turn provisional choices such as equal columns, no logos or a particular table into inherited requirements. Pass their rationale and remaining freedom when a reasoned choice is useful.
+
+## Sections and navigation pages
+
+At outline stage, consider whether coarse sections would help the reader follow changes in the question, scope or stage of the argument. Derive section boundaries and labels from that narrative. A section can organise the outline without needing a separate divider slide. Choose opening, transition and closing pages for a useful communication job or an explicit user request, without a page-count threshold or a fixed section template.
+
+When adding these pages to an existing deck, read the actual slides in their current order. Synthesize each new page's purpose and copy from what the deck establishes and where the reader goes next. Topic names alone do not provide that synthesis. Distinguish the jobs
+
+- An opening orients the reader to the subject, the question or decision, and the route through the argument when that route is useful.
+- A section transition makes the change in question clear and prepares the reader for what the next section will establish. It may connect a conclusion already earned to the next unresolved question.
+- A closing resolves the deck's central question with a supported takeaway and, when warranted, a decision or next action.
+- A page-specific takeaway explains the implication of that page's evidence. It does not automatically serve as the deck's closing or require another summary page.
+
+If navigation pages share a divider scaffold, record its recurring roles in `deck-design.json`. Keep section labels, their order, the active-position treatment, brand assets and typography consistent across the relevant pages. Map those decisions to actual page entities during reconstruction. Let the purpose of each opening, transition or closing determine its substantive message and emphasis. Shared navigation should help readers locate that message without forcing identical content into every page.
+
+Retrieve and inspect authentic references for each page's communication job, subject to the selected source policy. Use the same page-local intent, compiled ImageGen request, semantic mapping, OpenCV measurement, packaged native reconstruction and render review as for content slides. A familiar divider scaffold does not bypass that workflow. The host Agent designs the narrative and navigation through it. A generated image or successful assembly does not establish that the transition is meaningful or the resulting slide is ready.
 
 ## Shared visual decisions
 
@@ -27,11 +46,15 @@ Discover recurring visual functions from the planned communication, references a
 
 For each discovered role, record its purpose, the observed reason for grouping its members, a concrete `chosen_style`, `page_aliases` that identify its objects on each relevant page, and any explicit `exceptions` in `deck-design.json`. Choose family, native size and units, face or weight, italic treatment, tracking, color and alignment where relevant. Keep placement conventions distinct from type style. Empty generic advice such as "keep labels consistent" leaves the page worker without an applied decision. The example contains illustrative roles and values, not default fonts or an exhaustive inventory.
 
+Titles with the same communication role share one deck-level type treatment, including native point size. Content-slide titles remain peers even when their subjects, density or generated layouts differ. A generated title size, local fit or attractive individual page does not justify a page-specific exception. Cover, section-divider and closing display titles may form separate roles with their own consistent hierarchy. When a peer title does not fit, resolve wrapping, allocation and surrounding spacing first. If the shared title treatment needs revision, reconsider its peers together instead of silently shrinking or enlarging one page.
+
+A typography correction is also a spatial design task. Inspect the changed title, its introduction and the body as a whole. Reallocate space left by a smaller title, restore the intended gap before the body and rebalance neighbouring visual groups without stretching artwork or inflating unrelated copy. Preserve the page's communication structure. Check the actual render at slide scale, then compare it with other pages. Equal font values establish numerical consistency only. The visual review establishes whether line rhythm, hierarchy and spatial balance work.
+
 Revisit this inventory after generated candidates and again after actual PowerPoint renders. Use the contact sheet to notice repeated visual functions, then open the relevant pages at full resolution. Look specifically for recurring elements that nobody declared during planning. A repeated folio may appear under different entity names, and a font substituted during rendering may expose a difference absent from the original brief. Add the newly observed peers to the shared design and trace all affected pages. This is adaptive visual reasoning, with no fixed role classifier or completion state machine.
 
 The resolved configuration owns the shared frame and physical canvas. The generated image owns only the substantive region. Header, footer, page numbers and master-frame rules are excluded from generation even when a style reference shows them. All workers use the same enabled frame heights and content offset. Never turn off the frame merely to make a generated image fit.
 
-Generate a representative content page first when its visual language will guide other pages. Inspect it against the shared brief, refine the brief if necessary, and make its accepted substantive image available as a style reference. Rebuild affected generation requests after changing the shared design. A diagram and a financial table can use different layouts while retaining the same title scale, text hierarchy, rules and accent meanings.
+Generate a representative content page first when its visual language will guide other pages. Inspect it against the shared brief, refine the brief if necessary, and make its accepted substantive image available as a style reference when the user's source policy permits generated references. Carry its typography, colour and visual finish across pages without copying its layout into unrelated arguments. Rebuild affected generation requests after changing the shared design. A diagram and a financial table can use different layouts while retaining the same title scale, text hierarchy, rules and accent meanings.
 
 Pass the same deck design into each generation request and read it during semantic mapping. Keep its identity and source hash with the page's inputs. This prevents the shared direction from becoming a parent-only note that page workers never consume.
 
@@ -78,7 +101,7 @@ When the deck changes, reason about dependency scope.
 - Adding a slide creates a new stable ID and a new page workspace.
 - Splitting or merging slides creates new IDs when the communication jobs genuinely change.
 
-Update transitions, repeated content, references such as "as shown earlier", and speaker notes after structural edits.
+Update section boundaries, navigation labels and active-position markers, transitions, repeated content, references such as "as shown earlier", and speaker notes after structural edits.
 
 ## Parallel work
 
@@ -86,7 +109,7 @@ Independent slides may be processed concurrently when the host exposes subagents
 
 Parallelism is an optimization. If subagents are unavailable, the parent Agent may process pages sequentially. Do not block the deck merely because parallel execution is unavailable.
 
-Give each worker the current resolved configuration, deck design, relevant accepted style reference and assigned content obligations. Workers resolve the supplied role aliases to their actual page entities and return those bindings, observed native values, proposed exceptions and newly discovered recurring candidates. The parent compares pages together and decides whether to revise the page, adjust the shared design or retain an intentional exception. Different local typography-group names do not excuse drift within one deck role. Per-page approval and successful local fitting do not establish cross-page consistency.
+Give each worker the original task context, relevant source material or source paths, current resolved configuration, deck design, relevant accepted style reference and assigned content obligations. Identify which constraints come from the user and which choices are Agent proposals. Workers can challenge a missing asset or an unsupported exclusion and return a proposed upstream revision. A page assignment does not turn the parent's provisional resource decision into a user requirement. Workers resolve the supplied role aliases to their actual page entities and return those bindings, observed native values, proposed exceptions and newly discovered recurring candidates. The parent compares pages together and decides whether to revise the page, adjust the shared design or retain an intentional exception. Different local typography-group names do not excuse drift within one deck role. Per-page approval and successful local fitting do not establish cross-page consistency.
 
 ## Deck scene manifest
 
@@ -106,7 +129,7 @@ The runtime verifies structural compatibility and assembles the ordered deck. It
 
 ## Deck-level review
 
-After assembly, inspect the deck as a sequence. Check
+After assembly, read the original task and relevant source material again before inspecting the deck as a sequence. Check whether planning omitted something material, including subject identity, available evidence or an explanatory visual. Agreement between the plan and output cannot establish that the plan was sufficient. Use the source-first review in `multi-agent-review.md` when an independent reviewer is available. Check
 
 - whether the opening earns attention and frames the question
 - whether each slide adds a distinct piece of the argument
@@ -114,6 +137,7 @@ After assembly, inspect the deck as a sequence. Check
 - whether visual identity stays coherent without repeating one layout
 - whether density and pacing vary intentionally
 - whether transitions and cross-references still work after edits
+- whether any section labels and active-position markers match the actual sequence
 - whether the ending resolves the promised communication job
 
 Use a contact sheet for overview and full-resolution renders for detailed inspection. The Agent owns the decision and records concrete observations in `work/deck-review.json`.

@@ -57,6 +57,56 @@ def test_malformed_chart_data_cannot_overwrite_a_usable_deck(tmp_path):
     assert target.read_bytes() == b"previous usable output"
 
 
+def test_arrowhead_size_survives_native_lines_and_freeform_routes(tmp_path):
+    scene = {"dimensions_px": [1600, 900], "objects": [
+        {"id": "short", "kind": "connector_graph", "source_routes_px": [],
+         "target_routes_px": [[[100, 100], [130, 100]]], "arrowhead_treatment": "triangle_at_target",
+         "arrowhead": {"powerpoint_size": "sm"}, "style": {"width_px": 1.6}},
+        {"id": "return", "kind": "connector_graph", "source_routes_px": [],
+         "target_routes_px": [[[400, 200], [400, 300], [200, 300], [200, 200]]],
+         "arrowhead_treatment": "open_arrow_at_target",
+         "arrowhead": {"powerpoint_width": "sm", "powerpoint_length": "lg"}, "style": {"width_px": 2}},
+        {"id": "default", "kind": "connector_graph", "source_routes_px": [],
+         "target_routes_px": [[[100, 400], [300, 400]]], "arrowhead_treatment": "triangle_at_target",
+         "style": {"width_px": 2}},
+    ]}
+    result, target = emit(scene, tmp_path)
+    assert result.returncode == 0, result.stderr
+    with zipfile.ZipFile(target) as archive:
+        root = ET.fromstring(archive.read("ppt/slides/slide1.xml"))
+        ends = root.findall('.//a:tailEnd', NS)
+        assert [end.attrib for end in ends] == [
+            {"type": "triangle", "w": "sm", "len": "sm"},
+            {"type": "arrow", "w": "sm", "len": "lg"},
+            {"type": "triangle", "w": "med", "len": "med"},
+        ]
+
+
+def test_invalid_arrowhead_size_preserves_previous_output(tmp_path):
+    target = tmp_path / "slide.pptx"
+    target.write_bytes(b"previous usable output")
+    scene = {"dimensions_px": [1600, 900], "objects": [{"id": "flow", "kind": "connector_graph",
+             "source_routes_px": [], "target_routes_px": [[[100, 100], [200, 100]]],
+             "arrowhead_treatment": "triangle_at_target", "arrowhead": {"powerpoint_size": "huge"}}]}
+    result, _ = emit(scene, tmp_path)
+    assert result.returncode != 0 and "native arrowhead dimensions" in result.stderr
+    assert target.read_bytes() == b"previous usable output"
+
+
+@pytest.mark.parametrize(("chart_type", "bar_direction"), [("column", "col"), ("bar", "bar")])
+def test_chart_type_preserves_authored_orientation(tmp_path, chart_type, bar_direction):
+    scene = {"dimensions_px": [1600, 900], "objects": [{
+        "id": "capacity", "kind": "chart", "bbox_px": [50, 50, 600, 400],
+        "structure": {"type": chart_type, "categories": ["Research", "Drafting"],
+                      "series": [{"name": "Hours", "values": [12, 8]}]},
+    }]}
+    result, target = emit(scene, tmp_path)
+    assert result.returncode == 0, result.stderr
+    with zipfile.ZipFile(target) as archive:
+        chart = ET.fromstring(archive.read("ppt/charts/chart1.xml"))
+        assert chart.find(".//c:barDir", NS).get("val") == bar_direction
+
+
 def test_native_table_preserves_word_level_formatting_with_component_styling(tmp_path):
     scene = {"dimensions_px": [1600, 900], "objects": [{
         "id": "workstreams", "kind": "table", "bbox_px": [40, 40, 900, 250],
@@ -115,7 +165,7 @@ def test_chart_values_are_workbook_bound_native_labels_with_authored_typography(
              "structure": {"categories": ["Research", "Drafting"], "series": [{"name": "Hours", "values": [12, 8]}],
                            "show_values": True, "data_label_position": "outEnd", "data_label_format_code": "0",
                            "data_font_family": "Arial", "data_font_size_px": 27.5, "data_label_color": "#123456",
-                           "data_label_colors": ["#FD5108", "#000000"]}}]}
+                           "data_label_colors": ["#FD5108", "#000000"], "data_font_bold": True}}]}
     result, target = emit(scene, tmp_path)
     assert result.returncode == 0, result.stderr
     with zipfile.ZipFile(target) as archive:
@@ -126,6 +176,7 @@ def test_chart_values_are_workbook_bound_native_labels_with_authored_typography(
         assert labels.find("c:numFmt", NS).get("formatCode") == "0"
         formatting = labels.find("c:txPr/a:p/a:pPr/a:defRPr", NS)
         assert formatting.get("sz") == "1650"
+        assert formatting.get("b") == "1"
         assert formatting.find("a:latin", NS).get("typeface") == "Arial"
         assert formatting.find("a:solidFill/a:srgbClr", NS).get("val") == "123456"
         points = labels.findall("c:dLbl", NS)
@@ -183,3 +234,19 @@ def test_invalid_line_spacing_is_rejected_by_fitting_and_native_emission(tmp_pat
          "style": {"font_size_pt": 20, "line_spacing_multiple": spacing}}]}, tmp_path)
     assert result.returncode != 0 and "line_spacing_multiple" in result.stderr
     assert target.read_bytes() == b"previous usable output"
+
+
+def test_table_pixel_margins_use_slide_units_and_keep_legacy_points(tmp_path):
+    scene = {"dimensions_px": [1920, 1080], "slide_size_inches": [13.333333, 7.5], "objects": [{
+        "id": "table", "kind": "table", "bbox_px": [40, 40, 900, 200],
+        "style": {"font_family": "Arial", "font_size_px": 24},
+        "structure": {"rows": [[{"text": "Pixel", "margin_px": [4, 8, 4, 8]},
+                                    {"text": "Point", "options": {"margin": [2, 4, 2, 4]}}]]}}]}
+    result, target = emit(scene, tmp_path)
+    assert result.returncode == 0, result.stderr
+    with zipfile.ZipFile(target) as z:
+        root = ET.fromstring(z.read("ppt/slides/slide1.xml"))
+    cells = root.findall(".//a:tcPr", NS)
+    assert len(cells) == 2
+    assert cells[0].get("marL") == cells[1].get("marL")
+    assert int(cells[0].get("marL")) == 50800

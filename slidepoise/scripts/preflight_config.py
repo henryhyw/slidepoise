@@ -9,6 +9,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "runtime/src"))
 from slidepoise.canvas import validate_derived_canvas
+from slidepoise.generation import resolve_preferences
 
 def main() -> None:
     parser = argparse.ArgumentParser()
@@ -16,6 +17,7 @@ def main() -> None:
     args = parser.parse_args()
     cfg = json.loads(args.config.read_text(encoding="utf-8"))
     errors: list[str] = []
+    facts: list[str] = []
 
     if cfg.get("scope", {}).get("mode") != "adaptive_presentation":
         errors.append("scope.mode must be adaptive_presentation")
@@ -36,11 +38,15 @@ def main() -> None:
         errors.append("measurement.segmentation.eligible_roles must be a non-empty array")
 
     generation = cfg.get("generation", {})
-    if not str(generation.get("default_model", "")).strip():
-        errors.append("generation.default_model must name a preferred image-generation model")
+    try:
+        resolve_preferences(generation)
+    except ValueError as error:
+        errors.append(str(error))
     host_adapter = generation.get("host_adapter", {}) or {}
-    if host_adapter.get("mode") != "host_native_or_delegated_image_generation":
-        errors.append("generation.host_adapter.mode must use host-native-or-delegated image generation")
+    if host_adapter.get("mode") not in {"agent_discovered_or_manual", "host_native_or_delegated_image_generation"}:
+        errors.append("generation.host_adapter.mode must use Agent-discovered or manual image generation")
+    if not isinstance(host_adapter.get("max_prompt_chars"), int) or host_adapter.get("max_prompt_chars") < 1:
+        errors.append("generation.host_adapter.max_prompt_chars must be a positive integer")
     if generation.get("initial_candidates_per_slide") != 1:
         errors.append("generation.initial_candidates_per_slide must be 1")
     refinement = generation.get("illustration_refinement", {}) or {}
@@ -123,16 +129,29 @@ def main() -> None:
         errors.append("design.connectors.allowed_families must contain at least one framework-supported family")
 
     remote_sources = cfg.get("remote_sources", {})
+    for provider in ("remix_icon", "mdi"):
+        if remote_sources.get(provider, {}).get("line_weight", "fine") not in {"fine", "original"}:
+            errors.append(f"remote_sources.{provider}.line_weight must be fine or original")
     required_remote_sources = {"remix_icon", "wikimedia_commons", "shared_policy"}
     missing_remote_sources = sorted(required_remote_sources - set(remote_sources))
     if missing_remote_sources:
         errors.append(f"remote_sources is missing required entries: {missing_remote_sources}")
-    for source_id in ("remix_icon", "wikimedia_commons"):
+    for source_id in ("remix_icon", "mdi", "wikimedia_commons"):
+        if source_id == "mdi" and source_id not in remote_sources:
+            continue
         source = remote_sources.get(source_id, {})
         if source.get("enabled") and not str(source.get("provider", "")).strip():
             errors.append(f"enabled remote source must name its provider: {source_id}")
         if source.get("enabled") not in {True, False}:
             errors.append(f"remote_sources.{source_id}.enabled must be boolean")
+
+    selected_icon_sets = cfg.get("library_sets", {}).get("selected", {}).get("icons", []) or []
+    records = cfg.get("library_sets", {}).get("records", {}) or {}
+    for set_id in selected_icon_sets:
+        record = records.get(set_id, {}) or {}
+        provider = record.get("provider")
+        if record.get("source") == "remote" and provider and remote_sources.get(provider, {}).get("enabled") is False:
+            facts.append(f"selected remote icon Library Set is disabled for this run: {set_id} ({provider})")
 
     remix = remote_sources.get("remix_icon", {})
     if remix:
@@ -163,6 +182,7 @@ def main() -> None:
     report = {
         "evidence_type": "objective_config_structure",
         "blocking_facts": errors,
+        "configuration_facts": facts,
         "agent_interpretation_required": True,
         "config": str(args.config.resolve()),
         "notice": "No overall verdict is produced. The host Agent must interpret these facts together with the profile and current task."

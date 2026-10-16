@@ -97,12 +97,8 @@ def normalize_route_line(shape: etree._Element) -> None:
     line = shape.find("p:spPr/a:ln", NS)
     if line is None:
         return
-    for endpoint in line:
-        if endpoint.tag in {tag("a:headEnd"), tag("a:tailEnd")} and endpoint.get("type") == "triangle":
-            if "w" not in endpoint.attrib:
-                endpoint.set("w", "lg")
-            if "len" not in endpoint.attrib:
-                endpoint.set("len", "lg")
+    # An omitted size is the Office default. Do not silently enlarge endpoints.
+    # Explicit, per-route sizes are applied from renderer metadata below.
     if not any(child.tag in {tag("a:round"), tag("a:bevel"), tag("a:miter")} for child in line):
         index = next((index for index, child in enumerate(line)
                       if child.tag in {tag("a:headEnd"), tag("a:tailEnd"), tag("a:extLst")}), len(line))
@@ -219,7 +215,36 @@ def apply_character_spacing(root: etree._Element, spacing: dict[str, int]) -> in
     return changed
 
 
-def transform_xml(xml: str, rounding: dict[str, int], spacing: dict[str, int]) -> tuple[str, dict[str, int]]:
+def apply_arrowhead_sizes(root: etree._Element, treatments: dict) -> int:
+    """Preserve Agent-authored endpoint sizing for both native and freeform routes."""
+    found = set()
+    changed = 0
+    for shape in root.iter():
+        if shape.tag not in {tag("p:sp"), tag("p:cxnSp")}:
+            continue
+        name = object_name(shape)
+        if name not in treatments:
+            continue
+        if name in found:
+            raise ValueError(f"Arrowhead metadata matches duplicate route names. {name}")
+        treatment = treatments[name]
+        if not isinstance(treatment, dict) or set(treatment) != {"width", "length"} or any(
+                value not in {"sm", "med", "lg"} for value in treatment.values()):
+            raise ValueError(f"Arrowhead size must declare native width and length. {name}")
+        endpoint = shape.find("p:spPr/a:ln/a:tailEnd", NS)
+        if endpoint is None or endpoint.get("type", "none") == "none":
+            raise ValueError(f"Arrowhead metadata refers to a route without an arrow. {name}")
+        endpoint.set("w", treatment["width"])
+        endpoint.set("len", treatment["length"])
+        found.add(name)
+        changed += 1
+    if set(treatments) - found:
+        raise ValueError(f"Arrowhead metadata refers to missing routes. {sorted(set(treatments) - found)}")
+    return changed
+
+
+def transform_xml(xml: str, rounding: dict[str, int], spacing: dict[str, int],
+                  arrowheads: dict | None = None) -> tuple[str, dict[str, int]]:
     root = parse_xml(xml)
     identifiers = normalize_shape_ids(root)
     normalized = 0
@@ -235,11 +260,12 @@ def transform_xml(xml: str, rounding: dict[str, int], spacing: dict[str, int]) -
             normalize_route_line(shape)
     rounded = adjust_round_rectangles(root, rounding)
     tracked = apply_character_spacing(root, spacing)
+    sized = apply_arrowhead_sizes(root, arrowheads or {})
     if any(object_name(shape).startswith("SC_CONNECTOR__") for shape in root.iter(tag("p:sp"))):
         raise RuntimeError("Native connector conversion left an unconverted placeholder")
     facts = {"converted": converted, "textBodiesNormalized": normalized,
              "roundedRectanglesAdjusted": rounded, "textCharacterSpacingApplied": tracked,
-             "shapeIdsNormalized": identifiers}
+             "shapeIdsNormalized": identifiers, "arrowheadSizesApplied": sized}
     return etree.tostring(root, encoding="unicode"), facts
 
 
@@ -383,7 +409,8 @@ def postprocess(pptx_path: Path, metadata: dict | None = None) -> dict[str, int 
     pptx_path = pptx_path.resolve()
     metadata = metadata or {}
     facts = {"converted": 0, "textBodiesNormalized": 0, "roundedRectanglesAdjusted": 0,
-             "textCharacterSpacingApplied": 0, "chartLabelTreatmentsApplied": 0, "shapeIdsNormalized": 0}
+             "textCharacterSpacingApplied": 0, "chartLabelTreatmentsApplied": 0, "shapeIdsNormalized": 0,
+             "arrowheadSizesApplied": 0}
     staged = None
     try:
         with zipfile.ZipFile(pptx_path, "r") as source:
@@ -402,7 +429,8 @@ def postprocess(pptx_path: Path, metadata: dict | None = None) -> dict[str, int 
                 slide_metadata = (metadata.get("slides", {}).get(info.filename, {}) or {})
                 rounding = slide_metadata.get("round_rect_adjustments", metadata.get("round_rect_adjustments", {})) or {}
                 spacing = slide_metadata.get("text_character_spacing", metadata.get("text_character_spacing", {})) or {}
-                updated, local = transform_xml(source.read(info.filename).decode("utf-8"), rounding, spacing)
+                updated, local = transform_xml(source.read(info.filename).decode("utf-8"), rounding, spacing,
+                                               slide_metadata.get("arrowhead_sizes", {}))
                 for key, count in local.items():
                     facts[key] += count
                 replacements[info.filename] = updated.encode("utf-8")

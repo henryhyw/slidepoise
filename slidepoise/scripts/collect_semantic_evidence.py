@@ -71,6 +71,7 @@ def remix_icon_variant_errors(entities: list[dict[str, Any]], handoff: dict[str,
     errors: list[dict[str, Any]] = []
     catalog = selected_asset_catalog(handoff)
     group_variants: dict[str, set[str]] = {}
+    group_line_weights: dict[str, set[str]] = {}
     group_members: dict[str, list[str]] = {}
     for entity in entities:
         if entity.get("kind") not in {"icon", "icon_slot"}:
@@ -104,9 +105,16 @@ def remix_icon_variant_errors(entities: list[dict[str, Any]], handoff: dict[str,
         if group:
             group_variants.setdefault(group, set()).add(variant)
             group_members.setdefault(group, []).append(identifier)
+            if variant == "line":
+                weight = (asset.get("geometry_treatment") or {}).get("line_weight") or "original"
+                group_line_weights.setdefault(group, set()).add(str(weight))
     for group, variants in group_variants.items():
         if len(variants) > 1:
             errors.append({"reason": "remix_icon_peer_group_mixes_line_and_fill", "icon_treatment_group": group, "variants": sorted(variants), "member_ids": group_members[group]})
+    for group, weights in group_line_weights.items():
+        if len(weights) > 1:
+            errors.append({"reason": "remix_icon_peer_group_mixes_line_weights", "icon_treatment_group": group,
+                           "line_weights": sorted(weights), "member_ids": group_members[group]})
     return errors
 
 

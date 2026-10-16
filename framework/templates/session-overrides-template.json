@@ -19,7 +19,12 @@
   },
   "remote_sources": {
     "remix_icon": {
-      "enabled": null
+      "enabled": null,
+      "line_weight": null
+    },
+    "mdi": {
+      "enabled": null,
+      "line_weight": null
     },
     "wikimedia_commons": {
       "enabled": null
@@ -27,5 +32,6 @@
   },
   "design_overrides": {},
   "profile": null,
-  "generation_model": null
+  "generation_model": null,
+  "image_generation": null
 }

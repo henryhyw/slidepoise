@@ -6,7 +6,9 @@ Use native PowerPoint text, shapes, tables, charts, and connector graphs when th
 Use a fitted freeform only for a meaningful editable irregular shape that cannot be represented by a standard PowerPoint primitive. Use a screenshot crop for a genuine raster/illustrative region when no exact reusable asset exists and editable decomposition would invent unsupported structure. This raster route is also appropriate for a proprietary/profile gradient whose exact editable stops are not specified and no canonical gradient asset is available.
 
 ## Profile authority
-The resolved profile contributes exact design values and hard rules before reconstruction. The accepted generated image remains the source of truth for composition and non-canonical visual details. Once accepted, its substantive geometry is frozen: reconstruction must not aesthetically realign, redistribute, simplify, or delete meaningful content.
+The resolved profile contributes exact design values and hard rules before reconstruction. The accepted generated image remains the source of truth for composition and non-canonical visual details. Preserve its substantive layout, hierarchy, grouping and meaningful content. Local corrective offsets are permitted when rendered text metrics, asset insets or native geometry disturb the intended optical alignment. The host Agent must inspect the actual render, identify the affected visual relationship and verify that the correction restores it within the accepted composition. This does not authorise unrelated redistribution, simplification or deletion of content. Follow the optical alignment guidance below.
+
+For an authorised wording-only refinement, `content-refinement.md` defines the narrow exception for native text content. The accepted image still governs composition and geometry. Record the original and revised strings, update the intent and obligations, and use `authored_text` for the revised native wording. Keep the packaged reconstruction path and inspect the actual render. This exception does not authorise changing data, meaning or visual relationships.
 
 If a profile rule conflicts with a generated candidate, that conflict should normally have been caught during generation review. Mechanical evidence collection may report explicit violations that can be established without visual judgement. The Agent decides the response.
 
@@ -40,11 +42,11 @@ Keep search bounds, visible-pixel evidence, final layout bounds, and source crop
 An entity may declare `search_bbox_hint` independently of `bbox_hint`. OpenCV gathers pixel evidence only from the search window. With `geometry_policy: agent_logical`, `bbox_hint` remains the native object allocation. This distinction is useful for large serif text whose Office baseline places visible ink below its textbox top, or for adjacent lines with overlapping logical allocations. The host selects complete source-ink windows and checks that neighboring text has not contaminated the measurements. Raster crops still use the final layout box. Both boxes require finite coordinates, positive dimensions, and an intersection with the accepted-image canvas.
 
 ## Novel illustrations
-A `kind: image`, `visual_source_class: novel_illustration` entity is a generated raster with no canonical upstream asset. Its geometry comes from the approved slide and OpenCV measurement. Its pixel source may be either the original accepted-slide crop or a user-approved refined raster.
+A `kind: image`, `visual_source_class: novel_illustration` entity is a generated raster with no canonical upstream asset. Its geometry comes from the approved slide and OpenCV measurement. Its pixel source may be the original accepted-slide crop or a refined raster selected through Agent review.
 
-If `raster_source_override` is present, treat that file as the authoritative pixel source for reconstruction while preserving the entity's measured slide bbox. Use aspect-preserving contain-fit and center it in the frozen box. Do not stretch the refined raster or move neighboring content to accommodate it.
+For an active `raster_source_override`, preserve the full registered canvas in the original logical box. `raster_source` binds the source file, alpha requirement, canvas and accepted image. Its aspect ratio is validated before placement. Do not crop to alpha bounds or recenter the visible silhouette. Relative source paths resolve from the semantic map. A `reuse_original` decision selects the original crop instead.
 
-Novel illustration refinement does not reopen slide composition. It only upgrades the raster source inside an already approved slot. If a refined source is not good enough, fall back to the original crop unless the user explicitly requests another change.
+Novel illustration refinement does not reopen slide composition. It upgrades or repairs the raster source inside an already selected slot. If a refined source is unsuitable, keep an adequate original crop or choose another faithful asset route. A known defect in the original remains a defect. See `resource-library.md` for sourced and purpose-built vector alternatives.
 
 ## Assets and user uploads
 The reconstruction handoff retains the exact canonical path/ID chosen by the host Agent. Exact user/current-chat assets are first-class canonical assets. Preserve intrinsic aspect ratio and contain-fit them into their Agent-authored logical slot by default. Do not stretch an asset to mimic a generated placeholder. If the fit leaves a materially wrong composition, revise the slot or upstream design and rerun.
@@ -66,6 +68,10 @@ A component is not copied verbatim. Start from its generic constructor defaults,
 ## Data visualisation
 When an editable chart has authored data but no explicit series colours, use the resolved profile's chart colour defaults rather than PowerPoint's theme colours. Explicit Agent-authored chart colours remain authoritative only when they are compatible with the selected profile or an intentional profile exception.
 
+Record the chart geometry explicitly. Use `column` for vertical columns and `bar` for horizontal bars. Orientation, category order, axis direction, stacking, labels and scale are part of the chart's semantic structure. Compare each of them with the accepted target in the rendered PowerPoint. Correct data alone does not establish fidelity.
+
+Review the generated design and the actual PowerPoint in one full-slide coordinate system. Confirm the position and relative scale of every major region, then inspect chart orientation, category order, axes, labels and emphasis. Place a body-only generated image at its configured content offset before comparing it with the full slide. Never stretch the body image to fill the complete slide for review.
+
 ## Shape geometry
 ### Authored paths and stacking
 
@@ -84,12 +90,35 @@ The final visual review must compare silhouettes. An in-range radius is only mec
 ## Layout integrity and survival
 Only the host Agent decides which independent content regions must not overlap. Record those pairs in the semantic map. The runtime enforces the declared pairs after canonical asset placement and text fitting.
 
+The host marks meaningful dividers with `structural_boundary: true`. A textbox allocation crossing a declared boundary is a blocking fact. A thin shape alone does not establish semantic separation, and an allocated textbox is not its visible ink. For an intentional composition such as a label placed across a rule, set `allow_text_crossing: true` on that rule or `allow_boundary_crossing: true` on the text entity and record the reason in the visual review.
+
 Every meaningful visible entity in the accepted target must survive reconstruction. It must either emit its own PowerPoint object or explicitly identify a distinct emitted `render_owner` that replaces/owns it. `measurement_evidence` may be non-emitting only when `meaningful_visible=false`. Never remove an entity merely because a canonical asset is unavailable or because the Agent thinks the slide would be simpler without it; such a candidate should have been rejected upstream.
 
-## Alignment
-The host inspects the measured overlay and authors any necessary local corrections in `geometry_adjustments`. Runtime applies those exact, version-checked decisions. Without a decision it keeps the measured position. It does not infer peers, choose median anchors, snap nearby objects, or decide whether a movement is visually appropriate. Re-render and inspect after every correction batch. Discuss material compositional changes with the user when their intent is unclear.
+## Optical alignment
+
+The host Agent must check optical alignment on every reconstructed slide before acceptance. Inspect the measured overlay for geometry evidence, then compare the actual PowerPoint render with the accepted target at the same scale. Judge visible text edges and baselines, apparent centres and visual mass of artwork, and gaps within and between related groups. Equal textbox or container coordinates do not establish equal visible alignment. Preserve intentional asymmetry and distinct hierarchy when deciding which elements should align.
+
+Author necessary local position corrections in `geometry_adjustments`. Inspect font metrics, text insets and asset padding when they explain an apparent offset. Preserve registered raster canvases and their internal placement as required by the raster-source rules. Runtime applies the exact, version-checked decisions. Without a decision it keeps the measured position. It does not infer peers, choose median anchors, snap nearby objects, or decide whether a movement is visually appropriate.
+
+Re-render and inspect the corrected region, its neighbours and the whole slide after every correction batch. Record the affected entities, observed mismatch, correction and visible result in the reconstruction review. Routine offsets that restore intended alignment are part of reconstruction. Discuss material compositional changes with the user when their intent is unclear.
 
 ## Master frame
 The substantive image excludes enabled header/footer regions. Reconstruction maps that image into the derived generation region, then the renderer creates inherited frame content through the PowerPoint Slide Master/layout hierarchy.
 
 PowerPoint slides do not expose a native slide-header placeholder, so header text/rules are master-layer inherited elements. Footer text/rules are also inherited master/layout elements. Slide number uses PowerPoint's native slide-number field on the master. These frame elements must not be emitted as ordinary slide objects.
+
+## Content obligations and native tables
+
+The handoff's `content_obligations` preserves a host-authored inventory independently of the semantic map. Each entry has a unique `id`, a `description`, and nonempty `entity_ids`. A relationship additionally declares `connection` with `entity_id`, `source_entities`, `target_entities`, and boolean `directed`. The constructor rejects missing required entities and changed relationship ownership or direction. This is an exact contract check. The host still judges whether the inventory covers the plan and image.
+
+Treat a table as a composition of cells. Preserve each cell's alignment, selected-row fill, run-level emphasis and intentional line breaks. Cell `margin_px` accepts four nonnegative pixel values in top, right, bottom, left order. The renderer converts those slide-canvas pixels into Office points. Legacy `options.margin` already uses points. Do not mix both fields or pass measured pixels as Office points. Named fonts, margins and column widths jointly determine wrapping. Inspect the actual native render for broken words and row growth.
+
+Separate spatially distinct formula annotations into individual text entities. Padding a single string with spaces cannot preserve the relationship between factors and captions through font substitution or text fitting.
+
+## Preserve the accepted colour hierarchy
+
+Compare foreground colours and font weights in the accepted image with the native scene and rendered slide. Explicitly check numerical values, row labels, captions and paired explanatory notes. Assign semantic style tokens that preserve their observed function. A coloured metric must use the appropriate data treatment so an ordinary-body policy cannot silently recolour it.
+
+Inspect every reported profile colour adjustment before rendering. Resolve a conflict through the semantic mapping or an authorised presentation override. Do not accept a change from an orange value to black as palette standardisation. Minor shade differences may be aligned to the approved palette when their visual role is preserved. Changes of colour family, contrast or emphasis need an explicit design reason or user instruction.
+
+Related notes for time and cost share a font size and weight unless their meaning warrants different emphasis. Record any intentional departure from the generated target and verify the actual PowerPoint render.

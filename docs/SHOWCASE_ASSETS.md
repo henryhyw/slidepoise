@@ -1,3 +1,5 @@
+Website maintenance has moved to `personalpage/public/slidepoise/`. The current project page is https://www.henryw.me/slidepoise/docs/site/. Any older website build or deployment commands below are historical and retired. Sample artifact production remains in this repository.
+
 # Showcase assets and production evidence
 
 The project showcase is built from two real SlidePoise runs. Each curated example is self-contained and keeps the generated design, editable reconstruction, source evidence, and final deliverables together.

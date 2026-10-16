@@ -66,7 +66,7 @@ def test_stale_correction_fails_without_partial_mutation():
 
 
 def raster(key="art", action="reuse_original"):
-    return {"id": key, "kind": "image", "visual_source_class": "novel_illustration", "bbox_hint": [0, 0, 40, 40], "raster_decision": {"action": action, "reviewed_by": HOST, "reason": "Crop inspected at intended export scale."}}
+    return {"id": key, "kind": "image", "visual_source_class": "novel_illustration", "bbox_hint": [0, 0, 40, 40], "geometry_policy": "agent_logical", "raster_decision": {"action": action, "reviewed_by": HOST, "reason": "Crop inspected at intended export scale."}}
 
 
 def test_reuse_needs_no_extra_image_call_approval():
@@ -103,6 +103,44 @@ def test_board_contains_only_selected_refinements(tmp_path):
     assert not (tmp_path / "crops/source-crops/keep.png").exists()
 
 
+def test_asset_repairs_survive_compilation_without_cross_asset_leakage(tmp_path):
+    import subprocess
+    source = tmp_path / "source.png"
+    Image.new("RGB", (80, 80), "gray").save(source)
+    first = raster("trolley", "refine")
+    first["raster_decision"].update({"background": "transparent",
+        "edit_instructions": ["Remove the duplicated rear wheel and keep two visible wheels."]})
+    second = raster("ticket", "refine")
+    second["raster_decision"]["edit_instructions"] = ["Repair the broken upper ticket outline."]
+    semantic = tmp_path / "semantic.json"
+    semantic.write_text(json.dumps({"entities": [first, second]}))
+    manifest = tmp_path / "manifest.json"
+    result = subprocess.run([sys.executable, str(ROOT / "slidepoise/scripts/prepare_illustration_refinement.py"),
+        "--image", str(source), "--semantic-map", str(semantic), "--config", str(ROOT / "framework/defaults/slidepoise-config.json"),
+        "--output-dir", str(tmp_path / "crops"), "--board", str(tmp_path / "board.png"), "--review-board", str(tmp_path / "review.png"),
+        "--manifest", str(manifest), "--brief", str(tmp_path / "brief.md")], capture_output=True, text=True)
+    assert result.returncode == 0, result.stderr
+    items = json.loads(manifest.read_text())["items"]
+    for entity, item in zip([first, second], items):
+        request = json.loads((tmp_path / "crops/source-crops" / f"{entity['id']}.request.json").read_text())
+        own = entity["raster_decision"]["edit_instructions"][0]
+        other = second if entity is first else first
+        assert item["edit_instructions"] == [own]
+        assert own in request["prompt"]
+        assert other["raster_decision"]["edit_instructions"][0] not in request["prompt"]
+        assert request["background"] == entity["raster_decision"].get("background", "preserve")
+        assert request["prompt_sha256"] == hashlib.sha256(request["prompt"].encode()).hexdigest()
+        assert Path(request["reference_images"][0]["path"]).name == f"{entity['id']}.png"
+
+
+@pytest.mark.parametrize("instructions", ["remove defect", [None], [""], ["   "], {"repair": "outline"}])
+def test_malformed_asset_repairs_cannot_be_silently_dropped(instructions):
+    entity = raster(action="refine")
+    entity["raster_decision"]["edit_instructions"] = instructions
+    with pytest.raises(ValueError, match="edit_instructions"):
+        illustration_decisions({"entities": [entity]})
+
+
 def test_review_rejects_changed_render_and_missing_observations(tmp_path):
     artifact = tmp_path / "render.png"
     Image.new("RGB", (8, 8), "white").save(artifact)
@@ -121,7 +159,7 @@ def test_review_rejects_changed_render_and_missing_observations(tmp_path):
 
 
 def test_personal_profile_preserves_observed_font_and_color():
-    profile = json.loads((ROOT / "profiles/personal-website/profile.json").read_text())
+    profile = json.loads((ROOT / "profiles/editorial-archive/profile.json").read_text())
     design = {**profile["design_overrides"], "profile_hard_rules": profile["hard_rules"]}
     entity = {"text_style_role": "label", "style_hint": {"font_family": "Courier New", "observed_foreground_color": "#504943", "style_authority": "agent_visual_observation", "italic": True}}
     style = _base_style(entity, design)

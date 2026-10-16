@@ -1,6 +1,6 @@
 /* Shared profile and resource authoring. All saves use the same revisioned files as the CLI. */
 let profileDocument;
-const fieldNames = { hard_rules: "Design rules", design_overrides: "Style specifications", style_agency: "Creative freedom", modes: "Visual directions", asset_policy: "Images and symbols", reconstruction_guidance: "Reconstruction guidance", visual_reference_priorities: "Reference priorities", source_basis: "Sources and background", library: "Reference storage", library_sets: "Selected Library Sets", purpose: "Purpose", name: "Name" };
+const fieldNames = { hard_rules: "Design rules", design_overrides: "Style specifications", style_agency: "Creative freedom", modes: "Visual directions", asset_policy: "Images and symbols", reconstruction_guidance: "Reconstruction guidance", visual_reference_priorities: "Reference priorities", source_basis: "Sources and background", library: "Reference storage", library_sets: "Selected resource sets", library_items: "Selected resources", purpose: "Purpose", name: "Name" };
 const fieldName = key => fieldNames[key] || key.replaceAll("_", " ").replace(/^./, c => c.toUpperCase());
 function iconGlyph(fill = false) {
   return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3 7.5 12 12l9-4.5L12 3Z" fill="${fill ? "currentColor" : "none"}" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="m3 12 9 4.5 9-4.5M3 16.5l9 4.5 9-4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
@@ -69,9 +69,9 @@ async function renderProfileContents() {
   const references = await api(`/api/library?kind=visual_references&profile=${encodeURIComponent(profileDocument.id)}`);
   let container = $('#profile-contents');
   if (!container) { container = document.createElement('div'); container.id = 'profile-contents'; $('#design-settings').before(container); }
-  const guidanceCount = Object.keys(profile).filter(key => !['profile_id', 'schema_version', 'name', 'purpose'].includes(key)).length;
-  const referenceItems = references.items.map(item => `<article class="profile-reference-card"><button data-preview="${esc(item.asset_url)}" data-title="${esc(item.name || item.id)}"><img src="${esc(item.asset_url)}" alt="${esc(item.name || item.id)}"></button><span>${esc(item.name || item.id)}</span></article>`).join('');
-  container.innerHTML = `<div class="profile-system-grid"><section class="profile-system-card guidance-card"><div><p class="eyebrow">PROFILE GUIDANCE</p><h3>Guidance</h3><p>Writing, layout, imagery, and design preferences for this profile.</p></div><div class="guidance-card-footer"><span>${guidanceCount} sections</span><button class="quiet-button" data-profile-workspace="guidance">Open guidance</button></div></section><section class="profile-system-card references-card"><div class="profile-card-heading"><div><p class="eyebrow">VISUAL LANGUAGE</p><h3>Visual references</h3></div><div class="inline-actions"><button class="text-button" data-add-reference>＋ Add</button><button class="quiet-button" data-profile-workspace="references">Manage</button></div></div><div class="reference-viewport">${references.count ? `<div class="profile-reference-strip">${referenceItems}</div>` : '<p class="reference-empty">Add examples that capture the look you want.</p>'}</div><span class="reference-count">${references.count} ${references.count === 1 ? 'reference' : 'references'}</span></section></div><div class="section-heading"><h3>Style settings</h3></div>`;
+  const guidanceCount = Object.keys(profile).filter(key => !['profile_id', 'schema_version', 'name', 'purpose', 'library_sets', 'library_items', 'library'].includes(key)).length;
+  const referenceItems = references.items.map(item => `<article class="profile-reference-card"><button data-preview="${esc(item.asset_url)}" data-title="${esc(item.name || item.id)}"><img loading="lazy" src="${esc(item.asset_url)}" alt="${esc(item.name || item.id)}"></button><span>${esc(item.name || item.id)}</span></article>`).join('');
+  container.innerHTML = `<div class="profile-system-grid"><section class="profile-system-card guidance-card"><div><p class="eyebrow">PROFILE GUIDANCE</p><h3>Guidance</h3><p>Writing, layout, imagery, and design preferences for this profile.</p></div><div class="guidance-card-footer"><span>${guidanceCount} sections</span><button class="quiet-button" data-profile-workspace="guidance">Open guidance</button></div></section><section class="profile-system-card references-card"><div class="profile-card-heading"><div><p class="eyebrow">VISUAL LANGUAGE</p><h3>Visual references</h3></div><div class="inline-actions"><button class="text-button" data-choose-resources="visual_references">Choose</button><button class="quiet-button" data-profile-workspace="references">Browse</button></div></div><div class="reference-viewport">${references.count ? `<div class="profile-reference-strip">${referenceItems}</div>` : '<p class="reference-empty">Choose shared references that capture the look you want.</p>'}</div><span class="reference-count">${references.count} ${references.count === 1 ? 'reference' : 'references'}</span></section></div><div class="section-heading"><h3>Style settings</h3></div>`;
 }
 async function openProfileWorkspace() {
   profileDocument = await api(`/api/profile?profile=${encodeURIComponent(state.design.values.profile)}`);
@@ -80,7 +80,7 @@ async function openProfileWorkspace() {
   const references = await api(`/api/library?kind=visual_references&profile=${encodeURIComponent(profileDocument.id)}`);
   state.profileReferences = references;
   $('#profile-dialog-scope').textContent = 'PROFILE GUIDANCE';
-  const sections = Object.entries(profile).filter(([key]) => !['profile_id', 'schema_version'].includes(key)).map(([key, value], i) => `<details class="guidance-section" ${i < 2 ? 'open' : ''}><summary>${esc(fieldName(key))}<span>${Array.isArray(value) ? value.length + ' items' : typeof value === 'object' && value ? Object.keys(value).length + ' fields' : ''}</span></summary><div class="guidance-section-body">${readTree(value)}<button class="quiet-button" data-profile-field="${esc(key)}">Edit ${esc(fieldName(key).toLowerCase())}</button></div></details>`).join('');
+  const sections = Object.entries(profile).filter(([key]) => !['profile_id', 'schema_version', 'library_sets', 'library_items', 'library'].includes(key)).map(([key, value], i) => `<details class="guidance-section" ${i < 2 ? 'open' : ''}><summary>${esc(fieldName(key))}<span>${Array.isArray(value) ? value.length + ' items' : typeof value === 'object' && value ? Object.keys(value).length + ' fields' : ''}</span></summary><div class="guidance-section-body">${readTree(value)}<button class="quiet-button" data-profile-field="${esc(key)}">Edit ${esc(fieldName(key).toLowerCase())}</button></div></details>`).join('');
   $('#profile-content').innerHTML = `<p class="muted">Future presentations will use these changes. Existing presentations stay the same.</p>${sections}`;
   if (!$('#profile-dialog').open) $('#profile-dialog').showModal();
 }
@@ -90,13 +90,55 @@ async function openReferencesWorkspace() {
   state.profileReferences = references;
   $('#profile-dialog-scope').textContent = 'VISUAL REFERENCES';
   $('#profile-title').textContent = profileDocument.profile.name;
-  const cards = references.items.map(item => `<article class="resource-card"><button class="resource-thumbnail" data-preview="${esc(item.asset_url)}" data-title="${esc(item.name || item.id)}"><img src="${esc(item.asset_url)}" alt="${esc(item.name || item.id)}"></button><div class="resource-copy"><h4>${esc(item.name || item.id)}</h4><p>${esc(item.description || '')}</p><button class="text-button" data-edit-reference="${esc(item.id)}">Edit guidance</button></div></article>`).join('');
-  $('#profile-content').innerHTML = `<div class="reference-workspace-heading"><p>Use these examples to define the look of this profile.</p><button class="quiet-button" data-add-reference>＋ Add visual reference</button></div><div class="library-item-grid reference-editor-grid">${cards}</div>`;
+  const cards = referenceCards(references.items);
+  /* Cards retain the same editable catalog metadata used by Agent retrieval. */
+
+  $('#profile-content').innerHTML = `<div class="reference-workspace-heading"><p>The Agent searches these references for each slide’s message and structure, then inspects suitable pages before designing.</p><button class="quiet-button" data-choose-resources="visual_references">Choose references</button></div><div class="reference-search"><label>Find references for a slide<input id="reference-query" type="search" maxlength="1200" placeholder="For example, compare options or explain a process"></label><label>Search sources<select id="reference-origin"><option value="authentic">Recorded original sources</option><option value="exclude-generated">Include unclassified sources</option><option value="any">All sources, including generated</option></select></label></div><p id="reference-search-status" class="setting-help" role="status">Browse the library or describe what your slide needs to explain.</p><div id="reference-results" class="library-item-grid reference-editor-grid">${cards}</div>`;
+  referenceSearchRequest++;
   if (!$('#profile-dialog').open) $('#profile-dialog').showModal();
+}
+
+function referenceCards(items) {
+  return items.map(item => {
+    const source = item.provenance || {};
+    const origin = item.source_type || source.source_type || 'unknown';
+    const originLabel = ({published_document: 'Published source', user_private_document: 'Private reference', generated_image: 'Generated reference'})[origin] || 'Source unclassified';
+    return `<article class="resource-card"><button class="resource-thumbnail" data-preview="${esc(item.asset_url)}" data-title="${esc(item.name || item.id)}"><img loading="lazy" src="${esc(item.asset_url)}" alt="${esc(item.name || item.id)}"></button><div class="resource-copy"><span class="eyebrow">${esc(originLabel)}</span><h4>${esc(item.name || item.id)}</h4><p>${esc(item.description || '')}</p>${item.retrieval_eligible === false ? '<p class="setting-help">Kept for context. Excluded from retrieval.</p>' : ''}${item.matched_terms?.length ? `<p class="setting-help">Matches ${esc(item.matched_terms.join(', '))}</p>` : ''}<button class="text-button" data-edit-reference="${esc(item.resource_id || item.id)}">Edit guidance</button></div></article>`;
+  }).join('');
+}
+let referenceSearchRequest = 0, referenceSearchTimer;
+async function searchReferences(request) {
+  const field = $('#reference-query');
+  if (!field) return;
+  const query = field.value.trim();
+  const profile = profileDocument.id;
+  if (!query) {
+    $('#reference-results').innerHTML = referenceCards(state.profileReferences.items);
+    $('#reference-search-status').textContent = 'Browse the library or describe what your slide needs to explain.';
+    return;
+  }
+  $('#reference-search-status').textContent = 'Finding relevant references…';
+  try {
+    const result = await api(`/api/reference-search?profile=${encodeURIComponent(profile)}&query=${encodeURIComponent(query)}&authenticity=${encodeURIComponent($('#reference-origin').value)}`);
+    if (request !== referenceSearchRequest || !$('#reference-results') || profile !== profileDocument.id) return;
+    $('#reference-results').innerHTML = referenceCards(result.items);
+    $('#reference-search-status').textContent = result.items.length ? `${result.matching_candidate_count} matching references. The Agent inspects candidates before selecting them.` : 'No matching references. Try a related term or review the source filter.';
+  } catch (error) {
+    if (request === referenceSearchRequest && $('#reference-search-status')) $('#reference-search-status').textContent = error.message;
+  }
+}
+function queueReferenceSearch() {
+  clearTimeout(referenceSearchTimer);
+  const request = ++referenceSearchRequest;
+  referenceSearchTimer = setTimeout(() => searchReferences(request), 220);
 }
 function remoteSetContents(item) {
   const remix = item.provider === 'remix_icon';
-  return `<div class="remote-source-preview">${remix ? treatmentIllustration('agent_decides') : '<span class="identity-sample">W</span>'}<div><h3>${remix ? 'Line and fill in one visual family' : 'Exact identity with source details'}</h3><p>${remix ? 'Use matching line and fill icons from one consistent family.' : 'Find exact logos and public media with source and usage details.'}</p><a class="text-link" href="${remix ? 'https://remixicon.com/' : 'https://commons.wikimedia.org/'}" target="_blank" rel="noopener">Browse source ↗</a></div></div><details class="guidance-section"><summary>Source details</summary><div class="guidance-section-body">${readTree(Object.fromEntries(Object.entries(item).filter(([key]) => !['items', 'revision', 'root'].includes(key))))}</div></details>`;
+  const mdi = item.provider === 'mdi';
+  const generic = remix || mdi;
+  const description = mdi ? 'The Agent retrieves MDI icons through Iconify and uses Fine outlines by default.' : remix ? 'The Agent retrieves line and filled icons, using Fine line weight by default.' : 'Find exact logos and public media with source and usage details.';
+  const url = mdi ? 'https://icon-sets.iconify.design/mdi/' : remix ? 'https://remixicon.com/' : 'https://commons.wikimedia.org/';
+  return `<div class="remote-source-preview">${generic ? treatmentIllustration('agent_decides') : '<span class="identity-sample">W</span>'}<div><h3>${generic ? 'Outline and filled icons' : 'Exact identity with source details'}</h3><p>${description}</p><a class="text-link" href="${url}" target="_blank" rel="noopener">Browse source <svg class="source-link-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M4 4h8v8"/></svg></a></div></div><details class="guidance-section"><summary>Source details</summary><div class="guidance-section-body">${readTree(Object.fromEntries(Object.entries(item).filter(([key]) => !['items', 'revision', 'root'].includes(key))))}</div></details>`;
 }
 document.addEventListener('click', event => attempt(async () => {
   const button = event.target.closest('button'); if (!button) return;
@@ -109,19 +151,11 @@ document.addEventListener('click', event => attempt(async () => {
       await refreshOverview(); await loadDesign(); await openProfileWorkspace(); toast('Profile guidance saved');
     }, '');
   }
-  if (button.hasAttribute('data-add-reference')) return editor('Add visual reference', '<label>Image<input name="file" type="file" accept=".png,.jpg,.jpeg,.webp" required></label>' + input('name', '', 'Reference name') + '<label>What should this reference influence?<textarea name="description" rows="4"></textarea></label>', async form => {
-    const file = form.get('file');
-    await api('/api/profile/reference/add', { profile_id: profileDocument.id, name: form.get('name'), description: form.get('description'), filename: file.name, content_base64: await fileData(file) });
-    await loadDesign(); await openReferencesWorkspace(); toast('Reference added');
-  }, { scope: 'PROFILE VISUAL REFERENCES', help: 'Saved to this profile.', label: 'Add reference' });
   if (button.dataset.editReference) {
-    const item = state.profileReferences.items.find(item => item.id === button.dataset.editReference);
-    return editStructured('Reference guidance', Object.fromEntries(Object.entries(item).filter(([key]) => !['id', 'asset_url', 'path', 'preview_path'].includes(key))), async value => {
-      await api('/api/profile/reference/update', { profile_id: profileDocument.id, id: item.id, values: value, revision: state.profileReferences.revision });
-      await loadDesign(); await openReferencesWorkspace(); toast('Reference guidance saved');
-    }, 'Describe what to borrow and what to avoid. The image itself stays unchanged.');
+    const items = $('#library-dialog').open && state.openSet?.kind === 'visual_references' ? state.openSet.items : state.profileReferences.items;
+    return editSharedResource(items.find(item => (item.resource_id || item.id) === button.dataset.editReference));
   }
-  if (button.dataset.newSet) return editor(`Create ${button.dataset.newSet === 'icons' ? 'Icon' : 'Component'} Set`, input('name', '', 'Set name') + '<label>Description<textarea name="description" rows="3"></textarea></label>', async form => {
+  if (button.dataset.newSet) return editor(`Create ${resourceKinds[button.dataset.newSet].toLowerCase()} set`, input('name', '', 'Set name') + '<label>Description<textarea name="description" rows="3"></textarea></label>', async form => {
     const created = await api('/api/library-set/create', { ...Object.fromEntries(form), kind: button.dataset.newSet }); await loadResources(); await openLibrarySet(created.id); toast('Set created');
   }, { scope: 'SHARED LIBRARY', label: 'Create set' });
   if (button.hasAttribute('data-edit-set')) return editor('Set details', input('name', state.openSet.name, 'Name') + `<label>Description<textarea name="description" rows="3">${esc(state.openSet.description)}</textarea></label>`, async form => {
@@ -130,7 +164,8 @@ document.addEventListener('click', event => attempt(async () => {
   if (button.dataset.edit) decorateChoices();
 }));
 document.addEventListener('input', event => {
+  if (event.target.id === 'reference-query') queueReferenceSearch();
   if (event.target.id === 'structured-source') { event.target.dataset.edited = 'true'; $('#structured-fields').classList.add('source-overridden'); }
   if (event.target.closest('#editor-fields') && $('#palette-live')) updateTreatmentPreview();
 });
-document.addEventListener('change', event => { if (event.target.name === 'icon_treatment') updateTreatmentPreview(); });
+document.addEventListener('change', event => { if (event.target.id === 'reference-origin') queueReferenceSearch(); if (event.target.name === 'icon_treatment') updateTreatmentPreview(); });

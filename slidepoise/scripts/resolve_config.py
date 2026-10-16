@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Resolve SlidePoise base config, one external profile, and explicit session overrides.
 
-Profiles live outside the stable skill and own their private libraries. Session
+Profiles select shared external resource catalogs. Session
 design_overrides may only change keys that already exist in the resolved design.
 No visual judgement is performed here.
 """
@@ -16,6 +16,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "runtime/src"))
 from slidepoise.canvas import derive_canvas
+from slidepoise.generation import resolve_preferences
+from slidepoise.resource_catalogs import resolve_libraries
 
 
 def load(path: Path) -> dict:
@@ -97,9 +99,11 @@ def main() -> None:
     frozen = load(frozen_path) if frozen_path and frozen_path.is_file() else {}
     if frozen:
         cfg = copy.deepcopy(frozen["base_config"])
+    cfg.setdefault("remote_sources", {}).setdefault("remix_icon", {}).setdefault("line_weight", "fine")
+    cfg["remote_sources"].setdefault("mdi", {"enabled": False, "provider": "Material Design Icons", "provider_version": "1.2.3", "line_weight": "fine"})
     allowed_top = {
         "slide_role", "density", "palette", "profile", "guidance_profile",
-        "generation_model", "header", "footer", "remote_sources", "external_icon_fetch", "measurement", "design_overrides", "library_sets",
+        "generation_model", "image_generation", "header", "footer", "remote_sources", "external_icon_fetch", "measurement", "design_overrides", "library_sets", "library_items",
     }
     unknown = sorted(set(session) - allowed_top)
     if unknown:
@@ -113,7 +117,15 @@ def main() -> None:
     repository_root = Path(__file__).resolve().parents[2]
     installed_root = Path(os.environ.get("SLIDEPOISE_HOME", Path.home() / ".slidepoise")) / "profiles"
     profiles_root = Path(frozen.get("profiles_root") or args.profiles_root or (installed_root if installed_root.is_dir() else repository_root / "profiles")).expanduser().resolve()
+    aliases_path = profiles_root / "aliases.json"
+    aliases = load(aliases_path) if aliases_path.is_file() else {}
+    requested_id = profile_id
+    if not frozen and not (profiles_root / profile_id / "profile.json").is_file():
+        profile_id = aliases.get(profile_id, profile_id)
     profile_path = profiles_root / profile_id / "profile.json"
+    if frozen and not profile_path.is_file():
+        # Keep the captured design while locating its renamed reference directory.
+        profile_path = profiles_root / aliases.get(profile_id, profile_id) / "profile.json"
     if frozen and profile_id not in frozen["profiles"]:
         raise SystemExit("Profile was not captured for this session. Explicitly update session defaults first.")
     if not frozen and not profile_path.is_file():
@@ -126,6 +138,8 @@ def main() -> None:
     if not isinstance(overlay, dict):
         raise SystemExit("profile.design_overrides must be an object")
     merge_profile(cfg["design"], overlay)
+    if requested_id != profile_id:
+        merge_profile(cfg["design"], cfg.get("user_design_overrides", {}).get(requested_id, {}), replace_profile_owned_maps=False)
     merge_profile(
         cfg["design"],
         cfg.get("user_design_overrides", {}).get(profile_id, {}),
@@ -137,47 +151,45 @@ def main() -> None:
     cfg["design"]["profile_hard_rules"] = copy.deepcopy(profile.get("hard_rules", {}))
     cfg["resolved_profile"] = profile
     profile_root = profile_path.parent
-    locations = cfg.get("library_locations", {}).get(profile_id, {})
+    locations = cfg.get("library_locations", {}).get(profile_id, cfg.get("library_locations", {}).get(requested_id, {}))
     visual_root = Path(locations["visual_references"]).expanduser().resolve() if "visual_references" in locations else (profile_root / "libraries" / "visual_references").resolve()
-    cfg["libraries"] = {"visual_references": {"catalog": str(visual_root / "catalog.json"), "root": str(visual_root), "profile_id": profile_id}}
-    library_sets_root = Path(os.environ.get("SLIDEPOISE_HOME", Path.home() / ".slidepoise")) / "library-sets"
+    if not visual_root.exists():
+        for old, new in aliases.items():
+            old_root = profiles_root / old
+            if visual_root.is_relative_to(old_root):
+                visual_root = profiles_root / new / visual_root.relative_to(old_root)
+                break
+    # Explicit profile roots use their sibling shared store, keeping source checkouts
+    # independent of whichever libraries happen to be installed on this machine.
+    library_sets_root = profiles_root.parent / "library-sets"
     if not (library_sets_root / "catalog.json").is_file():
         library_sets_root = repository_root / "library-sets"
-    set_catalog = load(library_sets_root / "catalog.json")
-    selected_sets = copy.deepcopy(profile.get("library_sets", {"icons": [], "components": []}))
-    if session.get("library_sets") is not None:
-        requested_sets = session["library_sets"]
-        if not isinstance(requested_sets, dict) or set(requested_sets) - {"icons", "components"}:
-            raise SystemExit("library_sets may contain only icons and components")
-        for kind in ("icons", "components"):
-            if kind in requested_sets:
-                if not isinstance(requested_sets[kind], list) or not all(isinstance(item, str) for item in requested_sets[kind]):
-                    raise SystemExit(f"library_sets.{kind} must be a list of set ids")
-                selected_sets[kind] = requested_sets[kind]
-    cfg["library_sets"] = {"root": str(library_sets_root.resolve()), "selected": copy.deepcopy(selected_sets), "records": {}}
+    # Design is captured for a presentation. Resource choices and catalogs remain live.
+    resource_profile = load(profile_path) if profile_path.is_file() else profile
+    try:
+        cfg["libraries"], cfg["library_sets"] = resolve_libraries(
+            resource_profile, library_sets_root, session=session,
+            legacy_visual_catalog=visual_root / "catalog.json")
+    except (ValueError, OSError) as error:
+        raise SystemExit(str(error)) from error
     for source in cfg.get("remote_sources", {}).values():
         source["enabled"] = False
-    for set_id in selected_sets.get("icons", []) + selected_sets.get("components", []):
-        record = copy.deepcopy(set_catalog.get("items", {}).get(set_id))
-        if record is None:
-            raise SystemExit(f"Profile selects unknown library set: {set_id}")
-        expected_kind = "icons" if set_id in selected_sets.get("icons", []) else "components"
-        if record.get("kind") != expected_kind:
-            raise SystemExit(f"Library set {set_id} has the wrong resource type")
-        record["root"] = str((library_sets_root / record.get("root", "")).resolve())
-        cfg["library_sets"]["records"][set_id] = record
-        provider = record.get("provider")
+    for provider in cfg["libraries"]["icons"]["providers"]:
         if provider in cfg.get("remote_sources", {}):
             cfg["remote_sources"][provider]["enabled"] = True
-    component_catalogs = [str(Path(record["root"]) / "catalog.json") for record in cfg["library_sets"]["records"].values() if record.get("kind") == "components" and record.get("source") == "local"]
-    cfg["libraries"]["components"] = {"catalogs": component_catalogs, "catalog": component_catalogs[0] if component_catalogs else None, "set_ids": list(selected_sets.get("components", []))}
-    cfg["libraries"]["icons"] = {"set_ids": list(selected_sets.get("icons", [])), "providers": [record.get("provider") for record in cfg["library_sets"]["records"].values() if record.get("kind") == "icons" and record.get("provider")]}
     cfg["design"]["resource_catalogs"] = copy.deepcopy(cfg["libraries"])
 
     if session.get("slide_role") is not None:
         cfg["scope"]["current_slide_role"] = session["slide_role"]
     if session.get("generation_model") is not None:
         cfg["generation"]["default_model"] = str(session["generation_model"])
+    try:
+        generation_overrides = session.get("image_generation")
+        if session.get("generation_model") is not None and isinstance(generation_overrides, (dict, type(None))):
+            generation_overrides = {"model": str(session["generation_model"]), **(generation_overrides or {})}
+        cfg["generation"]["preferences"] = resolve_preferences(cfg["generation"], generation_overrides)
+    except ValueError as error:
+        raise SystemExit(str(error)) from error
 
     if session.get("density") is not None:
         density = str(session["density"])
@@ -205,14 +217,17 @@ def main() -> None:
         raise SystemExit(f"Unsupported header override keys: {sorted(set(header_override)-allowed_header)}")
     if set(footer_override) - allowed_footer:
         raise SystemExit(f"Unsupported footer override keys: {sorted(set(footer_override)-allowed_footer)}")
-    allowed_remote_sources = {"remix_icon", "wikimedia_commons"}
+    allowed_remote_sources = {"remix_icon", "mdi", "wikimedia_commons"}
     if set(remote_source_overrides) - allowed_remote_sources:
         raise SystemExit(f"Unsupported remote source overrides: {sorted(set(remote_source_overrides) - allowed_remote_sources)}")
     for source_id, source_override in remote_source_overrides.items():
-        if not isinstance(source_override, dict) or set(source_override) - {"enabled"}:
-            raise SystemExit(f"Only remote_sources.{source_id}.enabled may be overridden per session")
+        allowed = {"enabled", "line_weight"} if source_id in {"remix_icon", "mdi"} else {"enabled"}
+        if not isinstance(source_override, dict) or set(source_override) - allowed:
+            raise SystemExit(f"Unsupported remote_sources.{source_id} override. Allowed keys are {sorted(allowed)}")
         if source_override.get("enabled") is not None and not isinstance(source_override["enabled"], bool):
             raise SystemExit(f"remote_sources.{source_id}.enabled must be boolean or null")
+        if source_override.get("line_weight") is not None and source_override["line_weight"] not in {"fine", "original"}:
+            raise SystemExit(f"remote_sources.{source_id}.line_weight must be fine or original")
     if set(legacy_icon_override) - {"enabled"}:
         raise SystemExit("Only legacy external_icon_fetch.enabled may be overridden per session")
     legacy_enabled = legacy_icon_override.get("enabled")
@@ -245,6 +260,8 @@ def main() -> None:
     for source_id, source_override in remote_source_overrides.items():
         if source_override.get("enabled") is not None:
             cfg["remote_sources"][source_id]["enabled"] = source_override["enabled"]
+        if source_id in {"remix_icon", "mdi"} and source_override.get("line_weight") is not None:
+            cfg["remote_sources"][source_id]["line_weight"] = source_override["line_weight"]
     if legacy_icon_override.get("enabled") is not None:
         cfg["remote_sources"]["remix_icon"]["enabled"] = legacy_enabled
     segmentation = cfg["measurement"]["segmentation"]

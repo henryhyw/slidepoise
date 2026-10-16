@@ -50,7 +50,7 @@ def test_reverse_lines_and_return_paths_survive_actual_office_rendering(tmp_path
     assert points[0].get("x") == points[1].get("x")
     assert points[2].get("x") == points[3].get("x") == "0"
     assert points[0].get("y") == points[3].get("y") == "0"
-    assert returning.find(".//a:tailEnd", NS).attrib == {"type": "triangle", "w": "lg", "len": "lg"}
+    assert returning.find(".//a:tailEnd", NS).attrib == {"type": "triangle", "w": "med", "len": "med"}
 
     # The previous custom-geometry connector XML looked correct, but Office
     # rendered a different route. Pixel checks exercise that reader boundary.
