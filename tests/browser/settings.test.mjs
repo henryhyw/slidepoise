@@ -217,6 +217,7 @@ for (const viewport of [{ width: 1280, height: 900 }, { width: 390, height: 844 
     await page.locator('.nav-item[data-view="resources"]').click();
     await page.locator('#resource-profile').press('ArrowDown');
     await page.locator('[data-resource-profile-choice="editorial-archive"]').click();
+    await page.locator('#resource-profile strong').filter({ hasText: 'Editorial Archive' }).waitFor({ state: 'visible' });
     assert.equal(await page.locator('#resource-profile strong').textContent(), 'Editorial Archive');
     await page.locator('#resource-profile').press('ArrowDown');
     await page.locator('[data-resource-profile-choice="editorial-archive"]').press('Escape');
