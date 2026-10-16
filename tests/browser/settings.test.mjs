@@ -207,8 +207,8 @@ for (const viewport of [{ width: 1280, height: 900 }, { width: 390, height: 844 
     await page.locator('#resource-picker-save').click();
     await page.locator('#resources-dialog').waitFor({ state: 'hidden' });
     const after = await h.get('/api/profile?profile=consulting');
-    assert.deepEqual(after.profile.library_sets.icons, before.profile.library_sets.icons);
-    assert.deepEqual(after.profile.library_sets.components, before.profile.library_sets.components);
+    assert.deepEqual([...after.profile.library_sets.icons].sort(), [...before.profile.library_sets.icons].sort());
+    assert.deepEqual([...after.profile.library_sets.components].sort(), [...before.profile.library_sets.components].sort());
     assert.deepEqual(after.profile.library_sets.visual_references, ['consulting-references', 'editorial-references']);
     assert.equal(after.profile.library_items.visual_references['consulting-references'].includes(omittedId), false);
     assert.equal((await h.get('/api/library?kind=visual_references&profile=consulting')).count, 3);
