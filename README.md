@@ -14,7 +14,7 @@ Share your brief, source material and preferred style with your Agent. You can r
 
 | Stage | What you contribute | What the Agent does |
 | --- | --- | --- |
-| Content planning | Audience, purpose, evidence and required messages | Develops the argument and slide sequence |
+| Content planning | Audience, purpose, evidence and required messages | Reviews sources, researches useful content and develops the slide sequence |
 | Visual design | Brand assets, style preferences and feedback | Selects references and assets, prepares a contact sheet, then generates and reviews slide images |
 | Reconstruction | Feedback on content or design as needed | Interprets the image, measures objects with OpenCV and builds editable PowerPoint slides |
 | Review | Changes you want in the finished presentation | Inspects the rendered deck, corrects differences and delivers the editable file |
@@ -75,7 +75,7 @@ The Agent makes the content and design decisions. Local tools provide measuremen
 
 ### Plan the content
 
-You and the Agent establish the audience, message and supporting material. The Agent develops the slide sequence and identifies what each slide needs to communicate.
+The Agent reviews your brief and source material to understand the audience and intended outcome. Where useful content is missing, it researches facts, examples and context, retaining sources for the claims they support. These findings inform the argument, slide sequence and purpose of each slide.
 
 ### Generate slide images guided by content and references
 

@@ -4,6 +4,14 @@
 
 A presentation is an ordered set of one or more slides. The Agent infers the requested scope from conversation. There is no user-facing single-page or multi-page mode switch.
 
+## Understand the material and research useful content
+
+Before planning the slide sequence, read the supplied brief and source material to understand the audience, intended outcome, central question and constraints. Identify what the material establishes and what the reader still needs to understand. Useful additions may include background, definitions, examples, comparisons or evidence that supports the argument.
+
+When such content is missing and research is within the task's scope, use available search and source-reading tools to investigate it. Give each research question a clear role in the presentation. Research may develop the narrative as well as verify existing claims. Follow credible sources, preferably primary sources, read the relevant material and retain source links or file locations with the claims and data they support. Preserve dates, units, populations and qualifications. Distinguish sourced findings from estimates, assumptions and Agent inferences in the outline and slide intents, with reader-facing attribution where needed.
+
+Use the findings to revise the argument and slide sequence. Return to research if planning or review reveals another consequential gap. Respect requests to use only supplied material, reproduce exact copy or defer research. If essential information is private or cannot be established, ask for it or retain the uncertainty. Never invent supporting content or seek only evidence that confirms a preferred conclusion. Content research develops what the presentation says. Visual-reference retrieval later guides how each slide communicates it.
+
 ## Deck outline
 
 `work/deck-outline.json` is the live narrative contract. Start from `schemas/deck-outline.example.json`. Its `slides` array is the current order. Each slide has a stable ID that does not depend on its position.

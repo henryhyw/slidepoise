@@ -6,6 +6,8 @@ This page-local workflow is reusable inside a one-slide request or a larger deck
 
 Author `work/slide-intent.json` from the corresponding entry in `work/deck-outline.json`. Capture the audience question, dominant message, exact content, semantic relationships, hierarchy, evidence and source obligations, required assets, exclusions, assumptions, and unresolved questions that affect this page.
 
+If the page needs facts, examples or context absent from the supplied material, follow the content-research guidance in `deck-orchestration.md` before settling its message. Carry useful findings and their sources into the outline and intent. Revisit the argument when the evidence changes it.
+
 For an opening, section transition or closing, read the sections and navigation guidance in `deck-orchestration.md`. Derive its communication job and copy from the actual deck, then carry the relevant shared navigation roles into this page's normal workflow.
 
 Do not force a numbered process unless the information is sequential. Keep `information_structure` semantic. A list of content categories does not mandate columns, cards or table rows. Develop an Agent-proposed layout after resource inspection and visual exploration, then record it in `style_direction` with its reasoning. Preserve a layout the user actually requires.
