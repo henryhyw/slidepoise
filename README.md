@@ -56,7 +56,7 @@ Visual references, icons and reusable PowerPoint components live in shared **Lib
 
 Small generated illustrations can be refined separately at higher resolution, including transparent backgrounds. The Agent checks them in the chosen composition before replacing the original image regions. The [third editorial slide](examples/personal-thinking-system/assets/s03-practice-render.png) uses three such illustrations.
 
-## Manage settings in the local Console
+## Adjust your saved preferences
 
 Your Agent can manage styles, resource libraries and image-generation settings through conversation. The optional Local Console lets you browse and adjust the same preferences. After installation, ask your Agent to open it or run
 
@@ -86,6 +86,8 @@ The Agent searches the indexed reference library for useful visual precedents, i
 The Agent identifies what the chosen image contains and which parts belong together. A chart’s bars, labels and values are recorded as one chart in a **semantic map**, an object-level description of the design. **OpenCV**, a computer-vision library, measures the assigned image regions. The reconstruction compiler combines those measurements with the semantic map and original assets. **PptxGenJS** builds the PowerPoint objects, including charts linked to their data.
 
 Text, tables, shapes and connectors remain editable. Photographs, textures and illustrations are placed as separate images whose size, position and layering can be adjusted. Shared headers, footers and page numbers are added directly in PowerPoint.
+
+Reconstruction can also correct defects in the generated image, including incorrect text, distorted icons and uneven alignment. The brief, source data and original assets guide these corrections while the chosen composition is preserved. [Inspect objects and compare all five consulting slides](https://slidepoise.github.io/#build-slides) to explore the generated designs and reconstructed PowerPoint renders.
 
 <details>
 <summary>See an actual PowerPoint edit</summary>
