@@ -137,12 +137,13 @@
   "avoid": [
     "Any generated header, footer, company label, page number, shared-frame rule or repeated source-note strip.",
     "Independent changes to recurring title size, font family or decision-band treatment.",
-    "Decorative icons, invented imagery and miniature type."
+    "Icons that repeat a label without improving recognition or scanability."
   ],
   "visual_obligations": [
     "Generate only the 1920 by 960 substantive canvas at exactly 2:1 aspect ratio. The runtime adds the separate inherited frame.",
     "Use native-friendly text, tables, chart geometry and continuous directed relationships where the content requires them.",
-    "Follow the shared deck design. The five pages vary their evidence structures while recurring roles remain consistent."
+    "Follow the shared deck design. The five pages vary their evidence structures while recurring roles remain consistent.",
+    "Use one coherent icon family across the source, draft, review, and release stages."
   ],
   "user_required_assets": [],
   "density_intent": "information_rich",

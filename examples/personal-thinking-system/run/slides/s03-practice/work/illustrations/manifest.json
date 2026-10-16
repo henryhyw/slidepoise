@@ -1,0 +1,98 @@
+{
+  "source_image": "../accepted-slide.png",
+  "source_image_sha256": "767e54f0f34faafae4aa1985b26c3824e3ece0521a6e706cf5260579fedbe3c6",
+  "board_dimensions_px": [
+    2048,
+    2048
+  ],
+  "layout": {
+    "columns": 2,
+    "rows": 2,
+    "outer_margin_px": 80,
+    "gutter_px": 72
+  },
+  "candidate_count": 3,
+  "items": [
+    {
+      "entity_id": "collect-collage",
+      "label": "I01",
+      "semantic_role": "editorial_collage",
+      "source_bbox_px": [
+        69,
+        420,
+        412,
+        383
+      ],
+      "source_aspect_ratio": 1.075718,
+      "source_crop": "source-crops/collect-collage.png",
+      "source_crop_sha256": "3480ee858526a940c1ebc75723604243a292b04cd34e554d0cc91bdcec8fc6ab",
+      "background": "transparent",
+      "board_slot_px": [
+        80,
+        112,
+        908,
+        844
+      ],
+      "board_slot_normalized": [
+        0.0390625,
+        0.0546875,
+        0.44335938,
+        0.41210938
+      ]
+    },
+    {
+      "entity_id": "connect-collage",
+      "label": "I02",
+      "semantic_role": "editorial_collage",
+      "source_bbox_px": [
+        639,
+        423,
+        380,
+        394
+      ],
+      "source_aspect_ratio": 0.964467,
+      "source_crop": "source-crops/connect-collage.png",
+      "source_crop_sha256": "3a22118358591f2ebf609f9a6389d44e3f156761b13e2df2047856643784ff99",
+      "background": "transparent",
+      "board_slot_px": [
+        1076,
+        80,
+        876,
+        908
+      ],
+      "board_slot_normalized": [
+        0.52539062,
+        0.0390625,
+        0.42773438,
+        0.44335938
+      ]
+    },
+    {
+      "entity_id": "challenge-collage",
+      "label": "I03",
+      "semantic_role": "editorial_collage",
+      "source_bbox_px": [
+        1137,
+        421,
+        436,
+        392
+      ],
+      "source_aspect_ratio": 1.112245,
+      "source_crop": "source-crops/challenge-collage.png",
+      "source_crop_sha256": "897681535836e2471dcf96e1b33b7a0326b0828978dccb61708c09ef5981b2d1",
+      "background": "transparent",
+      "board_slot_px": [
+        80,
+        1106,
+        908,
+        816
+      ],
+      "board_slot_normalized": [
+        0.0390625,
+        0.54003906,
+        0.44335938,
+        0.3984375
+      ]
+    }
+  ]
+}

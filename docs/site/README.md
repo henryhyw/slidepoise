@@ -1,7 +1,5 @@
-# SlidePoise project page
+# Project page and object export
 
-The project page and browser demo are maintained only in the personal website repository at `personalpage/public/slidepoise/`.
+Visit the [SlidePoise project page](https://www.henryw.me/slidepoise/) for interactive examples.
 
-Open https://www.henryw.me/slidepoise/docs/site/ to see the current version. This directory contains a redirect and the native-object export utility used by sample artifact scripts. It contains no separate website implementation.
-
-Run website tests in the personal website repository. Update the installed product Console in `webapp/console/` here when its local application behavior needs to change.
+The [website source](https://github.com/henryhyw/personalpage/tree/main/public/slidepoise) is maintained separately. This directory provides a redirect and the native-object exporter used to prepare sample presentation assets. Product Console changes belong in `webapp/console/`.

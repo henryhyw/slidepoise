@@ -1,16 +1,9 @@
 {
   "reviewer": "host_agent_visual_reasoning",
+  "reviewed_on": "2026-09-08",
+  "stage": "measurement",
   "decision": "accepted",
   "material_issues": [],
-  "review_environment": "Actual LibreOffice rendering on macOS, installed system fonts, 120 DPI. Five full-resolution pages and both contact sheets inspected.",
-  "user_checkpoint": "The user explicitly requested consistent Field Notes typography across all five existing pages while retaining their artwork and compositions.",
-  "stage": "measurement",
-  "reasoning_summary": "The inspected overlay keeps source ink evidence separate from the revised native folio allocation.",
-  "observations": [
-    "Grey search windows retain the full original text ink. The new orange folio allocation is the same on all five pages and does not overlap substantive artwork or body text.",
-    "The raster boundaries remain those of the original accepted target. No collage region was segmented differently or replaced.",
-    "The deliberate displacement between source folio ink and native allocation records the user's revision. It is not measurement error."
-  ],
   "reviewed_artifacts": [
     {
       "path": "accepted-slide.png",
@@ -18,15 +11,24 @@
     },
     {
       "path": "semantic-map.json",
-      "sha256": "3a15e3eceeb10d2fd15776e3bf849856f73366717fa9705072d76c94b9abdb23"
+      "sha256": "56799fadafbfa313fdd6073da2cc2d52d785276460961dfb8434374c20a49a4c"
+    },
+    {
+      "path": "reconstruction-handoff.json",
+      "sha256": "afd12e8e53505221f5691149374287a333d028410111a9ea7598a4ad22e85a46"
     },
     {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "46a409d1452712077e451eb60b2feabfaae3fae91ce2feaa08e91f2b01f0d90f"
+      "sha256": "e16d822d10bda6760b9e045d5a926ae67a66d0dc5adf7bd11bb5d707773f9d2a"
     },
     {
       "path": "reconstruction/measurement/debug_overlay.png",
       "sha256": "21350ad92187681e654119ee79b5de816a91204f3519ede1849ee96ae01bd1d2"
     }
+  ],
+  "observations": [
+    "I inspected the source and the OpenCV overlay. Visible-ink search regions are evidence for the host-authored objects. Coloured layout bounds can differ where native type wrapping or a recorded correction requires another allocation.",
+    "The notebook and right-hand collage are preserved. All four numbered entries keep their heading and question, with clear row separation.",
+    "The full semantic map is retained. Table and chart interiors belong to their native parent object. The measurement overlay does not independently judge semantic completeness."
   ]
 }

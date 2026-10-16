@@ -1,24 +1,18 @@
 {
   "reviewer": "host_agent_visual_reasoning",
+  "reviewed_on": "2026-09-08",
+  "stage": "generation",
   "decision": "accepted",
   "material_issues": [],
-  "review_environment": "Actual LibreOffice rendering on macOS, installed system fonts, 120 DPI. Five full-resolution pages and both contact sheets inspected.",
-  "user_checkpoint": "The user explicitly requested consistent Field Notes typography across all five existing pages while retaining their artwork and compositions.",
-  "stage": "generation",
-  "reasoning_summary": "The existing generated target remains accepted as historical artwork and substantive composition for this authorized native calibration. No new image-generation call is claimed.",
-  "observations": [
-    "This is a retained legacy full-slide image, including its original page label. Its hash and original generation evidence are preserved.",
-    "The folio's original inconsistent style and location are intentionally revised through the explicit shared deck role. The accepted image remains the source of all other composition and raster regions."
-  ],
   "reviewed_artifacts": [
     {
       "path": "accepted-slide.png",
       "sha256": "34bc83d09851c9308f738f7f3f9eeb0c582ea76ada084b6cbc21a423dcb309cc"
-    },
-    {
-      "path": "../../../work/folio-calibration/originals/slides/s02-question/work/generation-review.json",
-      "sha256": "66389a2fcc9bdb9329e2e0f2d7d2798bdadf977bb190e42c214f1623d769edbf"
     }
+  ],
+  "observations": [
+    "The retained generated design is the source for this reconstruction. No new image-generation call is claimed.",
+    "The existing collage artwork and composition are retained. Source folios differ across pages and are deliberately normalized in the native deck."
   ],
   "candidate_index": 1
 }

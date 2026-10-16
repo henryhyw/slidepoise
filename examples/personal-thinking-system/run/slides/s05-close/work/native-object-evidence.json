@@ -1,0 +1,15 @@
+{
+  "evidence_type": "native_package_inventory",
+  "pptx_sha256": "0826cb4b6c0c92b3980773403ed2b6b1ee047a7871eb25b1b69a5917065b2554",
+  "slides": [
+    {
+      "part": "ppt/slides/slide1.xml",
+      "shape_count": 10,
+      "tables": 0,
+      "table_cells": 0,
+      "pictures": 1,
+      "duplicate_shape_ids": []
+    }
+  ],
+  "scope": "Package structure only. Picture objects include canonical SVG assets. No visual verdict."
+}

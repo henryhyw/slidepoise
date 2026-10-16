@@ -16,16 +16,14 @@
   "keywords": [
     "powerpoint",
     "presentations",
-    "codex",
-    "image-generation",
-    "opencv",
+    "agent",
     "pptxgenjs"
   ],
   "bin": {
     "slidepoise": "bin/slidepoise.js"
   },
   "scripts": {
-    "test": "node --test tests/console_interactions.test.mjs tests/panel_interactions.test.mjs tests/dialog_dismiss.test.mjs tests/console_demo.test.mjs",
+    "test": "node --test tests/console_interactions.test.mjs tests/panel_interactions.test.mjs tests/dialog_dismiss.test.mjs",
     "test:browser": "node --test tests/browser/*.test.mjs"
   },
   "files": [

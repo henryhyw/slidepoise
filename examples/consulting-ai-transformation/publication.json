@@ -1,16 +1,22 @@
 {
   "schema_version": "1.0",
-  "revision": 3,
-  "pptx_sha256": "aec72faebe53cdaf2c0820391eadd344d34b3f5de4927e7c3a0444ff8f40ca9b",
-  "body_canvas_px": [
-    1920,
-    960
-  ],
-  "full_slide_px": [
-    1920,
-    1080
-  ],
-  "all_five_reconstructed_via_packaged_runtime": true,
-  "public_download": "PowerPoint only",
-  "source_archive_sha256": "d260bad66642c6a57eb431ccd511edb8972f577a448f574a1e31d974b458c247"
+  "revision": 6,
+  "reviewed_on": "2026-09-08",
+  "source_pptx": {
+    "path": "deliverables/presentation.pptx",
+    "sha256": "13497442c7d6afb9b6d1cf83fa8606604f7ef07aaec2ab92ae5bc589f351c4cf"
+  },
+  "source_archive": {
+    "path": "deliverables/source-bundle.zip",
+    "sha256": "f81c8bc06811d896fcf6dac23722476ebf048204cc2a29886760cbb09b071f86"
+  },
+  "rebuild_evidence": {
+    "path": "run/work/rebuild-verification.json",
+    "sha256": "066bc183cf77b649145464f2757e9dd78599e4bcd44ce10e1a9cad8ab101f32e"
+  },
+  "deck_review": {
+    "path": "run/work/deck-review.json",
+    "sha256": "ecbfef0adf1c3982addac26248e794b1d5de105a98a467c5176f0516acdb8a44"
+  },
+  "public_download": "PowerPoint only"
 }

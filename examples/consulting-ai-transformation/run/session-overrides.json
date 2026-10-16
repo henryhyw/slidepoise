@@ -23,7 +23,7 @@
   },
   "remote_sources": {
     "remix_icon": {
-      "enabled": false
+      "enabled": true
     },
     "wikimedia_commons": {
       "enabled": false
@@ -114,5 +114,13 @@
         "font_weight": "bold"
       }
     }
+  },
+  "library_sets": {
+    "icons": [
+      "remix-icon"
+    ],
+    "components": [
+      "consulting-core"
+    ]
   }
 }

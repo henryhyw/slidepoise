@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "source_sha256": "3d8499644935076fa1bf388c2ee86657ff95801aef670e1bcbb43e93af46891b",
+  "source_sha256": "e157273ac51ecfb282dfd1e3c2fd3a7b47b9775940a800017135eb5dbda1e232",
   "dpi": 120,
   "font_environment": {
     "fontconfig_source": "macos_system_font_directories",
@@ -34,15 +34,15 @@
     {
       "slide_number": 5,
       "render": "slide-005.png",
-      "sha256": "63527ea90c84fbd2ba79003c5eaf4fb15551ce1091cfb6429e1d2695682dce7a"
+      "sha256": "89bbfd3ec2b2521d78afdd3135964a8f7bda878f4de261fb8f547436dff1acf4"
     }
   ],
   "contact_sheet": {
     "path": "contact-sheet.png",
-    "sha256": "8df762acc54e0f290f2da71b1bc89c2ad4cb9d1cb78329df885a7c3ba618c7f4"
+    "sha256": "39d00324cecfab376831d80482b9e47a3bbf4fd02479f05bb21aea0ee1688d7b"
   },
   "pdf": {
     "path": "presentation.pdf",
-    "sha256": "abe8035b9815420abb741d59524c2f8a445e14034fefc4eec0c061aa1c656e85"
+    "sha256": "fab20921296989bae22be33c50f4091a25a5da7a40ab3b0a630e6d39e196bf5c"
   }
 }

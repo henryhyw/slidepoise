@@ -1,5 +1,174 @@
 {
-  "selected_assets": [],
+  "selected_assets": [
+    {
+      "asset_id": "remix-file-search-line",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/file-search/remix-file-search-line.svg",
+      "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Document/file-search-line.svg",
+      "source_repository_path": "icons/Document/file-search-line.svg",
+      "provider": "Remix Icon",
+      "provider_version": "4.9.0",
+      "license": "Remix Icon License v1.0",
+      "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+      "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+      "style_variant": "line",
+      "style_pair_id": "remix-file-search",
+      "pair_asset_ids": [
+        "remix-file-search-line",
+        "remix-file-search-fill"
+      ],
+      "intrinsic_aspect_ratio": 1.0,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "preserve_canonical_color": false,
+      "sha256": "1f68c121fff9efc279a49115e3a7a17bd484872abf99681c930aac86e2c4900b",
+      "persistence": "run_cache_only",
+      "selection_status": "candidate_pending_post_generation_visual_review",
+      "role": "supporting communication icon candidate",
+      "selection_mode": "host_agent_selected_pair_before_generation",
+      "user_required": false,
+      "generation_description": "A coherent Remix Icon line symbol for file search. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+    },
+    {
+      "asset_id": "remix-file-search-fill",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/file-search/remix-file-search-fill.svg",
+      "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Document/file-search-fill.svg",
+      "source_repository_path": "icons/Document/file-search-fill.svg",
+      "provider": "Remix Icon",
+      "provider_version": "4.9.0",
+      "license": "Remix Icon License v1.0",
+      "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+      "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+      "style_variant": "fill",
+      "style_pair_id": "remix-file-search",
+      "pair_asset_ids": [
+        "remix-file-search-line",
+        "remix-file-search-fill"
+      ],
+      "intrinsic_aspect_ratio": 1.0,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "preserve_canonical_color": false,
+      "sha256": "e1e8b35df124a81a32e8294ef3f1cf498e6c2c3fcb0d2f113132d2849d3a03d5",
+      "persistence": "run_cache_only",
+      "selection_status": "candidate_pending_post_generation_visual_review",
+      "role": "supporting communication icon candidate",
+      "selection_mode": "host_agent_selected_pair_before_generation",
+      "user_required": false,
+      "generation_description": "A coherent Remix Icon fill symbol for file search. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+    },
+    {
+      "asset_id": "remix-database-2-line",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/database-2/remix-database-2-line.svg",
+      "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Device/database-2-line.svg",
+      "source_repository_path": "icons/Device/database-2-line.svg",
+      "provider": "Remix Icon",
+      "provider_version": "4.9.0",
+      "license": "Remix Icon License v1.0",
+      "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+      "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+      "style_variant": "line",
+      "style_pair_id": "remix-database-2",
+      "pair_asset_ids": [
+        "remix-database-2-line",
+        "remix-database-2-fill"
+      ],
+      "intrinsic_aspect_ratio": 1.0,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "preserve_canonical_color": false,
+      "sha256": "45c686a7a81d621113473f09d9f7b4bbe679440ab53c3a0dbfad7635a88de703",
+      "persistence": "run_cache_only",
+      "selection_status": "candidate_pending_post_generation_visual_review",
+      "role": "supporting communication icon candidate",
+      "selection_mode": "host_agent_selected_pair_before_generation",
+      "user_required": false,
+      "generation_description": "A coherent Remix Icon line symbol for database 2. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+    },
+    {
+      "asset_id": "remix-database-2-fill",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/database-2/remix-database-2-fill.svg",
+      "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Device/database-2-fill.svg",
+      "source_repository_path": "icons/Device/database-2-fill.svg",
+      "provider": "Remix Icon",
+      "provider_version": "4.9.0",
+      "license": "Remix Icon License v1.0",
+      "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+      "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+      "style_variant": "fill",
+      "style_pair_id": "remix-database-2",
+      "pair_asset_ids": [
+        "remix-database-2-line",
+        "remix-database-2-fill"
+      ],
+      "intrinsic_aspect_ratio": 1.0,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "preserve_canonical_color": false,
+      "sha256": "4a5fa33dc232a9154e65b5434f6c933911065da21283caddf849b75e9955d595",
+      "persistence": "run_cache_only",
+      "selection_status": "candidate_pending_post_generation_visual_review",
+      "role": "supporting communication icon candidate",
+      "selection_mode": "host_agent_selected_pair_before_generation",
+      "user_required": false,
+      "generation_description": "A coherent Remix Icon fill symbol for database 2. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+    },
+    {
+      "asset_id": "remix-user-star-line",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/user-star/remix-user-star-line.svg",
+      "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/User%20%26%20Faces/user-star-line.svg",
+      "source_repository_path": "icons/User & Faces/user-star-line.svg",
+      "provider": "Remix Icon",
+      "provider_version": "4.9.0",
+      "license": "Remix Icon License v1.0",
+      "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+      "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+      "style_variant": "line",
+      "style_pair_id": "remix-user-star",
+      "pair_asset_ids": [
+        "remix-user-star-line",
+        "remix-user-star-fill"
+      ],
+      "intrinsic_aspect_ratio": 1.0,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "preserve_canonical_color": false,
+      "sha256": "2f034934ef9b717c90a3f7253ba62c4aeab82d26962599f5956d2ac9c9ff661a",
+      "persistence": "run_cache_only",
+      "selection_status": "candidate_pending_post_generation_visual_review",
+      "role": "supporting communication icon candidate",
+      "selection_mode": "host_agent_selected_pair_before_generation",
+      "user_required": false,
+      "generation_description": "A coherent Remix Icon line symbol for user star. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+    },
+    {
+      "asset_id": "remix-user-star-fill",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/user-star/remix-user-star-fill.svg",
+      "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/User%20%26%20Faces/user-star-fill.svg",
+      "source_repository_path": "icons/User & Faces/user-star-fill.svg",
+      "provider": "Remix Icon",
+      "provider_version": "4.9.0",
+      "license": "Remix Icon License v1.0",
+      "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+      "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+      "style_variant": "fill",
+      "style_pair_id": "remix-user-star",
+      "pair_asset_ids": [
+        "remix-user-star-line",
+        "remix-user-star-fill"
+      ],
+      "intrinsic_aspect_ratio": 1.0,
+      "treatment_recolorable": true,
+      "recolor_mode": "fill_all",
+      "preserve_canonical_color": false,
+      "sha256": "cf26e777fcea035e2466f5e6b6a3daa9de3eff51461f8ca9c495f67bb963de2d",
+      "persistence": "run_cache_only",
+      "selection_status": "candidate_pending_post_generation_visual_review",
+      "role": "supporting communication icon candidate",
+      "selection_mode": "host_agent_selected_pair_before_generation",
+      "user_required": false,
+      "generation_description": "A coherent Remix Icon fill symbol for user star. Use it only for the communication role described in selection_reasoning and reserve a clean square slot."
+    }
+  ],
   "sources": [
     "Host-authored illustrative Northstar Advisory planning model"
   ],
@@ -8,14 +177,55 @@
     "The three workflow estimates may overlap and cannot be added without checking task boundaries. Capacity released is not a cash saving. Control readiness determines the proposed sequence, and expert review remains required before any client release."
   ],
   "notes": [
-    "Values are planning assumptions for a fictional firm. Check task overlap before aggregating workflow benefits.",
-    "The chart contains one real workbook-linked series. Category names and numeric labels are native chart components, including the hours suffix. The six source labels are non-emitting chart-owned measurement members.",
-    "Native numeric labels explicitly disable wrapping after actual LibreOffice rendering showed its default narrow label allocation split the digits. This preserves one-line values without independent textboxes.",
-    "Changing a category in the workbook updates the chart. The separate comparison and assumption tables are independent editable business views and require corresponding authored content updates.",
-    "Two native tables retain explicit header/body roles and every row. Owner cells use minimal horizontal padding so full Arial Knowledge remains readable at the shared 24-pixel table size.",
-    "The generated first bar is orange and the other bars are gray. Native fills use the exact flat orange and two gray colors from the accepted edit request.",
-    "The shared native title, subtitle, section/body, table and decision sizes stay 64, 32, 28, 24 and 28 pixels. Explicit paragraph reflow preserves every word where native Arial is wider than the generated glyphs.",
-    "The source has no numeral squares, icons, arrows or raster artwork. The gray overlap warning is substantive content, separate from the inherited frame.",
-    "Generation uses the 1920 by 960 substantive body and the runtime adds the separate inherited 64-pixel header and 56-pixel footer."
+    "Preserve vertical chart columns, category order, orange first value, and the selected research row. Numeric labels remain linked to chart values.",
+    "The assumptions and sequencing tables are separate editable business views. Editing the chart does not recalculate them.",
+    "The semantic map owns current geometry and type roles. The inherited frame is added outside the generated content region. Canonical SVGs replace generated icon stand-ins."
+  ],
+  "content_obligations": [
+    {
+      "id": "opportunity-model",
+      "description": "The chart and editable assumption table expose the complete value model.",
+      "entity_ids": [
+        "capacity-heading",
+        "chart-unit",
+        "annual-capacity-chart",
+        "value-model-heading",
+        "value-model",
+        "formula-strip",
+        "capacity-formula"
+      ]
+    },
+    {
+      "id": "pilot-choice",
+      "description": "Icons explain the rationale while the table tests control readiness and ownership.",
+      "entity_ids": [
+        "reason-heading",
+        "reason-icon-file",
+        "reason-file",
+        "reason-icon-corpus",
+        "reason-corpus",
+        "reason-icon-reviewer",
+        "reason-reviewer",
+        "sequencing-heading",
+        "pilot-sequencing",
+        "overlap-note"
+      ]
+    },
+    {
+      "id": "page-message",
+      "description": "The slide claim and its qualification",
+      "entity_ids": [
+        "headline",
+        "subtitle"
+      ]
+    },
+    {
+      "id": "decision",
+      "description": "Approved-source pilot boundary",
+      "entity_ids": [
+        "decision-label",
+        "decision-message"
+      ]
+    }
   ]
 }

@@ -1,0 +1,24 @@
+{
+  "asset_id": "remix-focus-2-fill",
+  "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/focus-2/remix-focus-2-fill.svg",
+  "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Design/focus-2-fill.svg",
+  "source_repository_path": "icons/Design/focus-2-fill.svg",
+  "provider": "Remix Icon",
+  "provider_version": "4.9.0",
+  "license": "Remix Icon License v1.0",
+  "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+  "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+  "style_variant": "fill",
+  "style_pair_id": "remix-focus-2",
+  "pair_asset_ids": [
+    "remix-focus-2-line",
+    "remix-focus-2-fill"
+  ],
+  "intrinsic_aspect_ratio": 1.0,
+  "treatment_recolorable": true,
+  "recolor_mode": "fill_all",
+  "preserve_canonical_color": false,
+  "sha256": "48963d1809fb359b80d6cb48b88bc3cb04e197e8a0d9f26ac182ae4ace42fbc1",
+  "persistence": "run_cache_only",
+  "selection_status": "candidate_pending_post_generation_visual_review"
+}

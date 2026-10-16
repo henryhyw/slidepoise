@@ -2,11 +2,11 @@
   "schema_version": "1.0",
   "method": "Edited the existing native textbox and chart in a copy of the assembled runtime output using python-pptx. No slide was rebuilt.",
   "official_source": "../../deliverables/presentation.pptx",
-  "official_source_sha256": "aec72faebe53cdaf2c0820391eadd344d34b3f5de4927e7c3a0444ff8f40ca9b",
+  "official_source_sha256": "13497442c7d6afb9b6d1cf83fa8606604f7ef07aaec2ab92ae5bc589f351c4cf",
   "source": "official-copy.pptx",
-  "source_sha256": "aec72faebe53cdaf2c0820391eadd344d34b3f5de4927e7c3a0444ff8f40ca9b",
+  "source_sha256": "13497442c7d6afb9b6d1cf83fa8606604f7ef07aaec2ab92ae5bc589f351c4cf",
   "edited_pptx": "edited-copy.pptx",
-  "edited_pptx_sha256": "94490073d95e79aa8aecc76fa92a7efb603314f15eb7e2597bcd4a4ac4536e46",
+  "edited_pptx_sha256": "8ddbc7911c39bd2b47692d617021c7a141aa263e00591d22fe5d3053d9fb3ee6",
   "page_number": 2,
   "title_edit": {
     "object_name": "headline",
@@ -28,7 +28,7 @@
     "embedded_workbook_first_value": 1620.0,
     "native_labels_bound_to_values": true,
     "native_wrap_policy": "none",
-    "actual_pdf_label": "1,620 h"
+    "actual_pdf_label": "1,620"
   },
   "source_preserved": true,
   "editable_numeric_textboxes_created": 0,
@@ -51,8 +51,8 @@
     }
   ],
   "edited_preview": "edited-preview/slide-002.png",
-  "edited_preview_sha256": "16d9b56cc0e432877ac8ff4bf4b76d81c56b6f7cd074dc3eb9c14a4789d3a8bd",
+  "edited_preview_sha256": "e8d1f6600d20cc7a2cf8f41bc103d0f1d4b99355534958268fd8ef1f08b705ff",
   "comparison": "comparison.png",
-  "comparison_sha256": "8e1261d166ca97699d97f1eb62ec354c0eca130d23ef4b274c017bf209fd8f6a",
+  "comparison_sha256": "d2fbcaf40487434515a74c8c9ca7d57be48c5b53add76b0bd59dff2bc8bb1ee7",
   "disclosure": "This separate copy demonstrates native editing only. Changing 1,944 to 1,620 does not revise the official planning scenario or its calculations. The official deck, scenes, semantic maps, notes and generated targets remain unchanged. The assumption table is an independent business view and is intentionally unchanged in this editing demonstration."
 }

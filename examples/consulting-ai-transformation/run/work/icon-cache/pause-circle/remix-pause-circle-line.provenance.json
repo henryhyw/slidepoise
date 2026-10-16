@@ -1,0 +1,24 @@
+{
+  "asset_id": "remix-pause-circle-line",
+  "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/pause-circle/remix-pause-circle-line.svg",
+  "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Media/pause-circle-line.svg",
+  "source_repository_path": "icons/Media/pause-circle-line.svg",
+  "provider": "Remix Icon",
+  "provider_version": "4.9.0",
+  "license": "Remix Icon License v1.0",
+  "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+  "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+  "style_variant": "line",
+  "style_pair_id": "remix-pause-circle",
+  "pair_asset_ids": [
+    "remix-pause-circle-line",
+    "remix-pause-circle-fill"
+  ],
+  "intrinsic_aspect_ratio": 1.0,
+  "treatment_recolorable": true,
+  "recolor_mode": "fill_all",
+  "preserve_canonical_color": false,
+  "sha256": "4ecdef2927524d335ee9cf7d66edabda21d81238cbd666fe2a79bfa7df447824",
+  "persistence": "run_cache_only",
+  "selection_status": "candidate_pending_post_generation_visual_review"
+}

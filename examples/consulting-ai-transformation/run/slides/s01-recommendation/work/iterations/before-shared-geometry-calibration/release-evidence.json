@@ -1,7 +1,0 @@
-{
-  "evidence_type": "objective_release_facts",
-  "blocking_facts": [],
-  "agent_release_decision_required": true,
-  "visual_acceptance_source": "host-Agent visual reasoning, optionally strengthened by independent visual reviewers",
-  "mechanical_evidence_scope": "artifact freshness, config consistency, master-frame facts, package structure, typography-group consistency, and raster-decision structure. No release verdict is produced"
-}

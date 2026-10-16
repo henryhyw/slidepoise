@@ -1,0 +1,9 @@
+{
+  "prompt": "Create a TRANSPARENT PNG ASSET using this reference artwork. Preserve this collage of a pale archival street map, layered paper, small ink dots and fine connecting threads. Regenerate it as a larger, detailed illustration that will remain clear when used independently in PowerPoint. Retain its quiet black-and-white editorial character, paper grain, soft photographic tone, subjects, internal arrangement and intrinsic marks. This is the existing artwork, with more usable image detail. Do not add presentation text or new decorative elements. Keep its 380 by 394 source canvas aspect ratio, subject position and margins. Preserve depicted pale paper as foreground artwork. Remove only the empty slide backdrop outside the artwork. The output must have a real RGBA alpha channel, with alpha zero in the empty surrounding area. No background surface, no checkerboard pattern.",
+  "host": "Codex built-in image generation",
+  "purpose": "Regenerate a selected small illustration with more usable detail and a transparent backdrop.",
+  "input": "source-crops/connect-collage.png",
+  "input_sha256": "3a22118358591f2ebf609f9a6389d44e3f156761b13e2df2047856643784ff99",
+  "returned_image": "returned/connect-collage.png",
+  "returned_image_sha256": "3b259fff1fe015bf34a5061aac4635462e198681aa10b0be8dde9e45ad931aa1"
+}

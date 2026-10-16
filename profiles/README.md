@@ -1,16 +1,18 @@
 # Presentation profiles
 
-Profiles combine reusable visual guidance, design settings and reference catalogs. Setup installs them in the local SlidePoise home, where they can be adapted without editing the skill.
+Choose a starting point, then adjust its typography, palette and references in the Console or ask the Agent to adapt it.
 
-| Profile | Purpose |
-|---|---|
-| `consulting` | Consulting typography, evidence hierarchy and restrained accents |
-| `pwc-public` | Genuine published PwC and Strategy& composition references with indexed page metadata |
-| `editorial-archive` | Editorial Archive presentation style |
-| `monochrome-modern` | Monochrome Modern presentation style |
+| Profile | ID | Direction |
+| --- | --- | --- |
+| Consulting | `consulting` | Evidence-rich presentations with clear hierarchy and restrained colour |
+| PwC public references | `pwc-public` | Published PwC and Strategy& presentations with indexed page metadata |
+| Editorial Archive | `editorial-archive` | Paper textures, archival collage and image-led compositions |
+| Monochrome Modern | `monochrome-modern` | Sharp blocks, grayscale photography and contrasting type |
 
 Each folder contains style guidance and resource selections in `profile.json`. Visual references, icons and reusable components live in shared `library-sets/`. Any profile can select whole sets or individual items. Creating a profile copies its guidance and selection without duplicating assets.
 
-The [public reference collection](../library-sets/visual_references/pwc-public-references/README.md) includes a complete professional consulting deck. Its third-party source material retains its own copyright and attribution.
+Run `slidepoise setup` to update an installation. Setup renames retired bundled profile folders and preserves custom files and settings. Earlier profile names remain accepted through `aliases.json`. If both names already exist locally, both folders are preserved. Existing presentations retain their captured design settings.
 
-Keep private slides in local profiles outside the repository. Per-slide [reference retrieval](../slidepoise/references/reference-retrieval.md) supports additional local catalogs without copying them into a public profile.
+Resource IDs inside catalogs are stable identifiers. Some retain earlier names so saved asset selections and recorded sample runs continue to resolve. Display names and tags describe their current use.
+
+The [public reference collection](../library-sets/visual_references/pwc-public-references/README.md) retains its source attribution. Keep private material in local shared libraries outside this repository.

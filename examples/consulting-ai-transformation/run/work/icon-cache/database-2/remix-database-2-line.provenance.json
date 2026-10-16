@@ -1,0 +1,24 @@
+{
+  "asset_id": "remix-database-2-line",
+  "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/database-2/remix-database-2-line.svg",
+  "source_url": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/v4.9.0/icons/Device/database-2-line.svg",
+  "source_repository_path": "icons/Device/database-2-line.svg",
+  "provider": "Remix Icon",
+  "provider_version": "4.9.0",
+  "license": "Remix Icon License v1.0",
+  "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.9.0/License",
+  "attribution_notice": "This project uses icons from Remix Icon (https://remixicon.com), licensed under the Remix Icon License v1.0.",
+  "style_variant": "line",
+  "style_pair_id": "remix-database-2",
+  "pair_asset_ids": [
+    "remix-database-2-line",
+    "remix-database-2-fill"
+  ],
+  "intrinsic_aspect_ratio": 1.0,
+  "treatment_recolorable": true,
+  "recolor_mode": "fill_all",
+  "preserve_canonical_color": false,
+  "sha256": "45c686a7a81d621113473f09d9f7b4bbe679440ab53c3a0dbfad7635a88de703",
+  "persistence": "run_cache_only",
+  "selection_status": "candidate_pending_post_generation_visual_review"
+}

@@ -64,6 +64,24 @@
       "color": "#FD5108",
       "width_px": 3,
       "guidance": "Clear directional arrowheads with continuous routes. Lines explain relationships."
+    },
+    "supporting_stage_icon": {
+      "purpose": "Help readers distinguish recurring actors, stages, workflows, and decisions before reading supporting text.",
+      "chosen_style": {
+        "provider": "Remix Icon",
+        "variant": "line unless post-generation review supports a separate peer group",
+        "treatment": "black_proxy",
+        "surface": "transparent or #FFF5ED only when the accepted design uses a real surface"
+      },
+      "guidance": "Icons support labels and evidence. Use one treatment within each local peer group and preserve the canonical SVG during reconstruction.",
+      "page_aliases": {
+        "s01-recommendation": "decision rationale",
+        "s02-opportunities": "pilot selection rationale",
+        "s03-operating-model": "controlled release stages",
+        "s04-delivery-roadmap": "evidence gates",
+        "s05-investment-decision": "go, hold and stop criteria"
+      },
+      "exceptions": []
     }
   },
   "allowed_variations": [
@@ -78,6 +96,7 @@
     "Arial subtitles, body copy, table text and section labels retain their respective peer sizes.",
     "Every decision band uses the same pale orange fill, orange label, black message and left orange bar.",
     "The final PowerPoint uses one shared inherited frame with the same neutral header and footer rules.",
-    "The Agent compares all five actual rendered pages together and corrects observed drift before release."
+    "The Agent compares all five actual rendered pages together and corrects observed drift before release.",
+    "Selected icons remain recognizable, semantically useful, canonical in PowerPoint, and consistent within each peer group."
   ]
 }

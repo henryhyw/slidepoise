@@ -1,8 +1,8 @@
 {
   "schema_version": "3.0.0",
   "source": {
-    "image": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s02-question/work/accepted-slide.png",
-    "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s02-question/work/accepted-slide.png",
+    "image": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s02-question/work/accepted-slide.png",
+    "path": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s02-question/work/accepted-slide.png",
     "width_px": 1672,
     "height_px": 941
   },
@@ -712,7 +712,7 @@
           ]
         },
         "image_object": {
-          "screenshot_crop_absolute": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s02-question/work/reconstruction/measurement/crops/question-collage.png",
+          "screenshot_crop_absolute": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s02-question/work/reconstruction/measurement/crops/question-collage.png",
           "crop_mode": "fill",
           "source_kind": "accepted_slide_crop"
         }
@@ -4061,7 +4061,7 @@
         "font_family": "Andale Mono",
         "font_weight": "regular",
         "observed_foreground_color": "#242321",
-        "style_authority": "host_reviewed_user_authorized_deck_role",
+        "style_authority": "user_exact",
         "target_font_size_px": 21,
         "char_spacing_px": 0,
         "italic": false,

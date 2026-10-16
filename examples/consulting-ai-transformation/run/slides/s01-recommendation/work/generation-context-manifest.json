@@ -1,10 +1,17 @@
 {
   "sheet": {
-    "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/generation-context-sheet.png",
-    "asset_count": 0,
-    "rendered_preview_count": 0,
+    "path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/slides/s01-recommendation/work/generation-context-sheet.png",
+    "asset_count": 6,
+    "rendered_preview_count": 6,
     "skipped_preview_asset_ids": [],
-    "labels": {},
+    "labels": {
+      "remix-focus-2-line": "A01",
+      "remix-focus-2-fill": "A02",
+      "remix-team-line": "A03",
+      "remix-team-fill": "A04",
+      "remix-shield-check-line": "A05",
+      "remix-shield-check-fill": "A06"
+    },
     "includes_style_context": true
   },
   "style_context": {
@@ -694,8 +701,8 @@
       },
       "resource_catalogs": {
         "visual_references": {
-          "catalog": "/Users/henry/.slidepoise/profiles/consulting/libraries/visual_references/catalog.json",
-          "root": "/Users/henry/.slidepoise/profiles/consulting/libraries/visual_references",
+          "catalog": "/Users/henry/Codes/AI_slide_drafting/profiles/consulting/libraries/visual_references/catalog.json",
+          "root": "/Users/henry/Codes/AI_slide_drafting/profiles/consulting/libraries/visual_references",
           "profile_id": "consulting"
         },
         "components": {
@@ -709,12 +716,10 @@
         },
         "icons": {
           "set_ids": [
-            "remix-icon",
-            "wikimedia-identity"
+            "remix-icon"
           ],
           "providers": [
-            "remix_icon",
-            "wikimedia_commons"
+            "remix_icon"
           ]
         }
       }
@@ -1060,5 +1065,73 @@
     "intent": "Dense, readable executive content with Georgia claim titles, Arial supporting roles and one coherent decision-band treatment.",
     "freedom": "Vary the meaningful information layout. Preserve the shared visual roles and body-only canvas."
   },
-  "items": []
+  "selection_reasoning": {
+    "icons": {
+      "communication_roles": [
+        "Make the three pilot choices faster to scan: repeatable work, a bounded team, and controlled release"
+      ],
+      "candidates_inspected": [
+        "Remix Icon focus-2 line/fill pair",
+        "Remix Icon team line/fill pair",
+        "Remix Icon shield-check line/fill pair"
+      ],
+      "decision": "Use three supporting symbols beside the numbered pilot choices. Keep the financial evidence numeric."
+    },
+    "components": {
+      "communication_roles": [
+        "Provide editable information structures for the slide evidence"
+      ],
+      "candidates_inspected": [
+        "Consulting core component catalog"
+      ],
+      "decision": "Use native tables, charts, connectors, and geometry because the current evidence structures are specific to this argument."
+    },
+    "visual_references": {
+      "communication_roles": [
+        "Preserve the shared title, typography, decision band, and deck rhythm"
+      ],
+      "candidates_inspected": [
+        "Accepted opening slide when available"
+      ],
+      "decision": "Use the shared deck design as the primary authority. Later pages may use the accepted opening only for style calibration."
+    }
+  },
+  "items": [
+    {
+      "asset_id": "remix-focus-2-line",
+      "label": "A01",
+      "role": "Selected asset. supporting communication icon candidate",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/focus-2/remix-focus-2-line.svg"
+    },
+    {
+      "asset_id": "remix-focus-2-fill",
+      "label": "A02",
+      "role": "Selected asset. supporting communication icon candidate",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/focus-2/remix-focus-2-fill.svg"
+    },
+    {
+      "asset_id": "remix-team-line",
+      "label": "A03",
+      "role": "Selected asset. supporting communication icon candidate",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/team/remix-team-line.svg"
+    },
+    {
+      "asset_id": "remix-team-fill",
+      "label": "A04",
+      "role": "Selected asset. supporting communication icon candidate",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/team/remix-team-fill.svg"
+    },
+    {
+      "asset_id": "remix-shield-check-line",
+      "label": "A05",
+      "role": "Selected asset. supporting communication icon candidate",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/shield-check/remix-shield-check-line.svg"
+    },
+    {
+      "asset_id": "remix-shield-check-fill",
+      "label": "A06",
+      "role": "Selected asset. supporting communication icon candidate",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/shield-check/remix-shield-check-fill.svg"
+    }
+  ]
 }

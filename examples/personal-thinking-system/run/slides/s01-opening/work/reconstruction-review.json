@@ -1,69 +1,50 @@
 {
   "reviewer": "host_agent_visual_reasoning",
+  "reviewed_on": "2026-09-08",
+  "stage": "reconstruction",
   "decision": "accepted",
   "material_issues": [],
-  "review_environment": "Actual LibreOffice rendering on macOS, installed system fonts, 120 DPI. Five full-resolution pages and both contact sheets inspected.",
-  "user_checkpoint": "The user explicitly requested consistent Field Notes typography across all five existing pages while retaining their artwork and compositions.",
-  "stage": "reconstruction",
-  "reasoning_summary": "The actual native render implements the common publication identity while preserving the page's original substantive composition.",
-  "observations": [
-    "The large three-line Bodoni statement and hand/staircase collage keep their original balance. The series label, short rule and essay descriptor now share a lower baseline, with clear separation from the subtitle and artwork.",
-    "The native folio uses Andale Mono regular12pt, zero tracking, dark ink and the common lower-left allocation. All words remain editable.",
-    "Same-DPI actual old/new rendering shows no pixel change outside the authorized folio assembly. Native media payloads and non-folio text typography are unchanged."
-  ],
-  "remaining_fidelity_limits": [
-    "The historical generated lettering and available native fonts have different glyph outlines. This revision preserves the existing approved native body interpretation.",
-    "Photographic collage and intrinsic depicted lettering remain raster. Native paper backgrounds retain sampled flat tones.",
-    "Legacy full-slide generation history is retained honestly. No claim is made that the old images were generated using the current body-only frame policy."
-  ],
   "reviewed_artifacts": [
     {
       "path": "accepted-slide.png",
       "sha256": "924f0b9164b79959934313b7eda081b17213eef59acb6daf4edee7802d9f4379"
     },
     {
-      "path": "semantic-map.json",
-      "sha256": "361e38f8ac0abfea7d83b3fa1f0223ccd44f910bca0662f77d3e80f0ebd9c3e1"
-    },
-    {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "298b922687a0f0c7dd051716d296433bc411037c3302c3a4d8f204b964950b59"
-    },
-    {
-      "path": "reconstruction/measurement/debug_overlay.png",
-      "sha256": "6f8affe774af7f58ee335ff92ef0d89c03af433ee073e4fdda1fcc6fb0ab5157"
-    },
-    {
-      "path": "reconstruction-handoff.json",
-      "sha256": "08e40ae13e861936cb5cd1d2a1138ba393bd53b50bdeec4ba14622d11fe076da"
-    },
-    {
-      "path": "../../../work/deck-design.json",
-      "sha256": "ba33b732616aafff1f22648cf4536809f5583401d6180733363121aa7544358e"
+      "sha256": "c5f76143bb64a490f644ce8230c6c4f91ab1a178fe167dc03fde8e38a50f175f"
     },
     {
       "path": "reconstruction/reconstruction-contract.json",
-      "sha256": "b56c6e4fb141188cae1820adce6a560df71fa3ad1285a342208f78e422c385e5"
+      "sha256": "e7ae5713086ac5a127a0ccf3eb6ff46fedf0d81011a9e430d24e34765e6342a7"
     },
     {
       "path": "reconstruction/constructor-scene.json",
-      "sha256": "b63b7b99c6bde53e17826b66f993c0af7d71725a563221cc21c50da4f8d83fd7"
+      "sha256": "e984738ade87d5d0c5f423b9ac4dad4e8375ca4f3cbeb7ccb95df1ffb699c1bd"
     },
     {
       "path": "../deliverables/slide.pptx",
-      "sha256": "0f8fb2ac65dce1ee62560aab150826d20e5c6df3d1807c429dfb4449ce61f42b"
+      "sha256": "ca1797bb4f8491b3266c465fb264594751b5b8505aa4298a8b5c6b21d412be1a"
     },
     {
       "path": "../deliverables/render.png",
-      "sha256": "cf24a4e03904ba72d71f8676965f5a00176c5b5007078bbc665d4957821951c3"
+      "sha256": "bfd2e43c36c2f0aeeda960858fcc33c5a38a4f699b0c0cc1523b06bf137a9281"
     },
     {
       "path": "../deliverables/comparison.png",
-      "sha256": "bf101592fae90e94d2777ad7d7949cbd49ece404d618a77a8af6fb9cdf243500"
+      "sha256": "ca4d13732eaa0e4b98af8395a30738133f2266c04416fbac1fcc157799f1af88"
     },
     {
-      "path": "../deliverables/difference.png",
-      "sha256": "4fa60d12270655f06ce1a04b44510d9b03f60127446877fac29f763e951bea48"
+      "path": "native-object-evidence.json",
+      "sha256": "b66408ad774444e9871b4cccd63394b4e56bd4bd988fb0e5e6ccfcbcc7b5d185"
+    },
+    {
+      "path": "native-text-audit.json",
+      "sha256": "cea2c4d6899990d046a80103bbed5e4eef261dc8f6188a462d41938f71523d75"
     }
-  ]
+  ],
+  "observations": [
+    "The staircase and hand collage remains intact. The three-line headline, subtitle and essay label retain their relative hierarchy. Small Georgia/Bodoni glyph and baseline differences remain visible against the generated lettering.",
+    "The Field Notes folio uses the same native type and lower baseline as the other editorial pages. This is an intentional deck-wide correction of the source folios."
+  ],
+  "review_environment": "Actual LibreOffice render on macOS with installed fonts. Source and native content regions compared at a common scale."
 }

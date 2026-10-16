@@ -2,10 +2,7 @@
   "title": "A controlled path to shared AI capability",
   "company": "",
   "language": "en-US",
-  "theme": {
-    "display_font": "Georgia",
-    "body_font": "Arial"
-  },
+  "theme": {},
   "schema_version": "1.0",
   "slides": [
     {

@@ -2,11 +2,23 @@ Website maintenance has moved to `personalpage/public/slidepoise/`. The current 
 
 # Sample presentations
 
-These two complete decks show SlidePoise working with different arguments, layouts and native PowerPoint structures. Browse every slide on the [project page](../docs/site/), where you can compare the generated design with the PowerPoint render and inspect its plan, element groups and OpenCV measurements.
+Explore both decks on the [project page](https://www.henryw.me/slidepoise/).
 
-- [A controlled path to shared AI capability](consulting-ai-transformation/) presents a pilot recommendation, workflow priorities, operating responsibilities and an investment decision. It uses a consulting style with editable charts and tables.
-- [A second thinking system](personal-thinking-system/) is an essay about working with AI while retaining a point of view. It pairs editable typography with photographic collage.
+- [Consulting](consulting-ai-transformation/) presents an AI pilot recommendation with editable charts, tables and an operating model.
+- [Editorial](personal-thinking-system/) combines native typography with photographic collage and transparent illustrations.
 
-Each example includes its PowerPoint, previews and production evidence. `showcase.json` identifies the public assets. The authoring inputs and review records are under `run/`.
+Each example includes a PowerPoint, previews, the selected designs and the inputs needed to reconstruct them. `showcase.json` identifies the current public assets using paths relative to its example directory. Earlier experiments are available in Git history.
 
-Use [rebuild.py](rebuild.py) to repeat the packaged measurement and construction path from the retained inputs. See [the production record](../docs/SHOWCASE_PRODUCTION.md) for commands, provenance and the reviewed font environment.
+## Rebuild a sample
+
+After installing the development dependencies, run the packaged reconstruction path with the retained designs and semantic maps.
+
+```bash
+python examples/rebuild.py examples/consulting-ai-transformation --output-dir output/consulting-rebuild
+```
+
+Use a new output directory for each run. Add `--no-preview` to construct the PowerPoint without rendering images. Fonts and the preview renderer can affect the result. To compare a rebuild with the recorded images in the same environment, use `examples/verify_rebuild.py --help`.
+
+The recorded previews use LibreOffice on macOS with Arial and Georgia, plus Courier New in the Editorial deck. Other fonts or renderers may change text wrapping.
+
+These are reproducible construction inputs. Creating a new presentation starts with a new brief and Agent-led design. Start a new run with current Profiles instead of copying a sample’s resolved configuration.

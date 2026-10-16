@@ -20,8 +20,11 @@
       ],
       "style": {
         "fill": "#F9F7F5",
-        "stroke": "none"
+        "stroke": "none",
+        "style_authority": "agent_visual_observation"
       },
+      "allow_text_crossing": false,
+      "structural_boundary": false,
       "z": 0.0
     },
     {
@@ -33,7 +36,7 @@
         403,
         460
       ],
-      "source_path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s05-close/work/reconstruction/measurement/crops/signature-collage.png",
+      "source_path": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s05-close/work/reconstruction/measurement/crops/signature-collage.png",
       "selected_asset_id": null,
       "fit": "fill",
       "preserve_aspect_ratio": true,
@@ -45,15 +48,15 @@
       "kind": "textbox",
       "bbox_px": [
         133,
-        75,
+        84,
         861,
         192
       ],
       "text": "The point of",
       "style": {
-        "font_family": "Bodoni 72",
-        "font_size_px": 167.5,
-        "font_size_pt": 100.5,
+        "font_family": "Georgia",
+        "font_size_px": 143.33333333333334,
+        "font_size_pt": 86.0,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -77,6 +80,7 @@
       "bullet_style": null,
       "semantic_role": "slide_title",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 10.0
     },
     {
@@ -84,15 +88,15 @@
       "kind": "textbox",
       "bbox_px": [
         133,
-        238,
+        248,
         861,
         192
       ],
       "text": "view is still",
       "style": {
-        "font_family": "Bodoni 72",
-        "font_size_px": 167.5,
-        "font_size_pt": 100.5,
+        "font_family": "Georgia",
+        "font_size_px": 143.33333333333334,
+        "font_size_pt": 86.0,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -116,6 +120,7 @@
       "bullet_style": null,
       "semantic_role": "slide_title",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 10.0
     },
     {
@@ -123,15 +128,15 @@
       "kind": "textbox",
       "bbox_px": [
         133,
-        380,
+        389,
         861,
         203
       ],
       "text": "yours.",
       "style": {
-        "font_family": "Bodoni 72",
-        "font_size_px": 167.5,
-        "font_size_pt": 100.5,
+        "font_family": "Georgia",
+        "font_size_px": 143.33333333333334,
+        "font_size_pt": 86.0,
         "font_weight": "regular",
         "italic": false,
         "char_spacing_px": 0.0,
@@ -155,6 +160,7 @@
       "bullet_style": null,
       "semantic_role": "slide_title",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 10.0
     },
     {
@@ -194,6 +200,7 @@
       "bullet_style": null,
       "semantic_role": "body_compact",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 10.0
     },
     {
@@ -233,6 +240,7 @@
       "bullet_style": null,
       "semantic_role": "body_compact",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 10.0
     },
     {
@@ -272,6 +280,7 @@
       "bullet_style": null,
       "semantic_role": "body_compact",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 10.0
     },
     {
@@ -311,6 +320,7 @@
       "bullet_style": null,
       "semantic_role": "publication_folio",
       "parent_id": null,
+      "allow_boundary_crossing": false,
       "z": 10.0
     }
   ],
@@ -359,7 +369,7 @@
     "slide_number": 1
   },
   "sources": [
-    "Generated target visual: /Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s05-close/work/accepted-slide.png"
+    "Generated target visual: /Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s05-close/work/accepted-slide.png"
   ],
   "compiler_report": {
     "measured_entity_count": 9,
@@ -387,21 +397,21 @@
             "title-second",
             "title-third"
           ],
-          "shared_font_size_pt": 100.5,
-          "shared_font_size_px": 175.131,
-          "agent_target_font_size_px": 176.0,
+          "shared_font_size_pt": 86.0,
+          "shared_font_size_px": 149.863,
+          "agent_target_font_size_px": 150.0,
           "explicit_peer_group": true,
           "technical_floor_pt": 0.5,
-          "agent_target_ceiling_pt": 100.5,
-          "agent_target_unquantized_pt": 100.99893730074389,
-          "quantization_reduction_pt": 0.498937301,
+          "agent_target_ceiling_pt": 86.0,
+          "agent_target_unquantized_pt": 86.07863974495218,
+          "quantization_reduction_pt": 0.078639745,
           "reduced_from_agent_target": true,
           "reduced_for_fit": false,
           "members_not_fitting_target": [],
           "font_measurement_sources": {
-            "title-first": "/System/Library/Fonts/Supplemental/Bodoni 72.ttc",
-            "title-second": "/System/Library/Fonts/Supplemental/Bodoni 72.ttc",
-            "title-third": "/System/Library/Fonts/Supplemental/Bodoni 72.ttc"
+            "title-first": "/System/Library/Fonts/Supplemental/Georgia.ttf",
+            "title-second": "/System/Library/Fonts/Supplemental/Georgia.ttf",
+            "title-third": "/System/Library/Fonts/Supplemental/Georgia.ttf"
           },
           "profile_adjustments": {},
           "overflow_evidence": "no_overflow_detected_by_text_measurement"
@@ -494,8 +504,8 @@
       "note": "No quality or reconstruction verdict is produced. Visual reasoning remains external."
     },
     "input_bindings": {
-      "measured_scene_sha256": "95e0802be50114e027d1a0618f6080b737a1d761d275626f7ccccb3ea95677a2",
-      "reconstruction_contract_sha256": "bf27252a1256bd4b7121c3539ccf822abc9f8758ee8a8de974dbe0122ce47803",
+      "measured_scene_sha256": "ee94685fce6a59ed62993ba19a699f94d218f05f731dadc687a127d64fc037df",
+      "reconstruction_contract_sha256": "414f6e3198772f801ca4f5635ca93a0dec84a75fe72d9524ae0396d384ae619a",
       "resolved_design_sha256": "803440a27dca21dc9148b5b4ac29fed93193ccedd3b017e11a7984c0c78c5a86"
     }
   }

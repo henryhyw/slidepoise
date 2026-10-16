@@ -1,59 +1,50 @@
 {
   "reviewer": "host_agent_visual_reasoning",
+  "reviewed_on": "2026-09-08",
+  "stage": "reconstruction",
   "decision": "accepted",
   "material_issues": [],
-  "stage": "reconstruction",
   "reviewed_artifacts": [
     {
       "path": "accepted-slide.png",
-      "sha256": "a49ee87afd9d13eab0ea6e70a03fb68d197b7319273b5a3d998f7bb116827280"
+      "sha256": "ff333c1826015522f40e68e5fe1fde9438a6997e7e983bb72ca94244b8b4256e"
     },
     {
       "path": "reconstruction/measurement/slide_entities.json",
-      "sha256": "ef1ff46cdf54e5ed4122f058ba864de1cfd6d6bd6da0dd730d445ec3c396adf3"
+      "sha256": "d3c65bbd696cb9381cf58bd62da5cc55d42b12f84d8a52d18a0b48838a85197e"
     },
     {
       "path": "reconstruction/reconstruction-contract.json",
-      "sha256": "9703e8ed664dd8dcb67de6c1253d29d7e379bfe173d155f8e737842d401b7bee"
+      "sha256": "43bd685fc0dd425c652d3a24b4d28bd63bf8c14f2af29dc605d57a199d17e204"
     },
     {
       "path": "reconstruction/constructor-scene.json",
-      "sha256": "b768298af250d899dbc8f576a9c9b1a6431d8619b7708b84e8d8f835292325d2"
+      "sha256": "464b31ec434b88cdc660cf205243b4f5d901f57c5f357eed4532c63ebbfb77b8"
     },
     {
       "path": "../deliverables/slide.pptx",
-      "sha256": "8b1b72c633dfe4c965d63b6fe7b6ad9dc716dfbdb52f04f4d9abebd66b5fd141"
+      "sha256": "6ea601471184111d15afce21115a00d671c21126af735961ca4a54e29b1a3a22"
     },
     {
       "path": "../deliverables/render.png",
-      "sha256": "be0d3f812ed969cf63b3f2dd26bbfa514fe431fe13ecb8226335c61ce75f282b"
+      "sha256": "dcee50a6e1af7ac55a96ca4486d963c938d0b098fe740abd31e3838159ee52ac"
     },
     {
       "path": "../deliverables/comparison.png",
-      "sha256": "a3f44f9af50f87579f5644d2699c6ae1e11dfd801a65faa670432ccf7ca7fdaa"
+      "sha256": "d45f437b475a922fcde0828a284c8d59b580476ed1764852a03b906f25a00ed3"
     },
     {
       "path": "native-object-evidence.json",
-      "sha256": "f96b3792bcae281685950aaa716e272179633c4ca899b64e050051fcf330d8e9"
+      "sha256": "5ab863bef4384bdbc61b78d59fc8bbc06f8b35116b908866a66f8b165d45d115"
     },
     {
       "path": "native-text-audit.json",
-      "sha256": "f73b0993bc613ae09f3223c701888d684ee0b8dbc9bdafff6ff82818c0764c36"
-    },
-    {
-      "path": "typography-evidence.json",
-      "sha256": "84922778afb9408bf8d17c0cfef6a4cb0fff0606dba734f650114d331644283b"
+      "sha256": "bb5fcdf2daed532c1f7c522808d92ad3123a92c01337bbf626df1faf11096363"
     }
   ],
   "observations": [
-    "I inspected the full actual headless LibreOffice render and the cropped body comparison. All three chart values appear on one line, the two native tables remain readable, and the right-side reasons and overlap qualification have no visible clipping.",
-    "The real native chart contains workbook cells B2:B4 with 1944, 1440 and 1080. The native series cache matches those cells. Its category names and numeric labels remain chart components. No numeric floating textboxes or raster chart image are present.",
-    "The first native attempt split digits into two lines under the Office reader's default label allocation. A diagnostic copy proved that explicit no-wrap retained the complete label. The final packaged route uses the general data_label_wrap=false property and preserves outEnd positioning and the hours format.",
-    "Both native tables use the shared 24-pixel Arial size, equal to 12pt. Column padding permits the full Knowledge owner label. Native Arial is wider than the generated glyphs, so the formula and two reason details use different line breaks while preserving all words.",
-    "The chart's native category labels are right-aligned regular Arial with small native axis tick marks. The target used narrower bold category glyphs and a plain baseline. This small reader-visible difference preserves the chart as one editable semantic object. Native flat fills match the accepted color edit.",
-    "The title uses Georgia64, subtitle Arial32, section/body Arial28, and decision label/message Arial28. The band uses an 8-pixel orange bar, pale-orange fill and black message. Header/footer are inherited frame content. The single-page preview shows page 1, which ordered deck assembly will number correctly.",
-    "The PPTX contains one native chart, two native tables with 32 cells, no pictures and no duplicate shape IDs. Native text audit examined 52 text bodies with zero findings. This file preserves editable content and has no raster reconstruction regions.",
-    "Two audience-facing speaker notes are embedded in the native notes part. They explain the capacity arithmetic, overlapping workflow estimates and the distinction between released capacity and cash savings.",
-    "I inspected the recalibrated actual LibreOffice render. Both opening pages now share the same title/subtitle origin, divider position and decision-band geometry. The decision label begins at x100 and message at x560, both in vertically centered 28-pixel text allocations. The calculation, table and final right-side argument remain clear above the band."
-  ]
+    "The chart has three vertical columns in the source order. The first value is orange and all three values are bold. The selected Research synthesis row has a pale orange fill.",
+    "Table prose is left aligned while numeric assumptions and sequence markers are centered. The three canonical rationale icons and the overlap note are clear above the decision band."
+  ],
+  "review_environment": "Actual LibreOffice render on macOS with installed fonts. Source and native content regions compared at a common scale."
 }

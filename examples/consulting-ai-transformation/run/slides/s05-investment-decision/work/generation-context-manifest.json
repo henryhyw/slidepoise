@@ -1,11 +1,19 @@
 {
   "sheet": {
-    "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s05-investment-decision/work/generation-context-sheet.png",
-    "asset_count": 1,
-    "rendered_preview_count": 1,
+    "path": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/slides/s05-investment-decision/work/generation-context-sheet.png",
+    "asset_count": 9,
+    "rendered_preview_count": 9,
     "skipped_preview_asset_ids": [],
     "labels": {
-      "northstar-accepted-typography": "R01"
+      "northstar-accepted-typography": "R01",
+      "remix-money-dollar-circle-line": "A01",
+      "remix-money-dollar-circle-fill": "A02",
+      "remix-play-circle-line": "A03",
+      "remix-play-circle-fill": "A04",
+      "remix-pause-circle-line": "A05",
+      "remix-pause-circle-fill": "A06",
+      "remix-stop-circle-line": "A07",
+      "remix-stop-circle-fill": "A08"
     },
     "includes_style_context": true
   },
@@ -696,8 +704,8 @@
       },
       "resource_catalogs": {
         "visual_references": {
-          "catalog": "/Users/henry/.slidepoise/profiles/consulting/libraries/visual_references/catalog.json",
-          "root": "/Users/henry/.slidepoise/profiles/consulting/libraries/visual_references",
+          "catalog": "/Users/henry/Codes/AI_slide_drafting/profiles/consulting/libraries/visual_references/catalog.json",
+          "root": "/Users/henry/Codes/AI_slide_drafting/profiles/consulting/libraries/visual_references",
           "profile_id": "consulting"
         },
         "components": {
@@ -711,12 +719,10 @@
         },
         "icons": {
           "set_ids": [
-            "remix-icon",
-            "wikimedia-identity"
+            "remix-icon"
           ],
           "providers": [
-            "remix_icon",
-            "wikimedia_commons"
+            "remix_icon"
           ]
         }
       }
@@ -1062,12 +1068,92 @@
     "intent": "Dense, readable executive content with Georgia claim titles, Arial supporting roles and one coherent decision-band treatment.",
     "freedom": "Vary the meaningful information layout. Preserve the shared visual roles and body-only canvas."
   },
+  "selection_reasoning": {
+    "icons": {
+      "communication_roles": [
+        "Separate the financial model from the go, hold, and stop release decisions"
+      ],
+      "candidates_inspected": [
+        "Remix Icon money-dollar-circle line/fill pair",
+        "Remix Icon play-circle line/fill pair",
+        "Remix Icon pause-circle line/fill pair",
+        "Remix Icon stop-circle line/fill pair"
+      ],
+      "decision": "Use one finance symbol with a peer group of three decision-state symbols. Keep each state label explicit."
+    },
+    "components": {
+      "communication_roles": [
+        "Provide editable information structures for the slide evidence"
+      ],
+      "candidates_inspected": [
+        "Consulting core component catalog"
+      ],
+      "decision": "Use native tables, charts, connectors, and geometry because the current evidence structures are specific to this argument."
+    },
+    "visual_references": {
+      "communication_roles": [
+        "Preserve the shared title, typography, decision band, and deck rhythm"
+      ],
+      "candidates_inspected": [
+        "Accepted opening slide when available"
+      ],
+      "decision": "Use the shared deck design as the primary authority. Later pages may use the accepted opening only for style calibration."
+    }
+  },
   "items": [
     {
       "asset_id": "northstar-accepted-typography",
       "label": "R01",
       "role": "Visual reference. Align the shared Georgia claim-title scale, Arial supporting typography and pale-orange decision band with orange label and black message. Use this page only as a visual style reference. Preserve the current page facts and choose its own chart, workflow, matrix or investment layout. Do not copy the opening content or its three-column composition.",
       "canonical_file": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/consulting-v3-authoring/slides/s01-recommendation/work/accepted-slide.png"
+    },
+    {
+      "asset_id": "remix-money-dollar-circle-line",
+      "label": "A01",
+      "role": "Selected asset. supporting communication icon candidate",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/money-dollar-circle/remix-money-dollar-circle-line.svg"
+    },
+    {
+      "asset_id": "remix-money-dollar-circle-fill",
+      "label": "A02",
+      "role": "Selected asset. supporting communication icon candidate",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/money-dollar-circle/remix-money-dollar-circle-fill.svg"
+    },
+    {
+      "asset_id": "remix-play-circle-line",
+      "label": "A03",
+      "role": "Selected asset. supporting communication icon candidate",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/play-circle/remix-play-circle-line.svg"
+    },
+    {
+      "asset_id": "remix-play-circle-fill",
+      "label": "A04",
+      "role": "Selected asset. supporting communication icon candidate",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/play-circle/remix-play-circle-fill.svg"
+    },
+    {
+      "asset_id": "remix-pause-circle-line",
+      "label": "A05",
+      "role": "Selected asset. supporting communication icon candidate",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/pause-circle/remix-pause-circle-line.svg"
+    },
+    {
+      "asset_id": "remix-pause-circle-fill",
+      "label": "A06",
+      "role": "Selected asset. supporting communication icon candidate",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/pause-circle/remix-pause-circle-fill.svg"
+    },
+    {
+      "asset_id": "remix-stop-circle-line",
+      "label": "A07",
+      "role": "Selected asset. supporting communication icon candidate",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/stop-circle/remix-stop-circle-line.svg"
+    },
+    {
+      "asset_id": "remix-stop-circle-fill",
+      "label": "A08",
+      "role": "Selected asset. supporting communication icon candidate",
+      "canonical_file": "/Users/henry/Codes/AI_slide_drafting/examples/consulting-ai-transformation/run/work/icon-cache/stop-circle/remix-stop-circle-fill.svg"
     }
   ]
 }

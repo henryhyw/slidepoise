@@ -1,8 +1,8 @@
 {
-  "source_sha256": "0f8fb2ac65dce1ee62560aab150826d20e5c6df3d1807c429dfb4449ce61f42b",
-  "render_sha256": "cf24a4e03904ba72d71f8676965f5a00176c5b5007078bbc665d4957821951c3",
+  "source_sha256": "ca1797bb4f8491b3266c465fb264594751b5b8505aa4298a8b5c6b21d412be1a",
+  "render_sha256": "bfd2e43c36c2f0aeeda960858fcc33c5a38a4f699b0c0cc1523b06bf137a9281",
   "slide_number": 1,
-  "dpi": 120,
+  "dpi": 160,
   "font_environment": {
     "fontconfig_source": "macos_system_font_directories",
     "font_directories": [

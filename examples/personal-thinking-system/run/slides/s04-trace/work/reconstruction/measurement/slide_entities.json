@@ -1,8 +1,8 @@
 {
   "schema_version": "3.0.0",
   "source": {
-    "image": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s04-trace/work/accepted-slide.png",
-    "path": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s04-trace/work/accepted-slide.png",
+    "image": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s04-trace/work/accepted-slide.png",
+    "path": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s04-trace/work/accepted-slide.png",
     "width_px": 1672,
     "height_px": 941
   },
@@ -43,7 +43,8 @@
       "reconstruction_route": "native_shape",
       "style_hint": {
         "fill": "#FAF9F7",
-        "stroke": "none"
+        "stroke": "none",
+        "style_authority": "agent_visual_observation"
       },
       "measurement": {
         "layout_bbox": {
@@ -2314,6 +2315,7 @@
         ],
         "intrinsic_text_ownership": "Marks and photographed notebook lettering belong to this raster. No presentation copy is inside the crop."
       },
+      "raster_fit": "fill",
       "measurement": {
         "layout_bbox": {
           "px": [
@@ -2716,7 +2718,7 @@
           ]
         },
         "image_object": {
-          "screenshot_crop_absolute": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s04-trace/work/reconstruction/measurement/crops/notebook.png",
+          "screenshot_crop_absolute": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s04-trace/work/reconstruction/measurement/crops/notebook.png",
           "crop_mode": "fill",
           "source_kind": "accepted_slide_crop"
         }
@@ -3309,7 +3311,8 @@
       "style_hint": {
         "fill": "none",
         "stroke": "#8A8A88",
-        "stroke_width_px": 1
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
       },
       "measurement": {
         "layout_bbox": {
@@ -4242,7 +4245,8 @@
       "style_hint": {
         "fill": "none",
         "stroke": "#8A8A88",
-        "stroke_width_px": 1
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
       },
       "measurement": {
         "layout_bbox": {
@@ -4509,7 +4513,8 @@
       "style_hint": {
         "fill": "none",
         "stroke": "#8A8A88",
-        "stroke_width_px": 1
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
       },
       "measurement": {
         "layout_bbox": {
@@ -5594,7 +5599,8 @@
       "style_hint": {
         "fill": "none",
         "stroke": "#8A8A88",
-        "stroke_width_px": 1
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
       },
       "measurement": {
         "layout_bbox": {
@@ -5897,7 +5903,8 @@
       "style_hint": {
         "fill": "none",
         "stroke": "#8A8A88",
-        "stroke_width_px": 1
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
       },
       "measurement": {
         "layout_bbox": {
@@ -7042,7 +7049,8 @@
       "style_hint": {
         "fill": "none",
         "stroke": "#8A8A88",
-        "stroke_width_px": 1
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
       },
       "measurement": {
         "layout_bbox": {
@@ -7293,7 +7301,8 @@
       "style_hint": {
         "fill": "none",
         "stroke": "#8A8A88",
-        "stroke_width_px": 1
+        "stroke_width_px": 1,
+        "style_authority": "agent_visual_observation"
       },
       "measurement": {
         "layout_bbox": {
@@ -8325,6 +8334,7 @@
         ],
         "intrinsic_text_ownership": "Marks and photographed notebook lettering belong to this raster. No presentation copy is inside the crop."
       },
+      "raster_fit": "fill",
       "measurement": {
         "layout_bbox": {
           "px": [
@@ -8835,7 +8845,7 @@
           ]
         },
         "image_object": {
-          "screenshot_crop_absolute": "/Users/henry/Codes/AI_slide_drafting/output/showcase-revisions/personal-v2-authoring/slides/s04-trace/work/reconstruction/measurement/crops/archive-collage.png",
+          "screenshot_crop_absolute": "/Users/henry/Codes/AI_slide_drafting/examples/personal-thinking-system/run/slides/s04-trace/work/reconstruction/measurement/crops/archive-collage.png",
           "crop_mode": "fill",
           "source_kind": "accepted_slide_crop"
         }
@@ -8863,7 +8873,7 @@
         "target_font_size_px": 21,
         "font_weight": "regular",
         "observed_foreground_color": "#242321",
-        "style_authority": "host_reviewed_user_authorized_deck_role",
+        "style_authority": "user_exact",
         "line_spacing": 1,
         "char_spacing_px": 0,
         "italic": false,
