@@ -58,7 +58,7 @@ Small generated illustrations can be refined separately at higher resolution, in
 
 ## Manage settings in the local Console
 
-The optional Console is a browser interface for fonts, colour, references, asset libraries and image-generation settings. After installation, ask your Agent to open it or run
+Your Agent can manage styles, resource libraries and image-generation settings through conversation. The optional Local Console lets you browse and adjust the same preferences. After installation, ask your Agent to open it or run
 
 ```bash
 npx github:henryhyw/slidepoise console
